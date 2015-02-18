@@ -3,12 +3,16 @@
 https://github.com/CyanogenMod/android_packages_apps_Gallery2 ****
 ca0bead : Moar materialize changes <Alex Cruz> 10 days ago
  
-**** https://github.com/cmRemiX/android_packages_services_Telephony ****
+**** https://github.com/cmRemiX/android_packages_services_Telephony
+origin	git@github.com:cmRemiX/android_packages_services_Telephony.git ****
+2f4ca0e : Fix mobile network settings for multi sim (1/2) <emancebo> 4 days ago
+1d97438 : Fix back button on SelectSubscription activity <emancebo> 4 days ago
+74b8c6f : Telephony: theme MultiSim Mobile Settings to match Settings app <Roman Birg> 4 days ago
 5c6050c : TelephonyService: Only add VideoCall settings if supported. <ZION959> 5 days ago
  
 **** https://github.com/cmRemiX/android_vendor_cmremix
 origin	git@github.com:cmRemiX/android_vendor_cmremix.git ****
-baf7679 : don't removed cmremix ota zip <ZION959> 19 hours ago
-6487b4e : build cmRemiXUpdater <ZION959> 19 hours ago
+4385ae3 :  Add a changelog generator helper script <nuclearmistake> 2 hours ago
+6487b4e : build cmRemiXUpdater <ZION959> 21 hours ago
 0519c87 : changelog 2-15-2015 <ZION959> 2 days ago
  
