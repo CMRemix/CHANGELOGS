@@ -1,0 +1,25 @@
+
+**** https://github.com/cmRemiX/android_frameworks_base
+origin	git@github.com:cmRemiX/android_frameworks_base.git ****
+36aaceb : Implement ambient display as Active Display <Squadzone> 58 minutes ago
+f053280 : Revert [2/2] Framework: doze triggered by motion sensor(s) preference Change-Id: I2a1be925ac58721f12da04a6164641ffa1c4a654 <ZION959> 61 minutes ago
+6facb2e : Revert "[1/2] Frameworks: Doze (ambient display) timeout" <ZION959> 62 minutes ago
+2a96638 : Revert Frameworks: Add ability to control default value of DOZE_ENABLED <ZION959> 63 minutes ago
+e368920 : Expose hardcoded colors <Dave Kover> 6 hours ago
+a27bbcb : Themes: Get mFontPkgName hashCode not mIconPkgName's <d34d> 4 hours ago
+a8f9b34 : Automatic translation import <Michael Bestas> 10 hours ago
+3beae00 : SettingsProvider: add advanced_mode <ZION959> 71 minutes ago
+e6651f8 : GlobalActions: Always add power off option to power menu <Dave Kessler> 22 hours ago
+deb7ddd : Revert "Boot up optimization for phoneprocess" <Abhisek Devkota> 2 days ago
+ 
+**** https://github.com/cmRemiX/android_packages_apps_Settings
+origin	git@github.com:cmRemiX/android_packages_apps_Settings.git ****
+728c69e : [2/2] Squash removed Slim Settings: Doze (ambient display) timeout <ZION959> 44 minutes ago
+613fa1c : USB Settings: Use SwitchPreference <Janson Kang> 22 hours ago
+ 
+**** https://github.com/cmRemiX/android_vendor_cmremix
+origin	git@github.com:cmRemiX/android_vendor_cmremix.git ****
+815806d : include otasigcheck.sh (from CM) <nuclearmistake> 20 minutes ago
+1f6947a : removed changelog <ZION959> 25 hours ago
+e89ad43 : build cmRemiX v8.5 <ZION959> 25 hours ago
+ 
