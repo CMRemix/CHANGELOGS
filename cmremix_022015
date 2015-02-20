@@ -1,0 +1,25 @@
+
+**** https://github.com/cmRemiX/android_frameworks_base
+origin	git@github.com:cmRemiX/android_frameworks_base.git ****
+b7c4931 : Update Ambient patch to PS27 <maxwen> 2 days ago
+ 
+**** https://github.com/cmRemiX/android_packages_apps_Settings
+origin	git@github.com:cmRemiX/android_packages_apps_Settings.git ****
+d276f4e : add slimcenter for testing <ZION959> 2 minutes ago
+d2b8ca1 : fixed build <ZION959> 5 minutes ago
+046151e : revert : Settings: Add S2W and S2S cmhw support (2/2) <ZION959> 10 minutes ago
+b6a4948 : fixed build <ZION959> 22 minutes ago
+c6e486d : Settings: fix Vibrate on touch preference not working <Roman Birg> 10 hours ago
+7442dee : Add back lift to wake preference <Michael Bestas> 11 hours ago
+f485378 : Settings: properly remove voicewakeup preference <Roman Birg> 14 hours ago
+3a08698 : Properly remove NFC payment preference <Michael Bestas> 2 days ago
+09b698d : Fix Profiles settings screen padding <DvTonder> 9 days ago
+94c88b4 : Settings: move advanced mode to Settings provider <ZION959> 2 hours ago
+580f995 : Power Menu: remove power as an option <ZION959> 2 hours ago
+f92744b : Remove empty untranslatable summary <Michael Bestas> 2 days ago
+db3bfad : Settings : Remove unused xml move slim sound advance to cmremix settings <ZION959> 2 hours ago
+ff6721c : Fix mobile network settings for multi sim (2/2) <emancebo> 4 days ago
+f8cc7ef : Only access CMHW from main thread. <Danny Baumann> 9 days ago
+0cc5b15 : Settings: add summary for double_tap_to_wake <Sam Mortimer> 3 weeks ago
+14522af : Settings: reorganization <Roman Birg> 2 hours ago
+ 

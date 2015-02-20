@@ -1,27 +1,33 @@
 
 **** https://github.com/cmRemiX/android_frameworks_base
 origin	git@github.com:cmRemiX/android_frameworks_base.git ****
+88aeb73 : Add class for identifying cmremix build type and version <gmillz> 2 hours ago
 20a08ef : libaudioeffect_jni GREF leak fix <PrimeDirective> 2 years, 3 months ago
 ef174ea : potential GraphRunner leak in camera effects <PrimeDirective> 1 year, 6 months ago
 9ffeafb : Fixing memory leak in RenderBufferCache <Samsung> 5 months ago
 f032cdf : Fix DataInputStream leaks <PrimeDirective> 1 year, 6 months ago
-88cc7b1 : Use actual storage type for format message strings <ZION959> 82 minutes ago
+88cc7b1 : Use actual storage type for format message strings <ZION959> 23 hours ago
 a0c6aa2 : Fix translatability of External media format message <Michael Bestas> 8 months ago
-6f6b72d : Fix for ambiguous and broken disk formatting dialog This patch ensures that the path-string from StorageNotification is converted to the appropriate StorageVolume so that it can be correctly passed to the formatting class. It also displays this path to the user so that it is clear what will be deleted. <ZION959> 2 hours ago
-e371e80 : Storage; Fix apps2sd for noemulated secondary storage <Christopher R. Palmer> 18 hours ago
+6f6b72d : Fix for ambiguous and broken disk formatting dialog This patch ensures that the path-string from StorageNotification is converted to the appropriate StorageVolume so that it can be correctly passed to the formatting class. It also displays this path to the user so that it is clear what will be deleted. <ZION959> 23 hours ago
+e371e80 : Storage; Fix apps2sd for noemulated secondary storage <Christopher R. Palmer> 2 days ago
 f91b16a : Storage: Fix moving apps to external storage <Thomas Wendt> 5 weeks ago
 4d12135 : usb: Show notification in 'charging only' mode. <padarshr> 11 months ago
-d60b983 : [1/2] Base: Implement ambient display as Active Display <Squadzone> 3 hours ago
-21149b5 : [1/2] Squash removed Slim Settings: Doze (ambient display) timeout <ZION959> 3 hours ago
+d60b983 : [1/2] Base: Implement ambient display as Active Display <Squadzone> 24 hours ago
+21149b5 : [1/2] Squash removed Slim Settings: Doze (ambient display) timeout <ZION959> 25 hours ago
  
 **** https://github.com/cmRemiX/android_packages_apps_Settings
 origin	git@github.com:cmRemiX/android_packages_apps_Settings.git ****
 e62fcfb : Improve owner info screen UI <Michael Bestas> 5 weeks ago
-b2ec86a : Automatic translation import <Michael Bestas> 12 hours ago
-c1d89f9 : Performance -> Battery mode <Michael Bestas> 17 hours ago
-16c7ba6 : Settings: Ambient Display configurations <Yanuar Harry> 2 hours ago
+b2ec86a : Automatic translation import <Michael Bestas> 34 hours ago
+c1d89f9 : Performance -> Battery mode <Michael Bestas> 2 days ago
+16c7ba6 : Settings: Ambient Display configurations <Yanuar Harry> 23 hours ago
  
 **** https://github.com/cmRemiX/android_vendor_cmremix
 origin	git@github.com:cmRemiX/android_vendor_cmremix.git ****
+a193d65 : add cmRemiX changelog <ZION959> 2 hours ago
+218caf2 : add SlimCenter for Testing <ZION959> 3 hours ago
+fb906eb : Create README.md <ZION959> 20 hours ago
+ef6f18f : Found and fixed tons of herp derp: SCP not SCPFTP <Snuzzo> 1 year, 10 months ago
+1920645 : Added SCP & Cron script: See Readme for more information <Snuzzo> 1 year, 10 months ago
 d829940 : Added Auto Build & FTP Upload bot script <Snuzzo> 1 year, 10 months ago
  
