@@ -1,25 +1,28 @@
 
 **** https://github.com/cmRemiX/android_frameworks_base
 origin	git@github.com:cmRemiX/android_frameworks_base.git ****
-b7c4931 : Update Ambient patch to PS27 <maxwen> 2 days ago
+b7c4931 : Update Ambient patch to PS27 <maxwen> 3 days ago
  
 **** https://github.com/cmRemiX/android_packages_apps_Settings
 origin	git@github.com:cmRemiX/android_packages_apps_Settings.git ****
-d276f4e : add slimcenter for testing <ZION959> 2 minutes ago
-d2b8ca1 : fixed build <ZION959> 5 minutes ago
-046151e : revert : Settings: Add S2W and S2S cmhw support (2/2) <ZION959> 10 minutes ago
-b6a4948 : fixed build <ZION959> 22 minutes ago
-c6e486d : Settings: fix Vibrate on touch preference not working <Roman Birg> 10 hours ago
-7442dee : Add back lift to wake preference <Michael Bestas> 11 hours ago
-f485378 : Settings: properly remove voicewakeup preference <Roman Birg> 14 hours ago
-3a08698 : Properly remove NFC payment preference <Michael Bestas> 2 days ago
-09b698d : Fix Profiles settings screen padding <DvTonder> 9 days ago
-94c88b4 : Settings: move advanced mode to Settings provider <ZION959> 2 hours ago
-580f995 : Power Menu: remove power as an option <ZION959> 2 hours ago
-f92744b : Remove empty untranslatable summary <Michael Bestas> 2 days ago
-db3bfad : Settings : Remove unused xml move slim sound advance to cmremix settings <ZION959> 2 hours ago
-ff6721c : Fix mobile network settings for multi sim (2/2) <emancebo> 4 days ago
-f8cc7ef : Only access CMHW from main thread. <Danny Baumann> 9 days ago
-0cc5b15 : Settings: add summary for double_tap_to_wake <Sam Mortimer> 3 weeks ago
-14522af : Settings: reorganization <Roman Birg> 2 hours ago
+a5ebced : organized cmremix settings <ZION959> 13 minutes ago
+c8507f0 : Fix build aftger ambient patch update <LorDClockaN> 3 days ago
+696f6d0 : Update Ambient to PS29 <Yanuar Harry> 3 days ago
+d8014cc : Update Ambient to PS23 <LorDClockaN> 4 days ago
+455266a : revert : Settings: Add S2W and S2S cmhw support (2/2) <ZION959> 20 hours ago
+ad8692d : Improve owner info screen UI <Michael Bestas> 5 weeks ago
+ae39943 : Automatic translation import <Michael Bestas> 2 days ago
+d5f40c6 : Settings: fix Vibrate on touch preference not working <Roman Birg> 30 hours ago
+d129f51 : Add back lift to wake preference <Michael Bestas> 31 hours ago
+6179a20 : Settings: properly remove voicewakeup preference <Roman Birg> 34 hours ago
+6d4a139 : Properly remove NFC payment preference <Michael Bestas> 3 days ago
+e51dc1a : Fix Profiles settings screen padding <DvTonder> 10 days ago
+ae57645 : Performance -> Battery mode <Michael Bestas> 3 days ago
+6a2ec5e : Settings: move advanced mode to Settings provider <Roman Birg> 22 hours ago
+34914fc : Power Menu: remove power as an option <Dave Kessler> 22 hours ago
+2574f00 : Remove empty untranslatable summary <Michael Bestas> 3 days ago
+7be20af : Fix mobile network settings for multi sim (2/2) <emancebo> 5 days ago
+16ca617 : Only access CMHW from main thread. <Danny Baumann> 10 days ago
+990e157 : Settings: add summary for double_tap_to_wake <Sam Mortimer> 3 weeks ago
+204aa08 : Settings: reorganization <Roman Birg> 20 hours ago
  

@@ -1,0 +1,255 @@
+
+**** https://github.com/cmRemiX/android_build
+origin	git@github.com:cmRemiX/android_build.git ****
+1c3b43a : Don't enable ADB by default on userdebug builds <Michael Bestas> 3 days ago
+61c105d : dopush only tries to push if its arg doesn't fail <Marcos Marado> 6 weeks ago
+cf07960 : add unpackbootimg to otatools <Koushik Dutta> 2 years, 8 months ago
+ 
+**** https://github.com/cmRemiX/android_device_samsung_trlte-common
+origin	git@github.com:cmRemiX/android_device_samsung_trlte-common.git
+temasek	https://github.com/temasek/android_device_samsung_hlte-common.git
+upstream	https://github.com/CyanogenMod/android_device_samsung_trlte-common.git ****
+8c15947 : change trlteeur -> trltexx <gekkehenkie11> 4 days ago
+cefb537 : trlte-common: Remove MMAP hack, no longer required with new blobs. <Tony Layher> 2 days ago
+d0782f6 : trlte-common: 15 bucks and 15 minutes later, we have OTG. <Tony Layher> 5 days ago
+b5c23d5 : trlte-common: Add NFC property <Tony Layher> 8 days ago
+029b994 : trlte-common: Update service classes for encrpytion <Tony Layher> 8 days ago
+53310a9 : trlte-common: separate mixer_paths for 910F. <Tony Layher> 8 days ago
+ 
+**** https://github.com/CyanogenMod/android_external_bluetooth_bluedroid ****
+3e62590 : bluetooth: a2dp: Fix return value from out_set_parameters <Christopher R. Palmer> 4 days ago
+83824ce : bluetooth: Reduce logging verbosity <Jon Mooney> 4 days ago
+ 
+**** https://github.com/CyanogenMod/android_external_whispersystems_WhisperPush ****
+a5a1b96 : Automatic translation import <Michael Bestas> 3 days ago
+ 
+**** https://github.com/cmRemiX/android_frameworks_base
+origin	git@github.com:cmRemiX/android_frameworks_base.git ****
+5a2b485 : Quick Collapse: Multi-user support <ZION959> 27 minutes ago
+81520cf : [Base] Volume panel timeout <cristianomatos> 28 minutes ago
+865f01b : base: LT translations <Frant1c> 6 days ago
+94a1c84 : Fix: Battery saver mode <Altaf-Mahdi> 13 days ago
+6b6e70e : Enable Buttons and Status Bar settings Multi-user enabled <ZION959> 31 minutes ago
+6f02b75 : FWB: Add Left clock (1/2) <LorDClockaN> 3 hours ago
+59b0369 : Close zips when through with them <Scott Mertz> 2 days ago
+6c01f2c : CaptivePortalLogin: Allow overriding of progress color <cretin45> 2 days ago
+cab8060 : CaptivePortalLogin: Add functionality for SetupWizard <cretin45> 2 days ago
+ 
+**** origin	git@github.com:cmRemiX/android_frameworks_opt_hardware.git ****
+3dbf76a : Class for gestures vibrations intensity <LorDClockaN> 15 hours ago
+40db99a : opt_hw: Add S2W and S2S cmhw support (1/2) <LorDClockaN> 7 days ago
+ 
+**** https://github.com/CyanogenMod/android_frameworks_opt_net_wifi ****
+8fd5ac8 : WifiStateMachine: Tone down logging <Michael Bestas> 2 days ago
+ 
+**** https://github.com/CyanogenMod/android_hardware_qcom_audio ****
+ce4d7b9 : hal: Make use of hwdep calibration optional <Steve Kondik> 9 days ago
+5cc33da : hal: codec calibration data using hwdep nodes <Divya Narayanan Poojary> 5 weeks ago
+42bb7b0 : audio: remove ANC related devices <Divya Narayanan Poojary> 11 days ago
+783a909 : audio:Convert USB Audio HS to USB ANLG device <Ramjee Singh> 5 weeks ago
+ 
+**** https://github.com/CyanogenMod/android_hardware_qcom_media ****
+c6f3ee6 : mm-video: Recognise "OMX.qcom.video.decoder.divx4" when setting role <Paras Nagda> 12 days ago
+a1514a8 : mm-video:don't remove 0 timestamp buffer for config buffer <srikarri> 8 weeks ago
+ 
+**** https://github.com/CyanogenMod/android_hardware_qcom_wlan ****
+d3701c8 : qcwcn: Tone down logging <Michael Bestas> 2 days ago
+ 
+**** Faux_Shamu	https://github.com/faux123/Shamu
+Slayher	https://github.com/slayher/android_kernel_samsung_trlte
+friedrich420	https://github.com/friedrich420/Note4-TMO-AELKernel
+https://github.com/cmRemiX/android_kernel_samsung_trlte
+origin	git@github.com:cmRemiX/android_kernel_samsung_trlte.git
+upstream	https://github.com/CyanogenMod/android_kernel_samsung_trlte.git ****
+83c4f03 : enabled SWEEP2WAKE <ZION959> 51 minutes ago
+7b4a5b7 : base kernel v1.1 <ZION959> 2 hours ago
+9be70ba : Added sweep2sleep from right to left [Dorimanx] and disabled by default [UpInTheAir] <friedrich420> 7 weeks ago
+983ac61 : Sweep2Sleep <friedrich420> 4 months ago
+8d260d8 : msm: mdss: reset ping-pong registers when display is turned off <Ujwal Patel> 8 months ago
+3e77bc0 : msm: mdss: fix pixel extension validation on decimation <Adrian Salido-Moreno> 4 months ago
+6ba8e2b : msm: mdss: avoid color fill call if flag is not set <Ingrid Gallardo> 5 months ago
+f04dcad : msm: mdss: reset pixel extension flag if validation fails <Jeevan Shriram> 5 months ago
+e3745a5 : msm: mdss: fix bug for validating pixel extension calculations <Ujwal Patel> 6 months ago
+41f85c1 : msm: mdss: add support to validate pixel extension calculations <Ujwal Patel> 6 months ago
+a04291e : msm: mdss: do not turn off interface clocks for doze mode <Aravind Venkateswaran> 5 months ago
+8de71a9 : msm: mdss: fix issues related to transitions in and out of doze mode <Aravind Venkateswaran> 6 months ago
+73167e9 : msm: mdss: Returning generic error code on overlay scaling hw limitation <Veera Sundaram Sankaran> 5 months ago
+91bf68c : msm: mdss: fix sw_reset register write during pipe halt <Ujwal Patel> 3 months ago
+3660592 : msm: mdss: Fix hardware cursor configuration for right mixer <Veera Sundaram Sankaran> 6 months ago
+a154881 : msm: mdss: ensure rotator work is done before reconfiguring session <Adrian Salido-Moreno> 11 months ago
+4d6c715 : msm: mdss: support mdp idle power collapse only for cmd mode panels <Aravind Venkateswaran> 6 months ago
+3db054b : msm: mdss: fix wb memory registration optimization <Adrian Salido-Moreno> 5 months ago
+ae65333 : msm: mdss: Remove the unused has_buf pipe member <Saurabh Shah> 7 months ago
+27e704e : msm: mdss: disable synchronized flush if mixer swap is enabled <Ujwal Patel> 4 months ago
+ece994b : msm: mdss: call wait4comp before wb kickoff <raghavendra ambadas> 5 months ago
+6db9fe4 : msm: mdss: Increase commit count for first kickoff <Terence Hampson> 9 months ago
+33b255f : msm: mdss: refactor ping pong completion logic <Adrian Salido-Moreno> 5 months ago
+9738c54 : msm: mdss: allow extra SMPs during pipe reuse on high tier targets <Ujwal Patel> 5 months ago
+d39992a : trlte: fix build after kgsl bring up. <Tony Layher> 4 weeks ago
+370249b : msm: kgsl: Wait for dispatcher on adreno idle <Shubhraprakash Das> 1 year, 1 month ago
+513e438 : msm: kgsl: Split out adreno_idle into a lighter weight function <Jordan Crouse> 11 months ago
+ee9ed28 : msm: kgsl: Take the pagetable reference count only when needed <Sunil Khatri> 9 months ago
+8d44325 : msm: kgsl: Vote against deep low power modes when GPU wakes up from slumber. <Yizheng Zhou> 4 months ago
+20fcc67 : msm: kgsl: Use a constant mask for the memops vmflags <Jordan Crouse> 11 months ago
+7d75ffb : msm: kgsl: Remove the "global" locking from the ioctl path <Jordan Crouse> 9 months ago
+46e11a2 : msm: kgsl: Keep the GPU from going into a slumber after a touch event <Jordan Crouse> 6 months ago
+458fe0a : msm: kgsl: Allow cache operations for an usermem mapped buffer <Jordan Crouse> 7 months ago
+5214eac : msm: kgsl: Revert the GPU address / ID conflict fix <Jordan Crouse> 7 months ago
+324621e : msm: kgsl: fix MIN power constraints in non-trivial cases <Lucille Sylvester> 8 months ago
+18a8b58 : msm: kgsl: Restructure IOMMU clock management <Tarun Karra> 10 months ago
+d042d05 : msm: kgsl: Check for mmu pagefault before recovery <Shubhraprakash Das> 10 months ago
+2582444 : msm: kgsl: Mark mmapped objects with VM_DONTCOPY <Jordan Crouse> 7 months ago
+f5e61f9 : msm: kgsl: Don't allow an offset when importing dma-buf buffers <Jordan Crouse> 7 months ago
+4cb66b7 : msm: kgsl: Only check GPU hardware idle while bootstrapping <Harsh Vardhan Dwivedi> 7 months ago
+d81fa87 : msm: kgsl: Don't allow userspace to pass in an invalid size <Shrenuj Bansal> 9 months ago
+ 
+**** https://github.com/CyanogenMod/android_packages_apps_AudioFX ****
+ec77b5f : Automatic translation import <Michael Bestas> 3 days ago
+ 
+**** https://github.com/CyanogenMod/android_packages_apps_Bluetooth ****
+8a0f46e : Automatic translation import <Michael Bestas> 3 days ago
+ 
+**** https://github.com/CyanogenMod/android_packages_apps_BluetoothExt ****
+2caafde : Automatic translation import <Michael Bestas> 3 days ago
+ 
+**** https://github.com/CyanogenMod/android_packages_apps_Browser ****
+8d2ce6e : Automatic translation import <Michael Bestas> 3 days ago
+ 
+**** https://github.com/CyanogenMod/android_packages_apps_CMFileManager ****
+70b420b : CM File Manager - Intent to open video files will have a playlist attached <Rohit Yengisetty> 4 days ago
+fe78340 : Automatic translation import <Michael Bestas> 3 days ago
+ 
+**** https://github.com/CyanogenMod/android_packages_apps_Calculator ****
+dac2b10 : Automatic translation import <Michael Bestas> 3 days ago
+ 
+**** https://github.com/CyanogenMod/android_packages_apps_Calendar ****
+797c203 : Automatic translation import <Michael Bestas> 3 days ago
+ 
+**** https://github.com/cmRemiX/android_packages_apps_Camera2
+origin	git@github.com:cmRemiX/android_packages_apps_Camera2.git ****
+d0e8547 : Automatic translation import <Michael Bestas> 3 days ago
+ 
+**** https://github.com/CyanogenMod/android_packages_apps_CellBroadcastReceiver ****
+f33bd50 : Automatic translation import <Michael Bestas> 3 days ago
+ 
+**** https://github.com/CyanogenMod/android_packages_apps_Contacts ****
+6865e06 : Automatic translation import <Michael Bestas> 3 days ago
+ 
+**** https://github.com/CyanogenMod/android_packages_apps_ContactsCommon ****
+8f6fdb1 : Automatic translation import <Michael Bestas> 3 days ago
+ 
+**** https://github.com/CyanogenMod/android_packages_apps_DeskClock ****
+42c5adf : Automatic translation import <Michael Bestas> 3 days ago
+ 
+**** https://github.com/cmRemiX/android_packages_apps_Dialer
+origin	git@github.com:cmRemiX/android_packages_apps_Dialer.git ****
+6980fba : Automatic translation import <Michael Bestas> 3 days ago
+ 
+**** https://github.com/CyanogenMod/android_packages_apps_Eleven ****
+fd06a77 : Automatic translation import <Michael Bestas> 3 days ago
+ 
+**** DU	https://github.com/DirtyUnicorns/android_packages_apps_Gallery2
+https://github.com/CyanogenMod/android_packages_apps_Gallery2 ****
+3e5ed19 : Moar materialize changes <Alex Cruz> 2 weeks ago
+6df83bf : Gallery2 - Add support to pass in a playlist along with video to play <Rohit Yengisetty> 4 days ago
+0b4fd45 : Automatic translation import <Michael Bestas> 3 days ago
+ 
+**** https://github.com/cmRemiX/android_packages_apps_InCallUI
+origin	git@github.com:cmRemiX/android_packages_apps_InCallUI.git ****
+f4db53d : Automatic translation import <Michael Bestas> 3 days ago
+ 
+**** https://github.com/CyanogenMod/android_packages_apps_LockClock ****
+5eafbd4 : Automatic translation import <Michael Bestas> 3 days ago
+ 
+**** https://github.com/CyanogenMod/android_packages_apps_Mms-caf ****
+27dc0d8 : MMS: Fix Unicode Strip Preference summary <NBruderman> 31 hours ago
+843e9da : Mms: bring back Unicode Strip <Szymon Pusz> 5 weeks ago
+33924df : Mms: Fix QM Close button not removing notifications <Rescue9> 11 days ago
+70b0d37 : Per conversation notification settings/ringtones <Shuhao Wu> 8 months ago
+1080bb1 : Mms: Port custom notification vibrations <DvTonder> 1 year, 2 months ago
+3321ba0 : Automatic translation import <Michael Bestas> 3 days ago
+ 
+**** https://github.com/CyanogenMod/android_packages_apps_PhoneCommon ****
+be8d469 : Automatic translation import <Michael Bestas> 3 days ago
+ 
+**** https://github.com/cmRemiX/android_packages_apps_Settings
+origin	git@github.com:cmRemiX/android_packages_apps_Settings.git ****
+d043ae0 : Change expanded desktop options based on our navbar switch implementation <cristianomatos> 3 days ago
+81a09ff : [Settings] Volume panel timeout <cristianomatos> 59 minutes ago
+0865523 : fixed s2w build error due to this commit 204aa08608e029211a08df6452da88ae067b19d2 <ZION959> 2 hours ago
+4e344f5 : Settings: Add Left clock (2/2) <LorDClockaN> 3 hours ago
+032fbc6 : Add Vibration gestures cmhw setting and check for s2w and s2s <LorDClockaN> 3 hours ago
+b4f3ab2 : WG: Litlte cleanup before overhaul <LorDClockaN> 3 days ago
+10a809b : WG: Write to wake_gestures sysfs also <LorDClockaN> 3 days ago
+8d356d5 : WIP: Add WakeGestures especially for Shamu <LorDClockaN> 3 hours ago
+d7016d2 : Settings: Add S2W and S2S cmhw support (2/2) <LorDClockaN> 3 hours ago
+b3b9397 : Settings: fix changing profile triggers not updating actions page <Roman Birg> 3 days ago
+ 
+**** https://github.com/CyanogenMod/android_packages_apps_SoundRecorder ****
+a05a722 : Automatic translation import <Michael Bestas> 3 days ago
+ 
+**** https://github.com/CyanogenMod/android_packages_apps_Stk ****
+49f9566 : Automatic translation import <Michael Bestas> 3 days ago
+ 
+**** https://github.com/CyanogenMod/android_packages_apps_Terminal ****
+589aa46 : Automatic translation import <Michael Bestas> 3 days ago
+ 
+**** https://github.com/CyanogenMod/android_packages_apps_ThemeChooser ****
+bada620 : Automatic translation import <Michael Bestas> 3 days ago
+95ace59 : Allow theming status bar and nav bar separately <d34d> 8 days ago
+45bef2f : Remove checkboxes for components that are not in the theme <d34d> 5 days ago
+e55256b : Move checkboxes for applied components under a 'Applied' header <Thomas Wendt> 9 months ago
+ad39a70 : Don't add applied components and disable their checkboxes <Thomas Wendt> 9 months ago
+ 
+**** https://github.com/cmRemiX/android_packages_apps_UnifiedEmail
+origin	git@github.com:cmRemiX/android_packages_apps_UnifiedEmail.git ****
+244c1b2 : Automatic translation import <Michael Bestas> 3 days ago
+ 
+**** https://github.com/CyanogenMod/android_packages_inputmethods_LatinIME ****
+0be21a0 : Automatic translation import <Michael Bestas> 3 days ago
+ 
+**** https://github.com/CyanogenMod/android_packages_providers_DownloadProvider ****
+f16323c : Automatic translation import <Michael Bestas> 3 days ago
+ 
+**** https://github.com/CyanogenMod/android_packages_providers_ThemesProvider ****
+fe573ef : close cursors when through with them <Scott Mertz> 2 days ago
+09d05e9 : Automatic translation import <Michael Bestas> 3 days ago
+ 
+**** https://github.com/CyanogenMod/android_packages_services_Mms ****
+8d5b7bd : Automatic translation import <Michael Bestas> 3 days ago
+ 
+**** https://github.com/CyanogenMod/android_packages_services_Telecomm ****
+f67e928 : Automatic translation import <Michael Bestas> 3 days ago
+ 
+**** https://github.com/cmRemiX/android_packages_services_Telephony
+origin	git@github.com:cmRemiX/android_packages_services_Telephony.git ****
+e779697 : Automatic translation import <Michael Bestas> 3 days ago
+ 
+**** https://github.com/CyanogenMod/android_packages_wallpapers_Galaxy4 ****
+46830a1 : Automatic translation import <Michael Bestas> 3 days ago
+ 
+**** https://github.com/CyanogenMod/android_packages_wallpapers_LivePicker ****
+75d5257 : Automatic translation import <Michael Bestas> 3 days ago
+ 
+**** https://github.com/CyanogenMod/android_packages_wallpapers_PhaseBeam ****
+5e2ddfe : Automatic translation import <Michael Bestas> 3 days ago
+ 
+**** https://github.com/CyanogenMod/android_packages_wallpapers_PhotoPhase ****
+211ceed : Automatic translation import <Michael Bestas> 3 days ago
+ 
+**** https://github.com/CyanogenMod/android_vendor_cm ****
+c552843 : sepolicy: Allow CMUpdater/uncrypt access to recovery_cache_file <dhacker29> 3 days ago
+da48ab8 : sepolicy: Allow vold to create tmpfs files for asec containers <Christopher R. Palmer> 3 days ago
+ 
+**** TheMuppets	https://github.com/TheMuppets/proprietary_vendor_samsung
+gekkehenkie11	https://github.com/gekkehenkie11/proprietary_vendor_samsung
+https://github.com/cmRemiX/proprietary_vendor_samsung
+origin	git@github.com:cmRemiX/proprietary_vendor_samsung.git ****
+4226963 : ks01lte: Add CNE framework. <Vitalii Kulikov> 6 days ago
+991efaf : superior:remove unused blob <ljzyal> 5 days ago
+55bf7ed : P31XX/P51XX: use L3 widevine libs from oppo/msm8974-common <Michael Gernoth> 7 days ago
+1a670b1 : trlte-common: Update camera blobs from N910FXXU1BOB4 <Tony Layher> 6 days ago
+cd7d29c : trlte-common: Update Adreno blobs from N910FXXU1BOB4 <Tony Layher> 7 days ago
+49a8a7f : superior:rename camera blob <ljzyal> 8 days ago
+c27017f : klteusc: Fix NFC blob name <OptX> 2 weeks ago
+ 
