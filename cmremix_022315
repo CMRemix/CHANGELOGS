@@ -3,7 +3,7 @@
 origin	git@github.com:cmRemiX/android_bootable_recovery.git ****
 bf1d672 : Theme: Add ability to disable size checking before backup (for compressed backup users with low space). Clean up backup folder and copy only recovery.log for debugging. <bigbiff> 9 days ago
 ba75a0e : gui: don't truncate values to 0 after scaling <that> 9 days ago
-72b90ab : Fix reboot system on watch theme <Ethan Yonker> 5 hours ago
+72b90ab : Fix reboot system on watch theme <Ethan Yonker> 14 hours ago
 e9e9ccd : Fix fsck_msdos symlink <Matt Mower> 4 days ago
 a999821 : gui: proportional scrollbars <that> 4 days ago
 74a6d0d : Replace Auto_Generated name spaces with underscores. <bigbiff> 9 days ago
@@ -11,29 +11,29 @@ a999821 : gui: proportional scrollbars <that> 4 days ago
  
 **** https://github.com/cmRemiX/android_build
 origin	git@github.com:cmRemiX/android_build.git ****
-59016bf : Add ro.cmremix.model for OTA purposes <kantjer> 12 hours ago
-f4df4f6 : Add ro.cmremix.device for OTA porpuses <Josue Rivera> 12 hours ago
-d645401 : Revert "Revert "build: Handle custom boot images properly"" <Brint E. Kriebel> 19 hours ago
-ccbb8f7 : releasetools: Store and use the dt image file through target files <Brint E. Kriebel> 21 hours ago
+59016bf : Add ro.cmremix.model for OTA purposes <kantjer> 21 hours ago
+f4df4f6 : Add ro.cmremix.device for OTA porpuses <Josue Rivera> 21 hours ago
+d645401 : Revert "Revert "build: Handle custom boot images properly"" <Brint E. Kriebel> 28 hours ago
+ccbb8f7 : releasetools: Store and use the dt image file through target files <Brint E. Kriebel> 29 hours ago
 c843fcd : Revert "build: Handle custom boot images properly" <Brint E. Kriebel> 3 days ago
  
 **** https://github.com/cmRemiX/cmRemiX ****
-de6d134 : track cmRemiXCenter <ZION959> 10 hours ago
-5020979 : track ThemeChooser <ZION959> 17 hours ago
-da9d504 : track Telecomm & mms <ZION959> 27 hours ago
+de6d134 : track cmRemiXCenter <ZION959> 19 hours ago
+5020979 : track ThemeChooser <ZION959> 26 hours ago
+da9d504 : track Telecomm & mms <ZION959> 2 days ago
  
 **** https://github.com/cmRemiX/android_frameworks_base
 origin	git@github.com:cmRemiX/android_frameworks_base.git ****
 6fa7de7 : QSTile: Reboot/Recovery tile (1/2) <fusionjack> 2 days ago
 7352a76 : Implement finalizer for RS contexts. <Jason Sams> 4 days ago
 1b52ebf : Frameworks: follow charging notification settings also for wireless charging <Petr Sedlacek (piit79)> 2 weeks ago
-9915b55 : Double tap to sleep on navigation bar [1/2] <TheMrcool212> 18 hours ago
+9915b55 : Double tap to sleep on navigation bar [1/2] <TheMrcool212> 26 hours ago
 8cb3b4e : Fix 'fuchsia' typo. <Elliott Hughes> 3 days ago
-346f0464 : SystemUI: Fix SystemUI FC on Msim devices <Josue Rivera> 18 hours ago
+346f0464 : SystemUI: Fix SystemUI FC on Msim devices <Josue Rivera> 26 hours ago
  
 **** https://github.com/cmRemiX/android_frameworks_opt_telephony
 origin	git@github.com:cmRemiX/android_frameworks_opt_telephony.git ****
-76cee19 : SMSDispatcher: Add option for sending pseudo-multipart SMSes <Mike Kasick> 30 hours ago
+76cee19 : SMSDispatcher: Add option for sending pseudo-multipart SMSes <Mike Kasick> 2 days ago
  
 **** Faux_Shamu	https://github.com/faux123/Shamu
 Slayher	https://github.com/slayher/android_kernel_samsung_trlte
@@ -41,7 +41,7 @@ friedrich420	https://github.com/friedrich420/Note4-TMO-AELKernel
 https://github.com/cmRemiX/android_kernel_samsung_trlte
 origin	git@github.com:cmRemiX/android_kernel_samsung_trlte.git
 upstream	https://github.com/CyanogenMod/android_kernel_samsung_trlte.git ****
-732666f : cmremix base v1.1 <ZION959> 59 minutes ago
+732666f : cmremix base v1.1 <ZION959> 9 hours ago
 b3677cb : uapi: lsm_params: Add API to explicitly set LSM params <Bhalchandra Gajare> 7 months ago
 57af255 : ASoC : msm: Add IOCTL for Listen LookAhead Buffering <Venkat Sudhir> 10 months ago
 9872c4e : ASoC: msm: qdspv2: Fix junk characters in session name <Karthik Reddy Katta> 7 months ago
@@ -56,41 +56,44 @@ f512639 : ASoC: msm: update min buffer count and size <Ravi Kumar Alamanda> 5 mo
  
 **** origin	git@github.com:cmRemiX/android_packages_apps_Mms-caf.git ****
 1f26a09 : Mms: Add missing text preview in SlideListItemView. <Adnan> 4 days ago
-ae0e4a3 : Remove duplicate/unused strings <Michael Bestas> 27 hours ago
-bd91cf4 : [2/4] Mms: Breathing missedcall/sms/voicemail <Bajee11> 35 hours ago
+ae0e4a3 : Remove duplicate/unused strings <Michael Bestas> 2 days ago
+bd91cf4 : [2/4] Mms: Breathing missedcall/sms/voicemail <Bajee11> 2 days ago
 1ab0ec9 : Mms: Modify AOSP LV translations <Davis Mosenkovs> 6 months ago
-6f43417 : MMS: SearchView: Use the activity context <Diogo Ferreira> 6 days ago
+6f43417 : MMS: SearchView: Use the activity context <Diogo Ferreira> 7 days ago
 22bbc29 : MMS: Fix FC with the Unicode Stripping <NBruderman> 2 days ago
  
 **** https://github.com/cmRemiX/android_packages_apps_OmniSwitch
 origin	git@github.com:cmRemiX/android_packages_apps_OmniSwitch.git ****
-7f2ff21 : OmniSwitch: Hide from Drawer Launcher <david> 28 hours ago
+7f2ff21 : OmniSwitch: Hide from Drawer Launcher <david> 2 days ago
 a3b9043 : OmniSwitch: add pin app button <maxwen> 9 days ago
  
 **** https://github.com/cmRemiX/android_packages_apps_Settings
 origin	git@github.com:cmRemiX/android_packages_apps_Settings.git ****
-71af516 : Settings add cmRemiX Center (Slim) <ZION959> 13 hours ago
-69b851d : Correct typos in ambient display commit <apascual89> 16 hours ago
+71af516 : Settings add cmRemiX Center (Slim) <ZION959> 21 hours ago
+69b851d : Correct typos in ambient display commit <apascual89> 24 hours ago
 35d8438 : QSTile: Reboot/Recovery tile (2/2) <fusionjack> 2 days ago
-a9ee4a3 : captive portal: remove extra whitespace <Alexander Martinz> 18 hours ago
-04f7b81 : Double tap to sleep on navigation bar [2/2] <TheMrcool212> 18 hours ago
+a9ee4a3 : captive portal: remove extra whitespace <Alexander Martinz> 27 hours ago
+04f7b81 : Double tap to sleep on navigation bar [2/2] <TheMrcool212> 27 hours ago
 993c0c9 : Settings: hide mobile networks for devices with no telephony <Roman Birg> 3 days ago
 41818ea : Settings: fix vibrate on touch crash <Roman Birg> 3 days ago
-0e84cf8 : Settings: Fix hiding auto-brightness & lift to wake preferences <Konsta> 3 days ago
-18cd9f0 : Settings: Fix hiding power profile category or CPU freq preference <Konsta> 3 days ago
+0e84cf8 : Settings: Fix hiding auto-brightness & lift to wake preferences <Konsta> 4 days ago
+18cd9f0 : Settings: Fix hiding power profile category or CPU freq preference <Konsta> 4 days ago
 e8eeba9 : Nav Ring: Update dependency (again) :p <Janson Kang> 2 days ago
-91c1488 : [3/4] Settings: Breathing missedcall/sms/voicemail <UtkarshGupta> 27 hours ago
+91c1488 : [3/4] Settings: Breathing missedcall/sms/voicemail <UtkarshGupta> 2 days ago
  
 **** origin	git@github.com:cmRemiX/android_packages_apps_ThemeChooser.git ****
-27bb868 : ThemeChooser: Hide from Drawer Launcher <david> 28 hours ago
+27bb868 : ThemeChooser: Hide from Drawer Launcher <david> 2 days ago
  
 **** origin	git@github.com:cmRemiX/android_system_vold.git ****
 e207e22 : vold: cryptfs: Check return values <Ethan Chen> 4 days ago
  
 **** https://github.com/cmRemiX/android_vendor_cmremix
 origin	git@github.com:cmRemiX/android_vendor_cmremix.git ****
-74a4e0f : build cmRemiX stable version support ota <ZION959> 10 minutes ago
-774adef : cmRemiX build 9.5 <ZION959> 45 minutes ago
-af7ee83 : build cmRemiX Center (SlimCenter) <ZION959> 10 hours ago
-61a9b7c : [g2] Add "dasboot" init.d script to help diagnose early boot lockups... if it runs, it will dump logs in /data... if not, then that device's build is pretty fubar. <nuclearmistake> 16 hours ago
+cf33c4b : Vendor: Update the maintenance version <Lokesh Chamane> 2 hours ago
+878748a : Vendor: update the cmremix_common.mk <Lokesh Chamane> 3 hours ago
+f87933a : vendor: trlteeur >>> trltexx <ZION959> 5 hours ago
+74a4e0f : build cmRemiX stable version support ota <ZION959> 9 hours ago
+774adef : cmRemiX build 9.5 <ZION959> 9 hours ago
+af7ee83 : build cmRemiX Center (SlimCenter) <ZION959> 19 hours ago
+61a9b7c : [g2] Add "dasboot" init.d script to help diagnose early boot lockups... if it runs, it will dump logs in /data... if not, then that device's build is pretty fubar. <nuclearmistake> 25 hours ago
  
