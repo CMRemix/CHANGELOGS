@@ -1,0 +1,261 @@
+
+**** origin	git@github.com:cmRemiX/android_art.git ****
+c3a9e33 : Remove dex2oat watchdog warning <Maunik Shah> 3 months ago
+cf42f50 : Add Non-debug cflags to debug cflags <Joe Maples> 5 days ago
+3dd92c5 : Disable Clang as Host Compiler <frap129> 8 days ago
+a7061c3 : Don't Allow Backups <frap129> 8 days ago
+deb2cfb : Add all cortex-a15 variants <frap129> 8 days ago
+ 
+**** origin	https://github.com/cmRemiX/android_bionic.git ****
+9c38646 : libc: add stpcpy support for scorpion <Jake Weinstein> 13 days ago
+3dd054a : libm: add floor routine from Nvidia <Jake Weinstein> 3 months ago
+0025642 : Fix aliasing violations on 64-bit hardware <Dave Kessler> 10 days ago
+a311cbd : libc: Fix strict aliasing violation. <Kyle Repinski> 3 months ago
+f04a0c2 : Fix mbstate_t strict-aliasing violations. <Kyle Repinski> 3 months ago
+084d2e8 : Add Aarch64 optimized bzero based on memset <Bernhard Rosenkraenzer> 9 months ago
+143715a : libc: Add AF_RPMSG and PF_RPMSG <Vishal Mahaveer> 3 months ago
+b9ca5f6 : Use GNU11 for linker C <Not Bob Saget> 9 days ago
+ee73d40 : Stop including machine/cpu_features.h <frap129> 9 days ago
+b7d116c : Merge Changes from OmniROM <frap129> 10 days ago
+7000844 : CAF Bionic Updates <frap129> 10 days ago
+d305267 : Update to tzdata2015a <Dmitrij Podabed> 3 weeks ago
+5cdddfe : Merge branch 'cm-12.0' of https://github.com/CyanogenMod/android_bionic into HEAD <frap129> 10 days ago
+951158b : Revert back to GNU++11 libraries over C++14 <frap129> 10 days ago
+68aa892 : Disable Clang and Update to c++14 Libraries <frap129> 10 days ago
+ 
+**** https://github.com/cmRemiX/android_bootable_recovery
+origin	git@github.com:cmRemiX/android_bootable_recovery.git ****
+72b90e3 : gui: fix missing icons in fileselector <that> 3 days ago
+ 
+**** https://github.com/cmRemiX/android_build
+origin	git@github.com:cmRemiX/android_build.git ****
+54af860 : Build: cmRemiX up sounds and update (2/2) <Lars Greiss> 2 hours ago
+28b177c : Kill Bloat with Fire! <ZION959> 11 hours ago
+b749e27 : Remove MOAR Bloat <Chet Kener> 3 months ago
+4e5a89d : Makefile: OTA File by Date <Chet Kener> 3 months ago
+b195679 : Add F2FS Compatibility <Chet Kener> 3 months ago
+8671976 : Remove Default Combos <Chet Kener> 4 months ago
+6a1843f : Unsecure <Chet Kener> 4 months ago
+2e55897 : Do Not Build QuickSearchBox <Chet Kener> 4 months ago
+5e729e4 : Allow Prebuilt APKs <Chet Kener> 4 months ago
+6171d6f : Build Launcher3 instead of 2 <Chet Kener> 4 months ago
+cdf5b5e : Build Stk and CellBroadcastReceiver <Chet Kener> 4 months ago
+2db8150 : Remove Annoying Goldfish Stuff <Chet Kener> 4 months ago
+e2608ce : Lollipop Audio Only <Chet Kener> 4 months ago
+6e66341 : Do Not Build Recovery Or Use it <Chet Kener> 3 months ago
+b3e9407 : armv7-a: More Specific Tunings per CPU <Chet Kener> 11 hours ago
+7af9542 : Eng: Include in user build filter <Chet Kener> 5 weeks ago
+1af4e1b : Remove ro.kernel.android.checkjni <Chet Kener> 5 weeks ago
+695d6fd : Remove Debug from Eng <Chet Kener> 5 weeks ago
+791fe4e : Do not build test stuff for eng builds <Chet Kener> 5 weeks ago
+ce0f302 : Do Not Odex Eng Builds <Chet Kener> 5 weeks ago
+7a99c6b : Mock Location should be off! <Chet Kener> 5 weeks ago
+93653cc : repopick: Always expand paths to the repo executable. <fattire> 11 days ago
+f6d9fee : build: add pthread to dumvar build info <ZION959> 2 days ago
+25297b1 : Add Global posix thread aka pthread Support (1/2) <Paul Beeler> 2 days ago
+c3febb4 : arm: compile all thumb with -mthumb-interwork and cleanup -O3 <Paul Beeler> 2 days ago
+ 
+**** https://github.com/cmRemiX/cmRemiX ****
+1d89b3a : track art & bionic <ZION959> 24 hours ago
+3a6ff3b : manifest: add new omap4 hardware repo for current device support <Hashcode> 10 days ago
+ 
+**** https://github.com/cmRemiX/android_device_samsung_trlte-common
+origin	git@github.com:cmRemiX/android_device_samsung_trlte-common.git
+temasek	https://github.com/temasek/android_device_samsung_hlte-common.git
+upstream	https://github.com/CyanogenMod/android_device_samsung_trlte-common.git ****
+6928ba1 : trlte-common: Update sepolicy and set to enforce. <Tony Layher> 5 weeks ago
+9df9355 : trlte-common: reorder init script for encrpytion <Tony Layher> 26 hours ago
+65465b1 : remove volte overly flags <gekkehenkie11> 26 hours ago
+570c17f : trlte-common: Ensure USB config is loaded. <Tony Layher> 27 hours ago
+da9f02d : trlte-common: Stop using MDP for everything. <Tony Layher> 27 hours ago
+ 
+**** MW	https://github.com/MWisBest/android_external_dnsmasq
+https://github.com/CyanogenMod/android_external_dnsmasq ****
+91ffed9 : Aliasing fixes. <MWisBest> 1 year, 6 months ago
+ 
+**** https://github.com/cmRemiX/android_frameworks_av
+origin	git@github.com:cmRemiX/android_frameworks_av.git ****
+f4bc441 : various: Fix strict aliasing violations. <Kyle Repinski> 3 months ago
+b5e5224 : nuplayer: Render video frames after audio is rendered <Surajit Podder> 11 days ago
+f59d5d9 : NuPlayer : Added flag to know if Audio rendering has started <Preetam Singh Ranawat> 11 days ago
+5d33e44 : nuplayer: Write the partial aggregated buffer to the decoder <Preetam Singh Ranawat> 11 days ago
+ 
+**** https://github.com/cmRemiX/android_frameworks_base
+origin	git@github.com:cmRemiX/android_frameworks_base.git ****
+62ba65a : Themes: Make resolver list fully themeable <Thyrus11> 6 days ago
+7475089 : Revert "Hide msim 'no-sim' icons" <Adnan Begovic> 32 hours ago
+2112852 : SystemUI: add visualizer to lock screen <Roman Birg> 7 weeks ago
+9bfc16c : Clean up Javadocs for UEventObserver <Valter Strods> 6 months ago
+58bd010 : Frameworks: cmremix up sounds and update (1/2) <ZION959> 2 hours ago
+9b2a495 :  Base: SlimPie (1/2) <Dragon> 44 minutes ago
+af7eebb : Show carrier label / custom & change color Use Statusbar clock style instead <ZION959> 6 hours ago
+5cdaafc : Detect status bar carrier state when theme change. <FusionSP> 6 hours ago
+73b5895 : Materialize toast frames <Hernán Castañon Álvarez> 11 days ago
+5cffa02 : Themes: Enhanced theming capabilities [1/3] <Clark Scheff> 8 days ago
+0ca29fb : Avert duplicating translation in drawing a background drawable <Dohyun Lee> 9 weeks ago
+b6eaf62 : Revert "WindowManager: Toast message is not visible in some scenarios" <Pradosh Das> 6 weeks ago
+346b323 : Add USB Tether Tile (2/2) <BestPig> 23 hours ago
+c522212 : Avoid duplicate call to onLoadFinished() <Romain Vimont (®om)> 1 year, 3 months ago
+b0c40a6 : Avoid useless fadeOut anim for non-seen scrollbar <Shuo Gao> 8 months ago
+5ad75fe : FWB: Hide network activity arrows (1/2) <XXMrHyde> 25 hours ago
+d76dbea : Themes: Use rounded rect for heads up notification <Clark Scheff> 3 days ago
+14765e3 : Strings improvements <Michael Bestas> 2 days ago
+bbdbc72 : ScreenRecorder: Fix typo on max screen recording <Janson Kang> 2 days ago
+f50f449 : SystemUI: Add permissions for reboot/recovery <Janson Kang> 2 days ago
+2c947a5 : Avoid possible memory leaks by ensuring stream closures <JBirdVegas> 2 years, 2 months ago
+d66ef5a : frameworks/base: Fix various aliasing violations <Bernhard Rosenkraenzer> 1 year, 7 months ago
+e79eddf : AndroidRuntime: reduce logcat debug spam <nuclearmistake> 10 months ago
+ddc177a : Memorize memory class lookup methods <fusionjack> 3 months ago
+15eaca8 : Remove some crufty "core" tests. <Narayan Kamath> 3 months ago
+adc264c : Reduce log verbosity: Don't spam logcat <fusionjack> 9 months ago
+7815f2c : frameworks: squash of leak & race fixes <liquid0624> 1 year, 3 months ago
+bbdfaa0 : Fix DhcpResults.setDomain() and StaticIpConfiguration.toLinkProperties() <Paul Jensen> 4 months ago
+71b5d39 : Add + code handling logic for SMS Global Roaming <sohryun.shin> 7 weeks ago
+f4bc2a5 : Exposing more hardcoded colors Thanks @nicholaschum for pointing them out. <Shaun Eaton> 3 days ago
+b74bc46 : NotificationTile: Simple mode ring/vibrate/priority/silent <fusionjack> 3 days ago
+4249daa : NotificationsTile: Remove quick collapse <Janson Kang> 3 days ago
+02a5389 : ThemeService: Setupwizard has a new package <cretin45> 4 days ago
+f57969a : Recents long press: add pluggable implementation <Nextbit> 3 days ago
+0ed6215 : PackageManager: Add and protect configuration APIs for pre-launch checks <Nextbit> 3 weeks ago
+f9283bd : Provide non-interactive APIs to BackupManagerService <Nextbit> 3 days ago
+842c4fa : Support full size application screenshots <Nextbit> 4 weeks ago
+ad29455 : Update CONTROL_KEYGUARD to protection to signature|system <Nextbit> 2 weeks ago
+0d0135b : Update SET_ACTIVITY_WATCHER protection to signature|system <Nextbit> 5 months ago
+38f6183 : SystemUI: Check if a task's group is null prior to TaskGrouping#isFrontMostTask. <Adnan Begovic> 7 days ago
+e362d81 : Show carrier label / custom & change color [1/2] <martincz> 25 hours ago
+ 
+**** https://github.com/CyanogenMod/android_frameworks_ex
+mw	https://github.com/MWisBest/android_frameworks_ex ****
+de27029 : Fix strict aliasing violation. <Kyle Repinski> 3 months ago
+ 
+**** https://github.com/CyanogenMod/android_frameworks_minikin ****
+c5d47d1 : Revert "Move coverage bitmap from FontCollection to FontFamily" <Steve Kondik> 10 hours ago
+ 
+**** https://github.com/cmRemiX/android_frameworks_opt_telephony
+origin	git@github.com:cmRemiX/android_frameworks_opt_telephony.git ****
+5bcb491 : SMSDispatcher: Add option for sending pseudo-multipart SMSes <Mike Kasick> 5 days ago
+ 
+**** https://github.com/CyanogenMod/android_frameworks_wilhelm
+mw	https://github.com/MWisBest/android_frameworks_wilhelm ****
+d98cdd8 : Fix strict aliasing violations. <Kyle Repinski> 3 months ago
+ 
+**** https://github.com/CyanogenMod/android_hardware_qcom_audio ****
+9a02eaf : msm8916: set source on adev_open_input_stream <Scott Mertz> 2 days ago
+ 
+**** https://github.com/CyanogenMod/android_hardware_qcom_audio ****
+1778529 : hal: Shush some debug logging <Steve Kondik> 2 days ago
+d7a9b08 : audio: Fix for clip skip issue during SSR <Dhanalakshmi Siddani> 9 weeks ago
+28f1e41 : hal: Enhance compress offload logging <Sidipotu Ashok> 1 year, 1 month ago
+ 
+**** https://github.com/CyanogenMod/android_hardware_qcom_media ****
+02765cf : mm-video-v4l2: vidc: vdec: handle codec config ETB's properly <Pushkaraj Patil> 5 weeks ago
+bd8c3b3 : mm-video-v4l2: vdec: insert timestamps qeued by client in TS queue <Praveen Chavan> 3 months ago
+5680cb8 : mm-video-v4l2: vdec: Always send NC VOPS to the driver <c_sridur> 3 weeks ago
+d8b294d : mm-video: vidc: Adjust timestamp if actual ts < previous ts <Deva Ramasubramanian> 3 months ago
+e43f297 : mm-video-v4l2: vdec: streamoff while freeing first output buffer <Balamurugan Alagarsamy> 2 months ago
+f6f3653 : mm-video-v4l2: vidc: move codec_config buffer counter increment <Pushkaraj Patil> 10 weeks ago
+7fc90f9 : mm-video-v4l2: vidc: move pending flush sem release in async thread <Pushkaraj Patil> 3 months ago
+ 
+**** https://github.com/CyanogenMod/android_hardware_ti_wpan ****
+b898c29 : uim: Disable verbose debugging <Michael Bestas> 10 months ago
+ 
+**** Faux_Shamu	https://github.com/faux123/Shamu
+Flar2_Shamu	https://github.com/flar2/shamu
+Francisco_Shamu	https://github.com/franciscofranco/Shamu
+Slayher	https://github.com/slayher/android_kernel_samsung_trlte
+friedrich420	https://github.com/friedrich420/Note4-TMO-AELKernel
+https://github.com/cmRemiX/android_kernel_samsung_trlte
+origin	git@github.com:cmRemiX/android_kernel_samsung_trlte.git
+upstream	https://github.com/CyanogenMod/android_kernel_samsung_trlte.git ****
+6c29e9b : cpufreq: interactive: don't scale up if load is <= 5%, it's not worth it <franciscofranco> 8 weeks ago
+421ae15 : cpufreq: interactive: Record hispeed_validated_time in timer function <Junjie Wu> 3 months ago
+243b944 : cpufreq: interactive: Squash latest caf interactive commits without the HMP stuff <ZION959> 12 hours ago
+893660c : cpufreq: interactive: Remove unnecessary cpu_online() check <Viresh Kumar> 1 year, 9 months ago
+7b876bc : sound/soc/codecs: add TOMTOM_A_CDC_RX8 Sound Control: 3.6 [fauxsound] <Pavel> 4 weeks ago
+d7fc885 : Enable last_kmsg and increase log buffer shift plus add pr_alert when last_kmsg is not initialized <ZION959> 22 hours ago
+61790d4 : qcom-cpufreq: limit min and max cpu frequencies msm-sleeper: limit max freq when screen is off (flar2) <ZION959> 22 hours ago
+5b9c5f9 : cpufreq: cpu-boost: we can hit a small performance loss by not queuing input works less than 150ms apart when our default input work duration is only 40ms, so use that 40ms as a magic value instead of the 150ms minimum interval. <franciscofranco> 5 months ago
+5d734a5 : cpufreq: cpu-boost: don't boost migrations with load below the threshold Even if we don't use load_based_syncs (there seems to be a bug that make min_freq stuck at random frequencies) we can prevent this feature to boost the target cpu if the task load is below the migration threshold. We might save some mA down the road with this. <Pavel> 8 weeks ago
+d6a1a18 : Interactive Governor: Drop the one from Note 4 source because it sucks- Use the older version from Nexus 6 <friedrich420> 7 weeks ago
+0e8ef06 : Force Fast Charge v1.2 [Yank555.lu] <ZION959> 24 hours ago
+b03d432 : DriveDroid Patch <friedrich420> 4 months ago
+9ea717a : network speed tweak [ch33kybutt] <friedrich420> 7 weeks ago
+8eebacf : SView Cover Bypass Hack: allow user to override S-View bypass [twistedumbrella] <friedrich420> 8 weeks ago
+22ddcdb : SView Cover Bypass Hack: Initial Implementation [twistedumbrella] <friedrich420> 8 weeks ago
+5887b99 : Implement panel color control [twistedumbrella and ktoonsez] <friedrich420> 3 months ago
+1be87b9 : Stereo Call Recording Support <friedrich420> 4 months ago
+f2bd50b : USB Keyboard/Mouse Hack baby <friedrich420> 4 months ago
+0d3f6db : leds: add LED userspace current control <TwistedUmbrella> 3 months ago
+e87467a : Make the kernel permissive [thank you @chenglu] <friedrich420> 4 months ago
+191595a : Bring up kgsl inline with caf LA.BF.2.1_rb1.10 Squashed commit of the following: <Tony Layher> 5 weeks ago
+097d3ed : ASoC: msm: qdsp6v2: Fix asm bitwidth for next track in gapless mode (fix) <Steve Kondik> 3 weeks ago
+d26af24 : ASoC: msm: qdsp6v2: fix callback handling of removing silence cmds <Fred Oh> 6 weeks ago
+9fbbd3f : ASoC: msm: qdsp6v2: add support for any number of ASM buffers <Banajit Goswami> 7 weeks ago
+5f1162e : asoc: msm: Always send correct bitwidth to backend <Steve Kondik> 2 years, 7 months ago
+ 
+**** origin	git@github.com:cmRemiX/android_packages_apps_Mms-caf.git ****
+92a13ba : Fix merge derp. <Danny Baumann> 2 days ago
+9ea44ef : Cleanup. <Danny Baumann> 4 weeks ago
+e7a8dba : Mms: Set untranslatable <Tamás Tóth> 3 days ago
+ 
+**** https://github.com/cmRemiX/android_packages_apps_Settings
+origin	git@github.com:cmRemiX/android_packages_apps_Settings.git ****
+cdb1e64 : Settings: SlimPie (2/2) Implement SlimPie for lp5.0 ported from kitkat. <Dragon> 2 hours ago
+489f48f : organized lockscreen settings <ZION959> 8 hours ago
+98c0d37 : Add USB Tether Tile (1/2) <Beeko> 23 hours ago
+722d694 : Settings: use switch preference for Ambient Display <ZION959> 24 hours ago
+9d40180 :  Settings: set volume wake dependency in code <Roman Birg> 25 hours ago
+0c7d3a6 : Settings: LT translations <Frant1c> 9 days ago
+c246c81 : Profiles: fix a ClassCastException <Altaf-Mahdi> 4 days ago
+704d49d : Settings: Clean up code style in ButtonSettings <Adnan Begovic> 3 days ago
+d85e4eb : Settings : Improve multi-sim data configuration <Danesh M> 9 days ago
+6fd7ba3 : Fix build <apascual89> 3 days ago
+d575e9d : Settings: ButtonSettings: Introduce recents long press action <Nextbit> 3 days ago
+8cd009b : Settings: Show ringtone per sim for multi sim device <Adnan Begovic> 3 days ago
+d0d237c : Settings: add cmremix center icons <ZION959> 3 days ago
+4b8200a : Show carrier label / custom & change color [2/2] <martincz> 25 hours ago
+ 
+**** origin	git@github.com:cmRemiX/android_packages_apps_ThemeChooser.git ****
+3712d15 : Themes: Enhanced theming capabilities [3/3] <d34d> 2 days ago
+ 
+**** https://github.com/cmRemiX/android_packages_providers_MediaProvider ****
+a1b71b0 : MediaProvider: Avoid null pointer exceptions inside getCompressedAlbumArt <Cristoforo Cataldo> 7 weeks ago
+8855cbe : Automatic translation import <Michael Bestas> 2 weeks ago
+ 
+**** https://github.com/CyanogenMod/android_packages_providers_ThemesProvider ****
+a62acf1 : close more cursors... <Scott Mertz> 2 days ago
+638c805 : Themes: Enhanced theming capabilities [2/3] <Clark Scheff> 7 days ago
+ 
+**** https://github.com/cmRemiX/android_system_core
+origin	git@github.com:cmRemiX/android_system_core.git ****
+542756d : healthd: charger: Make battery capacity in charging animation opt-in <Michael Bestas> 2 weeks ago
+36c824d : fixed -error=maybe-uninitialized <ZION959> 27 hours ago
+ 
+**** origin	git@github.com:cmRemiX/android_system_vold.git ****
+08daade : Fix memory leak in upgrade_crypt_ftr <Henrik Baard> 3 weeks ago
+ 
+**** https://github.com/CyanogenMod/android_vendor_cm ****
+6b12513 : More Reliance (rcomnet) updates <Abhisek Devkota> 29 hours ago
+a26b50d : Prioritize Airtel GPRS over Airtel Live in India. <Adnan> 2 months ago
+ 
+**** https://github.com/cmRemiX/android_vendor_cmremix
+origin	git@github.com:cmRemiX/android_vendor_cmremix.git ****
+681e1de : test file name zip for cmremixupdater <ZION959> 83 minutes ago
+0606c39 : disable FLOOP_NEST_OPTIMIZE <ZION959> 7 hours ago
+0f0a44f : build cmremix 9.9 <ZION959> 9 hours ago
+238faec : FLOOP_NEST_OPTIMIZE := true <ZION959> 9 hours ago
+4f12781 : Update SuperSU to 2.46 <ZION959> 9 hours ago
+042ed8b : Enable call recording in US + Romania <DHOMD> 9 days ago
+1de5022 : more libs from art >> disable Strict aliasing <ZION959> 22 hours ago
+83dfcd2 : ENABLE PTHREAD Option <ZION959> 2 days ago
+e17127e : sabermod config:  include pthread in build flag options. <Paul Beeler> 2 days ago
+2d4f692 : sm.mk: Cleanup -O3 <Paul Beeler> 2 days ago
+7cfeb9d : Add list to disable -mthumb-interwork <Paul Beeler> 2 days ago
+ 
+**** TheMuppets	https://github.com/TheMuppets/proprietary_vendor_samsung
+gekkehenkie11	https://github.com/gekkehenkie11/proprietary_vendor_samsung
+https://github.com/cmRemiX/proprietary_vendor_samsung
+origin	git@github.com:cmRemiX/proprietary_vendor_samsung.git ****
+2710ab2 : trlte-common: Remove liboemcrypto.so <slayher> 27 hours ago
+d3fc6db : Initial trltexx (Note 4 910F) setup <gekkehenkie11> 3 days ago
+ 
