@@ -1,0 +1,67 @@
+
+**** https://github.com/cmRemiX/android_build
+origin	git@github.com:cmRemiX/android_build.git ****
+d2d0f11 : Build: cmRemiX up sounds and update (2/2) <Lars Greiss> 4 hours ago
+0701bdc : Kill Bloat with Fire! <ZION959> 13 hours ago
+cf7e7e2 : Remove MOAR Bloat <Chet Kener> 3 months ago
+10ceacd : Makefile: OTA File by Date <Chet Kener> 3 months ago
+fc5e027 : Add F2FS Compatibility <Chet Kener> 3 months ago
+09172a4 : Remove Default Combos <Chet Kener> 4 months ago
+03b31ea : Unsecure <Chet Kener> 4 months ago
+586730a : Do Not Build QuickSearchBox <Chet Kener> 4 months ago
+506a8c8 : Allow Prebuilt APKs <Chet Kener> 4 months ago
+f184a71 : Build Launcher3 instead of 2 <Chet Kener> 4 months ago
+11851c1 : Build Stk and CellBroadcastReceiver <Chet Kener> 4 months ago
+791ed48 : Remove Annoying Goldfish Stuff <Chet Kener> 4 months ago
+76b9620 : Lollipop Audio Only <Chet Kener> 4 months ago
+dfb0171 : Do Not Build Recovery Or Use it <Chet Kener> 3 months ago
+7d8b54d : armv7-a: More Specific Tunings per CPU <Chet Kener> 14 hours ago
+97c010e : Eng: Include in user build filter <Chet Kener> 5 weeks ago
+1130dd9 : Remove ro.kernel.android.checkjni <Chet Kener> 5 weeks ago
+90b1d80 : Remove Debug from Eng <Chet Kener> 5 weeks ago
+0dfb06f : Do not build test stuff for eng builds <Chet Kener> 5 weeks ago
+256b344 : Do Not Odex Eng Builds <Chet Kener> 5 weeks ago
+52e5615 : Mock Location should be off! <Chet Kener> 5 weeks ago
+eac51ab : repopick: Always expand paths to the repo executable. <fattire> 11 days ago
+fbd473d : build: add pthread to dumvar build info <ZION959> 2 days ago
+c37ec2b : Add Global posix thread aka pthread Support (1/2) <Paul Beeler> 2 days ago
+7bd7446 : arm: compile all thumb with -mthumb-interwork and cleanup -O3 <Paul Beeler> 2 days ago
+cf805d8 : updater-script: Format system before installing ROM <fusionjack> 3 months ago
+bd1ed72 : Add ro.cmremix.model for OTA purposes <kantjer> 4 days ago
+a3a8068 : Add ro.cmremix.device for OTA porpuses <Josue Rivera> 4 days ago
+fd37525 : Revert "Revert "build: Handle custom boot images properly"" <Brint E. Kriebel> 4 days ago
+08009ce : Revert "build: Handle custom boot images properly" <Brint E. Kriebel> 6 days ago
+dc52ef4 : Revert: Do not use mkf2fsuserimg.sh if we have two fs in fstab, for example: <ZION959> 2 weeks ago
+0278b4b : no need this settings <ZION959> 3 weeks ago
+0abe0a2 : arm: add support for BoardConfig to append CFLAG Defining BOARD_GLOBAL_CFLAGS from BoardConfig will add a global CFLAG to be used with the entire ROM compilation <arter97> 3 weeks ago
+1b214b1 : Add Bionic to Nest Optimization List <Chet Kener> 3 weeks ago
+963d175 : List Art Modules in nest optimization <Chet Kener> 3 weeks ago
+2278e78 : gcconly: Change -floop-nest-optimize to enable by module <Chet Kener> 3 weeks ago
+be55618 : Fix up the recovery.fstab for adv recovery <nemith> 3 weeks ago
+142f6c0 : Remove the recovery resources <Lokesh Chamane> 3 weeks ago
+7d1fc26 : Build: Changelog (3/3) <David Viteri> 3 weeks ago
+5765abe : build: instroduce GNU11 Modular (Pbeeler) and fixed LTO <ZION959> 4 weeks ago
+4255357 : arm neon: unbreak <Paul Beeler> 4 weeks ago
+f81458b : arm neon: denver: <Paul Beeler> 4 weeks ago
+ebe5395 : arm neon: Strip TARGET_CPU_VARIANT then export it to the kernel. <Paul Beeler> 4 weeks ago
+1ac9dce : Fix annoying issue with clang not understanding -mfpu=neon-vfpv4 <Paul Beeler> 4 weeks ago
+65bfdac : build: change O3 OPTIMIZATIONS <ZION959> 4 weeks ago
+04f4a0d : Don't stop if JDK version doesn't match <SferaDev> 4 weeks ago
+2d9a379 : kernel: Add custom toolchain for kernel build again after rebase <ZION959> 4 weeks ago
+9cb984a : add and removed various optimzization settings <ZION959> 5 weeks ago
+916e691 : Move Strict flags and disable modules lists out of build (1/2) <ZION959> 5 weeks ago
+54ffbc3 : O3: Only filter arm: Only arm uses thumb. <Paul Beeler> 5 weeks ago
+ 
+**** https://github.com/cmRemiX/android_frameworks_base
+origin	git@github.com:cmRemiX/android_frameworks_base.git ****
+a27334d : Themes: Make resolver list fully themeable <Thyrus11> 6 days ago
+dce5ec0 : Revert "Hide msim 'no-sim' icons" <Adnan Begovic> 34 hours ago
+3e3e265 : SystemUI: add visualizer to lock screen <Roman Birg> 7 weeks ago
+7e0dc7d : Clean up Javadocs for UEventObserver <Valter Strods> 6 months ago
+454504d : Frameworks: cmremix up sounds and update (1/2) <ZION959> 4 hours ago
+ 
+**** https://github.com/cmRemiX/android_vendor_cmremix
+origin	git@github.com:cmRemiX/android_vendor_cmremix.git ****
+68a1ca4 : test file name zip for cmremixupdater <ZION959> 4 hours ago
+943598c : build cmremix 9.9 <ZION959> 11 hours ago
+ 

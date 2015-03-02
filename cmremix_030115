@@ -1,0 +1,30 @@
+
+**** origin	https://github.com/cmRemiX/android_bionic.git ****
+9d6023b : use clang for bionic if "USE_CLANG_QCOM = true" <Your Name> 12 days ago
+ 
+**** https://github.com/cmRemiX/cmRemiX ****
+c0cb535 : track qcom clang <ZION959> 23 hours ago
+ 
+**** https://github.com/cmRemiX/android_frameworks_base
+origin	git@github.com:cmRemiX/android_frameworks_base.git ****
+0b29859 : FWB: Second Clock (1/2) <neighbors28> 82 minutes ago
+78c9f9c : QSColor: Improvements (1/2) <Davor Bertovic> 34 minutes ago
+9473041 : Quick settings customizations, (1/2): - Change accent color for SystemUI to deep teal 500, (ff009688) - Custom background color - Custom icon color - Custom text color,   (this won`t change any text which is using the accent color) <XXMrHyde> 37 minutes ago
+726f5e4 : systemui: animate clear recents exit <Jorge Ruesga> 2 hours ago
+ 
+**** https://github.com/CyanogenMod/android_packages_apps_LockClock ****
+9b35b16 : cLock: update to a new material icon <Jorge Ruesga> 2 days ago
+ 
+**** https://github.com/cmRemiX/android_packages_apps_Settings
+origin	git@github.com:cmRemiX/android_packages_apps_Settings.git ****
+662c825 : Settings: Second Clock (2/2) <LorDClockaN> 61 minutes ago
+b653a0a : QSColor: Improvements - transparent shade (2/2) <LorDClockaN> 73 minutes ago
+fedadab : Quick settings customizations, (2/2): (useername) <ZION959> 75 minutes ago
+ 
+**** https://github.com/cmRemiX/android_vendor_cmremix
+origin	git@github.com:cmRemiX/android_vendor_cmremix.git ****
+bb9ea5b : vendor: update ViPER4Android v2.4.4.0 <ZION959> 21 minutes ago
+60366d5 : build cmRemiX v10.0 <ZION959> 23 hours ago
+072f75b : add zion kernel needed boot files <ZION959> 3 hours ago
+ee98f60 : vendor: USE_CLANG_QCOM := true <ZION959> 26 hours ago
+ 

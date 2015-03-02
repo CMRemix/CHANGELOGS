@@ -1,0 +1,191 @@
+
+**** https://github.com/cmRemiX/android_bootable_recovery
+origin	git@github.com:cmRemiX/android_bootable_recovery.git ****
+1a147a4 : Properly initialize Archive_Current_Size to 0 in twrpTar <Ethan Yonker> 35 hours ago
+e057c2b : GUI: Restore text input field for restore decrypt <Matt Mower> 3 days ago
+ 
+**** https://github.com/cmRemiX/android_build
+origin	git@github.com:cmRemiX/android_build.git ****
+b68be56 : Recovery:  flash Viper4Android [1/2] <ZION959> 68 minutes ago
+34d00cb : Enable ADB by default when ro.adb.secure is not 1 <Scott Mertz> 2 days ago
+323ede1 : Qcom Clang v3.5 Optimization (MusterMaxMueller) <ZION959> 26 hours ago
+5e20b87 : build slim launcher again for more testing <ZION959> 21 hours ago
+ 
+**** https://github.com/cmRemiX/cmRemiX ****
+baaf6c5 : track SlimLauncher again <ZION959> 25 hours ago
+ea37917 : add clang libs <ZION959> 26 hours ago
+8ca765a : Manifest: Alphabetize the manifest <NBruderman> 5 weeks ago
+ 
+**** https://github.com/CyanogenMod/android_external_whispersystems_WhisperPush ****
+5b62782 : Automatic translation import <Michael Bestas> 29 hours ago
+ 
+**** https://github.com/cmRemiX/android_frameworks_base
+origin	git@github.com:cmRemiX/android_frameworks_base.git ****
+4e36cb1 : Frameworks: I like it fast -25 <ZION959> 3 hours ago
+6bdef50 : SystemUI: visualizer tile improvements <Roman Birg> 2 days ago
+4b3ae5f : Revert "SystemUI: add visualizer to lock screen" <ZION959> 3 hours ago
+04f76ba : Add left QS quick pulldown & fix multiuser (1/2) <Michael Bestas> 23 hours ago
+1fede90 : Revert Slim quick pulldown <ZION959> 23 hours ago
+d588aa7 : BatteryStats: Adds an additional condition to avoid ArrayIndexOutOfBounds. <Ruchi Kandoi> 8 months ago
+f9269ad : NullPointerException in UsbStorageActivity <László Dávid> 2 years, 4 months ago
+406c954 : Bad month value in DatePicker in Calendar Mode <You Kim> 3 days ago
+307f2b4 : Automatic translation import <Michael Bestas> 28 hours ago
+e6e226f : ScreenOrientationTile : Add instanceof checks for AnimatedVectorDrawables <Danesh M> 32 hours ago
+8268610 : Themes: Check if updateConfiguration should be called <Clark Scheff> 2 days ago
+c74206d : SystemUI: fix flashlight tile disappearing breifly <Roman Birg> 31 hours ago
+2abfb79 : Cleanup deprecated settings <Michael Bestas> 25 hours ago
+11de4ef : Settings: Don't attempt to forward writes from System -> Global. <Davis Mosenkovs> 2 days ago
+0a36099 : IMS: Add emergency call failures <Suresh Koleti> 4 weeks ago
+1c0eb7a : IMS: Add FDN call failure <Suresh Koleti> 3 weeks ago
+e80a338 : Settings: Don't attempt to forward writes from System -> Secure. <Adnan> 2 days ago
+ 
+**** https://github.com/CyanogenMod/android_frameworks_opt_net_ims ****
+e5b4efb : IMS:3-way Conf Success but Active call refer fails <Anju Mathapati> 5 weeks ago
+ 
+**** https://github.com/cmRemiX/android_frameworks_opt_telephony
+origin	git@github.com:cmRemiX/android_frameworks_opt_telephony.git ****
+ee9728f : Revert "Send external state again after updating siminfo table" <Preeti Ahuja> 8 weeks ago
+ 
+**** https://github.com/CyanogenMod/android_hardware_ti_omap4 ****
+209e176 : camera: fix front-facing cam on Motorola Omap4 <Michael Gernoth> 2 days ago
+ 
+**** Faux_Shamu	https://github.com/faux123/Shamu
+Flar2_Shamu	https://github.com/flar2/shamu
+Francisco_Shamu	https://github.com/franciscofranco/Shamu
+Slayher	https://github.com/slayher/android_kernel_samsung_trlte
+Yank555_shamu	https://github.com/yank555-lu/Shamu-3.10-lollipop.git
+friedrich420	https://github.com/friedrich420/Note4-TMO-AELKernel
+https://github.com/cmRemiX/android_kernel_samsung_trlte
+origin	git@github.com:cmRemiX/android_kernel_samsung_trlte.git
+upstream	https://github.com/CyanogenMod/android_kernel_samsung_trlte.git ****
+ea01b40 : update defconfig <ZION959> 23 hours ago
+464ef05 : build cmremix base v1.3 <ZION959> 25 hours ago
+91e98b5 : krait-regulator.c: set default to 65 <Paul Reioux> 4 weeks ago
+f69c223 : drivers/cpufreq/cpu-boost: Allow input boost code to be excludable in defconfig <yank555-lu> 2 months ago
+b1df2a2 : binfmt_elf.c: use get_random_int() to fix entropy depleting (Jeff Liu ) <yank555-lu> 1 year, 1 month ago
+1100142 : block: fiops ioscheduler - squashed commit (all credits for forward port to faux123) <yank555-lu> 9 weeks ago
+3d9340e : gpu: msm: for higher priority you want to use nice level of -7 <imoseyon> 3 months ago
+e695aca : fs: sync: Asynchronous Fsync from HTC <imoseyon> 3 months ago
+b08eec1 : cpufreq: force cpuN policy to match cpu0 when setting min freq <imoseyon> 3 months ago
+44af2be : cpufreq: force cpuN policy to match cpu0 when changing freq or gov <imoseyon> 3 months ago
+1f1649d : intelli_plug: intelligent hotplug cpu driver with eco mode - squashed committ to v3.8 (faux123) <yank555-lu> 2 months ago
+09dc579 : Simple GPU Algorithm: Initial coding for devfreq based Adreno Drivers <ZION959> 25 hours ago
+b32d612 : PM: devfreq: Fix simple_ondemand crashing on startup <myfluxi> 1 year, 1 month ago
+87ddd8d : cpufreq: CPU max. hardlimit v2.2 (Yank555.lu) <ZION959> 25 hours ago
+833e692 : cpufreq: CPU max. hardlimit v2.1 (Yank555.lu) <ZION959> 25 hours ago
+2b484e6 : kernel/power/powersuspend: new PM kernel driver for Android w/o early_suspend v1.7 (faux123/Yank555.lu) <yank555-lu> 6 days ago
+a9f0096 : kernel/power/powersuspend: new PM kernel driver for Android w/o early_suspend v1.6 (faux123/Yank555.lu) <yank555-lu> 9 weeks ago
+392639b : kernel/power/powersuspend: new PM kernel driver for Android w/o early_suspend v1.5 (faux123/Yank555.lu) <ZION959> 25 hours ago
+ 
+**** https://github.com/CyanogenMod/android_packages_apps_AudioFX ****
+866d8dc : Automatic translation import <Michael Bestas> 29 hours ago
+ 
+**** https://github.com/CyanogenMod/android_packages_apps_Bluetooth ****
+4e9c263 : Automatic translation import <Michael Bestas> 29 hours ago
+ 
+**** https://github.com/CyanogenMod/android_packages_apps_BluetoothExt ****
+e07510f : Automatic translation import <Michael Bestas> 29 hours ago
+ 
+**** https://github.com/CyanogenMod/android_packages_apps_CMFileManager ****
+5da5e65 : Automatic translation import <Michael Bestas> 29 hours ago
+f54b7a6 : cmfm: add support for init navigation in a concrete folder <Jorge Ruesga> 2 days ago
+39bb829 : cmfm: add support for Intent.EXTRA_MIME_TYPES <Jorge Ruesga> 3 days ago
+ 
+**** https://github.com/CyanogenMod/android_packages_apps_Calculator ****
+ec0062d : Automatic translation import <Michael Bestas> 29 hours ago
+ 
+**** https://github.com/CyanogenMod/android_packages_apps_Calendar ****
+82f0c0d : Automatic translation import <Michael Bestas> 29 hours ago
+ 
+**** https://github.com/CyanogenMod/android_packages_apps_CellBroadcastReceiver ****
+76db2ff : Automatic translation import <Michael Bestas> 29 hours ago
+ 
+**** https://github.com/CyanogenMod/android_packages_apps_Contacts ****
+ba67be5 : Automatic translation import <Michael Bestas> 29 hours ago
+ 
+**** https://github.com/CyanogenMod/android_packages_apps_ContactsCommon ****
+873a41e : Automatic translation import <Michael Bestas> 29 hours ago
+ 
+**** https://github.com/CyanogenMod/android_packages_apps_DeskClock ****
+0cb4304 : Automatic translation import <Michael Bestas> 29 hours ago
+ 
+**** https://github.com/CyanogenMod/android_packages_apps_Eleven ****
+7f0c9ed : Automatic translation import <Michael Bestas> 29 hours ago
+ 
+**** DU	https://github.com/DirtyUnicorns/android_packages_apps_Gallery2
+https://github.com/CyanogenMod/android_packages_apps_Gallery2 ****
+607ab2b : Moar materialize changes <Alex Cruz> 3 weeks ago
+f1fa7c9 : Automatic translation import <Michael Bestas> 29 hours ago
+ 
+**** https://github.com/CyanogenMod/android_packages_apps_LockClock ****
+42ac023 : Automatic translation import <Michael Bestas> 29 hours ago
+ 
+**** https://github.com/CyanogenMod/android_packages_apps_PhoneCommon ****
+002b947 : Automatic translation import <Michael Bestas> 29 hours ago
+ 
+**** https://github.com/cmRemiX/android_packages_apps_Settings
+origin	git@github.com:cmRemiX/android_packages_apps_Settings.git ****
+e701835 : derp <ZION959> 3 hours ago
+1834e7f : Add left QS quick pulldown & fix multiuser (2/2) <Michael Bestas> 21 hours ago
+feb4c85 : Revert Slim quick pulldown <ZION959> 23 hours ago
+e341249 : lets test this value for animation <ZION959> 23 hours ago
+aae852e : Settings: Update setting constants. <Adnan> 2 days ago
+5111225 : Add cmRemiX Utils <Lokesh Chamane> 2 days ago
+3e9b3fd : organized lockscreen settings <ZION959> 2 days ago
+e1dbd9a : Add USB Tether Tile (1/2) <Beeko> 3 days ago
+0719e64 : Settings: use switch preference for Ambient Display <Lokesh Chamane> 2 days ago
+ 
+**** https://github.com/CyanogenMod/android_packages_apps_SoundRecorder ****
+9834c04 : Automatic translation import <Michael Bestas> 29 hours ago
+ 
+**** https://github.com/CyanogenMod/android_packages_apps_Stk ****
+d1d8569 : Automatic translation import <Michael Bestas> 29 hours ago
+ 
+**** https://github.com/CyanogenMod/android_packages_apps_Terminal ****
+55e5a0b : Automatic translation import <Michael Bestas> 29 hours ago
+ 
+**** https://github.com/CyanogenMod/android_packages_providers_DownloadProvider ****
+53bc753 : Automatic translation import <Michael Bestas> 29 hours ago
+ 
+**** https://github.com/CyanogenMod/android_packages_providers_ThemesProvider ****
+c1c81b6 : Automatic translation import <Michael Bestas> 29 hours ago
+ 
+**** https://github.com/CyanogenMod/android_packages_services_Mms ****
+9ccbb97 : Automatic translation import <Michael Bestas> 29 hours ago
+ 
+**** https://github.com/cmRemiX/android_packages_services_Telephony
+origin	git@github.com:cmRemiX/android_packages_services_Telephony.git ****
+34ecd4f : Automatic translation import <Michael Bestas> 29 hours ago
+4f4c795 : TeleService: Add all supported network modes <cretin45> 2 days ago
+ 
+**** https://github.com/CyanogenMod/android_packages_wallpapers_Galaxy4 ****
+e069bab : Automatic translation import <Michael Bestas> 29 hours ago
+ 
+**** https://github.com/CyanogenMod/android_packages_wallpapers_PhaseBeam ****
+310cf73 : Automatic translation import <Michael Bestas> 29 hours ago
+ 
+**** https://github.com/CyanogenMod/android_packages_wallpapers_PhotoPhase ****
+c1fea7f : Automatic translation import <Michael Bestas> 29 hours ago
+ 
+**** https://github.com/cmRemiX/android_system_core
+origin	git@github.com:cmRemiX/android_system_core.git ****
+c86e715 : healthd: charger: Make battery capacity in charging animation opt-in <Michael Bestas> 2 weeks ago
+ 
+**** https://github.com/CyanogenMod/android_vendor_cm
+temasek	https://github.com/temasek/android_vendor_cm ****
+96fd8e5 : Enable circle battery & right QS pulldown by default <Michael Bestas> 5 days ago
+54a9c4a : apns-conf: remove default type from all vzw apns <Shareef Ali> 6 weeks ago
+ 
+**** https://github.com/cmRemiX/android_vendor_cmremix
+origin	git@github.com:cmRemiX/android_vendor_cmremix.git ****
+788190d : Revert: test file name zip for cmremixupdater (reverted from commit 68a1ca4f619edc0d36d30c0c4223f2ac56a3d755) <ZION959> 13 minutes ago
+2ef10ac : Vendor: add lenovo camera 3.6.7 <ZION959> 45 minutes ago
+586fb78 : Vendor: flash Viper4Android throught recovery [2/2] <ZION959> 55 minutes ago
+adf456d : vendor: USE_CLANG_QCOM := true <ZION959> 3 hours ago
+ 
+**** TheMuppets	https://github.com/TheMuppets/proprietary_vendor_samsung
+gekkehenkie11	https://github.com/gekkehenkie11/proprietary_vendor_samsung
+https://github.com/cmRemiX/proprietary_vendor_samsung
+origin	git@github.com:cmRemiX/proprietary_vendor_samsung.git ****
+881cd3f : ks01lte: Revert to KK GPS blobs. <Vitalii Kulikov> 9 days ago
+ 
