@@ -1,0 +1,76 @@
+
+**** https://github.com/cmRemiX/android_build
+origin	git@github.com:cmRemiX/android_build.git ****
+5c8c6ce : build: optimizations for devices with low-RAM [1/2] <JoseGalRe> 46 minutes ago
+ 
+**** cmR	https://github.com/cmRemiX/android_device_samsung_trlte-common
+origin	git@github.com:cmRemiX/android_device_samsung_trlte-common.git
+temasek	https://github.com/temasek/android_device_samsung_hlte-common.git
+upstream	https://github.com/CyanogenMod/android_device_samsung_trlte-common.git ****
+3e5ee72 : init.qcom.rc: Stop mpdecision at boot <ZION959> 36 minutes ago
+ 
+**** Origin_bitbucket	git@bitbucket.org:cmRemiX/android_frameworks_base.git
+https://github.com/cmRemiX/android_frameworks_base
+origin	git@github.com:cmRemiX/android_frameworks_base.git ****
+2ed4cac : Map long press of MUTE to KEYCODE_MEDIA_PLAY_PAUSE <Michael Bestas> 4 weeks ago
+6ddd7d4 : systemui: adjust position of clear recents button <Jorge Ruesga> 79 minutes ago
+c0cd4dc : Themes: Fix bootloop when applying theme fonts <David96> 13 days ago
+85f06bf : QS: add Ambient display tile <Altaf-Mahdi> 3 hours ago
+d059559 : QS: update battery saver off and sync drawables <Alexander Westphal> 25 hours ago
+2760fa9 : QS: add a little delay when toggling expanded desktop <Altaf-Mahdi> 26 hours ago
+e8d6029 : SystemUI: long press lock screen lock icon to sleep (1/2) <Altaf-Mahdi> 2 days ago
+ed547ee : QS: fix qs main tiles settings not refreshing tiles <Altaf-Mahdi> 2 days ago
+b07abe7 : base: Direct call (1/4) <martincz> 88 minutes ago
+145fc66 : Call recording encoder/format choice 3/3 <Kryten2k35> 2 hours ago
+facff54 : [1/2] livedisplay: Implement active display adjustment <Steve Kondik> 13 days ago
+6658027 : SystemUI: add visualizer to lock screen <Roman Birg> 8 weeks ago
+d127984 : Themes: Making DocumentsUI fully themeable <Thyrus11> 11 days ago
+cacc2c7 : SystemUI: fix recents ignore last app option <Altaf-Mahdi> 32 hours ago
+cef97dd : SystemUI: hide floating clear all only if were removing all tasks <Altaf-Mahdi> 32 hours ago
+e550aa2 : systemui: never show excluded recent task in recents view <Jorge Ruesga> 4 days ago
+2d14000 : Small update to qs colors from @XXMrHyde <rogersb11> 2 days ago
+f46a0dd : FWB: Greeting label timeout (1/2) <LorDClockaN> 2 hours ago
+a49a6a0 : Status bar greeting [1/2] <Dave Kessler> 2 hours ago
+1e353f0 : Power menu into navring targets <cristianomatos> 2 days ago
+ 
+**** Faux_Shamu	https://github.com/faux123/Shamu
+Flar2_Shamu	https://github.com/flar2/shamu
+Francisco_Shamu	https://github.com/franciscofranco/Shamu
+Slayher	https://github.com/slayher/android_kernel_samsung_trlte
+Yank555_shamu	https://github.com/yank555-lu/Shamu-3.10-lollipop.git
+friedrich420	https://github.com/friedrich420/Note4-TMO-AELKernel
+https://github.com/cmRemiX/android_kernel_samsung_trlte
+origin	git@github.com:cmRemiX/android_kernel_samsung_trlte.git
+upstream	https://github.com/CyanogenMod/android_kernel_samsung_trlte.git ****
+6eb9018 : Intelliplug on by default <Steve Kondik> 13 days ago
+ 
+**** https://github.com/cmRemiX/android_packages_apps_Dialer
+origin	git@github.com:cmRemiX/android_packages_apps_Dialer.git ****
+8c42754 : Enable Call Recording <Janson Kang> 14 hours ago
+e15c976 : Dialer: Direct Call (3/4) <martincz> 55 minutes ago
+84686fd : Call recording encoder/format choice 1/3 <Kryten2k35> 56 minutes ago
+e956149 : Automatic translation import <Michael Bestas> 4 days ago
+ 
+**** origin	git@github.com:cmRemiX/android_packages_apps_Mms-caf.git ****
+e89f7a2 : Mms: Direct Call (4/4) <martincz> 50 minutes ago
+ 
+**** Origin_bitbucket	git@bitbucket.org:cmRemiX/android_packages_apps_settings.git
+https://github.com/cmRemiX/android_packages_apps_Settings
+origin	git@github.com:cmRemiX/android_packages_apps_Settings.git ****
+5fdb8ed : QS: add Ambient display tile * add Ambient display settings activity for long press on tile <Altaf-Mahdi> 2 hours ago
+d07aa47 : Display settings: show enabled/disabled summary for ambient display <Altaf-Mahdi> 2 hours ago
+ac8c041 : Settings: long press lock screen lock icon to sleep (2/2) <Altaf-Mahdi> 3 hours ago
+3a805ea : SQUASH Settings:Smart control center and Direct Call (2/4) <martincz> 63 minutes ago
+cdaf2d4 : [2/2] livedisplay: Add LiveDisplay settings <Steve Kondik> 13 days ago
+239c23d : Settings: don't add inline trigger links to profiles in creation mode <Roman Birg> 27 hours ago
+189e899 : Settings: Greeting label timeout (2/2) PS2:     Use string for suggested greeting PS3:     Fix build - derp <LorDClockaN> 68 minutes ago
+f0dbe70 : Settings: Statusbar greeting (2/2) <Dave Kessler> 73 minutes ago
+ 
+**** https://github.com/cmRemiX/android_packages_services_Telephony
+origin	git@github.com:cmRemiX/android_packages_services_Telephony.git ****
+f851c03 : Call recording encoder/format choice 2/3 Adds a user option between NB AMR (the default) or HE-AAC for the encoding of call recording audio. Also changes the output format of the file appropriately (NB AMR now uses the NB_AMR output format and HE_AAC chooses the MPEG_4 output. File extensions are adjust accordingly as well). This was in reponse to people complaining the quality of call recording audio is poor. It's noticibly better using HE-AAC, but filesizes are larger. <Kryten2k35> 16 minutes ago
+ 
+**** https://github.com/cmRemiX/android_vendor_cmremix
+origin	git@github.com:cmRemiX/android_vendor_cmremix.git ****
+e9956cc : vendor: optimizations for devices with low-RAM [2/2] <José Adolfo Galdámez> 41 minutes ago
+ 

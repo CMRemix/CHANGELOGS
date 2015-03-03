@@ -1,0 +1,39 @@
+
+**** origin	https://github.com/cmRemiX/android_bionic.git ****
+623d2bd : Revert : use clang for bionic if "USE_CLANG_QCOM = true" <ZION959> 6 hours ago
+ 
+**** https://github.com/cmRemiX/android_build
+origin	git@github.com:cmRemiX/android_build.git ****
+2f1f52e : [2/3] CmHardwareService: add cm hardware jar to system server <Scott Mertz> 2 weeks ago
+ 
+**** https://github.com/CyanogenMod/android_device_qcom_sepolicy ****
+ff3d233 : [SQUASH] sepolicy: Fast-forward to latest CAF LA.BF64.1.1-05110 <Rashed Abdel-Tawab> 2 days ago
+ 
+**** https://github.com/cmRemiX/android_frameworks_base
+origin	git@github.com:cmRemiX/android_frameworks_base.git ****
+2d21a9d : Frameworks: Add membar to recents options [1/2] <Dave Kessler> 6 weeks ago
+681ad8f : Add option to hide Bluetooth Icon when disconnected in Status Bar (1/2) <KreAch3R> 13 hours ago
+231f584 : FWB: Second Clock (1/2) <neighbors28> 14 hours ago
+dbbab98 : QSColor: Improvements (1/2) <Davor Bertovic> 14 hours ago
+e6645b2 : Quick settings customizations, (1/2): - Change accent color for SystemUI to deep teal 500, (ff009688) - Custom background color - Custom icon color - Custom text color,   (this won`t change any text which is using the accent color) <XXMrHyde> 15 hours ago
+ 
+**** https://github.com/cmRemiX/android_packages_apps_Settings
+origin	git@github.com:cmRemiX/android_packages_apps_Settings.git ****
+9c33e60 : Settings: Add membar to recents options [2/2] <Dave Kessler> 6 weeks ago
+4428b3b : Settings: fix button backlight brightness and timeout <Altaf-Mahdi> 2 days ago
+62d3874 : Add option to hide Bluetooth Icon when disconnected in Status Bar (2/2) <KreAch3R> 13 hours ago
+9799e5f : settimgs : colors Quick settings customizations move it to top <ZION959> 13 hours ago
+a30f78e : Settings: Second Clock (2/2) Change-Id: I863550e41bc083166b48506ec2d1db2b918fcb5e <LorDClockaN> 14 hours ago
+a938d63 : QSColor: Improvements - transparent shade (2/2) <LorDClockaN> 14 hours ago
+9ce5ad9 : Quick settings customizations, (2/2): (useername) <XXMrHyde> 14 hours ago
+9abd320 : Add left QS quick pulldown & fix multiuser (2/2) <Michael Bestas> 3 days ago
+1fad167 : Revert Slim quick pulldown <ZION959> 3 days ago
+8ea1c40 : lets test this value for animation <ZION959> 3 days ago
+b4e816c : Settings: Update setting constants. <Adnan> 4 days ago
+56f7896 : Add cmRemiX Utils <Lokesh Chamane> 4 days ago
+1754f61 : organized cmremix lockscreen settings <ZION959> 14 hours ago
+ 
+**** https://github.com/cmRemiX/android_vendor_cmremix
+origin	git@github.com:cmRemiX/android_vendor_cmremix.git ****
+d9c79f0 : change cmremix version <ZION959> 3 hours ago
+ 
