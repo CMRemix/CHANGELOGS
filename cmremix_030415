@@ -1,0 +1,179 @@
+
+**** origin	https://github.com/cmRemiX/android_bionic.git ****
+0e825a7 : libc: memcpy_base: Disable opt for certain targets <Raghavendra Prasad Nagaraj> 6 weeks ago
+ 
+**** https://github.com/cmRemiX/android_build
+origin	git@github.com:cmRemiX/android_build.git ****
+75c5cc5 : releasetools: Add bootable image signing <Brint E. Kriebel> 10 days ago
+ 
+**** https://github.com/cmRemiX/cmRemiX ****
+7eaf4e4 : change clang name <ZION959> 31 hours ago
+ 
+**** https://github.com/cmRemiX/android_device_samsung_hlte-common ****
+38836c6 : remove cwm <ZION959> 4 days ago
+38ddde8 : hlte: Enable apps2sd <Janson Kang> 6 months ago
+c92543d : hlte: remove scheduler settings during boot <Janson Kang> 3 months ago
+befbeaa : Enable hardware keys enable/disable through overlay <Janson Kang> 11 months ago
+b848f75 : Hlte-common: Enable home button wake overlay <Janson Kang> 3 months ago
+c36f9f9 : Use 3GB dalvik heap and hwui memory (Originally 2GB) <Janson Kang> 5 months ago
+8c4cf82 : Enable multiusers support <Janson Kang> 3 months ago
+e16b11c : hlte: add L1/L2 cache size parameters optimizations <arter97> 5 weeks ago
+9e43845 : build default cwm <ZION959> 4 days ago
+6b6431f : set to zion mainline defconfig <ZION959> 4 weeks ago
+8ab55a6 : hlte: Enable apps2sd <Janson Kang> 6 months ago
+ 
+**** cmR	https://github.com/cmRemiX/android_device_samsung_trlte-common
+origin	git@github.com:cmRemiX/android_device_samsung_trlte-common.git
+temasek	https://github.com/temasek/android_device_samsung_hlte-common.git
+upstream	https://github.com/CyanogenMod/android_device_samsung_trlte-common.git ****
+3fb2f85 : trlte-common: reorder init script for encrpytion <Tony Layher> 7 days ago
+49d4ade : remove volte overly flags <gekkehenkie11> 7 days ago
+1abebf7 : trlte-common: Stop using MDP for everything. <Tony Layher> 7 days ago
+e2f6a83 : trlte-common: Ensure USB config is loaded. <Tony Layher> 7 days ago
+0335a67 : fix muted audio when rotated <gekkehenkie11> 9 days ago
+ 
+**** https://github.com/CyanogenMod/android_external_bluetooth_bluedroid ****
+f7afaa4 : bluedroid: Add wiimote pairing support <Schischu> 10 months ago
+415bfa7 : bluetooth: a2dp: Rework locking <Ethan Chen> 13 days ago
+54cb1ab : bluetooth: a2dp: Property account pcm.counter <Christopher R. Palmer> 8 days ago
+9585ee5 : bluetooth: a2dp: Remove "congestion" logic <Christopher R. Palmer> 7 days ago
+5a4a29e : bluetooth: a2dp: Don't count generated data when we can't send it <Christopher R. Palmer> 7 days ago
+ 
+**** https://github.com/CyanogenMod/android_external_e2fsprogs ****
+23e9eca : resize: allow static build <M1cha> 3 months ago
+ 
+**** https://github.com/CyanogenMod/android_external_libpng ****
+bf497ca : Restore a width check that was removed from png.c (CVE-2015-0973) <Narayan Kamath> 8 days ago
+0af1582 : Fix buffer overwrite in png_build_index <Henrik Smiding> 2 weeks ago
+54f66be : Fix buffer overflow security vulnerability (CVE-2014-9495) <Henrik Smiding> 13 days ago
+ 
+**** https://github.com/cmRemiX/android_frameworks_av
+origin	git@github.com:cmRemiX/android_frameworks_av.git ****
+79c1aca : libmedia: Fix crash during mediaserver restart <Steve Kondik> 23 hours ago
+99c8319 : mpeg2ts: Add support for parsing HEVC stream in MPEG2 TS container <Apurupa Pattapu> 4 weeks ago
+61b2505 : nuplayer: Fix crash in video only HLS streams <Alexy Joseph> 3 weeks ago
+14bb487 : libmediaplayerservice: update NuPlayer scoreFactory for http:// <Manikanta Sivapala> 3 weeks ago
+bc07960 : audio: Handled openOutput error for Tunnel/LPA Usecase <Pavan Chikkala> 3 weeks ago
+5dee3bc : audio: Set OutputFormat of AudioMixer to PCM16 <Ramjee Singh> 4 weeks ago
+cccb375 : audio: Fix issues during device switch <Pavan Chikkala> 4 weeks ago
+26e81b1 : audio: Fixed mBytesRemaining when partial buffers are sent <Pavan Chikkala> 1 year, 1 month ago
+6acc081 : stagefright: use NuPlayer for http:// <Praveen Chavan> 7 weeks ago
+7cbaf6f : audio: Send USB connection events only for USB accessory <Ramjee Singh> 6 weeks ago
+bc0a8f4 : audio: Added fallback mechanism for Tunnel Mode <Pavan Chikkala> 6 weeks ago
+96eb154 : NuPlayer: Buffering improvements for http progressive playback <Surajit Podder> 9 weeks ago
+17c3787 : libmediaplayerservice: handle PCMoffload to non-offload fallback <Alexy Joseph> 6 weeks ago
+ 
+**** Origin_bitbucket	git@bitbucket.org:cmRemiX/android_frameworks_base.git
+https://github.com/cmRemiX/android_frameworks_base
+origin	git@github.com:cmRemiX/android_frameworks_base.git ****
+b2ffc96 : Themes: Add config change flag for font change <Clark Scheff> 5 days ago
+cc09884 : Themes: Drop timestamp and add change request type <d34d> 32 hours ago
+72eb73b : Themes: Add RequestType to ThemeChangeRequest [1/3] <d34d> 35 hours ago
+2c90b51 : Themes: Use ThemeChangeRequest when resetting theme <d34d> 35 hours ago
+633d4b0 : Themes: Update ThemesContract with install state [1/3] <d34d> 2 days ago
+4d0c96c : Add ability to ignore interruptions while active media playback <Danesh M> 2 weeks ago
+f1e3186 : SystemUi: Fix MSimSignalClusterView padding when no sims inserted. <Adnan> 8 hours ago
+5c20f0f : livedisplay: Implement active display adjustment (patch 17) <Steve Kondik> 2 weeks ago
+ 
+**** https://github.com/cmRemiX/android_frameworks_native
+origin	git@github.com:cmRemiX/android_frameworks_native.git ****
+797b3d7 : DisplayDevice: Backwards compatibility with old EGL <Andrew Dodd> 12 days ago
+1093935 : libgui: squashed update for readding ICS and JB_MR0 support <Steve Kondik> 13 days ago
+86d61b0 : hax: Add back the SURFACE_SKIP_FIRST_DEQUEUE legacy EGL workaround <Ricardo Cerqueira> 13 days ago
+ 
+**** https://github.com/CyanogenMod/android_hardware_libhardware ****
+57bf795 : fix: memory leak <soon1.choi> 3 months ago
+ 
+**** https://github.com/CyanogenMod/android_hardware_qcom_display ****
+9d6655f : ovelray: Tolerate the absense of an RGB pipe <Diogo Ferreira> 5 days ago
+ 
+**** https://github.com/CyanogenMod/android_libcore ****
+971aac2 : Fix incorrect cache key. <You Kim> 7 days ago
+ 
+**** https://github.com/CyanogenMod/android_packages_apps_Browser ****
+fc0a321 : Cleanup code style <Michael Bestas> 11 days ago
+ 
+**** https://github.com/CyanogenMod/android_packages_apps_Calculator ****
+8c03bb6 : Make calculator behavior more predictable <George Hilliard> 10 days ago
+a70bd84 : BASH-25: avoid NPE on Calculator's widget <Marcos Marado> 13 days ago
+ 
+**** https://github.com/cmRemiX/android_packages_apps_Camera2
+origin	git@github.com:cmRemiX/android_packages_apps_Camera2.git ****
+be170a5 : Automatic translation import <Michael Bestas> 5 days ago
+ 
+**** https://github.com/CyanogenMod/android_packages_apps_ContactsCommon ****
+5a934d9 : ContactsCommon: Add PHOTO_ID to contact tile loader projection <emancebo> 2 days ago
+ 
+**** https://github.com/cmRemiX/android_packages_apps_Dialer
+origin	git@github.com:cmRemiX/android_packages_apps_Dialer.git ****
+807e90d : Dialer: switches for checkboxes <eyosen> 8 weeks ago
+ 
+**** https://github.com/cmRemiX/android_packages_apps_InCallUI
+origin	git@github.com:cmRemiX/android_packages_apps_InCallUI.git ****
+34c3a6e : Automatic translation import <Michael Bestas> 5 days ago
+ 
+**** origin	git@github.com:cmRemiX/android_packages_apps_Mms-caf.git ****
+d6d425e : Mms: move mailboxmode classes to the proper location <Jorge Ruesga> 7 days ago
+7292dca : Mms: move mailboxmode classes to the proper location <Jorge Ruesga> 7 days ago
+28a2460 : MSIM fixes. <Danny Baumann> 4 days ago
+008bbf2 : Automatic translation import <Michael Bestas> 5 days ago
+a85081d : Fix crash during delivery delay <Davis Mosenkovs> 5 days ago
+c43a464 : Mms: give sender text more space to accommodate Chinese characters <Hamster Tian> 4 weeks ago
+ 
+**** https://github.com/CyanogenMod/android_packages_apps_PhoneCommon ****
+0fb0068 : Themes: Make dialpad seperator line theme-able <Thyrus11> 12 days ago
+ 
+**** Origin_bitbucket	git@bitbucket.org:cmRemiX/android_packages_apps_settings.git
+https://github.com/cmRemiX/android_packages_apps_Settings
+origin	git@github.com:cmRemiX/android_packages_apps_Settings.git ****
+f9e86ea : Add ability to ignore interruptions while active media playback <Danesh M> 3 hours ago
+ 
+**** https://github.com/CyanogenMod/android_packages_apps_SoundRecorder ****
+25ec919 : SoundRecorder: Fix trying to view recordings without CM File Manager <NBruderman> 3 weeks ago
+ 
+**** origin	git@github.com:cmRemiX/android_packages_apps_ThemeChooser.git ****
+e9c6085 : Themes: Add RequestType to ThemeChangeRequest [3/3] <d34d> 34 hours ago
+73cf152 : Themes: Update ThemesContract with install state [3/3] <d34d> 2 days ago
+b1eb89b : Automatic translation import <Michael Bestas> 5 days ago
+ 
+**** https://github.com/cmRemiX/android_packages_apps_UnifiedEmail
+origin	git@github.com:cmRemiX/android_packages_apps_UnifiedEmail.git ****
+0812ca4 : Automatic translation import <Michael Bestas> 5 days ago
+ 
+**** https://github.com/CyanogenMod/android_packages_providers_ThemesProvider ****
+cebe749 : Themes: Add RequestType to ThemeChangeRequest [2/3] <d34d> 34 hours ago
+d56651e : Themes: Update ThemesContract with install state [2/3] <d34d> 2 days ago
+59c6157 : Add value for TARGET_API in insertSystemDefaults <d34d> 2 days ago
+ 
+**** https://github.com/cmRemiX/android_packages_services_Telephony
+origin	git@github.com:cmRemiX/android_packages_services_Telephony.git ****
+292626d : Fix debug spam. <Danny Baumann> 2 days ago
+f3df157 : MyPhoneNumber: Handle msim sim state changed broadcast. <Adnan> 5 days ago
+f6d5cfd : Telephony: Create MSISDNEditPreference per active phone. <Adnan> 5 days ago
+cb7eed0 : phone: Add option for setting device phone number (squashed) <Pawit Pornkitprasan> 1 year, 2 months ago
+eedfb3b : Telephony: Exit call features if our error is unrecoverable. <Adnan Begovic> 7 days ago
+c39effa : Fix debug spam. <Danny Baumann> 2 days ago
+bc4cc83 : MyPhoneNumber: Handle msim sim state changed broadcast. <Adnan> 5 days ago
+b25ed9f : Telephony: Create MSISDNEditPreference per active phone. <Adnan> 5 days ago
+2d536af : phone: Add option for setting device phone number (squashed) <Pawit Pornkitprasan> 1 year, 2 months ago
+e1581ce : Telephony: Exit call features if our error is unrecoverable. <Adnan Begovic> 7 days ago
+ 
+**** https://github.com/CyanogenMod/android_vendor_cm
+temasek	https://github.com/temasek/android_vendor_cm ****
+1d055a3 : otasigcheck: skip otasigcheck in headless mode <Brint E. Kriebel> 3 months ago
+3428311 : Add MVNO APN "coopvoce" <RGIB> 3 days ago
+ 
+**** https://github.com/cmRemiX/android_vendor_cmremix
+origin	git@github.com:cmRemiX/android_vendor_cmremix.git ****
+0cfb9fd : build cmRemiX v10.6 <ZION959> 3 hours ago
+241063c : vendor: optimizations for devices with low-RAM [2/2] <José Adolfo Galdámez> 32 hours ago
+2d19ee6 : change cmremix version <ZION959> 3 hours ago
+ 
+**** TheMuppets	https://github.com/TheMuppets/proprietary_vendor_samsung
+gekkehenkie11	https://github.com/gekkehenkie11/proprietary_vendor_samsung
+https://github.com/cmRemiX/proprietary_vendor_samsung
+origin	git@github.com:cmRemiX/proprietary_vendor_samsung.git ****
+95000c2 : ks01lte: Remove FLP HAL from proprietary list. <Vitalii Kulikov> 7 hours ago
+85242de : serrano: Update a300 and vidc firmware <Arne Coucheron> 2 days ago
+3f78047 : serrano: Adreno LA.AF.1.1_rb1.8 <Arne Coucheron> 2 days ago
+ 
