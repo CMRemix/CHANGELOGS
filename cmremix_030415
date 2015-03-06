@@ -7,7 +7,7 @@ origin	git@github.com:cmRemiX/android_build.git ****
 75c5cc5 : releasetools: Add bootable image signing <Brint E. Kriebel> 10 days ago
  
 **** https://github.com/cmRemiX/cmRemiX ****
-7eaf4e4 : change clang name <ZION959> 31 hours ago
+7eaf4e4 : change clang name <ZION959> 32 hours ago
  
 **** https://github.com/cmRemiX/android_device_samsung_hlte-common ****
 38836c6 : remove cwm <ZION959> 4 days ago
@@ -67,9 +67,9 @@ bc0a8f4 : audio: Added fallback mechanism for Tunnel Mode <Pavan Chikkala> 6 wee
 https://github.com/cmRemiX/android_frameworks_base
 origin	git@github.com:cmRemiX/android_frameworks_base.git ****
 b2ffc96 : Themes: Add config change flag for font change <Clark Scheff> 5 days ago
-cc09884 : Themes: Drop timestamp and add change request type <d34d> 32 hours ago
-72eb73b : Themes: Add RequestType to ThemeChangeRequest [1/3] <d34d> 35 hours ago
-2c90b51 : Themes: Use ThemeChangeRequest when resetting theme <d34d> 35 hours ago
+cc09884 : Themes: Drop timestamp and add change request type <d34d> 33 hours ago
+72eb73b : Themes: Add RequestType to ThemeChangeRequest [1/3] <d34d> 2 days ago
+2c90b51 : Themes: Use ThemeChangeRequest when resetting theme <d34d> 2 days ago
 633d4b0 : Themes: Update ThemesContract with install state [1/3] <d34d> 2 days ago
 4d0c96c : Add ability to ignore interruptions while active media playback <Danesh M> 2 weeks ago
 f1e3186 : SystemUi: Fix MSimSignalClusterView padding when no sims inserted. <Adnan> 8 hours ago
@@ -132,7 +132,7 @@ f9e86ea : Add ability to ignore interruptions while active media playback <Danes
 25ec919 : SoundRecorder: Fix trying to view recordings without CM File Manager <NBruderman> 3 weeks ago
  
 **** origin	git@github.com:cmRemiX/android_packages_apps_ThemeChooser.git ****
-e9c6085 : Themes: Add RequestType to ThemeChangeRequest [3/3] <d34d> 34 hours ago
+e9c6085 : Themes: Add RequestType to ThemeChangeRequest [3/3] <d34d> 35 hours ago
 73cf152 : Themes: Update ThemesContract with install state [3/3] <d34d> 2 days ago
 b1eb89b : Automatic translation import <Michael Bestas> 5 days ago
  
@@ -141,7 +141,7 @@ origin	git@github.com:cmRemiX/android_packages_apps_UnifiedEmail.git ****
 0812ca4 : Automatic translation import <Michael Bestas> 5 days ago
  
 **** https://github.com/CyanogenMod/android_packages_providers_ThemesProvider ****
-cebe749 : Themes: Add RequestType to ThemeChangeRequest [2/3] <d34d> 34 hours ago
+cebe749 : Themes: Add RequestType to ThemeChangeRequest [2/3] <d34d> 35 hours ago
 d56651e : Themes: Update ThemesContract with install state [2/3] <d34d> 2 days ago
 59c6157 : Add value for TARGET_API in insertSystemDefaults <d34d> 2 days ago
  

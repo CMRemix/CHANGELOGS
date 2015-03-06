@@ -1,0 +1,42 @@
+
+**** Origin_bitbucket	git@bitbucket.org:cmRemiX/android_frameworks_base.git
+https://github.com/cmRemiX/android_frameworks_base
+origin	git@github.com:cmRemiX/android_frameworks_base.git ****
+193dea9 : Themes: fix copy paste error for applying ringtone/alarm <Clark Scheff> 7 hours ago
+755e785 : Themes: Don't recreate network controllers <Clark Scheff> 7 hours ago
+49ebe51 : Frameworks/base: Use ArraySet more explicitly <Andreas Gampe> 9 hours ago
+a57cf03 : Frameworks/base: Add removeAll for ArraySet <Andreas Gampe> 29 hours ago
+4bdf338 : Fix Carrier label from appearing at random when applying a theme <Alex Cruz> 7 days ago
+0ba1e63 : QS: hide Ambient display tile if not supported <Altaf-Mahdi> 10 hours ago
+979f94f : Base: Mirroring layout on RTL languages [1/2] <Arthur Zamarin> 1 year, 1 month ago
+155ed1e : Restore pre-KitKat permissions to external sd for all apps <Dave Daynard> 11 months ago
+1d105de : SystemUI: Expose values for themes. <Dave Kover> 2 days ago
+f121c43 : livedisplay: Implement active display adjustment (patch 19- 28) <Steve Kondik> 2 weeks ago
+e707d69 : RAM bar (1/2) ------------- I'm not author of this code, I believed this code is from Slim Roms, Modified by Cristiano Matos. Cherry pick from Pac KK 4.4 and port to cmRemiX Lollipop by Zion959 Credit to Cristiano Matos & Pac & Slim Roms Thank you all <ZION959> 22 hours ago
+ 
+**** https://github.com/CyanogenMod/android_packages_apps_DeskClock
+teamasek	https://github.com/temasek/android_packages_apps_DeskClock.git ****
+ec9cfcc : Add city names for en(IN) <stumped> 2 days ago
+ 
+**** https://github.com/cmRemiX/android_packages_apps_Dialer
+origin	git@github.com:cmRemiX/android_packages_apps_Dialer.git ****
+edd47fa : Call Recording: Pause orientation handling during playback to prevent playback interruptions. <Martin Brabham> 30 hours ago
+ 
+**** Origin_bitbucket	git@bitbucket.org:cmRemiX/android_packages_apps_settings.git
+https://github.com/cmRemiX/android_packages_apps_Settings
+origin	git@github.com:cmRemiX/android_packages_apps_Settings.git ****
+9a70195 : Settings: Mirroring layout on RTL languages [2/2] <Arthur Zamarin> 1 year ago
+22cef3d : livedisplay: Add LiveDisplay settings (update to patch 22-24) <Steve Kondik> 2 weeks ago
+c525267 : RAM bar (2/2) ------------ I'm not author of this code, I believed this code is from Slim Roms, Modified by Cristiano Matos. Cherry pick from Pac KK 4.4 and port to cmRemiX Lollipop by Zion959 Credit to Cristiano Matos & Pac & Slim Roms Thank you all <ZION959> 22 hours ago
+ 
+**** https://github.com/cmRemiX/android_packages_services_Telephony
+origin	git@github.com:cmRemiX/android_packages_services_Telephony.git ****
+69efa99 : TeleService: Set mode to 2g on other sim(DSDS) prior to change <cretin45> 9 hours ago
+ 
+**** https://github.com/cmRemiX/android_system_core
+origin	git@github.com:cmRemiX/android_system_core.git ****
+ee0f94a : healthd: Stop logspam <Michael Bestas> 3 weeks ago
+ 
+**** origin	git@github.com:cmRemiX/android_system_vold.git ****
+32ee04d : vold: cryptfs: Check return value from writing key <Marcos Marado> 15 hours ago
+ 
