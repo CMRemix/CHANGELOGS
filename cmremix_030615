@@ -1,0 +1,176 @@
+
+**** https://github.com/cmRemiX/android_bootable_recovery
+origin	git@github.com:cmRemiX/android_bootable_recovery.git ****
+18e13a9 : gui: make scroll bars smaller and transparent <that> 32 hours ago
+8d46c09 : gui: kinetic scrolling for console <that> 9 days ago
+0af7795 : gui: introduce virtual RenderItem method in ScrollList <that> 10 days ago
+e738da5 : minuitwrp: fix crash issue, when the console use TTF font to display unicode font. gui: fix terminal command unusual line breaks and missing characters at the end of a read buf. <xiaolu> 13 days ago
+5aa29ab : GUI: Terminal command: minor improvements <Matt Mower> 9 days ago
+8293153 : GUI: Use valid XML syntax <Matt Mower> 7 days ago
+2b18a53 : Address a few compiler warnings <Matt Mower> 2 weeks ago
+ 
+**** https://github.com/cmRemiX/android_build
+origin	git@github.com:cmRemiX/android_build.git ****
+b862a88 : releasetools: Add bootable image signing <Brint E. Kriebel> 12 days ago
+4b86ea5 : [2/3] CmHardwareService: add cm hardware jar to system server <Scott Mertz> 3 weeks ago
+0e48bdb : Enable ADB by default when ro.adb.secure is not 1 <Scott Mertz> 8 days ago
+ 
+**** https://github.com/CyanogenMod/android_external_whispersystems_WhisperPush ****
+77dcb58 : Automatic translation import <Michael Bestas> 9 hours ago
+ 
+**** Origin_bitbucket	git@bitbucket.org:cmRemiX/android_frameworks_base.git
+https://github.com/cmRemiX/android_frameworks_base
+origin	git@github.com:cmRemiX/android_frameworks_base.git ****
+616b978 : Themes: Handle null request types in ThemeConfig <Clark Scheff> 13 hours ago
+a206c95 : Themes: Perform null check on fontPkgName <Clark Scheff> 8 hours ago
+e6bfe84 : Remove unused import. <Danny Baumann> 19 hours ago
+5e94683 : Hide unused msim icons on setting preference(2/2) <maniac103> 3 hours ago
+8a3abca : Update ringer drawable [1/2] <snak3ater> 4 days ago
+e22e24b : Themes: update themeChange value <d34d> 2 days ago
+8e03b75a : SysUI: Be smarter about theme changes <d34d> 8 days ago
+a96d248 : SystemUI: Allow seperate theming of guts icons <Dave Kover> 27 hours ago
+1ce3699 : [1/3] CmHardwareService: Initial implementation <Scott Mertz> 4 weeks ago
+5778295 : Automatic translation import <Michael Bestas> 9 hours ago
+c4eaecd : Revert "Automatic translation import" <Michael Bestas> 7 hours ago
+e9d8e60 : Automatic translation import <Michael Bestas> 9 hours ago
+10c72e0 : frameworks: modify default system profiles <Roman Birg> 2 weeks ago
+ 
+**** https://github.com/cmRemiX/android_kernel_samsung_hlte ****
+6859815 : update defconfig <ZION959> 23 hours ago
+ 
+**** https://github.com/CyanogenMod/android_packages_apps_BluetoothExt ****
+1240d13 : Automatic translation import <Michael Bestas> 9 hours ago
+ 
+**** https://github.com/CyanogenMod/android_packages_apps_Browser ****
+c6af828 : Log an error when no activity is found to handle a URL. <Ben Murdoch> 3 months ago
+d51ae71 : Implement BrowserPreferencePage.isValidFragment. <Ben Murdoch> 3 months ago
+dd8c611 : Revert ""Browser: Update BrowserPreferencesPage to Override isValidFragment()"" <Michael Bestas> 8 days ago
+a263581 : Rewrite calls to Proxy.getPreferredHttpHost <Narayan Kamath> 4 months ago
+4573402 : Browser: fix crash updating recycled favicon <Pawit Pornkitprasan> 11 months ago
+c627e48 : Browser: Fix Progress bar when quick Controls Enabled <Dan> 1 year ago
+6a57eb4 : browser: properly handle get center tab <Jorge Ruesga> 1 year, 1 month ago
+e2ab232 : BrowserSettings: update desktop UA string to match Chrome 37 <Steven Luo> 1 year, 4 months ago
+64341ca : Show a startup page in incognito mode <Chirayu Desai> 1 year, 1 month ago
+fb4fc09 : Implement client-side incognito mode <Ricardo Cerqueira> 1 year, 2 months ago
+d0b610e : Browser: Fix browser force close <adhiti> 1 year, 3 months ago
+6a171a5 : Add back browser history page. <Danny Baumann> 1 year, 4 months ago
+1d0323d : Browser: fix weird behavior in the settings <Bing-Hua Wang> 1 year, 5 months ago
+874a8e3 : Browser: added rtl support <Liran Chen> 1 year, 6 months ago
+569e971 : Fix build warnings. <Danny Baumann> 1 year, 7 months ago
+6fc5da2 : Add fullscreen toggle to menu <Nebojsa Cvetkovic> 2 years, 6 months ago
+0fdcb82 : Adding exception handler for voice recognition activity <Abhimanyu Garg> 2 years, 6 months ago
+105153c : Support video transition animation <Denise Cheng> 3 years, 2 months ago
+833fa49 : Browser: Add a more user friendly name for user agent <Michael Bestas> 8 days ago
+b2da4ad : Browser: Update search engines <Marco Brohet> 2 years, 7 months ago
+aa36462 : Browser: Increased tab limit <Arham Jamal> 2 years, 7 months ago
+c650e74 : Browser : Open in incognito tab <Danesh M> 3 years, 2 months ago
+464c981 : Browser: New navbar buttons <Arham Jamal> 2 years, 10 months ago
+63c7bd1 : Browser: UI updates <linuxx> 2 weeks ago
+ 
+**** https://github.com/CyanogenMod/android_packages_apps_CMFileManager ****
+1667395 : Automatic translation import <Michael Bestas> 9 hours ago
+ 
+**** https://github.com/CyanogenMod/android_packages_apps_Calculator ****
+d8e858f : Automatic translation import <Michael Bestas> 9 hours ago
+ 
+**** https://github.com/CyanogenMod/android_packages_apps_Calendar ****
+0b00a7e : Automatic translation import <Michael Bestas> 9 hours ago
+ 
+**** https://github.com/cmRemiX/android_packages_apps_Camera2
+origin	git@github.com:cmRemiX/android_packages_apps_Camera2.git ****
+708b6b2 : Automatic translation import <Michael Bestas> 9 hours ago
+ 
+**** https://github.com/CyanogenMod/android_packages_apps_CellBroadcastReceiver ****
+d198408 : Automatic translation import <Michael Bestas> 9 hours ago
+ 
+**** https://github.com/CyanogenMod/android_packages_apps_Contacts ****
+94cb200 : Automatic translation import <Michael Bestas> 9 hours ago
+ 
+**** https://github.com/CyanogenMod/android_packages_apps_ContactsCommon ****
+9c174b6 : Automatic translation import <Michael Bestas> 9 hours ago
+ 
+**** https://github.com/CyanogenMod/android_packages_apps_Eleven ****
+51dadc6 : Automatic translation import <Michael Bestas> 9 hours ago
+206ba7c : Improve string <Michael Bestas> 32 hours ago
+ 
+**** DU	https://github.com/DirtyUnicorns/android_packages_apps_Gallery2
+https://github.com/CyanogenMod/android_packages_apps_Gallery2 ****
+148364f : Moar materialize changes <Alex Cruz> 4 weeks ago
+f50365f : Automatic translation import <Michael Bestas> 9 hours ago
+ 
+**** https://github.com/cmRemiX/android_packages_apps_InCallUI
+origin	git@github.com:cmRemiX/android_packages_apps_InCallUI.git ****
+2805a49 : Automatic translation import <Michael Bestas> 9 hours ago
+ 
+**** https://github.com/CyanogenMod/android_packages_apps_LockClock ****
+6bbcc51 : Automatic translation import <Michael Bestas> 9 hours ago
+df474e4 : LockClock: Reset visibility for Weather Image when weather info is available <Raj Yengisetty> 2 days ago
+ 
+**** origin	git@github.com:cmRemiX/android_packages_apps_Mms-caf.git ****
+145ffe8 : Automatic translation import <Michael Bestas> 9 hours ago
+ 
+**** https://github.com/CyanogenMod/android_packages_apps_PhoneCommon ****
+8a1fa06 : Automatic translation import <Michael Bestas> 9 hours ago
+ 
+**** Origin_bitbucket	git@bitbucket.org:cmRemiX/android_packages_apps_settings.git
+https://github.com/cmRemiX/android_packages_apps_Settings
+origin	git@github.com:cmRemiX/android_packages_apps_Settings.git ****
+4a7b51d : rambar: restart system ui <ZION959> 12 minutes ago
+018cb66 : Revert: DeviceInfo: remove unused variable in getMemInfo() <ZION959> 2 hours ago
+d9bdf06 : Settings: we do not ship Google Now Launcher wallpapers <linuxx> 2 days ago
+4b5d25e : Automatic translation import <Michael Bestas> 2 hours ago
+d3fef46 : Fix typo <Veeti Paananen> 17 hours ago
+7f98539 : Hide unused msim icons on setting preference(1/2) <Arvind Mukund> 2 hours ago
+f94a563 : Update ringer drawable [2/2] <snak3ater> 4 days ago
+ 
+**** https://github.com/CyanogenMod/android_packages_apps_SoundRecorder ****
+d912ea5 : Automatic translation import <Michael Bestas> 9 hours ago
+ 
+**** https://github.com/CyanogenMod/android_packages_apps_Stk ****
+199cb6a : Automatic translation import <Michael Bestas> 9 hours ago
+ 
+**** https://github.com/CyanogenMod/android_packages_apps_Terminal ****
+740e8a4 : Automatic translation import <Michael Bestas> 9 hours ago
+ 
+**** origin	git@github.com:cmRemiX/android_packages_apps_ThemeChooser.git ****
+2ee64a3 : Automatic translation import <Michael Bestas> 9 hours ago
+ 
+**** https://github.com/CyanogenMod/android_packages_inputmethods_LatinIME ****
+24a0462 : Automatic translation import <Michael Bestas> 9 hours ago
+ 
+**** https://github.com/CyanogenMod/android_packages_providers_DownloadProvider ****
+05775ec : Automatic translation import <Michael Bestas> 9 hours ago
+ 
+**** https://github.com/CyanogenMod/android_packages_services_Mms ****
+616d537 : Automatic translation import <Michael Bestas> 9 hours ago
+ 
+**** origin	git@github.com:cmRemiX/android_packages_services_Telecomm.git ****
+8cde779 : Automatic translation import <Michael Bestas> 9 hours ago
+fbdc07c : Telecomm: Move to CmHardwareService <Scott Mertz> 3 days ago
+57cde33 : Restore old tap-to-wake state after call <proDOOMman> 6 days ago
+cb9578d : Automatic translation import <Michael Bestas> 7 days ago
+ 
+**** https://github.com/cmRemiX/android_packages_services_Telephony
+origin	git@github.com:cmRemiX/android_packages_services_Telephony.git ****
+81cbabd : Add CMHW permission <Scott Mertz> 3 days ago
+3bfcd54 : Automatic translation import <Michael Bestas> 9 hours ago
+ 
+**** https://github.com/CyanogenMod/android_packages_wallpapers_Galaxy4 ****
+1671fe4 : Automatic translation import <Michael Bestas> 9 hours ago
+ 
+**** https://github.com/CyanogenMod/android_packages_wallpapers_PhotoPhase ****
+b510f7c : Automatic translation import <Michael Bestas> 9 hours ago
+ 
+**** https://github.com/CyanogenMod/android_vendor_cm
+temasek	https://github.com/temasek/android_vendor_cm ****
+69c2e7f : [3/3] CmHardwareService: add sepolicy <Scott Mertz> 3 weeks ago
+3b7f3d2 : Vendor: Update Privacy policy URL <NBruderman> 3 days ago
+b1285f2 : APN: Add Pepephone 4G <Kra1o5> 19 hours ago
+f473018 : Revert "apns-conf: remove default type from all vzw apns" <Zach Frank> 2 days ago
+ 
+**** TheMuppets	https://github.com/TheMuppets/proprietary_vendor_samsung
+gekkehenkie11	https://github.com/gekkehenkie11/proprietary_vendor_samsung
+https://github.com/cmRemiX/proprietary_vendor_samsung
+origin	git@github.com:cmRemiX/proprietary_vendor_samsung.git ****
+2acddc5 : tuna: use L3 widevine libs from oppo/msm8974-common <Ziyan> 19 hours ago
+ 
