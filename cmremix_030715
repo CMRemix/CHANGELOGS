@@ -1,0 +1,44 @@
+**** Origin_bitbucket	git@bitbucket.org:cmRemiX/android_frameworks_base.git
+https://github.com/cmRemiX/android_frameworks_base
+origin	git@github.com:cmRemiX/android_frameworks_base.git ****
+8706925 : Temp restore permission for HARDWARE_ABSTRACTION_ACCESS <ZION959> 21 minutes ago
+3034648 : Frameworks/base: Remove unnecessary Pattern instance <Andreas Gampe> 29 hours ago
+17d3dee : Frameworks/base: Remove unnecessary Pattern instance <Andreas Gampe> 30 hours ago
+56a3184 : [ActivityManager] Skip receiver precisely. <riddle_hsu> 4 days ago
+a90c8f8 : Revert "SysUI: Be smarter about theme changes" <ZION959> 22 minutes ago
+a19fef9 : SystemUI: improve qs tile scroll handling <Roman Birg> 3 days ago
+e1d7c9b : Theme fix for statusbar - future proof <LorDClockaN> 24 minutes ago
+774e24a : Clean up battery handling. <Danny Baumann> 2 days ago
+eb0caa5 : Action: Add screenshot action <fusionjack> 2 days ago
+632b8e4 : Action: Add kill-app and last-app actions <fusionjack> 21 hours ago
+a988323 : Framework: SlimAction as QuickTile (1/2) <fusionjack> 21 hours ago
+fce65fe : Frameworks: Slim Shortcuts <Jubakuba> 20 hours ago
+ 
+**** Faux_Shamu	https://github.com/faux123/Shamu
+Flar2_Shamu	https://github.com/flar2/shamu
+Francisco_Shamu	https://github.com/franciscofranco/Shamu
+Slayher	https://github.com/slayher/android_kernel_samsung_trlte
+Yank555_shamu	https://github.com/yank555-lu/Shamu-3.10-lollipop.git
+friedrich420	https://github.com/friedrich420/Note4-TMO-AELKernel
+https://github.com/cmRemiX/android_kernel_samsung_trlte
+origin	git@github.com:cmRemiX/android_kernel_samsung_trlte.git
+upstream	https://github.com/CyanogenMod/android_kernel_samsung_trlte.git ****
+29bad29 : update defconfig <ZION959> 22 hours ago
+5251043 : msm: mdss: Add pa_v2 support to KCAL <savoca> 2 weeks ago
+4f2fd92 : msm: mdss: Replace PGC implementation with PCC for KCAL <savoca> 2 weeks ago
+61101f8 : msm: mdss: savoca's KCAL pp control adapted for trlte (imoseyon) <ZION959> 22 hours ago
+ 
+**** Origin_bitbucket	git@bitbucket.org:cmRemiX/android_packages_apps_settings.git
+https://github.com/cmRemiX/android_packages_apps_Settings
+origin	git@github.com:cmRemiX/android_packages_apps_Settings.git ****
+b8125c7 : Settings: Change to CmHardwareService <Scott Mertz> 60 minutes ago
+9fa37d3 : QSColors: No more SystemUI restart on switch <LorDClockaN> 74 minutes ago
+69d287d : Fix volume steps not showing chosen options in their respective settings - Also follow  a better coding style <cristianomatos> 12 months ago
+f7fa383 : Settings: SlimAction as QuickTile (2/2) <fusionjack> 20 hours ago
+baf085a : Settings: Slim Actions to Shortcuts <fusionjack> 20 hours ago
+c6b5363 : update rambar <ZION959> 21 hours ago
+ 
+**** https://github.com/cmRemiX/android_vendor_cmremix
+origin	git@github.com:cmRemiX/android_vendor_cmremix.git ****
+24ed303 : add KCAL - Advanced color control for trlte <ZION959> 22 hours ago
+ 
