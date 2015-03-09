@@ -1,0 +1,14 @@
+
+**** Origin_bitbucket	git@bitbucket.org:cmRemiX/android_frameworks_base.git
+https://github.com/cmRemiX/android_frameworks_base
+origin	git@github.com:cmRemiX/android_frameworks_base.git ****
+2953bd4 : livedisplay: Fix color calibration <Steve Kondik> 8 hours ago
+bbb1931 : systemui: Fix KeyguardMonitor callbacks during configuration changes <Steve Kondik> 10 hours ago
+2399797 : systemui: fix glitches with recents view and search widget <Jorge Ruesga> 4 days ago
+bccdd1b : SystemUI: fix doze pickup for shamu <Altaf-Mahdi> 2 days ago
+ 
+**** Origin_bitbucket	git@bitbucket.org:cmRemiX/android_packages_apps_settings.git
+https://github.com/cmRemiX/android_packages_apps_Settings
+origin	git@github.com:cmRemiX/android_packages_apps_Settings.git ****
+f1c8a2d : Settings: Fix hiding proximity wake-up option <Konsta> 31 hours ago
+ 

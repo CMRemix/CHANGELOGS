@@ -1,18 +1,25 @@
+
+**** origin	https://github.com/cmRemiX/android_bionic.git ****
+53027c6 : use clang for bionic if "USE_CLANG_QCOM = true" <Your Name> 3 weeks ago
+ 
+**** https://github.com/cmRemiX/cmRemiX ****
+b4bcec5 : Manifest: Add msm8610 HAL repos <percy-g2> 4 days ago
+ 
 **** Origin_bitbucket	git@bitbucket.org:cmRemiX/android_frameworks_base.git
 https://github.com/cmRemiX/android_frameworks_base
 origin	git@github.com:cmRemiX/android_frameworks_base.git ****
-8706925 : Temp restore permission for HARDWARE_ABSTRACTION_ACCESS <ZION959> 21 minutes ago
-3034648 : Frameworks/base: Remove unnecessary Pattern instance <Andreas Gampe> 29 hours ago
-17d3dee : Frameworks/base: Remove unnecessary Pattern instance <Andreas Gampe> 30 hours ago
+8706925 : Temp restore permission for HARDWARE_ABSTRACTION_ACCESS <ZION959> 2 hours ago
+3034648 : Frameworks/base: Remove unnecessary Pattern instance <Andreas Gampe> 31 hours ago
+17d3dee : Frameworks/base: Remove unnecessary Pattern instance <Andreas Gampe> 31 hours ago
 56a3184 : [ActivityManager] Skip receiver precisely. <riddle_hsu> 4 days ago
-a90c8f8 : Revert "SysUI: Be smarter about theme changes" <ZION959> 22 minutes ago
+a90c8f8 : Revert "SysUI: Be smarter about theme changes" <ZION959> 2 hours ago
 a19fef9 : SystemUI: improve qs tile scroll handling <Roman Birg> 3 days ago
-e1d7c9b : Theme fix for statusbar - future proof <LorDClockaN> 24 minutes ago
+e1d7c9b : Theme fix for statusbar - future proof <LorDClockaN> 2 hours ago
 774e24a : Clean up battery handling. <Danny Baumann> 2 days ago
-eb0caa5 : Action: Add screenshot action <fusionjack> 2 days ago
-632b8e4 : Action: Add kill-app and last-app actions <fusionjack> 21 hours ago
-a988323 : Framework: SlimAction as QuickTile (1/2) <fusionjack> 21 hours ago
-fce65fe : Frameworks: Slim Shortcuts <Jubakuba> 20 hours ago
+eb0caa5 : Action: Add screenshot action <fusionjack> 3 days ago
+632b8e4 : Action: Add kill-app and last-app actions <fusionjack> 22 hours ago
+a988323 : Framework: SlimAction as QuickTile (1/2) <fusionjack> 22 hours ago
+fce65fe : Frameworks: Slim Shortcuts <Jubakuba> 21 hours ago
  
 **** Faux_Shamu	https://github.com/faux123/Shamu
 Flar2_Shamu	https://github.com/flar2/shamu
@@ -23,22 +30,74 @@ friedrich420	https://github.com/friedrich420/Note4-TMO-AELKernel
 https://github.com/cmRemiX/android_kernel_samsung_trlte
 origin	git@github.com:cmRemiX/android_kernel_samsung_trlte.git
 upstream	https://github.com/CyanogenMod/android_kernel_samsung_trlte.git ****
-29bad29 : update defconfig <ZION959> 22 hours ago
+29bad29 : update defconfig <ZION959> 23 hours ago
 5251043 : msm: mdss: Add pa_v2 support to KCAL <savoca> 2 weeks ago
 4f2fd92 : msm: mdss: Replace PGC implementation with PCC for KCAL <savoca> 2 weeks ago
-61101f8 : msm: mdss: savoca's KCAL pp control adapted for trlte (imoseyon) <ZION959> 22 hours ago
+61101f8 : msm: mdss: savoca's KCAL pp control adapted for trlte (imoseyon) <ZION959> 23 hours ago
+ 
+**** https://github.com/CyanogenMod/android_packages_apps_Browser
+temasek	https://github.com/temasek/android_packages_apps_Browser ****
+27a4f51 : Log an error when no activity is found to handle a URL. <Ben Murdoch> 3 months ago
+357e685 : Implement BrowserPreferencePage.isValidFragment. <Ben Murdoch> 3 months ago
+d0b990a : Revert ""Browser: Update BrowserPreferencesPage to Override isValidFragment()"" <Michael Bestas> 9 days ago
+83c978e : Rewrite calls to Proxy.getPreferredHttpHost <Narayan Kamath> 4 months ago
+9760c16 : Browser: fix crash updating recycled favicon <Pawit Pornkitprasan> 11 months ago
+66a8d96 : Browser: Fix Progress bar when quick Controls Enabled <Dan> 1 year ago
+198635a : browser: properly handle get center tab <Jorge Ruesga> 1 year, 1 month ago
+366a708 : BrowserSettings: update desktop UA string to match Chrome 37 <Steven Luo> 1 year, 4 months ago
+c37ae83 : Show a startup page in incognito mode <Chirayu Desai> 1 year, 1 month ago
+168dd1c : Implement client-side incognito mode <Ricardo Cerqueira> 1 year, 2 months ago
+629cb22 : Browser: Fix browser force close <adhiti> 1 year, 3 months ago
+9a21fe1 : Add back browser history page. <Danny Baumann> 1 year, 4 months ago
+00d6c06 : Browser: fix weird behavior in the settings <Bing-Hua Wang> 1 year, 5 months ago
+ff4bb5d : Browser: added rtl support <Liran Chen> 1 year, 6 months ago
+1dbaed1 : Fix build warnings. <Danny Baumann> 1 year, 7 months ago
+c187039 : Add fullscreen toggle to menu <Nebojsa Cvetkovic> 2 years, 6 months ago
+4016866 : Adding exception handler for voice recognition activity <Abhimanyu Garg> 2 years, 6 months ago
+c0e3c2a : Support video transition animation <Denise Cheng> 3 years, 2 months ago
+a8b67ea : Browser: Add a more user friendly name for user agent <Michael Bestas> 9 days ago
+dc38dc0 : Browser: Update search engines <Marco Brohet> 2 years, 7 months ago
+c9f5470 : Browser: Increased tab limit <Arham Jamal> 2 years, 7 months ago
+06d69a0 : Browser : Open in incognito tab <Danesh M> 3 years, 2 months ago
+da15072 : Browser: New navbar buttons <Arham Jamal> 2 years, 10 months ago
+53665bb : Browser: UI updates <linuxx> 2 weeks ago
+f15edc5 : Cleanup code style <Michael Bestas> 2 weeks ago
+3c5879d : Automatic translation import <Michael Bestas> 2 weeks ago
+1bde652 : Show JS alerts over their origin tab <Paul Miller> 3 weeks ago
+8cedb96 : Automatic translation import <Michael Bestas> 4 weeks ago
+6095ba0 : Expose hardcoded colors <Konsta> 6 weeks ago
+1e97c97 : User agent as advanced setting <Daniel Volk> 8 weeks ago
+edf533d : Add DuckDuckGo browser search to English US locale <Yisroel Wilks> 6 weeks ago
+2cef0cd : Browser : Update duckduckgo <Danesh Mondegarian> 1 year, 4 months ago
+2cda12f : Add DuckDuckGo search engine for en-gb locale (both regional and region agnostic version) <pulser> 1 year, 9 months ago
+862d39f : Browser: add duckduckgo search enginge to RU locale <Roman Birg> 8 months ago
+672b7cd : Browser: Added DuckDuckGo as search provider <Zyg0te> 9 weeks ago
+5e85447 : Browser:  fix sizes <dankoman> 3 months ago
+ad65d44 : Browser: fix incognito icons and preview thumbnail color <dankoman> 3 months ago
+4463ca5 : Browser: and moooore material girls in blue <Lars Greiss> 3 months ago
+15f6997 : Browser: do not hardcode colors!! <Lars Greiss> 3 months ago
+a62e230 : Browser: switch from green to blue <Lars Greiss> 3 months ago
+c52212d : Browser: Change to switches <Lars Greiss> 3 months ago
+f4cb2d0 : Browser: Fix layouts <Michael Bestas> 3 months ago
+ 
+**** https://github.com/CyanogenMod/android_packages_apps_Contacts ****
+e0bb86e : Expose the editor account header background & contact list text colors. <93Akkord> 4 days ago
+ 
+**** https://github.com/CyanogenMod/android_packages_apps_ContactsCommon ****
+898ee9c : Exposed hard coded text colors for starred/group tiles. <93Akkord> 5 days ago
  
 **** Origin_bitbucket	git@bitbucket.org:cmRemiX/android_packages_apps_settings.git
 https://github.com/cmRemiX/android_packages_apps_Settings
 origin	git@github.com:cmRemiX/android_packages_apps_Settings.git ****
-b8125c7 : Settings: Change to CmHardwareService <Scott Mertz> 60 minutes ago
-9fa37d3 : QSColors: No more SystemUI restart on switch <LorDClockaN> 74 minutes ago
+b8125c7 : Settings: Change to CmHardwareService <Scott Mertz> 2 hours ago
+9fa37d3 : QSColors: No more SystemUI restart on switch <LorDClockaN> 3 hours ago
 69d287d : Fix volume steps not showing chosen options in their respective settings - Also follow  a better coding style <cristianomatos> 12 months ago
-f7fa383 : Settings: SlimAction as QuickTile (2/2) <fusionjack> 20 hours ago
-baf085a : Settings: Slim Actions to Shortcuts <fusionjack> 20 hours ago
-c6b5363 : update rambar <ZION959> 21 hours ago
+f7fa383 : Settings: SlimAction as QuickTile (2/2) <fusionjack> 22 hours ago
+baf085a : Settings: Slim Actions to Shortcuts <fusionjack> 22 hours ago
+c6b5363 : update rambar <ZION959> 23 hours ago
  
 **** https://github.com/cmRemiX/android_vendor_cmremix
 origin	git@github.com:cmRemiX/android_vendor_cmremix.git ****
-24ed303 : add KCAL - Advanced color control for trlte <ZION959> 22 hours ago
+e835a45 : vendor: move viper4android, Kcal and add opencamera <ZION959> 55 minutes ago
+24ed303 : add KCAL - Advanced color control for trlte <ZION959> 23 hours ago
  
