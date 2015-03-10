@@ -1,0 +1,423 @@
+
+**** https://github.com/cmRemiX/android_bionic ****
+61f2943 : Revert : use clang for bionic if "USE_CLANG_QCOM = true" <ZION959> 6 hours ago
+53027c6 : use clang for bionic if "USE_CLANG_QCOM = true" <Your Name> 3 weeks ago
+0e825a7 : libc: memcpy_base: Disable opt for certain targets <Raghavendra Prasad Nagaraj> 7 weeks ago
+ 
+**** https://github.com/cmRemiX/android_bootable_recovery ****
+18e13a9 : gui: make scroll bars smaller and transparent <that> 5 days ago
+8d46c09 : gui: kinetic scrolling for console <that> 13 days ago
+0af7795 : gui: introduce virtual RenderItem method in ScrollList <that> 13 days ago
+e738da5 : minuitwrp: fix crash issue, when the console use TTF font to display unicode font. gui: fix terminal command unusual line breaks and missing characters at the end of a read buf. <xiaolu> 2 weeks ago
+5aa29ab : GUI: Terminal command: minor improvements <Matt Mower> 12 days ago
+8293153 : GUI: Use valid XML syntax <Matt Mower> 11 days ago
+2b18a53 : Address a few compiler warnings <Matt Mower> 3 weeks ago
+ 
+**** https://github.com/cmRemiX/android_build
+origin	git@github.com:cmRemiX/android_build.git ****
+5759155 : build: update clang qcom optimization & removed fastmath keep -O3 <ZION959> 12 hours ago
+8b66296 : build: Add support for additional kernel config snippet <Steve Kondik> 22 hours ago
+75c5cc5 : releasetools: Add bootable image signing <Brint E. Kriebel> 2 weeks ago
+5c8c6ce : build: optimizations for devices with low-RAM [1/2] <JoseGalRe> 7 days ago
+ 
+**** https://github.com/cmRemiX/cmRemiX ****
+9891cbb : track browser <ZION959> 7 hours ago
+b4bcec5 : Manifest: Add msm8610 HAL repos <percy-g2> 6 days ago
+ 
+**** https://github.com/cmRemiX/android_device_samsung_hlte
+origin	git@github.com:cmRemiX/android_device_samsung_hlte.git
+temasek	https://github.com/temasek/android_device_samsung_hlte
+upstream	https://github.com/CyanogenMod/android_device_samsung_hlte.git ****
+8bebc6f : TARGET_KERNEL_VARIANT_CONFIG <ZION959> 30 hours ago
+71d863e : hlte: add props for SM-N900S/K <arter97> 8 weeks ago
+eeb6797 : hlte: add SM-N900S/K to assertion <arter97> 3 months ago
+c2c92cf : hlte: always set N9005 props instead of null strings <arter97> 8 weeks ago
+ff461ef : hlte: upgrade entire ril stack <christer12> 10 weeks ago
+264ede1 : hlte international: bring it up to speed with cm-12.0 <Shareef Ali> 2 months ago
+ 
+**** https://github.com/cmRemiX/android_device_samsung_hlte-common
+origin	git@github.com:cmRemiX/android_device_samsung_hlte-common.git
+temasek	https://github.com/temasek/android_device_samsung_hlte-common
+upstream	https://github.com/CyanogenMod/android_device_samsung_hlte-common.git ****
+e12a8f7 : hlte: remove scheduler settings during boot <Janson Kang> 3 months ago
+4a94a4d : Enable hardware keys enable/disable through overlay <Janson Kang> 11 months ago
+997799c : Hlte-common: Enable home button wake overlay <Janson Kang> 3 months ago
+4c609fd : Use 3GB dalvik heap and hwui memory (Originally 2GB) <Janson Kang> 5 months ago
+b7a1eb5 : Enable multiusers support <Janson Kang> 3 months ago
+27f7948 : hlte: add L1/L2 cache size parameters optimizations <arter97> 5 weeks ago
+94c4f2a : hlte: Enable apps2sd <Janson Kang> 6 months ago
+750b59c : set to zion mainline defconfig <ZION959> 30 hours ago
+ 
+**** https://github.com/cmRemiX/android_device_samsung_trlte-common ****
+3e5ee72 : init.qcom.rc: Stop mpdecision at boot <ZION959> 7 days ago
+ 
+**** https://github.com/CyanogenMod/android_external_bluetooth_bluedroid ****
+f7afaa4 : bluedroid: Add wiimote pairing support <Schischu> 10 months ago
+415bfa7 : bluetooth: a2dp: Rework locking <Ethan Chen> 3 weeks ago
+54cb1ab : bluetooth: a2dp: Property account pcm.counter <Christopher R. Palmer> 13 days ago
+9585ee5 : bluetooth: a2dp: Remove "congestion" logic <Christopher R. Palmer> 13 days ago
+5a4a29e : bluetooth: a2dp: Don't count generated data when we can't send it <Christopher R. Palmer> 13 days ago
+ 
+**** https://github.com/CyanogenMod/android_external_busybox ****
+9e941c4 : mount: address a couple crashes <Dan Pasanen> 5 days ago
+ 
+**** https://github.com/CyanogenMod/android_external_libpng ****
+bf497ca : Restore a width check that was removed from png.c (CVE-2015-0973) <Narayan Kamath> 13 days ago
+0af1582 : Fix buffer overwrite in png_build_index <Henrik Smiding> 3 weeks ago
+54f66be : Fix buffer overflow security vulnerability (CVE-2014-9495) <Henrik Smiding> 3 weeks ago
+ 
+**** https://github.com/CyanogenMod/android_external_whispersystems_WhisperPush ****
+77dcb58 : Automatic translation import <Michael Bestas> 4 days ago
+ 
+**** https://github.com/cmRemiX/android_frameworks_av ****
+79c1aca : libmedia: Fix crash during mediaserver restart <Steve Kondik> 6 days ago
+99c8319 : mpeg2ts: Add support for parsing HEVC stream in MPEG2 TS container <Apurupa Pattapu> 5 weeks ago
+61b2505 : nuplayer: Fix crash in video only HLS streams <Alexy Joseph> 4 weeks ago
+14bb487 : libmediaplayerservice: update NuPlayer scoreFactory for http:// <Manikanta Sivapala> 4 weeks ago
+bc07960 : audio: Handled openOutput error for Tunnel/LPA Usecase <Pavan Chikkala> 4 weeks ago
+5dee3bc : audio: Set OutputFormat of AudioMixer to PCM16 <Ramjee Singh> 5 weeks ago
+cccb375 : audio: Fix issues during device switch <Pavan Chikkala> 5 weeks ago
+26e81b1 : audio: Fixed mBytesRemaining when partial buffers are sent <Pavan Chikkala> 1 year, 1 month ago
+6acc081 : stagefright: use NuPlayer for http:// <Praveen Chavan> 8 weeks ago
+7cbaf6f : audio: Send USB connection events only for USB accessory <Ramjee Singh> 7 weeks ago
+bc0a8f4 : audio: Added fallback mechanism for Tunnel Mode <Pavan Chikkala> 7 weeks ago
+96eb154 : NuPlayer: Buffering improvements for http progressive playback <Surajit Podder> 2 months ago
+17c3787 : libmediaplayerservice: handle PCMoffload to non-offload fallback <Alexy Joseph> 7 weeks ago
+ 
+**** https://github.com/cmRemiX/android_frameworks_base
+origin	git@github.com:cmRemiX/android_frameworks_base.git ****
+70cde01 : SystemUI: fix small jump when expanding QS w/o notifications <Roman Birg> 13 hours ago
+69b4d2f : Make Navring available to devices with no navbar <Stevespear426> 17 hours ago
+85bb06a : QSColors: Fix empty notification alert after switch color option <westcripp> 19 hours ago
+f3e82bc : systemui: Fix race condition in setting notification panel height <Steve Kondik> 24 hours ago
+2953bd4 : livedisplay: Fix color calibration <Steve Kondik> 2 days ago
+bbb1931 : systemui: Fix KeyguardMonitor callbacks during configuration changes <Steve Kondik> 2 days ago
+2399797 : systemui: fix glitches with recents view and search widget <Jorge Ruesga> 6 days ago
+bccdd1b : SystemUI: fix doze pickup for shamu <Altaf-Mahdi> 4 days ago
+8706925 : Temp restore permission for HARDWARE_ABSTRACTION_ACCESS <ZION959> 2 days ago
+3034648 : Frameworks/base: Remove unnecessary Pattern instance <Andreas Gampe> 4 days ago
+17d3dee : Frameworks/base: Remove unnecessary Pattern instance <Andreas Gampe> 4 days ago
+56a3184 : [ActivityManager] Skip receiver precisely. <riddle_hsu> 6 days ago
+a90c8f8 : Revert "SysUI: Be smarter about theme changes" <ZION959> 2 days ago
+a19fef9 : SystemUI: improve qs tile scroll handling <Roman Birg> 5 days ago
+e1d7c9b : Theme fix for statusbar - future proof <LorDClockaN> 2 days ago
+774e24a : Clean up battery handling. <Danny Baumann> 4 days ago
+eb0caa5 : Action: Add screenshot action <fusionjack> 5 days ago
+632b8e4 : Action: Add kill-app and last-app actions <fusionjack> 3 days ago
+a988323 : Framework: SlimAction as QuickTile (1/2) <fusionjack> 3 days ago
+fce65fe : Frameworks: Slim Shortcuts <Jubakuba> 3 days ago
+616b978 : Themes: Handle null request types in ThemeConfig <Clark Scheff> 4 days ago
+a206c95 : Themes: Perform null check on fontPkgName <Clark Scheff> 4 days ago
+e6bfe84 : Remove unused import. <Danny Baumann> 4 days ago
+5e94683 : Hide unused msim icons on setting preference(2/2) <maniac103> 3 days ago
+8a3abca : Update ringer drawable [1/2] <snak3ater> 7 days ago
+e22e24b : Themes: update themeChange value <d34d> 5 days ago
+8e03b75a : SysUI: Be smarter about theme changes <d34d> 11 days ago
+a96d248 : SystemUI: Allow seperate theming of guts icons <Dave Kover> 4 days ago
+1ce3699 : [1/3] CmHardwareService: Initial implementation <Scott Mertz> 4 weeks ago
+5778295 : Automatic translation import <Michael Bestas> 4 days ago
+c4eaecd : Revert "Automatic translation import" <Michael Bestas> 4 days ago
+e9d8e60 : Automatic translation import <Michael Bestas> 4 days ago
+10c72e0 : frameworks: modify default system profiles <Roman Birg> 3 weeks ago
+193dea9 : Themes: fix copy paste error for applying ringtone/alarm <Clark Scheff> 5 days ago
+755e785 : Themes: Don't recreate network controllers <Clark Scheff> 5 days ago
+49ebe51 : Frameworks/base: Use ArraySet more explicitly <Andreas Gampe> 5 days ago
+a57cf03 : Frameworks/base: Add removeAll for ArraySet <Andreas Gampe> 5 days ago
+4bdf338 : Fix Carrier label from appearing at random when applying a theme <Alex Cruz> 11 days ago
+0ba1e63 : QS: hide Ambient display tile if not supported <Altaf-Mahdi> 5 days ago
+979f94f : Base: Mirroring layout on RTL languages [1/2] <Arthur Zamarin> 1 year, 1 month ago
+155ed1e : Restore pre-KitKat permissions to external sd for all apps <Dave Daynard> 11 months ago
+1d105de : SystemUI: Expose values for themes. <Dave Kover> 7 days ago
+f121c43 : livedisplay: Implement active display adjustment (patch 19- 28) <Steve Kondik> 3 weeks ago
+e707d69 : RAM bar (1/2) ------------- I'm not author of this code, I believed this code is from Slim Roms, Modified by Cristiano Matos. Cherry pick from Pac KK 4.4 and port to cmRemiX Lollipop by Zion959 Credit to Cristiano Matos & Pac & Slim Roms Thank you all <ZION959> 5 days ago
+b2ffc96 : Themes: Add config change flag for font change <Clark Scheff> 11 days ago
+cc09884 : Themes: Drop timestamp and add change request type <d34d> 7 days ago
+72eb73b : Themes: Add RequestType to ThemeChangeRequest [1/3] <d34d> 7 days ago
+2c90b51 : Themes: Use ThemeChangeRequest when resetting theme <d34d> 7 days ago
+633d4b0 : Themes: Update ThemesContract with install state [1/3] <d34d> 8 days ago
+4d0c96c : Add ability to ignore interruptions while active media playback <Danesh M> 3 weeks ago
+ 
+**** https://github.com/cmRemiX/android_frameworks_native ****
+797b3d7 : DisplayDevice: Backwards compatibility with old EGL <Andrew Dodd> 3 weeks ago
+1093935 : libgui: squashed update for readding ICS and JB_MR0 support <Steve Kondik> 3 weeks ago
+86d61b0 : hax: Add back the SURFACE_SKIP_FIRST_DEQUEUE legacy EGL workaround <Ricardo Cerqueira> 3 weeks ago
+ 
+**** https://github.com/CyanogenMod/android_hardware_libhardware ****
+57bf795 : fix: memory leak <soon1.choi> 3 months ago
+ 
+**** https://github.com/CyanogenMod/android_hardware_qcom_display ****
+9d6655f : ovelray: Tolerate the absense of an RGB pipe <Diogo Ferreira> 11 days ago
+ 
+**** https://github.com/cmRemiX/android_kernel_samsung_hlte
+origin	git@github.com:cmRemiX/android_kernel_samsung_hlte.git
+upstream	git@github.com:CyanogenMod/android_kernel_samsung_hlte.git ****
+6f390d3 : Revert: update defconfig (reverted from commit 6859815c6ffd467aedc766bce3754698cea918eb) <ZION959> 30 hours ago
+6859815 : update defconfig <ZION959> 4 days ago
+ 
+**** https://github.com/cmRemiX/android_kernel_samsung_trlte ****
+29bad29 : update defconfig <ZION959> 3 days ago
+5251043 : msm: mdss: Add pa_v2 support to KCAL <savoca> 3 weeks ago
+4f2fd92 : msm: mdss: Replace PGC implementation with PCC for KCAL <savoca> 3 weeks ago
+61101f8 : msm: mdss: savoca's KCAL pp control adapted for trlte (imoseyon) <ZION959> 3 days ago
+6eb9018 : Intelliplug on by default <Steve Kondik> 3 weeks ago
+ 
+**** https://github.com/CyanogenMod/android_libcore ****
+971aac2 : Fix incorrect cache key. <You Kim> 12 days ago
+ 
+**** https://github.com/CyanogenMod/android_packages_apps_BluetoothExt ****
+1240d13 : Automatic translation import <Michael Bestas> 4 days ago
+ 
+**** https://github.com/cmRemiX/android_packages_apps_Browser ****
+27a4f51 : Log an error when no activity is found to handle a URL. <Ben Murdoch> 3 months ago
+357e685 : Implement BrowserPreferencePage.isValidFragment. <Ben Murdoch> 3 months ago
+d0b990a : Revert ""Browser: Update BrowserPreferencesPage to Override isValidFragment()"" <Michael Bestas> 11 days ago
+83c978e : Rewrite calls to Proxy.getPreferredHttpHost <Narayan Kamath> 4 months ago
+9760c16 : Browser: fix crash updating recycled favicon <Pawit Pornkitprasan> 11 months ago
+66a8d96 : Browser: Fix Progress bar when quick Controls Enabled <Dan> 1 year ago
+198635a : browser: properly handle get center tab <Jorge Ruesga> 1 year, 1 month ago
+366a708 : BrowserSettings: update desktop UA string to match Chrome 37 <Steven Luo> 1 year, 4 months ago
+c37ae83 : Show a startup page in incognito mode <Chirayu Desai> 1 year, 2 months ago
+168dd1c : Implement client-side incognito mode <Ricardo Cerqueira> 1 year, 2 months ago
+629cb22 : Browser: Fix browser force close <adhiti> 1 year, 3 months ago
+9a21fe1 : Add back browser history page. <Danny Baumann> 1 year, 4 months ago
+00d6c06 : Browser: fix weird behavior in the settings <Bing-Hua Wang> 1 year, 5 months ago
+ff4bb5d : Browser: added rtl support <Liran Chen> 1 year, 6 months ago
+1dbaed1 : Fix build warnings. <Danny Baumann> 1 year, 7 months ago
+c187039 : Add fullscreen toggle to menu <Nebojsa Cvetkovic> 2 years, 6 months ago
+4016866 : Adding exception handler for voice recognition activity <Abhimanyu Garg> 2 years, 6 months ago
+c0e3c2a : Support video transition animation <Denise Cheng> 3 years, 2 months ago
+a8b67ea : Browser: Add a more user friendly name for user agent <Michael Bestas> 11 days ago
+dc38dc0 : Browser: Update search engines <Marco Brohet> 2 years, 7 months ago
+c9f5470 : Browser: Increased tab limit <Arham Jamal> 2 years, 8 months ago
+06d69a0 : Browser : Open in incognito tab <Danesh M> 3 years, 2 months ago
+da15072 : Browser: New navbar buttons <Arham Jamal> 2 years, 10 months ago
+53665bb : Browser: UI updates <linuxx> 3 weeks ago
+f15edc5 : Cleanup code style <Michael Bestas> 2 weeks ago
+3c5879d : Automatic translation import <Michael Bestas> 3 weeks ago
+1bde652 : Show JS alerts over their origin tab <Paul Miller> 4 weeks ago
+8cedb96 : Automatic translation import <Michael Bestas> 4 weeks ago
+6095ba0 : Expose hardcoded colors <Konsta> 6 weeks ago
+1e97c97 : User agent as advanced setting <Daniel Volk> 8 weeks ago
+edf533d : Add DuckDuckGo browser search to English US locale <Yisroel Wilks> 7 weeks ago
+2cef0cd : Browser : Update duckduckgo <Danesh Mondegarian> 1 year, 4 months ago
+2cda12f : Add DuckDuckGo search engine for en-gb locale (both regional and region agnostic version) <pulser> 1 year, 9 months ago
+862d39f : Browser: add duckduckgo search enginge to RU locale <Roman Birg> 8 months ago
+672b7cd : Browser: Added DuckDuckGo as search provider <Zyg0te> 9 weeks ago
+5e85447 : Browser:  fix sizes <dankoman> 3 months ago
+ad65d44 : Browser: fix incognito icons and preview thumbnail color <dankoman> 3 months ago
+4463ca5 : Browser: and moooore material girls in blue <Lars Greiss> 3 months ago
+15f6997 : Browser: do not hardcode colors!! <Lars Greiss> 3 months ago
+a62e230 : Browser: switch from green to blue <Lars Greiss> 3 months ago
+c52212d : Browser: Change to switches <Lars Greiss> 3 months ago
+f4cb2d0 : Browser: Fix layouts <Michael Bestas> 3 months ago
+ 
+**** https://github.com/CyanogenMod/android_packages_apps_CMFileManager ****
+89b3b11 : CMFileManager: Improved confusing, cumbersome and incorrect strings <Zyg0te> 3 days ago
+1667395 : Automatic translation import <Michael Bestas> 4 days ago
+ 
+**** https://github.com/CyanogenMod/android_packages_apps_Calculator ****
+d8e858f : Automatic translation import <Michael Bestas> 4 days ago
+8c03bb6 : Make calculator behavior more predictable <George Hilliard> 2 weeks ago
+a70bd84 : BASH-25: avoid NPE on Calculator's widget <Marcos Marado> 3 weeks ago
+ 
+**** https://github.com/CyanogenMod/android_packages_apps_Calendar ****
+0b00a7e : Automatic translation import <Michael Bestas> 4 days ago
+ 
+**** https://github.com/cmRemiX/android_packages_apps_Camera2 ****
+708b6b2 : Automatic translation import <Michael Bestas> 4 days ago
+be170a5 : Automatic translation import <Michael Bestas> 11 days ago
+ 
+**** https://github.com/CyanogenMod/android_packages_apps_CellBroadcastReceiver ****
+d198408 : Automatic translation import <Michael Bestas> 4 days ago
+ 
+**** https://github.com/CyanogenMod/android_packages_apps_Contacts ****
+e0bb86e : Expose the editor account header background & contact list text colors. <93Akkord> 6 days ago
+94cb200 : Automatic translation import <Michael Bestas> 4 days ago
+ 
+**** https://github.com/CyanogenMod/android_packages_apps_ContactsCommon ****
+898ee9c : Exposed hard coded text colors for starred/group tiles. <93Akkord> 7 days ago
+9c174b6 : Automatic translation import <Michael Bestas> 4 days ago
+5a934d9 : ContactsCommon: Add PHOTO_ID to contact tile loader projection <emancebo> 8 days ago
+ 
+**** https://github.com/CyanogenMod/android_packages_apps_DeskClock ****
+ec9cfcc : Add city names for en(IN) <stumped> 7 days ago
+ 
+**** https://github.com/cmRemiX/android_packages_apps_Dialer ****
+edd47fa : Call Recording: Pause orientation handling during playback to prevent playback interruptions. <Martin Brabham> 6 days ago
+8c42754 : Enable Call Recording <Janson Kang> 7 days ago
+e15c976 : Dialer: Direct Call (3/4) <martincz> 7 days ago
+84686fd : Call recording encoder/format choice 1/3 <Kryten2k35> 7 days ago
+807e90d : Dialer: switches for checkboxes <eyosen> 8 weeks ago
+e956149 : Automatic translation import <Michael Bestas> 11 days ago
+ 
+**** https://github.com/CyanogenMod/android_packages_apps_Eleven ****
+51dadc6 : Automatic translation import <Michael Bestas> 4 days ago
+206ba7c : Improve string <Michael Bestas> 5 days ago
+ 
+**** https://github.com/CyanogenMod/android_packages_apps_Gallery2 ****
+f50365f : Automatic translation import <Michael Bestas> 4 days ago
+ 
+**** https://github.com/cmRemiX/android_packages_apps_InCallUI ****
+2805a49 : Automatic translation import <Michael Bestas> 4 days ago
+34c3a6e : Automatic translation import <Michael Bestas> 11 days ago
+ 
+**** https://github.com/CyanogenMod/android_packages_apps_LockClock ****
+6bbcc51 : Automatic translation import <Michael Bestas> 4 days ago
+df474e4 : LockClock: Reset visibility for Weather Image when weather info is available <Raj Yengisetty> 6 days ago
+ 
+**** https://github.com/cmRemiX/android_packages_apps_Mms-caf ****
+145ffe8 : Automatic translation import <Michael Bestas> 4 days ago
+d6d425e : Mms: move mailboxmode classes to the proper location <Jorge Ruesga> 13 days ago
+e89f7a2 : Mms: Direct Call (4/4) <martincz> 7 days ago
+7292dca : Mms: move mailboxmode classes to the proper location <Jorge Ruesga> 13 days ago
+28a2460 : MSIM fixes. <Danny Baumann> 9 days ago
+008bbf2 : Automatic translation import <Michael Bestas> 11 days ago
+a85081d : Fix crash during delivery delay <Davis Mosenkovs> 11 days ago
+c43a464 : Mms: give sender text more space to accommodate Chinese characters <Hamster Tian> 4 weeks ago
+ 
+**** https://github.com/CyanogenMod/android_packages_apps_PhoneCommon ****
+8a1fa06 : Automatic translation import <Michael Bestas> 4 days ago
+0fb0068 : Themes: Make dialpad seperator line theme-able <Thyrus11> 2 weeks ago
+ 
+**** https://github.com/cmRemiX/android_packages_apps_Settings
+origin	git@github.com:cmRemiX/android_packages_apps_Settings.git ****
+a803d78 : cmRemiX >>> CM-Remix <ZION959> 6 hours ago
+8996b4d : Settings: Override default activity transitions for OOBE wifi <cretin45> 15 hours ago
+d325e25 : Use 100K steps for color temperature sliders. <Danny Baumann> 26 hours ago
+8bae6e9 : Add Navring category for all devices <LorDClockaN> 6 days ago
+13c3d8a : Settings: Fix hiding proximity wake-up option <Konsta> 3 days ago
+d2b4578 : QSColors: No more SystemUI restart on switch <LorDClockaN> 2 days ago
+52a5dca : Fix volume steps not showing chosen options in their respective settings - Also follow  a better coding style <cristianomatos> 12 months ago
+21f4a1e : Settings: SlimAction as QuickTile (2/2) <fusionjack> 3 days ago
+98699a5 : Settings: Slim Actions to Shortcuts <fusionjack> 3 days ago
+e18f2c1 : update rambar <ZION959> 3 days ago
+68a295f : Settings: we do not ship Google Now Launcher wallpapers <linuxx> 6 days ago
+ede1924 : Settings: Change to CmHardwareService <Scott Mertz> 2 days ago
+4b5d25e : Automatic translation import <Michael Bestas> 3 days ago
+d3fef46 : Fix typo <Veeti Paananen> 4 days ago
+7f98539 : Hide unused msim icons on setting preference(1/2) <Arvind Mukund> 3 days ago
+f94a563 : Update ringer drawable [2/2] <snak3ater> 7 days ago
+9a70195 : Settings: Mirroring layout on RTL languages [2/2] <Arthur Zamarin> 1 year ago
+22cef3d : livedisplay: Add LiveDisplay settings (update to patch 22-24) <Steve Kondik> 3 weeks ago
+c525267 : RAM bar (2/2) ------------ I'm not author of this code, I believed this code is from Slim Roms, Modified by Cristiano Matos. Cherry pick from Pac KK 4.4 and port to cmRemiX Lollipop by Zion959 Credit to Cristiano Matos & Pac & Slim Roms Thank you all <ZION959> 5 days ago
+f9e86ea : Add ability to ignore interruptions while active media playback <Danesh M> 5 days ago
+71f6436 : Settings: QS colors master switch (2/2) <LorDClockaN> 6 days ago
+e2b5745 : Force Expanded Notifications (2/2) <Jmz> 6 days ago
+abd6c73 : Settings: fix blacklist settings crash <Roman Birg> 7 days ago
+669b3d6 : Settings: always allow profile app groups to be linked/unlinked <Roman Birg> 7 days ago
+2e152dc : Settings: restore App groups with advanced mode <Roman Birg> 3 weeks ago
+773f9ee : Settings: Refactory regulatory dialog. Display IC Code. <Adnan Begovic> 2 weeks ago
+2532029 : Settings: launch default music player on headset connect [1/2] <Danesh M> 2 years, 2 months ago
+052eb04 : Settings: Make quick settings editor tiles color external <Danesh M> 11 days ago
+2bcf12e : Settings: Add overlay for hiding performance options <Danesh M> 4 months ago
+c755006 : Settings: Add 1 second to Volume Panel Timeout <alviteri> 6 days ago
+090648b : [2/2] App sidebar <0xD34D> 6 days ago
+b1db057 : [2/2] livedisplay: Add LiveDisplay settings <Steve Kondik> 3 weeks ago
+4afffcd : QS: add Ambient display tile * add Ambient display settings activity for long press on tile <Altaf-Mahdi> 7 days ago
+d98e658 : Display settings: show enabled/disabled summary for ambient display <Altaf-Mahdi> 7 days ago
+4db79d2 : Settings: long press lock screen lock icon to sleep (2/2) <Altaf-Mahdi> 7 days ago
+18e374b : SQUASH Settings:Smart control center and Direct Call (2/4) <martincz> 7 days ago
+59fd214 : Settings: don't add inline trigger links to profiles in creation mode <Roman Birg> 8 days ago
+870a5d0 : Settings: Greeting label timeout (2/2) PS2:     Use string for suggested greeting PS3:     Fix build - derp <LorDClockaN> 7 days ago
+4db3eeb : Settings: Statusbar greeting (2/2) <Dave Kessler> 7 days ago
+ 
+**** https://github.com/cmRemiX/android_packages_apps_cmRemiXCenter ****
+3018f64 : retore SlimCurver <ZION959> 6 hours ago
+a41bfe6 : cmRemiX >>> CM-Remix <ZION959> 6 hours ago
+ 
+**** https://github.com/CyanogenMod/android_packages_apps_SoundRecorder ****
+d912ea5 : Automatic translation import <Michael Bestas> 4 days ago
+ 
+**** https://github.com/CyanogenMod/android_packages_apps_Stk ****
+199cb6a : Automatic translation import <Michael Bestas> 4 days ago
+ 
+**** https://github.com/CyanogenMod/android_packages_apps_Terminal ****
+740e8a4 : Automatic translation import <Michael Bestas> 4 days ago
+ 
+**** https://github.com/cmRemiX/android_packages_apps_ThemeChooser ****
+2ee64a3 : Automatic translation import <Michael Bestas> 4 days ago
+e9c6085 : Themes: Add RequestType to ThemeChangeRequest [3/3] <d34d> 7 days ago
+73cf152 : Themes: Update ThemesContract with install state [3/3] <d34d> 8 days ago
+b1eb89b : Automatic translation import <Michael Bestas> 11 days ago
+ 
+**** https://github.com/cmRemiX/android_packages_apps_UnifiedEmail ****
+0812ca4 : Automatic translation import <Michael Bestas> 11 days ago
+ 
+**** https://github.com/CyanogenMod/android_packages_inputmethods_LatinIME ****
+24a0462 : Automatic translation import <Michael Bestas> 4 days ago
+ 
+**** https://github.com/CyanogenMod/android_packages_providers_DownloadProvider ****
+05775ec : Automatic translation import <Michael Bestas> 4 days ago
+ 
+**** https://github.com/CyanogenMod/android_packages_providers_ThemesProvider ****
+cfbac9f : Update target API on theme updates <d34d> 3 days ago
+cebe749 : Themes: Add RequestType to ThemeChangeRequest [2/3] <d34d> 7 days ago
+d56651e : Themes: Update ThemesContract with install state [2/3] <d34d> 8 days ago
+59c6157 : Add value for TARGET_API in insertSystemDefaults <d34d> 8 days ago
+ 
+**** https://github.com/CyanogenMod/android_packages_services_Mms ****
+616d537 : Automatic translation import <Michael Bestas> 4 days ago
+ 
+**** https://github.com/cmRemiX/android_packages_services_Telecomm ****
+8cde779 : Automatic translation import <Michael Bestas> 4 days ago
+fbdc07c : Telecomm: Move to CmHardwareService <Scott Mertz> 7 days ago
+57cde33 : Restore old tap-to-wake state after call <proDOOMman> 9 days ago
+cb9578d : Automatic translation import <Michael Bestas> 11 days ago
+ 
+**** https://github.com/cmRemiX/android_packages_services_Telephony ****
+81cbabd : Add CMHW permission <Scott Mertz> 7 days ago
+3bfcd54 : Automatic translation import <Michael Bestas> 4 days ago
+69efa99 : TeleService: Set mode to 2g on other sim(DSDS) prior to change <cretin45> 5 days ago
+292626d : Fix debug spam. <Danny Baumann> 7 days ago
+f3df157 : MyPhoneNumber: Handle msim sim state changed broadcast. <Adnan> 11 days ago
+f6d5cfd : Telephony: Create MSISDNEditPreference per active phone. <Adnan> 11 days ago
+cb7eed0 : phone: Add option for setting device phone number (squashed) <Pawit Pornkitprasan> 1 year, 2 months ago
+eedfb3b : Telephony: Exit call features if our error is unrecoverable. <Adnan Begovic> 13 days ago
+c39effa : Fix debug spam. <Danny Baumann> 7 days ago
+f851c03 : Call recording encoder/format choice 2/3 Adds a user option between NB AMR (the default) or HE-AAC for the encoding of call recording audio. Also changes the output format of the file appropriately (NB AMR now uses the NB_AMR output format and HE_AAC chooses the MPEG_4 output. File extensions are adjust accordingly as well). This was in reponse to people complaining the quality of call recording audio is poor. It's noticibly better using HE-AAC, but filesizes are larger. <Kryten2k35> 7 days ago
+bc4cc83 : MyPhoneNumber: Handle msim sim state changed broadcast. <Adnan> 11 days ago
+b25ed9f : Telephony: Create MSISDNEditPreference per active phone. <Adnan> 11 days ago
+2d536af : phone: Add option for setting device phone number (squashed) <Pawit Pornkitprasan> 1 year, 2 months ago
+e1581ce : Telephony: Exit call features if our error is unrecoverable. <Adnan Begovic> 13 days ago
+ 
+**** https://github.com/CyanogenMod/android_packages_wallpapers_Galaxy4 ****
+1671fe4 : Automatic translation import <Michael Bestas> 4 days ago
+ 
+**** https://github.com/CyanogenMod/android_packages_wallpapers_PhotoPhase ****
+b510f7c : Automatic translation import <Michael Bestas> 4 days ago
+ 
+**** https://github.com/cmRemiX/android_system_core
+origin	git@github.com:cmRemiX/android_system_core.git ****
+80ec2d9 : Reorder selinux_initialize after property_load_boot_defaults <Ethan Yonker> 3 months ago
+ee0f94a : healthd: Stop logspam <Michael Bestas> 3 weeks ago
+ 
+**** https://github.com/cmRemiX/android_system_vold ****
+32ee04d : vold: cryptfs: Check return value from writing key <Marcos Marado> 5 days ago
+ 
+**** https://github.com/CyanogenMod/android_vendor_cm ****
+b4bf950 : sepolicy: recovery: Allow data file write <Tom Marshall> 15 hours ago
+d1fb504 : vendor:cm: fixup formatting of CONTRIBUTORS <Brinly Taylor> 3 days ago
+69c2e7f : [3/3] CmHardwareService: add sepolicy <Scott Mertz> 3 weeks ago
+3b7f3d2 : Vendor: Update Privacy policy URL <NBruderman> 6 days ago
+b1285f2 : APN: Add Pepephone 4G <Kra1o5> 4 days ago
+f473018 : Revert "apns-conf: remove default type from all vzw apns" <Zach Frank> 5 days ago
+1d055a3 : otasigcheck: skip otasigcheck in headless mode <Brint E. Kriebel> 3 months ago
+ 
+**** https://github.com/cmRemiX/android_vendor_cmremix
+origin	git@github.com:cmRemiX/android_vendor_cmremix.git ****
+06288f7 : cmRemiX >>> CM-Remix <ZION959> 9 hours ago
+59bb312 : Vendor: add CONTRIBUTORS.mkdn for CM-Remix Rom <ZION959> 11 hours ago
+5d2edc0 : USE_CLANG_QCOM_LTO := true <ZION959> 13 hours ago
+e24d4d6 : vendor: Rainbow unicorn puke. CM-Remix'fy [2/2] <MaDc0w> 8 hours ago
+e835a45 : vendor: move viper4android, Kcal and add opencamera <ZION959> 2 days ago
+24ed303 : add KCAL - Advanced color control for trlte <ZION959> 3 days ago
+0cfb9fd : build cmRemiX v10.6 <ZION959> 5 days ago
+241063c : vendor: optimizations for devices with low-RAM [2/2] <José Adolfo Galdámez> 7 days ago
+2d19ee6 : change cmremix version <ZION959> 5 days ago
+ 
+**** https://github.com/cmRemiX/proprietary_vendor_samsung ****
+2acddc5 : tuna: use L3 widevine libs from oppo/msm8974-common <Ziyan> 4 days ago
+95000c2 : ks01lte: Remove FLP HAL from proprietary list. <Vitalii Kulikov> 6 days ago
+85242de : serrano: Update a300 and vidc firmware <Arne Coucheron> 8 days ago
+3f78047 : serrano: Adreno LA.AF.1.1_rb1.8 <Arne Coucheron> 8 days ago
+ 
