@@ -1,0 +1,93 @@
+
+**** Origin_bitbucket	git@bitbucket.org:cmRemiX/android_frameworks_base.git
+https://github.com/cmRemiX/android_frameworks_base
+origin	git@github.com:cmRemiX/android_frameworks_base.git ****
+d3c7f16 : keyguard: don't use eq visualized in LowEndGfx devices <Jorge Ruesga> 31 hours ago
+0568ed9 : Lock screen: Weather panel improvements, (1/2): <XXMrHyde> 3 hours ago
+6e58317 : FWB: Proper LS weather switch from XXMrHyde <XXMrHyde> 3 hours ago
+1c36a6e : Revert: FWB: LS weather disabler (1/2) <ZION959> 3 hours ago
+085c85b : SysUI: Clip to outline in ActivatableNotificationView <d34d> 32 hours ago
+fe8eec3 : SystemUI: improve recreating statusbar <Roman Birg> 3 hours ago
+d70d50b : qsutils: use package manager to query whether nfc is present <Roman Birg> 33 hours ago
+4c7f982 : Themes: Add previous value and update time to mixnmatch [1/2] <d34d> 7 days ago
+8837002 : Revert "systemui: Fix KeyguardMonitor callbacks during configuration changes" <Roman Birg> 2 days ago
+2a79a76 : Revert "systemui: Fix race condition in setting notification panel height" <Roman Birg> 2 days ago
+7287771 : livedisplay: Add "off" state and fix issues with QS tile <Steve Kondik> 3 days ago
+ 
+**** Faux_Shamu	https://github.com/faux123/Shamu
+Flar2_Shamu	https://github.com/flar2/shamu
+Francisco_Shamu	https://github.com/franciscofranco/Shamu
+Pafcholini	https://github.com/Pafcholini/Nadia-kernel-LL--Update-Linux-N910F-EUR-LL-OpenSource
+Slayher	https://github.com/slayher/android_kernel_samsung_trlte
+Yank555_shamu	https://github.com/yank555-lu/Shamu-3.10-lollipop.git
+faux_note4	https://github.com/faux123/Note_4_SM-N910T
+friedrich420	https://github.com/friedrich420/Note4-TMO-AELKernel
+https://github.com/cmRemiX/android_kernel_samsung_trlte
+origin	git@github.com:cmRemiX/android_kernel_samsung_trlte.git
+upstream	https://github.com/CyanogenMod/android_kernel_samsung_trlte.git ****
+fe81847 : Revert: intelli_thermal v3.0: initial coding for Linux 3.10 Qualcomm kernels (faux123) <ZION959> 19 minutes ago
+99e73ac : fix compile errors for dyynamic fsync <ZION959> 77 minutes ago
+8011a0f : system_rev: fix type mismatch derps by Samsung <Paul Reioux> 4 months ago
+4f13bfa0 : Revert : add Led Control <ZION959> 2 hours ago
+2120000 : add Dynamic Fsync control version 1.5 by faux123 <ZION959> 4 hours ago
+8be012b : add Led Control <Pavel> 2 months ago
+e00222b : reduce wakelocks: wlan_rx_wake and wlan_ctrl_wake <Pavel> 10 weeks ago
+97aa32d : added sysfs interface for GENTLE_FAIR_SLEEPERS [neobuddy89] <ZION959> 4 hours ago
+ed58b74 : drivers: w1: enable readwrite for S-View bypass <TwistedUmbrella> 10 weeks ago
+39795a2 : drivers: w1: allow user to override S-View bypass <TwistedUmbrella> 10 weeks ago
+ded88c4 : drivers: w1: register any S-View cover as authentic <TwistedUmbrella> 3 months ago
+a28ec85 : update defconfig <ZION959> 4 hours ago
+d5fa8d3 : Add /dev/frandom support <ZION959> 4 hours ago
+b467316 : soc: qcom: smd: Register SMD & SMSM IRQs with IRQF_NO_SUSPEND flag <Arun Kumar Neelakantam> 5 months ago
+4f68c7f : PM / sleep: unregister wakeup source when disabling device wakeup <Zhang Rui> 10 months ago
+9719150 : arm/kernel/irq.c: remove irq affinity warnings <Paul Reioux> 7 weeks ago
+5c67d36 : ARM: only allow kernel mode neon with AEABI <Russell King> 1 year, 6 months ago
+a023f5e : ARM: 7835/2: fix modular build of xor_blocks() with NEON enabled <Ard Biesheuvel> 1 year, 6 months ago
+810bb46 : ARM: add support for kernel mode NEON <Paul Reioux> 1 year, 2 months ago
+2683b9d : ARM: be strict about FP exceptions in kernel mode <Paul Reioux> 1 year, 2 months ago
+ce7e474 : ARM: move VFP init to an earlier boot stage <Paul Reioux> 1 year, 2 months ago
+3e038ff : cpufreq: governor: Be friendly towards latency-sensitive bursty workloads <Srivatsa S. Bhat> 9 months ago
+c18063e : mm: disable zone_reclaim_mode by default <Mel Gorman> 9 months ago
+8373f58 : ACPI / PM: Resume runtime-suspended devices later during system suspend <Rafael J. Wysocki> 1 year ago
+92310a9 : PCI / PM: Resume runtime-suspended devices later during system suspend <Rafael J. Wysocki> 1 year ago
+fac2b9e : futexes: Increase hash table size for better performance <Davidlohr Bueso> 1 year, 2 months ago
+b299d56 : tcp: enable sockets to use MSG_FASTOPEN by default <Yuchung Cheng> 1 year, 4 months ago
+8080677 : ARM: crypto: add NEON accelerated XOR implementation <Ard Biesheuvel> 1 year, 10 months ago
+1e57753 : sched: Implement smarter wake-affine logic <Michael Wang> 1 year, 8 months ago
+a3d9ab9 : percpu: implement generic percpu refcounting <Kent Overstreet> 1 year, 9 months ago
+b427280 : sched/debug: Add load-tracking statistics to task <Kamalesh Babulal> 1 year, 9 months ago
+ab87503 : power: Add option to log time spent in suspend <Colin Cross> 1 year, 10 months ago
+41bb987 : lib: add lz4 compressor module <Chanho Min> 1 year, 8 months ago
+90739cc : lib: add support for LZ4-compressed kernel <Kyungsik Lee> 1 year, 8 months ago
+263b529 : decompressor: add LZ4 decompressor module <Kyungsik Lee> 1 year, 8 months ago
+8969413 : sync: don't block the flusher thread waiting on IO <Dave Chinner> 1 year, 8 months ago
+0a83209 : Power: pmqos: Add emc freq pmqos constraint <Puneet Saxena> 1 year, 1 month ago
+0a9943b : power: Fix coverity error <Sai Gurrappadi> 1 year, 2 months ago
+df3a592 : power: Prefer min over max for online cpus <Sai Gurrappadi> 1 year, 5 months ago
+bdc436b : PM / QoS: Add notifier for flags <Terje Bergstrom> 1 year, 5 months ago
+ad23e80 : power: PM QoS support for bounded constraints <Sai Gurrappadi> 1 year, 5 months ago
+d054ec1 : pmqos: Replace spinlock with mutex for pm_qos_lock <Sai Gurrappadi> 1 year, 5 months ago
+26ce417 : PM QoS: Add GPU frequency limits to PM QoS <Alex Frid> 1 year, 8 months ago
+16eca75 : PM / QoS: export pm_qos_update_request_timeout() <Li Li> 2 years, 2 months ago
+8cb607c : PM QoS: Add disable parameter <Antti P Miettinen> 2 years, 7 months ago
+422681b : PM Qos: Add min online cpus as PM QoS parameter <Gaurav Sarode> 3 years, 1 month ago
+e873f2b : PM QoS: Add CPU frequency min/max as PM QoS params <Antti P Miettinen> 3 years, 2 months ago
+0a4ccc2 : PM QoS: Add max online cpus as PM QoS parameter <Alex Frid> 3 years, 3 months ago
+a43f885 : sched/cpuidle: reduce IPI store. Backport upstream 3.16 scheduler updates <Paul Reioux> 9 months ago
+208131c : page_alloc: Make watermarks tunable separately <Paul Reioux> 12 months ago
+ 
+**** Origin_bitbucket	git@bitbucket.org:cmRemiX/android_packages_apps_settings.git
+https://github.com/cmRemiX/android_packages_apps_Settings
+origin	git@github.com:cmRemiX/android_packages_apps_Settings.git ****
+43614ac : revert: Settings: LS weather disabler (2/2) <Raj Yengisetty> 3 weeks ago
+7bda633 : Sound settings: remove vibrate category on devices that dont support it <Altaf-Mahdi> 2 days ago
+89d040a : Settings: fix "Mobile Networks" menu option in DataUsageSummary. <Matt Garnes> 13 hours ago
+3792159 : Settings: fix potential NPE when resetting profiles <Roman Birg> 12 hours ago
+e7f862d : Settings: Fix factory reset lock confirmation header text <Raj Yengisetty> 9 days ago
+5aa2547 : livedisplay: Add an "off" state <Steve Kondik> 3 days ago
+54eacc2 : settings: prevent NPE in DisplaySettings <Jorge Ruesga> 3 hours ago
+ 
+**** https://github.com/cmRemiX/android_vendor_cmremix
+origin	git@github.com:cmRemiX/android_vendor_cmremix.git ****
+4c659df : update Viper4Android to 2.3.4.0 <ZION959> 64 minutes ago
+ 

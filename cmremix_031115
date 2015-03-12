@@ -1,0 +1,24 @@
+
+**** Faux_Shamu	https://github.com/faux123/Shamu
+Flar2_Shamu	https://github.com/flar2/shamu
+Francisco_Shamu	https://github.com/franciscofranco/Shamu
+Slayher	https://github.com/slayher/android_kernel_samsung_trlte
+Yank555_shamu	https://github.com/yank555-lu/Shamu-3.10-lollipop.git
+friedrich420	https://github.com/friedrich420/Note4-TMO-AELKernel
+https://github.com/cmRemiX/android_kernel_samsung_trlte
+origin	git@github.com:cmRemiX/android_kernel_samsung_trlte.git
+upstream	https://github.com/CyanogenMod/android_kernel_samsung_trlte.git ****
+85d847f : fast charge: initial adaptation for trlte to work with qcom's quick charge 2.0 (Faux123) <ZION959> 19 hours ago
+e7be8b9 : Force Fast Charge v1.2 [Yank555.lu] (reverted from commit 45c0b1f0616ce7102cb5fb42b2aa0ad474d29c78) <ZION959> 19 hours ago
+7a8f364 : intelli_plug: add perf_boost sysfs entry and clean up permissions <faux123> 20 hours ago
+3f179f1 : android: binder: use GPF_HIGHUSER flag since binder is designed for userspace <Paul Reioux> 3 days ago
+a419aa4 : dm-crypt: use 2x number of write threads to saturate each cpus pipeline <Paul Reioux> 3 months ago
+e486a2d : dm-crypt: add intelli_plug performance boost optimization <Paul Reioux> 3 months ago
+79e36cd : intelli_plug: add performance boost option <Paul Reioux> 3 months ago
+488936f : sound/soc/codecs: add TOMTOM_A_CDC_RX8 <Pavel> 6 weeks ago
+d712017 : Sound Control: 3.6 <Pavel> 6 weeks ago
+ccd6acb : sound/soc/codecs: add sound_control_locked <Pavel> 7 weeks ago
+78e72c3 : sound/soc/codecs: fix speaker gain and mic gain for the Note 4 <Pavel> 7 weeks ago
+d8c4840 : sound/soc/codecs: Faux Sound control for WCD9330 TomTom codec driver <ZION959> 21 hours ago
+8f7b445 : Revert: Sound Control: initial bring up for Nexus 6 Linux 3.10 kernel driver (faux123) <ZION959> 21 hours ago
+ 
