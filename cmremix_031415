@@ -1,0 +1,52 @@
+
+**** https://github.com/cmRemiX/android_frameworks_av
+origin	git@github.com:cmRemiX/android_frameworks_av.git ****
+29c4a56 : StreamingSource: check mTSParser before dereferencing it. <Wei Jia> 3 months ago
+ 
+**** Origin_bitbucket	git@bitbucket.org:cmRemiX/android_frameworks_base.git
+https://github.com/cmRemiX/android_frameworks_base
+origin	git@github.com:cmRemiX/android_frameworks_base.git ****
+91d4405 : Themes: Change themeChange config value to 0x300000 <d34d> 8 hours ago
+e5e4a11 : Handle NULL keys and NULL values in MediaDrm JNI HashMap <Daniel Broms> 6 months ago
+00c4876 : livedisplay: Fix issues when using multiple users <Steve Kondik> 9 hours ago
+2cea6eb : Revert "Bluetooth: Change userhandle to current from ALL" <Steve Kondik> 10 hours ago
+304f0ed : Preference: allow to get list of preferences from preference group <Alexander Martinz> 2 days ago
+a5389c2 : systemui: animate clear recents button on exit animation <Jorge Ruesga> 9 days ago
+ 
+**** Faux_Shamu	https://github.com/faux123/Shamu
+Flar2_Shamu	https://github.com/flar2/shamu
+Francisco_Shamu	https://github.com/franciscofranco/Shamu
+Pafcholini	https://github.com/Pafcholini/Nadia-kernel-LL--Update-Linux-N910F-EUR-LL-OpenSource
+Slayher	https://github.com/slayher/android_kernel_samsung_trlte
+Yank555_shamu	https://github.com/yank555-lu/Shamu-3.10-lollipop.git
+faux_note4	https://github.com/faux123/Note_4_SM-N910T
+friedrich420	https://github.com/friedrich420/Note4-TMO-AELKernel
+https://github.com/cmRemiX/android_kernel_samsung_trlte
+origin	git@github.com:cmRemiX/android_kernel_samsung_trlte.git
+upstream	https://github.com/CyanogenMod/android_kernel_samsung_trlte.git ****
+2605d7a : cpufreq: cpu-boost: allow enable/disable via sysfs <ZION959> 83 minutes ago
+e8ed20f : cpufreq: interactiveX V4: limit max freq when screen off (Imoseyon) <ZION959> 2 hours ago
+bd1f72e : mdss: expose panel on/off events as a global variable (Imoseyon) <ZION959> 2 hours ago
+11f89b3 : random: remove warning <imoseyon> 2 years ago
+9432248 : random: prevent add_input from doing anything <imoseyon> 2 years, 2 months ago
+4de3d09 : random: entropy tweaks are all the rage nowadays <imoseyon> 2 years, 2 months ago
+8464d85 : cpufreq: cpu-boost: we can hit a small performance loss by not queuing input works less than 150ms apart when our default input work duration is only 40ms, so use that 40ms as a magic value instead of the 150ms minimum interval. <franciscofranco> 5 months ago
+ffb2738 : cpufreq: ondemand: disable cpu-boost when switched to ondemand * ondemand and cpu-boost don't play nice together <ZION959> 2 hours ago
+d6b41b7 : cpufreq: convert "index" to corresponding variable <TwistedUmbrella> 8 weeks ago
+8cb8d93 : Interactive Governor: Use CPUFREQ_RELATION_C <friedrich420> 6 weeks ago
+6702668 : Currently, ondemand calculates the target frequency proportional to load using the formula: <Stratos Karafotis> 8 months ago
+ea757d5 : cpufreq: Introduce new relation for freq selection Introduce CPUFREQ_RELATION_C for frequency selection. It selects the frequency with the minimum euclidean distance to target. In case of equal distance between 2 frequencies, it will select the greater freq. <Stratos Karafotis> 8 months ago
+cd17227 : Add a few governors <ZION959> 72 minutes ago
+60429b8 : cpufreq_interactive: import interactive governor from Shamu <ZION959> 2 hours ago
+7b3f319 : cpufreq: interactive: don't skip waking up speedchange_task if target… …_freq > policy->cur <Pavel> 9 weeks ago
+ 
+**** Origin_bitbucket	git@bitbucket.org:cmRemiX/android_packages_apps_settings.git
+https://github.com/cmRemiX/android_packages_apps_Settings
+origin	git@github.com:cmRemiX/android_packages_apps_Settings.git ****
+d92256e : livedisplay: Fix for multiuser <Steve Kondik> 9 hours ago
+a059991 : Remove duplicate weather on notification drawer option <Janson Kang> 22 hours ago
+ 
+**** https://github.com/cmRemiX/android_packages_services_Telephony
+origin	git@github.com:cmRemiX/android_packages_services_Telephony.git ****
+b710b9d : phone: Fix crash in MSISDNEditPreference when changing phone num. <Lin Ma> 32 hours ago
+ 

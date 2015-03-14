@@ -1,0 +1,19 @@
+
+**** Faux_Shamu	https://github.com/faux123/Shamu
+Flar2_Shamu	https://github.com/flar2/shamu
+Francisco_Shamu	https://github.com/franciscofranco/Shamu
+Pafcholini	https://github.com/Pafcholini/Nadia-kernel-LL--Update-Linux-N910F-EUR-LL-OpenSource
+Slayher	https://github.com/slayher/android_kernel_samsung_trlte
+Yank555_shamu	https://github.com/yank555-lu/Shamu-3.10-lollipop.git
+faux_note4	https://github.com/faux123/Note_4_SM-N910T
+friedrich420	https://github.com/friedrich420/Note4-TMO-AELKernel
+https://github.com/cmRemiX/android_kernel_samsung_trlte
+origin	git@github.com:cmRemiX/android_kernel_samsung_trlte.git
+upstream	https://github.com/CyanogenMod/android_kernel_samsung_trlte.git ****
+6d6f831 : arm: dts: Allow power collapse as minimum l2 gdhs mode. From https://github.com/myfluxi/android_kernel_lge_hammerhead/commit/0318f7f4fbebe391ecfdebff4d7d82be2fca93d9 <franciscofranco> 10 weeks ago
+ 
+**** Origin_bitbucket	git@bitbucket.org:cmRemiX/android_packages_apps_settings.git
+https://github.com/cmRemiX/android_packages_apps_Settings
+origin	git@github.com:cmRemiX/android_packages_apps_Settings.git ****
+1610343 : BATTERY_SAVER_MODE move to cmremix settings <ZION959> 55 minutes ago
+ 
