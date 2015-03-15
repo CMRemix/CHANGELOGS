@@ -1,0 +1,191 @@
+
+**** origin	https://github.com/cmRemiX/android_bionic.git ****
+0e825a7 : libc: memcpy_base: Disable opt for certain targets <Raghavendra Prasad Nagaraj> 8 weeks ago
+ 
+**** https://github.com/CyanogenMod/android_external_whispersystems_WhisperPush ****
+d3d6568 : Automatic translation import <Michael Bestas> 8 hours ago
+ 
+**** https://github.com/cmRemiX/android_frameworks_av
+origin	git@github.com:cmRemiX/android_frameworks_av.git ****
+649b5fb : libmedia: Tone down logging <Michael Bestas> 12 hours ago
+33ade41 : audiopolicy: Do not route VoIP call to HDMI <Divya Narayanan Poojary> 4 weeks ago
+8b91c59 : stagefright: Correct ifdeffage of some QC codecs <Steve Kondik> 3 days ago
+6a054d6 : libstagefright: Add check for bits avail to read <Pavan Chikkala> 4 weeks ago
+1abd0c5 : soundpool: reuse channel for same sample if available <Dhananjay Kumar> 2 months ago
+7404a57 : httplive: HLS enhancements <Santhosh Behara> 4 weeks ago
+1aedb67 : libstagefright: Reset flac decoder eos during flush <Satya Krishna Pindiproli> 5 weeks ago
+4728e99 : libstagefright: Handle FLAC clips with very small block sizes <Satya Krishna Pindiproli> 5 months ago
+84d6112 : httplive: avoid zero byte read request <Li Sun> 4 weeks ago
+ 
+**** Origin_bitbucket	git@bitbucket.org:cmRemiX/android_frameworks_base.git
+https://github.com/cmRemiX/android_frameworks_base
+origin	git@github.com:cmRemiX/android_frameworks_base.git ****
+c0c2efb : fix link of ringer and notif volume [1/2] <chickenfactory> 7 hours ago
+0c3ec12 : base: fix battery stats wakelock crazyness Until someone explains to me why google has killed the since unplug stats for partitial and kernel wakelocks change them from beeing screen off based to unplug based <apophis9283> 28 hours ago
+ef0f03d : Automatic translation import <Michael Bestas> 8 hours ago
+ebf94ad : Themes: Change themeChange config value to 0x300000 <d34d> 32 hours ago
+99e8aea : Handle NULL keys and NULL values in MediaDrm JNI HashMap <Daniel Broms> 6 months ago
+c98e08c : livedisplay: Fix issues when using multiple users <Steve Kondik> 34 hours ago
+72591ee : Revert "Bluetooth: Change userhandle to current from ALL" <Steve Kondik> 35 hours ago
+76231c4 : Preference: allow to get list of preferences from preference group <Alexander Martinz> 3 days ago
+ 
+**** https://github.com/cmRemiX/android_kernel_samsung_trlte
+origin	git@github.com:cmRemiX/android_kernel_samsung_trlte.git
+temasek_hlte	https://github.com/temasek/android_kernel_samsung_hlte ****
+bd4985e : msm: thermal: Add RT priority to kernel hotplug thread <Shiju Mathew> 3 months ago
+e2d0142 : msm: thermal: Add RT priority to kernel thermal threads <Shiju Mathew> 4 months ago
+15f6769 : msm: thermal: Proceed thermal late init only if probe is successful <Shiju Mathew> 4 months ago
+6c53ec8 : msm: thermal: Keep core_control_mask coincident with boot_cpu_mask <Xiaocheng Li> 5 months ago
+8e170c5 : msm: thermal: add a module param to change the thermal throttle temperature point to userspace <franciscofranco> 3 months ago
+c72ab9d : update defconfig <ZION959> 8 hours ago
+0ee23d2 : base kernel v.05 <ZION959> 9 hours ago
+aaf08b1 : random: sprinkle e/f/prandom in places that deplete entropy often <imoseyon> 3 months ago
+97ee2f3 : net/packet: merge fix <imoseyon> 3 months ago
+c325ad5 : random.h: declare erandom function <imoseyon> 3 months ago
+4e4111ce : fs: ext4: use e/frandom, do not deplete entropy <imoseyon> 3 months ago
+3279f71 : binfmt_elf: use prandom - do not deplete entropy <ZION959> 24 hours ago
+b1f8885 : random32: use e/frandom for reseeding, and a merge fixup <imoseyon> 3 months ago
+73388ca : random: allow architectures to optionally define random_get_entropy() <Theodore Ts'o> 1 year, 6 months ago
+2b8b7d0 : random32: add prandom_u32_max and convert open coded users <Daniel Borkmann> 1 year, 2 months ago
+7af2bba : random32: improvements to prandom_bytes <Daniel Borkmann> 7 months ago
+bacc848 : random32: mix in entropy from core to late initcall <Hannes Frederic Sowa> 8 months ago
+9e82f8d : lib/random32.c: minor cleanups and kdoc fix <Daniel Borkmann> 12 months ago
+bd1358c : random32: avoid attempt to late reseed if in the middle of seeding <Sasha Levin> 12 months ago
+eb6f778 : random32: use msecs_to_jiffies for reseed timer <Daniel Borkmann> 1 year, 4 months ago
+43687b6 : random32: add __init prefix to prandom_start_seed_timer <Daniel Borkmann> 1 year, 4 months ago
+b19f89d : random32: add test cases for taus113 implementation <Daniel Borkmann> 1 year, 4 months ago
+72a2b40 : random32: upgrade taus88 generator to taus113 from errata paper <Daniel Borkmann> 1 year, 4 months ago
+dd1f06d : random32: move rnd_state to linux/random.h <Daniel Borkmann> 1 year, 4 months ago
+1cc643e : random32: add prandom_reseed_late() and call when nonblocking pool becomes initialized <Hannes Frederic Sowa> 1 year, 4 months ago
+d38a85b : random32: add periodic reseeding <Hannes Frederic Sowa> 1 year, 4 months ago
+ 
+**** https://github.com/CyanogenMod/android_packages_apps_AudioFX ****
+4f0eb65 : Automatic translation import <Michael Bestas> 8 hours ago
+ 
+**** https://github.com/CyanogenMod/android_packages_apps_Bluetooth ****
+9a70af6 : Automatic translation import <Michael Bestas> 8 hours ago
+ 
+**** https://github.com/CyanogenMod/android_packages_apps_BluetoothExt ****
+31c2487 : Automatic translation import <Michael Bestas> 8 hours ago
+ 
+**** https://github.com/CyanogenMod/android_packages_apps_CMFileManager ****
+9cc59b6 : Automatic translation import <Michael Bestas> 8 hours ago
+ 
+**** https://github.com/CyanogenMod/android_packages_apps_Calculator ****
+461eb69 : Automatic translation import <Michael Bestas> 8 hours ago
+ 
+**** https://github.com/CyanogenMod/android_packages_apps_Calendar ****
+1f28924 : Automatic translation import <Michael Bestas> 8 hours ago
+ 
+**** https://github.com/cmRemiX/android_packages_apps_Camera2
+origin	git@github.com:cmRemiX/android_packages_apps_Camera2.git ****
+1d98281 : Automatic translation import <Michael Bestas> 8 hours ago
+ 
+**** https://github.com/CyanogenMod/android_packages_apps_CellBroadcastReceiver ****
+c3ea6b5 : Automatic translation import <Michael Bestas> 8 hours ago
+ 
+**** https://github.com/CyanogenMod/android_packages_apps_Contacts ****
+a5a544f : Automatic translation import <Michael Bestas> 8 hours ago
+ 
+**** https://github.com/CyanogenMod/android_packages_apps_ContactsCommon ****
+f08e8aa : Automatic translation import <Michael Bestas> 8 hours ago
+ 
+**** https://github.com/CyanogenMod/android_packages_apps_DeskClock
+teamasek	https://github.com/temasek/android_packages_apps_DeskClock.git ****
+01a192a : Automatic translation import <Michael Bestas> 8 hours ago
+ 
+**** https://github.com/cmRemiX/android_packages_apps_Dialer
+origin	git@github.com:cmRemiX/android_packages_apps_Dialer.git ****
+c44882c : Automatic translation import <Michael Bestas> 8 hours ago
+ 
+**** https://github.com/CyanogenMod/android_packages_apps_Eleven ****
+1acc38b : Automatic translation import <Michael Bestas> 8 hours ago
+ 
+**** DU	https://github.com/DirtyUnicorns/android_packages_apps_Gallery2
+https://github.com/CyanogenMod/android_packages_apps_Gallery2 ****
+d900138 : Moar materialize changes <Alex Cruz> 5 weeks ago
+7911e6b : Automatic translation import <Michael Bestas> 8 hours ago
+ 
+**** https://github.com/cmRemiX/android_packages_apps_InCallUI
+origin	git@github.com:cmRemiX/android_packages_apps_InCallUI.git ****
+f815c10 : Automatic translation import <Michael Bestas> 8 hours ago
+ 
+**** https://github.com/CyanogenMod/android_packages_apps_LockClock ****
+9e90260 : Automatic translation import <Michael Bestas> 8 hours ago
+ 
+**** origin	git@github.com:cmRemiX/android_packages_apps_Mms-caf.git ****
+2dae5c2 : Automatic translation import <Michael Bestas> 8 hours ago
+271c955 : Remove vibrate pattern on devices without vibrator <Dave Daynard> 5 days ago
+ 
+**** https://github.com/CyanogenMod/android_packages_apps_PhoneCommon ****
+0437e2c : Automatic translation import <Michael Bestas> 8 hours ago
+ 
+**** Origin_bitbucket	git@bitbucket.org:cmRemiX/android_packages_apps_settings.git
+https://github.com/cmRemiX/android_packages_apps_Settings
+origin	git@github.com:cmRemiX/android_packages_apps_Settings.git ****
+88b0deb : Themes: Allow switchbar text color to be themeable <Dave Kover> 8 hours ago
+27e9f89 : fix link of ringer and notif volume [2/2] <chickenfactory> 7 hours ago
+0715fe7 : Automatic translation import <Michael Bestas> 2 hours ago
+ 
+**** https://github.com/CyanogenMod/android_packages_apps_SoundRecorder ****
+8fd4621 : Automatic translation import <Michael Bestas> 8 hours ago
+ 
+**** https://github.com/CyanogenMod/android_packages_apps_Stk ****
+c50f40a : Automatic translation import <Michael Bestas> 8 hours ago
+ 
+**** https://github.com/CyanogenMod/android_packages_apps_Terminal ****
+37622ae : Automatic translation import <Michael Bestas> 8 hours ago
+ 
+**** origin	git@github.com:cmRemiX/android_packages_apps_ThemeChooser.git ****
+979a19a : Automatic translation import <Michael Bestas> 8 hours ago
+ 
+**** https://github.com/CyanogenMod/android_packages_providers_DownloadProvider ****
+0d7a9c6 : Automatic translation import <Michael Bestas> 8 hours ago
+ 
+**** https://github.com/CyanogenMod/android_packages_providers_ThemesProvider ****
+7320de5 : Automatic translation import <Michael Bestas> 8 hours ago
+ 
+**** https://github.com/CyanogenMod/android_packages_services_Mms ****
+e6cce3a : Automatic translation import <Michael Bestas> 8 hours ago
+ 
+**** origin	git@github.com:cmRemiX/android_packages_services_Telecomm.git ****
+4e6de9d : Automatic translation import <Michael Bestas> 8 hours ago
+ 
+**** https://github.com/cmRemiX/android_packages_services_Telephony
+origin	git@github.com:cmRemiX/android_packages_services_Telephony.git ****
+98c026a : Fix the build <Michael Bestas> 7 hours ago
+60f23f7 : Automatic translation import <Michael Bestas> 8 hours ago
+ 
+**** https://github.com/CyanogenMod/android_packages_wallpapers_Galaxy4 ****
+a888455 : Automatic translation import <Michael Bestas> 8 hours ago
+ 
+**** https://github.com/CyanogenMod/android_packages_wallpapers_PhaseBeam ****
+6ec4a28 : Automatic translation import <Michael Bestas> 8 hours ago
+ 
+**** https://github.com/CyanogenMod/android_packages_wallpapers_PhotoPhase ****
+e5cfe1e : Automatic translation import <Michael Bestas> 8 hours ago
+ 
+**** https://github.com/cmRemiX/android_system_core
+origin	git@github.com:cmRemiX/android_system_core.git ****
+5d31618 : init: Let a device's init.rc redefine service entries <Ricardo Cerqueira> 6 months ago
+ 
+**** https://github.com/CyanogenMod/android_vendor_cm
+origin	git@github.com:cmRemiX/android_vendor_cm.git
+temasek	https://github.com/temasek/android_vendor_cm ****
+19433b0 : Disable SecretCodeReceiver intent of SystemUpdateService <Gianmarco Reverberi> 5 days ago
+90baf12 : sepolicy: Permissions for userinit <Emerson Pinter> 4 weeks ago
+c134675 : vendor_cm: sepolicy: address sysinit denials. <Tony Layher> 4 days ago
+1245bc2 : Add APN for Smartfren <Howard M. Harte> 31 hours ago
+ 
+**** https://github.com/cmRemiX/android_vendor_cmremix
+origin	git@github.com:cmRemiX/android_vendor_cmremix.git ****
+f65df40 : start CMRemix v12.0 <Gianmarco Reverberi> 5 days ago
+931c1c4 : random: set proper permissions for e/frandom <ZION959> 9 hours ago
+863032e : USE_CLANG_QCOM_LTO (lto) in about <ZION959> 25 hours ago
+ 
+**** TheMuppets	https://github.com/TheMuppets/proprietary_vendor_samsung
+https://github.com/cmRemiX/proprietary_vendor_samsung
+origin	git@github.com:cmRemiX/proprietary_vendor_samsung.git ****
+198ec0c : Partial revert "serrano: Update blobs" <Arne Coucheron> 8 hours ago
+3bbca26 : serrano: Update blobs <Arne Coucheron> 3 days ago
+ 
