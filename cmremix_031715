@@ -1,0 +1,87 @@
+
+**** https://github.com/cmRemiX/android_build
+origin	git@github.com:cmRemiX/android_build.git ****
+a7bacfb : [1/2] ArchiDroid Optimization <Łukasz Domeradzki> 2 days ago
+c144ff9 : Build: Allow board to specify additional flags <Łukasz Domeradzki> 8 days ago
+6518354 : build: ignore recovery size (JustArchi) <ZION959> 3 days ago
+ 
+**** https://github.com/cmRemiX/android_device_samsung_hlte-common ****
+76aaf52 : hlte-common: Removed deprecated Torch config <Christer> 8 days ago
+4c4741e : hlte-common: remove bogus MMS overlay. <Christer> 8 days ago
+ 
+**** https://github.com/CyanogenMod/android_device_samsung_qcom-common ****
+4633830 : mms: add overlay for Claro PR carrier <Matt Filetto> 4 months ago
+ 
+**** cmR	https://github.com/cmRemiX/android_device_samsung_trlte-common
+origin	git@github.com:cmRemiX/android_device_samsung_trlte-common.git
+temasek	https://github.com/temasek/android_device_samsung_hlte-common.git
+upstream	https://github.com/CyanogenMod/android_device_samsung_trlte-common.git ****
+a8b7f6d : trlte-common: Use low latency for primary <Tony Layher> 23 hours ago
+ 
+**** Origin_bitbucket	git@bitbucket.org:cmRemiX/android_frameworks_base.git
+https://github.com/cmRemiX/android_frameworks_base
+origin	git@github.com:cmRemiX/android_frameworks_base.git ****
+d981f04 : Frameworks/base: Check before foreach in Script <Andreas Gampe> 2 days ago
+53d2e90 : Frameworks/base: Use equals for Integer comparison <Andreas Gampe> 2 days ago
+5f2939f : Frameworks/base: Fix null-pointer check <Andreas Gampe> 2 days ago
+d078506 : Frameworks/base: Fix a hashCode implementation <Andreas Gampe> 2 days ago
+cbb1a36 : Frameworks/base: Fix always-false equals <Andreas Gampe> 2 days ago
+9a84d5d : Frameworks/base: Fix missing cast <Andreas Gampe> 2 days ago
+cc46e54 : Do not start music app when headset is unplugged <tsubus> 3 days ago
+9115dfb : SystemUpdateService: enable service but lock its receivers [1/2] <Gianmarco Reverberi> 31 hours ago
+6f961a1 : To call TypedArray.recycle() when we are done with the array. <ferro_chang> 9 days ago
+a44b9e7 : ADB not detected when run "adb root" with userdebug version. <Bo Huang> 5 months ago
+ca7bf9b : livedisplay: Updated icon from Asher <Steve Kondik> 2 days ago
+a6e487d : fix link of ringer and notif volume [1/2] <chickenfactory> 3 days ago
+ 
+**** https://github.com/CyanogenMod/android_hardware_qcom_display ****
+b01ae24 : hwc: Add secure display attribute <Baldev Sahu> 4 months ago
+ 
+**** https://github.com/CyanogenMod/android_hardware_samsung ****
+6b9cd5f : librilsec-client: Add support for xmm7260 modem <Andreas Schneider> 8 weeks ago
+2947268 : libril: Add support for xmm7260 modem. <Andreas Schneider> 3 months ago
+ 
+**** https://github.com/CyanogenMod/android_packages_apps_CMFileManager ****
+05ddc9c : CMFileManager: protect code path for access mSdBookmarks <Raj Yengisetty> 4 days ago
+ 
+**** https://github.com/CyanogenMod/android_packages_apps_Calculator ****
+6447be0 : Limit history expressions to a single line. <Matt Garnes> 6 days ago
+ 
+**** https://github.com/CyanogenMod/android_packages_apps_Calendar ****
+8d3bd6c : Calendar: support ACTION_VIEW instead of ACTION_SEND <Raj Yengisetty> 4 days ago
+ 
+**** https://github.com/cmRemiX/android_packages_apps_OmniSwitch
+origin	git@github.com:cmRemiX/android_packages_apps_OmniSwitch.git ****
+d50ea73 : OmniSwitch: updates <maxwen> 6 days ago
+ 
+**** Origin_bitbucket	git@bitbucket.org:cmRemiX/android_packages_apps_settings.git
+https://github.com/cmRemiX/android_packages_apps_Settings
+origin	git@github.com:cmRemiX/android_packages_apps_Settings.git ****
+37b96b7 : Fix Settings FC in non-Advanced mode (Buttons Setting) <Janson Kang> 2 days ago
+5ecbc4f : KEY DISABLE: Switch to new cmHardware <alviteri> 2 days ago
+ 
+**** https://github.com/CyanogenMod/android_packages_inputmethods_LatinIME ****
+559c5fd : Fix suggestions text padding (AOSP Keyboard) <Sergey Zozulya> 35 hours ago
+ 
+**** https://bitbucket.org/cmRemiX/arm-linux-androideabi-4.8 ****
+6524d36 : Initial commit <Paul Beeler> 4 days ago
+ 
+**** https://github.com/CyanogenMod/android_vendor_cm
+origin	git@github.com:cmRemiX/android_vendor_cm.git
+temasek	https://github.com/temasek/android_vendor_cm ****
+359fddf : sepolicy: Permissions for userinit <Emerson Pinter> 5 weeks ago
+ 
+**** https://github.com/cmRemiX/android_vendor_cmremix
+origin	git@github.com:cmRemiX/android_vendor_cmremix.git ****
+7c65205 : add extra changelog for Kernel Building <ZION959> 17 hours ago
+c07d56b : [2/2] ArchiDroid Optimization <ZION959> 2 days ago
+3c427d7 : vendor: ignore recovery size & no recovery for hlte varients <ZION959> 2 days ago
+f8f80a6 : remove uneeded mm-dash dependencies and fixed trltexx dependencies <ZION959> 2 days ago
+ca0d476 : CMRemix v12.0 <ZION959> 2 days ago
+ 
+**** TheMuppets	https://github.com/TheMuppets/proprietary_vendor_samsung
+https://github.com/cmRemiX/proprietary_vendor_samsung
+origin	git@github.com:cmRemiX/proprietary_vendor_samsung.git ****
+230f491 : mondrianwifi: Update adreno blobs to oppo/msm8974-common <Christopher R. Palmer> 2 days ago
+62a3db7 : mondrianwifi: Update drm/wv blobs to oppo/msm8974-common <Christopher R. Palmer> 3 days ago
+ 
