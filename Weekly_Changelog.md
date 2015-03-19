@@ -8,96 +8,6 @@ Date:   Sat Mar 14 23:53:37 2015 -0700
     Merge remote-tracking branch 'upstream/cm-12.0' into cm-12.0
 
 project bootable/recovery-twrp/
-commit 910491c881669dd837c0efcf07af8aacb44c5dcc
-Author: that <github@that.at>
-Date:   Wed Mar 4 22:39:34 2015 +0100
-
-    gui: type safe resources part 2
-    
-    - separate collections for fonts, images, animations
-    - no more ugly casts
-    - fix crash if main ui.xml did not define any resources but include did
-    - don't stop loading resources if one "type" attribute is missing
-    
-    Change-Id: I70c1c9ca66ca65d9fba1ba3eded34f3d8a07488e
-
-commit e628d646b4aebd894ce1148ec13f68e70c598715
-Author: that <github@that.at>
-Date:   Wed Mar 4 23:05:00 2015 +0100
-
-    gui: allow specifying resource type in element name
-    
-    e.g. '<image ...>' instead of '<resource type="image" ...>'
-    
-    Change-Id: I5ce04ae0845351c8a4640d12e36f1aaf32e1ebc9
-
-commit 474cacf22fbbcd4825bb7a4ae63d1dfa55992433
-Author: that <github@that.at>
-Date:   Thu Mar 5 20:25:39 2015 +0100
-
-    gui: support string resources
-    
-    storing strings in a map (for fast lookup) in resource manager
-    
-    To define a string resource in <resources>:
-    <string name="foo">Hello</string>
-    
-    To use a string, e.g.:
-    <text>%@foo%</text>
-    
-    Not yet done: language-specific resources (should be solved not only for
-    strings, but for all kinds of resources - e.g. for localized images)
-    
-    Change-Id: I3ba5cf5298c09e0d28a83973e9662f179271b33f
-
-commit 90e1e2dcf5ad89c795b77e9091f0cbee4f807fc9
-Author: Vojtech Bocek <vbocek@gmail.com>
-Date:   Fri Mar 6 00:28:21 2015 +0100
-
-    Properly disable GGL_TEXTURE_2D after using it in minuitwrp
-    
-    Change-Id: Ib100ccf3c8f6c622beb40b37ba3f61aad69d7d93
-    Signed-off-by: Vojtech Bocek <vbocek@gmail.com>
-
-commit b5f747cc60011b78fd97e6a116cf19dde6b6b6ab
-Author: Vojtech Bocek <vbocek@gmail.com>
-Date:   Thu Mar 5 20:02:57 2015 +0100
-
-    Implement gr_line() and gr_render_circle()
-    
-    Change-Id: I63c8dcfa276bbeb550ca051a3a1a0646a2d07dc6
-    Signed-off-by: Vojtech Bocek <vbocek@gmail.com>
-
-commit 76d32024c05e0585158f3266edb0e75017ca7f04
-Author: Vojtech Bocek <vbocek@gmail.com>
-Date:   Sun Mar 8 16:32:41 2015 +0100
-
-    Mount pstore filesystem while in recovery
-    
-    * pstore filesystem is evolution of ram_console and contains
-      kmsg from previous boot (previously in /proc/last_kmsg).
-    * Lollipop init.rc does this. If device doesn't have
-      pstore fs, it will simply be ignored
-    
-    Change-Id: Id3bf8763ccde54f87fde5cdf2db511649c376aa4
-    Signed-off-by: Vojtech Bocek <vbocek@gmail.com>
-
-commit ba2b25a9010303e6ed7aec9cf1345a551d495389
-Author: Matt Mower <mowerm@gmail.com>
-Date:   Thu Feb 19 13:19:47 2015 -0600
-
-    toolbox: Cleanup Makefile
-    
-    * Do not split the makefile in two to support pre-lollipop trees. Go
-      through and mark sections with PLATFORM_SDK_VERSION.
-    * setenforce: Correct the handling to prevent build warnings -- if
-      busybox provides this tool, then still allow it to be built, but do
-      not write a symlink.
-    * Correct indentation throughout
-    * Remove dead code (LOCAL_STATIC_LIBRARIES)
-    
-    Change-Id: I1b13a0e0be78ea862f7d418d683407ff79d17e4f
-
 commit c5dee9ce81a212cb88f45991071e999fa656f2cd
 Merge: 37a1f6a ba2b25a
 Author: ZION959 <ziontran@gmail.com>
@@ -139,17 +49,6 @@ Date:   Sun Mar 15 21:38:54 2015 -0700
     [1/2] ArchiDroid Optimization
     
     port to CMRemix (Thanks JustArchi)
-
-project cmRemiX/
-commit 31e49df9e9d02826cdb1772b58a89bc456a901c8
-Merge: 9891cbb ddc4820
-Author: ZION959 <ziontran@gmail.com>
-Date:   Tue Mar 10 21:25:18 2015 -0700
-
-    Merge remote-tracking branch 'Upstream/cm-12.0' into cm-12.0
-    
-    Conflicts:
-    	default.xml
 
 project device/samsung/hlte-common/
 commit 4c4741e0ad0206f7457f7ea0fbe1be981d1933c2
@@ -199,13 +98,6 @@ Date:   Wed Nov 26 03:00:00 2014 -0800
     Change-Id: Icd13e1afbed4e13c644d49a5a7b09215cbf58b94
 
 project device/samsung/trlte-common/
-commit 5a9bccf5295acaf3824a67fbc274552f6679f0f0
-Merge: 16ff27a 1e86927
-Author: ZION959 <ziontran@gmail.com>
-Date:   Tue Mar 10 21:52:04 2015 -0700
-
-    Merge remote-tracking branch 'upstream/cm-12.0' into cm-12.0
-
 commit a8b7f6d616845ef469a1367eb1c9c9b27058747a
 Author: Tony Layher <layhertony@gmail.com>
 Date:   Mon Mar 16 22:50:48 2015 -0400
@@ -222,6 +114,146 @@ Date:   Thu Mar 5 15:30:08 2015 -0400
     add support 910G
     
     Change-Id: I7e43f0814da00866d3f100af2d5f1f341c988715
+
+project external/bluetooth/bluedroid/
+commit 0c288384e612e0201995f6524a8924d000ec9a46
+Author: Andre Eisenbach <eisenbach@google.com>
+Date:   Mon Jan 26 13:49:36 2015 -0800
+
+    DO NOT MERGE Change pairing_cb to assume temporary pairing by default
+    
+    When pairing takes place, the pairing_cb.is_temp flag indicates whether
+    a pairing is temporary or permanent. Link keys are not stored for
+    temporary pairings. Since this is a "positive" flag, resetting the
+    pairing_cb control block (ex. memset to 0), it will assume persistent
+    pairing by default. Under certain circumstances, this can lead to a link
+    key being stored for temporarily secured connection.
+    
+    This patch reverses the flag to be a "negative" flag. Renamed to
+    "persistent_bond", the default 0 meaning is now used to indicate a
+    temporary bond. If the lag is not properly set now, it will default to a
+    temporary bond and will not save the link key erronously.
+    
+    Bug: 18345373
+    Change-Id: I06b1ba9331a70ebc29f4437bf836164658dec5ae
+
+commit 64f8d7fb105f999b7e60ca0cc8328350c24f4f09
+Author: Nitin Srivastava <nitinsr@codeaurora.org>
+Date:   Fri Nov 28 10:21:15 2014 +0530
+
+    Bluetooth: Update call state before opening SCO.
+    
+    This change makes sure to update the current
+    call state before opening SCO connection when
+    incoming call is answered. Some car kits are
+    strict in checking this sequence and go in
+    bad state if not done this way.
+    
+    Change-Id: I90aa899b89c7ea5efc57281d26ce65f5e291e63b
+    CRs-Fixed: 763881
+
+commit 1d82011c84cdb5e948eb1871267cd0801d32b856
+Author: venkata Jagadeesh <vjagad@codeaurora.org>
+Date:   Tue Jan 13 16:56:33 2015 +0530
+
+    Bluetooth: GAP: Don't send auth req from connection complete
+    
+    Restrict the auth req immediately from connection complete as
+    some remote IOT SOCs going to bad state if auth req and remote
+    features req are going simultaneously from DUT.
+    
+    Change-Id: I947773404bd905f9ee155c4e31bdad5f08da24ee
+    CRs-Fixed: 783203
+
+commit b20e9c3f741a67ad1248af0dae2b041b2c591109
+Author: Ayan Ghosh <abghosh@codeaurora.org>
+Date:   Wed Jan 21 15:11:48 2015 +0530
+
+    Free Browse packet
+    
+    Free Borwse packet in AVRC layer once the same is
+    copied to BTA for further processing.
+    
+    CRs-Fixed: 785286
+    Change-Id: I8037a649cff5a1e527c28ba36999a1bed34d315a
+
+commit 5e99e49bb0c62169ac7a1f6a30ff16fa9fa38507
+Author: Nitin Shivpure <nshivpur@codeaurora.org>
+Date:   Thu Jan 15 20:15:07 2015 +0530
+
+    Bluetooth: Use correct sniff configuration for PAN & HS
+    
+    - Using correct sniff table entry for PANU & NAP role.
+    - Using correct sniff table entry for HS role.
+    
+    Change-Id: I95c302dd46cdcc63058c9cb3de17fdfd6ffe8d2e
+    CRs-Fixed: 788993
+
+project external/dhcpcd/
+commit e499680f0832d6f959a3d5290085d61cce0f6907
+Author: Erik Kline <ek@google.com>
+Date:   Sat Nov 15 04:24:40 2014 +0900
+
+    Fun with buffer overrruns.
+    
+    In get_option(): don't read past the end of the option buffer.
+    
+    Also add a small unittest to verify sane behaviour for the above.
+    The dhcpcd code is not easily refactored into a library, nor is it
+    entirely possible to include some header files directly since some
+    structures use C++ reserved keywords ("new") for variable names.
+    
+    In print_option(): use of snprintf() returns the length that
+    /would/ have been written.  Add checks that the output buffer
+    is not overrun when printing.
+    
+    Bug: 18356137
+    Bug: 18356135
+    Change-Id: I0f907b8a952208749226ba034a416d773e068f8a
+
+project external/flac/
+commit 47c292e8e05dfde61724ddcd119ff779d73607ed
+Author: Robert Shih <robertshih@google.com>
+Date:   Mon Jan 5 17:35:54 2015 -0800
+
+    libFLAC: merge master from Xiph
+    
+    remote: https://git.xiph.org/flac.git
+    commit: 775eb93
+    
+    Bug: 18872897
+    Bug: 18910747
+    Change-Id: I6e450e44c96b97c3323e428b9e6d420422f24a4e
+    (cherry picked from commit 31e4f3166a91a2ebb34f643787122a638d9f1471)
+
+project external/okhttp/
+commit 24aad7677073f7c2116b105e53ba2eaa05917209
+Author: Alex Klyubin <klyubin@google.com>
+Date:   Tue Nov 18 17:45:01 2014 -0800
+
+    Fix a bug in OkHostnameVerifier wildcard handling.
+    
+    Wildcard domain name patterns of the form *.remainder are supposed to
+    match domain names that exactly match the remainder. Due to a bug,
+    the match was not exact but rather a prefix match: domain names
+    starting with the remainder would match too.
+    
+    This CL fixes the issue.
+    
+    Bug: 18432707
+    Change-Id: I2639ff51cabcbd395d4f30a9c69f9895738e0acf
+
+project external/skia/
+commit 2e87b697d21be8446c70888a1ac16733ee7bcd35
+Author: Wei Wang <wangw@codeaurora.org>
+Date:   Mon Mar 2 10:20:59 2015 -0800
+
+    Bring back NEON optimized blitter S32_Opaque_D32_filter_DX
+    
+    disable Clamp_S32_Opaque_D32_filter_DX_shaderproc_neon
+    for non-decal case
+    
+    Change-Id: I426c3fed55c2a7f6d9e024b0af266da0c2690abc
 
 project external/whispersystems/WhisperPush/
 commit d3d65686b29bf0d971c272ba2c616e567575c745
@@ -387,193 +419,82 @@ Date:   Sat Mar 14 23:53:07 2015 -0700
 
     Merge remote-tracking branch 'Upstream/cm-12.0' into cm-12.0
 
-project frameworks/base/
-commit 4d28b087acca198e2b2a253cfe3552d98d94b3a3
-Author: arter97 <qkrwngud825@gmail.com>
-Date:   Tue Mar 10 19:54:03 2015 +0900
+commit 08328f15856b06d1f4227cff39b3568227445826
+Author: Eric Laurent <elaurent@google.com>
+Date:   Wed Nov 5 12:15:36 2014 -0800
 
-    Revert "Fix memory leak in system_server when screen on/off"
+    IAudioPolicyService: bound array size in queryDefaultPreProcessing
     
-    This reverts commit bee24ba9431c1f1619f046c7753502a9817dd31e.
+    Bug: 18226810.
+    Change-Id: Ib8e2bfe835a8681aac50bf23161db14e50c9a124
+    (cherry picked from commit 74adca9ad30b7f8a70d40c5237bade0d16c4ea58)
 
-commit f9ab65e4b26781af734faa9d8669f5d07f4a38a3
-Author: Michael Wright <michaelwr@google.com>
-Date:   Thu Jan 8 14:30:47 2015 -0800
+commit 23423d36ec40c84294fc972d51ff612eb5919a62
+Author: Eric Laurent <elaurent@google.com>
+Date:   Tue Oct 28 15:46:45 2014 -0700
 
-    Clean up graphics resources.
+    audio policy: validate stream type received from binder calls.
     
-    Release SurfaceTexture after use in ColorFade and delete GL resources
-    in ImageWallpaper.
-    
-    Bug: 17871993
-    Change-Id: I05bda03657ca502ba35b7187b6f361018f7ef687
-    Signed-off-by: arter97 <qkrwngud825@gmail.com>
+    Bug: 18001784.
+    Bug: 18002005.
+    Change-Id: I8efa674dceff5a6e10251b1c7a55e9bb2d532395
 
-commit ef725f84374816e91d0c3df4f34a660867bf331b
-Author: d34d <clark@cyngn.com>
-Date:   Tue Mar 10 16:45:59 2015 -0700
+commit ba32742fcd2a4a1e6b5bf25aec605eedde540ce3
+Author: Eric Laurent <elaurent@google.com>
+Date:   Fri Feb 6 10:44:24 2015 -0800
 
-    SysUI: Clip to outline in ActivatableNotificationView
+    audio policy service: fix possible memory overflow
     
-    This will ensure the entire notification is clipped to the background
-    drawable.  If that drawable is a shape, such as a rounded rectangle
-    then the entire notification should be clipped to that.
+    Add limit on number of audio ports and patches requested by
+    listaudioPorts() and listAudioPatches().
     
-    Change-Id: I0a59712618223f28325126e2f0b96b4cfe000fbe
-    
-    Patchset: 1
-    http://review.cyanogenmod.org/#/c/91042/
+    Bug: 19261727.
+    Change-Id: I21dfdf11cf805734cc3b7b2a85762c5598f60580
+    (cherry picked from commit 1d670b11313250442455a22f1056ad649d607fb2)
 
-commit 54f264602084ed9618769cae46411a3fee693c82
-Author: Roman Birg <roman@cyngn.com>
-Date:   Tue Mar 10 17:21:27 2015 -0700
+commit da31859f7ce22580a88f67145618f8caa0edf888
+Author: Mike Lockwood <lockwood@google.com>
+Date:   Wed Nov 12 14:20:06 2014 -0800
 
-    SystemUI: allow lock screen visualizer to be disabled
+    MTP: add strict bounds checking for all incoming packets
     
-    Change-Id: I36a81071ad0d8f898b17a5e72ebea48672e62b9c
-    Signed-off-by: Roman Birg <roman@cyngn.com>
+    Previously we did not sanity check incoming MTP packets,
+    which could result in crashes due to reading off the edge of a packet.
+    Now all MTP packet getter functions return a boolean result
+    (true for OK, false for reading off the edge of the packet)
+    and we now return errors for malformed packets.
     
-    Conflicts:
-    	packages/SystemUI/src/com/android/systemui/statusbar/phone/KeyguardBottomAreaView.java
+    Bug: 18113092
+    Change-Id: I8be3df2c36fe730ad64e7ea9a5ee856ad815b904
 
-commit 031329c86e448bc566c263739b989a724c408409
-Author: Steve Kondik <steve@cyngn.com>
-Date:   Wed Mar 11 01:25:55 2015 +0000
+commit f4d983a88a57a023dafdbd483a95b269a707ccf5
+Author: Mike Lockwood <lockwood@google.com>
+Date:   Wed Dec 17 12:22:36 2014 -0800
 
-    media: Scan Monkey Audio files
+    Fix bounds checking for GetPartialObject command
     
-     * We've had APE codec support forever, but we weren't
-       actually recognizing it at the framework level.
-     * Fixit.
+    GetPartialObject has only 3 arguments, whereas the 64 bit version takes 4.
     
-    Change-Id: Icbbf591a63b8e7066c24f2d01065b9a6979b8cb0
+    Bug: 18786282
+    Change-Id: Ica67fdf9569372b89d379c8b0f3e0a64dacf150a
 
-commit dffcf45f1a7e5f527101deee5576d9f6d77ea94c
-Author: LorDClockaN <davor@losinj.com>
-Date:   Tue Mar 10 17:46:53 2015 +0100
+commit 130f0c4cd4138ffd179541642820be1639f43b1a
+Author: Marco Nelissen <marcone@google.com>
+Date:   Fri Jan 23 10:55:25 2015 -0800
 
-    FWB: Dotted circle battery (1/2)
+    Fix MTP delete
     
-    thx to Griffin Millender
-    
-    Change-Id: I6ba0ebfd7f8e10c39d43c282b48ffca61461e78d
+    Bug: 18836972
+    Change-Id: I55335abc6181ba3a861773cd13ee3a72a179a926
 
-commit 7287771dd11ef9494d09e86a499b0631985a97c5
-Author: Steve Kondik <steve@cyngn.com>
-Date:   Mon Mar 9 00:34:55 2015 +0100
-
-    livedisplay: Add "off" state and fix issues with QS tile
-    
-     * It was previously assumed that "day" was the default setting that
-       would be used the same as "off" would, but this is confusing and
-       also doesn't allow for a custom day temperature.
-     * Add a new state for "off" to simplify this, and handle it
-       appropriately. We won't show "day" in the QS tile if both "off" and
-       "day" are set to 6500K.
-     * Also fix bugs in the QS tile.
-    
-    Change-Id: Ie8e6ebdd83c9275fb7707844b8f054dcbff48a0b
-
-commit 2a79a7651cd4c72553f8fc596a352e8976d31efc
-Author: Roman Birg <roman@cyngn.com>
-Date:   Mon Mar 9 21:04:08 2015 +0000
-
-    Revert "systemui: Fix race condition in setting notification panel height"
-    
-    This reverts commit 257b3d48f3efe54cf6616bbcc9c761a470f70efd.
-    
-    Change-Id: I0fa1a3a5bc181f259c0248662c9c78524f21c9cc
-    
-    Patchset: 3
-    http://review.cyanogenmod.org/#/c/90960/
-
-commit 8837002a9a280be6b017ca37d8e371632c1852dc
-Author: Roman Birg <roman@cyngn.com>
-Date:   Tue Mar 10 17:20:23 2015 +0000
-
-    Revert "systemui: Fix KeyguardMonitor callbacks during configuration changes"
-    
-    This reverts commit 0beb0fcad4678241b8f5bfe13e81a8ced62cd05c.
-    
-    Change-Id: Ib8d5e1ba90a1ca4c48987a6232e3743d4ab4c8d8
-    
-    Patchset: 3
-    http://review.cyanogenmod.org/#/c/91012/
-
-commit 4c7f982febc77a4c31e9d850fc5d45a626740118
-Author: d34d <clark@cyngn.com>
-Date:   Wed Mar 4 16:28:29 2015 -0800
-
-    Themes: Add previous value and update time to mixnmatch [1/2]
-    
-    Change-Id: I546f8177cec86005293b8a680766c4b08aace0c1
-
-commit d70d50b51b917bdf92f0c6d3cebf87ab76af712e
-Author: Roman Birg <roman@cyngn.com>
-Date:   Tue Mar 10 15:51:38 2015 -0700
-
-    qsutils: use package manager to query whether nfc is present
-    
-    The NFC Manager may not have come up at this point, let's use a static
-    runtime check.
-    
-    Change-Id: I72668e7efad3f109890aff0c0d422bb08f82c533
-    Signed-off-by: Roman Birg <roman@cyngn.com>
-
-commit fe8eec3009511a9df61889409f9bffd225a06ab8
-Author: Roman Birg <roman@cyngn.com>
-Date:   Wed Mar 11 21:59:29 2015 -0700
-
-    SystemUI: improve recreating statusbar
-    
-    - Don't recreate controllers if they are already there
-    - Register receivers only the first time
-    - Set proper empty shade state after creation
-    - pause command queue a little earlier than right before creating new
-      views
-    - collapse notifications panel so the views can be recreated properly
-    
-    Change-Id: Id3fb285cd12e7e63564ff52886d7de5a97744a9c
-    Signed-off-by: Roman Birg <roman@cyngn.com>
-    
-    Patchset: 4
-    http://review.cyanogenmod.org/#/c/91014/
-
-commit 085c85b9feae94f641a48d91042ebf4b5aea7004
-Author: d34d <clark@cyngn.com>
-Date:   Tue Mar 10 16:45:59 2015 -0700
-
-    SysUI: Clip to outline in ActivatableNotificationView
-    
-    This will ensure the entire notification is clipped to the background
-    drawable.  If that drawable is a shape, such as a rounded rectangle
-    then the entire notification should be clipped to that.
-    
-    Change-Id: I0a59712618223f28325126e2f0b96b4cfe000fbe
-
-commit 1c36a6eeac39ef39a23b8ca925466c733cc8ccbe
+commit 1baf67ab3fb4f0f36ef1aa7b71b6bf28efd250d2
+Merge: 4bd7b86 130f0c4
 Author: ZION959 <ziontran@gmail.com>
-Date:   Wed Mar 11 22:03:05 2015 -0700
+Date:   Thu Mar 19 09:00:06 2015 -0700
 
-    Revert: FWB: LS weather disabler (1/2)
-    
-    PS2: No more FC
-    
-    Change-Id: I551fbbcb78712e8b04fcd316561f117693056bfc
-    
-    Conflicts: (reverted from commit 4f928d3dc259309fb130cb34bfcde000e4b6ea07)
+    Merge remote-tracking branch 'Upstream/cm-12.0' into cm-12.0
 
-commit 6e58317c7e805f07e6f61bd986fc7e761df95296
-Author: XXMrHyde <xxmrhyde@gmx.co.uk>
-Date:   Wed Mar 11 22:06:01 2015 -0700
-
-    FWB: Proper LS weather switch from XXMrHyde
-    
-    Change-Id: I9b730d53ac4bc40be77dab91e9f361a3ad970dcd
-    
-    Conflicts:
-    	core/java/android/provider/Settings.java
-
+project frameworks/base/
 commit 2d75d887e0a6abac5165dda37ee462118d96372d
 Author: XXMrHyde <xxmrhyde@gmx.co.uk>
 Date:   Thu Mar 12 22:15:48 2015 -0700
@@ -934,7 +855,15 @@ Date:   Mon Mar 9 18:03:36 2015 +0800
     
     Change-Id: I6d672ce6c4e6521d82ef873ce69076b1f1cded56
 
-commit 9115dfb3740cf25f8a2733faf09edbd2525367db
+commit db433661681050b2043bcaa8ae79bc80f98e373b
+Author: tsubus <tsubus@ilwt.org>
+Date:   Sat Mar 14 23:47:03 2015 +0100
+
+    Do not start music app when headset is unplugged
+    
+    Change-Id: Ic56ba6c30a72deaf119da40e65ca83a9dcc35c43
+
+commit d561841a619ddc7653ab40dce4750571f1cad583
 Author: Gianmarco Reverberi <gianmarco.reverberi@gmail.com>
 Date:   Mon Mar 16 20:02:15 2015 +0100
 
@@ -947,18 +876,10 @@ Date:   Mon Mar 16 20:02:15 2015 +0100
     
     Change-Id: Icfcfa26ccb85028d32edbb5cdb3dd7cdae85b720
     
-    Patchset: 3
+    Patchset: 4
     http://review.cyanogenmod.org/#/c/91579/
 
-commit cc46e54a466da9852dcbbe57bfd45c3987596280
-Author: tsubus <tsubus@ilwt.org>
-Date:   Sat Mar 14 23:47:03 2015 +0100
-
-    Do not start music app when headset is unplugged
-    
-    Change-Id: Ic56ba6c30a72deaf119da40e65ca83a9dcc35c43
-
-commit 9a84d5d7c83e629ab35d2526521763ef043f6861
+commit f934749989f5b273c966680cd9d6d5205a222797
 Author: Andreas Gampe <agampe@google.com>
 Date:   Sun Mar 15 14:10:23 2015 -0700
 
@@ -968,7 +889,7 @@ Date:   Sun Mar 15 14:10:23 2015 -0700
     
     Change-Id: I050e53778de8b1591a0be16ebbee8eed70eb1528
 
-commit cbb1a36ac281aaa0736db78d501adb9ff75975b2
+commit 3dac67c7c984a7f053760d75b645258ce909d8bc
 Author: Andreas Gampe <agampe@google.com>
 Date:   Sun Mar 15 14:19:43 2015 -0700
 
@@ -978,7 +899,7 @@ Date:   Sun Mar 15 14:19:43 2015 -0700
     
     Change-Id: I3d4ff890608e446b51f09a1b633af742f0c069d4
 
-commit d0785060d27c965cb5bd90037ffd400c43ce13a7
+commit 6f947a64993c28d317853883d46a06998ad48954
 Author: Andreas Gampe <agampe@google.com>
 Date:   Sun Mar 15 14:38:59 2015 -0700
 
@@ -991,7 +912,7 @@ Date:   Sun Mar 15 14:38:59 2015 -0700
     
     Change-Id: Icce8e2e71e9142421f5dac8a0ee8a211623fb704
 
-commit 5f2939fb628c402d4536435659136bba49692476
+commit 4ca0904393f450856104dc4446b0f8f7aba924b8
 Author: Andreas Gampe <agampe@google.com>
 Date:   Sun Mar 15 15:07:19 2015 -0700
 
@@ -999,7 +920,7 @@ Date:   Sun Mar 15 15:07:19 2015 -0700
     
     Change-Id: I715a21c313e909ae654e0c1aa67bdf7bcd89de76
 
-commit 53d2e9041f914b15ec424989a5181dbff03e459e
+commit ddb5d4fa8bc0777dba7fb09dd24c03e28ba0ce6f
 Author: Andreas Gampe <agampe@google.com>
 Date:   Sun Mar 15 15:39:21 2015 -0700
 
@@ -1014,7 +935,7 @@ Date:   Sun Mar 15 15:39:21 2015 -0700
     
     Change-Id: Iedcc6003adbf05c0c870aa4b3ada7f181a5b870e
 
-commit d981f045bc16e2dd2e435e4b4f88b0da04e35e9d
+commit 60495a5af954116c99d10d6ecb44c28fa216381b
 Author: Andreas Gampe <agampe@google.com>
 Date:   Sun Mar 15 15:57:30 2015 -0700
 
@@ -1028,7 +949,195 @@ Date:   Sun Mar 15 15:57:30 2015 -0700
     Conflicts:
     	rs/java/android/renderscript/Script.java
 
-commit 47011b860f86d161d3c6a8d77b46fe70053080ed
+commit 761a83bf8ac051016b4d593e074796b9ebc4b63c
+Author: jinchul.kim <jinchul.kim@lge.com>
+Date:   Fri Mar 13 15:27:42 2015 +0900
+
+    keep mDefaultDisplayMetrics from concurrent modification.
+    
+    getDisplayMetricsLocked can be invoked concurrently, it can cause
+    concurrent issues like ArrayIndexOutOfBoundsException.
+    
+    Change-Id: I816eb4b276e7872c8a1964b6389a6f1238f51e48
+    Signed-off-by: Jinchul Kim <jinchul.kim@lge.com>
+
+commit 19ca7cec800b2a404ff625f0ecbba6f23c1a4a09
+Author: Utkarsh Gupta <utkarsh.eminem@gmail.com>
+Date:   Mon Mar 16 17:21:39 2015 +0530
+
+    Lockscreen visualizer: Disable out animation
+    
+    Change-Id: Ic9766f1b06093caebec575aea689a018498a3aa8
+
+commit 19b0b4ac3d4cd6e1fa11cb8c352356853c1fd12a
+Author: LorDClockaN <davor@losinj.com>
+Date:   Mon Mar 16 15:20:29 2015 +0100
+
+    Fix SystemUI FC on theme change (recreateStatusbar())
+    
+    Heads Up view was getting removed while it wasn't
+    attached to window manager
+    
+    Also remove extra ;
+    
+    Change-Id: Idd439cb3eb387db05ad30c5129a75fb90a21e289
+
+commit a44a01ba97009299278bfe6f1938409a887a4720
+Author: Raj Yengisetty <rajesh@cyngn.com>
+Date:   Mon Mar 16 16:47:24 2015 -0700
+
+    SystemUI: CellularTile support multi-sim
+    
+    Change-Id: I6f2ee24e512260f90036376ef7763c87f048922d
+
+commit 5d379fb39170e138513833df8d1591dbe62c7b99
+Author: PrimeDirective <activethrasher00@gmail.com>
+Date:   Mon Aug 5 14:24:43 2013 -0400
+
+    fix cursor leaks in F_B
+    
+    my previous commit was submitted before i was finished.  Here is an updated version.
+    
+    Change-Id: I3e371e0cc192c3be01402ee2c2884157e469c3f2
+    PS2: missing bracket
+
+commit 74a00f52276be6b1d2c64bd4262a98547c1c4147
+Author: nuclearmistake <nuclearmistake@gmail.com>
+Date:   Thu Mar 12 09:14:18 2015 -0400
+
+    LEARN TO COMPUTER FFS... IT'S WHITESPACE, NOT ROCKET SURGERY.
+    
+    Change-Id: Ib54d9cdd3f617ba3cbca3a43f38fb262a3bbee40
+
+commit a29ec462877304dd705750f179c5c9377a01a196
+Author: BigBrother1984 <stevewatersy@gmail.com>
+Date:   Tue Sep 3 02:40:35 2013 -0400
+
+    ZygoteInit: increase GC threshold amount when preloading to postpone GC
+    
+    Patch Set 2: Hardcode it better to 1MB.
+    
+    Change-Id: I61890f056b9ef347af9334a0050a0f3fbe8c04fb
+
+commit 945aa746494a8ef1e6f269257248f23b508f5cfc
+Author: Martin Wallgren <martin.wallgren@sonymobile.com>
+Date:   Wed Aug 20 14:58:58 2014 +0200
+
+    Prevent resource leak in YuvToJpegEncoder
+    
+    SkWStream is never deleted before going out of scope
+    
+    Change-Id: I522b8040e2d2f5fdeac6dbe2adbd8ae840971d2e
+
+commit ec11aebe5908ffef40644218bd24ec4d0e40fccd
+Author: Bernhard Rosenkränzer <Bernhard.Rosenkranzer@linaro.org>
+Date:   Wed Nov 12 14:45:58 2014 +0100
+
+    Fix unused variables.
+    
+    The return value of jniRegisterNativeMethods is checked only in
+    LOG_FATAL_IF, which defines to nothing in the LOG_NDEBUG
+    case.
+    
+    Fake a use of the 'res' variable to shut off warnings when LOG_NDEBUG.
+    
+    Change-Id: I8263610f327c56897f76796fe1fbc2b325b0559f
+    Signed-off-by: Bernhard Rosenkränzer <Bernhard.Rosenkranzer@linaro.org>
+
+commit c10f843695fe112202924eae5be7503f277de4a4
+Author: Lajos Molnar <lajos@google.com>
+Date:   Thu Nov 20 16:16:55 2014 -0800
+
+    media: fix isSupportedFormat for integer frame rate
+    
+    Bug: 18473065
+    Change-Id: I670cc043d3cb117c26921cb639ff9eecc8f14b0a
+
+commit be4c50ec782736a2043cb5d4895d421140372d4c
+Author: Karol Wrótniak <karol.wrotniak@droidsonroids.pl>
+Date:   Thu Nov 27 21:29:15 2014 +0100
+
+    Fix PhoneStateListener constructor javadoc.
+    
+    Removed sentence in visible javadoc of #PhoneStateListener() which
+    was useless because it referred to another hidden constructor.
+    
+    Change-Id: I14a956ac29881000e48bf31e0090e9e1f93bf6e3
+
+commit d04c056c11866907e40a5fba4abc4b52a5335e75
+Author: Elliott Hughes <enh@google.com>
+Date:   Mon Dec 8 20:47:11 2014 -0800
+
+    Fix typo.
+    
+    Bug: https://code.google.com/p/android/issues/detail?id=78422
+    Change-Id: I0dfbb74334e126062660831a4e01817dde068b56
+
+commit 554da9ad2c7de06d23935ae9594e59add8dc2640
+Author: minho.choo <minho.choo@lge.com>
+Date:   Fri Dec 12 16:13:55 2014 +0900
+
+    Fix bugs regarding delay the dispatching of non-wakeup alarms
+    
+    checkAllowNonWakeupDelayLocked() method determines that delay the dispatching of non-wakeup alarms.
+    (there are no wakeup alarms and the screen is off, it can delay until the future.)
+    
+    if there is any pending non-wakeup alarms, non-wakeup alarm delivery time is bigger than nowELAPSED.
+    but, checkAllowNonWakeupDelayLocked() returns false and non-wakeup alarm is not delay until future.
+    
+    i think it is necessary to reverse the inequality symbol on "mNextNonWakeupDeliveryTime > nowELAPSED"
+    if it isn't, Could you let me know when we get ¡°stuck in a loop¡± in the comment of checkAllowNonWakeupDelayLocked () method?
+    
+    Change-Id: I7e972064547f4d0a9b4175dbd4cf735b4837abfd
+    Signed-off-by: Minho Choo <minho.choo@lge.com>
+
+commit 0ce71842cc7f4b2e31616c2e7a38252f6003029b
+Author: Paul Lawrence <paullawrence@google.com>
+Date:   Tue Jan 6 13:11:23 2015 -0800
+
+    Fix crash caused by toHex returning exception
+    
+    toHex was changed to throw an exception in
+    I4986a8e806d9066129f696ab9f2e80655424e723, but its caller was not adjusted
+    accordingly, causing a crash whenever an unencrypted device was booted.
+    
+    Bug: 18886749
+    Change-Id: If0505f617001cf5e0d99cf14c8b09e6a6a377167
+
+commit cf7366fbac3af0109e959eee935d89952724876c
+Author: Neil Fuller <nfuller@google.com>
+Date:   Fri Jan 9 11:43:42 2015 +0000
+
+    Fix HttpResponseCacheTest in anticipation of an OkHttp upgrade.
+    
+    OkHttp recently changed the behavior of their caching with
+    commit e74e3f3bf744ef7f4d8ee724a7cf2347e486cfab - it is now
+    neccessary to close the inputstream (or disconnect the
+    HttpURLConnection) for a response to be cached.
+    
+    This change is (effectively) a no-op prior to the upgrade.
+    
+    The behavior is undefined as to whether closing the
+    input stream is required for caching. OkHttp's new behavior
+    is consistent with other HttpURLConnection implementations
+    tried.
+    
+    Change-Id: Iaf57371651296ac84850971ef60a9338cead57c0
+
+commit 71703ae1785743c93a8dd2468bda674424f4951e
+Author: Jason Sams <jsams@google.com>
+Date:   Wed Jan 21 12:55:14 2015 -0800
+
+    Fix default compute thread priority
+    
+    bug 16651474
+    
+    Compute inherited graphics default thread priority of Display.  This
+    was not intended.
+    
+    Change-Id: I0dd9a230ce8ceba64e971b024cbe518927cd2550
+
+commit 13a24368d04a12bb9b5df602b304da05426389c2
 Author: Alexander Martinz <eviscerationls@gmail.com>
 Date:   Tue Mar 17 19:20:00 2015 -0700
 
@@ -1056,18 +1165,362 @@ Date:   Tue Mar 17 19:20:00 2015 -0700
     	packages/SystemUI/src/com/android/systemui/statusbar/CommandQueue.java
     	policy/src/com/android/internal/policy/impl/PhoneWindowManager.java
 
-project frameworks/opt/chips/
-commit 15785bcd55931e3b24f791ec846586a1b295b007
-Author: Jorge Ruesga <jorge@ruesga.com>
-Date:   Thu Mar 12 05:00:24 2015 +0100
+commit b220075884217f8e92e8b5aacd8af2913c7a665e
+Author: Tom Marshall <tdm@cyngn.com>
+Date:   Wed Aug 13 14:24:40 2014 -0700
 
-    chips: fix NPE errors
+    Factory reset: Allow passing wipe_media to recovery
     
-    Avoid access to potencial null references. Only chips_autocomplete_recipient_dropdown_item has
-    all the suggested contacts views. Only remove objects with valid destination references
+    - Add plumbing pieces in target services
     
-    Change-Id: I0e53d76a9bb6d319511269568a32104c8ffd3521
-    Signed-off-by: Jorge Ruesga <jorge@ruesga.com>
+    Change-Id: I3b6e224064055b2eef8c2909c7d36f9a76014d70
+
+commit 224a736e02d460f2a75293a7a2fe18f5fa4debd2
+Author: Sravanthi Palakonda <srapal@codeaurora.org>
+Date:   Thu Dec 4 19:24:01 2014 +0530
+
+    wifi:Provide UI with SIM info for EAP-SIM authentication
+    
+    User Interface requires the SIM information (viz. number / type
+    of SIM's supported on the device), using which the respective
+    authentication option is provisioned to the user. This commit
+    provides the same by querying the information through the API
+    exposed by the Wi-Fi framework which further interacts with
+    the supplicant.This commit, defines a new class for the
+    SIM information which is populated based on the information
+    obtained on the query.
+    
+    CRs-Fixed: 775942
+    Change-Id: Ifd2208e6f47f8248df084896744c67c8a5eb31ff
+    
+    Patchset: 4
+    http://review.cyanogenmod.org/#/c/89421/
+
+commit 9ff18f1c6fc86d6603fead068e7c6010364982b4
+Author: d34d <clark@cyngn.com>
+Date:   Fri Mar 13 21:12:54 2015 -0700
+
+    Themes: Switch themes when user changes
+    
+    This patch grabs the theme config for the new user and then
+    creates a ThemeChangeRequest from that config.  This request is
+    then processed and applied for the new user.
+    
+    Secondary users will not be able to change themes at this time.
+    This patch helps pave the way for that ability and provides a better
+    user experience when switching users.
+    
+    Change-Id: I6d7e2ab312b8e3e5c099d1e9e2e62892bead10da
+
+commit 4331132a9b7b8b1b33e1ac6c36ecf43fc096e3c8
+Author: Eric Laurent <elaurent@google.com>
+Date:   Wed Nov 5 12:18:05 2014 -0800
+
+    AudioEffect JNI: use new max preprocessing constant
+    
+    Bug: 18226810.
+    Change-Id: Ica5677da247268306b34dfce38f25394586817fd
+    (cherry picked from commit b27a8a5bcc40054f6d775d070bc2de6eb996d1c2)
+
+commit da7eba465eb6a2d80b0ccac48921af00467e7335
+Author: Adam Lesinski <adamlesinski@google.com>
+Date:   Fri Nov 7 11:26:14 2014 -0800
+
+    Fix ParceledListSlice to enforce the same concrete types among its elements.
+    
+    Bug:17671747
+    Change-Id: I896f75738e5b464ccb6c03290f139cc2fa72f966
+
+commit 7a633bc706cc86135ccbbf3865bf243879b55ae4
+Author: Jon Larimer <jlarimer@google.com>
+Date:   Thu Jan 29 15:54:43 2015 -0500
+
+    Fix build breakage in older branches by avoiding <> notation
+    
+    Change-Id: I5e3d523dac1f364f52f0d2cab479c1705d667e5a
+
+commit f7d55cd95a1a3f01efa827d683e75dfa2e03f41d
+Author: Leon Scroggins III <scroggo@google.com>
+Date:   Tue Jan 27 11:12:02 2015 -0500
+
+    Handle bad ninepatch data.
+    
+    Changes proposed by Ben Hawkes of Google Project Zero.
+    
+    NinePatchPeeker.cpp:
+    Instead of asserting, return false for bad data.
+    
+    ResourceTypes.h:
+    Store ninepatch values as unsigned.
+    
+    BUG:19151999
+    Change-Id: Ibe35e7569f632c6bb8a34a7701e26bb6ed547ec2
+
+commit 47821265a381e288f51ce80e8debeaf52c78b568
+Author: Matt Garnes <matt@cyngn.com>
+Date:   Thu Mar 12 16:11:14 2015 -0700
+
+    Properly clean up when setting new InputFilter.
+    
+    In f1b93471565c43e57e9e199596d51f7caaec8ebd, the single InputFilter that
+    is set in InputManagerService was replaced with a chain of filters that
+    are all listening for InputEvents.
+    
+    The original field mInputFilter was replaced in this patch but not
+    removed. When a new InputFilter is added, we check that this unused
+    field mInputFilter != null before doing necessary teardown of the previous
+    filter. Since this is always null, this causes the previous filter to
+    not be disconnected when a new one is set with setInputFilter().
+    
+    If the user toggles "Magnification Gestures" on and off twice in Accessibility
+    Settings, this will send the old and new InputFilters into a loop
+    sending and receiving touch events, locking up the device completely
+    until reboot.
+    
+    Remove all references to the unused mInputFilter field.
+    
+    Change-Id: I6ef67a664f1e783f3f0402b7c2a0984499a4b614
+
+commit 3081976876a7a34d891c55abacd0eca69183928c
+Author: Leon Scroggins III <scroggo@google.com>
+Date:   Mon Feb 9 15:42:19 2015 -0500
+
+    Check that bitmap's size does not exceed 32 bits. DO NOT MERGE
+    
+    BUG:19270126
+    Change-Id: I075d1cefcd3208305a72b4fa629a262e92eb60ea
+
+commit 2a5e9e7802d5e9241f9ef601f722c415bc4dc615
+Author: Craig Mautner <cmautner@google.com>
+Date:   Tue Feb 17 10:17:21 2015 -0800
+
+    Do not make ActivityContainer available to apps. DO NOT MERGE
+    
+    A security leak was discovered whereby a malicious app could get the
+    IActivityContainer object from one app and use it to inject events
+    into another app. This fix removes the availability of the
+    IActivityContainer and replaces its one use with a method for
+    returning the information the IActivityContainer was used for.
+    
+    Fixes bug 19394591.
+    
+    Change-Id: Ib3cec25b25130cd8e098892c057742cfd575cfdd
+
+commit 470e4347afcbaae888e335d33f40f02451dbff4b
+Author: Mike Lockwood <lockwood@google.com>
+Date:   Thu Nov 13 09:40:42 2014 -0800
+
+    MTP: Update JNI for new packet getters
+    
+    Bug:18113092
+    Change-Id: I137a926b3c29993124e3eaec23b1cf1b4f2b52dd
+
+commit feb80307e9cba6c187fc82ade172277cb61f7ce3
+Author: Jeff Sharkey <jsharkey@android.com>
+Date:   Wed Nov 26 13:38:26 2014 -0800
+
+    Sanitize display names, keep extensions intact.
+    
+    When creating or renaming files on external storage, sanitize the
+    requested display names to be valid FAT filenames.  This also fixes
+    a handful of directory traversal bugs.
+    
+    Also relax logic around generating display names to allow any
+    extension which maps to the requested MIME type.  Tests to verify.
+    
+    Bug: 18512473, 18504132
+    Change-Id: I89e632019ee145f53d9d9d2050932f8939a756af
+
+commit 7ce33be3b02a4a11dcb1573da25c191c037b3365
+Author: Andreas Gampe <agampe@google.com>
+Date:   Sun Mar 15 20:17:07 2015 -0700
+
+    Frameworks/base: Force long computation
+    
+    Ensure that an int-based computation is carried out as long.
+    
+    Change-Id: I23b10a95600674e8a5a65c0ea349afdc6aa152ae
+
+commit 45edc234f587983df6c4ca295fdf6d9fee0a4dca
+Author: Andreas Gampe <agampe@google.com>
+Date:   Sun Mar 15 18:04:41 2015 -0700
+
+    Frameworks/base: Fix a comparison
+    
+    Change-Id: I80d62869920e77110c95f20369ec2631c75f6ed4
+
+commit 669fa9d413e3f8d949a3ce03995350d110f5f966
+Author: Andreas Gampe <agampe@google.com>
+Date:   Sun Mar 15 15:21:25 2015 -0700
+
+    Frameworks/base: Fix trivial equals implementation
+    
+    The comparator's equal implementation doesn't satisfy the constraints
+    of an equals method, namely being reflexive. Use the standard Object
+    implementation instead.
+    
+    Bug: 19797138
+    Change-Id: I74f888e99533e1945aab7ab10fe8ee3ded6388f4
+
+commit 48a915cf2018929c0fa83aa4198939259fed7c8b
+Author: Andreas Gampe <agampe@google.com>
+Date:   Sun Mar 15 20:32:22 2015 -0700
+
+    Frameworks/base: Use || instead of |
+    
+    Nothing wrong with | in this case, but || is canonical.
+    
+    Bug: 19797138
+    Change-Id: I5f145736a5470f7cde06efce9a217d86eda2135f
+
+commit 6b196aea28fb699c9c1c023e517da5bb39bcd5a0
+Author: Andreas Gampe <agampe@google.com>
+Date:   Sun Mar 15 13:59:50 2015 -0700
+
+    Frameworks/base: Fix precedence bug
+    
+    Explicit cast has higher precedence than shift.
+    
+    Bug: 19797138
+    Change-Id: Ifcf569bf774fbf65ee50c078f736ad167bcc6b8c
+
+commit 057e3f41a97419c2e52eb562d27479be00e7d4ea
+Author: Andreas Gampe <agampe@google.com>
+Date:   Sun Mar 15 14:43:31 2015 -0700
+
+    Frameworks/base: Fix format string in Camera
+    
+    One cannot print a boolean with %d. That will result in an exception.
+    
+    Bug: 19797138
+    Change-Id: I86c42ea834cebebaecff8463637cc9de14d1fc88
+
+commit 0ebbe1467678c10fd8dc5f1bf0391064c1a4cbda
+Author: Andreas Gampe <agampe@google.com>
+Date:   Sun Mar 15 18:55:33 2015 -0700
+
+    Frameworks/base: Make IDENTITY_MATRIX final
+    
+    Bug: 19797138
+    Change-Id: I127f24b7060a0c4dab401ce8e3057d362c6d6b06
+
+commit b751b7ee8be9073f944781d8501eeb45c9efcd77
+Author: Andreas Gampe <agampe@google.com>
+Date:   Sun Mar 15 14:49:15 2015 -0700
+
+    Frameworks/base: Fix format string in Geofence
+    
+    %p is not a valid conversion in format strings. It is also superfluous,
+    as it is already known that location is null.
+    
+    Bug: 19797138
+    Change-Id: I5784e28b05b4ca9aac57e0fc9da4a7f01d9b3247
+
+commit 9b2edccdc49c827bc6a255bb4f7c4d3cd62aed3a
+Author: Jason Sams <jsams@google.com>
+Date:   Tue Mar 17 16:36:55 2015 -0700
+
+    Avoid duplicate surface creation.
+    
+    Change-Id: I43104c8b48dd26681735940e6b2e1ba902af2020
+
+commit 6c45856da8c159e1a23441db00e591ba63bf9d4c
+Author: Andreas Gampe <agampe@google.com>
+Date:   Tue Mar 17 16:08:43 2015 -0700
+
+    Frameworks/base: Fix visibility flag in Editor
+    
+    Fix double check.
+    
+    Bug: 19797138
+    Change-Id: I95e694f384f1f25d6cf3b6a1669052940385e41d
+
+commit 69ead566e923f0a58e260c162c434f0ded58566d
+Author: Andreas Gampe <agampe@google.com>
+Date:   Tue Mar 17 19:10:14 2015 -0700
+
+    Frameworks/base: Remove duplicate check in Mesh
+    
+    Bug: 19797138
+    Change-Id: I0b11c4ff63a8031d5e58a06ac13f91ae0bbac5dc
+
+commit 94f691dbe1a3b4e97bfe2d6357e01392b85cd185
+Author: Andreas Gampe <agampe@google.com>
+Date:   Tue Mar 17 21:07:21 2015 -0700
+
+    Frameworks/base: Fix potential NPE in InputMethod
+    
+    Don't read the size of an unchecked list.
+    
+    Bug: 19797138
+    Change-Id: I9d8c087aff7bc9cc1e8aae9a0b489e23b5442765
+
+project frameworks/native/
+commit f58a148de7ca986efb73e3e3b2a5350d699c7f0a
+Author: Michael Lentine <mlentine@google.com>
+Date:   Wed Feb 18 10:14:18 2015 -0800
+
+    Update maxNumber to be smaller.
+    
+    There shouldn't be more than 4096 fds (probably signficantly smaller) and
+    there shouldn't be more than 4096 ints.
+    
+    Bug: 18076253
+    
+    Change-Id: I3a3e50ee3078a4710e9737114e65afc923ed0573
+
+commit deb38f7ef066c026809e80affe301d6cdaa77959
+Merge: 88a5ca9 f58a148
+Author: ZION959 <ziontran@gmail.com>
+Date:   Thu Mar 19 09:00:39 2015 -0700
+
+    Merge remote-tracking branch 'upstream/cm-12.0' into cm-12.0
+
+project frameworks/opt/net/wifi/
+commit 6655e0006ba965530225c72cb8da0acea60e70b0
+Author: Nalla Kartheek <karthe@codeaurora.org>
+Date:   Thu Feb 5 13:52:47 2015 +0530
+
+    WiFi: Correct CMD_PNO_PERIODIC_SCAN command value
+    
+    In WifiStateMachine CMD_PNO_PERIODIC_SCAN and CMD_ROAM_WATCHDOG_TIMER
+    constants are assigned same value, due to which one of the operation fails.
+    Assign correct command value to CMD_PNO_PERIODIC_SCAN.
+    
+    Change-Id: I478948d1a2c0308df4de9f0e15d0dd32a16e4a40
+    CRs-Fixed: 791409
+
+commit 66462008b4c00afb0b908d23246801e15abdacd8
+Author: Sravanthi Palakonda <srapal@codeaurora.org>
+Date:   Thu Dec 4 19:16:52 2014 +0530
+
+    wifi:Provide UI with SIM info for EAP-SIM authentication
+    
+    User Interface requires the SIM information (viz. number / type
+    of SIM's supported on the device), using which the respective
+    authentication option is provisioned to the user. This commit
+    queries the same by invoking a command exposed by the
+    wpa_supplicant. It is the wpa_supplicant that gets this
+    information.
+    
+    CRs-Fixed: 775942
+    Change-Id: I93c6a5450c806d8fade0103ef96eca986c925eba
+
+commit 5a16c4cee79f3f28e9387b668290068ecffaba27
+Author: Sravanthi Palakonda <srapal@codeaurora.org>
+Date:   Mon Feb 23 13:36:15 2015 +0530
+
+    wifi: Handle error cases when EAP-SIM info is NULL/Unsupported
+    
+    To get the SIM information,UI queries framework through the
+    API exposed by the Wi-Fi framework which further interacts with
+    the supplicant.If the supplicant times out or does not support
+    the EAP-SIM functionality ,it either returns null or the string
+    "unsupported".This throws an error while parsing at WifiEapSimInfo.
+    This commit handles the error cases by catching the exception.
+    
+    Change-Id: Ie7b20dc32016d0396e68971415a835c40cf37989
+    CRs-Fixed: 796265
 
 project hardware/qcom/display-caf/msm8916/
 commit b01ae24693ba7076410ecb8cfb93f3908f84fe7c
@@ -1104,2895 +1557,6 @@ Date:   Fri Jan 23 22:41:22 2015 +0100
     Signed-off-by: Andreas Schneider <asn@cryptomilk.org>
 
 project kernel/samsung/trlte/
-commit dae53778d37c31cc60318c5998393e930f7501d5
-Author: ZION959 <ziontran@gmail.com>
-Date:   Tue Mar 10 20:03:48 2015 -0700
-
-    kernel/power/powersuspend: new PM kernel driver for Android w/o early_suspend v1.7 (faux123/Yank555.lu)
-    
-    - do only run state change if change actually requests a new state
-
-commit 2fecf66725b34f3ce2f387fe4c766299072e27fa
-Author: ZION959 <ziontran@gmail.com>
-Date:   Tue Mar 10 20:04:54 2015 -0700
-
-    intelli_plug: intelligent hotplug cpu driver with eco mode - squashed committ to v3.8 (faux123)
-    
-    intelli_plug: intelligent hotplug cpu driver with eco mode
-    
-    Signed-off-by: Paul Reioux <reioux@gmail.com>
-    
-    Conflicts:
-    	arch/arm/mach-msm/Kconfig
-    	arch/arm/mach-msm/Makefile
-    intelli_plug: tweak for faster wakeup from suspend
-    
-    bump version to 1.1
-    
-    Signed-off-by: faux123 <reioux@gmail.com>
-    intelli_plug: increase cores on persistence
-    
-    also replace hardcoded values with Macros for ease of updating later
-    
-    Signed-off-by: faux123 <reioux@gmail.com>
-    intelli_plug: make it gcc-4.6.x eabi compatible :p
-    
-    Signed-off-by: faux123 <reioux@gmail.com>
-    intelli_plug: use rq_stats to help detect artificial or constant loads
-    
-    benchmarks often create fake / artificial loads at a constant rate.  These
-    type of loads are not detected corectly by run average algorithms. Use
-    the run queue stats to help detect these cases and bring up the cores in
-    correspondence.
-    
-    bump version to 1.2
-    
-    Signed-off-by: faux123 <reioux@gmail.com>
-    intelli_plug: use mp_decision() algorithm for core 3 and 4
-    
-    This replaces the simplistic check for run queue thresholds with a more
-    sophisticate algorithm with time awareness
-    
-    bump version to 1.3
-    
-    Signed-off-by: faux123 <reioux@gmail.com>
-    intelli_plug: tweak mp_decsion parameters and remove unused logic
-    
-    Signed-off-by: faux123 <reioux@gmail.com>
-    intelli_plug: bump threshold slightly for better response
-    
-    Signed-off-by: faux123 <reioux@gmail.com>
-    wip: intelli_plug: change logic for better benchmark performance
-    
-    Signed-off-by: faux123 <reioux@gmail.com>
-    intelli_plug: use mp_decision to reduce online persistence count for cores
-    
-    this should bring down the cores faster when run queue is low
-    also optimized code a bit using local vars
-    
-    Signed-off-by: faux123 <reioux@gmail.com>
-    intelli_plug: disable by default
-    
-    let the user enable via sysfs so it won't clash with mpdecision which is
-    enabled by default for qualcomm phones
-    
-    Signed-off-by: faux123 <reioux@gmail.com>
-    intelli_plug: slow down hotplug activity from 50ms to 200ms
-    
-    this will reduce the hotplug chaos which may in turn save more power
-    
-    Signed-off-by: faux123 <reioux@gmail.com>
-    
-    Conflicts:
-    	arch/arm/mach-msm/intelli_plug.c
-    intelli_plug: code clean up and minor bug fixes
-    
-    bump to version 1.6
-    
-    Signed-off-by: Paul Reioux <reioux@gmail.com>
-    intelliplug: replaced deprecated early_suspend driver with userspace interface
-    
-    early_suspend has been deprecated, so move original functionality to sysfs
-    interfae and have userspace app to replicate the early_suspend functionality
-    
-    bump version to 1.7
-    
-    Signed-off-by: Paul Reioux <reioux@gmail.com>
-    intelli_plug: add dynamic load sampling rate logic
-    
-    Add dynamic sampling logic based on load. If load is high and required more
-    than 2 cores, increase the sampling rate for a duration of 3 seconds to help
-    manage the load better during this time.  Once duration expires, revert back
-    to lazier sampling rate for better batter performance.
-    
-    Signed-off-by: Paul Reioux <reioux@gmail.com>
-    intelli_plug: add new power_suspend PM driver
-    
-    bump version to 1.9
-    
-    Signed-off-by: Paul Reioux <reioux@gmail.com>
-    intelli_plug: add touch input logic
-    
-    changed intelli_plug sampling rates and bump to version 2.0
-    
-    Signed-off-by: Paul Reioux <reioux@gmail.com>
-    intelli_plug: use a context safe function call instead
-    
-    Signed-off-by: Paul Reioux <reioux@gmail.com>
-    intelli_plug: performance tune-up continued...
-    
-    Signed-off-by: Paul Reioux <reioux@gmail.com>
-    intelli_plug: switch to use dedicated high priority workqueue
-    
-    from the shared global workqueue.  This should prevent hang ups while the
-    global workqueue is busy and cleaned up some logic issues.
-    
-    give input boost its own workqueue
-    
-    bump to version 2.2
-    
-    Signed-off-by: Paul Reioux <reioux@gmail.com>
-    intelli_plug: code review clean up
-    
-    set def sampling rate to something sane rather than zero (instantaneous
-    rescheduling is not good if intelli_plug is disabled)
-    
-    make touch input more generic rather than tied to a touchscreen driver
-    
-    remove unused code
-    
-    thanks to @dorimanx for the code reviews and suggestions
-    
-    bump to version 2.3
-    
-    Signed-off-by: Paul Reioux <reioux@gmail.com>
-    Intelli_plug: add wakeup cpufreq boost for quicker wakeup
-    
-    bump version to 2.4
-    
-    Signed-off-by: Paul Reioux <reioux@gmail.com>
-    intelli_plug: add screen off max controls
-    
-    bump to version 2.5
-    
-    Signed-off-by: Paul Reioux <reioux@gmail.com>
-    intelli_plug: add parameter to control touch boost on/off
-    
-    bump version to 2.6
-    
-    Signed-off-by: Paul Reioux <reioux@gmail.com>
-    intelli_plug: refactor stats calculation code to be less intrusive
-    
-    this is done for those kernels which do not have 100% source code available
-    and must use existing closed source modules such as wifi drivers
-    
-    Signed-off-by: Paul Reioux <reioux@gmail.com>
-    
-    Conflicts:
-    	kernel/sched/sched.h
-    Intelli_plug: kernel sched/core: add per cpu nr_running stats
-    
-    Signed-off-by: Paul Reioux <reioux@gmail.com>
-    intelli_plug: add profiles support and misc code optimization
-    
-    bump to version 3.0
-    
-    Signed-off-by: Paul Reioux <reioux@gmail.com>
-    intelli_plug: use per cpu nr_runnings stats for unplugging cores
-    
-    bump version to 3.1
-    
-    Signed-off-by: Paul Reioux <reioux@gmail.com>
-    intelli_plug: allow cpu_nr_running_threshold to be user adjustable
-    
-    bump version to 3.2
-    
-    Signed-off-by: Paul Reioux <reioux@gmail.com>
-    intelli_plug: tweak cpu_nr_running threshold
-    
-    and fix minor logic issues
-    
-    Signed-off-by: Paul Reioux <reioux@gmail.com>
-    intelli_plug: remove legacy msm_rq based code
-    
-    just use the original algorithm based on nr_running_stats
-    
-    bump version to 3.3
-    
-    Signed-off-by: Paul Reioux <reioux@gmail.com>
-    intelli_plug: add nr_running_thresholds based on thread capacity of SOC type
-    
-    instead of hard coded nr_running_thresholds, perform compile time calculation
-    of thresholds based on thread capacity of SOC types.
-    
-    bump version to 3.4
-    
-    Signed-off-by: Paul Reioux <reioux@gmail.com>
-    intelli_plug: misc minor code fixup post 3.4 update
-    
-    Signed-off-by: Paul Reioux <reioux@gmail.com>
-    intelli_plug: add automatic dual-core initializations
-    
-    Signed-off-by: Paul Reioux <reioux@gmail.com>
-    intelli_plug: deprecate eco mode. replaced by built-in profile
-    
-    bump version to 3.5
-    
-    Signed-off-by: Paul Reioux <reioux@gmail.com>
-    intelli_plug: add eco-extreme profile for more dual core use options
-    
-    Signed-off-by: Paul Reioux <reioux@gmail.com>
-    intelli_plug: post 3.5 tweaks and code clean up
-    
-    bump to version 3.6
-    
-    Signed-off-by: Paul Reioux <reioux@gmail.com>
-    intelli_plug: move to its own directory. It's been cross platform for a while
-    
-    intelli_plug driver has been working on OMAP44xx, TEGRA 3, Exynos and
-    MSM Krait/Cortex multi-core SOCs.  So it doesn't make sense to patch on a per
-    SOC basis, move it to its own ARM platform independent folder so patches can
-    apply to all supported ARM platforms
-    
-    Signed-off-by: Paul Reioux <reioux@gmail.com>
-    
-    Conflicts:
-    	arch/arm/mach-msm/Kconfig
-    	arch/arm/mach-msm/Makefile
-    intelli_plug: unify powersuspend and earlysuspend drivers
-    
-    also minor clean up on the persist logic
-    
-    bump to version 3.7
-    
-    Signed-off-by: Paul Reioux <reioux@gmail.com>
-    intelli_plug: adjust thread capacity for Cortex A7 SOCs
-    
-    Cortex A7 is much weaker than Krait processors
-    
-    Signed-off-by: Paul Reioux <reioux@gmail.com>
-    intelli_plug: fix thread capacity threshold calculation
-    
-    Signed-off-by: Paul Reioux <reioux@gmail.com>
-    intelli_plug: fix logic error for eco mode profiles
-    
-    Signed-off-by: Paul Reioux <reioux@gmail.com>
-    intelli_plug: only apply suspend/resume logic if active
-    
-    Signed-off-by: Paul Reioux <reioux@gmail.com>
-    intelli_plug: fix incorrect cpufreq API usage
-    
-    This resolves the wakeup kick and screen off max issues
-    
-    Signed-off-by: Paul Reioux <reioux@gmail.com>
-    intelli_plug: initialize ip_info struct element during driver init
-    
-    this will eliminate race issues
-    
-    Signed-off-by: Paul Reioux <reioux@gmail.com>
-    intelli_plug: use primary CPU's info data for non-boot cpu's settings
-    
-    Async CPU design has caused quite a bit of grief for controlling cpu
-    frequencies
-    
-    bump to version 3.8
-    
-    Signed-off-by: Paul Reioux <reioux@gmail.com>
-    intelli_plug: older Qualcomm kernel compatibility fixup
-    
-    ARGH... really angry at CAF code.
-    
-    some cpufreq driver APIs are incredibly unstable with some of the older
-    MSM kernels.  The correct way is the fix the cpufreq drivers, but there are
-    tons of variations out there, so rather than depending on a fix, make
-    intelli_plug more universal by avoiding the troubling APIs altogether
-    
-    Signed-off-by: Paul Reioux <reioux@gmail.com>
-
-commit 3db89ac33c8c2d48afb5d1bebe95caf5f4bf4d63
-Author: ZION959 <ziontran@gmail.com>
-Date:   Tue Mar 10 20:07:15 2015 -0700
-
-    drivers/cpufreq/cpu-boost: Allow input boost code to be excludable in defconfig (Yank555)
-
-commit 33e1385e31476fca6fe3fd5cba64aabdbbd30644
-Author: ZION959 <ziontran@gmail.com>
-Date:   Tue Mar 10 20:09:24 2015 -0700
-
-    Sound Control: initial bring up for Nexus 6 Linux 3.10 kernel driver (faux123)
-    
-    Initial import of FauxSound Driver 3.6 from 3.4 linux kernel drivers tailored
-    for Nexus 6
-    
-    GPL Copyright 2014 Paul Reioux (Faux123)
-    
-    Signed-off-by: Paul Reioux <reioux@gmail.com>
-
-commit 01ef44ea94a9a0b2185ee61d3d031bb4a734924a
-Author: myfluxi <linflux@arcor.de>
-Date:   Sun Feb 9 21:33:28 2014 +0100
-
-    PM: devfreq: Fix simple_ondemand crashing on startup
-    
-    simple_ondemands private data must be set to NULL, otherwise we would
-    run into a NULL pointer in kgsl_devfreq_get_dev_status().
-    
-    Signed-off-by: Paul Reioux <reioux@gmail.com>
-
-commit 7066139f10dcb3c626cabf521f376228f74c1410
-Author: Paul Reioux <reioux@gmail.com>
-Date:   Thu Jan 15 03:01:02 2015 -0600
-
-    Simple GPU Algorithm: Initial coding for devfreq based Adreno Drivers
-    
-    This is an open source user configurable simple GPU Control Algorithm used to
-    replace the closed sourced Qualcomm TrustZone GPU controller
-    
-    Copyright 2011~2015
-    
-    Signed-off-by: Paul Reioux <reioux@gmail.com>
-
-commit e6da331796d689af40ceaa2113747487e9c9e4d9
-Author: ZION959 <ziontran@gmail.com>
-Date:   Tue Mar 10 20:13:07 2015 -0700
-
-    cpufreq: CPU max. hardlimit v2.1 (Yank555.lu)
-    
-    - initial port to shamu
-    
-    SysFs Interface :
-    
-     * /sys/kernel/cpufreq_hardlimit/scaling_max_freq_screen_on (rw)
-     *
-     *   set or show the real hard CPU max frequency limit when screen is on
-     *
-     * /sys/kernel/cpufreq_hardlimit/scaling_max_freq_screen_off (rw)
-     *
-     *   set or show the real hard CPU max frequency limit when screen is off
-     *
-     * /sys/kernel/cpufreq_hardlimit/scaling_min_freq_screen_on (rw)
-     *
-     *   set or show the real hard CPU min frequency limit when screen is on
-     *
-     * /sys/kernel/cpufreq_hardlimit/scaling_min_freq_screen_off (rw)
-     *
-     *   set or show the real hard CPU min frequency limit when screen is off
-     *
-     * /sys/kernel/cpufreq_hardlimit/wakeup_kick_freq (rw)
-     *
-     *   set or show the wakeup kick frequency (scaling_min for delay time)
-     *
-     * /sys/kernel/cpufreq_hardlimit/wakeup_kick_delay (rw)
-     *
-     *   set or show the wakeup kick duration (in ms)
-     *
-     * /sys/kernel/cpufreq_hardlimit/touchboost_lo_freq (rw)
-     *
-     *   set or show touchboost low frequency
-     *
-     * /sys/kernel/cpufreq_hardlimit/touchboost_hi_freq (rw)
-     *
-     *   set or show touchboost high frequency
-     *
-     * /sys/kernel/cpufreq_hardlimit/touchboost_delay (rw)
-     *
-     *   set or show touchboost delay (0 = disabled, up to 10000ms)
-     *
-     * /sys/kernel/cpufreq_hardlimit/touchboost_eventcount (rw)
-     *
-     *   set or show touchboost eventcount necessary to go into high frequency (1-10)
-     *
-     * /sys/kernel/cpufreq_hardlimit/userspace_dvfs_lock (rw)
-     *
-     *   0 = allow changes to scaling min/max
-     *   1 = ignore (don't apply, but don't return an error)
-     *   2 = refuse (don't apply, return EINVAL)
-     *
-     * /sys/kernel/cpufreq_hardlimit/available_frequencies (ro)
-     *
-     *   display list of available CPU frequencies for convenience
-     *
-     * /sys/kernel/cpufreq_hardlimit/current_limit_max (ro)
-     *
-     *   display current applied hardlimit for CPU max
-     *
-     * /sys/kernel/cpufreq_hardlimit/current_limit_min (ro)
-     *
-     *   display current applied hardlimit for CPU min
-     *
-     * /sys/kernel/cpufreq_hardlimit/version (ro)
-     *
-     *   display CPU freq hard limit version information
-
-commit 68655ec5b2e264d5f509139dcb379410d7e99518
-Author: ZION959 <ziontran@gmail.com>
-Date:   Tue Mar 10 20:14:43 2015 -0700
-
-    cpufreq: CPU max. hardlimit v2.2 (Yank555.lu)
-    
-    - cpufreq pushed to cpu0 only "force cpuN policy to match cpu0 when setting min freq" (Imoseyon) takes care of the rest
-    - touch detection completely rewritten (now device independant, more lightweight)
-    - userspace dvfs lock code updated to hammerhead (was Note 3 code)
-    - hook to mdss display panel if powersuspend is not available
-    - slight code cleanup
-    - debug output switchable in defconfig
-    
-    SysFs Interface :
-    
-     * /sys/kernel/cpufreq_hardlimit/scaling_max_freq_screen_on (rw)
-     *
-     *   set or show the real hard CPU max frequency limit when screen is on
-     *
-     * /sys/kernel/cpufreq_hardlimit/scaling_max_freq_screen_off (rw)
-     *
-     *   set or show the real hard CPU max frequency limit when screen is off
-     *
-     * /sys/kernel/cpufreq_hardlimit/scaling_min_freq_screen_on (rw)
-     *
-     *   set or show the real hard CPU min frequency limit when screen is on
-     *
-     * /sys/kernel/cpufreq_hardlimit/scaling_min_freq_screen_off (rw)
-     *
-     *   set or show the real hard CPU min frequency limit when screen is off
-     *
-     * /sys/kernel/cpufreq_hardlimit/wakeup_kick_freq (rw)
-     *
-     *   set or show the wakeup kick frequency (scaling_min for delay time)
-     *
-     * /sys/kernel/cpufreq_hardlimit/wakeup_kick_delay (rw)
-     *
-     *   set or show the wakeup kick duration (in ms)
-     *
-     * /sys/kernel/cpufreq_hardlimit/touchboost_lo_freq (rw)
-     *
-     *   set or show touchboost low frequency
-     *
-     * /sys/kernel/cpufreq_hardlimit/touchboost_hi_freq (rw)
-     *
-     *   set or show touchboost high frequency
-     *
-     * /sys/kernel/cpufreq_hardlimit/touchboost_delay (rw)
-     *
-     *   set or show touchboost delay (0 = disabled, up to 10000ms)
-     *
-     * /sys/kernel/cpufreq_hardlimit/touchboost_eventcount (rw)
-     *
-     *   set or show touchboost eventcount necessary to go into high frequency (1-10)
-     *
-     * /sys/kernel/cpufreq_hardlimit/touchinput_dev_name (ro)
-     *
-     *   display the used touch device name (only if debug set in defconfig)
-     *
-     * /sys/kernel/cpufreq_hardlimit/userspace_dvfs_lock (rw)
-     *
-     *   0 = allow changes to scaling min/max
-     *   1 = ignore (don't apply, but don't return an error)
-     *   2 = refuse (don't apply, return EINVAL)
-     *
-     * /sys/kernel/cpufreq_hardlimit/available_frequencies (ro)
-     *
-     *   display list of available CPU frequencies for convenience
-     *
-     * /sys/kernel/cpufreq_hardlimit/current_limit_max (ro)
-     *
-     *   display current applied hardlimit for CPU max
-     *
-     * /sys/kernel/cpufreq_hardlimit/current_limit_min (ro)
-     *
-     *   display current applied hardlimit for CPU min
-     *
-     * /sys/kernel/cpufreq_hardlimit/version (ro)
-     *
-     *   display CPU freq hard limit version information
-
-commit 956e4460b4f6159305e2732da37ade308fae9b08
-Author: ZION959 <ziontran@gmail.com>
-Date:   Tue Mar 10 20:18:29 2015 -0700
-
-    msm: mdss: savoca's KCAL pp control adapted for shamu (via imoseyon)
-    
-    SysFS Interface :
-    
-    rgb : /sys/devices/platform/kcal_ctrl.0/kcal
-    rgb_min : /sys/devices/platform/kcal_ctrl.0/kcal_min
-    switch : /sys/devices/platform/kcal_ctrl.0/kcal_enabled
-    invert : /sys/devices/platform/kcal_ctrl.0/kcal_invert
-    saturation : /sys/devices/platform/kcal_ctrl.0/kcal_sat
-    hue : /sys/devices/platform/kcal_ctrl.0/kcal_hue
-    gamma : /sys/devices/platform/kcal_ctrl.0/kcal_val
-    contrast : /sys/devices/platform/kcal_ctrl.0/kcal_cont
-
-commit 6911ec30a829648608aec3cd8022aeed14626d48
-Author: savoca <adeddo27@gmail.com>
-Date:   Thu Feb 19 19:37:09 2015 +0000
-
-    msm: mdss: Replace PGC implementation with PCC for KCAL
-    
-     - Unify enable/update routines
-     - Remove no longer used update call from probe function
-     - Pass lut_data struct to all kcal/mdss functions
-     - Thank you to @cyanogen for PCC code reference
-
-commit 10125891e76f09adc7835ebcb7a3a9b0512b55b6
-Author: savoca <adeddo27@gmail.com>
-Date:   Fri Feb 20 20:38:31 2015 +0000
-
-    msm: mdss: Add pa_v2 support to KCAL
-    
-     - Thank you @engstk for testing
-
-commit ba69a437c9ef7e6221faa288dea4e9f15c890867
-Author: ZION959 <ziontran@gmail.com>
-Date:   Tue Mar 10 20:21:50 2015 -0700
-
-    intelli_thermal v3.0: initial coding for Linux 3.10 Qualcomm kernels (faux123)
-    
-    Intelli_thermal is a replacement for the existing Qualcomm msm_thermal engine.
-    It allows users greater controls over the stock Qualcomm thermal engine while
-    maintaining full backwards compatibilty.
-    
-    Copyright 2014~2015 Paul Reioux (aka Faux123)
-    
-    Signed-off-by: Paul Reioux <reioux@gmail.com>
-
-commit 029c104d280b9715b2284875b28e3fa0a41faad2
-Author: imoseyon <imoseyon@gmail.com>
-Date:   Fri Nov 28 13:08:09 2014 -0800
-
-    cpufreq: force cpuN policy to match cpu0 when changing freq or gov
-    
-    (cherry picked from commit c1b47d6e76e10afd5e874ec54192ffd2cc1adf64)
-    
-    (cherry picked from commit c1b47d6e76e10afd5e874ec54192ffd2cc1adf64)
-
-commit 4f0f9a25a863ce21f0dfa31f814f2d67113cab9c
-Author: imoseyon <imoseyon@gmail.com>
-Date:   Sat Nov 29 00:32:19 2014 -0800
-
-    cpufreq: force cpuN policy to match cpu0 when setting min freq
-    
-    * I omitted this on purpose before on N3 but no need to do that
-    for shamu
-    
-    (cherry picked from commit b1dfdd962586502663bdc652a7ce51efc6b2bec0)
-    
-    (cherry picked from commit b1dfdd962586502663bdc652a7ce51efc6b2bec0)
-
-commit d72857329856d9b4e4bae981270544c8c5d22926
-Author: Steve Kondik <shade@chemlab.org>
-Date:   Sun Jan 18 22:31:36 2015 -0700
-
-    msm: Fix high load average from uninterruptible waits
-    
-     * The load average on all MSMs is currently hovering at around 14
-       due to uninterruptible waits in various places.
-     * Convert these waits to interruptible waits to bring the load
-       back down to zero at idle.
-    
-    Change-Id: I14bad4af135b1594e235e2252cb484cb34d91054
-    
-    Conflicts:
-    
-    	drivers/thermal/msm_thermal.c
-    
-    Conflicts:
-    	drivers/thermal/msm_thermal.c
-    
-    (cherry picked from commit fd023ead7a158b3e699c1eba426787a6ab258532)
-    
-    Conflicts:
-    	drivers/video/msm/mdss/mdss_fb.c
-    
-    (cherry picked from commit 15ca5b7b79f2deab2db7f9288ebf7b17ef4553c6)
-    
-    (cherry picked from commit 15ca5b7b79f2deab2db7f9288ebf7b17ef4553c6)
-
-commit cdcb4e36123c2b84c656a31c845f04a16e4d4701
-Author: Xiaoming Zhou <zhoux@codeaurora.org>
-Date:   Thu Feb 20 16:00:53 2014 -0500
-
-    msm: mdss: properly handle panel on and off
-    
-    There is some condition that panel off will be called multiple times.
-    In this case, it was blindly free the gpios that were already released.
-    This is adding the check to handle this condition.
-    
-    Change-Id: I0140872be1255fe00ed5abd164a246fa57b2a245
-    Signed-off-by: Xiaoming Zhou <zhoux@codeaurora.org>
-    
-    (cherry picked from commit afd48062c3382066ec76c090f2420a10806a36f7)
-    
-    (cherry picked from commit afd48062c3382066ec76c090f2420a10806a36f7)
-    
-    (cherry picked from commit 2e22bb9b268f5b43c9e83969bb751d9adbcf8949)
-    
-    (cherry picked from commit 2e22bb9b268f5b43c9e83969bb751d9adbcf8949)
-
-commit 7d01a41cfe41e51d38e1965c03f44a47c740a18b
-Author: imoseyon <imoseyon@gmail.com>
-Date:   Sun Nov 30 09:01:11 2014 -0800
-
-    fs: sync: Asynchronous Fsync from HTC
-    
-        * taken from Faux's S5 repo and modified/fixed-up
-          for Linux 3.10 and shamu
-    
-    (cherry picked from commit a5e37a022d0c8b3b3dc54898d640aa3587a46956)
-    
-    (cherry picked from commit a5e37a022d0c8b3b3dc54898d640aa3587a46956)
-
-commit 74c18d56b2c9a93baf79bf62429d18f07c1eabb5
-Author: yank555-lu <yank555.lu@gmail.com>
-Date:   Sat Dec 27 17:46:10 2014 +0100
-
-    block: fiops ioscheduler - squashed commit (all credits for forward port to faux123)
-    
-    block: fiops ioscheduler core
-    
-    FIOPS (Fair IOPS) ioscheduler is IOPS based ioscheduler, so only targets
-    for drive without I/O seek. It's quite similar like CFQ, but the dispatch
-    decision is made according to IOPS instead of slice.
-    
-    The algorithm is simple. Drive has a service tree, and each task lives in
-    the tree. The key into the tree is called vios (virtual I/O). Every request
-    has vios, which is calculated according to its ioprio, request size and so
-    on. Task's vios is the sum of vios of all requests it dispatches. FIOPS
-    always selects task with minimum vios in the service tree and let the task
-    dispatch request. The dispatched request's vios is then added to the task's
-    vios and the task is repositioned in the sevice tree.
-    
-    Unlike CFQ, FIOPS doesn't have separate sync/async queues, because with I/O
-    less writeback, usually a task can only dispatch either sync or async requests.
-    Bias read or write request can still be done with read/write scale.
-    
-    One issue is if workload iodepth is lower than drive queue_depth, IOPS
-    share of a task might not be strictly according to its priority, request
-    Bias read or write request can still be done with read/write scale.
-    
-    One issue is if workload iodepth is lower than drive queue_depth, IOPS
-    share of a task might not be strictly according to its priority, request
-    size and so on. In this case, the drive is in idle actually. Solving the
-    problem need make drive idle, so impact performance. I believe CFQ isn't
-    completely fair between tasks in such case too.
-    
-    Signed-off-by: Shaohua Li <shaohua.li@intel.com>
-    
-    Signed-off-by: Paul Reioux <reioux@gmail.com>
-    
-    Conflicts:
-    	block/Makefile
-    
-    Conflicts:
-    	block/Makefile
-    block: fiops read/write request scale
-    
-    read/write speed of Flash based storage usually is different. For example,
-    in my SSD maxium thoughput of read is about 3 times faster than that of
-    write. Add a scale to differenate read and write. Also add a tunable, so
-    user can assign different scale for read and write.
-    
-    By default, the scale is 1:1, which means the scale is a noop.
-    
-    Signed-off-by: Shaohua Li <shaohua.li@intel.com>
-    block: fiops sync/async scale
-    
-    CFQ gives 2.5 times more share to sync workload. This matches CFQ.
-    
-    Note this is different with the read/write scale. We have 3 types of
-    requests:
-    1. read
-    2. sync write
-    3. write
-    CFQ doesn't differentitate type 1 and 2, but request cost of 1 and 2
-    are usually different for flash based storage. So we have both sync/async
-    and read/write scale here.
-    
-    Signed-off-by: Shaohua Li <shaohua.li@intel.com>
-    block: fiops add ioprio support
-    
-    Add CFQ-like ioprio support. Priority A will get 20% more share than priority
-    A+1, which matches CFQ.
-    
-    Signed-off-by: Shaohua Li <shaohua.li@intel.com>
-    block: fiops preserve vios key for deep queue depth workload
-    
-    If the task has running request, even it's added into service tree newly,
-    we preserve its vios key, so it will not lost its share. This should work
-    for task driving big queue depth. For single depth task, there is no approach
-    to preserve its vios key.
-    
-    Signed-off-by: Shaohua Li <shaohua.li@intel.com>
-    block: fiops bias sync workload
-    
-    If there are async requests running, delay async workload. Otherwise
-    async workload (usually very deep iodepth) will use all queue iodepth
-    and later sync requests will get long delayed. The idea is from CFQ.
-    
-    Signed-off-by: Shaohua Li <shaohua.li@intel.com>
-    block: fiops add some trace information
-    
-    Add some trace information, which is helpful when I do debugging.
-    
-    Signed-off-by: Shaohua Li <shaohua.li@intel.com>
-    FIOPS: forward port for use on 3.10 Linux
-    
-    Signed-off-by: Paul Reioux <reioux@gmail.com>
-
-commit 2479eb11027045068b4e63276e5d32f52ccee3b7
-Author: yank555-lu <yank555.lu@gmail.com>
-Date:   Sun Feb 2 21:28:59 2014 +0100
-
-    binfmt_elf.c: use get_random_int() to fix entropy depleting (Jeff Liu )
-    
-    See http://lkml.indiana.edu/hypermail/linux/kernel/1211.1/03767.html for details.
-
-commit 45c0b1f0616ce7102cb5fb42b2aa0ad474d29c78
-Author: ZION959 <ziontran@gmail.com>
-Date:   Wed Feb 25 22:38:31 2015 -0700
-
-    Force Fast Charge v1.2 [Yank555.lu]
-
-commit 89be94925aa89af547e6ec6108380f8d526d93cf
-Author: friedrich420 <kelpidorou@yahoo.com>
-Date:   Wed Jan 7 16:34:42 2015 +0200
-
-    network speed tweak [ch33kybutt]
-
-commit b42842da14dcdedafcd0bbaec5117c4a8ce70a49
-Author: friedrich420 <kelpidorou@yahoo.com>
-Date:   Wed Nov 5 20:11:18 2014 +0200
-
-    Stereo Call Recording Support
-
-commit a2f8dd8f1d65d6f5f01088464e56310cff646ff1
-Author: Pavel <nadyaivanova14@gmail.com>
-Date:   Sat Jan 3 17:47:31 2015 +0100
-
-    cpufreq: cpu-boost: don't boost migrations with load below the threshold
-    Even if we don't use load_based_syncs (there seems to be a bug that make
-    min_freq stuck at random frequencies) we can prevent this feature
-    to boost the target cpu if the task load is below the migration
-    threshold. We might save some mA down the road with this.
-    
-    Signed-off-by: franciscofranco <franciscofranco.1990@gmail.com>
-    
-    (cherry picked from commit 917c9a8b2372d65f26955c8e98952246aa037a78)
-    
-    (cherry picked from commit 8080f25a966ef01364241edd9ab300acfb9cb177)
-    
-    (cherry picked from commit 8080f25a966ef01364241edd9ab300acfb9cb177)
-    
-    (cherry picked from commit 448b5385b176f1a793f8c2a02b294b1a898afebc)
-    
-    (cherry picked from commit 448b5385b176f1a793f8c2a02b294b1a898afebc)
-    
-    (cherry picked from commit 45252a3466be83108ded0981a6ab2a0f45e396c4)
-    
-    (cherry picked from commit 45252a3466be83108ded0981a6ab2a0f45e396c4)
-
-commit f49215a9c7cbf2fc86a16f42be62fbd08011caf7
-Author: Jane Li <jiel@marvell.com>
-Date:   Fri Jan 3 17:17:41 2014 +0800
-
-    cpufreq: Fix timer/workqueue corruption by protecting reading governor_enabled
-    
-    When a CPU is hot removed we'll cancel all the delayed work items via
-    gov_cancel_work(). Sometimes the delayed work function determines that
-    it should adjust the delay for all other CPUs that the policy is
-    managing. If this scenario occurs, the canceling CPU will cancel its own
-    work but queue up the other CPUs works to run.
-    
-    Commit 3617f2 (cpufreq: Fix timer/workqueue corruption due to double
-    queueing) has tried to fix this, but reading governor_enabled is not
-    protected by cpufreq_governor_lock. Even though od_dbs_timer() checks
-    governor_enabled before gov_queue_work(), this scenario may occur. For
-    example:
-    
-     CPU0                                        CPU1
-     ----                                        ----
-     cpu_down()
-      ...                                        <work runs>
-      __cpufreq_remove_dev()                     od_dbs_timer()
-       __cpufreq_governor()                       policy->governor_enabled
-        policy->governor_enabled = false;
-        cpufreq_governor_dbs()
-         case CPUFREQ_GOV_STOP:
-          gov_cancel_work(dbs_data, policy);
-           cpu0 work is canceled
-            timer is canceled
-            cpu1 work is canceled
-            <waits for cpu1>
-                                                  gov_queue_work(*, *, true);
-                                                   cpu0 work queued
-                                                   cpu1 work queued
-                                                   cpu2 work queued
-                                                   ...
-            cpu1 work is canceled
-            cpu2 work is canceled
-            ...
-    
-    At the end of the GOV_STOP case cpu0 still has a work queued to
-    run although the code is expecting all of the works to be
-    canceled. __cpufreq_remove_dev() will then proceed to
-    re-initialize all the other CPUs works except for the CPU that is
-    going down. The CPUFREQ_GOV_START case in cpufreq_governor_dbs()
-    will trample over the queued work and debugobjects will spit out
-    a warning:
-    
-    WARNING: at lib/debugobjects.c:260 debug_print_object+0x94/0xbc()
-    ODEBUG: init active (active state 0) object type: timer_list hint: delayed_work_timer_fn+0x0/0x14
-    Modules linked in:
-    CPU: 1 PID: 1205 Comm: sh Tainted: G        W    3.10.0 #200
-    [<c01144f0>] (unwind_backtrace+0x0/0xf8) from [<c0111d98>] (show_stack+0x10/0x14)
-    [<c0111d98>] (show_stack+0x10/0x14) from [<c01272cc>] (warn_slowpath_common+0x4c/0x68)
-    [<c01272cc>] (warn_slowpath_common+0x4c/0x68) from [<c012737c>] (warn_slowpath_fmt+0x30/0x40)
-    [<c012737c>] (warn_slowpath_fmt+0x30/0x40) from [<c034c640>] (debug_print_object+0x94/0xbc)
-    [<c034c640>] (debug_print_object+0x94/0xbc) from [<c034c7f8>] (__debug_object_init+0xc8/0x3c0)
-    [<c034c7f8>] (__debug_object_init+0xc8/0x3c0) from [<c01360e0>] (init_timer_key+0x20/0x104)
-    [<c01360e0>] (init_timer_key+0x20/0x104) from [<c04872ac>] (cpufreq_governor_dbs+0x1dc/0x68c)
-    [<c04872ac>] (cpufreq_governor_dbs+0x1dc/0x68c) from [<c04833a8>] (__cpufreq_governor+0x80/0x1b0)
-    [<c04833a8>] (__cpufreq_governor+0x80/0x1b0) from [<c0483704>] (__cpufreq_remove_dev.isra.12+0x22c/0x380)
-    [<c0483704>] (__cpufreq_remove_dev.isra.12+0x22c/0x380) from [<c0692f38>] (cpufreq_cpu_callback+0x48/0x5c)
-    [<c0692f38>] (cpufreq_cpu_callback+0x48/0x5c) from [<c014fb40>] (notifier_call_chain+0x44/0x84)
-    [<c014fb40>] (notifier_call_chain+0x44/0x84) from [<c012ae44>] (__cpu_notify+0x2c/0x48)
-    [<c012ae44>] (__cpu_notify+0x2c/0x48) from [<c068dd40>] (_cpu_down+0x80/0x258)
-    [<c068dd40>] (_cpu_down+0x80/0x258) from [<c068df40>] (cpu_down+0x28/0x3c)
-    [<c068df40>] (cpu_down+0x28/0x3c) from [<c068e4c0>] (store_online+0x30/0x74)
-    [<c068e4c0>] (store_online+0x30/0x74) from [<c03a7308>] (dev_attr_store+0x18/0x24)
-    [<c03a7308>] (dev_attr_store+0x18/0x24) from [<c0256fe0>] (sysfs_write_file+0x100/0x180)
-    [<c0256fe0>] (sysfs_write_file+0x100/0x180) from [<c01fec9c>] (vfs_write+0xbc/0x184)
-    [<c01fec9c>] (vfs_write+0xbc/0x184) from [<c01ff034>] (SyS_write+0x40/0x68)
-    [<c01ff034>] (SyS_write+0x40/0x68) from [<c010e200>] (ret_fast_syscall+0x0/0x48)
-    
-    In gov_queue_work(), lock cpufreq_governor_lock before gov_queue_work,
-    and unlock it after __gov_queue_work(). In this way, governor_enabled
-    is guaranteed not changed in gov_queue_work().
-    
-    Signed-off-by: Jane Li <jiel@marvell.com>
-    Acked-by: Viresh Kumar <viresh.kumar@linaro.org>
-    Reviewed-by: Dmitry Torokhov <dmitry.torokhov@gmail.com>
-    Signed-off-by: Rafael J. Wysocki <rafael.j.wysocki@intel.com>
-    Signed-off-by: flar2 <asegaert@gmail.com>
-    
-    (cherry picked from commit 97dfaaff13b0c3fa6145e75ccd9ef7c8ce431004)
-    
-    (cherry picked from commit 97dfaaff13b0c3fa6145e75ccd9ef7c8ce431004)
-
-commit 5ba3e2a49b2d9be3932ab4b916baf6b6e21536aa
-Author: Bibek Basu <bbasu@nvidia.com>
-Date:   Mon May 19 10:24:01 2014 +0530
-
-    cpufreq: remove race while accessing cur_policy
-    
-    While accessing cur_policy during executing events
-    CPUFREQ_GOV_START, CPUFREQ_GOV_STOP, CPUFREQ_GOV_LIMITS,
-    same mutex lock is not taken, dbs_data->mutex, which leads
-    to race and data corruption while running continious suspend
-    resume test. This is seen with ondemand governor with suspend
-    resume test using rtcwake.
-    
-     Unable to handle kernel NULL pointer dereference at virtual address 00000028
-     pgd = ed610000
-     [00000028] *pgd=adf11831, *pte=00000000, *ppte=00000000
-     Internal error: Oops: 17 [#1] PREEMPT SMP ARM
-     Modules linked in: nvhost_vi
-     CPU: 1 PID: 3243 Comm: rtcwake Not tainted 3.10.24-gf5cf9e5 #1
-     task: ee708040 ti: ed61c000 task.ti: ed61c000
-     PC is at cpufreq_governor_dbs+0x400/0x634
-     LR is at cpufreq_governor_dbs+0x3f8/0x634
-     pc : [<c05652b8>] lr : [<c05652b0>] psr: 600f0013
-     sp : ed61dcb0 ip : 000493e0 fp : c1cc14f0
-     r10: 00000000 r9 : 00000000 r8 : 00000000
-     r7 : eb725280 r6 : c1cc1560 r5 : eb575200 r4 : ebad7740
-     r3 : ee708040 r2 : ed61dca8 r1 : 001ebd24 r0 : 00000000
-     Flags: nZCv IRQs on FIQs on Mode SVC_32 ISA ARM Segment user
-     Control: 10c5387d Table: ad61006a DAC: 00000015
-     [<c05652b8>] (cpufreq_governor_dbs+0x400/0x634) from [<c055f700>] (__cpufreq_governor+0x98/0x1b4)
-     [<c055f700>] (__cpufreq_governor+0x98/0x1b4) from [<c0560770>] (__cpufreq_set_policy+0x250/0x320)
-     [<c0560770>] (__cpufreq_set_policy+0x250/0x320) from [<c0561dcc>] (cpufreq_update_policy+0xcc/0x168)
-     [<c0561dcc>] (cpufreq_update_policy+0xcc/0x168) from [<c0561ed0>] (cpu_freq_notify+0x68/0xdc)
-     [<c0561ed0>] (cpu_freq_notify+0x68/0xdc) from [<c008eff8>] (notifier_call_chain+0x4c/0x8c)
-     [<c008eff8>] (notifier_call_chain+0x4c/0x8c) from [<c008f3d4>] (__blocking_notifier_call_chain+0x50/0x68)
-     [<c008f3d4>] (__blocking_notifier_call_chain+0x50/0x68) from [<c008f40c>] (blocking_notifier_call_chain+0x20/0x28)
-     [<c008f40c>] (blocking_notifier_call_chain+0x20/0x28) from [<c00aac6c>] (pm_qos_update_bounded_target+0xd8/0x310)
-     [<c00aac6c>] (pm_qos_update_bounded_target+0xd8/0x310) from [<c00ab3b0>] (__pm_qos_update_request+0x64/0x70)
-     [<c00ab3b0>] (__pm_qos_update_request+0x64/0x70) from [<c004b4b8>] (tegra_pm_notify+0x114/0x134)
-     [<c004b4b8>] (tegra_pm_notify+0x114/0x134) from [<c008eff8>] (notifier_call_chain+0x4c/0x8c)
-     [<c008eff8>] (notifier_call_chain+0x4c/0x8c) from [<c008f3d4>] (__blocking_notifier_call_chain+0x50/0x68)
-     [<c008f3d4>] (__blocking_notifier_call_chain+0x50/0x68) from [<c008f40c>] (blocking_notifier_call_chain+0x20/0x28)
-     [<c008f40c>] (blocking_notifier_call_chain+0x20/0x28) from [<c00ac228>] (pm_notifier_call_chain+0x1c/0x34)
-     [<c00ac228>] (pm_notifier_call_chain+0x1c/0x34) from [<c00ad38c>] (enter_state+0xec/0x128)
-     [<c00ad38c>] (enter_state+0xec/0x128) from [<c00ad400>] (pm_suspend+0x38/0xa4)
-     [<c00ad400>] (pm_suspend+0x38/0xa4) from [<c00ac114>] (state_store+0x70/0xc0)
-     [<c00ac114>] (state_store+0x70/0xc0) from [<c027b1e8>] (kobj_attr_store+0x14/0x20)
-     [<c027b1e8>] (kobj_attr_store+0x14/0x20) from [<c019cd9c>] (sysfs_write_file+0x104/0x184)
-     [<c019cd9c>] (sysfs_write_file+0x104/0x184) from [<c0143038>] (vfs_write+0xd0/0x19c)
-     [<c0143038>] (vfs_write+0xd0/0x19c) from [<c0143414>] (SyS_write+0x4c/0x78)
-     [<c0143414>] (SyS_write+0x4c/0x78) from [<c000f080>] (ret_fast_syscall+0x0/0x30)
-     Code: e1a00006 eb084346 e59b0020 e5951024 (e5903028)
-     ---[ end trace 0488523c8f6b0f9d ]---
-    
-    Signed-off-by: Bibek Basu <bbasu@nvidia.com>
-    Acked-by: Viresh Kumar <viresh.kumar@linaro.org>
-    Cc: 3.11+ <stable@vger.kernel.org> # 3.11+
-    Signed-off-by: Rafael J. Wysocki <rafael.j.wysocki@intel.com>
-    Signed-off-by: flar2 <asegaert@gmail.com>
-    
-    (cherry picked from commit 88c348e3ebbedaed7db3122dc545f7bc327c65ca)
-    
-    (cherry picked from commit 88c348e3ebbedaed7db3122dc545f7bc327c65ca)
-
-commit c38f7fa51d4fb7c8523031e88946c161c2a57deb
-Author: ZION959 <ziontran@gmail.com>
-Date:   Tue Mar 10 21:42:37 2015 -0700
-
-    Intelliplug on by default
-
-commit 9227acece356efda6d90c66864f82d6f9c167005
-Author: ZION959 <ziontran@gmail.com>
-Date:   Tue Mar 10 21:43:41 2015 -0700
-
-    Enable last_kmsg and increase log buffer shift plus add pr_alert when last_kmsg is not initialized
-    and add shit load of tcp congestion control options & enabled f2fs
-
-commit 96e2e75989126961cc15c61e2b0887a8be104167
-Author: TwistedUmbrella <twistedumbrella@gmail.com>
-Date:   Fri Dec 5 17:51:32 2014 -0500
-
-    mdss: implement panel color control
-    
-    Adapted and modified work by CM-10.2, morfic and ktoonsez
-    
-    Creates a syfs interface here:
-    /sys/class/lcd/panel/panel_colors
-    
-    Will accept 0-4 for parameters:
-    0 - Cold (more blues)
-    1 - Cool
-    2 - Normal (stock colors)
-    3 - Warm
-    4 - Hot (more reds)
-    
-    (cherry picked from commit e3548519c119be79073ac0de24a4fdaee7167f9b)
-    
-    (cherry picked from commit 129ff66abd0b42df54343395d1ed92e0ff2e0e86)
-    
-    (cherry picked from commit 129ff66abd0b42df54343395d1ed92e0ff2e0e86)
-    
-    (cherry picked from commit 8a03cf1aa5ade58782e80047a349fa9587ea8fed)
-    
-    (cherry picked from commit 8a03cf1aa5ade58782e80047a349fa9587ea8fed)
-
-commit 53a4e10f39d8522c0d0f1ce1a8ce3d5901f7bb3c
-Author: ktoonsez <ktoonsez@gmail.com>
-Date:   Thu Nov 13 21:16:30 2014 -0700
-
-    Add variant detection
-    
-    (cherry picked from commit 25bac2231ca23bbe9348e2386e0c54be06380889)
-    
-    (cherry picked from commit e33bbc0bd875d4d70e178b1949777458635f973e)
-    
-    (cherry picked from commit e33bbc0bd875d4d70e178b1949777458635f973e)
-    
-    (cherry picked from commit 6f8b4fc3e15b20e48667f9e7ecc8e580e5e87f0d)
-    
-    (cherry picked from commit 6f8b4fc3e15b20e48667f9e7ecc8e580e5e87f0d)
-
-commit 8f7b4455f33b806c4e8102129a37cc5038c32ffb
-Author: ZION959 <ziontran@gmail.com>
-Date:   Tue Mar 10 23:54:27 2015 -0700
-
-    Revert: Sound Control: initial bring up for Nexus 6 Linux 3.10 kernel driver (faux123)
-    
-    Initial import of FauxSound Driver 3.6 from 3.4 linux kernel drivers tailored
-    for Nexus 6
-    
-    GPL Copyright 2014 Paul Reioux (Faux123)
-    
-    Signed-off-by: Paul Reioux <reioux@gmail.com> (reverted from commit 33e1385e31476fca6fe3fd5cba64aabdbbd30644)
-
-commit d8c484033e2582948afc40c9c656ac9c3370cf79
-Author: ZION959 <ziontran@gmail.com>
-Date:   Tue Mar 10 23:59:09 2015 -0700
-
-    sound/soc/codecs: Faux Sound control for WCD9330 TomTom codec driver
-    
-    First implementation:
-    Faux Sound control adapted for the wcd9330 driver.
-    Thanks for the tip to thehacker911.
-    
-    Signed-off-by: Pafcholini <pafcholini@gmail.com>
-
-commit 78e72c386fdb3ac3d725dd915495b4a23b8cf3d9
-Author: Pavel <nadyaivanova14@gmail.com>
-Date:   Fri Jan 23 14:34:23 2015 +0100
-
-    sound/soc/codecs: fix speaker gain and mic gain for the Note 4
-    
-    Signed-off-by: Pafcholini <pafcholini@gmail.com>
-    
-    (cherry picked from commit 7f960e42a8123dfff411cef304a8c9c8a4080cb5)
-    
-    (cherry picked from commit 7f960e42a8123dfff411cef304a8c9c8a4080cb5)
-    
-    (cherry picked from commit f45e483773df9ac8a55975c9565a234a2a46616b)
-    
-    (cherry picked from commit f45e483773df9ac8a55975c9565a234a2a46616b)
-    
-    (cherry picked from commit 56dfe7d232ec44252cb7b898b3c8c7c23428080a)
-    
-    (cherry picked from commit 56dfe7d232ec44252cb7b898b3c8c7c23428080a)
-
-commit ccd6acb2965f7ea572f1cf4da699c02fa1431e8f
-Author: Pavel <nadyaivanova14@gmail.com>
-Date:   Sat Jan 24 03:30:24 2015 +0100
-
-    sound/soc/codecs: add sound_control_locked
-    
-    (cherry picked from commit 8b9cb07f8d10c470c50ca396ba207e9ee17cb96c)
-    
-    (cherry picked from commit 8b9cb07f8d10c470c50ca396ba207e9ee17cb96c)
-    
-    (cherry picked from commit a7f0a16fdc5ef66f156c99e5aaa29c44c6ac15dc)
-    
-    (cherry picked from commit a7f0a16fdc5ef66f156c99e5aaa29c44c6ac15dc)
-    
-    (cherry picked from commit 469a98b8a09325ecaa4ee6632f666e57a82fc349)
-    
-    (cherry picked from commit 469a98b8a09325ecaa4ee6632f666e57a82fc349)
-
-commit d7120174e32d3fa01006f9644ed521fb16492b06
-Author: Pavel <nadyaivanova14@gmail.com>
-Date:   Thu Jan 29 14:27:51 2015 +0100
-
-    Sound Control: 3.6
-    
-    fix some issues and bump version to 3.6
-    
-    Signed-off-by: Pafcholini <pafcholini@gmail.com>
-    
-    (cherry picked from commit 644ce4a6271dc263ad380d683e1b933051f06592)
-    
-    (cherry picked from commit 644ce4a6271dc263ad380d683e1b933051f06592)
-    
-    (cherry picked from commit fe93a48dde4b21f23c46335a38060191de477d6d)
-    
-    (cherry picked from commit fe93a48dde4b21f23c46335a38060191de477d6d)
-
-commit 488936f122262a19f81298cf8443948fb2890cc9
-Author: Pavel <nadyaivanova14@gmail.com>
-Date:   Fri Jan 30 01:42:20 2015 +0100
-
-    sound/soc/codecs: add TOMTOM_A_CDC_RX8
-    
-    (cherry picked from commit 6e9fd1e0c537e2691ea27a99b9e5cc6ac97423a5)
-    
-    (cherry picked from commit 6e9fd1e0c537e2691ea27a99b9e5cc6ac97423a5)
-    
-    (cherry picked from commit d0b76130109032afb2a24f39c55f2d4ae096590d)
-    
-    (cherry picked from commit d0b76130109032afb2a24f39c55f2d4ae096590d)
-
-commit 79e36cd5369c422326cbfa8bfc6417517c14a8cf
-Author: Paul Reioux <reioux@gmail.com>
-Date:   Sat Dec 6 03:20:50 2014 -0600
-
-    intelli_plug: add performance boost option
-    
-    also fixed dependency on __cpuinit
-    
-    bumped to version 3.9
-    
-    Signed-off-by: Paul Reioux <reioux@gmail.com>
-
-commit e486a2d654394125f8f22c28b45da8870b536a44
-Author: Paul Reioux <reioux@gmail.com>
-Date:   Sat Dec 6 03:21:52 2014 -0600
-
-    dm-crypt: add intelli_plug performance boost optimization
-    
-    Signed-off-by: Paul Reioux <reioux@gmail.com>
-
-commit a419aa4c4085ec81a0a9a08575127c73ec033ca0
-Author: Paul Reioux <reioux@gmail.com>
-Date:   Sat Dec 6 19:41:35 2014 -0600
-
-    dm-crypt: use 2x number of write threads to saturate each cpus pipeline
-    
-    Signed-off-by: Paul Reioux <reioux@gmail.com>
-
-commit 3f179f162b2bfae980d326b6672c74592dd3d467
-Author: Paul Reioux <reioux@gmail.com>
-Date:   Mon Mar 9 03:43:40 2015 -0500
-
-    android: binder: use GPF_HIGHUSER flag since binder is designed for userspace
-    
-    Signed-off-by: Paul Reioux <reioux@gmail.com>
-
-commit 7a8f364642aa85d679f8044cc0eea810919f2d63
-Author: faux123 <reioux@gmail.com>
-Date:   Wed Mar 11 00:11:17 2015 -0700
-
-    intelli_plug: add perf_boost sysfs entry and clean up permissions
-    
-    add new automatic calculations for ARM64 and APQ8084 processor types
-    
-    also bump to version 4.0
-    
-    Signed-off-by: Paul Reioux <reioux@gmail.com>
-    
-    Conflicts:
-    	arch/arm/hotplug/intelli_plug.c
-
-commit 7714091f35acce6697f5dd0470cc10993986b2aa
-Author: flar2 <asegaert@gmail.com>
-Date:   Tue Dec 2 16:41:08 2014 -0500
-
-    GPU: start at 240MHz
-    
-    Signed-off-by: flar2 <asegaert@gmail.com>
-
-commit 564caaaa8c213fc6fdf49483dd5c115db93b733c
-Author: flar2 <asegaert@gmail.com>
-Date:   Tue Dec 2 17:15:57 2014 -0500
-
-    Lower GPU voltage constraint
-    
-    Signed-off-by: flar2 <asegaert@gmail.com>
-
-commit 857bfd9c28c932c577f540d7d2c5e55803d17e22
-Author: Vincent Guittot <vincent.guittot@linaro.org>
-Date:   Wed Nov 19 20:39:31 2014 -0600
-
-    sched: add a new arch_sd_local_flags for sched_domain init
-    
-    Date	Fri, 18 Oct 2013 13:52:15 +0200
-    
-    The function arch_sd_local_flags is used to set flags in sched_domains
-    according to the platform architecture. A new flag SD_SHARE_POWERDOMAIN is
-    also created to reflect whether groups of CPUs in a sched_domain level can or
-    not reach different power state. As an example, the flag should be cleared at
-    CPU level if groups of cores can be power gated independently. This information
-    is used to decide if it's worth packing some tasks in a group of CPUs in order
-    to power gate the other groups instead of spreading the tasks. The default
-    behavior of the scheduler is to spread tasks across CPUs and groups of CPUs so
-    the flag is set into all sched_domains.
-    
-    The cpu parameter of arch_sd_local_flags can be used by architecture to fine
-    tune the scheduler domain flags. As an example SD_SHARE_POWERDOMAIN flag can be
-    set differently for groups of CPUs according to DT information
-    
-    Signed-off-by: Vincent Guittot <vincent.guittot at linaro.org>
-    Signed-off-by: flar2 <asegaert@gmail.com>
-
-commit b2edf2527168411ec67b2f6605c22c2fb5afd8da
-Author: Vincent Guittot <vincent.guittot@linaro.org>
-Date:   Wed Nov 19 20:41:21 2014 -0600
-
-    ARM: sched: clear SD_SHARE_POWERDOMAIN
-    
-    Fri Oct 18 07:54:53 EDT 2013
-    
-    The ARM platforms take advantage of packing tasks on few cores if the latters
-    can be powergated independantly. We use DT and the cpu topology descirption
-    to define at which level a core can be independantly powergated to the others
-    and the SD_SHARE_POWERDOMAIN will be set accordingly at MC and CPU sched_domain
-    level.
-    
-    The power-gate properties should be added with the value 1 in cpu and cluster
-    node when then can power gate independantly from the other.
-    
-    As an example of a quad cores system which can power gate each core
-    independantly, we should have a DT similar to the example below
-    
-    	cpus {
-    		#address-cells = <1>;
-    		#size-cells = <0>;
-    
-    	       cpu-map {
-    	               cluster0 {
-    				power-gate = <1>;
-    				core0 {
-    	                               cpu = <&cpu0>;
-    					power-gate = <1>;
-    				};
-    				core1 {
-    				        cpu = <&cpu1>;
-    					power-gate = <1>;
-    				};
-    				core2 {
-    					cpu = <&cpu2>;
-    					power-gate = <1>;
-    				};
-    				core3 {
-    					cpu = <&cpu3>;
-    					power-gate = <1>;
-    				};
-    			};
-    		};
-    
-    	...
-    
-    	};
-    
-    Signed-off-by: Vincent Guittot <vincent.guittot at linaro.org>
-    Signed-off-by: flar2 <asegaert@gmail.com>
-
-commit 3383f0abdc38fade8ce2e92c90e0ca977d03cc2e
-Author: Vincent Guittot <vincent.guittot@linaro.org>
-Date:   Wed Nov 19 20:42:45 2014 -0600
-
-    sched: define pack buddy CPUs
-    
-    Date	Fri, 18 Oct 2013 13:52:16 +0200
-    
-    During the creation of sched_domain, we define a pack buddy CPU for each CPU
-    when one is available. We want to pack at all levels where a group of CPUs can
-    be power gated independently from others.
-    On a system that can't power gate a group of CPUs independently, the flag is
-    set at all sched_domain level and the buddy is set to -1. This is the default
-    behavior for all architectures.
-    
-    On a dual clusters / dual cores system which can power gate each core and
-    cluster independently, the buddy configuration will be :
-    
-          | Cluster 0   | Cluster 1   |
-          | CPU0 | CPU1 | CPU2 | CPU3 |
-    -----------------------------------
-    buddy | CPU0 | CPU0 | CPU0 | CPU2 |
-    
-    If the cores in a cluster can't be power gated independently, the buddy
-    configuration becomes:
-    
-          | Cluster 0   | Cluster 1   |
-          | CPU0 | CPU1 | CPU2 | CPU3 |
-    -----------------------------------
-    buddy | CPU0 | CPU1 | CPU0 | CPU0 |
-    
-    Signed-off-by: Vincent Guittot <vincent.guittot at linaro.org>
-    Signed-off-by: flar2 <asegaert@gmail.com>
-
-commit 3471c5ee4d59c1ed9bc23cda7e6c6f3bec56557a
-Author: Vincent Guittot <vincent.guittot@linaro.org>
-Date:   Wed Nov 19 20:43:43 2014 -0600
-
-    sched: do load balance only with packing cpus
-    
-    Date	Fri, 18 Oct 2013 13:52:17 +0200
-    
-    The tasks will be scheduled only on the CPUs that participate to the packing
-    effort. A CPU participates to the packing effort when it is its own buddy.
-    
-    For ILB, look for an idle CPU close to the packing CPUs whenever possible.
-    The goal is to prevent the wake up of a CPU which doesn't share the power
-    domain of the pack buddy CPU.
-    
-    Signed-off-by: Vincent Guittot <vincent.guittot@linaro.org>
-    
-    Signed-off-by: Paul Reioux <reioux@gmail.com>
-
-commit 0253425be135d79428666b29d24c01f3c9dcd8f9
-Author: Vincent Guittot <vincent.guittot@linaro.org>
-Date:   Wed Nov 19 20:45:15 2014 -0600
-
-    sched: add a packing level knob
-    
-    Date	Fri, 18 Oct 2013 13:52:18 +0200
-    
-    The knob is used to set an average load threshold that will be used to trig
-    the inclusion/removal of CPUs in the packing effort list.
-    
-    Signed-off-by: Vincent Guittot <vincent.guittot@linaro.org>
-    
-    Signed-off-by: Paul Reioux <reioux@gmail.com>
-    
-    Conflicts:
-    	kernel/sysctl.c
-
-commit 50f0cf44b68f5b6b051969f7d3accb46c539c751
-Author: Vincent Guittot <vincent.guittot@linaro.org>
-Date:   Wed Nov 19 20:46:18 2014 -0600
-
-    sched: create a new field with available capacity
-    
-    Date	Fri, 18 Oct 2013 13:52:19 +0200
-    
-    This new field power_available reflects the available capacity of a CPU
-    unlike the cpu_power which reflects the current capacity.
-    
-    Signed-off-by: Vincent Guittot <vincent.guittot@linaro.org>
-    
-    Signed-off-by: Paul Reioux <reioux@gmail.com>
-
-commit fcbb4f251c5cecbd4b49e56832c45f335832c500
-Author: Paul Reioux <reioux@gmail.com>
-Date:   Wed Nov 19 20:54:47 2014 -0600
-
-    sched: get CPU's activity statistic
-    
-    Date	Fri, 18 Oct 2013 13:52:20 +0200
-    
-    Monitor the activity level of each group of each sched_domain level. The
-    activity is the amount of cpu_power that is currently used on a CPU. We use
-    the runnable_avg_sum and _period to evaluate this activity level. In the
-    special use case where the CPU is fully loaded by more than 1 task, the
-    activity level is set above the cpu_power in order to reflect the overload of
-    The cpu
-    
-    Signed-off-by: Vincent Guittot <vincent.guittot@linaro.org>
-    
-    backported to Linux 3.10
-    
-    Signed-off-by: Paul Reioux <reioux@gmail.com>
-
-commit 9923c6c0933933c03751d2287adc11d6290c115d
-Author: Vincent Guittot <vincent.guittot@linaro.org>
-Date:   Wed Nov 19 20:55:54 2014 -0600
-
-    sched: move load idx selection in find_idlest_group
-    
-    Date	Fri, 18 Oct 2013 13:52:21 +0200
-    
-    load_idx is used in find_idlest_group but initialized in select_task_rq_fair
-    even when not used. The load_idx initialisation is moved in find_idlest_group
-    and the sd_flag replaces it in the function's args.
-    
-    Signed-off-by: Vincent Guittot <vincent.guittot@linaro.org>
-    
-    Signed-off-by: Paul Reioux <reioux@gmail.com>
-
-commit edf28fefdaad91093fd268f2a4b47a273d7a4c18
-Author: Joonsoo Kim <iamjoonsoo.kim@lge.com>
-Date:   Tue Aug 6 17:36:42 2013 +0900
-
-    sched: Factor out code to should_we_balance()
-    
-    Now checking whether this cpu is appropriate to balance or not
-    is embedded into update_sg_lb_stats() and this checking has no direct
-    relationship to this function. There is not enough reason to place
-    this checking at update_sg_lb_stats(), except saving one iteration
-    for sched_group_cpus.
-    
-    In this patch, I factor out this checking to should_we_balance() function.
-    And before doing actual work for load_balancing, check whether this cpu is
-    appropriate to balance via should_we_balance(). If this cpu is not
-    a candidate for balancing, it quit the work immediately.
-    
-    With this change, we can save two memset cost and can expect better
-    compiler optimization.
-    
-    Below is result of this patch.
-    
-     * Vanilla *
-       text	   data	    bss	    dec	    hex	filename
-      34499	   1136	    116	  35751	   8ba7	kernel/sched/fair.o
-    
-     * Patched *
-       text	   data	    bss	    dec	    hex	filename
-      34243	   1136	    116	  35495	   8aa7	kernel/sched/fair.o
-    
-    In addition, rename @balance to @continue_balancing in order to represent
-    its purpose more clearly.
-    
-    Signed-off-by: Joonsoo Kim <iamjoonsoo.kim@lge.com>
-    [ s/should_balance/continue_balancing/g ]
-    Reviewed-by: Paul Turner <pjt@google.com>
-    [ Made style changes and a fix in should_we_balance(). ]
-    Signed-off-by: Peter Zijlstra <peterz@infradead.org>
-    Link: http://lkml.kernel.org/r/1375778203-31343-3-git-send-email-iamjoonsoo.kim@lge.com
-    Signed-off-by: Ingo Molnar <mingo@kernel.org>
-
-commit 40f758095e92dc39890a37ef6b9ee7295f11abf9
-Author: Joonsoo Kim <iamjoonsoo.kim@lge.com>
-Date:   Tue Sep 10 15:54:49 2013 +0900
-
-    sched: Fix load balancing performance regression in should_we_balance()
-    
-    Commit 23f0d20 ("sched: Factor out code to should_we_balance()")
-    introduces the should_we_balance() function.  This function should
-    return 1 if this cpu is appropriate for balancing. But the newly
-    introduced code doesn't do so, it returns 0 instead of 1.
-    
-    This introduces performance regression, reported by Dave Chinner:
-    
-                            v4 filesystem           v5 filesystem
-    3.11+xfsdev:            220k files/s            225k files/s
-    3.12-git                180k files/s            185k files/s
-    3.12-git-revert         245k files/s            247k files/s
-    
-    You can find more detailed information at:
-    
-      https://lkml.org/lkml/2013/9/10/1
-    
-    This patch corrects the return value of should_we_balance()
-    function as orignally intended.
-    
-    With this patch, Dave Chinner reports that the regression is gone:
-    
-                            v4 filesystem           v5 filesystem
-    3.11+xfsdev:            220k files/s            225k files/s
-    3.12-git                180k files/s            185k files/s
-    3.12-git-revert         245k files/s            247k files/s
-    3.12-git-fix            249k files/s            248k files/s
-    
-    Reported-by: Dave Chinner <dchinner@redhat.com>
-    Tested-by: Dave Chinner <dchinner@redhat.com>
-    Signed-off-by: Joonsoo Kim <iamjoonsoo.kim@lge.com>
-    Cc: Paul Turner <pjt@google.com>
-    Cc: Peter Zijlstra <peterz@infradead.org>
-    Cc: Dave Chinner <david@fromorbit.com>
-    Link: http://lkml.kernel.org/r/20130910065448.GA20368@lge.com
-    Signed-off-by: Ingo Molnar <mingo@kernel.org>
-
-commit aa9d863ee50b7c38b559ce9b3d3602d22808c9d8
-Author: Vincent Guittot <vincent.guittot@linaro.org>
-Date:   Wed Nov 19 21:08:36 2014 -0600
-
-    sched: update the packing cpu list
-    
-    Date	Fri, 18 Oct 2013 13:52:22 +0200
-    
-    Use the activity statistics to update the list of CPUs that should be used
-    to hanlde the current system activity.
-    
-    The cpu_power is updated for CPUs that don't participate to the packing
-    effort. We consider that their cpu_power is allocated to idleness as it
-    could be allocated by rt. So the cpu_power that remains available for cfs,
-    is set to min value (i.e. 1).
-    
-    The cpu_power is used for a task that wakes up because a waking up task is
-    already taken into account in the current activity whereas we use the
-    power_available for a fork and exec because the task is not part of the current
-    activity.
-    
-    In order to quickly found the packing starting point, we save information that
-    will be used to directly start with the right sched_group at the right
-    sched_domain level instead of running the complete update_packing_domain
-    algorithm each time we need to use the packing cpu list.
-    
-    The sd_power_leader defines the leader of a group of CPU that can't be
-    powergated independantly. As soon as this CPU is used, all the CPU in the same
-    group will be used based on the fact that it doesn't worth to keep some cores
-    idle if they can't be power gated while one core in the group is running.
-    The sd_pack_group and sd_pack_domain are used to quickly check if a power
-    leader should be used in the packing effort
-    
-    Signed-off-by: Vincent Guittot <vincent.guittot@linaro.org>
-    
-    Signed-off-by: Paul Reioux <reioux@gmail.com>
-
-commit 981471b79ef78b6d952e3709fa93b3544c0f00f1
-Author: Vincent Guittot <vincent.guittot@linaro.org>
-Date:   Wed Nov 19 21:10:08 2014 -0600
-
-    sched: init this_load to max in find_idlest_group
-    
-    Date	Fri, 18 Oct 2013 13:52:23 +0200
-    
-    Init this_load to max value instead of 0 in find_idlest_group.
-    If the local group is skipped because it doesn't have allowed CPUs, this_load
-    stays to 0,  no idlest group will be returned and the selected CPU will be a
-    not allowed one (which will be replaced in select_fallback_rq by a random
-    one). With a default value set to max, we will use the idlest group even if we
-    skip the local_group.
-    
-    Signed-off-by: Vincent Guittot <vincent.guittot@linaro.org>
-    
-    Signed-off-by: Paul Reioux <reioux@gmail.com>
-
-commit 4a96fd4602970cf0a3feb1676a7f715b55c21a8e
-Author: Vincent Guittot <vincent.guittot@linaro.org>
-Date:   Wed Nov 19 21:10:58 2014 -0600
-
-    sched: add a SCHED_PACKING_TASKS config
-    
-    Date	Fri, 18 Oct 2013 13:52:24 +0200
-    
-    The SCHED_PACKING_TASKS config is used to enable the packing tasks mecanism
-    
-    Signed-off-by: Vincent Guittot <vincent.guittot@linaro.org>
-    
-    Signed-off-by: Paul Reioux <reioux@gmail.com>
-
-commit 3ccddd6ec42d18791291f7f705b14ead0c07d49c
-Author: Vincent Guittot <vincent.guittot@linaro.org>
-Date:   Wed Nov 19 21:11:53 2014 -0600
-
-    sched: create a statistic structure
-    
-    Date	Fri, 18 Oct 2013 13:52:25 +0200
-    
-    Create a statistic structure that will be used to share information with
-    other frameworks like cpuidle and cpufreq. This structure only contains the
-    current wake up latency of a core for now but could be extended with other
-    usefull information.
-    
-    Signed-off-by: Vincent Guittot <vincent.guittot@linaro.org>
-    
-    Signed-off-by: Paul Reioux <reioux@gmail.com>
-
-commit 2060f020f4dbb4f23187a61b815b891f4efe7aeb
-Author: Paul Reioux <reioux@gmail.com>
-Date:   Wed Nov 19 21:13:48 2014 -0600
-
-    sched: differantiate idle cpu
-    
-    Date	Fri, 18 Oct 2013 13:52:26 +0200
-    
-    The cost for waking up of a core varies according to its current idle state.
-    This includes C-state and intermediate state when some sync between cores is
-    required to reach a deep C-state.
-    Waking up a CPU in a deep C-state for running a short task is not efficient
-    from both a power and a performance point of view. We should take into account
-    the wake up latency of an idle CPU when the scheduler looks for the best CPU
-    to use for a waking task.
-    The wake up latency of a CPU is computed into a load that can be directly
-    compared with task load and other CPUs load.
-    
-    Signed-off-by: Vincent Guittot <vincent.guittot@linaro.org>
-    
-    Backported to Linux 3.10
-    
-    Signed-off-by: Paul Reioux <reioux@gmail.com>
-
-commit ff4690afce7551562fcc22630f3390a44e1e9e31
-Author: Vincent Guittot <vincent.guittot@linaro.org>
-Date:   Wed Nov 19 21:15:13 2014 -0600
-
-    cpuidle: set the current wake up latency
-    
-    Date	Fri, 18 Oct 2013 13:52:27 +0200
-    
-    Save the current wake up latency of a core. This latency is not always
-    the latency of a defined c-state but can also be an intermediate value
-    when a core is ready to shutdown (timer migration, cache flush ...) but
-    wait for the last core of the cluster to finalize the cluster power down.
-    This latter use case is not manage by the current version of the patch because
-    it implies that the cpuidle drivers set the wake up latency instead of the
-    cpuidle core.
-    
-    Signed-off-by: Vincent Guittot <vincent.guittot@linaro.org>
-    
-    Signed-off-by: Paul Reioux <reioux@gmail.com>
-    
-    Conflicts:
-    	drivers/cpuidle/cpuidle.c
-
-commit 6fe9e47468bc68189f991308dcbfec92217489fc
-Author: Paul Reioux <reioux@gmail.com>
-Date:   Fri Nov 21 00:04:42 2014 -0600
-
-    sched: fair: disable trace due to API update
-    
-    Signed-off-by: Paul Reioux <reioux@gmail.com>
-
-commit 3b4130b50cc7d897ee521f0b4280853093536ac7
-Author: faux123 <reioux@gmail.com>
-Date:   Mon Mar 19 17:22:43 2012 -0700
-
-    Optimized ARM RWSEM algorithm
-    
-    RWSEM implementation for ARM using atomic functions.
-    Heavily based on arch/sh/include/asm/rwsem.h
-    
-    Signed-off-by: Ashwin Chaugule <ashwinc@codeaurora.org>
-
-commit 208131c1f2efb63bf0d44e308fad54748e2f5509
-Author: Paul Reioux <reioux@gmail.com>
-Date:   Mon Mar 24 21:57:01 2014 -0700
-
-    page_alloc: Make watermarks tunable separately
-    
-    This patch introduces three new sysctls to /proc/sys/vm:
-    wmark_min_kbytes, wmark_low_kbytes and wmark_high_kbytes.
-    
-    Each entry is used to compute watermark[min], watermark[low]
-    and watermark[high] for each zone.
-    
-    These parameters are also updated when min_free_kbytes are
-    changed because originally they are set based on min_free_kbytes.
-    On the other hand, min_free_kbytes is updated when wmark_free_kbytes
-    changes.
-    
-    By using the parameters one can adjust the difference among
-    watermark[min], watermark[low] and watermark[high] and as a result
-    one can tune the kernel reclaim behaviour to fit their requirement.
-    
-    Signed-off-by: Satoru Moriya <satoru.moriya@hds.com>
-    
-    modified and tuned for Hammerhead
-    
-    Signed-off-by: Paul Reioux <reioux@gmail.com>
-    
-    Conflicts:
-    	kernel/sysctl.c
-    	mm/page_alloc.c
-
-commit a43f8856ea37c0191dea7ff50d0a7b6fdc0fc9cc
-Author: Paul Reioux <reioux@gmail.com>
-Date:   Sun Jun 15 17:34:18 2014 -0500
-
-    sched/cpuidle: reduce IPI store. Backport upstream 3.16 scheduler updates
-    
-    Signed-off-by: Paul Reioux <reioux@gmail.com>
-    
-    Conflicts:
-    	kernel/sched/core.c
-
-commit 0a4ccc2d29bf7e722cd689e78f05824f4359f76a
-Author: Alex Frid <afrid@nvidia.com>
-Date:   Fri Dec 16 13:44:23 2011 -0800
-
-    PM QoS: Add max online cpus as PM QoS parameter
-    
-    Bug 894200
-    
-    Change-Id: Ieb009a13c6ef9bca2388e234eb973d65a4e3a58b
-    Signed-off-by: Alex Frid <afrid@nvidia.com>
-    Reviewed-on: http://git-master/r/71034
-    Reviewed-by: Rohan Somvanshi <rsomvanshi@nvidia.com>
-    Tested-by: Rohan Somvanshi <rsomvanshi@nvidia.com>
-    
-    Rebase-Id: R5791d3cb0bb66f3b8079f5a8af5fa758fb3c6705
-
-commit e873f2b110404267a2c221ae9e87d2b16d0befe9
-Author: Antti P Miettinen <amiettinen@nvidia.com>
-Date:   Tue Dec 27 12:28:21 2011 +0200
-
-    PM QoS: Add CPU frequency min/max as PM QoS params
-    
-    Add minimum and maximum CPU frequency as PM QoS parameters.
-    
-    Bug 888312
-    
-    Change-Id: I18abddded35a044a6ad8365035e31d1a2213a329
-    Reviewed-on: http://git-master/r/72206
-    Signed-off-by: Antti P Miettinen <amiettinen@nvidia.com>
-    Signed-off-by: Varun Wadekar <vwadekar@nvidia.com>
-    Reviewed-on: http://git-master/r/75883
-    Reviewed-by: Automatic_Commit_Validation_User
-    
-    Rebase-Id: R1007bbef60489ecc81a9acd0ce3b0abfa9a05f3e
-
-commit 422681b38dcb480a22d19dd58f2dba28fa7f2008
-Author: Gaurav Sarode <gsarode@nvidia.com>
-Date:   Fri Feb 17 15:25:43 2012 +0530
-
-    PM Qos: Add min online cpus as PM QoS parameter
-    
-    Bug 940061
-    
-    Change-Id: Ibae842fdc3af3c92ec7e6125c602417110d8b55e
-    Signed-off-by: Gaurav Sarode <gsarode@nvidia.com>
-    Reviewed-on: http://git-master/r/84521
-    Reviewed-by: Sachin Nikam <snikam@nvidia.com>
-    Tested-by: Aleksandr Frid <afrid@nvidia.com>
-    Reviewed-by: Diwakar Tundlam <dtundlam@nvidia.com>
-    
-    Rebase-Id: R830d4e99f1e03b61a8c4e52e11645b7ed2f10f56
-
-commit 8cb607cd7a4beedfe0bfcd5ec9dda74da2ab8b96
-Author: Antti P Miettinen <amiettinen@nvidia.com>
-Date:   Mon Aug 20 19:36:38 2012 +0300
-
-    PM QoS: Add disable parameter
-    
-    For testing purposes it is useful to be able to disable
-    PM Qos.
-    
-    Bug 1020898
-    Bug 917572
-    
-    Reviewed-on: http://git-master/r/124667
-    
-    Change-Id: I266f5b5730cfe4705197d8b09db7f9eda6766c7c
-    Signed-off-by: Antti P Miettinen <amiettinen@nvidia.com>
-    Signed-off-by: Varun Wadekar <vwadekar@nvidia.com>
-    
-    Rebase-Id: Re2088674f90436e0b9dd74310d5cda1f9e2868e4
-
-commit 16eca757a28837ade72c3352d00dfbab1a3d020a
-Author: Li Li <lli5@nvidia.com>
-Date:   Mon Jan 7 14:30:09 2013 -0800
-
-    PM / QoS: export pm_qos_update_request_timeout()
-    
-    This pm_qos_update_request_timeout() was introduced without being exported.
-    Should export it as all of the other PM QoS APIs so those drivers compiled as
-    modules can use it.
-    
-    Change-Id: Ie51ce52db4ca633117fe18441c42b562220399e8
-    Signed-off-by: Li Li <lli5@nvidia.com>
-    Reviewed-on: http://git-master/r/189306
-    Reviewed-by: Automatic_Commit_Validation_User
-    GVS: Gerrit_Virtual_Submit
-    Reviewed-by: Eric Miao <emiao@nvidia.com>
-    Reviewed-by: Bharat Nihalani <bnihalani@nvidia.com>
-
-commit 26ce41720150c1b67f55f6cc649c315b1e3e2c57
-Author: Alex Frid <afrid@nvidia.com>
-Date:   Mon Jul 22 21:26:11 2013 -0700
-
-    PM QoS: Add GPU frequency limits to PM QoS
-    
-    Added GPU frequency min/max as PM QoS classes.
-    
-    Bug 1330780
-    
-    Change-Id: I2428c62748521c17e23b2df9ca409deda8b36160
-    Signed-off-by: Alex Frid <afrid@nvidia.com>
-    Reviewed-on: http://git-master/r/267702
-    Reviewed-by: Ilan Aelion <iaelion@nvidia.com>
-    Reviewed-by: Mitch Luban <mluban@nvidia.com>
-    Reviewed-by: Yu-Huan Hsu <yhsu@nvidia.com>
-
-commit d054ec132725f90edf4a539d544138f62234a827
-Author: Sai Gurrappadi <sgurrappadi@nvidia.com>
-Date:   Tue Oct 1 10:01:27 2013 -0700
-
-    pmqos: Replace spinlock with mutex for pm_qos_lock
-    
-    Using a spinlock (taken with irqsave) meant that pm_qos_lock couldn't be
-    used to synchronize on the notifiers in order to ensure proper order of
-    the notifications. This is needed in case where there might be two near
-    simultaneous pmqos client requests for a bound on the same constraint;
-    the notifiers in pm_qos_update_target for the two clients could
-    potentially engage in a race.
-    
-    Example:
-    
-    Assume two requests are made (A, B with A coming first) for max cpufreq
-    and these are the only requests currently available.
-    
-    Current behavior can result in:
-    
-    notify(max_cpu_freq, minof(A, B))
-    notify(max_cpu_freq, minof(LONG_MAX, A))
-    
-    Expected behavior:
-    
-    notify(max_cpu_freq, minof(LONG_MAX, A))
-    notify(max_cpu_freq, minof(A, B))
-    
-    Most of the PM QoS and Dev PM QoS requester clients were reviewed and
-    none of them were found to be calling pm_qos_add/update/remove request
-    from interrupt or atomic context since those calls include the blocking
-    notifier call which cannot be done in atomic context.
-    
-    Change-Id: I2fb43cc38da4c701e4872b937dd82cd38f1a1c1e
-    Signed-off-by: Sai Gurrappadi <sgurrappadi@nvidia.com>
-    Reviewed-on: http://git-master/r/299036
-    Reviewed-by: Automatic_Commit_Validation_User
-    Reviewed-by: Diwakar Tundlam <dtundlam@nvidia.com>
-
-commit ad23e80b246e7903b1d84a0a0b113f7c82120c20
-Author: Sai Gurrappadi <sgurrappadi@nvidia.com>
-Date:   Tue Oct 1 10:37:35 2013 -0700
-
-    power: PM QoS support for bounded constraints
-    
-    Extended PM QoS to allow binding of two constraints. Bounded constraints
-    add the following functionality:
-    
-    	- Priority for min/max bound requests. Targets bounds are set
-    	  to satisfy all priorities (intersection of all ranges). If it
-    	  is not possible to do so, higher priorities prevail
-    	- Timeouts for bound requests
-    	- Userspace interface that exposes bound requests
-    
-    PM QoS still supports its original kernelspace and userspace interfaces
-    
-    Bug 1270839
-    Bug 1349096
-    
-    Change-Id: Ic83444912b330fc71335d9a5b59077b1d16496bd
-    Signed-off-by: Sai Gurrappadi <sgurrappadi@nvidia.com>
-    Reviewed-on: http://git-master/r/299037
-    Reviewed-by: Automatic_Commit_Validation_User
-    Reviewed-by: Paul Walmsley <pwalmsley@nvidia.com>
-    Reviewed-by: Diwakar Tundlam <dtundlam@nvidia.com>
-    
-    Conflicts:
-    	kernel/power/qos.c
-
-commit bdc436b5cb9fef6bc135d9dc60c2bdcf024e89ee
-Author: Terje Bergstrom <tbergstrom@nvidia.com>
-Date:   Wed Oct 9 15:21:42 2013 +0300
-
-    PM / QoS: Add notifier for flags
-    
-    dev_pm_qos has a notifier for DEV_PM_QOS_LATENCY. Add a similar
-    notifier for DEV_PM_QOS_FLAGS.
-    
-    Bug 1364240
-    
-    Change-Id: Ica4c58708855938818a1e75896503b9023b96573
-    Signed-off-by: Terje Bergstrom <tbergstrom@nvidia.com>
-    Reviewed-on: http://git-master/r/288810
-
-commit df3a5922db6a85913c7cc5de5371f3e148b35637
-Author: Sai Gurrappadi <sgurrappadi@nvidia.com>
-Date:   Mon Oct 21 10:44:23 2013 -0700
-
-    power: Prefer min over max for online cpus
-    
-    We prefered min_online_cpus over max_online_cpus if min > max.
-    min_wins is now true for online cpu PmQoS requests.
-    
-    Bug 1270839
-    
-    Change-Id: I2888538dd1a4616babb7cd1532264272de5cfe64
-    Signed-off-by: Sai Gurrappadi <sgurrappadi@nvidia.com>
-    Reviewed-on: http://git-master/r/301871
-    Reviewed-by: Automatic_Commit_Validation_User
-    Reviewed-by: Diwakar Tundlam <dtundlam@nvidia.com>
-
-commit 0a9943ba064b5960133a12166d47cd8385025747
-Author: Sai Gurrappadi <sgurrappadi@nvidia.com>
-Date:   Tue Jan 14 10:26:22 2014 -0800
-
-    power: Fix coverity error
-    
-    Properly null-terminate userspace input string. Otherwise, the subsequent
-    strsep() could continue off into arbitrary chunks of kmalloc() space
-    that aren't part of the original string buffer.
-    
-    Change-Id: I3868dbcdd9df7e7172c001eb6bc41c605d48604b
-    Signed-off-by: Sai Gurrappadi <sgurrappadi@nvidia.com>
-    Reviewed-on: http://git-master/r/355578
-    Reviewed-by: Paul Walmsley <pwalmsley@nvidia.com>
-    Reviewed-by: Automatic_Commit_Validation_User
-    Reviewed-by: Diwakar Tundlam <dtundlam@nvidia.com>
-
-commit 0a83209f05eba84d83b2752623228799cb61ba5b
-Author: Puneet Saxena <puneets@nvidia.com>
-Date:   Mon Jan 27 16:30:29 2014 +0530
-
-    Power: pmqos: Add emc freq pmqos constraint
-    
-    It adds min emc freq pmqos.
-    
-    Bug 1432476
-    
-    Change-Id: If05c2e8cceffc9ca071ed0b023c29e1ef2921245
-    Signed-off-by: Puneet Saxena <puneets@nvidia.com>
-    Reviewed-on: http://git-master/r/360379
-    Reviewed-by: Automatic_Commit_Validation_User
-    Reviewed-by: Aleksandr Frid <afrid@nvidia.com>
-    Reviewed-by: Sachin Nikam <snikam@nvidia.com>
-
-commit 896941396e1124aebd51c8b94eb1f694018136e4
-Author: Dave Chinner <dchinner@redhat.com>
-Date:   Tue Jul 2 22:38:35 2013 +1000
-
-    sync: don't block the flusher thread waiting on IO
-    
-    When sync does it's WB_SYNC_ALL writeback, it issues data Io and
-    then immediately waits for IO completion. This is done in the
-    context of the flusher thread, and hence completely ties up the
-    flusher thread for the backing device until all the dirty inodes
-    have been synced. On filesystems that are dirtying inodes constantly
-    and quickly, this means the flusher thread can be tied up for
-    minutes per sync call and hence badly affect system level write IO
-    performance as the page cache cannot be cleaned quickly.
-    
-    We already have a wait loop for IO completion for sync(2), so cut
-    this out of the flusher thread and delegate it to wait_sb_inodes().
-    Hence we can do rapid IO submission, and then wait for it all to
-    complete.
-    
-    Effect of sync on fsmark before the patch:
-    
-    FSUse%        Count         Size    Files/sec     App Overhead
-    .....
-         0       640000         4096      35154.6          1026984
-         0       720000         4096      36740.3          1023844
-         0       800000         4096      36184.6           916599
-         0       880000         4096       1282.7          1054367
-         0       960000         4096       3951.3           918773
-         0      1040000         4096      40646.2           996448
-         0      1120000         4096      43610.1           895647
-         0      1200000         4096      40333.1           921048
-    
-    And a single sync pass took:
-    
-      real    0m52.407s
-      user    0m0.000s
-      sys     0m0.090s
-    
-    After the patch, there is no impact on fsmark results, and each
-    individual sync(2) operation run concurrently with the same fsmark
-    workload takes roughly 7s:
-    
-      real    0m6.930s
-      user    0m0.000s
-      sys     0m0.039s
-    
-    IOWs, sync is 7-8x faster on a busy filesystem and does not have an
-    adverse impact on ongoing async data write operations.
-    
-    Signed-off-by: Dave Chinner <dchinner@redhat.com>
-    Reviewed-by: Jan Kara <jack@suse.cz>
-    Signed-off-by: Linus Torvalds <torvalds@linux-foundation.org>
-
-commit 263b529e71bd1e8035e6f3c979546dde68adbff5
-Author: Kyungsik Lee <kyungsik.lee@lge.com>
-Date:   Mon Jul 8 16:01:45 2013 -0700
-
-    decompressor: add LZ4 decompressor module
-    
-    Add support for LZ4 decompression in the Linux Kernel.  LZ4 Decompression
-    APIs for kernel are based on LZ4 implementation by Yann Collet.
-    
-    Benchmark Results(PATCH v3)
-    Compiler: Linaro ARM gcc 4.6.2
-    
-    1. ARMv7, 1.5GHz based board
-       Kernel: linux 3.4
-       Uncompressed Kernel Size: 14MB
-            Compressed Size  Decompression Speed
-       LZO  6.7MB            20.1MB/s, 25.2MB/s(UA)
-       LZ4  7.3MB            29.1MB/s, 45.6MB/s(UA)
-    
-    2. ARMv7, 1.7GHz based board
-       Kernel: linux 3.7
-       Uncompressed Kernel Size: 14MB
-            Compressed Size  Decompression Speed
-       LZO  6.0MB            34.1MB/s, 52.2MB/s(UA)
-       LZ4  6.5MB            86.7MB/s
-    - UA: Unaligned memory Access support
-    - Latest patch set for LZO applied
-    
-    This patch set is for adding support for LZ4-compressed Kernel.  LZ4 is a
-    very fast lossless compression algorithm and it also features an extremely
-    fast decoder [1].
-    
-    But we have five of decompressors already and one question which does
-    arise, however, is that of where do we stop adding new ones?  This issue
-    had been discussed and came to the conclusion [2].
-    
-    Russell King said that we should have:
-    
-     - one decompressor which is the fastest
-     - one decompressor for the highest compression ratio
-     - one popular decompressor (eg conventional gzip)
-    
-    If we have a replacement one for one of these, then it should do exactly
-    that: replace it.
-    
-    The benchmark shows that an 8% increase in image size vs a 66% increase
-    in decompression speed compared to LZO(which has been known as the
-    fastest decompressor in the Kernel).  Therefore the "fast but may not be
-    small" compression title has clearly been taken by LZ4 [3].
-    
-    [1] http://code.google.com/p/lz4/
-    [2] http://thread.gmane.org/gmane.linux.kbuild.devel/9157
-    [3] http://thread.gmane.org/gmane.linux.kbuild.devel/9347
-    
-    LZ4 homepage: http://fastcompression.blogspot.com/p/lz4.html
-    LZ4 source repository: http://code.google.com/p/lz4/
-    
-    Signed-off-by: Kyungsik Lee <kyungsik.lee@lge.com>
-    Signed-off-by: Yann Collet <yann.collet.73@gmail.com>
-    Cc: "H. Peter Anvin" <hpa@zytor.com>
-    Cc: Ingo Molnar <mingo@elte.hu>
-    Cc: Thomas Gleixner <tglx@linutronix.de>
-    Cc: Russell King <rmk@arm.linux.org.uk>
-    Cc: Borislav Petkov <bp@alien8.de>
-    Cc: Florian Fainelli <florian@openwrt.org>
-    Signed-off-by: Andrew Morton <akpm@linux-foundation.org>
-    Signed-off-by: Linus Torvalds <torvalds@linux-foundation.org>
-
-commit 90739cc3364d6dd302d1807acfe291435616e1a0
-Author: Kyungsik Lee <kyungsik.lee@lge.com>
-Date:   Mon Jul 8 16:01:46 2013 -0700
-
-    lib: add support for LZ4-compressed kernel
-    
-    Add support for extracting LZ4-compressed kernel images, as well as
-    LZ4-compressed ramdisk images in the kernel boot process.
-    
-    Signed-off-by: Kyungsik Lee <kyungsik.lee@lge.com>
-    Cc: "H. Peter Anvin" <hpa@zytor.com>
-    Cc: Ingo Molnar <mingo@elte.hu>
-    Cc: Thomas Gleixner <tglx@linutronix.de>
-    Cc: Russell King <rmk@arm.linux.org.uk>
-    Cc: Borislav Petkov <bp@alien8.de>
-    Cc: Florian Fainelli <florian@openwrt.org>
-    Cc: Yann Collet <yann.collet.73@gmail.com>
-    Signed-off-by: Andrew Morton <akpm@linux-foundation.org>
-    Signed-off-by: Linus Torvalds <torvalds@linux-foundation.org>
-
-commit 41bb9874759571d72c9d1a815917f72f1820e6af
-Author: Chanho Min <chanho.min@lge.com>
-Date:   Mon Jul 8 16:01:49 2013 -0700
-
-    lib: add lz4 compressor module
-    
-    This patchset is for supporting LZ4 compression and the crypto API using
-    it.
-    
-    As shown below, the size of data is a little bit bigger but compressing
-    speed is faster under the enabled unaligned memory access.  We can use
-    lz4 de/compression through crypto API as well.  Also, It will be useful
-    for another potential user of lz4 compression.
-    
-    lz4 Compression Benchmark:
-    Compiler: ARM gcc 4.6.4
-    ARMv7, 1 GHz based board
-       Kernel: linux 3.4
-       Uncompressed data Size: 101 MB
-             Compressed Size  compression Speed
-       LZO   72.1MB		  32.1MB/s, 33.0MB/s(UA)
-       LZ4   75.1MB		  30.4MB/s, 35.9MB/s(UA)
-       LZ4HC 59.8MB		   2.4MB/s,  2.5MB/s(UA)
-    - UA: Unaligned memory Access support
-    - Latest patch set for LZO applied
-    
-    This patch:
-    
-    Add support for LZ4 compression in the Linux Kernel.  LZ4 Compression APIs
-    for kernel are based on LZ4 implementation by Yann Collet and were changed
-    for kernel coding style.
-    
-    LZ4 homepage : http://fastcompression.blogspot.com/p/lz4.html
-    LZ4 source repository : http://code.google.com/p/lz4/
-    svn revision : r90
-    
-    Two APIs are added:
-    
-    lz4_compress() support basic lz4 compression whereas lz4hc_compress()
-    support high compression or CPU performance get lower but compression
-    ratio get higher.  Also, we require the pre-allocated working memory with
-    the defined size and destination buffer must be allocated with the size of
-    lz4_compressbound.
-    
-    [akpm@linux-foundation.org: make lz4_compresshcctx() static]
-    Signed-off-by: Chanho Min <chanho.min@lge.com>
-    Cc: "Darrick J. Wong" <djwong@us.ibm.com>
-    Cc: Bob Pearson <rpearson@systemfabricworks.com>
-    Cc: Richard Weinberger <richard@nod.at>
-    Cc: Herbert Xu <herbert@gondor.hengli.com.au>
-    Cc: Yann Collet <yann.collet.73@gmail.com>
-    Cc: Kyungsik Lee <kyungsik.lee@lge.com>
-    Signed-off-by: Andrew Morton <akpm@linux-foundation.org>
-    Signed-off-by: Linus Torvalds <torvalds@linux-foundation.org>
-
-commit ab8750365fcd48fe4c79932c16070e50bad4e3af
-Author: Colin Cross <ccross@android.com>
-Date:   Tue May 21 22:32:14 2013 -0700
-
-    power: Add option to log time spent in suspend
-    
-    Below is a patch from android kernel that maintains a histogram of
-    suspend times. Please review and provide feedback.
-    
-    Statistices on the time spent in suspend are kept in
-    /sys/kernel/debug/sleep_time.
-    
-    Cc: Android Kernel Team <kernel-team@android.com>
-    Cc: Colin Cross <ccross@android.com>
-    Cc: Todd Poynor <toddpoynor@google.com>
-    Cc: San Mehat <san@google.com>
-    Cc: Benoit Goby <benoit@android.com>
-    Cc: John Stultz <john.stultz@linaro.org>
-    Cc: Thomas Gleixner <tglx@linutronix.de>
-    Signed-off-by: Colin Cross <ccross@android.com>
-    Signed-off-by: Todd Poynor <toddpoynor@google.com>
-    [zoran.markovic@linaro.org: Re-formatted suspend time table to better
-    fit expected values. Moved accounting of suspend time into timekeeping
-    core. Removed CONFIG_SUSPEND_TIME flag and made the feature conditional
-    on CONFIG_DEBUG_FS. Changed the file name to sleep_time to better fit
-    terminology in timekeeping core. Changed seq_printf to seq_puts. Tweaked
-    commit message]
-    Signed-off-by: Zoran Markovic <zoran.markovic@linaro.org>
-    Signed-off-by: John Stultz <john.stultz@linaro.org>
-
-commit b42728095589cbe50a014175ad70c85c766e0224
-Author: Kamalesh Babulal <kamalesh@linux.vnet.ibm.com>
-Date:   Tue Jun 25 13:33:36 2013 +0530
-
-    sched/debug: Add load-tracking statistics to task
-    
-    At present we print per-entity load-tracking statistics for
-    cfs_rq of cgroups/runqueues. Given that per task statistics
-    is maintained, it can be used to know the contribution made
-    by the task to its parenting cfs_rq level.
-    
-    This patch adds per-task load-tracking statistics to /proc/<PID>/sched.
-    
-    Signed-off-by: Kamalesh Babulal <kamalesh@linux.vnet.ibm.com>
-    Signed-off-by: Peter Zijlstra <peterz@infradead.org>
-    Link: http://lkml.kernel.org/r/20130625080336.GA20175@linux.vnet.ibm.com
-    Signed-off-by: Ingo Molnar <mingo@kernel.org>
-
-commit a3d9ab960f2765e2238dca798ab81177533d9ddc
-Author: Kent Overstreet <koverstreet@google.com>
-Date:   Fri May 31 15:26:45 2013 -0700
-
-    percpu: implement generic percpu refcounting
-    
-    This implements a refcount with similar semantics to
-    atomic_get()/atomic_dec_and_test() - but percpu.
-    
-    It also implements two stage shutdown, as we need it to tear down the
-    percpu counts.  Before dropping the initial refcount, you must call
-    percpu_ref_kill(); this puts the refcount in "shutting down mode" and
-    switches back to a single atomic refcount with the appropriate
-    barriers (synchronize_rcu()).
-    
-    It's also legal to call percpu_ref_kill() multiple times - it only
-    returns true once, so callers don't have to reimplement shutdown
-    synchronization.
-    
-    [akpm@linux-foundation.org: fix build]
-    [akpm@linux-foundation.org: coding-style tweak]
-    Signed-off-by: Kent Overstreet <koverstreet@google.com>
-    Cc: Zach Brown <zab@redhat.com>
-    Cc: Felipe Balbi <balbi@ti.com>
-    Cc: Greg Kroah-Hartman <gregkh@linuxfoundation.org>
-    Cc: Mark Fasheh <mfasheh@suse.com>
-    Cc: Joel Becker <jlbec@evilplan.org>
-    Cc: Rusty Russell <rusty@rustcorp.com.au>
-    Cc: Jens Axboe <axboe@kernel.dk>
-    Cc: Asai Thambi S P <asamymuthupa@micron.com>
-    Cc: Selvan Mani <smani@micron.com>
-    Cc: Sam Bradshaw <sbradshaw@micron.com>
-    Cc: Jeff Moyer <jmoyer@redhat.com>
-    Cc: Al Viro <viro@zeniv.linux.org.uk>
-    Cc: Benjamin LaHaise <bcrl@kvack.org>
-    Cc: Tejun Heo <tj@kernel.org>
-    Cc: Oleg Nesterov <oleg@redhat.com>
-    Cc: Christoph Lameter <cl@linux-foundation.org>
-    Cc: Ingo Molnar <mingo@redhat.com>
-    Reviewed-by: "Theodore Ts'o" <tytso@mit.edu>
-    Signed-off-by: Tejun Heo <tj@kernel.org>
-
-commit 1e57753fcdb1ebed63e4024334af5d9562e95d19
-Author: Michael Wang <wangyun@linux.vnet.ibm.com>
-Date:   Thu Jul 4 12:55:51 2013 +0800
-
-    sched: Implement smarter wake-affine logic
-    
-    The wake-affine scheduler feature is currently always trying to pull
-    the wakee close to the waker. In theory this should be beneficial if
-    the waker's CPU caches hot data for the wakee, and it's also beneficial
-    in the extreme ping-pong high context switch rate case.
-    
-    Testing shows it can benefit hackbench up to 15%.
-    
-    However, the feature is somewhat blind, from which some workloads
-    such as pgbench suffer. It's also time-consuming algorithmically.
-    
-    Testing shows it can damage pgbench up to 50% - far more than the
-    benefit it brings in the best case.
-    
-    So wake-affine should be smarter and it should realize when to
-    stop its thankless effort at trying to find a suitable CPU to wake on.
-    
-    This patch introduces 'wakee_flips', which will be increased each
-    time the task flips (switches) its wakee target.
-    
-    So a high 'wakee_flips' value means the task has more than one
-    wakee, and the bigger the number, the higher the wakeup frequency.
-    
-    Now when making the decision on whether to pull or not, pay attention to
-    the wakee with a high 'wakee_flips', pulling such a task may benefit
-    the wakee. Also imply that the waker will face cruel competition later,
-    it could be very cruel or very fast depends on the story behind
-    'wakee_flips', waker therefore suffers.
-    
-    Furthermore, if waker also has a high 'wakee_flips', that implies that
-    multiple tasks rely on it, then waker's higher latency will damage all
-    of them, so pulling wakee seems to be a bad deal.
-    
-    Thus, when 'waker->wakee_flips / wakee->wakee_flips' becomes
-    higher and higher, the cost of pulling seems to be worse and worse.
-    
-    The patch therefore helps the wake-affine feature to stop its pulling
-    work when:
-    
-    	wakee->wakee_flips > factor &&
-    	waker->wakee_flips > (factor * wakee->wakee_flips)
-    
-    The 'factor' here is the number of CPUs in the current CPU's NUMA node,
-    so a bigger node will lead to more pulling since the trial becomes more
-    severe.
-    
-    After applying the patch, pgbench shows up to 40% improvements and no regressions.
-    
-    Tested with 12 cpu x86 server and tip 3.10.0-rc7.
-    
-    The percentages in the final column highlight the areas with the biggest wins,
-    all other areas improved as well:
-    
-    	pgbench		    base	smart
-    
-    	| db_size | clients |  tps  |	|  tps  |
-    	+---------+---------+-------+   +-------+
-    	| 22 MB   |       1 | 10598 |   | 10796 |
-    	| 22 MB   |       2 | 21257 |   | 21336 |
-    	| 22 MB   |       4 | 41386 |   | 41622 |
-    	| 22 MB   |       8 | 51253 |   | 57932 |
-    	| 22 MB   |      12 | 48570 |   | 54000 |
-    	| 22 MB   |      16 | 46748 |   | 55982 | +19.75%
-    	| 22 MB   |      24 | 44346 |   | 55847 | +25.93%
-    	| 22 MB   |      32 | 43460 |   | 54614 | +25.66%
-    	| 7484 MB |       1 |  8951 |   |  9193 |
-    	| 7484 MB |       2 | 19233 |   | 19240 |
-    	| 7484 MB |       4 | 37239 |   | 37302 |
-    	| 7484 MB |       8 | 46087 |   | 50018 |
-    	| 7484 MB |      12 | 42054 |   | 48763 |
-    	| 7484 MB |      16 | 40765 |   | 51633 | +26.66%
-    	| 7484 MB |      24 | 37651 |   | 52377 | +39.11%
-    	| 7484 MB |      32 | 37056 |   | 51108 | +37.92%
-    	| 15 GB   |       1 |  8845 |   |  9104 |
-    	| 15 GB   |       2 | 19094 |   | 19162 |
-    	| 15 GB   |       4 | 36979 |   | 36983 |
-    	| 15 GB   |       8 | 46087 |   | 49977 |
-    	| 15 GB   |      12 | 41901 |   | 48591 |
-    	| 15 GB   |      16 | 40147 |   | 50651 | +26.16%
-    	| 15 GB   |      24 | 37250 |   | 52365 | +40.58%
-    	| 15 GB   |      32 | 36470 |   | 50015 | +37.14%
-    
-    Signed-off-by: Michael Wang <wangyun@linux.vnet.ibm.com>
-    Cc: Mike Galbraith <efault@gmx.de>
-    Signed-off-by: Peter Zijlstra <peterz@infradead.org>
-    Link: http://lkml.kernel.org/r/51D50057.9000809@linux.vnet.ibm.com
-    [ Improved the changelog. ]
-    Signed-off-by: Ingo Molnar <mingo@kernel.org>
-
-commit 8080677cf402756d76ecd201c0676edb0e65eb35
-Author: Ard Biesheuvel <ard.biesheuvel@linaro.org>
-Date:   Fri May 17 18:51:23 2013 +0200
-
-    ARM: crypto: add NEON accelerated XOR implementation
-    
-    Add a source file xor-neon.c (which is really just the reference
-    C implementation passed through the GCC vectorizer) and hook it
-    up to the XOR framework.
-    
-    Signed-off-by: Ard Biesheuvel <ard.biesheuvel@linaro.org>
-    Acked-by: Nicolas Pitre <nico@linaro.org>
-
-commit b299d56e72f0e4c49ff31ff68fb05d6526018475
-Author: Yuchung Cheng <ycheng@google.com>
-Date:   Thu Oct 31 09:19:32 2013 -0700
-
-    tcp: enable sockets to use MSG_FASTOPEN by default
-    
-    Applications have started to use Fast Open (e.g., Chrome browser has
-    such an optional flag) and the feature has gone through several
-    generations of kernels since 3.7 with many real network tests. It's
-    time to enable this flag by default for applications to test more
-    conveniently and extensively.
-    
-    Signed-off-by: Yuchung Cheng <ycheng@google.com>
-    Signed-off-by: Neal Cardwell <ncardwell@google.com>
-    Acked-by: Eric Dumazet <edumazet@google.com>
-    Signed-off-by: David S. Miller <davem@davemloft.net>
-
-commit fac2b9e0e1c156293e8846bcb57da7ba99ad8c05
-Author: Davidlohr Bueso <davidlohr@hp.com>
-Date:   Sun Jan 12 15:31:23 2014 -0800
-
-    futexes: Increase hash table size for better performance
-    
-    Currently, the futex global hash table suffers from its fixed,
-    smallish (for today's standards) size of 256 entries, as well as
-    its lack of NUMA awareness. Large systems, using many futexes,
-    can be prone to high amounts of collisions; where these futexes
-    hash to the same bucket and lead to extra contention on the same
-    hb->lock. Furthermore, cacheline bouncing is a reality when we
-    have multiple hb->locks residing on the same cacheline and
-    different futexes hash to adjacent buckets.
-    
-    This patch keeps the current static size of 16 entries for small
-    systems, or otherwise, 256 * ncpus (or larger as we need to
-    round the number to a power of 2). Note that this number of CPUs
-    accounts for all CPUs that can ever be available in the system,
-    taking into consideration things like hotpluging. While we do
-    impose extra overhead at bootup by making the hash table larger,
-    this is a one time thing, and does not shadow the benefits of
-    this patch.
-    
-    Furthermore, as suggested by tglx, by cache aligning the hash
-    buckets we can avoid access across cacheline boundaries and also
-    avoid massive cache line bouncing if multiple cpus are hammering
-    away at different hash buckets which happen to reside in the
-    same cache line.
-    
-    Also, similar to other core kernel components (pid, dcache,
-    tcp), by using alloc_large_system_hash() we benefit from its
-    NUMA awareness and thus the table is distributed among the nodes
-    instead of in a single one.
-    
-    For a custom microbenchmark that pounds on the uaddr hashing --
-    making the wait path fail at futex_wait_setup() returning
-    -EWOULDBLOCK for large amounts of futexes, we can see the
-    following benefits on a 80-core, 8-socket 1Tb server:
-    
-     +---------+--------------------+------------------------+-----------------------+-------------------------------+
-     | threads | baseline (ops/sec) | aligned-only (ops/sec) | large table (ops/sec) | large table+aligned (ops/sec) |
-     +---------+--------------------+------------------------+-----------------------+-------------------------------+
-     |     512 |              32426 | 50531  (+55.8%)        | 255274  (+687.2%)     | 292553  (+802.2%)             |
-     |     256 |              65360 | 99588  (+52.3%)        | 443563  (+578.6%)     | 508088  (+677.3%)             |
-     |     128 |             125635 | 200075 (+59.2%)        | 742613  (+491.1%)     | 835452  (+564.9%)             |
-     |      80 |             193559 | 323425 (+67.1%)        | 1028147 (+431.1%)     | 1130304 (+483.9%)             |
-     |      64 |             247667 | 443740 (+79.1%)        | 997300  (+302.6%)     | 1145494 (+362.5%)             |
-     |      32 |             628412 | 721401 (+14.7%)        | 965996  (+53.7%)      | 1122115 (+78.5%)              |
-     +---------+--------------------+------------------------+-----------------------+-------------------------------+
-    
-    Reviewed-by: Darren Hart <dvhart@linux.intel.com>
-    Reviewed-by: Peter Zijlstra <peterz@infradead.org>
-    Reviewed-by: Paul E. McKenney <paulmck@linux.vnet.ibm.com>
-    Reviewed-by: Waiman Long <Waiman.Long@hp.com>
-    Reviewed-and-tested-by: Jason Low <jason.low2@hp.com>
-    Reviewed-by: Thomas Gleixner <tglx@linutronix.de>
-    Signed-off-by: Davidlohr Bueso <davidlohr@hp.com>
-    Cc: Mike Galbraith <efault@gmx.de>
-    Cc: Jeff Mahoney <jeffm@suse.com>
-    Cc: Linus Torvalds <torvalds@linux-foundation.org>
-    Cc: Scott Norton <scott.norton@hp.com>
-    Cc: Tom Vaden <tom.vaden@hp.com>
-    Cc: Aswin Chandramouleeswaran <aswin@hp.com>
-    Link: http://lkml.kernel.org/r/1389569486-25487-3-git-send-email-davidlohr@hp.com
-    Signed-off-by: Ingo Molnar <mingo@kernel.org>
-    Signed-off-by: Paul Reioux <reioux@gmail.com>
-    
-    Modified for Nexus 9
-    
-    Signed-off-by: Paul Reioux <reioux@gmail.com>
-    
-    Conflicts:
-    	kernel/futex.c
-    
-    Conflicts:
-    	kernel/futex.c
-    
-    Conflicts:
-    	kernel/futex.c
-
-commit 92310a9edd06e6ce983f98aa45eb4eb73cfac22e
-Author: Rafael J. Wysocki <rafael.j.wysocki@intel.com>
-Date:   Wed Feb 26 01:00:30 2014 +0100
-
-    PCI / PM: Resume runtime-suspended devices later during system suspend
-    
-    Runtime-suspended devices are resumed during system suspend by
-    pci_pm_prepare() for two reasons: First, because they may need
-    to be reprogrammed in order to change their wakeup settings and,
-    second, because they may need to be operatonal for their children
-    to be successfully suspended.  That is a problem, though, if there
-    are many runtime-suspended devices that need to be resumed this
-    way during system suspend, because the .prepare() PM callbacks of
-    devices are executed sequentially and the times taken by them
-    accumulate, which may increase the total system suspend time quite
-    a bit.
-    
-    For this reason, move the resume of runtime-suspended devices up
-    to the next phase of device suspend (during system suspend), except
-    for the ones that have power.ignore_children set.  The exception is
-    made, because the devices with power.ignore_children set may still
-    be necessary for their children to be successfully suspended (during
-    system suspend) and they won't be resumed automatically as a result
-    of the runtime resume of their children.
-    
-    Signed-off-by: Rafael J. Wysocki <rafael.j.wysocki@intel.com>
-    Acked-by: Bjorn Helgaas <bhelgaas@google.com>
-
-commit 8373f586032443904f18767c46ce51785b44299a
-Author: Rafael J. Wysocki <rafael.j.wysocki@intel.com>
-Date:   Wed Feb 26 01:00:19 2014 +0100
-
-    ACPI / PM: Resume runtime-suspended devices later during system suspend
-    
-    Runtime-suspended devices are resumed during system suspend by
-    acpi_subsys_prepare() for two reasons: First, because they may need
-    to be reprogrammed in order to change their wakeup settings and,
-    second, because they may need to be operatonal for their children
-    to be successfully suspended.  That is a problem, though, if there
-    are many runtime-suspended devices that need to be resumed this
-    way during system suspend, because the .prepare() PM callbacks of
-    devices are executed sequentially and the times taken by them
-    accumulate, which may increase the total system suspend time quite
-    a bit.
-    
-    For this reason, move the resume of runtime-suspended devices up
-    to the next phase of device suspend (during system suspend), except
-    for the ones that have power.ignore_children set.  The exception is
-    made, because the devices with power.ignore_children set may still
-    be necessary for their children to be successfully suspended (during
-    system suspend) and they won't be resumed automatically as a result
-    of the runtime resume of their children.
-    
-    Signed-off-by: Rafael J. Wysocki <rafael.j.wysocki@intel.com>
-
-commit c18063e3d2dccde0865d0e846e3b9935aaf5e003
-Author: Mel Gorman <mgorman@suse.de>
-Date:   Wed Jun 4 16:07:14 2014 -0700
-
-    mm: disable zone_reclaim_mode by default
-    
-    When it was introduced, zone_reclaim_mode made sense as NUMA distances
-    punished and workloads were generally partitioned to fit into a NUMA
-    node.  NUMA machines are now common but few of the workloads are
-    NUMA-aware and it's routine to see major performance degradation due to
-    zone_reclaim_mode being enabled but relatively few can identify the
-    problem.
-    
-    Those that require zone_reclaim_mode are likely to be able to detect
-    when it needs to be enabled and tune appropriately so lets have a
-    sensible default for the bulk of users.
-    
-    This patch (of 2):
-    
-    zone_reclaim_mode causes processes to prefer reclaiming memory from
-    local node instead of spilling over to other nodes.  This made sense
-    initially when NUMA machines were almost exclusively HPC and the
-    workload was partitioned into nodes.  The NUMA penalties were
-    sufficiently high to justify reclaiming the memory.  On current machines
-    and workloads it is often the case that zone_reclaim_mode destroys
-    performance but not all users know how to detect this.  Favour the
-    common case and disable it by default.  Users that are sophisticated
-    enough to know they need zone_reclaim_mode will detect it.
-    
-    Signed-off-by: Mel Gorman <mgorman@suse.de>
-    Acked-by: Johannes Weiner <hannes@cmpxchg.org>
-    Reviewed-by: Zhang Yanfei <zhangyanfei@cn.fujitsu.com>
-    Acked-by: Michal Hocko <mhocko@suse.cz>
-    Reviewed-by: Christoph Lameter <cl@linux.com>
-    Signed-off-by: Andrew Morton <akpm@linux-foundation.org>
-    Signed-off-by: Linus Torvalds <torvalds@linux-foundation.org>
-
-commit 3e038ffc2fd7e4f50ec3e1e9ca77267031ce7900
-Author: Srivatsa S. Bhat <srivatsa.bhat@linux.vnet.ibm.com>
-Date:   Sun Jun 8 02:11:43 2014 +0530
-
-    cpufreq: governor: Be friendly towards latency-sensitive bursty workloads
-    
-    Cpufreq governors like the ondemand governor calculate the load on the CPU
-    periodically by employing deferrable timers. A deferrable timer won't fire
-    if the CPU is completely idle (and there are no other timers to be run), in
-    order to avoid unnecessary wakeups and thus save CPU power.
-    
-    However, the load calculation logic is agnostic to all this, and this can
-    lead to the problem described below.
-    
-    Time (ms)               CPU 1
-    
-    100                Task-A running
-    
-    110                Governor's timer fires, finds load as 100% in the last
-                       10ms interval and increases the CPU frequency.
-    
-    110.5              Task-A running
-    
-    120		   Governor's timer fires, finds load as 100% in the last
-    		   10ms interval and increases the CPU frequency.
-    
-    125		   Task-A went to sleep. With nothing else to do, CPU 1
-    		   went completely idle.
-    
-    200		   Task-A woke up and started running again.
-    
-    200.5		   Governor's deferred timer (which was originally programmed
-    		   to fire at time 130) fires now. It calculates load for the
-    		   time period 120 to 200.5, and finds the load is almost zero.
-    		   Hence it decreases the CPU frequency to the minimum.
-    
-    210		   Governor's timer fires, finds load as 100% in the last
-    		   10ms interval and increases the CPU frequency.
-    
-    So, after the workload woke up and started running, the frequency was suddenly
-    dropped to absolute minimum, and after that, there was an unnecessary delay of
-    10ms (sampling period) to increase the CPU frequency back to a reasonable value.
-    And this pattern repeats for every wake-up-from-cpu-idle for that workload.
-    This can be quite undesirable for latency- or response-time sensitive bursty
-    workloads. So we need to fix the governor's logic to detect such wake-up-from-
-    cpu-idle scenarios and start the workload at a reasonably high CPU frequency.
-    
-    One extreme solution would be to fake a load of 100% in such scenarios. But
-    that might lead to undesirable side-effects such as frequency spikes (which
-    might also need voltage changes) especially if the previous frequency happened
-    to be very low.
-    
-    We just want to avoid the stupidity of dropping down the frequency to a minimum
-    and then enduring a needless (and long) delay before ramping it up back again.
-    So, let us simply carry forward the previous load - that is, let us just pretend
-    that the 'load' for the current time-window is the same as the load for the
-    previous window. That way, the frequency and voltage will continue to be set
-    to whatever values they were set at previously. This means that bursty workloads
-    will get a chance to influence the CPU frequency at which they wake up from
-    cpu-idle, based on their past execution history. Thus, they might be able to
-    avoid suffering from slow wakeups and long response-times.
-    
-    However, we should take care not to over-do this. For example, such a "copy
-    previous load" logic will benefit cases like this: (where # represents busy
-    and . represents idle)
-    
-    ##########.........#########.........###########...........##########........
-    
-    but it will be detrimental in cases like the one shown below, because it will
-    retain the high frequency (copied from the previous interval) even in a mostly
-    idle system:
-    
-    ##########.........#.................#.....................#...............
-    
-    (i.e., the workload finished and the remaining tasks are such that their busy
-    periods are smaller than the sampling interval, which causes the timer to
-    always get deferred. So, this will make the copy-previous-load logic copy
-    the initial high load to subsequent idle periods over and over again, thus
-    keeping the frequency high unnecessarily).
-    
-    So, we modify this copy-previous-load logic such that it is used only once
-    upon every wakeup-from-idle. Thus if we have 2 consecutive idle periods, the
-    previous load won't get blindly copied over; cpufreq will freshly evaluate the
-    load in the second idle interval, thus ensuring that the system comes back to
-    its normal state.
-    
-    [ The right way to solve this whole problem is to teach the CPU frequency
-    governors to also track load on a per-task basis, not just a per-CPU basis,
-    and then use both the data sources intelligently to set the appropriate
-    frequency on the CPUs. But that involves redesigning the cpufreq subsystem,
-    so this patch should make the situation bearable until then. ]
-    
-    Experimental results:
-    +-------------------+
-    
-    I ran a modified version of ebizzy (called 'sleeping-ebizzy') that sleeps in
-    between its execution such that its total utilization can be a user-defined
-    value, say 10% or 20% (higher the utilization specified, lesser the amount of
-    sleeps injected). This ebizzy was run with a single-thread, tied to CPU 8.
-    
-    Behavior observed with tracing (sample taken from 40% utilization runs):
-    ------------------------------------------------------------------------
-    
-    Without patch:
-    ~~~~~~~~~~~~~~
-    kworker/8:2-12137  416.335742: cpu_frequency: state=2061000 cpu_id=8
-    kworker/8:2-12137  416.335744: sched_switch: prev_comm=kworker/8:2 ==> next_comm=ebizzy
-          <...>-40753  416.345741: sched_switch: prev_comm=ebizzy ==> next_comm=kworker/8:2
-    kworker/8:2-12137  416.345744: cpu_frequency: state=4123000 cpu_id=8
-    kworker/8:2-12137  416.345746: sched_switch: prev_comm=kworker/8:2 ==> next_comm=ebizzy
-          <...>-40753  416.355738: sched_switch: prev_comm=ebizzy ==> next_comm=kworker/8:2
-    <snip>  ---------------------------------------------------------------------  <snip>
-          <...>-40753  416.402202: sched_switch: prev_comm=ebizzy ==> next_comm=swapper/8
-         <idle>-0      416.502130: sched_switch: prev_comm=swapper/8 ==> next_comm=ebizzy
-          <...>-40753  416.505738: sched_switch: prev_comm=ebizzy ==> next_comm=kworker/8:2
-    kworker/8:2-12137  416.505739: cpu_frequency: state=2061000 cpu_id=8
-    kworker/8:2-12137  416.505741: sched_switch: prev_comm=kworker/8:2 ==> next_comm=ebizzy
-          <...>-40753  416.515739: sched_switch: prev_comm=ebizzy ==> next_comm=kworker/8:2
-    kworker/8:2-12137  416.515742: cpu_frequency: state=4123000 cpu_id=8
-    kworker/8:2-12137  416.515744: sched_switch: prev_comm=kworker/8:2 ==> next_comm=ebizzy
-    
-    Observation: Ebizzy went idle at 416.402202, and started running again at
-    416.502130. But cpufreq noticed the long idle period, and dropped the frequency
-    at 416.505739, only to increase it back again at 416.515742, realizing that the
-    workload is in-fact CPU bound. Thus ebizzy needlessly ran at the lowest frequency
-    for almost 13 milliseconds (almost 1 full sample period), and this pattern
-    repeats on every sleep-wakeup. This could hurt latency-sensitive workloads quite
-    a lot.
-    
-    With patch:
-    ~~~~~~~~~~~
-    
-    kworker/8:2-29802  464.832535: cpu_frequency: state=2061000 cpu_id=8
-    <snip>  ---------------------------------------------------------------------  <snip>
-    kworker/8:2-29802  464.962538: sched_switch: prev_comm=kworker/8:2 ==> next_comm=ebizzy
-          <...>-40738  464.972533: sched_switch: prev_comm=ebizzy ==> next_comm=kworker/8:2
-    kworker/8:2-29802  464.972536: cpu_frequency: state=4123000 cpu_id=8
-    kworker/8:2-29802  464.972538: sched_switch: prev_comm=kworker/8:2 ==> next_comm=ebizzy
-          <...>-40738  464.982531: sched_switch: prev_comm=ebizzy ==> next_comm=kworker/8:2
-    <snip>  ---------------------------------------------------------------------  <snip>
-    kworker/8:2-29802  465.022533: sched_switch: prev_comm=kworker/8:2 ==> next_comm=ebizzy
-          <...>-40738  465.032531: sched_switch: prev_comm=ebizzy ==> next_comm=kworker/8:2
-    kworker/8:2-29802  465.032532: sched_switch: prev_comm=kworker/8:2 ==> next_comm=ebizzy
-          <...>-40738  465.035797: sched_switch: prev_comm=ebizzy ==> next_comm=swapper/8
-         <idle>-0      465.240178: sched_switch: prev_comm=swapper/8 ==> next_comm=ebizzy
-          <...>-40738  465.242533: sched_switch: prev_comm=ebizzy ==> next_comm=kworker/8:2
-    kworker/8:2-29802  465.242535: sched_switch: prev_comm=kworker/8:2 ==> next_comm=ebizzy
-          <...>-40738  465.252531: sched_switch: prev_comm=ebizzy ==> next_comm=kworker/8:2
-    
-    Observation: Ebizzy went idle at 465.035797, and started running again at
-    465.240178. Since ebizzy was the only real workload running on this CPU,
-    cpufreq retained the frequency at 4.1Ghz throughout the run of ebizzy, no
-    matter how many times ebizzy slept and woke-up in-between. Thus, ebizzy
-    got the 10ms worth of 4.1 Ghz benefit during every sleep-wakeup (as compared
-    to the run without the patch) and this boost gave a modest improvement in total
-    throughput, as shown below.
-    
-    Sleeping-ebizzy records-per-second:
-    -----------------------------------
-    
-    Utilization  Without patch  With patch  Difference (Absolute and % values)
-        10%         274767        277046        +  2279 (+0.829%)
-        20%         543429        553484        + 10055 (+1.850%)
-        40%        1090744       1107959        + 17215 (+1.578%)
-        60%        1634908       1662018        + 27110 (+1.658%)
-    
-    A rudimentary and somewhat approximately latency-sensitive workload such as
-    sleeping-ebizzy itself showed a consistent, noticeable performance improvement
-    with this patch. Hence, workloads that are truly latency-sensitive will benefit
-    quite a bit from this change. Moreover, this is an overall win-win since this
-    patch does not hurt power-savings at all (because, this patch does not reduce
-    the idle time or idle residency; and the high frequency of the CPU when it goes
-    to cpu-idle does not affect/hurt the power-savings of deep idle states).
-    
-    Signed-off-by: Srivatsa S. Bhat <srivatsa.bhat@linux.vnet.ibm.com>
-    Reviewed-by: Gautham R. Shenoy <ego@linux.vnet.ibm.com>
-    Acked-by: Viresh Kumar <viresh.kumar@linaro.org>
-    Signed-off-by: Rafael J. Wysocki <rafael.j.wysocki@intel.com>
-
-commit ce7e47457450a2f76b1a2165bd15325be0c01975
-Author: Paul Reioux <reioux@gmail.com>
-Date:   Thu Jan 9 14:31:09 2014 -0600
-
-    ARM: move VFP init to an earlier boot stage
-    
-    In order to use the NEON unit in the kernel, we should
-    initialize it a bit earlier in the boot process so NEON users
-    that like to do a quick benchmark at load time (like the
-    xor_blocks or RAID-6 code) find the NEON/VFP unit already
-    enabled.
-    
-    Replaced late_initcall() with core_initcall().
-    
-    Signed-off-by: Ard Biesheuvel <ard.biesheuvel at linaro.org>
-    Acked-by: Nicolas Pitre <nico at linaro.org>
-    
-    Signed-off-by: Paul Reioux <reioux@gmail.com>
-    
-    Conflicts:
-    	arch/arm/vfp/vfpmodule.c
-
-commit 2683b9da4ef95b039ad9e7074d3aeb746dac6a0a
-Author: Paul Reioux <reioux@gmail.com>
-Date:   Thu Jan 9 01:22:04 2014 -0800
-
-    ARM: be strict about FP exceptions in kernel mode
-    
-    The support code in vfp_support_entry does not care whether the
-    exception that caused it to be invoked occurred in kernel mode or
-    in user mode. However, neither condition that could trigger this
-    exception (lazy restore and VFP bounce to support code) is
-    currently allowable in kernel mode.
-    
-    In either case, print a message describing the condition before
-    letting the undefined instruction handler run its course and trigger
-    an oops.
-    
-    Signed-off-by: Ard Biesheuvel <ard.biesheuvel at linaro.org>
-    Acked-by: Nicolas Pitre <nico at linaro.org>
-    Signed-off-by: Paul Reioux <reioux@gmail.com>
-
-commit 810bb46cabcababe4a35d6e5a67d8c1b08fdc6d9
-Author: Paul Reioux <reioux@gmail.com>
-Date:   Thu Jan 9 01:16:06 2014 -0800
-
-    ARM: add support for kernel mode NEON
-    
-    In order to safely support the use of NEON instructions in
-    kernel mode, some precautions need to be taken:
-    - the userland context that may be present in the registers (even
-      if the NEON/VFP is currently disabled) must be stored under the
-      correct task (which may not be 'current' in the UP case),
-    - to avoid having to keep track of additional vfpstates for the
-      kernel side, disallow the use of NEON in interrupt context
-      and run with preemption disabled,
-    - after use, re-enable preemption and re-enable the lazy restore
-      machinery by disabling the NEON/VFP unit.
-    
-    This patch adds the functions kernel_neon_begin() and
-    kernel_neon_end() which take care of the above. It also adds
-    the Kconfig symbol KERNEL_MODE_NEON to enable it.
-    
-    Signed-off-by: Ard Biesheuvel <ard.biesheuvel@linaro.org>
-    Acked-by: Nicolas Pitre <nico@linaro.org>
-    Signed-off-by: Paul Reioux <reioux@gmail.com>
-
-commit a023f5e4277947d9c0035f402edde765daabaf1b
-Author: Ard Biesheuvel <ard.biesheuvel@linaro.org>
-Date:   Mon Sep 9 14:08:38 2013 +0000
-
-    ARM: 7835/2: fix modular build of xor_blocks() with NEON enabled
-    
-    Commit 0195659 introduced a NEON accelerated version of the xor_blocks()
-    function, but it needs the changes in this patch to allow it to be built
-    as a module rather than statically into the kernel.
-    
-    This patch creates a separate module xor-neon.ko which exports the NEON
-    inner xor_blocks() functions depended upon by the regular xor.ko if it
-    is built with CONFIG_KERNEL_MODE_NEON=y
-    
-    Reported-by: Josh Boyer <jwboyer@fedoraproject.org>
-    Signed-off-by: Ard Biesheuvel <ard.biesheuvel@linaro.org>
-    Signed-off-by: Russell King <rmk+kernel@arm.linux.org.uk>
-
-commit 5c67d36cb2619c5dfd641a0aa31889cfbf644df0
-Author: Russell King <rmk+kernel@arm.linux.org.uk>
-Date:   Sun Sep 22 10:08:50 2013 +0000
-
-    ARM: only allow kernel mode neon with AEABI
-    
-    This prevents the linker erroring with:
-    
-    arm-linux-ld: error: arch/arm/lib/xor-neon.o uses VFP instructions, whereas arch/arm/lib/built-in.o does not
-    arm-linux-ld: failed to merge target specific data of file arch/arm/lib/xor-neon.o
-    
-    This is due to the non-neon files being marked as containing FPA data/
-    instructions (even though they do not) being mixed with files which
-    contain VFP, which is an incompatible floating point format.
-    
-    Signed-off-by: Russell King <rmk+kernel@arm.linux.org.uk>
-
-commit 97191505ece8d1213ff134ca811d5efca9813958
-Author: Paul Reioux <reioux@gmail.com>
-Date:   Sun Jan 18 22:36:40 2015 -0600
-
-    arm/kernel/irq.c: remove irq affinity warnings
-    
-    the spurious warning was a result of deeper idle mode which act like unplugging
-    without actually unplugged thus lead to this warning.
-    
-    Signed-off-by: Paul Reioux <reioux@gmail.com>
-
-commit 4f68c7f3fa243bf5b9ded8d3816ca7a0cea89bcf
-Author: Zhang Rui <rui.zhang@intel.com>
-Date:   Wed May 28 15:23:35 2014 +0800
-
-    PM / sleep: unregister wakeup source when disabling device wakeup
-    
-    When enabling a device' wakeup capability, a wakeup source
-    is created for the device automatically. But the wakeup source
-    is not unregistered when disabling the device' wakeup capability.
-    
-    This results in zombie wakeup sources, after devices/drivers are unregistered.
-    
-    Signed-off-by: Zhang Rui <rui.zhang@intel.com>
-    Signed-off-by: Rafael J. Wysocki <rafael.j.wysocki@intel.com>
-    Signed-off-by: flar2 <asegaert@gmail.com>
-
-commit b467316fe875abff5cccd993068f3c17b4d27251
-Author: Arun Kumar Neelakantam <aneela@codeaurora.org>
-Date:   Tue Oct 28 13:57:25 2014 +0530
-
-    soc: qcom: smd: Register SMD & SMSM IRQs with IRQF_NO_SUSPEND flag
-    
-    During system suspend/resume path IRQs are temporarily disabled unless
-    the IRQF_NO_SUSPEND flag is specified. If a wakeup-enabled interrupt
-    comes in during this timeframe, it will be masked until the suspend
-    process is complete leading to delayed processing.
-    
-    Register the SMD and SMSM wakeup enable IRQs with IRQF_NO_SUSPEND flags
-    to avoid delaying the interrupt during system suspend/resume path.
-    
-    CRs-Fixed: 724932
-    Change-Id: Ib93c911f4a4e70638ebf23bc22ee7f5a685dca70
-    Signed-off-by: Arun Kumar Neelakantam <aneela@codeaurora.org>
-    Signed-off-by: flar2 <asegaert@gmail.com>
-
-commit d5fa8d3b4a3415b2d016b5554506f27c78e4bebc
-Author: ZION959 <ziontran@gmail.com>
-Date:   Wed Mar 11 21:15:27 2015 -0700
-
-    Add /dev/frandom support
-    
-    Signed-off-by: flar2 <asegaert@gmail.com>
-
-commit a28ec854d4279a037ebc8935d5ad134dab5b66f4
-Author: ZION959 <ziontran@gmail.com>
-Date:   Wed Mar 11 21:22:27 2015 -0700
-
-    update defconfig
-
-commit ded88c4ad5543172ea5e0b874aa51fb39f1b9d2c
-Author: TwistedUmbrella <twistedumbrella@gmail.com>
-Date:   Tue Dec 16 04:33:42 2014 -0500
-
-    drivers: w1: register any S-View cover as authentic
-    
-    This allows setting a kernel config flag to force the read of any
-    S-View cover as an authentic Samsung product
-
-commit 39795a2dcf0b430e2e5557ba8eeec870c2b27436
-Author: TwistedUmbrella <twistedumbrella@gmail.com>
-Date:   Thu Jan 1 20:33:43 2015 -0500
-
-    drivers: w1: allow user to override S-View bypass
-    
-    The user may now disable the S-View authentication bypass by changing
-    the sysfs value for “user” to 0.
-    Developers may also prevent the authentication bypass by not defining
-    the config flag “CONFIG_SVIEW_BYPASS”
-    
-    Conflicts:
-    	drivers/w1/w1.c
-
-commit ed58b7462e971708480ec5600f6b782d8d2c2479
-Author: TwistedUmbrella <twistedumbrella@gmail.com>
-Date:   Fri Jan 2 12:30:58 2015 -0500
-
-    drivers: w1: enable readwrite for S-View bypass
-
-commit 97aa32d247100a339cdfc127df6b24dbb530fde3
-Author: ZION959 <ziontran@gmail.com>
-Date:   Wed Mar 11 21:26:30 2015 -0700
-
-    added sysfs interface for GENTLE_FAIR_SLEEPERS [neobuddy89]
-
-commit e00222b0d97850e98e29c84a3469022a5ff02d48
-Author: Pavel <nadyaivanova14@gmail.com>
-Date:   Sun Jan 4 20:57:48 2015 +0100
-
-    reduce wakelocks: wlan_rx_wake and wlan_ctrl_wake
-
-commit 8be012ba3a662be10ba6008a8d0f013b59f7d2fb
-Author: Pavel <nadyaivanova14@gmail.com>
-Date:   Tue Dec 30 20:46:21 2014 +0100
-
-    add Led Control
-    
-    Thanks to Twistedumbrella and Ktoonsez
-    
-    Conflicts:
-    
-    	drivers/leds/leds-max77843-rgb.c
-
-commit 2120000d10700413ebc79ca3d43aef8bd393a1e8
-Author: ZION959 <ziontran@gmail.com>
-Date:   Wed Mar 11 21:34:12 2015 -0700
-
-    add Dynamic Fsync control
-    version 1.5 by faux123
-
-commit 4f13bfa0be8120a6c8c778ca52735dd1b4def646
-Author: ZION959 <ziontran@gmail.com>
-Date:   Wed Mar 11 23:30:12 2015 -0700
-
-    Revert : add Led Control
-    
-    Thanks to Twistedumbrella and Ktoonsez
-    
-    Conflicts:
-    
-    	drivers/leds/leds-max77843-rgb.c (reverted from commit 8be012ba3a662be10ba6008a8d0f013b59f7d2fb)
-
-commit 8011a0f0774322570e4311f7ace8a26c6bdeffc4
-Author: Paul Reioux <reioux@gmail.com>
-Date:   Fri Nov 21 12:53:59 2014 -0600
-
-    system_rev: fix type mismatch derps by Samsung
-    
-    Signed-off-by: Paul Reioux <reioux@gmail.com>
-
-commit 99e73acb0e325889d6209d0f31303b1e52a08c6a
-Author: ZION959 <ziontran@gmail.com>
-Date:   Wed Mar 11 23:49:38 2015 -0700
-
-    fix compile errors for dyynamic fsync
-
-commit fe81847273d93be05293bd070265b787b2d111df
-Author: ZION959 <ziontran@gmail.com>
-Date:   Thu Mar 12 00:47:16 2015 -0700
-
-    Revert: intelli_thermal v3.0: initial coding for Linux 3.10 Qualcomm kernels (faux123)
-    
-    Intelli_thermal is a replacement for the existing Qualcomm msm_thermal engine.
-    It allows users greater controls over the stock Qualcomm thermal engine while
-    maintaining full backwards compatibilty.
-    
-    Copyright 2014~2015 Paul Reioux (aka Faux123)
-    
-    Signed-off-by: Paul Reioux <reioux@gmail.com> (reverted from commit ba69a437c9ef7e6221faa288dea4e9f15c890867)
-
-commit bb12a28e80c4da9b26d0c4a96b332de228198e2e
-Author: ZION959 <ziontran@gmail.com>
-Date:   Thu Mar 12 08:33:30 2015 -0700
-
-    system_rev: fix type
-
 commit 6df08163ba42601030ec20043d25dc3a3c04cb1e
 Author: imoseyon <imoseyon@gmail.com>
 Date:   Mon Nov 24 19:56:09 2014 -0800
@@ -4970,6 +2534,23 @@ Date:   Tue Mar 17 18:27:12 2015 -0700
 
     base CMRemix v1.2
 
+project libcore/
+commit fe42e966789ef23b7ab7fe111c943c44285db0db
+Author: Alex Klyubin <klyubin@google.com>
+Date:   Tue Nov 18 17:37:20 2014 -0800
+
+    Fix a bug in DefaultHostnameVerifier wildcard handling.
+    
+    Wildcard domain name patterns of the form *.remainder are supposed to
+    match domain names that exactly match the remainder. Due to a bug,
+    the match was not exact but rather a prefix match: domain names
+    starting with the remainder would match too.
+    
+    This CL fixes the issue.
+    
+    Bug: 18432707
+    Change-Id: Ic2fccbfeac4f5d6e71b49ecbd36c248214baebad
+
 project packages/apps/AudioFX/
 commit 4f0eb650bdee6bcf6c479caa8eb8f998d38a2602
 Author: Michael Bestas <mikeioannina@gmail.com>
@@ -4988,6 +2569,39 @@ Date:   Sun Mar 15 01:46:35 2015 +0200
     
     Change-Id: Ie2675992cd5ba2d38202e46c658667e79837516e
 
+commit 57262f776b6b7bf3453d96c4b7b555bfc3fb45a0
+Author: Matthew Xie <mattx@google.com>
+Date:   Thu Oct 23 12:53:40 2014 -0700
+
+    updateshare confirm logic missed cases like CONFIRMATION_DENIED, TIMEOUT. fix it
+    
+    bug 17770561
+    Change-Id: I34fb018d9787b4deef8592c71f5539778e76e325
+    (cherry picked from commit 70743aa46fa95bd252acea614bfde8cc65e03890)
+
+commit 0cb71bf79ed4b70bc6b254950a1683d72b7e1ed5
+Author: Matthew Xie <mattx@google.com>
+Date:   Mon Nov 17 09:50:54 2014 -0800
+
+    Check previous user confirmation before auto-confirm put request
+    
+    Also correct a confirm status change check in updateShare.
+    Bug: 17770561, 18343032
+    
+    Change-Id: I8e7d10e73604c0bf1c88801a1caef7d579fbd1eb
+
+commit c905e5a564a1f055f655724e2efb2765c2c098e3
+Author: Andre Eisenbach <eisenbach@google.com>
+Date:   Sun Dec 14 12:22:31 2014 -0800
+
+    Prevent duplicate OPP permission request dialogs
+    
+    When multiple files are sent in a single OPP session, the user should be
+    prompted to accept/reject only once.
+    
+    Bug: 17770561
+    Change-Id: I438116915883c5fdc2d743f13456006f66511c0f
+
 project packages/apps/BluetoothExt/
 commit 31c24878e779fcac76a946fbdf2bc75cece88ee8
 Author: Michael Bestas <mikeioannina@gmail.com>
@@ -4997,38 +2611,7 @@ Date:   Sun Mar 15 01:46:39 2015 +0200
     
     Change-Id: I0dbd3486f50f9c10cc9af3ea0b2dc353efa5d34b
 
-project packages/apps/Browser/
-commit 5660167cfd9d3469d7b038f2c59d5caccf164841
-Author: Jorge Ruesga <jorge@ruesga.com>
-Date:   Wed Mar 11 00:30:27 2015 +0100
-
-    browser: set security state even if user disable security alerts
-    
-    Even if a user disabled the security alerts (ssl errors), the security state
-     SHOULD be set to shown that the certificate
-    has a problem. Actually, the certificate is reported as valid, which is
-     complety wrong.
-    
-    Change-Id: I9d8647f2a6dba2b9387b240b5511df18e1b4ea22
-    JIRA: NIGHTLIES-813
-    Signed-off-by: Jorge Ruesga <jorge@ruesga.com>
-
 project packages/apps/CMFileManager/
-commit a0e7ac5f1eae637aa0fd23a0d2ce3cd90d42d73a
-Author: Raj Yengisetty <rajesh@cyngn.com>
-Date:   Wed Mar 11 16:01:01 2015 -0700
-
-    CMFileManager: Fix back press events
-    Use onBackPressed in stead of onKeyUp for back press events
-    
-    Repro:
-    - Navigate to audio file
-    - Open audio file with small player (e.g. Play Music)
-    - Press back
-    - Observe: audio player closes and CMFM navigates up one directory
-    
-    Change-Id: Ia7440c45241ec957b2405b932525235c92b9211c
-
 commit 9cc59b6ac5ac3d6531ebf477b359b7b49342d478
 Author: Michael Bestas <mikeioannina@gmail.com>
 Date:   Sun Mar 15 01:47:15 2015 +0200
@@ -5056,6 +2639,20 @@ Date:   Fri Mar 13 09:25:48 2015 -0700
     AndroidRuntime: 	at android.os.Handler.handleCallback(Handler.java:739)
     
     Change-Id: I2aec4fd6a5b8fcd31cd128f8f46cc9f88bca191e
+
+commit 336c3849084b0a3f35500215d9ad4d94fcb63d89
+Author: xiao.hu <huxiao0816@gmail.com>
+Date:   Tue Mar 17 06:12:46 2015 -0700
+
+    CMFileManager: Fix back press events of SearchActivity
+    
+    epro:
+    - SearchActivity to audio file
+    - Open audio file with small player (e.g. Play Music)
+    - Press back
+    - Observe: audio player closes and CMFM SearchActivity up one directory(NavigationActivity)
+    
+    Change-Id: I4ab1faa1d061eea97050b89e96c1bdf1df66db3f
 
 project packages/apps/Calculator/
 commit 461eb696515358867bec10caf1614520663039d7
@@ -5089,14 +2686,6 @@ Date:   Wed Mar 11 17:24:40 2015 -0700
     Change-Id: Ieb59f0c43674bf8bfeadb9a7fdf0f859f7d281dc
 
 project packages/apps/Calendar/
-commit e0a097b5c04567eb7914614a69638fa5e324f21d
-Author: Raj Yengisetty <rajesh@cyngn.com>
-Date:   Wed Mar 11 18:04:08 2015 -0700
-
-    Calendar: add feature to select/deselect all events in delete view
-    
-    Change-Id: I1301d921474d848d6c877eb904bd7a00df13c48a
-
 commit 1f28924c571f7b14ed2aef9200d6b6ae26bd7170
 Author: Michael Bestas <mikeioannina@gmail.com>
 Date:   Sun Mar 15 01:46:49 2015 +0200
@@ -5139,28 +2728,6 @@ Date:   Sun Mar 15 01:47:00 2015 +0200
     Change-Id: I12ec8301573c3bdf604571ea33d90f5e496dd1dd
 
 project packages/apps/Contacts/
-commit 5231670251788a04d43cfe0ac3d8107cddbb5fb1
-Author: Marcos Marado <mmarado@cyngn.com>
-Date:   Wed Mar 11 16:25:28 2015 +0000
-
-    Fix the event name
-    
-    This isn't very important ATM because we don't have the corresponding patch on
-    ContactsCommon/src/com/android/contacts/common/interactions/ImportExportDialogFragment.java
-    , so we'll never get an SUBACTIVITY_SHARE_VISIBLE_CONTACTS anyway.
-    
-    Change-Id: I9b55baad3e898471edf2acb3219e22f2199cebf1
-
-commit 617bb3b76d8b5d2f0c080973f2a3cb9699364bb7
-Author: Ethan Chen <intervigil@gmail.com>
-Date:   Thu Mar 12 00:02:43 2015 +0000
-
-    Revert "Fix the event name"
-    
-    This reverts commit 5231670251788a04d43cfe0ac3d8107cddbb5fb1.
-    
-    Change-Id: I4bf15a61507192a16a6b32e5d5d2e10e085689b7
-
 commit a5a544f00da0b5b32ecc49b9baef46125de3b9aa
 Author: Michael Bestas <mikeioannina@gmail.com>
 Date:   Sun Mar 15 01:47:27 2015 +0200
@@ -5170,23 +2737,6 @@ Date:   Sun Mar 15 01:47:27 2015 +0200
     Change-Id: Id2dc16829a8d9b7a3ecd5fe92a3cc0e25df7df62
 
 project packages/apps/ContactsCommon/
-commit 0d2ed5aa12839d3fc15ac9c769b28f564da53df7
-Author: Raj Yengisetty <rajesh@cyngn.com>
-Date:   Tue Mar 10 10:08:23 2015 -0700
-
-    ContactsCommon: fix FC when deleting SIM contacts after SIM is removed
-    
-    Repro:
-     - Create local contact
-     - Export to SIM
-     - Remove SIM
-     - Go to delete menu option
-     - Select all (*include* exported SIM contact)
-     - Click check mark
-     - Observe Contacts app force closes when deleting the exported contact
-    
-    Change-Id: I2bfecf8b19c8f1eae9559a4e6f46ff477da4dc74
-
 commit f08e8aa7a5a2c0e666581d6a8d22f4d397663769
 Author: Michael Bestas <mikeioannina@gmail.com>
 Date:   Sun Mar 15 01:47:33 2015 +0200
@@ -5235,6 +2785,88 @@ Date:   Sun Mar 15 00:08:43 2015 -0700
 
     Merge remote-tracking branch 'upstream/cm-12.0' into cm-12.0-2
 
+commit 1b3a02238dbff81c8331deabb8b362b8c2280d03
+Author: Danny Baumann <dannybaumann@web.de>
+Date:   Mon Mar 16 09:15:26 2015 +0100
+
+    Move smart dialer initialization to onStart().
+    
+    The SmartDialCursorLoader expects the SmartDialPrefix map to be
+    initialized when it's created. As
+    - the loader is initialized in SmartDialSearchFragment's onStart and
+    - the fragment's onStart is called asynchronously after the activity's
+      onStart and
+    - the map initialization happens in
+      SmartDialPrefix.initializeNanpSettings() and
+    - the above method is currently called in the activity's onResume()
+    
+    we have a race condition between the activity's onResume() and the
+    fragment's onStart() (at least when processing a dial intent, which is
+    what causes the dialpad fragment to be immediately shown).
+    
+    Fix that race condition by moving the initialization into the activity's
+    onStart() and running it before calling the super method to ensure it
+    happens before fragments are started.
+    
+    JIRA:NIGHTLIES-760
+    Change-Id: I9767cbba3b177fdd5b1de86914cb1e40d20835ab
+
+commit 158fc5f6c7b586651db2a94e2bdbb52d3364fae5
+Author: Sven Dubbeld <sven.dubbeld1@gmail.com>
+Date:   Fri Mar 13 13:28:05 2015 +0100
+
+    Added Reverse Lookup Gebeld (NL)
+    
+    Change-Id: Icc69b9aac2f50f54ab2a97365297620ccd547177
+
+commit 26eee263bdca3040e1f612857beb44fcdb96f66e
+Author: Danny Baumann <dannybaumann@web.de>
+Date:   Mon Mar 16 09:15:26 2015 +0100
+
+    Move smart dialer initialization to onStart().
+    
+    The SmartDialCursorLoader expects the SmartDialPrefix map to be
+    initialized when it's created. As
+    - the loader is initialized in SmartDialSearchFragment's onStart and
+    - the fragment's onStart is called asynchronously after the activity's
+      onStart and
+    - the map initialization happens in
+      SmartDialPrefix.initializeNanpSettings() and
+    - the above method is currently called in the activity's onResume()
+    
+    we have a race condition between the activity's onResume() and the
+    fragment's onStart() (at least when processing a dial intent, which is
+    what causes the dialpad fragment to be immediately shown).
+    
+    Fix that race condition by moving the initialization into the activity's
+    onStart() and running it before calling the super method to ensure it
+    happens before fragments are started.
+    
+    JIRA:NIGHTLIES-760
+    Change-Id: I9767cbba3b177fdd5b1de86914cb1e40d20835ab
+
+commit 70f4be0da06a5efc8a7740de6fd4494c631530f3
+Author: Sven Dubbeld <sven.dubbeld1@gmail.com>
+Date:   Fri Mar 13 13:28:05 2015 +0100
+
+    Added Reverse Lookup Gebeld (NL)
+    
+    Change-Id: Icc69b9aac2f50f54ab2a97365297620ccd547177
+
+commit 8fccd14502606d549fb0113c3c7b53abb4d8d4ed
+Merge: 70f4be0 158fc5f
+Author: ZION959 <ziontran@gmail.com>
+Date:   Tue Mar 17 21:30:20 2015 -0700
+
+    Merge remote-tracking branch 'upstream/cm-12.0' into cm-12.0
+    
+    6240a0b38d6824
+    
+    Conflicts:
+    	res/values/cm_arrays.xml
+    	src/com/android/dialer/lookup/LookupSettings.java
+    	src/com/android/dialer/lookup/ReverseLookup.java
+
 project packages/apps/Eleven/
 commit 1acc38bf8a57600f3bea031e39ea37a668c3912a
 Author: Michael Bestas <mikeioannina@gmail.com>
@@ -5243,6 +2875,24 @@ Date:   Sun Mar 15 01:47:49 2015 +0200
     Automatic translation import
     
     Change-Id: I706ba0b421b725967fca66376be10a6a4027e4f1
+
+commit 89c155ccef538edb4382e790b4d1913662925b18
+Author: Mikalacki Sava <mikalackis@gmail.com>
+Date:   Wed Mar 4 16:18:14 2015 +0100
+
+    Eleven: Show/Hide album art on lockscreen
+    
+    Added preference option to show/hide album art on lockscreen.
+    
+    Change-Id: Iea2173288fc279f15abe6675a0ffd582e35ad321
+
+commit 1e2c7ab42f4743610d6a6b30412b26b4235f6192
+Author: Michael Bestas <mikeioannina@gmail.com>
+Date:   Thu Mar 19 01:48:19 2015 +0200
+
+    Eleven: Checkboxes to switches
+    
+    Change-Id: I41439cc69147db49b08cace87ba3513d34dbac6c
 
 project packages/apps/Gallery2/
 commit 7911e6b5c730f04684cc7f790095a976783fe06b
@@ -5262,13 +2912,6 @@ Date:   Sun Feb 8 06:49:41 2015 +0000
     Change-Id: I2a4987c1220dfb772289c6638648702d26600aa7
 
 project packages/apps/InCallUI/
-commit d168c02c45928bf8e000ca5c98e2ead0e64fd8d1
-Merge: e698a1d 967f67c
-Author: ZION959 <ziontran@gmail.com>
-Date:   Tue Mar 10 21:50:09 2015 -0700
-
-    Merge remote-tracking branch 'upstream/cm-12.0' into cm-12.0
-
 commit 4743d756bfa24a9a6df3f85ca5602825b4d08c11
 Author: cretin45 <cretin45@gmail.com>
 Date:   Thu Mar 12 16:07:55 2015 -0700
@@ -5299,27 +2942,25 @@ Date:   Sun Mar 15 00:09:32 2015 -0700
 
     Merge remote-tracking branch 'upstream/cm-12.0' into cm-12.0
 
+commit 2a181b8c391e7414ffd349eb23b2e374c02cba4c
+Author: Linus Lee <llee@cyngn.com>
+Date:   Mon Mar 16 19:57:53 2015 -0700
+
+    InCallUI: Adjust dimens for hdpi
+    
+    The Speaker and the pause button the call gets cut
+    off in hdpi - adjust the dimens to make it fix
+    
+    Change-Id: I8cfdeaf4c21d1fc4f1beeb09fb211f8079981d2b
+
+commit e7d96027a89ab1d103b0a6394fbb59bb9c431c78
+Merge: e8c68fc 2a181b8
+Author: ZION959 <ziontran@gmail.com>
+Date:   Thu Mar 19 09:12:05 2015 -0700
+
+    Merge remote-tracking branch 'upstream/cm-12.0' into cm-12.0
+
 project packages/apps/LockClock/
-commit f1da736e118eb3d4160170c4ae572174186961b2
-Author: Scott Mertz <scott@cyngn.com>
-Date:   Tue Mar 10 16:42:55 2015 -0700
-
-    LockClock: Ignore "inaccurate" locations
-    
-    - Location manager can report locations for any level of accuracy.  Filter
-      locations that are generally not useful.
-    - Set location accuracy threshold to 50km.
-    
-    Change-Id: I225ed4e74edec6c5089d886c61f8d78f09b11b34
-
-commit 500804d7530802f34b21d1e230b207efedc7d56b
-Author: Michael Bestas <mikeioannina@gmail.com>
-Date:   Wed Jan 15 22:11:47 2014 +0200
-
-    cLock: Add to launcher
-    
-    Change-Id: I3f07657de97ab458390c8a98a46d4f8473c93ebd
-
 commit 9e90260ff7deb9a6eeade93f487bdd18eb68fb10
 Author: Michael Bestas <mikeioannina@gmail.com>
 Date:   Sun Mar 15 01:48:05 2015 +0200
@@ -5372,6 +3013,21 @@ Date:   Sun Mar 15 00:10:04 2015 -0700
 
     Merge remote-tracking branch 'upstream/cm-12.0' into cm-12.0-2
 
+commit 98b5989ab45d1c12f5a8ba3eb1006b80d12280a5
+Author: Raj Yengisetty <rajesh@cyngn.com>
+Date:   Fri Mar 13 16:54:27 2015 -0700
+
+    Mms: open VCal files instead of trying to send them
+    
+    Change-Id: I6046a1c29afe41d7e92cb9ac9dd82fe6c9075112
+
+commit a6e39f99d9773d260183ce87dc7d4e14d7bb70a8
+Merge: 593c824 98b5989
+Author: ZION959 <ziontran@gmail.com>
+Date:   Thu Mar 19 09:12:50 2015 -0700
+
+    Merge remote-tracking branch 'upstream/cm-12.0' into cm-12.0-2
+
 project packages/apps/OmniSwitch/
 commit d50ea730e2c850e396e21d08b703892ef714309e
 Author: maxwen <max.weninger@gmail.com>
@@ -5402,174 +3058,19 @@ Date:   Sun Mar 15 01:48:18 2015 +0200
     
     Change-Id: I3f164e5d4df8d3c92debf2878132f5f42649f2fd
 
+commit a3ac20d162bd67c9140b2afcc41cf35266105f1d
+Author: Linus Lee <llee@cyngn.com>
+Date:   Mon Mar 16 18:18:22 2015 -0700
+
+    PhoneCommon: Adjust dimens for hdpi
+    
+    The spacing for the dial pad is too small, so
+    create some more space by decreasing the whitespace
+    between the dial pad at the top bar
+    
+    Change-Id: I2775ce417b53f7a69abeb3b8919169024a7714dd
+
 project packages/apps/Settings/
-commit 6d3a7e5f61c0d9cda9ed60624b2c6ee38fbe4fef
-Author: Steve Kondik <steve@cyngn.com>
-Date:   Mon Mar 9 16:05:32 2015 +0000
-
-    settings: Use consistent headers for Privacy Guard
-    
-     * Show "Privacy Guard" instead of "App ops" in advanced settings
-    
-    Change-Id: I98107ba3ad94ba22bbd4dc9e92ea97a36f664ab8
-
-commit 573c3dff7d21d6006a2aa8e4c097efab8c90112a
-Author: Roman Birg <roman@cyngn.com>
-Date:   Tue Mar 10 15:56:11 2015 -0700
-
-    Settings: add summary for advanced mode
-    
-    Change-Id: Iff8a319fdde116119992c2a865fd6909712ca530
-    Signed-off-by: Roman Birg <roman@cyngn.com>
-
-commit d2668957dea01f9d986e3e0814d5bf725a01e643
-Author: Roman Birg <roman@cyngn.com>
-Date:   Tue Mar 10 21:40:50 2015 -0700
-
-    Settings: allow lock screen visualizer to be disabled
-    
-    Change-Id: Id1d77960c3e0d46ae8d69d1447c5c5d422754c4d
-    Signed-off-by: Roman Birg <roman@cyngn.com>
-    
-    Conflicts:
-    	res/xml/security_settings_chooser.xml
-    	res/xml/security_settings_lockscreen.xml
-    	res/xml/security_settings_password.xml
-    	res/xml/security_settings_pattern.xml
-    	res/xml/security_settings_pin.xml
-    
-    Conflicts:
-    	res/xml/security_settings_pattern.xml
-    	res/xml/security_settings_pin.xml
-
-commit 291ded8c3c188d9959b70620f08644758a86c5d2
-Author: LorDClockaN <davor@losinj.com>
-Date:   Tue Mar 10 17:48:08 2015 +0100
-
-    Settings: Dotted circle battery (2/2)
-    
-    Change-Id: I025ba037143fcdfff99acd955532e34a3befd944
-
-commit 54eacc2860c0e5967d168e1617fdd62022982b91
-Author: Jorge Ruesga <jorge@ruesga.com>
-Date:   Wed Mar 11 22:15:15 2015 -0700
-
-    settings: prevent NPE in DisplaySettings
-    
-    Change-Id: If70f000bebfc7d072d060d71ee43e6b843167272
-    JIRA: NIGHTLIES-830
-    Signed-off-by: Jorge Ruesga <jorge@ruesga.com>
-    
-    Conflicts:
-    	src/com/android/settings/DisplaySettings.java
-
-commit 5aa25474b8e4c917c86c2a16bfdb8af2856cf8c5
-Author: Steve Kondik <steve@cyngn.com>
-Date:   Mon Mar 9 00:39:26 2015 +0100
-
-    livedisplay: Add an "off" state
-    
-     * Don't force "day" to be the default state.
-     * Change minimum value for color calibration to 20% so blackout doesn't
-       happen when all sliders are at minimum.
-     * Also improve a few strings to describe what day and night means.
-    
-    Change-Id: Ib2a617488fffb128c8e3e9e52d64fac6b261e53d
-
-commit e7f862d3f4003f828f2ae2f32de6a778766c6121
-Author: Raj Yengisetty <rajesh@cyngn.com>
-Date:   Mon Mar 2 20:51:17 2015 -0800
-
-    Settings: Fix factory reset lock confirmation header text
-    
-    Repro:
-     - Set password lock on device
-     - Go Factory data reset option in Backup & reset
-     - Click reset phone
-     - Observe that the header asks to insert pattern
-    
-    Change-Id: I37c04293452adba446f4b5074f4a3434a57c74f7
-
-commit 3792159ab5a3122af608adfdb0f5dd666029b302
-Author: Roman Birg <roman@cyngn.com>
-Date:   Wed Mar 11 13:00:23 2015 -0700
-
-    Settings: fix potential NPE when resetting profiles
-    
-    When the user hits the positive button in the confirmation dialog to
-    reset profiles, we force a refresh of the profiles list. This can lead
-    to a NPE exception being thrown if it happens before the dialog actually
-    gets dismissed (and the ProfilesList fragment is actually attached)
-    since the reload list calls getPreferenceScreen(), which can be null,
-    since it is not attached.
-    
-    After the dialog disappears, onResume() gets called in ProfilesList
-    anyways, so there's no need for a forced refresh.
-    
-    Change-Id: I93de7115a69cc7545bf6a33de3a4abf5443658b9
-    Signed-off-by: Roman Birg <roman@cyngn.com>
-
-commit 89d040a9d5f8d316bbbec67ec93a36c70d85ef38
-Author: Matt Garnes <matt@cyngn.com>
-Date:   Wed Mar 11 12:27:44 2015 -0700
-
-    Settings: fix "Mobile Networks" menu option in DataUsageSummary.
-    
-    Point to com.android.phone.MobileNetworkSettings instead of
-    com.android.phone.msim.MobileNetworkSettings, which does not exist.
-    
-    Change-Id: Ibfbae3d94020fd1bcdcd3095d4c6c38f48f53609
-
-commit 7bda6332cec956b562c2dc172d6eda751945766a
-Author: Altaf-Mahdi <altaf.mahdi@gmail.com>
-Date:   Mon Mar 9 20:47:19 2015 +0000
-
-    Sound settings: remove vibrate category on devices that dont support it
-    
-    also remove power notifications vibrate from other sounds
-    
-    Change-Id: I1929074a462f425cdf03cedba66f85dc9593f819
-    
-    Patchset: 2
-    http://review.cyanogenmod.org/#/c/90972/
-
-commit 43614ac1cf3cacd51ed756429bce14423a934f40
-Author: Raj Yengisetty <rajesh@cyngn.com>
-Date:   Thu Feb 19 18:35:41 2015 -0800
-
-    revert: Settings: LS weather disabler (2/2)
-    
-    PS2:
-    Restart system to apply change
-    PS3:
-    Fix build
-    
-    Change-Id: I61f5fe7360d4c632108a05f9e7bf8c9e174a6db1
-    
-    Modified to temasek
-    
-    (cherry picked from commit 8cea39eff18cbdabeacd76e92adee8b49b102025)
-    
-    (cherry picked from commit 8276780362b2fcaacd112870226b6c02345fe7a3)
-    
-    (cherry picked from commit 8276780362b2fcaacd112870226b6c02345fe7a3) (reverted from commit b142599ffb9c3a34daac31ae0b467b153b95f09d)
-
-commit e2bf2f9c949fbb7536d36a695c2dbf636019de5c
-Author: Roman Birg <roman@cyngn.com>
-Date:   Thu Mar 12 01:29:48 2015 -0700
-
-    Settings: hide keyguard visualizer toggle on low end gfx devices
-    The visualizer is disabled on low end gfx devices
-    
-    Change-Id: I67178f59baa18fe7586bb08835f9f255c31f84f6
-    Signed-off-by: Roman Birg <roman@cyngn.com>
-    
-    Patchset: 1
-    http://review.cyanogenmod.org/#/c/91122/1
-    
-    Conflicts:
-    	src/com/android/settings/lockscreen/LockScreenSettings.java
-
 commit ad72234256afaa68c04186dbf7a61e20f74fa5a6
 Author: Michael Bestas <mikeioannina@gmail.com>
 Date:   Thu Mar 12 20:26:53 2015 -0700
@@ -5751,6 +3252,88 @@ Date:   Mon Mar 16 11:55:44 2015 +0800
 
     Fix Settings FC in non-Advanced mode (Buttons Setting)
 
+commit 6560d979c26207b39afd190d89828f2f9857b700
+Author: kaiyiz <kaiyiz@codeaurora.org>
+Date:   Tue Mar 17 21:21:59 2015 -0700
+
+    Settings: Support EAP-SIM and EAP-AKA
+    
+    When adding a network, add EAP-SIM and EAP-AKA authentication methods
+    in EAP method. These two methods need SIM card support. 3G SIM card
+    supports "SIM" and "AKA".2G SIM card only supports "SIM".
+    
+    CRs-Fixed: 763183
+    
+    Change-Id: I6e2faa3c262197010f5982c64a4fc4677ff2dd3c
+    
+    Conflicts:
+    	res/values/bools.xml
+
+commit b095beb8265ccca300c54f114b7fb40886c153e9
+Author: Raj Yengisetty <rajesh@cyngn.com>
+Date:   Tue Mar 17 17:35:03 2015 -0700
+
+    Protected Apps: remove incorrect header title
+    
+    Change-Id: If6c7755b5004d563b0c817b43d8eb67571d8e01b
+
+commit d00ad2705a46aaaf73169a77013494a8c1296d7f
+Author: Ricardo Cerqueira <cyanogenmod@cerqueira.org>
+Date:   Thu Aug 7 00:55:40 2014 +0100
+
+    Factory reset: Always show the "delete media" checkbox
+    
+    CM is usually installed with recoveries that preserve datamedia,
+    including our own, so the assumption that deleting data will also
+    clear personal media is wrong. Always show the checkbox that was
+    originally limited to removable media to let the user do a full
+    reset
+    
+    Change-Id: I2764c9509cc9ec50a1be979d748341037660a5da
+
+commit 9fec16fd9ea7d0e4477d8f844c4cd86f3f6f396f
+Author: Evisceration <eviscerationls@gmail.com>
+Date:   Tue Mar 17 20:49:48 2015 -0700
+
+    (2/2) Settings: custom power key chord actions and delay
+    
+    Change-Id: I343cd80f50bb9dbc938c3386fd8500cda6881033
+    
+    Conflicts:
+    	res/values/custom_strings.xml
+    	src/com/android/settings/ButtonSettings.java
+
+commit 2456da643d0461acf46b0884b7ea7b9ac787a05f
+Author: Roman Birg <roman@cyngn.com>
+Date:   Tue Mar 17 13:57:17 2015 -0700
+
+    Settings: hide write to NFC in Wifi menu when appropriate
+    
+    Hide this context menu option when the device does not have NFC.
+    
+    Change-Id: Ib48b758437dafa654b1e6c243b0662271f7de0ae
+    Signed-off-by: Roman Birg <roman@cyngn.com>
+
+commit 134c3a7e2b3b76c61eadf9798a322e96f7c97a63
+Author: Fyodor Kupolov <fkupolov@google.com>
+Date:   Tue Nov 18 15:08:12 2014 -0800
+
+    Added a check if a custom activity can be started
+    
+    AppRestrictionsFragment starts an activity using an intent provided by the
+    receiver. A check was added to prevent an app from starting an activity that
+    it does not own.
+    
+    Bug: 14441412
+    Change-Id: Ia6820b1daf3783d605b92976c78cb522b17dc8f2
+
+project packages/apps/SlimCenter/
+commit 01e134893dcc07c2363cc902c86f8f8f000e6bdc
+Author: ZION959 <ziontran@gmail.com>
+Date:   Sun Mar 15 19:11:27 2015 -0700
+
+    cmRemiX >>> CMRemix
+
 project packages/apps/SoundRecorder/
 commit 8fd462159f64b8d90d3c76f05af8a551e5d9b850
 Author: Michael Bestas <mikeioannina@gmail.com>
@@ -5818,6 +3401,18 @@ Date:   Mon Mar 16 18:47:07 2015 +0300
     
     Change-Id: Ia9f7bac8864c7410fd0b720f54a473f972bdc569
 
+commit 3909e40c68fddbfd3426f1f16f81e7a690c7bd38
+Author: Tadashi G. Takaoka <takaoka@google.com>
+Date:   Wed Nov 19 13:45:21 2014 +0900
+
+    (DO NOT MERGE) Fix Greek accented upper case letters
+    
+    Cherry-picked 6fc92899d82f4d3cb30f7bb2c57133154f0babd2 from
+    ub-latinimegoogle-edamame-mr1-release.
+    
+    Bug: 18418991
+    Change-Id: Id4dff41ba488635ff9af899be6d4f84ab00a96c8
+
 project packages/providers/DownloadProvider/
 commit 0d7a9c60e83236da17e5917c201dfc612c72bd81
 Author: Michael Bestas <mikeioannina@gmail.com>
@@ -5827,40 +3422,19 @@ Date:   Sun Mar 15 01:49:53 2015 +0200
     
     Change-Id: Ib0d03cb90567d7ac6123c2c97be226ef65859ca7
 
+project packages/providers/TelephonyProvider/
+commit bda9e4d340743d1a68d01bec29a44cba756b8ee1
+Author: Amith Yamasani <yamasani@google.com>
+Date:   Thu Nov 6 09:01:20 2014 -0800
+
+    Make TelephonyProvider a singleton across users
+    
+    Messaging apps need to access it from secondary users
+    
+    Bug: 18194892
+    Change-Id: Ia7401c287f4b920ac4de5102f33ded22bbf0f5b9
+
 project packages/providers/ThemesProvider/
-commit 4938b49e080438be59fe8d4dcd7ff10a7ba279ed
-Author: d34d <clark@cyngn.com>
-Date:   Fri Mar 6 15:38:27 2015 -0800
-
-    Themes: Add previous value and update time to mixnmatch [2/2]
-    
-    Change-Id: I6b4224e9416e61ce7792e608bd4fd602a9b34e47
-
-commit cc0e0e1f3d19109cfe2a6ff2e2b616d5b97e90f6
-Author: d34d <clark@cyngn.com>
-Date:   Fri Mar 6 16:06:57 2015 -0800
-
-    Return InstallState.UNKOWN if context or pkgName null
-    
-    Change-Id: I7e8f40335c4b5a202d457eba7f3bd337b9342908
-
-commit 6c29892fc83a43a7f363f56950ac6e7a8423ac91
-Author: d34d <clark@cyngn.com>
-Date:   Wed Mar 11 15:05:32 2015 -0700
-
-    Themes: Process theme resources after package scanned [2/2]
-    
-    The provider now assumes that the theme service will process all
-    themes and icons packs, and then sends the appropriate broadcast
-    once processing is done for that package.
-    
-    The preview generator now queries for the theme 's capabilities rather
-    than rely on that info to be passed in.  This is partly due to the
-    new flow of installing a theme as well as the fact that legacy
-    icon packs were not having previews generated.
-    
-    Change-Id: I418debb6f91296107476016367131fac2c3a32ce
-
 commit 7320de5213287aa159a5a6695eaea47d3be15935
 Author: Michael Bestas <mikeioannina@gmail.com>
 Date:   Sun Mar 15 01:49:57 2015 +0200
@@ -5868,6 +3442,18 @@ Date:   Sun Mar 15 01:49:57 2015 +0200
     Automatic translation import
     
     Change-Id: Ic3e8aad4d67edc9afc8080e8c23aacd641ee5cfa
+
+commit a6afd7e22df46a004d78ad2ed9ec3f1ab2c674b3
+Author: d34d <clark@cyngn.com>
+Date:   Wed Mar 18 14:07:24 2015 -0700
+
+    Fix icons with filters not being generated
+    
+    If a theme has composed icons that only use color filters, they
+    would not get generated.  This patch resolves that issue.
+    
+    Change-Id: If9076eca8cce1a85beed54ce30f0dfb8bbcd3188
+    REF: CHOOSER-63
 
 project packages/services/Mms/
 commit e6cce3ac25963327ee451edbd4377b0faf600253
@@ -5895,29 +3481,6 @@ Date:   Sun Mar 15 00:12:48 2015 -0700
     Merge remote-tracking branch 'upstream/cm-12.0' into cm-12.0
 
 project packages/services/Telephony/
-commit ae3bb13b4d7b343f8e6c1705f5b835539b4beff3
-Merge: a5f8f8d 699f273
-Author: ZION959 <ziontran@gmail.com>
-Date:   Tue Mar 10 21:50:43 2015 -0700
-
-    Merge remote-tracking branch 'upstream/cm-12.0' into cm-12.0
-
-commit 219cd9eba9ef4b8952d1a17dc6c211db62431978
-Author: Roman Birg <roman@cyngn.com>
-Date:   Wed Mar 11 13:49:07 2015 -0700
-
-    Dialer settings: fix "Additional settings" up arrow inconsistency
-    
-    Dialer > settings menu > settings > call settings > SIM card settings >
-    Additional settings and then press the back arrow, you should go back to "SIM card settings"
-    but, instead, you'll go to "call settings".
-    
-    Back button bring us to the correct screen, use the same logic for up
-    arrow.
-    
-    Change-Id: I3b786458ede78bf906e12017c2e6943c47999e06
-    Signed-off-by: Roman Birg <roman@cyngn.com>
-
 commit b710b9d159665fa198520dbe41347c751e11f0a2
 Author: Lin Ma <lma@cyngn.com>
 Date:   Thu Mar 12 16:13:46 2015 -0700
@@ -6040,14 +3603,6 @@ Date:   Sat Mar 14 23:57:43 2015 -0700
 
     Merge remote-tracking branch 'upstream/cm-12.0' into cm-12.0
 
-project system/vold/
-commit 85a78d5c762240424ad99cc8a4e6d6a7fb35b70e
-Merge: b010385 97991de
-Author: ZION959 <ziontran@gmail.com>
-Date:   Tue Mar 10 21:52:33 2015 -0700
-
-    Merge remote-tracking branch 'upstream/cm-12.0' into cm-12.0
-
 project vendor/cm/
 commit 1245bc273a1266f063860d7e7e4eb7f47c10c858
 Author: Howard M. Harte <hharte@cyngn.com>
@@ -6057,30 +3612,88 @@ Date:   Fri Mar 13 17:58:42 2015 -0700
     
     Change-Id: I1553dad104c200822167baa3a33d6fe6dbd176da
 
-commit 359fddf704251c102935331ae8d762612bdaca4a
+commit 2b999181c8a7963b81a419366be2e022717f0601
+Author: Abhisek Devkota <ciwrl@cyanogenmod.com>
+Date:   Mon Mar 16 11:27:10 2015 -0700
+
+    Fix default Alarm tone
+    
+    Hassium was deleted as a duplicate of Helium. Fix this value.
+    
+    Change-Id: I27e60c05ebe82d5ba400d84f5466308012a102d6
+
+commit 23c48f6f4f8d3f3377fb74d289178c72bc812da9
+Author: percy-g2 <gahlotpercy@gmail.com>
+Date:   Fri Mar 13 21:00:05 2015 +0100
+
+    vendor:cm: Add Moto E contributors
+    
+    Change-Id: I5e560a306b62b172c6ea7855c48a54dbc6193ac4
+
+commit 6ed255db27798763db384cf6683784592e7458a7
+Author: Howard M. Harte <hharte@cyngn.com>
+Date:   Sat Mar 14 09:02:22 2015 -0700
+
+    Add additional APNs for US Cellular
+    
+    Change-Id: Ia3e5ccc244ff6b95de1f079571c12591375b847b
+
+commit b62da1e2e1a5b42b8c2bc37ddbb63119b9f8a57d
+Author: Byun Jae Myeong <byon0716@gmail.com>
+Date:   Sun Mar 15 01:59:12 2015 +0900
+
+    apn: Add LG U+ LTE APN
+    
+    Change-Id: I5bb329e9b2d5eb76a47db8c0ea2fdd0b853c29e5
+    Signed-off-by: Byun Jae Myeong <byon0716@gmail.com>
+
+commit 8df987a37181343070055e66c487aa290f2e2f28
+Author: Abhisek Devkota <ciwrl@cyanogenmod.com>
+Date:   Mon Mar 16 18:23:44 2015 -0700
+
+    Add USMobile (MVNO) apn
+    
+    Change-Id: I5cf33256a04e96567d87042e10ed80034a40ec41
+
+commit dc699fb190a7249053c4f2fd280f9dc8a3096fe6
 Author: Emerson Pinter <dev@pinter.com.br>
 Date:   Thu Feb 12 19:20:19 2015 -0200
 
     sepolicy: Permissions for userinit
     
     Change-Id: Icaf9d191841a6214925729e40d84a61a2ebf2296
+
+commit eb600fe87cc4874ac4cc8cd90e132a27c381678c
+Author: Abhisek Devkota <ciwrl@cyanogenmod.com>
+Date:   Wed Mar 18 14:16:28 2015 -0700
+
+    Add new Maxis combined APN
     
-    Patchset: 8
-    http://review.cyanogenmod.org/#/c/88652/
+    Change-Id: I1981d43e0fffb5ce0d468117490c30cfe0d50055
+
+commit 52bf318a9f616ef0b3bfe5099b8f3aceec86543a
+Author: ZION959 <ziontran@gmail.com>
+Date:   Thu Mar 19 00:48:20 2015 -0700
+
+    Revert: sepolicy: Permissions for userinit
+    
+    Change-Id: Icaf9d191841a6214925729e40d84a61a2ebf2296 (reverted from commit dc699fb190a7249053c4f2fd280f9dc8a3096fe6)
+
+commit 3fc3b8046be89bf90828a449c74fa93a8b11a86f
+Author: Tony Layher <layhertony@gmail.com>
+Date:   Tue Mar 10 20:01:56 2015 -0400
+
+    vendor_cm: sepolicy: address sysinit denials.
+    
+      From the log:
+      avc: denied { getattr } for pid=317 comm=run-parts
+      path=/system/etc/init.d/90userinit dev=mmcblk0p24
+      ino=65035 scontext=u:r:sysinit:s0
+      tcontext=u:object_r:userinit_exec:s0 tclass=file
+    
+    Change-Id: Ib9983c2dac1e241cadb049d6bd966abcc5f18d4c
 
 project vendor/cmremix/
-commit 4c659dfa9c7f958324bc110cebb672cb623a090e
-Author: ZION959 <ziontran@gmail.com>
-Date:   Thu Mar 12 00:03:16 2015 -0700
-
-    update Viper4Android to 2.3.4.0
-
-commit 0f761027f5c94dcf0fc7b080e6d1187c59943a09
-Author: ZION959 <ziontran@gmail.com>
-Date:   Thu Mar 12 01:36:31 2015 -0700
-
-    fix cmremix version
-
 commit 863032ef128c9f91a0d38b00eab95ab8c9327518
 Author: ZION959 <ziontran@gmail.com>
 Date:   Sat Mar 14 00:30:47 2015 -0700
@@ -6124,6 +3737,18 @@ Author: ZION959 <ziontran@gmail.com>
 Date:   Tue Mar 17 02:33:33 2015 -0700
 
     add extra changelog for Kernel Building
+
+commit ea15c9af8a86aa2b12288aba2dabc59d27eb4b5e
+Author: ZION959 <ziontran@gmail.com>
+Date:   Tue Mar 17 20:07:42 2015 -0700
+
+    vendor: add CMRemix Weekly_Changelog
+
+commit 4da61eeeec7c288ebbeb019cdf802d46d51f3b00
+Author: ZION959 <ziontran@gmail.com>
+Date:   Thu Mar 19 00:51:03 2015 -0700
+
+    disabled cmremix optimization for now
 
 project vendor/samsung/
 commit 3bbca26126cd482ed820cf1e27d794fdf363d473

@@ -1,0 +1,129 @@
+
+**** https://github.com/CyanogenMod/android_external_bluetooth_bluedroid ****
+5e99e49 : Bluetooth: Use correct sniff configuration for PAN & HS <Nitin Shivpure> 9 weeks ago
+b20e9c3 : Free Browse packet <Ayan Ghosh> 8 weeks ago
+1d82011 : Bluetooth: GAP: Don't send auth req from connection complete <venkata Jagadeesh> 9 weeks ago
+64f8d7f : Bluetooth: Update call state before opening SCO. <Nitin Srivastava> 4 months ago
+0c28838 : DO NOT MERGE Change pairing_cb to assume temporary pairing by default <Andre Eisenbach> 7 weeks ago
+ 
+**** https://github.com/CyanogenMod/android_external_dhcpcd ****
+e499680 : Fun with buffer overrruns. <Erik Kline> 4 months ago
+ 
+**** https://github.com/CyanogenMod/android_external_flac ****
+47c292e : libFLAC: merge master from Xiph <Robert Shih> 2 months ago
+ 
+**** https://github.com/CyanogenMod/android_external_okhttp ****
+24aad76 : Fix a bug in OkHostnameVerifier wildcard handling. <Alex Klyubin> 4 months ago
+ 
+**** https://github.com/CyanogenMod/android_external_skia ****
+2e87b69 : Bring back NEON optimized blitter S32_Opaque_D32_filter_DX <Wei Wang> 2 weeks ago
+ 
+**** https://github.com/CyanogenMod/android_external_wpa_supplicant_8 ****
+fbe23ec : nl80211: Add driver flag to indicate mesh support <Bob Copeland> 7 months ago
+1492f05 : hostapd: Change drv_flags from unsigned int to u64 <Yanbo Li> 5 months ago
+ 
+**** https://github.com/cmRemiX/android_frameworks_av
+origin	git@github.com:cmRemiX/android_frameworks_av.git ****
+130f0c4 : Fix MTP delete <Marco Nelissen> 8 weeks ago
+f4d983a : Fix bounds checking for GetPartialObject command <Mike Lockwood> 3 months ago
+da31859 : MTP: add strict bounds checking for all incoming packets <Mike Lockwood> 4 months ago
+ba32742 : audio policy service: fix possible memory overflow <Eric Laurent> 6 weeks ago
+23423d3 : audio policy: validate stream type received from binder calls. <Eric Laurent> 5 months ago
+08328f1 : IAudioPolicyService: bound array size in queryDefaultPreProcessing <Eric Laurent> 4 months ago
+ 
+**** Origin_bitbucket	git@bitbucket.org:cmRemiX/android_frameworks_base.git
+https://github.com/cmRemiX/android_frameworks_base
+origin	git@github.com:cmRemiX/android_frameworks_base.git ****
+94f691d : Frameworks/base: Fix potential NPE in InputMethod <Andreas Gampe> 2 days ago
+69ead56 : Frameworks/base: Remove duplicate check in Mesh <Andreas Gampe> 2 days ago
+6c45856 : Frameworks/base: Fix visibility flag in Editor <Andreas Gampe> 2 days ago
+9b2edcc : Avoid duplicate surface creation. <Jason Sams> 2 days ago
+b751b7e : Frameworks/base: Fix format string in Geofence <Andreas Gampe> 4 days ago
+0ebbe14 : Frameworks/base: Make IDENTITY_MATRIX final <Andreas Gampe> 4 days ago
+057e3f4 : Frameworks/base: Fix format string in Camera <Andreas Gampe> 4 days ago
+6b196ae : Frameworks/base: Fix precedence bug <Andreas Gampe> 4 days ago
+48a915c : Frameworks/base: Use || instead of | <Andreas Gampe> 4 days ago
+669fa9d : Frameworks/base: Fix trivial equals implementation <Andreas Gampe> 4 days ago
+45edc23 : Frameworks/base: Fix a comparison <Andreas Gampe> 4 days ago
+7ce33be : Frameworks/base: Force long computation <Andreas Gampe> 4 days ago
+feb8030 : Sanitize display names, keep extensions intact. <Jeff Sharkey> 4 months ago
+470e434 : MTP: Update JNI for new packet getters <Mike Lockwood> 4 months ago
+2a5e9e7 : Do not make ActivityContainer available to apps. DO NOT MERGE <Craig Mautner> 4 weeks ago
+3081976 : Check that bitmap's size does not exceed 32 bits. DO NOT MERGE <Leon Scroggins III> 5 weeks ago
+4782126 : Properly clean up when setting new InputFilter. <Matt Garnes> 7 days ago
+f7d55cd : Handle bad ninepatch data. <Leon Scroggins III> 7 weeks ago
+7a633bc : Fix build breakage in older branches by avoiding <> notation <Jon Larimer> 7 weeks ago
+da7eba4 : Fix ParceledListSlice to enforce the same concrete types among its elements. <Adam Lesinski> 4 months ago
+4331132 : AudioEffect JNI: use new max preprocessing constant <Eric Laurent> 4 months ago
+9ff18f1 : Themes: Switch themes when user changes <d34d> 6 days ago
+ 
+**** https://github.com/cmRemiX/android_frameworks_native
+origin	git@github.com:cmRemiX/android_frameworks_native.git ****
+f58a148 : Update maxNumber to be smaller. <Michael Lentine> 4 weeks ago
+ 
+**** https://github.com/CyanogenMod/android_frameworks_opt_net_wifi
+temasek	https://github.com/temasek/android_frameworks_opt_net_wifi ****
+5a16c4c : wifi: Handle error cases when EAP-SIM info is NULL/Unsupported <Sravanthi Palakonda> 3 weeks ago
+6646200 : wifi:Provide UI with SIM info for EAP-SIM authentication <Sravanthi Palakonda> 4 months ago
+6655e00 : WiFi: Correct CMD_PNO_PERIODIC_SCAN command value <Nalla Kartheek> 6 weeks ago
+ 
+**** https://github.com/CyanogenMod/android_libcore ****
+fe42e96 : Fix a bug in DefaultHostnameVerifier wildcard handling. <Alex Klyubin> 4 months ago
+ 
+**** https://github.com/CyanogenMod/android_packages_apps_Bluetooth ****
+c905e5a : Prevent duplicate OPP permission request dialogs <Andre Eisenbach> 3 months ago
+0cb71bf : Check previous user confirmation before auto-confirm put request <Matthew Xie> 4 months ago
+57262f7 : updateshare confirm logic missed cases like CONFIRMATION_DENIED, TIMEOUT. fix it <Matthew Xie> 5 months ago
+ 
+**** https://github.com/CyanogenMod/android_packages_apps_CMFileManager ****
+336c384 : CMFileManager: Fix back press events of SearchActivity <xiao.hu> 2 days ago
+ 
+**** https://github.com/CyanogenMod/android_packages_apps_Eleven ****
+1e2c7ab : Eleven: Checkboxes to switches <Michael Bestas> 19 hours ago
+89c155c : Eleven: Show/Hide album art on lockscreen <Mikalacki Sava> 2 weeks ago
+ 
+**** https://github.com/cmRemiX/android_packages_apps_InCallUI
+origin	git@github.com:cmRemiX/android_packages_apps_InCallUI.git ****
+2a181b8 : InCallUI: Adjust dimens for hdpi <Linus Lee> 3 days ago
+ 
+**** origin	git@github.com:cmRemiX/android_packages_apps_Mms-caf.git ****
+98b5989 : Mms: open VCal files instead of trying to send them <Raj Yengisetty> 6 days ago
+ 
+**** https://github.com/CyanogenMod/android_packages_apps_PhoneCommon ****
+a3ac20d : PhoneCommon: Adjust dimens for hdpi <Linus Lee> 3 days ago
+ 
+**** Origin_bitbucket	git@bitbucket.org:cmRemiX/android_packages_apps_settings.git
+https://github.com/cmRemiX/android_packages_apps_Settings
+origin	git@github.com:cmRemiX/android_packages_apps_Settings.git ****
+134c3a7 : Added a check if a custom activity can be started <Fyodor Kupolov> 4 months ago
+2456da6 : Settings: hide write to NFC in Wifi menu when appropriate <Roman Birg> 2 days ago
+ 
+**** https://github.com/CyanogenMod/android_packages_inputmethods_LatinIME ****
+3909e40 : (DO NOT MERGE) Fix Greek accented upper case letters <Tadashi G. Takaoka> 4 months ago
+ 
+**** https://github.com/CyanogenMod/android_packages_providers_TelephonyProvider ****
+bda9e4d : Make TelephonyProvider a singleton across users <Amith Yamasani> 4 months ago
+ 
+**** https://github.com/CyanogenMod/android_packages_providers_ThemesProvider ****
+a6afd7e : Fix icons with filters not being generated <d34d> 21 hours ago
+ 
+**** https://github.com/CyanogenMod/android_system_netd ****
+2bd32e8 : netd: Fix concurrency error for iptables command <Nilesh Poddar> 3 months ago
+ 
+**** https://github.com/CyanogenMod/android_vendor_cm
+origin	git@github.com:cmRemiX/android_vendor_cm.git
+temasek	https://github.com/temasek/android_vendor_cm ****
+3fc3b80 : vendor_cm: sepolicy: address sysinit denials. <Tony Layher> 9 days ago
+52bf318 : Revert: sepolicy: Permissions for userinit <ZION959> 11 hours ago
+eb600fe : Add new Maxis combined APN <Abhisek Devkota> 21 hours ago
+dc699fb : sepolicy: Permissions for userinit <Emerson Pinter> 5 weeks ago
+8df987a : Add USMobile (MVNO) apn <Abhisek Devkota> 3 days ago
+b62da1e : apn: Add LG U+ LTE APN <Byun Jae Myeong> 5 days ago
+6ed255d : Add additional APNs for US Cellular <Howard M. Harte> 5 days ago
+23c48f6 : vendor:cm: Add Moto E contributors <percy-g2> 6 days ago
+2b99918 : Fix default Alarm tone <Abhisek Devkota> 3 days ago
+ 
+**** https://github.com/cmRemiX/android_vendor_cmremix
+origin	git@github.com:cmRemiX/android_vendor_cmremix.git ****
+4da61ee : disabled cmremix optimization for now <ZION959> 11 hours ago
+ 
