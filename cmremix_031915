@@ -1,4 +1,13 @@
 
+**** https://github.com/cmRemiX/cmRemiX ****
+89bd5a7 : update qcom clang path <ZION959> 5 hours ago
+7aed5d1 : track opt_net_wifi <ZION959> 8 hours ago
+ 
+**** https://github.com/CyanogenMod/android_external_bash ****
+bbc8b48 : Bash-4.3 patch 33 <Chet Ramey> 9 weeks ago
+c6a8bcd : Bash-4.3 patch 32 <Chet Ramey> 9 weeks ago
+2b8818c : Bash-4.3 patch 31 <Chet Ramey> 9 weeks ago
+ 
 **** https://github.com/CyanogenMod/android_external_bluetooth_bluedroid ****
 5e99e49 : Bluetooth: Use correct sniff configuration for PAN & HS <Nitin Shivpure> 9 weeks ago
 b20e9c3 : Free Browse packet <Ayan Ghosh> 8 weeks ago
@@ -8,6 +17,36 @@ b20e9c3 : Free Browse packet <Ayan Ghosh> 8 weeks ago
  
 **** https://github.com/CyanogenMod/android_external_dhcpcd ****
 e499680 : Fun with buffer overrruns. <Erik Kline> 4 months ago
+ 
+**** https://github.com/CyanogenMod/android_external_f2fs-tools ****
+073e6d0 : f2fs-tools: release 1.4.1 <Jaegeuk Kim> 2 weeks ago
+a27730e : f2fstat: fix option parsing <Michael Lass> 2 weeks ago
+afeae73 : fsck.f2fs: remove corrupted data indices in direct node blocks <Jaegeuk Kim> 3 weeks ago
+aaf9e90 : mkfs.f2fs: avoid memory leak in mkfs <Chao Yu> 6 weeks ago
+5527483 : fsck.f2fs: support large sector size <Chao Yu> 6 weeks ago
+69aebd8 : mkfs.f2fs: support large sector size <Chao Yu> 6 weeks ago
+d8af5fd : f2fs: fix build for android <Dan Pasanen> 5 weeks ago
+946aafb : fsck.f2fs: readahead node blocks to speed up <Jaegeuk Kim> 4 months ago
+2f59274 : dump.f2fs: show checkpoint flag <Jaegeuk Kim> 9 weeks ago
+3a28e66 : fsck.f2fs: fix sit types seamlessly <Jaegeuk Kim> 2 months ago
+864bad2 : fibmap.f2fs: fix the wrong stat info <Chao Yu> 8 weeks ago
+7081cdb : configure: add check for bswap_64 <Yann E. MORIN> 3 months ago
+4046fe4 : configure: also check for byteswap.h <Yann E. MORIN> 3 months ago
+8821997 : parse.f2fs: add a tool to parse IO traces made by runtime f2fs <Jaegeuk Kim> 3 months ago
+3dface3 : dump.f2fs: dump owner of data given block address <Jaegeuk Kim> 3 months ago
+14e7078 : fsck.f2fs: no need to fix SIT type for COLD_DATA <Jaegeuk Kim> 4 months ago
+6c6dd4b : mkfs.f2fs: introduce some macros to simplify coding style <Changman Lee> 4 months ago
+4dca078 : fsck.f2fs: remove unused value <Jaegeuk Kim> 4 months ago
+54b1140 : mkfs.f2fs: fix missing endian conversion <Changman Lee> 4 months ago
+36c7820 : mkfs: use compact mode for data summaries <Changman Lee> 4 months ago
+3a6f730 : fsck.f2fs: add a missing 'fixed' during chk_dentries() <JP Abgrall> 4 months ago
+fab52d7 : fsck.f2fs: avoid false alarm on SIT type fix <Jaegeuk Kim> 4 months ago
+5015286 : fsck.f2fs: remove unneeded return <Jaegeuk Kim> 4 months ago
+988b17a : fsck.f2fs: show orphan inodes when fixing partition <Jaegeuk Kim> 4 months ago
+dcd7bed : mkfs.f2fs: reclaim free space in case of regular file <Changman Lee> 5 months ago
+22971b9 : mkfs.f2fs: give a kernel version for initial format <Jaegeuk Kim> 4 months ago
+5406750 : fsck.f2fs: trigger fsck.f2fs when new change was made <Jaegeuk Kim> 4 months ago
+fa6c04a : fsck.f2fs: fix SIT entry types <Jaegeuk Kim> 4 months ago
  
 **** https://github.com/CyanogenMod/android_external_flac ****
 47c292e : libFLAC: merge master from Xiph <Robert Shih> 2 months ago
@@ -61,11 +100,14 @@ da7eba4 : Fix ParceledListSlice to enforce the same concrete types among its ele
 origin	git@github.com:cmRemiX/android_frameworks_native.git ****
 f58a148 : Update maxNumber to be smaller. <Michael Lentine> 4 weeks ago
  
-**** https://github.com/CyanogenMod/android_frameworks_opt_net_wifi
-temasek	https://github.com/temasek/android_frameworks_opt_net_wifi ****
-5a16c4c : wifi: Handle error cases when EAP-SIM info is NULL/Unsupported <Sravanthi Palakonda> 3 weeks ago
+**** origin	git@github.com:cmRemiX/android_frameworks_opt_net_wifi.git ****
+5a16c4c : wifi: Handle error cases when EAP-SIM info is NULL/Unsupported <Sravanthi Palakonda> 4 weeks ago
 6646200 : wifi:Provide UI with SIM info for EAP-SIM authentication <Sravanthi Palakonda> 4 months ago
 6655e00 : WiFi: Correct CMD_PNO_PERIODIC_SCAN command value <Nalla Kartheek> 6 weeks ago
+ 
+**** https://github.com/cmRemiX/android_kernel_samsung_trlte
+origin	git@github.com:cmRemiX/android_kernel_samsung_trlte.git ****
+9009932 : add MDNIE Lite Control <ZION959> 4 hours ago
  
 **** https://github.com/CyanogenMod/android_libcore ****
 fe42e96 : Fix a bug in DefaultHostnameVerifier wildcard handling. <Alex Klyubin> 4 months ago
@@ -76,10 +118,10 @@ c905e5a : Prevent duplicate OPP permission request dialogs <Andre Eisenbach> 3 m
 57262f7 : updateshare confirm logic missed cases like CONFIRMATION_DENIED, TIMEOUT. fix it <Matthew Xie> 5 months ago
  
 **** https://github.com/CyanogenMod/android_packages_apps_CMFileManager ****
-336c384 : CMFileManager: Fix back press events of SearchActivity <xiao.hu> 2 days ago
+336c384 : CMFileManager: Fix back press events of SearchActivity <xiao.hu> 3 days ago
  
 **** https://github.com/CyanogenMod/android_packages_apps_Eleven ****
-1e2c7ab : Eleven: Checkboxes to switches <Michael Bestas> 19 hours ago
+1e2c7ab : Eleven: Checkboxes to switches <Michael Bestas> 27 hours ago
 89c155c : Eleven: Show/Hide album art on lockscreen <Mikalacki Sava> 2 weeks ago
  
 **** https://github.com/cmRemiX/android_packages_apps_InCallUI
@@ -105,7 +147,7 @@ origin	git@github.com:cmRemiX/android_packages_apps_Settings.git ****
 bda9e4d : Make TelephonyProvider a singleton across users <Amith Yamasani> 4 months ago
  
 **** https://github.com/CyanogenMod/android_packages_providers_ThemesProvider ****
-a6afd7e : Fix icons with filters not being generated <d34d> 21 hours ago
+a6afd7e : Fix icons with filters not being generated <d34d> 30 hours ago
  
 **** https://github.com/CyanogenMod/android_system_netd ****
 2bd32e8 : netd: Fix concurrency error for iptables command <Nilesh Poddar> 3 months ago
@@ -113,9 +155,10 @@ a6afd7e : Fix icons with filters not being generated <d34d> 21 hours ago
 **** https://github.com/CyanogenMod/android_vendor_cm
 origin	git@github.com:cmRemiX/android_vendor_cm.git
 temasek	https://github.com/temasek/android_vendor_cm ****
-3fc3b80 : vendor_cm: sepolicy: address sysinit denials. <Tony Layher> 9 days ago
-52bf318 : Revert: sepolicy: Permissions for userinit <ZION959> 11 hours ago
-eb600fe : Add new Maxis combined APN <Abhisek Devkota> 21 hours ago
+69fd086 : vendor_cm: sepolicy: address sysinit denials. <Tony Layher> 9 days ago
+6a718a9 : Revert: sepolicy: Permissions for userinit <ZION959> 19 hours ago
+9c2413b : Update Telenor HU APN <Abhisek Devkota> 8 hours ago
+eb600fe : Add new Maxis combined APN <Abhisek Devkota> 30 hours ago
 dc699fb : sepolicy: Permissions for userinit <Emerson Pinter> 5 weeks ago
 8df987a : Add USMobile (MVNO) apn <Abhisek Devkota> 3 days ago
 b62da1e : apn: Add LG U+ LTE APN <Byun Jae Myeong> 5 days ago
@@ -125,5 +168,5 @@ b62da1e : apn: Add LG U+ LTE APN <Byun Jae Myeong> 5 days ago
  
 **** https://github.com/cmRemiX/android_vendor_cmremix
 origin	git@github.com:cmRemiX/android_vendor_cmremix.git ****
-4da61ee : disabled cmremix optimization for now <ZION959> 11 hours ago
+4da61ee : disabled cmremix optimization for now <ZION959> 19 hours ago
  

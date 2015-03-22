@@ -7,29 +7,7 @@ Date:   Sat Mar 14 23:53:37 2015 -0700
 
     Merge remote-tracking branch 'upstream/cm-12.0' into cm-12.0
 
-project bootable/recovery-twrp/
-commit c5dee9ce81a212cb88f45991071e999fa656f2cd
-Merge: 37a1f6a ba2b25a
-Author: ZION959 <ziontran@gmail.com>
-Date:   Thu Mar 12 20:46:06 2015 -0700
-
-    Merge remote-tracking branch 'upstream/android-5.0' into cm-12.0
-
 project build/
-commit a7532d7e8fedd4d98f7970117b6916730216dac2
-Author: Brint E. Kriebel <bekit@cyngn.com>
-Date:   Tue Mar 10 18:58:23 2015 -0700
-
-    build: Update install tools packaging for target-files support
-    
-    Modifies "build: ota: Support for install tools in /tmp/install" to
-    support signing steps being split from build steps.
-    
-    Package install files into target-files INSTALL path
-    Read from target-files for OTA package creation
-    
-    Change-Id: I64f919c2a757b5474f6cc5f82bd6c33c2a8b558a
-
 commit 65183542835ff3fbdc36f468f993dfb102522cab
 Author: ZION959 <ziontran@gmail.com>
 Date:   Sun Mar 15 01:21:25 2015 -0700
@@ -50,27 +28,112 @@ Date:   Sun Mar 15 21:38:54 2015 -0700
     
     port to CMRemix (Thanks JustArchi)
 
+commit bbd17818153811e4225864fda15d957f6ec52c12
+Author: ZION959 <ziontran@gmail.com>
+Date:   Thu Mar 19 23:10:57 2015 -0700
+
+    more tests
+
+commit cd2284d42598e71e35cdd71ee3c283705721c730
+Author: MaDc0w <MaDc0w@pac-rom.com>
+Date:   Fri Mar 20 00:29:11 2015 -0700
+
+    build: Rainbow unicorn puke [1/2]
+    
+    Change-Id: I393dd013194d73b293b361a42d42fa171ceee837
+    
+    Conflicts:
+    	core/Makefile
+    	envsetup.sh
+
+commit d0e74143cf26859e1ffca9668e08e992f1a26b62
+Author: JoseGalRe <josegalre@gmail.com>
+Date:   Fri Mar 20 00:31:49 2015 -0700
+
+    build: move chromium call...
+    
+    Change-Id: Ia91e750470f4af67487bf3e52d208bedc3a585dd
+    
+    Conflicts:
+    	core/Makefile
+
+commit 96a213ed1c87018a0b2dd3b77013ab6313b8da84
+Author: Lokesh Chamane <lokesh.c703@gmail.com>
+Date:   Sun Mar 8 16:29:37 2015 -0400
+
+    build: Prebuilt Chromium files check
+    
+    Change-Id: Ic12f1d2559417f74af787e635d1ab882d07d9d00
+    Signed-off-by: Lokesh Chamane <lokesh.c703@gmail.com>
+
+project cmRemiX/
+commit 7aed5d1c13129920018e80e2e3562a81dff59ff7
+Author: ZION959 <ziontran@gmail.com>
+Date:   Thu Mar 19 11:51:18 2015 -0700
+
+    track opt_net_wifi
+
+commit 89bd5a728ade13a0ac728778da3effe8bf961cff
+Author: ZION959 <ziontran@gmail.com>
+Date:   Thu Mar 19 14:51:55 2015 -0700
+
+    update qcom clang path
+
+project device/qcom/common/
+commit 4ed36a9a7391dc20ec4f1ee2ac8794c0b9ec3c9d
+Author: Steve Kondik <steve@cyngn.com>
+Date:   Sun Mar 15 19:47:59 2015 -0500
+
+    power-8226: Add support for system performance profiles.
+    
+    Change-Id: I2f5002ffa0b1c63486056023a3cc6137559bcebd
+
+commit 5a31d99fe1ce79056cf26972b698eeca4cddf33f
+Author: Steve Kondik <steve@cyngn.com>
+Date:   Sun Mar 15 19:51:16 2015 -0500
+
+    power-8226: Various updates to Power HAL
+    
+    Change-Id: If266f0a95a85bfc8dc8458ce7d71e569fa715c2f
+
+commit c534f6e5c5621fe21cec6ebe7e2d3a896c80418e
+Author: Steve Kondik <steve@cyngn.com>
+Date:   Sun Mar 15 19:52:35 2015 -0500
+
+    power-8226: Add support for POWER_HINT_LOW_POWER
+    
+    Change-Id: Id25095ed549a84c07167f87f62f4e8add9a4cfec
+
+commit 94ed698a08bcf78a7692de459c067be540b32603
+Author: Steve Kondik <steve@cyngn.com>
+Date:   Sun Mar 15 19:54:12 2015 -0500
+
+    power-8226: Remove the HMP boost hint
+    
+    Change-Id: I134c2656d806978ef683f70980be27d2bc60eb51
+
+commit 63f475188ee463f8806ae9fc268333aab310d8af
+Author: Steve Kondik <steve@cyngn.com>
+Date:   Sun Mar 15 19:55:01 2015 -0500
+
+    power-8226: Increase the boost a bit
+    
+    * eliminate a lot of jank. We're racing with input boost here.
+    
+    Change-Id: Ibce4ec734b4a9df82277b8e79425a87454b58dcd
+
+commit 28310b2b130ea26372e066c85e868c70f332c5a2
+Author: Steve Kondik <steve@cyngn.com>
+Date:   Sun Mar 15 19:56:13 2015 -0500
+
+    power-8226: Remove unnecessary hint
+    
+    * This has the unfortunate side effect of actually *enabling* KSM,
+      which we don't really need on this hardware.
+    
+    Change-Id: Idc3960fcb60169c2429d74309de50e52083664da
+
 project device/samsung/hlte-common/
-commit 4c4741e0ad0206f7457f7ea0fbe1be981d1933c2
-Author: Christer <christer.bjor@gmail.com>
-Date:   Tue Mar 10 14:36:35 2015 +0100
-
-    hlte-common: remove bogus MMS overlay.
-    
-    * This is already taken care of in samsung_qcom-common and is cuasing
-    data drops with some carriers after receiving an MMS as well as not
-    sending messages over 160 characters on some carriers.
-    
-    Change-Id: I9f26bc33ed99515f15c881f697917d8c0c3c3cb6
-
-commit 76aaf5245962a528b906ca3371bff1acf22567ef
-Author: Christer <christer.bjor@gmail.com>
-Date:   Tue Mar 10 14:33:36 2015 +0100
-
-    hlte-common: Removed deprecated Torch config
-    
-    Change-Id: I12ebee5ae441e44db1830759e8e3c9b1e10a7863
-
 commit ff4324997d11580b2bfd6ad35590908491542edc
 Merge: e12a8f7 76aaf52
 Author: ZION959 <ziontran@gmail.com>
@@ -107,13 +170,32 @@ Date:   Mon Mar 16 22:50:48 2015 -0400
     Change-Id: I8938139b886eb1ff83500dbdc73441fda2d11e14
 
 project device/samsung/trltexx/
-commit 80ec0a28dc0c0f91a1062d7cd4173d7f5b3e1ef6
+commit 695e9a0b50d33fe3dad7c8e41980fceab21b144a
 Author: gekkehenkie11 <allard_addink@hotmail.com>
 Date:   Thu Mar 5 15:30:08 2015 -0400
 
     add support 910G
     
     Change-Id: I7e43f0814da00866d3f100af2d5f1f341c988715
+
+commit e86bc1f567f19f2c37e90d781f7487864659cbf7
+Author: gekkehenkie11 <allard_addink@hotmail.com>
+Date:   Mon Mar 16 19:36:02 2015 -0400
+
+    fix string
+    
+    Change-Id: Id81f5647343e21d9bc2f73c0b79a494b670da717
+
+commit e7efc5bd406dc8170c8eeb4b4cc05d87851a5af6
+Merge: 19e7f54 e86bc1f
+Author: gekkehenkie11 <allard_addink@hotmail.com>
+Date:   Tue Mar 17 01:10:54 2015 +0000
+
+    Merge changes Id81f5647,I7e43f081 into cm-12.0
+    
+    * changes:
+      fix string
+      add support 910G
 
 project external/bluetooth/bluedroid/
 commit 0c288384e612e0201995f6524a8924d000ec9a46
@@ -255,163 +337,18 @@ Date:   Mon Mar 2 10:20:59 2015 -0800
     
     Change-Id: I426c3fed55c2a7f6d9e024b0af266da0c2690abc
 
-project external/whispersystems/WhisperPush/
-commit d3d65686b29bf0d971c272ba2c616e567575c745
-Author: Michael Bestas <mikeioannina@gmail.com>
-Date:   Sun Mar 15 01:50:33 2015 +0200
+project external/sqlite/
+commit fc4f2d6ce8eae9539fb8245473abf8468a442653
+Author: arter97 <qkrwngud825@gmail.com>
+Date:   Fri Mar 13 17:44:38 2015 +0900
 
-    Automatic translation import
+    Upgrade to SQLite 3.8.8.3
     
-    Change-Id: Iadb061cd812b5ac3af76d16a2ba0e6853f98e0d2
+    Downloaded from http://www.sqlite.org/2015/sqlite-amalgamation-3080803.zip
+    
+    Signed-off-by: arter97 <qkrwngud825@gmail.com>
 
 project frameworks/av/
-commit 29c4a56d4dedb21f0dc5235b335dbff273456011
-Author: Wei Jia <wjia@google.com>
-Date:   Tue Dec 2 09:41:21 2014 -0800
-
-    StreamingSource: check mTSParser before dereferencing it.
-    
-    Bug: 18532335
-    Change-Id: I7819d8d359fe75ea4c827138e9aaa2454ccfe3b1
-
-commit 84d61128fbc72aabc22a7f803cd31cff4e73c159
-Author: Li Sun <sunli@codeaurora.org>
-Date:   Mon Feb 16 11:10:05 2015 +0800
-
-    httplive: avoid zero byte read request
-    
-    - In LiveSession, check whether maxBytesToRead is zero, if yes
-      ignore it because zero byte read request is meaningless.
-    
-    - In PlaylistFetcher, check whether the read bytes is less than
-      the requested block size, if yes, finish fetching the current
-      segment file because it means fetching file already meets EOS.
-    
-    Change-Id: I150d4b147090dbd48d804ebd96ea909e5b6fdbcb
-
-commit 4728e99e8490770439a9425c74308c58bfc737e1
-Author: Satya Krishna Pindiproli <satyak@codeaurora.org>
-Date:   Wed Oct 22 12:53:35 2014 +0530
-
-    libstagefright: Handle FLAC clips with very small block sizes
-    
-    - Clips with very small block sizes play with frequent glitches.
-    - As per the current design, the parser gives data in frames and
-      as the size of each frame after decoding is very small, the framework
-      does not receive PCM at the rate at which it expects resulting in
-      glitches.
-    - Fix is to buffer data in the decoder and to read from parser only
-      when needed.
-    
-    CRs-Fixed: 676591
-    Change-Id: I0c79735ac16c0a9a821fbcadc172038a3145941a
-
-commit 1aedb67544e8a7ced54a1e6f7b7cbdfccc16faa3
-Author: Satya Krishna Pindiproli <satyak@codeaurora.org>
-Date:   Wed Feb 11 19:50:48 2015 +0530
-
-    libstagefright: Reset flac decoder eos during flush
-    
-    - The CTS test case testDecodeFlac fails when the reset mode
-      is RESET_MODE_EOS_FLUSH.
-    - In this mode, after input and output eos are set, there is a seek to 0
-      but bit-stream is not fetched from the parser resulting in an
-      assert that causes the CTS failure.
-    - Ensure that the decoder eos is reset in flushDecoder so that bit-stream
-      is fetched from the parser.
-    - Also fix indentation issues for log messages.
-    
-    CRs-Fixed: 793060
-    Change-Id: I5fc86a7b04f009e91231fa4b20b32da1dac6a9ca
-
-commit 7404a5798ad1bd946664ca556404d5d44213a080
-Author: Santhosh Behara <santhoshbehara@codeaurora.org>
-Date:   Mon Feb 16 18:44:37 2015 +0530
-
-    httplive: HLS enhancements
-    
-    - Use the property persist.sys.media.hls-custom to have all
-      the customizations enabled in HLS stack.
-    
-    - Start playback from first segment, in VOD if the
-      playback happens at variant corresponding to actual
-      bandwidth.
-    
-    - Increase the duration to buffer to 25sec before
-      pausing the PlayListFetcher.
-    
-    Change-Id: I8a676c77db54205521bf6db7a69e0766da3220c5
-
-commit 1abd0c511a4509074097707945681154900b50de
-Author: Dhananjay Kumar <dhakumar@codeaurora.org>
-Date:   Wed Dec 31 20:10:33 2014 +0530
-
-    soundpool: reuse channel for same sample if available
-    
-    Reuse channel for same sample if the channel completed
-    current playback and is not reallocated to another sample,
-    i.e. not stolen by other sample.
-    
-    CRs-Fixed: 769440
-    Change-Id: Ibe7ee318c7dc11f3c4fd3a2f57d861318b10973b
-
-commit 6a054d6b999d252ed87b4224f3aa13e69e3c56e0
-Author: Pavan Chikkala <pavanc@codeaurora.org>
-Date:   Wed Feb 18 17:31:13 2015 +0530
-
-    libstagefright: Add check for bits avail to read
-    
-    - If number of bits available to read from ABitReader
-      is zero,do not call getBits.
-    
-    Change-Id: I4b7332b03ed6ee1d7b6711e5b4c5dce396151b03
-    CRs-Fixed: 777657
-
-commit 8b91c593e00b70ba8157da8479d6bde635b44513
-Author: Steve Kondik <steve@cyngn.com>
-Date:   Wed Mar 11 21:51:45 2015 +0100
-
-    stagefright: Correct ifdeffage of some QC codecs
-    
-    Change-Id: Ie8cc7287967b84e09941283559ca542efd928d91
-
-commit ba94bd7a60b96e4e565b05f6d0b7e64f055dd659
-Merge: aae6dae 29c4a56
-Author: ZION959 <ziontran@gmail.com>
-Date:   Fri Mar 13 20:27:51 2015 -0700
-
-    Merge remote-tracking branch 'Upstream/cm-12.0' into cm-12.0
-
-commit 33ade411b74fd0bbef24a8ee73c8938432a40831
-Author: Divya Narayanan Poojary <dnaray@codeaurora.org>
-Date:   Tue Feb 17 11:19:01 2015 +0530
-
-    audiopolicy: Do not route VoIP call to HDMI
-    
-    getDeviceForStrategy is returning AUDIO_DEVICE_OUT_AUX_DIGITAL
-    even  when setForceUse is called with FORCE_NONE(earpiece)
-    during VOIP call. Actual Intention is to route audio for phone
-    strategy to AUX device even after setForceUse is called with
-    FORCE_NONE when not in voice call. It is supposed to exclude
-    VOIP call too
-    
-    Added isInCall check so that it returns EARPIECE when
-    setForceUse is called with FORCE_NONE
-    
-    CRs-Fixed: 793649
-    
-    Change-Id: I88d515c351f066305f9eed240b1fe5f60ef34f85
-
-commit 649b5fbafeeabc90ac0a69a176ba696f155f2282
-Author: Michael Bestas <mikeioannina@gmail.com>
-Date:   Sat Mar 14 22:31:38 2015 +0200
-
-    libmedia: Tone down logging
-    
-    * Originally added in 8c6297e4a78a97cac2c9c4b855828dc06c356686
-    
-    Change-Id: Ieca88e86fff3540a46112c8f9bcf8c9ce92bcb7c
-
 commit 4bd7b86d9ecfb111bdff262d769f20125990842a
 Merge: ba94bd7 649b5fb
 Author: ZION959 <ziontran@gmail.com>
@@ -494,241 +431,27 @@ Date:   Thu Mar 19 09:00:06 2015 -0700
 
     Merge remote-tracking branch 'Upstream/cm-12.0' into cm-12.0
 
+commit c498eab8dfe6ce639896b28eb397e7315048a9cc
+Author: Arne Coucheron <arco68@gmail.com>
+Date:   Mon Mar 16 05:37:50 2015 +0100
+
+    Revert "soundpool: reuse channel for same sample if available"
+    
+     * Causing issues with touch tones. Randomly loosing them
+       altogether, and skipping tones when typing fast on the keyboard.
+    
+    This reverts commit 1abd0c511a4509074097707945681154900b50de.
+    
+    Change-Id: Ib1c02f1b30750dc1600371656541b41947e889ab
+
+commit cf8c5de74aecfa3dbec40dd8cefafbe17655c0c8
+Merge: 1baf67a c498eab
+Author: ZION959 <ziontran@gmail.com>
+Date:   Fri Mar 20 20:57:41 2015 -0700
+
+    Merge remote-tracking branch 'Upstream/cm-12.0' into cm-12.0
+
 project frameworks/base/
-commit 2d75d887e0a6abac5165dda37ee462118d96372d
-Author: XXMrHyde <xxmrhyde@gmx.co.uk>
-Date:   Thu Mar 12 22:15:48 2015 -0700
-
-    Lock screen: Weather panel improvements, (1/2):
-    
-    - Move weather panel to the bottom the clock panel
-    - Add wind
-    - Add humidity
-    - Add Condition
-    - Add Timestamp
-    - Add condition icons (colored and VClouds)
-    - Rearrange the weather panel:
-      - Left side:
-        - Location
-        - Wind
-      - Center:
-        - Condiditon icon
-      - Right side:
-        - Current temperature
-        - Humidity
-      - Bottom:
-        - Condition
-        - Timestamp
-    - Option to show/hide the timestamp
-    - Option to colorize the monochrome icons/all icons
-    - Custom text color
-    - Custom icon color
-    
-    Change-Id: I986975c13c5d29bd8103424e020ad775a8f03804
-
-commit a9e1dad376a43f6f0554290b39fed5cb5830f950
-Author: Jorge Ruesga <jorge@ruesga.com>
-Date:   Wed Mar 11 02:11:17 2015 +0100
-
-    keyguard: don't use eq visualized in LowEndGfx devices
-    
-    Eq Visualizer is a costly graphics operation which can impact in devices with old graphic hardward
-    
-    Change-Id: I21b0e0c2fcf237fee4e11c312ff85d3c421ca575
-    JIRA: NIGHTLIES-826
-    Signed-off-by: Jorge Ruesga <jorge@ruesga.com>
-    
-    Patchset: 2
-    http://review.cyanogenmod.org/#/c/91052/
-
-commit df9a1888f25bce847a525cce75e2955cd5453cee
-Author: riddle_hsu <riddle_hsu@htc.com>
-Date:   Wed Mar 11 17:09:50 2015 +0800
-
-    [ActivityManager] Fix index OOB when resetting removed task
-    
-    Assume task T has an activity X lives in process P.
-    When P is died and before death recipient being called,
-    start activity with flag RESET_TASK_IF_NEEDED to bring the
-    existed task T.
-    
-    Then scheduleResumeActivity IPC will fail and trigger start
-    a new process that removes task T.
-    
-    That results resetTaskIfNeededLocked cannot find the task
-    when continuing the start flow.
-    
-    Detail:
-    https://code.google.com/p/android/issues/detail?id=159558
-    
-    Change-Id: Icc400c7a6c481a3f78657e9fb83cf0c3a17dde68
-
-commit 5a77c39cab4f76805b26b58a73fabc2fa926add9
-Author: d34d <clark@cyngn.com>
-Date:   Wed Mar 11 11:23:15 2015 -0700
-
-    Themes: Process theme resources after package scanned [1/2]
-    
-    This patch processes a theme's resources after the package is
-    scanned and the theme is added to the PackageManager.
-    
-    Change-Id: I098e7e8bd192a8ead0c382ff60e28701c064329c
-
-commit 35ac9761cbb3d75b1a6840aacb5cd1efbdc9ea4f
-Author: Roman Birg <roman@cyngn.com>
-Date:   Wed Mar 11 14:01:30 2015 -0700
-
-    SystemUI: disable visualizers during power save mode
-    
-    Change-Id: I2ab4502d2654d1bcfe19782a600fe35585085b9a
-    Signed-off-by: Roman Birg <roman@cyngn.com>
-    
-    Conflicts:
-    	packages/SystemUI/src/com/android/systemui/qs/tiles/VisualizerTile.java
-
-commit c0d100467bae1e48570a7129034429e0577e530c
-Author: Roman Birg <roman@cyngn.com>
-Date:   Wed Mar 11 12:13:05 2015 -0700
-
-    SystemUI: improve DISMISS_KEYGUARD_SECURELY_ACTION behavior
-    
-    When the screen is not yet turned on, calls to dismiss() will never
-    actually dismiss the keyguard since it goes through the bouncer, which
-    checks if the screen is on before executing its logic. If we receive the
-    intent to dismiss the keyguard while the screen is off, wait until its
-    turned on and then execute the dismiss.
-    
-    Change-Id: I652458c639230bc7fe32a955e103e40c27289b4d
-    Signed-off-by: Roman Birg <roman@cyngn.com>
-
-commit 34c25f8bc03eda23322ee78ab839715942b5ac90
-Author: Roman Birg <roman@cyngn.com>
-Date:   Wed Mar 11 15:16:13 2015 -0700
-
-    SystemUI: don't display protected lockscreen shortcuts
-    
-    If an app was protected, do not display that app in the lockscreen.
-    
-    Change-Id: I301a43c8f512e358d47f559320fef490751571ca
-    Signed-off-by: Roman Birg <roman@cyngn.com>
-
-commit a7eca79ea13fa9c59a6bb393c6210831f6b8203c
-Author: padarshr <padarshr@codeaurora.org>
-Date:   Fri May 23 21:05:18 2014 +0530
-
-    Provider: Add multi SIM ringtone support in SettingsProvider
-    
-    This change will handle multi-sim queries in
-    SettingsProvider.java when openFile and
-    openAssetFile APIs are called by other components.
-    Thus, it will ensure to play the correct ringtone
-    corresponding to the SIM.
-    
-    CRs-Fixed: 661216
-    Change-Id: I7b22c233b9c41669c1ad948b83a7aa2c55442af1
-
-commit c841dff6545880658e1837e8861137436ffb38ff
-Author: Danesh M <daneshm90@gmail.com>
-Date:   Wed Nov 12 12:16:57 2014 -0800
-
-    MediaScanner : Add support for default ringtones per sim
-    
-    Change-Id: I1ed112a38d2b3676e31a78eb70ea0e16a3957b02
-
-commit 1caa839efeec53df095eec9bfca1b7878767e544
-Author: Abhisek Devkota <ciwrl@cyanogenmod.com>
-Date:   Tue Mar 3 17:42:09 2015 -0800
-
-    Remove more duplicate sounds
-    
-    Best testing area is DeskClock alarm sound > Ringtone
-    
-    Change-Id: I5085382b3b8dae66f415691436ce297f684cb892
-
-commit 2b640a91f41344d842cf820e0d11adec08b60e0b
-Author: d34d <clark@cyngn.com>
-Date:   Thu Mar 12 12:15:38 2015 -0700
-
-    Themes: Add CONFIG_THEME_FONT to Configuration.diff()
-    
-    We were updating this change in updateFrom() but forgot to add it
-    to the diff() method, which resulted in fonts not changing.
-    
-    Change-Id: I88e230f3b148ec7efff095d54186018195e2feec
-
-commit 1e35c0e53a7d7d8803095cffebc61417c9ce6cb0
-Author: XXMrHyde <xxmrhyde@gmx.co.uk>
-Date:   Thu Mar 12 14:49:43 2015 +0100
-
-    Lock screen: Text and icon colors, (1/2):
-    
-    - Global lock screen text color
-    - Global lock screen icon color
-    
-    The weather panel is using the global lock screen colors
-    
-    This won`t colorize the pattern-, password-, pin-
-    and face unlock views, this will follow in one of the next commits.
-    
-    Change-Id: I6e5591b4d78ee703d01ebd14382a2ce7b162d9a6
-
-commit 860b6434529108a774c8f2c3831146e7f06553b6
-Author: Alexander Martinz <eviscerationls@gmail.com>
-Date:   Thu Mar 12 20:17:25 2015 -0700
-
-    (1/2) Frameworks: allow to toggle smart cover wake
-    
-      * disable by default
-    
-    Change-Id: I83d96696fefedc19fc3bce7265a4fcf2d4c894bc
-    Signed-off-by: Alexander Martinz <eviscerationls@gmail.com>
-    
-    Conflicts:
-    	core/java/android/provider/Settings.java
-    	policy/src/com/android/internal/policy/impl/PhoneWindowManager.java
-    
-    Conflicts:
-    	core/java/android/provider/Settings.java
-    	policy/src/com/android/internal/policy/impl/PhoneWindowManager.java
-
-commit 0f03d95ae9f5ee7f08c7020dcf688258e0c52989
-Author: tiger_huang <tiger_huang@htc.com>
-Date:   Mon Feb 16 21:37:12 2015 +0800
-
-    Wait for visible wallpaper drawn before starting app transitions
-    
-    If the opening app has wallpaper, when the closing app starts hiding,
-    the wallpaper would be revealed. It would be nice if we play the app
-    transitions while opening apps, closing apps, and visible wallpapers
-    are all drawn.
-    
-    https://code.google.com/p/android/issues/detail?id=150811
-    
-    Change-Id: I3c7d140f6f6e43e18119e48f9cab441ee96b17e5
-    
-    Conflicts:
-    	services/core/java/com/android/server/wm/WindowManagerService.java
-
-commit 801f53c7812cac99c2c6cd57dff334a04f757e55
-Author: tiger_huang <tiger_huang@htc.com>
-Date:   Tue Feb 17 14:07:40 2015 +0800
-
-    Wait for opening apps ready before stopping freezing display
-    
-    When the screen rotation is changing, we will freeze the display
-    until all the window surfaces are all drawn (this is not including
-    windows which have no surface). If the opening app's window surface
-    is created after we stop freezing the display, there would be no
-    waiting for the app, and the user would see the black screen.
-    
-    In this change, we would not only wait for the windows which have
-    surface, but also wait for the windows about to have surface before
-    stopping freezing display.
-    
-    https://code.google.com/p/android/issues/detail?id=150921
-    
-    Change-Id: I7de4db8ca902236f3e9f730b04dbde681cf8c032
-
 commit 76231c40afb2dc7ada16f16fbbfb5b10c3519b3e
 Author: Alexander Martinz <eviscerationls@gmail.com>
 Date:   Thu Mar 12 09:23:00 2015 +0100
@@ -1455,6 +1178,210 @@ Date:   Tue Mar 17 21:07:21 2015 -0700
     Bug: 19797138
     Change-Id: I9d8c087aff7bc9cc1e8aae9a0b489e23b5442765
 
+commit 0ce2eaad138a51b1e0d497e724f23f68cc45c8da
+Author: d34d <clark@cyngn.com>
+Date:   Wed Mar 18 10:48:02 2015 -0700
+
+    Themes: Always clone the new theme if non-null
+    
+    The new theme was only being cloned when shouldUpdateStatusbar()
+    returned true.  This causes the navigation bar to not be themed
+    when no components changed that required the status bar to be
+    recreated.  This patch always clones the new theme so that the
+    proper navigation bar resources can be loaded.
+    
+    Change-Id: I8d70c54d3bfcd91141ce40f513744e260fe87639
+    REF: THEMES-573
+
+commit 4dddb8d5bab453538f41dd82fdd01acfcf1f5279
+Author: Roman Birg <roman@cyngn.com>
+Date:   Tue Mar 17 13:22:32 2015 -0700
+
+    improve lock screen wallpaper behavior
+    
+     - Fix lockscreen wallpaper not being reloaded on user switch.
+       There was an issue where the wrong user id was being queried for the
+       keyguard wallpaper. Always use the current user id.
+    
+     - Also clean up a left-over call for some regular wallpaper
+       migration logic that the lock screen wallpaper
+    
+     - Add method for removing references to the current lock screen
+       wallpaper, which we call from systemui when switching users.
+    
+     - Only apply the lock screen wallpaper if there is no media metadata
+       to show. There were some cases when it would still appear even when
+       music was playing.
+    
+    Change-Id: I610a38ac11a19638298ca9490b3c87b7ab6106f2
+    Signed-off-by: Roman Birg <roman@cyngn.com>
+
+commit fde34f5b688238c19612ee91e53b8b8012dae5b2
+Author: Jorge Ruesga <jorge@ruesga.com>
+Date:   Thu Mar 19 20:39:23 2015 +0100
+
+    systemui: don't start-stop visualizer directly after a power save event
+    
+    Change-Id: Ie8643aa84d20a8a8a94c5be13332ac09ce8611d6
+    Signed-off-by: Jorge Ruesga <jorge@ruesga.com>
+
+commit 4df7300840c5e5f32ffb18626de1105509c764bc
+Author: Roman Birg <roman@cyngn.com>
+Date:   Fri Mar 13 15:30:19 2015 -0700
+
+    SystemUI: load current user's qs tiles
+    
+    Change-Id: I29cd37d0daba3f25e8b7d07eb62df0ad344c9a80
+    Signed-off-by: Roman Birg <roman@cyngn.com>
+
+commit 6a21479c0d92b530efb25110e3b9d544d944c075
+Author: Andy Mast <andy@cyngn.com>
+Date:   Thu Mar 19 17:48:11 2015 -0700
+
+    Avoid boot looping when theme provider is unavailable
+    
+    Was reported to happen when the device is encrypted.
+    
+    Change-Id: I0e8da0270180038211bc469792bd5089aff49e96
+    (cherry picked from commit 98df5ddef08d7f1308c81a071118bbef432fe5ad)
+
+commit d7947f147e69a5dd82b662f0c963e1263330cfc1
+Author: longyu.huang <longyu.huang2014@gmail.com>
+Date:   Fri Mar 20 00:35:41 2015 -0700
+
+    third part apps can unlock the phone without password even if the phone has setted the password
+    
+    [Preconditions]
+    set password or patten lockscreen
+    
+    [operating steps]
+    1.install the app (eg QQBrowser) and connected wifi
+    2.wait a while,the weather notification will shown on statusbar
+    3.turn off screen,the weather notification will shown on lockscreen too.
+    4.click the search bar in weather notification,it will disable lockscreen.
+    5.press HOME button or kill QQBrowser in Recent apps,you can operate the phone
+    
+    Change-Id: I42689772b8a25c25b5dc0e4cca4c560e0d546ddc
+    (cherry picked from commit c67bc8b6390e972294d136bb1e921db6b6c2d251)
+
+commit e77e3069e74edc7464f9d8b0940ec58a814b70be
+Author: d34d <clark@cyngn.com>
+Date:   Fri Mar 20 15:25:23 2015 -0700
+
+    Themes: Perform mapping when not from overlay
+    
+    This will resolve an issue where an unthemed style references
+    itself as the parent i.e. Real Racing 3.
+    
+    Change-Id: I1aaf5567a44ee0e5ddfad1e8c0e5ab7bc8c1e5bf
+    REF: TOMATL-382
+
+commit 44f71d1d46d91d42ed627e6da059d5fdc4e24696
+Author: Andy Mast <andy@cyngn.com>
+Date:   Fri Mar 20 20:47:55 2015 -0700
+
+    Clear Theme in System UI
+    
+    When SystemUI first starts an android theme object is created
+    which contains references to the currently applied CM theme.
+    
+    When the theme is changed to system, the theme remains in memory
+    with old references to the prior applied theme. (See mPackages in ResTable::Theme)
+    
+    This patch introduces a recreate theme method into Context so that
+    SystemUI can recreate its own theme object.
+    
+    Change-Id: I086a76afa6f456a69c0390573bc8af2eafa4fb4e
+    (cherry picked from commit b85fb98038325ee7e6e48a7ca962bcdcb3e176e0)
+    
+    Conflicts:
+    	packages/SystemUI/src/com/android/systemui/statusbar/phone/PhoneStatusBar.java
+
+commit 0ea055bf89570933d2b46eacc016c68631fb372e
+Author: Scott Mertz <scott@cyngn.com>
+Date:   Fri Mar 20 18:52:15 2015 -0700
+
+    Don't start theme service on core only boot
+    
+    Change-Id: I8a8a142d2dab8d913951848989b5e3e5ec683f65
+    (cherry picked from commit b92c2ccfb44d2d1a1a6fd48da108736db3fbaaa2)
+
+commit 43a8a49915783e52698b4f46ebb3ed3b19198a30
+Author: Roman Birg <roman@cyngn.com>
+Date:   Fri Mar 20 20:50:36 2015 -0700
+
+    SystemUI: survive notification update spam
+    
+    When handling a very high number of incoming notification updates, SystemUI can
+    choke up at updateNotifications() in PhoneStatusBar. Funnel
+    updateNotification() calls through the StatusBar's handler and don't
+    stack them up.
+    
+    Change-Id: I806d1fd8eac73c4af0820319d127423ae6467f60
+    Signed-off-by: Roman Birg <roman@cyngn.com>
+    
+    Conflicts:
+    	packages/SystemUI/src/com/android/systemui/statusbar/phone/PhoneStatusBar.java
+
+commit 18fcd5b5d101840e5e5347edc1ff83b7a2da911f
+Author: ZION959 <ziontran@gmail.com>
+Date:   Sat Mar 21 19:22:13 2015 -0700
+
+    Revert "GlobalActions: Use circular user avatars"
+
+commit fedce597fff326710d621d6f59d0c6390bc9952a
+Author: Michael Bestas <mikeioannina@gmail.com>
+Date:   Sat Mar 21 19:24:34 2015 -0700
+
+    GlobalActions: Use circular user avatars
+    
+    * Use circular & smaller avatars, logic copied from SystemUI
+    * Improve current user indication (thanks to maxwen)
+    
+    Change-Id: Id0ab6271a5249d873c836f75f62862d0a3633c75
+    
+    Conflicts:
+    	core/res/res/values/dimens.xml
+    
+    Conflicts:
+    	policy/src/com/android/internal/policy/impl/GlobalActions.java
+
+commit 6a24259463997013f62571e5b4e4dfee1e2cbeac
+Author: d34d <clark@cyngn.com>
+Date:   Fri Mar 20 22:22:22 2015 -0700
+
+    Themes: Don't break API in MockContext
+    
+    recreateTheme() needs to have @hide otherwise checkapi fails.
+    
+    Change-Id: I90a8620724a5ca8a52bce4bd91bd5534812479b1
+
+commit 57f209c0f903a099ef04d9acddec592f508f4d09
+Author: d34d <clark@cyngn.com>
+Date:   Fri Mar 20 22:32:46 2015 -0700
+
+    Revert "Themes: Don't break API in MockContext"
+    
+    This reverts commit 1b564750a2adced74bec150b770d546c5f2dc51f.
+    
+    Change-Id: I2b22ad846402237338cb9f5791553ce6219ff722
+
+commit fe77638e3390664966643a91c5fba0c76038febb
+Author: d34d <clark@cyngn.com>
+Date:   Fri Mar 20 22:33:23 2015 -0700
+
+    Themes: Properly hide recreateTheme
+    
+    Change-Id: Ifa23515cfbf8eaf16d2bbe26374cbdcf65929dff
+
+commit ad11104687a465455b794aa3096b30b8787b6012
+Author: Scott Mertz <scott@cyngn.com>
+Date:   Sat Mar 21 12:16:25 2015 -0700
+
+    PackageManager: don't attempt to get theme on core boot
+    
+    Change-Id: Id4b12279a52e53c236c61074c5d92bcb44f59a64
+
 project frameworks/native/
 commit f58a148de7ca986efb73e3e3b2a5350d699c7f0a
 Author: Michael Lentine <mlentine@google.com>
@@ -1522,6 +1449,22 @@ Date:   Mon Feb 23 13:36:15 2015 +0530
     Change-Id: Ie7b20dc32016d0396e68971415a835c40cf37989
     CRs-Fixed: 796265
 
+project frameworks/opt/telephony/
+commit 5f8247ab7d9627afb7e57e1d012882e6974bf56c
+Author: Dave Kessler <activethrasher00@gmail.com>
+Date:   Fri Mar 20 16:26:28 2015 -0400
+
+    IccSmsInterfaceManager: Disable debug logging
+    
+    Change-Id: I0ddfb6afc280b0739db17f6ffb80ca6976fae66b
+
+commit 7063661c0a3cf8eaa5e788af313259b2af3fd023
+Merge: a46b529 5f8247a
+Author: ZION959 <ziontran@gmail.com>
+Date:   Fri Mar 20 21:01:24 2015 -0700
+
+    Merge remote-tracking branch 'upstream/cm-12.0' into cm-12.0
+
 project hardware/qcom/display-caf/msm8916/
 commit b01ae24693ba7076410ecb8cfb93f3908f84fe7c
 Author: Baldev Sahu <bsahu@codeaurora.org>
@@ -1557,771 +1500,7 @@ Date:   Fri Jan 23 22:41:22 2015 +0100
     Signed-off-by: Andreas Schneider <asn@cryptomilk.org>
 
 project kernel/samsung/trlte/
-commit 6df08163ba42601030ec20043d25dc3a3c04cb1e
-Author: imoseyon <imoseyon@gmail.com>
-Date:   Mon Nov 24 19:56:09 2014 -0800
-
-    clock-krait/cpufreq: custom voltage control v1
-
-commit 61b260291e142f4e86c864933e7ef9c58eaf8bdd
-Author: imoseyon <imoseyon@gmail.com>
-Date:   Mon Nov 24 20:02:19 2014 -0800
-
-    clock-krait: 8084 can go up to 1.275v safely
-
-commit 6d6f831882aae5f130acc66e4d071b267f76e8de
-Author: franciscofranco <franciscofranco.1990@gmail.com>
-Date:   Sun Jan 4 03:50:57 2015 +0000
-
-    arm: dts: Allow power collapse as minimum l2 gdhs mode. From https://github.com/myfluxi/android_kernel_lge_hammerhead/commit/0318f7f4fbebe391ecfdebff4d7d82be2fca93d9
-    
-    Signed-off-by: franciscofranco <franciscofranco.1990@gmail.com>
-    Signed-off-by: flar2 <asegaert@gmail.com>
-
-commit 7b3f319dccdc2f64d0329e03144f830e4a93e5c4
-Author: Pavel <nadyaivanova14@gmail.com>
-Date:   Thu Jan 8 12:33:08 2015 +0100
-
-    cpufreq: interactive: don't skip waking up speedchange_task if target…
-    …_freq > policy->cur
-    
-    When __cpufreq_driver_target() in speedchange_task failed for some reason, the
-    policy->cur could be lower than the target_freq. The governor misses to change
-    the target_freq if the target_freq is equal to the next_freq at the next sample
-    time.
-    
-    Added a check to prevent the CPU to stay at the speed that is lower than the
-    target_freq for long duration.
-    
-    Change-Id: Ibfdcd193b8280390b8f8374a63218aa31267f310
-    Signed-off-by: Minsung Kim <ms925.kim@samsung.com>
-
-commit 60429b85fb0ab5d10274d20f930c13e78d8d285b
-Author: ZION959 <ziontran@gmail.com>
-Date:   Fri Mar 13 22:08:08 2015 -0700
-
-    cpufreq_interactive: import interactive governor from Shamu
-    
-    Damn Samsung! You are cheating. In his stock kernel the interactive governor is going very well, from his source code interactive is very laggy.
-    Now The governor runs well.
-    
-    Signed-off-by: Pafcholini <pafcholini@gmail.com>
-
-commit cd17227c1dc5104575f7e5e5b955e8203f7bdaa4
-Author: ZION959 <ziontran@gmail.com>
-Date:   Fri Mar 13 23:02:26 2015 -0700
-
-    Add a few governors
-
-commit ea757d5cee6e208c44c5ff4b2f42e91d6c41fee2
-Author: Stratos Karafotis <stratosk@semaphore.gr>
-Date:   Thu Jul 3 06:28:22 2014 -0400
-
-    cpufreq: Introduce new relation for freq selection Introduce CPUFREQ_RELATION_C for frequency selection. It selects the frequency with the minimum euclidean distance to target. In case of equal distance between 2 frequencies, it will select the greater freq.
-    
-    Signed-off-by: Stratos Karafotis <stratosk@semaphore.gr>
-    
-    Conflicts:
-    	include/linux/cpufreq.h
-
-commit 67026689228f6ca3ac5de82af2450d58760b7a58
-Author: Stratos Karafotis <stratosk@semaphore.gr>
-Date:   Thu Jul 3 06:31:21 2014 -0400
-
-    Currently, ondemand calculates the target frequency proportional to load using the formula:
-    
-    Target frequency = C * load
-    where C = policy->cpuinfo.max_freq / 100
-    
-    Though, in many cases, the minimum available frequency is pretty high
-    and
-    the above calculation introduces a dead band from load 0 to
-    100 * policy->cpuinfo.min_freq / policy->cpuinfo.max_freq where the
-    target
-    frequency is always calculated to less than policy->cpuinfo.min_freq and
-    the minimum frequency is selected.
-    
-    For example: on Intel i7-3770 @ 3.4GHz the policy->cpuinfo.min_freq =
-    1600000
-    and the policy->cpuinfo.max_freq = 3400000 (without turbo). Thus, the
-    CPU
-    starts to scale up at a load above 47.
-    On quad core 1500MHz Krait the policy->cpuinfo.min_freq = 384000
-    and the policy->cpuinfo.max_freq = 1512000. Thus, the CPU starts to
-    scale
-    at load above 25.
-    
-    Change the calculation of target frequency to eliminate the above
-    effect using
-    the formula:
-    
-    Target frequency = A + B * load
-    where A = policy->cpuinfo.min_freq and
-    B = (policy->cpuinfo.max_freq - policy->cpuinfo->min_freq) / 100
-    
-    This will map load values 0 to 100 linearly to cpuinfo.min_freq to
-    cpuinfo.max_freq.
-    
-    Also, use the CPUFREQ_RELATION_C in __cpufreq_driver_target to select
-    the
-    closest frequency in frequency_table. This is necessary to avoid
-    selection
-    of minimum frequency only when load equals to 0. It will also help for
-    selection
-    of frequencies using a more 'fair' criterion.
-    
-    In tables below is presented the difference in selected frequency for
-    specific
-    values of load without and with this patch. On Intel i7-3770 @ 3.40GHz:
-    Without			With
-    Load	Target	Selected	Target	Selected
-    0	0	1600000		1600000	1600000
-    5	170050	1600000		1690050	1700000
-    10	340100	1600000		1780100	1700000
-    15	510150	1600000		1870150	1900000
-    20	680200	1600000		1960200	2000000
-    25	850250	1600000		2050250	2100000
-    30	1020300	1600000		2140300	2100000
-    35	1190350	1600000		2230350	2200000
-    40	1360400	1600000		2320400	2400000
-    45	1530450	1600000		2410450	2400000
-    50	1700500	1900000		2500500	2500000
-    55	1870550	1900000		2590550	2600000
-    60	2040600	2100000		2680600	2600000
-    65	2210650	2400000		2770650	2800000
-    70	2380700	2400000		2860700	2800000
-    75	2550750	2600000		2950750	3000000
-    80	2720800	2800000		3040800	3000000
-    85	2890850	2900000		3130850	3100000
-    90	3060900	3100000		3220900	3300000
-    95	3230950	3300000		3310950	3300000
-    100	3401000	3401000		3401000	3401000
-    
-    On ARM quad core 1500MHz Krait:
-    Without			With
-    Load	Target	Selected	Target	Selected
-    0	0	384000		384000	384000
-    5	75600	384000		440400	486000
-    10	151200	384000		496800	486000
-    15	226800	384000		553200	594000
-    20	302400	384000		609600	594000
-    25	378000	384000		666000	702000
-    30	453600	486000		722400	702000
-    35	529200	594000		778800	810000
-    40	604800	702000		835200	810000
-    45	680400	702000		891600	918000
-    50	756000	810000		948000	918000
-    55	831600	918000		1004400	1026000
-    60	907200	918000		1060800	1026000
-    65	982800	1026000		1117200	1134000
-    70	1058400	1134000		1173600	1134000
-    75	1134000	1134000		1230000	1242000
-    80	1209600	1242000		1286400	1242000
-    85	1285200	1350000		1342800	1350000
-    90	1360800	1458000		1399200	1350000
-    95	1436400	1458000		1455600	1458000
-    100	1512000	1512000		1512000	1512000
-    
-    Tested on Intel i7-3770 CPU @ 3.40GHz and on ARM quad core 1500MHz Krait
-    (Android smartphone).
-    
-    Signed-off-by: Stratos Karafotis <stratosk@semaphore.gr>
-
-commit 8cb8d9305f33f9d5edf9f7e6b71cf3450b991efb
-Author: friedrich420 <kelpidorou@yahoo.com>
-Date:   Fri Jan 30 13:41:08 2015 +0200
-
-    Interactive Governor: Use CPUFREQ_RELATION_C
-
-commit d6b41b79054236dad3ec81480d401e2841d4eea9
-Author: TwistedUmbrella <twistedumbrella@gmail.com>
-Date:   Sun Jan 18 01:01:49 2015 -0500
-
-    cpufreq: convert "index" to corresponding variable
-
-commit ffb2738d9dbd196b8216fd9dd7f020eb6551f51b
-Author: ZION959 <ziontran@gmail.com>
-Date:   Fri Mar 13 22:25:55 2015 -0700
-
-    cpufreq: ondemand: disable cpu-boost when switched to ondemand
-    * ondemand and cpu-boost don't play nice together
-    
-    Thanks to imoseyon
-
-commit 8464d85372d28ff00da37dd078e44457c7b92283
-Author: franciscofranco <franciscofranco.1990@gmail.com>
-Date:   Wed Oct 15 00:38:31 2014 +0000
-
-    cpufreq: cpu-boost: we can hit a small performance loss by not queuing input works less than 150ms apart when our default input work duration is only 40ms, so use that 40ms as a magic value instead of the 150ms minimum interval.
-    
-    Signed-off-by: franciscofranco <franciscofranco.1990@gmail.com>
-
-commit 4de3d09d575dbb97310429a1810511a67663fc43
-Author: imoseyon <imoseyon@gmail.com>
-Date:   Thu Jan 3 15:18:26 2013 -0800
-
-    random: entropy tweaks are all the rage nowadays
-    
-    use non-blocking pool for all
-    
-    http://lwn.net/Articles/489734/
-    
-    Conflicts:
-    
-    	drivers/char/random.c
-    
-    Conflicts:
-    	drivers/char/random.c
-
-commit 94322488257e22cb1d981753437a491d89741ca3
-Author: imoseyon <imoseyon@gmail.com>
-Date:   Fri Jan 4 13:05:20 2013 -0800
-
-    random: prevent add_input from doing anything
-
-commit 11f89b34f0d6e21a6b628605dbef42c47340ce98
-Author: imoseyon <imoseyon@gmail.com>
-Date:   Sun Mar 17 17:53:33 2013 -0700
-
-    random: remove warning
-
-commit bd1f72e68b2a21302d5837cb42319ef1cfb38c03
-Author: ZION959 <ziontran@gmail.com>
-Date:   Fri Mar 13 22:32:44 2015 -0700
-
-    mdss: expose panel on/off events as a global variable (Imoseyon)
-    
-        * to be used for my X governors
-
-commit e8ed20ff9caa2498bf9b614ef01ccf3a1e4ab496
-Author: ZION959 <ziontran@gmail.com>
-Date:   Fri Mar 13 22:41:35 2015 -0700
-
-    cpufreq: interactiveX V4: limit max freq when screen off (Imoseyon)
-    
-        * screen_off_max configurable via sysfs - default 2.27ghz
-
-commit 2605d7a6a979d9ba5f19d63d48a47d57eb76c3c4
-Author: ZION959 <ziontran@gmail.com>
-Date:   Fri Mar 13 22:51:11 2015 -0700
-
-    cpufreq: cpu-boost: allow enable/disable via sysfs
-
-commit d38a85b3cc9b6e5d1a51a3027b86fda5844db050
-Author: Hannes Frederic Sowa <hannes@stressinduktion.org>
-Date:   Mon Nov 11 12:20:33 2013 +0100
-
-    random32: add periodic reseeding
-    
-    The current Tausworthe PRNG is never reseeded with truly random data after
-    the first attempt in late_initcall. As this PRNG is used for some critical
-    random data as e.g. UDP port randomization we should try better and reseed
-    the PRNG once in a while with truly random data from get_random_bytes().
-    
-    When we reseed with prandom_seed we now make also sure to throw the first
-    output away. This suffices the reseeding procedure.
-    
-    The delay calculation is based on a proposal from Eric Dumazet.
-    
-    Joint work with Daniel Borkmann.
-    
-    Cc: Eric Dumazet <eric.dumazet@gmail.com>
-    Cc: Theodore Ts'o <tytso@mit.edu>
-    Signed-off-by: Hannes Frederic Sowa <hannes@stressinduktion.org>
-    Signed-off-by: Daniel Borkmann <dborkman@redhat.com>
-    Signed-off-by: David S. Miller <davem@davemloft.net>
-
-commit 1cc643ee1f3b0b03c225a6f3c8348bf8dad24552
-Author: Hannes Frederic Sowa <hannes@stressinduktion.org>
-Date:   Mon Nov 11 12:20:34 2013 +0100
-
-    random32: add prandom_reseed_late() and call when nonblocking pool becomes initialized
-    
-    The Tausworthe PRNG is initialized at late_initcall time. At that time the
-    entropy pool serving get_random_bytes is not filled sufficiently. This
-    patch adds an additional reseeding step as soon as the nonblocking pool
-    gets marked as initialized.
-    
-    On some machines it might be possible that late_initcall gets called after
-    the pool has been initialized. In this situation we won't reseed again.
-    
-    (A call to prandom_seed_late blocks later invocations of early reseed
-    attempts.)
-    
-    Joint work with Daniel Borkmann.
-    
-    Cc: Eric Dumazet <eric.dumazet@gmail.com>
-    Cc: Theodore Ts'o <tytso@mit.edu>
-    Signed-off-by: Hannes Frederic Sowa <hannes@stressinduktion.org>
-    Signed-off-by: Daniel Borkmann <dborkman@redhat.com>
-    Acked-by: "Theodore Ts'o" <tytso@mit.edu>
-    Signed-off-by: David S. Miller <davem@davemloft.net>
-
-commit dd1f06d51f6fa760d46270d35cd7634b829ae742
-Author: Daniel Borkmann <dborkman@redhat.com>
-Date:   Mon Nov 11 12:20:35 2013 +0100
-
-    random32: move rnd_state to linux/random.h
-    
-    struct rnd_state got mistakenly pulled into uapi header. It is not
-    used anywhere and does also not belong there!
-    
-    Commit 5960164fde ("lib/random32: export pseudo-random number
-    generator for modules"), the last commit on rnd_state before it
-    got moved to uapi, says:
-    
-      This patch moves the definition of struct rnd_state and the inline
-      __seed() function to linux/random.h.  It renames the static __random32()
-      function to prandom32() and exports it for use in modules.
-    
-    Hence, the structure was moved from lib/random32.c to linux/random.h
-    so that it can be used within modules (FCoE-related code in this
-    case), but not from user space. However, it seems to have been
-    mistakenly moved to uapi header through the uapi script. Since no-one
-    should make use of it from the linux headers, move the structure back
-    to the kernel for internal use, so that it can be modified on demand.
-    
-    Joint work with Hannes Frederic Sowa.
-    
-    Cc: Joe Eykholt <jeykholt@cisco.com>
-    Signed-off-by: Daniel Borkmann <dborkman@redhat.com>
-    Signed-off-by: Hannes Frederic Sowa <hannes@stressinduktion.org>
-    Signed-off-by: David S. Miller <davem@davemloft.net>
-
-commit 72a2b40e472e69475d09e417b2a71eb28e59da04
-Author: Daniel Borkmann <dborkman@redhat.com>
-Date:   Mon Nov 11 12:20:36 2013 +0100
-
-    random32: upgrade taus88 generator to taus113 from errata paper
-    
-    Since we use prandom*() functions quite often in networking code
-    i.e. in UDP port selection, netfilter code, etc, upgrade the PRNG
-    from Pierre L'Ecuyer's original paper "Maximally Equidistributed
-    Combined Tausworthe Generators", Mathematics of Computation, 65,
-    213 (1996), 203--213 to the version published in his errata paper [1].
-    
-    The Tausworthe generator is a maximally-equidistributed generator,
-    that is fast and has good statistical properties [1].
-    
-    The version presented there upgrades the 3 state LFSR to a 4 state
-    LFSR with increased periodicity from about 2^88 to 2^113. The
-    algorithm is presented in [1] by the very same author who also
-    designed the original algorithm in [2].
-    
-    Also, by increasing the state, we make it a bit harder for attackers
-    to "guess" the PRNGs internal state. See also discussion in [3].
-    
-    Now, as we use this sort of weak initialization discussed in [3]
-    only between core_initcall() until late_initcall() time [*] for
-    prandom32*() users, namely in prandom_init(), it is less relevant
-    from late_initcall() onwards as we overwrite seeds through
-    prandom_reseed() anyways with a seed source of higher entropy, that
-    is, get_random_bytes(). In other words, a exhaustive keysearch of
-    96 bit would be needed. Now, with the help of this patch, this
-    state-search increases further to 128 bit. Initialization needs
-    to make sure that s1 > 1, s2 > 7, s3 > 15, s4 > 127.
-    
-    taus88 and taus113 algorithm is also part of GSL. I added a test
-    case in the next patch to verify internal behaviour of this patch
-    with GSL and ran tests with the dieharder 3.31.1 RNG test suite:
-    
-    $ dieharder -g 052 -a -m 10 -s 1 -S 4137730333 #taus88
-    $ dieharder -g 054 -a -m 10 -s 1 -S 4137730333 #taus113
-    
-    With this seed configuration, in order to compare both, we get
-    the following differences:
-    
-    algorithm                 taus88           taus113
-    rands/second [**]         1.61e+08         1.37e+08
-    sts_serial(4, 1st run)    WEAK             PASSED
-    sts_serial(9, 2nd run)    WEAK             PASSED
-    rgb_lagged_sum(31)        WEAK             PASSED
-    
-    We took out diehard_sums test as according to the authors it is
-    considered broken and unusable [4]. Despite that and the slight
-    decrease in performance (which is acceptable), taus113 here passes
-    all 113 tests (only rgb_minimum_distance_5 in WEAK, the rest PASSED).
-    In general, taus/taus113 is considered "very good" by the authors
-    of dieharder [5].
-    
-    The papers [1][2] states a single warm-up step is sufficient by
-    running quicktaus once on each state to ensure proper initialization
-    of ~s_{0}:
-    
-    Our selection of (s) according to Table 1 of [1] row 1 holds the
-    condition L - k <= r - s, that is,
-    
-      (32 32 32 32) - (31 29 28 25) <= (25 27 15 22) - (18 2 7 13)
-    
-    with r = k - q and q = (6 2 13 3) as also stated by the paper.
-    So according to [2] we are safe with one round of quicktaus for
-    initialization. However we decided to include the warm-up phase
-    of the PRNG as done in GSL in every case as a safety net. We also
-    use the warm up phase to make the output of the RNG easier to
-    verify by the GSL output.
-    
-    In prandom_init(), we also mix random_get_entropy() into it, just
-    like drivers/char/random.c does it, jiffies ^ random_get_entropy().
-    random-get_entropy() is get_cycles(). xor is entropy preserving so
-    it is fine if it is not implemented by some architectures.
-    
-    Note, this PRNG is *not* used for cryptography in the kernel, but
-    rather as a fast PRNG for various randomizations i.e. in the
-    networking code, or elsewhere for debugging purposes, for example.
-    
-    [*]: In order to generate some "sort of pseduo-randomness", since
-    get_random_bytes() is not yet available for us, we use jiffies and
-    initialize states s1 - s3 with a simple linear congruential generator
-    (LCG), that is x <- x * 69069; and derive s2, s3, from the 32bit
-    initialization from s1. So the above quote from [3] accounts only
-    for the time from core to late initcall, not afterwards.
-    [**] Single threaded run on MacBook Air w/ Intel Core i5-3317U
-    
-     [1] http://www.iro.umontreal.ca/~lecuyer/myftp/papers/tausme2.ps
-     [2] http://www.iro.umontreal.ca/~lecuyer/myftp/papers/tausme.ps
-     [3] http://thread.gmane.org/gmane.comp.encryption.general/12103/
-     [4] http://code.google.com/p/dieharder/source/browse/trunk/libdieharder/diehard_sums.c?spec=svn490&r=490#20
-     [5] http://www.phy.duke.edu/~rgb/General/dieharder.php
-    
-    Joint work with Hannes Frederic Sowa.
-    
-    Cc: Florian Weimer <fweimer@redhat.com>
-    Cc: Theodore Ts'o <tytso@mit.edu>
-    Signed-off-by: Daniel Borkmann <dborkman@redhat.com>
-    Signed-off-by: Hannes Frederic Sowa <hannes@stressinduktion.org>
-    Signed-off-by: David S. Miller <davem@davemloft.net>
-
-commit b19f89d6cdf6cf41aff134f9f020b576622d6b87
-Author: Daniel Borkmann <dborkman@redhat.com>
-Date:   Mon Nov 11 12:20:37 2013 +0100
-
-    random32: add test cases for taus113 implementation
-    
-    We generated a battery of 100 test cases from GSL taus113 implemention
-    and compare the results from a particular seed and a particular
-    iteration with our implementation in the kernel. We have verified on
-    32 and 64 bit machines that our taus113 kernel implementation gives
-    same results as GSL taus113 implementation:
-    
-      [    0.147370] prandom: seed boundary self test passed
-      [    0.148078] prandom: 100 self tests passed
-    
-    This is a Kconfig option that is disabled on default, just like the
-    crc32 init selftests in order to not unnecessary slow down boot process.
-    We also refactored out prandom_seed_very_weak() as it's now used in
-    multiple places in order to reduce redundant code.
-    
-    GSL code we used for generating test cases:
-    
-      int i, j;
-      srand(time(NULL));
-      for (i = 0; i < 100; ++i) {
-        int iteration = 500 + (rand() % 500);
-        gsl_rng_default_seed = rand() + 1;
-        gsl_rng *r = gsl_rng_alloc(gsl_rng_taus113);
-        printf("\t{ %lu, ", gsl_rng_default_seed);
-        for (j = 0; j < iteration - 1; ++j)
-          gsl_rng_get(r);
-        printf("%u, %lu },\n", iteration, gsl_rng_get(r));
-        gsl_rng_free(r);
-      }
-    
-    Joint work with Hannes Frederic Sowa.
-    
-    Cc: Florian Weimer <fweimer@redhat.com>
-    Cc: Theodore Ts'o <tytso@mit.edu>
-    Signed-off-by: Daniel Borkmann <dborkman@redhat.com>
-    Signed-off-by: Hannes Frederic Sowa <hannes@stressinduktion.org>
-    Signed-off-by: David S. Miller <davem@davemloft.net>
-
-commit 43687b6387c104c64a6288b194af56ed2f01ace4
-Author: Daniel Borkmann <dborkman@redhat.com>
-Date:   Tue Nov 12 23:45:41 2013 +0100
-
-    random32: add __init prefix to prandom_start_seed_timer
-    
-    We only call that in functions annotated with __init, so add __init
-    prefix in prandom_start_seed_timer() as well, so that the kernel can
-    make use of this hint and we can possibly free up resources after it's
-    usage. And since it's an internal function rename it to
-    __prandom_start_seed_timer().
-    
-    Signed-off-by: Daniel Borkmann <dborkman@redhat.com>
-    Signed-off-by: Hannes Frederic Sowa <hannes@stressinduktion.org>
-    Signed-off-by: David S. Miller <davem@davemloft.net>
-
-commit eb6f7783226af8f01f83e3e762862124d172d34a
-Author: Daniel Borkmann <dborkman@redhat.com>
-Date:   Tue Nov 12 23:45:42 2013 +0100
-
-    random32: use msecs_to_jiffies for reseed timer
-    
-    Use msecs_to_jiffies, for these calculations as different HZ
-    considerations are taken into account for conversion of the timer
-    shot, and also it makes the code more readable.
-    
-    Signed-off-by: Daniel Borkmann <dborkman@redhat.com>
-    Signed-off-by: Hannes Frederic Sowa <hannes@stressinduktion.org>
-    Signed-off-by: David S. Miller <davem@davemloft.net>
-
-commit bd1358c87decb3ad2eab5e5b41a0f4fdbc47ad0b
-Author: Sasha Levin <sasha.levin@oracle.com>
-Date:   Fri Mar 28 17:38:42 2014 +0100
-
-    random32: avoid attempt to late reseed if in the middle of seeding
-    
-    Commit 4af712e8df ("random32: add prandom_reseed_late() and call when
-    nonblocking pool becomes initialized") has added a late reseed stage
-    that happens as soon as the nonblocking pool is marked as initialized.
-    
-    This fails in the case that the nonblocking pool gets initialized
-    during __prandom_reseed()'s call to get_random_bytes(). In that case
-    we'd double back into __prandom_reseed() in an attempt to do a late
-    reseed - deadlocking on 'lock' early on in the boot process.
-    
-    Instead, just avoid even waiting to do a reseed if a reseed is already
-    occuring.
-    
-    Fixes: 4af712e8df99 ("random32: add prandom_reseed_late() and call when nonblocking pool becomes initialized")
-    Signed-off-by: Sasha Levin <sasha.levin@oracle.com>
-    Acked-by: Hannes Frederic Sowa <hannes@stressinduktion.org>
-    Signed-off-by: Daniel Borkmann <dborkman@redhat.com>
-    Signed-off-by: David S. Miller <davem@davemloft.net>
-
-commit 9e82f8d4c880cba075895d44a66746a392b28f2f
-Author: Daniel Borkmann <dborkman@redhat.com>
-Date:   Thu Apr 3 14:49:08 2014 -0700
-
-    lib/random32.c: minor cleanups and kdoc fix
-    
-    These are just some very minor and misc cleanups in the PRNG.  In
-    prandom_u32() we store the result in an unsigned long which is
-    unnecessary as it should be u32 instead that we get from
-    prandom_u32_state().  prandom_bytes_state()'s comment is in kdoc format,
-    so change it into such as it's done everywhere else.  Also, use the
-    normal comment style for the header comment.  Last but not least for
-    readability, add some newlines.
-    
-    Signed-off-by: Daniel Borkmann <dborkman@redhat.com>
-    Cc: Joe Perches <joe@perches.com>
-    Signed-off-by: Andrew Morton <akpm@linux-foundation.org>
-    Signed-off-by: Linus Torvalds <torvalds@linux-foundation.org>
-
-commit bacc848ba8d658cd0836dbaf24213d1292a8ded6
-Author: Hannes Frederic Sowa <hannes@stressinduktion.org>
-Date:   Mon Jul 28 14:01:38 2014 +0200
-
-    random32: mix in entropy from core to late initcall
-    
-    Currently, we have a 3-stage seeding process in prandom():
-    
-    Phase 1 is from the early actual initialization of prandom()
-    subsystem which happens during core_initcall() and remains
-    most likely until the beginning of late_initcall() phase.
-    Here, the system might not have enough entropy available
-    for seeding with strong randomness from the random driver.
-    That means, we currently have a 32bit weak LCG() seeding
-    the PRNG status register 1 and mixing that successively
-    into the other 3 registers just to get it up and running.
-    
-    Phase 2 starts with late_initcall() phase resp. when the
-    random driver has initialized its non-blocking pool with
-    enough entropy. At that time, we throw away *all* inner
-    state from its 4 registers and do a full reseed with strong
-    randomness.
-    
-    Phase 3 starts right after that and does a periodic reseed
-    with random slack of status register 1 by a strong random
-    source again.
-    
-    A problem in phase 1 is that during bootup data structures
-    can be initialized, e.g. on module load time, and thus access
-    a weakly seeded prandom and are never changed for the rest
-    of their live-time, thus carrying along the results from a
-    week seed. Lets make sure that current but also future users
-    access a possibly better early seeded prandom.
-    
-    This patch therefore improves phase 1 by trying to make it
-    more 'unpredictable' through mixing in seed from a possible
-    hardware source. Now, the mix-in xors inner state with the
-    outcome of either of the two functions arch_get_random_{,seed}_int(),
-    preferably arch_get_random_seed_int() as it likely represents
-    a non-deterministic random bit generator in hw rather than
-    a cryptographically secure PRNG in hw. However, not all might
-    have the first one, so we use the PRNG as a fallback if
-    available. As we xor the seed into the current state, the
-    worst case would be that a hardware source could be unverifiable
-    compromised or backdoored. In that case nevertheless it
-    would be as good as our original early seeding function
-    prandom_seed_very_weak() since we mix through xor which is
-    entropy preserving.
-    
-    Joint work with Daniel Borkmann.
-    
-    Signed-off-by: Daniel Borkmann <dborkman@redhat.com>
-    Signed-off-by: Hannes Frederic Sowa <hannes@stressinduktion.org>
-    Signed-off-by: David S. Miller <davem@davemloft.net>
-
-commit 7af2bbadfbda68f43c910890418925f93e7678e7
-Author: Daniel Borkmann <dborkman@redhat.com>
-Date:   Sat Aug 23 17:03:28 2014 +0200
-
-    random32: improvements to prandom_bytes
-    
-    This patch addresses a couple of minor items, mostly addesssing
-    prandom_bytes(): 1) prandom_bytes{,_state}() should use size_t
-    for length arguments, 2) We can use put_unaligned() when filling
-    the array instead of open coding it [ perhaps some archs will
-    further benefit from their own arch specific implementation when
-    GCC cannot make up for it ], 3) Fix a typo, 4) Better use unsigned
-    int as type for getting the arch seed, 5) Make use of
-    prandom_u32_max() for timer slack.
-    
-    Regarding the change to put_unaligned(), callers of prandom_bytes()
-    which internally invoke prandom_bytes_state(), don't bother as
-    they expect the array to be filled randomly and don't have any
-    control of the internal state what-so-ever (that's also why we
-    have periodic reseeding there, etc), so they really don't care.
-    
-    Now for the direct callers of prandom_bytes_state(), which
-    are solely located in test cases for MTD devices, that is,
-    drivers/mtd/tests/{oobtest.c,pagetest.c,subpagetest.c}:
-    
-    These tests basically fill a test write-vector through
-    prandom_bytes_state() with an a-priori defined seed each time
-    and write that to a MTD device. Later on, they set up a read-vector
-    and read back that blocks from the device. So in the verification
-    phase, the write-vector is being re-setup [ so same seed and
-    prandom_bytes_state() called ], and then memcmp()'ed against the
-    read-vector to check if the data is the same.
-    
-    Akinobu, Lothar and I also tested this patch and it runs through
-    the 3 relevant MTD test cases w/o any errors on the nandsim device
-    (simulator for MTD devs) for x86_64, ppc64, ARM (i.MX28, i.MX53
-    and i.MX6):
-    
-      # modprobe nandsim first_id_byte=0x20 second_id_byte=0xac \
-                         third_id_byte=0x00 fourth_id_byte=0x15
-      # modprobe mtd_oobtest dev=0
-      # modprobe mtd_pagetest dev=0
-      # modprobe mtd_subpagetest dev=0
-    
-    We also don't have any users depending directly on a particular
-    result of the PRNG (except the PRNG self-test itself), and that's
-    just fine as it e.g. allowed us easily to do things like upgrading
-    from taus88 to taus113.
-    
-    Signed-off-by: Daniel Borkmann <dborkman@redhat.com>
-    Tested-by: Akinobu Mita <akinobu.mita@gmail.com>
-    Tested-by: Lothar Waßmann <LW@KARO-electronics.de>
-    Cc: Hannes Frederic Sowa <hannes@stressinduktion.org>
-    Signed-off-by: David S. Miller <davem@davemloft.net>
-
-commit 2b8b7d0dd2dad846df41b806b6d6d6bb7fe5e06e
-Author: Daniel Borkmann <dborkman@redhat.com>
-Date:   Wed Jan 22 02:29:39 2014 +0100
-
-    random32: add prandom_u32_max and convert open coded users
-    
-    Many functions have open coded a function that returns a random
-    number in range [0,N-1]. Under the assumption that we have a PRNG
-    such as taus113 with being well distributed in [0, ~0U] space,
-    we can implement such a function as uword t = (n*m')>>32, where
-    m' is a random number obtained from PRNG, n the right open interval
-    border and t our resulting random number, with n,m',t in u32 universe.
-    
-    Lets go with Joe and simply call it prandom_u32_max(), although
-    technically we have an right open interval endpoint, but that we
-    have documented. Other users can further be migrated to the new
-    prandom_u32_max() function later on; for now, we need to make sure
-    to migrate reciprocal_divide() users for the reciprocal_divide()
-    follow-up fixup since their function signatures are going to change.
-    
-    Joint work with Hannes Frederic Sowa.
-    
-    Cc: Jakub Zawadzki <darkjames-ws@darkjames.pl>
-    Cc: Eric Dumazet <eric.dumazet@gmail.com>
-    Cc: linux-kernel@vger.kernel.org
-    Signed-off-by: Hannes Frederic Sowa <hannes@stressinduktion.org>
-    Signed-off-by: Daniel Borkmann <dborkman@redhat.com>
-    Signed-off-by: David S. Miller <davem@davemloft.net>
-    
-    Conflicts:
-    	net/packet/af_packet.c
-
-commit 73388caec760bc1e11317ebb5677f94c8817cf4b
-Author: Theodore Ts'o <tytso@mit.edu>
-Date:   Sat Sep 21 13:58:22 2013 -0400
-
-    random: allow architectures to optionally define random_get_entropy()
-    
-    Allow architectures which have a disabled get_cycles() function to
-    provide a random_get_entropy() function which provides a fine-grained,
-    rapidly changing counter that can be used by the /dev/random driver.
-    
-    For example, an architecture might have a rapidly changing register
-    used to control random TLB cache eviction, or DRAM refresh that
-    doesn't meet the requirements of get_cycles(), but which is good
-    enough for the needs of the random driver.
-    
-    Signed-off-by: "Theodore Ts'o" <tytso@mit.edu>
-    Cc: stable@vger.kernel.org
-
-commit b1f8885d80d1456c2c7d8274e4b8e7524b3273b6
-Author: imoseyon <imoseyon@gmail.com>
-Date:   Sat Dec 13 16:39:49 2014 -0800
-
-    random32: use e/frandom for reseeding, and a merge fixup
-
-commit 3279f713ddfec7c8965006694be23e8f14be7e67
-Author: ZION959 <ziontran@gmail.com>
-Date:   Sat Mar 14 00:50:51 2015 -0700
-
-    binfmt_elf: use prandom - do not deplete entropy
-
-commit 4e4111ce7f01f0389e1921cfcb2f7abb29172ddf
-Author: imoseyon <imoseyon@gmail.com>
-Date:   Sat Dec 13 16:47:03 2014 -0800
-
-    fs: ext4: use e/frandom, do not deplete entropy
-
-commit c325ad57ce89dc7a57aef276fe22e1610f7c2d66
-Author: imoseyon <imoseyon@gmail.com>
-Date:   Sat Dec 13 16:53:13 2014 -0800
-
-    random.h: declare erandom function
-
-commit 97ee2f3c24fcc6f1326fe0fb0a39ee40b171fb57
-Author: imoseyon <imoseyon@gmail.com>
-Date:   Sat Dec 13 16:53:42 2014 -0800
-
-    net/packet: merge fix
-
-commit aaf08b1315d53bdfdec5dbdadbd06a6e1fef29c7
-Author: imoseyon <imoseyon@gmail.com>
-Date:   Sun Dec 14 10:36:51 2014 -0800
-
-    random: sprinkle e/f/prandom in places that deplete entropy often
-
-commit 0ee23d2a63bd75ca908347808cea6de91c94ccac
-Author: ZION959 <ziontran@gmail.com>
-Date:   Sat Mar 14 16:39:24 2015 -0700
-
-    base kernel v.05
-
-commit c72ab9dc97103bf3e3f5341fe6df68eb7606c697
-Author: ZION959 <ziontran@gmail.com>
-Date:   Sat Mar 14 17:25:01 2015 -0700
-
-    update defconfig
-
-commit 57e8cfeb533977bcdb580640f6fae8a178c40b7f
-Author: ZION959 <ziontran@gmail.com>
-Date:   Sun Mar 15 22:46:48 2015 -0700
-
-    msm cpu frequency limit (faux123)
-
-commit 088ba7983b461fc154891b67bae97acbdfc20a86
+commit c8d5efd511351770a048aa9a5a9f021524920141
 Author: ZION959 <ziontran@gmail.com>
 Date:   Mon Mar 16 00:39:00 2015 -0700
 
@@ -2333,7 +1512,7 @@ Date:   Mon Mar 16 00:39:00 2015 -0700
     driver
     going forward
 
-commit 2735862f4a11f44d71e0fdea4d46c1f005850521
+commit 1d66d65cf12ba0849221e1cfeb86e62a862389ba
 Author: ZION959 <ziontran@gmail.com>
 Date:   Mon Mar 16 11:36:09 2015 -0700
 
@@ -2341,13 +1520,13 @@ Date:   Mon Mar 16 11:36:09 2015 -0700
     
     Signed-off-by: flar2 <asegaert@gmail.com> (reverted from commit 564caaaa8c213fc6fdf49483dd5c115db93b733c)
 
-commit ea2c9eefdc7d8f230268451af43bf9ab0ecded57
+commit 2a6d6900e306bff7539287261681d12960b96518
 Author: TwistedUmbrella <twistedumbrella@gmail.com>
 Date:   Tue Nov 4 13:17:14 2014 -0500
 
     cpufreq: Initial setup for new gov [Umbrella Core] (TwistedUmbella)
 
-commit f86c87affdf4f4df7a2a540efbfbde64e344b3bc
+commit 39dcc80d4e1fd2173fe1d1dcf29c0f7055387ec7
 Author: ZION959 <ziontran@gmail.com>
 Date:   Mon Mar 16 20:19:00 2015 -0700
 
@@ -2355,31 +1534,19 @@ Date:   Mon Mar 16 20:19:00 2015 -0700
     
     elementalx governor: disable cpuboost
 
-commit fdf4d9e9d92698d1de0e902ef5fe951bffc3f290
-Author: ZION959 <ziontran@gmail.com>
-Date:   Mon Mar 16 20:25:19 2015 -0700
-
-    add Led Control
-    
-    Thanks to Twistedumbrella and Ktoonsez
-    
-    Conflicts:
-    
-    	drivers/leds/leds-max77843-rgb.c
-
-commit 584d4a1916d44452d281ed1d23e7f5f4446d2d80
+commit ebb561a0ace9a68f7679ce89f99cb499b77b8ad1
 Author: Pavel <nadyaivanova14@gmail.com>
 Date:   Tue Dec 30 20:41:58 2014 +0100
 
     include: linux: add Sysfs_helpers: Allow negative values
 
-commit a197344e99cb641da6832eb54e45a0d61e4f62af
+commit 0e7cfd9972bfa861f615b1efaaf14aa2b11e0ae1
 Author: ZION959 <ziontran@gmail.com>
 Date:   Mon Mar 16 19:32:35 2015 -0700
 
     update shamu interactive governor
 
-commit 719c1d0c6e16b0ee2f88ec3e3ae22e91b79c3fde
+commit 200f532857eca5d3923d4d5b7e4f5188d37b4a4e
 Author: franciscofranco <franciscofranco.1990@gmail.com>
 Date:   Mon Dec 29 01:57:37 2014 +0000
 
@@ -2388,7 +1555,7 @@ Date:   Mon Dec 29 01:57:37 2014 +0000
     Signed-off-by: franciscofranco <franciscofranco.1990@gmail.com>
     Signed-off-by: flar2 <asegaert@gmail.com>
 
-commit 1dbe5610c3bdc64a789a4694077f68e82f4b73c9
+commit 18ea5321e43032832508c50617051997a0cd840d
 Author: myfluxi <linflux@arcor.de>
 Date:   Wed Jan 1 11:31:16 2014 +0100
 
@@ -2398,7 +1565,7 @@ Date:   Wed Jan 1 11:31:16 2014 +0100
     
     Signed-off-by: flar2 <asegaert@gmail.com>
 
-commit 9eb04bf27585503a17da4cbcb31efd8e5bf0fc59
+commit e9e86d14cc887ec3f3b993f699b90642788a5dff
 Author: myfluxi <linflux@arcor.de>
 Date:   Wed Jan 8 01:25:14 2014 +0100
 
@@ -2411,7 +1578,7 @@ Date:   Wed Jan 8 01:25:14 2014 +0100
     
     Signed-off-by: flar2 <asegaert@gmail.com>
 
-commit 3dabc288c75e77c5261bab229d638ac7a91f6eab
+commit 862bec2c60b0466cff83213d2e68e8e0ca252e09
 Author: ZION959 <ziontran@gmail.com>
 Date:   Mon Mar 16 11:48:48 2015 -0700
 
@@ -2425,7 +1592,7 @@ Date:   Mon Mar 16 11:48:48 2015 -0700
     Signed-off-by: Arianna Avanzini <avanzini.arianna@gmail.com>
     Signed-off-by: flar2 <asegaert@gmail.com>
 
-commit 6b5bf205f46a8e67129342be572b1782e58e76cb
+commit 113d1bb6a8e2cd40cbfc97469d66b0dda1bf8f52
 Author: Paolo Valente <paolo.valente@unimore.it>
 Date:   Thu May 9 19:10:02 2013 +0200
 
@@ -2485,7 +1652,7 @@ Date:   Thu May 9 19:10:02 2013 +0200
     Signed-off-by: Arianna Avanzini <avanzini.arianna@gmail.com>
     Signed-off-by: flar2 <asegaert@gmail.com>
 
-commit 9ea62b2c08144842a97b95a177557c3711dfd9e1
+commit 07deb51e523d1fcd3bb8ac6d4d924b4fef763cba
 Author: Mauro Andreolini <mauro.andreolini@unimore.it>
 Date:   Sun Oct 19 03:10:48 2014 +0200
 
@@ -2522,17 +1689,403 @@ Date:   Sun Oct 19 03:10:48 2014 +0200
     Signed-off-by: Paolo Valente <paolo.valente@unimore.it>
     Signed-off-by: flar2 <asegaert@gmail.com>
 
-commit 3c89a7a86eb5f7fafcd4ca8bd28af8e8b79ebd08
+commit 6e1387209167fa87d8e2b86927bfb99325e303cf
 Author: ZION959 <ziontran@gmail.com>
 Date:   Mon Mar 16 20:56:07 2015 -0700
 
     Added sio, fifo, vr and zen I/O schedulers
 
-commit 50c980376009f4657636f5177edeefb40ff99613
+commit a0c3170614a0265a41d08cb8497b7634d181f1fc
 Author: ZION959 <ziontran@gmail.com>
 Date:   Tue Mar 17 18:27:12 2015 -0700
 
     base CMRemix v1.2
+
+commit f8ef7d230d80b7b51fb49a5dec1f46a87d29b3c8
+Author: ZION959 <ziontran@gmail.com>
+Date:   Sat Mar 21 00:41:49 2015 -0700
+
+    add MDNIE Lite Control
+    
+    Credits to Yank555.lu and StarKissed
+
+commit 0650ba495a76555adfd8a9c2a5076121be8c166b
+Author: Junxiao Bi <junxiao.bi@oracle.com>
+Date:   Wed Sep 11 14:23:04 2013 -0700
+
+    writeback: fix race that cause writeback hung
+    
+    There is a race between mark inode dirty and writeback thread, see the
+    following scenario.  In this case, writeback thread will not run though
+    there is dirty_io.
+    
+    __mark_inode_dirty()                                          bdi_writeback_workfn()
+    	...                                                       	...
+    	spin_lock(&inode->i_lock);
+    	...
+    	if (bdi_cap_writeback_dirty(bdi)) {
+    	    <<< assume wb has dirty_io, so wakeup_bdi is false.
+    	    <<< the following inode_dirty also have wakeup_bdi false.
+    	    if (!wb_has_dirty_io(&bdi->wb))
+    		    wakeup_bdi = true;
+    	}
+    	spin_unlock(&inode->i_lock);
+    	                                                            <<< assume last dirty_io is removed here.
+    	                                                            pages_written = wb_do_writeback(wb);
+    	                                                            ...
+    	                                                            <<< work_list empty and wb has no dirty_io,
+    	                                                            <<< delayed_work will not be queued.
+    	                                                            if (!list_empty(&bdi->work_list) ||
+    	                                                                (wb_has_dirty_io(wb) && dirty_writeback_interval))
+    	                                                                queue_delayed_work(bdi_wq, &wb->dwork,
+    	                                                                    msecs_to_jiffies(dirty_writeback_interval * 10));
+    	spin_lock(&bdi->wb.list_lock);
+    	inode->dirtied_when = jiffies;
+    	<<< new dirty_io is added.
+    	list_move(&inode->i_wb_list, &bdi->wb.b_dirty);
+    	spin_unlock(&bdi->wb.list_lock);
+    
+    	<<< though there is dirty_io, but wakeup_bdi is false,
+    	<<< so writeback thread will not be waked up and
+    	<<< the new dirty_io will not be flushed.
+    	if (wakeup_bdi)
+    	    bdi_wakeup_thread_delayed(bdi);
+    
+    Writeback will run until there is a new flush work queued.  This may cause
+    a lot of dirty pages stay in memory for a long time.
+    
+    Signed-off-by: Junxiao Bi <junxiao.bi@oracle.com>
+    Reviewed-by: Jan Kara <jack@suse.cz>
+    Cc: Fengguang Wu <fengguang.wu@intel.com>
+    Signed-off-by: Andrew Morton <akpm@linux-foundation.org>
+    Signed-off-by: Linus Torvalds <torvalds@linux-foundation.org>
+    Signed-off-by: flar2 <asegaert@gmail.com>
+
+commit a89fbd44b2ab560f838629fdc4b0fc172aa7c19d
+Author: Namjae Jeon <namjae.jeon@samsung.com>
+Date:   Wed Jan 2 20:00:40 2013 -0600
+
+    writeback: fix writeback cache thrashing
+    
+    Consider Process A: huge I/O on sda
+            doing heavy write operation - dirty memory becomes more
+            than dirty_background_ratio
+            on HDD - flusher thread flush-8:0
+    
+    Consider Process B: small I/O on sdb
+            doing while [1]; read 1024K + rewrite 1024K + sleep 2sec
+            on Flash device - flusher thread flush-8:16
+    
+    As Process A is a heavy dirtier, dirty memory becomes more
+    than dirty_background_thresh. Due to this, below check becomes
+    true(checking global_page_state in over_bground_thresh)
+    for all bdi devices(even for very small dirtied bdi - sdb):
+    
+    In this case, even small cached data on 'sdb' is forced to flush
+    and writeback cache thrashing happens.
+    
+    When we added debug prints inside above 'if' condition and ran
+    above Process A(heavy dirtier on bdi with flush-8:0) and
+    Process B(1024K frequent read/rewrite on bdi with flush-8:16)
+    we got below prints:
+    
+    [Test setup: ARM dual core CPU, 512 MB RAM]
+    
+    [over_bground_thresh]: wakeup flush-8:0 : BDI_RECLAIMABLE =  56064 KB
+    [over_bground_thresh]: wakeup flush-8:0 : BDI_RECLAIMABLE =  56704 KB
+    [over_bground_thresh]: wakeup flush-8:0 : BDI_RECLAIMABLE = 84720 KB
+    [over_bground_thresh]: wakeup flush-8:0 : BDI_RECLAIMABLE = 94720 KB
+    [over_bground_thresh]: wakeup flush-8:16 : BDI_RECLAIMABLE =   384 KB
+    [over_bground_thresh]: wakeup flush-8:16 : BDI_RECLAIMABLE =   960 KB
+    [over_bground_thresh]: wakeup flush-8:16 : BDI_RECLAIMABLE =    64 KB
+    [over_bground_thresh]: wakeup flush-8:0 : BDI_RECLAIMABLE = 92160 KB
+    [over_bground_thresh]: wakeup flush-8:16 : BDI_RECLAIMABLE =   256 KB
+    [over_bground_thresh]: wakeup flush-8:16 : BDI_RECLAIMABLE =   768 KB
+    [over_bground_thresh]: wakeup flush-8:16 : BDI_RECLAIMABLE =    64 KB
+    [over_bground_thresh]: wakeup flush-8:16 : BDI_RECLAIMABLE =   256 KB
+    [over_bground_thresh]: wakeup flush-8:16 : BDI_RECLAIMABLE =   320 KB
+    [over_bground_thresh]: wakeup flush-8:16 : BDI_RECLAIMABLE =     0 KB
+    [over_bground_thresh]: wakeup flush-8:0 : BDI_RECLAIMABLE = 92032 KB
+    [over_bground_thresh]: wakeup flush-8:0 : BDI_RECLAIMABLE = 91968 KB
+    [over_bground_thresh]: wakeup flush-8:16 : BDI_RECLAIMABLE =   192 KB
+    [over_bground_thresh]: wakeup flush-8:16 : BDI_RECLAIMABLE =  1024 KB
+    [over_bground_thresh]: wakeup flush-8:16 : BDI_RECLAIMABLE =    64 KB
+    [over_bground_thresh]: wakeup flush-8:16 : BDI_RECLAIMABLE =   192 KB
+    [over_bground_thresh]: wakeup flush-8:16 : BDI_RECLAIMABLE =   576 KB
+    [over_bground_thresh]: wakeup flush-8:16 : BDI_RECLAIMABLE =     0 KB
+    [over_bground_thresh]: wakeup flush-8:0 : BDI_RECLAIMABLE = 84352 KB
+    [over_bground_thresh]: wakeup flush-8:16 : BDI_RECLAIMABLE =   192 KB
+    [over_bground_thresh]: wakeup flush-8:16 : BDI_RECLAIMABLE =   512 KB
+    [over_bground_thresh]: wakeup flush-8:16 : BDI_RECLAIMABLE =     0 KB
+    [over_bground_thresh]: wakeup flush-8:0 : BDI_RECLAIMABLE = 92608 KB
+    [over_bground_thresh]: wakeup flush-8:0 : BDI_RECLAIMABLE = 92544 KB
+    
+    As mentioned in above log, when global dirty memory > global background_thresh
+    small cached data is also forced to flush by flush-8:16.
+    If removing global background_thresh checking code, we can reduce cache
+    thrashing of frequently used small data.
+    And It will be great if we can reserve a portion of writeback cache using
+    min_ratio.
+    
+    After applying patch:
+    $ echo 5 > /sys/block/sdb/bdi/min_ratio
+    $ cat /sys/block/sdb/bdi/min_ratio
+    5
+    [over_bground_thresh]: wakeup flush-8:0 : BDI_RECLAIMABLE =  56064 KB
+    [over_bground_thresh]: wakeup flush-8:0 : BDI_RECLAIMABLE =  56704 KB
+    [over_bground_thresh]: wakeup flush-8:0 : BDI_RECLAIMABLE =  84160 KB
+    [over_bground_thresh]: wakeup flush-8:0 : BDI_RECLAIMABLE =  96960 KB
+    [over_bground_thresh]: wakeup flush-8:0 : BDI_RECLAIMABLE =  94080 KB
+    [over_bground_thresh]: wakeup flush-8:0 : BDI_RECLAIMABLE =  93120 KB
+    [over_bground_thresh]: wakeup flush-8:0 : BDI_RECLAIMABLE =  93120 KB
+    [over_bground_thresh]: wakeup flush-8:0 : BDI_RECLAIMABLE =  91520 KB
+    [over_bground_thresh]: wakeup flush-8:0 : BDI_RECLAIMABLE =  89600 KB
+    [over_bground_thresh]: wakeup flush-8:0 : BDI_RECLAIMABLE =  93696 KB
+    [over_bground_thresh]: wakeup flush-8:0 : BDI_RECLAIMABLE =  93696 KB
+    [over_bground_thresh]: wakeup flush-8:0 : BDI_RECLAIMABLE =  72960 KB
+    [over_bground_thresh]: wakeup flush-8:0 : BDI_RECLAIMABLE =  90624 KB
+    [over_bground_thresh]: wakeup flush-8:0 : BDI_RECLAIMABLE =  90624 KB
+    [over_bground_thresh]: wakeup flush-8:0 : BDI_RECLAIMABLE =  90688 KB
+    
+    As mentioned in the above logs, once cache is reserved for Process B,
+    and patch is applied there is less writeback cache thrashing on sdb
+    by frequent forced writeback by flush-8:16 in over_bground_thresh.
+    
+    After all, small cached data will be flushed by periodic writeback
+    once every dirty_writeback_interval.
+    
+    Suggested-by: Wanpeng Li <liwanp@linux.vnet.ibm.com>
+    Signed-off-by: Namjae Jeon <namjae.jeon@samsung.com>
+    Signed-off-by: Vivek Trivedi <t.vivek@samsung.com>
+    Signed-off-by: flar2 <asegaert@gmail.com>
+
+commit 1873dc48a40d04bc1c49b6f2718cd0fb34c57bd3
+Author: Fengguang Wu <fengguang.wu@intel.com>
+Date:   Wed Sep 11 14:21:47 2013 -0700
+
+    readahead: make context readahead more conservative
+    
+    This helps performance on moderately dense random reads on SSD.
+    
+    Transaction-Per-Second numbers provided by Taobao:
+    
+    		QPS	case
+    		-------------------------------------------------------
+    		7536	disable context readahead totally
+    w/ patch:	7129	slower size rampup and start RA on the 3rd read
+    		6717	slower size rampup
+    w/o patch:	5581	unmodified context readahead
+    
+    Before, readahead will be started whenever reading page N+1 when it happen
+    to read N recently.  After patch, we'll only start readahead when *three*
+    random reads happen to access pages N, N+1, N+2.  The probability of this
+    happening is extremely low for pure random reads, unless they are very
+    dense, which actually deserves some readahead.
+    
+    Also start with a smaller readahead window.  The impact to interleaved
+    sequential reads should be small, because for a long run stream, the the
+    small readahead window rampup phase is negletable.
+    
+    The context readahead actually benefits clustered random reads on HDD
+    whose seek cost is pretty high.  However as SSD is increasingly used for
+    random read workloads it's better for the context readahead to concentrate
+    on interleaved sequential reads.
+    
+    Another SSD rand read test from Miao
+    
+            # file size:        2GB
+            # read IO amount: 625MB
+            sysbench --test=fileio          \
+                    --max-requests=10000    \
+                    --num-threads=1         \
+                    --file-num=1            \
+                    --file-block-size=64K   \
+                    --file-test-mode=rndrd  \
+                    --file-fsync-freq=0     \
+                    --file-fsync-end=off    run
+    
+    shows the performance of btrfs grows up from 69MB/s to 121MB/s, ext4 from
+    104MB/s to 121MB/s.
+    
+    Signed-off-by: Wu Fengguang <fengguang.wu@intel.com>
+    Tested-by: Tao Ma <tm@tao.ma>
+    Tested-by: Miao Xie <miaox@cn.fujitsu.com>
+    Signed-off-by: Andrew Morton <akpm@linux-foundation.org>
+    Signed-off-by: Linus Torvalds <torvalds@linux-foundation.org>
+    Signed-off-by: flar2 <asegaert@gmail.com>
+
+commit 9bf1d3934fa5e2d56933c6f06402c94d81cfb9b1
+Author: Jan Kara <jack@suse.cz>
+Date:   Fri Jun 28 21:32:27 2013 +0200
+
+    block: Reserve only one queue tag for sync IO if only 3 tags are available
+    
+    In case a device has three tags available we still reserve two of them
+    for sync IO. That leaves only a single tag for async IO such as
+    writeback from flusher thread which results in poor performance.
+    
+    Allow async IO to consume two tags in case queue has three tag availabe
+    to get a decent async write performance.
+    
+    This patch improves streaming write performance on a machine with such disk
+    from ~21 MB/s to ~52 MB/s. Also postmark throughput in presence of
+    streaming writer improves from 8 to 12 transactions per second so sync
+    IO doesn't seem to be harmed in presence of heavy async writer.
+    
+    Signed-off-by: Jan Kara <jack@suse.cz>
+    Signed-off-by: Jens Axboe <axboe@kernel.dk>
+    Signed-off-by: flar2 <asegaert@gmail.com>
+
+commit 3bfa101af8905a934c5a39caa6ba45b8e1cb9487
+Author: flar2 <asegaert@gmail.com>
+Date:   Thu Mar 12 22:44:16 2015 -0400
+
+    fix compilation warnings
+
+commit 965005fde72d694a29ce9a15e8c821da09eab64b
+Author: Mel Gorman <mgorman@suse.de>
+Date:   Wed May 11 16:29:33 2011 +0100
+
+    mm: slub: Default slub_max_order to 0
+    
+    To avoid locking and per-cpu overhead, SLUB optimisically uses
+    high-order allocations up to order-3 by default and falls back to
+    lower allocations if they fail. While care is taken that the caller
+    and kswapd take no unusual steps in response to this, there are
+    further consequences like shrinkers who have to free more objects to
+    release any memory. There is anecdotal evidence that significant time
+    is being spent looping in shrinkers with insufficient progress being
+    made (https://lkml.org/lkml/2011/4/28/361) and keeping kswapd awake.
+    
+    SLUB is now the default allocator and some bug reports have been
+    pinned down to SLUB using high orders during operations like
+    copying large amounts of data. SLUBs use of high-orders benefits
+    applications that are sized to memory appropriately but this does not
+    necessarily apply to large file servers or desktops.  This patch
+    causes SLUB to use order-0 pages like SLAB does by default.
+    There is further evidence that this keeps kswapd's usage lower
+    (https://lkml.org/lkml/2011/5/10/383).
+    
+    Signed-off-by: Mel Gorman <mgorman@suse.de>
+    Signed-off-by: flar2 <asegaert@gmail.com>
+
+commit 3edcff647cd905e29fc0019c3406547071c468b8
+Author: Xiaocheng Li <lix@codeaurora.org>
+Date:   Mon Oct 13 09:55:27 2014 +0530
+
+    msm: thermal: Keep core_control_mask coincident with boot_cpu_mask
+    
+    Update core_control_mask according to boot_cpu_mask to make sure
+    the hotplug activities in thermal driver can only happen among the
+    CPUs under boot_cpu_mask.
+    
+    Change-Id: Ic8bd319b94b234e913d89b65736ff287706db7c1
+    Signed-off-by: Xiaocheng Li <lix@codeaurora.org>
+
+commit 09cb076bc7a18b80903dba94cd1339d76a03b701
+Author: Shiju Mathew <shijum@codeaurora.org>
+Date:   Tue Nov 11 18:47:02 2014 -0500
+
+    msm: thermal: Proceed thermal late init only if probe is successful
+    
+    Skip thermal late init if thermal probe has not
+    completed since all the tasks in late init depend
+    on successful completion of thermal probe.
+    
+    Change-Id: Iab763b80d2c878dd57a2401c92799c2534b349d2
+    Signed-off-by: Shiju Mathew <shijum@codeaurora.org>
+
+commit 86d9410a66fe371316e20ff620ca603d082793ed
+Author: Shiju Mathew <shijum@codeaurora.org>
+Date:   Tue Nov 18 20:14:42 2014 -0500
+
+    msm: thermal: Add RT priority to kernel thermal threads
+    
+    Add RT priority to KTM frequency mitigation thread. This
+    is required since we have seen cases where this thread
+    is not scheduled fast enough during high temperature rampup
+    that lead to thermal runaway. So this change would make sure
+    the thermal frequency mitigation thread gets high priority
+    and mitigate core as soon as a temperature threshold is triggered.
+    
+    Change-Id: Ie8a6fd80fb8e9bdb894a26a8bf7abd159a3f3bce
+    Signed-off-by: Shiju Mathew <shijum@codeaurora.org>
+    
+    Conflicts:
+    	drivers/thermal/msm_thermal.c
+
+commit c68eea7477baf3ca2dbfe8853ec7b82fc165cb45
+Author: Shiju Mathew <shijum@codeaurora.org>
+Date:   Tue Dec 16 20:29:49 2014 -0500
+
+    msm: thermal: Add RT priority to kernel hotplug thread
+    
+    Add RT priority to KTM hotplug mitigation thread. This
+    is required since we have seen cases where the thread
+    is not scheduled fast enough during high temperature rampup
+    that lead to thermal runaway. So this change would make sure
+    the thermal hotplug mitigation thread gets high priority
+    and mitigate core as soon as a temperature threshold is triggered.
+    
+    Change-Id: I72ecf69ede0444fe74fd9c4eaf40a12e8734326c
+    Signed-off-by: Shiju Mathew <shijum@codeaurora.org>
+
+commit e7b1ac02008858453c9db1d4fd4e3f1fcbbac6a7
+Author: Dipen Parmar <dipenp@codeaurora.org>
+Date:   Tue Mar 18 21:28:05 2014 +0530
+
+    thermal: tsens: Add NULL pointer check for id
+    
+    Add NULL pointer check for id value to avoid the
+    NULL pointer dereference when of_match_node function
+    can return NULL for non-matching node.
+    
+    Change-Id: If01290f11c44631249b0740271b2d51a3654b54a
+    Signed-off-by: Dipen Parmar <dipenp@codeaurora.org>
+    Signed-off-by: franciscofranco <franciscofranco.1990@gmail.com>
+
+commit 1daf9158736a026872d1a12504c627f288765580
+Author: Siddartha Mohanadoss <smohanad@codeaurora.org>
+Date:   Mon Dec 8 16:40:09 2014 -0800
+
+    thermal: tsens: Fix TSENS Upper/Lower IRQ type
+    
+    Update TSENS IRQ to level trigger instead of using
+    edge trigger interrupt.
+    
+    When a sensors temperature threshold is crossed the
+    controller asserts a level trigger. This level goes
+    low when the Upper/Lower status threshold is masked.
+    However, if another sensor threshold is crossed while we
+    are in the middle of servicing the previous sensors
+    threshold crossing in the workqueue the new sensors
+    threshold crossing will be missed as the interrupt level
+    remains high. Fix it by registering the interrupt as a
+    level interrupt, disable the interrupt in the
+    handler and enable it while we exit from the workqueue.
+    
+    CRs-Fixed: 768227
+    Change-Id: I7b3f38afd8acb2903f85dcc23e1bfe70d7d9059a
+    Signed-off-by: Siddartha Mohanadoss <smohanad@codeaurora.org>
+    Signed-off-by: franciscofranco <franciscofranco.1990@gmail.com>
+
+commit 3ade4075007c03663927e2ef0d6110f0217d930d
+Author: ZION959 <ziontran@gmail.com>
+Date:   Sat Mar 21 00:45:24 2015 -0700
+
+    cmremix v1.3
+
+commit 330e005cbcc4484e76d09c5634c00e0445a764c1
+Author: ZION959 <ziontran@gmail.com>
+Date:   Sat Mar 21 00:53:53 2015 -0700
+
+    msm cpu frequency limit (faux123)
+
+commit 7d03b9ff3329ca9f0b66747d8a66913be0f9c008
+Author: ZION959 <ziontran@gmail.com>
+Date:   Sat Mar 21 01:34:07 2015 -0700
+
+    revert: msm cpu frequency limit (faux123) (reverted from commit 330e005cbcc4484e76d09c5634c00e0445a764c1)
 
 project libcore/
 commit fe42e966789ef23b7ab7fe111c943c44285db0db
@@ -2551,24 +2104,7 @@ Date:   Tue Nov 18 17:37:20 2014 -0800
     Bug: 18432707
     Change-Id: Ic2fccbfeac4f5d6e71b49ecbd36c248214baebad
 
-project packages/apps/AudioFX/
-commit 4f0eb650bdee6bcf6c479caa8eb8f998d38a2602
-Author: Michael Bestas <mikeioannina@gmail.com>
-Date:   Sun Mar 15 01:46:29 2015 +0200
-
-    Automatic translation import
-    
-    Change-Id: Id5896de688909e7c308c741a1f7966292483edf4
-
 project packages/apps/Bluetooth/
-commit 9a70af67161ed2fd6b44d8c0519093ace90759a6
-Author: Michael Bestas <mikeioannina@gmail.com>
-Date:   Sun Mar 15 01:46:35 2015 +0200
-
-    Automatic translation import
-    
-    Change-Id: Ie2675992cd5ba2d38202e46c658667e79837516e
-
 commit 57262f776b6b7bf3453d96c4b7b555bfc3fb45a0
 Author: Matthew Xie <mattx@google.com>
 Date:   Thu Oct 23 12:53:40 2014 -0700
@@ -2602,24 +2138,7 @@ Date:   Sun Dec 14 12:22:31 2014 -0800
     Bug: 17770561
     Change-Id: I438116915883c5fdc2d743f13456006f66511c0f
 
-project packages/apps/BluetoothExt/
-commit 31c24878e779fcac76a946fbdf2bc75cece88ee8
-Author: Michael Bestas <mikeioannina@gmail.com>
-Date:   Sun Mar 15 01:46:39 2015 +0200
-
-    Automatic translation import
-    
-    Change-Id: I0dbd3486f50f9c10cc9af3ea0b2dc353efa5d34b
-
 project packages/apps/CMFileManager/
-commit 9cc59b6ac5ac3d6531ebf477b359b7b49342d478
-Author: Michael Bestas <mikeioannina@gmail.com>
-Date:   Sun Mar 15 01:47:15 2015 +0200
-
-    Automatic translation import
-    
-    Change-Id: I1e77140dc7177e10bc98fcbdfe2110f6dc96a9d6
-
 commit 05ddc9cd818b41b8673b848b2a48982f48738277
 Author: Raj Yengisetty <rajesh@cyngn.com>
 Date:   Fri Mar 13 09:25:48 2015 -0700
@@ -2654,15 +2173,68 @@ Date:   Tue Mar 17 06:12:46 2015 -0700
     
     Change-Id: I4ab1faa1d061eea97050b89e96c1bdf1df66db3f
 
-project packages/apps/Calculator/
-commit 461eb696515358867bec10caf1614520663039d7
-Author: Michael Bestas <mikeioannina@gmail.com>
-Date:   Sun Mar 15 01:46:44 2015 +0200
+commit 03e534f48063b633af1e96201a8223285da8a877
+Author: Jorge Ruesga <jorge@ruesga.com>
+Date:   Thu Mar 19 11:45:53 2015 +0100
 
-    Automatic translation import
+    cmfm: fix edit home bookmark icon
     
-    Change-Id: Iea408b84d3ac9048ae0a9890ead56d8b270ef500
+    Change-Id: I0da0a0b01f49d24edab30a72decd240996b5ccfe
+    Signed-off-by: Jorge Ruesga <jorge@ruesga.com>
 
+commit b62df7af6326e628c0a57948a324aad97fb8fe28
+Author: Jorge Ruesga <jorge@ruesga.com>
+Date:   Thu Mar 19 12:15:56 2015 +0100
+
+    cmfm: force colorControlNormal to white
+    
+    This fixed the color of actionbar controls (like search widget)
+    
+    Change-Id: I7a78cc7cd6bee262224b1d881b645aaef504be29
+    Signed-off-by: Jorge Ruesga <jorge@ruesga.com>
+
+commit 2185846e4a2927563263c15a7a09061d0f7624a7
+Author: Jorge Ruesga <jorge@ruesga.com>
+Date:   Thu Mar 19 12:45:54 2015 +0100
+
+    cmfm: delete obsolete themes resources
+    
+    Change-Id: I3fc24f739b16ab6104a4349f0c8efe0eff790fbd
+    Signed-off-by: Jorge Ruesga <jorge@ruesga.com>
+
+commit df97de0cff704f0bfbd70fffe0f3cee346dbfa15
+Author: Rohit Yengisetty <rohit@cyngn.com>
+Date:   Thu Mar 5 16:35:21 2015 -0800
+
+    CM File Manager - Gracefully handle renaming on case-insensitive filesystems
+    
+    Add edge case handling to move/copy commands wherein something is being
+    renamed to a different-cased version of itself.
+    
+    Ex : renaming 'mydocuments' to 'MyDocuments'
+    
+    https://jira.cyanogenmod.org/browse/BACON-3074
+    
+    Change-Id: Id90de5fd083e341371f250c0194f200388cf4941
+
+commit fb259f02fa378706b90d98d1e2ae76641ea97a5f
+Author: Raj Yengisetty <rajesh@cyngn.com>
+Date:   Tue Mar 17 16:42:32 2015 -0700
+
+    CMFileManager: set compute folder statistics to true by default
+    
+    Change-Id: Iaf22257a9227722029956094ae06ccf0df524541
+    (cherry picked from commit 19862d7c51143136c25d03b741156a0fda68c768)
+
+commit da04013334cb17a23245f33872b10238f82e4382
+Author: Raj Yengisetty <rajesh@cyngn.com>
+Date:   Thu Mar 19 17:13:51 2015 -0700
+
+    CMFileManager: set search item icon to fixed width and centerCrop
+    
+    Change-Id: If89a55a8d1212774709176ae9af7df6f761f9005
+
+project packages/apps/Calculator/
 commit 6447be0b3c251525f3625f16838500b2e6a4a602
 Author: Matt Garnes <matt@cyngn.com>
 Date:   Wed Mar 11 17:24:40 2015 -0700
@@ -2686,14 +2258,6 @@ Date:   Wed Mar 11 17:24:40 2015 -0700
     Change-Id: Ieb59f0c43674bf8bfeadb9a7fdf0f859f7d281dc
 
 project packages/apps/Calendar/
-commit 1f28924c571f7b14ed2aef9200d6b6ae26bd7170
-Author: Michael Bestas <mikeioannina@gmail.com>
-Date:   Sun Mar 15 01:46:49 2015 +0200
-
-    Automatic translation import
-    
-    Change-Id: I7890752036c3f6c12cf897c855303e39c8f162f9
-
 commit 8d3bd6c49994cb27cb65e8622cc1db2aa4a1cf15
 Author: Raj Yengisetty <rajesh@cyngn.com>
 Date:   Fri Mar 13 16:53:39 2015 -0700
@@ -2703,14 +2267,6 @@ Date:   Fri Mar 13 16:53:39 2015 -0700
     Change-Id: I9b7608a9161b1370a4ee4ab520c0e0e9a0fd9c9c
 
 project packages/apps/Camera2/
-commit 1d98281c19d314da039c0d1e987c254b27269ad0
-Author: Michael Bestas <mikeioannina@gmail.com>
-Date:   Sun Mar 15 01:46:55 2015 +0200
-
-    Automatic translation import
-    
-    Change-Id: Ic0ffbc7f6a7198ea341425c966fc238d42721058
-
 commit 982bcc197bc6c035c2efc283a033d6bab5cf86d7
 Merge: b656f91 1d98281
 Author: ZION959 <ziontran@gmail.com>
@@ -2718,66 +2274,22 @@ Date:   Sun Mar 15 00:08:07 2015 -0700
 
     Merge remote-tracking branch 'upstream/cm-12.0' into cm-12.0
 
-project packages/apps/CellBroadcastReceiver/
-commit c3ea6b5a6372e3bfb402dcf452eb89d28fb119ac
-Author: Michael Bestas <mikeioannina@gmail.com>
-Date:   Sun Mar 15 01:47:00 2015 +0200
-
-    Automatic translation import
-    
-    Change-Id: I12ec8301573c3bdf604571ea33d90f5e496dd1dd
-
 project packages/apps/Contacts/
-commit a5a544f00da0b5b32ecc49b9baef46125de3b9aa
-Author: Michael Bestas <mikeioannina@gmail.com>
-Date:   Sun Mar 15 01:47:27 2015 +0200
+commit e98c8a501ab325b15e94a8e5a62b2c40a75b1634
+Author: Raj Yengisetty <rajesh@cyngn.com>
+Date:   Wed Mar 18 15:44:29 2015 -0700
 
-    Automatic translation import
+    Contacts: Add checkableimageview to sim import picker
     
-    Change-Id: Id2dc16829a8d9b7a3ecd5fe92a3cc0e25df7df62
-
-project packages/apps/ContactsCommon/
-commit f08e8aa7a5a2c0e666581d6a8d22f4d397663769
-Author: Michael Bestas <mikeioannina@gmail.com>
-Date:   Sun Mar 15 01:47:33 2015 +0200
-
-    Automatic translation import
+    Repro:
+     - Open contacts, and select Import/Export from overflow menu
+     - Import from SIM card
+     - Select contact(s)
+     - Observe: there's element in the list view to show checked state
     
-    Change-Id: Ife47fda96ea9abefed27530a75dd084f2ccd34c2
-
-project packages/apps/DeskClock/
-commit 01a192a14355dce7ccc5a8540bb5de72aa4e3715
-Author: Michael Bestas <mikeioannina@gmail.com>
-Date:   Sun Mar 15 01:47:37 2015 +0200
-
-    Automatic translation import
-    
-    Change-Id: I213fee9f3009771a35b5a48c3ea4037b167b07df
+    Change-Id: Ic5f3a390ea4501cfbef0252cdf6bd50e93b260eb
 
 project packages/apps/Dialer/
-commit 475a7e9cdefec248fe153ebd8afe8dfd6c90b29d
-Author: cretin45 <cretin45@gmail.com>
-Date:   Thu Mar 12 16:06:25 2015 -0700
-
-    Dialer: Add call waiting vibrate option
-    
-    Change-Id: Id903310aa0ef74fe01349e39262159e4795f4501
-
-commit b7cad7e94f8d1d256b8ffac1fbbb0ba5eae32f01
-Merge: edd47fa 475a7e9
-Author: ZION959 <ziontran@gmail.com>
-Date:   Thu Mar 12 20:49:07 2015 -0700
-
-    Merge remote-tracking branch 'upstream/cm-12.0' into cm-12.0-2
-
-commit c44882cd616c61f5e3b817868768d4189216ed46
-Author: Michael Bestas <mikeioannina@gmail.com>
-Date:   Sun Mar 15 01:47:43 2015 +0200
-
-    Automatic translation import
-    
-    Change-Id: I6a5b8697def638849ae9f1179f4e048228980097
-
 commit 0ad236d3698b530f4f24cb08aeb2d77286761bfe
 Merge: b7cad7e c44882c
 Author: ZION959 <ziontran@gmail.com>
@@ -2868,14 +2380,6 @@ Date:   Tue Mar 17 21:30:20 2015 -0700
     	src/com/android/dialer/lookup/ReverseLookup.java
 
 project packages/apps/Eleven/
-commit 1acc38bf8a57600f3bea031e39ea37a668c3912a
-Author: Michael Bestas <mikeioannina@gmail.com>
-Date:   Sun Mar 15 01:47:49 2015 +0200
-
-    Automatic translation import
-    
-    Change-Id: I706ba0b421b725967fca66376be10a6a4027e4f1
-
 commit 89c155ccef538edb4382e790b4d1913662925b18
 Author: Mikalacki Sava <mikalackis@gmail.com>
 Date:   Wed Mar 4 16:18:14 2015 +0100
@@ -2894,15 +2398,15 @@ Date:   Thu Mar 19 01:48:19 2015 +0200
     
     Change-Id: I41439cc69147db49b08cace87ba3513d34dbac6c
 
-project packages/apps/Gallery2/
-commit 7911e6b5c730f04684cc7f790095a976783fe06b
-Author: Michael Bestas <mikeioannina@gmail.com>
-Date:   Sun Mar 15 01:47:54 2015 +0200
+commit e039904bfd75f73709efecfa03627e66313edab7
+Author: Mikalacki Sava <mikalackis@gmail.com>
+Date:   Thu Mar 19 14:17:20 2015 +0100
 
-    Automatic translation import
+    Eleven: fixed broken spacing
     
-    Change-Id: Ib1edaf2f04c5cec7840daa33701ca2dffb4d7226
+    Change-Id: I98c9feec97caadd5414ce9fea59d6312db80c56c
 
+project packages/apps/Gallery2/
 commit d9001389537cca3481258144a543b9f3cb887bac
 Author: Alex Cruz <mazdarider23@gmail.com>
 Date:   Sun Feb 8 06:49:41 2015 +0000
@@ -2912,29 +2416,6 @@ Date:   Sun Feb 8 06:49:41 2015 +0000
     Change-Id: I2a4987c1220dfb772289c6638648702d26600aa7
 
 project packages/apps/InCallUI/
-commit 4743d756bfa24a9a6df3f85ca5602825b4d08c11
-Author: cretin45 <cretin45@gmail.com>
-Date:   Thu Mar 12 16:07:55 2015 -0700
-
-    InCallUI: Bring back vibrate on call waiting
-    
-    Change-Id: I38f1d80ce4d29195b75df85b0fd0ab03371fbb5d
-
-commit e4ef21b11c8b0ca2aac8c189fd997ccfb13412cc
-Merge: d168c02 4743d75
-Author: ZION959 <ziontran@gmail.com>
-Date:   Thu Mar 12 20:50:01 2015 -0700
-
-    Merge remote-tracking branch 'upstream/cm-12.0' into cm-12.0
-
-commit f815c10e8cdbdc7a2bae6b4bbfff976ff2a9be6c
-Author: Michael Bestas <mikeioannina@gmail.com>
-Date:   Sun Mar 15 01:47:59 2015 +0200
-
-    Automatic translation import
-    
-    Change-Id: Ic5d377bbc6c1a95fb173673a54f50ee0795cf16f
-
 commit e8c68fc828310532faf6b1921723bfacd1364c55
 Merge: e4ef21b f815c10
 Author: ZION959 <ziontran@gmail.com>
@@ -2960,52 +2441,7 @@ Date:   Thu Mar 19 09:12:05 2015 -0700
 
     Merge remote-tracking branch 'upstream/cm-12.0' into cm-12.0
 
-project packages/apps/LockClock/
-commit 9e90260ff7deb9a6eeade93f487bdd18eb68fb10
-Author: Michael Bestas <mikeioannina@gmail.com>
-Date:   Sun Mar 15 01:48:05 2015 +0200
-
-    Automatic translation import
-    
-    Change-Id: I1c97c5a6355c325f24b67cc9bdd9e9b3d588d8ab
-
 project packages/apps/Mms/
-commit ae6c7d64eda35437465acd104fba588cf4a7425e
-Author: Marcos Marado <mmarado@cyngn.com>
-Date:   Wed Mar 11 21:49:43 2015 +0000
-
-    Mms: better vCard parser (getExtraSrc)
-    
-    We are now able to deal with
-     * multiple contact vCards
-     * single-contact vCard when the contact is unnamed
-    
-    Change-Id: I10f77441cad5d79406e7641f14bf92e4a3b34e1a
-    (cherry picked from commit e6911a74aca8a78212243bea0dc4a05245339d27)
-
-commit a983fbb0b2029fce5dba267cda477741e2532ab2
-Merge: 703584b ae6c7d6
-Author: ZION959 <ziontran@gmail.com>
-Date:   Thu Mar 12 20:50:33 2015 -0700
-
-    Merge remote-tracking branch 'upstream/cm-12.0' into cm-12.0-2
-
-commit 271c955a923f7aa23245602ba8250afada29e530
-Author: Dave Daynard <nardholio@gmail.com>
-Date:   Mon Mar 9 20:24:03 2015 -0400
-
-    Remove vibrate pattern on devices without vibrator
-    
-    Change-Id: I874a411a34eb2cfd388a2f15d513e29c4278ca54
-
-commit 2dae5c2294f97e9dd148dab4cb3e25386536b398
-Author: Michael Bestas <mikeioannina@gmail.com>
-Date:   Sun Mar 15 01:48:10 2015 +0200
-
-    Automatic translation import
-    
-    Change-Id: Ia1fd313e4d527f440b46f42838e68287d317215b
-
 commit 593c82412cb8dff694b2367f92f656fe458fea31
 Merge: a983fbb 2dae5c2
 Author: ZION959 <ziontran@gmail.com>
@@ -3028,20 +2464,17 @@ Date:   Thu Mar 19 09:12:50 2015 -0700
 
     Merge remote-tracking branch 'upstream/cm-12.0' into cm-12.0-2
 
+project packages/apps/Nfc/
+commit 44ee38a2ec9a6f437075fc112a3965784c4d9a55
+Author: Martijn Coenen <maco@google.com>
+Date:   Mon Jan 26 13:04:25 2015 -0800
+
+    Material Beam icon.
+    
+    Bug: 17459786
+    Change-Id: Id5799cf31a5235d623d548c05c6b8a86107ee5e7
+
 project packages/apps/OmniSwitch/
-commit d50ea730e2c850e396e21d08b703892ef714309e
-Author: maxwen <max.weninger@gmail.com>
-Date:   Thu Mar 12 01:47:27 2015 +0100
-
-    OmniSwitch: updates
-    
-    -time based filtering prework - inspired from Chainfire :)
-    -added support for VectorDrawables
-    -fix kill all
-    -fix icon pack support
-    
-    Change-Id: Ie2ccc796204ab2eb3be5230d2ab64b3c97dd0c07
-
 commit 05f56dac7931b1885a6f4d1e280c314fcd9e8f97
 Merge: 7f2ff21 d50ea73
 Author: ZION959 <ziontran@gmail.com>
@@ -3050,14 +2483,6 @@ Date:   Mon Mar 16 22:27:47 2015 -0700
     Merge remote-tracking branch 'upstream/android-5.0' into cm-12.0
 
 project packages/apps/PhoneCommon/
-commit 0437e2cb60a677c0f64ddabd47ea5499df7ee955
-Author: Michael Bestas <mikeioannina@gmail.com>
-Date:   Sun Mar 15 01:48:18 2015 +0200
-
-    Automatic translation import
-    
-    Change-Id: I3f164e5d4df8d3c92debf2878132f5f42649f2fd
-
 commit a3ac20d162bd67c9140b2afcc41cf35266105f1d
 Author: Linus Lee <llee@cyngn.com>
 Date:   Mon Mar 16 18:18:22 2015 -0700
@@ -3071,141 +2496,6 @@ Date:   Mon Mar 16 18:18:22 2015 -0700
     Change-Id: I2775ce417b53f7a69abeb3b8919169024a7714dd
 
 project packages/apps/Settings/
-commit ad72234256afaa68c04186dbf7a61e20f74fa5a6
-Author: Michael Bestas <mikeioannina@gmail.com>
-Date:   Thu Mar 12 20:26:53 2015 -0700
-
-    Settings: Cleanup battery saver settings
-    
-    * Add back auto battery saver
-    * Add back support for battery saver on devices without perf profiles
-    
-    Change-Id: I562420a81592fde54a96dca88a71ed9137bb59a9
-    
-    Conflicts:
-    	res/xml/battery_saver_settings.xml
-    	src/com/android/settings/fuelgauge/BatterySaverSettings.java
-    
-    Conflicts:
-    	src/com/android/settings/fuelgauge/BatterySaverSettings.java
-    	src/com/android/settings/fuelgauge/PowerUsageSummary.java
-    	src/com/android/settings/search/SearchIndexableResources.java
-
-commit 70ebe57ff7326e7aaac402b64bf27735413d7ab4
-Author: alviteri <activethrasher00@gmail.com>
-Date:   Thu Mar 12 20:29:15 2015 -0700
-
-    Settings: Rework 'add ability to change the color in battery saver mode'
-    
-    Adapt to new changes following cm's one
-    
-    This update the following commit: 152650ed3a20bc777f1f8e6c474c506e9b304975
-    
-    Conflicts:
-    	res/values-pt-rBR/cr_strings.xml
-    	res/values-ru/cr_strings.xml
-
-commit ad320bf0bd5276d7da68a412a1a4b97e82da94ab
-Author: Roman Birg <roman@cyngn.com>
-Date:   Wed Mar 11 13:24:25 2015 -0700
-
-    Settings: bring up IME when renaming profile
-    
-    Change-Id: I3535503d5e5431e9e6790933171e0fabe05c3cc6
-    Signed-off-by: Roman Birg <roman@cyngn.com>
-
-commit f35820ae6aedf7eba63d7663d74b55198ee0e0cc
-Author: Roman Birg <roman@cyngn.com>
-Date:   Wed Mar 11 17:11:32 2015 -0700
-
-    Settings: theme mobile network settings from data usage screen
-    
-    Change-Id: I7cdd04a25ead453e8145ff07c8db60a498ef6df5
-    Signed-off-by: Roman Birg <roman@cyngn.com>
-
-commit 97dad500db125842048f91f7f1505a98f3c88cf1
-Author: Abhisek Devkota <ciwrl@cyanogenmod.com>
-Date:   Thu Mar 12 12:45:49 2015 -0700
-
-    Regulatory text color: make this readable
-    
-    Change-Id: I944f91f70d18f55542deee14f5153626f539ad29
-
-commit fdc9951886edae29f7c9dc8fa16eb5cd85ef15a3
-Author: Roman Birg <roman@cyngn.com>
-Date:   Thu Mar 12 19:28:37 2015 +0000
-
-    Revert "Settings: fix potential NPE when resetting profiles"
-    
-    This reverts commit 9e729a248ce7001fa8607d3373f65a7f3c572edd.
-    
-    Change-Id: I8f7598803db143433cdcd85e99874b389b0c2af7
-
-commit 6e0f0727d2f498168243c03fd7d8ec3ace2b91f5
-Author: Roman Birg <roman@cyngn.com>
-Date:   Thu Mar 12 16:42:51 2015 -0700
-
-    Settings: merge ProfilesList into ProfilesSettings
-    
-    ProfilesSettings previously had a viewpager with the profiles list, and
-    an app group list. Then we removed app groups, but the viewpager was
-    left over.
-    
-    The main reason for getting rid of it now is to make sure that
-    refreshList() always works. Previously there was a small chance that
-    because it was in a viewpager, the preference may not have been attached
-    (at the time of the resetAll() dialog being shown and user pressing yes),
-    which caused the refresh method call to fail, since it needs access to
-    the preference screen, which is null at that time.
-    
-    Change-Id: Ib9c3a27e3062660bd8a91998c20c15b4ffb4390b
-    Signed-off-by: Roman Birg <roman@cyngn.com>
-
-commit 727f37f5f2ec2b81f9cd4f6a6c07181d89cee71c
-Author: XXMrHyde <email@address.com>
-Date:   Thu Mar 12 20:35:33 2015 -0700
-
-    Lock screen: Text and icon colors, (2/2)
-    
-    Change-Id: Ib4a085aa00769b05530f6dfdfbf18c0792b31cc3
-
-commit 2e2b6098b3d365aacb54c2138a6bfbb6d9a2f553
-Author: alviteri <davidteri91@gmail.com>
-Date:   Thu Mar 5 06:00:00 2015 +0100
-
-    Settings: Materialize standard colors in colorpicker
-
-commit c567f0b37142db9edda3799110bc52e7b981fcf8
-Author: Alexander Martinz <eviscerationls@gmail.com>
-Date:   Thu Mar 12 20:41:23 2015 -0700
-
-    (2/2) Settings: allow to toggle smart cover wake
-    
-      * disable by default
-    
-    Change-Id: I1f97dc1a945520d2b563cdafdb19becad23cb993
-    Signed-off-by: Alexander Martinz <eviscerationls@gmail.com>
-
-commit 1610343f6e6fc8e1e4a1456088ae0c07a53dd819
-Author: ZION959 <ziontran@gmail.com>
-Date:   Fri Mar 13 01:03:54 2015 -0700
-
-    BATTERY_SAVER_MODE move to cmremix settings
-
-commit a0599913cab340ddeae5ca78706bacd570eec987
-Author: Janson Kang <temasek71@gmail.com>
-Date:   Fri Mar 13 16:47:37 2015 +0800
-
-    Remove duplicate weather on notification drawer option
-
-commit d92256e7d9a3545a73971fff50e5459e14a5df3d
-Author: Steve Kondik <steve@cyngn.com>
-Date:   Fri Mar 13 15:33:06 2015 -0700
-
-    livedisplay: Fix for multiuser
-    
-    Change-Id: If0ef1da91cf5310308abf08806f7902e25080d2c
-
 commit 0715fe7863842ff6a318604a09443e91c867e485
 Author: Michael Bestas <mikeioannina@gmail.com>
 Date:   Sat Mar 14 23:26:31 2015 -0700
@@ -3327,64 +2617,99 @@ Date:   Tue Nov 18 15:08:12 2014 -0800
     Bug: 14441412
     Change-Id: Ia6820b1daf3783d605b92976c78cb522b17dc8f2
 
-project packages/apps/SlimCenter/
-commit 01e134893dcc07c2363cc902c86f8f8f000e6bdc
+commit d0b698ee04bb8d9b2827f8a84335224970736579
+Author: Roman Birg <roman@cyngn.com>
+Date:   Mon Jan 5 13:32:20 2015 -0800
+
+    Settings: add switches for dashboard items
+    
+    Change-Id: Ibff81510270745807a4b133457d60d47dd629df6
+    Signed-off-by: Roman Birg <roman@cyngn.com>
+
+commit 77e9c1531be5d2d495a14b78d5a558666f4b8d9a
+Author: Michael Bestas <mikeioannina@gmail.com>
+Date:   Fri Mar 20 20:56:59 2015 -0700
+
+    Allow launching display rotation & lock screen settings externally
+    
+    Change-Id: I69168fea2a43cfa7f2b8474042c35720f4431040
+    
+    Conflicts:
+    	AndroidManifest.xml
+    	src/com/android/settings/Settings.java
+    	src/com/android/settings/SettingsActivity.java
+
+commit 80bd3ab5ae4a659cd2e2c05d2e9582dddcaa9ff6
+Author: Roman Birg <roman@cyngn.com>
+Date:   Fri Mar 20 16:54:58 2015 -0700
+
+    Settings: add dashboard switch view for sw600dp
+    
+    Change-Id: I19797bc2b05539700ab4f3e8bf960fc37047d448
+    Signed-off-by: Roman Birg <roman@cyngn.com>
+
+commit 75b002bb2e7c67763fb989fff448cfac9113dd9f
 Author: ZION959 <ziontran@gmail.com>
-Date:   Sun Mar 15 19:11:27 2015 -0700
+Date:   Sat Mar 21 02:27:06 2015 -0700
+
+    Rework Ad Blocker Update dialog @Miccia94
+    
+    Add title
+    Proper OK button
+    
+    Change-Id: I2dd37dabd66ec0129d579a746ea6a5c247933e29
+    HFM: Add whitelist to HFM
+    
+    * also fix not being able to switch off the ad disabler
+    
+    AICPfy
+    CheckBox to Switch
+    Move settings to main Extras menu
+    
+    Change-Id: Ifa8adf2313f0c0932882c3ac6cd4bda7e8b250de
+
+commit 61464b2ac0072a4239332b59587f8bfd246d31ce
+Author: Cristian Giordano <steel89ita@gmail.com>
+Date:   Sat Mar 21 20:21:57 2015 -0700
+
+    Settings: Read CMRemix Center menu
+    
+    @fusionjack: Remove menu if CMRemix Center is not available
+    
+    Change-Id: I7af4659a45ec69e47d60b869df4ccce85b943345
+    
+    Conflicts:
+    	res/values/slim_strings.xml
+    	res/xml/dashboard_categories.xml
+
+project packages/apps/SlimCenter/
+commit db60d06e6b17d49a409487501b46773e1e06912b
+Author: ZION959 <ziontran@gmail.com>
+Date:   Thu Mar 19 12:45:33 2015 -0700
 
     cmRemiX >>> CMRemix
 
-project packages/apps/SoundRecorder/
-commit 8fd462159f64b8d90d3c76f05af8a551e5d9b850
-Author: Michael Bestas <mikeioannina@gmail.com>
-Date:   Sun Mar 15 01:48:44 2015 +0200
+commit f2cc60c10d4e4a7a778ab816b4fd2f724604f55a
+Author: fusionjack <dogfight60-fusionjack@yahoo.de>
+Date:   Tue Mar 17 21:20:24 2015 +0100
 
-    Automatic translation import
+    Don't check update if update interval is disabled
     
-    Change-Id: I9a45be5d27dd6e3d347b87c4c1d7ae9fa1374b37
+    Change-Id: Ie2fe75837f07f5ce42bb0b7085502387d5c18948
 
-project packages/apps/Stk/
-commit c50f40acf0054a591ec7d6ac6346fbf90a82390c
-Author: Michael Bestas <mikeioannina@gmail.com>
-Date:   Sun Mar 15 01:48:49 2015 +0200
+commit 6d905cc586cbff7ada5801bb42fb2c0a2f457052
+Author: ZION959 <ziontran@gmail.com>
+Date:   Sat Mar 21 19:44:45 2015 -0700
 
-    Automatic translation import
-    
-    Change-Id: I16c007fc2872023bcc03cd48953343ccf6c55dab
-
-project packages/apps/Terminal/
-commit 37622aeb7ff5a026beae2a2e779f5f09070f848e
-Author: Michael Bestas <mikeioannina@gmail.com>
-Date:   Sun Mar 15 01:48:54 2015 +0200
-
-    Automatic translation import
-    
-    Change-Id: I4b294562545b9035562c97c3433270ea4ef1775d
+    fixed CMRemix label
 
 project packages/apps/ThemeChooser/
-commit 979a19ad3210a88449ac58829b2bcccb238000c1
-Author: Michael Bestas <mikeioannina@gmail.com>
-Date:   Sun Mar 15 01:49:00 2015 +0200
-
-    Automatic translation import
-    
-    Change-Id: I75989a6f5c7e6a16e08225d9cac0442e0dd3d2c8
-
 commit 5e1a5f4bc0180a1f4511fd7af2dc2502b549d4e3
 Merge: df1b5e2 979a19a
 Author: ZION959 <ziontran@gmail.com>
 Date:   Sun Mar 15 00:13:30 2015 -0700
 
     Merge remote-tracking branch 'github/cm-12.0' into cm-12.0
-
-project packages/apps/UnifiedEmail/
-commit 55e9bb97d314bef3e091df5f86690ae15fcdeccf
-Author: Kenshin <foufou33@gmail.com>
-Date:   Thu Mar 12 13:54:52 2015 -0700
-
-    UnifiedEmail: Fix build
-    
-    Change-Id: I180829783123498b1c6a06b0d877e9ce451429b0
 
 project packages/inputmethods/LatinIME/
 commit 559c5fd84a815e5a9b93c28f076d809db2f55b1b
@@ -3413,15 +2738,6 @@ Date:   Wed Nov 19 13:45:21 2014 +0900
     Bug: 18418991
     Change-Id: Id4dff41ba488635ff9af899be6d4f84ab00a96c8
 
-project packages/providers/DownloadProvider/
-commit 0d7a9c60e83236da17e5917c201dfc612c72bd81
-Author: Michael Bestas <mikeioannina@gmail.com>
-Date:   Sun Mar 15 01:49:53 2015 +0200
-
-    Automatic translation import
-    
-    Change-Id: Ib0d03cb90567d7ac6123c2c97be226ef65859ca7
-
 project packages/providers/TelephonyProvider/
 commit bda9e4d340743d1a68d01bec29a44cba756b8ee1
 Author: Amith Yamasani <yamasani@google.com>
@@ -3435,14 +2751,6 @@ Date:   Thu Nov 6 09:01:20 2014 -0800
     Change-Id: Ia7401c287f4b920ac4de5102f33ded22bbf0f5b9
 
 project packages/providers/ThemesProvider/
-commit 7320de5213287aa159a5a6695eaea47d3be15935
-Author: Michael Bestas <mikeioannina@gmail.com>
-Date:   Sun Mar 15 01:49:57 2015 +0200
-
-    Automatic translation import
-    
-    Change-Id: Ic3e8aad4d67edc9afc8080e8c23aacd641ee5cfa
-
 commit a6afd7e22df46a004d78ad2ed9ec3f1ab2c674b3
 Author: d34d <clark@cyngn.com>
 Date:   Wed Mar 18 14:07:24 2015 -0700
@@ -3455,24 +2763,7 @@ Date:   Wed Mar 18 14:07:24 2015 -0700
     Change-Id: If9076eca8cce1a85beed54ce30f0dfb8bbcd3188
     REF: CHOOSER-63
 
-project packages/services/Mms/
-commit e6cce3ac25963327ee451edbd4377b0faf600253
-Author: Michael Bestas <mikeioannina@gmail.com>
-Date:   Sun Mar 15 01:50:03 2015 +0200
-
-    Automatic translation import
-    
-    Change-Id: Id569ae5e8f5048a2de22bd94c0bbfb6a76309c72
-
 project packages/services/Telecomm/
-commit 4e6de9d87de74eba3c4f4f22e161b644b03635b1
-Author: Michael Bestas <mikeioannina@gmail.com>
-Date:   Sun Mar 15 01:50:07 2015 +0200
-
-    Automatic translation import
-    
-    Change-Id: I62eee2d91dae9d4f8b81255bc75f761c69459710
-
 commit 1952939241128b05a19fb44818aed7326482874f
 Merge: e44d04d 4e6de9d
 Author: ZION959 <ziontran@gmail.com>
@@ -3481,52 +2772,6 @@ Date:   Sun Mar 15 00:12:48 2015 -0700
     Merge remote-tracking branch 'upstream/cm-12.0' into cm-12.0
 
 project packages/services/Telephony/
-commit b710b9d159665fa198520dbe41347c751e11f0a2
-Author: Lin Ma <lma@cyngn.com>
-Date:   Thu Mar 12 16:13:46 2015 -0700
-
-    phone: Fix crash in MSISDNEditPreference when changing phone num.
-    
-    When GsmUmtsAdditionalCallOptions's onCreate is called w/o a
-    Bundle handle, mMSISDNButton.init won't get called, hence
-    MSISDNEditPreference's mPhone is not initialized, which causes a
-    crash when onDialogClosed accesses mPhone.
-    
-    * mMSISDNButton was not initialized, retrieve handle from prefSet
-    * Call mMSISDNButton.init to make sure mPhone is initialized
-    
-    Change-Id: Ia0b629dab69edbc76d542dc603251f4d98715227
-
-commit 4d3b02c94b0e44f98fc26b9e91f02174ba57db55
-Merge: ae3bb13 219cd9e
-Author: ZION959 <ziontran@gmail.com>
-Date:   Thu Mar 12 20:51:37 2015 -0700
-
-    Merge remote-tracking branch 'upstream/cm-12.0' into cm-12.0
-
-commit bc21c0fe33452aab622986c5ef7ee5b449384b82
-Merge: 4d3b02c b710b9d
-Author: ZION959 <ziontran@gmail.com>
-Date:   Fri Mar 13 20:29:02 2015 -0700
-
-    Merge remote-tracking branch 'upstream/cm-12.0' into cm-12.0
-
-commit 60f23f71b75e54a2691b2c2c295cdbb0de6d8752
-Author: Michael Bestas <mikeioannina@gmail.com>
-Date:   Sun Mar 15 01:50:12 2015 +0200
-
-    Automatic translation import
-    
-    Change-Id: Idef066c8e851fd1d7d3ed31d6400525494ad3677
-
-commit 98c026a3c4449b622eabc56d77818a164370b74e
-Author: Michael Bestas <mikeioannina@gmail.com>
-Date:   Sun Mar 15 03:37:23 2015 +0200
-
-    Fix the build
-    
-    Change-Id: I92d4aa4b4b96067f666b744b85bbc4d088e37756
-
 commit dcf923350a299f97e7622e070657e27d08ef29ba
 Merge: bc21c0f 98c026a
 Author: ZION959 <ziontran@gmail.com>
@@ -3534,68 +2779,14 @@ Date:   Sun Mar 15 00:13:10 2015 -0700
 
     Merge remote-tracking branch 'upstream/cm-12.0' into cm-12.0
 
-project packages/wallpapers/Galaxy4/
-commit a888455046de53772306fe5df9fa3c534c6e79e2
-Author: Michael Bestas <mikeioannina@gmail.com>
-Date:   Sun Mar 15 01:50:18 2015 +0200
+project prebuilts/clang/linux-x86/host/llvm-Snapdragon_LLVM_for_Android_3.5/
+commit 409d9c6ea5def3e3eb926291a80f012243bbcfdd
+Author: ZION959 <ziontran@gmail.com>
+Date:   Thu Mar 19 14:33:34 2015 -0700
 
-    Automatic translation import
-    
-    Change-Id: Id45661d16d340f3801c92c01ec38cb0eb5071ea6
-
-project packages/wallpapers/PhaseBeam/
-commit 6ec4a28b5a99af777fa79ade2050be261a67168e
-Author: Michael Bestas <mikeioannina@gmail.com>
-Date:   Sun Mar 15 01:50:23 2015 +0200
-
-    Automatic translation import
-    
-    Change-Id: I0d2533e714b93d7224eb9599c1bb7297c8dc8230
-
-project packages/wallpapers/PhotoPhase/
-commit e5cfe1e367190810600ecea004c1797ade3f32e7
-Author: Michael Bestas <mikeioannina@gmail.com>
-Date:   Sun Mar 15 01:50:28 2015 +0200
-
-    Automatic translation import
-    
-    Change-Id: I21241d7958cd14d847de18fe324e6206e257b56c
-
-project prebuilts/gcc/linux-x86/arm/arm-eabi-4.9/
-commit ec483fab9cbd92b3c0161843971dd3c9b7b1ede4
-Author: Paul Beeler <pbeeler80@gmail.com>
-Date:   Sat Mar 14 04:47:37 2015 -0600
-
-    Initial commit
-    
-    Signed-off-by: Paul Beeler <pbeeler80@gmail.com>
-
-project prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.8/
-commit 6524d367f4bafb9d468b3fa0523501f2eec706cc
-Author: Paul Beeler <pbeeler80@gmail.com>
-Date:   Sat Mar 14 03:35:52 2015 -0600
-
-    Initial commit
-    
-    Signed-off-by: Paul Beeler <pbeeler80@gmail.com>
+    itnitial Snapdragon LLVM Compiler for Android v3.5 - Linux64
 
 project system/core/
-commit 5d31618b987cef89ecf5cf980b048f0b5349f0bd
-Author: Ricardo Cerqueira <ricardo@cyngn.com>
-Date:   Fri Sep 19 10:43:12 2014 +0100
-
-    init: Let a device's init.rc redefine service entries
-    
-    In case of duplicate service definitions, init.rc's version always
-    wins. This is a less-than-ideal situation and the main reason for
-    some devices to override the default init.rc, which leads to out-of-sync
-    situations whenever we happen to insert something into the main copy.
-    
-    So let services be overridden. To prevent accidental override of
-    system services, use a specific keyword for this, "service_redefine"
-    
-    Change-Id: Ib1cab6bd3008956e9a2f61355781861ef8bcf8ca
-
 commit 7466283affe6989c1c462346f3d109e78a2345f4
 Merge: 80ec2d9 5d31618
 Author: ZION959 <ziontran@gmail.com>
@@ -3604,14 +2795,6 @@ Date:   Sat Mar 14 23:57:43 2015 -0700
     Merge remote-tracking branch 'upstream/cm-12.0' into cm-12.0
 
 project vendor/cm/
-commit 1245bc273a1266f063860d7e7e4eb7f47c10c858
-Author: Howard M. Harte <hharte@cyngn.com>
-Date:   Fri Mar 13 17:58:42 2015 -0700
-
-    Add APN for Smartfren
-    
-    Change-Id: I1553dad104c200822167baa3a33d6fe6dbd176da
-
 commit 2b999181c8a7963b81a419366be2e022717f0601
 Author: Abhisek Devkota <ciwrl@cyanogenmod.com>
 Date:   Mon Mar 16 11:27:10 2015 -0700
@@ -3671,41 +2854,28 @@ Date:   Wed Mar 18 14:16:28 2015 -0700
     
     Change-Id: I1981d43e0fffb5ce0d468117490c30cfe0d50055
 
-commit 52bf318a9f616ef0b3bfe5099b8f3aceec86543a
-Author: ZION959 <ziontran@gmail.com>
-Date:   Thu Mar 19 00:48:20 2015 -0700
+commit 9c2413bc19fb89a722f3bc251833059d9b19674f
+Author: Abhisek Devkota <ciwrl@cyanogenmod.com>
+Date:   Thu Mar 19 11:44:59 2015 -0700
 
-    Revert: sepolicy: Permissions for userinit
+    Update Telenor HU APN
     
-    Change-Id: Icaf9d191841a6214925729e40d84a61a2ebf2296 (reverted from commit dc699fb190a7249053c4f2fd280f9dc8a3096fe6)
+    Change-Id: I96fc55f7f30fb6203e8729e4cd7c40203adf3420
 
-commit 3fc3b8046be89bf90828a449c74fa93a8b11a86f
-Author: Tony Layher <layhertony@gmail.com>
-Date:   Tue Mar 10 20:01:56 2015 -0400
+commit 768292df1d7ae1c975885e683a034cc336bf55c8
+Author: Gianmarco Reverberi <gianmarco.reverberi@gmail.com>
+Date:   Tue Mar 10 20:16:06 2015 +0100
 
-    vendor_cm: sepolicy: address sysinit denials.
+    SystemUpdateService: enable service but lock its receivers [2/2]
     
-      From the log:
-      avc: denied { getattr } for pid=317 comm=run-parts
-      path=/system/etc/init.d/90userinit dev=mmcblk0p24
-      ino=65035 scontext=u:r:sysinit:s0
-      tcontext=u:object_r:userinit_exec:s0 tclass=file
+    Added SecretCodeReceiver to locked components
     
-    Change-Id: Ib9983c2dac1e241cadb049d6bd966abcc5f18d4c
+    Added list of components that need to be forced enabled
+    (because they've been previously disabled)
+    
+    Change-Id: I7cc0efc1830b45bc5384ff421b829e0be0d955d8
 
 project vendor/cmremix/
-commit 863032ef128c9f91a0d38b00eab95ab8c9327518
-Author: ZION959 <ziontran@gmail.com>
-Date:   Sat Mar 14 00:30:47 2015 -0700
-
-    USE_CLANG_QCOM_LTO (lto) in about
-
-commit 931c1c4aa256f0e33482d3cea3bb60e21d4d3c85
-Author: ZION959 <ziontran@gmail.com>
-Date:   Sat Mar 14 16:22:01 2015 -0700
-
-    random: set proper permissions for e/frandom
-
 commit ca0d4766c548de579f4d23f05effa734421ab19b
 Author: ZION959 <ziontran@gmail.com>
 Date:   Sun Mar 15 19:02:51 2015 -0700
@@ -3750,34 +2920,13 @@ Date:   Thu Mar 19 00:51:03 2015 -0700
 
     disabled cmremix optimization for now
 
+commit e7107d9f8a72cff8c8a0a368826130d4838dbc9b
+Author: ZION959 <ziontran@gmail.com>
+Date:   Fri Mar 20 22:25:37 2015 -0700
+
+    add ANSI color scheme script for CMRemix-ROM
+
 project vendor/samsung/
-commit 3bbca26126cd482ed820cf1e27d794fdf363d473
-Author: Arne Coucheron <arco68@gmail.com>
-Date:   Thu Mar 12 05:32:33 2015 +0100
-
-    serrano: Update blobs
-    
-     * From SHV-E370K's 4.4.4 ROM.
-
-commit c0dc7958e69d2b7ec7bcff9115095cbd13b2ce5f
-Merge: 8f6ed55 3bbca26
-Author: Arne Coucheron <arco68@gmail.com>
-Date:   Fri Mar 13 06:11:38 2015 +0100
-
-    Merge pull request #593 from arco/cm-12.0
-    
-    serrano: Update blobs
-
-commit 198ec0c1c5ad03e8554d92c563f47d1815eef86a
-Author: Arne Coucheron <arco68@gmail.com>
-Date:   Sun Mar 15 01:16:04 2015 +0100
-
-    Partial revert "serrano: Update blobs"
-    
-     * Revert RIL blobs
-    
-    This reverts commit 3bbca26126cd482ed820cf1e27d794fdf363d473.
-
 commit bbdbc2ff202a005a1b5f525f9bc6de3dc7d27a6f
 Merge: c0dc795 198ec0c
 Author: Arne Coucheron <arco68@gmail.com>

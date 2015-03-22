@@ -1,0 +1,76 @@
+
+**** https://github.com/cmRemiX/android_build
+origin	git@github.com:cmRemiX/android_build.git ****
+6959717 : build: Prebuilt Chromium files check <Lokesh Chamane> 12 days ago
+73e8005 : build: move chromium call... <JoseGalRe> 22 hours ago
+b69dfce : build: Rainbow unicorn puke [1/2] <MaDc0w> 22 hours ago
+ 
+**** https://github.com/CyanogenMod/android_device_qcom_common ****
+28310b2 : power-8226: Remove unnecessary hint <Steve Kondik> 5 days ago
+63f4751 : power-8226: Increase the boost a bit <Steve Kondik> 5 days ago
+94ed698 : power-8226: Remove the HMP boost hint <Steve Kondik> 5 days ago
+c534f6e : power-8226: Add support for POWER_HINT_LOW_POWER <Steve Kondik> 5 days ago
+5a31d99 : power-8226: Various updates to Power HAL <Steve Kondik> 5 days ago
+4ed36a9 : power-8226: Add support for system performance profiles. <Steve Kondik> 5 days ago
+ 
+**** https://github.com/cmRemiX/android_external_sqlite
+origin	git@github.com:cmRemiX/android_external_sqlite.git ****
+fc4f2d6 : Upgrade to SQLite 3.8.8.3 <arter97> 8 days ago
+ 
+**** https://github.com/cmRemiX/android_frameworks_av
+origin	git@github.com:cmRemiX/android_frameworks_av.git ****
+c498eab : Revert "soundpool: reuse channel for same sample if available" <Arne Coucheron> 5 days ago
+ 
+**** Origin_bitbucket	git@bitbucket.org:cmRemiX/android_frameworks_base.git
+https://github.com/cmRemiX/android_frameworks_base
+origin	git@github.com:cmRemiX/android_frameworks_base.git ****
+43a8a49 : SystemUI: survive notification update spam <Roman Birg> 87 minutes ago
+0ea055bf : Don't start theme service on core only boot <Scott Mertz> 3 hours ago
+44f71d1 : Clear Theme in System UI <Andy Mast> 89 minutes ago
+e77e306 : Themes: Perform mapping when not from overlay <d34d> 7 hours ago
+d7947f1 : third part apps can unlock the phone without password even if the phone has setted the password <longyu.huang> 22 hours ago
+6a21479 : Avoid boot looping when theme provider is unavailable <Andy Mast> 28 hours ago
+4df7300 : SystemUI: load current user's qs tiles <Roman Birg> 7 days ago
+fde34f5 : systemui: don't start-stop visualizer directly after a power save event <Jorge Ruesga> 34 hours ago
+4dddb8d : improve lock screen wallpaper behavior <Roman Birg> 3 days ago
+0ce2eaa : Themes: Always clone the new theme if non-null <d34d> 2 days ago
+ 
+**** https://github.com/cmRemiX/android_frameworks_opt_telephony
+origin	git@github.com:cmRemiX/android_frameworks_opt_telephony.git ****
+5f8247a : IccSmsInterfaceManager: Disable debug logging <Dave Kessler> 9 hours ago
+ 
+**** https://github.com/cmRemiX/android_kernel_samsung_trlte
+origin	git@github.com:cmRemiX/android_kernel_samsung_trlte.git ****
+0e1858d : update defconfig <ZION959> 50 minutes ago
+73cbb53 : Revert: msm: thermal: add a module param to change the thermal throttle temperature point to userspace <ZION959> 73 minutes ago
+ 
+**** https://github.com/CyanogenMod/android_packages_apps_CMFileManager ****
+2185846 : cmfm: delete obsolete themes resources <Jorge Ruesga> 2 days ago
+b62df7a : cmfm: force colorControlNormal to white <Jorge Ruesga> 2 days ago
+03e534f : cmfm: fix edit home bookmark icon <Jorge Ruesga> 2 days ago
+ 
+**** https://github.com/CyanogenMod/android_packages_apps_Contacts ****
+e98c8a5 : Contacts: Add checkableimageview to sim import picker <Raj Yengisetty> 2 days ago
+ 
+**** https://github.com/CyanogenMod/android_packages_apps_Eleven ****
+e039904 : Eleven: fixed broken spacing <Mikalacki Sava> 2 days ago
+ 
+**** https://github.com/CyanogenMod/android_packages_apps_Nfc ****
+44ee38a : Material Beam icon. <Martijn Coenen> 8 weeks ago
+ 
+**** Origin_bitbucket	git@bitbucket.org:cmRemiX/android_packages_apps_settings.git
+https://github.com/cmRemiX/android_packages_apps_Settings
+origin	git@github.com:cmRemiX/android_packages_apps_Settings.git ****
+80bd3ab : Settings: add dashboard switch view for sw600dp <Roman Birg> 5 hours ago
+77e9c15 : Allow launching display rotation & lock screen settings externally <Michael Bestas> 81 minutes ago
+d0b698e : Settings: add switches for dashboard items <Roman Birg> 2 months ago
+ 
+**** https://github.com/CyanogenMod/android_vendor_cm
+origin	git@github.com:cmRemiX/android_vendor_cm.git
+temasek	https://github.com/temasek/android_vendor_cm ****
+768292d : SystemUpdateService: enable service but lock its receivers [2/2] <Gianmarco Reverberi> 10 days ago
+ 
+**** https://github.com/cmRemiX/android_vendor_cmremix
+origin	git@github.com:cmRemiX/android_vendor_cmremix.git ****
+30da36d : add ANSI color scheme script for CMRemix-ROM <ZION959> 2 hours ago
+ 
