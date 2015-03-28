@@ -9,18 +9,18 @@ bbd1781 : more tests <ZION959> 2 days ago
 **** Origin_bitbucket	git@bitbucket.org:cmRemiX/android_frameworks_base.git
 https://github.com/cmRemiX/android_frameworks_base
 origin	git@github.com:cmRemiX/android_frameworks_base.git ****
-ad11104 : PackageManager: don't attempt to get theme on core boot <Scott Mertz> 8 hours ago
-fe77638 : Themes: Properly hide recreateTheme <d34d> 22 hours ago
-57f209c : Revert "Themes: Don't break API in MockContext" <d34d> 22 hours ago
-6a24259 : Themes: Don't break API in MockContext <d34d> 22 hours ago
-fedce59 : GlobalActions: Use circular user avatars <Michael Bestas> 61 minutes ago
-18fcd5b : Revert "GlobalActions: Use circular user avatars" <ZION959> 63 minutes ago
+ad11104 : PackageManager: don't attempt to get theme on core boot <Scott Mertz> 10 hours ago
+fe77638 : Themes: Properly hide recreateTheme <d34d> 24 hours ago
+57f209c : Revert "Themes: Don't break API in MockContext" <d34d> 24 hours ago
+6a24259 : Themes: Don't break API in MockContext <d34d> 24 hours ago
+fedce59 : GlobalActions: Use circular user avatars <Michael Bestas> 3 hours ago
+18fcd5b : Revert "GlobalActions: Use circular user avatars" <ZION959> 3 hours ago
  
 **** https://github.com/cmRemiX/android_kernel_samsung_trlte
 origin	git@github.com:cmRemiX/android_kernel_samsung_trlte.git ****
-7d03b9f : revert: msm cpu frequency limit (faux123) (reverted from commit 330e005cbcc4484e76d09c5634c00e0445a764c1) <ZION959> 19 hours ago
-330e005 : msm cpu frequency limit (faux123) <ZION959> 20 hours ago
-3ade407 : cmremix v1.3 <ZION959> 20 hours ago
+7d03b9f : revert: msm cpu frequency limit (faux123) (reverted from commit 330e005cbcc4484e76d09c5634c00e0445a764c1) <ZION959> 21 hours ago
+330e005 : msm cpu frequency limit (faux123) <ZION959> 22 hours ago
+3ade407 : cmremix v1.3 <ZION959> 22 hours ago
 1daf915 : thermal: tsens: Fix TSENS Upper/Lower IRQ type <Siddartha Mohanadoss> 3 months ago
 e7b1ac0 : thermal: tsens: Add NULL pointer check for id <Dipen Parmar> 1 year ago
 c68eea7 : msm: thermal: Add RT priority to kernel hotplug thread <Shiju Mathew> 3 months ago
@@ -33,7 +33,7 @@ c68eea7 : msm: thermal: Add RT priority to kernel hotplug thread <Shiju Mathew> 
 1873dc4 : readahead: make context readahead more conservative <Fengguang Wu> 1 year, 6 months ago
 a89fbd4 : writeback: fix writeback cache thrashing <Namjae Jeon> 2 years, 3 months ago
 0650ba4 : writeback: fix race that cause writeback hung <Junxiao Bi> 1 year, 6 months ago
-f8ef7d2 : add MDNIE Lite Control <ZION959> 20 hours ago
+f8ef7d2 : add MDNIE Lite Control <ZION959> 22 hours ago
 a0c3170 : base CMRemix v1.2 <ZION959> 4 days ago
 6e13872 : Added sio, fifo, vr and zen I/O schedulers <ZION959> 5 days ago
 07deb51 : block, bfq: add Early Queue Merge (EQM) to BFQ-v7r6 for 3.10.8+ <Mauro Andreolini> 5 months ago
@@ -57,10 +57,10 @@ df97de0 : CM File Manager - Gracefully handle renaming on case-insensitive files
 **** Origin_bitbucket	git@bitbucket.org:cmRemiX/android_packages_apps_settings.git
 https://github.com/cmRemiX/android_packages_apps_Settings
 origin	git@github.com:cmRemiX/android_packages_apps_Settings.git ****
-61464b2 : Settings: Read CMRemix Center menu <Cristian Giordano> 4 minutes ago
-75b002b : Rework Ad Blocker Update dialog @Miccia94 <ZION959> 18 hours ago
+61464b2 : Settings: Read CMRemix Center menu <Cristian Giordano> 2 hours ago
+75b002b : Rework Ad Blocker Update dialog @Miccia94 <ZION959> 20 hours ago
  
 **** https://github.com/cmRemiX/android_vendor_cmremix
 origin	git@github.com:cmRemiX/android_vendor_cmremix.git ****
-e7107d9 : add ANSI color scheme script for CMRemix-ROM <ZION959> 22 hours ago
+e7107d9 : add ANSI color scheme script for CMRemix-ROM <ZION959> 24 hours ago
  
