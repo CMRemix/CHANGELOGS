@@ -1,0 +1,54 @@
+
+**** https://github.com/cmRemiX/android_kernel_samsung_trlte
+origin	git@github.com:cmRemiX/android_kernel_samsung_trlte.git ****
+0222bd9 : update defconfig <ZION959> 3 weeks ago
+91256b0 : msm: mdss: Add pa_v2 support to KCAL <savoca> 5 weeks ago
+3a52672 : msm: mdss: Replace PGC implementation with PCC for KCAL <savoca> 5 weeks ago
+24febc6 : msm: mdss: savoca's KCAL pp control adapted for shamu (via imoseyon) <ZION959> 3 weeks ago
+5b23e20 : update defconfig <ZION959> 3 weeks ago
+241697f : cpufreq: CPU max. hardlimit v2.2 (Yank555.lu) <ZION959> 4 weeks ago
+77e9dd3 : cpufreq: CPU max. hardlimit v2.1 (Yank555.lu) <ZION959> 3 weeks ago
+cc4f537 : kernel/power/powersuspend: new PM kernel driver for Android w/o early_suspend v1.7 (faux123/Yank555.lu) <yank555-lu> 5 weeks ago
+0a5b0ec : Add variant detection <ZION959> 3 weeks ago
+91d65f0 : build mainline v.07 <ZION959> 5 weeks ago
+8d260d8 : msm: mdss: reset ping-pong registers when display is turned off <Ujwal Patel> 9 months ago
+3e77bc0 : msm: mdss: fix pixel extension validation on decimation <Adrian Salido-Moreno> 5 months ago
+6ba8e2b : msm: mdss: avoid color fill call if flag is not set <Ingrid Gallardo> 6 months ago
+f04dcad : msm: mdss: reset pixel extension flag if validation fails <Jeevan Shriram> 6 months ago
+e3745a5 : msm: mdss: fix bug for validating pixel extension calculations <Ujwal Patel> 7 months ago
+41f85c1 : msm: mdss: add support to validate pixel extension calculations <Ujwal Patel> 7 months ago
+a04291e : msm: mdss: do not turn off interface clocks for doze mode <Aravind Venkateswaran> 6 months ago
+8de71a9 : msm: mdss: fix issues related to transitions in and out of doze mode <Aravind Venkateswaran> 7 months ago
+73167e9 : msm: mdss: Returning generic error code on overlay scaling hw limitation <Veera Sundaram Sankaran> 6 months ago
+91bf68c : msm: mdss: fix sw_reset register write during pipe halt <Ujwal Patel> 4 months ago
+3660592 : msm: mdss: Fix hardware cursor configuration for right mixer <Veera Sundaram Sankaran> 7 months ago
+a154881 : msm: mdss: ensure rotator work is done before reconfiguring session <Adrian Salido-Moreno> 1 year ago
+4d6c715 : msm: mdss: support mdp idle power collapse only for cmd mode panels <Aravind Venkateswaran> 7 months ago
+3db054b : msm: mdss: fix wb memory registration optimization <Adrian Salido-Moreno> 6 months ago
+ae65333 : msm: mdss: Remove the unused has_buf pipe member <Saurabh Shah> 8 months ago
+27e704e : msm: mdss: disable synchronized flush if mixer swap is enabled <Ujwal Patel> 5 months ago
+ece994b : msm: mdss: call wait4comp before wb kickoff <raghavendra ambadas> 6 months ago
+6db9fe4 : msm: mdss: Increase commit count for first kickoff <Terence Hampson> 10 months ago
+33b255f : msm: mdss: refactor ping pong completion logic <Adrian Salido-Moreno> 6 months ago
+9738c54 : msm: mdss: allow extra SMPs during pipe reuse on high tier targets <Ujwal Patel> 6 months ago
+d39992a : trlte: fix build after kgsl bring up. <Tony Layher> 9 weeks ago
+370249b : msm: kgsl: Wait for dispatcher on adreno idle <Shubhraprakash Das> 1 year, 2 months ago
+513e438 : msm: kgsl: Split out adreno_idle into a lighter weight function <Jordan Crouse> 12 months ago
+ee9ed28 : msm: kgsl: Take the pagetable reference count only when needed <Sunil Khatri> 10 months ago
+8d44325 : msm: kgsl: Vote against deep low power modes when GPU wakes up from slumber. <Yizheng Zhou> 5 months ago
+20fcc67 : msm: kgsl: Use a constant mask for the memops vmflags <Jordan Crouse> 1 year ago
+7d75ffb : msm: kgsl: Remove the "global" locking from the ioctl path <Jordan Crouse> 10 months ago
+46e11a2 : msm: kgsl: Keep the GPU from going into a slumber after a touch event <Jordan Crouse> 7 months ago
+458fe0a : msm: kgsl: Allow cache operations for an usermem mapped buffer <Jordan Crouse> 8 months ago
+5214eac : msm: kgsl: Revert the GPU address / ID conflict fix <Jordan Crouse> 8 months ago
+324621e : msm: kgsl: fix MIN power constraints in non-trivial cases <Lucille Sylvester> 9 months ago
+18a8b58 : msm: kgsl: Restructure IOMMU clock management <Tarun Karra> 11 months ago
+d042d05 : msm: kgsl: Check for mmu pagefault before recovery <Shubhraprakash Das> 11 months ago
+2582444 : msm: kgsl: Mark mmapped objects with VM_DONTCOPY <Jordan Crouse> 8 months ago
+f5e61f9 : msm: kgsl: Don't allow an offset when importing dma-buf buffers <Jordan Crouse> 8 months ago
+4cb66b7 : msm: kgsl: Only check GPU hardware idle while bootstrapping <Harsh Vardhan Dwivedi> 9 months ago
+d81fa87 : msm: kgsl: Don't allow userspace to pass in an invalid size <Shrenuj Bansal> 10 months ago
+b5ad0b6 : build zion mainline v0.6 <ZION959> 6 weeks ago
+d4bbd08 : Makefile: Add -floop-nest-optimize everywhere and organized flags (Chet Kener) <ZION959> 6 weeks ago
+268ed87 : Revert: Makefile: Add -floop-nest-optimize everywhere and organized and shrink the flags (Chet Kener) (reverted from commit 6c0ab7904839b8cbe522984dcc5955193eaf2a0e) fixed flags (reverted from commit 1872def3e69a962fedb90b802f555c26fc6c7860) <ZION959> 6 weeks ago
+ 

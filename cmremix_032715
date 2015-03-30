@@ -1,6 +1,6 @@
 
 **** https://github.com/CyanogenMod/android_bootable_recovery ****
-471eb4e : update-binary: support reboot_now on older recoveries <Brint E. Kriebel> 32 hours ago
+471eb4e : update-binary: support reboot_now on older recoveries <Brint E. Kriebel> 33 hours ago
  
 **** https://github.com/cmRemiX/android_build
 origin	git@github.com:cmRemiX/android_build.git ****
@@ -56,7 +56,7 @@ a05769a : no need this settings <ZION959> 7 weeks ago
 35b0dcb : build: instroduce GNU11 Modular (Pbeeler) and fixed LTO <ZION959> 8 weeks ago
  
 **** https://github.com/cmRemiX/cmRemiX ****
-3f2093d : track SM arm-linux-androideabi-4.9 <ZION959> 2 hours ago
+3f2093d : track SM arm-linux-androideabi-4.9 <ZION959> 3 hours ago
 78c5c22 : revert compile_rt <ZION959> 4 days ago
 a156338 : add back qcom clang v3.5 <ZION959> 5 days ago
 c26bcfa : derp <ZION959> 5 days ago
@@ -73,7 +73,7 @@ upstream	https://github.com/CyanogenMod/android_device_samsung_trlte-common.git 
 e04727a : Android: simplify BUSYBOX_CROSS_COMPILER_PREFIX <Chih-Wei Huang> 9 days ago
  
 **** https://github.com/CyanogenMod/android_external_whispersystems_WhisperPush ****
-81f285c : Automatic translation import <Michael Bestas> 5 days ago
+81f285c : Automatic translation import <Michael Bestas> 6 days ago
  
 **** https://github.com/CyanogenMod/android_external_wpa_supplicant_8 ****
 df7dc73 : P2P: Consider 5 GHz channels also for auto GO <Krishna Vamsi> 5 weeks ago
@@ -92,7 +92,7 @@ c29fb05 : audioflinger: refresh fast track underrun state upon start <Weiyin Jia
 **** Origin_bitbucket	git@bitbucket.org:cmRemiX/android_frameworks_base.git
 https://github.com/cmRemiX/android_frameworks_base
 origin	git@github.com:cmRemiX/android_frameworks_base.git ****
-3add7e0 : Fix ro.telephony.default_network setting parsing - fix build error <Lin Ma> 27 hours ago
+3add7e0 : Fix ro.telephony.default_network setting parsing - fix build error <Lin Ma> 28 hours ago
 847b6d5 : Fix ro.telephony.default_network setting parsing <Lin Ma> 2 days ago
 7d7937c : can not launch recents app after change time to earlier <longyu.huang> 2 days ago
 e37046b : Sort Bluetooth devices in quick settings by name <Mathias Jeppsson> 5 days ago
@@ -113,7 +113,7 @@ df8fb0a : Move arrow_pointer hotspot to better match actual tip <Michael Zoech> 
 fd9d050 : Move default value for Settings.Secure.ADVANCED_MODE to core <Michael Bestas> 3 weeks ago
 abd6440 : Fix screen pinning on devices without navbar <maxwen> 6 weeks ago
 e7b2add : systemui: don't use SIM display name if there isn't available info <Jorge Ruesga> 5 days ago
-f859af0 : Automatic translation import <Michael Bestas> 5 days ago
+f859af0 : Automatic translation import <Michael Bestas> 6 days ago
 c17bf2d : Revert: RAM bar (1/2) <ZION959> 5 days ago
  
 **** origin	git@github.com:cmRemiX/android_frameworks_opt_net_wifi.git ****
@@ -128,7 +128,7 @@ d77b4cd : Telephony: Handle PS DETACH failure during DDS SWITCH <Sukanya Rajkhow
 d683d69 : Abort Cross mapping process if SubInfo List is null <Rakesh Pallerla> 3 months ago
  
 **** https://github.com/CyanogenMod/android_hardware_qcom_audio ****
-cb739e9 : hal: Correctly set backend to best available parameters <Ethan Chen> 2 hours ago
+cb739e9 : hal: Correctly set backend to best available parameters <Ethan Chen> 3 hours ago
  
 **** https://github.com/CyanogenMod/android_hardware_qcom_bt ****
 e391a94 : Bluetooth: Fix for ANT enable failure when BT is off <pramod kotreshappa> 10 weeks ago
@@ -150,14 +150,27 @@ f624f39 : Further Availability Map Structure change <Amarnath Hullur Subramanyam
 bb93dec : Remove enum vendor_subcmds for Android HAL and use #define <Ahmad Kholaif> 3 months ago
 1c7ab08 : wlan: enable/disable all the interface on driver start and stop <Mahesh A Saptasagar> 10 months ago
  
+**** https://github.com/cmRemiX/android_kernel_samsung_trlte
+origin	git@github.com:cmRemiX/android_kernel_samsung_trlte.git ****
+5cb55c0 : update defconfig <ZION959> 74 minutes ago
+524ab8f : cpufreq/thermal: frequency mitigation preventer V2 <imoseyon> 84 minutes ago
+ffe1c02 : cpufreq: revert maxfreq change prevention code for upcoming V2 <imoseyon> 2 days ago
+4500208 : cpufreq: prevent min/max freq changes in kernel space via sysfs <imoseyon> 5 days ago
+14fa0cd : Revert "cpufreq: force cpuN policy to match cpu0 when changing freq or gov" <imoseyon> 2 weeks ago
+9e720a9 : Revert "cpufreq: force cpuN policy to match cpu0 when setting min freq" <imoseyon> 2 weeks ago
+4108fb6 : cpufreq: Use correct locking for cpufreq_cpu_data <Maria Yu> 9 months ago
+ef084a9 : cpufreq: Add if cpu is online check in show <Maria Yu> 9 months ago
+ab35aa2 : cpufreq: Protect against hotplug in cpufreq_register_driver() <Junjie Wu> 4 months ago
+17661d3 : cpufreq: Return directly in __cpufreq_get if policy is NULL <Junjie Wu> 4 months ago
+ 
 **** https://github.com/CyanogenMod/android_packages_apps_AudioFX ****
-da03ec8 : Automatic translation import <Michael Bestas> 5 days ago
+da03ec8 : Automatic translation import <Michael Bestas> 6 days ago
  
 **** https://github.com/CyanogenMod/android_packages_apps_Bluetooth ****
-cda26b8 : Automatic translation import <Michael Bestas> 5 days ago
+cda26b8 : Automatic translation import <Michael Bestas> 6 days ago
  
 **** https://github.com/CyanogenMod/android_packages_apps_BluetoothExt ****
-1c3fe3b : Automatic translation import <Michael Bestas> 5 days ago
+1c3fe3b : Automatic translation import <Michael Bestas> 6 days ago
  
 **** https://github.com/CyanogenMod/android_packages_apps_CMFileManager ****
 6e03998 : Support ambigous file extension mimetypes. <Matt Garnes> 4 days ago
@@ -168,135 +181,135 @@ f8a8d15 : cmfm: fix typo in xml drawable <Jorge Ruesga> 4 days ago
 72869df : cmfm: update changelog <Jorge Ruesga> 4 days ago
 1e3be7d : CMFileManager: Removed copyright portion of about_summary <Zyg0te> 4 days ago
 96e8aa2 : CMFileManager: Nitpicking on strings <Zyg0te> 6 days ago
-d66ebd2 : Automatic translation import <Michael Bestas> 5 days ago
+d66ebd2 : Automatic translation import <Michael Bestas> 6 days ago
 80daa0e : CMFileManager: Fixed positioning of title in editor custom ActionBar layout <Zyg0te> 6 days ago
 07154e9 : CMFileManager: Check if intent action is null when applying user defined initial directory <Zyg0te> 6 days ago
  
 **** https://github.com/CyanogenMod/android_packages_apps_Calculator ****
-02c8123 : Calculator: allow for deletion when selector is next to a separator <Raj Yengisetty> 6 hours ago
+02c8123 : Calculator: allow for deletion when selector is next to a separator <Raj Yengisetty> 7 hours ago
 207cff2 : Calculator: remove cbrt option in floating calculator advanced window <Raj Yengisetty> 5 days ago
-60b60f4 : Automatic translation import <Michael Bestas> 5 days ago
+60b60f4 : Automatic translation import <Michael Bestas> 6 days ago
  
 **** https://github.com/CyanogenMod/android_packages_apps_Calendar ****
-4f7af54 : Automatic translation import <Michael Bestas> 5 days ago
+4f7af54 : Automatic translation import <Michael Bestas> 6 days ago
  
 **** https://github.com/cmRemiX/android_packages_apps_Camera2
 origin	git@github.com:cmRemiX/android_packages_apps_Camera2.git ****
-7a11a41 : Automatic translation import <Michael Bestas> 5 days ago
+7a11a41 : Automatic translation import <Michael Bestas> 6 days ago
  
 **** https://github.com/CyanogenMod/android_packages_apps_CellBroadcastReceiver ****
-a34bb1e : Automatic translation import <Michael Bestas> 5 days ago
+a34bb1e : Automatic translation import <Michael Bestas> 6 days ago
  
 **** https://github.com/CyanogenMod/android_packages_apps_Contacts ****
 01b69c2 : Summarize local phone storage in MemoryStatusActivity. <Matt Garnes> 8 days ago
-e7dc11a : Automatic translation import <Michael Bestas> 5 days ago
+e7dc11a : Automatic translation import <Michael Bestas> 6 days ago
  
 **** https://github.com/CyanogenMod/android_packages_apps_ContactsCommon ****
 aa1e734 : Store all local contacts in only one account. <Matt Garnes> 8 days ago
 33e8f42 : contactscommon: ensure preferences are loaded before reload data <Jorge Ruesga> 9 days ago
-af649c8 : Automatic translation import <Michael Bestas> 5 days ago
+af649c8 : Automatic translation import <Michael Bestas> 6 days ago
  
 **** https://github.com/CyanogenMod/android_packages_apps_DeskClock
 teamasek	https://github.com/temasek/android_packages_apps_DeskClock.git ****
 106cfa2 : Hide flip setting if the phone doesn't have the required hardware sensor. <Martin Brabham> 2 days ago
 ba1a197 : TimerReceiver: Correctly show the remaining time for 100 hours <Diogo Ferreira> 3 days ago
-db3a532 : Automatic translation import <Michael Bestas> 5 days ago
+db3a532 : Automatic translation import <Michael Bestas> 6 days ago
  
 **** https://github.com/cmRemiX/android_packages_apps_Dialer
 origin	git@github.com:cmRemiX/android_packages_apps_Dialer.git ****
-a59cffd : Automatic translation import <Michael Bestas> 5 days ago
+a59cffd : Automatic translation import <Michael Bestas> 6 days ago
  
 **** https://github.com/CyanogenMod/android_packages_apps_Eleven ****
-a6a6cab : Automatic translation import <Michael Bestas> 5 days ago
+a6a6cab : Automatic translation import <Michael Bestas> 6 days ago
  
 **** https://github.com/cmRemiX/android_packages_apps_Email
 origin	git@github.com:cmRemiX/android_packages_apps_Email.git ****
-8ee3601 : Update strings for crowdin <Michael Bestas> 30 hours ago
+8ee3601 : Update strings for crowdin <Michael Bestas> 31 hours ago
 50c4c11 : email: add an option for delete the account <Jorge Ruesga> 8 days ago
 9848795 : email: don't block extras database <Jorge Ruesga> 8 days ago
  
 **** DU	https://github.com/DirtyUnicorns/android_packages_apps_Gallery2
 https://github.com/CyanogenMod/android_packages_apps_Gallery2 ****
 6de816c : Moar materialize changes <Alex Cruz> 7 weeks ago
-9991ef6 : Automatic translation import <Michael Bestas> 5 days ago
+9991ef6 : Automatic translation import <Michael Bestas> 6 days ago
  
 **** https://github.com/cmRemiX/android_packages_apps_InCallUI
 origin	git@github.com:cmRemiX/android_packages_apps_InCallUI.git ****
-6240812 : Automatic translation import <Michael Bestas> 5 days ago
+6240812 : Automatic translation import <Michael Bestas> 6 days ago
  
 **** https://github.com/CyanogenMod/android_packages_apps_LockClock ****
-d81eba5 : Automatic translation import <Michael Bestas> 5 days ago
+d81eba5 : Automatic translation import <Michael Bestas> 6 days ago
  
 **** origin	git@github.com:cmRemiX/android_packages_apps_Mms-caf.git ****
 066f6b4 : Mms - remove Subject listener first when remove the subject <xiao.hu> 3 days ago
-86c2354 : Mms : Dismiss compose activity, if deleting last message and no text <Danesh M> 26 hours ago
+86c2354 : Mms : Dismiss compose activity, if deleting last message and no text <Danesh M> 27 hours ago
 6ba0152 : MMS: Add feature to auto-enable mobile data for MMS send or receive. <Craig Schmitt> 9 months ago
 6246153 : Backup: fix crash when listing backups <Alexander Martinz> 5 days ago
-c06f93e : Automatic translation import <Michael Bestas> 5 days ago
+c06f93e : Automatic translation import <Michael Bestas> 6 days ago
  
 **** https://github.com/CyanogenMod/android_packages_apps_PhoneCommon ****
-48b1458 : Automatic translation import <Michael Bestas> 5 days ago
+48b1458 : Automatic translation import <Michael Bestas> 6 days ago
  
 **** Origin_bitbucket	git@bitbucket.org:cmRemiX/android_packages_apps_settings.git
 https://github.com/cmRemiX/android_packages_apps_Settings
 origin	git@github.com:cmRemiX/android_packages_apps_Settings.git ****
 d58f1b5 : Fix build <Michael Bestas> 4 days ago
 640e8fc : Use actual storage type of sdcard/usb (2/2). <Toha> 11 months ago
-b4c15e4 : Remove duplicate strings <heydabop> 23 hours ago
-4f4630b : Setting: LiveDisplay: fix percentage not showing when the dialog shows up. <Shareef Ali> 35 hours ago
+b4c15e4 : Remove duplicate strings <heydabop> 24 hours ago
+4f4630b : Setting: LiveDisplay: fix percentage not showing when the dialog shows up. <Shareef Ali> 2 days ago
 d7c7ea7 : Fix incorrect ManageApplications options menu order value. <Matt Garnes> 2 days ago
-1d490b2 : Settings: Remove "advanced mode" toggle if its defaulted to enabled. <Adnan Begovic> 2 hours ago
+1d490b2 : Settings: Remove "advanced mode" toggle if its defaulted to enabled. <Adnan Begovic> 3 hours ago
 f70bbd3 : Settings: fix mobile network switch being unchecked <Roman Birg> 4 days ago
 20c5bcc : Settings: prompt to fill new profiles out only once <Roman Birg> 4 days ago
 9b57bd5 : Settings: Set untraslatable <Tamás Tóth> 5 days ago
-89bc1a5 : Automatic translation import <Michael Bestas> 5 days ago
+89bc1a5 : Automatic translation import <Michael Bestas> 6 days ago
 8238a8e : Revert: RAM bar (2/2) <ZION959> 5 days ago
  
 **** https://github.com/CyanogenMod/android_packages_apps_SoundRecorder ****
-8ba259f : Automatic translation import <Michael Bestas> 5 days ago
+8ba259f : Automatic translation import <Michael Bestas> 6 days ago
  
 **** https://github.com/CyanogenMod/android_packages_apps_Stk ****
-b0135c2 : Automatic translation import <Michael Bestas> 5 days ago
+b0135c2 : Automatic translation import <Michael Bestas> 6 days ago
  
 **** https://github.com/CyanogenMod/android_packages_apps_Terminal ****
-e4da6cf : Automatic translation import <Michael Bestas> 5 days ago
+e4da6cf : Automatic translation import <Michael Bestas> 6 days ago
  
 **** origin	git@github.com:cmRemiX/android_packages_apps_ThemeChooser.git ****
-06ead06 : Protect app theme from CM11 themes causing crash <d34d> 34 hours ago
-9bc7b86 : Automatic translation import <Michael Bestas> 5 days ago
+06ead06 : Protect app theme from CM11 themes causing crash <d34d> 35 hours ago
+9bc7b86 : Automatic translation import <Michael Bestas> 6 days ago
  
 **** https://github.com/cmRemiX/android_packages_apps_UnifiedEmail
 origin	git@github.com:cmRemiX/android_packages_apps_UnifiedEmail.git ****
-1011e62 : Improve strings <Michael Bestas> 29 hours ago
+1011e62 : Improve strings <Michael Bestas> 30 hours ago
 70b5f3d : UnifiedEmail: Increase max attachment size to 25MB <LorDClockaN> 8 days ago
 ff335f9 : email: don't assume that onDrawerClose will be called <Jorge Ruesga> 8 days ago
  
 **** https://github.com/CyanogenMod/android_packages_providers_DownloadProvider ****
-a18a824 : Automatic translation import <Michael Bestas> 5 days ago
+a18a824 : Automatic translation import <Michael Bestas> 6 days ago
  
 **** https://github.com/CyanogenMod/android_packages_providers_ThemesProvider ****
-0b72077 : Automatic translation import <Michael Bestas> 5 days ago
+0b72077 : Automatic translation import <Michael Bestas> 6 days ago
  
 **** https://github.com/CyanogenMod/android_packages_services_Mms ****
-d3944ea : Automatic translation import <Michael Bestas> 5 days ago
+d3944ea : Automatic translation import <Michael Bestas> 6 days ago
  
 **** origin	git@github.com:cmRemiX/android_packages_services_Telecomm.git ****
-e556309 : Automatic translation import <Michael Bestas> 5 days ago
+e556309 : Automatic translation import <Michael Bestas> 6 days ago
  
 **** https://github.com/cmRemiX/android_packages_services_Telephony
 origin	git@github.com:cmRemiX/android_packages_services_Telephony.git ****
 693743e : TelephonyService: Don't change preferred network type on multi RAT capable devices. <Adnan Begovic> 4 days ago
 50451ca : TeleService: Set mode to 2g on other sim(DSDS) prior to change <Lin Ma> 3 days ago
-234562b : Automatic translation import <Michael Bestas> 5 days ago
+234562b : Automatic translation import <Michael Bestas> 6 days ago
  
 **** https://github.com/CyanogenMod/android_packages_wallpapers_Galaxy4 ****
-7d20065 : Automatic translation import <Michael Bestas> 5 days ago
+7d20065 : Automatic translation import <Michael Bestas> 6 days ago
  
 **** https://github.com/CyanogenMod/android_packages_wallpapers_PhaseBeam ****
-3a8cbf7 : Automatic translation import <Michael Bestas> 5 days ago
+3a8cbf7 : Automatic translation import <Michael Bestas> 6 days ago
  
 **** https://github.com/CyanogenMod/android_packages_wallpapers_PhotoPhase ****
-665b08d : Automatic translation import <Michael Bestas> 5 days ago
+665b08d : Automatic translation import <Michael Bestas> 6 days ago
  
 **** https://github.com/cmRemiX/android_system_core
 origin	git@github.com:cmRemiX/android_system_core.git ****
@@ -306,7 +319,7 @@ origin	git@github.com:cmRemiX/android_system_core.git ****
 93926aa : wlan: Fix for OSS build compilation issue <Mahesh A Saptasagar> 4 months ago
  
 **** https://github.com/CyanogenMod/android_vendor_cm ****
-2ca5d39 : vendor: add sepolicy entry for killswitch service <Roman Birg> 10 hours ago
+2ca5d39 : vendor: add sepolicy entry for killswitch service <Roman Birg> 11 hours ago
 75271cf : Airtel MMS - Add authtype=1 for PAP <Abhisek Devkota> 3 days ago
 a4f3e9a : Update Telekom (T-Mobile) HU APN <Tamás Tóth> 4 days ago
  
