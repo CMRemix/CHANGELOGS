@@ -1,0 +1,108 @@
+
+**** https://github.com/cmRemiX/android_build
+origin	git@github.com:cmRemiX/android_build.git ****
+808f276 : build: add cmremix version info <ZION959> 2 days ago
+ 
+**** Origin_bitbucket	git@bitbucket.org:cmRemiX/android_frameworks_base.git
+https://github.com/cmRemiX/android_frameworks_base
+origin	git@github.com:cmRemiX/android_frameworks_base.git ****
+585659d : Frameworks/base: Change String == to equals in Preference <Andreas Gampe> 13 days ago
+e1ff27c : Frameworks/base: Fix request removal in VoiceInteractionSession <Andreas Gampe> 13 days ago
+d5c9d46 : Catch errors for unknown object types. <Jason Sams> 5 days ago
+443f003 : Fix potential npe <Jason Sams> 5 days ago
+481230a : keyguard: refresh carrier info on subId changes <Jorge Ruesga> 2 days ago
+5921201 : Revert "Make forward/reverse lookup default overlay" <ZION959> 5 hours ago
+ 
+**** https://github.com/cmRemiX/android_packages_apps_Camera2
+origin	git@github.com:cmRemiX/android_packages_apps_Camera2.git ****
+0a2eab1 : Automatic translation import <Michael Bestas> 17 hours ago
+ 
+**** https://github.com/cmRemiX/android_packages_apps_Dialer
+origin	git@github.com:cmRemiX/android_packages_apps_Dialer.git ****
+c286b7c : Automatic translation import <Michael Bestas> 17 hours ago
+ 
+**** https://github.com/cmRemiX/android_packages_apps_Email
+origin	git@github.com:cmRemiX/android_packages_apps_Email.git ****
+7e5d796 : Automatic translation import <Michael Bestas> 17 hours ago
+ 
+**** https://github.com/cmRemiX/android_packages_apps_Exchange
+origin	git@github.com:cmRemiX/android_packages_apps_Exchange.git ****
+fb3d125 : Automatic translation import <Michael Bestas> 17 hours ago
+ 
+**** https://github.com/cmRemiX/android_packages_apps_InCallUI
+origin	git@github.com:cmRemiX/android_packages_apps_InCallUI.git ****
+e09dd44 : Automatic translation import <Michael Bestas> 17 hours ago
+4dfef8c : Allow hiding volume boost feature with overlay. <Matt Garnes> 4 days ago
+ 
+**** origin	git@github.com:cmRemiX/android_packages_apps_Mms-caf.git ****
+4071e1d : Automatic translation import <Michael Bestas> 17 hours ago
+ 
+**** Origin_bitbucket	git@bitbucket.org:cmRemiX/android_packages_apps_settings.git
+https://github.com/cmRemiX/android_packages_apps_Settings
+origin	git@github.com:cmRemiX/android_packages_apps_Settings.git ****
+28ba5b1 : Settings: Change media storage erase strings. <Adnan> 13 days ago
+23b678f : Storage Settings: Allow user to trigger a volume rescan <Jorge Ruesga> 2 days ago
+ 
+**** https://github.com/cmRemiX/android_packages_apps_SlimLauncher ****
+ce0117d : fix build <Nick Kralevich> 5 months ago
+6c5b4a9 : fix build <Nick Kralevich> 5 months ago
+e578ad8 : Import translations. DO NOT MERGE <Geoff Mendal> 4 months ago
+0250945 : Avoid db exception on L and above <Adam Cohen> 4 months ago
+18ce985 : Ignoring specific db exception DO NOT MERGE <Winson Chung> 4 months ago
+268b890 : Ensure that FirstFrameAnimatorHelper doesn't set play time when animation is complete <Adam Cohen> 4 months ago
+917a33e : Import translations. DO NOT MERGE <Geoff Mendal> 4 months ago
+f204877 : Fixing wrong package check when adding shortcuts <Sunny Goyal> 4 months ago
+5c18b80 : Ensure that FirstFrameAnimatorHelper doesn't set play time when animation is complete <Adam Cohen> 4 months ago
+5f05913 : Ignoring specific db exception to workaround Bug. 18554839. <Winson Chung> 4 months ago
+b02e611 : Don't try to create an app state instance during restore. <Chris Wren> 4 months ago
+ab6527d : Import translations. DO NOT MERGE <Geoff Mendal> 4 months ago
+2a66bbf : Disabling auto addition of managed profile shortcuts <Sunny Goyal> 4 months ago
+c254da2 : Updating default page indicator asset <Adam Cohen> 4 months ago
+c8f4e1b : Fix a couple regressions from resetting AppsCustomizeTabHost <Adam Cohen> 4 months ago
+08072c0 : Prevent multiple workspace state animators from being started <Adam Cohen> 4 months ago
+cf30da5 : Clearing DB before restore starts. <Sunny Goyal> 4 months ago
+c7cd2cb : Add callback which got missed in refactor <Adam Cohen> 4 months ago
+0e974b4 : Import translations. DO NOT MERGE <Geoff Mendal> 4 months ago
+416541c : Adding a few null checks.   1) During migration, if launcher2 has deleted user data, migration oes not happen   2) If Launcher3 does not has bind widget permission, QSB would be null. <Sunny Goyal> 5 months ago
+06910a8 : Fixing NullPointer Exception when user is deleted. <Sunny Goyal> 5 months ago
+e0f58d7 : Adding shortcuts corresponding to ManagedUsers automatically. <Sunny Goyal> 5 months ago
+4bbf419 : Removing some duplicate methods <Sunny Goyal> 5 months ago
+594d76d : Using the default search widget in Launcher3 <Sunny Goyal> 5 months ago
+be7939c : Proguard changing methods required for click feedback aniamtion <Sunny Goyal> 5 months ago
+8dfe2da : Adding some spacing between overview panel items <Sunny Goyal> 5 months ago
+fafca52 : Using a proxy call for isAttachedToWindow for pre 19 devices <Sunny Goyal> 5 months ago
+03a2cf1 : Removing InstallWidgetReceiver related obsolete code. <Sunny Goyal> 5 months ago
+4e43a64 : Updating page indicator assets <Adam Cohen> 5 months ago
+b9f261f : Clearing some android list errors/warnings. <Sunny Goyal> 5 months ago
+96d2cc2 : Fix folder hint text color. Likely a regression from upgrading the Activity theme <Adam Cohen> 5 months ago
+c3e12c7 : Overlay shouldn't show up above Intro screen <Adam Cohen> 5 months ago
+3f9c971 : Adding a couple memory optimizations to Launcher <Adam Cohen> 5 months ago
+d90e938 : Moving methods which update internal sets on a separate thread <Sunny Goyal> 5 months ago
+5fd733d : Failing restore, if we have an item outside screen bounds <Sunny Goyal> 5 months ago
+d4fca96 : Make sure DragLayer layout params are of the correct type <Adam Cohen> 5 months ago
+75f8adf : Fixing insets of launcher clings <Sunny Goyal> 5 months ago
+bc927f9 : Make sure DragLayer layout params are of the correct type <Adam Cohen> 5 months ago
+33d4438 : Updating backup restore logic <Sunny Goyal> 6 months ago
+9d21968 : Loading internal default layout if partner layout fails to load <Sunny Goyal> 5 months ago
+457ebaf : Import translations. DO NOT MERGE <Geoff Mendal> 5 months ago
+8c4ca92 : Fix edge case where LauncherOverlay scroll woudln't be reset <Adam Cohen> 5 months ago
+be25822 : Add InsettableFrameLayout layout params to easily ignore insets <Adam Cohen> 5 months ago
+0fb5ce2 : Tweaking close AllApps / Widgets on KK and below <Adam Cohen> 5 months ago
+a33f11e : Was seeing some duplicated icons in the migration flow <Adam Cohen> 5 months ago
+a6d0492 : Allow LauncherOverlay to access and manage insets <Adam Cohen> 5 months ago
+d8cec09 : Disabling restore for below L devices <Sunny Goyal> 5 months ago
+0e375f9 : Some resource fixes for drop target <Sunny Goyal> 5 months ago
+5517bdb : Removing landscape string overrides <Sunny Goyal> 5 months ago
+ef728d4 : Refactoring LauncherBackupHelper.java <Sunny Goyal> 5 months ago
+ 
+**** https://github.com/cmRemiX/android_packages_services_Telephony
+origin	git@github.com:cmRemiX/android_packages_services_Telephony.git ****
+59de23f : Telephony: KK upgrade path to re-enable components for MSim <Raj Yengisetty> 13 hours ago
+65ba4b6 : TeleService: pass phone ID to APN setting <Lin Ma> 15 hours ago
+89d55c2 : Automatic translation import <Michael Bestas> 17 hours ago
+ 
+**** https://github.com/cmRemiX/android_vendor_cmremix
+origin	git@github.com:cmRemiX/android_vendor_cmremix.git ****
+e5e5a01 : update ota version <ZION959> 5 hours ago
+8fb14ce : tools: change CMRemix major version <ZION959> 5 hours ago
+ 

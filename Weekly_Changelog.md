@@ -12,1702 +12,6 @@ Date:   Thu Mar 26 14:11:04 2015 -0700
     Change-Id: I9d6ec23c65291221e99d67b2361a2bd150319eee
 
 project build/
-commit ee869c36d4737173427c46427a07a599ed1befa2
-Author: ZION959 <ziontran@gmail.com>
-Date:   Fri Dec 12 23:06:47 2014 -0700
-
-    cmRemiX Version
-
-commit f07fba533f4acc67d091bc110cac9f8cae12fe0e
-Author: Chet Kener <Cl3Kener@gmail.com>
-Date:   Fri Dec 12 23:06:47 2014 -0700
-
-    Introduce New Squisher/Opticharger for Lollipop (2/2)
-    
-    Signed-off-by: Chet Kener <Cl3Kener@gmail.com>
-    Change-Id: I02b41274179cdc1793794fb11780ea60774e6e41
-
-commit 3f682239fe439d8dec4991c426edb1a4b5db7f62
-Author: root <xyyx@mail.ru>
-Date:   Fri Dec 12 23:06:47 2014 -0700
-
-    Do not use mkf2fsuserimg.sh if we have two fs in fstab, for example:
-    
-    /dev/block/platform/msm_sdcc.1/by-name/cache        /cache          ext4    noatime,nosuid,nodev,barrier=1,data=ordered                     wait,check
-    /dev/block/platform/msm_sdcc.1/by-name/cache        /cache          f2fs    flush_merge,noatime,background_gc=off,inline_xattr,active_logs=2                     wait,check
-    /dev/block/platform/msm_sdcc.1/by-name/userdata     /data           ext4    noatime,nosuid,nodev,barrier=1,data=ordered,noauto_da_alloc     wait,check,encryptable=/dev/block/platform/msm_sdcc.1/by-name/encrypt
-    /dev/block/platform/msm_sdcc.1/by-name/userdata     /data           f2fs    flush_merge,noatime,background_gc=off,inline_xattr,active_logs=2     wait,check,encryptable=/dev/block/platform/msm_sdcc.1/by-name/encrypt
-
-commit faabba3596d1e74aef33e4bb13f6cf20686a71bf
-Author: Jiangyi <sam.andrew.jiang@gmail.com>
-Date:   Sun Dec 21 22:13:45 2014 -0700
-
-    build: Add chromium prebuilt support to envsetup.sh && The core Makefile
-    
-    This adds a chromium_prebuilt function to envsetup.sh that is invoked by lunch to check
-    whether the chromium prebuilt are up-to-date or not. If not, it will be built from source
-    and then the new source built version will be pulled during brunch/mka bacon to become the
-    new prebuilts for future builds.
-    
-    This is all opt-in through the USE_PREBUILT_CHROMIUM flag. Without it being set to 1,
-    none of this would be ran, and regular operations will go on.
-    
-    PS13:
-    -use export TARGET_DEVICE
-    -replace git -C with params compatible to old git versions
-
-commit 489b78c3f3973174d8c3f48a2fab6c70a88c9763
-Author: Ayysir <ayysir@aospal.com>
-Date:   Sun Dec 21 22:13:45 2014 -0700
-
-    Prebuilt chromium: Run a check for target device directory
-    
-    This should fix the issue that arises if device fails
-    and device is built again, chromium will error out because it thinks
-    the prebuilt files exist (which they are not, directories are just created).
-    
-    Signed-off-by: Ayysir <ayysir@aospal.com>
-    Change-Id: I595cab268e66c738ccae9900150b36d7f9626a6e
-
-commit e0f889a07e183123cb45a27b98e590cdcc1af938
-Author: rooque <victor.rooque@gmail.com>
-Date:   Sun Dec 21 22:13:45 2014 -0700
-
-    build: Fix PreBuilt Chromium refs
-
-commit f5d611fac3a1a6a3050cf0ee23d05ac9cd040d71
-Author: JoseGalRe <josegalre@gmail.com>
-Date:   Sun Dec 21 22:13:45 2014 -0700
-
-    build: change style console output of prebuilt chromium
-    
-    Change-Id: I2c390f3c64d614e181ebcad4e9711a93d9c55d44
-
-commit ea98e8eaa18ef72ed86126275c47cdd55c77f820
-Author: mar-v-in <github@rvin.mooo.com>
-Date:   Sun Dec 21 22:13:45 2014 -0700
-
-    JDK8: JDK check should succeed with OpenJDK 8
-    
-    Change-Id: I1c1eaff7fa36bba2db261e0c5311bbc6d005a726
-
-commit 5965b9a5ea6de53fcccf8cd286e62f7c68d1034e
-Author: JoseGalRe <josegalre@gmail.com>
-Date:   Thu Dec 25 16:21:52 2014 -0700
-
-    build: Show more hardware information about the device [3/3]
-
-commit a27bb09d3e3efc6f2f56bcffcbc675818b4fa8cd
-Author: Bjorn Hutmacher <bjorn.hutmacher@gmail.com>
-Date:   Thu Dec 25 16:21:52 2014 -0700
-
-    build: Do not remove recovery resources, so TWRP can build
-
-commit 57dffb1f3fedca08664c06ba192d1ea9d5c67c59
-Author: Lokesh Chamane <lokesh.c703@gmail.com>
-Date:   Wed Dec 31 14:14:32 2014 -0500
-
-    Remove recovery resources for cwm
-    
-    Revert this, https://github.com/PAC-man/android_build/commit/cab57f994fe0c7c53853411eaa3575aa6b3ef8d7
-    
-    Change-Id: Ica036525b768f6e416b103ba60bc26d58f2e02e2
-    Signed-off-by: Lokesh Chamane <lokesh.c703@gmail.com>
-
-commit 9576751871d295bc0ab4362e61e7ffa9ff647f55
-Author: Bjorn Hutmacher <bjorn.hutmacher@gmail.com>
-Date:   Wed Dec 31 14:14:32 2014 -0500
-
-    core/config.mk: Add SED_INPLACE
-    
-    Change-Id: I5fdff25e5c1d4861b3a1f9e208c6d0fa5d415115
-
-commit 3784fdd5b02eb8d3e41c161eb846f99c559bfe8d
-Author: Bjorn Hutmacher <bjorn.hutmacher@gmail.com>
-Date:   Wed Dec 31 14:14:32 2014 -0500
-
-    core: Set ro.adb.secure=0 for recovery default.prop
-    
-    Change-Id: I71384795580ae6650bf543128798ee312f74e0a2
-
-commit 43eb293c604fa24bb04005ce252fbf64251550ca
-Author: LorDClockaN <davor@losinj.com>
-Date:   Wed Dec 31 14:14:32 2014 -0500
-
-    Add SuperSU to releasetools
-    
-    Thanks to chinfire's "How to SU" guide,
-    I've managed to get SuperSU zip flashing on every
-    rom flash and it can easily be updated in
-    vendor
-    
-    Also Settings part merged in from OmniRom
-    
-    PS2: Don't unmount /system, it gets unmounted
-         from within superu.zip flash script
-    
-    Change-Id: I0f57f8c2b8733021c3c0b9a5fd3c343ae565a959
-    Signed-off-by: LorDClockaN <davor@losinj.com>
-
-commit 1f1bffaf0ea5636d62c97fa52971eedcedcaf21c
-Author: William Casey SEdlacek <w@sedlaceks.org>
-Date:   Wed Dec 31 14:14:32 2014 -0500
-
-    Block Building
-
-commit 5d091b34037f454fe972e980d103c50248cec211
-Author: Chet Kener <Cl3Kener@gmail.com>
-Date:   Wed Dec 31 14:14:32 2014 -0500
-
-    Add a Whole bunch of Clean Options
-
-commit 247b761851883b021784503dc6882e0ab7bb7142
-Author: Chet Kener <Cl3Kener@gmail.com>
-Date:   Wed Dec 31 14:14:32 2014 -0500
-
-    Add Make Dirty Option
-    
-    Signed-off-by: Chet Kener <Cl3Kener@gmail.com>
-
-commit 73667c3845dfb317694ca2d1c9c9788a08702681
-Author: deadman96385 <seanhoyt963@gmail.com>
-Date:   Wed Dec 31 19:44:19 2014 -0500
-
-    Kill some log spam
-    
-    Thanks to @Cl3Kener for taking lots of his precious time to help me find these things that were driving me up the wall.  I should have authored this commit as him but I didn't.  Sorry buddy maybe next time....
-    
-    Change-Id: I8d6cd504afe83954964f71eb7d8f802624d2e595
-    Signed-off-by: Chet Kener <Cl3Kener@gmail.com>
-
-commit 4e5993ebed6d66674091b40514aeedee0af05093
-Author: MrBaNkS <banksmi09@gmail.com>
-Date:   Wed Dec 31 19:44:19 2014 -0500
-
-    build: remove all stops if using different make/openjdk-java version
-    
-    Signed-off-by: Chet Kener <Cl3Kener@gmail.com>
-
-commit 07e90f3dc7d239324fe711cd7edbf0336edb369a
-Author: Evan Anderson <evan1124@gmail.com>
-Date:   Wed Dec 31 19:44:19 2014 -0500
-
-    ccache: Use system version over prebuilt
-    
-    If there is a ccache binary on the
-    host system use it instead of the
-    AOSP prebuilt.
-    
-    Change-Id: I4b1e030713be22167a12bd229a4e35eda7736cd2
-    Signed-off-by: Evan Anderson <evan1124@gmail.com>
-    Signed-off-by: Chet Kener <Cl3Kener@gmail.com>
-    
-    (cherry picked from commit a74224f270183552ee2c2f0db16d24168f97a417)
-    
-    (cherry picked from commit a74224f270183552ee2c2f0db16d24168f97a417)
-
-commit ff05e1a7720cf41708bde2ea73f43fe093c83e4a
-Author: Elliott Hughes <enh@google.com>
-Date:   Wed Dec 31 19:44:19 2014 -0500
-
-    Remove libdvm dex preopt support.
-    
-    libdvm is dead.
-    
-    Change-Id: Ib8571c007f8a9f0e0eaf5c61b5d2e416b2d95089
-    Signed-off-by: Chet Kener <Cl3Kener@gmail.com>
-    
-    (cherry picked from commit d875c8eab87552602c1df2d007b5a23ca12fdb69)
-    
-    (cherry picked from commit d875c8eab87552602c1df2d007b5a23ca12fdb69)
-
-commit 8583c9b3f00943d7f714852239391d6828b79ea2
-Author: Ian Rogers <irogers@google.com>
-Date:   Sun Jan 18 17:12:51 2015 -0700
-
-    Move definition of -D__ARM_FEATURE_LPAE=1 cflag to top-level.
-    
-    LPAE indicates better instructions can be used when atomicity guarantees are
-    needed. However, LPAE's presence isn't advertised by clang/GCC. We fake an
-    ARM feature to advertise its presence on architectures where it is.
-    Also, add a TODO documenting that cortex-a15 is not the correct CPU variant
-    for krait.
-    
-    Change-Id: I02a1248025c32d94eca0bc8a249dc524f1ac9c36
-    Signed-off-by: Chet Kener <Cl3Kener@gmail.com>
-    (cherry picked from commit 42d9c498021f6ccaafb1108b289bf3e5e2160fdd)
-    
-    Conflicts:
-    	core/combo/arch/arm/armv7-a-neon.mk
-
-commit e030045dd0589cdc45db8d41f732ed13ae48cd88
-Author: David 'Digit' Turner <digit@google.com>
-Date:   Sun Jan 18 17:12:51 2015 -0700
-
-    Update host linux toolchain to gcc 4.8
-    
-    This patch ensures the build system uses the prebuilt gcc-4.8 toolchain
-    when building host Linux binaries, instead of the gcc-4.6 one.
-    
-    Change-Id: I7b449650714ba4314a780827e0243f2af40ec82c
-    Signed-off-by: Chet Kener <Cl3Kener@gmail.com>
-    
-    (cherry picked from commit 3a371706b41edccc0e4a97e09920c1b663b17a1b)
-    
-    (cherry picked from commit 3a371706b41edccc0e4a97e09920c1b663b17a1b)
-
-commit 7ca167436289b4256cf56edabfd7e7a3bf7f7c7d
-Author: Chet Kener <Cl3Kener@gmail.com>
-Date:   Sun Jan 18 17:12:51 2015 -0700
-
-    Add Toolchain Version to Lunch Menu
-    
-    Signed-off-by: Chet Kener <Cl3Kener@gmail.com>
-    
-    (cherry picked from commit b8d1f8e56a135943175384e9719e7bfb59733dbb)
-    
-    (cherry picked from commit b8d1f8e56a135943175384e9719e7bfb59733dbb)
-
-commit 33188c35bd3d870649abc84d81d3a77e69ca5b02
-Author: Chet Kener <Cl3Kener@gmail.com>
-Date:   Sun Jan 18 17:12:51 2015 -0700
-
-    Use New 4.8 Host Toolchain from Google
-    
-    * While we are fixing SM Host Toolchains let's use the latest Google.
-    
-    Signed-off-by: Chet Kener <Cl3Kener@gmail.com>
-    
-    (cherry picked from commit 3885177ff3cdcc3374944be6d9fe984e5d999291)
-    
-    (cherry picked from commit 3885177ff3cdcc3374944be6d9fe984e5d999291)
-
-commit c32af1da2cfe94a592b726bfb360d8702926757c
-Author: Paul Beeler <pbeeler80@gmail.com>
-Date:   Sun Jan 18 17:12:51 2015 -0700
-
-    Add graphite flags
-    
-    Change-Id: I90bd416e800936b2130b82246fe0fd047774d466
-    Signed-off-by: Paul Beeler <pbeeler80@gmail.com>
-    Signed-off-by: Chet Kener <Cl3Kener@gmail.com>
-    
-    (cherry picked from commit f604a52efdb79fca5506fcd3e9c4c80799bdbb33)
-    
-    (cherry picked from commit f604a52efdb79fca5506fcd3e9c4c80799bdbb33)
-
-commit cbf1ba804dba8af6f23395293431df7b32c25a92
-Author: Chet Kener <Cl3Kener@gmail.com>
-Date:   Sun Jan 18 17:12:51 2015 -0700
-
-    Remove 2nd cpu nonsense
-    
-    * Not like I'll ever use it
-    
-    Signed-off-by: Chet Kener <Cl3Kener@gmail.com>
-    
-    (cherry picked from commit b5b4b58f4596c83e1f40b7d8a2e060c90f1dc7e3)
-    
-    (cherry picked from commit b5b4b58f4596c83e1f40b7d8a2e060c90f1dc7e3)
-
-commit 9ca5fa0192f7812586869849fbf9854fd0e3d0bc
-Author: ZION959 <ziontran@gmail.com>
-Date:   Sun Jan 18 17:24:12 2015 -0700
-
-    Build: Add Custom Toolchain Support
-    
-    (cherry picked from commit 75dab12fd829083afdf3e491e2955373fb9f7e99)
-    
-    (cherry picked from commit 61b7c1a0e72c1ea5e6d7d205edbfd5d0491f23fe)
-    
-    (cherry picked from commit 8be05df23458c5f336bce9f164045cfd8b7b7bba)
-    
-    (cherry picked from commit 62a2e408062591a72befd2f38fcedf283c136340)
-    
-    (cherry picked from commit 67786fe131ca8ea5c3a192879c4a64dd1259deae)
-    
-    (cherry picked from commit 0159f777a1ae7174ae32a2d9a5420a4b563e13c9)
-    
-    (cherry picked from commit de7c8cba8acd1b2ad25ebaca7ca817cd6653b300)
-    
-    (cherry picked from commit 5e3429c4f499b0ce89a97b8910ecf9508f68f417)
-    
-    (cherry picked from commit 5e3429c4f499b0ce89a97b8910ecf9508f68f417)
-
-commit d6a38b747c1bf10ae575441ae0743f439b171265
-Author: Chet Kener <Cl3Kener@gmail.com>
-Date:   Sat Dec 13 09:37:17 2014 -0500
-
-    Cleanup armv7a neon
-    
-    * Why don't we have cortex-a9 option and why is the fix cortex a8 being applied to all?
-    
-    Signed-off-by: Chet Kener <Cl3Kener@gmail.com>
-    
-    (cherry picked from commit 6a513af74a4a3bb8f94ab9d8d1987b94fb7e86e0)
-    
-    (cherry picked from commit 6a513af74a4a3bb8f94ab9d8d1987b94fb7e86e0)
-
-commit d10519e16dd647ee7dd1ea5fb1a848313114dfc3
-Author: Paul Beeler <pbeeler80@gmail.com>
-Date:   Mon Dec 15 23:08:47 2014 -0700
-
-    Update modular:  add strict-aliasing and make flags default instead of using a string
-    
-    Signed-off-by: Paul Beeler <pbeeler80@gmail.com>
-    Signed-off-by: Chet Kener <Cl3Kener@gmail.com>
-    
-    (cherry picked from commit 8ced76a5bdd6cd38ce6845a8bf303986cfa4a9fd)
-    
-    (cherry picked from commit 8ced76a5bdd6cd38ce6845a8bf303986cfa4a9fd)
-
-commit 39cf04e4ac3d07e786d2a0e5f60e878076fcbbb0
-Author: Paul Beeler <pbeeler80@gmail.com>
-Date:   Wed Dec 24 09:44:17 2014 -0500
-
-    Update Graphite and Strict Aliasing
-    
-    Signed-off-by: Chet Kener <Cl3Kener@gmail.com>
-    
-    (cherry picked from commit 15a343e2ef029a83ca8feebad9c5a42952a0621a)
-    
-    (cherry picked from commit 15a343e2ef029a83ca8feebad9c5a42952a0621a)
-
-commit 0308e1e8965614099dc8ff9ebad120ec34399e99
-Author: Chet Kener <Cl3Kener@gmail.com>
-Date:   Wed Dec 24 12:59:31 2014 -0500
-
-    Initial Disable Strict Option
-    
-    * Still will need lots of work.
-    
-    Signed-off-by: Chet Kener <Cl3Kener@gmail.com>
-    
-    (cherry picked from commit a1430dba729cd13e6e7a04d2b00c60d929979bd0)
-    
-    (cherry picked from commit a1430dba729cd13e6e7a04d2b00c60d929979bd0)
-
-commit 9f1baa13a22bf27272cedb6246fd58422f593411
-Author: Chet Kener <Cl3Kener@gmail.com>
-Date:   Wed Dec 24 16:45:55 2014 -0500
-
-    Updates/Fixes for modular graphite/strict implementation
-    
-    Signed-off-by: Chet Kener <Cl3Kener@gmail.com>
-    
-    (cherry picked from commit 0d5703ef3aa4632ff8a638b42da053055b14f475)
-    
-    (cherry picked from commit 0d5703ef3aa4632ff8a638b42da053055b14f475)
-
-commit 0a1811484652da3fc0ea343a977bc645941d9f2a
-Author: Chet Kener <Cl3Kener@gmail.com>
-Date:   Fri Dec 26 18:28:43 2014 -0500
-
-    Use Universal True instead of Yes
-    
-    Signed-off-by: Chet Kener <Cl3Kener@gmail.com>
-    
-    (cherry picked from commit 64d3fe317204e1ba769c4ac39eda93ea613f0d58)
-    
-    (cherry picked from commit 64d3fe317204e1ba769c4ac39eda93ea613f0d58)
-
-commit 31796902300116b8d6441dfd87d6ac43b6c5fd06
-Author: Chet Kener <Cl3Kener@gmail.com>
-Date:   Fri Dec 26 19:14:21 2014 -0500
-
-    Introduce USE_HOST_4_8 Flag
-    
-    * This will enable Host 4.6 by default for devices that can't handle Host 4.8
-    
-    Signed-off-by: Chet Kener <Cl3Kener@gmail.com>
-    
-    True not yes
-    
-    Signed-off-by: Chet Kener <Cl3Kener@gmail.com>
-    
-    (cherry picked from commit 659f1389ba8500794324fd705fb2c8a7b8847533)
-    
-    (cherry picked from commit 659f1389ba8500794324fd705fb2c8a7b8847533)
-
-commit 010eee810d0ab2f06661459d6c1121b52c8d24f0
-Author: Anthony King <anthonydking@gmail.com>
-Date:   Thu Nov 6 20:34:13 2014 +0000
-
-    WIP: clang supports cortex-a15 now
-    
-    Change-Id: I9872db2237c513f135df32c5147e47edf6eba49f
-    Signed-off-by: Chet Kener <Cl3Kener@gmail.com>
-    
-    (cherry picked from commit 442dbe42044641f457b45930230c342ce1728281)
-    
-    (cherry picked from commit 442dbe42044641f457b45930230c342ce1728281)
-
-commit f0ef0a3a21d7957e8ac64e62195def12dcfecd1a
-Author: Chet Kener <Cl3Kener@gmail.com>
-Date:   Fri Dec 26 19:44:02 2014 -0500
-
-    Update Strict.mk with more violations
-    
-    Signed-off-by: Chet Kener <Cl3Kener@gmail.com>
-    
-    (cherry picked from commit f0f90132858e72ae4ffa2f24c9fade2748c85797)
-    
-    (cherry picked from commit f0f90132858e72ae4ffa2f24c9fade2748c85797)
-
-commit 79bffe3680e091a329b965c2e52e3da180418127
-Author: Jake Weinstein <xboxfanj@msn.com>
-Date:   Mon Dec 22 13:01:03 2014 -0500
-
-    build: clang: use swift and VFP4 flags for krait
-    
-    Change-Id: I4c22d6d7d8d2dcf5de26ba3061bba58c74eaf93c
-    Signed-off-by: Chet Kener <Cl3Kener@gmail.com>
-    
-    (cherry picked from commit 860fcc499f91a9644cccfb3de7b3b37570bad379)
-    
-    (cherry picked from commit 860fcc499f91a9644cccfb3de7b3b37570bad379)
-
-commit fad7fc98f7c0c7b598ca4b7b72167f46530d8354
-Author: Chet Kener <Cl3Kener@gmail.com>
-Date:   Sat Dec 27 02:20:48 2014 -0500
-
-    TWRP Strict Aliasing Violations
-    
-    Signed-off-by: Chet Kener <Cl3Kener@gmail.com>
-    
-    (cherry picked from commit b1ec348c6d50c8652002cc896fccc02477313be7)
-    
-    (cherry picked from commit b1ec348c6d50c8652002cc896fccc02477313be7)
-
-commit 17b92ede1ef6889a7e10504f503586607d750191
-Author: Paul Beeler <pbeeler80@gmail.com>
-Date:   Sat Dec 27 03:21:14 2014 -0700
-
-    strict-aliasing: Fix warning levels for clang or not clang
-    
-    Signed-off-by: Paul Beeler <pbeeler80@gmail.com>
-    Signed-off-by: Chet Kener <Cl3Kener@gmail.com>
-    
-    (cherry picked from commit ff049aa0fb7b40556ad48618eadd01663cbb76af)
-    
-    (cherry picked from commit ff049aa0fb7b40556ad48618eadd01663cbb76af)
-
-commit cac4c979df46b4466cb6534a109dc5d2b806e9b7
-Author: Paul Beeler <pbeeler80@gmail.com>
-Date:   Sat Dec 27 18:15:49 2014 -0700
-
-    strict-aliasing:  update module list
-    
-    Signed-off-by: Paul Beeler <pbeeler80@gmail.com>
-    Signed-off-by: Chet Kener <Cl3Kener@gmail.com>
-    
-    (cherry picked from commit 00ba0c7d0e09258eb4026a58f90721d641a9c450)
-    
-    (cherry picked from commit 00ba0c7d0e09258eb4026a58f90721d641a9c450)
-
-commit 08f2dfc2ce7b006dc736dc70bc76fc71c7a0dfa9
-Author: Chet Kener <Cl3Kener@gmail.com>
-Date:   Mon Dec 29 11:00:23 2014 -0500
-
-    Initial Modular O3 Implementation
-    
-    * Due to the many number of local makefiles that somehow seem to sometimes override -O3 in Lollipop I'm using -O2 + individual -O3 flags instead of just -O3.  I noticed there was a larger size difference when doing this so it seems to work better from what I can tell.
-    
-    Signed-off-by: Chet Kener <Cl3Kener@gmail.com>
-    
-    derp
-    
-    Signed-off-by: Chet Kener <Cl3Kener@gmail.com>
-    
-    ftree-loop-vectorize not recognized
-    
-    Signed-off-by: Chet Kener <Cl3Kener@gmail.com>
-    
-    Guard O3 like Graphite
-    
-    Signed-off-by: Chet Kener <Cl3Kener@gmail.com>
-    
-    O3: Libziparchive is a hater
-    
-    Signed-off-by: Chet Kener <Cl3Kener@gmail.com>
-    
-    Updated O3 List
-    
-    Signed-off-by: Chet Kener <Cl3Kener@gmail.com>
-    
-    (cherry picked from commit 25d8c51cf240b38ba87c5a7ef0f29b6fb7b61e67)
-    
-    (cherry picked from commit 25d8c51cf240b38ba87c5a7ef0f29b6fb7b61e67)
-
-commit 2b7917356a03d8932f8c5d4fd6a2c32f6faf0013
-Author: Chet Kener <Cl3Kener@gmail.com>
-Date:   Tue Dec 30 16:46:13 2014 -0500
-
-    Attempt to tune for Krait Modularly
-    
-    Signed-off-by: Chet Kener <Cl3Kener@gmail.com>
-    
-    (cherry picked from commit ce30849f0c936fa9606062334bbc79eb627b4185)
-    
-    (cherry picked from commit ce30849f0c936fa9606062334bbc79eb627b4185)
-
-commit 4c21001765dbe8af66fd02d44906526a1585033c
-Author: Chet Kener <Cl3Kener@gmail.com>
-Date:   Tue Dec 30 23:39:14 2014 -0500
-
-    Return some GCCONLY flags used in Kitkat
-    
-    * and keep them away from clang too!
-    
-    Signed-off-by: Chet Kener <Cl3Kener@gmail.com>
-    
-    (cherry picked from commit 3fe59b017364f110fdf226e02f1790fc2772d0ea)
-    
-    (cherry picked from commit 3fe59b017364f110fdf226e02f1790fc2772d0ea)
-
-commit cfcdad7aa3aeed10cba3615aa6d8f64820ab2263
-Author: Chet Kener <Cl3Kener@gmail.com>
-Date:   Tue Dec 30 23:52:16 2014 -0500
-
-    Keep Krait Tunings off the Host Modules
-    
-    Signed-off-by: Chet Kener <Cl3Kener@gmail.com>
-    
-    (cherry picked from commit 0e2c474b8d599ca911f6d8ce2f04ca3933bfa2fb)
-    
-    (cherry picked from commit 0e2c474b8d599ca911f6d8ce2f04ca3933bfa2fb)
-
-commit d99ddeeeda45f629917b722ed138d78957bc2d7c
-Author: Chet Kener <Cl3Kener@gmail.com>
-Date:   Tue Dec 30 23:55:05 2014 -0500
-
-    -mvectorize-with-neon-quad not supported by clang
-    
-    * Will move to GCCONLY
-    
-    Signed-off-by: Chet Kener <Cl3Kener@gmail.com>
-    
-    (cherry picked from commit dc4fcef6055be0b532b468c997c20c68044606e5)
-    
-    (cherry picked from commit dc4fcef6055be0b532b468c997c20c68044606e5)
-
-commit 1bc70c805d8c651a2af7723aa2f7f5a2157cb444
-Author: Chet Kener <Cl3Kener@gmail.com>
-Date:   Tue Dec 30 23:56:23 2014 -0500
-
-    GCCONLY: Add -mvectorize-with-neon-quad
-    
-    Signed-off-by: Chet Kener <Cl3Kener@gmail.com>
-    
-    (cherry picked from commit b72cdd79ea283f4f5accc296add6677277ef0031)
-    
-    (cherry picked from commit b72cdd79ea283f4f5accc296add6677277ef0031)
-
-commit 2660d082df10af4efef63168a4d5d795dc9402ff
-Author: Chet Kener <Cl3Kener@gmail.com>
-Date:   Wed Dec 31 01:43:49 2014 -0500
-
-    Update the Krait Ignore List
-    
-    Signed-off-by: Chet Kener <Cl3Kener@gmail.com>
-    
-    (cherry picked from commit 72b10173b9b3810f8d039cafe2754e66b90eaf39)
-    
-    (cherry picked from commit 72b10173b9b3810f8d039cafe2754e66b90eaf39)
-
-commit 9fb18469b5451b3dda0d0eeb7054661e027f8255
-Author: Chet Kener <Cl3Kener@gmail.com>
-Date:   Wed Dec 31 08:34:23 2014 -0500
-
-    Bluetooth: The Most poorly written code in Android
-    
-    Signed-off-by: Chet Kener <Cl3Kener@gmail.com>
-    
-    (cherry picked from commit df207552867bbeae8f31618ec36738851d27f371)
-    
-    (cherry picked from commit df207552867bbeae8f31618ec36738851d27f371)
-
-commit 3b2e9801ac86817fcefa3f6addacf28beb0bfd2f
-Author: Chet Kener <Cl3Kener@gmail.com>
-Date:   Wed Dec 31 13:10:43 2014 -0500
-
-    armv7-a-neon: Apply Correct mfpu and mfloat tunings per arch
-    
-    * Before everything was neon and soft float.  Now let's allow for per cortex tuning. Benchmarks should go up.  See here for better references https://github.com/CyanogenMod/android_build/commit/8907b775376211e73a566e8c9ef65e5b76cba1af
-    
-    Signed-off-by: Chet Kener <Cl3Kener@gmail.com>
-    
-    (cherry picked from commit e63fba92b06f8833a4d57ef52c00dfa7ffcadc32)
-    
-    (cherry picked from commit e63fba92b06f8833a4d57ef52c00dfa7ffcadc32)
-
-commit df6fa73753e781a25fe22965fe1b229ec627c8f2
-Author: Chet Kener <Cl3Kener@gmail.com>
-Date:   Fri Jan 2 21:57:00 2015 -0500
-
-    Remove webview related files from -O3 and GCC Only Optimizations
-    
-    This causes FCs on some applications.  I haven't experienced it but it makes no sense to really make these files larger anyways.
-    
-    Signed-off-by: Chet Kener <Cl3Kener@gmail.com>
-    
-    (cherry picked from commit a28f8e66579ec22528a578d1df844da2b489792e)
-    
-    (cherry picked from commit a28f8e66579ec22528a578d1df844da2b489792e)
-
-commit 285f036103d59d61e2e33432794f910f33ec470c
-Author: Chet Kener <Cl3Kener@gmail.com>
-Date:   Wed Dec 31 13:45:17 2014 -0500
-
-    Clang doesn't support -mfpu=neon-vfpv4
-    
-    * Which is unfortunate.  I would be much better if I didn't have to hack this crap
-    
-    Signed-off-by: Chet Kener <Cl3Kener@gmail.com>
-    
-    (cherry picked from commit 6ee82e88fa5b7302d2b9984bc93168aca1749b90)
-    
-    (cherry picked from commit 6ee82e88fa5b7302d2b9984bc93168aca1749b90)
-
-commit e6c11f5e4038908db15a8ce703b75be7a8752705
-Author: Chet Kener <Cl3Kener@gmail.com>
-Date:   Sat Jan 3 00:01:31 2015 -0500
-
-    libwebviewchromium: Haters Gonna Hate
-    
-    Signed-off-by: Chet Kener <Cl3Kener@gmail.com>
-    
-    (cherry picked from commit 48eb1ecbb5d1d97c508eb7e285e375bbb8824fcb)
-    
-    (cherry picked from commit 48eb1ecbb5d1d97c508eb7e285e375bbb8824fcb)
-
-commit a5ef1240a17d3ee00777136b5def8a30fde0564e
-Author: Chet Kener <Cl3Kener@gmail.com>
-Date:   Wed Jan 14 18:45:00 2015 -0500
-
-    Order Matters
-    
-    Put Graphite last since it will help optimize code size after -O3 and all of the other stuff.  Credits @pbeeler.
-    
-    Signed-off-by: Chet Kener <Cl3Kener@gmail.com>
-    
-    (cherry picked from commit 29d6c5d482fc27c81d0184a93795d6706a97cf0f)
-    
-    (cherry picked from commit 29d6c5d482fc27c81d0184a93795d6706a97cf0f)
-
-commit 13e8542bf93c45dc996e9d06822347d91de02eae
-Author: Chet Kener <Cl3Kener@gmail.com>
-Date:   Wed Jan 14 18:49:14 2015 -0500
-
-    Update Copyright Year to 2015
-    
-    * New year!!!
-    
-    Signed-off-by: Chet Kener <Cl3Kener@gmail.com>
-    
-    (cherry picked from commit 9e39753fd61c1d9f0d2a73186a8bb1d475425629)
-    
-    (cherry picked from commit 9e39753fd61c1d9f0d2a73186a8bb1d475425629)
-
-commit 951244b682496faa9176f50ad697a2ea68d36e6c
-Author: Chet Kener <Cl3Kener@gmail.com>
-Date:   Fri Jan 16 13:49:30 2015 -0500
-
-    Missing Separator
-    
-    * Must have missed it in rebase... :/
-    
-    Signed-off-by: Chet Kener <Cl3Kener@gmail.com>
-    
-    (cherry picked from commit c42a61a5edd6d9adebb5ed25471c8ff50c33d954)
-    
-    (cherry picked from commit c42a61a5edd6d9adebb5ed25471c8ff50c33d954)
-
-commit 2b0119cd96fdf801ea0470ac02f61bf517b09c1b
-Author: Chet Kener <Cl3Kener@gmail.com>
-Date:   Fri Jan 16 14:10:29 2015 -0500
-
-    O3: Ignore Annoying warnings that crop up with -O3
-    
-    * These are warnings, not errors! Please don't stop my build!
-    
-    Signed-off-by: Chet Kener <Cl3Kener@gmail.com>
-    
-    (cherry picked from commit c89528ad587b3eefddb1656623c4e1c95ca8167e)
-    
-    (cherry picked from commit c89528ad587b3eefddb1656623c4e1c95ca8167e)
-
-commit 3b61645241e208d671f4a635b184d97b04fb9965
-Author: Chet Kener <Cl3Kener@gmail.com>
-Date:   Fri Jan 16 20:23:13 2015 -0500
-
-    Update graphite again
-    
-    Seems the order change in the binary file caused a two more graphite errors which we fix here
-    
-    Signed-off-by: Chet Kener <Cl3Kener@gmail.com>
-    
-    (cherry picked from commit 878e16fce0084d7a4239d8cbc1482d7f09a9b9dc)
-    
-    (cherry picked from commit 878e16fce0084d7a4239d8cbc1482d7f09a9b9dc)
-
-commit 89bfe0b187368909335b51835bccc3503b1f65d9
-Author: Chet Kener <Cl3Kener@gmail.com>
-Date:   Sun Jan 18 07:15:52 2015 -0500
-
-    Introduce Modular TARGET_USE_PIPE
-    
-    * Allow for -pipe to be used. This flag actually has no effect on the generated code, but it makes the compilation process faster. It tells the compiler to use pipes instead of temporary files during the different stages of compilation, which uses more memory. On systems with low memory, GCC might get killed. In that case, do not use this flag.
-    
-    * From my personal experience, compilation time was ~5 minutes less using pipes on a "make -j8" build on my personal computer.  Times may improvement more when doing like a make -j16 or -j24 on a build server with lots of RAM. Also note that this may not speed things up on a SSD hard drive due to the faster write speeds, I only tested this on a regular hard drive.
-    
-    Signed-off-by: Chet Kener <Cl3Kener@gmail.com>
-    
-    (cherry picked from commit c5e99ee9ca8edcfa0055c66cb5f3a22c8220fe4c)
-    
-    (cherry picked from commit c5e99ee9ca8edcfa0055c66cb5f3a22c8220fe4c)
-
-commit 12ddd63ba1534bf44d6f69da1a3a4fa4fd578840
-Author: ZION959 <ziontran@gmail.com>
-Date:   Sun Jan 18 17:40:33 2015 -0700
-
-    Shrink the codes
-
-commit 477599413928550204d659c3dd68edbca101b954
-Author: Chet Kener <Cl3Kener@gmail.com>
-Date:   Sun Dec 14 23:09:53 2014 -0500
-
-    Show Custom Toolchain being used
-    
-    Signed-off-by: Chet Kener <Cl3Kener@gmail.com>
-    
-    Full Path is Too Long
-    
-    Signed-off-by: Chet Kener <Cl3Kener@gmail.com>
-    
-    Make these the same
-    
-    Signed-off-by: Chet Kener <Cl3Kener@gmail.com>
-    
-    Hardcode this to 4.8
-    
-    Signed-off-by: Chet Kener <Cl3Kener@gmail.com>
-    
-    (cherry picked from commit dedf9915f301bd5b422a3ffe59db1efbdddd968a)
-    
-    (cherry picked from commit dedf9915f301bd5b422a3ffe59db1efbdddd968a)
-
-commit e28f4d6a43bdc1e243f4a3b6c57c5cbdbdff7734
-Author: ZION959 <ziontran@gmail.com>
-Date:   Sun Jan 18 18:22:07 2015 -0700
-
-    build: show info of all Optimization features being used
-
-commit 980e063001d5fcf538734f8d523daaf2fa490191
-Author: ZION959 <ziontran@gmail.com>
-Date:   Sun Jan 18 18:47:52 2015 -0700
-
-    dumpvar: fixed sabermod kernel version
-
-commit e9de012daaa58cdec3989639c2d0e5b804fad12a
-Author: ZION959 <ziontran@gmail.com>
-Date:   Sun Jan 18 19:19:34 2015 -0700
-
-    strict : disabled more module for cmRemiX Rom
-
-commit f41fb071084e7fb48a5a6dbacc9773b48db778a2
-Author: ZION959 <ziontran@gmail.com>
-Date:   Sun Jan 18 20:08:40 2015 -0700
-
-    graphite: one more module for new SM 1-14-2015
-
-commit abdc0283deb7e013d116ce5bc5201590f0a90299
-Author: ZION959 <ziontran@gmail.com>
-Date:   Sun Jan 18 20:17:17 2015 -0700
-
-    Introduce Modular Link Time Optimization
-    This is the codes from @MWisbest, Get the idea to
-    for modular from Chet Kener & Pbeeler
-
-commit a9112d55560fad9a412149561bbb9c92bbaa5faa
-Author: Chet Kener <Cl3Kener@gmail.com>
-Date:   Mon Jan 19 11:50:28 2015 -0500
-
-    Introduce FLOOP_NEST_OPTIMIZE
-    
-    For more info with regards to how this works see http://en.wikipedia.org/wiki/Loop_nest_optimization
-    
-    It's highly aggressive so you'll notice I had to disable several dozen modules.
-    
-    Signed-off-by: Chet Kener <Cl3Kener@gmail.com>
-
-commit 548561d867e8bc8b1dc70be0c1144050f968c09b
-Author: ZION959 <ziontran@gmail.com>
-Date:   Mon Jan 19 12:01:40 2015 -0700
-
-    dumpvar: add FLOOP_NEST_OPTIMIZE info
-
-commit 4319470d8477b309e493c9cb2758f1a2077cd18a
-Author: Lokesh Chamane <lokesh.c703@gmail.com>
-Date:   Fri Jan 23 14:11:11 2015 -0500
-
-    Do not remove recovery resources for twrp
-    
-    Change-Id: I7f36cd0f43e4244e65630c915072747efda8efe1
-    Signed-off-by: Lokesh Chamane <lokesh.c703@gmail.com>
-    
-    (cherry picked from commit ebed41c60d1496d0bf961601bc33ee02b2f8e816)
-    
-    (cherry picked from commit ebed41c60d1496d0bf961601bc33ee02b2f8e816)
-    
-    (cherry picked from commit 4e86588887474f641f296cf9ed18160efb3ce879)
-    
-    (cherry picked from commit 4e86588887474f641f296cf9ed18160efb3ce879)
-    
-    (cherry picked from commit e72abe13cdc34eaa7f81b57f77b102d6876e53d1)
-    
-    (cherry picked from commit e72abe13cdc34eaa7f81b57f77b102d6876e53d1)
-
-commit fd0a966af64777e1def365290d00141cde2802c2
-Author: Paul Beeler <pbeeler80@gmail.com>
-Date:   Sat Jan 24 01:40:34 2015 -0700
-
-    various fixed and update
-
-commit c3cfa89ed2d8d4d9e8345d05e9c6898aaa09a96a
-Author: johnnyslt <ionut.darescu@gmail.com>
-Date:   Sat Jan 24 20:53:54 2015 -0700
-
-    Add changelog generator (2/2)
-    
-    How to use :
-    
-    two methods
-    
-    1.- export CMREMIX_CHANGELOG=true
-    
-    2.- add flag CMREMIX_CHANGELOG=true in BoardConfig.mk or BoardConfigCommon.mk
-    
-    Ported by @cristianomatos and verified by @alviteri
-    
-    (cherry picked from commit 1785e3196939a468b61431bc4c67b31673bef30b)
-
-commit 1e77c6eaf5bce150af8d0dca0902970acdb12996
-Author: Paul Beeler <pbeeler80@gmail.com>
-Date:   Sun Jan 25 17:16:00 2015 -0700
-
-    SM Modular:  Fix wrong indef's
-    
-    Signed-off-by: Paul Beeler <pbeeler80@gmail.com>
-    
-    Conflicts:
-    	core/O3.mk
-    	core/gcconly.mk
-    
-    (cherry picked from commit bf8d4a3fd2df31f6d795c1a11896ed5ab1eec385)
-    
-    Conflicts:
-    	core/O3.mk
-    	core/strict.mk
-
-commit 168bc8ba542ecab7fe337d8752eff1cc56d31188
-Author: Paul Beeler <pbeeler80@gmail.com>
-Date:   Sun Jan 25 17:17:28 2015 -0700
-
-    Move flags and disable modules lists out of build (1/2)
-    
-    Signed-off-by: Paul Beeler <pbeeler80@gmail.com>
-    (cherry picked from commit 6f45ca92e1fa15e39eee76a1c35aa7e6863c4fb7)
-    
-    Conflicts:
-    	core/O3.mk
-    	core/graphite.mk
-
-commit 781cfb8b6fbafb3585177753b377bbeae6590077
-Author: Paul Beeler <pbeeler80@gmail.com>
-Date:   Sun Jan 25 17:17:28 2015 -0700
-
-    Have -O3 skip when thumb is used to reduce code size. (1/2)
-    
-    Signed-off-by: Paul Beeler <pbeeler80@gmail.com>
-    
-    (cherry picked from commit 3617505a97f07888ed3698b1880d7b8854669169)
-    
-    (cherry picked from commit 3617505a97f07888ed3698b1880d7b8854669169)
-
-commit 6c585e66749daeec4e03b8a633ba56b11998b4d8
-Author: Paul Beeler <pbeeler80@gmail.com>
-Date:   Sun Jan 25 17:20:06 2015 -0700
-
-    arm neon:  Pass arch variant cflags to the kernel.
-    
-    Signed-off-by: Paul Beeler <pbeeler80@gmail.com>
-    (cherry picked from commit 05a3f4d9446a759f21f482f4bb101eda0f18bf95)
-    
-    Conflicts:
-    	core/combo/arch/arm/armv7-a-neon.mk
-
-commit d3d1b5fc17bab7b8283343bda20f7ca9dc5b69d7
-Author: Paul Beeler <pbeeler80@gmail.com>
-Date:   Sun Jan 25 17:20:06 2015 -0700
-
-    O3: Only filter arm: Only arm uses thumb.
-    
-    Signed-off-by: Paul Beeler <pbeeler80@gmail.com>
-    
-    (cherry picked from commit f12f0fb482656e892add0b03e1d5248dcbf4db34)
-    
-    (cherry picked from commit f12f0fb482656e892add0b03e1d5248dcbf4db34)
-
-commit ab43d82db3bea8cfb6e02e2edb6c411a25875f4b
-Author: ZION959 <ziontran@gmail.com>
-Date:   Sun Jan 25 18:03:25 2015 -0700
-
-    Move Strict flags and disable modules lists out of build (1/2)
-
-commit a0ae4d3bc25c72b4568a528a2430d531913a5164
-Author: ZION959 <ziontran@gmail.com>
-Date:   Sun Jan 25 22:59:14 2015 -0700
-
-    add and removed various optimzization settings
-
-commit ddb00a01b058d82865d651260d86b96f71231b5a
-Author: ZION959 <ziontran@gmail.com>
-Date:   Mon Jan 26 22:52:13 2015 -0700
-
-    kernel: Add custom toolchain for kernel build again after rebase
-    
-    example: TARGET_GCC_VERSION_ARM := 4.9
-
-commit 95c13339840d1188ac8e15f292165fb8d9c90963
-Author: SferaDev <sferadev@gmail.com>
-Date:   Mon Jan 26 22:52:13 2015 -0700
-
-    Don't stop if JDK version doesn't match
-    
-    Change-Id: I5e77c70724c7d81544673715ed09e0a53ce32730
-    
-    (cherry picked from commit 1cbdadbfeae0321b1cd9859cd2ed2572b5fdc39b)
-
-commit 12d39baf30135271382ea7e8a6feb6c241c824a1
-Author: ZION959 <ziontran@gmail.com>
-Date:   Tue Jan 27 01:15:58 2015 -0700
-
-    build: change O3 OPTIMIZATIONS
-
-commit 2b6101e5af77f4cc8cb6b20ea498768d23abcc2e
-Author: Paul Beeler <pbeeler80@gmail.com>
-Date:   Tue Jan 27 01:15:58 2015 -0700
-
-    Fix annoying issue with clang not understanding -mfpu=neon-vfpv4
-    
-    Credits to @Cl3Kener
-    
-    Signed-off-by: Paul Beeler <pbeeler80@gmail.com>
-    
-    (cherry picked from commit 5b4267469a9d4c2e183c07157928b4bcf203a72a)
-    
-    (cherry picked from commit 5b4267469a9d4c2e183c07157928b4bcf203a72a)
-    
-    (cherry picked from commit 235ff9aa3b0302d04aab3e4d52248e91e21a16a3)
-    
-    (cherry picked from commit 235ff9aa3b0302d04aab3e4d52248e91e21a16a3)
-
-commit 9da37f36471c7346a8309aad3f8d88313e8e732c
-Author: Paul Beeler <pbeeler80@gmail.com>
-Date:   Tue Jan 27 01:15:58 2015 -0700
-
-    arm neon: Strip TARGET_CPU_VARIANT then export it to the kernel.
-    
-    Also make -mfpu=neon-vfpv4 for all cortex-a15 types.
-    
-    Signed-off-by: Paul Beeler <pbeeler80@gmail.com>
-    (cherry picked from commit b58ccc5c3dfb6ef36d6aecd9ca353298896e3c5e)
-    
-    Conflicts:
-    	core/combo/arch/arm/armv7-a-neon.mk
-    
-    (cherry picked from commit 6cda883f582099fca3f155f46a8e2d885c4252fc)
-    
-    (cherry picked from commit 6cda883f582099fca3f155f46a8e2d885c4252fc)
-
-commit 580722e38e965fd1196b1d08a2acb2da359c21a3
-Author: Paul Beeler <pbeeler80@gmail.com>
-Date:   Tue Jan 27 01:15:58 2015 -0700
-
-    arm neon: denver:
-    
-    use -march=armv8-a instead of -mcpu=cortex-a15
-    
-    Signed-off-by: Paul Beeler <pbeeler80@gmail.com>
-    
-    (cherry picked from commit 01ca9fac721f54ab5634ac643c817c18103e19b8)
-    
-    (cherry picked from commit 01ca9fac721f54ab5634ac643c817c18103e19b8)
-    
-    (cherry picked from commit 67af787a69fb429704f3fca6cc0f8e41f4cfb933)
-    
-    (cherry picked from commit 67af787a69fb429704f3fca6cc0f8e41f4cfb933)
-
-commit c92fc504cb8ccfd03db66d5b3a271d6b09867459
-Author: Paul Beeler <pbeeler80@gmail.com>
-Date:   Tue Jan 27 03:06:04 2015 -0700
-
-    arm neon: unbreak
-    
-    Signed-off-by: Paul Beeler <pbeeler80@gmail.com>
-    
-    Unbreak #2
-    
-    Signed-off-by: Paul Beeler <pbeeler80@gmail.com>
-    
-    (cherry picked from commit ce439710eddfd2c5130f117380afd3d4a5aa93de)
-    
-    (cherry picked from commit ce439710eddfd2c5130f117380afd3d4a5aa93de)
-
-commit 35b0dcb031663f23b4867909ca643ba56a23a987
-Author: ZION959 <ziontran@gmail.com>
-Date:   Wed Jan 28 00:12:50 2015 -0700
-
-    build: instroduce GNU11 Modular (Pbeeler) and fixed LTO
-
-commit 401dbbe076eb008974f6a46660200b2f91a58a89
-Author: David Viteri <davidteri91@gmail.com>
-Date:   Wed Feb 4 22:37:39 2015 -0700
-
-    Build: Changelog (3/3)
-    
-    Thanks David (crDroid Andrroid)
-    Conflicts:
-    	core/Makefile
-
-commit 835c76f7cba86be9e910ab0797e2014c1b3eb776
-Author: Lokesh Chamane <lokesh.c703@gmail.com>
-Date:   Wed Feb 4 22:37:39 2015 -0700
-
-    Remove the recovery resources
-    
-    Twrp updated their resources to /twres
-    
-    Change-Id: I8910f5a2aab8b9d1da626bedca6dbe2d729e28aa
-    Signed-off-by: Lokesh Chamane <lokesh.c703@gmail.com>
-    
-    (cherry picked from commit 21c931146143494fcc327eddfd8f01fedff4311e)
-    
-    (cherry picked from commit 21c931146143494fcc327eddfd8f01fedff4311e)
-    
-    (cherry picked from commit 446e899cc9ad294315eab12872113c0cfa32af94)
-    
-    (cherry picked from commit 446e899cc9ad294315eab12872113c0cfa32af94)
-    
-    (cherry picked from commit dc64cd4879e71594556ea2f431719ed6add61340)
-    
-    (cherry picked from commit dc64cd4879e71594556ea2f431719ed6add61340)
-    
-    (cherry picked from commit 5cf706a7c997db558d98d85660ea1f4a284a3ef5)
-    
-    (cherry picked from commit 5cf706a7c997db558d98d85660ea1f4a284a3ef5)
-
-commit 602270f5243b7a85ea5b41d88781c1501612cc88
-Author: nemith <bennetb@gmail.com>
-Date:   Wed Feb 4 22:37:39 2015 -0700
-
-    Fix up the recovery.fstab for adv recovery
-    
-    Add options to allow for more complex recovery.fstabs with
-    multiple fstypes.
-    
-    Change-Id: Id4b25c4a81d972b6670cd7ea05b3b8b83d6f18a9
-    
-    (cherry picked from commit d754a51908ec544417d7d8cdfd52609d29a13712)
-    
-    (cherry picked from commit d754a51908ec544417d7d8cdfd52609d29a13712)
-    
-    (cherry picked from commit 005d20427d6ab81b4a48823db916dbf32d8a4fe9)
-    
-    (cherry picked from commit 005d20427d6ab81b4a48823db916dbf32d8a4fe9)
-    
-    (cherry picked from commit c862701be9b7b43845e0e05faa35e6c03ed65f01)
-    
-    (cherry picked from commit c862701be9b7b43845e0e05faa35e6c03ed65f01)
-    
-    (cherry picked from commit 85658d34c95324241476c428b3e1c017f6609a7e)
-    
-    (cherry picked from commit 85658d34c95324241476c428b3e1c017f6609a7e)
-
-commit 977ce36a34e75dbbe56934ffb3abd373ad062d09
-Author: Chet Kener <Cl3Kener@gmail.com>
-Date:   Wed Feb 4 23:06:14 2015 -0500
-
-    gcconly: Change -floop-nest-optimize to enable by module
-    
-    * This optimization is super aggressive and causes play store crashes.  I want to focus on the most important modules first (bionic/art) and see if I can at least get those without breaking anything (like the Play store crashes we were experiencing before)
-    
-    Signed-off-by: Chet Kener <Cl3Kener@gmail.com>
-    
-    (cherry picked from commit 85976f03db36776c2a591d8bb54cf3fdfa45db29)
-    
-    (cherry picked from commit 85976f03db36776c2a591d8bb54cf3fdfa45db29)
-    
-    (cherry picked from commit 2223c25aba286615b130a297836491061334808f)
-    
-    (cherry picked from commit 2223c25aba286615b130a297836491061334808f)
-
-commit 535bc11b63d5d2b148565e9c446193b41ed1c12b
-Author: Chet Kener <Cl3Kener@gmail.com>
-Date:   Wed Feb 4 23:19:45 2015 -0500
-
-    List Art Modules in nest optimization
-    
-    * Let's try art first
-    
-    Signed-off-by: Chet Kener <Cl3Kener@gmail.com>
-    
-    (cherry picked from commit 29a1852c15d96d58ff52a25ad673523d5fd58e25)
-    
-    (cherry picked from commit 29a1852c15d96d58ff52a25ad673523d5fd58e25)
-    
-    (cherry picked from commit e66e53b1b7ee0411174677bedcb1ef50f019f738)
-    
-    (cherry picked from commit e66e53b1b7ee0411174677bedcb1ef50f019f738)
-
-commit 21512ba10e054dc9339027cb5d3c6b85b3325d59
-Author: Chet Kener <Cl3Kener@gmail.com>
-Date:   Thu Feb 5 00:53:13 2015 -0500
-
-    Add Bionic to Nest Optimization List
-    
-    Signed-off-by: Chet Kener <Cl3Kener@gmail.com>
-    
-    (cherry picked from commit 9b44f2bed6782c82ff4979c629e146602cd17876)
-    
-    (cherry picked from commit 9b44f2bed6782c82ff4979c629e146602cd17876)
-    
-    (cherry picked from commit 5b46ee4212fdfb4a870f57b5aa89090b8bb3eb18)
-    
-    (cherry picked from commit 5b46ee4212fdfb4a870f57b5aa89090b8bb3eb18)
-
-commit 4b0b506227e21c080052f7bd0a3ac07cc62e6f4b
-Author: arter97 <qkrwngud825@gmail.com>
-Date:   Fri Feb 6 19:30:35 2015 -0700
-
-    arm: add support for BoardConfig to append CFLAG
-    Defining BOARD_GLOBAL_CFLAGS from BoardConfig will add a global CFLAG to be used with the entire ROM compilation
-    
-    Signed-off-by: arter97 <qkrwngud825@gmail.com>
-
-commit a05769a8fda53c27b20399187f4fa35b053d00b6
-Author: ZION959 <ziontran@gmail.com>
-Date:   Sat Feb 7 20:52:54 2015 -0700
-
-    no need this settings
-
-commit d07135b108831b39a5d6aff9b5da63ea8e00ac4a
-Author: ZION959 <ziontran@gmail.com>
-Date:   Thu Feb 12 21:01:29 2015 -0700
-
-    Revert: Do not use mkf2fsuserimg.sh if we have two fs in fstab, for example:
-    
-    /dev/block/platform/msm_sdcc.1/by-name/cache        /cache          ext4    noatime,nosuid,nodev,barrier=1,data=ordered                     wait,check
-    /dev/block/platform/msm_sdcc.1/by-name/cache        /cache          f2fs    flush_merge,noatime,background_gc=off,inline_xattr,active_logs=2                     wait,check
-    /dev/block/platform/msm_sdcc.1/by-name/userdata     /data           ext4    noatime,nosuid,nodev,barrier=1,data=ordered,noauto_da_alloc     wait,check,encryptable=/dev/block/platform/msm_sdcc.1/by-name/encrypt
-    /dev/block/platform/msm_sdcc.1/by-name/userdata     /data           f2fs    flush_merge,noatime,background_gc=off,inline_xattr,active_logs=2     wait,check,encryptable=/dev/block/platform/msm_sdcc.1/by-name/encrypt (reverted from commit 232b0c465eb098e47bdf16bc48fd9cb7a570bb6d)
-
-commit 220790aba30a70e6878ac59730b8bd54a6f56957
-Author: Brint E. Kriebel <bekit@cyngn.com>
-Date:   Fri Feb 20 13:13:37 2015 -0800
-
-    Revert "build: Handle custom boot images properly"
-    
-    We don't want to force this since we need to be able to
-    re-sign boot images with proper keys, which requires rebuilding
-    of the images.
-    
-    This also has an error in it from merging (dropped _MK).
-    
-    This reverts commit 22913dea82299eac7e1a5e754102b89af4796a0d.
-    
-    Change-Id: Id1353e9883c3f24bbc10e685f43bede779430025
-
-commit 92b88ee03cdf13455150f208f90c3c7cd6706174
-Author: Brint E. Kriebel <bekit@cyngn.com>
-Date:   Mon Feb 23 00:38:24 2015 +0000
-
-    Revert "Revert "build: Handle custom boot images properly""
-    
-    This is still needed, per this discussion here:
-    http://review.cyanogenmod.org/#/c/76919/
-    
-    This reverts commit 78d216bc157021e111a31a6606622cef4b9d383d.
-    
-    Change-Id: If494c2c6468185bc0e10cdb92847a9f8429b79c4
-
-commit a20b772154516b9c3c25c1747711c8e98df1ab98
-Author: Josue Rivera <prbassplayer@gmail.com>
-Date:   Mon Feb 23 00:40:20 2015 -0700
-
-    Add ro.cmremix.device for OTA porpuses
-    
-      * Due to unified builds disabling some id props, Slim OTA wasn't working
-         working properly. Lets add a new prop just for our needs
-    
-    oldChange-Id: Ic2b3acb3dd4944160449f228cb69ec2c9f08775c
-    Signed-off-by: Josue Rivera <prbassplayer@gmail.com>
-    
-    Conflicts:
-    	tools/buildinfo.sh
-    
-    Change-Id: I745e0aa9e58040dc672815b2bf591ca17a65b21c
-
-commit 47fde8f8a9d1a604461316b6b303770c6e1f8a95
-Author: kantjer <kantjer@gmail.com>
-Date:   Mon Feb 23 00:43:04 2015 -0700
-
-    Add ro.cmremix.model for OTA purposes
-    
-    Change-Id: I5d4baf0548e098d629e900580758a6d582d3cc2b
-    
-    Conflicts:
-    	tools/buildinfo.sh
-
-commit fd97499bd0d1f1e4a5b84e68662dc09dbd0eb606
-Author: fusionjack <dogfight60-fusionjack@yahoo.de>
-Date:   Sat Dec 6 12:44:40 2014 +0100
-
-    updater-script: Format system before installing ROM
-    
-    Change-Id: Ib266d6c1bde64a028a4d06bca40c5c1a1431edd0
-
-commit 99a717a3e358a301812463bea9028fe8c56a5e32
-Author: Paul Beeler <pbeeler80@gmail.com>
-Date:   Wed Feb 25 01:55:59 2015 -0700
-
-    arm: compile all thumb with -mthumb-interwork and cleanup -O3
-    
-    To enable this option use ENABLE_ARM_THUMB_INTERWORK := true
-    
-    This may slightly increase binary size but will include more arm
-    instructions for increased performance.
-    
-    https://gcc.gnu.org/onlinedocs/gcc/ARM-Options.html
-    
-    Change-Id: I0ba0a2d34b84e34309c20ce0cbb85ea3ee6dda15
-    Signed-off-by: Paul Beeler <pbeeler80@gmail.com>
-    
-    Conflicts:
-    	core/binary.mk
-
-commit 60afa6d83dce599a246a2d5a63ff4d11f6b5ca4b
-Author: Paul Beeler <pbeeler80@gmail.com>
-Date:   Wed Feb 25 02:00:33 2015 -0700
-
-    Add Global posix thread aka pthread Support (1/2)
-    
-    this flag enables multithread support much like what I did in kitkat.
-    
-    https://github.com/SaberMod/android_build-OLD/commit/93d376380dffae1ec96eeb0ef00a7e663d107ca4
-    
-    Change-Id: Id5559ec460b2ba84ed9cfe7a47b0ac59544e1d61
-    Signed-off-by: Paul Beeler <pbeeler80@gmail.com>
-
-commit 44279661e64f622f0e292d68e79aa5c8e39a67cd
-Author: ZION959 <ziontran@gmail.com>
-Date:   Wed Feb 25 02:16:32 2015 -0700
-
-    build: add pthread to dumvar build info
-
-commit 5a831c65c745e0438477bff584d53185fcbc5987
-Author: fattire <f4ttire@gmail.com>
-Date:   Mon Feb 16 01:19:08 2015 -0500
-
-    repopick: Always expand paths to the repo executable.
-    
-    Change-Id: I4e89a530f98e3a28973c57adaf9046e9c21f1290
-
-commit 19f9daa58b87f379bcc6b5e08554479ad3d5c017
-Author: Chet Kener <Cl3Kener@gmail.com>
-Date:   Fri Jan 23 11:22:32 2015 -0500
-
-    Mock Location should be off!
-    
-    * Unless you don't want people to know your exact location.  Users can try it then if they like
-    
-    Signed-off-by: Chet Kener <Cl3Kener@gmail.com>
-
-commit b198e7c8034cc0ebff085e6d445a216618ab65ef
-Author: Chet Kener <Cl3Kener@gmail.com>
-Date:   Fri Jan 23 10:32:21 2015 -0500
-
-    Do Not Odex Eng Builds
-    
-    Signed-off-by: Chet Kener <Cl3Kener@gmail.com>
-
-commit 4a3cdfd0305b45a158a128fc514fbe9a42f0384b
-Author: Chet Kener <Cl3Kener@gmail.com>
-Date:   Fri Jan 23 10:40:46 2015 -0500
-
-    Do not build test stuff for eng builds
-    
-    Signed-off-by: Chet Kener <Cl3Kener@gmail.com>
-
-commit 0277627e4e5b7dcd5ff0e9b7725482e2bdb29b9c
-Author: Chet Kener <Cl3Kener@gmail.com>
-Date:   Fri Jan 23 10:42:26 2015 -0500
-
-    Remove Debug from Eng
-    
-    Signed-off-by: Chet Kener <Cl3Kener@gmail.com>
-
-commit c375907bd54daaf9a8d6dec360e63686a4d0a7a7
-Author: Chet Kener <Cl3Kener@gmail.com>
-Date:   Fri Jan 23 11:16:04 2015 -0500
-
-    Remove ro.kernel.android.checkjni
-    
-    * JNI, the Java Native Interface, provides a way for code written in the Java programming language interact with native (C/C++) code. The extended JNI checks will cause the system to run more slowly, but they can spot a variety of nasty bugs before they have a chance to cause problems.
-    
-    * Forget the bugs I don't ever want to see OptiPop run slowly
-    
-    Signed-off-by: Chet Kener <Cl3Kener@gmail.com>
-
-commit 4c86cf4ea63dd4aac66e6eb9fd984fa51bd896af
-Author: Chet Kener <Cl3Kener@gmail.com>
-Date:   Fri Jan 23 12:34:14 2015 -0500
-
-    Eng: Include in user build filter
-    
-    * Let's make eng builds similar to user builds.  (but with some of the eng build perks as well)
-    
-    Signed-off-by: Chet Kener <Cl3Kener@gmail.com>
-
-commit 5c5394dbc0e8b565c31fbcfaf3c16fc587881af9
-Author: Chet Kener <Cl3Kener@gmail.com>
-Date:   Thu Feb 26 11:27:41 2015 -0700
-
-    armv7-a: More Specific Tunings per CPU
-    
-    * Also add some substitutions and ignores for clang.
-    
-    Signed-off-by: Chet Kener <Cl3Kener@gmail.com>
-    
-    Conflicts:
-    	core/clang/arm.mk
-    	core/combo/arch/arm/armv7-a-neon.mk
-
-commit 81826b11ce21d1f92fdee716b65fb78312127bf8
-Author: Chet Kener <Cl3Kener@gmail.com>
-Date:   Sun Nov 16 17:52:59 2014 -0500
-
-    Do Not Build Recovery Or Use it
-    
-    Signed-off-by: Chet Kener <Cl3Kener@gmail.com>
-
-commit 515b15fb5429bde5fdf341cbaa78ca70d29cf8e5
-Author: Chet Kener <Cl3Kener@gmail.com>
-Date:   Wed Nov 12 22:34:31 2014 -0500
-
-    Lollipop Audio Only
-    
-    Signed-off-by: Chet Kener <Cl3Kener@gmail.com>
-    
-    Hangover Derp
-    
-    * You should try it sometime
-    
-    Signed-off-by: Chet Kener <Cl3Kener@gmail.com>
-
-commit 693de6308aa6093638bbaf3ef1f90e7f4184f86b
-Author: Chet Kener <Cl3Kener@gmail.com>
-Date:   Tue Nov 4 23:07:28 2014 -0500
-
-    Remove Annoying Goldfish Stuff
-    
-    Signed-off-by: Chet Kener <Cl3Kener@gmail.com>
-
-commit ecc14c4c3674526a51e9ebfe418b3f066c7acfbd
-Author: Chet Kener <Cl3Kener@gmail.com>
-Date:   Tue Nov 4 21:34:10 2014 -0500
-
-    Build Stk and CellBroadcastReceiver
-    
-    Signed-off-by: Chet Kener <Cl3Kener@gmail.com>
-
-commit 961df10a8b25465b1a92d298250074a5c826b5f4
-Author: Chet Kener <Cl3Kener@gmail.com>
-Date:   Tue Nov 4 21:33:02 2014 -0500
-
-    Build Launcher3 instead of 2
-    
-    Signed-off-by: Chet Kener <Cl3Kener@gmail.com>
-
-commit 254ff04933a363fe33e0fec09651a7bddd31a151
-Author: Chet Kener <Cl3Kener@gmail.com>
-Date:   Tue Nov 4 21:27:57 2014 -0500
-
-    Allow Prebuilt APKs
-    
-    Signed-off-by: Chet Kener <Cl3Kener@gmail.com>
-
-commit b8672bffd2aaed89a3675d193af8de016cf7c1ca
-Author: Chet Kener <Cl3Kener@gmail.com>
-Date:   Tue Nov 4 21:25:00 2014 -0500
-
-    Do Not Build QuickSearchBox
-    
-    Signed-off-by: Chet Kener <Cl3Kener@gmail.com>
-
-commit 7ac26163a0ed642760212c095a5a0a16dfe4f87f
-Author: Chet Kener <Cl3Kener@gmail.com>
-Date:   Tue Nov 4 21:28:48 2014 -0500
-
-    Unsecure
-    
-    Signed-off-by: Chet Kener <Cl3Kener@gmail.com>
-
-commit 0082877d10f7b8a93822f2f462d1e4bbe24a3409
-Author: Chet Kener <Cl3Kener@gmail.com>
-Date:   Thu Nov 6 07:45:15 2014 -0500
-
-    Remove Default Combos
-    
-    * I never use these
-    
-    Signed-off-by: Chet Kener <Cl3Kener@gmail.com>
-
-commit e82b3270d95e7ebdf959caa291136203eb49d601
-Author: Chet Kener <Cl3Kener@gmail.com>
-Date:   Mon Nov 17 14:15:02 2014 -0500
-
-    Add F2FS Compatibility
-    
-    Signed-off-by: Chet Kener <Cl3Kener@gmail.com>
-    
-    Add Missing Unmount
-    
-    Signed-off-by: Chet Kener <Cl3Kener@gmail.com>
-    
-    Remove Duplicate
-    
-    Signed-off-by: Chet Kener <Cl3Kener@gmail.com>
-    
-    Try 3 Options for Mount
-    
-    Signed-off-by: Chet Kener <Cl3Kener@gmail.com>
-    
-    Move Format Script to Bin
-    
-    * If backup script can be there so can this.  Besides there is no extras folder here anyways
-    
-    Signed-off-by: Chet Kener <Cl3Kener@gmail.com>
-    
-    Update this command for Lollipop
-    
-    * The previous command worked fine in Kitkat but this command is now what was needed to get the job done
-    
-    Signed-off-by: Chet Kener <Cl3Kener@gmail.com>
-
-commit 4ac5db90261157bc2ab509bf64251ce677b256fd
-Author: Chet Kener <Cl3Kener@gmail.com>
-Date:   Fri Dec 12 12:46:02 2014 -0500
-
-    Makefile: OTA File by Date
-    
-    * This will keep things from getting confusing
-    
-    Signed-off-by: Chet Kener <Cl3Kener@gmail.com>
-
-commit 95be98a32e1276e6160a9ae69014c9b6e6a87eac
-Author: Chet Kener <Cl3Kener@gmail.com>
-Date:   Fri Dec 12 12:50:24 2014 -0500
-
-    Remove MOAR Bloat
-    
-    Signed-off-by: Chet Kener <Cl3Kener@gmail.com>
-
-commit cba6cf66605adb4ee11970fc977c687cc2255b6f
-Author: ZION959 <ziontran@gmail.com>
-Date:   Thu Feb 26 11:44:11 2015 -0700
-
-    Kill Bloat with Fire!
-    
-    Signed-off-by: Chet Kener <Cl3Kener@gmail.com>
-
-commit 6415a77fecffaa7636fdc1b8a7521d2368f61642
-Author: Lars Greiss <kufikugel@googlemail.com>
-Date:   Thu Feb 26 20:48:11 2015 -0700
-
-    Build: cmRemiX up sounds and update (2/2)
-    
-    Base on Build: slim up sounds and update (2/2)
-    reference on sdk and full base builds to slims make file.
-    As well remove both copy command in sdk build. This is handled already on slims
-    make file.
-    
-    Change-Id: I9b0146df1a43cfc5282288012fc59509e0badedf
-
-commit 2663804bf1667596a60d02478035393fcc654224
-Author: ZION959 <ziontran@gmail.com>
-Date:   Sat Feb 28 02:00:33 2015 -0700
-
-    build slim launcher again for more testing
-
-commit 6a5abdda3f04b2a1f046c0d30287e649f6e70ac3
-Author: ZION959 <ziontran@gmail.com>
-Date:   Fri Feb 27 20:34:55 2015 -0700
-
-    Qcom Clang v3.5 Optimization (MusterMaxMueller)
-    
-    -clean up code:
-        -moved "COMPILER_RT_CONFIG_EXTRA_STATIC_LIBRARIES"
-        -some refactoring
-    
-    -fix
-        -"my_ndk_stl_cppflags" is now used correctly
-        -use "llvm-as" and "llvm-link" executable from qCLANG
-        -inject "-marm" or "-mthumb" according to "LOCAL_ARM_MODE"
-    
-    -workarounds to compile compiler_rt and libc++ with qCLANG:
-        -compiler-rt doesnt like hwdiv with thumb. its set by default with mcpu=krait2. so force to use only for arm.
-         see http://infocenter.arm.com/help/topic/com.arm.doc.dui0473c/DUI0473C_using_the_arm_assembler.pdf (p. 7-10 Table 7-3 Predefined macro) and qCLANG documentation (p. 45)
-         maybe somone can helpout and explain why this must be forced?
-        -libc++abi doesnt like the integrated assembler. so dont use it. https://android-review.googlesource.com/#/c/110170/
-    
-    -add workaround for "CONLYFLAGS"
-    
-    -play it safe and set "-fno-signed-zeros -fno-trapping-math -fassociative-math -freciprocal-math" although "-funsafe-math-optimizations" should be enough.
-     did some testing and performance decreased if flags werent set. but maybe i messed up when i tested.
-    
-    -more optimization:
-        -if "-arm-expand-memcpy-runtime" is not set then "-mllvm -arm-opt-memcpy" wont be used. so it wasnt used in the previous commit. now it should
-        -dirty workaround to set "-mllvm -aggressive-jt". maybe someone has a clean and simple solution?
-        -prepare to force using qCLANG for selected MODULES
-        -minimal preparation for LTO
-    
-    seems to work good so far. also compiled bionic, art and jpeg with qCLANG.
-    art seems to decrease performance. i will manually set/change flags for art and test again.
-    
-    TODO:
-      -Make more performance comparisons to aCLANG. it seems good even compared to GCC
-      -Use ccache
-      -Where does it make sense to use qCLANG instead of GCC?
-      -Compile Android with qCLANG wherever possible. http://www.linuxplumbersconf.org/2013/ocw/system/presentations/1131/original/LP2013-Android-clang.pdf and https://events.linuxfoundation.org/sites/events/$
-      -Test -falign-os only when -Os is set
-      -Test -falign-functions -falign-labels when -Ofast is set
-      -Test -fdata-sections -finline-functions
-      -"-fparallel" where to use? see 3.6.4
-      -"-ffp-contract=fast" maybe to dangerous
-    -clean up code:
-        -moved "COMPILER_RT_CONFIG_EXTRA_STATIC_LIBRARIES"
-        -some refactoring
-    
-    -fix
-        -"my_ndk_stl_cppflags" is now used correctly
-        -use "llvm-as" and "llvm-link" executable from qCLANG
-        -inject "-marm" or "-mthumb" according to "LOCAL_ARM_MODE"
-    
-    -workarounds to compile compiler_rt and libc++ with qCLANG:
-        -compiler-rt doesnt like hwdiv with thumb. its set by default with mcpu=krait2. so force to use only for arm.
-         see http://infocenter.arm.com/help/topic/com.arm.doc.dui0473c/DUI0473C_using_the_arm_assembler.pdf (p. 7-10 Table 7-3 Predefined macro) and qCLANG documentation (p. 45)
-         maybe somone can helpout and explain why this must be forced?
-        -libc++abi doesnt like the integrated assembler. so dont use it. https://android-review.googlesource.com/#/c/110170/
-    
-    -add workaround for "CONLYFLAGS"
-    
-    -play it safe and set "-fno-signed-zeros -fno-trapping-math -fassociative-math -freciprocal-math" although "-funsafe-math-optimizations" should be enough.
-     did some testing and performance decreased if flags werent set. but maybe i messed up when i tested.
-    
-    -more optimization:
-        -if "-arm-expand-memcpy-runtime" is not set then "-mllvm -arm-opt-memcpy" wont be used. so it wasnt used in the previous commit. now it should
-        -dirty workaround to set "-mllvm -aggressive-jt". maybe someone has a clean and simple solution?
-        -prepare to force using qCLANG for selected MODULES
-        -minimal preparation for LTO
-    
-    seems to work good so far. also compiled bionic, art and jpeg with qCLANG.
-    art seems to decrease performance. i will manually set/change flags for art and test again.
-    
-    TODO:
-      -Make more performance comparisons to aCLANG. it seems good even compared to GCC
-      -Use ccache
-      -Where does it make sense to use qCLANG instead of GCC?
-      -Compile Android with qCLANG wherever possible. http://www.linuxplumbersconf.org/2013/ocw/system/presentations/1131/original/LP2013-Android-clang.pdf and https://events.linuxfoundation.org/sites/events/$
-      -Test -falign-os only when -Os is set
-      -Test -falign-functions -falign-labels when -Ofast is set
-      -Test -fdata-sections -finline-functions
-      -"-fparallel" where to use? see 3.6.4
-      -"-ffp-contract=fast" maybe to dangerous
-    Use Qualcomm Snapdragon LLVM Compiler 3.5 (https://developer.qualcomm.com/mobile-development/increase-app-performance/snapdragon-llvm-compiler-android) for Android Lollipop 5.0.2 for devices with Qualcomm CPU
-    
-    As far as I know nobody has done that yet. Except me :)
-    
-    This commit changes the toolchain for CLANG from the default one which comes with Android (aCLANG) to the Qualcomm Snapdragon LLVM Compiler 3.5 (qCLANG) mentioned above.
-    The toolchain will be used for almost all places where the default Android CLANG (aCLANG) is used for compiling TARGET modules.
-    BUT ONLY if "USE_CLANG_QCOM := true" is set. Otherwise it is using aCLANG.
-    So you can merge this commit and the build will be the same as before except you specifically define "USE_CLANG_QCOM := true".
-    
-    WARNING:
-    THIS IS NOT TESTED FOR STABILITY YET.
-    READ CAREFULLY
-    It is very likely that using this toolchain, especially with the optimizations flags, will introduce BUGS!
-    
-    I would suggest:
-    IF YOU USE IT DONT MAKE BUG REPORTS FOR YOUR OFFICIAL ROM OR KERNEL OR ANY APPS.
-    Make reports in the development thread. See below.
-    The ROM compiles, boots and starts. Also if Bionic is compiled with Qualcomm Snapdragon LLVM Compiler 3.5 (qCLANG).
-    Androbench, Antutu, Basemark 2.0 , Geekbench 3, Vellamo are 'completing' the bechmarks. That only means they didnt crash after a few tries.
-    This is a work in progress.
-    Only tried this on my personal device (Sony Xperia Z Ultra [C6833] with Krait 400) with Validus ROM (https://plus.google.com/communities/109330559573276360638).
-    And this kernel: https://github.com/Tommy-Geenexus/android_kernel_sony_msm8974/
-    If you use Validus ROM for Sony Xperia Z line you have to change the androideabi toolchain manually to the default one from google. Otherwise the device wont boot. (18.02.2015)
-    
-    At the moment this is only tested with Krait 400/Snapdragon 800 but in theory should also work with Scorpion.
-    According to Documentation there is also support for armv8/aarch64 :) But support is not implemented in this commit.
-    
-    Install instructions:
-    
-      1. You have to make an account in order to download the toolchain!
-      2. You need to download the toolchain  and extract it to {your android dir}/prebuilts/clang/linux-x86/host/*
-      3. Add the repo (https://github.com/mustermaxmueller/clanglibs) to your manifest and copy it to {your android dir}/vendor/clanglibs/  For example: <project path="vendor/clanglibs" name="mustermaxmueller/clanglibs" remote="github" revision="master"/>
-      5. Add "USE_CLANG_QCOM := true" to your Boardconfig.mk/BoardconfigCommon.mk of your device.
-      6. Add "-marm" to "$(combo_2nd_arch_prefix)TARGET_arm_CFLAGS" in {your android dir}/build/core/combo/TARGET_linux-arm.mk because Qualcomm CLANG defaults to thumb. See Documentation!
-      7. make a clean compile! Also delete ccache!
-      8. give feedback
-    
-    I could have made the installation easier by uploading the toolchain to Github but I do not know if I am allowed to. And I am no lawyer so...
-    
-    Annotation:
-      1. You should only get measurable performance benefits if you compile Bionic with CLANG! See here: https://github.com/mustermaxmueller/android_bionic/commit/7e6ab8ff68eca94c00c098d81005929de3d86e2c
-      2. Documentation for the toolchain: {your android dir}/prebuilts/clang/linux-x86/host/llvm-Snapdragon_LLVM_for_Android_3.5/Snapdragon_LLVM_ARM_35_User_Guide.pdf
-      3. The Flag "-muse-optlibc" is not Documented. It forces the compiler to use "libclang_rt.optlibc-krait2.a"
-      4. The implementation is not beautiful but it works :)
-      5. Wont compile if not aCLANG is used for the following modules: libcompiler_rt libc++ libc++abi
-      6. "frameworks/rs/driver/runtime/build_bc_lib_internal.mk" still uses aCLANG. There might be some other places I missed.
-      7. Host is compiled with aCLANG because qCLANG does not understand x86
-    
-    TODO:
-      -make compiler-rt, libc++ and libc++ compile with qCLANG (I guess this will improve performance alot)
-      -Test for stability
-      -Make performance comparison to aCLANG *Ooops*
-      -Use ccache
-      -Where does it make sense to use qCLANG instead of GCC?
-      -Compile Android with qCLANG wherever possible. http://www.linuxplumbersconf.org/2013/ocw/system/presentations/1131/original/LP2013-Android-clang.pdf and https://events.linuxfoundation.org/sites/events/files/slides/2014-ABS-LLVMLinux.pdf
-      -Test -falign-os only when -Os is set
-      -Test -falign-functions -falign-labels -falign-loops only when -Ofast is set
-      -Test -fdata-sections -finline-functions
-    
-    Development Thread:
-    http://forum.xda-developers.com/android/software-hacking/wip-compile-android-5-0-2-qualcomm-llvm-t3035162
-
-commit 41a12854105d02ca8fd3db86841c8aab7b706b4b
-Author: JoseGalRe <josegalre@gmail.com>
-Date:   Tue Mar 3 14:36:10 2015 -0700
-
-    build: optimizations for devices with low-RAM [1/2]
-    
-    Change-Id: I339042fc3d5b072297e4748be71ad6770367917d
-    
-    Conflicts:
-    	envsetup.sh
-
 commit bfca5dbfd76f863709f532052b08921aeae3f641
 Author: ZION959 <ziontran@gmail.com>
 Date:   Mon Mar 9 17:59:28 2015 -0700
@@ -1829,69 +133,22 @@ Date:   Tue Mar 24 00:04:48 2015 -0700
     
     Change-Id: I322f0d1951b461e44f3ebf913dab3afbb43bcb47
 
+commit 808f27628e83ee31ad751b3970b1598024bd2832
+Author: ZION959 <ziontran@gmail.com>
+Date:   Sun Mar 29 00:37:27 2015 -0700
+
+    build: add cmremix version info
+    
+    Change-Id: I0fecd60a97b5c46f3262d5f030c6a23b2d2de5d0
+
 project cmRemiX/
-commit 2938cf2fd65a1298f1b356181b120c708908c64a
-Author: ZION959 <ziontran@gmail.com>
-Date:   Sun Mar 22 18:51:50 2015 -0700
-
-    update to qcom snapdragon clang v3.6
-
-commit c26bcfab0b9eea23b4f7873651de7ad9475534fd
-Author: ZION959 <ziontran@gmail.com>
-Date:   Sun Mar 22 18:55:03 2015 -0700
-
-    derp
-
-commit a156338d9ff96ecc02c60e2c23e4dd191167bc85
-Author: ZION959 <ziontran@gmail.com>
-Date:   Sun Mar 22 20:07:50 2015 -0700
-
-    add back qcom clang v3.5
-
-commit 78c5c2271c99554bc62718ef4b43a9540f864623
-Author: ZION959 <ziontran@gmail.com>
-Date:   Mon Mar 23 14:33:21 2015 -0700
-
-    revert compile_rt
-
 commit 3f2093da9b3d93d025b2ee8ebc3532458f277165
 Author: ZION959 <ziontran@gmail.com>
 Date:   Fri Mar 27 20:19:07 2015 -0700
 
     track SM arm-linux-androideabi-4.9
 
-project device/samsung/trlte-common/
-commit 50768ea4ea5558130f59dfaa20a88bff4cefaac1
-Author: ZION959 <ziontran@gmail.com>
-Date:   Mon Mar 23 17:53:33 2015 -0700
-
-    DONT_DEXPREOPT_PREBUILTS
-
 project frameworks/av/
-commit 5a728307f0e82a813bb181d2f80501817ea2623e
-Author: nadlabak <pavel@doshaska.net>
-Date:   Mon Mar 23 23:48:52 2015 +0100
-
-    audiopolicy: Fix call recording for legacy qcom HAL
-    
-    Change-Id: I774f75b493c47386ca1eaf004d663432f1041a66
-
-commit c29fb05f433e919815083a14445185ac8173597f
-Author: Weiyin Jiang <wjiang@codeaurora.org>
-Date:   Wed Mar 11 16:51:38 2015 +0800
-
-    audioflinger: refresh fast track underrun state upon start
-    
-    False underrun is detected when starting recycled fast tracks, which
-    leads to continuous fatal assertion failures and even AP reboot.
-    
-    Track's last mObservedUnderruns isn't updated one at previous stop()
-    call. Hence, when we start the same track again, we should synchronize
-    it to the latest state instead of relying on stale one.
-    
-    Change-Id: Ia003a49c6896dba965798c062c98b8c367ef8369
-    CRs-Fixed: 803389
-
 commit b2de0c19b11c8b83873510eb6c629cf4cfd62b1e
 Merge: cf8c5de c29fb05
 Author: ZION959 <ziontran@gmail.com>
@@ -1900,20 +157,6 @@ Date:   Fri Mar 27 20:24:13 2015 -0700
     Merge remote-tracking branch 'Upstream/cm-12.0' into cm-12.0
 
 project frameworks/base/
-commit c17bf2d040e53ac50a0d2017bfb318c2498a852b
-Author: ZION959 <ziontran@gmail.com>
-Date:   Mon Mar 23 10:01:45 2015 -0700
-
-    Revert: RAM bar (1/2)
-
-commit f859af0f3676b69dc2eba71cc42157414067e1b5
-Author: Michael Bestas <mikeioannina@gmail.com>
-Date:   Sun Mar 22 19:59:25 2015 +0200
-
-    Automatic translation import
-    
-    Change-Id: I460224ba9600de61f44fb9950ca1d80ed7a12d4e
-
 commit e7b2addb3dfd73ccfc6fe1fbc66f2763af87c74d
 Author: Jorge Ruesga <jorge@ruesga.com>
 Date:   Mon Mar 23 00:00:45 2015 +0100
@@ -2404,25 +647,72 @@ Date:   Tue Apr 22 20:32:55 2014 +0530
     Change-Id: If77e24c20feb89cd1755d308d6f3bc0348c528f9
     CRs-Fixed: 650808
 
+commit 5921201a66e45d73600aff10b80f0d381e0eff04
+Author: ZION959 <ziontran@gmail.com>
+Date:   Tue Mar 31 03:45:29 2015 -0700
+
+    Revert "Make forward/reverse lookup default overlay"
+    
+    This reverts commit 66ef0e3abc8ed9c59553a1ae905e308118a679cd.
+
+commit 481230ac7f61c4cb5a0cc7720627c275ea363b0c
+Author: Jorge Ruesga <jorge@ruesga.com>
+Date:   Mon Mar 30 02:15:08 2015 +0200
+
+    keyguard: refresh carrier info on subId changes
+    
+    Currently, the SPN_STRINGS_UPDATED_ACTION intent receives the phoneId and subId, but sometimes
+    during boot the SubscriptionManager isn't be updated yet, which lead to SPN and PLMN were mapped
+    with an invalid id in the KeyguardUpdateMonitor, and CarrierText not being updated, although
+    in the phone implementation the data is correct.
+    This change updates the carrier info also on SUBID changes, so in case the subid were
+    updated after SPN_STRINGS_UPDATED_ACTION, all SPN and PLMN can be mapped properly to the
+    correct SUBID and CarrierText update with the right values.
+    
+    Change-Id: Ia4243ee8781a31942cb4370489df17f9c970e41f
+    Signed-off-by: Jorge Ruesga <jorge@ruesga.com>
+
+commit 443f003d086520562bdf3eaf2bd0b868e75f2901
+Author: Jason Sams <jsams@google.com>
+Date:   Thu Mar 26 14:47:17 2015 -0700
+
+    Fix potential npe
+    
+    bug 19805515
+    
+    Change-Id: Id36b145d3ce1c81311e88f5cdd2441880e98f737
+
+commit d5c9d4632fb4321650d091b3628f7becaa701db8
+Author: Jason Sams <jsams@google.com>
+Date:   Thu Mar 26 15:29:56 2015 -0700
+
+    Catch errors for unknown object types.
+    
+    bug 19805334
+    
+    Change-Id: I71e172b8123076896737d352403f8ddefca544b6
+
+commit e1ff27cf0147b05f64bfb9dbdc63b3c975d4cc87
+Author: Andreas Gampe <agampe@google.com>
+Date:   Tue Mar 17 21:22:49 2015 -0700
+
+    Frameworks/base: Fix request removal in VoiceInteractionSession
+    
+    Fix and simplify removeRequest.
+    
+    Bug: 19797138
+    Change-Id: I0eca877e3109c9f39cebd4c888f166ce334fcc0e
+
+commit 585659de27ffdd5c7c7c997078b041d496858865
+Author: Andreas Gampe <agampe@google.com>
+Date:   Tue Mar 17 21:47:42 2015 -0700
+
+    Frameworks/base: Change String == to equals in Preference
+    
+    Bug: 19797138
+    Change-Id: I496b12c425da45ee098db12e72ad843c22444ba3
+
 project frameworks/opt/net/wifi/
-commit 67d21c2ce1ce492fb798dbdbef09c99be0422f8c
-Author: Hu Wang <huw@codeaurora.org>
-Date:   Wed Feb 4 19:57:10 2015 +0800
-
-    Softap: update WifiContoller state on start softap failure
-    
-    If start SoftAp fails due to tethering timeout or improper
-    ssid config, WifiStateMachine would transition to InitialState,
-    but WifiController is left stuck in ApEnabledState, which
-    in turn fails to turn on WLAN again.
-    
-    Register WifiService to receive WIFI_AP_STATE_CHANGED_ACTION
-    intent from WifiStateMachine, and if wifiApState is failed,
-    inform WifiController to transtion to ApStaDisabledState.
-    
-    Change-Id: Ic54716745a4d8b4e0d6984251260390d452ab889
-    CRs-Fixed: 781404
-
 commit edbc0d618f2f47640c8ecc8d65f4b2b01b28cd5f
 Merge: 5a16c4c 67d21c2
 Author: ZION959 <ziontran@gmail.com>
@@ -2431,38 +721,6 @@ Date:   Fri Mar 27 20:27:21 2015 -0700
     Merge remote-tracking branch 'github/cm-12.0' into cm-12.0
 
 project frameworks/opt/telephony/
-commit d683d69fa307189b9a280bb9a31a64eb24688482
-Author: Rakesh Pallerla <rakesh@codeaurora.org>
-Date:   Thu Dec 18 13:32:35 2014 +0530
-
-    Abort Cross mapping process if SubInfo List is null
-    
-    Abort cross mapping process if the SubInfo List is null
-    and notify Stack is ready for other processes to continue.
-    
-    Change-Id: I836484b06c29b63f86d1c264d3c7bd386b6c580e
-    CRs-Fixed: 767026
-
-commit d77b4cde527370f9ba68413aba581b13b9dbe830
-Author: Sukanya Rajkhowa <srajkh@codeaurora.org>
-Date:   Wed Dec 10 15:21:38 2014 -0800
-
-    Telephony: Handle PS DETACH failure during DDS SWITCH
-    
-    In DSDS, PS DETACH can fail if there is an ongoing voice call on the same sub.
-    This scenario is triggered when sub1 is DDS and is in a voice call. At this time
-    there is an MMS on sub2. DdsScheduler goes into DdsSwitchState and initiates an
-    on demand DDS switch from sub1 to sub2. This involves doing a PS DETACH on sub 1
-    followed by PS ATTACH on sub2.
-    If PS DETACH itself does not go through, data connection on sub1 will not be torn
-    down. As a result, DdsScheduler will be stuck in DdsSwitch state unable to process
-    further DDS switch requests.
-    Handle this by introducing PS DETACH retries for 6 times and notifying DdsScheduler
-    of the failure so that it goes back to IdleState to process further requests
-    
-    CRs-Fixed: 759265
-    Change-Id: Ia426a51167be007847b1edde444eb154bb536e5a
-
 commit 1f567a1761820a24df3f4f2ec6c872b0c5ea7e5a
 Author: Hu Chunming <chunmi@codeaurora.org>
 Date:   Tue Feb 10 16:05:04 2015 +0800
@@ -2572,54 +830,6 @@ Date:   Tue Mar 24 18:37:47 2015 -0700
     Change-Id: Ia31e7f2110ab01c4ae1f751144ab7d7cb33efe4e
 
 project packages/apps/CMFileManager/
-commit 96e8aa29d876ec15688b9941ff40ff4ff75a8900
-Author: Zyg0te <edvard.holst@gmail.com>
-Date:   Sun Mar 22 14:37:33 2015 +0100
-
-    CMFileManager: Nitpicking on strings
-    
-    Secure Storage password reset is probably better described as a password
-    change, as you have to submit both the old and new password to perform
-    the change.
-    
-    Syntax Highlighting sounds better than just Syntax Highlight, doesnt it?
-    Change-Id: Ibf28d93c3cf38e4c706687eddd78fa4aebc2038a
-
-commit 1e3be7d23d1a69d6d10c3bbe1cada878ebde6ea8
-Author: Zyg0te <edvard.holst@gmail.com>
-Date:   Mon Mar 23 21:15:37 2015 +0100
-
-    CMFileManager: Removed copyright portion of about_summary
-    
-    Change-Id: If794766a6b55a3a289bec5c3a96b9c3cea15588c
-
-commit 72869df54dc7d62d8c9a34a8afea47937c0c61f0
-Author: Jorge Ruesga <jorge@ruesga.com>
-Date:   Mon Mar 23 22:17:01 2015 +0100
-
-    cmfm: update changelog
-    
-    Change-Id: I29dda23c3e30da28288733fb8bb93ba20730ca42
-    Signed-off-by: Jorge Ruesga <jorge@ruesga.com>
-
-commit f8a8d15371d11b691a919a90880dc10f096cc952
-Author: Jorge Ruesga <jorge@ruesga.com>
-Date:   Mon Mar 23 23:58:13 2015 +0100
-
-    cmfm: fix typo in xml drawable
-    
-    Change-Id: I414a67eb4fbc022b72eaa6c41b173a12a66a11e8
-    Signed-off-by: Jorge Ruesga <jorge@ruesga.com>
-
-commit 79d00ace1b886c4eb487661720e2493953027f8d
-Author: Jorge Ruesga <jorge@ruesga.com>
-Date:   Tue Mar 24 00:13:55 2015 +0100
-
-    cmfm: reduce banner size and adjust ratio to fit the banner view bounds
-    
-    Change-Id: I46df6cb1c167fac8d7fe5a7b83f572634cfb44f4
-    Signed-off-by: Jorge Ruesga <jorge@ruesga.com>
-
 commit b96748d2ea7edf747d2eaae5e3ee2f89e6e69aaf
 Author: Zyg0te <edvard.holst@gmail.com>
 Date:   Tue Mar 24 23:53:45 2015 +0100
@@ -2658,17 +868,6 @@ Date:   Mon Mar 23 17:52:59 2015 -0700
     Change-Id: Ie73d6ad646692dfeac112ac50c1c6436e6b5559b
 
 project packages/apps/Calculator/
-commit 207cff207bdd76defb4754a5818c17e62e92a832
-Author: Raj Yengisetty <rajesh@cyngn.com>
-Date:   Mon Mar 23 09:46:06 2015 -0700
-
-    Calculator: remove cbrt option in floating calculator advanced window
-    
-    The lexer can't seem to parse the function, and it doesn't exist as a
-    function in the full app.
-    
-    Change-Id: I3dd2d9c8834d9178ee8ab8e37af3a3e45390f21f
-
 commit 02c812388c96949733bd6cb2ee2f33b23cfadbbd
 Author: Raj Yengisetty <rajesh@cyngn.com>
 Date:   Fri Mar 27 15:48:10 2015 -0700
@@ -2693,6 +892,21 @@ Date:   Fri Mar 27 20:30:20 2015 -0700
 
     Merge remote-tracking branch 'upstream/cm-12.0' into cm-12.0
 
+commit 0a2eab16cc617fcb3c6b4a40c7456db555602ab1
+Author: Michael Bestas <mikeioannina@gmail.com>
+Date:   Tue Mar 31 01:48:51 2015 +0300
+
+    Automatic translation import
+    
+    Change-Id: I685a9acbcc6a2c99e20bc0ab68db574000d488db
+
+commit 023f0648edca49e3b1e56e6240262821613cc57e
+Merge: 40d8dce 0a2eab1
+Author: ZION959 <ziontran@gmail.com>
+Date:   Tue Mar 31 03:48:09 2015 -0700
+
+    Merge remote-tracking branch 'upstream/cm-12.0' into cm-12.0
+
 project packages/apps/Contacts/
 commit 01b69c2bf03243ace3c6854b3616412a7d979345
 Author: Matt Garnes <matt@cyngn.com>
@@ -2709,19 +923,6 @@ Date:   Thu Mar 19 16:30:37 2015 -0700
     Change-Id: Ib421a1e9e2fa99310f5591c8db75c9a48b93b3ee
 
 project packages/apps/ContactsCommon/
-commit 33e8f4228b4b3fa76b23d0006800e56e1d7f304b
-Author: Jorge Ruesga <jorge@ruesga.com>
-Date:   Thu Mar 19 14:46:10 2015 +0100
-
-    contactscommon: ensure preferences are loaded before reload data
-    
-    SIM state event can arrive early than the preferences were loaded. Just ensure that preferences are loaded
-    in that event too.
-    JIRA: NIGHTLIES-884
-    
-    Change-Id: I9909c3a2302b9aa83f41365514cea622ab568a05
-    Signed-off-by: Jorge Ruesga <jorge@ruesga.com>
-
 commit aa1e73422689ba21ad2aa909446b63908a455886
 Author: Matt Garnes <matt@cyngn.com>
 Date:   Thu Mar 19 16:53:37 2015 -0700
@@ -2776,6 +977,21 @@ Date:   Fri Mar 27 20:30:52 2015 -0700
 
     Merge remote-tracking branch 'upstream/cm-12.0' into cm-12.0
 
+commit c286b7c48edb71f0fa55baf31e0912fc8a3f150a
+Author: Michael Bestas <mikeioannina@gmail.com>
+Date:   Tue Mar 31 01:49:56 2015 +0300
+
+    Automatic translation import
+    
+    Change-Id: I6d183d3b7b0520cf7a13ebb27055e385393812cf
+
+commit 5f9504cac52cd79ded50e095bfe434037d9a7c2c
+Merge: 08affcd c286b7c
+Author: ZION959 <ziontran@gmail.com>
+Date:   Tue Mar 31 03:49:46 2015 -0700
+
+    Merge remote-tracking branch 'upstream/cm-12.0' into cm-12.0
+
 project packages/apps/Email/
 commit 8ee3601a81b4107c4ccd7fe1f3032f18af7cba79
 Author: Michael Bestas <mikeioannina@gmail.com>
@@ -2785,14 +1001,22 @@ Date:   Fri Mar 27 00:57:30 2015 +0200
     
     Change-Id: Ib59198e1321db5b3c6889432c842d42dd040cea4
 
-project packages/apps/Gallery2/
-commit 6de816c631ebed08bb50ab23e51318ba81f16de5
-Author: Alex Cruz <mazdarider23@gmail.com>
-Date:   Sun Feb 8 06:49:41 2015 +0000
+commit 7e5d7969c7a4f143f82b08e91ba1007244eefd8e
+Author: Michael Bestas <mikeioannina@gmail.com>
+Date:   Tue Mar 31 01:50:15 2015 +0300
 
-    Moar materialize changes
+    Automatic translation import
     
-    Change-Id: I2a4987c1220dfb772289c6638648702d26600aa7
+    Change-Id: Ifd737704c6917543e69c08bcf3800ecc309a0f4e
+
+project packages/apps/Exchange/
+commit fb3d125ebe6c3a0714683e50459519f0c981c41f
+Author: Michael Bestas <mikeioannina@gmail.com>
+Date:   Tue Mar 31 01:55:16 2015 +0300
+
+    Automatic translation import
+    
+    Change-Id: I9be8c909a2859ab23b18d31d7d89f1e379db46df
 
 project packages/apps/InCallUI/
 commit c2f1d5b718cd9d09aded6ec06c338e43fd00bca3
@@ -2802,27 +1026,33 @@ Date:   Fri Mar 27 20:31:37 2015 -0700
 
     Merge remote-tracking branch 'upstream/cm-12.0' into cm-12.0
 
+commit 4dfef8cbe64c0b6cfc45a1d40e17cfba4685f2e5
+Author: Matt Garnes <matt@cyngn.com>
+Date:   Fri Mar 27 18:05:42 2015 -0700
+
+    Allow hiding volume boost feature with overlay.
+    
+    Some devices do not support it, or do not support it well. Allow us to
+    hide it with an overlayable config flag.
+    
+    Change-Id: I2c3b0b5d3a6e738b311b365f5855c41f7d08ab9a
+
+commit e09dd44611fb5db0adf84e174b1e9bcbdcaf2bfe
+Author: Michael Bestas <mikeioannina@gmail.com>
+Date:   Tue Mar 31 01:50:31 2015 +0300
+
+    Automatic translation import
+    
+    Change-Id: Ie8bc55494250d5ccae3efa590d2f37eefce0c92d
+
+commit 84deef9a0ae0ed6125684fe53945bd1f865cfd48
+Merge: c2f1d5b e09dd44
+Author: ZION959 <ziontran@gmail.com>
+Date:   Tue Mar 31 03:56:36 2015 -0700
+
+    Merge remote-tracking branch 'upstream/cm-12.0' into cm-12.0
+
 project packages/apps/Mms/
-commit 62461530f0e62d7ae47c7198e2acec3e47a4286c
-Author: Alexander Martinz <eviscerationls@gmail.com>
-Date:   Mon Mar 23 16:08:47 2015 +0100
-
-    Backup: fix crash when listing backups
-    
-      * importing a backup extracts the backup zip
-      * when an import gets aborted (the device reboots, low ram condition, the
-        user or any application kills it, ...) the import does not clean up the
-        extracted files
-      * if the user now goes back to the importing screen, where a backup to import
-        can be choosen, the adapter tries to parse the extracted files and it crashes
-        with a number format exception
-    
-    Solution:
-      * use a filename filter to only accept zip files
-    
-    Change-Id: I6fe1ec2f6f011677a983c3cb8152ca6d52b49690
-    Signed-off-by: Alexander Martinz <eviscerationls@gmail.com>
-
 commit 6ba0152cffd3e47c53dbcd81e00be8bee6cae207
 Author: Craig Schmitt <craigschmitt@cmshome.net>
 Date:   Mon Jul 7 18:26:29 2014 -0500
@@ -2864,29 +1094,22 @@ Date:   Fri Mar 27 20:32:14 2015 -0700
 
     Merge remote-tracking branch 'upstream/cm-12.0' into cm-12.0
 
-project packages/apps/Settings/
-commit 8238a8ea6f3042c1f64d58f10f2c30cbdfc126f2
-Author: ZION959 <ziontran@gmail.com>
-Date:   Mon Mar 23 10:05:52 2015 -0700
-
-    Revert: RAM bar (2/2)
-
-commit 89bc1a5bb9d3d450788cbd2abf2c3c7954a8a0b4
+commit 4071e1dc3a821c364692fb5019a5c5578edaf78f
 Author: Michael Bestas <mikeioannina@gmail.com>
-Date:   Sun Mar 22 20:01:24 2015 +0200
+Date:   Tue Mar 31 01:50:46 2015 +0300
 
     Automatic translation import
     
-    Change-Id: I3df9393551ebf117cc6461f799e778ad3d660116
+    Change-Id: I21f4284af735d645ebbb1c4e2b2cd58ad03c07e6
 
-commit 9b57bd56d5592419a9ea4ec477972032fd281269
-Author: Tamás Tóth <syman@babulus.hu>
-Date:   Mon Mar 23 10:16:21 2015 +0100
+commit bdca85d8efd9b7683dc4ecd97b98b990b40d314a
+Merge: 1d4f0cb 4071e1d
+Author: ZION959 <ziontran@gmail.com>
+Date:   Tue Mar 31 03:57:19 2015 -0700
 
-    Settings: Set untraslatable
-    
-    Change-Id: If13991f0daf9a02cd3e3c25ff512a956ed9720c7
+    Merge remote-tracking branch 'upstream/cm-12.0' into cm-12.0
 
+project packages/apps/Settings/
 commit 20c5bcc0b3c354da52bd990ebb87f21a9608c45e
 Author: Roman Birg <roman@cyngn.com>
 Date:   Mon Mar 23 18:22:17 2015 -0700
@@ -2970,6 +1193,45 @@ Date:   Tue Mar 24 03:26:17 2015 +0200
     
     Change-Id: I6b7406d5ac2886ec5a5bb3ecbfa8ec414d90bb23
 
+commit 23b678fe5e64e2b67dc096f58e078b9e8059a998
+Author: Jorge Ruesga <jorge@ruesga.com>
+Date:   Sun Mar 29 18:24:36 2015 -0700
+
+    Storage Settings: Allow user to trigger a volume rescan
+    
+    This change allows to trigger a rescan of a volume with the next restrictions:
+    - Internal volumes if they are emulated
+    - Primary volumes
+    - Non-Removable volumes
+    
+    Ported from: http://review.cyanogenmod.org/44586
+    
+    Change-Id: I7e75a324938d8081fd715f702d50f1fdceabd96d
+    
+    Conflicts:
+    	src/com/android/settings/deviceinfo/StorageVolumePreferenceCategory.java
+
+commit 28ba5b126a0e54823af08edd8270628acfc551f1
+Author: Adnan <adnan@cyngn.com>
+Date:   Wed Mar 18 18:17:34 2015 -0700
+
+    Settings: Change media storage erase strings.
+    
+      "Erase SD card" doesn't make sense the the user
+      when speaking about internal media storage. So distinctly
+      state that we're going to delete the internal media storage
+    
+      JIRA: ALCATELTCL-275
+    
+    Change-Id: I4b01400d34b321320b8869e163625ddcd23afc9e
+
+project packages/apps/SlimCenter/
+commit 71859f0a2103dd7c6978cad902d0fcfac01e738b
+Author: ZION959 <ziontran@gmail.com>
+Date:   Tue Mar 31 03:55:24 2015 -0700
+
+    fixed cmremix ota version
+
 project packages/apps/ThemeChooser/
 commit 06ead06c28d89211f67587ffc908ac53886feace
 Author: d34d <clark@cyngn.com>
@@ -3042,12 +1304,36 @@ Date:   Fri Mar 27 20:33:25 2015 -0700
 
     Merge remote-tracking branch 'upstream/cm-12.0' into cm-12.0
 
-project prebuilts/clang/linux-x86/host/llvm-Snapdragon_LLVM_for_Android_3.6/
-commit dae3881361a67bd81f775c0282dd87ff179ad3b4
-Author: ZION959 <ziontran@gmail.com>
-Date:   Sun Mar 22 18:07:18 2015 -0700
+commit 89d55c2ab8501860c72dc74fee8c27a7f69422d8
+Author: Michael Bestas <mikeioannina@gmail.com>
+Date:   Tue Mar 31 01:53:32 2015 +0300
 
-    initial commit for llvm-Snapdragon_LLVM_for_Android_3.6
+    Automatic translation import
+    
+    Change-Id: Ibca17b4acd084e5f7dc44ef23284117db9a28e82
+
+commit 65ba4b6b0bcb879471978eebb7a5432b2cf2d0c0
+Author: Lin Ma <lma@cyngn.com>
+Date:   Mon Mar 30 17:38:33 2015 -0700
+
+    TeleService: pass phone ID to APN setting
+    
+    Change-Id: I3df6c42bc97a68f9e58431e0585a957056912e37
+
+commit 59de23f75e7ae69809989bec7347d652c56415c4
+Author: Raj Yengisetty <rajesh@cyngn.com>
+Date:   Mon Mar 30 19:22:44 2015 -0700
+
+    Telephony: KK upgrade path to re-enable components for MSim
+    
+    Change-Id: Ie21b80d9b6b39ba30fddd6fd268d80cca7f6cb10
+
+commit ae48d903bc93e6e33c3bb28787196e9024aa23e1
+Merge: a680d3e 59de23f
+Author: ZION959 <ziontran@gmail.com>
+Date:   Tue Mar 31 03:47:07 2015 -0700
+
+    Merge remote-tracking branch 'upstream/cm-12.0' into cm-12.0
 
 project prebuilts/gcc/linux-x86/arm/arm-eabi-4.9/
 commit 85604217db8cf297d4f9780f00ca8717cce96de6
@@ -3075,14 +1361,6 @@ Date:   Fri Mar 27 20:25:07 2015 -0700
     Merge remote-tracking branch 'upstream/cm-12.0' into cm-12.0
 
 project vendor/cm/
-commit a4f3e9a213f97e0381eca9b82856618a011db20c
-Author: Tamás Tóth <syman@babulus.hu>
-Date:   Mon Mar 23 22:09:16 2015 +0100
-
-    Update Telekom (T-Mobile) HU APN
-    
-    Change-Id: I003a14519b17ea0f7a3d72ee16fb97eeb763eb3e
-
 commit 75271cfdf9ad92eefa82d7347cc2cf411cb276b6
 Author: Abhisek Devkota <ciwrl@cyanogenmod.com>
 Date:   Tue Mar 24 14:37:37 2015 -0700
@@ -3101,105 +1379,6 @@ Date:   Fri Mar 27 11:42:11 2015 -0700
     Signed-off-by: Roman Birg <roman@cyngn.com>
 
 project vendor/cmremix/
-commit 36df53c28bb3f491f8f2f21237e05028e141d501
-Author: Paul Beeler <pbeeler80@gmail.com>
-Date:   Sun Mar 22 23:20:22 2015 -0700
-
-    Saberize v4 (1/2)
-    This includes all the current sabermod changes plus
-    
-    some new defaults for gcc versions.
-    
-    Change-Id: I29d53fdc190a368b7dc20f211cd3e0d8c1008c7f
-    Signed-off-by: Paul Beeler <pbeeler80@gmail.com>
-    
-    Update sm.mk:
-    
-    Include -mthumb-interwork to LOCAL_DISABLE_O3_FLAGS
-    Update disable graphite modules for omni-rom
-    
-    Change-Id: I6a57d6d0dd15f079c1704ad1bcc509d756c29ec5
-    Signed-off-by: Paul Beeler <pbeeler80@gmail.com>
-    
-    Add list to disable -mthumb-interwork
-    
-    Change-Id: Id0aec04f0713f5c1ceb7c799c2a5bb433346dfb9
-    Signed-off-by: Paul Beeler <pbeeler80@gmail.com>
-    
-    sm.mk: Cleanup -O3
-    
-    Change-Id: I9bbf6cbb9ebf0229c7b31be50b1d78c6747e72c9
-    Signed-off-by: Paul Beeler <pbeeler80@gmail.com>
-    
-    sabermod config:  include pthread in build flag options.
-    
-    Change-Id: I2fa9ed41a4865d01920691ce3e1923b875a0dcf2
-    Signed-off-by: Paul Beeler <pbeeler80@gmail.com>
-    
-    update LOCAL_DISABLE_GRAPHITE list
-    
-    Change-Id: I1c1e8c5dd2f4dc3dec0d3068e85400c04cc6999a
-    Signed-off-by: Paul Beeler <pbeeler80@gmail.com>
-    
-    Update warning message for new rom changes
-    
-    Change-Id: I87fd97e5eac7cc24fa497fe6e2e24b077158e060
-    Signed-off-by: Paul Beeler <pbeeler80@gmail.com>
-    
-    SaberMod config:  Move graphite flags to where they "should" be.
-    
-    Change-Id: I9eee0e97f896a64ebff3bfb3fcf9f5c0a2b4b3c7
-    Signed-off-by: Paul Beeler <pbeeler80@gmail.com>
-    
-    Update for new sabermod toolchain naming style
-    
-    Change-Id: I184f605be1b5db4b2983774d521bf68ef7dcfc6a
-    Signed-off-by: Paul Beeler <pbeeler80@gmail.com>
-    
-    opps
-    
-    Change-Id: I0e703f474e8124d66febe287f6e931ef443fe16e
-    Signed-off-by: Paul Beeler <pbeeler80@gmail.com>
-    
-    Add TARGET_LIB_VERSOIN (2/2)
-    
-    Still getting hit with missing cloog lib errors.  Sometimes
-    TARGET_SM_AND can be set different than the actual gcc version itself
-    
-    Change-Id: I8f5b51f221f26a3c9e7e521dda230353161f9e2f
-    Signed-off-by: Paul Beeler <pbeeler80@gmail.com>
-    
-    hammerhead: include sabermod device configuration
-    
-    Change-Id: I7302ba9fa2e841da7116bafdcb57a1411117cde2
-    Signed-off-by: Paul Beeler <pbeeler80@gmail.com>
-    
-    Update sm.mk
-    
-    Change-Id: I0243c464c92061d9fab83b3a2360a3505b3934df
-    Signed-off-by: Paul Beeler <pbeeler80@gmail.com>
-    
-    Include TARGET_SM_KERNEL and MAYBE_UNINITIALIZED
-    
-    Change-Id: I7fb086763652c91d4f97672b81194c27c092d9b2
-    Signed-off-by: Paul Beeler <pbeeler80@gmail.com>
-    
-    hammerhead: target lib version 4.8
-    
-    Change-Id: I5d99032af36cea79e2988e0e30fb35e5074a820d
-    Signed-off-by: Paul Beeler <pbeeler80@gmail.com>
-    
-    sm.mk: update warnings with a more generic description for all ROMs
-    
-    Change-Id: Iee484ad6b65144f0b81f844e9f69bc7e4caa6861
-    Signed-off-by: Paul Beeler <pbeeler80@gmail.com>
-
-commit be497c7666a9e97e36902d15b27c4bace14d61c4
-Author: ZION959 <ziontran@gmail.com>
-Date:   Mon Mar 23 17:11:42 2015 -0700
-
-    vendor: update flags
-
 commit cb410679dc0c9871af9e003e9487d9d7d205f4ba
 Author: ZION959 <ziontran@gmail.com>
 Date:   Tue Mar 24 16:31:42 2015 -0700
@@ -3212,25 +1391,19 @@ Date:   Sun Mar 29 11:49:47 2015 -0700
 
     vendor: update sabermod.mk
 
+commit 8fb14ce8ddf4683b1cd132cac87a45e5c0fe9198
+Author: ZION959 <ziontran@gmail.com>
+Date:   Tue Mar 31 03:37:31 2015 -0700
+
+    tools: change CMRemix major version
+
+commit e5e5a01527fd0eed608de774ff3f07fe41963eed
+Author: ZION959 <ziontran@gmail.com>
+Date:   Tue Mar 31 04:03:34 2015 -0700
+
+    update ota version
+
 project vendor/samsung/
-commit b6dca7f1d874296d6b88307aa81e1d445a19fd7f
-Merge: c36d013 51ea1bf
-Author: ciwrl <ciwrl05@gmail.com>
-Date:   Mon Mar 23 15:58:38 2015 -0700
-
-    Merge pull request #600 from solk2/cm-12.0
-    
-    ks01lte blob updates
-
-commit 0f74675cc514245a67036424b96ae7b7f6484b57
-Merge: b6dca7f 850fda5
-Author: Ethan Chen <intervigil@gmail.com>
-Date:   Mon Mar 23 22:41:33 2015 -0700
-
-    Merge pull request #556 from Alberto96/cm-12.0
-    
-    i9500: update proprietaries for L
-
 commit 714323b48cc7df0aa82c29edbbccbd0741319c75
 Author: Dan Pasanen <dan.pasanen@gmail.com>
 Date:   Sun Dec 21 12:49:29 2014 -0600
