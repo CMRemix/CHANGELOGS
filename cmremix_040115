@@ -1,4 +1,90 @@
 
+**** https://github.com/CyanogenMod/android_bootable_recovery ****
+378071e : bootloader: Silence /misc partition error <Matt Mower> 10 months ago
+ 
+**** https://github.com/cmRemiX/android_build
+origin	git@github.com:cmRemiX/android_build.git ****
+7448f26 : build: add cmremix version info <ZION959> 3 days ago
+4bea41e : build: -Wno-error=maybe-uninitialized <ZION959> 8 days ago
+5e47d5e : build: removed gnu11++ optimization and fix SM version info <ZION959> 9 days ago
+72a595e : build: Prebuilt Chromium files check <Lokesh Chamane> 3 weeks ago
+1ade499 : build: move chromium call... <JoseGalRe> 12 days ago
+ffb69a8 : build: Rainbow unicorn puke [1/2] <MaDc0w> 12 days ago
+e27e821 : JustArchi's ArchiDroid Optimizations V4 <Łukasz Domeradzki> 8 days ago
+c0f5422 : build: update clang qcom optimization & removed fastmath keep -O3 <ZION959> 3 weeks ago
+253c8e3 : build: optimizations for devices with low-RAM [1/2] <JoseGalRe> 4 weeks ago
+a3fe33f : Qcom Clang v3.5 Optimization (MusterMaxMueller) <ZION959> 5 weeks ago
+e093dfe : build slim launcher again for more testing <ZION959> 5 weeks ago
+374f1d8 : Build: cmRemiX up sounds and update (2/2) <Lars Greiss> 5 weeks ago
+790a371 : Kill Bloat with Fire! <ZION959> 5 weeks ago
+7fafd79 : Remove MOAR Bloat <Chet Kener> 4 months ago
+6f6819b : Makefile: OTA File by Date <Chet Kener> 4 months ago
+260f9c2 : Add F2FS Compatibility <Chet Kener> 5 months ago
+1ced1a0 : Remove Default Combos <Chet Kener> 5 months ago
+3bb476a : Unsecure <Chet Kener> 5 months ago
+9db8369 : Do Not Build QuickSearchBox <Chet Kener> 5 months ago
+ffd52fb : Allow Prebuilt APKs <Chet Kener> 5 months ago
+aebdb98 : Build Launcher3 instead of 2 <Chet Kener> 5 months ago
+4c2562c : Build Stk and CellBroadcastReceiver <Chet Kener> 5 months ago
+fef383d : Remove Annoying Goldfish Stuff <Chet Kener> 5 months ago
+bd653fc : Lollipop Audio Only <Chet Kener> 5 months ago
+1319b79 : Do Not Build Recovery Or Use it <Chet Kener> 5 months ago
+ca0ecb0 : armv7-a: More Specific Tunings per CPU <Chet Kener> 5 weeks ago
+50b4fbc : Eng: Include in user build filter <Chet Kener> 10 weeks ago
+377b070 : Remove ro.kernel.android.checkjni <Chet Kener> 10 weeks ago
+2a84690 : Remove Debug from Eng <Chet Kener> 10 weeks ago
+2c8bcce : Do not build test stuff for eng builds <Chet Kener> 10 weeks ago
+e7821da : Do Not Odex Eng Builds <Chet Kener> 10 weeks ago
+90d9350 : Mock Location should be off! <Chet Kener> 10 weeks ago
+3d29745 : repopick: Always expand paths to the repo executable. <fattire> 6 weeks ago
+3f7f927 : build: add pthread to dumvar build info <ZION959> 5 weeks ago
+e4fbc9c : Add Global posix thread aka pthread Support (1/2) <Paul Beeler> 5 weeks ago
+42b3f88 : arm: compile all thumb with -mthumb-interwork and cleanup -O3 <Paul Beeler> 5 weeks ago
+c3aef10 : updater-script: Format system before installing ROM <fusionjack> 4 months ago
+dd69f7f : Add ro.cmremix.model for OTA purposes <kantjer> 5 weeks ago
+065db7d : Add ro.cmremix.device for OTA porpuses <Josue Rivera> 5 weeks ago
+0d67b24 : Revert "Revert "build: Handle custom boot images properly"" <Brint E. Kriebel> 5 weeks ago
+735b459 : Revert "build: Handle custom boot images properly" <Brint E. Kriebel> 6 weeks ago
+7ad6d6a : Revert: Do not use mkf2fsuserimg.sh if we have two fs in fstab, for example: <ZION959> 7 weeks ago
+f5ef384 : no need this settings <ZION959> 8 weeks ago
+cf59768 : arm: add support for BoardConfig to append CFLAG Defining BOARD_GLOBAL_CFLAGS from BoardConfig will add a global CFLAG to be used with the entire ROM compilation <arter97> 8 weeks ago
+bd26be5 : Add Bionic to Nest Optimization List <Chet Kener> 8 weeks ago
+8c4ecb5 : List Art Modules in nest optimization <Chet Kener> 8 weeks ago
+c834311 : gcconly: Change -floop-nest-optimize to enable by module <Chet Kener> 8 weeks ago
+c9788cb : Fix up the recovery.fstab for adv recovery <nemith> 8 weeks ago
+a19566c : Remove the recovery resources <Lokesh Chamane> 8 weeks ago
+6031639 : Build: Changelog (3/3) <David Viteri> 8 weeks ago
+ 
+**** https://github.com/cmRemiX/cmRemiX ****
+8c652a1 : derp <ZION959> 79 minutes ago
+fe5caf6 : Switch to CMRemix Center <ZION959> 80 minutes ago
+581ec8c : CMRemix Optimizations <ZION959> 3 days ago
+ 
+**** https://github.com/CyanogenMod/android_device_qcom_common ****
+f583378 : power-8610: Remove unnecessary hint <Steve Kondik> 2 weeks ago
+8b1a74a : power-8610: Increase the boost a bit <Steve Kondik> 2 weeks ago
+a16b583 : power-8610: Remove the HMP boost hint <Steve Kondik> 2 weeks ago
+20913b8 : power-8610: Add support for POWER_HINT_LOW_POWER <Steve Kondik> 2 weeks ago
+d3b0b55 : power-8610: Various updates to Power HAL <Steve Kondik> 2 weeks ago
+54173c7 : power-8610: Add support for system performance profiles. <Steve Kondik> 2 weeks ago
+ 
+**** https://github.com/CyanogenMod/android_external_whispersystems_WhisperPush ****
+3a4cee9 : Automatic translation import <Michael Bestas> 2 days ago
+ 
+**** https://github.com/CyanogenMod/android_external_wpa_supplicant_8 ****
+ad050d5 : wpa_supplicant: Force the p2p channels to reuse frequencies used by STA <Diogo Ferreira> 9 days ago
+ 
+**** https://github.com/cmRemiX/android_frameworks_av
+origin	git@github.com:cmRemiX/android_frameworks_av.git ****
+e126d3f : mediatek: Port AV changes <Diogo Ferreira> 7 months ago
+eb994da : camera: Add support for mediatek cameras <Ricardo Cerqueira> 5 months ago
+ 
+**** https://github.com/CyanogenMod/android_hardware_qcom_audio ****
+5646b80 : hal: Reduce debug verbosity <Ethan Chen> 5 days ago
+ 
+**** https://github.com/CyanogenMod/android_hardware_qcom_audio ****
+df79479 : alsa_sound: Remove orphaned QCOM_COMPRESSED_AUDIO flag <Ethan Chen> 24 hours ago
+ 
 **** https://github.com/cmRemiX/android_kernel_samsung_trlte
 origin	git@github.com:cmRemiX/android_kernel_samsung_trlte.git ****
 5cb55c0 : update defconfig <ZION959> 5 days ago
@@ -52,10 +138,51 @@ b1f8885 : random32: use e/frandom for reseeding, and a merge fixup <imoseyon> 4 
 73388ca : random: allow architectures to optionally define random_get_entropy() <Theodore Ts'o> 1 year, 6 months ago
 2b8b7d0 : random32: add prandom_u32_max and convert open coded users <Daniel Borkmann> 1 year, 2 months ago
  
+**** https://github.com/CyanogenMod/android_packages_apps_AudioFX ****
+f9079c4 : Automatic translation import <Michael Bestas> 2 days ago
+ 
+**** https://github.com/CyanogenMod/android_packages_apps_Bluetooth ****
+5c887b8 : Bluetooth-OPP: Check socket congestion status before writing the data <Juffin Alex Varghese> 9 weeks ago
+ffabe89 : Bluetooth: GAP: Call system.exit in cleanup <venkata Jagadeesh> 8 weeks ago
+1c15738 : Bluetooth: Fix BQB AVRCP case AVRCP_PAS_BV_08 <Hu Wang> 4 months ago
+68431a7 : Bluetooth App: Fixed the HDP disconnection notification failure <Sai Aitharaju> 10 weeks ago
+ 
+**** https://github.com/CyanogenMod/android_packages_apps_BluetoothExt ****
+2e5469a : Automatic translation import <Michael Bestas> 2 days ago
+ 
+**** https://github.com/CyanogenMod/android_packages_apps_CMFileManager ****
+e1913eb : CMFileManager: change warning drawables used in dialogs for visibility <Raj Yengisetty> 26 hours ago
+a81e287 : Automatic translation import <Michael Bestas> 2 days ago
+3a7e64a : CMFileManager: account for displayed dialogs during activity tear down <Raj Yengisetty> 2 days ago
+8b1fef1 : make sure MountPointInfo and DiskUsageInfo runs in the UI Thread. <André Rivotti Casimiro> 2 days ago
+ 
+**** https://github.com/CyanogenMod/android_packages_apps_Calculator ****
+d7a11b4 : Automatic translation import <Michael Bestas> 2 days ago
+ 
+**** https://github.com/CyanogenMod/android_packages_apps_Calendar ****
+e1cc829 : Automatic translation import <Michael Bestas> 2 days ago
+ 
+**** https://github.com/CyanogenMod/android_packages_apps_Contacts ****
+70c4684 : Automatic translation import <Michael Bestas> 2 days ago
+ 
+**** https://github.com/CyanogenMod/android_packages_apps_Eleven ****
+92ad21c : Automatic translation import <Michael Bestas> 2 days ago
+ 
+**** DU	https://github.com/DirtyUnicorns/android_packages_apps_Gallery2
+https://github.com/CyanogenMod/android_packages_apps_Gallery2 ****
+f70b371 : Moar materialize changes <Alex Cruz> 8 weeks ago
+d158308 : Automatic translation import <Michael Bestas> 2 days ago
+ 
+**** https://github.com/CyanogenMod/android_packages_apps_LockClock ****
+6741b1e : Automatic translation import <Michael Bestas> 2 days ago
+ 
+**** origin	git@github.com:cmRemiX/android_packages_apps_Mms-caf.git ****
+8334d60 : Mms-add Calendar event type of loading Calendar draft <xiao.hu> 2 days ago
+ 
 **** Origin_bitbucket	git@bitbucket.org:cmRemiX/android_packages_apps_settings.git
 https://github.com/cmRemiX/android_packages_apps_Settings
 origin	git@github.com:cmRemiX/android_packages_apps_Settings.git ****
-bb6035f : use CMRemix Center now <ZION959> 8 hours ago
+5105f9e : use CMRemix Center now <ZION959> 10 hours ago
  
 **** https://github.com/cmRemiX/android_packages_apps_SlimLauncher ****
 b98f725 : Automatic translation import <Andreas Bläsius> 7 weeks ago
@@ -84,7 +211,41 @@ adee731 : Initial SlimLauncher bringup <Griffin Millender> 3 months ago
 7438f33 : New package name <Griffin Millender> 3 months ago
 6877644 : Change module name <Griffin Millender> 5 months ago
  
+**** origin	git@github.com:cmRemiX/android_packages_apps_ThemeChooser.git ****
+21db69f : Automatic translation import <Michael Bestas> 2 days ago
+ 
+**** https://github.com/cmRemiX/android_packages_apps_UnifiedEmail
+origin	git@github.com:cmRemiX/android_packages_apps_UnifiedEmail.git ****
+9a8de2e : email: fix recents's suggested contacts query <Jorge Ruesga> 3 days ago
+225fb22 : email: fix back button <Jorge Ruesga> 4 days ago
+4238eba : Automatic translation import <Michael Bestas> 2 days ago
+ 
+**** https://github.com/CyanogenMod/android_packages_inputmethods_LatinIME ****
+10c614a : Automatic translation import <Michael Bestas> 2 days ago
+ 
+**** https://github.com/CyanogenMod/android_packages_providers_DownloadProvider ****
+1a9da5b : Automatic translation import <Michael Bestas> 2 days ago
+ 
+**** https://github.com/CyanogenMod/android_packages_providers_ThemesProvider ****
+e989ef7 : Fix version upgrades where "holo" may still be used <d34d> 4 days ago
+ 
+**** https://github.com/cmRemiX/android_packages_services_Telephony
+origin	git@github.com:cmRemiX/android_packages_services_Telephony.git ****
+2f7296c :  Telephony: check equality when verifying enabled state <Raj Yengisetty> 22 hours ago
+ 
+**** https://github.com/CyanogenMod/android_packages_wallpapers_Basic ****
+c0add95 : PolarClock: Don't draw on invisible surfaces <Diogo Ferreira> 4 days ago
+ 
+**** https://github.com/CyanogenMod/android_packages_wallpapers_Galaxy4 ****
+8e74e60 : Automatic translation import <Michael Bestas> 2 days ago
+ 
+**** https://github.com/CyanogenMod/android_packages_wallpapers_PhaseBeam ****
+4d56991 : Automatic translation import <Michael Bestas> 2 days ago
+ 
+**** https://github.com/CyanogenMod/android_packages_wallpapers_PhotoPhase ****
+01d8ba8 : Automatic translation import <Michael Bestas> 2 days ago
+ 
 **** https://github.com/cmRemiX/android_vendor_cmremix
 origin	git@github.com:cmRemiX/android_vendor_cmremix.git ****
-3a88e06 : build CMRemix Center <ZION959> 8 hours ago
+3a88e06 : build CMRemix Center <ZION959> 10 hours ago
  
