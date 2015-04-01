@@ -808,48 +808,124 @@ Date:   Wed Mar 25 20:49:35 2015 -0500
     
     Change-Id: I4d6912383261423d1e49ac7abcc07f823b9d984d
 
-project hardware/qcom/wlan/
-commit df34a8d9881e386cd077b4629707056aad13e18a
-Author: Ethan Chen <intervigil@gmail.com>
-Date:   Tue Mar 24 18:37:33 2015 -0700
+project kernel/samsung/trlte/
+commit 17661d34de75a067eef3794d86632d105d718957
+Author: Junjie Wu <junjiew@codeaurora.org>
+Date:   Wed Dec 3 18:29:35 2014 -0800
 
-    Revert "Further Availability Map Structure change"
+    cpufreq: Return directly in __cpufreq_get if policy is NULL
     
-    This reverts commit f624f39421073a0851749a8a72248442055c43cb.
+    __cpufreq_get() checks whether policy->cur matches frequency returned
+    by cpufreq device driver and acts accordingly. However, policy could
+    be NULL if the CPU is being hotplugged. Current implementation crashes
+    when trying to dereference the NULL policy.
     
-    Change-Id: Ibe2a4b622550534df120032d8a818d098d81cb1e
+    Return the frequency provided by cpufreq device driver directly if
+    policy is not available.
+    
+    Change-Id: I1f2ba4028c259392bf730db37dbec2d8c5ae3fa4
+    Signed-off-by: Junjie Wu <junjiew@codeaurora.org>
 
-commit 325fb2e06b5a18b6b732b74da06225b91df80439
-Author: Ethan Chen <intervigil@gmail.com>
-Date:   Tue Mar 24 18:37:47 2015 -0700
+commit ab35aa23cfe0f9839db50f1fbee0137223676aa2
+Author: Junjie Wu <junjiew@codeaurora.org>
+Date:   Tue Nov 18 16:49:42 2014 -0800
 
-    Revert "Adding support for passing userdata in nan_register_handler"
+    cpufreq: Protect against hotplug in cpufreq_register_driver()
     
-    This reverts commit 50ed1c836c1253a26ba9256f5eb04f3a96889c97.
+    cpufreq_register_driver() could race with CPU hotplug during
+    bootup. Since hotplug notification is not registered when
+    subsys_interface_register() is being executed, it's possible
+    cpufreq's view of online CPUs becomes stale before it registers
+    for hotplug notification.
     
-    Change-Id: Ia31e7f2110ab01c4ae1f751144ab7d7cb33efe4e
+    Register for hotplug notification first and protect
+    subsys_interface_register() against hotplug using
+    get/put_online_cpus().
+    
+    Change-Id: I26b2908f1d167c2becc4e8664c357bb7c6162406
+    Signed-off-by: Junjie Wu <junjiew@codeaurora.org>
+
+commit ef084a9cff659bae01a1ded641fb9b885801ea59
+Author: Maria Yu <aiquny@codeaurora.org>
+Date:   Tue Jul 8 12:16:17 2014 +0800
+
+    cpufreq: Add if cpu is online check in show
+    
+    Make sure CPU is online before proceeding with any "show"
+    ops. Without this check, the show can race with hotplug
+    and try to show the details of a stale or non-existent
+    policy.
+    
+    CRs-Fixed: 689522
+    Change-Id: Ie791c73cb281bcfc4d722f7c8c10eee07cb11f2e
+    Signed-off-by: Maria Yu <aiquny@codeaurora.org>
+
+commit 4108fb6937458f248dbb3c06f2cbf49c013c57d0
+Author: Maria Yu <aiquny@codeaurora.org>
+Date:   Tue Jul 8 12:29:23 2014 +0800
+
+    cpufreq: Use correct locking for cpufreq_cpu_data
+    
+    Use write lock when updating cpufreq_cpu_data,
+    and read lock when getting the policy pointer.
+    
+    CRs-Fixed: 689522
+    Change-Id: I454f0d575157b3411d369e04097386f50aeaaa1c
+    Signed-off-by: Maria Yu <aiquny@codeaurora.org>
+
+commit 9e720a9bee614935602eb70cda7118be79271aad
+Author: imoseyon <imoseyon@gmail.com>
+Date:   Thu Mar 12 23:03:13 2015 -0700
+
+    Revert "cpufreq: force cpuN policy to match cpu0 when setting min freq"
+    
+    This reverts commit 0b9948790567748d7dd34a74ff593277d4fc13c2.
+
+commit 14fa0cd2e14b0704e3e9b4accf851eb9eadd209b
+Author: imoseyon <imoseyon@gmail.com>
+Date:   Thu Mar 12 23:03:20 2015 -0700
+
+    Revert "cpufreq: force cpuN policy to match cpu0 when changing freq or gov"
+    
+    This reverts commit 3a6afd3e14e441950ffe80699688db53e374905d.
+
+commit 4500208a8b9cd753942a5c60ac3311550f9429a2
+Author: imoseyon <imoseyon@gmail.com>
+Date:   Sun Mar 22 16:18:25 2015 -0700
+
+    cpufreq: prevent min/max freq changes in kernel space via sysfs
+    
+    * mpdecision and msm_thermal are the two culprits
+
+commit ffe1c022af11c86d0b6c80cc12f945cae735ad4c
+Author: imoseyon <imoseyon@gmail.com>
+Date:   Wed Mar 25 17:57:12 2015 -0700
+
+    cpufreq: revert maxfreq change prevention code for upcoming V2
+    
+    * but keep the minfreq change prevention code
+
+commit 524ab8fa4ba5323c48b145b44a72221b64c59f9e
+Author: imoseyon <imoseyon@gmail.com>
+Date:   Fri Mar 27 21:40:45 2015 -0700
+
+    cpufreq/thermal: frequency mitigation preventer V2
+    
+    My previous implementation wasn't working 100% of the time, and
+    also prevented some frequency based thermal events.
+    
+    V2 should fix all of that and allow normal temp based thermal events
+    to happen. Once enabled (disabled by default) via sysfs (full_fm),
+    it will prevent userspace process from lowering maxfreq unless core
+    temp has exceeded the default threshold of 80C.
+
+commit 5cb55c0d5ae6c4ecc6b2930920e507b50d6436ab
+Author: ZION959 <ziontran@gmail.com>
+Date:   Fri Mar 27 21:50:21 2015 -0700
+
+    update defconfig
 
 project packages/apps/CMFileManager/
-commit b96748d2ea7edf747d2eaae5e3ee2f89e6e69aaf
-Author: Zyg0te <edvard.holst@gmail.com>
-Date:   Tue Mar 24 23:53:45 2015 +0100
-
-    CMFileManager: Changed status string to something more descriptive
-    
-    Currently the status switch doesnt really communicate what its
-    indicating the status for. If it's supposed to be indicating whether the
-    partition is mounted or not, the status string should indicate as much.
-    
-    Change-Id: Ia3a89bb7ef4c603c596777e9cc0f6cae613b990f
-
-commit 1288edb9bc0b752d157af7f17d00de52bcf61652
-Author: Zyg0te <edvard.holst@gmail.com>
-Date:   Wed Mar 25 00:06:14 2015 +0100
-
-    CMFileManager: Fixed string typo
-    
-    Change-Id: Ied59603a11be19f10eb11d1ef8b9d3a043f110cc
-
 commit 6e039982eb0d6f8bc39d8690f67b2622ec1efcb0
 Author: Matt Garnes <matt@cyngn.com>
 Date:   Mon Mar 23 17:52:59 2015 -0700
@@ -1225,12 +1301,11 @@ Date:   Wed Mar 18 18:17:34 2015 -0700
     
     Change-Id: I4b01400d34b321320b8869e163625ddcd23afc9e
 
-project packages/apps/SlimCenter/
-commit 71859f0a2103dd7c6978cad902d0fcfac01e738b
+commit b1fc70a8b913fb01889586d3b6bdf5453562383f
 Author: ZION959 <ziontran@gmail.com>
-Date:   Tue Mar 31 03:55:24 2015 -0700
+Date:   Wed Apr 1 01:41:59 2015 -0700
 
-    fixed cmremix ota version
+    use CMRemix Center now
 
 project packages/apps/ThemeChooser/
 commit 06ead06c28d89211f67587ffc908ac53886feace
@@ -1270,18 +1345,6 @@ Date:   Fri Mar 27 20:33:05 2015 -0700
     Merge remote-tracking branch 'upstream/cm-12.0' into cm-12.0
 
 project packages/services/Telephony/
-commit 50451ca01742026cc56da68c60301df1ee100584
-Author: Lin Ma <lma@cyngn.com>
-Date:   Tue Mar 24 21:09:27 2015 -0700
-
-    TeleService: Set mode to 2g on other sim(DSDS) prior to change
-    
-    * Fix a bug where other SIM slot gets changed when
-    user wants to change the preferred network type.
-    original commit 69efa99f1cd4afdaeec4554475594bc6a2900338
-    
-    Change-Id: I69fde842b1c27601752cd3a1078664eb26d86fe1
-
 commit 693743e2cc6f440349e3bfa7f5ba5078aa6bc35f
 Author: Adnan Begovic <adnan@cyngn.com>
 Date:   Mon Mar 23 13:32:29 2015 -0700
@@ -1361,14 +1424,6 @@ Date:   Fri Mar 27 20:25:07 2015 -0700
     Merge remote-tracking branch 'upstream/cm-12.0' into cm-12.0
 
 project vendor/cm/
-commit 75271cfdf9ad92eefa82d7347cc2cf411cb276b6
-Author: Abhisek Devkota <ciwrl@cyanogenmod.com>
-Date:   Tue Mar 24 14:37:37 2015 -0700
-
-    Airtel MMS - Add authtype=1 for PAP
-    
-    Change-Id: Ic41d403221351b5bec67c306d8ded2915e0cf45b
-
 commit 2ca5d3999b35d328f0969a264009bffe0faf889d
 Author: Roman Birg <roman@cyngn.com>
 Date:   Fri Mar 27 11:42:11 2015 -0700
@@ -1403,38 +1458,13 @@ Date:   Tue Mar 31 04:03:34 2015 -0700
 
     update ota version
 
+commit 3a88e06bc94087727d854da79fb1b14bf7f5331d
+Author: ZION959 <ziontran@gmail.com>
+Date:   Wed Apr 1 01:46:51 2015 -0700
+
+    build CMRemix Center
+
 project vendor/samsung/
-commit 714323b48cc7df0aa82c29edbbccbd0741319c75
-Author: Dan Pasanen <dan.pasanen@gmail.com>
-Date:   Sun Dec 21 12:49:29 2014 -0600
-
-    msm8960-common: update adreno blobs and d2 camera
-    
-    * From: I535VRUDNE1
-    
-    Change-Id: Id073c52c7646cd5d18791685b3da324d662f3a8a
-
-commit 7f1b2ea8d3e2ff951ccc0e691e50cede4dc61e03
-Author: sbrissen <sbrissen@hotmail.com>
-Date:   Tue Mar 24 14:54:10 2015 -0400
-
-    t0lte: KK ril blobs
-
-commit 9024b3036e6f56339017997458077ccdcf479b28
-Author: sbrissen <sbrissen@hotmail.com>
-Date:   Tue Mar 24 14:56:17 2015 -0400
-
-    p4notelte: update KK ril blobs
-
-commit cb8d668fe5996b49dc7035f652821b67f789201b
-Merge: 714323b 64e7efe
-Author: Ethan Chen <intervigil@gmail.com>
-Date:   Wed Mar 25 08:52:33 2015 -0700
-
-    Merge pull request #601 from JoseGalRe/cm-12.0
-    
-    jf-common: fix path for locationservice
-
 commit e9fb886f2f23701c9e3e0b55343fc3da1c66ac7e
 Merge: cb8d668 9024b30
 Author: Dan Pasanen <dan.pasanen@gmail.com>
