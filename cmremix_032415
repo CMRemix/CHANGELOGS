@@ -1,8 +1,0 @@
-
-**** origin	git@github.com:cmRemiX/android_build.git ****
-12a6e34 : build: update clang qcom v3.5 optimization flags <ZION959> 78 minutes ago
- 
-**** https://github.com/CyanogenMod/android_frameworks_webview
-origin	git@github.com:cmRemiX/android_frameworks_webview.git ****
-ff9960c : frameworks/webview: Use prebuilt java library for building if using prebuilt Chromium <Jiangyi> 8 months ago
- 
