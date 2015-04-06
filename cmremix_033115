@@ -1,0 +1,50 @@
+
+**** SaberMod	https://github.com/SaberMod/SaberMod_bionic
+https://github.com/CyanogenMod/android_bionic
+mustermaxmueller	https://github.com/mustermaxmueller/android_bionic.git
+origin	git@github.com:cmRemiX/android_bionic.git ****
+9ff0673 : Cortex-A9: fix duplicate stpcpy <D. Andrei Măceș> 2 days ago
+ 
+**** origin	git@github.com:cmRemiX/android_build.git ****
+5a0bbeb : build: slim launcher <ZION959> 4 weeks ago
+a1e68f7 : Build Launcher3 instead of 2 <Chet Kener> 5 months ago
+7a7491d : repopick: Always expand paths to the repo executable. <fattire> 6 weeks ago
+61badc3 : Add F2FS Compatibility <Chet Kener> 4 months ago
+a0bbd5a : Don't stop if JDK version doesn't match <SferaDev> 5 months ago
+ 
+**** https://github.com/cmRemiX/cmRemiX ****
+d0db37d : remove CMBugreport,CMupdater <ZION959> 29 hours ago
+ 
+**** origin	git@github.com:cmRemiX/android_frameworks_base.git ****
+c3bc32c : Add class for identifying cmremix build type and version <gmillz> 6 weeks ago
+9fbeafa : Frameworks: apple can do...we can do as well <Lars Greiss> 5 months ago
+ccc90f7 : systemui: don't use SIM display name if there isn't available info <Jorge Ruesga> 8 days ago
+1ce2abb : Move default value for Settings.Secure.ADVANCED_MODE to core <Michael Bestas> 3 weeks ago
+0ca4e1a : Make forward/reverse lookup default overlay <Michael Bestas> 5 days ago
+7850c6e : base: add back permission-group SECURITY  to fix blacklist <Jorge Ruesga> 5 months ago
+ 
+**** https://github.com/CyanogenMod/android_frameworks_opt_telephony
+origin	git@github.com:cmRemiX/android_frameworks_opt_telephony.git ****
+95ca098 : Lightweight fix for incorrect locale changes - DO NOT MERGE <Neil Fuller> 4 weeks ago
+f6d3d2b : Notify subscriptionInfoChanged in setPlmnSpn even without sim. <Sanket Padawe> 5 weeks ago
+1b6b944 : Set carrierName of subInfo to null while creating/updating subInfo. <Sanket Padawe> 5 weeks ago
+ 
+**** https://github.com/CyanogenMod/android_frameworks_rs
+origin	git@github.com:cmRemiX/android_frameworks_rs.git ****
+29c8522 : fixed build for Qclang 3.6 <ZION959> 8 days ago
+ 
+**** origin	git@github.com:cmRemiX/android_packages_apps_Settings.git ****
+7ff8bef : Settings: add development animation transition mode 0.75 and 0.25 <Lars Greiss> 1 year, 7 months ago
+b199596 : Settings: apple can do...we can do as well <Lars Greiss> 12 months ago
+cadabab : Display SaberMod gcc info in About Phone <Paul Beeler> 3 months ago
+48ec114 : Add CMRemix version to Device Info <ZION959> 28 hours ago
+a62b6b1 : Revert "Add processor info in device info screen" <Michael Bestas> 25 hours ago
+2fcd3d5 : Settings: Remove "advanced mode" toggle if its defaulted to enabled. <Adnan> 5 weeks ago
+ 
+**** https://github.com/CyanogenMod/android_packages_services_Telephony ****
+fd9091d : msim: Fix FC on Settings->Mobile networks" <LuK1337> 3 days ago
+ 
+**** https://github.com/cmRemiX/android_vendor_cmremix
+origin	git@github.com:cmRemiX/android_vendor_cmremix.git ****
+1ae40a2 : TARGET_NDK_VERSION := 4.9 <ZION959> 26 hours ago
+ 

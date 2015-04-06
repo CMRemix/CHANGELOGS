@@ -1,0 +1,123 @@
+
+**** https://github.com/CMRemix/CMRemix ****
+42114f1 : fixed gitlab repo links <ZION959> 32 hours ago
+ 
+**** git://github.com/CyanogenMod/android_bootable_recovery ****
+e2b1ef2 : recovery: Update header logo with new branding <Tom Marshall> 31 hours ago
+ 
+**** origin	git@github.com:cmRemiX/android_build.git ****
+49d0de8 : build: add custom NKD GCC <ZION959> 4 days ago
+ 
+**** git://github.com/CyanogenMod/android_development ****
+6ddd064 : classpath: updated Calculator and ContactsCommon lib versions <Erica Chang> 7 days ago
+ 
+**** https://github.com/CyanogenMod/android_frameworks_av ****
+1565996 : audio: Initialized mAttributes in AudioTrack <Ramjee Singh> 9 days ago
+c16c177 : camera1: Add a missing include <Steve Kondik> 30 hours ago
+ 
+**** origin	git@github.com:cmRemiX/android_frameworks_base.git ****
+45abdb8 : Settings: add methods to put and get boolean values <Dirk Rettschlag> 1 year, 4 months ago
+3047491 : cmRemiX Settings <Dirk Rettschlag (MarcLandis)> 28 minutes ago
+b7041bb : fix for screenshot animation glitch in portrait <PlayfulGod> 1 year, 4 months ago
+395e2ca : Properly handle null URIs. <Danny Baumann> 1 year, 4 months ago
+5ca78b1 : Remove Carrier Provision Conflicts: 	packages/SettingsProvider/res/values/defaults.xml <Droid-Life> 4 months ago
+cc7eb85 : Remove unnecessary updateSurfaceScreenOn call. <Andrew Neal> 2 years ago
+874c3ad : Speed things up!! <Mazda> 5 months ago
+4beb2ca : Fix an overflow found by ASAN. <Dan Albert> 5 months ago
+d0ce228 : Fix for CharSequenceCreator test case <Mattias Petersson> 3 years, 10 months ago
+88191ec : Frameworks/base: Wall Werror in native/android <Andreas Gampe> 5 months ago
+3da02bc : Frameworks/base: Fix FingerprintManager JNI <Andreas Gampe> 5 months ago
+96dd23c : Frameworks/base: Fix AssetManager JNI <Andreas Gampe> 5 months ago
+e3d8919 : Skip receiver if failed linkToDeath to ILocationListener <Wen Jing> 1 year ago
+18029bd : Prevent resource leak in YuvToJpegEncoder <Martin Wallgren> 8 months ago
+c55c982 : Use standard initializers <Bernhard Rosenkränzer> 5 months ago
+bedfff8 : Use fabsf() rather than abs() <Bernhard Rosenkränzer> 5 months ago
+2e15c9d : Fix check for PROC_QUOTES mode <Bernhard Rosenkränzer> 5 months ago
+db6583e : Fix incorrect usage of bool <Bernhard Rosenkränzer> 5 months ago
+c36bee4 : Speed up a few animations <Sean Hoyt> 5 months ago
+2f93cba : Disable debug music transport control <Craig Gomez> 5 months ago
+a25f04a : Fix Google backup/restore <Craig Gomez> 5 months ago
+b1b15c7 : Consistency in default wallpaper <cristianomatos> 5 months ago
+f33ba9e : Fix error overwriting when restoring error <Alexander Toresson> 1 year, 6 months ago
+5cc2df2 : Use parseColor instead of getHTMLColor <Stefan Wysocki> 1 year, 6 months ago
+2f559ad : Memory leak: parseObbFile.footer <You Kim> 1 year, 7 months ago
+0cf9870 : base: add some iml files for easy opening in android studio <Evisceration> 5 months ago
+d8d290b :  MTU should be 1358 as per 3GPP standards, especially for LTE radio interfaces. <Stacy Devino> 6 months ago
+9f541ba : Dispatch keys to a device specific key handler <Alexander Hofbauer> 3 years ago
+667c2a6 : SystemUI: Add missing recycle calls <p4r4n01d> 1 year, 7 months ago
+2f24d7c : Restore pre-KitKat permissions to external sd for all apps <Dave Daynard> 1 year ago
+df1f36e : base: fix external sdcard mountpoint <UtkarshGupta> 1 year, 4 months ago
+5bb94c8 : extend PreferenceActivity for title text on a single pane mode <Sang Tae Park> 2 years, 11 months ago
+c81129d : aapt: introduce SHOW_EXTENDED_WARNINGS <Evisceration> 10 months ago
+4cdc65a : aapt: we dont care about uncommented public symbols <Evisceration> 10 months ago
+6f96306 : aapt: i hate if (true) statements <Evisceration> 10 months ago
+6ec3d8a : aapt: silence these warnings <Evisceration> 11 months ago
+46caa07 : aapt: suppress string resources build warnings <JBirdVegas> 1 year, 3 months ago
+60e6ecb : change default wallpaper to lollipop version <Evisceration> 5 months ago
+b47d169 : PhoneWindowManager: Powered by arter97 optimizations :D:D:D <arter97> 8 hours ago
+898b07a : Add class for identifying cmremix build type and version <gmillz> 6 weeks ago
+6a9c3a1 : Frameworks: I like it fast -25 <ZION959> 5 weeks ago
+717155f : Frameworks: apple can do...we can do as well <Lars Greiss> 5 months ago
+b96f7c2 : Remove unnecessary sleep in ActivityThread. <jdragon.lee> 8 days ago
+1787ad7 : [ActivityManager] Improve multi-thread access the same provider <riddle_hsu> 2 days ago
+a734ee4 : If a wake key is disabled by the user, do not wake from doze. <Matt Garnes> 2 days ago
+b8f3f64 : Add brightness settings to Profiles (2/2) <heydabop> 2 days ago
+7efe580 : Revert "Allow no applications in navring, like in cm11" <Abhisek Devkota> 18 hours ago
+c8b2b55 : Revert "keyguard: dont show enter key when quick unlock is enabled" <Jorge Ruesga> 9 days ago
+20c6e56 : Revert "PhoneWindowManager: Clean windows during bootup." <Adnan Begovic> 28 hours ago
+19f1de5 : SystemUI: Hide secondary icon and divider on expanded panel. <Adnan Begovic> 2 days ago
+ 
+**** git://github.com/CyanogenMod/android_hardware_qcom_display ****
+49a40a1 : gralloc: fix getYUVPlaneInfo for YV12 format <Arun Kumar K.R> 7 months ago
+0f9ec13 : gralloc: Fix NV12 and NV21 stride <Naseer Ahmed> 10 months ago
+033217b : gralloc: Report YUV plane info <Naseer Ahmed> 12 months ago
+ 
+**** git://github.com/CyanogenMod/android_hardware_qcom_media ****
+f81796f : mm-video: vdec: allocate color-conversion buffers as uncached <c_sridur> 3 weeks ago
+19d1bee : mm-video: vdec: Avoid color conversion for Empty EOS O/P buffer. <c_sridur> 2 weeks ago
+411e93a : mm-video: venc: do not send duplicate EBDs in case of an error <c_sridur> 3 weeks ago
+15a778a : mm-video:vdec: Fix C2D output buffer stride and sliceheight. <c_sridur> 8 days ago
+c75ee73 : mm-video-legacy: vdec: add YUV420SP support in surface-mode <c_sridur> 5 weeks ago
+283d05f : dashplayer: ensure dashplayer used for .mpd <Manikanta Sivapala> 6 weeks ago
+ 
+**** origin	git@github.com:cmRemiX/android_packages_apps_Settings.git ****
+caa2ed7 : Privacy icons: correct size and colors to match lollipop <cristianomatos> 4 months ago
+d45bf6b : Intergrate Viper4Android & vector icon into settings <ZION959> 76 minutes ago
+69048f0 : Launch SuperSU from Settings <ZION959> 4 hours ago
+523413f : settings: add CMRemix UI,Center,Tweaks Settings <ZION959> 7 hours ago
+799b825 : I like it fast -25 <ZION959> 8 hours ago
+94d8e28 : Settings: add development animation transition mode 0.75 and 0.25 <Lars Greiss> 1 year, 7 months ago
+de7054f : Settings: apple can do...we can do as well <Lars Greiss> 12 months ago
+a4c353e : Display SaberMod gcc info in About Phone <Paul Beeler> 4 months ago
+d33954a : Add CMRemix version to Device Info <ZION959> 4 days ago
+05a9bd9 : Settings: make empty profile views fit on hdpi <Roman Birg> 28 hours ago
+f7edb00 : Add brightness settings to Profiles (1/2) <heydabop> 2 days ago
+ 
+**** git://github.com/CyanogenMod/android_packages_wallpapers_Basic ****
+5fd9af2 : New Material icon <Michael Bestas> 6 days ago
+ 
+**** git://github.com/CyanogenMod/android_packages_wallpapers_Galaxy4 ****
+94ebb97 : New Material icon <Michael Bestas> 6 days ago
+ 
+**** git://github.com/CyanogenMod/android_packages_wallpapers_HoloSpiral ****
+0ce1859 : New Material icon <Michael Bestas> 6 days ago
+ 
+**** git://github.com/CyanogenMod/android_packages_wallpapers_LivePicker ****
+f1f5c75 : New Material icon <Michael Bestas> 6 days ago
+ 
+**** git://github.com/CyanogenMod/android_packages_wallpapers_MagicSmoke ****
+007e5eb : New Material icon <Michael Bestas> 6 days ago
+ 
+**** git://github.com/CyanogenMod/android_packages_wallpapers_MusicVisualization ****
+3a54f47 : New Material icon <Michael Bestas> 6 days ago
+ 
+**** git://github.com/CyanogenMod/android_packages_wallpapers_NoiseField ****
+7064363 : New Material icon <Michael Bestas> 6 days ago
+ 
+**** git://github.com/CyanogenMod/android_packages_wallpapers_PhaseBeam ****
+27f0da4 : New Material icon <Michael Bestas> 6 days ago
+ 
+**** https://github.com/cmRemiX/android_vendor_cmremix
+origin	git@github.com:cmRemiX/android_vendor_cmremix.git ****
+99b8729 : cmRemiX >>> CMRemixUpdater <ZION959> 8 hours ago
+ 

@@ -1,0 +1,171 @@
+
+**** https://github.com/CMRemix/CMRemix ****
+58d8d95 : track codeaurora Caf Repo <ZION959> 8 hours ago
+ 
+**** SaberMod	https://github.com/SaberMod/SaberMod_bionic
+https://github.com/CyanogenMod/android_bionic
+mustermaxmueller	https://github.com/mustermaxmueller/android_bionic.git
+origin	git@github.com:cmRemiX/android_bionic.git ****
+8a96ea6 : libc: Filter stpcpy and bcopy by architecture. <Utkarsh Gupta> 2 days ago
+ 
+**** git://github.com/CyanogenMod/android_cts ****
+d83e6e1 : Our <pty.h> tests need -lutil for glibc. <Elliott Hughes> 4 months ago
+ 
+**** CM	https://github.com/CyanogenMod/android_device_samsung_trlte-common.git
+https://github.com/cmRemiX/android_device_samsung_trlte-common
+origin	git@github.com:cmRemiX/android_device_samsung_trlte-common.git ****
+50768ea : DONT_DEXPREOPT_PREBUILTS <ZION959> 11 days ago
+a8b7f6d : trlte-common: Use low latency for primary <Tony Layher> 3 weeks ago
+3e5ee72 : init.qcom.rc: Stop mpdecision at boot <ZION959> 4 weeks ago
+6928ba1 : trlte-common: Update sepolicy and set to enforce. <Tony Layher> 10 weeks ago
+9df9355 : trlte-common: reorder init script for encrpytion <Tony Layher> 5 weeks ago
+65465b1 : remove volte overly flags <gekkehenkie11> 5 weeks ago
+570c17f : trlte-common: Ensure USB config is loaded. <Tony Layher> 5 weeks ago
+da9f02d : trlte-common: Stop using MDP for everything. <Tony Layher> 5 weeks ago
+382c361 : fix muted audio when rotated <gekkehenkie11> 6 weeks ago
+441e8a4 : trlte-common: Update service classes for encrpytion <Tony Layher> 7 weeks ago
+795aef6 : trlte-common: separate mixer_paths for 910F. <Tony Layher> 7 weeks ago
+cf48414 : trlte: Enable apps2sd (temasek) <ZION959> 7 weeks ago
+80ce2c6 : trlte: Enable tethering without provisioning app <ZION959> 7 weeks ago
+0126df8 : trlte-common enable stylus gestures. <Tony Layher> 8 weeks ago
+68705e5 : add support TRLTEEUR <gekkehenkie11> 8 weeks ago
+9b726a9 : trlte-common: Setup selinux/perms for spen events. <Tony Layher> 8 weeks ago
+276b8ab : trlte-common: Update nfc conf <Tony Layher> 9 weeks ago
+b9e7513 : trlte-common: add perfd dirs during init. <Tony Layher> 9 weeks ago
+6caa5b9 : trlte: Add stylus support <ZION959> 8 weeks ago
+b0d2873 : hlte: add L1/L2 cache size parameters optimizations <arter97> 8 weeks ago
+6ca6711 : Revert : trlte-common: Update sepolicy and set to enforce. <ZION959> 9 weeks ago
+ffe76c7 : trlte-common: Address denial for gyro_cal <Tony Layher> 9 weeks ago
+eaf10a3 : Add Enforcing video-snapshot-supported = true <Patrick L> 3 months ago
+2c7f1b6 : enabled hardware keys <Zion-Tran> 3 months ago
+a922091 : 1/2 3GB dalvik heap and hwui memory (Originally 2GB) <Zion-Tran> 3 months ago
+e718637 : use twrp for default recovery <ZION959> 9 weeks ago
+ 
+**** https://github.com/CyanogenMod/android_frameworks_av ****
+7e1c0f2 : audiopolicy: Fix call recording for legacy qcom HAL <nadlabak> 11 days ago
+d345820 : Revert "soundpool: reuse channel for same sample if available" <Arne Coucheron> 3 weeks ago
+ 
+**** origin	git@github.com:cmRemiX/android_frameworks_base.git ****
+ad605c2 : [base] long press back to kill configurable timeout (1/2) <cristianomatos> 7 hours ago
+034fa2c : [Base] HW keys tweaks <cristianomatos> 9 hours ago
+1e31fbc : [Base] Nav bar tweaks <cristianomatos> 7 hours ago
+6fd75cb : Disable Lots of Debugging <Chet Kener> 4 months ago
+4a8e537 : Speed Up Long Press Timeout <Chet Kener> 4 months ago
+6a1cbaf : Speed Up Recents Menu <Chet Kener> 4 months ago
+4625507 : Speed up Statusbar <Chet Kener> 4 months ago
+a8ae8dd : Fix strict aliasing violations. <Kyle Repinski> 4 months ago
+42b5686 : Frameworks: Keyguard - Add user configurable shortcuts <Lars Greiss> 10 hours ago
+859aec7 : Frameworks: icon materialization <dankoman> 4 months ago
+c1e829c : Wakelock Blocker [1/2] <faust93> 10 hours ago
+e7fbe8c : CommandQueue: showCustomIntentAfterKeyguard ensure that it gets syncronized <Lars Greiss> 4 months ago
+e69e4c6 : Fix Smart Pulldown <arcardinal> 4 months ago
+25196ca : Frameworks: add ability to send a custom intent after keyguard is finished <Lars Greiss> 12 hours ago
+3f01865 : Frameworks: rest of shortcut icons by Sven R. <Sven R> 4 months ago
+3249cc2 : Frameworks: moar shortcut icons by Sven R. <Sven R> 4 months ago
+18db124 : Frameworks: add all slim shortcut image resources <Lars Greiss> 4 months ago
+ea003d5 : Frameworks: inital bringup of slim actions and helper classes <Lars Greiss> 3 months ago
+f5059e7 : Keyguard: don't refresh ui when screen off <Lars Greiss> 4 months ago
+445e2dd : Return: Smart Pulldown [1/2] <Lars Greiss> 12 hours ago
+7a185b9 : Systemui: Recents - do not add search widget on recents if widget is lost. <Lars Greiss> 4 months ago
+2a3b1c5 : Frameworks: Add several Slim helper classes and constants back <Lars Greiss> 3 months ago
+e0aeab6 : fb: add back all keyboard IME features back (1/2) <Lars Greiss> 12 hours ago
+ 
+**** https://github.com/CyanogenMod/android_frameworks_native
+origin	https://github.com/cmRemiX/android_frameworks_native ****
+5876280 : Add 3GB dalvik heap and hwui memory <deadman96385> 6 months ago
+ 
+**** https://github.com/CyanogenMod/android_frameworks_opt_net_wifi
+origin	git@github.com:cmRemiX/android_frameworks_opt_net_wifi.git ****
+c2aee9a : wifi: Handle error cases when EAP-SIM info is NULL/Unsupported <Sravanthi Palakonda> 6 weeks ago
+ 
+**** git://github.com/CyanogenMod/android_hardware_libhardware_legacy ****
+3ca7733 : audio: Make getPresentationPosition pure virtual <Ethan Chen> 8 days ago
+ 
+**** git://github.com/CyanogenMod/android_hardware_qcom_audio ****
+4f05e07 : alsa_sound: Fix compilation for 5.1 <Ethan Chen> 8 days ago
+ 
+**** git://github.com/CyanogenMod/android_hardware_qcom_audio ****
+ef33462 : post_proc: add support for virtualizer capability query <Weiyin Jiang> 13 days ago
+5889d7d : hal: Fix alignement of of buffer sent to DSP <Amit Shekhar> 5 weeks ago
+ 
+**** git://github.com/CyanogenMod/android_hardware_qcom_bt ****
+34c2e3d : Bluetooth: Set BD address from boot property <Bhakthavatsala Raghavendra> 8 weeks ago
+1f9cd72 : Bluetooth: Set BD address from boot property <Bhakthavatsala Raghavendra> 8 weeks ago
+ 
+**** git://github.com/CyanogenMod/android_hardware_qcom_display ****
+7e07e8c : qdutils: Fix memory leak <Saurabh Shah> 2 weeks ago
+66a10c6 : gralloc: fix getYUVPlaneInfo for YV12 format <Arun Kumar K.R> 8 months ago
+c194f6e : gralloc: Fix NV12 and NV21 stride <Naseer Ahmed> 10 months ago
+57b5245 : gralloc: Report YUV plane info <Naseer Ahmed> 12 months ago
+cc785bf : gralloc: Add support for lock_ycbcr <Naseer Ahmed> 1 year, 11 months ago
+ 
+**** git://github.com/CyanogenMod/android_hardware_qcom_wlan ****
+5cc61ea : Remove enum vendor_subcmds for Android HAL and use #define <Ahmad Kholaif> 3 months ago
+a03b7f5 : wifihal: Handle Null Pointer dereference. <Naresh Jayaram> 6 weeks ago
+8d0d3bd : wifihal: Replace strcpy, vsprintf and handle NULL ptr dereferenc <Naresh Jayaram> 8 weeks ago
+5f27594 : Adding support for passing userdata in nan_register_handler <Amarnath Hullur Subramanyam> 4 months ago
+ 
+**** git://github.com/CyanogenMod/android_hardware_ti_omap4 ****
+afb64fc : camera: fix build when TI_CAMERAHAL_DONT_USE_RAW_IMAGE_SAVING is set <Dániel Járai> 3 days ago
+ 
+**** git://github.com/CyanogenMod/android_packages_apps_Browser ****
+de58083 : Browser: fix fixing default bookmarks urls <Konsta> 2 days ago
+ 
+**** git://github.com/CyanogenMod/android_packages_apps_CMFileManager ****
+b20d670 : Add character limit for name input dialog. <Martin Brabham> 32 hours ago
+374fe77 : Fix support for USB OTG. <Matt Garnes> 2 days ago
+ 
+**** git://github.com/CyanogenMod/android_packages_apps_Calculator ****
+e4f2d34 : Calculator: Add cap to the number of chars in text editor <Linus Lee> 3 weeks ago
+ 
+**** git://github.com/CyanogenMod/android_packages_apps_Dialer ****
+d992054 : Fix string resolution problem. <Danny Baumann> 3 days ago
+ 
+**** origin	git@github.com:cmRemiX/android_packages_apps_Settings.git ****
+a2b0a9d : Fix Settings FC in non-Advanced mode (Buttons Setting) <Janson Kang> 3 weeks ago
+f289015 : Add back CMRemix helper pref that holds a system setting <ZION959> 3 hours ago
+3ea1b42 : [settings] long press back to kill configurable timeout (2/2) <cristianomatos> 3 hours ago
+77236b6 :  [Settings] Nav bar tweaks + HW keys tweaks <cristianomatos> 4 hours ago
+1486357 : Settings: its not an icon anymore...its an option <Lars Greiss> 4 months ago
+bad92be : Settings: add user configurable lockscreen shortcuts (2/2) <Lars Greiss> 10 hours ago
+f41a1ef : Settings: materialize grabber icon <dankoman> 4 months ago
+48b6f63 : Settings: Materialize DSLV <Lars Greiss> 3 months ago
+49605ac : Settings: add default slim actions for screen off gestures <Lars Greiss> 3 months ago
+deb7f94 : Settings: add a default slim actions array <Lars Greiss> 3 months ago
+a00232d : Settings: add central slim ActionListViewSettings class back... as well shortcutpicker helper and several other stuff which is needed for nearly every feature we have regarding navigation or shortcuts. <Lars Greiss> 10 hours ago
+ddaa86d : add dslv controller <Lars Greiss> 3 months ago
+6c9dd3c : Wakelock Blocker [2/2] <faust93> 3 months ago
+eedf621 : Add margaritov colorpicker from SlimRoms <Allan Hedelain> 10 hours ago
+35fb72d : settings: add general strings <ZION959> 11 hours ago
+60e73c0 :  Return: Smart Pulldown [2/2] <Lars Greiss> 11 hours ago
+c3f06ad : settings: add back all keyboard IME features back (2/2) this commit adds: <Lars Greiss> 12 hours ago
+ 
+**** git://github.com/CyanogenMod/android_packages_inputmethods_LatinIME ****
+6d1c8e9 : Rearrange Slavic & Greek morekeys <Michael Bestas> 8 hours ago
+ad70be9 : Rearrange morekeys <KhasMek> 1 year, 2 months ago
+80e5153 : Fix suggestions text padding (AOSP Keyboard) <Sergey Zozulya> 3 weeks ago
+ 
+**** https://github.com/CyanogenMod/android_system_core
+origin	git@github.com:cmRemiX/android_system_core.git ****
+27f8ec6 : core: add our init file [1/2] <ZION959> 3 months ago
+b3b9fc5 : core: This is CMRemiX <David Viteri> 8 weeks ago
+ 
+**** git://github.com/CyanogenMod/android_system_netd ****
+4cf5826 : netd: Fix concurrency error for iptables command <Nilesh Poddar> 4 months ago
+01df09d : SOFTAP: Notificate the STA (dis)connect message <Hu Wang> 5 months ago
+eb9dda2 : Revert "SOFTAP: Notificate the STA (dis)connect message" <Rajesh Chauhan> 5 months ago
+ 
+**** git://github.com/CyanogenMod/android_system_vold ****
+f9cadd5 : vold: cleanup cflags <Michael Bestas> 2 weeks ago
+ 
+**** https://github.com/CyanogenMod/android_vendor_cm
+origin	git@github.com:cmRemiX/android_vendor_cm.git ****
+08297ed : cm: Update notify_on_migrate path <Arne Coucheron> 30 hours ago
+ 
+**** https://github.com/cmRemiX/android_vendor_cmremix
+origin	git@github.com:cmRemiX/android_vendor_cmremix.git ****
+0a99a37 : Chromium Fix 2 <MaDc0w> 3 weeks ago
+eff14ba : Chromium Fix <Lokesh Chamane> 3 weeks ago
+154fb0b : derp <ZION959> 7 hours ago
+cdbcb71 : Removed: Add Prebuilt libwebviewchromium libs <ZION959> 7 hours ago
+ 
