@@ -1,11 +1,11 @@
 
 **** https://github.com/CMRemix/CMRemix ****
-19b9a70 : track MusterMaxMueller's clanglibs qcom 3.6 <ZION959> 11 hours ago
-384b3f5 : Track our own external/libvpx <Abhisek Devkota> 16 hours ago
+19b9a70 : track MusterMaxMueller's clanglibs qcom 3.6 <ZION959> 20 hours ago
+384b3f5 : Track our own external/libvpx <Abhisek Devkota> 25 hours ago
 6fd3aed : manifest: Track our own chromium/v8 <Tony Layher> 2 days ago
 43f9d6b : track frameworks av & native <ZION959> 4 days ago
 4c58cb6 : removed cm MediaProvider <ZION959> 4 days ago
-4247df2 : remove duplicates <ZION959> 4 days ago
+4247df2 : remove duplicates <ZION959> 5 days ago
 07b93cc : add back cmremix various repo <ZION959> 5 days ago
 fbb8bbf : Track our own thirdparty/boringssl <Abhisek Devkota> 9 days ago
  
@@ -13,13 +13,13 @@ fbb8bbf : Track our own thirdparty/boringssl <Abhisek Devkota> 9 days ago
 75496c1 : Don't disable including TARGET_RECOVERY_UI_LIB if exists <dhacker29> 2 days ago
  
 **** origin	git@github.com:cmRemiX/android_build.git ****
-dce67d2 : Revert: Build: cmRemiX up sounds and update (2/2) <ZION959> 24 hours ago
+dce67d2 : Revert: Build: cmRemiX up sounds and update (2/2) <ZION959> 34 hours ago
 3d6ba53 : qcom_utils: Add msm8992 and msm8994 <Rashed Abdel-Tawab> 6 weeks ago
 2e6c7c4 : qcom_utils: Add msm8992 and msm8994 <Rashed Abdel-Tawab> 6 weeks ago
  
 **** CM	https://github.com/CyanogenMod/android_device_qcom_common
 origin	git@github.com:cmRemiX/android_device_qcom_common.git ****
-2027205 : power: Updates for 8916/8939 <Steve Kondik> 5 days ago
+2027205 : power: Updates for 8916/8939 <Steve Kondik> 6 days ago
 b0eb8ec : power: introduce 8992-specific handling <Dilip Gudlur> 2 months ago
 87416cf : init: Add MSM-specific init extension library for 8992 <Jeykumar Sankaran> 4 months ago
 49446fd : init: qcom: Set LCD density for Dragonboard APQ8094 <Ilia Lin> 6 months ago
@@ -53,7 +53,7 @@ f6dd4e8 : Clears the allocated memory in HID profile when unmatched report is re
 b1c3b3d : Bluetooth: Add Jabra Pulse to Absolute Volume whitelist <pramod kotreshappa> 9 weeks ago
  
 **** git://github.com/CyanogenMod/android_external_chromium_org ****
-c9d88d6 : Fix build for MacOSX 10.10.X and CLI Tools 6.1.1 <Tony Layher> 4 days ago
+c9d88d6 : Fix build for MacOSX 10.10.X and CLI Tools 6.1.1 <Tony Layher> 5 days ago
  
 **** git://github.com/CyanogenMod/android_external_ffmpeg ****
 97ebddc : x86: Use yasm from prebuilts and don't depend on host install <dhacker29> 3 days ago
@@ -70,56 +70,56 @@ c89e40a : Allow init to setenforce to set SELinux permissive <Ethan Yonker> 4 mo
 79ff523 : sepolicy: Deduplicate the final policy union <Steve Kondik> 4 days ago
  
 **** origin	git@github.com:cmRemiX/android_frameworks_base.git ****
-96e43e7 : QS: Housekeeping <ZION959> 8 minutes ago
+96e43e7 : QS: Housekeeping <ZION959> 9 hours ago
 d28ab3f : QS: fix qs main tiles settings not refreshing tiles <Altaf-Mahdi> 6 weeks ago
 6bbaf57 : Base: fix unlinking volume sliders (2/2) <Altaf-Mahdi> 4 weeks ago
 42e90a4 : SystemUI: move keyguard visualizer behind notifications <Roman Birg> 3 days ago
 9599e14 : SystemUI: long press lock screen lock icon to sleep (1/2) <Altaf-Mahdi> 6 weeks ago
-316c790 : systemui: fix npe in egg <Jorge Ruesga> 25 hours ago
+316c790 : systemui: fix npe in egg <Jorge Ruesga> 35 hours ago
 ba9b94e : Prevent windows from freezing screen while timeout <tiger_huang> 3 days ago
 65255f3 : [ActivityManager] Finish the failed-to-pause activity <louis_chang> 2 days ago
-9a07b8d : Prevent possible memory leak in SpanSet <Romain Guy> 2 days ago
+9a07b8d : Prevent possible memory leak in SpanSet <Romain Guy> 3 days ago
 6a95db4 : [ProcessStas] fix index out of bounds when add duration. <Ronnie Leng> 2 weeks ago
 f058f42 : Fix memory leak in Connectivity Service when phone app crashes <Maunik Shah> 11 days ago
 92a91af : Add a timeout state to frozen windows <Craig Mautner> 5 weeks ago
 86bdc7f : Fixed memory leak in ExtractEditLayout finish() <Johan8 Persson2> 2 years, 11 months ago
 c3d127f : ProgressBar: Fix error of process bar cannot update on some condition. <Bing Deng> 2 years, 5 months ago
-05b835d : [ActivityManager] Avoid NullPointerException if no crash info <louis_chang> 35 hours ago
+05b835d : [ActivityManager] Avoid NullPointerException if no crash info <louis_chang> 2 days ago
 f2758ee : QS: add Screenrecord tile drawables <eyosen> 9 weeks ago
 3cb4f87 : QS: add Screenrecord tile (1/2) <eyosen> 9 weeks ago
 2d40cf8 : screenrecord: fix key combo trigger <eyosen> 2 weeks ago
-2b6d39b : Add Screen Record to the Power Menu [1/2] <eyosen> 56 minutes ago
-1289f74 : base: screenrecord: forward port from 4.4 Squashed commit of the following: <maxwen> 58 minutes ago
-af5c5ad : Revert : [1/2] Screen Recorder <ZION959> 69 minutes ago
+2b6d39b : Add Screen Record to the Power Menu [1/2] <eyosen> 10 hours ago
+1289f74 : base: screenrecord: forward port from 4.4 Squashed commit of the following: <maxwen> 10 hours ago
+af5c5ad : Revert : [1/2] Screen Recorder <ZION959> 10 hours ago
 fe5f69b : alarms: include Timer.ogg <Alexander Martinz> 2 months ago
-416d5b2 : derp fixed <ZION959> 11 hours ago
-d7dd6b6 : private View mWeatherView; removed duplicate <ZION959> 12 hours ago
+416d5b2 : derp fixed <ZION959> 21 hours ago
+d7dd6b6 : private View mWeatherView; removed duplicate <ZION959> 22 hours ago
 515e897 : Preference: allow to get list of preferences from preference group <Alexander Martinz> 4 weeks ago
-d2e24dd : (1/2) Frameworks: allow to toggle smart cover wake <Alexander Martinz> 13 hours ago
-00e2c0c : Lock screen: Text and icon colors, (1/2): <XXMrHyde> 13 hours ago
-6b47072 : Lock screen: Weather panel improvements, (1/2): <XXMrHyde> 13 hours ago
-b51c711 : FWB: Proper LS weather switch from XXMrHyde <XXMrHyde> 13 hours ago
+d2e24dd : (1/2) Frameworks: allow to toggle smart cover wake <Alexander Martinz> 22 hours ago
+00e2c0c : Lock screen: Text and icon colors, (1/2): <XXMrHyde> 23 hours ago
+6b47072 : Lock screen: Weather panel improvements, (1/2): <XXMrHyde> 23 hours ago
+b51c711 : FWB: Proper LS weather switch from XXMrHyde <XXMrHyde> 23 hours ago
 6ced08a : FWB: Dotted circle battery (1/2) <LorDClockaN> 4 weeks ago
-085be26 : Action: Add screenshot action <fusionjack> 14 hours ago
-de238bc : Action: Add kill-app and last-app actions <fusionjack> 14 hours ago
-7e4d255 : Framework: SlimAction as QuickTile (1/2) <fusionjack> 14 hours ago
+085be26 : Action: Add screenshot action <fusionjack> 23 hours ago
+de238bc : Action: Add kill-app and last-app actions <fusionjack> 23 hours ago
+7e4d255 : Framework: SlimAction as QuickTile (1/2) <fusionjack> 23 hours ago
 4706d9c : QS: add Ambient display tile <Altaf-Mahdi> 5 weeks ago
-9233f44 : Frameworks: Slim Shortcuts <Jubakuba> 14 hours ago
+9233f44 : Frameworks: Slim Shortcuts <Jubakuba> 23 hours ago
 db1ffdf : Force Expanded Notifications (1/2) <Jmz> 5 weeks ago
 988d73b : App sidebar: notify if app is not installed <lion0738> 5 weeks ago
-8a71a12 : App sidebar: some adjustments - Cleanup - fix disappearing appbar on changing appbar position - may fix endless FC on changing appbar contents <lion0738> 14 hours ago
-244157ea : [1/2] frameworks: App sidebar <0xD34D> 14 hours ago
+8a71a12 : App sidebar: some adjustments - Cleanup - fix disappearing appbar on changing appbar position - may fix endless FC on changing appbar contents <lion0738> 23 hours ago
+244157ea : [1/2] frameworks: App sidebar <0xD34D> 23 hours ago
 824e2de : base: Direct call (1/4) <martincz> 5 weeks ago
 ce852f5 : Call recording encoder/format choice 3/3 <Kryten2k35> 5 weeks ago
-3b42f37 : FWB: Greeting label timeout (1/2) <LorDClockaN> 14 hours ago
-25f4744 : Detect status bar carrier state when theme change. <FusionSP> 14 hours ago
-d574a20 : Status bar greeting [1/2] <Dave Kessler AlmightyMegadeth00> 14 hours ago
+3b42f37 : FWB: Greeting label timeout (1/2) <LorDClockaN> 23 hours ago
+25f4744 : Detect status bar carrier state when theme change. <FusionSP> 23 hours ago
+d574a20 : Status bar greeting [1/2] <Dave Kessler AlmightyMegadeth00> 24 hours ago
 bcb67a4 : Power menu into navring targets <cristianomatos> 6 weeks ago
 6f47b5f : Add option to hide Bluetooth Icon when disconnected in Status Bar (1/2) <KreAch3R> 6 weeks ago
 6687324 : Add USB Tether Tile (2/2) <BestPig> 6 weeks ago
-c1a0c46 : FWB: Hide network activity arrows (1/2) <XXMrHyde> 14 hours ago
+c1a0c46 : FWB: Hide network activity arrows (1/2) <XXMrHyde> 24 hours ago
 f9752cf : Show carrier label / custom & change color Use Statusbar clock style instead <ZION959> 6 weeks ago
-df17539 : Show carrier label / custom & change color [1/2] <martincz> 15 hours ago
+df17539 : Show carrier label / custom & change color [1/2] <martincz> 25 hours ago
  
 **** origin	https://github.com/cmRemiX/android_frameworks_native ****
 96bfb46 : SurfaceFlinger: Featurize libuiblur module for OSS build <Byunghun Jeon> 7 weeks ago
@@ -163,22 +163,22 @@ a04a34a : hwc: Clean up scattered definitions of commonly used constants/values 
  
 **** CM	https://github.com/CyanogenMod/android_hardware_samsung
 origin	git@github.com:cmRemiX/android_hardware_samsung.git ****
-eef440e : libril: Readd support for MODEM_TYPE_XMM7260 <Andreas Schneider> 2 days ago
-f68609b : libril: Fix #elif for MODEM_TYPE_XMM6260 <Andreas Schneider> 2 days ago
-8cb8de6 : libril: Use consistent names for modem defines <Andreas Schneider> 2 days ago
-8e5fa43 : libril: The data variable should be const <Andreas Schneider> 2 days ago
-68f80d8 : libril: Fix processRadioState prototype <Andreas Schneider> 2 days ago
-eeb7df7 : Fix the build error of some samsung devices which provides libril (e.g. ks01lte) <K Yasu> 2 days ago
+eef440e : libril: Readd support for MODEM_TYPE_XMM7260 <Andreas Schneider> 3 days ago
+f68609b : libril: Fix #elif for MODEM_TYPE_XMM6260 <Andreas Schneider> 3 days ago
+8cb8de6 : libril: Use consistent names for modem defines <Andreas Schneider> 3 days ago
+8e5fa43 : libril: The data variable should be const <Andreas Schneider> 3 days ago
+68f80d8 : libril: Fix processRadioState prototype <Andreas Schneider> 3 days ago
+eeb7df7 : Fix the build error of some samsung devices which provides libril (e.g. ks01lte) <K Yasu> 3 days ago
 e32dbfd : libril: Merge xmm6262 and xmm6260 to single lib. <Howard Su> 3 months ago
  
 **** git://github.com/CyanogenMod/android_packages_apps_Bluetooth ****
 d9238c1 : Bluetooth: The item disappears after open it in Bluetooth received. <tao.pei> 2 weeks ago
-dc47b46 : Bluetooth-OPP: Check socket congestion status before writing the data <Juffin Alex Varghese> 10 weeks ago
-ea6eec1 : Bluetooth: Avoid cleanup the scan manager if already cleaned up <Srinu Jella> 4 weeks ago
+dc47b46 : Bluetooth-OPP: Check socket congestion status before writing the data <Juffin Alex Varghese> 2 months ago
+ea6eec1 : Bluetooth: Avoid cleanup the scan manager if already cleaned up <Srinu Jella> 5 weeks ago
 91428fc : MAP: Fix parsing special character issue in vcard email. <Ashwini Munigala> 5 weeks ago
 e880022 : Prevent duplicate OPP permission request dialogs <Andre Eisenbach> 4 months ago
 2c10e9a : Check previous user confirmation before auto-confirm put request <Matthew Xie> 5 months ago
-39b40fa : Bluetooth-OPP: Check socket congestion status before writing the data <Juffin Alex Varghese> 10 weeks ago
+39b40fa : Bluetooth-OPP: Check socket congestion status before writing the data <Juffin Alex Varghese> 2 months ago
 6e0b6a9 : updateshare confirm logic missed cases like CONFIRMATION_DENIED, TIMEOUT. fix it <Matthew Xie> 6 months ago
 4a8aae4 : Bluetooth: Stopping all services in case of enable Timeout <Ajay Kumar> 7 weeks ago
 d595be9 : Bluetooth-OPP: Read share count from OPP manager before transfer starts <Juffin Alex Varghese> 3 months ago
@@ -205,7 +205,7 @@ e849cd1 : Stop ', NaN' from showing up; instead syntaxexception should be thrown
 147b8fd : Expose hard coded background and text colors from layouts for display background and floating history text entry. <Bryan Owens> 9 days ago
  
 **** git://github.com/CyanogenMod/android_packages_apps_ContactsCommon ****
-38c39f9 : ContactsCommon: fix NPE on importing contact with multiple accounts <Pawit Pornkitprasan> 4 days ago
+38c39f9 : ContactsCommon: fix NPE on importing contact with multiple accounts <Pawit Pornkitprasan> 5 days ago
 579a7f0 : Expose colors from array <Bryan Owens> 8 days ago
  
 **** git://github.com/CyanogenMod/android_packages_apps_DeskClock ****
@@ -213,18 +213,20 @@ f4eb401 : DeskClock: re-write delayAlarm for intercepting alarms when in-call <R
  
 **** git://github.com/CyanogenMod/android_packages_apps_Dialer
 origin	git@github.com:CMRemix/android_packages_apps_Dialer.git ****
+6988778 : Dialer: Direct Call (3/4) <martincz> 83 minutes ago
+4b4b9ad : Call recording encoder/format choice 1/3 <Kryten2k35> 5 weeks ago
 9c45e51 : Revert "Dialer: truncate hint text for search box" <Pawit Pornkitprasan> 5 days ago
  
 **** git://github.com/CyanogenMod/android_packages_apps_Email ****
-877904c : email: support per-folder notifications <Jorge Ruesga> 5 days ago
-65e3d05 : email: support for auto-sync multiple IMAP folders <Jorge Ruesga> 5 days ago
+877904c : email: support per-folder notifications <Jorge Ruesga> 6 days ago
+65e3d05 : email: support for auto-sync multiple IMAP folders <Jorge Ruesga> 6 days ago
 8a84700 : email: add an option for delete the account <Jorge Ruesga> 3 weeks ago
 1833e2b : email: don't block extras database <Jorge Ruesga> 3 weeks ago
  
 **** CM	git://github.com/CyanogenMod/android_packages_apps_InCallUI
 origin	git@github.com:CMRemix/android_packages_apps_InCallUI.git ****
 3e5d3f0 : Properly unregister supp service failure receiver. <Danny Baumann> 3 days ago
-a441cea : Fix broken string reference usage. <Danny Baumann> 3 days ago
+a441cea : Fix broken string reference usage. <Danny Baumann> 4 days ago
  
 **** git://github.com/CyanogenMod/android_packages_apps_KeyChain ****
 fc3b9e4 : Revert "KeyChain: Fix certificate dialog needs twice Cancel to disappear." <Jorge Ruesga> 2 days ago
@@ -232,32 +234,62 @@ fc3b9e4 : Revert "KeyChain: Fix certificate dialog needs twice Cancel to disappe
 **** git://github.com/CyanogenMod/android_packages_apps_LockClock ****
 97a3670 : New Material icon <Michael Bestas> 2 days ago
  
-**** git://github.com/CyanogenMod/android_packages_apps_Mms-caf ****
+**** git://github.com/CyanogenMod/android_packages_apps_Mms-caf
+origin	git@github.com:CMRemix/android_packages_apps_Mms-caf.git ****
+30c0495 : [2/4] Mms: Breathing missedcall/sms/voicemail <Bajee11> 7 weeks ago
+9cdc5d5 : Mms: Direct Call (4/4) <martincz> 5 weeks ago
+153b227 : Mms: use string resource for Select Recipients progress dialog <Raj Yengisetty> 12 hours ago
+0b6da5c : Mms: add a drawable for the calendar event <Raj Yengisetty> 12 hours ago
+95abfab : Mms: do not populate RecipientsEditor while mAddNumbersTask is running <Raj Yengisetty> 29 hours ago
 b0cb171 : Replace some home-grown summary management logic by a simpler version. <Danny Baumann> 8 days ago
-06e2220 : Replace slot spinner by subscription spinner. <Danny Baumann> 10 days ago
+06e2220 : Replace slot spinner by subscription spinner. <Danny Baumann> 11 days ago
 c8319d3 : Use subscription ID instead of phone ID. <Danny Baumann> 11 days ago
 3608041 : Mms: Fix for adding too many recipients to the Message <Raj Yengisetty> 3 days ago
  
+**** https://github.com/CMRemix/android_packages_apps_OmniSwitch ****
+2d64ac7 : OmniSwitch: Hide from Drawer Launcher <david> 7 weeks ago
+ 
 **** origin	git@github.com:cmRemiX/android_packages_apps_Settings.git ****
-cdfd9cf :  Show carrier label / custom & change color [2/2] <martincz> 13 minutes ago
+3f6effe : [Lockscreen shortcuts] centralize all option in our custom settings <cristianomatos> 3 hours ago
+b0e4ba7 : Fix Settings FC in non-Advanced mode (Buttons Setting) <Janson Kang> 4 weeks ago
+e897e5e : (2/2) Settings: allow to toggle smart cover wake <Alexander Martinz> 4 weeks ago
+f98ce36 : Settings: Materialize standard colors in colorpicker <alviteri> 5 weeks ago
+3511e26 : Settings: Dotted circle battery (2/2) <LorDClockaN> 4 weeks ago
+9193b5f : Settings: SlimAction as QuickTile (2/2) <fusionjack> 13 hours ago
+d5fe150 : Settings: Slim Actions to Shortcuts <fusionjack> 13 hours ago
+3eec4d8 : Force Expanded Notifications (2/2) <Jmz> 5 hours ago
+9a33920 : Settings: Add 1 second to Volume Panel Timeout <alviteri> 5 weeks ago
+b03b84c : [2/2] App sidebar <0xD34D> 14 hours ago
+a2620f7 : QS: add Ambient display tile * add Ambient display settings activity for long press on tile <Altaf-Mahdi> 6 hours ago
+6f2268b : Settings: long press lock screen lock icon to sleep (2/2) <Altaf-Mahdi> 14 hours ago
+2721455 : SQUASH Settings:Smart control center and Direct Call (2/4) <martincz> 14 hours ago
+4709cc5 : Settings: Greeting label timeout (2/2) PS2:     Use string for suggested greeting PS3:     Fix build - derp <LorDClockaN> 6 hours ago
+5d0b3bc : Settings: Statusbar greeting (2/2) <Dave Kessler> 7 hours ago
+d7f85d4 : Add option to hide Bluetooth Icon when disconnected in Status Bar (2/2) <KreAch3R> 6 weeks ago
+dd4a5f5 : Settings: Hide network activity arrows (2/2) <LorDClockaN> 8 hours ago
+e2ef7af : move QS string to cmremix <ZION959> 9 hours ago
+13e2a6c : QS: add Screenrecord tile (2/2) <eyosen> 9 weeks ago
+f6c6ca6 : Add Screen Record to the Power Menu [2/2] <eyosen> 9 hours ago
+2988b8f : Removed screenrecord <ZION959> 9 hours ago
+cdfd9cf :  Show carrier label / custom & change color [2/2] <martincz> 9 hours ago
 9696346 : Add USB Tether Tile (1/2) <Beeko> 6 weeks ago
 985d659 : App Circle Bar Tile [3/3] <Alex Cruz> 6 weeks ago
 07a0099 : NavBar tile [3/3] <Alex Cruz> 6 weeks ago
 04cf4c1 : Add Headsup tile [2/2] <snak3ater> 6 weeks ago
 3b9620b : captive portal: remove extra whitespace <Alexander Martinz> 7 weeks ago
-2b3509a : [3/4] Settings: Breathing missedcall/sms/voicemail <UtkarshGupta> 22 minutes ago
+2b3509a : [3/4] Settings: Breathing missedcall/sms/voicemail <UtkarshGupta> 10 hours ago
 05e7dd6 : Change expanded desktop options based on our navbar switch implementation <cristianomatos> 7 weeks ago
-f9f2a76 : [Settings] Volume panel timeout <cristianomatos> 19 hours ago
-50f00e7 : Double tap to sleep on navigation bar [2/2] <TheMrcool212> 17 hours ago
-a7e4dca : Powermenu screenshot delay [2/2] <preludedrew> 19 hours ago
+f9f2a76 : [Settings] Volume panel timeout <cristianomatos> 28 hours ago
+50f00e7 : Double tap to sleep on navigation bar [2/2] <TheMrcool212> 26 hours ago
+a7e4dca : Powermenu screenshot delay [2/2] <preludedrew> 28 hours ago
 b6aaf22 : Settings: Add Volume Key Answer (2/2) <scott> 8 weeks ago
-85472da : Settings - Add PowerMenu QS Tile (Reboot on longpress) [2/2] <STELIX> 19 hours ago
-8e73fe8 : Settings: option to disable search panel (navrings) (2/2) Change-Id: I573fd6fab4c24866f58b4062c5eb516719c0855b <Altaf-Mahdi> 19 hours ago
-29cf158 : Add toggle for captive portal check <Evisceration> 19 hours ago
-bd99762 : update navigationbar <ZION959> 20 hours ago
-759b031 : house keeping: move recent panel to tweaks <ZION959> 18 hours ago
-4042039 : complete CMRemix Settings dependencies <ZION959> 24 hours ago
-d807ed0 : PowerMenu: Use SwitchPreference <ZION959> 24 hours ago
+85472da : Settings - Add PowerMenu QS Tile (Reboot on longpress) [2/2] <STELIX> 28 hours ago
+8e73fe8 : Settings: option to disable search panel (navrings) (2/2) Change-Id: I573fd6fab4c24866f58b4062c5eb516719c0855b <Altaf-Mahdi> 28 hours ago
+29cf158 : Add toggle for captive portal check <Evisceration> 29 hours ago
+bd99762 : update navigationbar <ZION959> 29 hours ago
+759b031 : house keeping: move recent panel to tweaks <ZION959> 27 hours ago
+4042039 : complete CMRemix Settings dependencies <ZION959> 33 hours ago
+d807ed0 : PowerMenu: Use SwitchPreference <ZION959> 33 hours ago
 e164538 : Settings: CM Power Menu: Remove BugReport <david> 3 months ago
 7bd6811 : USB Settings: Use SwitchPreference <Janson Kang> 7 weeks ago
 51bc07f : Settings: use switch preference for Ambient Display <Lokesh Chamane> 6 weeks ago
@@ -266,32 +298,15 @@ b169f9b : Update Ambient to PS29 <Yanuar Harry> 7 weeks ago
 5ca78fe : Update Ambient to PS23 <LorDClockaN> 7 weeks ago
 16c1121 : Settings: Ambient Display configurations <Yanuar Harry> 2 days ago
 1c5916a : Settings: improve empty Profile trigger icons <Roman Birg> 7 days ago
-203fbd9 : SoundSettings: Fix NPE in sound settings <lirokoa> 5 days ago
+203fbd9 : SoundSettings: Fix NPE in sound settings <lirokoa> 6 days ago
 54cc191 : Settings: add snapchat lockscreen icons [1/2] <jukiewalsh> 2 months ago
-26f8f6f : Settings: add more drawables to Slim LockScreen Shortcuts (1/2) <david> 2 months ago
-bc4843b : Settings: tint ic_drawer image <maxwen> 4 months ago
-32207e9 : Settings: Tint Black drawables <XXMrHyde> 5 months ago
-14bef83 : Navigation bar button color (2/2) <lichti1901> 2 days ago
-8b5a890 : [Settings] Add the ability to hide superuser status bar icon <cristianomatos> 2 days ago
-75108fb : Heads Up: Clean up code after ScreenType FWB commit <Janson Kang> 8 weeks ago
-c4fb52e : [Heads up] Touch to hide (2/2) <cristianomatos> 9 weeks ago
-5812f69 : [Heads up Swipe] A more user friendly summary <cristianomatos> 8 weeks ago
-085e783 : HeadsUp: add timeout option (2/2) <Lars Greiss> 2 days ago
-1b87b65 : Settings: HeadsUp options [2/2] <Joey Rizzoli> 2 days ago
-29230fe : Add settings reset icons <Janson Kang> 4 months ago
-946326d : QSColors: No more SystemUI restart on switch <LorDClockaN> 5 weeks ago
-7d8876a : Settings: QS colors master switch (2/2) <LorDClockaN> 5 weeks ago
-4e7f4f1 : QSColor: Improvements - transparent shade (2/2) <LorDClockaN> 6 weeks ago
-5e8829d : Quick settings customizations, (2/2): (useername) <ZION959> 2 days ago
-29b9ee2 : settings : fixed display_and_lights_settings <ZION959> 2 days ago
-083e26a : QSTile: Reboot/Recovery tile (2/2) <fusionjack> 7 weeks ago
-7ffac21 : QS: add newly added tiles <Altaf-Mahdi> 2 days ago
-d53cb62 : QS: Option to show four tiles per row (2/2) <Altaf-Mahdi> 2 days ago
-5347b85 : QS: add Screenshot & Sync tile (2/2) <Altaf-Mahdi> 10 weeks ago
-54ef3d3 : QS: Squashed from EuphoriaOS (2/2) <snak3ater> 3 months ago
  
 **** https://github.com/CMRemix/android_packages_apps_SlimLauncher ****
 e16b8cb : Change module name <Griffin Millender> 5 months ago
+ 
+**** git://github.com/CyanogenMod/android_packages_apps_ThemeChooser
+origin	git@github.com:CMRemix/android_packages_apps_ThemeChooser.git ****
+87096d5 : ThemeChooser: Hide from Drawer Launcher <david> 7 weeks ago
  
 **** git://github.com/CyanogenMod/android_packages_apps_UnifiedEmail ****
 ef570af : unified-email: check notification support prior to create notification objects <Jorge Ruesga> 4 days ago
@@ -309,7 +324,10 @@ origin	git@github.com:CMRemix/android_packages_services_Telecomm.git ****
 b8fcaec : Revert "Subscription selection when dialing USSD" <Pawit Pornkitprasan> 5 days ago
 e611ca7 : CallsManager: fix starting call from Contacts app with MSim <Pawit Pornkitprasan> 4 weeks ago
  
-**** git://github.com/CyanogenMod/android_packages_services_Telephony ****
+**** git://github.com/CyanogenMod/android_packages_services_Telephony
+origin	git@github.com:CMRemix/android_packages_services_Telephony.git ****
+c1c4e6c : [2/3] Call recording encoder/format choice Adds a user option between NB AMR (the default) or HE-AAC for the encoding of call recording audio. Also changes the output format of the file appropriately (NB AMR now uses the NB_AMR output format and HE_AAC chooses the MPEG_4 output. File extensions are adjust accordingly as well). This was in reponse to people complaining the quality of call recording audio is poor. It's noticibly better using HE-AAC, but filesizes are larger. <Kryten2k35> 55 minutes ago
+fcfe4d4 : [4/4] Telephony: Breathing missedcall/sms/voicemail <garwedgess> 7 weeks ago
 85ca7b7 : Fix CAF merge issue. <Danny Baumann> 3 days ago
  
 **** https://github.com/CMRemix/android_system_vold ****
@@ -319,7 +337,7 @@ b240c85 : vold: add ro.vold.umsdirtyratio property <kallt_kaffe> 3 years, 6 mont
 origin	git@github.com:cmRemiX/android_vendor_cm.git ****
 1db6cf1 : apns: Added APNs for Movistar Peru <Zyg0te> 2 days ago
 700484d : Fix generate-half-res-anims.sh and halfres bootanimation.zips <Andreas Blaesius> 3 days ago
-ffe07b8 : cm: CM-specific build macros <Steve Kondik> 4 days ago
+ffe07b8 : cm: CM-specific build macros <Steve Kondik> 5 days ago
 da87a7d : userinit: kill userinit.d <Emerson Pinter> 13 days ago
 779bc74 : Update APNs for Smartfren <Howard M. Harte> 6 days ago
  
