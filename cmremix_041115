@@ -1,0 +1,119 @@
+
+**** https://github.com/CMRemix/CMRemix ****
+83e0266 : track email,UnifiedEmail,Exchange <ZION959> 79 minutes ago
+8d29eb4 : manifest: Add msm8994 audio/display/media HALs <Rashed Abdel-Tawab> 23 hours ago
+d349e86 : track bluetooth bluedroid <ZION959> 26 hours ago
+7ccc2f5 : Add atv device repo to cm-12.1 default manifest <Howard M. Harte> 10 days ago
+ 
+**** origin	git@github.com:cmRemiX/android_build.git ****
+419b1ea : Add support for mediatek platforms <Ricardo Cerqueira> 7 months ago
+ 
+**** origin	git@github.com:cmRemiX/android_frameworks_base.git ****
+36e73b6 : Fix racing condition of mTouchExcludeRegion <tingna_sung> 6 months ago
+30f89ca : Prevent AudioService dead lock issue. <seunghwan.hong> 6 months ago
+054afbc : Implement finalizer for RS contexts. <Jason Sams> 7 weeks ago
+49cb3af : Handle NULL keys and NULL values in MediaDrm JNI HashMap <Daniel Broms> 6 months ago
+e6a2bef : Fix typo in Spanish AOSP translation <Javi Ferrer> 4 weeks ago
+aafa736 : Move arrow_pointer hotspot to better match actual tip <Michael Zoech> 4 months ago
+ceb2a1a : Early return in RemoteViewsAdapter is too late <Henrik Baard> 1 year, 9 months ago
+ef1877c : Wifi: Check configKey for ScanResult while visibility is set <Nalla Kartheek> 3 weeks ago
+ecbf7ec : Wifi: Maintain configKey generation logic same in all APIs <Nalla Kartheek> 3 weeks ago
+429e499 : Telephony: Fix signal annunciators missing issue. <Muhammed Siju> 8 days ago
+058970d : update: Only go HOME if screen is fully awake <ZION959> 3 hours ago
+caec357 : Revert "[ActivityManager] Improve multi-thread access the same provider" <Steve Kondik> 31 hours ago
+ad8b6d9 : (1/2) Base: custom power key chord actions and delay <Alexander Martinz> 3 hours ago
+92ca26e : Frameworks: add shortcut action icons <dankoman> 3 months ago
+9b5a606 : libaudioeffect_jni GREF leak fix <PrimeDirective> 2 years, 4 months ago
+e8ec30a : potential GraphRunner leak in camera effects <PrimeDirective> 1 year, 8 months ago
+81f6f4e : Fix DataInputStream leaks <PrimeDirective> 1 year, 8 months ago
+847249e : AndroidRuntime: reduce logcat debug spam <nuclearmistake> 12 months ago
+e6bde50 : Remove some crufty "core" tests. <Narayan Kamath> 4 months ago
+c608546 : Reduce log verbosity: Don't spam logcat <fusionjack> 11 months ago
+8250343 : frameworks: squash of leak & race fixes <liquid0624> 1 year, 5 months ago
+fb909f6 : SystemUI: fix recents ignore last app option <Altaf-Mahdi> 6 weeks ago
+3a4a28a : QS: update battery saver off and sync drawables <Alexander Westphal> 6 weeks ago
+23c0ad9 : SystemUI: Fix QS tiles icons <abun880007> 4 days ago
+709a576 : bootanimation: remove memory saving tricks <arter97> 8 weeks ago
+d496b77 : aapt: Implement --compress option <arter97> 5 days ago
+ba32a63 : aapt: Default to 0 compression ratio <arter97> 5 days ago
+bd14b5b : aapt: Don't compress qmg, wbp and arsc assets <arter97> 5 days ago
+20e346c : Fix up torch tile handling. <Danny Baumann> 3 days ago
+5f74a10 : Prevent NPE in CmHardwareService.getDisplayColorCalibration() <tobitege> 2 days ago
+f2dbb4b : Upgrading spam CMRemix <ZION959> 22 hours ago
+ed1b9fa : Fix doc bug for object size. <Jason Sams> 2 weeks ago
+213e79e : Fix typos in AudioManager javadoc <Eemi Haukkala> 5 weeks ago
+913f67f : Notifications with icon==0 ARE FINE WITH US <nuclearmistake> 4 months ago
+5e8776b : Fix unused variables. <Bernhard Rosenkränzer> 5 months ago
+058f56e : ActivityManager: Memoize memory class info to reduce system property lookups <Dave Kessler> 6 weeks ago
+20b5bf2 : Fix 'fuchsia' typo. <Elliott Hughes> 7 weeks ago
+15e2f90 : Fix default compute thread priority <Jason Sams> 3 months ago
+9b62a71 : Fix HttpResponseCacheTest in anticipation of an OkHttp upgrade. <Neil Fuller> 3 months ago
+ff3603a : Fix crash caused by toHex returning exception <Paul Lawrence> 3 months ago
+e8efb48 : Fix bugs regarding delay the dispatching of non-wakeup alarms <minho.choo> 4 months ago
+090680e : bootanimation: fix exhaustive memory leaks <arter97> 8 weeks ago
+5d0c2fb : Revert "Update the ADB status bar icon" <Dave Kessler> 4 months ago
+aada0f6 : fix cursor leaks in F_B <PrimeDirective> 1 year, 8 months ago
+bbc5644 : Avoid possible memory leaks by ensuring stream closures <JBirdVegas> 2 years, 4 months ago
+2c1d076 : ZygoteInit: increase GC threshold amount when preloading to postpone GC <BigBrother1984> 1 year, 7 months ago
+5cbf7f2 : Destroyed not app killed :D <PrimeDirective> 1 year, 5 months ago
+2fcfe32 : tethering: User defined wifi/usb tether network. [1/3] <Tom Hite> 8 months ago
+3953596 : Fix GL_INVALID_OPERATION in font renderer when font cache is limited. <chaochen> 8 months ago
+2546010 : Fixing memory leak in RenderBufferCache <Samsung> 7 months ago
+ 
+**** origin	git@github.com:cmRemiX/android_frameworks_opt_net_wifi.git ****
+749ec9c : tethering: User defined wifi/usb tether network. [2/3] <Tom Hite> 3 months ago
+ 
+**** git://github.com/CyanogenMod/android_packages_apps_CMFileManager ****
+17388c6 : Fix deadlock when reading shell output. <Matt Garnes> 2 days ago
+748753d : Detect text encoding with juniversalchardet. <Matt Garnes> 5 days ago
+3650ca2 : CMFileManager: change dialog buttons to use dialog_text_color theme <Raj Yengisetty> 24 hours ago
+ 
+**** origin	git@github.com:cmRemiX/android_packages_apps_Settings.git ****
+c580abc : add "density" to cmr string <ZION959> 28 minutes ago
+4710722 : (2/2) Settings: custom power key chord actions and delay <Alexander Martinz> 3 hours ago
+634d50e : Properly grey out vol playback control when activating vol wake up device <cristianomatos> 9 weeks ago
+47085b2 : New settings profiles icon <cristianomatos> 10 weeks ago
+6b07b5e : tethering: User defined wifi/usb tether network. [3/3] <Tom Hite> 8 months ago
+eaf15a4 : MSIM : Show a proper text if no number is set <Varun Chitre> 3 days ago
+d814f69 : Sound settings: fix unlinking volume sliders (1/2) <Altaf-Mahdi> 4 weeks ago
+e12a22b : Sim: fix null pointer exception if no sim is inserted <Alexander Martinz> 3 days ago
+b51557e : Settings: long press lock screen lock icon to sleep (2/2) <Altaf-Mahdi> 6 weeks ago
+dc720c1 : Lock screen: Text and icon colors, (2/2) <XXMrHyde> 27 hours ago
+6412fb9 :  Lock screen: Weather panel improvements, (2/2) <XXMrHyde> 27 hours ago
+10a81c5 : REVERT old network meter and add color to new one (2/2) <LorDClockaN> 27 hours ago
+199e929 : [2/2] Settings: Add network meter <PerfectSlayer> 23 hours ago
+0bf70bb : we use CMRemix now <ZION959> 30 hours ago
+2f8047f : [Lockscreen shortcuts] centralize all option in our custom settings <cristianomatos> 2 days ago
+21ef2f6 : Fix Settings FC in non-Advanced mode (Buttons Setting) <Janson Kang> 4 weeks ago
+4f3389c : (2/2) Settings: allow to toggle smart cover wake <Alexander Martinz> 4 weeks ago
+8d09850 : Settings: Materialize standard colors in colorpicker <alviteri> 5 weeks ago
+660c84d : Settings: Dotted circle battery (2/2) <LorDClockaN> 5 weeks ago
+a3aef70 : Settings: SlimAction as QuickTile (2/2) <fusionjack> 2 days ago
+8795806 : Settings: Slim Actions to Shortcuts <fusionjack> 2 days ago
+ab23d76 : Force Expanded Notifications (2/2) <Jmz> 2 days ago
+b6b973b : Settings: Add 1 second to Volume Panel Timeout <alviteri> 6 weeks ago
+4bbdec5 : [2/2] App sidebar <0xD34D> 2 days ago
+88df6a1 : QS: add Ambient display tile * add Ambient display settings activity for long press on tile <Altaf-Mahdi> 2 days ago
+dbbc7d2 : Settings: long press lock screen lock icon to sleep (2/2) <Altaf-Mahdi> 2 days ago
+2b13c14 : SQUASH Settings:Smart control center and Direct Call (2/4) <martincz> 2 days ago
+f79cc9f : Settings: Greeting label timeout (2/2) PS2:     Use string for suggested greeting PS3:     Fix build - derp <LorDClockaN> 2 days ago
+64ff290 : Settings: Statusbar greeting (2/2) <Dave Kessler> 2 days ago
+815f385 : Add option to hide Bluetooth Icon when disconnected in Status Bar (2/2) <KreAch3R> 6 weeks ago
+b82b3f2 : Settings: Hide network activity arrows (2/2) <LorDClockaN> 2 days ago
+129f836 : move QS string to cmremix <ZION959> 2 days ago
+d9accba : QS: add Screenrecord tile (2/2) <eyosen> 9 weeks ago
+d284c40 : Add Screen Record to the Power Menu [2/2] <eyosen> 17 hours ago
+ 
+**** origin	git@github.com:cmRemiX/android_system_core.git ****
+cb9e448 : liblog: Forward xlog to regular android buffers on demand <Diogo Ferreira> 5 months ago
+ 
+**** https://github.com/cmRemiX/android_vendor_cmremix
+origin	git@github.com:cmRemiX/android_vendor_cmremix.git ****
+f6ae21e : add weekly changelog script ( I like this script also) <ZION959> 4 hours ago
+f67275e : update cmremix vendor <ZION959> 22 hours ago
+ 
+**** Themuppets	https://github.com/TheMuppets/proprietary_vendor_samsung
+git://github.com/CMRemix/proprietary_vendor_samsung
+origin	git@github.com:CMRemix/proprietary_vendor_samsung.git ****
+14e6f6c : t0ltecdma/i925: use KK ril blobs from t0ltevzw <sbrissen> 3 days ago
+ 
