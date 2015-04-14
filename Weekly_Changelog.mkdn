@@ -5,79 +5,120 @@
 
    * device/samsung/trlte-common/
 cfc45e6 Revert: let add this  value for, home, back & volume rocker
-af1e522 trlte: Add call recording overlay
 
    * frameworks/av/
 d7d5573 libstagefright: add missing TI color format case
 
    * frameworks/base/
-6dd899d QS: remove duplicate handleLongClick() code in QSTile.java
-1841b77 fix checkapi
+d6e2ce1 frameworks: read VOLUME_LINK_NOTIFICATION from proper table
+3109ec9 The DUT can't screen shot in guest mode
+b090c15 Add overlay option for Settings.System.ACCELEROMETER_ROTATION_ANGLES
+1f65417 SystemUI: option to ignore the last app when clearing recents (1/2)
+48810ec Merge tag 'android-5.1.0_r5' into HEAD
+78ffc37 aapt: silence density flag warnings
+62939f2 Bluetooth: Change disconnected icon to be 40% transparent
+2a34b4d SystemUI: update notification volume slider state when toggling modes
+d2ef261 base: bring back silent mode
+187fdc1 Volume: fix: Avoid making bad forceVolumeControlStream call.
+61ac0de SystemUI: fix keyguard charging text not showing
+aca1cb5 SystemUI: fix updating keyguard insecure lock icon
+905041f ic_sysbar: drawables updated
+2161b65 Revert "third part apps can unlock the phone without password even if the phone has setted the password"
+5a607d9 Clean-up state if we have an exception when acquiring provider
+451dda4 Revert "Revert "[ActivityManager] Improve multi-thread access the same provider""
+53eb409 Statusbar header: Add vibration to settings button
+79a2f36 SystemUI: Update doze pulse-in option
+e8fcfb6 SystemUI: allow recent tasks to draw behind the status bar
+6a5c281 SystemUI: make online cpu color green for cpu overlay
+d41498a systemui: animate clear recents button on exit animation
+634bb87 Revert "Framework: Add Fade in and Fade out effect to Recents FAB"
+7c20722 Revert "SystemUI: we need to use fadein/fadeout anim on FAB"
+ace92f7 SystemUI: hide floating clear all only if were removing all tasks
+819f190 SystemUI: we need to use fadein/fadeout anim on FAB
+d8bcea3 Framework: Add Fade in and Fade out effect to Recents FAB
+3004d64 Framework: Always show ZenPanel when showing expanded volume panel
+02584d2 Revert "QS: fix tiles not being refreshed on overscrolling"
+ed61417 Revert "Systemui: Recents - do not add search widget on recents if widget is lost."
+17d1c94 Revert "systemui: fix glitches with recents view and search widget"
+83a6392 MediaProjectionPermissionActivity: Fix NPE.
+52e2661 Revert "Fix FC after starting screen recording"
+eeea96b fix checkapi
+98bdd93 Fix array exception in createAutoBrightnessSpline
+4b3d10b Fix Ambient Display tile
+90d2299 DocumentsUI: Add navigation bar color
+7bbbae0 [1/3] base: alarms and no interrupt zen mode
+6c44343 fw/base: Only create emulated volumes for new users if storage is actually emulated
+
+   * frameworks/opt/hardware/
+329b474 opt_hw: Add CalibrationControl cmhw support (1/2)
+7792aac Class for gestures vibrations intensity
+780de11 opt_hw: Add S2W and S2S cmhw support (1/2)
 
    * frameworks/opt/net/wifi/
 174f3fc Merge remote-tracking branch 'CM/cm-12.1' into cm-12.1
 
-   * hardware/qcom/audio-caf/msm8994/
-8fe8c83 audio: Use direct    * pathmap
-
-   * hardware/samsung/
-3063dc1 libril: Avoid strncat which doesn't check if we overflow
-47b2d96 libril: Make data a const pointer in RIL_onUnsolicitedResponse()
-
-   * packages/apps/CMFileManager/
-948e0d1 Implement ability to cancel file copy.
-
-   * packages/apps/SlimLauncher/
-ca7af21 Merge remote-tracking branch 'Slim/lp5.1' into cm-12.1
-
-   * vendor/cm/
-4ffdd67 APNs: Remove leading whitespace for a couple mmsc
+   * packages/apps/Settings/
+2344316 remove duplicate weather
+4de7554 Add battery saver to 3-DOT menu
+a031fdc Settings: : add ability to change the color in battery saver mode (1/2)
+d380afd Revert "Settings: Cleanup battery saver settings"
+8bc4ee8 Settings: Rework 'add ability to change the color in battery saver mode'
+5cee93e Settings: use volume adjust sound setting also to volume seekbar
+ed914b8 [3/3] Settings: alarms and no interrupt zen mode
+d022dd8 Fix NPE on overflow due to removal of HW Keys category
 
    * vendor/cmremix/
 b3339eb back to SaberMod Gcc 4.8
-
-   * vendor/samsung/
-fbfe850 Merge pull request #606 from sam3000/cm-12.1
 
 ====================
      04-13-2015
 ====================
 
 
-   * frameworks/av/
-9a37bd5 NuPlayer : Fix incorrect timestamp update for offload playback
-8dd3cd0 nuplayer: Has video hint for offload
+   * device/samsung/trlte-common/
+af1e522 trlte: Add call recording overlay
 
    * frameworks/base/
-4a6dcea RAM bar (1/2)
+9de96a3 RAM bar (1/2)
+
+   * hardware/qcom/audio-caf/msm8994/
+8fe8c83 audio: Use direct    * pathmap
 
    * hardware/qcom/media-caf/msm8994/
 6955a45 correct use of    *-path
 
    * hardware/samsung/
+3063dc1 libril: Avoid strncat which doesn't check if we overflow
+47b2d96 libril: Make data a const pointer in RIL_onUnsolicitedResponse()
 8a0d740 libril: Fix signal strength
-d0b8416 libril: rewrite preferred network type
-bd82ef1 libril: move samsung specific into seperate table, update to v11
+
+   * packages/apps/CMFileManager/
+948e0d1 Implement ability to cancel file copy.
 
    * packages/apps/Settings/
 56f3160 Remove help from rambar
 dfbf863 RAM bar (2/2) ------------ I'm not author of this code, I believed this code is from Slim Roms, Modified by Cristiano Matos. Cherry pick from Pac KK 4.4 and port to cmRemiX Lollipop by Zion959 Credit to Cristiano Matos & Pac & Slim Roms Thank you all
-3ccad8a fixed breathing sms
+
+   * vendor/cm/
+4ffdd67 APNs: Remove leading whitespace for a couple mmsc
+
+   * vendor/samsung/
+fbfe850 Merge pull request #606 from sam3000/cm-12.1
 
 ====================
      04-12-2015
 ====================
 
-   * CMRemix/
-83e0266 track email,UnifiedEmail,Exchange
-76150e3 Merge remote-tracking branch 'CM/cm-12.1' into cm-12.1
 
    * build/
 74c4b2e MOAR SaberMod flags (2/3)
-419b1ea Add support for mediatek platforms
 
    * device/samsung/trlte-common/
 908c7b8 let add this  value for, home, back & volume rocker
+
+   * frameworks/av/
+9a37bd5 NuPlayer : Fix incorrect timestamp update for offload playback
+8dd3cd0 nuplayer: Has video hint for offload
 
    * frameworks/base/
 c718693 base: fix race condition with occluded keyguard on non-navbar devices
@@ -94,7 +135,6 @@ c3a9d53 Move arrow_pointer hotspot to better match actual tip
 7c0e891 Telephony: Fix signal annunciators missing issue.
 45aa89b update: Only go HOME if screen is fully awake
 f7469ab Revert "[ActivityManager] Improve multi-thread access the same provider"
-92ca26e Frameworks: add shortcut action icons
 
    * frameworks/opt/net/wifi/
 f798334 Wifi: Do not enable saved networks in ConnectedState
@@ -102,38 +142,27 @@ f798334 Wifi: Do not enable saved networks in ConnectedState
 1e45f2f wifi: Handle the NULL check for the STATUS command
 3fbc07d Wifi: Exit the monitor thread when killSupplicant is issued.
 
-   * packages/apps/Mms/
-15a07cc Merge remote-tracking branch 'CM/cm-12.1' into cm-12.1
-6ebaad0 Use rounded avatars in messaging notifications.
+   * hardware/samsung/
+d0b8416 libril: rewrite preferred network type
+bd82ef1 libril: move samsung specific into seperate table, update to v11
 
-   * vendor/cmremix/
-f6ae21e add weekly changelog script ( I like this script also)
-
-   * vendor/samsung/
-8140ba9 manta: updates blobs to LMY47D
+   * packages/apps/Settings/
+3ccad8a fixed breathing sms
 
 ====================
      04-11-2015
 ====================
 
    * CMRemix/
+83e0266 track email,UnifiedEmail,Exchange
+76150e3 Merge remote-tracking branch 'CM/cm-12.1' into cm-12.1
 8d29eb4 manifest: Add msm8994 audio/display/media HALs
-d349e86 track bluetooth bluedroid
-9ed0ac6 remove more dup
-81fbf08 track MusterMaxMueller's clanglibs qcom 3.6 (reverted from commit 19b9a70cd61e6666f45e1e2bf9fc2dd7149f7822)
-0ac2075 update manifest
-8a1754a remove opt/hardware duplicate
 
-   * external/bluetooth/bluedroid/
-19517c6 Enable -Os back to bluedroid
-
-   * frameworks/av/
-20e0438 NuPlayerDriver: Maintain the timeStamp after seek
-990a0d8 stagefright: handle zero size field in ID3v2 header
-692887d nuplayer: Synchronize video and audio decoders configuration
-d23dcf8 libstagefright:avoid regression casued due to gerrit 1221948
+   * build/
+419b1ea Add support for mediatek platforms
 
    * frameworks/base/
+92ca26e Frameworks: add shortcut action icons
 9b5a606 libaudioeffect_jni GREF leak fix
 e8ec30a potential GraphRunner leak in camera effects
 81f6f4e Fix DataInputStream leaks
@@ -171,19 +200,9 @@ bbc5644 Avoid possible memory leaks by ensuring stream closures
 3953596 Fix GL_INVALID_OPERATION in font renderer when font cache is limited.
 2546010 Fixing memory leak in RenderBufferCache
 79a7b66 [1/3] Frameworks: Proximity speaker (Updated to PS3)
-ef91b45 [3/3] frameworks/base: National Data Roaming
-26209bf REVERT old network meter and add color to new one (1/2)
-615198b [1/2] Framework: Add network meter
 
    * frameworks/opt/net/wifi/
 749ec9c tethering: User defined wifi/usb tether network. [2/3]
-
-   * frameworks/opt/telephony/
-0dff479 Return: National Data Roaming [1/3]
-
-   * hardware/qcom/audio-caf/msm8994/
-908a598 audio: Use    * pathmap
-7c6aba4 audio: Only allow non-legacy HAL
 
    * hardware/qcom/display-caf/msm8994/
 95ceb15 Don't build lights module if vendor supplies it
@@ -191,12 +210,6 @@ aee3a7c display: Use    * pathmap
 
    * hardware/qcom/media-caf/msm8994/
 e2246f8 media: Use    * pathmap
-
-   * packages/apps/Browser/
-d18bb68 Browser:  fix sizes
-f6ec4a9 Browser: fix incognito icons and preview thumbnail color
-0dd29b5 Browser: and moooore material girls in blue
-8846850 Browser: switch from green to blue
 
    * packages/apps/CMFileManager/
 17388c6 Fix deadlock when reading shell output.
@@ -214,8 +227,9 @@ d2cd05e exchange: serialize the account parcelable before using with AlarmManage
 1ca1980 [3/3] InCallUI: Proximity speaker (Updated to PS6)
 a96981e [3/3] InCallUI: Proximity speaker
 
-   * packages/apps/PackageInstaller/
-ba58bf8 PackageInstaller: Show current & new version
+   * packages/apps/Mms/
+15a07cc Merge remote-tracking branch 'CM/cm-12.1' into cm-12.1
+6ebaad0 Use rounded avatars in messaging notifications.
 
    * packages/apps/Settings/
 634d50e Properly grey out vol playback control when activating vol wake up device
@@ -251,34 +265,36 @@ b82b3f2 Settings: Hide network activity arrows (2/2)
 d9accba QS: add Screenrecord tile (2/2)
 d284c40 Add Screen Record to the Power Menu [2/2]
 
-   * packages/apps/SlimLauncher/
-73408db Rename launcher3-SlimLauncher
-
-   * packages/services/Telephony/
-6290b31 Fix National Roaming
-d926c3c National Data Roaming [2/3]
-
    * system/core/
 25f103c Merge remote-tracking branch 'CM/cm-12.1' into cm-12.1
-cb9e448 liblog: Forward xlog to regular android buffers on demand
 
    * vendor/cmremix/
+f6ae21e add weekly changelog script ( I like this script also)
 f67275e update cmremix vendor
+
+   * vendor/samsung/
+8140ba9 manta: updates blobs to LMY47D
 
 ====================
      04-10-2015
 ====================
 
    * CMRemix/
+d349e86 track bluetooth bluedroid
+9ed0ac6 remove more dup
+81fbf08 track MusterMaxMueller's clanglibs qcom 3.6 (reverted from commit 19b9a70cd61e6666f45e1e2bf9fc2dd7149f7822)
+0ac2075 update manifest
+8a1754a remove opt/hardware duplicate
 71cee1b track all needed apps from cm-12.0
-7ccc2f5 Add atv device repo to cm-12.1 default manifest
-071c72f Merge remote-tracking branch 'CM/cm-12.1' into cm-12.1
-19b9a70 track MusterMaxMueller's clanglibs qcom 3.6
 
-   * external/libvpx/
-3bead62 Use the prebuilts version of yasm to avoid host install
+   * external/bluetooth/bluedroid/
+19517c6 Enable -Os back to bluedroid
 
    * frameworks/av/
+20e0438 NuPlayerDriver: Maintain the timeStamp after seek
+990a0d8 stagefright: handle zero size field in ID3v2 header
+692887d nuplayer: Synchronize video and audio decoders configuration
+d23dcf8 libstagefright:avoid regression casued due to gerrit 1221948
 1dc8b09 libstagefright: Implement fallback mechanism to SW decoder
 71a992c Rename ec3 to eac3 for consistency with framework
 2325621 libstagefright: Fix crash for video clip having initial frames                 corrupted
@@ -288,41 +304,24 @@ bcf03b2 NuPlayer: Fix for audio mute after call termination
 1aff848 nuplayer: Modify seek and resume latency calculation
 bdcda69 audio: Support for compress offload recovery
 f65107b NuPlayer: Disable widevine flag for L3 content
-e1072ff stagefright: Don't ever try to use extended sniffers on DRM
-ebeab42 MediaExtractor: Add more skip conditions for the second-pass extractors
-df893ac DO NOT MERGE: mediaplayer: ensure secure decoders are instantiated before starting source
-0878661 nuplayer: do not use cached source for wvm content -- DO NOT MERGE
 
    * frameworks/base/
-96e43e7 QS: Housekeeping
-d28ab3f QS: fix qs main tiles settings not refreshing tiles
-6bbaf57 Base: fix unlinking volume sliders (2/2)
-42e90a4 SystemUI: move keyguard visualizer behind notifications
-9599e14 SystemUI: long press lock screen lock icon to sleep (1/2)
-316c790 systemui: fix npe in egg
-ba9b94e Prevent windows from freezing screen while timeout
-65255f3 [ActivityManager] Finish the failed-to-pause activity
-9a07b8d Prevent possible memory leak in SpanSet
-6a95db4 [ProcessStas] fix index out of bounds when add duration.
-f058f42 Fix memory leak in Connectivity Service when phone app crashes
-92a91af Add a timeout state to frozen windows
-86bdc7f Fixed memory leak in ExtractEditLayout finish()
-c3d127f ProgressBar: Fix error of process bar cannot update on some condition.
-05b835d [ActivityManager] Avoid NullPointerException if no crash info
-f2758ee QS: add Screenrecord tile drawables
-3cb4f87 QS: add Screenrecord tile (1/2)
-2d40cf8 screenrecord: fix key combo trigger
-2b6d39b Add Screen Record to the Power Menu [1/2]
-1289f74 base: screenrecord: forward port from 4.4 Squashed commit of the following:
-af5c5ad Revert : [1/2] Screen Recorder
-fe5f69b alarms: include Timer.ogg
-416d5b2 derp fixed
-d7dd6b6 private View mWeatherView; removed duplicate
-515e897 Preference: allow to get list of preferences from preference group
-d2e24dd (1/2) Frameworks: allow to toggle smart cover wake
+ef91b45 [3/3] frameworks/base: National Data Roaming
+26209bf REVERT old network meter and add color to new one (1/2)
+615198b [1/2] Framework: Add network meter
 
-   * packages/apps/Calculator/
-159eb36 Calculator: fix error handling ripple
+   * frameworks/opt/telephony/
+0dff479 Return: National Data Roaming [1/3]
+
+   * hardware/qcom/audio-caf/msm8994/
+908a598 audio: Use    * pathmap
+7c6aba4 audio: Only allow non-legacy HAL
+
+   * packages/apps/Browser/
+d18bb68 Browser:  fix sizes
+f6ec4a9 Browser: fix incognito icons and preview thumbnail color
+0dd29b5 Browser: and moooore material girls in blue
+8846850 Browser: switch from green to blue
 
    * packages/apps/Dialer/
 6988778 Dialer: Direct Call (3/4)
@@ -332,36 +331,22 @@ d2e24dd (1/2) Frameworks: allow to toggle smart cover wake
 bb2d919 Merge remote-tracking branch 'github/cm-12.1' into cm-12.1
 30c0495 [2/4] Mms: Breathing missedcall/sms/voicemail
 9cdc5d5 Mms: Direct Call (4/4)
-153b227 Mms: use string resource for Select Recipients progress dialog
-0b6da5c Mms: add a drawable for the calendar event
-95abfab Mms: do not populate RecipientsEditor while mAddNumbersTask is running
 
    * packages/apps/OmniSwitch/
 2d64ac7 OmniSwitch: Hide from Drawer Launcher
 
-   * packages/apps/Settings/
-2988b8f Removed screenrecord
-cdfd9cf  Show carrier label / custom & change color [2/2]
-9696346 Add USB Tether Tile (1/2)
-985d659 App Circle Bar Tile [3/3]
-07a0099 NavBar tile [3/3]
-04cf4c1 Add Headsup tile [2/2]
-3b9620b captive portal: remove extra whitespace
-2b3509a [3/4] Settings: Breathing missedcall/sms/voicemail
-
-   * packages/apps/SoundRecorder/
-d5d1811 SoundRecorder: Rewrite logic to funnel all recorder interaction.
+   * packages/apps/PackageInstaller/
+ba58bf8 PackageInstaller: Show current & new version
 
    * packages/apps/ThemeChooser/
 87096d5 ThemeChooser: Hide from Drawer Launcher
 
-   * packages/apps/UnifiedEmail/
-d44ec61 unified-email: check notification support prior to create notification objects
-
-   * packages/services/Telecomm/
-51eb0a9 [4/4] Telecomm: Breathing missedcall/sms/voicemail
-
    * packages/services/Telephony/
+6290b31 Fix National Roaming
+d926c3c National Data Roaming [2/3]
 c1c4e6c [2/3] Call recording encoder/format choice Adds a user option between NB AMR (the default) or HE-AAC for the encoding of call recording audio. Also changes the output format of the file appropriately (NB AMR now uses the NB_AMR output format and HE_AAC chooses the MPEG_4 output. File extensions are adjust accordingly as well). This was in reponse to people complaining the quality of call recording audio is poor. It's noticibly better using HE-AAC, but filesizes are larger.
 fcfe4d4 [4/4] Telephony: Breathing missedcall/sms/voicemail
+
+   * system/core/
+cb9e448 liblog: Forward xlog to regular android buffers on demand
 
