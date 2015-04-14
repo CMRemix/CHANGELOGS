@@ -1,0 +1,14 @@
+
+**** git://github.com/CMRemix/android_device_samsung_trlte-common
+origin	git@github.com:cmRemiX/android_device_samsung_trlte-common.git ****
+cfc45e6 : Revert: let add this  value for, home, back & volume rocker <ZION959> 2 hours ago
+ 
+**** https://github.com/CMRemix/android_frameworks_base
+origin	git@github.com:cmRemiX/android_frameworks_base.git ****
+6dd899d : QS: remove duplicate handleLongClick() code in QSTile.java <Altaf-Mahdi> 7 hours ago
+1841b77 : fix checkapi <Scott Mertz> 19 hours ago
+ 
+**** https://github.com/CMRemix/android_packages_apps_SlimLauncher ****
+73408db : Rename launcher3-SlimLauncher <Nicholas Flintham> 6 days ago
+d4e7a31 : Change module name <Griffin Millender> 5 months ago
+ 
