@@ -1,0 +1,83 @@
+
+**** https://github.com/CMRemix/CMRemix ****
+a249556 : Revert: track bluetooth bluedroid (reverted from commit d349e86a2ddaa45c084023b2a90f3ae4aee2eee9) <ZION959> 13 hours ago
+02ce06c : 5.1.0_r3 -> 5.1.0_r5 <Ricardo Cerqueira> 33 hours ago
+ 
+**** https://github.com/CMRemix/android_build
+origin	git@github.com:cmRemiX/android_build.git ****
+d014494 : Add support for mediatek platforms <Ricardo Cerqueira> 7 months ago
+1ac5b83 : "LMY47O" <The Android Automerger> 5 weeks ago
+128bb23 : "LMY47N" <The Android Automerger> 5 weeks ago
+4278529 : "LMY47M" <The Android Automerger> 6 weeks ago
+4522f41 : "LMY47L" <The Android Automerger> 6 weeks ago
+bd5479c : "LMY47K" <The Android Automerger> 6 weeks ago
+5a0b3c7 : "LMY47J" <The Android Automerger> 6 weeks ago
+ 
+**** cmR	https://github.com/CMRemix/android_external_bluetooth_bluedroid
+git://github.com/CyanogenMod/android_external_bluetooth_bluedroid ****
+b7264a7 : bluetooth: Avoid leaking a fd and an infinite loop <Christopher R. Palmer> 7 days ago
+ 
+**** https://github.com/CMRemix/android_frameworks_av
+origin	git@github.com:cmRemiX/android_frameworks_av.git ****
+4b1ddb2 : AudioTrack: initialize mUseSmallBuf in AudioTrack constructor <Mingming Yin> 8 days ago
+1bdd258 : audio: Fix for Sound from handset leaks to speaker <Apoorv Raghuvanshi> 2 weeks ago
+c5079e3 : stagefright: http: Skip invalid bandwidth measurements <Leena Winterrowd> 3 months ago
+ac84c27 : nuplayer: Stop resume profiling after frame render <Shalaj Jain> 13 days ago
+72068fe : NuPlayer: Process time discontinuity separately for audio & video <Leena Winterrowd> 2 weeks ago
+66d0234 : nuplayer: Add cached lookup of track duration <Steve Kondik> 3 months ago
+9d18eef : nuplayer: Fix statistics profiling with buffering events <Surajit Podder> 2 weeks ago
+ 
+**** https://github.com/CMRemix/android_frameworks_base
+origin	git@github.com:cmRemiX/android_frameworks_base.git ****
+9cc07ec : QSColors: Fix empty notification alert after switch color option <westcripp> 5 weeks ago
+9e4669c : Theme fix for statusbar - future proof <LorDClockaN> 26 minutes ago
+25a96ee : Make Navring available to devices with no navbar <Stevespear426> 2 hours ago
+195efa2 : Allow screen unpinning on devices without navbar <UtkarshGupta> 2 hours ago
+f18da1c : third part apps can disable the secret lockscreen <longyu.huang> 3 weeks ago
+35b9341 : Find wall clock RTC through sysfs <Greg Hackmann> 1 year, 2 months ago
+ 
+**** git://github.com/CyanogenMod/android_hardware_qcom_display ****
+5c1f3ab : hwcomposer: Kill some logspam <Steve Kondik> 14 hours ago
+f486583 : hwc: Integerize in the outward direction of rectangle <Saurabh Shah> 8 weeks ago
+ca83f33 : hwc: Try MDP composition eventhough skip layer is present <Raj Kamal> 6 months ago
+ 
+**** git://github.com/CyanogenMod/android_packages_apps_Calendar ****
+329d8a6 : Calendar: add RTL support <Raj Yengisetty> 24 hours ago
+ 
+**** https://github.com/CMRemix/android_packages_apps_Email
+origin	git@github.com:cmRemiX/android_packages_apps_Email.git ****
+877904c : email: support per-folder notifications <Jorge Ruesga> 11 days ago
+65e3d05 : email: support for auto-sync multiple IMAP folders <Jorge Ruesga> 11 days ago
+8a84700 : email: add an option for delete the account <Jorge Ruesga> 4 weeks ago
+1833e2b : email: don't block extras database <Jorge Ruesga> 4 weeks ago
+ 
+**** https://github.com/CMRemix/android_packages_apps_Exchange
+origin	git@github.com:cmRemiX/android_packages_apps_Exchange.git ****
+d08d855 : exchange: serialize the account parcelable before using with AlarmManager <Jorge Ruesga> 5 days ago
+66567e7 : exchange: increase ping command reschedule time on http server error <Jorge Ruesga> 7 days ago
+ 
+**** https://github.com/CMRemix/android_packages_apps_InCallUI ****
+e01b345 : Fix memory leak: remove a listener <Wei Huang> 7 days ago
+ 
+**** https://github.com/CMRemix/android_packages_apps_Mms-caf ****
+4b33fba : Use unicode character for ellipsis <Michael Bestas> 2 days ago
+ 
+**** https://github.com/CMRemix/android_packages_apps_UnifiedEmail
+origin	git@github.com:cmRemiX/android_packages_apps_UnifiedEmail.git ****
+5ab9abe : unified-email: respect swipe user setting <Jorge Ruesga> 5 days ago
+ef570af : unified-email: check notification support prior to create notification objects <Jorge Ruesga> 10 days ago
+ 
+**** git://github.com/CyanogenMod/android_packages_services_Mms ****
+1e14602 : Redact MMS message URL logging <Ye Wen> 8 weeks ago
+ 
+**** https://github.com/CMRemix/android_packages_services_Telecomm
+origin	git@github.com:cmRemiX/android_packages_services_Telecomm.git ****
+d5cd6ed : Create new empty Bundles when creating new Call <Torbjorn Eklund> 7 days ago
+f7a075b : DO NOT MERGE Fix NPE in Telecom <Yorke Lee> 7 weeks ago
+ 
+**** git://github.com/CyanogenMod/android_system_qcom ****
+a511369 : Implement wifi_qsap_set_tx_power <Skrilax_CZ> 3 days ago
+ 
+**** git://github.com/CyanogenMod/android_vendor_cm ****
+b7634f7 : cm: add FreedomPop APN <dcd> 6 days ago
+ 
