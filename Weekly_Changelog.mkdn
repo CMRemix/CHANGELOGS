@@ -19,24 +19,21 @@ ac84c27 nuplayer: Stop resume profiling after frame render
 9d18eef nuplayer: Fix statistics profiling with buffering events
 
    * frameworks/base/
+e3bb061 Fix pattern visibility settings (1/2)
+fd8f2f9 Add static patternToString() with pattern size
+273b865 Forward port CM Screen Security settings (1/2)
+acbdcac FWB: Add music tile (1/2)
+e3f031c Framework: always update volumes slider state
+f9fd1a1 QS: Update usb tether tile
 9cc07ec QSColors: Fix empty notification alert after switch color option
 9e4669c Theme fix for statusbar - future proof
 25a96ee Make Navring available to devices with no navbar
 195efa2 Allow screen unpinning on devices without navbar
 f18da1c third part apps can disable the secret lockscreen
 35b9341 Find wall clock RTC through sysfs
-d6e2ce1 frameworks: read VOLUME_LINK_NOTIFICATION from proper table
-3109ec9 The DUT can't screen shot in guest mode
-b090c15 Add overlay option for Settings.System.ACCELEROMETER_ROTATION_ANGLES
-1f65417 SystemUI: option to ignore the last app when clearing recents (1/2)
 
    * hardware/qcom/display-caf/msm8974/
 5c1f3ab hwcomposer: Kill some logspam
-f486583 hwc: Integerize in the outward direction of rectangle
-ca83f33 hwc: Try MDP composition eventhough skip layer is present
-
-   * packages/apps/Calendar/
-329d8a6 Calendar: add RTL support
 
    * packages/apps/Email/
 2e8e179 Merge remote-tracking branch 'github/cm-12.1' into cm-12.1
@@ -51,21 +48,22 @@ ea5130d Merge remote-tracking branch 'github/cm-12.1' into cm-12.1
 7322cf5 Merge remote-tracking branch 'CM/cm-12.1' into cm-12.1
 
    * packages/apps/Settings/
-2344316 remove duplicate weather
-4de7554 Add battery saver to 3-DOT menu
-a031fdc Settings: : add ability to change the color in battery saver mode (1/2)
-d380afd Revert "Settings: Cleanup battery saver settings"
-8bc4ee8 Settings: Rework 'add ability to change the color in battery saver mode'
+b023fc6 Create general lockscreen settings category
+c1fe183 Forward port pattern visibility settings (2/2)
+439c083 Settings: handle decrypting larger pattern sizes
+d158d31 Settings: forward port lock pattern grid size (2/2)
+64de007 Settings: Set untraslatable
+d8177e0 Settings: Remove more unused resources
+9cc4e0c Settings: Restore proper ringtone for msim
+b27e125 Remove duplicate strings
+14128ae Settings: fix volume link notification preference
+6369918 Settings: Add music tile (2/2)
 
    * packages/apps/UnifiedEmail/
 6fb64f4 Merge remote-tracking branch 'CM/cm-12.1' into cm-12.1
 
    * packages/services/Telecomm/
 72d80db Merge remote-tracking branch 'CM/cm-12.1' into cm-12.1
-
-   * vendor/cmremix/
-68ef381 derp
-ab6585d Chromium Fix
 
 ====================
      04-14-2015
@@ -77,13 +75,11 @@ ab6585d Chromium Fix
    * build/
 1e6e335 Merge tag 'android-5.1.0_r5' into HEAD
 
-   * device/samsung/trlte-common/
-cfc45e6 Revert: let add this  value for, home, back & volume rocker
-
-   * frameworks/av/
-d7d5573 libstagefright: add missing TI color format case
-
    * frameworks/base/
+d6e2ce1 frameworks: read VOLUME_LINK_NOTIFICATION from proper table
+3109ec9 The DUT can't screen shot in guest mode
+b090c15 Add overlay option for Settings.System.ACCELEROMETER_ROTATION_ANGLES
+1f65417 SystemUI: option to ignore the last app when clearing recents (1/2)
 48810ec Merge tag 'android-5.1.0_r5' into HEAD
 78ffc37 aapt: silence density flag warnings
 62939f2 Bluetooth: Change disconnected icon to be 40% transparent
@@ -119,17 +115,19 @@ eeea96b fix checkapi
 7bbbae0 [1/3] base: alarms and no interrupt zen mode
 6c44343 fw/base: Only create emulated volumes for new users if storage is actually emulated
 
-   * frameworks/opt/net/wifi/
-174f3fc Merge remote-tracking branch 'CM/cm-12.1' into cm-12.1
+   * hardware/qcom/display-caf/msm8974/
+f486583 hwc: Integerize in the outward direction of rectangle
+ca83f33 hwc: Try MDP composition eventhough skip layer is present
 
-   * hardware/samsung/
-3063dc1 libril: Avoid strncat which doesn't check if we overflow
-47b2d96 libril: Make data a const pointer in RIL_onUnsolicitedResponse()
-
-   * packages/apps/Mms/
-4b33fba Use unicode character for ellipsis
+   * packages/apps/Calendar/
+329d8a6 Calendar: add RTL support
 
    * packages/apps/Settings/
+2344316 remove duplicate weather
+4de7554 Add battery saver to 3-DOT menu
+a031fdc Settings: : add ability to change the color in battery saver mode (1/2)
+d380afd Revert "Settings: Cleanup battery saver settings"
+8bc4ee8 Settings: Rework 'add ability to change the color in battery saver mode'
 5cee93e Settings: use volume adjust sound setting also to volume seekbar
 ed914b8 [3/3] Settings: alarms and no interrupt zen mode
 d022dd8 Fix NPE on overflow due to removal of HW Keys category
@@ -141,11 +139,9 @@ d022dd8 Fix NPE on overflow due to removal of HW Keys category
 2f70b20 Merge tag 'android-5.1.0_r5' into HEAD
 d5cd6ed Create new empty Bundles when creating new Call
 
-   * vendor/cm/
-b7634f7 cm: add FreedomPop APN
-
    * vendor/cmremix/
-b3339eb back to SaberMod Gcc 4.8
+68ef381 derp
+ab6585d Chromium Fix
 
 ====================
      04-13-2015
@@ -153,10 +149,17 @@ b3339eb back to SaberMod Gcc 4.8
 
 
    * device/samsung/trlte-common/
+cfc45e6 Revert: let add this  value for, home, back & volume rocker
 af1e522 trlte: Add call recording overlay
+
+   * frameworks/av/
+d7d5573 libstagefright: add missing TI color format case
 
    * frameworks/base/
 9de96a3 RAM bar (1/2)
+
+   * frameworks/opt/net/wifi/
+174f3fc Merge remote-tracking branch 'CM/cm-12.1' into cm-12.1
 
    * hardware/qcom/audio-caf/msm8994/
 8fe8c83 audio: Use direct    * pathmap
@@ -165,6 +168,8 @@ af1e522 trlte: Add call recording overlay
 6955a45 correct use of    *-path
 
    * hardware/samsung/
+3063dc1 libril: Avoid strncat which doesn't check if we overflow
+47b2d96 libril: Make data a const pointer in RIL_onUnsolicitedResponse()
 8a0d740 libril: Fix signal strength
 
    * packages/apps/CMFileManager/
@@ -173,12 +178,19 @@ af1e522 trlte: Add call recording overlay
    * packages/apps/InCallUI/
 e01b345 Fix memory leak: remove a listener
 
+   * packages/apps/Mms/
+4b33fba Use unicode character for ellipsis
+
    * packages/apps/Settings/
 56f3160 Remove help from rambar
 dfbf863 RAM bar (2/2) ------------ I'm not author of this code, I believed this code is from Slim Roms, Modified by Cristiano Matos. Cherry pick from Pac KK 4.4 and port to cmRemiX Lollipop by Zion959 Credit to Cristiano Matos & Pac & Slim Roms Thank you all
 
    * vendor/cm/
+b7634f7 cm: add FreedomPop APN
 4ffdd67 APNs: Remove leading whitespace for a couple mmsc
+
+   * vendor/cmremix/
+b3339eb back to SaberMod Gcc 4.8
 
    * vendor/samsung/
 fbfe850 Merge pull request #606 from sam3000/cm-12.1
@@ -187,18 +199,35 @@ fbfe850 Merge pull request #606 from sam3000/cm-12.1
      04-12-2015
 ====================
 
-   * CMRemix/
-83e0266 track email,UnifiedEmail,Exchange
-
-   * build/
-74c4b2e MOAR SaberMod flags (2/3)
-
-   * device/samsung/trlte-common/
-908c7b8 let add this  value for, home, back & volume rocker
 
    * frameworks/av/
 9a37bd5 NuPlayer : Fix incorrect timestamp update for offload playback
 8dd3cd0 nuplayer: Has video hint for offload
+
+   * hardware/samsung/
+d0b8416 libril: rewrite preferred network type
+bd82ef1 libril: move samsung specific into seperate table, update to v11
+
+   * packages/apps/Settings/
+3ccad8a fixed breathing sms
+
+   * system/qcom/
+a511369 Implement wifi_qsap_set_tx_power
+
+====================
+     04-11-2015
+====================
+
+   * CMRemix/
+83e0266 track email,UnifiedEmail,Exchange
+76150e3 Merge remote-tracking branch 'CM/cm-12.1' into cm-12.1
+
+   * build/
+74c4b2e MOAR SaberMod flags (2/3)
+419b1ea Add support for mediatek platforms
+
+   * device/samsung/trlte-common/
+908c7b8 let add this  value for, home, back & volume rocker
 
    * frameworks/base/
 c718693 base: fix race condition with occluded keyguard on non-navbar devices
@@ -215,6 +244,7 @@ c3a9d53 Move arrow_pointer hotspot to better match actual tip
 7c0e891 Telephony: Fix signal annunciators missing issue.
 45aa89b update: Only go HOME if screen is fully awake
 f7469ab Revert "[ActivityManager] Improve multi-thread access the same provider"
+92ca26e Frameworks: add shortcut action icons
 
    * frameworks/opt/net/wifi/
 f798334 Wifi: Do not enable saved networks in ConnectedState
@@ -222,145 +252,19 @@ f798334 Wifi: Do not enable saved networks in ConnectedState
 1e45f2f wifi: Handle the NULL check for the STATUS command
 3fbc07d Wifi: Exit the monitor thread when killSupplicant is issued.
 
-   * hardware/samsung/
-d0b8416 libril: rewrite preferred network type
-bd82ef1 libril: move samsung specific into seperate table, update to v11
-
-   * packages/apps/Settings/
-3ccad8a fixed breathing sms
-
-   * system/qcom/
-a511369 Implement wifi_qsap_set_tx_power
-
-   * vendor/samsung/
-8140ba9 manta: updates blobs to LMY47D
-
-====================
-     04-11-2015
-====================
-
-   * CMRemix/
-76150e3 Merge remote-tracking branch 'CM/cm-12.1' into cm-12.1
-8d29eb4 manifest: Add msm8994 audio/display/media HALs
-
-   * build/
-419b1ea Add support for mediatek platforms
-
-   * frameworks/base/
-92ca26e Frameworks: add shortcut action icons
-9b5a606 libaudioeffect_jni GREF leak fix
-e8ec30a potential GraphRunner leak in camera effects
-81f6f4e Fix DataInputStream leaks
-847249e AndroidRuntime: reduce logcat debug spam
-e6bde50 Remove some crufty "core" tests.
-c608546 Reduce log verbosity: Don't spam logcat
-8250343 frameworks: squash of leak & race fixes
-fb909f6 SystemUI: fix recents ignore last app option
-3a4a28a QS: update battery saver off and sync drawables
-23c0ad9 SystemUI: Fix QS tiles icons
-709a576 bootanimation: remove memory saving tricks
-d496b77 aapt: Implement --compress option
-ba32a63 aapt: Default to 0 compression ratio
-bd14b5b aapt: Don't compress qmg, wbp and arsc assets
-20e346c Fix up torch tile handling.
-5f74a10 Prevent NPE in CmHardwareService.getDisplayColorCalibration()
-f2dbb4b Upgrading spam CMRemix
-ed1b9fa Fix doc bug for object size.
-213e79e Fix typos in AudioManager javadoc
-913f67f Notifications with icon==0 ARE FINE WITH US
-5e8776b Fix unused variables.
-058f56e ActivityManager: Memoize memory class info to reduce system property lookups
-20b5bf2 Fix 'fuchsia' typo.
-15e2f90 Fix default compute thread priority
-9b62a71 Fix HttpResponseCacheTest in anticipation of an OkHttp upgrade.
-ff3603a Fix crash caused by toHex returning exception
-e8efb48 Fix bugs regarding delay the dispatching of non-wakeup alarms
-090680e bootanimation: fix exhaustive memory leaks
-5d0c2fb Revert "Update the ADB status bar icon"
-aada0f6 fix cursor leaks in F_B
-bbc5644 Avoid possible memory leaks by ensuring stream closures
-2c1d076 ZygoteInit: increase GC threshold amount when preloading to postpone GC
-5cbf7f2 Destroyed not app killed :D
-2fcfe32 tethering: User defined wifi/usb tether network. [1/3]
-3953596 Fix GL_INVALID_OPERATION in font renderer when font cache is limited.
-2546010 Fixing memory leak in RenderBufferCache
-79a7b66 [1/3] Frameworks: Proximity speaker (Updated to PS3)
-
-   * frameworks/opt/net/wifi/
-749ec9c tethering: User defined wifi/usb tether network. [2/3]
-
-   * hardware/qcom/audio-caf/msm8994/
-908a598 audio: Use    * pathmap
-7c6aba4 audio: Only allow non-legacy HAL
-
-   * hardware/qcom/display-caf/msm8994/
-95ceb15 Don't build lights module if vendor supplies it
-aee3a7c display: Use    * pathmap
-
-   * hardware/qcom/media-caf/msm8994/
-e2246f8 media: Use    * pathmap
-
-   * packages/apps/CMFileManager/
-17388c6 Fix deadlock when reading shell output.
-748753d Detect text encoding with juniversalchardet.
-3650ca2 CMFileManager: change dialog buttons to use dialog_text_color theme
-
-   * packages/apps/Exchange/
-d2cd05e exchange: serialize the account parcelable before using with AlarmManager
-5b82378 exchange: increase ping command reschedule time on http server error
-
    * packages/apps/InCallUI/
 7930fe3 remove duplicate
-7d8737e InCallUI: clean up prox speaker code and improve usability
-818bb03 [3/3] InCallUI: Proximity speaker (Updated to PS9 - FINAL)
-1ca1980 [3/3] InCallUI: Proximity speaker (Updated to PS6)
-a96981e [3/3] InCallUI: Proximity speaker
 
    * packages/apps/Mms/
 15a07cc Merge remote-tracking branch 'CM/cm-12.1' into cm-12.1
 6ebaad0 Use rounded avatars in messaging notifications.
-
-   * packages/apps/Settings/
-634d50e Properly grey out vol playback control when activating vol wake up device
-47085b2 New settings profiles icon
-6b07b5e tethering: User defined wifi/usb tether network. [3/3]
-eaf15a4 MSIM : Show a proper text if no number is set
-d814f69 Sound settings: fix unlinking volume sliders (1/2)
-e12a22b Sim: fix null pointer exception if no sim is inserted
-b51557e Settings: long press lock screen lock icon to sleep (2/2)
-dc720c1 Lock screen: Text and icon colors, (2/2)
-6412fb9  Lock screen: Weather panel improvements, (2/2)
-10a81c5 REVERT old network meter and add color to new one (2/2)
-199e929 [2/2] Settings: Add network meter
-0bf70bb we use CMRemix now
-2f8047f [Lockscreen shortcuts] centralize all option in our custom settings
-21ef2f6 Fix Settings FC in non-Advanced mode (Buttons Setting)
-4f3389c (2/2) Settings: allow to toggle smart cover wake
-8d09850 Settings: Materialize standard colors in colorpicker
-660c84d Settings: Dotted circle battery (2/2)
-a3aef70 Settings: SlimAction as QuickTile (2/2)
-8795806 Settings: Slim Actions to Shortcuts
-ab23d76 Force Expanded Notifications (2/2)
-b6b973b Settings: Add 1 second to Volume Panel Timeout
-4bbdec5 [2/2] App sidebar
-88df6a1 QS: add Ambient display tile * add Ambient display settings activity for long press on tile
-dbbc7d2 Settings: long press lock screen lock icon to sleep (2/2)
-2b13c14 SQUASH Settings:Smart control center and Direct Call (2/4)
-f79cc9f Settings: Greeting label timeout (2/2) PS2:     Use string for suggested greeting PS3:     Fix build - derp
-64ff290 Settings: Statusbar greeting (2/2)
-815f385 Add option to hide Bluetooth Icon when disconnected in Status Bar (2/2)
-b82b3f2 Settings: Hide network activity arrows (2/2)
-129f836 move QS string to cmremix
-d9accba QS: add Screenrecord tile (2/2)
-d284c40 Add Screen Record to the Power Menu [2/2]
-
-   * packages/apps/UnifiedEmail/
-5ab9abe unified-email: respect swipe user setting
 
    * system/core/
 25f103c Merge remote-tracking branch 'CM/cm-12.1' into cm-12.1
 
    * vendor/cmremix/
 f6ae21e add weekly changelog script ( I like this script also)
-f67275e update cmremix vendor
+
+   * vendor/samsung/
+8140ba9 manta: updates blobs to LMY47D
 
