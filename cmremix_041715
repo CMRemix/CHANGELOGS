@@ -1,0 +1,189 @@
+
+**** origin	git@github.com:cmRemiX/android_build.git ****
+f9b2ba6 : [1/2] add force disable strict aliasing modular <ZION959> 11 hours ago
+ 
+**** CM	git://github.com/CyanogenMod/android_external_bluetooth_bluedroid
+origin	git@github.com:CMRemix/android_external_bluetooth_bluedroid.git
+temasek	https://github.com/temasek/android_external_bluetooth_bluedroid ****
+0a2ba1c : no strict aliasing... <ZION959> 9 hours ago
+ 
+**** git://github.com/CyanogenMod/android_external_icu ****
+59c2e6e : icu: Regenerate stub data for 5.1 <Michael Bestas> 14 hours ago
+57fc359 : icu: Fix Kurdish Arabic locale detection <Michael Bestas> 2 weeks ago
+ 
+**** git://github.com/CyanogenMod/android_external_whispersystems_WhisperPush ****
+194900d : Automatic translation import <Michael Bestas> 11 days ago
+2de30fc : Automatic translation import <Michael Bestas> 3 weeks ago
+bd677b9 : Automatic translation import <Michael Bestas> 4 weeks ago
+64ed935 : Automatic translation import <Michael Bestas> 5 weeks ago
+ 
+**** origin	git@github.com:cmRemiX/android_frameworks_base.git ****
+568e475 : base: kill some log spam <ZION959> 18 minutes ago
+7fa9bf6 : frameworks: display: Added automatic brightness configs <Erica Chang> 3 days ago
+b212730 : SystemUI: remind user flashlight is still on <Roman Birg> 2 days ago
+83ed2f7 : base: kill some log spam <maxwen> 2 days ago
+f7ff1bd : base: change zen mode condition thresholds <maxwen> 19 hours ago
+71e6ded : Base: update volume link option for 5.1 <maxwen> 24 hours ago
+9333ef5 : frameworks: fix reading default pattern size file <Roman Birg> 16 hours ago
+e0fa3d1 : Automatic translation import <Michael Bestas> 11 days ago
+fea7ebe : Automatic translation import <Michael Bestas> 3 weeks ago
+bb04291 : Automatic translation import <Michael Bestas> 4 weeks ago
+96340ae : Restore AOSP translations <Michael Bestas> 2 days ago
+a6acf9e : Do not check mHomePressed on HOME in interceptKeyBeforeDispatching <Raj Yengisetty> 2 days ago
+b75387c : Prevent NPE with mHeadsUpNotificationView being null <tobitege> 2 days ago
+ 
+**** CM	https://github.com/CyanogenMod/android_frameworks_opt_hardware
+origin	git@github.com:cmRemiX/android_frameworks_opt_hardware.git ****
+329b474 : opt_hw: Add CalibrationControl cmhw support (1/2) <eyosen> 9 days ago
+7792aac : Class for gestures vibrations intensity <LorDClockaN> 8 weeks ago
+780de11 : opt_hw: Add S2W and S2S cmhw support (1/2) <LorDClockaN> 9 weeks ago
+ 
+**** origin	git@github.com:cmRemiX/android_frameworks_opt_telephony.git ****
+76e8804 : Revert "Telephony: DcTracker: Fix CDMA APN Data issues." <Adnan Begovic> 2 weeks ago
+ 
+**** CM	https://github.com/CyanogenMod/android_hardware_samsung
+origin	git@github.com:cmRemiX/android_hardware_samsung.git ****
+ec04254 : libril: Add missing semicolon <Caio Schnepper> 3 days ago
+ 
+**** git://github.com/CyanogenMod/android_packages_apps_AudioFX ****
+6d9442f : Automatic translation import <Michael Bestas> 11 days ago
+7d79757 : Automatic translation import <Michael Bestas> 3 weeks ago
+5269e1c : Automatic translation import <Michael Bestas> 4 weeks ago
+6a73a02 : Automatic translation import <Michael Bestas> 5 weeks ago
+ 
+**** git://github.com/CyanogenMod/android_packages_apps_Bluetooth ****
+6d9183b : Automatic translation import <Michael Bestas> 4 weeks ago
+d2f6cfa : Automatic translation import <Michael Bestas> 5 weeks ago
+ 
+**** git://github.com/CyanogenMod/android_packages_apps_BluetoothExt ****
+1594192 : Automatic translation import <Michael Bestas> 11 days ago
+8c3e44f : Automatic translation import <Michael Bestas> 3 weeks ago
+2c1c39e : Automatic translation import <Michael Bestas> 4 weeks ago
+8fa4753 : Automatic translation import <Michael Bestas> 5 weeks ago
+ 
+**** git://github.com/CyanogenMod/android_packages_apps_CMFileManager ****
+21d641c : Implement a dialog that warns the user that we must expose the content of the file by copying it out to an unsecure location in order to allow the external applications to read the files. <Martin Brabham> 2 days ago
+3274036 : Automatic translation import <Michael Bestas> 11 days ago
+52a26ab : Support RTL layouts everywhere. <Martin Brabham> 3 months ago
+ 
+**** git://github.com/CyanogenMod/android_packages_apps_CMWallpapers ****
+6037263 : Automatic translation import <Michael Bestas> 4 weeks ago
+ 
+**** git://github.com/CyanogenMod/android_packages_apps_Calculator ****
+78a6e11 : Automatic translation import <Michael Bestas> 3 weeks ago
+70f3f8f : Automatic translation import <Michael Bestas> 4 weeks ago
+e1233e7 : Automatic translation import <Michael Bestas> 5 weeks ago
+ 
+**** git://github.com/CyanogenMod/android_packages_apps_Calendar ****
+c1a1be6 : Calendar: support ACTION_VIEW instead of ACTION_SEND <Raj Yengisetty> 5 weeks ago
+ff25d81 : Calendar: add feature to select/deselect all events in delete view <Raj Yengisetty> 5 weeks ago
+ff31c0c : Automatic translation import <Michael Bestas> 3 weeks ago
+ac3e7b8 : Automatic translation import <Michael Bestas> 4 weeks ago
+9217f73 : Automatic translation import <Michael Bestas> 5 weeks ago
+ 
+**** https://github.com/CyanogenMod/android_packages_apps_Camera2 ****
+41427a0 : Automatic translation import <Michael Bestas> 3 weeks ago
+c7f1f8f : Automatic translation import <Michael Bestas> 4 weeks ago
+221eac3 : Automatic translation import <Michael Bestas> 5 weeks ago
+ 
+**** git://github.com/CyanogenMod/android_packages_apps_CellBroadcastReceiver ****
+ca08c5c : Automatic translation import <Michael Bestas> 4 weeks ago
+298f2a3 : Automatic translation import <Michael Bestas> 5 weeks ago
+ 
+**** git://github.com/CyanogenMod/android_packages_apps_Contacts ****
+2f2ce95 : Automatic translation import <Michael Bestas> 11 days ago
+cfab287 : Automatic translation import <Michael Bestas> 3 weeks ago
+ 
+**** git://github.com/CyanogenMod/android_packages_apps_DeskClock ****
+ec84206 : Hide flip setting if the phone doesn't have the required hardware sensor. <Martin Brabham> 3 weeks ago
+a9164e0 : Automatic translation import <Michael Bestas> 11 days ago
+f27d89b : Automatic translation import <Michael Bestas> 4 weeks ago
+2ae6298 : Automatic translation import <Michael Bestas> 5 weeks ago
+ 
+**** git://github.com/CyanogenMod/android_packages_apps_Eleven ****
+8f4deda : Automatic translation import <Michael Bestas> 11 days ago
+a64a822 : Automatic translation import <Michael Bestas> 3 weeks ago
+296bf29 : Automatic translation import <Michael Bestas> 4 weeks ago
+b2ebdc9 : Automatic translation import <Michael Bestas> 5 weeks ago
+ 
+**** https://github.com/CMRemix/android_packages_apps_Email ****
+4493eef : Automatic translation import <Michael Bestas> 11 days ago
+c0f648d : Automatic translation import <Michael Bestas> 3 weeks ago
+7b9554c : Update strings for crowdin <Michael Bestas> 3 weeks ago
+ 
+**** https://github.com/CMRemix/android_packages_apps_Exchange ****
+98f7ac8 : exchange: fix typo in switch case flow <Jorge Ruesga> 3 days ago
+94dcbef : Display model name on exchange server and exclude illegal characters <Jonas Knutsson> 1 year, 5 months ago
+ 
+**** git://github.com/CyanogenMod/android_packages_apps_Gallery2 ****
+f7e04f5 : Automatic translation import <Michael Bestas> 11 days ago
+2ee2145 : Automatic translation import <Michael Bestas> 3 weeks ago
+7cbe584 : Automatic translation import <Michael Bestas> 4 weeks ago
+a79ff72 : Automatic translation import <Michael Bestas> 5 weeks ago
+ 
+**** git://github.com/CyanogenMod/android_packages_apps_LockClock ****
+d3fa458 : Automatic translation import <Michael Bestas> 11 days ago
+35defa1 : Automatic translation import <Michael Bestas> 3 weeks ago
+c9e7042 : Automatic translation import <Michael Bestas> 4 weeks ago
+83c8b07 : Automatic translation import <Michael Bestas> 5 weeks ago
+ 
+**** git://github.com/CyanogenMod/android_packages_apps_PhoneCommon ****
+1d4b66f : Automatic translation import <Michael Bestas> 4 weeks ago
+40bdf1c : Automatic translation import <Michael Bestas> 5 weeks ago
+ 
+**** origin	git@github.com:cmRemiX/android_packages_apps_Settings.git ****
+eea177d : Fix incorrect ManageApplications options menu order value. <Matt Garnes> 3 weeks ago
+de98ba6 : Automatic translation import <Michael Bestas> 11 days ago
+eef0e15 : Automatic translation import <Michael Bestas> 3 weeks ago
+8c5386c : Automatic translation import <Michael Bestas> 4 weeks ago
+f660b19 : Automatic translation import <Michael Bestas> 5 weeks ago
+fb834ba : Profiles: play Ringtone when setting volume overrides <Raj Yengisetty> 3 weeks ago
+d51617d : Settings: Fix Sound & notification FC on Settings shortcut widget <AragaoAnderson> 27 hours ago
+ 
+**** git://github.com/CyanogenMod/android_packages_apps_SoundRecorder ****
+0853302 : Automatic translation import <Michael Bestas> 4 weeks ago
+0e7ddcf : Automatic translation import <Michael Bestas> 5 weeks ago
+ 
+**** git://github.com/CyanogenMod/android_packages_apps_Stk ****
+9039043 : stk: Remove duplicate resources <Michael Bestas> 16 hours ago
+86b38f5 : Revert "stk: Remove duplicate resources" <Michael Bestas> 16 hours ago
+e0d37d6 : Automatic translation import <Michael Bestas> 4 weeks ago
+2f97d8e : Automatic translation import <Michael Bestas> 5 weeks ago
+ 
+**** git://github.com/CyanogenMod/android_packages_apps_Terminal ****
+f67dd9a : Automatic translation import <Michael Bestas> 11 days ago
+7d4c476 : Automatic translation import <Michael Bestas> 4 weeks ago
+07e85c9 : Automatic translation import <Michael Bestas> 5 weeks ago
+ 
+**** https://github.com/CMRemix/android_packages_apps_UnifiedEmail ****
+23eb366 : Automatic translation import <Michael Bestas> 11 days ago
+ 
+**** git://github.com/CyanogenMod/android_packages_providers_DownloadProvider ****
+145c95c : Automatic translation import <Michael Bestas> 11 days ago
+7fd50d6 : Automatic translation import <Michael Bestas> 3 weeks ago
+023cd38 : Automatic translation import <Michael Bestas> 4 weeks ago
+5036c4f : Automatic translation import <Michael Bestas> 5 weeks ago
+ 
+**** git://github.com/CyanogenMod/android_packages_providers_ThemesProvider ****
+66f360c : Automatic translation import <Michael Bestas> 4 weeks ago
+c6b89d8 : Automatic translation import <Michael Bestas> 5 weeks ago
+ 
+**** git://github.com/CyanogenMod/android_packages_services_Mms ****
+c207f12 : Automatic translation import <Michael Bestas> 4 weeks ago
+0cf7222 : Automatic translation import <Michael Bestas> 5 weeks ago
+ 
+**** git://github.com/CyanogenMod/android_packages_wallpapers_Galaxy4 ****
+010e98f : Automatic translation import <Michael Bestas> 3 weeks ago
+5f1b78a : Automatic translation import <Michael Bestas> 4 weeks ago
+2453b7e : Automatic translation import <Michael Bestas> 5 weeks ago
+8d0fcb7 : Automatic translation import <Michael Bestas> 11 days ago
+ 
+**** git://github.com/CyanogenMod/android_packages_wallpapers_PhaseBeam ****
+c1cdb04 : Automatic translation import <Michael Bestas> 11 days ago
+ 
+**** git://github.com/CyanogenMod/android_packages_wallpapers_PhotoPhase ****
+65cf58d : Automatic translation import <Michael Bestas> 11 days ago
+8cc52f7 : Automatic translation import <Michael Bestas> 3 weeks ago
+0fb8dcc : Automatic translation import <Michael Bestas> 4 weeks ago
+e18fc24 : Automatic translation import <Michael Bestas> 5 weeks ago
+ 
