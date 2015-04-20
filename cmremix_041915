@@ -1,0 +1,196 @@
+
+**** https://github.com/CMRemix/CMRemix ****
+0596b1a : remove twrp <ZION959> 17 hours ago
+f1df931 : Add LZ4 tools to the build <Steve Kondik> 3 days ago
+ 
+**** git://github.com/CyanogenMod/android_bootable_recovery ****
+a6ea0d0 : recovery: Add lz4 libs <Tom Marshall> 3 days ago
+ 
+**** https://github.com/CMRemix/android_build
+origin	git@github.com:cmRemiX/android_build.git ****
+a258c9f : missing endif <ZION959> 2 days ago
+9cfb394 : Cleanup graphite:  LOCAL_CFLAGS will be used for CPP flags <Paul Beeler> 2 days ago
+a9b28ae : build: releasetools: Support transparent compression <Tom Marshall> 4 weeks ago
+4d37cd0 : build/core: Define find-other-aidl-files. <Adnan Begovic> 4 days ago
+56d062c : ota: Include full boot images when imgdiff fails <Brint E. Kriebel> 3 weeks ago
+9864201 : ota_from_target_files: Fix path for SkipNextActionIfTargetExists <Brint E. Kriebel> 3 weeks ago
+512dec8 : releasetools: add compatibility for full ota functions with incrementals <Brint E. Kriebel> 4 weeks ago
+14910d3 : build: Move bacon public key to device tree <Michael Bestas> 4 weeks ago
+ 
+**** git://github.com/CMRemix/android_device_samsung_trlte-common
+origin	git@github.com:cmRemiX/android_device_samsung_trlte-common.git ****
+971eb7c : removed twrp <ZION959> 17 hours ago
+aef8ca4 : trlte: Add call recording overlay <ZION959> 7 days ago
+ 
+**** git://github.com/CyanogenMod/android_external_whispersystems_WhisperPush ****
+8163695 : Automatic translation import <Michael Bestas> 2 days ago
+ 
+**** https://github.com/CMRemix/android_frameworks_av
+origin	git@github.com:cmRemiX/android_frameworks_av.git ****
+c82c862 : stagefright: Fix the unhappy path in ACodec configuration step <Steve Kondik> 22 hours ago
+043435e :  audio: Fix ringtone mute issue <Dhanalakshmi Siddani> 4 months ago
+30672c8 : audio: Reduce device switch delay <Naresh Tanniru> 12 days ago
+da6beba : nuplayer: Fix audio EOS notifiy on AudioSink not ready <Xiaoming Yang> 3 weeks ago
+a02a9ed : Revert "nuplayer: Add cached lookup of track duration" <Steve Kondik> 24 hours ago
+3f2532f : Revert "Audio streaming error when playing a stream that contains "end of file"." <Steve Kondik> 24 hours ago
+627d3b4 : Revert "audio: Fix issues during device switch" <Steve Kondik> 29 hours ago
+9e0b0f9 : Revert "NuPlayer: Disable widevine flag for L3 content" <Surajit Podder> 2 weeks ago
+e5c48fa : stagefright: Be more tolerant of missing metadata for FFMPEG codecs <Steve Kondik> 2 days ago
+ 
+**** https://github.com/CMRemix/android_frameworks_base
+origin	git@github.com:cmRemiX/android_frameworks_base.git ****
+122e010 : frameworks/base: Zen mode add 10 and 12 hours downtime <elektroschmock> 4 days ago
+ad43208 : Screenshots info is not updated when device is plugged in MTP mode <Maunik Shah> 1 year, 8 months ago
+7f77d0f : media:Modify the display of system default ringtone when it is none. <kaiyiz> 3 weeks ago
+217857a : SystemUI: Show operator name UI after getting valid operator name <kaiyiz> 6 weeks ago
+0cd0073 : base: nat464X: Only update ipv4 pseudo-interface when it's connected <Christopher R. Palmer> 2 days ago
+ed8bef8 : frameworks : Extends mimetype list hence apps can view the media files. <Paramananda> 4 weeks ago
+491604d : Optimize IncallUI delay for voice calls <Sandeep Kunta> 6 weeks ago
+a5e52e3 : Fix an apk icon animation corruption issue <Tao Zhang> 3 weeks ago
+92ca4fb : Avoid duplicated calling to isRestricted to improve performance <Zhou Song> 3 weeks ago
+272db9d : restrict updateExternalMediaStatus to non-emulated storage <Xiaogang Cui> 5 weeks ago
+c1a21a3 : Bring back needsNavigationBar for compatibility <abun880007> 2 days ago
+b661030 : PhoneWindowManager: Fix screen pinning averting soft reboot <abun880007> 2 days ago
+f2f8b6b : Automatic translation import <Michael Bestas> 2 days ago
+daaaaa3 : WindowManagerService not propagating X and Y steps <Richard MacGregor> 2 days ago
+ 
+**** https://github.com/CMRemix/android_frameworks_native ****
+453e91c : Fix a memory corruption issue when vector resize <ywen> 4 weeks ago
+ 
+**** git://github.com/CyanogenMod/android_hardware_qcom_media ****
+6cafe55 : mm-video-v4l2: vdec: Exit if default set format failed for output port also <Balamurugan Alagarsamy> 3 weeks ago
+d808b5b : mm-video-v4l2: vdec: change preferred default color format order <Balamurugan Alagarsamy> 4 weeks ago
+894ea97 : mm-video: vdec: hevc: Avoid crash while handling extra data <Paras Nagda> 5 weeks ago
+f10149e : mm-video-v4l2: vdec: change preferred default color format order <Balamurugan Alagarsamy> 4 weeks ago
+3c6252d : mm-video: venc: handle zero-length invalid EOS buffers <Praveen Chavan> 1 year, 8 months ago
+691b555 : mm-video-v4l2: venc: update color format in port-def <Praveen Chavan> 4 months ago
+cac8640 : mm-video-v4l2: vdec: Disable switching to surface-mode-format <Praveen Chavan> 6 months ago
+09a82b7 : mm-video-v4l2: vdec: Add support for describing color format <Praveen Chavan> 6 months ago
+ 
+**** git://github.com/CyanogenMod/android_packages_apps_AudioFX ****
+c0a4cfa : Automatic translation import <Michael Bestas> 2 days ago
+ 
+**** git://github.com/CyanogenMod/android_packages_apps_Bluetooth ****
+58a28f7 : Automatic translation import <Michael Bestas> 2 days ago
+ 
+**** git://github.com/CyanogenMod/android_packages_apps_BluetoothExt ****
+d153ec9 : Automatic translation import <Michael Bestas> 2 days ago
+ 
+**** git://github.com/CyanogenMod/android_packages_apps_CMFileManager ****
+9fe55d2 : Enable ok button, filename is still valid. <Martin Brabham> 2 days ago
+bc51212 : Make the new filename max length error message show. <Martin Brabham> 2 days ago
+59d3233 : Automatic translation import <Michael Bestas> 2 days ago
+ 
+**** git://github.com/CyanogenMod/android_packages_apps_CMWallpapers ****
+b2000ea : Automatic translation import <Michael Bestas> 2 days ago
+ 
+**** git://github.com/CyanogenMod/android_packages_apps_Calculator ****
+ed0ac3e : Automatic translation import <Michael Bestas> 2 days ago
+ 
+**** git://github.com/CyanogenMod/android_packages_apps_Calendar ****
+18fd6fc : Automatic translation import <Michael Bestas> 2 days ago
+ 
+**** CM	https://github.com/CyanogenMod/android_packages_apps_Camera2.git
+cmR	https://github.com/cmRemiX/android_packages_apps_Camera2
+git://github.com/CyanogenMod/android_packages_apps_Camera2
+origin	git@github.com:cmRemiX/android_packages_apps_Camera2.git ****
+013f394 : Automatic translation import <Michael Bestas> 2 days ago
+ 
+**** git://github.com/CyanogenMod/android_packages_apps_Contacts ****
+daa7f84 : Automatic translation import <Michael Bestas> 2 days ago
+ 
+**** git://github.com/CyanogenMod/android_packages_apps_ContactsCommon ****
+0e55686 : Automatic translation import <Michael Bestas> 2 days ago
+ 
+**** git://github.com/CyanogenMod/android_packages_apps_DeskClock
+temasek	https://github.com/temasek/android_packages_apps_DeskClock ****
+afee1d0 : Automatic translation import <Michael Bestas> 2 days ago
+ 
+**** https://github.com/CMRemix/android_packages_apps_Dialer
+origin	git@github.com:cmRemiX/android_packages_apps_Dialer.git ****
+04ec9ba : Automatic translation import <Michael Bestas> 2 days ago
+ 
+**** git://github.com/CyanogenMod/android_packages_apps_Eleven ****
+693b805 : Automatic translation import <Michael Bestas> 2 days ago
+ 
+**** https://github.com/CMRemix/android_packages_apps_Email
+origin	git@github.com:cmRemiX/android_packages_apps_Email.git ****
+cb099d4 : Automatic translation import <Michael Bestas> 2 days ago
+ 
+**** DU	https://github.com/DirtyUnicorns/android_packages_apps_Gallery2
+git://github.com/CyanogenMod/android_packages_apps_Gallery2 ****
+f2c3fe0 : Automatic translation import <Michael Bestas> 2 days ago
+ 
+**** https://github.com/CMRemix/android_packages_apps_InCallUI ****
+bf5bae2 : Automatic translation import <Michael Bestas> 2 days ago
+ 
+**** git://github.com/CyanogenMod/android_packages_apps_LockClock ****
+69c9e65 : Automatic translation import <Michael Bestas> 2 days ago
+ 
+**** https://github.com/CMRemix/android_packages_apps_Mms-caf ****
+de1bfe5 : Automatic translation import <Michael Bestas> 2 days ago
+ 
+**** git://github.com/CyanogenMod/android_packages_apps_PhoneCommon ****
+d69a3c2 : Automatic translation import <Michael Bestas> 2 days ago
+ 
+**** https://github.com/CMRemix/android_packages_apps_Settings
+origin	git@github.com:cmRemiX/android_packages_apps_Settings.git ****
+14c790a : Automatic translation import <Michael Bestas> 2 days ago
+ 
+**** git://github.com/CyanogenMod/android_packages_apps_SoundRecorder ****
+d67f0d0 : Automatic translation import <Michael Bestas> 2 days ago
+ 
+**** git://github.com/CyanogenMod/android_packages_apps_Stk ****
+605e08f : Automatic translation import <Michael Bestas> 2 days ago
+ 
+**** git://github.com/CyanogenMod/android_packages_apps_Terminal ****
+4f4808e : Automatic translation import <Michael Bestas> 2 days ago
+ 
+**** git://github.com/CyanogenMod/android_packages_apps_TvSettings ****
+83e6512 : Add CyanogenMod version to the About screen <dhacker29> 3 days ago
+ 
+**** https://github.com/CMRemix/android_packages_apps_UnifiedEmail
+origin	git@github.com:cmRemiX/android_packages_apps_UnifiedEmail.git ****
+7a1081d : Automatic translation import <Michael Bestas> 2 days ago
+ 
+**** git://github.com/CyanogenMod/android_packages_providers_DownloadProvider ****
+b1e932c : Automatic translation import <Michael Bestas> 2 days ago
+ 
+**** git://github.com/CyanogenMod/android_packages_services_Mms ****
+0852a23 : Automatic translation import <Michael Bestas> 2 days ago
+ 
+**** https://github.com/CMRemix/android_packages_services_Telephony ****
+982add7 : Automatic translation import <Michael Bestas> 2 days ago
+ 
+**** git://github.com/CyanogenMod/android_packages_wallpapers_Galaxy4 ****
+12e1dd5 : Automatic translation import <Michael Bestas> 2 days ago
+ 
+**** git://github.com/CyanogenMod/android_packages_wallpapers_PhaseBeam ****
+b2b24cc : Automatic translation import <Michael Bestas> 2 days ago
+241d063 : Automatic translation import <Michael Bestas> 3 weeks ago
+b1f701a : Automatic translation import <Michael Bestas> 4 weeks ago
+57ea239 : Automatic translation import <Michael Bestas> 5 weeks ago
+ 
+**** git://github.com/CyanogenMod/android_packages_wallpapers_PhotoPhase ****
+3488b62 : Automatic translation import <Michael Bestas> 2 days ago
+ 
+**** https://github.com/CMRemix/android_system_core
+origin	git@github.com:cmRemiX/android_system_core.git ****
+68248e1 : fastboot: Add lz4 libs <Tom Marshall> 3 days ago
+ 
+**** git://github.com/CyanogenMod/android_system_extras ****
+c98abe0 : make_ext4fs: Fix buffer allocation for lz4 compressor <Steve Kondik> 2 days ago
+3ba17af : make_ext4fs: Transparent compression support <Tom Marshall> 4 weeks ago
+ 
+**** https://github.com/CMRemix/android_vendor_cmremix
+origin	git@github.com:cmRemiX/android_vendor_cmremix.git ****
+b969641 : clean up <ZION959> 30 minutes ago
+62f37e0 : Fix build for hammerhead, create sm_clear_vars.mk and add -pipe <Paul Beeler> 2 days ago
+52efba7 : remove opencamera <ZION959> 2 days ago
+ 
+**** TheMuppets	git@github.com:TheMuppets/proprietary_vendor_samsung.git
+git://github.com/CMRemix/proprietary_vendor_samsung
+origin	git@github.com:cmRemiX/proprietary_vendor_samsung.git ****
+38add86 : espressovzw wants to play too <jrior001> 7 days ago
+5f18432 : 8960: move mm-qcamera-daemon down <jrior001> 7 days ago
+ 
