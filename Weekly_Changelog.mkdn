@@ -1,292 +1,29 @@
 ====================
-<<<<<<< 698a5dc8d47d04af186eb92bebcb9a9a0aae0013
-     04-17-2015
+     04-20-2015
 ====================
 
 
    * build/
-04afbdc fixed up infor for SM GCC and Host
-373d42f Revert: kernel: Add custom toolchain for kernel build again after rebase
-139a9be ARM: NDK library selection options
-38bf325 GCC freedom v3: Fixup TARGET_KERNEL_TOOLS_PREFIX:
-9e6c256 arm64: update changes in preperation of new toolchain's:
-0bfbbb9 Gcc Freedom v3:  Fixup path for aarch64 in envsetup.sh
-7bfa026 gcc freedom v3, update inline with SaberMod
-e6c1a3d configue lto per modules
-f9b2ba6 [1/2] add force disable strict aliasing modular
-afd984b Add some basic host optimizations (2/2)
-f43ab49 extra sabermod flags binary mode: separate gcc from clang completely
-ab99174 ARM: Enable -fno-builtin-sin and -fno-strict-volatile-bitfields by default:
+0ce57a0 Build: Add Custom Toolchain Support
 
-   * external/bluetooth/bluedroid/
-0a2ba1c no strict aliasing...
-
-   * external/icu/
-59c2e6e icu: Regenerate stub data for 5.1
-57fc359 icu: Fix Kurdish Arabic locale detection
-
-   * external/whispersystems/WhisperPush/
-194900d Automatic translation import
-2de30fc Automatic translation import
-bd677b9 Automatic translation import
-64ed935 Automatic translation import
-
-   * frameworks/av/
-67ab408 mediatek: Port AV changes
+   * device/samsung/trlte-common/
+971eb7c removed twrp
+aef8ca4 trlte: Add call recording overlay
 
    * frameworks/base/
-568e475 base: kill some log spam
-7fa9bf6 frameworks: display: Added automatic brightness configs
-b212730 SystemUI: remind user flashlight is still on
-83ed2f7 base: kill some log spam
-f7ff1bd base: change zen mode condition thresholds
-71e6ded Base: update volume link option for 5.1
-9333ef5 frameworks: fix reading default pattern size file
-e0fa3d1 Automatic translation import
-fea7ebe Automatic translation import
-bb04291 Automatic translation import
-96340ae Restore AOSP translations
-a6acf9e Do not check mHomePressed on HOME in interceptKeyBeforeDispatching
-b75387c Prevent NPE with mHeadsUpNotificationView being null
-
-   * frameworks/opt/telephony/
-a4e187a Merge remote-tracking branch 'CM/cm-12.1' into cm-12.1
-
-   * packages/apps/AudioFX/
-6d9442f Automatic translation import
-7d79757 Automatic translation import
-5269e1c Automatic translation import
-6a73a02 Automatic translation import
-
-   * packages/apps/Bluetooth/
-6d9183b Automatic translation import
-d2f6cfa Automatic translation import
-
-   * packages/apps/BluetoothExt/
-1594192 Automatic translation import
-8c3e44f Automatic translation import
-2c1c39e Automatic translation import
-8fa4753 Automatic translation import
-
-   * packages/apps/CMFileManager/
-21d641c Implement a dialog that warns the user that we must expose the content of the file by copying it out to an unsecure location in order to allow the external applications to read the files.
-3274036 Automatic translation import
-52a26ab Support RTL layouts everywhere.
-
-   * packages/apps/CMRemixCenter/
-c428bcd add cmremix icon
-
-   * packages/apps/CMWallpapers/
-6037263 Automatic translation import
-
-   * packages/apps/Calculator/
-78a6e11 Automatic translation import
-70f3f8f Automatic translation import
-e1233e7 Automatic translation import
-
-   * packages/apps/Calendar/
-c1a1be6 Calendar: support ACTION_VIEW instead of ACTION_SEND
-ff25d81 Calendar: add feature to select/deselect all events in delete view
-ff31c0c Automatic translation import
-ac3e7b8 Automatic translation import
-9217f73 Automatic translation import
-
-   * packages/apps/Camera2/
-41427a0 Automatic translation import
-c7f1f8f Automatic translation import
-221eac3 Automatic translation import
-
-   * packages/apps/CellBroadcastReceiver/
-ca08c5c Automatic translation import
-298f2a3 Automatic translation import
-
-   * packages/apps/Contacts/
-2f2ce95 Automatic translation import
-cfab287 Automatic translation import
-
-   * packages/apps/DeskClock/
-ec84206 Hide flip setting if the phone doesn't have the required hardware sensor.
-a9164e0 Automatic translation import
-f27d89b Automatic translation import
-2ae6298 Automatic translation import
-
-   * packages/apps/Dialer/
-01421b9 Merge remote-tracking branch 'CM/cm-12.1' into cm-12.1
-35baf2c Automatic translation import
-b085e7a Automatic translation import
-32e9729 Automatic translation import
-
-   * packages/apps/Eleven/
-8f4deda Automatic translation import
-a64a822 Automatic translation import
-296bf29 Automatic translation import
-b2ebdc9 Automatic translation import
-
-   * packages/apps/Email/
-df55f2a Merge remote-tracking branch 'CM/cm-12.1' into cm-12.1
-4493eef Automatic translation import
-c0f648d Automatic translation import
-7b9554c Update strings for crowdin
-
-   * packages/apps/Exchange/
-ff98419 Merge remote-tracking branch 'CM/cm-12.1' into cm-12.1
+122e010 frameworks/base: Zen mode add 10 and 12 hours downtime
 
    * packages/apps/Gallery2/
-f7e04f5 Automatic translation import
-2ee2145 Automatic translation import
-7cbe584 Automatic translation import
-a79ff72 Automatic translation import
-
-   * packages/apps/InCallUI/
-67da828 Merge remote-tracking branch 'CM/cm-12.1' into cm-12.1
-2443a99 Automatic translation import
-cebba3d Automatic translation import
-0625f13 Automatic translation import
-
-   * packages/apps/LockClock/
-d3fa458 Automatic translation import
-35defa1 Automatic translation import
-c9e7042 Automatic translation import
-83c8b07 Automatic translation import
-
-   * packages/apps/Mms/
-cb29b73 Merge remote-tracking branch 'CM/cm-12.1' into cm-12.1
-0a5ec85 Automatic translation import
-657697c Automatic translation import
-
-   * packages/apps/PhoneCommon/
-1d4b66f Automatic translation import
-40bdf1c Automatic translation import
+158791b Gallery2: readd storage selection support (2/2)
 
    * packages/apps/Settings/
-eea177d Fix incorrect ManageApplications options menu order value.
-de98ba6 Automatic translation import
-eef0e15 Automatic translation import
-8c5386c Automatic translation import
-f660b19 Automatic translation import
-fb834ba Profiles: play Ringtone when setting volume overrides
-d51617d Settings: Fix Sound & notification FC on Settings shortcut widget
-
-   * packages/apps/SoundRecorder/
-0853302 Automatic translation import
-0e7ddcf Automatic translation import
-
-   * packages/apps/Stk/
-9039043 stk: Remove duplicate resources
-86b38f5 Revert "stk: Remove duplicate resources"
-e0d37d6 Automatic translation import
-2f97d8e Automatic translation import
-
-   * packages/apps/Terminal/
-f67dd9a Automatic translation import
-7d4c476 Automatic translation import
-07e85c9 Automatic translation import
-
-   * packages/apps/ThemeChooser/
-294da17 Merge remote-tracking branch 'CM/cm-12.1' into cm-12.1
-d758c5e Automatic translation import
-
-   * packages/apps/UnifiedEmail/
-14fb05c Merge remote-tracking branch 'CM/cm-12.1' into cm-12.1
-23eb366 Automatic translation import
-
-   * packages/providers/DownloadProvider/
-145c95c Automatic translation import
-7fd50d6 Automatic translation import
-023cd38 Automatic translation import
-5036c4f Automatic translation import
-
-   * packages/providers/ThemesProvider/
-66f360c Automatic translation import
-c6b89d8 Automatic translation import
-
-   * packages/services/Mms/
-c207f12 Automatic translation import
-0cf7222 Automatic translation import
-
-   * packages/services/Telecomm/
-bbefc63 Merge remote-tracking branch 'CM/cm-12.1' into cm-12.1
-b14ff4d Automatic translation import
-c7b91d4 Automatic translation import
-085ea01 Automatic translation import
-
-   * packages/services/Telephony/
-b38a6c5 Merge remote-tracking branch 'CM/cm-12.1' into cm-12.1
-509e3e9 Automatic translation import
-18c68f9 Automatic translation import
-a6c4d57 Automatic translation import
-
-   * packages/wallpapers/Galaxy4/
-010e98f Automatic translation import
-5f1b78a Automatic translation import
-2453b7e Automatic translation import
-8d0fcb7 Automatic translation import
-
-   * packages/wallpapers/PhaseBeam/
-c1cdb04 Automatic translation import
-
-   * packages/wallpapers/PhotoPhase/
-65cf58d Automatic translation import
-8cc52f7 Automatic translation import
-0fb8dcc Automatic translation import
-e18fc24 Automatic translation import
+1482068 gcc and gcc flags info (2/2)
+eff9083 Revert: Display SaberMod gcc info in About Phone
 
    * vendor/cmremix/
-75863a6 [2/2] add force disable strict modules
-f836b85 Target arch is arm and compile ROM and KERNEL with SM 4.9
-caeaa56 Move shell unset variables outside of device makefiles
-5f642a1 sm.mk:  Don't add when exporting
-57c508f update sm.mk:  cleanup graphite flags
-f4b56ad Add some basic host optimizations (1/2)
-a45163c enable graphite and -O3 form libwebviewchromium
-e883665 extra sabermod C flags:
-6838da5 MOAR SaberMod flags (1/3):
-aaacadc Remove TARGET_LIB_VERSION and change lib path to just lib
-6b5d217 Add -floop-nest-optimize to graphite kernel flags
-e8cded6 Saberize for all support device
+339adb0 fix LatinIME.apk
 
 ====================
-     04-16-2015
-====================
-
-
-   * bootable/recovery/
-c503cdf sr: Add missing tool links
-
-   * frameworks/base/
-e3bb061 Fix pattern visibility settings (1/2)
-fd8f2f9 Add static patternToString() with pattern size
-273b865 Forward port CM Screen Security settings (1/2)
-acbdcac FWB: Add music tile (1/2)
-e3f031c Framework: always update volumes slider state
-f9fd1a1 QS: Update usb tether tile
-9cc07ec QSColors: Fix empty notification alert after switch color option
-9e4669c Theme fix for statusbar - future proof
-25a96ee Make Navring available to devices with no navbar
-195efa2 Allow screen unpinning on devices without navbar
-
-   * frameworks/opt/telephony/
-76e8804 Revert "Telephony: DcTracker: Fix CDMA APN Data issues."
-
-   * packages/apps/CMFileManager/
-d32899c [CMFileManager] Always display searching progress after back to the search result view
-
-   * packages/apps/Calculator/
-d5ec5ce Calculator: fix color lookups in GraphView
-
-   * packages/apps/Calendar/
-ebccbe9 Calendar: do not auto save events when importing
-
-   * packages/apps/InCallUI/
-b772e5c Clean up volume boost button logic.
-a42ce06 Clean up call button handling.
-
-   * packages/apps/Mms/
-a18b4ce Minor logic cleanup.
-06ee0c5 Kill off some debug spam.
-bc91cde Properly populate subscription ID column when sending MMS.
-28ecc19 Improve subject editor layout.
-=======
      04-19-2015
 ====================
 
@@ -294,9 +31,15 @@ bc91cde Properly populate subscription ID column when sending MMS.
 0596b1a remove twrp
 132c60b Merge remote-tracking branch 'CM/cm-12.1' into cm-12.1
 
-   * device/samsung/trlte-common/
-971eb7c removed twrp
-aef8ca4 trlte: Add call recording overlay
+   * build/
+3918e52 Cleanup graphite:  LOCAL_CFLAGS will be used for CPP flags
+d4355ee Add some basic host optimizations (2/2)
+147648e extra sabermod flags binary mode: separate gcc from clang completely
+4463388 More message fixups...
+4e28e66 ARM: Fix typo: Fogot a "t"
+624c2fe ARM: Enable -fno-builtin-sin and -fno-strict-volatile-bitfields by default:
+40d3250 MOAR SaberMod flags (2/3)
+f442bf5 Saberize v4 (2/2)
 
    * frameworks/av/
 c82c862 stagefright: Fix the unhappy path in ACodec configuration step
@@ -305,13 +48,18 @@ c82c862 stagefright: Fix the unhappy path in ACodec configuration step
 da6beba nuplayer: Fix audio EOS notifiy on AudioSink not ready
 a02a9ed Revert "nuplayer: Add cached lookup of track duration"
 3f2532f Revert "Audio streaming error when playing a stream that contains "end of file"."
+627d3b4 Revert "audio: Fix issues during device switch"
+9e0b0f9 Revert "NuPlayer: Disable widevine flag for L3 content"
+e5c48fa stagefright: Be more tolerant of missing metadata for FFMPEG codecs
 
    * frameworks/base/
-122e010 frameworks/base: Zen mode add 10 and 12 hours downtime
 ad43208 Screenshots info is not updated when device is plugged in MTP mode
 7f77d0f media:Modify the display of system default ringtone when it is none.
 217857a SystemUI: Show operator name UI after getting valid operator name
 0cd0073 base: nat464X: Only update ipv4 pseudo-interface when it's connected
+
+   * hardware/qcom/media-caf/msm8974/
+fac0a22 Merge branch 'LA.BF.1.1.1_rb1.19' of git://codeaurora.org/platform/hardware/qcom/media into cm-12.1
 
    * packages/apps/Email/
 e155b4f Merge remote-tracking branch 'CM/cm-12.1' into cm-12.1
@@ -328,28 +76,47 @@ be0d276 Merge remote-tracking branch 'CM/cm-12.1' into cm-12.1
    * packages/services/Telephony/
 a781848 Merge remote-tracking branch 'CM/cm-12.1' into cm-12.1
 
-   * vendor/cmremix/
-b969641 clean up
-
 ====================
      04-18-2015
 ====================
 
 
+   * bootable/recovery/
+a6ea0d0 recovery: Add lz4 libs
+
    * build/
-a258c9f missing endif
-9cfb394 Cleanup graphite:  LOCAL_CFLAGS will be used for CPP flags
-a9b28ae build: releasetools: Support transparent compression
-4d37cd0 build/core: Define find-other-aidl-files.
-56d062c ota: Include full boot images when imgdiff fails
-9864201 ota_from_target_files: Fix path for SkipNextActionIfTargetExists
-512dec8 releasetools: add compatibility for full ota functions with incrementals
-14910d3 build: Move bacon public key to device tree
+dc20bcc git: ignore gedit backups
+e961eee build: slim launcher
+870ed95 Build Launcher3 instead of 2
+ec31833 repopick: Always expand paths to the repo executable.
+d7e5dbe Add F2FS Compatibility
+8e071ed JDK8: JDK check should succeed with OpenJDK 8
+5884b3a Don't stop if JDK version doesn't match
+b829c95 Add Make Dirty Option
+9a2e49c Add a Whole bunch of Clean Options
+8ee9c37 Add SuperSU to releasetools
+c673be2 Block Building
+9978579 ccache: Use system version over prebuilt
+98f8e3f build: remove all stops if using different make/openjdk-java version
+6794eb9 Build: Changelog (3/3)
+8d49f77 updater-script: Format system before installing ROM
+39d612c Add ro.cmremix.model for OTA purposes
+ffdf810 Add ro.cmremix.device for OTA porpuses
+239c8d8 build: Rainbow unicorn puke [1/2]
+29a462f build: move chromium call...
+b60fe5d build: change style console output of prebuilt chromium
+70a2c8f build: Fix PreBuilt Chromium refs
+295993a Prebuilt chromium: Run a check for target device directory
+06c224c build: Add chromium prebuilt support to envsetup.sh && The core Makefile
+a52147d Introduce New Squisher/Opticharger for Lollipop (2/2)
+febb167 cmRemiX Version
+1665b85 build: releasetools: Support transparent compression
+
+   * external/whispersystems/WhisperPush/
+8163695 Automatic translation import
 
    * frameworks/av/
-627d3b4 Revert "audio: Fix issues during device switch"
-9e0b0f9 Revert "NuPlayer: Disable widevine flag for L3 content"
-e5c48fa stagefright: Be more tolerant of missing metadata for FFMPEG codecs
+13f41ef camera: Add support for mediatek cameras
 
    * frameworks/base/
 ed8bef8 frameworks : Extends mimetype list hence apps can view the media files.
@@ -361,129 +128,6 @@ c1a21a3 Bring back needsNavigationBar for compatibility
 b661030 PhoneWindowManager: Fix screen pinning averting soft reboot
 f2f8b6b Automatic translation import
 daaaaa3 WindowManagerService not propagating X and Y steps
-
-   * frameworks/native/
-8d1ccdb Merge remote-tracking branch 'CM/cm-12.1' into cm-12.1
-
-   * hardware/qcom/media-caf/msm8974/
-fac0a22 Merge branch 'LA.BF.1.1.1_rb1.19' of git://codeaurora.org/platform/hardware/qcom/media into cm-12.1
-
-   * packages/apps/Dialer/
-d4bd274 Merge remote-tracking branch 'CM/cm-12.1' into cm-12.1
->>>>>>> 813ea23fa3e44675d4a7701fb91bbce1a8148819
-
-   * packages/apps/Settings/
-14c790a Automatic translation import
-
-<<<<<<< 698a5dc8d47d04af186eb92bebcb9a9a0aae0013
-   * vendor/cm/
-8e9b0ac Remove SPN configurations for Japan
-fd6bfe7 Remove userinit from user builds
-
-====================
-     04-15-2015
-====================
-
-   * CMRemix/
-3d8b1da Merge remote-tracking branch 'CM/cm-12.1' into cm-12.1
-a249556 Revert: track bluetooth bluedroid (reverted from commit d349e86a2ddaa45c084023b2a90f3ae4aee2eee9)
-
-   * build/
-e170efe Merge remote-tracking branch 'CM/cm-12.1' into cm-12.1
-
-   * frameworks/av/
-4b1ddb2 AudioTrack: initialize mUseSmallBuf in AudioTrack constructor
-1bdd258 audio: Fix for Sound from handset leaks to speaker
-c5079e3 stagefright: http: Skip invalid bandwidth measurements
-ac84c27 nuplayer: Stop resume profiling after frame render
-72068fe NuPlayer: Process time discontinuity separately for audio & video
-66d0234 nuplayer: Add cached lookup of track duration
-9d18eef nuplayer: Fix statistics profiling with buffering events
-
-   * frameworks/base/
-f18da1c third part apps can disable the secret lockscreen
-35b9341 Find wall clock RTC through sysfs
-d6e2ce1 frameworks: read VOLUME_LINK_NOTIFICATION from proper table
-3109ec9 The DUT can't screen shot in guest mode
-b090c15 Add overlay option for Settings.System.ACCELEROMETER_ROTATION_ANGLES
-1f65417 SystemUI: option to ignore the last app when clearing recents (1/2)
-48810ec Merge tag 'android-5.1.0_r5' into HEAD
-78ffc37 aapt: silence density flag warnings
-62939f2 Bluetooth: Change disconnected icon to be 40% transparent
-2a34b4d SystemUI: update notification volume slider state when toggling modes
-d2ef261 base: bring back silent mode
-187fdc1 Volume: fix: Avoid making bad forceVolumeControlStream call.
-61ac0de SystemUI: fix keyguard charging text not showing
-aca1cb5 SystemUI: fix updating keyguard insecure lock icon
-905041f ic_sysbar: drawables updated
-2161b65 Revert "third part apps can unlock the phone without password even if the phone has setted the password"
-5a607d9 Clean-up state if we have an exception when acquiring provider
-451dda4 Revert "Revert "[ActivityManager] Improve multi-thread access the same provider""
-53eb409 Statusbar header: Add vibration to settings button
-79a2f36 SystemUI: Update doze pulse-in option
-e8fcfb6 SystemUI: allow recent tasks to draw behind the status bar
-6a5c281 SystemUI: make online cpu color green for cpu overlay
-d41498a systemui: animate clear recents button on exit animation
-634bb87 Revert "Framework: Add Fade in and Fade out effect to Recents FAB"
-7c20722 Revert "SystemUI: we need to use fadein/fadeout anim on FAB"
-ace92f7 SystemUI: hide floating clear all only if were removing all tasks
-819f190 SystemUI: we need to use fadein/fadeout anim on FAB
-d8bcea3 Framework: Add Fade in and Fade out effect to Recents FAB
-3004d64 Framework: Always show ZenPanel when showing expanded volume panel
-02584d2 Revert "QS: fix tiles not being refreshed on overscrolling"
-ed61417 Revert "Systemui: Recents - do not add search widget on recents if widget is lost."
-17d1c94 Revert "systemui: fix glitches with recents view and search widget"
-83a6392 MediaProjectionPermissionActivity: Fix NPE.
-52e2661 Revert "Fix FC after starting screen recording"
-eeea96b fix checkapi
-98bdd93 Fix array exception in createAutoBrightnessSpline
-4b3d10b Fix Ambient Display tile
-90d2299 DocumentsUI: Add navigation bar color
-7bbbae0 [1/3] base: alarms and no interrupt zen mode
-6c44343 fw/base: Only create emulated volumes for new users if storage is actually emulated
-
-   * frameworks/support/
-f3fe6a1 CMSupport: Sync MAX_ITEMS constant
-949a989 CmSupport : Live folder empty content
-f54dfdd CmSupport : LiveFolder
-7af46d6 Support : Add cm support library
-
-   * hardware/qcom/display-caf/msm8974/
-5c1f3ab hwcomposer: Kill some logspam
-f486583 hwc: Integerize in the outward direction of rectangle
-ca83f33 hwc: Try MDP composition eventhough skip layer is present
-=======
-   * system/core/
-3e859ca Merge remote-tracking branch 'CM/cm-12.1' into cm-12.1
-
-   * system/extras/
-c98abe0 make_ext4fs: Fix buffer allocation for lz4 compressor
-
-   * vendor/cmremix/
-62f37e0 Fix build for hammerhead, create sm_clear_vars.mk and add -pipe
-52efba7 remove opencamera
-
-====================
-     04-17-2015
-====================
-
-   * CMRemix/
-f1df931 Add LZ4 tools to the build
-
-   * bootable/recovery/
-a6ea0d0 recovery: Add lz4 libs
-
-   * build/
-e6c1a3d configue lto per modules
-f9b2ba6 [1/2] add force disable strict aliasing modular
-
-   * external/whispersystems/WhisperPush/
-8163695 Automatic translation import
-
-   * frameworks/av/
-13f41ef camera: Add support for mediatek cameras
-
-   * frameworks/base/
 8774ae7 Remove legacy ThemesTest
 51a0b58 Mobile data tile: open network settings
 a2d1f9f frameworks: display: Added automatic brightness configs
@@ -498,8 +142,8 @@ ec6d957 Restore AOSP translations
 39e0d1a Do not check mHomePressed on HOME in interceptKeyBeforeDispatching
 2098db4 Prevent NPE with mHeadsUpNotificationView being null
 
-   * frameworks/opt/telephony/
-a4e187a Merge remote-tracking branch 'CM/cm-12.1' into cm-12.1
+   * frameworks/native/
+8d1ccdb Merge remote-tracking branch 'CM/cm-12.1' into cm-12.1
 
    * packages/apps/AudioFX/
 c0a4cfa Automatic translation import
@@ -522,7 +166,6 @@ b2000ea Automatic translation import
 
    * packages/apps/Calculator/
 ed0ac3e Automatic translation import
->>>>>>> 813ea23fa3e44675d4a7701fb91bbce1a8148819
 
    * packages/apps/Calendar/
 18fd6fc Automatic translation import
@@ -540,76 +183,34 @@ daa7f84 Automatic translation import
 afee1d0 Automatic translation import
 
    * packages/apps/Dialer/
+d4bd274 Merge remote-tracking branch 'CM/cm-12.1' into cm-12.1
 04ec9ba Automatic translation import
-01421b9 Merge remote-tracking branch 'CM/cm-12.1' into cm-12.1
 
    * packages/apps/Eleven/
 693b805 Automatic translation import
 
    * packages/apps/Email/
 cb099d4 Automatic translation import
-df55f2a Merge remote-tracking branch 'CM/cm-12.1' into cm-12.1
-
-   * packages/apps/Exchange/
-ff98419 Merge remote-tracking branch 'CM/cm-12.1' into cm-12.1
 
    * packages/apps/Gallery2/
 f2c3fe0 Automatic translation import
 
    * packages/apps/InCallUI/
 bf5bae2 Automatic translation import
-67da828 Merge remote-tracking branch 'CM/cm-12.1' into cm-12.1
 
    * packages/apps/LockClock/
 69c9e65 Automatic translation import
 
    * packages/apps/Mms/
 de1bfe5 Automatic translation import
-cb29b73 Merge remote-tracking branch 'CM/cm-12.1' into cm-12.1
 
    * packages/apps/PhoneCommon/
 d69a3c2 Automatic translation import
 
-   * packages/apps/Eleven/
-65716f0 Expose colors from array in Eleven player
-
-   * packages/apps/Email/
-2e8e179 Merge remote-tracking branch 'github/cm-12.1' into cm-12.1
-
-   * packages/apps/Exchange/
-98f7ac8 exchange: fix typo in switch case flow
-ea5130d Merge remote-tracking branch 'github/cm-12.1' into cm-12.1
-94dcbef Display model name on exchange server and exclude illegal characters
-
-   * packages/apps/InCallUI/
-6b6c911 Merge remote-tracking branch 'CM/cm-12.1' into cm-12.1
-
-   * packages/apps/Mms/
-7322cf5 Merge remote-tracking branch 'CM/cm-12.1' into cm-12.1
-
    * packages/apps/Settings/
-<<<<<<< 698a5dc8d47d04af186eb92bebcb9a9a0aae0013
-2344316 remove duplicate weather
-4de7554 Add battery saver to 3-DOT menu
-a031fdc Settings: : add ability to change the color in battery saver mode (1/2)
-d380afd Revert "Settings: Cleanup battery saver settings"
-8bc4ee8 Settings: Rework 'add ability to change the color in battery saver mode'
-
-   * packages/apps/UnifiedEmail/
-6fb64f4 Merge remote-tracking branch 'CM/cm-12.1' into cm-12.1
-
-   * packages/services/Telecomm/
-72d80db Merge remote-tracking branch 'CM/cm-12.1' into cm-12.1
-=======
+14c790a Automatic translation import
 8dbd7a0 Break out the add icon to be separately themeable.
 67d1086 Themes: Allow switchbar text color to be themeable
-eea177d Fix incorrect ManageApplications options menu order value.
-de98ba6 Automatic translation import
-eef0e15 Automatic translation import
-8c5386c Automatic translation import
-f660b19 Automatic translation import
-fb834ba Profiles: play Ringtone when setting volume overrides
-d51617d Settings: Fix Sound & notification FC on Settings shortcut widget
 
    * packages/apps/SoundRecorder/
 d67f0d0 Automatic translation import
@@ -620,15 +221,11 @@ d67f0d0 Automatic translation import
    * packages/apps/Terminal/
 4f4808e Automatic translation import
 
-   * packages/apps/ThemeChooser/
-294da17 Merge remote-tracking branch 'CM/cm-12.1' into cm-12.1
-
    * packages/apps/TvSettings/
 83e6512 Add CyanogenMod version to the About screen
 
    * packages/apps/UnifiedEmail/
 7a1081d Automatic translation import
-14fb05c Merge remote-tracking branch 'CM/cm-12.1' into cm-12.1
 
    * packages/providers/DownloadProvider/
 b1e932c Automatic translation import
@@ -636,12 +233,8 @@ b1e932c Automatic translation import
    * packages/services/Mms/
 0852a23 Automatic translation import
 
-   * packages/services/Telecomm/
-bbefc63 Merge remote-tracking branch 'CM/cm-12.1' into cm-12.1
-
    * packages/services/Telephony/
 982add7 Automatic translation import
-b38a6c5 Merge remote-tracking branch 'CM/cm-12.1' into cm-12.1
 
    * packages/wallpapers/Galaxy4/
 12e1dd5 Automatic translation import
@@ -656,39 +249,29 @@ b1f701a Automatic translation import
 3488b62 Automatic translation import
 
    * system/core/
+3e859ca Merge remote-tracking branch 'CM/cm-12.1' into cm-12.1
 68248e1 fastboot: Add lz4 libs
 f601379 Merge remote-tracking branch 'CM/cm-12.1' into cm-12.1
 
    * system/extras/
+c98abe0 make_ext4fs: Fix buffer allocation for lz4 compressor
 3ba17af make_ext4fs: Transparent compression support
->>>>>>> 813ea23fa3e44675d4a7701fb91bbce1a8148819
 
    * vendor/cmremix/
-933408b back to SaberMod Gcc 4.8 for rom & 4.9 for kernel
+9c5990e move  sm_clear_vars.mk to config folder
+19820e2 remove opencamera
+cdf045b Saberize v4
 75863a6 [2/2] add force disable strict modules
-f836b85 Target arch is arm and compile ROM and KERNEL with SM 4.9
 
 ====================
-<<<<<<< 698a5dc8d47d04af186eb92bebcb9a9a0aae0013
-     04-14-2015
-=======
-     04-16-2015
->>>>>>> 813ea23fa3e44675d4a7701fb91bbce1a8148819
+     04-17-2015
 ====================
 
    * CMRemix/
-02ce06c 5.1.0_r3 -> 5.1.0_r5
+f1df931 Add LZ4 tools to the build
 
    * build/
-1e6e335 Merge tag 'android-5.1.0_r5' into HEAD
-
-   * bootable/recovery/
-c503cdf sr: Add missing tool links
-
-   * build/
-afd984b Add some basic host optimizations (2/2)
-f43ab49 extra sabermod flags binary mode: separate gcc from clang completely
-ab99174 ARM: Enable -fno-builtin-sin and -fno-strict-volatile-bitfields by default:
+ab8a78e build/core: Define find-other-aidl-files.
 
    * external/icu/
 59c2e6e icu: Regenerate stub data for 5.1
@@ -714,33 +297,9 @@ c888808 Initialize the start time if not specified in meta data
 a48153c Screenshots info is not updated when device is plugged in MTP mode
 67ab408 mediatek: Port AV changes
 
-<<<<<<< 698a5dc8d47d04af186eb92bebcb9a9a0aae0013
-   * frameworks/opt/hardware/
-329b474 opt_hw: Add CalibrationControl cmhw support (1/2)
-7792aac Class for gestures vibrations intensity
-780de11 opt_hw: Add S2W and S2S cmhw support (1/2)
-=======
-   * frameworks/base/
-e3bb061 Fix pattern visibility settings (1/2)
-fd8f2f9 Add static patternToString() with pattern size
-273b865 Forward port CM Screen Security settings (1/2)
-acbdcac FWB: Add music tile (1/2)
-e3f031c Framework: always update volumes slider state
-f9fd1a1 QS: Update usb tether tile
-
-   * frameworks/native/
-453e91c Fix a memory corruption issue when vector resize
->>>>>>> 813ea23fa3e44675d4a7701fb91bbce1a8148819
-
    * frameworks/opt/telephony/
-76e8804 Revert "Telephony: DcTracker: Fix CDMA APN Data issues."
+a4e187a Merge remote-tracking branch 'CM/cm-12.1' into cm-12.1
 
-<<<<<<< 698a5dc8d47d04af186eb92bebcb9a9a0aae0013
-   * hardware/samsung/
-ec04254 libril: Add missing semicolon
-3063dc1 libril: Avoid strncat which doesn't check if we overflow
-47b2d96 libril: Make data a const pointer in RIL_onUnsolicitedResponse()
-=======
    * packages/apps/AudioFX/
 6d9442f Automatic translation import
 7d79757 Automatic translation import
@@ -756,7 +315,6 @@ d2f6cfa Automatic translation import
 8c3e44f Automatic translation import
 2c1c39e Automatic translation import
 8fa4753 Automatic translation import
->>>>>>> 813ea23fa3e44675d4a7701fb91bbce1a8148819
 
    * packages/apps/CMFileManager/
 21d641c Implement a dialog that warns the user that we must expose the content of the file by copying it out to an unsecure location in order to allow the external applications to read the files.
@@ -801,6 +359,7 @@ f27d89b Automatic translation import
 2ae6298 Automatic translation import
 
    * packages/apps/Dialer/
+01421b9 Merge remote-tracking branch 'CM/cm-12.1' into cm-12.1
 35baf2c Automatic translation import
 b085e7a Automatic translation import
 32e9729 Automatic translation import
@@ -812,9 +371,13 @@ a64a822 Automatic translation import
 b2ebdc9 Automatic translation import
 
    * packages/apps/Email/
+df55f2a Merge remote-tracking branch 'CM/cm-12.1' into cm-12.1
 4493eef Automatic translation import
 c0f648d Automatic translation import
 7b9554c Update strings for crowdin
+
+   * packages/apps/Exchange/
+ff98419 Merge remote-tracking branch 'CM/cm-12.1' into cm-12.1
 
    * packages/apps/Gallery2/
 f7e04f5 Automatic translation import
@@ -822,9 +385,8 @@ f7e04f5 Automatic translation import
 7cbe584 Automatic translation import
 a79ff72 Automatic translation import
 
-<<<<<<< 698a5dc8d47d04af186eb92bebcb9a9a0aae0013
-=======
    * packages/apps/InCallUI/
+67da828 Merge remote-tracking branch 'CM/cm-12.1' into cm-12.1
 2443a99 Automatic translation import
 cebba3d Automatic translation import
 0625f13 Automatic translation import
@@ -835,43 +397,23 @@ d3fa458 Automatic translation import
 c9e7042 Automatic translation import
 83c8b07 Automatic translation import
 
->>>>>>> 813ea23fa3e44675d4a7701fb91bbce1a8148819
    * packages/apps/Mms/
+cb29b73 Merge remote-tracking branch 'CM/cm-12.1' into cm-12.1
 0a5ec85 Automatic translation import
 657697c Automatic translation import
-a18b4ce Minor logic cleanup.
-06ee0c5 Kill off some debug spam.
-bc91cde Properly populate subscription ID column when sending MMS.
-28ecc19 Improve subject editor layout.
 
    * packages/apps/PhoneCommon/
 1d4b66f Automatic translation import
 40bdf1c Automatic translation import
 
    * packages/apps/Settings/
-<<<<<<< 698a5dc8d47d04af186eb92bebcb9a9a0aae0013
-5cee93e Settings: use volume adjust sound setting also to volume seekbar
-ed914b8 [3/3] Settings: alarms and no interrupt zen mode
-d022dd8 Fix NPE on overflow due to removal of HW Keys category
-
-   * packages/services/Mms/
-020210e Merge tag 'android-5.1.0_r5' into HEAD
-
-   * packages/services/Telecomm/
-2f70b20 Merge tag 'android-5.1.0_r5' into HEAD
-d5cd6ed Create new empty Bundles when creating new Call
-=======
-b023fc6 Create general lockscreen settings category
-c1fe183 Forward port pattern visibility settings (2/2)
-439c083 Settings: handle decrypting larger pattern sizes
-d158d31 Settings: forward port lock pattern grid size (2/2)
-64de007 Settings: Set untraslatable
-d8177e0 Settings: Remove more unused resources
-9cc4e0c Settings: Restore proper ringtone for msim
-b27e125 Remove duplicate strings
-14128ae Settings: fix volume link notification preference
-6369918 Settings: Add music tile (2/2)
->>>>>>> 813ea23fa3e44675d4a7701fb91bbce1a8148819
+eea177d Fix incorrect ManageApplications options menu order value.
+de98ba6 Automatic translation import
+eef0e15 Automatic translation import
+8c5386c Automatic translation import
+f660b19 Automatic translation import
+fb834ba Profiles: play Ringtone when setting volume overrides
+d51617d Settings: Fix Sound & notification FC on Settings shortcut widget
 
    * packages/apps/SoundRecorder/
 0853302 Automatic translation import
@@ -888,42 +430,12 @@ f67dd9a Automatic translation import
 7d4c476 Automatic translation import
 07e85c9 Automatic translation import
 
-<<<<<<< 698a5dc8d47d04af186eb92bebcb9a9a0aae0013
-====================
-     04-13-2015
-====================
-
-
-   * frameworks/base/
-9de96a3 RAM bar (1/2)
-
-   * hardware/qcom/audio-caf/msm8994/
-8fe8c83 audio: Use direct    * pathmap
-
-   * hardware/qcom/media-caf/msm8994/
-6955a45 correct use of    *-path
-
-   * hardware/samsung/
-8a0d740 libril: Fix signal strength
-
-   * packages/apps/InCallUI/
-e01b345 Fix memory leak: remove a listener
-
-   * packages/apps/Settings/
-56f3160 Remove help from rambar
-dfbf863 RAM bar (2/2) ------------ I'm not author of this code, I believed this code is from Slim Roms, Modified by Cristiano Matos. Cherry pick from Pac KK 4.4 and port to cmRemiX Lollipop by Zion959 Credit to Cristiano Matos & Pac & Slim Roms Thank you all
-3ccad8a fixed breathing sms
-
-   * system/media/
-8927113 audio_effects: Support h/w accelerator effects
-
-   * system/qcom/
-a511369 Implement wifi_qsap_set_tx_power
-=======
    * packages/apps/ThemeChooser/
+294da17 Merge remote-tracking branch 'CM/cm-12.1' into cm-12.1
 d758c5e Automatic translation import
 
    * packages/apps/UnifiedEmail/
+14fb05c Merge remote-tracking branch 'CM/cm-12.1' into cm-12.1
 23eb366 Automatic translation import
 
    * packages/providers/DownloadProvider/
@@ -943,11 +455,13 @@ c207f12 Automatic translation import
 0cf7222 Automatic translation import
 
    * packages/services/Telecomm/
+bbefc63 Merge remote-tracking branch 'CM/cm-12.1' into cm-12.1
 b14ff4d Automatic translation import
 c7b91d4 Automatic translation import
 085ea01 Automatic translation import
 
    * packages/services/Telephony/
+b38a6c5 Merge remote-tracking branch 'CM/cm-12.1' into cm-12.1
 509e3e9 Automatic translation import
 18c68f9 Automatic translation import
 a6c4d57 Automatic translation import
@@ -967,10 +481,8 @@ c1cdb04 Automatic translation import
 0fb8dcc Automatic translation import
 e18fc24 Automatic translation import
 
-   * system/core/
-52c51f9 init: Add a new keywork "log" that logs a message
-
    * vendor/cmremix/
+f836b85 Target arch is arm and compile ROM and KERNEL with SM 4.9
 caeaa56 Move shell unset variables outside of device makefiles
 5f642a1 sm.mk:  Don't add when exporting
 57c508f update sm.mk:  cleanup graphite flags
@@ -983,37 +495,36 @@ aaacadc Remove TARGET_LIB_VERSION and change lib path to just lib
 e8cded6 Saberize for all support device
 
 ====================
-     04-15-2015
+     04-16-2015
 ====================
 
-   * CMRemix/
-3d8b1da Merge remote-tracking branch 'CM/cm-12.1' into cm-12.1
-a249556 Revert: track bluetooth bluedroid (reverted from commit d349e86a2ddaa45c084023b2a90f3ae4aee2eee9)
+
+   * bootable/recovery/
+c503cdf sr: Add missing tool links
 
    * build/
-e170efe Merge remote-tracking branch 'CM/cm-12.1' into cm-12.1
-
-   * frameworks/av/
-4b1ddb2 AudioTrack: initialize mUseSmallBuf in AudioTrack constructor
-1bdd258 audio: Fix for Sound from handset leaks to speaker
-c5079e3 stagefright: http: Skip invalid bandwidth measurements
-ac84c27 nuplayer: Stop resume profiling after frame render
-72068fe NuPlayer: Process time discontinuity separately for audio & video
-66d0234 nuplayer: Add cached lookup of track duration
-9d18eef nuplayer: Fix statistics profiling with buffering events
+b1e4aad ota: Include full boot images when imgdiff fails
+8c3cb90 ota_from_target_files: Fix path for SkipNextActionIfTargetExists
+fc14b36 releasetools: add compatibility for full ota functions with incrementals
+3ad6920 build: Move bacon public key to device tree
 
    * frameworks/base/
+e3bb061 Fix pattern visibility settings (1/2)
+fd8f2f9 Add static patternToString() with pattern size
+273b865 Forward port CM Screen Security settings (1/2)
+acbdcac FWB: Add music tile (1/2)
+e3f031c Framework: always update volumes slider state
+f9fd1a1 QS: Update usb tether tile
 9cc07ec QSColors: Fix empty notification alert after switch color option
 9e4669c Theme fix for statusbar - future proof
 25a96ee Make Navring available to devices with no navbar
 195efa2 Allow screen unpinning on devices without navbar
-f18da1c third part apps can disable the secret lockscreen
-35b9341 Find wall clock RTC through sysfs
 
-   * hardware/qcom/display-caf/msm8974/
-5c1f3ab hwcomposer: Kill some logspam
-f486583 hwc: Integerize in the outward direction of rectangle
-ca83f33 hwc: Try MDP composition eventhough skip layer is present
+   * frameworks/native/
+453e91c Fix a memory corruption issue when vector resize
+
+   * frameworks/opt/telephony/
+76e8804 Revert "Telephony: DcTracker: Fix CDMA APN Data issues."
 
    * hardware/qcom/media-caf/msm8974/
 750f79f Merge AU_LINUX_ANDROID_LA.BF.1.1.1_RB1.05.01.00.042.030 on remote branch
@@ -1027,32 +538,35 @@ d5ec5ce Calculator: fix color lookups in GraphView
    * packages/apps/Calendar/
 ebccbe9 Calendar: do not auto save events when importing
 
-   * packages/apps/Eleven/
-65716f0 Expose colors from array in Eleven player
-
-   * packages/apps/Email/
-2e8e179 Merge remote-tracking branch 'github/cm-12.1' into cm-12.1
-
    * packages/apps/Exchange/
 98f7ac8 exchange: fix typo in switch case flow
-ea5130d Merge remote-tracking branch 'github/cm-12.1' into cm-12.1
 
    * packages/apps/InCallUI/
 b772e5c Clean up volume boost button logic.
 a42ce06 Clean up call button handling.
-6b6c911 Merge remote-tracking branch 'CM/cm-12.1' into cm-12.1
 
    * packages/apps/Mms/
-7322cf5 Merge remote-tracking branch 'CM/cm-12.1' into cm-12.1
+a18b4ce Minor logic cleanup.
+06ee0c5 Kill off some debug spam.
+bc91cde Properly populate subscription ID column when sending MMS.
+28ecc19 Improve subject editor layout.
 
-   * packages/apps/UnifiedEmail/
-6fb64f4 Merge remote-tracking branch 'CM/cm-12.1' into cm-12.1
+   * packages/apps/Settings/
+b023fc6 Create general lockscreen settings category
+c1fe183 Forward port pattern visibility settings (2/2)
+439c083 Settings: handle decrypting larger pattern sizes
+d158d31 Settings: forward port lock pattern grid size (2/2)
+64de007 Settings: Set untraslatable
+d8177e0 Settings: Remove more unused resources
+9cc4e0c Settings: Restore proper ringtone for msim
+b27e125 Remove duplicate strings
+14128ae Settings: fix volume link notification preference
+6369918 Settings: Add music tile (2/2)
 
-   * packages/services/Telecomm/
-72d80db Merge remote-tracking branch 'CM/cm-12.1' into cm-12.1
+   * system/core/
+52c51f9 init: Add a new keywork "log" that logs a message
 
    * vendor/cm/
 8e9b0ac Remove SPN configurations for Japan
 fd6bfe7 Remove userinit from user builds
->>>>>>> 813ea23fa3e44675d4a7701fb91bbce1a8148819
 

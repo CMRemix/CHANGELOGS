@@ -1,0 +1,62 @@
+
+**** https://github.com/CMRemix/android_build
+origin	git@github.com:cmRemiX/android_build.git ****
+0ce57a0 : Build: Add Custom Toolchain Support <Paul Beeler> 6 hours ago
+3918e52 : Cleanup graphite:  LOCAL_CFLAGS will be used for CPP flags <Paul Beeler> 3 days ago
+d4355ee : Add some basic host optimizations (2/2) <Paul Beeler> 4 days ago
+147648e : extra sabermod flags binary mode: separate gcc from clang completely <Paul Beeler> 5 days ago
+4463388 : More message fixups... <Paul Beeler> 5 days ago
+4e28e66 : ARM: Fix typo: Fogot a "t" <Paul Beeler> 5 days ago
+624c2fe : ARM: Enable -fno-builtin-sin and -fno-strict-volatile-bitfields by default: <Paul Beeler> 6 days ago
+40d3250 : MOAR SaberMod flags (2/3) <Paul Beeler> 9 days ago
+f442bf5 : Saberize v4 (2/2) <Paul Beeler> 26 hours ago
+dc20bcc : git: ignore gedit backups <Paul Beeler> 9 weeks ago
+e961eee : build: slim launcher <ZION959> 7 weeks ago
+870ed95 : Build Launcher3 instead of 2 <Chet Kener> 6 months ago
+ec31833 : repopick: Always expand paths to the repo executable. <fattire> 9 weeks ago
+d7e5dbe : Add F2FS Compatibility <Chet Kener> 5 months ago
+8e071ed : JDK8: JDK check should succeed with OpenJDK 8 <mar-v-in> 4 months ago
+5884b3a : Don't stop if JDK version doesn't match <SferaDev> 5 months ago
+b829c95 : Add Make Dirty Option <Chet Kener> 4 months ago
+9a2e49c : Add a Whole bunch of Clean Options <Chet Kener> 4 months ago
+8ee9c37 : Add SuperSU to releasetools <LorDClockaN> 4 months ago
+c673be2 : Block Building <William Casey SEdlacek> 4 months ago
+9978579 : ccache: Use system version over prebuilt <Evan Anderson> 4 months ago
+98f8e3f : build: remove all stops if using different make/openjdk-java version <MrBaNkS> 4 months ago
+6794eb9 : Build: Changelog (3/3) <alviteri> 4 weeks ago
+8d49f77 : updater-script: Format system before installing ROM <fusionjack> 5 months ago
+39d612c : Add ro.cmremix.model for OTA purposes <kantjer> 8 weeks ago
+ffdf810 : Add ro.cmremix.device for OTA porpuses <Josue Rivera> 8 weeks ago
+239c8d8 : build: Rainbow unicorn puke [1/2] <MaDc0w> 4 weeks ago
+29a462f : build: move chromium call... <JoseGalRe> 4 weeks ago
+b60fe5d : build: change style console output of prebuilt chromium <JoseGalRe> 4 months ago
+70a2c8f : build: Fix PreBuilt Chromium refs <rooque> 4 months ago
+295993a : Prebuilt chromium: Run a check for target device directory <Ayysir> 4 months ago
+06c224c : build: Add chromium prebuilt support to envsetup.sh && The core Makefile <Jiangyi> 4 months ago
+a52147d : Introduce New Squisher/Opticharger for Lollipop (2/2) <Chet Kener> 4 months ago
+febb167 : cmRemiX Version <ZION959> 4 months ago
+1665b85 : build: releasetools: Support transparent compression <Tom Marshall> 4 weeks ago
+ab8a78e : build/core: Define find-other-aidl-files. <Adnan Begovic> 5 days ago
+b1e4aad : ota: Include full boot images when imgdiff fails <Brint E. Kriebel> 3 weeks ago
+8c3cb90 : ota_from_target_files: Fix path for SkipNextActionIfTargetExists <Brint E. Kriebel> 3 weeks ago
+fc14b36 : releasetools: add compatibility for full ota functions with incrementals <Brint E. Kriebel> 4 weeks ago
+3ad6920 : build: Move bacon public key to device tree <Michael Bestas> 4 weeks ago
+ 
+**** DU	https://github.com/DirtyUnicorns/android_packages_apps_Gallery2
+git://github.com/CyanogenMod/android_packages_apps_Gallery2
+origin	git@github.com:CMRemix/android_packages_apps_Gallery2.git
+temasek	git@github.com:temasek/android_packages_apps_Gallery2.git ****
+158791b : Gallery2: readd storage selection support (2/2) <maxwen> 4 months ago
+ 
+**** https://github.com/CMRemix/android_packages_apps_Settings
+origin	git@github.com:cmRemiX/android_packages_apps_Settings.git ****
+1482068 : gcc and gcc flags info (2/2) <Paul Beeler> 5 hours ago
+eff9083 : Revert: Display SaberMod gcc info in About Phone <ZION959> 6 hours ago
+ 
+**** https://github.com/CMRemix/android_vendor_cmremix
+origin	git@github.com:cmRemiX/android_vendor_cmremix.git ****
+339adb0 : fix LatinIME.apk <Crostantin> 5 hours ago
+9c5990e : move  sm_clear_vars.mk to config folder <ZION959> 2 days ago
+19820e2 : remove opencamera <ZION959> 2 days ago
+cdf045b : Saberize v4 <Paul Beeler> 2 days ago
+ 
