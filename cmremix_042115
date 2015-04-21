@@ -1,0 +1,36 @@
+
+**** CM	git://github.com/CyanogenMod/android_external_bluetooth_bluedroid
+SlimRoms	https://github.com/SlimRoms/android_external_bluetooth_bluedroid
+origin	git@github.com:CMRemix/android_external_bluetooth_bluedroid.git
+temasek	https://github.com/temasek/android_external_bluetooth_bluedroid ****
+2cbcba1 : Bluetooth: To disable LE connecting flag based on BDADDR <Nitin Arora> 8 weeks ago
+d280b9e : Bluetooth: Fix for premature BLE RPA timeout <pramod kotreshappa> 6 weeks ago
+5a7ec10 : Bluetooth: Adding NULL checkes to reactor functions <Ajay Kumar> 3 months ago
+f434171 : Bluetooth: Add Jabra Pulse to Absolute Volume whitelist <pramod kotreshappa> 3 months ago
+1f8c65c : Bluetooth: Assign the rfc, l2c ids based on array index <Srinu Jella> 10 weeks ago
+e8e698b : Clears the allocated memory in HID profile when unmatched report is received. <Subramanian Srinivasan> 10 weeks ago
+285ac89 : bluetooth: Avoid leaking a fd and an infinite loop <Christopher R. Palmer> 13 days ago
+0984147 : Bluetooth: Disconnect Gatt during  failure of service changed discovery process <Satish kumar sugasi> 5 weeks ago
+73bd63b : Bluetooth: Rectify allocation of gatt control block <Nitin Arora> 5 weeks ago
+dff71a9 : BT-BTIF: Handle multi party call states. <Sumit Bajpai> 6 weeks ago
+4f3fccb : Bluetooth: Fix for A2DP glitches due to decrement of nb_frames <pramod kotreshappa> 5 weeks ago
+8bcf281 : Wipower-Bluetooth: Host Changes for advertisment offloading <Kiran Kelageri> 3 months ago
+772adc0 : Bluetooth: Add Get socket option for L2CAP socket <Srinu Jella> 2 months ago
+2645cac : Bluetooth: Fix for BT crash during turn off <pramod kotreshappa> 10 weeks ago
+f6e1b25 : Bluetooth: Fixes for Klocwork static analysis reported issues <Amit Goel> 9 months ago
+e30871e : Bluetooth: Added NULL checks to avoid NULL pointer dereferences <Sai Aitharaju> 2 months ago
+64f0ddb : Bluetooth: Print RPA. <Nitin Shivpure> 5 months ago
+ 
+**** origin	git@github.com:cmRemiX/android_frameworks_base.git ****
+8f7934e : Fix batteryBar on Navbar * this fixs the dual navbar battery bar when its supposed to be hidden and makes it work as intended * this also breaks statusbar tests need to spend some time solving this in java here https://github.com/PurifiedRom/android_frameworks_base/commit/39e80d24d28ac2026ff9dd3f7c832b6f489fe404#diff-ca2883aa3b534f5a1db5e0789780cf18R86 * proper fix would be to have it look for xmlns:systemui="http://schemas.android.com/apk/res/com.android.systemui which is what the statusbar uses and xmlns:systemui="http://schemas.android.com/apk/res-auto which is what navbar uses * we dont run statusbar tests so it isnt a big concern at the moment <beanstown106> 3 days ago
+8aa889c : make lockscreen weather fonts a bit smaller <darkobas> 3 months ago
+9430dec : Battery Bar [1/2] <syaoran12> 2 hours ago
+ 
+**** origin	git@github.com:cmRemiX/android_packages_apps_Settings.git ****
+67a0de7 : [1/2] Kernel Auditor Tweaker <ZION959> 13 minutes ago
+2b7d309 : Battery Bar [2/2] <Alex Cruz> 49 minutes ago
+ 
+**** https://github.com/cmRemiX/android_vendor_cmremix
+origin	git@github.com:cmRemiX/android_vendor_cmremix.git ****
+94245a0 : build KernelAdiutor <ZION959> 38 minutes ago
+ 

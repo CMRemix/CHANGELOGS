@@ -1,44 +1,63 @@
 
 **** https://github.com/CMRemix/CMRemix ****
-0596b1a : remove twrp <ZION959> 17 hours ago
+0596b1a : remove twrp <ZION959> 21 hours ago
 f1df931 : Add LZ4 tools to the build <Steve Kondik> 3 days ago
  
 **** git://github.com/CyanogenMod/android_bootable_recovery ****
 a6ea0d0 : recovery: Add lz4 libs <Tom Marshall> 3 days ago
  
-**** https://github.com/CMRemix/android_build
-origin	git@github.com:cmRemiX/android_build.git ****
-a258c9f : missing endif <ZION959> 2 days ago
-9cfb394 : Cleanup graphite:  LOCAL_CFLAGS will be used for CPP flags <Paul Beeler> 2 days ago
-a9b28ae : build: releasetools: Support transparent compression <Tom Marshall> 4 weeks ago
-4d37cd0 : build/core: Define find-other-aidl-files. <Adnan Begovic> 4 days ago
-56d062c : ota: Include full boot images when imgdiff fails <Brint E. Kriebel> 3 weeks ago
-9864201 : ota_from_target_files: Fix path for SkipNextActionIfTargetExists <Brint E. Kriebel> 3 weeks ago
-512dec8 : releasetools: add compatibility for full ota functions with incrementals <Brint E. Kriebel> 4 weeks ago
-14910d3 : build: Move bacon public key to device tree <Michael Bestas> 4 weeks ago
+**** origin	git@github.com:cmRemiX/android_build.git ****
+0ce57a0 : Build: Add Custom Toolchain Support <Paul Beeler> 2 hours ago
+3918e52 : Cleanup graphite:  LOCAL_CFLAGS will be used for CPP flags <Paul Beeler> 2 days ago
+d4355ee : Add some basic host optimizations (2/2) <Paul Beeler> 4 days ago
+147648e : extra sabermod flags binary mode: separate gcc from clang completely <Paul Beeler> 5 days ago
+4463388 : More message fixups... <Paul Beeler> 5 days ago
+4e28e66 : ARM: Fix typo: Fogot a "t" <Paul Beeler> 5 days ago
+624c2fe : ARM: Enable -fno-builtin-sin and -fno-strict-volatile-bitfields by default: <Paul Beeler> 5 days ago
+40d3250 : MOAR SaberMod flags (2/3) <Paul Beeler> 8 days ago
+f442bf5 : Saberize v4 (2/2) <Paul Beeler> 23 hours ago
+dc20bcc : git: ignore gedit backups <Paul Beeler> 9 weeks ago
+e961eee : build: slim launcher <ZION959> 7 weeks ago
+870ed95 : Build Launcher3 instead of 2 <Chet Kener> 6 months ago
+ec31833 : repopick: Always expand paths to the repo executable. <fattire> 9 weeks ago
+d7e5dbe : Add F2FS Compatibility <Chet Kener> 5 months ago
+8e071ed : JDK8: JDK check should succeed with OpenJDK 8 <mar-v-in> 4 months ago
+5884b3a : Don't stop if JDK version doesn't match <SferaDev> 5 months ago
+b829c95 : Add Make Dirty Option <Chet Kener> 4 months ago
+9a2e49c : Add a Whole bunch of Clean Options <Chet Kener> 4 months ago
+8ee9c37 : Add SuperSU to releasetools <LorDClockaN> 4 months ago
+c673be2 : Block Building <William Casey SEdlacek> 4 months ago
+9978579 : ccache: Use system version over prebuilt <Evan Anderson> 4 months ago
+98f8e3f : build: remove all stops if using different make/openjdk-java version <MrBaNkS> 4 months ago
+6794eb9 : Build: Changelog (3/3) <alviteri> 4 weeks ago
+8d49f77 : updater-script: Format system before installing ROM <fusionjack> 5 months ago
+39d612c : Add ro.cmremix.model for OTA purposes <kantjer> 8 weeks ago
+ffdf810 : Add ro.cmremix.device for OTA porpuses <Josue Rivera> 8 weeks ago
+239c8d8 : build: Rainbow unicorn puke [1/2] <MaDc0w> 4 weeks ago
+29a462f : build: move chromium call... <JoseGalRe> 4 weeks ago
+b60fe5d : build: change style console output of prebuilt chromium <JoseGalRe> 4 months ago
+70a2c8f : build: Fix PreBuilt Chromium refs <rooque> 4 months ago
+295993a : Prebuilt chromium: Run a check for target device directory <Ayysir> 4 months ago
+06c224c : build: Add chromium prebuilt support to envsetup.sh && The core Makefile <Jiangyi> 4 months ago
+a52147d : Introduce New Squisher/Opticharger for Lollipop (2/2) <Chet Kener> 4 months ago
+febb167 : cmRemiX Version <ZION959> 4 months ago
+1665b85 : build: releasetools: Support transparent compression <Tom Marshall> 4 weeks ago
+ab8a78e : build/core: Define find-other-aidl-files. <Adnan Begovic> 4 days ago
+b1e4aad : ota: Include full boot images when imgdiff fails <Brint E. Kriebel> 3 weeks ago
+8c3cb90 : ota_from_target_files: Fix path for SkipNextActionIfTargetExists <Brint E. Kriebel> 3 weeks ago
+fc14b36 : releasetools: add compatibility for full ota functions with incrementals <Brint E. Kriebel> 4 weeks ago
+3ad6920 : build: Move bacon public key to device tree <Michael Bestas> 4 weeks ago
  
-**** git://github.com/CMRemix/android_device_samsung_trlte-common
+**** CM	https://github.com/CyanogenMod/android_device_samsung_trlte-common.git
+https://github.com/cmRemiX/android_device_samsung_trlte-common
 origin	git@github.com:cmRemiX/android_device_samsung_trlte-common.git ****
-971eb7c : removed twrp <ZION959> 17 hours ago
+971eb7c : removed twrp <ZION959> 21 hours ago
 aef8ca4 : trlte: Add call recording overlay <ZION959> 7 days ago
  
 **** git://github.com/CyanogenMod/android_external_whispersystems_WhisperPush ****
 8163695 : Automatic translation import <Michael Bestas> 2 days ago
  
-**** https://github.com/CMRemix/android_frameworks_av
-origin	git@github.com:cmRemiX/android_frameworks_av.git ****
-c82c862 : stagefright: Fix the unhappy path in ACodec configuration step <Steve Kondik> 22 hours ago
-043435e :  audio: Fix ringtone mute issue <Dhanalakshmi Siddani> 4 months ago
-30672c8 : audio: Reduce device switch delay <Naresh Tanniru> 12 days ago
-da6beba : nuplayer: Fix audio EOS notifiy on AudioSink not ready <Xiaoming Yang> 3 weeks ago
-a02a9ed : Revert "nuplayer: Add cached lookup of track duration" <Steve Kondik> 24 hours ago
-3f2532f : Revert "Audio streaming error when playing a stream that contains "end of file"." <Steve Kondik> 24 hours ago
-627d3b4 : Revert "audio: Fix issues during device switch" <Steve Kondik> 29 hours ago
-9e0b0f9 : Revert "NuPlayer: Disable widevine flag for L3 content" <Surajit Podder> 2 weeks ago
-e5c48fa : stagefright: Be more tolerant of missing metadata for FFMPEG codecs <Steve Kondik> 2 days ago
- 
-**** https://github.com/CMRemix/android_frameworks_base
-origin	git@github.com:cmRemiX/android_frameworks_base.git ****
+**** origin	git@github.com:cmRemiX/android_frameworks_base.git ****
 122e010 : frameworks/base: Zen mode add 10 and 12 hours downtime <elektroschmock> 4 days ago
 ad43208 : Screenshots info is not updated when device is plugged in MTP mode <Maunik Shah> 1 year, 8 months ago
 7f77d0f : media:Modify the display of system default ringtone when it is none. <kaiyiz> 3 weeks ago
@@ -52,9 +71,22 @@ a5e52e3 : Fix an apk icon animation corruption issue <Tao Zhang> 3 weeks ago
 c1a21a3 : Bring back needsNavigationBar for compatibility <abun880007> 2 days ago
 b661030 : PhoneWindowManager: Fix screen pinning averting soft reboot <abun880007> 2 days ago
 f2f8b6b : Automatic translation import <Michael Bestas> 2 days ago
-daaaaa3 : WindowManagerService not propagating X and Y steps <Richard MacGregor> 2 days ago
+daaaaa3 : WindowManagerService not propagating X and Y steps <Richard MacGregor> 3 days ago
+8774ae7 : Remove legacy ThemesTest <Clark Scheff> 3 days ago
+51a0b58 : Mobile data tile: open network settings <UtkarshGupta> 2 days ago
+a2d1f9f : frameworks: display: Added automatic brightness configs <Erica Chang> 5 days ago
+32c5dab : SystemUI: remind user flashlight is still on <Roman Birg> 5 days ago
+f49b0e9 : base: change zen mode condition thresholds <maxwen> 3 days ago
+64d79c9 : Base: update volume link option for 5.1 <maxwen> 4 days ago
+df1b5e7 : frameworks: fix reading default pattern size file <Roman Birg> 3 days ago
+be731c1 : Automatic translation import <Michael Bestas> 13 days ago
+81bbc27 : Automatic translation import <Michael Bestas> 3 weeks ago
+af927b3 : Automatic translation import <Michael Bestas> 4 weeks ago
+ec6d957 : Restore AOSP translations <Michael Bestas> 4 days ago
+39e0d1a : Do not check mHomePressed on HOME in interceptKeyBeforeDispatching <Raj Yengisetty> 4 days ago
+2098db4 : Prevent NPE with mHeadsUpNotificationView being null <tobitege> 5 days ago
  
-**** https://github.com/CMRemix/android_frameworks_native ****
+**** origin	https://github.com/cmRemiX/android_frameworks_native ****
 453e91c : Fix a memory corruption issue when vector resize <ywen> 4 weeks ago
  
 **** git://github.com/CyanogenMod/android_hardware_qcom_media ****
@@ -80,6 +112,8 @@ d153ec9 : Automatic translation import <Michael Bestas> 2 days ago
 9fe55d2 : Enable ok button, filename is still valid. <Martin Brabham> 2 days ago
 bc51212 : Make the new filename max length error message show. <Martin Brabham> 2 days ago
 59d3233 : Automatic translation import <Michael Bestas> 2 days ago
+5199787 : CMFileManager: Fix CMFileManager display "sdcard1" and the content is null after adding a new user/guest <kai.cao> 6 days ago
+a09cb8f : CMFileManager: Printing preview content is not show complete. <jing.zhao> 3 days ago
  
 **** git://github.com/CyanogenMod/android_packages_apps_CMWallpapers ****
 b2000ea : Automatic translation import <Michael Bestas> 2 days ago
@@ -90,10 +124,7 @@ ed0ac3e : Automatic translation import <Michael Bestas> 2 days ago
 **** git://github.com/CyanogenMod/android_packages_apps_Calendar ****
 18fd6fc : Automatic translation import <Michael Bestas> 2 days ago
  
-**** CM	https://github.com/CyanogenMod/android_packages_apps_Camera2.git
-cmR	https://github.com/cmRemiX/android_packages_apps_Camera2
-git://github.com/CyanogenMod/android_packages_apps_Camera2
-origin	git@github.com:cmRemiX/android_packages_apps_Camera2.git ****
+**** https://github.com/CyanogenMod/android_packages_apps_Camera2 ****
 013f394 : Automatic translation import <Michael Bestas> 2 days ago
  
 **** git://github.com/CyanogenMod/android_packages_apps_Contacts ****
@@ -102,40 +133,30 @@ daa7f84 : Automatic translation import <Michael Bestas> 2 days ago
 **** git://github.com/CyanogenMod/android_packages_apps_ContactsCommon ****
 0e55686 : Automatic translation import <Michael Bestas> 2 days ago
  
-**** git://github.com/CyanogenMod/android_packages_apps_DeskClock
-temasek	https://github.com/temasek/android_packages_apps_DeskClock ****
+**** git://github.com/CyanogenMod/android_packages_apps_DeskClock ****
 afee1d0 : Automatic translation import <Michael Bestas> 2 days ago
- 
-**** https://github.com/CMRemix/android_packages_apps_Dialer
-origin	git@github.com:cmRemiX/android_packages_apps_Dialer.git ****
-04ec9ba : Automatic translation import <Michael Bestas> 2 days ago
  
 **** git://github.com/CyanogenMod/android_packages_apps_Eleven ****
 693b805 : Automatic translation import <Michael Bestas> 2 days ago
  
-**** https://github.com/CMRemix/android_packages_apps_Email
-origin	git@github.com:cmRemiX/android_packages_apps_Email.git ****
+**** https://github.com/CMRemix/android_packages_apps_Email ****
 cb099d4 : Automatic translation import <Michael Bestas> 2 days ago
  
-**** DU	https://github.com/DirtyUnicorns/android_packages_apps_Gallery2
-git://github.com/CyanogenMod/android_packages_apps_Gallery2 ****
+**** git://github.com/CyanogenMod/android_packages_apps_Gallery2 ****
 f2c3fe0 : Automatic translation import <Michael Bestas> 2 days ago
- 
-**** https://github.com/CMRemix/android_packages_apps_InCallUI ****
-bf5bae2 : Automatic translation import <Michael Bestas> 2 days ago
  
 **** git://github.com/CyanogenMod/android_packages_apps_LockClock ****
 69c9e65 : Automatic translation import <Michael Bestas> 2 days ago
  
-**** https://github.com/CMRemix/android_packages_apps_Mms-caf ****
-de1bfe5 : Automatic translation import <Michael Bestas> 2 days ago
- 
 **** git://github.com/CyanogenMod/android_packages_apps_PhoneCommon ****
 d69a3c2 : Automatic translation import <Michael Bestas> 2 days ago
  
-**** https://github.com/CMRemix/android_packages_apps_Settings
-origin	git@github.com:cmRemiX/android_packages_apps_Settings.git ****
+**** origin	git@github.com:cmRemiX/android_packages_apps_Settings.git ****
+1482068 : gcc and gcc flags info (2/2) <Paul Beeler> 2 hours ago
+eff9083 : Revert: Display SaberMod gcc info in About Phone <ZION959> 2 hours ago
 14c790a : Automatic translation import <Michael Bestas> 2 days ago
+8dbd7a0 : Break out the add icon to be separately themeable. <Dave Kover> 3 days ago
+67d1086 : Themes: Allow switchbar text color to be themeable <Dave Kover> 5 weeks ago
  
 **** git://github.com/CyanogenMod/android_packages_apps_SoundRecorder ****
 d67f0d0 : Automatic translation import <Michael Bestas> 2 days ago
@@ -149,18 +170,18 @@ d67f0d0 : Automatic translation import <Michael Bestas> 2 days ago
 **** git://github.com/CyanogenMod/android_packages_apps_TvSettings ****
 83e6512 : Add CyanogenMod version to the About screen <dhacker29> 3 days ago
  
-**** https://github.com/CMRemix/android_packages_apps_UnifiedEmail
-origin	git@github.com:cmRemiX/android_packages_apps_UnifiedEmail.git ****
+**** https://github.com/CMRemix/android_packages_apps_UnifiedEmail ****
 7a1081d : Automatic translation import <Michael Bestas> 2 days ago
  
 **** git://github.com/CyanogenMod/android_packages_providers_DownloadProvider ****
 b1e932c : Automatic translation import <Michael Bestas> 2 days ago
  
+**** git://github.com/CyanogenMod/android_packages_providers_ThemesProvider ****
+d6c6914 : Fix version upgrades where "holo" may still be used <d34d> 3 weeks ago
+8e2b361 : Fix icons with filters not being generated <d34d> 5 weeks ago
+ 
 **** git://github.com/CyanogenMod/android_packages_services_Mms ****
 0852a23 : Automatic translation import <Michael Bestas> 2 days ago
- 
-**** https://github.com/CMRemix/android_packages_services_Telephony ****
-982add7 : Automatic translation import <Michael Bestas> 2 days ago
  
 **** git://github.com/CyanogenMod/android_packages_wallpapers_Galaxy4 ****
 12e1dd5 : Automatic translation import <Michael Bestas> 2 days ago
@@ -174,23 +195,29 @@ b1f701a : Automatic translation import <Michael Bestas> 4 weeks ago
 **** git://github.com/CyanogenMod/android_packages_wallpapers_PhotoPhase ****
 3488b62 : Automatic translation import <Michael Bestas> 2 days ago
  
-**** https://github.com/CMRemix/android_system_core
-origin	git@github.com:cmRemiX/android_system_core.git ****
+**** origin	git@github.com:cmRemiX/android_system_core.git ****
 68248e1 : fastboot: Add lz4 libs <Tom Marshall> 3 days ago
+52c51f9 : init: Add a new keywork "log" that logs a message <Christopher R. Palmer> 11 days ago
  
 **** git://github.com/CyanogenMod/android_system_extras ****
 c98abe0 : make_ext4fs: Fix buffer allocation for lz4 compressor <Steve Kondik> 2 days ago
 3ba17af : make_ext4fs: Transparent compression support <Tom Marshall> 4 weeks ago
  
-**** https://github.com/CMRemix/android_vendor_cmremix
-origin	git@github.com:cmRemiX/android_vendor_cmremix.git ****
-b969641 : clean up <ZION959> 30 minutes ago
-62f37e0 : Fix build for hammerhead, create sm_clear_vars.mk and add -pipe <Paul Beeler> 2 days ago
-52efba7 : remove opencamera <ZION959> 2 days ago
+**** CM	https://github.com/CyanogenMod/android_vendor_cm
+origin	git@github.com:cmRemiX/android_vendor_cm.git ****
+206c46e : We are at CM12.1 now <Dušan Šušić> 22 hours ago
  
-**** TheMuppets	git@github.com:TheMuppets/proprietary_vendor_samsung.git
+**** https://github.com/cmRemiX/android_vendor_cmremix
+origin	git@github.com:cmRemiX/android_vendor_cmremix.git ****
+339adb0 : fix LatinIME.apk <Crostantin> 2 hours ago
+9c5990e : move  sm_clear_vars.mk to config folder <ZION959> 2 days ago
+19820e2 : remove opencamera <ZION959> 2 days ago
+cdf045b : Saberize v4 <Paul Beeler> 2 days ago
+75863a6 : [2/2] add force disable strict modules <ZION959> 3 days ago
+ 
+**** Themuppets	https://github.com/TheMuppets/proprietary_vendor_samsung
 git://github.com/CMRemix/proprietary_vendor_samsung
-origin	git@github.com:cmRemiX/proprietary_vendor_samsung.git ****
+origin	git@github.com:CMRemix/proprietary_vendor_samsung.git ****
 38add86 : espressovzw wants to play too <jrior001> 7 days ago
 5f18432 : 8960: move mm-qcamera-daemon down <jrior001> 7 days ago
  
