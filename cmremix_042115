@@ -1,36 +1,258 @@
 
-**** CM	git://github.com/CyanogenMod/android_external_bluetooth_bluedroid
-SlimRoms	https://github.com/SlimRoms/android_external_bluetooth_bluedroid
-origin	git@github.com:CMRemix/android_external_bluetooth_bluedroid.git
-temasek	https://github.com/temasek/android_external_bluetooth_bluedroid ****
-2cbcba1 : Bluetooth: To disable LE connecting flag based on BDADDR <Nitin Arora> 8 weeks ago
-d280b9e : Bluetooth: Fix for premature BLE RPA timeout <pramod kotreshappa> 6 weeks ago
-5a7ec10 : Bluetooth: Adding NULL checkes to reactor functions <Ajay Kumar> 3 months ago
-f434171 : Bluetooth: Add Jabra Pulse to Absolute Volume whitelist <pramod kotreshappa> 3 months ago
-1f8c65c : Bluetooth: Assign the rfc, l2c ids based on array index <Srinu Jella> 10 weeks ago
-e8e698b : Clears the allocated memory in HID profile when unmatched report is received. <Subramanian Srinivasan> 10 weeks ago
-285ac89 : bluetooth: Avoid leaking a fd and an infinite loop <Christopher R. Palmer> 13 days ago
-0984147 : Bluetooth: Disconnect Gatt during  failure of service changed discovery process <Satish kumar sugasi> 5 weeks ago
-73bd63b : Bluetooth: Rectify allocation of gatt control block <Nitin Arora> 5 weeks ago
-dff71a9 : BT-BTIF: Handle multi party call states. <Sumit Bajpai> 6 weeks ago
-4f3fccb : Bluetooth: Fix for A2DP glitches due to decrement of nb_frames <pramod kotreshappa> 5 weeks ago
-8bcf281 : Wipower-Bluetooth: Host Changes for advertisment offloading <Kiran Kelageri> 3 months ago
-772adc0 : Bluetooth: Add Get socket option for L2CAP socket <Srinu Jella> 2 months ago
-2645cac : Bluetooth: Fix for BT crash during turn off <pramod kotreshappa> 10 weeks ago
-f6e1b25 : Bluetooth: Fixes for Klocwork static analysis reported issues <Amit Goel> 9 months ago
-e30871e : Bluetooth: Added NULL checks to avoid NULL pointer dereferences <Sai Aitharaju> 2 months ago
-64f0ddb : Bluetooth: Print RPA. <Nitin Shivpure> 5 months ago
+**** https://github.com/CMRemix/CMRemix ****
+801833b : 5.1.0_r5 -> 5.1.1_r1 <Michael Bestas> 8 hours ago
+8824872 : remove performance control <ZION959> 13 hours ago
+d344c5e : track  Kernel Aduitor and add floating button support repo <ZION959> 18 hours ago
  
-**** origin	git@github.com:cmRemiX/android_frameworks_base.git ****
-8f7934e : Fix batteryBar on Navbar * this fixs the dual navbar battery bar when its supposed to be hidden and makes it work as intended * this also breaks statusbar tests need to spend some time solving this in java here https://github.com/PurifiedRom/android_frameworks_base/commit/39e80d24d28ac2026ff9dd3f7c832b6f489fe404#diff-ca2883aa3b534f5a1db5e0789780cf18R86 * proper fix would be to have it look for xmlns:systemui="http://schemas.android.com/apk/res/com.android.systemui which is what the statusbar uses and xmlns:systemui="http://schemas.android.com/apk/res-auto which is what navbar uses * we dont run statusbar tests so it isnt a big concern at the moment <beanstown106> 3 days ago
+**** git://github.com/CyanogenMod/android_bootable_recovery ****
+0e5356a : DO NOT MERGE Revert "Erase PST partition if its marked to be erased." <Andres Morales> 3 weeks ago
+5b9defe : updater: Check the return value from ApplyImagePatch / ApplyBSDiffPatch <Tao Bao> 6 weeks ago
+ 
+**** https://github.com/CMRemix/android_build
+origin	git@github.com:cmRemiX/android_build.git ****
+1365b34 : Cleanup graphite:  LOCAL_CFLAGS will be used for CPP flags <Paul Beeler> 4 days ago
+f55a1fa : build: releasetools: Support transparent compression <Tom Marshall> 4 weeks ago
+bfdab6f : build/core: Define find-other-aidl-files. <Adnan Begovic> 6 days ago
+5c3cd36 : ota: Include full boot images when imgdiff fails <Brint E. Kriebel> 4 weeks ago
+35b7606 : ota_from_target_files: Fix path for SkipNextActionIfTargetExists <Brint E. Kriebel> 4 weeks ago
+abc882d : releasetools: add compatibility for full ota functions with incrementals <Brint E. Kriebel> 4 weeks ago
+127e723 : build: Move bacon public key to device tree <Michael Bestas> 5 weeks ago
+f9b2ba6 : [1/2] add force disable strict aliasing modular <ZION959> 5 days ago
+afd984b : Add some basic host optimizations (2/2) <Paul Beeler> 6 days ago
+f43ab49 : extra sabermod flags binary mode: separate gcc from clang completely <Paul Beeler> 5 days ago
+ab99174 : ARM: Enable -fno-builtin-sin and -fno-strict-volatile-bitfields by default: <Paul Beeler> 5 days ago
+74c4b2e : MOAR SaberMod flags (2/3) <Paul Beeler> 10 days ago
+419b1ea : Add support for mediatek platforms <Ricardo Cerqueira> 7 months ago
+dce67d2 : Revert: Build: cmRemiX up sounds and update (2/2) <ZION959> 13 days ago
+3d6ba53 : qcom_utils: Add msm8992 and msm8994 <Rashed Abdel-Tawab> 8 weeks ago
+49d0de8 : build: add custom NKD GCC <ZION959> 3 weeks ago
+67ffb76 : build: add cmremix version info <ZION959> 3 weeks ago
+67f5882 : build: update clang qcom v3.5 optimization flags <ZION959> 4 weeks ago
+3c54cdc : build: -Wno-error=maybe-uninitialized <ZION959> 4 weeks ago
+c25fe43 : build: removed gnu11++ optimization and fix SM version info <ZION959> 4 weeks ago
+48165c9 : build: Prebuilt Chromium files check <Lokesh Chamane> 6 weeks ago
+cf7eec5 : build: move chromium call... <JoseGalRe> 5 weeks ago
+f41d388 : build: Rainbow unicorn puke [1/2] <MaDc0w> 5 weeks ago
+2902238 : JustArchi's ArchiDroid Optimizations V4 <Łukasz Domeradzki> 4 weeks ago
+e73a6a7 : build: update clang qcom optimization & removed fastmath keep -O3 <ZION959> 6 weeks ago
+5efb904 : build: optimizations for devices with low-RAM [1/2] <JoseGalRe> 7 weeks ago
+6c45280 : Qcom Clang v3.5 Optimization (MusterMaxMueller) <ZION959> 8 weeks ago
+3d23c08 : build slim launcher again for more testing <ZION959> 8 weeks ago
+6621c14 : Build: cmRemiX up sounds and update (2/2) <Lars Greiss> 8 weeks ago
+dcb94b5 : Makefile: OTA File by Date <Chet Kener> 4 months ago
+882d2ad : Add F2FS Compatibility <Chet Kener> 5 months ago
+515b4bc : Remove Default Combos <Chet Kener> 6 months ago
+024f2d6 : Unsecure <Chet Kener> 6 months ago
+1719cf0 : Do Not Build QuickSearchBox <Chet Kener> 6 months ago
+c4bb071 : Allow Prebuilt APKs <Chet Kener> 6 months ago
+8622982 : Build Launcher3 instead of 2 <Chet Kener> 6 months ago
+b7a085f : Build Stk and CellBroadcastReceiver <Chet Kener> 6 months ago
+32c8dd7 : Remove Annoying Goldfish Stuff <Chet Kener> 6 months ago
+89303c6 : Lollipop Audio Only <Chet Kener> 5 months ago
+a8048d9 : Do Not Build Recovery Or Use it <Chet Kener> 5 months ago
+e23a27c : armv7-a: More Specific Tunings per CPU <Chet Kener> 8 weeks ago
+fc7d129 : Eng: Include in user build filter <Chet Kener> 3 months ago
+bbc2fbd : Remove ro.kernel.android.checkjni <Chet Kener> 3 months ago
+a0b63c3 : Remove Debug from Eng <Chet Kener> 3 months ago
+cae7e23 : Do not build test stuff for eng builds <Chet Kener> 3 months ago
+b2fb74a : Do Not Odex Eng Builds <Chet Kener> 3 months ago
+cf391be : Mock Location should be off! <Chet Kener> 3 months ago
+4870b85 : repopick: Always expand paths to the repo executable. <fattire> 9 weeks ago
+3dc5b1f : build: add pthread to dumvar build info <ZION959> 8 weeks ago
+009f406 : Add Global posix thread aka pthread Support (1/2) <Paul Beeler> 8 weeks ago
+ 
+**** git://github.com/CyanogenMod/android_external_libpng ****
+7be36a0 : Fix buffer overwrite in png_build_index <Henrik Smiding> 9 weeks ago
+36c9013 : Fix buffer overflow security vulnerability (CVE-2014-9495) <Henrik Smiding> 9 weeks ago
+ 
+**** git://github.com/CyanogenMod/android_external_libselinux ****
+6608a18 : DO NOT MERGE: handle newlines in file names <Nick Kralevich> 8 weeks ago
+ 
+**** https://github.com/CMRemix/android_frameworks_av
+origin	git@github.com:cmRemiX/android_frameworks_av.git ****
+73b0e26 : audiopolicy: Cleanup and fix compilation warnings <Steve Kondik> 10 hours ago
+eda0f81 : Audiopolicymanager: handle incall sonification without checking output refCount <Mingming Yin> 11 days ago
+2241216 : mediaplayer: ensure secure decoders are instantiated before starting source <Lajos Molnar> 3 weeks ago
+1b4d229 : DO NOT MERGE - audio policy: fix DeviceVector::getDevicesFromType() <Eric Laurent> 3 weeks ago
+6dc6c38 : DO NOT MERGE - audio policy service: fix possible memory overflow <Eric Laurent> 2 months ago
+ 
+**** https://github.com/CMRemix/android_frameworks_base
+origin	git@github.com:cmRemiX/android_frameworks_base.git ****
+80a6a21 : doze: Do not bother checking proximity for the DOZE_ACTION intent <Christopher R. Palmer> 2 days ago
+ff9b1f6 : Merge tag 'android-5.1.1_r1' of https://android.googlesource.com/platform/frameworks/base into cm-12.1 <Steve Kondik> 9 hours ago
+97347f0 : SystemUI: option to disable lock screen shortcuts (1/2) <Altaf-Mahdi> 7 hours ago
+a4ace08 : Make MediaPlayer fail fast on UnknownServiceException. <Alex Klyubin> 35 hours ago
+5feb6ef : [ActivityManager] Avoid unnecessary restart provider process <riddle_hsu> 6 days ago
+c57c199 : PowerProfile: allow overriding default power profile <Evisceration> 4 months ago
+03b64a2 : AudioManager: update references to application context <Alexander Martinz> 14 hours ago
+5badab5 : Sometimes the application context is null <Marco Nelissen> 4 days ago
+ab62ff5 : Fix context leak <Marco Nelissen> 6 weeks ago
+a8e80f6 : SystemUI: update power menu profiles drawable <Ruben Roy> 6 weeks ago
+649e4dd : SystemUI: update quick settings profiles drawable <Alexander Westphal> 3 months ago
+8f7934e : Fix batteryBar on Navbar * this fixs the dual navbar battery bar when its supposed to be hidden and makes it work as intended * this also breaks statusbar tests need to spend some time solving this in java here https://github.com/PurifiedRom/android_frameworks_base/commit/39e80d24d28ac2026ff9dd3f7c832b6f489fe404#diff-ca2883aa3b534f5a1db5e0789780cf18R86 * proper fix would be to have it look for xmlns:systemui="http://schemas.android.com/apk/res/com.android.systemui which is what the statusbar uses and xmlns:systemui="http://schemas.android.com/apk/res-auto which is what navbar uses * we dont run statusbar tests so it isnt a big concern at the moment <beanstown106> 4 days ago
 8aa889c : make lockscreen weather fonts a bit smaller <darkobas> 3 months ago
-9430dec : Battery Bar [1/2] <syaoran12> 2 hours ago
+9430dec : Battery Bar [1/2] <syaoran12> 21 hours ago
+8d6f735 : Fix: In Afrikaans the unit name is not before size but after. <isimobile> 3 days ago
+1cb6024 : ScreenCap : Add jpeg support <Danesh M> 5 days ago
+b02ac0d : base: ConnectivityServer: Don't reap the new network <Christopher R. Palmer> 2 days ago
+ccb410b : Fix HTC headset handling. <Danny Baumann> 2 years, 4 months ago
+f1d7ef5 : fix Notification volume slider linking <Roman Birg> 4 days ago
+1bcd001 : Revert "Base: fix unlinking volume sliders (2/2)" <ZION959> 25 hours ago
+4447533 : Revert: fix Notification volume slider linking <ZION959> 25 hours ago
+5734778 : Don't create unnecessary RenderThread's instance when executing 'dumpsys gfxinfo' <youngmin0822.lee> 5 weeks ago
+ee162c3 : framework: add KillSwitch stubs <Roman Birg> 5 weeks ago
+36fb965 : AudioService: fix crash when no music player found <Roman Birg> 5 days ago
+7c54f1c : Revert "third part apps can disable the secret lockscreen" <Roman Birg> 2 days ago
+3b1d8d5 : Remove opaque check in preparing dirty region <Rama Vaddula> 1 year, 7 months ago
  
-**** origin	git@github.com:cmRemiX/android_packages_apps_Settings.git ****
-67a0de7 : [1/2] Kernel Auditor Tweaker <ZION959> 13 minutes ago
-2b7d309 : Battery Bar [2/2] <Alex Cruz> 49 minutes ago
+**** https://github.com/CMRemix/android_frameworks_native ****
+eb22990 : Support WAKE flag in keyboard layouts <nadlabak> 5 days ago
  
-**** https://github.com/cmRemiX/android_vendor_cmremix
+**** git://github.com/CyanogenMod/android_hardware_invensense ****
+3c9a4d3 : manta: batching and timestamp issues <Anna Si> 10 weeks ago
+ 
+**** git://github.com/CyanogenMod/android_hardware_qcom_media ****
+d062bc0 : media: Avoid collision with FFMPEG plugin <Steve Kondik> 12 months ago
+ 
+**** git://github.com/CyanogenMod/android_packages_apps_Bluetooth ****
+208cef9 : Bluetooth: fix StaleDataException when pairing with other device <Szymon Pusz> 9 hours ago
+ 
+**** https://github.com/CMRemix/android_packages_apps_Browser ****
+c31db62 : [BugFix][Browser]Can't download music from music.baidu.com <chenghe.zhang> 8 days ago
+7ae2b92 : Enable immersive full-screen video playback <dcalandria> 4 days ago
+97ed99b : [BugFix][Browser]Can't download music from music.baidu.com <chenghe.zhang> 8 days ago
+1af979b : Enable immersive full-screen video playback <dcalandria> 4 days ago
+ 
+**** git://github.com/CyanogenMod/android_packages_apps_CMFileManager ****
+ebd0462 : [CMFileManager] Fix "File Manager isn't responding..." pops up after tapping "Secure storage" in File Manager <kai.cao> 21 hours ago
+411c731 : Improve string for crowdin <Michael Bestas> 4 hours ago
+34f4d1c : [CMFileManager] Fix the DrawerLayout don't disapper after press back key. <kai.cao> 21 hours ago
+fac93c1 : CMFileManager: when cancel coping, the dest file also exists and is incomplete. <jing.zhao> 2 days ago
+6e0bd51 : CMFileManager: After change language, the navigation view item summary doesn't change <jing.zhao> 2 days ago
+226460f : [CMFileManager] Fix the filemanager can copy parent folder to child folder <kai.cao> 6 days ago
+ 
+**** CM	https://github.com/CyanogenMod/android_packages_apps_Camera2.git
+cmR	https://github.com/cmRemiX/android_packages_apps_Camera2
+git://github.com/CyanogenMod/android_packages_apps_Camera2
+origin	git@github.com:cmRemiX/android_packages_apps_Camera2.git ****
+6ab7ff4 : Camera2: readd storage selection support (1/2) <maxwen> 4 months ago
+ 
+**** git://github.com/CyanogenMod/android_packages_apps_ContactsCommon ****
+5dd21a4 : [3/3] ContactsCommon: Smart Dialer <linuxxxxx> 12 days ago
+ 
+**** git://github.com/CyanogenMod/android_packages_apps_DeskClock
+temasek	https://github.com/temasek/android_packages_apps_DeskClock ****
+8ff1508 : TimerReceiver: Correctly show the remaining time for 100 hours <Diogo Ferreira> 4 weeks ago
+ 
+**** https://github.com/CMRemix/android_packages_apps_Dialer
+origin	git@github.com:cmRemiX/android_packages_apps_Dialer.git ****
+2d6c993 : Revert: Dialer: Direct Call (3/4) <ZION959> 7 hours ago
+1cd8b6b : [2/3] Dialer: Smart Dialer <Yanuar Harry> 2 weeks ago
+ 
+**** git://github.com/CyanogenMod/android_packages_apps_Eleven ****
+0c5e345 : Eleven: minor string tweaks <Linus Lee> 4 days ago
+914b9d7 : Eleven: properly send open/close session events <Roman Birg> 7 days ago
+19e506b : eleven: remove_ACTION_PICK from manifest <Jorge Ruesga> 3 weeks ago
+4307cc8 : Eleven: Checkboxes to switches <Michael Bestas> 5 weeks ago
+e8e1310 : Eleven: Show/Hide album art on lockscreen <Mikalacki Sava> 7 weeks ago
+ 
+**** https://github.com/CMRemix/android_packages_apps_Email
+origin	git@github.com:cmRemiX/android_packages_apps_Email.git ****
+7451d26 : Fix NPE in getHierarchicalFolder <tobitege> 2 days ago
+8dcea56 : email: finish the settings activity after delete its account <Jorge Ruesga> 3 days ago
+ 
+**** https://github.com/CMRemix/android_packages_apps_Mms-caf ****
+d9cf56a : Revert: Mms: Direct Call (4/4) <ZION959> 7 hours ago
+a5a3bf6 : Mms: add vcalendar as a saveable content type <Raj Yengisetty> 6 days ago
+0053cc1 : Mms: The Slideshow time display incomplete on Edit Slideshow <kaiyiz> 6 months ago
+eb1afb5 : Mms: Recipients field is cleared when returning from SelectRecipients <Joe Zhong> 3 weeks ago
+2af5da6 : Backup: close cursor <Alexander Martinz> 4 weeks ago
+bf1ec62 : Mms : Only exit after deleting last message <Danesh M> 3 weeks ago
+2515453 : Mms-add Calendar event type of loading Calendar draft <xiao.hu> 3 weeks ago
+fb63099 : Mms - remove Subject listener first when remove the subject <xiao.hu> 4 weeks ago
+ee0724a : Mms : Dismiss compose activity, if deleting last message and no text <Danesh M> 4 weeks ago
+2dfa423 : MMS: Add feature to auto-enable mobile data for MMS send or receive. <Craig Schmitt> 10 months ago
+3e576f2 : Expose hard coded background colors from layouts for search activity. <Bryan Owens> 3 weeks ago
+210d155 : Mms: Recipients field is cleared when returning from SelectRecipients <Joe Zhong> 3 weeks ago
+e784620 : Backup: close cursor <Alexander Martinz> 4 weeks ago
+aeff122 : Mms : Only exit after deleting last message <Danesh M> 3 weeks ago
+06be6ec : Mms-add Calendar event type of loading Calendar draft <xiao.hu> 3 weeks ago
+243ffee : Mms - remove Subject listener first when remove the subject <xiao.hu> 4 weeks ago
+2cb8dc5 : Mms : Dismiss compose activity, if deleting last message and no text <Danesh M> 4 weeks ago
+ccc96c4 : MMS: Add feature to auto-enable mobile data for MMS send or receive. <Craig Schmitt> 10 months ago
+08aa08e : Expose hard coded background colors from layouts for search activity. <Bryan Owens> 3 weeks ago
+cca4f65 : [1/3] Mms: Smart Dialer <Yanuar Harry> 1 year, 1 month ago
+ 
+**** git://github.com/CyanogenMod/android_packages_apps_PhoneCommon ****
+1c225a1 : PhoneCommon: Adjust dimens for hdpi <Linus Lee> 5 weeks ago
+ 
+**** https://github.com/CMRemix/android_packages_apps_Settings
+origin	git@github.com:cmRemiX/android_packages_apps_Settings.git ****
+ea9add4 : Merge tag 'android-5.1.1_r1' of https://android.googlesource.com/platform/packages/apps/Settings into cm-12.1 <Steve Kondik> 9 hours ago
+e629cef : Settings: option to disable lock screen shortcuts (2/2) <fusionjack> 5 hours ago
+d8b12d4 : Settings: make unaccounted and over-counted battery usage configurable <Lars Greiss> 4 months ago
+1e77e2f : Revert "Skip Misc/Overcounted battery stats in builds" <Janson Kang> 11 hours ago
+ffb9164 : Settings: update profiles drawable <Alexander Westphal> 3 months ago
+5a5ef29 : Revert : settings: Add PerformanceControl [1/2] <ZION959> 13 hours ago
+67a0de7 : [1/2] Kernel Auditor Tweaker <ZION959> 18 hours ago
+2b7d309 : Battery Bar [2/2] <Alex Cruz> 19 hours ago
+920c56f : Settings: re-index search after setting new lockscreen <Roman Birg> 5 days ago
+3591dff : Settings: fix search key not opening search <Roman Birg> 5 days ago
+316d41b : settings: fix RTL layouts <Jorge Ruesga> 7 days ago
+df2e843 : Fix screen timeout exception in Display Settings <tobitege> 6 days ago
+384d92b : Add a 45 second timeout option for Screen, Dream and Lock timeouts. <Brian Larsen> 4 months ago
+100bf68 : Revert "Sound settings: fix unlinking volume sliders (1/2)" <ZION959> 25 hours ago
+ 
+**** https://github.com/CMRemix/android_packages_apps_ThemeChooser ****
+cec5670 : Automatic translation import <Michael Bestas> 4 days ago
+ 
+**** git://github.com/CyanogenMod/android_packages_apps_TvSettings ****
+5c4f41e : About: Add SELinux status <dhacker29> 21 hours ago
+46cbf36 : About: Fix greyed out titles on certain settings <dhacker29> 23 hours ago
+f0e8aec : About: Show the kernel version <dhacker29> 23 hours ago
+8659c8d : Add build date (ro.build.date from build.prop) to About screen. <dhacker29> 24 hours ago
+2dfcba2 : One does not simply become a Developer <dhacker29> 24 hours ago
+2775775 : CM PlatLogo: CyanogenMod version preference <dhacker29> 24 hours ago
+bb701bf : About: Add CyanogenMod Updates <dhacker29> 3 days ago
+dcd9bca : DO NOT MERGE : Add link to home screen settings <Christopher Lane> 8 weeks ago
+ 
+**** https://github.com/CMRemix/android_packages_apps_UnifiedEmail
+origin	git@github.com:cmRemiX/android_packages_apps_UnifiedEmail.git ****
+85f5d28 : email: linkify urls in plain text emails <Jorge Ruesga> 2 days ago
+ 
+**** https://github.com/CMRemix/android_packages_inputmethods_LatinIME ****
+4585f32 : Block overflow menu during setup. DO NOT MERGE <Dan Zivkovic> 4 weeks ago
+ 
+**** https://github.com/CMRemix/android_packages_providers_MediaProvider ****
+ecd7d55 : MediaProvider: don't delete entries of secondary storage on shutdown <wjiang> 7 months ago
+ 
+**** https://github.com/CMRemix/android_packages_services_Telephony ****
+f39838e : Telephony: make call waiting option a switch preference <Altaf-Mahdi> 3 weeks ago
+354092e : TeleService: Don't show video calling switch if not supported <cretin45> 5 days ago
+5177d69 : Set untranslatables <Michael Bestas> 8 days ago
+1ba1f5a : Telephony: Allow customizing display name for different phone technology <Lin Ma> 13 days ago
+7acd2cc :  Telephony: check equality when verifying enabled state <Raj Yengisetty> 3 weeks ago
+75f7122 : Telephony: KK upgrade path to re-enable components for MSim <Raj Yengisetty> 3 weeks ago
+34c3133 : TelephonyService: Don't change preferred network type on multi RAT capable devices. <Adnan Begovic> 4 weeks ago
+d63de10 : TeleService: Set mode to 2g on other sim(DSDS) prior to change <Lin Ma> 4 weeks ago
+ 
+**** git://github.com/CyanogenMod/android_vendor_cm ****
+a99128f : Updated Free Mobile APN <Maxime Auvy> 19 hours ago
+b02640c : Add hipri to ATT Phone APN <heydabop> 3 days ago
+365ed9b : vendor:cm: update contributors <Brinly Taylor> 3 days ago
+785c50a : vendor: add sepolicy entry for killswitch service <Roman Birg> 4 weeks ago
+206c46e : We are at CM12.1 now <Dušan Šušić> 3 days ago
+ 
+**** https://github.com/CMRemix/android_vendor_cmremix
 origin	git@github.com:cmRemiX/android_vendor_cmremix.git ****
-94245a0 : build KernelAdiutor <ZION959> 38 minutes ago
+7dabb07 : bump cmremix to android lollipop-5.1.1_r1 <ZION959> 2 hours ago
+db53e27 : move weekly change from build script to tools <ZION959> 2 hours ago
+0ecd20d : clean up changelog <ZION959> 6 hours ago
+b991b59 : remove omni performance control & screen record <ZION959> 13 hours ago
+ec824f6 : build KernelAdiutor and floating button <ZION959> 19 hours ago
+92c6856 : add opencamera again <ZION959> 2 days ago
+b969641 : clean up <ZION959> 2 days ago
+62f37e0 : Fix build for hammerhead, create sm_clear_vars.mk and add -pipe <Paul Beeler> 4 days ago
+52efba7 : remove opencamera <ZION959> 4 days ago
+933408b : back to SaberMod Gcc 4.8 for rom & 4.9 for kernel <ZION959> 4 days ago
  
