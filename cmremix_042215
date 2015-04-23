@@ -1,0 +1,193 @@
+
+**** https://github.com/CMRemix/CMRemix ****
+2818d03 : revert : remove cm sepolicy (reverted from commit 8b1ef764e0b5cbfed9448e77d600da1d3293aef2) <ZION959> 23 hours ago
+801833b : 5.1.0_r5 -> 5.1.1_r1 <Michael Bestas> 33 hours ago
+ 
+**** origin	git@github.com:cmRemiX/android_art.git ****
+7f3ce61 : Add Non-debug cflags to debug cflags <Joe Maples> 9 weeks ago
+1eb1e72 : Disable Clang as Host Compiler <frap129> 7 hours ago
+ec5e5e3 : Don't Allow Backups <frap129> 9 weeks ago
+9ca349e : Add all cortex-a15 variants <frap129> 9 weeks ago
+ 
+**** origin	git@github.com:cmRemiX/android_bionic.git ****
+d680ccd : Re-export libgcc's __aeabi_fcmplt <arter97> 5 weeks ago
+2540cfc : linker: convert 'mov pc' instruction to 'bx' <arter97> 5 months ago
+a229288 : libc: arm: add optimized memchr implementation <Yingshiuan Pan> 5 weeks ago
+86261cf : Revert "Import memchr implementation from cortex-strings for Cortex A15" <arter97> 8 days ago
+504cd86 : Revert "krait: use A15 memchr" <arter97> 8 days ago
+6e35c39 : libc: arm: a15: add optimized memcpy implementation <Yingshiuan Pan> 5 weeks ago
+9139633 : libc: Fix strict aliasing violation. <Kyle Repinski> 4 months ago
+1d458e4 : Fix mbstate_t strict-aliasing violations. <Kyle Repinski> 5 months ago
+69397de : Add Aarch64 optimized bzero based on memset <Bernhard Rosenkraenzer> 11 months ago
+6a98db4 : libc: Add AF_RPMSG and PF_RPMSG <Vishal Mahaveer> 5 months ago
+2b50312 : Remove gnu99 <Chet Kener> 3 months ago
+50b9f66 : Disable Clang <frap129> 9 weeks ago
+205a26c : libc: arm: add optimized memchr implementation <Yingshiuan Pan> 5 weeks ago
+88ddc6c : Revert "Import memchr implementation from cortex-strings for Cortex A15" <arter97> 8 days ago
+3c2d7b5 : Revert "krait: use A15 memchr" <arter97> 8 days ago
+f4906f7 : Revert "Reimplement the generic version of strcat" <arter97> 8 days ago
+4a7109f : Revert "Reimplement the generic version of strncat" <arter97> 8 days ago
+4e17dae : libc: arm: a15: add optimized memcpy implementation <Yingshiuan Pan> 5 weeks ago
+c5a0afc : Re-export libgcc's __aeabi_fcmplt <arter97> 5 weeks ago
+4d51ab5 : linker: convert 'mov pc' instruction to 'bx' <arter97> 5 months ago
+fc67590 : Reimplement the generic version of strncat <Bernhard Rosenkränzer> 5 weeks ago
+2e0d54e : Reimplement the generic version of strcat <Bernhard Rosenkränzer> 5 weeks ago
+8cb2591 : Fix build with clang <Bernhard Rosenkränzer> 6 weeks ago
+a0c1adf : Specify .cpu cortex-a15 <Bernhard Rosenkränzer> 5 months ago
+ 
+**** origin	git@github.com:cmRemiX/android_build.git ****
+8e63b1a : sm.mk: Bug fix for aosp and strict-aliasing (2/2) <Paul Beeler> 6 hours ago
+973c9e9 : Include sm_clear_vars.mk <Paul Beeler> 21 hours ago
+887b4f6 : add more SM info to dumpvar <ZION959> 11 hours ago
+73bb06a : -O3 optimzations: More improvements (2/2) <Paul Beeler> 21 hours ago
+ 
+**** git://github.com/CyanogenMod/android_device_qcom_sepolicy ****
+1ccdd65 : uncrypt needs to write to the BCB <Ricardo Cerqueira> 29 hours ago
+ 
+**** CM	git://github.com/CyanogenMod/android_external_bluetooth_bluedroid
+SlimRoms	https://github.com/SlimRoms/android_external_bluetooth_bluedroid
+origin	git@github.com:CMRemix/android_external_bluetooth_bluedroid.git
+temasek	https://github.com/temasek/android_external_bluetooth_bluedroid ****
+b7264a7 : bluetooth: Avoid leaking a fd and an infinite loop <Christopher R. Palmer> 2 weeks ago
+462ec84 : Bluetooth: Disconnect Gatt during  failure of service changed discovery process <Satish kumar sugasi> 5 weeks ago
+bc0089f : Bluetooth: Rectify allocation of gatt control block <Nitin Arora> 5 weeks ago
+d9ab383 : BT-BTIF: Handle multi party call states. <Sumit Bajpai> 6 weeks ago
+f627965 : Bluetooth: Fix for A2DP glitches due to decrement of nb_frames <pramod kotreshappa> 5 weeks ago
+0a03550 : Wipower-Bluetooth: Host Changes for advertisment offloading <Kiran Kelageri> 3 months ago
+9f3d424 : Bluetooth: Add Get socket option for L2CAP socket <Srinu Jella> 3 months ago
+81c10ba : Bluetooth: Fix for BT crash during turn off <pramod kotreshappa> 2 months ago
+591e45b : Bluetooth: Fixes for Klocwork static analysis reported issues <Amit Goel> 9 months ago
+cee58f6 : Bluetooth: Print RPA. <Nitin Shivpure> 5 months ago
+ff79a2f : Bluetooth: Fix for premature BLE RPA timeout <pramod kotreshappa> 6 weeks ago
+767c3b4 : Bluetooth: Adding NULL checkes to reactor functions <Ajay Kumar> 3 months ago
+4d966a5 : Bluetooth: To disable LE connecting flag based on BDADDR <Nitin Arora> 8 weeks ago
+a3955b2 : Wipower-Bluetooth: Host Changes for advertisment offloading. <Kiran Kelageri> 3 months ago
+3b92b07 : Bluetooth: Add Get socket option for L2CAP socket <Srinu Jella> 3 months ago
+020d572 : Bluetooth: Fix for BT crash during turn off <pramod kotreshappa> 2 months ago
+85a3503 : Bluetooth: Fixes for Klocwork static analysis reported issues <Amit Goel> 9 months ago
+4408ac6 : Bluetooth: Print RPA <Nitin Shivpure> 5 months ago
+9544739 : Bluetooth: Assign the rfc, l2c ids based on array index <Srinu Jella> 10 weeks ago
+d12d60e : Bluetooth: Added NULL checks to avoid NULL pointer dereferences <Sai Aitharaju> 3 months ago
+f6dd4e8 : Clears the allocated memory in HID profile when unmatched report is received. <Subramanian Srinivasan> 2 months ago
+b1c3b3d : Bluetooth: Add Jabra Pulse to Absolute Volume whitelist <pramod kotreshappa> 3 months ago
+ 
+**** origin	git@github.com:cmRemiX/android_frameworks_base.git ****
+dc0a3a3 : Framework: StatusBar Ticker (1/2) <Jubakuba> 6 months ago
+f24f0a2 : [WIP] Statusbar clock font style (1/2) <Daxxmax> 55 minutes ago
+64f477f : SystemUI: Add back status bar clock color option (1/2) <Allan Hedelain> 58 minutes ago
+28b6360 : Return of Silent mode (1/2) <Roman Birg> 4 hours ago
+9015e7d : DataUsageTile: align carrier to left <Alexander Martinz> 33 hours ago
+2560497 : SysUI: Invert notification backgrounds <d34d> 3 days ago
+732ad03 : printspooler: Print view crash. <lingyan.wang> 2 days ago
+1dd65e6 : qs: support for all timeout value in case set by user apps <Xuefer> 2 weeks ago
+7dae2a2 : Frameworks/base: Compile-time optimize SQLiteConnection <Andreas Gampe> 2 days ago
+15383dd : Hide Volumepanel on incoming call <Marcus Danielsson> 7 days ago
+bae5581 : Remove minimal dead zone at navigation bar (fix Nexus 4) <Grigoriy Kraynov> 5 days ago
+e08fa8b : add CMRemix Logo <ZION959> 9 hours ago
+80a6a21 : doze: Do not bother checking proximity for the DOZE_ACTION intent <Christopher R. Palmer> 3 days ago
+ff9b1f6 : Merge tag 'android-5.1.1_r1' of https://android.googlesource.com/platform/frameworks/base into cm-12.1 <Steve Kondik> 34 hours ago
+97347f0 : SystemUI: option to disable lock screen shortcuts (1/2) <Altaf-Mahdi> 32 hours ago
+a4ace08 : Make MediaPlayer fail fast on UnknownServiceException. <Alex Klyubin> 3 days ago
+ 
+**** git://github.com/CyanogenMod/android_hardware_qcom_audio ****
+eb6c28d : audio: Use direct project pathmap <Ethan Chen> 5 months ago
+bbf9bdc : audio: Use project pathmap <Ethan Chen> 5 months ago
+2d16306 : audio: Only allow non-legacy HAL <Ethan Chen> 5 months ago
+9d162b1 : hal : add 8992 for msm8992 audio <Fred Oh> 4 months ago
+d44126f : hal : add 8992 for msm8992 audio <Fred Oh> 5 months ago
+bfed995 : post_proc: remove unnecessary command size check <Weiyin Jiang> 2 weeks ago
+44b3427 : hal: enable HPX fade-in when seeking restarts offload playback <Alexy Joseph> 3 weeks ago
+c5844fd : post_proc: add support for virtualizer capability query <Weiyin Jiang> 5 weeks ago
+8e1c75a : hal: Fix strncat problem, replace with strlcat <Fred Oh> 4 weeks ago
+795880d : post_proc: add support for virtualizer capability query <Weiyin Jiang> 5 weeks ago
+d4f5aa0 : audio: fix member initialization <Haynes Mathew George> 8 weeks ago
+24b3bad : hal: Fix alignement of of buffer sent to DSP <Amit Shekhar> 8 weeks ago
+6669761 : hal: dev_arbi: support more audio devices for arbitration <Ravit Dennis> 3 months ago
+ 
+**** git://github.com/CyanogenMod/android_hardware_qcom_display ****
+cc122ee : gralloc: Fix incorrect handle validation check <Naseer Ahmed> 12 months ago
+32a0111 : gralloc: handle YCbCr 420SP format in lock_ycbcr <Justin Philip> 3 weeks ago
+f9c34de : gralloc: Add allocation support for standard NV12 <Justin Philip> 3 weeks ago
+ 
+**** git://github.com/CyanogenMod/android_hardware_qcom_display ****
+8f6386e : Don't build lights module if vendor supplies it <Steve Kondik> 5 months ago
+9c38363 : display: Use project pathmap <Ethan Chen> 6 months ago
+7a1ce08 : hwc: Reserve pipes for video layers first <Saurabh Shah> 3 weeks ago
+06be38f : hwc: Avoid MDPComp in certain conditions. <Raj Kamal> 5 weeks ago
+e3ca296 : hwc: Reset PTOR information <Sushil Chauhan> 4 weeks ago
+ab5056d : hwc: Reset PTOR information <Sushil Chauhan> 4 weeks ago
+d9324d6 : hwc: Check for display connection before calling commit <Saurabh Shah> 4 weeks ago
+6195d14 : hwc: Validate yuv layer dimensions to overcome hw limitation. <Ramkumar Radhakrishnan> 5 weeks ago
+0df77d1 : hwc: Check for display connection before calling commit <Saurabh Shah> 4 weeks ago
+725ded6 : qdutils: Fix memory leak <Saurabh Shah> 5 weeks ago
+99fcca7 : hwc: Validate yuv layer dimensions to overcome hw limitation. <Ramkumar Radhakrishnan> 5 weeks ago
+4fa57ce : gralloc: Add Raw10 support in allocator <Mansoor Aftab> 9 months ago
+8c33178 : hwc: Add support for panel resolution switch <Saurabh Shah> 2 months ago
+1f48f93 : hwc: mdpcomp: Remove the perf lock acquire log message <Arun Kumar K.R> 8 weeks ago
+257fc58 : hwc: mdpcomp: Remove the perf lock acquire log message <Arun Kumar K.R> 8 weeks ago
+7da5df3 : hwc: metadata API to set 3D format. <Naseer Ahmed> 3 months ago
+fc642dd : hwc: Return failure from hwc_device_open when fb open fails <Arun Kumar K.R> 9 weeks ago
+02820b4 : display: Support for S3D video <Naseer Ahmed> 3 months ago
+ 
+**** git://github.com/CyanogenMod/android_hardware_qcom_media ****
+4ce4595 : mm-video: venc: Fix reconbuffer free crash. <c_sridur> 2 weeks ago
+73af4b5 : mm-video:vdec: Fix random ION memory call failures <c_sridur> 2 weeks ago
+6e06dfd : mm-video: vdec: initialize m_native_buffers_enabled flag appropriately <c_sridur> 3 weeks ago
+ 
+**** git://github.com/CyanogenMod/android_hardware_qcom_media ****
+0e1bc46 : vidc: Fix makefiles <Steve Kondik> 23 hours ago
+4bf9db1 : media: Avoid collision with FFMPEG plugin <Steve Kondik> 12 months ago
+98bce29 : correct use of project-path <Scott Mertz> 10 days ago
+b29ac9f : media: Use project pathmap <Ethan Chen> 8 weeks ago
+289c448 : mm-core: add mpeg2 and vc1 secure component entries <Ashray Kulkarni> 4 months ago
+d79fc1e : mm-video-v4l2: venc: Add support for batch-input <Praveen Chavan> 4 months ago
+bfac7f7 : Revert "mm-video: vdec: add support for mpeg2 sequence display extradata" <Maheshwar Ajja> 5 weeks ago
+a78eeb6 : mm-video-v4l2: venc: update color format in port-def <Praveen Chavan> 4 months ago
+50c74f4 : mm-video-v4l2: vdec: Disable switching to surface-mode-format <Praveen Chavan> 6 months ago
+bad8ec3 : mm-video-v4l2: vdec: Add support for describing color format <Praveen Chavan> 6 months ago
+2dc6dbc : mm-video-vidc: change buffer index logic in EBD <Pushkaraj Patil> 3 months ago
+ 
+**** git://github.com/CyanogenMod/android_packages_apps_CMFileManager ****
+ebd0462 : [CMFileManager] Fix "File Manager isn't responding..." pops up after tapping "Secure storage" in File Manager <kai.cao> 2 days ago
+411c731 : Improve string for crowdin <Michael Bestas> 29 hours ago
+34f4d1c : [CMFileManager] Fix the DrawerLayout don't disapper after press back key. <kai.cao> 2 days ago
+ 
+**** https://github.com/CMRemix/CMRemixCenter ****
+4cf75f0 : CMRemixCenter: CMRemixChangelog <fusionjack> 6 hours ago
+aa09819 : add Slim gapps server <ZION959> 6 hours ago
+ 
+**** git://github.com/CyanogenMod/android_packages_apps_ContactsCommon ****
+f233757 : ContactsCommon : Modify ContactPhotoManager to fetch contacts' bitmaps <Rohit Yengisetty> 9 days ago
+ 
+**** origin	git@github.com:cmRemiX/android_packages_apps_Settings.git ****
+9be3ec4 : [WIP] Statusbar clock font style (2/2) <Janson Kang> 35 minutes ago
+d2d29ab : Settings: add back status bar color option (2/2) <tristan202> 38 minutes ago
+d45bde0 : Settings: StatusBar Ticker (2/2) <Jubakuba> 43 minutes ago
+1aa2f82 : Settings: add Silent mode toggle (2/2) <Roman Birg> 5 days ago
+6ec196b : Remove CM's Stats Collection <Lokesh Chamane> 3 days ago
+f9c5a3c : Adjust "Wakelock blocker" layout <LuK1337> 4 days ago
+11d933f : Settings: fix custom SIM name lost on reboot <Pawit Pornkitprasan> 4 months ago
+cdcdd2d : Allow launching display rotation & lock screen settings externally <ZION959> 25 hours ago
+ea9add4 : Merge tag 'android-5.1.1_r1' of https://android.googlesource.com/platform/packages/apps/Settings into cm-12.1 <Steve Kondik> 34 hours ago
+e629cef : Settings: option to disable lock screen shortcuts (2/2) <fusionjack> 31 hours ago
+d8b12d4 : Settings: make unaccounted and over-counted battery usage configurable <Lars Greiss> 4 months ago
+1e77e2f : Revert "Skip Misc/Overcounted battery stats in builds" <Janson Kang> 2 days ago
+ffb9164 : Settings: update profiles drawable <Alexander Westphal> 3 months ago
+5a5ef29 : Revert : settings: Add PerformanceControl [1/2] <ZION959> 2 days ago
+ 
+**** origin	git@github.com:cmRemiX/android_system_core.git ****
+2ded621 : Allocate a new AIDs for RFS module <Nikhilesh Reddy> 4 months ago
+ 
+**** https://github.com/cmRemiX/android_vendor_cmremix
+origin	git@github.com:cmRemiX/android_vendor_cmremix.git ****
+94320a7 : Set default for SaberMod GCC 4.8 for Rom <ZION959> 4 hours ago
+771cc3f : sm.mk: hammerhead: <Paul Beeler> 6 hours ago
+7cfd614 : add TARGET_NDK_VERSION :=? <ZION959> 11 hours ago
+5cdef16 : update sm_clear_vars.mk <Paul Beeler> 21 hours ago
+0e802e6 : Hammerhead: Disable -O3 optimizations on thumb <Paul Beeler> 22 hours ago
+95c242e : -O3 optimzations: More improvements (1/2) <Paul Beeler> 22 hours ago
+23bdb2d : bump cmremix to android lollipop-5.1.1_r1 <ZION959> 28 hours ago
+fc7af36 : vendor: add strict aliasing modular <ZION959> 30 hours ago
+5a0c304 : remove omni performance control & screen record <ZION959> 2 days ago
+266efe0 : build KernelAdiutor and floating button <ZION959> 2 days ago
+ 
