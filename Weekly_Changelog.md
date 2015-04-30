@@ -63,14 +63,6 @@ Date:   Tue Apr 28 19:00:58 2015 -0700
 
     fixed copy and past again
 
-project bionic/
-commit 4c16799dd7efc8b96980b1e09ee21d4d14ef380a
-Merge: d680ccd c1271d4
-Author: ZION959 <ziontran@gmail.com>
-Date:   Wed Apr 22 20:41:03 2015 -0700
-
-    Merge remote-tracking branch 'temasek/cm-12.1' into cm-12.1
-
 project bootable/recovery/
 commit 0225ffe3ff195eae032131b0c1ff9c9fb87fc047
 Author: Danny Baumann <dannybaumann@web.de>
@@ -788,15 +780,6 @@ Date:   Wed Apr 29 13:16:48 2015 -0600
     
     This reverts commit c7714ef085ab2cdb53fdc77a7e60588f5d4d3f98.
 
-project device/qcom/common/
-commit 32e22e100035d46985feaffdba6b9b0dc102fd16
-Author: Manikanta Kanamarlapudi <kmanikan@codeaurora.org>
-Date:   Tue Apr 7 14:45:29 2015 +0200
-
-    Allow msm8916 platforms to specify their TARGET_LIBINIT_DEFINES_FILE file
-    
-    Change-Id: Ieaa191153205d66f3b77acdea0c8b0b5bb92d938
-
 project device/samsung/hlte/
 commit 6b115c7d776328ee882dc92cb3783db50b07ed6f
 Author: ZION959 <ziontran@gmail.com>
@@ -842,114 +825,7 @@ Date:   Thu Apr 23 01:02:36 2015 -0600
     Change-Id: I6310e5de115a33dd24e7ece32edd652ec2131a0d
     Signed-off-by: Paul Beeler <pbeeler80@gmail.com>
 
-project external/wpa_supplicant_8/
-commit 4b8ef3cdb91739828b66b668f66a4f6b81f34e09
-Author: Jouni Malinen <jouni@qca.qualcomm.com>
-Date:   Tue Apr 7 11:32:11 2015 +0300
-
-    P2P: Validate SSID element length before copying it
-    
-    This fixes a possible memcpy overflow for P2P dev->oper_ssid in
-    p2p_add_device(). The length provided by the peer device (0..255 bytes)
-    was used without proper bounds checking and that could have resulted in
-    arbitrary data of up to 223 bytes being written beyond the end of the
-    dev->oper_ssid[] array (of which about 150 bytes would be beyond the
-    heap allocation) when processing a corrupted management frame for P2P
-    peer discovery purposes.
-    
-    This could result in corrupted state in heap, unexpected program
-    behavior due to corrupted P2P peer device information, denial of service
-    due to process crash, exposure of memory contents during GO Negotiation,
-    and potentially arbitrary code execution.
-    
-    Thanks to Google security team for reporting this issue and smart
-    hardware research group of Alibaba security team for discovering it.
-    
-    Signed-off-by: Jouni Malinen <jouni@qca.qualcomm.com>
-    
-    (cherry picked from commit fdb708a37d8f7f1483e3cd4e8ded974f53fedace)
-    
-    Change-Id: Ibc53ff533f78cfcd7c51fbb5d5494b828f184cc8
-
 project frameworks/av/
-commit 4bef462d0b90f5902cb8f4d25933f7f31b2edd31
-Author: Peter Karlsson <peter1.karlsson@sonymobile.com>
-Date:   Thu Aug 15 16:11:22 2013 +0200
-
-    MPEG4Writer: fix mMoovBoxBuffer memory leak
-    
-    In some cirumstances the writing of the moov box
-    leaks memory since mMoovBoxBuffer is not freed.
-    
-    Change-Id: I441360f6c7e84e31fea06067eca98b66b86b54bc
-
-commit 07fa0787d8a3deba34d70b29cd42475f2f48ac72
-Author: Patrik2 Carlsson <patrik2.carlsson@sonymobile.com>
-Date:   Fri Jan 10 15:34:24 2014 +0100
-
-    Correctly handle unsupported OMX color format
-    
-    MediaServer was caught in an infinite loop at OMX::getParameter.
-    
-    OMX::getParameter returns status_t, using OMX_ErrorNoMore to loop
-    until the index passes beyond the last supported format
-    will not work since this function only returns ERROR_UNSUPPORTED.
-    
-    Change-Id: Idde94a46af24641c0e5f1db909335db4c7e2b7f7
-
-commit e9c6b8ec2d10602556663601d0b80bf03aa1b0c6
-Author: Martin Storsjo <martin@martin.st>
-Date:   Thu Nov 27 22:51:14 2014 +0200
-
-    Use define for drm property keys instead of defining as char pointers
-    
-    When defined as char pointers, every compilation unit that includes
-    the NdkMediaDrm.h header defines a new copy of the same global
-    variables - leading to linker errors due to multiple definitions
-    if more than one file includes it.
-    
-    By using a define, they don't generate any symbols. The NdkMediaFormat.h
-    header uses extern const char* for a similar set of keys, but that
-    can't be added after the actual platform has shipped. The other
-    alternative would be to declare them as static const char*, which
-    wouldn't generate global symbols, but which could trigger warnings
-    about unused static symbols instead.
-    
-    Change-Id: I14ca81d94309b7f437b3bc144920c48a8b3f0261
-
-commit c90aed9653fd9c5794dbbcae24423cd827486ef1
-Author: John Lin <jolin@mozilla.com>
-Date:   Mon Feb 2 18:10:42 2015 +0800
-
-    camera2: fix various BpCameraDeviceUser methods to return correct result.
-    
-    - submitRequest*(): res is the request ID and not always equals to NO_ERROR.
-    - cancelRequest() and flush(): the result of reading last frame number should be put in resFrameNumber, not in res.
-    
-    Change-Id: Ic81c58f4ac14c05b3db4bdc5c99f48d00665d3fc
-    Signed-off-by: John Lin <jolin@mozilla.com>
-
-commit e489f3f5f8160a7d51d9b0ce687beef65c10dc3b
-Author: arter97 <qkrwngud825@gmail.com>
-Date:   Thu Jan 29 20:55:37 2015 +0900
-
-    Enable -Os back to ID3
-    
-    Aggressive -O2, -O3 optimizations on GCC 4.9 causes a seg-fault on playing some music tracks.
-    
-    So enable -Os back to ID3.
-    
-    Change-Id: I001b3ed98882a671dea10c449bf42cfdb86e2ca3
-    Signed-off-by: arter97 <qkrwngud825@gmail.com>
-
-commit bdc78b5a95c4c2f33c1dc5805923df1842aa51a8
-Author: Muhammed Nazim <mnm9994u@gmail.com>
-Date:   Sat Nov 29 11:17:12 2014 +0100
-
-    Forward Port: Add Camera sound toggle [3/3]
-    
-    Change-Id: I0228c443489881e361a5eedead8e5f98ca06beb4
-
 commit 0e03875bee979afe39bdbca30e23b15d7739171b
 Author: Ricardo Cerqueira <ricardo@cyngn.com>
 Date:   Sun Apr 26 00:57:04 2015 +0100
@@ -969,97 +845,6 @@ Date:   Sat Apr 25 17:44:31 2015 -0700
     Merge remote-tracking branch 'CM/cm-12.1' into cm-12.1
 
 project frameworks/base/
-commit 64f477f9cfd44bd7db42585471bb54845aabef3a
-Author: Allan Hedelain <tristan202@gmail.com>
-Date:   Wed Apr 22 21:29:54 2015 -0700
-
-    SystemUI: Add back status bar clock color option (1/2)
-    
-    Reference
-    https://github.com/temasek/android_frameworks_base/commit/3eee47fd171042ac98eb58717ac0b935e4198218
-    
-    Modified for use on cm-12.1
-    
-    Conflicts:
-    	core/java/android/provider/Settings.java
-    
-    Change-Id: I2b9af5e94c93be7163d4a6fee0585fafee6bf32d
-
-commit f24f0a235a2a3c8e133b96f6caf881451e0210f8
-Author: Daxxmax <>
-Date:   Wed Apr 22 21:32:39 2015 -0700
-
-    [WIP] Statusbar clock font style (1/2)
-    
-    PS1: Initial
-    PS2: Int settings
-    
-    Change-Id: Iafb811b9f819a100940fdeeaa2c657483c039950
-    
-    Modified for use in cm-12.1
-    
-    Conflicts:
-    	core/java/android/provider/Settings.java
-
-commit dc0a3a302b54f40d757c59fabb688e1e3543da33
-Author: Jubakuba <Jubakuba@gmail.com>
-Date:   Fri Oct 17 00:39:40 2014 -0600
-
-    Framework: StatusBar Ticker (1/2)
-    
-    Change-Id: I6135297792c7b42172e08e14acd37b252cb00102
-    
-    Conflicts:
-    	core/java/android/provider/Settings.java
-    	packages/SystemUI/src/com/android/systemui/statusbar/phone/PhoneStatusBar.java
-
-commit 149051df9e7209fd5dfbe58b55c72a2c3b6930b9
-Author: neighbors28 <sjp0728@gmail.com>
-Date:   Thu Apr 23 00:20:47 2015 -0700
-
-    Frameworks/base: Second Clock (1/2)
-    
-    Dokdo-Project/platform_frameworks_base@6ab5d62#diff-1fa71c270d063a48f921f0760d10c7f3R122
-    
-    PS2: Fu Whitespace
-    PS3: small Issue
-    
-    Change-Id: Ie04942ae1bb1649d18db51086b46666b56ef1ea0
-    
-    Conflicts:
-    	core/java/android/provider/Settings.java
-
-commit b04775afc02b0bd1ba9cae95cbabb82d13bcb6a4
-Author: abun880007 <tigger2014@team-ub.co.uk>
-Date:   Thu Apr 23 03:17:34 2015 +0100
-
-    Revert "systemui: adjust position of clear recents button"
-    
-    This reverts commit 4725e899158828b3e28e7148759e75713bc2f581.
-    
-    Conflicts:
-    	packages/SystemUI/src/com/android/systemui/recents/views/RecentsView.java
-    
-    Change-Id: I13cc46289446e19229b2f61d1c4a39510828a0c0
-
-commit c8793f43fb6f1467708c8c4434dd2945b635e262
-Author: Raj Yengisetty <rajesh@cyngn.com>
-Date:   Wed Apr 22 16:05:30 2015 -0700
-
-    Protected Apps: do not filter components from the same UID
-    
-    Change-Id: Ia4f46b5295d97b2f297ba9a5d37e66728659ea0e
-    (cherry picked from commit c1bac80adee33a15b9f2c13833ea52a3fca163aa)
-
-commit 8745723a084d2ee67e7c18e67c081137dee7cdaa
-Author: Alexander Martinz <eviscerationls@gmail.com>
-Date:   Wed Apr 22 23:49:12 2015 +0200
-
-    Keyguard: only tint the sim card drawable when multisim is enabled
-    
-    Change-Id: Ia0634a9ace63496f806ac8345bcc47bfc0b415cb
-    Signed-off-by: Alexander Martinz <eviscerationls@gmail.com>
-
 commit 370a23c727e5618f55184035784fbbd71e160e29
 Author: d34d <clark@cyngn.com>
 Date:   Mon Apr 13 12:08:49 2015 -0700
@@ -1970,6 +1755,210 @@ Date:   Tue Apr 28 03:05:19 2015 -0700
     
     Conflicts:
     	core/java/android/provider/Settings.java
+
+commit 3da027ea507b0f22e902d04d8458e87cd4c04463
+Author: Richard MacGregor <rmacgregor@cyngn.com>
+Date:   Wed Apr 15 17:13:40 2015 -0700
+
+    Apply sounds on theme update
+    
+    Add content observer so themeservice knows whether ringtone was
+    changed outside of themes.
+    
+    Change-Id: I83a5dff8e9574019f4d1a5bd58368b0ec3c09c88
+
+commit f9d10ddb15a427277e14abecee8ee32c35bb2d71
+Author: Danny Baumann <dannybaumann@web.de>
+Date:   Tue Apr 28 10:55:15 2015 +0200
+
+    Unset frame listener before tearing down GLThreadManager.
+    
+    Otherwise might lead to messages being delivered to the then dead
+    mGLHandlerThread via RequestThreadManager.mPreviewCallback ->
+    GLThreadManager.queueNewFrame().
+    
+    Change-Id: I60001149787c584bfee88c961f1e07cdb8cf3927
+
+commit 3e66f1cbb8f3e82ff5184a2dac7fa485db014563
+Author: Roman Birg <roman@cyngn.com>
+Date:   Wed Apr 15 09:19:09 2015 -0700
+
+    Torch: remind user flashlight is still on
+    
+    Post a notification which informs the user the flashlight is still
+    enabled. But only do this when the user turns the screen off *while* the
+    flashlight is still on, so they see it next time they use the device.
+    Tapping on the notification will disable the flashlight.
+    
+    Change-Id: I3689ff6498b97b813ccc10dc7dca3527fc8455aa
+    Signed-off-by: Roman Birg <roman@cyngn.com>
+
+commit d08ecfcf1eb599e873d35522bc2af3ef7a5abbea
+Author: Taiju Tsuiki <tzik@google.com>
+Date:   Wed Apr 22 16:59:00 2015 +0900
+
+    Fix NullPointerException in Bundle#hasFileDescriptors
+    
+    Add null check for array elements in Bundle#hasFileDescriptors to avoid NPE on
+    null valued array.
+    
+    Change-Id: Ic6ef8864ca6add023c7a69ba3c9474b0f6291723
+
+commit 0c8b2cdc52629fadf92a6fe168c6e234aecb2df6
+Author: Taiju Tsuiki <tzik@google.com>
+Date:   Tue Apr 28 13:36:15 2015 +0900
+
+    Fix NPE in Bundle#hasFileDescriptor on null-valued SparseArray
+    
+    Add a null check for each values of SparseArray in Bundle#hasFileDescriptor
+    to avoid NullPointerException.
+    
+    Change-Id: I43ecc01f2759ccbe85b902fa118d55cb74ebf38b
+
+commit d0481e081e03120a0ad2e22aca8fab0a2a418e2e
+Author: Henrik Engström <henrik.engstrom@sonymobile.com>
+Date:   Tue Apr 24 15:30:19 2012 +0200
+
+    Fix for infinite loop in RemoteViewsAdapter
+    
+    This patch fixes an error in RemoteViewsAdapter when there is only one
+    view in the cache, and it is bigger than the cache size threshold. This
+    would cause the cleanup of the cache to get stuck in an infinite loop
+    while holding the mCache lock that is also needed by for example
+    getView which is called on the UI thread, leading to ANRs. This patch
+    breaks the loop when it sees that it can not remove the next view up
+    for removal.
+    
+    Change-Id: I331259bb10eae9fe91e5112102e08f49cc078a1b
+
+commit 9f42bcf59a548c15ee6dde69f5048acffce5f336
+Author: UtkarshGupta <utkarsh.eminem@gmail.com>
+Date:   Wed Apr 29 19:40:49 2015 -0700
+
+    [1/2] Battery light: 100% charged level
+    
+    Conflicts:
+    	core/java/android/provider/Settings.java
+
+commit 3f75cb94bf0f461246b4c59e7bd26e325cc674a1
+Author: Danny Baumann <dannybaumann@web.de>
+Date:   Tue Apr 28 12:46:41 2015 +0200
+
+    Fix fetching application context for ThemedUiContext.
+    
+    Change-Id: I7719fc8823fef93556f5a9ab088a77b73cf7eeff
+    
+    Patchset: 3
+    http://review.cyanogenmod.org/#/c/96386/
+
+commit a0422c3e3e76956627dd4dd2626dca3d8b5b634f
+Author: Lars Greiss <kufikugel@googlemail.com>
+Date:   Wed Apr 29 19:54:37 2015 -0700
+
+    Frameworks: Add ability to control default value of DOZE_ENABLED
+    
+    Devices can enable the doze feature. Devices without AMODLED screens can use it
+    but it will use then of course more battery. This devices should disable this feature
+    by default and let the user decide to turn it on.
+    
+    to change the default behaviour add into device overlay
+    
+    config_doze_enabled_by_default and set it to false
+    
+    Change-Id: I1afbf1d09fa0d7e68aea40f2f165a72ff34d0040
+    
+    Conflicts:
+    	core/res/res/values/cmr_config.xml
+    	core/res/res/values/cr_symbols.xml
+
+commit 6cf375416da5cb2b31f78c1f5c1d568e50293755
+Author: Mikael Gullstrand <mikael.gullstrand@sonymobile.com>
+Date:   Tue Jul 9 14:41:28 2013 +0200
+
+    Context leaks in EditText causes out of memory
+    
+    In android.widget.Editor, Blink runnables can be posted even if
+    the related TextView is not attached to a window. If a message has
+    been posted to the Blink message queue and the run method of
+    the Blink runnable has started executing, the removeCallbacks call
+    in onDetachFromWindow method is not enough to abort the execution
+    of the Blink runnable. This results in a memory leak when
+    the activity is destroyed.
+    
+    The solution is to cancel the execution of the Blink runnable by
+    calling the suspendBlink method from onDetachFromWindow method.
+    Hence the Blink thread will halt, and the referenced context can
+    be released by GC when the activity is destroyed. Also adding
+    a corresponding resumeBlink method call in onAttachedToWindow
+    to start executing the Blink runnable.
+    
+    Change-Id: Icb26c9c947b3cc1158f7629ae35d7b4e42b80f17
+
+commit 04878974c6d62a1eea4423ef5597c8acf82ca778
+Author: Lin Ma <lma@cyngn.com>
+Date:   Wed Mar 25 17:44:52 2015 -0700
+
+    Fix ro.telephony.default_network setting parsing
+    
+    * The code that parses ro.telephony.default_network is broken,
+    instead of reading numbers separate by comma, it reads the first
+    number and replicates it for other slots. Settings like "8,1" will
+    be written to the db as "8,8"
+    
+    Conflicts:
+    	packages/SettingsProvider/src/com/android/providers/settings/DatabaseHelper.java
+    
+    Change-Id: I6b77000e00ada02ec89b09c752a9b337a6a8182b
+    
+    Patchset: 2
+    http://review.cyanogenmod.org/#/c/96401/
+
+commit 76921219c7d8d3267a02df1aa05424c93b966b7f
+Author: Patrick Lower <devvortex@gmail.com>
+Date:   Wed Apr 29 15:25:46 2015 -0400
+
+    MMS (change 1 of 2): Add DATA_PROFILE_MMS constant = 5 to RILConstants.
+    
+    Some carriers require a separate apn just for MMS.  RIL needs to be aware of this differnt type in order to set the correct network interface information and not interfere with the existing data connection.
+    
+    Change (2 of 2) 96584
+    Change-Id: I793982c1f2032e98a069ff86a748301af4ff6377
+    
+    Patchset: 2
+    http://review.cyanogenmod.org/#/c/96582/
+
+commit c1dbd2756034df84e3e3341e8bb035c431d2673a
+Author: Danny Baumann <dannybaumann@web.de>
+Date:   Thu Apr 23 09:28:43 2015 +0200
+
+    Clean up keyguard carrier text handling.
+    
+    Return to AOSP code, which both simplifies the code and fixes the
+    left alignment.
+    
+    Change-Id: I1b8974948ace3d55ff92eceace7ea22b715d010d
+    
+    Patchset: 1
+    http://review.cyanogenmod.org/#/c/95932/
+
+commit 50d446011731fa572a136f77339373eb89b91a80
+Author: dankoman <dankoman30@gmail.com>
+Date:   Fri Mar 20 16:54:05 2015 +0100
+
+    slimseekbarpreference: set monitorbox text as string
+    
+    setting as integer was trying to reference a resId,
+            so integer needs to be converted to string
+            before setting monitorbox text.
+    Change-Id: I085d49240be30e12475db7d88d3b2154d2e65ffd
+
+commit 35e8ce98ee63ed8dd1555cb7da824159b64a7449
+Author: d34d <clark@cyngn.com>
+Date:   Wed Apr 29 09:04:47 2015 -0700
+
+    Themes: include new icon features in shouldComposeIcon()
+    
+    Change-Id: I509ae1989fe1ec701cec7bc6ead78ab4e69bd64d
 
 project frameworks/native/
 commit f22a457adc407a64abf1bfcf9846aaa6136479d9
@@ -3021,52 +3010,6 @@ Date:   Sun Apr 26 11:07:19 2015 -0700
     Signed-off-by: Roman Birg <roman@cyngn.com>
 
 project packages/apps/Settings/
-commit d45bde0c2e3a93af76499a41327841546e3735f7
-Author: Jubakuba <Jubakuba@gmail.com>
-Date:   Wed Apr 22 21:45:50 2015 -0700
-
-    Settings: StatusBar Ticker (2/2)
-    
-    PS: MIspeeliings.
-    
-    Change-Id: I02cf9192c3ba62111a41e7da52cf4c343a589392
-    
-    Conflicts:
-    	res/values/cr_strings.xml
-    	res/xml/status_bar_settings.xml
-    	src/com/android/settings/slim/StatusBar.java
-    
-    Conflicts:
-    	res/xml/status_bar_settings.xml
-    	src/com/android/settings/cyanogenmod/StatusBarSettings.java
-
-commit d2d29ab4bddf6d9ebf3a7d1d203a9c02a360d95e
-Author: tristan202 <tristan202@gmail.com>
-Date:   Wed Apr 22 21:50:40 2015 -0700
-
-    Settings: add back status bar color option (2/2)
-    
-    Conflicts:
-    	res/values/cmr_strings.xml
-    	res/xml/status_bar_settings.xml
-    	src/com/android/settings/cyanogenmod/StatusBarSettings.java
-    
-    Change-Id: I9180ac30fbd3e177235635ef66c89fa595e86019
-
-commit 06fc81d460567705bb8b9b38f6ad9e724e8b811e
-Author: Janson Kang <temasek71@gmail.com>
-Date:   Wed Apr 22 21:53:16 2015 -0700
-
-    Statusbar clock font style (2/2)
-    
-    Modified to use on cm-12.1
-    
-    Conflicts:
-    	res/xml/status_bar_settings.xml
-    	src/com/android/settings/cyanogenmod/StatusBarSettings.java
-    
-    Change-Id: I58f581f7af4c8e2ef439f56ef1ddb2df09fd3d0a
-
 commit ff3524f4386dffd0f0b4e809cc1f25cbbaf86b10
 Author: LorDClockaN <davor@losinj.com>
 Date:   Thu Apr 23 01:51:41 2015 -0700
@@ -3474,6 +3417,68 @@ Author: ZION959 <ziontran@gmail.com>
 Date:   Tue Apr 28 14:25:54 2015 -0700
 
     reoganized slim trds
+
+commit 87e1c5002176bbb6c6148a71c8ba06d39ccfe682
+Author: Janson Kang <temasek71@gmail.com>
+Date:   Wed Apr 29 21:55:12 2015 -0700
+
+    Fix breathing sms/misscall/voicemail + add mobile check
+    
+    Conflicts:
+    	res/values/cmr_strings.xml
+    	res/xml/status_bar_settings.xml
+
+commit 1d99a053e21610a4f900481ece62016bb43955c2
+Author: Utkarsh Gupta <utkarsh.eminem@gmail.com>
+Date:   Wed Apr 1 00:00:00 2015 +0000
+
+    [2/2] Battery light: 100% charged level
+
+commit 3779f65aadefd97a8288859a27147304ba679774
+Author: Utkarsh Gupta <utkarsh.eminem@gmail.com>
+Date:   Wed Apr 1 00:00:00 2015 +0000
+
+    Allow restricted profiles on phones
+
+commit 7354ab876592d840eba37c3a3d355bc59295d3ae
+Author: Utkarsh Gupta <utkarsh.eminem@gmail.com>
+Date:   Wed Apr 1 00:00:00 2015 +0000
+
+    Re-enable CPU governor & min/max freq settings
+
+commit d23c677e4a50d8dfb0833c0c6417defe2d6f1e43
+Author: Janson Kang <temasek71@gmail.com>
+Date:   Wed Apr 29 15:03:27 2015 +0800
+
+    Update PIE Control
+
+commit f41f19f5bb79886ef6e1d8e0aefec5de9caa16a1
+Author: Altaf-Mahdi <altaf.mahdi@gmail.com>
+Date:   Sun Mar 1 19:15:34 2015 +0000
+
+    Display settings: show enabled/disabled summary for ambient display
+    Change-Id: I97aee7aafd69f3e60d2c518aa514a7cd1dff9ecf
+    
+    Conflicts:
+    	res/values/custom_strings.xml
+
+commit 3a9299f4bc2a6279a06e247bceb7475ee3d6f0bc
+Author: Altaf-Mahdi <altaf.mahdi@gmail.com>
+Date:   Wed Apr 29 21:37:19 2015 -0700
+
+    Display settings: remove ambient display screen when advanced mode is disabled
+    
+    now when advanced mode is disabled ambient display will be a simple switch preference
+    
+    Change-Id: Ia50897590b56a7d295255828da3d62e9535c0c60
+    
+    Conflicts:
+    
+    	res/xml/display.xml
+    	src/com/android/settings/DisplaySettings.java
+    
+    Conflicts:
+    	res/xml/display.xml
 
 project packages/apps/SlimLauncher/
 commit 545bd8acc5ebeadcb14f7e3fda51b875ef8fa274
@@ -4357,13 +4362,6 @@ Date:   Sun Apr 26 14:45:47 2015 -0700
     Change-Id: I6d516fd6edd6d51bec2cdb389cf731f96e2dbf55
 
 project system/core/
-commit 00a598acc1706d2582b773fe12ef804af1cafab1
-Merge: 3e859ca 2ded621
-Author: ZION959 <ziontran@gmail.com>
-Date:   Wed Apr 22 20:35:04 2015 -0700
-
-    Merge remote-tracking branch 'CM/cm-12.1' into cm-12.1
-
 commit 01e3a95295ea8f1e93ee1fea0e951dcac643deef
 Author: Andreas Gampe <agampe@google.com>
 Date:   Thu Nov 13 15:50:17 2014 -0800
