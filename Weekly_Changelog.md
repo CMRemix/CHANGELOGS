@@ -1,10 +1,4 @@
 project CMRemix/
-commit 2818d03ccc1c5373eea7fc102e478e08deea1cae
-Author: ZION959 <ziontran@gmail.com>
-Date:   Tue Apr 21 23:32:13 2015 -0700
-
-    revert : remove cm sepolicy (reverted from commit 8b1ef764e0b5cbfed9448e77d600da1d3293aef2)
-
 commit 67ad1ab9392690288059d61aadad60abf51d6e71
 Author: ZION959 <ziontran@gmail.com>
 Date:   Fri Apr 24 00:23:48 2015 -0700
@@ -69,196 +63,7 @@ Date:   Tue Apr 28 19:00:58 2015 -0700
 
     fixed copy and past again
 
-project art/
-commit 9ca349e4518784f0469eb883c7432214c7b103ae
-Author: frap129 <frap129@gmail.com>
-Date:   Wed Feb 18 15:18:59 2015 -0500
-
-    Add all cortex-a15 variants
-    
-    Change-Id: Ice5325d3bab6d4d54f32d379df63ce23e8132484
-    Signed-off-by: frap129 <frap129@gmail.com>
-
-commit ec5e5e3dbf5842b6c79fed755dd172002cba7bcc
-Author: frap129 <frap129@gmail.com>
-Date:   Wed Feb 18 15:14:11 2015 -0500
-
-    Don't Allow Backups
-    
-    Change-Id: Ib9e383dd31128b2f0d9f20cc8913f4a1b7f1f52e
-    Signed-off-by: frap129 <frap129@gmail.com>
-
-commit 1eb1e726e59c11059896de30b2199905166525ee
-Author: frap129 <frap129@gmail.com>
-Date:   Wed Apr 22 15:20:10 2015 -0700
-
-    Disable Clang as Host Compiler
-    
-    Change-Id: I21ef1ebe6a9f636dc0c3593f1e417423a3db874d
-    Signed-off-by: frap129 <frap129@gmail.com>
-    
-    Conflicts:
-    	build/Android.common_build.mk
-
-commit 7f3ce6180f8861ca0e0f7a5a46cb0384b1507898
-Author: Joe Maples <frap129@gmail.com>
-Date:   Sat Feb 21 14:53:06 2015 -0500
-
-    Add Non-debug cflags to debug cflags
-    
-    Change-Id: Iff032413c00802028ca57e62a221fe4f01e1dc9e
-
 project bionic/
-commit 50b9f661b80ea37fd55a24879906ec433167fb7d
-Author: frap129 <frap129@gmail.com>
-Date:   Tue Feb 17 10:11:42 2015 -0500
-
-    Disable Clang
-    
-    Change-Id: Ic7eee45f8a5befe0f18334485e6d2b18bffeb319
-    Signed-off-by: Chet Kener <Cl3Kener@gmail.com>
-
-commit 2b5031205d6368bcc2b7e35e0ad354d4b489d227
-Author: Chet Kener <Cl3Kener@gmail.com>
-Date:   Sun Jan 18 08:21:27 2015 -0500
-
-    Remove gnu99
-    
-    Too old
-    
-    Change-Id: I31a06bb0f52211604f975c744b21d01da186273c
-    Signed-off-by: Chet Kener <Cl3Kener@gmail.com>
-
-commit 6a98db443dd91893ed6f7f5242c8abf7b5d68c82
-Author: Vishal Mahaveer <vishalm@ti.com>
-Date:   Fri Nov 14 13:17:14 2014 -0600
-
-    libc: Add AF_RPMSG and PF_RPMSG
-    
-    Add AF_RPMSG and update AF_MAX accordingly.
-    Also add other missing families.
-    
-    Change-Id: I6744e301abd687cda3f49f3c33785ec867e92489
-    Signed-off-by: Vishal Mahaveer <vishalm@ti.com>
-    Signed-off-by: Chet Kener <Cl3Kener@gmail.com>
-
-commit 69397deea3698537a6ca1e7ab9208d2963ddf513
-Author: Bernhard Rosenkraenzer <Bernhard.Rosenkranzer@linaro.org>
-Date:   Mon May 19 13:16:41 2014 +0200
-
-    Add Aarch64 optimized bzero based on memset
-    
-    Change-Id: I62cf25bfe23b9d811e00af7307bbd19d89937792
-    Signed-off-by: Bernhard Rosenkraenzer <Bernhard.Rosenkranzer@linaro.org>
-    Signed-off-by: Chet Kener <Cl3Kener@gmail.com>
-    
-    Conflicts:
-    	libc/arch-arm64/generic/bionic/memset.S
-    	libc/arch-arm64/generic/generic.mk
-    	libc/bionic/__libc_current_sigrtmax.cpp
-    
-    Signed-off-by: Chet Kener <Cl3Kener@gmail.com>
-
-commit 1d458e4ff8d9684a2bfd256d0bd26e0db987a94c
-Author: Kyle Repinski <repinski23@gmail.com>
-Date:   Sun Dec 7 12:04:27 2014 -0600
-
-    Fix mbstate_t strict-aliasing violations.
-    
-    Change-Id: Ib8463bdba036376a7777e1ae436c85087c8aaa8a
-    Signed-off-by: Chet Kener <Cl3Kener@gmail.com>
-
-commit 9139633b6a0f7844a0e6fd6a3fec41188a0ead34
-Author: Kyle Repinski <repinski23@gmail.com>
-Date:   Wed Dec 10 15:57:23 2014 -0600
-
-    libc: Fix strict aliasing violation.
-    
-    Change-Id: I6d1ebd2cc258826cdfcefbc9f0694c2ba68d4597
-    Signed-off-by: Chet Kener <Cl3Kener@gmail.com>
-
-commit 6e35c39d3951265a572f72d7fd376327dc3ac3fa
-Author: Yingshiuan Pan <yingshiuan.pan@linaro.org>
-Date:   Wed Mar 18 16:08:05 2015 +0800
-
-    libc: arm: a15: add optimized memcpy implementation
-    
-    This optimization is extracted from cortex-strings and bionic-ized, then
-    applied to Cortex-A15 cpu. This optimization requires NEON for armv7-a or
-    vfpv2 for armv6. NEON is optional in cortex-a9, so I did not change
-    cortex-a9.mk.
-    
-    This new implementation does not have __memcpy_chk(), so __memcpy_chk.cpp
-    is included for arch which uses the new implementation.
-    
-    Change-Id: If3e11f9df4694dee3d3d8a5297817d1bc2a41d6e
-    Signed-off-by: Yingshiuan Pan <yingshiuan.pan@linaro.org>
-    Signed-off-by: arter97 <qkrwngud825@gmail.com>
-
-commit 504cd860eea37e0a321df15952bfdab6a08b8ec8
-Author: arter97 <qkrwngud825@gmail.com>
-Date:   Thu Apr 16 01:12:50 2015 +0900
-
-    Revert "krait: use A15 memchr"
-    
-    This reverts commit 60a7b89100ff12ef19d7e92397cb99d43277753e.
-    
-    Change-Id: I81b27c6ac9fa4daf21a894b8547fe6c99b6e5fda
-
-commit 86261cf5112cb811d46bd5c7ba9aa86005c6a778
-Author: arter97 <qkrwngud825@gmail.com>
-Date:   Thu Apr 16 01:13:42 2015 +0900
-
-    Revert "Import memchr implementation from cortex-strings for Cortex A15"
-    
-    This reverts commit 9f7adb469946bb4375f9f4489517221702529740.
-    
-    Change-Id: I14326f7b0138d89a457d40bbe97635541547cb83
-    Signed-off-by: arter97 <qkrwngud825@gmail.com>
-
-commit a22928891a4dee15ac99054a56de936db5bb982d
-Author: Yingshiuan Pan <yingshiuan.pan@linaro.org>
-Date:   Wed Mar 18 10:29:03 2015 +0800
-
-    libc: arm: add optimized memchr implementation
-    
-    This optimization is extracted from cortex-strings and bionic-ized,
-    then applied to all arm-v7a cpu (a9, a15, denver, krait)
-    
-    Change-Id: I82f43c8a4a1993f5d063226c4b4ea5866148bb99
-    Signed-off-by: Yingshiuan Pan <yingshiuan.pan@linaro.org>
-
-commit 2540cfc2f61088ab027e800904fafb08fca925a2
-Author: arter97 <qkrwngud825@gmail.com>
-Date:   Tue Nov 11 20:37:12 2014 +0900
-
-    linker: convert 'mov pc' instruction to 'bx'
-    
-    Let's follow Linux 3.17 : https://github.com/torvalds/linux/commit/6ebbf2ce437b33022d30badd49dc94d33ecfa498
-    
-    The only problem is we don't know if the target is ARMv6+ or not.
-    
-    ARMv6+ should be fine with this patch.
-    
-    Signed-off-by: arter97 <qkrwngud825@gmail.com>
-    
-    Conflicts:
-    	linker/arch/arm/begin.S
-    
-    Change-Id: I5ca9d0c6349fa29b467f6e957f4dbe1eae9bc4af
-
-commit d680ccdc078e00d5671f38c89a8377cae78b91e2
-Author: arter97 <qkrwngud825@gmail.com>
-Date:   Sun Mar 22 12:31:59 2015 +0900
-
-    Re-export libgcc's __aeabi_fcmplt
-    
-    This is required to make proprietary libsam.so sensor driver from ks01lte work on a system
-    compiled with the latest Linaro toolchain.
-    
-    Change-Id: I602feb0f98a3c7bf61cb07e52837d72504782c6b
-    Signed-off-by: arter97 <qkrwngud825@gmail.com>
-
 commit 4c16799dd7efc8b96980b1e09ee21d4d14ef380a
 Merge: d680ccd c1271d4
 Author: ZION959 <ziontran@gmail.com>
@@ -966,6 +771,23 @@ Date:   Tue Apr 28 10:44:20 2015 -0600
     Change-Id: I2bd7a1a554b0680faa2da36be1866e8f57e0166c
     Signed-off-by: Paul Beeler <pbeeler80@gmail.com>
 
+commit 3ae29bccd6304fba3b45d850d169bf649dd16ffc
+Author: Paul Beeler <pbeeler80@gmail.com>
+Date:   Wed Apr 29 13:11:59 2015 -0600
+
+    Update for vendor changes
+    
+    Change-Id: I16418f4d80cc9ba4cdd557fe748d9d5d594401eb
+    Signed-off-by: Paul Beeler <pbeeler80@gmail.com>
+
+commit c8b8054d1d931aefbd63b47792ccd77197e83141
+Author: Paul Beeler <pbeeler80@gmail.com>
+Date:   Wed Apr 29 13:16:48 2015 -0600
+
+    Revert "Add a option to disable vectorization flags (2/2)"
+    
+    This reverts commit c7714ef085ab2cdb53fdc77a7e60588f5d4d3f98.
+
 project device/qcom/common/
 commit 32e22e100035d46985feaffdba6b9b0dc102fd16
 Author: Manikanta Kanamarlapudi <kmanikan@codeaurora.org>
@@ -974,17 +796,6 @@ Date:   Tue Apr 7 14:45:29 2015 +0200
     Allow msm8916 platforms to specify their TARGET_LIBINIT_DEFINES_FILE file
     
     Change-Id: Ieaa191153205d66f3b77acdea0c8b0b5bb92d938
-
-project device/qcom/sepolicy/
-commit 1ccdd65d0e1776743f2b6c4f8728e29dba432849
-Author: Ricardo Cerqueira <ricardo@cyngn.com>
-Date:   Wed Apr 22 01:28:18 2015 +0100
-
-    uncrypt needs to write to the BCB
-    
-    and in QC hardware, that's misc_partition...
-    
-    Change-Id: I1d2f5d11423f01435f17f0e6f5d418cc0ce30e9d
 
 project device/samsung/hlte/
 commit 6b115c7d776328ee882dc92cb3783db50b07ed6f
@@ -1032,18 +843,6 @@ Date:   Thu Apr 23 01:02:36 2015 -0600
     Signed-off-by: Paul Beeler <pbeeler80@gmail.com>
 
 project external/wpa_supplicant_8/
-commit f5650dc7156306a7380741ebcdd40306697b96f9
-Author: Diogo Ferreira <diogo@underdev.org>
-Date:   Mon Mar 23 13:10:49 2015 +0000
-
-    wpa_supplicant: Force the p2p channels to reuse frequencies used by STA
-    
-    In the mediatek platform the performance of p2p connections will
-    degrade significantly if different frequences are used for STA and
-    P2P.
-    
-    Change-Id: I8bd7e4a3f10177c99d273eccb88c8590fcbe3d34
-
 commit 4b8ef3cdb91739828b66b668f66a4f6b81f34e09
 Author: Jouni Malinen <jouni@qca.qualcomm.com>
 Date:   Tue Apr 7 11:32:11 2015 +0300
@@ -1170,128 +969,6 @@ Date:   Sat Apr 25 17:44:31 2015 -0700
     Merge remote-tracking branch 'CM/cm-12.1' into cm-12.1
 
 project frameworks/base/
-commit e08fa8b4972cabd0376e739837e55dfb9357354d
-Author: ZION959 <ziontran@gmail.com>
-Date:   Wed Apr 22 13:19:18 2015 -0700
-
-    add CMRemix Logo
-    
-    Change-Id: I478de9ba32b37b69713ddfef861900b2e7b0e941
-
-commit bae5581b5fb5f54742faec12356d82ab96ab4d84
-Author: Grigoriy Kraynov <grigoriy.kraynov@gmail.com>
-Date:   Fri Apr 17 22:18:41 2015 +0300
-
-    Remove minimal dead zone at navigation bar (fix Nexus 4)
-    
-    Some Nexus 4 devices have severe hardware issue when bottom touches
-    floors to 16px and resides in deadzone forever and phone is unusable.
-    
-    Issue: /a/41219
-    Change-Id: I1a1543745d51f5df7588d3cc2e54bf537113ffd2
-    Signed-off-by: Chet Kener <Cl3Kener@gmail.com>
-
-commit 15383dd049bc580f0ab8057fc6f6def438ce2ba0
-Author: Marcus Danielsson <marcus.danielsson@sonymobile.com>
-Date:   Thu Apr 16 10:44:56 2015 +0200
-
-    Hide Volumepanel on incoming call
-    
-    When receiving an incoming phone call and the user recently
-    changed the volume on the phone, the volume dialog overlaps
-    the heads up dialog for incoming call. This prevents the
-    user to interacting with it. This change dismiss the volume dialog
-    if it is showing when receiving an incoming call.
-    
-    Change-Id: I3a9fd9376cd8b4334e65765bd2eda9a7146d808b
-    Signed-off-by: Chet Kener <Cl3Kener@gmail.com>
-
-commit 7dae2a25cc908fab2babf764612d11eadcd6ad84
-Author: Andreas Gampe <agampe@google.com>
-Date:   Mon Apr 20 15:29:04 2015 -0700
-
-    Frameworks/base: Compile-time optimize SQLiteConnection
-    
-    Do not cache compiled regular expression and date formatter. Both
-    cannot be compile-time created, are expensive at preloading time,
-    and only used in the rare case of dumping the connection (mainly
-    on errors).
-    
-    Bug: 19498458
-    Bug: 19542228
-    Change-Id: Ia38491a3f852ccf699b815ff05289b338e932f2a
-
-commit 1dd65e6428c8af32689fe08185d53595334d253a
-Author: Xuefer <xuefer@gmail.com>
-Date:   Tue Apr 7 14:07:10 2015 +0800
-
-    qs: support for all timeout value in case set by user apps
-    
-    fix bug: after timeout is set by apps like Tasker to values not in the
-    known options list (e.g. 23 Hours), changing the value no longer
-    update tile title, it stay as "23 Hours"
-    
-    Change-Id: Ica11d473de6935bac02ba30557ac1b1e30d3211b
-
-commit 732ad03f46cbb259c7779870e8ce2b69539b9450
-Author: lingyan.wang <lingyan.wang@ck-telecom.com>
-Date:   Tue Apr 21 19:32:55 2015 +0800
-
-    printspooler: Print view crash.
-    
-    1.put a txt file into device.
-    2.Go to File Manager->long press the txt file->Print->Long press home key->Clear all
-    3.Go to File Manager->long press the txt file->Print
-    
-    The result: Print view crash.
-    
-    Change-Id: I46a71b8e1196f69b6b40f38b418a88d794918429
-
-commit 25604971b69d5dab19403bcea51664b0b9d8430f
-Author: d34d <clark@cyngn.com>
-Date:   Sun Apr 19 14:54:49 2015 -0700
-
-    SysUI: Invert notification backgrounds
-    
-    Notifications for ambient display were enhanced to support fading
-    back into full color and saturation.  This change involved hiding
-    the notification background instead of inverting it along with the
-    rest of the notification view.  This doesn't play well with themes
-    that use a darker background and lighter text color.
-    
-    This patch keeps the background visible and inverts it along with
-    the rest of the notification, which allows the text to be visible.
-    
-    Change-Id: I8e7cb5b77be096c6a426751ad4c98de2529059d1
-
-commit 9015e7de42644e79a7e59782c0bfffd085f0dc1f
-Author: Alexander Martinz <eviscerationls@gmail.com>
-Date:   Tue Apr 21 22:33:33 2015 +0200
-
-    DataUsageTile: align carrier to left
-    
-    Change-Id: I996552a06754257e43d46c6f782fc238b039d006
-    Signed-off-by: Alexander Martinz <eviscerationls@gmail.com>
-
-commit 28b636079fc83b0b5c379c7e4e36b94120888aef
-Author: Roman Birg <roman@cyngn.com>
-Date:   Wed Apr 22 18:29:36 2015 -0700
-
-    Return of Silent mode (1/2)
-    
-    - Adds ability to replace "None" with "Silent" in the Volume panel
-    
-    - Right now, it will behave exactly the same as "None",
-    except allow alarms to go through
-    
-    Change-Id: Icee44a7114e9529d139c52e5e37e3ec747cec336
-    Signed-off-by: Roman Birg <roman@cyngn.com>
-    
-    Conflicts:
-    	core/java/android/provider/Settings.java
-    	packages/SystemUI/src/com/android/systemui/volume/ZenModePanel.java
-    	services/core/java/com/android/server/notification/ZenModeHelper.java
-
 commit 64f477f9cfd44bd7db42585471bb54845aabef3a
 Author: Allan Hedelain <tristan202@gmail.com>
 Date:   Wed Apr 22 21:29:54 2015 -0700
@@ -2294,81 +1971,6 @@ Date:   Tue Apr 28 03:05:19 2015 -0700
     Conflicts:
     	core/java/android/provider/Settings.java
 
-commit eeffcdc1762da7014f6dbd819d0f35a7f01fda0a
-Author: Richard MacGregor <rmacgregor@cyngn.com>
-Date:   Wed Apr 15 17:13:40 2015 -0700
-
-    Apply sounds on theme update
-    
-    Add content observer so themeservice knows whether ringtone was
-    changed outside of themes.
-    
-    Change-Id: I83a5dff8e9574019f4d1a5bd58368b0ec3c09c88
-
-commit f1b6e7626e7b76a4b94f4b8a35196f469941204d
-Author: Danny Baumann <dannybaumann@web.de>
-Date:   Tue Apr 28 10:55:15 2015 +0200
-
-    Unset frame listener before tearing down GLThreadManager.
-    
-    Otherwise might lead to messages being delivered to the then dead
-    mGLHandlerThread via RequestThreadManager.mPreviewCallback ->
-    GLThreadManager.queueNewFrame().
-    
-    Change-Id: I60001149787c584bfee88c961f1e07cdb8cf3927
-
-commit 99fffd36e6de1adcd212e26bcc09956f2eec4f53
-Author: Roman Birg <roman@cyngn.com>
-Date:   Wed Apr 15 09:19:09 2015 -0700
-
-    Torch: remind user flashlight is still on
-    
-    Post a notification which informs the user the flashlight is still
-    enabled. But only do this when the user turns the screen off *while* the
-    flashlight is still on, so they see it next time they use the device.
-    Tapping on the notification will disable the flashlight.
-    
-    Change-Id: I3689ff6498b97b813ccc10dc7dca3527fc8455aa
-    Signed-off-by: Roman Birg <roman@cyngn.com>
-
-commit 6916d6be894fee6c02d260f673c61a2b3630cbb8
-Author: Taiju Tsuiki <tzik@google.com>
-Date:   Wed Apr 22 16:59:00 2015 +0900
-
-    Fix NullPointerException in Bundle#hasFileDescriptors
-    
-    Add null check for array elements in Bundle#hasFileDescriptors to avoid NPE on
-    null valued array.
-    
-    Change-Id: Ic6ef8864ca6add023c7a69ba3c9474b0f6291723
-
-commit a346aa935540ea346fbf8c879ea27bb158d0766e
-Author: Taiju Tsuiki <tzik@google.com>
-Date:   Tue Apr 28 13:36:15 2015 +0900
-
-    Fix NPE in Bundle#hasFileDescriptor on null-valued SparseArray
-    
-    Add a null check for each values of SparseArray in Bundle#hasFileDescriptor
-    to avoid NullPointerException.
-    
-    Change-Id: I43ecc01f2759ccbe85b902fa118d55cb74ebf38b
-
-commit c9679e141a5418b1a367270627998e22e6bcfa49
-Author: Henrik Engström <henrik.engstrom@sonymobile.com>
-Date:   Tue Apr 24 15:30:19 2012 +0200
-
-    Fix for infinite loop in RemoteViewsAdapter
-    
-    This patch fixes an error in RemoteViewsAdapter when there is only one
-    view in the cache, and it is bigger than the cache size threshold. This
-    would cause the cleanup of the cache to get stuck in an infinite loop
-    while holding the mCache lock that is also needed by for example
-    getView which is called on the UI thread, leading to ANRs. This patch
-    breaks the loop when it sees that it can not remove the next view up
-    for removal.
-    
-    Change-Id: I331259bb10eae9fe91e5112102e08f49cc078a1b
-
 project frameworks/native/
 commit f22a457adc407a64abf1bfcf9846aaa6136479d9
 Author: Richard Uhler <ruhler@google.com>
@@ -2414,17 +2016,6 @@ Date:   Thu Feb 26 17:47:13 2015 -0800
     Change-Id: Ida074dd6840c1c7682bdca32d858aa28db2dc71d
 
 project frameworks/opt/telephony/
-commit 9c4dcf9704ed8f03187f6bbfbb6b6b7766bdae38
-Author: Danny Baumann <dannybaumann@web.de>
-Date:   Wed Apr 22 13:36:03 2015 +0200
-
-    Re-apply commit d340bf588e89ffe12f314733a53bfe977a3e752e.
-    
-    It was removed in 62f8fa46fbc7d76abc82039b49e0e6b579fb9aae for no
-    reason.
-    
-    Change-Id: I80ab0a81234e8da337c1c50696746437adf6e2a1
-
 commit 2838601b21cea690c1daa10411c8252ea78b3c14
 Merge: a4e187a 9c4dcf9
 Author: ZION959 <ziontran@gmail.com>
@@ -2524,93 +2115,6 @@ Date:   Tue Apr 7 11:36:35 2015 +0800
     
     Change-Id: I7e8f73377699f11bdc1f62a05f6bea03c9c24151
     CRs-Fixed: 816053
-
-project hardware/qcom/audio-caf/msm8994/
-commit d44126f4145a6d48709104f947fa632888545ddc
-Author: Fred Oh <fred@codeaurora.org>
-Date:   Fri Dec 5 20:27:04 2014 -0800
-
-    hal : add 8992 for msm8992 audio
-    
-    Change-Id: Ie2289925679cf9a39931e65314050a1fe92a9e95
-
-commit 9d162b1d9dfad26723001d193a0471213e470f64
-Author: Fred Oh <fred@codeaurora.org>
-Date:   Tue Dec 9 15:15:54 2014 -0800
-
-    hal : add 8992 for msm8992 audio
-    
-    Enabled msm8992 audio hal same as msm8994
-    
-    Change-Id: I126ff24f482c21dbfd0e8ed9c3a145b804e3748b
-
-commit 2d16306d0ef0a201ddd69bfa85389ff9f64d889f
-Author: Ethan Chen <intervigil@gmail.com>
-Date:   Mon Nov 10 13:44:55 2014 -0800
-
-    audio: Only allow non-legacy HAL
-    
-    Change-Id: Icbb7874ebbc3b8edbe4bb483c32d4d106450293f
-
-commit bbf9bdcdf3e915ea180b4137ff7b416ba4dc9947
-Author: Ethan Chen <intervigil@gmail.com>
-Date:   Mon Nov 10 19:05:51 2014 -0800
-
-    audio: Use project pathmap
-    
-    Change-Id: I951eee0a0a145015132510190d33dfa1d9312d97
-
-commit eb6c28dec68d2994e58ec9658d85344b70521567
-Author: Ethan Chen <intervigil@gmail.com>
-Date:   Wed Nov 12 12:59:56 2014 -0800
-
-    audio: Use direct project pathmap
-    
-    Change-Id: If6d270bd92b42df1cdc9719774da768039054753
-
-project hardware/qcom/media-caf/msm8994/
-commit 289c4485cc349255543ad89c0a438997087dbecc
-Author: Ashray Kulkarni <ashrayk@codeaurora.org>
-Date:   Thu Dec 18 20:18:49 2014 -0800
-
-    mm-core: add mpeg2 and vc1 secure component entries
-    
-    Add mpeg2 and vc1 secure component entries. This allows for secure
-    mpeg2 and vc1 video decoder sessions for msm8992...
-    
-    Change-Id: I9eec2a7ae1644ea723256e808dc2a1a21edc5ae4
-
-commit b29ac9f498aa4235c2ec0e189b9c6dc081cfe563
-Author: Ethan Chen <intervigil@gmail.com>
-Date:   Mon Feb 23 22:59:57 2015 -0500
-
-    media: Use project pathmap
-    
-    Change-Id: I4f2e1f666deded6d53f23c97718b4246b48cf780
-
-commit 98bce290f0cdd8d739ccd448ea74adbf371d8dba
-Author: Scott Mertz <scott@cyngn.com>
-Date:   Sun Apr 12 23:25:21 2015 -0700
-
-    correct use of project-path
-    
-    Change-Id: Idecc52acf7acd5a3fbc314d999d04f1c7c8237a5
-
-commit 4bf9db11e0d43003b52d1b2305f87ea9355555dd
-Author: Steve Kondik <shade@chemlab.org>
-Date:   Tue May 6 03:22:11 2014 -0700
-
-    media: Avoid collision with FFMPEG plugin
-    
-    Change-Id: Ica2cdf9f6572ec18f396d25758cbb2be1359ac0b
-
-commit 0e1bc46fa9b0e2529f1fbaa171a266780dc5d726
-Author: Steve Kondik <steve@cyngn.com>
-Date:   Tue Apr 21 23:05:41 2015 -0700
-
-    vidc: Fix makefiles
-    
-    Change-Id: I0593222b3f487e80db1e4f2b5055a9ea5bccef60
 
 project kernel/samsung/hlte/
 commit da9dae79da954082cca3a62b6b55db334da9d0d7
@@ -2736,30 +2240,6 @@ Date:   Sat Apr 25 01:13:51 2015 +0300
     Change-Id: I4d2b17d0f4ec00915ff36255a8ccfce547a88db1
 
 project packages/apps/CMRemixCenter/
-commit aa098190539b24da000219359989133cc74983c7
-Author: ZION959 <ziontran@gmail.com>
-Date:   Wed Apr 22 16:51:28 2015 -0700
-
-    add Slim gapps server
-
-commit 4cf75f00de484856fa69279355a314b537706feb
-Author: fusionjack <dogfight60-fusionjack@yahoo.de>
-Date:   Wed Apr 22 16:55:22 2015 -0700
-
-    CMRemixCenter: CMRemixChangelog
-    
-    Port to CMRemix
-    Credit:fusionjack
-    
-    Showing a changelog that was generated based on the last released build
-    
-    Dependencies: build and vendor/slim
-    
-    Change-Id: Ida025e5ce4cd4f05a94d74bd01c1dee8ff2a3a6d
-    
-    Conflicts:
-    	src/com/cmremix/center/CMRemixCenter.java
-
 commit b810fb3510f030ec920b282015f0e5163bd13368
 Author: ZION959 <ziontran@gmail.com>
 Date:   Thu Apr 23 15:49:46 2015 -0700
@@ -2815,18 +2295,6 @@ Date:   Sat Apr 25 01:14:00 2015 +0300
     Change-Id: I13fb65b5f9207adcffd395adc3ac65e56830abbe
 
 project packages/apps/ContactsCommon/
-commit 5df27c08028896bf90f548ff5b81d1b682325f86
-Author: Danesh M <daneshm90@gmail.com>
-Date:   Wed Apr 22 09:27:38 2015 -0700
-
-    ContactsCommon : Only use default requests if one is not provided
-    
-    This solves the issue where the provider doesn't end up receiving the
-    request it initially created and passed along.
-    
-    Change-Id: Ie39d66a87eb3a1088a4eb62e11084e1123f707f5
-    (cherry picked from commit ce096acee71b168f630a684d61294fb733472bd1)
-
 commit ec58d211e65517c87e2d2855ba8bed94e0727171
 Author: Michael Bestas <mikeioannina@gmail.com>
 Date:   Sat Apr 25 01:14:05 2015 +0300
@@ -2845,17 +2313,6 @@ Date:   Fri Apr 24 13:56:00 2015 -0700
     Change-Id: I13ca3156c34eccdd8f60d8585281ae0585aac58e
 
 project packages/apps/Dialer/
-commit 8fad8b51914ed41b2f3ab7760fc89afd95ed858a
-Author: linuxxxxx <joey@cyanogenmoditalia.it>
-Date:   Tue Apr 21 20:43:01 2015 +0200
-
-    [2/2] Dialer: SmartMute
-    
-    Mute the incoming call by flipping the phone
-    
-    Change-Id: I2009bc7b4d0d1b23f76b232e156ea0fa35e3ad5b
-    Signed-off-by: linuxxxxx <joey@cyanogenmoditalia.it>
-
 commit d29361f264f502890c23ca67271401d13985a123
 Author: emancebo <emancebo@cyngn.com>
 Date:   Mon Apr 20 16:50:20 2015 -0700
@@ -2950,77 +2407,6 @@ Date:   Sat Apr 25 18:07:13 2015 -0700
     Merge remote-tracking branch 'CM/cm-12.1' into cm-12.1
 
 project packages/apps/InCallUI/
-commit 0a6e7135839269ee4a4706dc7cb7b17cb3828ead
-Author: dankoman <dankoman30@gmail.com>
-Date:   Fri Jan 2 16:15:39 2015 +0100
-
-    [3/3] InCallUI: Proximity speaker
-    
-    Patchset: lollipop no longer uses CallCommandClient
-    
-    Patchset: add time delay preference
-    
-    Patchset: remove callback if audio mode changed before runnable
-            had a chance to run
-    
-    Patchset: remove callback onStateChange
-    
-    Patchset: formatting
-    Change-Id: I5ffaca0eb2e905abb36bbc298416742055acacb8
-    
-    Conflicts:
-    	src/com/android/incallui/ProximitySensor.java
-
-commit ba173f71d1bb5ac0d17ed04e9a4650d03e0d0b09
-Author: dankoman <dankoman30@gmail.com>
-Date:   Fri Jan 30 20:12:28 2015 +0100
-
-    InCallUI: clean up prox speaker code and improve usability
-    
-    Addresses a rare bug or two, relating to proximity speaker
-            behavior during the beginning of an outgoing phone
-            call.
-    Change-Id: I4aff0c393a9803d648538c2e268a2c3d446f536d
-    
-    Conflicts:
-    	src/com/android/incallui/ProximitySensor.java
-
-commit b4fa9b1396b1681a269241c60c76f8eb42ac096e
-Author: dimfishr <dimfish@gmail.com>
-Date:   Mon Jan 27 14:50:19 2014 +0400
-
-    Disable Touch by Proximity Sensor
-    
-    Support Sweep2Wake/DoubleTap2wake/Knock2Wake features in custom
-    kernels which prevent touch from sleeping when screen is off.
-    
-    Change-Id: Ic5bdaf63ffe7502ad164b6e3022ffe8393011e1e
-
-commit 64b21acf14798a4d6c1c7b3608c3a0fbccc04cbb
-Author: linuxxxxx <joey@cyanogenmoditalia.it>
-Date:   Tue Apr 21 20:55:13 2015 +0200
-
-    [1/2] InCallUI: SmartMute
-    
-    Mute the incoming call by flipping the phone
-    
-    (Based on gerrit.omnirom.org/#/c/4669)
-    
-    Change-Id: I3ff27450eecbf501fafb2d75317a0d7dd844e7b2
-    Signed-off-by: linuxxxxx <joey@cyanogenmoditalia.it>
-
-commit 19db04818da3ab0ef254c8dc3157a1e5fd18bfa5
-Merge: be0d276 64b21ac
-Author: ZION959 <ziontran@gmail.com>
-Date:   Wed Apr 22 13:27:09 2015 -0700
-
-    Merge remote-tracking branch 'cm-12.1-Exp/cm-12.1' into cm-12.1
-    
-    Conflicts:
-    	src/com/android/incallui/ProximitySensor.java
-    
-    Change-Id: I35c4e8cc3de0c262d6adf2c251e68aa597fe5d08
-
 commit 198dd362c31a67996bc84ed63d55d4b08512c843
 Author: emancebo <emancebo@cyngn.com>
 Date:   Mon Apr 20 16:48:39 2015 -0700
@@ -3558,15 +2944,6 @@ Date:   Fri Apr 24 15:36:58 2015 -0700
     Change-Id: I3592c903ac262a58e70e121ec242ac784775ba1f
 
 project packages/apps/Mms/
-commit 995532dd474887f179607fa5c93f465193e63c51
-Author: Rohit Yengisetty <rohit@cyngn.com>
-Date:   Wed Apr 22 10:56:41 2015 -0700
-
-    Mms : Add missing show() on Toast for unsupported Calendar app
-    
-    Change-Id: I4a7cf5acc40962156099b404d3f6b39a9c4962aa
-    (cherry picked from commit 5372ace90f4873d348c745b93ec9d512eae11dfa)
-
 commit 75dcf8cfcdf24beeeaaafca963f8f4f219a0ac99
 Merge: 4c25c32 995532d
 Author: ZION959 <ziontran@gmail.com>
@@ -3644,60 +3021,6 @@ Date:   Sun Apr 26 11:07:19 2015 -0700
     Signed-off-by: Roman Birg <roman@cyngn.com>
 
 project packages/apps/Settings/
-commit cdcdd2dda94e198b311f241a2b71458b6f66c2c6
-Author: ZION959 <ziontran@gmail.com>
-Date:   Tue Apr 21 21:49:27 2015 -0700
-
-    Allow launching display rotation & lock screen settings externally
-    
-    Change-Id: I69168fea2a43cfa7f2b8474042c35720f4431040
-    
-    Conflicts:
-    	src/com/android/settings/Settings.java
-    	src/com/android/settings/SettingsActivity.java
-
-commit 11d933f599ee9bb07c436381331f36539e9fb086
-Author: Pawit Pornkitprasan <p.pawit@gmail.com>
-Date:   Mon Dec 22 23:00:09 2014 +0700
-
-    Settings: fix custom SIM name lost on reboot
-    
-    NAME_SOURCE_USER_INPUT should be set or the value won't
-    be saved in the database
-    
-    Change-Id: I007eba76af5cb5a37988413a0d551eab60a9d4ca
-
-commit f9c5a3c9d3e572f866e7e7f0056e5bdab701c688
-Author: LuK1337 <priv.luk@gmail.com>
-Date:   Sun Apr 19 12:56:56 2015 +0200
-
-    Adjust "Wakelock blocker" layout
-    
-    before: http://i.imgur.com/o4KcRlG.png
-    after: http://i.imgur.com/mVpwsJZ.png
-    
-    PS2: fixed right margin
-    PS3: remove whitespace I added in PS2
-    
-    Change-Id: I369f045594194c8404aa67da49e73edc4f21c7c4
-
-commit 6ec196b00845cfa4d497c225bfaa11ca6e449aad
-Author: Lokesh Chamane <lokesh.chamane@pac-rom.com>
-Date:   Sun Apr 19 14:43:32 2015 -0400
-
-    Remove CM's Stats Collection
-    
-    Change-Id: I2ee5701f6402aec1dc8cc4b9de465ddeb25aff8b
-
-commit 1aa2f82acaaa79df0962618faa0b98c7ac391ddb
-Author: Roman Birg <roman@cyngn.com>
-Date:   Fri Apr 17 11:10:21 2015 -0700
-
-    Settings: add Silent mode toggle (2/2)
-    
-    Change-Id: Ide901e3e79f236b33669525021d53e8d9d46a1d2
-    Signed-off-by: Roman Birg <roman@cyngn.com>
-
 commit d45bde0c2e3a93af76499a41327841546e3735f7
 Author: Jubakuba <Jubakuba@gmail.com>
 Date:   Wed Apr 22 21:45:50 2015 -0700
@@ -4140,13 +3463,13 @@ Date:   Tue Apr 28 14:08:14 2015 -0700
 
     add SeekBarPreferenceCHOS.java
 
-commit fdbc33d8c599ad0aee45c4a975019b702b6ed562
+commit 99e9d858ba635c65a3c71e7b44a107340cbff12e
 Author: ZION959 <ziontran@gmail.com>
-Date:   Tue Apr 28 18:45:13 2015 -0700
+Date:   Tue Apr 28 14:18:48 2015 -0700
 
-    add new vector icon for new changelog option
+    add icon for new changelog option
 
-commit d7cb88e0acb67a71a2f869a76ad167bf68ed7bf3
+commit 6ffd0ef2da05a3fef76f87e1f7308a9be580142e
 Author: ZION959 <ziontran@gmail.com>
 Date:   Tue Apr 28 14:25:54 2015 -0700
 
@@ -4984,70 +4307,6 @@ Date:   Sat Apr 25 18:09:51 2015 -0700
     Merge remote-tracking branch 'CM/cm-12.1' into cm-12.1
 
 project packages/services/Telephony/
-commit d2d0c2b2a9a4bb65e2b33fa1e07650fd13188e27
-Author: ZION959 <ziontran@gmail.com>
-Date:   Wed Apr 22 13:36:05 2015 -0700
-
-    Revert: [2/3] Call recording encoder/format choice
-    Adds a user option between NB AMR (the default) or HE-AAC for the encoding of call recording audio. Also changes the output format of the file appropriately (NB AMR now uses the NB_AMR output format and HE_AAC chooses the MPEG_4 output. File extensions are adjust accordingly as well).
-    This was in reponse to people complaining the quality of call recording audio is poor. It's noticibly better using HE-AAC, but filesizes are larger.
-    
-    Change-Id: I31f4a57042cf9e221ea2292922f071c955170e1e
-    
-    PS: Imported from kitkat and made working for lollipop.
-    
-    Signed-off-by: BlackDragon <blackdragon.fusionteam@gmail.com>
-    
-    Conflicts:
-    	res/values/cmr_strings.xml
-    	src/com/android/phone/CallFeaturesSetting.java (reverted from commit c1c4e6c0c2b0135e2a2a296b309d2a5893fb80a7)
-
-commit 9deccf7b36da305f8f0a5be82cd29f14f13e4ff2
-Author: Kryten2k35 <kryten2k35@gmail.com>
-Date:   Wed Apr 22 13:37:57 2015 -0700
-
-    Call recording encoder/format choice 2/3
-    
-    Adds a user option between NB AMR (the default) or HE-AAC for the encoding of call recording audio. Also changes the output format of the file appropriately (NB AMR now uses the NB_AMR output format and HE_AAC chooses the MPEG_4 output. File extensions are adjust accordingly as well).
-    This was in reponse to people complaining the quality of call recording audio is poor. It's noticibly better using HE-AAC, but filesizes are larger.
-    
-    Change-Id: I31f4a57042cf9e221ea2292922f071c955170e1e
-    
-    PS: Imported from kitkat and made working for lollipop.
-    
-    Signed-off-by: BlackDragon <blackdragon.fusionteam@gmail.com>
-    
-    Conflicts:
-    
-    	res/values/cr_strings.xml
-    	src/com/android/phone/CallFeaturesSetting.java
-
-commit 3d9577aac61651c7f48ec2c837cafcba4cdfc3a2
-Author: dankoman <dankoman30@gmail.com>
-Date:   Wed Apr 22 13:43:18 2015 -0700
-
-    [2/3] Telephony: Proximity speaker
-    
-    Patchset: add missing resolver
-    
-    Patchset: put in category
-    
-    Patchset: use dependency attribute in xml instead of
-            disabling preference in code
-    
-    Patchset: use SwitchPreference instead of CheckBoxPreference
-    
-    Patchset: for incall only, use summaryOff and summaryOn attributes
-            for the SwitchPreference to make the preference less
-            confusing to the user
-    
-    Patchset: add time delay preference
-    
-    Change-Id: I2d4a716d7f3c002cb3b4861452483997f82cbbfa
-    
-    Conflicts:
-    	res/values/cmr_strings.xml
-
 commit 7e6859079dad90fd170348d785365564cfe18986
 Merge: 3d9577a 1ea3057
 Author: ZION959 <ziontran@gmail.com>
@@ -5098,19 +4357,6 @@ Date:   Sun Apr 26 14:45:47 2015 -0700
     Change-Id: I6d516fd6edd6d51bec2cdb389cf731f96e2dbf55
 
 project system/core/
-commit 2ded621e638644e618bf86f10957269b010ff76d
-Author: Nikhilesh Reddy <reddyn@codeaurora.org>
-Date:   Thu Dec 11 13:17:06 2014 -0800
-
-    Allocate a new AIDs for RFS module
-    
-    Allocate new AIDs to allow the RFS module
-    to run as after dropping privelages from
-    ROOT and to enforce strict permissions on
-    shared and private RFS files.
-    
-    Change-Id: Ic4febd565df9f232f6c7571355ec10d8fd2e21bd
-
 commit 00a598acc1706d2582b773fe12ef804af1cafab1
 Merge: 3e859ca 2ded621
 Author: ZION959 <ziontran@gmail.com>
@@ -5270,102 +4516,6 @@ Date:   Thu Apr 9 10:20:03 2015 -0700
     (cherry picked from commit 623bc5bb1c80ff7dd8a3cd9c4b8272dfd8453db1)
 
 project vendor/cmremix/
-commit 266efe0aab90ed5bf3ac2c2b121911231c2ad6ce
-Author: ZION959 <ziontran@gmail.com>
-Date:   Tue Apr 21 02:18:23 2015 -0700
-
-    build KernelAdiutor and floating button
-
-commit 5a0c304c63c284e403f8890ca6a4e08b4f8601e5
-Author: ZION959 <ziontran@gmail.com>
-Date:   Tue Apr 21 07:59:36 2015 -0700
-
-    remove omni performance control & screen record
-
-commit fc7af36f0524b3108121f72035abcda5a0458a90
-Author: ZION959 <ziontran@gmail.com>
-Date:   Tue Apr 21 16:30:23 2015 -0700
-
-    vendor: add strict aliasing modular
-    
-    Credit to Paul Beeler <pbeeler80@gmail.com>
-
-commit 23bdb2d375100e0a128fbf9b3ed204399b54d819
-Author: ZION959 <ziontran@gmail.com>
-Date:   Tue Apr 21 18:47:26 2015 -0700
-
-    bump cmremix to android lollipop-5.1.1_r1
-
-commit 95c242e9ce6a290c13b2c57cc02af3cae09c580e
-Author: Paul Beeler <pbeeler80@gmail.com>
-Date:   Wed Apr 22 00:54:23 2015 -0700
-
-    -O3 optimzations: More improvements (1/2)
-    
-        -Give a option to disable -O3 optimizations thumb.
-         Some people feel this hinders performance and there was no
-         solution found before to disable -O3 in binary mode previously.
-         This patch allows this option, see description in binary.mk for more info.
-    
-        -Make extra loop flags dependent on O3_OPTIMIZATIONS := true
-         We shouldn't really be performing extra loop optimizations unless -O3
-         is enabled locally.
-         And since these are not really considered -O3 flags according to gcc,
-         they should remain in extra.mk (extra sabermod flags).
-    
-    Change-Id: Ia70fc35990d816c5e965e5353d0c60cdb714b346
-    Signed-off-by: Paul Beeler <pbeeler80@gmail.com>
-    
-    Conflicts:
-    	products/sm_hammerhead.mk
-
-commit 0e802e6e9c7fe5d978b1e340a0a929d909e5d81f
-Author: Paul Beeler <pbeeler80@gmail.com>
-Date:   Wed Apr 22 00:57:27 2015 -0700
-
-    Hammerhead: Disable -O3 optimizations on thumb
-    
-    Change-Id: I4d07a1bcacd1c95f2474cb82e84527c0050d4335
-    Signed-off-by: Paul Beeler <pbeeler80@gmail.com>
-
-commit 5cdef168e94ff25363e6afbcd9f33a83a344dac3
-Author: Paul Beeler <pbeeler80@gmail.com>
-Date:   Wed Apr 22 01:01:10 2015 -0700
-
-    update sm_clear_vars.mk
-
-commit 7cfd614231e1d7bdf6cbfc64d5df1801432984e7
-Author: ZION959 <ziontran@gmail.com>
-Date:   Wed Apr 22 11:53:43 2015 -0700
-
-    add TARGET_NDK_VERSION :=?
-
-commit 771cc3fca41629d58221f074ed3b1f012a17f87d
-Author: Paul Beeler <pbeeler80@gmail.com>
-Date:   Wed Apr 22 16:34:52 2015 -0700
-
-    sm.mk: hammerhead:
-    
-    -Enable some common optimizations for all host OS's
-    -Bug fix for aosp and strict-aliasing (1/2)
-     For people have "other" strict-aliasing binary mode implimentations,
-     then this is only needed when strict-aliasing is not set on.  In
-     cases of "other" implimentations, this should be dependent on that
-     being disabled.
-    
-    Change-Id: I62f36ad4d54e702ffff17096797269bcee71dea6
-    Signed-off-by: Paul Beeler <pbeeler80@gmail.com>
-    
-    Conflicts:
-    	config/cmremix_sm.mk
-    	products/sm_hlte.mk
-
-commit 94320a76bc434105796d6c2c9d1d9fd6e4599a35
-Author: ZION959 <ziontran@gmail.com>
-Date:   Wed Apr 22 18:05:20 2015 -0700
-
-    Set default for SaberMod GCC 4.8 for Rom
-
 commit cda5615c2a4ec39a5ba27386c189421f928a82c1
 Author: ZION959 <ziontran@gmail.com>
 Date:   Tue Apr 21 19:37:00 2015 -0700
@@ -5510,6 +4660,17 @@ Date:   Tue Apr 28 13:36:53 2015 -0700
     
     Conflicts:
     	config/cmremix_sm.mk
+
+commit 02a3112c45ba1d05642cc606d80eb716580abef1
+Author: Paul Beeler <pbeeler80@gmail.com>
+Date:   Wed Apr 29 13:00:34 2015 -0600
+
+    Fix bluetooth crashing when using -O3 optimizations
+    
+    Force -Os
+    
+    Change-Id: I497cbdd5f52dbd24b7acc1f1ffe165eff3d6e4dd
+    Signed-off-by: Paul Beeler <pbeeler80@gmail.com>
 
 project vendor/samsung/
 commit 5274eeaf94e68f3d63e93c0d69cd5bd51fe3f558

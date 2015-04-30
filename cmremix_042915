@@ -1,0 +1,15 @@
+
+**** https://github.com/CMRemix/android_build
+origin	git@github.com:cmRemiX/android_build.git ****
+c8b8054 : Revert "Add a option to disable vectorization flags (2/2)" <Paul Beeler> 7 hours ago
+3ae29bc : Update for vendor changes <Paul Beeler> 7 hours ago
+ 
+**** https://github.com/CMRemix/android_packages_apps_Settings
+origin	git@github.com:cmRemiX/android_packages_apps_Settings.git ****
+6ffd0ef : reoganized slim trds <ZION959> 29 hours ago
+99e9d85 : add icon for new changelog option <ZION959> 29 hours ago
+ 
+**** https://github.com/CMRemix/android_vendor_cmremix
+origin	git@github.com:cmRemiX/android_vendor_cmremix.git ****
+02a3112 : Fix bluetooth crashing when using -O3 optimizations <Paul Beeler> 7 hours ago
+ 
