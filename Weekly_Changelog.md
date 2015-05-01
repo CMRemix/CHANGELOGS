@@ -1,16 +1,4 @@
 project CMRemix/
-commit 67ad1ab9392690288059d61aadad60abf51d6e71
-Author: ZION959 <ziontran@gmail.com>
-Date:   Fri Apr 24 00:23:48 2015 -0700
-
-    track libpng
-
-commit e8297c4b99b20655cb681b7fb438801bb833de94
-Author: ZION959 <ziontran@gmail.com>
-Date:   Fri Apr 24 00:27:46 2015 -0700
-
-    track camera2 & gallery2
-
 commit 98ceb6ca421ae792f04254cfcc1d6633dfedf0bf
 Author: Roman Birg <roman@cyngn.com>
 Date:   Mon Apr 20 17:07:37 2015 -0700
@@ -2621,21 +2609,6 @@ Date:   Fri Dec 5 19:45:10 2014 +0900
     Signed-off-by: Erik Kline <ek@google.com>
     Signed-off-by: Lorenzo Colitti <lorenzo@google.com>
 
-project kernel/samsung/trlte/
-commit 49280572741ee9c0084f50f8701f1e8e789e34bb
-Author: Steve Kondik <steve@cyngn.com>
-Date:   Sun Mar 8 01:25:52 2015 -0500
-
-    video: mdss: Color temperature interface using PCC
-    
-     * MDSS5 supports Polynomial Color Correction. Use this to implement
-       a simple sysfs API for adjusting RGB scaling values. This can be
-       used to implement color temperature and other controls.
-     * Why use this when we have KCAL? This code is dead simple, the
-       interface is in the right place, and it allows for 128X accuracy.
-    
-    Change-Id: Icc497dafff7d25560f0e4e9597d52c78d5ab9178
-
 project packages/apps/Browser/
 commit 45284de420f2674b7a28cebaf02b6e5880050f22
 Merge: dd822c5 9d321ea
@@ -4938,21 +4911,6 @@ Date:   Thu Apr 9 10:20:03 2015 -0700
     (cherry picked from commit 623bc5bb1c80ff7dd8a3cd9c4b8272dfd8453db1)
 
 project vendor/cmremix/
-commit 6b96af3d329e36c29da2f2a96db196f8abfb83e4
-Author: Paul Beeler <pbeeler80@gmail.com>
-Date:   Fri Apr 24 00:55:13 2015 -0700
-
-    SaberMod ARM Mode (1/2)
-    
-    Only tested on user builds for now.
-    
-    Change-Id: I6b0acbe0e60287d6235a8f8b9c679f56dbed0d6f
-    Signed-off-by: Paul Beeler <pbeeler80@gmail.com>
-    
-    Conflicts:
-    	config/cmremix_sm.mk
-    	products/sm_hlte.mk
-
 commit 9767563e9ac66dfc70482a9776c567e0a0634a5e
 Author: Paul Beeler <pbeeler80@gmail.com>
 Date:   Fri Apr 24 02:26:56 2015 -0700
