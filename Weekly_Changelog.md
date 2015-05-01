@@ -63,6 +63,168 @@ Date:   Tue Apr 28 19:00:58 2015 -0700
 
     fixed copy and past again
 
+project bionic/
+commit b118cea1941a50a8b2bf445da8ec9a51016da605
+Author: Michael Bestas <mikeioannina@gmail.com>
+Date:   Mon Nov 24 22:12:22 2014 +0200
+
+    Revert "Revert "Reenable support for non-PIE executables""
+    
+    * Conditionally revert under TARGET_NEEDS_NON_PIE_SUPPORT flag
+    
+    This reverts commit 76e289c026f11126fc88841b3019fd5bb419bb67.
+    
+    [mikeioannina]: Fix 5.1 compatibility
+    
+    Change-Id: I0c64f219c488f5a507b4e0d651b46f71d1c6b5be
+
+commit 26ab57682d98786d877c1fb4425da2236a8ea6e5
+Author: Colin Cross <ccross@android.com>
+Date:   Wed Feb 11 17:40:45 2015 -0800
+
+    Remove no-op sed step when compiling crtbrand.o
+    
+    crtbrand.c was compiled to a .s file, run through a sed script
+    to translate a %progbits to %note, and the compiled to .o.
+    However, when the sed command was copied from the original source
+    it was not updated to use the new name of the section (.note.ABI-tag
+    to .note.android.ident), so it didn't modify the file.  Since the
+    section has been generated with type %progbits instead of %note for
+    two years, just delete the whole sed step.
+    
+    Change-Id: Id78582e9b43b628afec4eed22a088283132f0742
+
+commit e7d50c19c4062ec85882b7231c01232896cb029c
+Author: Neil Fuller <nfuller@google.com>
+Date:   Wed Apr 8 18:26:22 2015 +0100
+
+    Upgrade timezone data to 2015b
+    
+      Changes affecting future time stamps
+    
+        Mongolia will start observing DST again this year, from the last
+        Saturday in March at 02:00 to the last Saturday in September at 00:00.
+        (Thanks to Ganbold Tsagaankhuu.)
+    
+        Palestine will start DST on March 28, not March 27.  Also,
+        correct the fall 2014 transition from September 26 to October 24.
+        Adjust future predictions accordingly.  (Thanks to Steffen Thorsen.)
+    
+      Changes affecting past time stamps
+    
+        The 1982 zone shift in Pacific/Easter has been corrected, fixing a 2015a
+        regression.  (Thanks to Stuart Bishop for reporting the problem.)
+    
+        Some more zones have been turned into links, when they differed
+        from existing zones only for older time stamps.  As usual,
+        these changes affect UTC offsets in pre-1970 time stamps only.
+        Their old contents have been moved to the 'backzone' file.
+        The affected zones are: America/Antigua, America/Cayman,
+        Pacific/Midway, and Pacific/Saipan.
+    
+      Changes affecting time zone abbreviations
+    
+        Correct the 1992-2010 DST abbreviation in Volgograd from "MSK" to "MSD".
+        (Thanks to Hank W.)
+    
+    Bug: 19887183
+    Change-Id: I1b4bdc5ae5cf778908a77893d7f8db8a4117e1e1
+
+commit 93ee71a80772442aafe1176acad287077ab4f1b4
+Author: Neil Fuller <nfuller@google.com>
+Date:   Fri Apr 24 13:56:11 2015 +0100
+
+    Update to tzdata 2015c
+    
+      Changes affecting future time stamps
+    
+        Egypt's spring-forward transition is at 24:00 on April's last Thursday,
+        not 00:00 on April's last Friday.  2015's transition will therefore be on
+        Thursday, April 30 at 24:00, not Friday, April 24 at 00:00.  Similar fixes
+        apply to 2026, 2037, 2043, etc.  (Thanks to Steffen Thorsen.)
+    
+      Changes affecting past time stamps
+    
+        The following changes affect some pre-1991 Chile-related time stamps
+        in America/Santiago, Antarctica/Palmer, and Pacific/Easter.
+    
+          The 1910 transition was January 10, not January 1.
+    
+          The 1918 transition was September 10, not September 1.
+    
+          The UTC-4 time observed from 1932 to 1942 is now considered to be
+          standard time, not year-round DST.
+    
+          Santiago observed DST (UTC-3) from 1946-07-15 through 1946-08-31,
+          then reverted to standard time, then switched its time zone to
+          UTC-5 on 1947-04-01.
+    
+          Assume transitions before 1968 were at 00:00, since we have no data
+          saying otherwise.
+    
+          The spring 1988 transition was 1988-10-09, not 1988-10-02.
+          The fall 1990 transition was 1990-03-11, not 1990-03-18.
+    
+          Assume no UTC offset change for Pacific/Easter on 1890-01-01,
+          and omit all transitions on Pacific/Easter from 1942 through 1946
+          since we have no data suggesting that they existed.
+    
+        One more zone has been turned into a link, as it differed
+        from an existing zone only for older time stamps.  As usual,
+        this change affects UTC offsets in pre-1970 time stamps only.
+        The zone's old contents have been moved to the 'backzone' file.
+        The affected zone is America/Montreal.
+    
+    Bug: 20287125
+    Change-Id: I8512c4e9ab09725395b256aba59ca34a23d1c995
+
+commit 1bd09a9edb9b0aa3aaeb3eb8ab8f754822b6bc0f
+Author: Neil Fuller <nfuller@google.com>
+Date:   Tue Apr 28 17:03:13 2015 +0100
+
+    Update to tzdata 2015d
+    
+      Changes affecting future time stamps
+    
+        Egypt will not observe DST in 2015 and will consider canceling it
+        permanently.  For now, assume no DST indefinitely.
+        (Thanks to Ahmed Nazmy and Tim Parenti.)
+    
+      Changes affecting past time stamps
+    
+        America/Whitehorse switched from UTC-9 to UTC-8 on 1967-05-28, not
+        1966-07-01.  Also, Yukon's time zone history is documented better.
+        (Thanks to Brian Inglis and Dennis Ferguson.)
+    
+      Change affecting past and future time zone abbreviations
+    
+        The abbreviations for Hawaii-Aleutian standard and daylight times
+        have been changed from HAST/HADT to HST/HDT, as per US Government
+        Printing Office style.  This affects only America/Adak since 1983,
+        as America/Honolulu was already using the new style.
+    
+    Bug: 20551453
+    Change-Id: I02364f15ca4ae20ed1a3b327f8517214bee938e5
+
+commit 8d4fafee2a79418f43a8606f363eda06ca0abcfc
+Author: Bernhard Rosenkränzer <Bernhard.Rosenkranzer@linaro.org>
+Date:   Fri Apr 24 16:21:38 2015 +0200
+
+    Define char16_t and char32_t to make gcc 5.1 happy
+    
+    gcc 5.1 doesn't define char16_t and char32_t (unless in C++ mode),
+    causing compile failures.
+    
+    Change-Id: I08dcd13cdf8cd59a4a2f191864bedf4c0d1bb313
+    Signed-off-by: Bernhard Rosenkränzer <Bernhard.Rosenkranzer@linaro.org>
+
+commit 1f30a1e9b2455f164f34d920be1208cf04c7bb12
+Merge: 4c16799 8d4fafe
+Author: ZION959 <ziontran@gmail.com>
+Date:   Thu Apr 30 10:48:45 2015 -0700
+
+    Merge remote-tracking branch 'temasek/cm-12.1' into cm-12.1
+
 project bootable/recovery/
 commit 0225ffe3ff195eae032131b0c1ff9c9fb87fc047
 Author: Danny Baumann <dannybaumann@web.de>
@@ -73,23 +235,6 @@ Date:   Mon Apr 20 11:27:18 2015 +0200
     Change-Id: Id152a6b57a8749fb6a68d8132bbd6bb5e87b7336
 
 project build/
-commit 67437a3b7dc6eadb102cc658f7091bbdfd48bb1f
-Author: Yevgeny Rouban <yevgeny.y.rouban@intel.com>
-Date:   Mon Mar 30 12:57:41 2015 +0600
-
-    build: Add option to compress precompiled odex with gzip
-    
-    To reduce /system size, we add the option to compress odex files
-    
-    Run make with WITH_DEXPREOPT_COMP=true to get odex compressed.
-    
-    This patch needs to be supported by frameworks/native/cmds/installd
-    
-    Change-Id: I8c4e6a30c49a1433f8af61a84ece85c92004da62
-    Depends-Change-Id: Ifa61af39c5644529699c17d6c19ef03742989afd
-    Signed-off-by: Julien Delayen <julien.delayen@intel.com>
-    Signed-off-by: Yevgeny Rouban <yevgeny.y.rouban@intel.com>
-
 commit 5d282debcf980968a37ee287339b7f0c1373a168
 Author: ZION959 <ziontran@gmail.com>
 Date:   Fri Dec 12 23:06:47 2014 -0700
@@ -772,13 +917,14 @@ Date:   Wed Apr 29 13:11:59 2015 -0600
     Change-Id: I16418f4d80cc9ba4cdd557fe748d9d5d594401eb
     Signed-off-by: Paul Beeler <pbeeler80@gmail.com>
 
-commit c8b8054d1d931aefbd63b47792ccd77197e83141
+commit 50cbe76e881b78a82eb9e9fb8cceb1b12eeb995b
 Author: Paul Beeler <pbeeler80@gmail.com>
-Date:   Wed Apr 29 13:16:48 2015 -0600
+Date:   Thu Apr 30 10:09:24 2015 -0600
 
-    Revert "Add a option to disable vectorization flags (2/2)"
+    No optimizations for bluetooth modules
     
-    This reverts commit c7714ef085ab2cdb53fdc77a7e60588f5d4d3f98.
+    Change-Id: If5b5b115be5e4affff55aa275055dcda61dffc3d
+    Signed-off-by: Paul Beeler <pbeeler80@gmail.com>
 
 project device/samsung/hlte/
 commit 6b115c7d776328ee882dc92cb3783db50b07ed6f
@@ -798,33 +944,6 @@ Date:   Mon Apr 27 00:21:19 2015 -0700
     
     Change-Id: Id52a12b1b59c0063320bceafd5faf74680138292
 
-project external/google/
-commit 66f867fc0f2c434317f3e6d561cb4800628cd7d0
-Author: Adnan Begovic <adnan@cyngn.com>
-Date:   Thu Apr 23 19:21:44 2015 -0700
-
-    google: Update to v3 analytics.
-    
-    Change-Id: If36af687cf8d34b71da37a4b61b420344c38fc0e
-
-commit b9d334202d4a8ff0c9529b35227c24a97957f005
-Author: Utkarsh Gupta <utkarsh.eminem@gmail.com>
-Date:   Fri Apr 24 12:39:36 2015 +0530
-
-    Fix build
-    
-    Change-Id: Ifb4264cc784bae6ee8745c5bd5497f6e942ad383
-
-project external/libpng/
-commit 9314a76fcbae02bbe0a315e2f0a2483fa31490b0
-Author: Paul Beeler <pbeeler80@gmail.com>
-Date:   Thu Apr 23 01:02:36 2015 -0600
-
-    Make compatible with SaberMod ARM mode.
-    
-    Change-Id: I6310e5de115a33dd24e7ece32edd652ec2131a0d
-    Signed-off-by: Paul Beeler <pbeeler80@gmail.com>
-
 project frameworks/av/
 commit 0e03875bee979afe39bdbca30e23b15d7739171b
 Author: Ricardo Cerqueira <ricardo@cyngn.com>
@@ -843,6 +962,145 @@ Author: ZION959 <ziontran@gmail.com>
 Date:   Sat Apr 25 17:44:31 2015 -0700
 
     Merge remote-tracking branch 'CM/cm-12.1' into cm-12.1
+
+commit fb629ad8e893fb6f1817dbccb5178ab04de63f54
+Author: RenJian <jian.ren@ck-telecom.com>
+Date:   Wed Apr 15 11:32:15 2015 +0800
+
+    Ensure there is no two same storages showing on the computer.
+    
+    [Preconditions]
+    1. Insert a SIM card into phone and set the SIM lock as "on"
+    2. Select MTP mode
+    3. Power off the mobile
+    
+    [Procedures]
+    1.Connected the phone and PC with usb cable
+    2.Power on the phone->Input PIN code of SIM lock to enter the IDLE view
+    3.Check the storage list on PC
+    
+    [Reproduce]
+    Rarely
+    
+    Change-Id: I8efc3f812b669f2d4e2c3be89e3f97b5cc895628
+    (cherry picked from commit 8b8d02886bd9fb8d5ad451c03e486cfad74aa74e)
+
+commit bd4881c961173dd7b5aa4708a7444cc4d556c2ca
+Author: Diogo Ferreira <defer@cyngn.com>
+Date:   Wed Apr 29 17:36:32 2015 +0100
+
+    stagefright: Configure codecs correctly in the mediatek platform
+    
+    We were setting the width/height as stride/sliceheight for both
+    MTK and software codecs, which is wrong, it is only required in the
+    former and will cause visual corruption in the later.
+    
+    Additionally, this adds buffer alignment which prevents MTK codecs
+    from following a slower path.
+    
+    Finally, we're now also using stride/sliceheight whenever extracting
+    a video frame.
+    
+    Change-Id: I3c40e17ad1757d3b27d919bf5378974b971aaacf
+
+commit f519217633249883bcaaf6e79cc457cd2a50a2af
+Author: Eric Laurent <elaurent@google.com>
+Date:   Tue Oct 28 15:46:45 2014 -0700
+
+    audio policy: validate stream type received from binder calls.
+    
+    Bug: 18001784.
+    Bug: 18002005.
+    
+    Conflicts:
+    	services/audiopolicy/AudioPolicyInterfaceImpl.cpp
+    	services/audiopolicy/AudioPolicyInterfaceImplLegacy.cpp
+    
+    Change-Id: I8efa674dceff5a6e10251b1c7a55e9bb2d532395
+
+commit 9fe3b80f53ed419e5dba1034e72f072e100beace
+Author: Leena Winterrowd <lenhardw@codeaurora.org>
+Date:   Wed Feb 25 14:28:52 2015 -0800
+
+    mpeg2ts: Enable timestamp reordering for HEVC TS content
+    
+    If HEVC TS content contains B-frames and the frame rate is not
+    explicitly set, the decoder may receive out-of-order timestamps
+    which manifest as a/v sync issues. Enable timestamp reordering
+    for HEVC content in the TS container to resolve such sync issues.
+    
+    CRs-Fixed: 801290
+    Change-Id: I13a2fe382caebc07c8dc046a1344a1b73036cd2e
+
+commit 4f684351042220af8e6fc9b501e12044d54a54b8
+Author: Leena Winterrowd <lenhardw@codeaurora.org>
+Date:   Thu Apr 2 11:41:59 2015 -0700
+
+    mpeg2ts: Clean up HEVC format checks
+    
+    - Fix an invalid IDR frame check in ATSParser to avoid a crash on seek
+    - Move custom HEVC TS parsing logic to private namespace
+    
+    CRs-Fixed: 808563
+    Change-Id: I1c5ce6719fedd1e2cc9a68c04eb8a7ad795ad3c8
+
+commit 4828d45d0c8d8f6bc144ee2e7d87a4e234246093
+Author: Mingming Yin <mingming@codeaurora.org>
+Date:   Tue Apr 14 14:14:20 2015 -0700
+
+    Audioflinger: fix for hardware accelerated effects memory leak issue
+    
+    - Initialize hwAcc to NULL in AudioMixer constructor and delete allocated
+      memory in deleteTrackName
+    
+    Change-Id: Iffe862d1d17345697ac7e233220c2e3f26343f77
+    CRs-Fixed: 814304
+
+commit fbe18e6c00c48145017d49c8e073e00348479abf
+Author: Satya Krishna Pindiproli <satyak@codeaurora.org>
+Date:   Mon Apr 20 12:04:01 2015 +0530
+
+    audiopolicy: fix crash in camcorder during voice call
+    
+    - During an MO call when camcorder recording is done,
+      a crash is observed for the first time.
+    
+    - The crash is due to an assert that fails because an
+      inappropriate value is returned.
+    
+    - Fix the issue by returning NO_INIT to avoid the assert.
+    
+    CRs-Fixed: 823350
+    Change-Id: Id83111957dab04a3db396401547989db8e8ed573
+
+commit d851d899284fcb060be03a79196578ce48a11eb5
+Author: Steve Kondik <steve@cyngn.com>
+Date:   Tue Apr 28 23:20:32 2015 +0800
+
+    Revert "nuplayer: Modify seek and resume latency calculation"
+    
+     * Dead code.
+    
+    This reverts commit 1aff8485242a72417615833d3522363c03ce9a31.
+    
+    Change-Id: I755f93368e3773add56178eb283b00f9bf8bbb69
+
+commit ec8cc54df791d2000ae46f77e5052a00b4340a7f
+Author: Steve Kondik <steve@cyngn.com>
+Date:   Wed Apr 29 18:50:53 2015 +0800
+
+    nuplayer: Fix bitrate propagation
+    
+     * We use "bitrate" rather than "bit-rate".
+    
+    Change-Id: I4699194e3e3f7ef55b4eb554f5de7a6b5f6b80ce
+
+commit a024ef41bf8471bd2b8452bc01b2974ad2a5164c
+Merge: ed8f875 ec8cc54
+Author: ZION959 <ziontran@gmail.com>
+Date:   Thu Apr 30 11:35:06 2015 -0700
+
+    Merge remote-tracking branch 'CM/cm-12.1' into cm-12.1-2
 
 project frameworks/base/
 commit 370a23c727e5618f55184035784fbbd71e160e29
@@ -1960,25 +2218,223 @@ Date:   Wed Apr 29 09:04:47 2015 -0700
     
     Change-Id: I509ae1989fe1ec701cec7bc6ead78ab4e69bd64d
 
+commit 846813104e4ea9b03f03fc0c3f9a010753f1646b
+Author: Altaf-Mahdi <altaf.mahdi@gmail.com>
+Date:   Wed Apr 15 19:04:19 2015 +0100
+
+    Base: enable/disable doze through Profiles (1/2)
+    
+    Change-Id: I37a3613a7e4a8d54b43ec9336c4aebc5a92d8d77
+
+commit 82aab46c1b3cffc25bc3649a1c9f2496ad1a8e14
+Author: Altaf-Mahdi <altaf.mahdi@gmail.com>
+Date:   Thu Apr 30 13:55:58 2015 -0700
+
+    Base: Add a controller for in-call proximity sensor (1/3)
+    
+    Change-Id: Icd17599ef3e0c45ee10fede7d663ea9a30446257
+    
+    Conflicts:
+    	core/java/android/provider/Settings.java
+
+commit 0b0b9b73abe913b54159286f28dbc07e93138328
+Author: longyu.huang <longyu.huang2014@gmail.com>
+Date:   Thu Apr 23 04:17:14 2015 -0700
+
+    optimize wallpaper load,avoid show black wallpaper.
+    
+    [Preconditions]
+    open auto-rotate
+    
+    [Procedures]
+    1.enter Contacts app, and rotate 90 degrees to the right
+    2.press power key to lock screen,and unlock
+    3.rotare 90 degrees to the left and exit Contacts app
+    4.the wallpaper will be black first,then show the really wallpaper.
+    
+    Change-Id: Ia8f77b9a685c49cfc0a33e661ef073d90b8b363c
+
+commit 5bf6f6fda1bc09836ea858c76116da142373b390
+Author: Roman Birg <roman@cyngn.com>
+Date:   Thu Apr 30 11:44:57 2015 -0700
+
+    SystemUI: bluetooth tile: fix disconnect action
+    
+    Change-Id: I3858dae5539baeb6e70220e39af9cc22134280c9
+    Signed-off-by: Roman Birg <roman@cyngn.com>
+
+commit 84512731ebca12d01e4c585ca7a9f7a9fd9bd5d7
+Author: Apoorv Raghuvanshi <apoorvr@codeaurora.org>
+Date:   Mon Mar 30 17:58:55 2015 -0700
+
+    audio: Playback over USB DAC connected before boot
+    
+    Playback over USB DAC does not work if USB cable from MTP
+    to USB DAC is connected before phone bootup. Fix by making
+    sure if USB is connected then picking the same
+    
+    Change-Id: Ifb10e794ed7f21bcf26349440d2c2a9baf7a28aa
+    CRs-Fixed:803353
+
+commit ab858c8b6b01f6468cd1591ce8569f4a0466b562
+Author: Ravinder Konka <rkonka@codeaurora.org>
+Date:   Tue Dec 30 16:57:36 2014 +0530
+
+    Tethering: Set sys.usb.tethering to true on Tethering
+    
+    Set the system Property "sys.usb.tethering" to true when
+    tethering is enabled on UI
+    
+    Change-Id: I805a38b2d3ed055a562298d71f33fd5030b3a4a0
+
+commit 0e988e896ed37de936b094bc6303d1f1777f18e2
+Author: kaiyiz <kaiyiz@codeaurora.org>
+Date:   Mon Jan 5 10:44:19 2015 +0800
+
+    Widget: Catch null point exception in AbsListViewAutoScroller
+    
+    The first view of AbsListView is null, so there is a NullPointerException
+    happen.
+    
+    Add a judgement for the first view of AbsListView.
+    
+    CRs-Fixed: 776294
+    
+    Change-Id: I7e25d1430b1bab0cff313492163a419fbf5960b5
+
+commit c3de0de6ada8e078d7229aec1a4f0a397f4b7eb7
+Author: kaiyiz <kaiyiz@codeaurora.org>
+Date:   Mon Feb 9 14:08:14 2015 +0800
+
+    WindowManager: Disable rotation for BootAnimation screen
+    
+    BootAnimation screen is not rotated when device bootup or shutdown.
+    And still should not be rotated when device doing factory data
+    reseting. Otherwise BootAnimation layer would only cover the left
+    part of the screen and display error.
+    
+    Change-Id: I79515dcc87965257e1773142138a84449fb711e4
+    CRs-Fixed: 784522
+
+commit ba19da1b8c46ad287afa263701cc8b2b46705825
+Author: Kun Liang <kunliang@codeaurora.org>
+Date:   Tue Jan 6 15:21:04 2015 +0800
+
+    AppOps: allow MEDIA_RW uid to start activity
+    
+    Sdcard daemon, which is running with MEDIA_RW uid, need start activity
+    to show dialog to users when apps try to access protected files.
+    
+    Change-Id: Iac1efb862e9579d3f59786c57cf18fe6518ce87b
+
+commit d2a5e2f6bfc6297a419fd113f8adcdcbdd925807
+Author: kaiyiz <kaiyiz@codeaurora.org>
+Date:   Wed Feb 11 11:40:51 2015 +0800
+
+    RP: Notification and ringtone can't be overlaid by carrier
+    
+    There are some logic error for ringtone and notification
+    overlay when sound customized. Reconstruct these code to
+    make it overlay the right ringtone and notification.
+    
+    Change-Id: I0fd0abfe833c7920bf3ce6829998b92644eae48c
+    CRs-Fixed: 761741
+
+commit 7cba896938a0984dd673ecf4581963a1c3d4f898
+Author: kaiyiz <kaiyiz@codeaurora.org>
+Date:   Mon Jan 19 10:26:05 2015 +0800
+
+    MMS: Fix the edit options menu disappear after click edit button
+    
+    It should not check if the PopupWindow is not showing before hide
+    the PopupWindow.
+    
+    It should check if the PopupWindow is showing before hide PopupWindow.
+    
+    CRs-Fixed: 778105
+    
+    Change-Id: I80fe49c270ca3ba4d6c22c6aa32408826ff3ac5c
+
+commit c338a9928cf72618084d8a6ee61cf3f0ba22088c
+Author: Matt Garnes <matt@cyngn.com>
+Date:   Wed Feb 11 18:37:57 2015 -0800
+
+    Do not play the default ringtone if it cannot be retrieved.
+    
+    In performAuditoryFeedbackForAccessibilityIfNeed() if the default
+    ringtone cannot be retrieved, do not try to set the stream or play it.
+    
+    TODO: Find the invalid condition that caused this scenario to occur in the first place.
+    
+    Change-Id: I79d00e016fc07e66f32723c49090a2098163f905
+
+commit c66239ee7f298b93b97cb257ca2ff25e0f01f21c
+Author: Pan Fang <fangpan@codeaurora.org>
+Date:   Thu Mar 5 15:40:47 2015 +0800
+
+     WindowManager: remove freezing window to fix UI freezing issue
+    
+     In some corner case, some window is at exiting state, but can't be
+     removed. This will result the windownmanger fall into freezing state.
+     The fix will remove this exiting window when encounter this case.
+    
+    CRs-Fixed: 803491
+    Change-Id: I8ba72ab0566e9d13a0405be1fa4472f826d0af50
+
+commit 896f7498c218239e465248ed62af43d148d14c9a
+Author: laufersteppenwolf <laufersteppenwolf@gmail.com>
+Date:   Mon Jan 5 21:33:19 2015 +0100
+
+    Fix GPS for old GPS HALs
+    
+    Some old GPS HALs like the one on the Optimus 4x HD are broken without this
+    and can also cause bootloops (like on the 4x HD).
+    To enable this just add the following to your config.xml overlay:
+    
+    <bool name="config_legacyGpsHAL">true</bool>
+    
+    Change-Id: I3108d9f1baf728132f048ddba846d3db96173ec7
+
+commit ecfcaf903552b3fb17b4800940bdba6aaa903df3
+Author: riddle_hsu <riddle_hsu@htc.com>
+Date:   Thu Mar 19 01:11:55 2015 +0800
+
+    Fix no vibration during shutdown.
+    
+    In ShutdownThread:rebootOrShutdown, the vibrator is created
+    by "new SystemVibrator()" which will use default constructor
+    of Vibrator.
+    
+    And because system server is not bound application,
+    ActivityThread.currentPackageName will be null.
+    Then the member mPackageName of Vibrator is null.
+    
+    When doing vibration:
+    VibratorService.startVibrationLocked
+     -> mAppOpsService.startOperation
+     -> getOpsLocked (null package will get null op)
+     -> return MODE_ERRORED
+     -> no vibration
+    
+    https://code.google.com/p/android/issues/detail?id=160830
+    
+    Pass null context in SystemServer.performPendingShutdown
+    because vibrator service is not ready, and from the call
+    sequence, there is no available context to use.
+    
+    Change-Id: I3e0175ba6dc2e1a92787873eda4461fba6e89783
+
+commit 973c4fea609a447146361464f308cdee7c0f4785
+Author: Alan Viverette <alanv@google.com>
+Date:   Tue Apr 28 17:30:04 2015 -0700
+
+    Adjust display inversion matrix to account for luminance
+    
+    Bug: 20346301
+    Change-Id: I10633705f2bfddbdeec063f9489a4f8679b9e8ee
+    (cherry picked from commit 6437518061fc8718590e0272ed17ea64710d2299)
+
 project frameworks/native/
-commit f22a457adc407a64abf1bfcf9846aaa6136479d9
-Author: Richard Uhler <ruhler@google.com>
-Date:   Wed Mar 18 12:39:09 2015 -0700
-
-    installd: Add gzipped odex support
-    
-    Instead of all dex2oat commands with source that has a precompiled
-    compressed odex file the installd executes the patchoat command that
-    patches that precompiled file.
-    
-    The installd needs the patchoat to support 2 additional options:
-    --input-oat-gz-fd and --swap-fd. Patchoat decompresses the input.
-    
-    Change-Id: Ifa61af39c5644529699c17d6c19ef03742989afd
-    Depends-Change-Id: I54dbfcdc58bc0f57f7eccc3929c09295c597794b
-    Signed-off-by: Julien Delayen <julien.delayen@intel.com>
-    Signed-off-by: Yevgeny Rouban <yevgeny.y.rouban@intel.com>
-
 commit 9c16578a0e20a323812c476b3004bd74fc0317a2
 Merge: 521ce7b f22a457
 Author: ZION959 <ziontran@gmail.com>
@@ -1994,38 +2450,7 @@ Date:   Sat Dec 14 02:58:19 2013 +0100
     
     Change-Id: Ibc5aaec5661455477815043440fae86052a395ce
 
-project frameworks/opt/net/ims/
-commit a9a37353857fa05bb3f13e9a02500d555d33b386
-Author: Etan Cohen <etancohen@google.com>
-Date:   Thu Feb 26 17:47:13 2015 -0800
-
-    Add interface to determine whether the IMS service is available
-    
-    Bug: 19447972
-    Change-Id: Ida074dd6840c1c7682bdca32d858aa28db2dc71d
-
 project frameworks/opt/telephony/
-commit 2838601b21cea690c1daa10411c8252ea78b3c14
-Merge: a4e187a 9c4dcf9
-Author: ZION959 <ziontran@gmail.com>
-Date:   Thu Apr 23 13:20:30 2015 -0700
-
-    Merge remote-tracking branch 'CM/cm-12.1' into cm-12.1
-
-commit 1d86be63f68fa6027258a04fd19b873124a63591
-Author: Etan Cohen <etancohen@google.com>
-Date:   Thu Feb 26 17:47:54 2015 -0800
-
-    IMS phone instantiation: add polling on base phone creation
-    
-    Phone registers for notification of IMS service up and down. However,
-    there may be a race condition which causes the phone to be created after
-    the intents are alrady sent. Add polling in addition to listening to
-    broadcast intent.
-    
-    Bug: 19447972
-    Change-Id: I0e12118bb11a22161cf2f389b9ca6f39442202e1
-
 commit 2e374b88cba1803edcb540e5c64f50aa468cc573
 Author: Ricardo Cerqueira <ricardo@cyngn.com>
 Date:   Fri Apr 24 00:14:01 2015 +0100
@@ -2082,14 +2507,26 @@ Date:   Tue Apr 28 19:22:33 2015 -0700
 
     Merge remote-tracking branch 'CM/cm-12.1' into cm-12.1
 
-project frameworks/rs/
-commit 3e139177b18740dbf1dcd6cf4217d31e8a3ced69
-Author: ZION959 <ziontran@gmail.com>
-Date:   Mon Mar 23 14:29:13 2015 -0700
+commit 6d2524626b7e006425ed23d757b4a6b11cc631f2
+Author: maxwen <max.weninger@gmail.com>
+Date:   Wed Apr 15 23:30:24 2015 +0200
 
-    fixed build for Qclang 3.6
+    telephony: kill IccSmsInterfaceManager log spam
     
-    Change-Id: Ia5198ff67c95dcc93650f29145a1468a1e7d731a
+    Change-Id: I11aba1edb5af50ccd769f6102875ab09e2895d5f
+
+commit e2199ed78f186bf15f6445e2ea945f3a3705daf9
+Author: Patrick Lower <devvortex@gmail.com>
+Date:   Wed Apr 29 15:31:29 2015 -0400
+
+    MMS (change 2 of 2): Update apnProfileID for MMS only apn.
+    
+    Depends on: http://review.cyanogenmod.org/#/c/96582/
+    
+    Change-Id: I3dfaddc6d4a0ee581f98e9290d4593b79cd3b2c6
+    
+    Patchset: 2
+    http://review.cyanogenmod.org/#/c/96584/
 
 project hardware/qcom/audio-caf/msm8974/
 commit 24c0fe3a452b107765867619276bbddbc3a5b5dd
@@ -2184,26 +2621,22 @@ Date:   Fri Dec 5 19:45:10 2014 +0900
     Signed-off-by: Erik Kline <ek@google.com>
     Signed-off-by: Lorenzo Colitti <lorenzo@google.com>
 
-project packages/apps/AudioFX/
-commit 78f4efe38e876ec96f249daa8961fbec3f9fd30c
-Author: Brian Jolly <bkjolly77@gmail.com>
-Date:   Thu Apr 23 14:20:28 2015 -0400
+project kernel/samsung/trlte/
+commit 49280572741ee9c0084f50f8701f1e8e789e34bb
+Author: Steve Kondik <steve@cyngn.com>
+Date:   Sun Mar 8 01:25:52 2015 -0500
 
-    Bring AudioFX to Leanback Launcher
+    video: mdss: Color temperature interface using PCC
     
-        This adds AudioFX to Leanback Settings
+     * MDSS5 supports Polynomial Color Correction. Use this to implement
+       a simple sysfs API for adjusting RGB scaling values. This can be
+       used to implement color temperature and other controls.
+     * Why use this when we have KCAL? This code is dead simple, the
+       interface is in the right place, and it allows for 128X accuracy.
     
-    Change-Id: Ibbe707b2ca7c481989815bfc16c37bd87ab993d5
+    Change-Id: Icc497dafff7d25560f0e4e9597d52c78d5ab9178
 
 project packages/apps/Browser/
-commit 9d321eae0ed3c7b47c06deec69476d919986b041
-Author: Brian Jolly <bkjolly77@gmail.com>
-Date:   Wed Apr 22 14:06:02 2015 -0400
-
-    Make Browser useable in Leanback Launcher
-    
-    Change-Id: I0838b89f5186b125ded732520c853f75d85e182c
-
 commit 45284de420f2674b7a28cebaf02b6e5880050f22
 Merge: dd822c5 9d321ea
 Author: ZION959 <ziontran@gmail.com>
@@ -2212,14 +2645,6 @@ Date:   Sat Apr 25 18:04:18 2015 -0700
     Merge remote-tracking branch 'CM/cm-12.1' into cm-12.1
 
 project packages/apps/CMFileManager/
-commit f8ecdf9769d705247e8c5f932737d26e3eb69cd6
-Author: dhacker29 <dhackerdvm@gmail.com>
-Date:   Tue Apr 14 02:31:36 2015 -0400
-
-    CMFM: Support launching from AndroidTV LeanBack UI
-    
-    Change-Id: I306922501daa030a3ab401771bca57506d160fed
-
 commit c6a778c871ee092117305115c93bc93117c34ddd
 Author: Michael Bestas <mikeioannina@gmail.com>
 Date:   Sat Apr 25 01:13:51 2015 +0300
@@ -2227,19 +2652,6 @@ Date:   Sat Apr 25 01:13:51 2015 +0300
     Automatic translation import
     
     Change-Id: I4d2b17d0f4ec00915ff36255a8ccfce547a88db1
-
-project packages/apps/CMRemixCenter/
-commit b810fb3510f030ec920b282015f0e5163bd13368
-Author: ZION959 <ziontran@gmail.com>
-Date:   Thu Apr 23 15:49:46 2015 -0700
-
-    update gapps urls
-
-commit a42f16da3ed8aee2b4f930f787aa8e7b1f5874a0
-Author: ZION959 <ziontran@gmail.com>
-Date:   Thu Apr 23 15:56:33 2015 -0700
-
-    specify correct updater LP version
 
 project packages/apps/CMWallpapers/
 commit c0019e29644978f4aec5954d6aaa22cc0e5cbb10
@@ -2302,27 +2714,6 @@ Date:   Fri Apr 24 13:56:00 2015 -0700
     Change-Id: I13ca3156c34eccdd8f60d8585281ae0585aac58e
 
 project packages/apps/Dialer/
-commit d29361f264f502890c23ca67271401d13985a123
-Author: emancebo <emancebo@cyngn.com>
-Date:   Mon Apr 20 16:50:20 2015 -0700
-
-    Use "unknown" in filename if call recording phone number undefined
-    
-    Change-Id: I827c1e9c022a9f0fe39ce820fe1ce6875992af56
-    (cherry picked from commit b0f6c112bb0c692de83d6ddbc5d866089840002b)
-
-commit 2c623861e42d7b90a39c6a30fd62637f250a2e8f
-Merge: 8fad8b5 d29361f
-Author: ZION959 <ziontran@gmail.com>
-Date:   Thu Apr 23 14:18:46 2015 -0700
-
-    Merge remote-tracking branch 'CM/cm-12.1' into cm-12.1
-    
-    Conflicts:
-    	src/com/android/services/callrecorder/CallRecorderService.java
-    
-    Change-Id: I88813562caf47ff3c467d29e189302cf78e30fd3
-
 commit 8d9ceaf3d2cdf48bfb0779df4fc6a959db9f7f8b
 Author: Michael Bestas <mikeioannina@gmail.com>
 Date:   Sat Apr 25 01:14:10 2015 +0300
@@ -2396,22 +2787,6 @@ Date:   Sat Apr 25 18:07:13 2015 -0700
     Merge remote-tracking branch 'CM/cm-12.1' into cm-12.1
 
 project packages/apps/InCallUI/
-commit 198dd362c31a67996bc84ed63d55d4b08512c843
-Author: emancebo <emancebo@cyngn.com>
-Date:   Mon Apr 20 16:48:39 2015 -0700
-
-    Fix call recorder exception on unknown number / conference call
-    
-    Change-Id: Ibb4f4aa6e79cbd953611ac39ce9f2d4d89615c47
-    (cherry picked from commit c21907022be37a885e94867801404c91e8f9cc83)
-
-commit 9612017afb8528e4251a2096c87f0cbade9cfdaa
-Merge: 19db048 198dd36
-Author: ZION959 <ziontran@gmail.com>
-Date:   Thu Apr 23 14:12:05 2015 -0700
-
-    Merge remote-tracking branch 'CM/cm-12.1' into cm-12.1
-
 commit c7f41012299c5f231e65c8d1e8f32549dfc5e992
 Author: Roman Birg <roman@cyngn.com>
 Date:   Wed Apr 15 10:07:28 2015 -0700
@@ -2436,113 +2811,38 @@ Date:   Sat Apr 25 18:07:55 2015 -0700
 
     Merge remote-tracking branch 'CM/cm-12.1' into cm-12.1
 
+commit b3e301024b62373bb57e503f25d27e0d2fcc83c2
+Author: Altaf-Mahdi <altaf.mahdi@gmail.com>
+Date:   Tue Apr 28 20:40:29 2015 +0100
+
+    InCallUI: Add a controller for in-call proximity sensor (2/3)
+    
+    follow up to this patch
+    https://github.com/Euphoria-OS/android_packages_apps_InCallUI/commit/9cc23a9201b7580b0cbb6018ba62b0b06b8f1651
+    
+    Change-Id: If3d581486c5776b1d030e1087bdf664be468115a
+
+commit 068cee8dcad16d63bb000bef0534d40cd5309f0c
+Author: Yorke Lee <yorkelee@google.com>
+Date:   Mon Mar 30 12:31:19 2015 -0700
+
+    Don't hide end call button until call is disconnected
+    
+    Currently, the end call button is hidden the moment the user
+    initates a hangup. In the event that the call is not actually
+    disconnected, the UI is stuck in a "Hanging up" state that is
+    unresponsive
+    
+    For the majority of calls that disconnect correctly, there should
+    be no user-perceptible difference in behavior. For calls that are
+    not disconnected correctly, the end call button will remain showing
+    so that hangup commands can continue to be sent that will eventually
+    disconnect the call correctly.
+    
+    Bug: 19933863
+    Change-Id: I2ff2018d7d229615f5f57c599f74954ec7492f6b
+
 project packages/apps/KernelAdiutor/
-commit d92cb58166720f7e729f8fc9943d9249d4c64df0
-Author: Willi Ye <williye97@gmail.com>
-Date:   Tue Apr 21 18:17:55 2015 +0200
-
-    Decrease Card's height as much as possible
-    some minor cleanups
-
-commit 4a4cf0e8e90dd032c361cc369912683efa2a1c31
-Author: Willi Ye <williye97@gmail.com>
-Date:   Tue Apr 21 20:46:05 2015 +0200
-
-    Ditch that oversized color preview image
-    
-    Conflicts:
-    	app/src/main/java/com/grarak/kerneladiutor/fragments/kernel/ScreenFragment.java
-    
-    Change-Id: I878b16c9ea5409e68195100c92ecb7407ef05f86
-
-commit e2a79e2b720f11ec188aebe9e2107fe9962de008
-Author: Willi Ye <williye97@gmail.com>
-Date:   Tue Apr 21 21:43:17 2015 +0200
-
-    Some UI fixes
-
-commit e36b0ca5f0436dc40df878f4101ae735e016bac3
-Author: Willi Ye <williye97@gmail.com>
-Date:   Tue Apr 21 22:29:20 2015 +0200
-
-    Add some mdnie controls and negative toggle
-    - Register Hook
-    - Master Sequence
-    
-    Conflicts:
-    	app/src/main/java/com/grarak/kerneladiutor/fragments/kernel/ScreenFragment.java
-    
-    Change-Id: Id6208cd46642f21af8c39bee8f2d09b3a5a28cac
-
-commit c74ed98f7f2605eec3582f8345ab6141c62dc201
-Author: Willi Ye <williye97@gmail.com>
-Date:   Tue Apr 21 23:43:36 2015 +0200
-
-    Decrease size of navigation drawer picture
-
-commit e83e48f963d5e9ed282251cb2f9f0d245bebcb41
-Author: Willi Ye <williye97@gmail.com>
-Date:   Tue Apr 21 23:46:05 2015 +0200
-
-    version 0.9.2 beta
-
-commit dc78498b332fb524bf16b26a56da74cc10d8fd5a
-Author: Willi Ye <williye97@gmail.com>
-Date:   Tue Apr 21 23:49:53 2015 +0200
-
-    Import translations from crowdin
-
-commit 0195f12c02befd0473d5a0044b73a12ef5271ca6
-Author: Willi Ye <williye97@gmail.com>
-Date:   Wed Apr 22 23:12:14 2015 +0200
-
-    Make use of the new SDK
-    Finally Google
-    
-    Conflicts:
-    	app/app.iml
-    	app/src/main/java/com/grarak/kerneladiutor/fragments/RecyclerViewFragment.java
-    	app/src/main/java/com/grarak/kerneladiutor/fragments/kernel/MiscFragment.java
-    
-    Change-Id: Ic56fec7559a7509b7a0b1252c111b137c9549211
-
-commit e6156a36781b9a59ed0f19e920add717003625dd
-Author: Willi Ye <williye97@gmail.com>
-Date:   Thu Apr 23 01:10:44 2015 +0200
-
-    Bug fixes
-    and more material
-    
-    Conflicts:
-    	app/src/main/java/com/grarak/kerneladiutor/fragments/kernel/ScreenFragment.java
-    	app/src/main/java/com/grarak/kerneladiutor/fragments/tools/RecoveryFragment.java
-    
-    Change-Id: Iae089dbc6277a2a5e40cd8514fbb87343375f163
-
-commit 1a8a03daf55fffa0224cc602beaec0cabc02d6d7
-Author: fusionjack <dogfight60-fusionjack@yahoo.de>
-Date:   Thu Apr 23 20:04:12 2015 +0200
-
-    AndroidManifest updates
-    
-    Change-Id: Icd93e515589e56d17934889e8b7d9f9535b1b4d8
-
-commit d596a5912714cbf7505892acdee562c8f1a6b992
-Author: fusionjack <dogfight60-fusionjack@yahoo.de>
-Date:   Thu Apr 23 20:08:27 2015 +0200
-
-    libs: Update to 22.1.0
-    
-    Change-Id: I7651c8ce46996fcb74aea43c40ba9e41a6122600
-
-commit b64167f8186c07cce833b15f2117496b77e78796
-Author: fusionjack <dogfight60-fusionjack@yahoo.de>
-Date:   Thu Apr 23 20:11:49 2015 +0200
-
-    Bump version to 0.9.2
-    
-    Change-Id: I23a71bde11bb8ac3654d43f2b2371cfb41f31acf
-
 commit 84102f14a3b26d31e868e49f9a9f0faa0136be4c
 Author: Willi Ye <williye97@gmail.com>
 Date:   Thu Apr 23 21:30:45 2015 +0200
@@ -2933,13 +3233,6 @@ Date:   Fri Apr 24 15:36:58 2015 -0700
     Change-Id: I3592c903ac262a58e70e121ec242ac784775ba1f
 
 project packages/apps/Mms/
-commit 75dcf8cfcdf24beeeaaafca963f8f4f219a0ac99
-Merge: 4c25c32 995532d
-Author: ZION959 <ziontran@gmail.com>
-Date:   Thu Apr 23 14:28:08 2015 -0700
-
-    Merge remote-tracking branch 'CM/cm-12.1' into cm-12.1
-
 commit c52d75c70553ec55f191e74df277acd0878422a8
 Author: Matthieu Baerts <matttbe@gmail.com>
 Date:   Tue Apr 15 00:20:05 2014 +0200
@@ -3010,16 +3303,6 @@ Date:   Sun Apr 26 11:07:19 2015 -0700
     Signed-off-by: Roman Birg <roman@cyngn.com>
 
 project packages/apps/Settings/
-commit ff3524f4386dffd0f0b4e809cc1f25cbbaf86b10
-Author: LorDClockaN <davor@losinj.com>
-Date:   Thu Apr 23 01:51:41 2015 -0700
-
-    Settings: Second Clock (2/2)
-    Change-Id: I863550e41bc083166b48506ec2d1db2b918fcb5e
-    
-    Conflicts:
-    	res/xml/status_bar_settings.xml
-
 commit 6a65d1c18b08b3df078ead1cc383fda36fb3b337
 Author: Raj Yengisetty <rajesh@cyngn.com>
 Date:   Thu Apr 23 15:27:25 2015 -0700
@@ -3479,6 +3762,157 @@ Date:   Wed Apr 29 21:37:19 2015 -0700
     
     Conflicts:
     	res/xml/display.xml
+
+commit 02d9731e7d55eec9b6b202956931b02564f4a924
+Author: Paul Beeler <pbeeler80@gmail.com>
+Date:   Thu Apr 30 10:30:58 2015 -0700
+
+    Optimize Settings png's
+    
+    Change-Id: I70b309c97e924b88267bca6b74e0ccbc3f172637
+    Signed-off-by: Paul Beeler <pbeeler80@gmail.com>
+    
+    Conflicts:
+    	res/drawable-hdpi/ic_power_system.png
+    	res/drawable-hdpi/ic_settings_cell_standby.png
+    	res/drawable-hdpi/ic_settings_phone_idle.png
+    	res/drawable-hdpi/ic_settings_voice_calls.png
+    	res/drawable-hdpi/ic_sync_anim_holo.png
+    	res/drawable-hdpi/ic_sync_error_holo.png
+    	res/drawable-hdpi/ic_sync_grey_holo.png
+    	res/drawable-hdpi/ic_wps_dark.png
+    	res/drawable-hdpi/ic_wps_light.png
+    	res/drawable-hdpi/nfc_payment_empty_state.png
+    	res/drawable-mdpi/ic_bt_network_pan.png
+    	res/drawable-mdpi/ic_power_system.png
+    	res/drawable-mdpi/ic_settings_cell_standby.png
+    	res/drawable-mdpi/ic_settings_phone_idle.png
+    	res/drawable-mdpi/ic_settings_voice_calls.png
+    	res/drawable-mdpi/ic_sync_anim_holo.png
+    	res/drawable-mdpi/ic_sync_error_holo.png
+    	res/drawable-mdpi/ic_sync_grey_holo.png
+    	res/drawable-mdpi/ic_wps_dark.png
+    	res/drawable-mdpi/ic_wps_light.png
+    	res/drawable-mdpi/nfc_payment_empty_state.png
+    	res/drawable-xhdpi/ic_bt_network_pan.png
+    	res/drawable-xhdpi/ic_item_delete.png
+    	res/drawable-xhdpi/ic_power_system.png
+    	res/drawable-xhdpi/ic_settings_cell_standby.png
+    	res/drawable-xhdpi/ic_settings_phone_idle.png
+    	res/drawable-xhdpi/ic_settings_voice_calls.png
+    	res/drawable-xhdpi/ic_sync_anim_holo.png
+    	res/drawable-xhdpi/ic_sync_error_holo.png
+    	res/drawable-xhdpi/ic_sync_grey_holo.png
+    	res/drawable-xhdpi/ic_tab_selected_download.png
+    	res/drawable-xhdpi/ic_tab_selected_running.png
+    	res/drawable-xhdpi/ic_wps_dark.png
+    	res/drawable-xhdpi/ic_wps_light.png
+    	res/drawable-xhdpi/nfc_payment_empty_state.png
+    	res/drawable-xxhdpi/ic_bt_network_pan.png
+    	res/drawable-xxhdpi/ic_item_delete.png
+    	res/drawable-xxhdpi/ic_power_system.png
+    	res/drawable-xxhdpi/ic_settings_cell_standby.png
+    	res/drawable-xxhdpi/ic_settings_phone_idle.png
+    	res/drawable-xxhdpi/ic_settings_voice_calls.png
+    	res/drawable-xxhdpi/ic_sync_anim_holo.png
+    	res/drawable-xxhdpi/ic_sync_error_holo.png
+    	res/drawable-xxhdpi/ic_sync_grey_holo.png
+    	res/drawable-xxhdpi/ic_tab_selected_download.png
+    	res/drawable-xxhdpi/ic_tab_selected_running.png
+    	res/drawable-xxhdpi/ic_wps_dark.png
+    	res/drawable-xxhdpi/ic_wps_light.png
+    	res/drawable-xxhdpi/nfc_payment_empty_state.png
+    	res/drawable-xxxhdpi/ic_bt_network_pan.png
+    	res/drawable-xxxhdpi/ic_power_system.png
+    	res/drawable-xxxhdpi/ic_settings_phone_idle.png
+    	res/drawable-xxxhdpi/ic_sync_anim_holo.png
+    	res/drawable-xxxhdpi/ic_sync_error_holo.png
+    	res/drawable-xxxhdpi/ic_sync_grey_holo.png
+    	res/drawable-xxxhdpi/ic_tab_selected_download.png
+    	res/drawable-xxxhdpi/ic_tab_selected_running.png
+    	res/drawable-xxxhdpi/nfc_payment_empty_state.png
+
+commit 0b39c4336d5199dda88f460f1f026bb171201498
+Author: Paul Beeler <pbeeler80@gmail.com>
+Date:   Thu Apr 30 10:32:34 2015 -0700
+
+    Remove extra kernel gcc version info (1/2)
+    
+    No longer needed with 9590f426e7986e64d68ae80b4ac5c6409f4c88b5
+    
+    Change-Id: Idd694e9616fa9875aa3911e58ec8a4e526423c0b
+    Signed-off-by: Paul Beeler <pbeeler80@gmail.com>
+    
+    Conflicts:
+    	res/values-eu-rES/cm_plurals.xml
+
+commit 9e0dcced98f3deaff0fb5d23a2895246703889d6
+Author: Shaun Eaton <shaunsibu@gmail.com>
+Date:   Mon Apr 27 22:53:25 2015 -0600
+
+    Lets use Dark Material colors
+    - TRDS will switch to use these colors.
+    - We have permission from @nicholaschum to use these colors for our TRDS.
+    - Add more white icons and remove the ones that we do not use.
+    
+    Change-Id: Ia3012e3f4ffddf8ff560822fca27fad62118c561
+
+commit ee24d426a5d5cf2793f6ed95f9e40d72c1fa16df
+Author: ZION959 <ziontran@gmail.com>
+Date:   Thu Apr 30 11:46:22 2015 -0700
+
+    remove leftover breathing sms/misscall/voicemail
+
+commit e01b6b2f77c9b2e38b0ec5afcf15d9874b1b4562
+Author: Altaf-Mahdi <altaf.mahdi@gmail.com>
+Date:   Wed Apr 15 19:03:00 2015 +0100
+
+    Settings: enable/disable doze through Profiles (2/2)
+    
+    * moved isDozeAvailable boolean to Utils so we can check for it in profiles
+    
+    Change-Id: I5a768098b4ed00b28931bee58a58efa8280262a1
+    
+    Conflicts:
+    
+    	src/com/android/settings/DisplaySettings.java
+    	src/com/android/settings/Utils.java
+
+commit 25b55e41b24bd73d1619813eec9bd71390b97a3d
+Author: ZION959 <ziontran@gmail.com>
+Date:   Thu Apr 30 14:51:21 2015 -0700
+
+    Revert: Remove extra kernel gcc version info (1/2)
+    
+    No longer needed with 9590f426e7986e64d68ae80b4ac5c6409f4c88b5
+    
+    Change-Id: Idd694e9616fa9875aa3911e58ec8a4e526423c0b
+    Signed-off-by: Paul Beeler <pbeeler80@gmail.com>
+    
+    Conflicts:
+    	res/values-eu-rES/cm_plurals.xml (reverted from commit 0b39c4336d5199dda88f460f1f026bb171201498)
+
+commit f6fafbfd0b640d9fc7d58d97c194fd214764329a
+Author: Roman Birg <roman@cyngn.com>
+Date:   Tue Apr 28 14:02:21 2015 -0700
+
+    CryptKeeper: pattern unlock displays incorrect pw when correct
+    
+    fakeUnlockAttempt() gets called when the user inputs any pattern length
+    < 4 which queues up the 'incorrect error' message. The message needs to
+    be cleared before trying to actually check the password so it never goes
+    through in case the password was correct.
+    
+    Change-Id: If78db332d3d696ba443d0be911fb5db504cb14cd
+    Signed-off-by: Roman Birg <roman@cyngn.com>
+
+commit 91f09fd9c2590455f886c411c7db83f9a97c8d26
+Author: tobitege <tobiasteschner@googlemail.com>
+Date:   Wed Apr 29 21:17:05 2015 +0200
+
+    Fix NPE in slim shortcut if no icon was found
+    
+    Change-Id: If7adfdb82a8d014ab44ab74670b7a0e1655ecb9d
 
 project packages/apps/SlimLauncher/
 commit 545bd8acc5ebeadcb14f7e3fda51b875ef8fa274
@@ -4186,14 +4620,6 @@ Date:   Sat Apr 25 18:10:47 2015 -0700
     Merge remote-tracking branch 'CM/cm-12.1' into cm-12.1
 
 project packages/apps/TvSettings/
-commit 1b420c2224de6793e130a4b804f1762d1c49aadd
-Author: dhacker29 <dhackerdvm@gmail.com>
-Date:   Fri Apr 24 02:41:05 2015 -0400
-
-    AddAccessory: Add a public constructor for AddAccessoryContentFragment
-    
-    Change-Id: I5dcf8cc275d1fb44a360b2726a6f54aa9909abe6
-
 commit bb15ca7bf6f9cbe6af7bd3870024df99300954b5
 Author: dhacker29 <dhackerdvm@gmail.com>
 Date:   Sat Apr 25 22:01:11 2015 -0400
@@ -4270,32 +4696,7 @@ Date:   Sat Apr 25 18:11:20 2015 -0700
 
     Merge remote-tracking branch 'CM/cm-12.1' into cm-12.1
 
-project packages/providers/ThemesProvider/
-commit d1c089d471e41ba9216834c37f7e9380ff4b1212
-Author: d34d <clark@cyngn.com>
-Date:   Thu Apr 23 09:16:29 2015 -0700
-
-    Don't assume all default components come from one package
-    
-    When uninstalling a theme, we check for any components that may have
-    been applied from that theme and change them back to the default.
-    It is possible the default theme does not have all the components
-    that need to be returned to defaults which causes the mixnmatch
-    table to be out of sync.  This patch uses the default components map
-    to correctly set the components to the correct default, which can
-    include components from System theme.
-    
-    Change-Id: I78cbe874110d32998969b56dd9076f1439e61664
-    REF: LETTUCE-245
-
 project packages/services/Telecomm/
-commit 446e65b7bd5d9a36f1cba8967bfc58164baa3b87
-Merge: bbefc63 c1f0ec2
-Author: ZION959 <ziontran@gmail.com>
-Date:   Thu Apr 23 14:19:16 2015 -0700
-
-    Merge remote-tracking branch 'CM/cm-12.1' into cm-12.1
-
 commit ef6be14d04fb8741e73d0f1c0cf7c7b428f8e84c
 Author: Michael Bestas <mikeioannina@gmail.com>
 Date:   Sat Apr 25 01:16:03 2015 +0300
@@ -4312,22 +4713,6 @@ Date:   Sat Apr 25 18:09:51 2015 -0700
     Merge remote-tracking branch 'CM/cm-12.1' into cm-12.1
 
 project packages/services/Telephony/
-commit 7e6859079dad90fd170348d785365564cfe18986
-Merge: 3d9577a 1ea3057
-Author: ZION959 <ziontran@gmail.com>
-Date:   Thu Apr 23 14:19:45 2015 -0700
-
-    Merge remote-tracking branch 'CM/cm-12.1' into cm-12.1
-
-commit 632bedfcdedeb2d31f1424d395b850d3519f2d79
-Author: Dong Zhou <a22255@motorola.com>
-Date:   Sun Mar 15 11:58:27 2015 -0500
-
-    Set the capability to speed up audio setup for IMS MT call
-    
-    Bug: 19656525
-    Change-Id: Id7d0f46ed11efe5c6ab950a0ff6128fd2c5f5344
-
 commit d57df97ad4b30b578b9a2dcd105261e43486c870
 Author: Michael Bestas <mikeioannina@gmail.com>
 Date:   Sat Apr 25 01:16:09 2015 +0300
@@ -4342,6 +4727,55 @@ Author: ZION959 <ziontran@gmail.com>
 Date:   Sat Apr 25 18:10:23 2015 -0700
 
     Merge remote-tracking branch 'CM/cm-12.1' into cm-12.1
+
+commit a4c8700f51517afdee390ff7090cce38b47ecad9
+Author: mengsun <msun@codeaurora.org>
+Date:   Wed Dec 11 17:56:42 2013 +0800
+
+    TeleService: Add a controller for in-call proximity sensor (3/3)
+    
+    Add the setting for enable proximity sensor or not when calling
+    
+    ps2: Enable via overlay
+    
+    Change-Id: I42bc05ae1c22443cca782ac1ae66d5d5bb4ac858
+    
+    Conflicts:
+    	src/com/android/phone/CallFeaturesSetting.java
+
+commit 13d7fb84da237e793cf9527f15e469dd612b6b9c
+Author: Lin Ma <lma@cyngn.com>
+Date:   Mon Mar 30 17:38:33 2015 -0700
+
+    TeleService: pass phone ID to APN setting
+    
+    Conflicts:
+    	src/com/android/phone/CdmaOptions.java
+    
+    Change-Id: I3df6c42bc97a68f9e58431e0585a957056912e37
+    
+    Patchset: 2
+    http://review.cyanogenmod.org/#/c/96439/
+
+commit 1a58b65756903c3f89af8f8afdb4c878645c69e7
+Author: LuK1337 <priv.luk@gmail.com>
+Date:   Wed Apr 29 13:31:53 2015 +0200
+
+    msim: Fix FC on opening "calling accounts" in Dialer settings
+    
+    Variable sir seems to be null on some msim devices.
+    
+    Change-Id: Ia046e04da2edc0c06ed91a5878111f8e98f23b3b
+
+commit 96e25bf7c4ccbd9f53b9159845c1d6c24c8f020a
+Author: cretin45 <cretin45@gmail.com>
+Date:   Thu Apr 23 12:25:12 2015 -0700
+
+    TeleService: Remove HomeAsUp arrow for nested pref screens
+    
+    This brings the msim settings in line with single sim.
+    
+    Change-Id: I968efb7abcb8cfe85bff5593ac95794d6879a8b6
 
 project packages/wallpapers/PhotoPhase/
 commit 5b9c27711b3be1d3f672021def92e8cc8289dae6
@@ -4362,16 +4796,6 @@ Date:   Sun Apr 26 14:45:47 2015 -0700
     Change-Id: I6d516fd6edd6d51bec2cdb389cf731f96e2dbf55
 
 project system/core/
-commit 01e3a95295ea8f1e93ee1fea0e951dcac643deef
-Author: Andreas Gampe <agampe@google.com>
-Date:   Thu Nov 13 15:50:17 2014 -0800
-
-    System/core: Use memmove
-    
-    Should use memmove when you expect overlap.
-    
-    Change-Id: I268a173db40a4be54232958e37aa8a03c2a885ee
-
 commit a62d6161bb5a6ee55cd4ac9ccd3fe929b291bafb
 Merge: 00a598a 01e3a95
 Author: ZION959 <ziontran@gmail.com>
@@ -4514,12 +4938,6 @@ Date:   Thu Apr 9 10:20:03 2015 -0700
     (cherry picked from commit 623bc5bb1c80ff7dd8a3cd9c4b8272dfd8453db1)
 
 project vendor/cmremix/
-commit cda5615c2a4ec39a5ba27386c189421f928a82c1
-Author: ZION959 <ziontran@gmail.com>
-Date:   Tue Apr 21 19:37:00 2015 -0700
-
-    clean up unused changelog
-
 commit 6b96af3d329e36c29da2f2a96db196f8abfb83e4
 Author: Paul Beeler <pbeeler80@gmail.com>
 Date:   Fri Apr 24 00:55:13 2015 -0700
@@ -4669,6 +5087,48 @@ Date:   Wed Apr 29 13:00:34 2015 -0600
     
     Change-Id: I497cbdd5f52dbd24b7acc1f1ffe165eff3d6e4dd
     Signed-off-by: Paul Beeler <pbeeler80@gmail.com>
+
+commit 3a8b05a5be7311c239eb5108f69bc85e0d438788
+Author: Paul Beeler <pbeeler80@gmail.com>
+Date:   Wed Apr 29 23:12:23 2015 -0600
+
+    Remove extra kernel gcc version info writing to build.prop (2/2)
+    
+    No longer needed with
+    https://gitlab.com/SaberMod/pa-android-packages-apps-settings/commit/9590f426e7986e64d68ae80b4ac5c6409f4c88b5
+    
+    Change-Id: Icc3722b2f453f74c9aadde7998cf0faab35f7230
+    Signed-off-by: Paul Beeler <pbeeler80@gmail.com>
+
+commit b0e6ca7a43a1943ce35f32bfb3d56690580e773d
+Author: Paul Beeler <pbeeler80@gmail.com>
+Date:   Thu Apr 30 10:13:45 2015 -0700
+
+    Add strict-aliasing for optimization options.
+    
+    Change-Id: I903132993e75cfce35cee8ba1d21f1f6725322f1
+    Signed-off-by: Paul Beeler <pbeeler80@gmail.com>
+    
+    Conflicts:
+    	config/cmremix_sm.mk
+
+commit 3f095d85423846ece708c82024d97ef02da071c1
+Author: Paul Beeler <pbeeler80@gmail.com>
+Date:   Thu Apr 30 10:15:58 2015 -0700
+
+    Fix bluetooth for good! (1/2)
+    
+    Change-Id: Ia09b64351cb6b5a2353160252567f83e10d38690
+    Signed-off-by: Paul Beeler <pbeeler80@gmail.com>
+    
+    Conflicts:
+    	config/cmremix_sm.mk
+
+commit 4a531d59b781160753f1fed38231d912e857cf17
+Author: ZION959 <ziontran@gmail.com>
+Date:   Fri May 1 00:22:12 2015 -0700
+
+    clean up
 
 project vendor/samsung/
 commit 5274eeaf94e68f3d63e93c0d69cd5bd51fe3f558
