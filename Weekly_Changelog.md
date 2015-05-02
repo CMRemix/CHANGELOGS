@@ -1,32 +1,4 @@
 project CMRemix/
-commit 98ceb6ca421ae792f04254cfcc1d6633dfedf0bf
-Author: Roman Birg <roman@cyngn.com>
-Date:   Mon Apr 20 17:07:37 2015 -0700
-
-    manifest: add Profiles trust agent
-    
-    Change-Id: I621c8074e3d35b1b2ec2953c3c03de7a53f29e8a
-    Signed-off-by: Roman Birg <roman@cyngn.com>
-
-commit ce7745c0396a0fc8e5402e22389f510665cde136
-Author: ZION959 <ziontran@gmail.com>
-Date:   Fri Apr 24 20:27:10 2015 -0700
-
-    track external_chromium_org
-
-commit 097c5cdf3d78736d7cf90c1ad981c5acc63d1abb
-Merge: ce7745c 98ceb6c
-Author: ZION959 <ziontran@gmail.com>
-Date:   Fri Apr 24 20:27:30 2015 -0700
-
-    Merge remote-tracking branch 'CM/cm-12.1' into cm-12.1
-
-commit 7d4e6a5ad094fc0deb621a67f6b307a1bf0a6473
-Author: ZION959 <ziontran@gmail.com>
-Date:   Fri Apr 24 20:47:09 2015 -0700
-
-    derp
-
 commit ad1edc3d4524b3f0fc3466a44e6f2a3cb90815af
 Author: ZION959 <ziontran@gmail.com>
 Date:   Sun Apr 26 15:40:49 2015 -0700
@@ -51,167 +23,11 @@ Date:   Tue Apr 28 19:00:58 2015 -0700
 
     fixed copy and past again
 
-project bionic/
-commit b118cea1941a50a8b2bf445da8ec9a51016da605
-Author: Michael Bestas <mikeioannina@gmail.com>
-Date:   Mon Nov 24 22:12:22 2014 +0200
-
-    Revert "Revert "Reenable support for non-PIE executables""
-    
-    * Conditionally revert under TARGET_NEEDS_NON_PIE_SUPPORT flag
-    
-    This reverts commit 76e289c026f11126fc88841b3019fd5bb419bb67.
-    
-    [mikeioannina]: Fix 5.1 compatibility
-    
-    Change-Id: I0c64f219c488f5a507b4e0d651b46f71d1c6b5be
-
-commit 26ab57682d98786d877c1fb4425da2236a8ea6e5
-Author: Colin Cross <ccross@android.com>
-Date:   Wed Feb 11 17:40:45 2015 -0800
-
-    Remove no-op sed step when compiling crtbrand.o
-    
-    crtbrand.c was compiled to a .s file, run through a sed script
-    to translate a %progbits to %note, and the compiled to .o.
-    However, when the sed command was copied from the original source
-    it was not updated to use the new name of the section (.note.ABI-tag
-    to .note.android.ident), so it didn't modify the file.  Since the
-    section has been generated with type %progbits instead of %note for
-    two years, just delete the whole sed step.
-    
-    Change-Id: Id78582e9b43b628afec4eed22a088283132f0742
-
-commit e7d50c19c4062ec85882b7231c01232896cb029c
-Author: Neil Fuller <nfuller@google.com>
-Date:   Wed Apr 8 18:26:22 2015 +0100
-
-    Upgrade timezone data to 2015b
-    
-      Changes affecting future time stamps
-    
-        Mongolia will start observing DST again this year, from the last
-        Saturday in March at 02:00 to the last Saturday in September at 00:00.
-        (Thanks to Ganbold Tsagaankhuu.)
-    
-        Palestine will start DST on March 28, not March 27.  Also,
-        correct the fall 2014 transition from September 26 to October 24.
-        Adjust future predictions accordingly.  (Thanks to Steffen Thorsen.)
-    
-      Changes affecting past time stamps
-    
-        The 1982 zone shift in Pacific/Easter has been corrected, fixing a 2015a
-        regression.  (Thanks to Stuart Bishop for reporting the problem.)
-    
-        Some more zones have been turned into links, when they differed
-        from existing zones only for older time stamps.  As usual,
-        these changes affect UTC offsets in pre-1970 time stamps only.
-        Their old contents have been moved to the 'backzone' file.
-        The affected zones are: America/Antigua, America/Cayman,
-        Pacific/Midway, and Pacific/Saipan.
-    
-      Changes affecting time zone abbreviations
-    
-        Correct the 1992-2010 DST abbreviation in Volgograd from "MSK" to "MSD".
-        (Thanks to Hank W.)
-    
-    Bug: 19887183
-    Change-Id: I1b4bdc5ae5cf778908a77893d7f8db8a4117e1e1
-
-commit 93ee71a80772442aafe1176acad287077ab4f1b4
-Author: Neil Fuller <nfuller@google.com>
-Date:   Fri Apr 24 13:56:11 2015 +0100
-
-    Update to tzdata 2015c
-    
-      Changes affecting future time stamps
-    
-        Egypt's spring-forward transition is at 24:00 on April's last Thursday,
-        not 00:00 on April's last Friday.  2015's transition will therefore be on
-        Thursday, April 30 at 24:00, not Friday, April 24 at 00:00.  Similar fixes
-        apply to 2026, 2037, 2043, etc.  (Thanks to Steffen Thorsen.)
-    
-      Changes affecting past time stamps
-    
-        The following changes affect some pre-1991 Chile-related time stamps
-        in America/Santiago, Antarctica/Palmer, and Pacific/Easter.
-    
-          The 1910 transition was January 10, not January 1.
-    
-          The 1918 transition was September 10, not September 1.
-    
-          The UTC-4 time observed from 1932 to 1942 is now considered to be
-          standard time, not year-round DST.
-    
-          Santiago observed DST (UTC-3) from 1946-07-15 through 1946-08-31,
-          then reverted to standard time, then switched its time zone to
-          UTC-5 on 1947-04-01.
-    
-          Assume transitions before 1968 were at 00:00, since we have no data
-          saying otherwise.
-    
-          The spring 1988 transition was 1988-10-09, not 1988-10-02.
-          The fall 1990 transition was 1990-03-11, not 1990-03-18.
-    
-          Assume no UTC offset change for Pacific/Easter on 1890-01-01,
-          and omit all transitions on Pacific/Easter from 1942 through 1946
-          since we have no data suggesting that they existed.
-    
-        One more zone has been turned into a link, as it differed
-        from an existing zone only for older time stamps.  As usual,
-        this change affects UTC offsets in pre-1970 time stamps only.
-        The zone's old contents have been moved to the 'backzone' file.
-        The affected zone is America/Montreal.
-    
-    Bug: 20287125
-    Change-Id: I8512c4e9ab09725395b256aba59ca34a23d1c995
-
-commit 1bd09a9edb9b0aa3aaeb3eb8ab8f754822b6bc0f
-Author: Neil Fuller <nfuller@google.com>
-Date:   Tue Apr 28 17:03:13 2015 +0100
-
-    Update to tzdata 2015d
-    
-      Changes affecting future time stamps
-    
-        Egypt will not observe DST in 2015 and will consider canceling it
-        permanently.  For now, assume no DST indefinitely.
-        (Thanks to Ahmed Nazmy and Tim Parenti.)
-    
-      Changes affecting past time stamps
-    
-        America/Whitehorse switched from UTC-9 to UTC-8 on 1967-05-28, not
-        1966-07-01.  Also, Yukon's time zone history is documented better.
-        (Thanks to Brian Inglis and Dennis Ferguson.)
-    
-      Change affecting past and future time zone abbreviations
-    
-        The abbreviations for Hawaii-Aleutian standard and daylight times
-        have been changed from HAST/HADT to HST/HDT, as per US Government
-        Printing Office style.  This affects only America/Adak since 1983,
-        as America/Honolulu was already using the new style.
-    
-    Bug: 20551453
-    Change-Id: I02364f15ca4ae20ed1a3b327f8517214bee938e5
-
-commit 8d4fafee2a79418f43a8606f363eda06ca0abcfc
-Author: Bernhard Rosenkränzer <Bernhard.Rosenkranzer@linaro.org>
-Date:   Fri Apr 24 16:21:38 2015 +0200
-
-    Define char16_t and char32_t to make gcc 5.1 happy
-    
-    gcc 5.1 doesn't define char16_t and char32_t (unless in C++ mode),
-    causing compile failures.
-    
-    Change-Id: I08dcd13cdf8cd59a4a2f191864bedf4c0d1bb313
-    Signed-off-by: Bernhard Rosenkränzer <Bernhard.Rosenkranzer@linaro.org>
-
-commit 1f30a1e9b2455f164f34d920be1208cf04c7bb12
-Merge: 4c16799 8d4fafe
+commit c17345cd04d5ee3e0e66dd6a667872d8fe187e5e
 Author: ZION959 <ziontran@gmail.com>
-Date:   Thu Apr 30 10:48:45 2015 -0700
+Date:   Fri May 1 11:39:39 2015 -0700
 
-    Merge remote-tracking branch 'temasek/cm-12.1' into cm-12.1
+    track ContactsProvider
 
 project bootable/recovery/
 commit 0225ffe3ff195eae032131b0c1ff9c9fb87fc047
@@ -222,524 +38,18 @@ Date:   Mon Apr 20 11:27:18 2015 +0200
     
     Change-Id: Id152a6b57a8749fb6a68d8132bbd6bb5e87b7336
 
+commit e63fbec600fecfc5038bc6e6babb8f476b906144
+Author: Johan Redestig <johan.redestig@sonymobile.com>
+Date:   Tue Apr 14 21:20:06 2015 +0200
+
+    imgdiff: Avoid infinite loop if inflate fails
+    
+    Break out of the loop if inflate returns an error
+    and print some details.
+    
+    Change-Id: Ie157cf943291b1a26f4523b17691dfcefbc881dc
+
 project build/
-commit 5d282debcf980968a37ee287339b7f0c1373a168
-Author: ZION959 <ziontran@gmail.com>
-Date:   Fri Dec 12 23:06:47 2014 -0700
-
-    cmRemiX Version
-    
-    Change-Id: I741e23c543db39afd5ebaa4ba3e8a65abd399be8
-
-commit 2bf13db60d66dce633e2d34c29da82ed3cec733a
-Author: Chet Kener <Cl3Kener@gmail.com>
-Date:   Fri Dec 12 23:06:47 2014 -0700
-
-    Introduce New Squisher/Opticharger for Lollipop (2/2)
-    
-    Signed-off-by: Chet Kener <Cl3Kener@gmail.com>
-    Change-Id: I02b41274179cdc1793794fb11780ea60774e6e41
-
-commit 239a9fb004283d8a9a325498673912be2847f976
-Author: Jiangyi <sam.andrew.jiang@gmail.com>
-Date:   Sun Dec 21 22:13:45 2014 -0700
-
-    build: Add chromium prebuilt support to envsetup.sh && The core Makefile
-    
-    This adds a chromium_prebuilt function to envsetup.sh that is invoked by lunch to check
-    whether the chromium prebuilt are up-to-date or not. If not, it will be built from source
-    and then the new source built version will be pulled during brunch/mka bacon to become the
-    new prebuilts for future builds.
-    
-    This is all opt-in through the USE_PREBUILT_CHROMIUM flag. Without it being set to 1,
-    none of this would be ran, and regular operations will go on.
-    
-    PS13:
-    -use export TARGET_DEVICE
-    -replace git -C with params compatible to old git versions
-    
-    Change-Id: Ic372ef8183f20bb7ef8276dfa47c1dd6e63832f1
-
-commit ba3ebbcbef2e23100ef03a7123c392b7748a885d
-Author: Ayysir <ayysir@aospal.com>
-Date:   Sun Dec 21 22:13:45 2014 -0700
-
-    Prebuilt chromium: Run a check for target device directory
-    
-    This should fix the issue that arises if device fails
-    and device is built again, chromium will error out because it thinks
-    the prebuilt files exist (which they are not, directories are just created).
-    
-    Signed-off-by: Ayysir <ayysir@aospal.com>
-    Change-Id: I595cab268e66c738ccae9900150b36d7f9626a6e
-
-commit afa12ef75eb54337782f7c0cb7e8d5a1671c5976
-Author: rooque <victor.rooque@gmail.com>
-Date:   Sun Dec 21 22:13:45 2014 -0700
-
-    build: Fix PreBuilt Chromium refs
-    
-    Change-Id: I57cc37d5200eb74110651fe40d93ce2192d0981e
-
-commit 5d8f263bad74bcf1c12d591677c964faa80d85f9
-Author: JoseGalRe <josegalre@gmail.com>
-Date:   Sun Dec 21 22:13:45 2014 -0700
-
-    build: change style console output of prebuilt chromium
-    
-    Change-Id: I2c390f3c64d614e181ebcad4e9711a93d9c55d44
-
-commit 819063275b06b3358b07243b753314f120a87217
-Author: JoseGalRe <josegalre@gmail.com>
-Date:   Fri Mar 20 00:31:49 2015 -0700
-
-    build: move chromium call...
-    
-    Change-Id: Ia91e750470f4af67487bf3e52d208bedc3a585dd
-    
-    Conflicts:
-    	core/Makefile
-
-commit 2dd810b4095e8148abb1d14604fb27dd61141548
-Author: MaDc0w <MaDc0w@pac-rom.com>
-Date:   Fri Mar 20 00:29:11 2015 -0700
-
-    build: Rainbow unicorn puke [1/2]
-    
-    Change-Id: I393dd013194d73b293b361a42d42fa171ceee837
-    
-    Conflicts:
-    	core/Makefile
-    	envsetup.sh
-
-commit 534aefe816e62605dc720ef3156cd7d472c85247
-Author: Josue Rivera <prbassplayer@gmail.com>
-Date:   Mon Feb 23 00:40:20 2015 -0700
-
-    Add ro.cmremix.device for OTA porpuses
-    
-      * Due to unified builds disabling some id props, Slim OTA wasn't working
-         working properly. Lets add a new prop just for our needs
-    
-    oldChange-Id: Ic2b3acb3dd4944160449f228cb69ec2c9f08775c
-    Signed-off-by: Josue Rivera <prbassplayer@gmail.com>
-    
-    Conflicts:
-    	tools/buildinfo.sh
-    
-    Change-Id: I745e0aa9e58040dc672815b2bf591ca17a65b21c
-
-commit adcfa5dcf67486abcf2e95bf1bc9e4ae79f819e1
-Author: kantjer <kantjer@gmail.com>
-Date:   Mon Feb 23 00:43:04 2015 -0700
-
-    Add ro.cmremix.model for OTA purposes
-    
-    Change-Id: I5d4baf0548e098d629e900580758a6d582d3cc2b
-    
-    Conflicts:
-    	tools/buildinfo.sh
-
-commit ca6cc1d4f0c2212627cd015656297e533c868cfe
-Author: fusionjack <dogfight60-fusionjack@yahoo.de>
-Date:   Sat Dec 6 12:44:40 2014 +0100
-
-    updater-script: Format system before installing ROM
-    
-    Change-Id: Ib266d6c1bde64a028a4d06bca40c5c1a1431edd0
-
-commit b1e96aea3d84fbe47e8f25fd89d0f5bef4139b1f
-Author: alviteri <davidteri91@gmail.com>
-Date:   Sun Mar 22 23:06:37 2015 -0700
-
-    Build: Changelog (3/3)
-    
-    Thanks David (crDroid Andrroid)
-    Conflicts:
-    	core/Makefile
-    
-    Conflicts:
-    	core/Makefile
-    
-    Change-Id: I9b3086ab1178c02d97623416aeada51665df836c
-
-commit 7fb1ee182a647a8745a171a590e6f9d2882b56d7
-Author: MrBaNkS <banksmi09@gmail.com>
-Date:   Wed Dec 31 19:44:19 2014 -0500
-
-    build: remove all stops if using different make/openjdk-java version
-    
-    Change-Id: I9b48be859f0af9d3cd8e949eab7f6205edf11a70
-    Signed-off-by: Chet Kener <Cl3Kener@gmail.com>
-
-commit fe11fd0e90922025165831d9448af6d548170642
-Author: Evan Anderson <evan1124@gmail.com>
-Date:   Wed Dec 31 19:44:19 2014 -0500
-
-    ccache: Use system version over prebuilt
-    
-    If there is a ccache binary on the
-    host system use it instead of the
-    AOSP prebuilt.
-    
-    Change-Id: I4b1e030713be22167a12bd229a4e35eda7736cd2
-    Signed-off-by: Evan Anderson <evan1124@gmail.com>
-    Signed-off-by: Chet Kener <Cl3Kener@gmail.com>
-    
-    (cherry picked from commit a74224f270183552ee2c2f0db16d24168f97a417)
-    
-    (cherry picked from commit a74224f270183552ee2c2f0db16d24168f97a417)
-
-commit f4bef057f73a2c6c459d29e6d5af3272a8c2a200
-Author: William Casey SEdlacek <w@sedlaceks.org>
-Date:   Wed Dec 31 14:14:32 2014 -0500
-
-    Block Building
-    
-    Change-Id: Id5c50c02f5bd737fc8b8ea785ebf536b82c09112
-
-commit 6c60571d42f71ab3edf5f8c166fe7f52703f127e
-Author: LorDClockaN <davor@losinj.com>
-Date:   Wed Dec 31 14:14:32 2014 -0500
-
-    Add SuperSU to releasetools
-    
-    Thanks to chinfire's "How to SU" guide,
-    I've managed to get SuperSU zip flashing on every
-    rom flash and it can easily be updated in
-    vendor
-    
-    Also Settings part merged in from OmniRom
-    
-    PS2: Don't unmount /system, it gets unmounted
-         from within superu.zip flash script
-    
-    Change-Id: I0f57f8c2b8733021c3c0b9a5fd3c343ae565a959
-    Signed-off-by: LorDClockaN <davor@losinj.com>
-
-commit 7335ee8bfd32009363bfd7b571f61c9968666716
-Author: Chet Kener <Cl3Kener@gmail.com>
-Date:   Wed Dec 31 14:14:32 2014 -0500
-
-    Add a Whole bunch of Clean Options
-    
-    Change-Id: I5b32c79981fc32daba003e15865ee9df0721f092
-
-commit d6c41c647922b19b2ddc5cb5edcab07582dd85ef
-Author: Chet Kener <Cl3Kener@gmail.com>
-Date:   Wed Dec 31 14:14:32 2014 -0500
-
-    Add Make Dirty Option
-    
-    Change-Id: Ia51e8601822df5f3b8b9e94259cb4600d56f5d90
-    Signed-off-by: Chet Kener <Cl3Kener@gmail.com>
-
-commit 4b3b63c0c180cda5611036f94098c83badccc055
-Author: SferaDev <sferadev@gmail.com>
-Date:   Sun Nov 9 11:03:41 2014 +0000
-
-    Don't stop if JDK version doesn't match
-    
-    Change-Id: I5e77c70724c7d81544673715ed09e0a53ce32730
-
-commit d17a3516d1f814f9fbe04c6c23bbdc3b497fcf42
-Author: mar-v-in <github@rvin.mooo.com>
-Date:   Wed Dec 10 23:52:22 2014 +0100
-
-    JDK8: JDK check should succeed with OpenJDK 8
-    
-    Change-Id: I1c1eaff7fa36bba2db261e0c5311bbc6d005a726
-
-commit d87fa98ef3b14e5ad025b03386c345341b07c581
-Author: Chet Kener <Cl3Kener@gmail.com>
-Date:   Mon Nov 17 14:15:02 2014 -0500
-
-    Add F2FS Compatibility
-    
-    Signed-off-by: Chet Kener <Cl3Kener@gmail.com>
-    
-    Add Missing Unmount
-    
-    Signed-off-by: Chet Kener <Cl3Kener@gmail.com>
-    
-    Remove Duplicate
-    
-    Signed-off-by: Chet Kener <Cl3Kener@gmail.com>
-    
-    Try 3 Options for Mount
-    
-    Signed-off-by: Chet Kener <Cl3Kener@gmail.com>
-    
-    Move Format Script to Bin
-    
-    * If backup script can be there so can this.  Besides there is no extras folder here anyways
-    
-    Signed-off-by: Chet Kener <Cl3Kener@gmail.com>
-    
-    Update this command for Lollipop
-    
-    * The previous command worked fine in Kitkat but this command is now what was needed to get the job done
-    
-    Change-Id: Iabebf6cf86cc66b4b546ddd34062ba633c2b74d1
-    Signed-off-by: Chet Kener <Cl3Kener@gmail.com>
-
-commit 7501388f24dc2d9858103c1af62567bcd1da797a
-Author: fattire <f4ttire@gmail.com>
-Date:   Mon Feb 16 01:19:08 2015 -0500
-
-    repopick: Always expand paths to the repo executable.
-    
-    Change-Id: I4e89a530f98e3a28973c57adaf9046e9c21f1290
-
-commit 199fad17c13cdf510d69e94490ff0ced49b386cd
-Author: Chet Kener <Cl3Kener@gmail.com>
-Date:   Tue Nov 4 21:33:02 2014 -0500
-
-    Build Launcher3 instead of 2
-    
-    Change-Id: I36ca442f93ac0887021df7d6ca629dbc15440035
-    Signed-off-by: Chet Kener <Cl3Kener@gmail.com>
-
-commit ce42066e4d9cbccc2f63e38ae5d77b0c05a49ed0
-Author: ZION959 <ziontran@gmail.com>
-Date:   Sat Feb 28 02:00:33 2015 -0700
-
-    build: slim launcher
-    
-    Change-Id: I76149114e87e0bfffee52d2d73af4b6f1e477a8f
-
-commit 879d0457fcaa82febfe472493fa89fb9f2bbb1c1
-Author: Paul Beeler <pbeeler80@gmail.com>
-Date:   Wed Feb 18 22:30:02 2015 -0700
-
-    git: ignore gedit backups
-    
-    Change-Id: Iabb681842e1a9cc9ea450cafa97cf4d6135fb2b5
-
-commit 87f48d29ba8a22b56f7afe8a1ef5b215cdee8a11
-Author: Paul Beeler <pbeeler80@gmail.com>
-Date:   Sat Apr 18 23:20:21 2015 -0700
-
-    Saberize v4 (2/2)
-    
-    Added -O3 modular optimizations.  To switch on use O3_OPTIMIZATIONS := true
-    host gcc 4.8 is now default.  seems silly to have 4.6 as default.  To use host 4.6, set USE_LEGACY_GCC := true
-    Add the updated version of graphite that works and set it on by default (top sabermod feature)
-    cutomize arm neon to export flags to kernel
-    
-    Change-Id: I692f17c61029bc395910f4c976e4bc9bae7fdf50
-    Signed-off-by: Paul Beeler <pbeeler80@gmail.com>
-    
-    arm: compile all thumb with -mthumb-interwork and cleanup -O3
-    
-    To enable this option use ENABLE_ARM_THUMB_INTERWORK := true
-    
-    This may slightly increase binary size but will include more arm
-    instructions for increased performance.
-    
-    https://gcc.gnu.org/onlinedocs/gcc/ARM-Options.html
-    
-    Change-Id: I0ba0a2d34b84e34309c20ce0cbb85ea3ee6dda15
-    Signed-off-by: Paul Beeler <pbeeler80@gmail.com>
-    
-    Add Global posix thread aka pthread Support (1/2)
-    
-    this flag enables multithread support much like what I did in kitkat.
-    
-    https://github.com/SaberMod/android_build-OLD/commit/93d376380dffae1ec96eeb0ef00a7e663d107ca4
-    
-    Change-Id: Id5559ec460b2ba84ed9cfe7a47b0ac59544e1d61
-    Signed-off-by: Paul Beeler <pbeeler80@gmail.com>
-    
-    pthread:  Make optional, disabled by default:
-    
-    This can cause high system RAM usage
-    
-    Change-Id: Ib038926b9c0b8ae150bc41f03afe20cb72b5d221
-    Signed-off-by: Paul Beeler <pbeeler80@gmail.com>
-    
-    Cleanup armv7-a-neon.mk for arm64 since AOSP has this hacked into armv7-a
-    
-    Change-Id: Icf85460fe2e508719ef996a35cb064a153f21305
-    Signed-off-by: Paul Beeler <pbeeler80@gmail.com>
-    
-    libtinycompress: use kernel headers when used as a shared lib
-    
-    Change-Id: Ib6ceff06cf8f9b2780523b673f46b6dba6f46320
-    Signed-off-by: Paul Beeler <pbeeler80@gmail.com>
-    
-    core combo linux-arm: filter TARGET_SM_AND to set gcc version
-    
-    Change-Id: If2619b5df2f305c31eeaae3780114c17758b5b33
-    Signed-off-by: Paul Beeler <pbeeler80@gmail.com>
-    
-    Allow NDK to be overrided with TARGET_NDK_VERSION
-    
-    Change-Id: Ic62b6ec76013bb93e82fba9578fbc61faf6d5cd0
-    Signed-off-by: Paul Beeler <pbeeler80@gmail.com>
-    
-    Revert "libtinycompress: use kernel headers when used as a shared lib"
-    
-    This reverts commit d944e7ad15801b7e79fed5b20f6ff4f433e8487a.
-    
-    Update binary.mk
-    
-    Change-Id: I7b398c3f08d4c33a882d2bdd086ca4f5c93af13f
-    Signed-off-by: Paul Beeler <pbeeler80@gmail.com>
-    
-    GCC Freedom v3 for arm and arm64
-    
-    Change-Id: I3469aee460a95ab112f6fcd06738d46d92571822
-    Signed-off-by: Paul Beeler <pbeeler80@gmail.com>
-    
-    Conflicts:
-    	core/combo/arch/arm/armv7-a-neon.mk
-
-commit 9625e6db8bb4692731dea93bca47289cdff47296
-Author: Paul Beeler <pbeeler80@gmail.com>
-Date:   Sat Apr 11 14:37:34 2015 -0600
-
-    MOAR SaberMod flags (2/3)
-    
-    Change-Id: I213b582f5b2d3249c9e1d59135f54ad59c07326b
-    Signed-off-by: Paul Beeler <pbeeler80@gmail.com>
-
-commit f6a6ff4cb30d78fdd40a66942d695bf481abfa81
-Author: Paul Beeler <pbeeler80@gmail.com>
-Date:   Tue Apr 14 13:48:34 2015 -0600
-
-    ARM: Enable -fno-builtin-sin and -fno-strict-volatile-bitfields by default:
-    
-    No one uses anything less than gcc 4.6 anymore so stop using a
-    redundant filter for it...
-    
-    Change-Id: Ib5cce3fe4d67f59a13542148de807487961cfcb3
-    Signed-off-by: Paul Beeler <pbeeler80@gmail.com>
-
-commit 820e5ee2cc506504da8516d645810e07b7f1387f
-Author: Paul Beeler <pbeeler80@gmail.com>
-Date:   Tue Apr 14 15:36:14 2015 -0600
-
-    ARM: Fix typo: Fogot a "t"
-    
-    Change-Id: I69c6c578b55fdd84b2cb7c3759a5853dd7d0e46e
-    Signed-off-by: Paul Beeler <pbeeler80@gmail.com>
-
-commit b3d748e860034babfba0f7e845fe3ab0aef5e55e
-Author: Paul Beeler <pbeeler80@gmail.com>
-Date:   Tue Apr 14 22:27:09 2015 -0600
-
-    More message fixups...
-    
-    Change-Id: I9961268e46ba3514a078df07df1d61d0df3428f0
-    Signed-off-by: Paul Beeler <pbeeler80@gmail.com>
-
-commit 7400cd332d55c18d0d8e25b3b99d473b48bd063b
-Author: Paul Beeler <pbeeler80@gmail.com>
-Date:   Wed Apr 15 04:00:28 2015 -0600
-
-    extra sabermod flags binary mode: separate gcc from clang completely
-    
-    Change-Id: I90c9d143632126282c9c7dc72c7867442be23546
-    Signed-off-by: Paul Beeler <pbeeler80@gmail.com>
-
-commit 990825c63171f12b1ab7155419dcc00cf9833365
-Author: Paul Beeler <pbeeler80@gmail.com>
-Date:   Thu Apr 16 00:44:38 2015 -0600
-
-    Add some basic host optimizations (2/2)
-    
-    This is mostly beneficial when used with -O3 optimizations
-    
-    Change-Id: I53bab4e9edba04046a6e5f726749bba483ed92a9
-    Signed-off-by: Paul Beeler <pbeeler80@gmail.com>
-
-commit 74ab0591ee13ad716b98fff07fae9a23a91192c4
-Author: Paul Beeler <pbeeler80@gmail.com>
-Date:   Fri Apr 17 13:12:49 2015 -0600
-
-    Cleanup graphite:  LOCAL_CFLAGS will be used for CPP flags
-    
-    Change-Id: Ida6dd67dbfb257b8c86bda3a1ead320d68847643
-    Signed-off-by: Paul Beeler <pbeeler80@gmail.com>
-
-commit 282ad11b05e3f1e33c6e91d8778c2c6eb58b22e5
-Author: Paul Beeler <pbeeler80@gmail.com>
-Date:   Sun Apr 19 19:40:08 2015 -0700
-
-    Build: Add Custom Toolchain Support
-    
-    Change-Id: I01d6024e344a07247a41be9759a8d9fe773b692e
-
-commit 64a5e1b32d3851e1d8d84a7783bb6812d0950d0a
-Author: Paul Beeler <pbeeler80@gmail.com>
-Date:   Tue Apr 21 23:27:46 2015 -0600
-
-    -O3 optimzations: More improvements (2/2)
-    
-    -Give a option to disable -O3 optimizations thumb.
-     Some people feel this hinders performance and there was no
-     solution found before to disable -O3 in binary mode previously.
-     This patch allows this option, see description in binary.mk for more info.
-    
-    -Make extra loop flags dependent on LOCAL_O3_OPTIMIZATIONS_MODE := on
-     We shouldn't really be performing extra loop optimizations unless -O3
-     is enabled locally.
-     And since these are not really considered -O3 flags according to gcc,
-     they should remain in extra.mk (extra sabermod flags).
-    
-    Change-Id: Ie96aa4daddcea287f427ae3b3336b45e7faa152a
-    Signed-off-by: Paul Beeler <pbeeler80@gmail.com>
-    Cc: @frap129
-    Cc: @ImTheReas0n
-    Cc: @pbeeler
-    Cc: Everyone else that wants notifications :)
-
-commit b3a1ce0c9efd115d454f0079c5baa06e0baf40b8
-Author: Paul Beeler <pbeeler80@gmail.com>
-Date:   Wed Apr 22 02:44:56 2015 -0600
-
-    Include sm_clear_vars.mk
-    
-    Change-Id: I21263efc50823f8f49f9cf3acfbf8553df5eb88a
-    Signed-off-by: Paul Beeler <pbeeler80@gmail.com>
-
-commit cc146a5d29b9f03864407fd3f8d73bcfbf10c0b9
-Author: Paul Beeler <pbeeler80@gmail.com>
-Date:   Thu Apr 23 23:10:56 2015 -0700
-
-    sm.mk: Bug fix for aosp and strict-aliasing (2/2)
-    
-    -For people have "other" strict-aliasing binary mode implimentations,
-     then this is only needed when strict-aliasing is not set on.  In
-     cases of "other" implimentations, this should be dependent on that
-     being disabled.
-    
-    Change-Id: I613debaa3039ce6c601aa129911a314bc7c1eb80
-    Signed-off-by: Paul Beeler <pbeeler80@gmail.com>
-    
-    Conflicts:
-    	core/binary.mk
-
-commit 4607d00a31a54a9ae694f00096835e440969efb0
-Author: Paul Beeler <pbeeler80@gmail.com>
-Date:   Wed Apr 22 21:32:50 2015 -0600
-
-    SaberMod ARM Mode (2/2)
-    
-    Only tested on user build for now.
-    
-    Change-Id: I1d92b2fe5ba4bbaa5bf662ffef32210a09521d92
-    Signed-off-by: Paul Beeler <pbeeler80@gmail.com>
-
-commit 389be1f8ecb512ac5f57f6ed1127ab031637d31e
-Author: ZION959 <ziontran@gmail.com>
-Date:   Fri Apr 24 17:50:02 2015 -0700
-
-    Add SaberMod GCC & NDK GCC info to dumpvar
-    
-    Change-Id: Ifcb1f775079388058164a6cc0b1c7ed5ac129e91
-
 commit 29db18ff3a7a1434a44a68b7c61b5b742aac733e
 Author: ZION959 <ziontran@gmail.com>
 Date:   Sun Apr 26 14:49:50 2015 -0700
@@ -931,6 +241,47 @@ Date:   Mon Apr 27 00:21:19 2015 -0700
     set zion mainline kernel config
     
     Change-Id: Id52a12b1b59c0063320bceafd5faf74680138292
+
+project device/samsung/qcom-common/
+commit e8b4b936078163d4daddf57d3b90c7f65687a19d
+Author: Arne Coucheron <arco68@gmail.com>
+Date:   Sun Apr 26 06:04:40 2015 +0200
+
+    qcom-common: Remove obsolete system properties
+    
+    Change-Id: I747b43ec50c70152dd298060285ade3e0e5ff1da
+
+commit 1366afc75da0277ee032c15a19cdb4ed68abe621
+Author: Brinly Taylor <uberlaggydarwin@gmail.com>
+Date:   Tue Apr 28 05:27:00 2015 -0500
+
+    qcom: remove TARGET_CPU_SMP flag
+    
+    * TARGET_CPU_SMP defaults to true in Lollipop
+    
+    Change-Id: I2a80290861d47eeab0bf615ac05a17e7544c6841
+
+project external/tinycompress/
+commit dcc9b99df25c419297ff0aca9b53dcbf26aa3526
+Author: Rashed Abdel-Tawab <rashed@linux.com>
+Date:   Fri May 1 17:33:39 2015 -0400
+
+    tinycompress: Fix build on msm899x
+    
+    Oops, put the ifneq in the wrong place, the CFLAG was
+    getting reset only 2 lines later when the build system
+    clears the local variables
+    
+    Change-Id: I7541359706d1144f1c2afa60816c1209371e4b0f
+
+project external/whispersystems/WhisperPush/
+commit 519b1132bf6549ebc06691e8362b930c37e2c5a1
+Author: Michael Bestas <mikeioannina@gmail.com>
+Date:   Sat May 2 02:55:17 2015 +0300
+
+    Automatic translation import
+    
+    Change-Id: I0078d634e54e91daec6f80633f6523ce40e7a180
 
 project frameworks/av/
 commit 0e03875bee979afe39bdbca30e23b15d7739171b
@@ -2422,6 +1773,179 @@ Date:   Tue Apr 28 17:30:04 2015 -0700
     Change-Id: I10633705f2bfddbdeec063f9489a4f8679b9e8ee
     (cherry picked from commit 6437518061fc8718590e0272ed17ea64710d2299)
 
+commit dd54db4e9e334f9383d99b82bd3bcdbf2ea10e05
+Author: Lars Greiss <kufikugel@googlemail.com>
+Date:   Tue Apr 28 10:54:52 2015 -0600
+
+    Add missing/needed lines for TRDS
+    
+    - These fixes were pulled from KK as we had theme engine and TRDS then.
+    
+    Change-Id: Id8eaa485937e8b28a7a52eabae4044ba371897db
+
+commit 40585e2b027c96d2d75e32d7bc873068a199c891
+Author: ZION959 <ziontran@gmail.com>
+Date:   Fri May 1 10:35:34 2015 -0700
+
+    Revert :Fix Ambient Display tile (reverted from commit 4b3d10b0dde9ad2a8a966ef155f18939f2d0f4b9)
+
+commit bcd58eb7dd65d2bbf4752ea540f64865f49a37a1
+Author: ZION959 <ziontran@gmail.com>
+Date:   Fri May 1 10:36:53 2015 -0700
+
+    Revert: QS: add Ambient display tile
+    
+    Drawables thanks to Alexander Westphal <westphal.alex94@gmail.com>
+    
+    Change-Id: Ia1279d9f2295e6be42fbc1b8cd79b458de7816f9
+    
+    Conflicts:
+    	core/java/com/android/internal/util/cm/QSConstants.java
+    	packages/SystemUI/res/values/custom_strings.xml
+    	packages/SystemUI/src/com/android/systemui/statusbar/phone/QSTileHost.java
+    
+    Conflicts:
+    	core/java/com/android/internal/util/cm/QSConstants.java
+    	packages/SystemUI/res/values/cm_strings.xml
+    	packages/SystemUI/src/com/android/systemui/statusbar/phone/QSTileHost.java
+    
+    Conflicts:
+    	core/java/com/android/internal/util/cm/QSConstants.java
+    	packages/SystemUI/src/com/android/systemui/statusbar/phone/QSTileHost.java (reverted from commit 4706d9cb18e8299c0fd89cba02c914ddc8ce90e7)
+
+commit 9b17edbf1baf5c16dedfd815a1f86890f6e8a902
+Author: Noeljunior <liamgliam@gmail.com>
+Date:   Fri May 1 18:29:51 2015 -0700
+
+    QS: Add Ambient Display Tile (1/2)
+    
+    Change-Id: I31ffd7d83a65db294759374900da0fca1c760549
+    
+    Conflicts:
+    	core/java/com/android/internal/util/cm/QSConstants.java
+    	packages/SystemUI/res/values/cm_strings.xml
+    	packages/SystemUI/src/com/android/systemui/statusbar/phone/QSTileHost.java
+
+commit 2509ae63d08c65995ec2bd0b8d994477d05bb4ae
+Author: rogersb11 <brettrogers11@gmail.com>
+Date:   Fri May 1 17:54:40 2015 -0700
+
+    Add back TRDS Tile now 1/2
+    
+    Quick fix, at the time of the original commits it was easier to just come back to this
+    
+    Change-Id: I439f6e40a6b6a9b6d7a861496a10b8d7cc4a7c34
+    
+    Conflicts:
+    	core/java/com/android/internal/util/cm/QSConstants.java
+    	packages/SystemUI/src/com/android/systemui/statusbar/phone/QSTileHost.java
+    
+    Conflicts:
+    	core/java/com/android/internal/util/cm/QSConstants.java
+    	packages/SystemUI/src/com/android/systemui/statusbar/phone/QSTileHost.java
+
+commit 947692b335e3db4166fb205ebc448383a9a0219b
+Author: ZION959 <ziontran@gmail.com>
+Date:   Fri May 1 10:43:36 2015 -0700
+
+    Revert "MMS (change 1 of 2): Add DATA_PROFILE_MMS constant = 5 to RILConstants."
+    
+    This reverts commit 802e7455d7b390fbcf29c999a26d41d85f959395.
+
+commit daf6b73a4f64f8183e71be8453f2488f2e3d3998
+Author: Shaun Eaton <shaunsibu@gmail.com>
+Date:   Fri May 1 00:31:28 2015 -0600
+
+    Add missing line to update NavBar upon theme change.
+    
+    Change-Id: I31bdbda8eb98c89c2dec0e2daa5434bf8eb46b5b
+
+commit b6c90fae3c885e33fd01ebcd243f9b65ccfa0e20
+Author: Connor Tumbleson <connor.tumbleson@gmail.com>
+Date:   Wed Nov 5 07:24:08 2014 -0600
+
+    iBotPeaches aapt changes for lollipop
+    
+    Change-Id: Ia2e8609692b43cc9df9ab24f24866662404b34d5
+
+commit dde4cef9f903adbe936eb3a2c50c00f8b1082deb
+Author: Jean-Luc Brouillet <jeanluc@google.com>
+Date:   Fri Apr 24 15:59:02 2015 -0700
+
+    Overhaul of the RenderScript reference documentation.
+    
+    This CL replaces the Doxygen generated documentation by one that's created
+    by our internal tool found in framework/rs/api.  The big advantages:
+    
+    - Can handle overloaded functions.  Doxygen could not and RenderScript has many.
+    - Can have version information.
+    - Can match the look of the Java documentation.
+    - Cleaner look and no leaking of internal paths.
+    
+    This CL also include changes introduced by the L release which was missing
+    previously.
+    
+    Change-Id: I5ff712cb6dc9993a93cb3c356602825fdfc8d81e
+
+commit e5c22a5594b1356cbb04b344fa7b69f6d0bbaa5e
+Author: 0xD34D <clark@scheffsblend.com>
+Date:   Fri May 1 17:26:02 2015 -0700
+
+    Identicons: Add identicons to ChaOS Lab [1/3]
+    
+    Change-Id: Ie0ffc4a4c2a41d6a5f35aad761c4c17a725bbc2a
+    
+    Conflicts:
+    	core/java/android/provider/Settings.java
+
+commit a29d20c393f684b8744652d15ab6c9c788cb1a9f
+Author: ZION959 <ziontran@gmail.com>
+Date:   Fri May 1 20:57:09 2015 -0700
+
+    Revert: Revert: App sidebar: some adjustments
+    - Cleanup
+    - fix disappearing appbar on changing appbar position
+    - may fix endless FC on changing appbar contents
+    
+    Change-Id: I2e94290dc128447f0da8937eb5dc0ed10296a155
+    
+    Conflicts:
+    	packages/SystemUI/src/com/android/systemui/statusbar/phone/PhoneStatusBar.java
+    
+    Conflicts:
+    	packages/SystemUI/src/com/android/systemui/statusbar/phone/PhoneStatusBar.java (reverted from commit 8a71a12daa5d4d5e19dbfe4257b4083053ec3ca3) (reverted from commit 5e5cef254474a64db7dcf3f2d480942fb614770a)
+
+commit 1f06ed74d18ed820ace1c6e8da3876a49094fea9
+Author: ZION959 <ziontran@gmail.com>
+Date:   Fri May 1 20:57:21 2015 -0700
+
+    Revert : Revert: App sidebar: notify if app is not installed
+    
+    better than force close
+    
+    Change-Id: I9eebe1a3a4be2dad16ed9a8cff9c0694900d833d (reverted from commit 988d73b0b2e47c5c9bce8428cffd3d9004b97f3a) (reverted from commit ec575a1de0f27bbff360ee6ced08575b710ac0d0)
+
+commit 399fd8b1f7c51b45c6393f079046eac670badac4
+Author: Roman Birg <roman@cyngn.com>
+Date:   Thu Mar 19 14:32:33 2015 -0700
+
+    SystemUI: small optimization for notification icon numbers
+    
+    Don't create the paint object used to draw notification icon count
+    badges in the status bar unless the user actually wants to see those
+    counts.
+    
+    Change-Id: Iabba316102583a798acdc124d9fb51c0d7826a0d
+    Signed-off-by: Roman Birg <roman@cyngn.com>
+
+commit 9737d028d638c2f33566cfcfe2ba7ffb5d1817d6
+Author: Michael Bestas <mikeioannina@gmail.com>
+Date:   Sat May 2 02:50:39 2015 +0300
+
+    Automatic translation import
+    
+    Change-Id: I3936018c255cec208050fce2f24d658ba8f69bbb
+
 project frameworks/native/
 commit 9c16578a0e20a323812c476b3004bd74fc0317a2
 Merge: 521ce7b f22a457
@@ -2439,36 +1963,6 @@ Date:   Sat Dec 14 02:58:19 2013 +0100
     Change-Id: Ibc5aaec5661455477815043440fae86052a395ce
 
 project frameworks/opt/telephony/
-commit 2e374b88cba1803edcb540e5c64f50aa468cc573
-Author: Ricardo Cerqueira <ricardo@cyngn.com>
-Date:   Fri Apr 24 00:14:01 2015 +0100
-
-    SubscriptionController: getPhoneId() should never return negative values
-    
-    Most places dealing with getPhoneId() check for negative returns and use
-    zero if it happens. Instead of doing that, when dealing with negative subIds
-    generate positive slot identifiers by replicating the logic from changes
-    I91d99c98cff9b6fd484d4972b5461098bba23ba2 and Id013b2673645b63db8c96660e5a9446347a3e2e5
-    
-    Change-Id: I4577764298cd53199d036d40b58b6c9490c2bacb
-
-commit ed68de07c09286673b34346e0e13c98a9a51f095
-Author: Danny Baumann <dannybaumann@web.de>
-Date:   Thu Apr 23 16:49:21 2015 +0200
-
-    Don't use invalid phone IDs as index.
-    
-    phoneId can be -1 via this path, triggered via SimBootReceiver:
-    java.lang.Throwable
-         at com.android.internal.telephony.dataconnection.DctController$SwitchInfo.<init>(DctController.java:743)
-         at com.android.internal.telephony.dataconnection.DctController.setDefaultDataSubId(DctController.java:781)
-         at com.android.internal.telephony.SubscriptionController.setDefaultDataSubId(SubscriptionController.java:1443)
-         at com.android.internal.telephony.SubscriptionController.clearDefaultsForInactiveSubIds(SubscriptionController.java:1533)
-         at com.android.internal.telephony.ISub$Stub.onTransact(ISub.java:307)
-         at android.os.Binder.execTransact(Binder.java:446
-    
-    Change-Id: Idf050fe5fff9b24cdbf890d0abc12d52fba21b3f
-
 commit d4df7d205703b8a5a70721118d058ff94854ab71
 Merge: 2838601 ed68de0
 Author: ZION959 <ziontran@gmail.com>
@@ -2487,6 +1981,15 @@ Date:   Wed Dec 31 18:21:00 2014 -0800
       weird carrier display like NAM1 when on a cdma data network
     
     Change-Id: I73cbedafda912e52817d57e791bf57f8fb32ab48
+
+commit b9bf02b3d651a248b8cd692ce921e78c1bee452b
+Author: Erica Chang <echang@cyngn.com>
+Date:   Thu Apr 9 12:37:20 2015 -0700
+
+    Telephony: add CDMA SPN display rule
+    
+    Change-Id: Ie7c271441f6f7dfaf85f506735c8fd33c88732a4
+    (cherry picked from commit 92181e5046744bc5afcecad23374a704552005fb)
 
 commit ce6bd446dfdb2dec08629b55d7b6507d5168da06
 Merge: d4df7d2 d61a188
@@ -2516,19 +2019,43 @@ Date:   Wed Apr 29 15:31:29 2015 -0400
     Patchset: 2
     http://review.cyanogenmod.org/#/c/96584/
 
-project hardware/qcom/audio-caf/msm8974/
-commit 24c0fe3a452b107765867619276bbddbc3a5b5dd
-Author: Weiyin Jiang <wjiang@codeaurora.org>
-Date:   Tue Apr 7 11:36:35 2015 +0800
+commit b80262ae92bac56c7bc51608847aff17d14f1055
+Author: ZION959 <ziontran@gmail.com>
+Date:   Fri May 1 12:55:23 2015 -0700
 
-    post_proc: remove unnecessary command size check
+    Revert: MMS (change 2 of 2): Update apnProfileID for MMS only apn.
     
-    Up bound check for command size of EFFECT_CMD_SET_PARAM is not
-    applicable for DSP effect bundle. Remove the check to avoid parameter
-    not taking effect.
+    Depends on: http://review.cyanogenmod.org/#/c/96582/
     
-    Change-Id: I7e8f73377699f11bdc1f62a05f6bea03c9c24151
-    CRs-Fixed: 816053
+    Change-Id: I3dfaddc6d4a0ee581f98e9290d4593b79cd3b2c6
+    
+    Patchset: 2
+    http://review.cyanogenmod.org/#/c/96584/ (reverted from commit e2199ed78f186bf15f6445e2ea945f3a3705daf9)
+
+commit e7f37ae69e24b79aa4b3ccf70b04c4041fd67544
+Merge: b80262a b9bf02b
+Author: ZION959 <ziontran@gmail.com>
+Date:   Fri May 1 21:35:03 2015 -0700
+
+    Merge remote-tracking branch 'CM/cm-12.1' into cm-12.1
+
+project hardware/qcom/media-caf/msm8994/
+commit 9ab05267739628b900c78e178094f3a2fb0812b2
+Author: Scott Mertz <scott@cyngn.com>
+Date:   Wed Apr 29 10:54:13 2015 -0700
+
+    vidc: add dependency on kernel headers
+    
+    Change-Id: Ie9f8ffc1b82e98f315d76cc3b786a2d03621cb7b
+
+project hardware/samsung/
+commit dd9ce7d335a2b8995246d5b28be4dac4ec918b56
+Author: Caio Schnepper <caioschnepper@gmail.com>
+Date:   Sun Apr 26 23:01:22 2015 -0300
+
+    libfimg3x: Remove android_pmem.h include
+    
+    Change-Id: I514e96676578a97b9481643e58a0e49a8d017678
 
 project kernel/samsung/hlte/
 commit da9dae79da954082cca3a62b6b55db334da9d0d7
@@ -2609,6 +2136,33 @@ Date:   Fri Dec 5 19:45:10 2014 +0900
     Signed-off-by: Erik Kline <ek@google.com>
     Signed-off-by: Lorenzo Colitti <lorenzo@google.com>
 
+project packages/apps/AudioFX/
+commit b2e8ba3988af3a617fe22180ac1ba7eb2ed7a5cc
+Author: Michael Bestas <mikeioannina@gmail.com>
+Date:   Sat May 2 02:50:51 2015 +0300
+
+    Automatic translation import
+    
+    Change-Id: I454177ba7ad1a9998a3d51ead392a11715227854
+
+project packages/apps/Bluetooth/
+commit 55b636ceda90d5c7a0e9fd3ddbb3eba0f0447043
+Author: Michael Bestas <mikeioannina@gmail.com>
+Date:   Sat May 2 02:50:56 2015 +0300
+
+    Automatic translation import
+    
+    Change-Id: I35504d3a4915d2369d1620d0d58953ade71c49a4
+
+project packages/apps/BluetoothExt/
+commit 499ae4e6a5bfff20f2b32a5152a666917a29c4c9
+Author: Michael Bestas <mikeioannina@gmail.com>
+Date:   Sat May 2 02:51:02 2015 +0300
+
+    Automatic translation import
+    
+    Change-Id: Ibabb1f02cb1aa7d1dbc84a4f1c6441d4ef9b0994
+
 project packages/apps/Browser/
 commit 45284de420f2674b7a28cebaf02b6e5880050f22
 Merge: dd822c5 9d321ea
@@ -2618,83 +2172,135 @@ Date:   Sat Apr 25 18:04:18 2015 -0700
     Merge remote-tracking branch 'CM/cm-12.1' into cm-12.1
 
 project packages/apps/CMFileManager/
-commit c6a778c871ee092117305115c93bc93117c34ddd
+commit bd68f575327b3a1fde2ce4be83c0f837355d9be1
+Author: kai.cao <kai.cao@ck-telecom.com>
+Date:   Wed Apr 29 15:42:14 2015 +0800
+
+    [CMFileManager]Fix click two times when check the 'Skip media scan' in Secure storage
+    
+    Procedures
+    
+    1.Go to “File Manager”.
+    2.Enter the secure directory and Press the menu button.
+    3.Press the Properties item.
+    4.Check the media scan.
+    
+    Pop "Failed to prevent media scanning" and should click again.
+    
+    Change-Id: I7990683e373c05fdfcee47bf5189820206bceba5
+
+commit 4a6769ccfb0b8b856512c4eca5bcf7f14fccad09
 Author: Michael Bestas <mikeioannina@gmail.com>
-Date:   Sat Apr 25 01:13:51 2015 +0300
+Date:   Sat May 2 02:51:38 2015 +0300
 
     Automatic translation import
     
-    Change-Id: I4d2b17d0f4ec00915ff36255a8ccfce547a88db1
+    Change-Id: Idfda3b4193c7a08f921890ffa174ccb0d23204c1
 
 project packages/apps/CMWallpapers/
-commit c0019e29644978f4aec5954d6aaa22cc0e5cbb10
+commit b8672b780aef7300af07629bc58b50be5749ca48
 Author: d34d <clark@cyngn.com>
-Date:   Fri Apr 24 16:54:57 2015 -0700
+Date:   Tue Apr 28 15:16:43 2015 -0700
 
-    Use the new partner customization to load wallpapers
+    Add back no wallpaper option
     
-    Lollipop introduced the ability to load 3rd party wallpapers provided
-    that those apks are system apps.  All that is required is to declare
-    a receiver in the manifest that handles the action
-    com.android.launcher3.action.PARTNER_CUSTOMIZATION.  This receiver
-    is never launched so there is no need to have a source file for it.
+    Change-Id: I66469489973af60dbb601324e1bcc89d22b063f3
+
+commit 40367a7e9400a526dc8dad84fdac9be069b623ef
+Author: Michael Bestas <mikeioannina@gmail.com>
+Date:   Sat May 2 02:51:51 2015 +0300
+
+    Automatic translation import
     
-    Change-Id: I967b75f30785710e59926783dc018a20b0fd8625
+    Change-Id: I8fc6afa2581e4535b57c7b6cbb589af9e4550ae7
 
 project packages/apps/Calculator/
-commit 6e66a7eeed94b273458cfce555ce3b1a342645cd
+commit d3c9ae2f1e85e4c0318726846b027d97ea1b2162
+Author: Raj Yengisetty <rajesh@cyngn.com>
+Date:   Tue Apr 28 16:14:18 2015 -0700
+
+    Calculator: allow for negative numbers after operation characters
+    
+    Repro:
+     - Enter the following eq: 10^-3
+     - Observe that enter '-' after '^' causes replacement
+    
+    This patch allows the minus operator to appear after an operator
+    *unless* it's two successive minus operators.
+    
+    Change-Id: I929530471e2287e97d2cacac91a61cea53bf7568
+    (cherry picked from commit 85e7f93d7156e573d48c622bb40f3429704351b3)
+
+commit df90b7b5607bf243b70cbaa38f98765e15358ab3
 Author: Michael Bestas <mikeioannina@gmail.com>
-Date:   Sat Apr 25 01:13:37 2015 +0300
+Date:   Sat May 2 02:51:06 2015 +0300
 
     Automatic translation import
     
-    Change-Id: Ia630bac5587cff543068ded2ae81c808f30beb4c
+    Change-Id: I2f3189a8b6e1d8544c924eca1b4e9a8c5aad6b4e
 
 project packages/apps/Calendar/
-commit b653503bf591b0d825bcdd7b8e77a7af002a7ef0
+commit 113041abc31987402341b4cfc0f499fd8d7811c4
 Author: Michael Bestas <mikeioannina@gmail.com>
-Date:   Sat Apr 25 01:13:45 2015 +0300
+Date:   Sat May 2 02:51:14 2015 +0300
 
     Automatic translation import
     
-    Change-Id: Ic0945f6101b2698207c51c570da842b9bad39adb
+    Change-Id: Ia2f1a08c62c801d6bcf2d8fb7b1af58e293c6d20
+
+project packages/apps/Camera2/
+commit 6403559e01c695db50b50d52a1623e5c28ff5a08
+Author: Michael Bestas <mikeioannina@gmail.com>
+Date:   Sat May 2 02:51:20 2015 +0300
+
+    Automatic translation import
+    
+    Change-Id: I85cda76936f8317f427828a9b9f951205c1ced60
+
+commit cc104444c49d2f418efa3e11b140afff184cd8a3
+Merge: 6ab7ff4 6403559
+Author: ZION959 <ziontran@gmail.com>
+Date:   Fri May 1 21:38:51 2015 -0700
+
+    Merge remote-tracking branch 'CM/cm-12.1' into cm-12.1
+
+project packages/apps/CellBroadcastReceiver/
+commit 0bcdeed48a14c0152f11a664ce3f6e5be59d24f3
+Author: Michael Bestas <mikeioannina@gmail.com>
+Date:   Sat May 2 02:51:25 2015 +0300
+
+    Automatic translation import
+    
+    Change-Id: I917ad2fd2d0a97cc95bd87555d9fe3b2cec0bc02
 
 project packages/apps/Contacts/
-commit 54348d9e06bfdaa2b5ae6956f50e66bb9222a21f
+commit 90326933c20e115c4b9118853b7d4062b32de0a5
 Author: Michael Bestas <mikeioannina@gmail.com>
-Date:   Sat Apr 25 01:14:00 2015 +0300
+Date:   Sat May 2 02:51:55 2015 +0300
 
     Automatic translation import
     
-    Change-Id: I13fb65b5f9207adcffd395adc3ac65e56830abbe
+    Change-Id: I826aa3b7be9b14cab7480ef00f53558213b6e243
 
 project packages/apps/ContactsCommon/
-commit ec58d211e65517c87e2d2855ba8bed94e0727171
+commit a942c97b9d2e4d88f2c0e8e5ea8f47b02d2681d7
 Author: Michael Bestas <mikeioannina@gmail.com>
-Date:   Sat Apr 25 01:14:05 2015 +0300
+Date:   Sat May 2 02:51:59 2015 +0300
 
     Automatic translation import
     
-    Change-Id: I7eca9579f52dd15c7abc31d22532a2f74381e464
+    Change-Id: I5ecc5bf919466a36d5a8699b17df9fd9919f994c
 
 project packages/apps/DeskClock/
-commit 5ab226efd7a0e9bc5a2d9942e4f832c37192abc4
-Author: Martin Brabham <optedoblivion@cyngn.com>
-Date:   Fri Apr 24 13:56:00 2015 -0700
-
-    Make new menu entry to link to cLock widget settings.
-    
-    Change-Id: I13ca3156c34eccdd8f60d8585281ae0585aac58e
-
-project packages/apps/Dialer/
-commit 8d9ceaf3d2cdf48bfb0779df4fc6a959db9f7f8b
+commit be06b1a2e01f9d5f0caf6cbd1dbd42f9805befae
 Author: Michael Bestas <mikeioannina@gmail.com>
-Date:   Sat Apr 25 01:14:10 2015 +0300
+Date:   Sat May 2 02:52:03 2015 +0300
 
     Automatic translation import
     
-    Change-Id: I124c3c0a1cc4b3c8822438729137ad327f44a033
+    Change-Id: Ie08388de6681960f659eac36e9d121f0d9a7050f
 
+project packages/apps/Dialer/
 commit c2b914999e19b0bd4758d09152ea3a9bb533d9d6
 Author: NBruderman <nbruderman@gmail.com>
 Date:   Mon Mar 2 20:27:11 2015 +0200
@@ -2726,28 +2332,74 @@ Date:   Tue Apr 28 19:28:07 2015 -0700
 
     Merge remote-tracking branch 'upstream/cm-12.1' into cm-12.1
 
-project packages/apps/Eleven/
-commit 469d0e8ec3757356ea608393575db016448b0678
+commit c2a0cde07dd316532f3998dfd8aba8e068f031f1
 Author: Michael Bestas <mikeioannina@gmail.com>
-Date:   Sat Apr 25 01:14:16 2015 +0300
+Date:   Sat May 2 02:52:08 2015 +0300
 
     Automatic translation import
     
-    Change-Id: If11d181c630d1439723ccdf38d2af70a01d1bcd9
+    Change-Id: I302e5509b426798d2d6436313c8d5a6e75b9a969
+
+commit 0c75852de30eecf2d4bd028f5a409432e85498e9
+Merge: 0c1b9ea c2a0cde
+Author: ZION959 <ziontran@gmail.com>
+Date:   Fri May 1 21:40:08 2015 -0700
+
+    Merge remote-tracking branch 'upstream/cm-12.1' into cm-12.1
+
+project packages/apps/Eleven/
+commit a02bc80dd6a52555b8dc0801acaf4893bbe295f9
+Author: Michael Bestas <mikeioannina@gmail.com>
+Date:   Sat May 2 02:52:14 2015 +0300
+
+    Automatic translation import
+    
+    Change-Id: Ib44ae71a0eaef8df5c473639746083c4800b67da
 
 project packages/apps/Email/
-commit f325778282c882c6fa8246adfa217416803b9704
-Author: Michael Bestas <mikeioannina@gmail.com>
-Date:   Sat Apr 25 01:14:22 2015 +0300
-
-    Automatic translation import
-    
-    Change-Id: Id354731aa653029aa9cce6f75489559f2c9bbaf7
-
 commit 108dfdce54f86529bdd75969b8fcc11bf77ad155
 Merge: 3080c4d f325778
 Author: ZION959 <ziontran@gmail.com>
 Date:   Sat Apr 25 18:06:56 2015 -0700
+
+    Merge remote-tracking branch 'CM/cm-12.1' into cm-12.1
+
+commit a348e9a488871fa68f7f3829750c36a0b5a53d99
+Author: Jorge Ruesga <jorge@ruesga.com>
+Date:   Mon Apr 20 04:16:04 2015 +0200
+
+    email: custom notification lights
+    
+    Change-Id: I3aaed3c682ae33da925316a5b9a586796fe71229
+    Signed-off-by: Jorge Ruesga <jorge@ruesga.com>
+
+commit 0f4610bfccb3b5d0b93536b1f2bb344e8fe23dae
+Author: Jorge Ruesga <jorge@ruesga.com>
+Date:   Fri May 1 22:05:03 2015 +0200
+
+    email: fix Account table creation
+    
+    Due to a bug in commit 44a064e5f16ddaac25f2acfc03c118f65bc48aec,
+    AUTO_FETCH_ATTACHMENTS column could not be available in the Account table.
+    Since cm12 and up doesn't use this column, we are leave as is it. In case
+    the feature were added, then we need to create a new exception to ensure
+    that the columns is re-added.
+    
+    Change-Id: I1803e343dde2e841fdc99b4489a74eb08b0a8352
+    Signed-off-by: Jorge Ruesga <jorge@ruesga.com>
+
+commit 8ca2f36efc37ee57af19c53cbb70b0078179cecf
+Author: Michael Bestas <mikeioannina@gmail.com>
+Date:   Sat May 2 02:52:21 2015 +0300
+
+    Automatic translation import
+    
+    Change-Id: I1a364a4b794a8228155dc1dbb8758eed15ac4ea5
+
+commit 41e69947f0b43b8569b29b2518dc7bc652cda7c0
+Merge: 108dfdc 8ca2f36
+Author: ZION959 <ziontran@gmail.com>
+Date:   Fri May 1 21:40:33 2015 -0700
 
     Merge remote-tracking branch 'CM/cm-12.1' into cm-12.1
 
@@ -2760,23 +2412,6 @@ Date:   Sat Apr 25 18:07:13 2015 -0700
     Merge remote-tracking branch 'CM/cm-12.1' into cm-12.1
 
 project packages/apps/InCallUI/
-commit c7f41012299c5f231e65c8d1e8f32549dfc5e992
-Author: Roman Birg <roman@cyngn.com>
-Date:   Wed Apr 15 10:07:28 2015 -0700
-
-    InCallUI: show legal warning on first call record
-    
-    Change-Id: Ia404652b2e20177426c03c053ea8c4cffd1db52d
-    Signed-off-by: Roman Birg <roman@cyngn.com>
-
-commit 54cc6d4fe8109beb80a10af9ac3eb53b117bcd02
-Author: Michael Bestas <mikeioannina@gmail.com>
-Date:   Sat Apr 25 01:14:33 2015 +0300
-
-    Automatic translation import
-    
-    Change-Id: Id588cd68a13602a910b8eeb24be163d07c42f46c
-
 commit 8381be34cea4dd29b73b4e1964d5e276ac943d31
 Merge: 9612017 54cc6d4
 Author: ZION959 <ziontran@gmail.com>
@@ -2814,6 +2449,39 @@ Date:   Mon Mar 30 12:31:19 2015 -0700
     
     Bug: 19933863
     Change-Id: I2ff2018d7d229615f5f57c599f74954ec7492f6b
+
+commit c3362b5b996d8d3a0066d61f1d1e33e21577117d
+Author: Michael Bestas <mikeioannina@gmail.com>
+Date:   Sat May 2 02:52:31 2015 +0300
+
+    Automatic translation import
+    
+    Change-Id: I391f335df39c3ea13eacfb7b23f8704ed586da56
+
+commit a26c222e4f546e0e7bfe6f034ab72c27d8613b97
+Merge: 068cee8 c3362b5
+Author: ZION959 <ziontran@gmail.com>
+Date:   Fri May 1 21:41:42 2015 -0700
+
+    Merge remote-tracking branch 'CM/cm-12.1' into cm-12.1
+    
+     longer uses CallCommandClient
+    
+    Patchset: add time delay preference
+    
+    Patchset: remove callback if audio mode changed before runnable
+            had a chance to run
+    
+    Patchset: remove callback onStateChange
+    
+    Patchset: formatting
+    Change-Id: I5ffaca0eb2e905abb36bbc298416742055acacb8
+    
+    Conflicts:
+    	src/com/android/incallui/ProximitySensor.java
+    
+    Conflicts:
+    	src/com/android/incallui/ProximitySensor.java
 
 project packages/apps/KernelAdiutor/
 commit 84102f14a3b26d31e868e49f9a9f0faa0136be4c
@@ -3187,14 +2855,6 @@ Date:   Tue Apr 28 22:23:53 2015 +0200
     Change-Id: I2c84d4abc4f31870b9285b43b001709fe51e16e2
 
 project packages/apps/LockClock/
-commit a9d5e24675876258692cf5f019b1cfa2c00d6a16
-Author: Michael Bestas <mikeioannina@gmail.com>
-Date:   Sat Apr 25 01:14:38 2015 +0300
-
-    Automatic translation import
-    
-    Change-Id: I235ca0092b8739aed0f0814fb84be0dde9e87c62
-
 commit 3ba3c001338e369053fb9a655ff2df80929c8ea1
 Author: Martin Brabham <optedoblivion@cyngn.com>
 Date:   Fri Apr 24 15:36:58 2015 -0700
@@ -3205,50 +2865,15 @@ Date:   Fri Apr 24 15:36:58 2015 -0700
     
     Change-Id: I3592c903ac262a58e70e121ec242ac784775ba1f
 
-project packages/apps/Mms/
-commit c52d75c70553ec55f191e74df277acd0878422a8
-Author: Matthieu Baerts <matttbe@gmail.com>
-Date:   Tue Apr 15 00:20:05 2014 +0200
-
-    Revert "Remove smiley support"
-    
-    This reverts commit c7c68dba4f3440f234f65eef579f9aaa82682f8c.
-    
-    It seems that the smiley support has been removed by a Google Dev (Tom Taylor)
-    without any explanations:
-        https://android.googlesource.com/platform/packages/apps/Mms/+/c7c68db
-    
-    This modification gets the smiley back:
-     * ASCII Smileys are converted to images in all received/sent messages.
-     * A new menu entry (Insert smiley) is available in the menu of a conversation
-       view (ComposeMessageActivity).
-    
-    I also added this support in QuickMessage too (by parsing the message
-    just before sending it to the TextView).
-    
-    PAC-Rom Change-Id: I59be9aaed9218459452274c743b71df72d0927ff
-    Change-Id: Ic3f7005a2c2485405a9259f3ede7fc5ad40336e0
-
-commit a479ce22dddb8505d6f67ee6df06b3a3196e7868
-Author: Vladislav Koldobskiy <admin@nevergone.ru>
-Date:   Sun Jun 8 17:32:40 2014 +0400
-
-    Hide "Insert smiley" if emoticons are disabled
-    
-    There's no point in having "insert smiley" option when
-    graphical emoticons are disabled.
-    I still hate these emoticons.
-    
-    Change-Id: I2b811015910811e211c9e3e203532f19c29a0638
-
-commit 09bb7359513cbf6b3248d9a0407a05dd11a651ff
+commit fafa209b5802162aa4b0062e587b68ff83b79083
 Author: Michael Bestas <mikeioannina@gmail.com>
-Date:   Sat Apr 25 01:14:42 2015 +0300
+Date:   Sat May 2 02:52:37 2015 +0300
 
     Automatic translation import
     
-    Change-Id: I8313d9db76cf40ad1bd585806f8a552d6b56b59f
+    Change-Id: I2572d734c1d2e434384b8ea79e87201381e2dfa1
 
+project packages/apps/Mms/
 commit 1f3ff020a1e016ecff1dae19a00316c509ffa9b2
 Merge: 75dcf8c 09bb735
 Author: ZION959 <ziontran@gmail.com>
@@ -3256,16 +2881,31 @@ Date:   Sat Apr 25 18:08:47 2015 -0700
 
     Merge remote-tracking branch 'CM/cm-12.1' into cm-12.1
 
-project packages/apps/Profiles/
-commit e77bc46f9d05b9c2f0eb2b37be2227e993fd6efa
-Author: Roman Birg <roman@cyngn.com>
-Date:   Mon Apr 20 18:12:53 2015 -0700
+commit 183af12250aa0fb61f1b0aad749cd5efa8e667bf
+Author: Michael Bestas <mikeioannina@gmail.com>
+Date:   Sat May 2 02:52:41 2015 +0300
 
-    ProfilesTrustAgent: initial implementation
+    Automatic translation import
     
-    Change-Id: I6aba123f81fd872e8ac6be532d8ec3995522daf2
-    Signed-off-by: Roman Birg <roman@cyngn.com>
+    Change-Id: Iacd2af99191cc33de5c1eda93e7e8a7642e35e43
 
+commit ed928b4b3502e4f2f66e0603b3676c27adb6bd57
+Merge: 1f3ff02 183af12
+Author: ZION959 <ziontran@gmail.com>
+Date:   Fri May 1 21:43:04 2015 -0700
+
+    Merge remote-tracking branch 'CM/cm-12.1' into cm-12.1
+
+project packages/apps/PhoneCommon/
+commit c703c7c5c08f64e7d17531ba1e302f9cce094876
+Author: Michael Bestas <mikeioannina@gmail.com>
+Date:   Sat May 2 02:52:48 2015 +0300
+
+    Automatic translation import
+    
+    Change-Id: I28325cf53a1a68efac1e6ee3389936d188820043
+
+project packages/apps/Profiles/
 commit 8fa506205ec1fdeabd965d3622a825ddfe30794c
 Author: Roman Birg <roman@cyngn.com>
 Date:   Sun Apr 26 11:07:19 2015 -0700
@@ -3886,6 +3526,64 @@ Date:   Wed Apr 29 21:17:05 2015 +0200
     Fix NPE in slim shortcut if no icon was found
     
     Change-Id: If7adfdb82a8d014ab44ab74670b7a0e1655ecb9d
+
+commit 1747be34b9a671e8c23a78655fb48e0c7a63bfcb
+Author: rogersb11 <brettrogers11@gmail.com>
+Date:   Fri May 1 17:57:49 2015 -0700
+
+    Add back TRDS Tile 2/2
+    
+    Change-Id: I5c85f060f4bb219b74b18dadc91636813b0aa634
+    
+    Conflicts:
+    	src/com/android/settings/cyanogenmod/qs/QSTileHolder.java
+    
+    Conflicts:
+    	src/com/android/settings/cyanogenmod/qs/QSTileHolder.java
+
+commit 9f829ebf99eaf6b848ec3c7762b077fa4a528b67
+Author: Roman Birg <roman@cyngn.com>
+Date:   Thu Apr 30 10:39:09 2015 -0700
+
+    Settings: disable mobile network switch when SIM isn't ready
+    
+    Change-Id: I4676390760f0d6107e706fe75cd26f7bf603cad6
+    Signed-off-by: Roman Birg <roman@cyngn.com>
+
+commit b0f0daa8044679a509657b96bcd7d368678bb071
+Author: 0xD34D <clark@scheffsblend.com>
+Date:   Fri May 1 17:55:38 2015 -0700
+
+    Identicons: Add identicons to ChaOS Lab [2/3]
+    
+    PS2: fix build
+    PS3: make all menu entries dependant on switch
+    
+    Change-Id: Ifcbc108ec7d0885e5001b761b29c0abb21626b71
+    
+    Conflicts:
+    	AndroidManifest.xml
+    	res/values/attrs.xml
+    	res/values/cmr_arrays.xml
+    	res/values/cyanide_strings.xml
+    	res/xml/cyanide_settings.xml
+
+commit 190d660cceb4c7152b7fefc0657a5d0c5cce9ac1
+Author: Roman Birg <roman@cyngn.com>
+Date:   Fri May 1 17:07:47 2015 -0700
+
+    Settings: fix non lock pattern CryptKeeper crash
+    
+    Change-Id: Ib2d6c9a468bfe778d5cb927759f11b2b03c25ee6
+    Signed-off-by: Roman Birg <roman@cyngn.com>
+
+commit 9ff0f91a3d68691816c1c1f130f78a730a4bacec
+Author: Michael Bestas <mikeioannina@gmail.com>
+Date:   Sat May 2 02:52:52 2015 +0300
+
+    Automatic translation import
+    
+    Change-Id: I9fd530907d8d5dc5595b0bd518c8d049d57a894d
 
 project packages/apps/SlimLauncher/
 commit 545bd8acc5ebeadcb14f7e3fda51b875ef8fa274
@@ -4555,6 +4253,31 @@ Date:   Fri Jan 23 00:39:08 2015 -0600
     
     Change-Id: Ifbeaee592eaac84c3a29200f1b9c13adf9e86688
 
+commit 4f747e334c50d31058072fcc9401d5a86aad6ce5
+Author: Griffin Millender <griffinn.millender@gmail.com>
+Date:   Tue Sep 30 20:55:30 2014 -0500
+
+    Add button customisation
+    
+    Change-Id: I31151047da13c2cdcb495581b1674e1bfef05f48
+
+project packages/apps/SoundRecorder/
+commit 51ccfffa090cf85b27775726a4e811e349e9dba1
+Author: Raj Yengisetty <rajesh@cyngn.com>
+Date:   Thu Apr 30 12:05:24 2015 -0700
+
+    SoundRecord: when responding to GET_CONTENT, assume exit after record
+    
+    Change-Id: I7ae3faf26d0d352a791a33720b5a73d7fab5eaa0
+
+commit 615756091522128286e781df16f81896fd4fc77e
+Author: Michael Bestas <mikeioannina@gmail.com>
+Date:   Sat May 2 02:53:13 2015 +0300
+
+    Automatic translation import
+    
+    Change-Id: I78ae6bf37e33077b58d4d95274a6671a32f46b28
+
 project packages/apps/Stk/
 commit 21fa071f8dc60a91a86cf4f49f81d1bc0e0a133f
 Author: Pawit Pornkitprasan <p.pawit@gmail.com>
@@ -4567,28 +4290,43 @@ Date:   Fri Apr 24 13:32:38 2015 +0700
     
     Change-Id: I25a76bb95e49ca8effa34332adc1f87b90effb2f
 
-project packages/apps/Terminal/
-commit ba5f5805db429d0f88a745fff94f6f5171cb5890
+commit 656cd2757c0d91311485fdd95328c3b08719d6e5
 Author: Michael Bestas <mikeioannina@gmail.com>
-Date:   Sat Apr 25 01:15:05 2015 +0300
+Date:   Sat May 2 02:53:18 2015 +0300
 
     Automatic translation import
     
-    Change-Id: I6fd61490ff0920ee3f49fc3d773785ebcbd62ab0
+    Change-Id: Id345822de58eb483b0b65752fc1e0a69f47db7bd
+
+project packages/apps/Terminal/
+commit aa252f1b21e8f35e49c92b01d42da50d17e3a837
+Author: Michael Bestas <mikeioannina@gmail.com>
+Date:   Sat May 2 02:53:22 2015 +0300
+
+    Automatic translation import
+    
+    Change-Id: I37ce3c2917606ca5ceeaebdac494fbc99d958203
 
 project packages/apps/ThemeChooser/
-commit ab6137a1851416ac7a36c9fd78d69b6e392af37a
-Author: Michael Bestas <mikeioannina@gmail.com>
-Date:   Sat Apr 25 01:15:09 2015 +0300
-
-    Automatic translation import
-    
-    Change-Id: Ifff863d600291b28f9dda8a5f9f0a2438fb1efb0
-
 commit 3c9f0e11e056993a8b46934d357144e37cfac1c6
 Merge: 8ebc84c ab6137a
 Author: ZION959 <ziontran@gmail.com>
 Date:   Sat Apr 25 18:10:47 2015 -0700
+
+    Merge remote-tracking branch 'CM/cm-12.1' into cm-12.1
+
+commit 6951d6021d04b155f8506ae9984f84d0d23ac4f9
+Author: Michael Bestas <mikeioannina@gmail.com>
+Date:   Sat May 2 02:53:26 2015 +0300
+
+    Automatic translation import
+    
+    Change-Id: I6f888ee23ea03a48d94f9075b1ec6eedceb220e3
+
+commit 7f00bbb3a5c892bad13ac0c2483e690137826133
+Merge: 3c9f0e1 6951d60
+Author: ZION959 <ziontran@gmail.com>
+Date:   Fri May 1 21:44:54 2015 -0700
 
     Merge remote-tracking branch 'CM/cm-12.1' into cm-12.1
 
@@ -4653,15 +4391,46 @@ Date:   Tue Apr 28 19:42:06 2015 -0400
     
     Change-Id: I9751725cbabe69f6497b18e92acd6387d6a9ce91
 
-project packages/apps/UnifiedEmail/
-commit 8110c1275a7a03099335a3aa2e4a59fa3376d6a9
-Author: Michael Bestas <mikeioannina@gmail.com>
-Date:   Sat Apr 25 01:15:13 2015 +0300
+commit b42887916592364c1652eb91a6a4eb8571f7aed4
+Author: dhacker29 <dhackerdvm@gmail.com>
+Date:   Wed Apr 29 01:26:57 2015 -0400
 
-    Automatic translation import
+    Developer Settings: ADB over network
     
-    Change-Id: I1446ab9b8e1e5c9e87c97ebd38a2e596e381724d
+    Change-Id: I70bc363ddf8810aa44d88c8f700df601d8b60f69
 
+commit cd739aae458006d732dde2ecf23773f8d4eab986
+Author: bmc08gt <brandon.mcansh@gmail.com>
+Date:   Wed Apr 29 09:55:21 2015 +0200
+
+    TvSettings: Create HomeActivity
+    
+    * Wrapper around the exisiting pref key that leads to leanback settings
+    * Allow reset of default home screen (launcher)
+    * Navigate to home settings (leanback settings)
+    
+    Change-Id: I1e6f1dccdd187eb5a30c87d628d4d878a5228506
+    Signed-off-by: bmc08gt <brandon.mcansh@gmail.com>
+
+commit bd65ad8dd892371eea8699d3d51d8fadc9a8771b
+Author: dhacker29 <dhackerdvm@gmail.com>
+Date:   Thu Apr 30 02:56:19 2015 -0400
+
+    Developer Settings: Enable Local Terminal (2/2)
+    
+    Change-Id: I7926e14617eb7dcf8bc02a91a2244db040420052
+
+commit 43008a4d1f88b0e7df825a4e0e5f90ef971ba02c
+Author: dhacker29 <dhackerdvm@gmail.com>
+Date:   Fri May 1 14:01:31 2015 -0400
+
+    Developer Settings: Only show ADB Over network when debugging is enabled
+    
+    Also move to debugging category
+    
+    Change-Id: I81ce701c66e52f9e43927158a6d9c7282b3f3271
+
+project packages/apps/UnifiedEmail/
 commit 865682e1f7b6abb80d001567b69bdb9f965f1fea
 Merge: 2bba20c 8110c12
 Author: ZION959 <ziontran@gmail.com>
@@ -4669,15 +4438,80 @@ Date:   Sat Apr 25 18:11:20 2015 -0700
 
     Merge remote-tracking branch 'CM/cm-12.1' into cm-12.1
 
-project packages/services/Telecomm/
-commit ef6be14d04fb8741e73d0f1c0cf7c7b428f8e84c
+commit 97762e5d3c2504ab0dc1d630bac4df18a0451177
+Author: Jorge Ruesga <jorge@ruesga.com>
+Date:   Mon Apr 20 04:17:22 2015 +0200
+
+    unified-email: custom notification lights
+    
+    Change-Id: I34b4149afff1c6688cf5e032ff82fdb41227cdb9
+    Signed-off-by: Jorge Ruesga <jorge@ruesga.com>
+
+commit 3cdd22d0dfd08cbdd622f8bdb1e61d5094fe0aa7
 Author: Michael Bestas <mikeioannina@gmail.com>
-Date:   Sat Apr 25 01:16:03 2015 +0300
+Date:   Sat May 2 02:53:38 2015 +0300
 
     Automatic translation import
     
-    Change-Id: Ib61c8d1616070c5eb2d76bcc7373d6e42d66650d
+    Change-Id: I1b65c9813cca7b2ae75c76fb54c6d62c24fac038
 
+commit 3aa1c3701303dab282bcca885bf33919c1502bcf
+Merge: 865682e 3cdd22d
+Author: ZION959 <ziontran@gmail.com>
+Date:   Fri May 1 21:45:25 2015 -0700
+
+    Merge remote-tracking branch 'CM/cm-12.1' into cm-12.1
+
+project packages/providers/ContactsProvider/
+commit 3ef3a298baf1f71dce1ae9221371f8805fa510d0
+Author: ZION959 <ziontran@gmail.com>
+Date:   Fri May 1 17:22:09 2015 -0700
+
+    Identicons: Add identicons to ChaOS Lab [3/3]
+    
+    When enabled, new contacts will be assigned a unique
+    5x5 identicon as the contact photo instead of the boring
+    default one.
+    
+    PS2:
+    Use the new GithubIdenticon class for now.
+    
+    PS3:
+    Make use of the IdenticonFactory
+    
+    PS4:
+    Add proper annotations for ChaOS Lab.
+    
+    Change-Id: I8c166504571baf6acaacfb95eda33b13c14ffa61
+
+project packages/providers/DownloadProvider/
+commit 858a00597ebe1962bab3be77561fc0eeddcc7644
+Author: Michael Bestas <mikeioannina@gmail.com>
+Date:   Sat May 2 02:54:39 2015 +0300
+
+    Automatic translation import
+    
+    Change-Id: I370caafc85cdcc0572c957f3c8d5fc227bd6909e
+
+project packages/providers/ThemesProvider/
+commit 5c81d895cf31a45246351e8cfcfa7132a33c9cdb
+Author: Michael Bestas <mikeioannina@gmail.com>
+Date:   Sat May 2 02:54:44 2015 +0300
+
+    Automatic translation import
+    
+    Change-Id: I852c9d9d813d32fd162f4984368b55263bfea51e
+
+project packages/services/Mms/
+commit c02c41560b150c85b04bbf9cbea32f647a69afff
+Author: Michael Bestas <mikeioannina@gmail.com>
+Date:   Sat May 2 02:54:49 2015 +0300
+
+    Automatic translation import
+    
+    Change-Id: Id474011d23c1bf0fa1418eafef680bbd6807608f
+
+project packages/services/Telecomm/
 commit e4b451a18cca714db1dd306ace45b477c2b543f9
 Merge: 446e65b ef6be14
 Author: ZION959 <ziontran@gmail.com>
@@ -4685,21 +4519,38 @@ Date:   Sat Apr 25 18:09:51 2015 -0700
 
     Merge remote-tracking branch 'CM/cm-12.1' into cm-12.1
 
-project packages/services/Telephony/
-commit d57df97ad4b30b578b9a2dcd105261e43486c870
+commit ccf6031a786ba968f669f125d972ad355552b961
 Author: Michael Bestas <mikeioannina@gmail.com>
-Date:   Sat Apr 25 01:16:09 2015 +0300
+Date:   Sat May 2 02:54:52 2015 +0300
 
     Automatic translation import
     
-    Change-Id: I306a9c55d486933a7ab343a0f08da88d93719019
+    Change-Id: I91e9f59b0b1dd36ccfcadcee094a11dc5c0ed28e
 
+commit fb2631f0e21df0d55fbc467b195f15ee16eaf453
+Merge: e4b451a ccf6031
+Author: ZION959 <ziontran@gmail.com>
+Date:   Fri May 1 21:44:12 2015 -0700
+
+    Merge remote-tracking branch 'CM/cm-12.1' into cm-12.1
+
+project packages/services/Telephony/
 commit 11ce1e8f25f3c22da1e8695145bb5b93b5f5bad0
 Merge: 7e68590 d57df97
 Author: ZION959 <ziontran@gmail.com>
 Date:   Sat Apr 25 18:10:23 2015 -0700
 
     Merge remote-tracking branch 'CM/cm-12.1' into cm-12.1
+
+commit c3c55852de04fab7a813c9e6258320f9b8952126
+Author: LuK1337 <priv.luk@gmail.com>
+Date:   Wed Apr 29 13:31:53 2015 +0200
+
+    msim: Fix FC on opening "calling accounts" in Dialer settings
+    
+    Variable sir seems to be null on some msim devices.
+    
+    Change-Id: Ia046e04da2edc0c06ed91a5878111f8e98f23b3b
 
 commit a4c8700f51517afdee390ff7090cce38b47ecad9
 Author: mengsun <msun@codeaurora.org>
@@ -4750,14 +4601,65 @@ Date:   Thu Apr 23 12:25:12 2015 -0700
     
     Change-Id: I968efb7abcb8cfe85bff5593ac95794d6879a8b6
 
-project packages/wallpapers/PhotoPhase/
-commit 5b9c27711b3be1d3f672021def92e8cc8289dae6
+commit a6e104d3c0b828a9db9e9cdc97584b1f80c4b8a5
 Author: Michael Bestas <mikeioannina@gmail.com>
-Date:   Sat Apr 25 01:16:16 2015 +0300
+Date:   Sat May 2 02:54:57 2015 +0300
 
     Automatic translation import
     
-    Change-Id: I8ec494a96a372d7168882d2e4e5a0587f21efd7f
+    Change-Id: I206eaf2e5ce060a9b64f66622df993f7c323679a
+
+commit bf38c64dd759e59741659fcd8ccb07cd06259c04
+Merge: 96e25bf a6e104d
+Author: ZION959 <ziontran@gmail.com>
+Date:   Fri May 1 21:44:34 2015 -0700
+
+    Merge remote-tracking branch 'CM/cm-12.1' into cm-12.1
+    
+    tion between NB AMR (the default) or HE-AAC for the encoding of call recording audio. Also changes the output format of the file appropriately (NB AMR now uses the NB_AMR output format and HE_AAC chooses the MPEG_4 output. File extensions are adjust accordingly as well).
+    This was in reponse to people complaining the quality of call recording audio is poor. It's noticibly better using HE-AAC, but filesizes are larger.
+    
+    Change-Id: I31f4a57042cf9e221ea2292922f071c955170e1e
+    
+    PS: Imported from kitkat and made working for lollipop.
+    
+    Signed-off-by: BlackDragon <blackdragon.fusionteam@gmail.com>
+    
+    Conflicts:
+    
+    	res/values/cr_strings.xml
+    	src/com/android/phone/CallFeaturesSetting.java
+    
+    Conflicts:
+    	res/values/cmr_strings.xml
+    	src/com/android/phone/CallFeaturesSetting.java
+
+project packages/wallpapers/Galaxy4/
+commit 2da4de9375bf3f45e658e314def00964fe97ed4a
+Author: Michael Bestas <mikeioannina@gmail.com>
+Date:   Sat May 2 02:55:06 2015 +0300
+
+    Automatic translation import
+    
+    Change-Id: Id6f2dd34ce930169ab08343e86a88bf27375e024
+
+project packages/wallpapers/PhaseBeam/
+commit 10e4dbe04de8633ea7d97898a0b0f39b6676300a
+Author: Michael Bestas <mikeioannina@gmail.com>
+Date:   Sat May 2 02:55:09 2015 +0300
+
+    Automatic translation import
+    
+    Change-Id: I436f5eef4b494986f7c1f96866a9595ecf4667b9
+
+project packages/wallpapers/PhotoPhase/
+commit 6caa42980095431987345f0dce8d5c025bc5c44a
+Author: Michael Bestas <mikeioannina@gmail.com>
+Date:   Sat May 2 02:55:13 2015 +0300
+
+    Automatic translation import
+    
+    Change-Id: I14c3c1fbb67fdb189f8f03275e239f5536953237
 
 project prebuilts/ndk/
 commit 9c744e25e9288ef771c5f072b917e905ba144e66
@@ -4843,23 +4745,6 @@ Date:   Fri Jul 27 08:40:53 2012 -0400
     Change-Id: I86861a89824af04a3b08e75049580df28bd239f7
 
 project vendor/cm/
-commit 3393dab46fa48b6465e732e1e7b7ff89f7846627
-Author: luca020400 <luca.stefani.ge1@gmail.com>
-Date:   Fri Apr 24 18:10:22 2015 +0200
-
-    vendor:cm: fixup formatting of CONTRIBUTORS
-    
-    Change-Id: I79e96edbf5dd69053297473964c73f71be86568d
-
-commit 52f92f081d793fc7cf715512e69c0a285e41a76d
-Author: Roman Birg <roman@cyngn.com>
-Date:   Mon Apr 20 18:20:59 2015 -0700
-
-    add Profiles to build
-    
-    Change-Id: Id74a2c5350a5140eeb6f83c950c8b9ed89b2d4d7
-    Signed-off-by: Roman Birg <roman@cyngn.com>
-
 commit 17e5661017b955131f828ad37dbb65414e71ed6b
 Author: dhacker29 <dhackerdvm@gmail.com>
 Date:   Sat Apr 25 02:03:49 2015 -0400
@@ -4910,16 +4795,28 @@ Date:   Thu Apr 9 10:20:03 2015 -0700
     Change-Id: I5b5798516ae2620d9fa544470bc107421f12173e
     (cherry picked from commit 623bc5bb1c80ff7dd8a3cd9c4b8272dfd8453db1)
 
-project vendor/cmremix/
-commit 9767563e9ac66dfc70482a9776c567e0a0634a5e
-Author: Paul Beeler <pbeeler80@gmail.com>
-Date:   Fri Apr 24 02:26:56 2015 -0700
+commit b2c60c1bbf60c04947d09a511b1c8cfd5eaa07c3
+Author: bmc08gt <brandon.mcansh@gmail.com>
+Date:   Wed Apr 29 19:40:54 2015 +0200
 
-    Fix bluetooth in SaberMod ARM Mode
+    Bump CyanogenMod version in CONTRIBUTORS.mkdn
     
-    Change-Id: I48813e65a33f663c5f6b67710859d309063234db
-    Signed-off-by: Paul Beeler <pbeeler80@gmail.com>
+    Change-Id: I8fa4b8b53af6ec1333f05f42d908b3e28a7bf08b
+    Signed-off-by: bmc08gt <brandon.mcansh@gmail.com>
 
+commit 8688a958b7fc671710ebb3083248f946e28a41c5
+Author: Brin Taylor <uberlaggydarwin@gmail.com>
+Date:   Sat May 2 08:24:32 2015 +0930
+
+    vendor: cm: yet more updates to contributors
+    
+    * u-ra sold his devices.
+    * nard now does d2
+    * unbreak the formatting (damn comma's)
+    
+    Change-Id: Ic2dfde51e419f95a72bff238d1542b17728f9ac7
+
+project vendor/cmremix/
 commit b2888f35a98729bab91d67826390634066b2a276
 Author: Paul Beeler <pbeeler80@gmail.com>
 Date:   Sat Apr 25 01:59:04 2015 -0700
@@ -5139,3 +5036,20 @@ Date:   Tue Apr 28 21:21:13 2015 -0400
     Merge pull request #611 from nardholio/cm-12.1
     
     update d2 blobs
+
+commit 0be23a84935f289632356c25f7bb5812b1d655bd
+Author: Dave Daynard <nardholio@gmail.com>
+Date:   Wed Apr 29 19:12:59 2015 -0400
+
+    Revert "d2gsm: Use rilblobs from AT&T NJ1 release"
+    
+    This reverts commit ea5f4eec1ca017bb68aa44ece8bda5b460674f7d.
+
+commit 9302518c8cea767f70018d66700b1b1a2673ba19
+Merge: d33393e 0be23a8
+Author: Dan Pasanen <dan.pasanen@gmail.com>
+Date:   Wed Apr 29 18:20:53 2015 -0500
+
+    Merge pull request #612 from nardholio/cm-12.1
+    
+    Revert "d2gsm: Use rilblobs from AT&T NJ1 release"
