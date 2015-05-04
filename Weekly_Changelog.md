@@ -1,10 +1,4 @@
 project CMRemix/
-commit ad1edc3d4524b3f0fc3466a44e6f2a3cb90815af
-Author: ZION959 <ziontran@gmail.com>
-Date:   Sun Apr 26 15:40:49 2015 -0700
-
-    add dependencies for Qcom clangs v3.6
-
 commit 91f917aa9e1911d8bccf87f6173d746d93a103eb
 Author: ZION959 <ziontran@gmail.com>
 Date:   Tue Apr 28 03:25:51 2015 -0700
@@ -50,18 +44,6 @@ Date:   Tue Apr 14 21:20:06 2015 +0200
     Change-Id: Ie157cf943291b1a26f4523b17691dfcefbc881dc
 
 project build/
-commit 29db18ff3a7a1434a44a68b7c61b5b742aac733e
-Author: ZION959 <ziontran@gmail.com>
-Date:   Sun Apr 26 14:49:50 2015 -0700
-
-    Compile TARGET MODULES with the Snapdragon LLVM Compiler 3.6 for Android instead of LLVM which comes with Android
-    
-    Credit all to MusterMaxMueller ( Many Thanks for all the help to have Qclang Optimization intergrated to CMRemix)
-    
-    https://developer.qualcomm.com/mobile-development/increase-app-performance/snapdragon-llvm-compiler-android
-    
-    Change-Id: I3889b8f0908be68dcf166223f960a057a46bf798
-
 commit 7ffbd66ad1f8e887f571428d5bb9e64b24ea905c
 Author: arter97 <qkrwngud825@gmail.com>
 Date:   Tue Apr 7 18:44:50 2015 +0900
@@ -243,14 +225,6 @@ Date:   Mon Apr 27 00:21:19 2015 -0700
     Change-Id: Id52a12b1b59c0063320bceafd5faf74680138292
 
 project device/samsung/qcom-common/
-commit e8b4b936078163d4daddf57d3b90c7f65687a19d
-Author: Arne Coucheron <arco68@gmail.com>
-Date:   Sun Apr 26 06:04:40 2015 +0200
-
-    qcom-common: Remove obsolete system properties
-    
-    Change-Id: I747b43ec50c70152dd298060285ade3e0e5ff1da
-
 commit 1366afc75da0277ee032c15a19cdb4ed68abe621
 Author: Brinly Taylor <uberlaggydarwin@gmail.com>
 Date:   Tue Apr 28 05:27:00 2015 -0500
@@ -284,24 +258,6 @@ Date:   Sat May 2 02:55:17 2015 +0300
     Change-Id: I0078d634e54e91daec6f80633f6523ce40e7a180
 
 project frameworks/av/
-commit 0e03875bee979afe39bdbca30e23b15d7739171b
-Author: Ricardo Cerqueira <ricardo@cyngn.com>
-Date:   Sun Apr 26 00:57:04 2015 +0100
-
-    audiopolicy: Apply FM volume control parameter for MTK hardware too
-    
-    MTK's audio uses the same parameter-based volume control for FM as QC,
-    so share it
-    
-    Change-Id: I260cae9e85f2f668435746637a811c19ebc33857
-
-commit ed8f87545ec85b137efc6d2cbe462429c7e0a66c
-Merge: bdc78b5 0e03875
-Author: ZION959 <ziontran@gmail.com>
-Date:   Sat Apr 25 17:44:31 2015 -0700
-
-    Merge remote-tracking branch 'CM/cm-12.1' into cm-12.1
-
 commit fb629ad8e893fb6f1817dbccb5178ab04de63f54
 Author: RenJian <jian.ren@ck-telecom.com>
 Date:   Wed Apr 15 11:32:15 2015 +0800
@@ -442,639 +398,6 @@ Date:   Thu Apr 30 11:35:06 2015 -0700
     Merge remote-tracking branch 'CM/cm-12.1' into cm-12.1-2
 
 project frameworks/base/
-commit 370a23c727e5618f55184035784fbbd71e160e29
-Author: d34d <clark@cyngn.com>
-Date:   Mon Apr 13 12:08:49 2015 -0700
-
-    Themes: Add palettized icon background support
-    
-    This feature allows a theme to supply a single icon background,
-    usually a white or gray scale image, which will then be tinted using
-    a color from a palette of six color styles.
-    
-    To use this new feature a theme designer will need to include the
-    new <paletteback /> tag which has the following syntax:
-    
-    <paletteback
-        img="name_of_png_drawable"
-        swatchType=["vibrant" | "vibrantLight" | "vibrantDark" | "muted" | "mutedLight" | "mutedDark"]
-        defaultSwatchColor1="hex_color"
-        defaultSwatchColor2="hex_color"
-        ⋮
-        defaultSwatchColorN="hex_color"
-        />
-    
-    ex:
-    <paletteback
-        img="iconback_palette"
-        swatchType="vibrantDark"
-        defaultSwatchColor1="#009688"
-        defaultSwatchColor2="#cc0000"
-        defaultSwatchColor3="#ff8800"
-        />
-    
-    You should specify some default swatch colors for those cases when
-    the original icon did not have any colors to match the swatchType
-    you requested. If no default swatch colors are defined, the original
-    un-tinted background will be used.
-    
-    Change-Id: Ifd6dd65cc34ad4cd966fa9670f68704ac5671960
-
-commit 73ca08bd8359d038276b03d1df0276cad86d21a0
-Author: tobitege <tobiasteschner@googlemail.com>
-Date:   Thu Apr 23 14:02:35 2015 +0200
-
-    Fix NPE in NetdResponseCode.InterfaceClassActivity
-    
-    Under circumstances the 4th param is null and causes NPE.
-    Exception looks like this in logcat:
-    E/NetdConnector( 1086): Error handling '613 IfaceClass idle (null)':
-    java.lang.NumberFormatException: Invalid int: "(null)"
-    
-    Change-Id: Id1bbbeeec8452e7103c4213be7b3029c6d36fa55
-
-commit 13b82980a8e15ff6f4f48448931b4ad4e5a5251d
-Author: Altaf-Mahdi <altaf.mahdi@gmail.com>
-Date:   Tue Apr 21 14:48:44 2015 +0100
-
-    Base: fix facelock crash when lock screen is disabled
-    
-    Change-Id: I44e2cef77f0e9119a0584aea548151687b9e35fa
-
-commit 9f23efd57e18e04706b57aa261ec16d6d0739e01
-Author: Roman Birg <roman@cyngn.com>
-Date:   Mon Apr 20 16:22:12 2015 -0700
-
-    frameworks: prepare for Profiles trust agent
-    
-    Remove checks for Profile.LockMode.INSECURE.
-    This logic will be handled by the Trust Agent API now.
-    
-    Change-Id: I035911d7d8f3f9c8006eb4256fb8332f172bab1b
-    Signed-off-by: Roman Birg <roman@cyngn.com>
-
-commit 01b540954bd99b478429a7f0db7868a0c5512af7
-Author: Roman Birg <roman@cyngn.com>
-Date:   Wed Apr 22 10:33:19 2015 -0700
-
-    SystemUI: improve visualier tile state management
-    
-    Always listen for audio session changes while tile exists so state is
-    never stale. Only refresh UI while listening. Only attach visualizer
-    while listening.
-    
-    Change-Id: Iadd99c42074f5390b397c0d979731ace80a23b76
-    Signed-off-by: Roman Birg <roman@cyngn.com>
-
-commit 62575a4e3574ebfb22258ce622805114c55b7526
-Author: Ondrej Zima <keltuv.email@gmail.com>
-Date:   Tue Apr 21 19:34:01 2015 +0200
-
-    Framework: CS translation
-    
-    - fixed really bad construction
-    
-    Change-Id: Ide743ffdf8f652d944a729aea62d78b91fc8a13b
-
-commit fb332a51b1d1405e21a652e52ab6283ca79d2094
-Author: Dan Pasanen <dan.pasanen@gmail.com>
-Date:   Wed Mar 18 23:46:15 2015 -0500
-
-    ConnectivityService: add persist.radio.noril
-    
-    * For those of us with a tablet or device that has a radio, but
-      don't plan to ever use it
-    
-    Change-Id: I8b1a5805254b549886eb5b08005fb92e97a6b7ce
-
-commit 4de6db65e4bc1ef028754bac04a86cc073df42d7
-Author: Michael Bestas <mikeioannina@gmail.com>
-Date:   Sat Apr 25 01:13:26 2015 +0300
-
-    Automatic translation import
-    
-    Change-Id: I3731f2e6891fc443a7f87d80e00371567f288a7d
-
-commit 46a4e9fb694daf2560aa9bfc117d4ab230aff1cd
-Author: Adnan Begovic <adnan@cyngn.com>
-Date:   Tue Apr 21 16:11:51 2015 -0700
-
-    Telecomm: Fix doc-comment-check for linking of hidden API.
-    
-      frameworks/base/telecomm/java/android/telecom/TelecomManager.java:36:
-          error 108: Link to hidden class: PhoneAccount label=PhoneAccount
-      DroidDoc took 447 sec. to write docs to /Volumes/android/out/target/common/docs/doc-comment-check
-    Change-Id: Id709bc7c2eca8f309e210191887c3a272f3815ad
-
-commit d8cf50f5bf306e5e5bab72d649e039c3c00b976d
-Author: Adnan Begovic <adnan@cyngn.com>
-Date:   Mon Apr 20 15:38:56 2015 -0700
-
-    NotificationMgr: Only do DOS protection if not updating a notification.
-    
-      Only check for DOS protection if the incoming id being sent by the callee is
-      unknown to us. Otherwise, you can post MAX_PACKAGE_NOTIFICATIONS and never
-      be able to update any of them without first cancelling an existing notification.
-    
-    Change-Id: Ideab9a3d01a45e15942db63864f964b3a3308611
-
-commit 02144d8ca67ff14c840a0af4263cfdddfe0fad43
-Author: Roman Birg <roman@cyngn.com>
-Date:   Tue Apr 21 13:13:06 2015 -0700
-
-    SystemUI: add a disabled state for Quick Tiles
-    
-    Some tiles may want to be visible, but not allow any user interaction
-    due to security reasons. Add a visual disabled state for tiles which are
-    not enabled.
-    
-    With this patch, the Profiles tile and the Lockscreen toggle tile
-    disable themselves on a secure lock screen.
-    
-    Change-Id: I65ec7837661483d238d8dc3fa18419f76c8029dd
-    Signed-off-by: Roman Birg <roman@cyngn.com>
-
-commit d892e183fba0ec4b3837968d8c0a3a6ffbe77ee6
-Author: wangjing <wangjing@codeaurora.org>
-Date:   Thu Apr 9 16:16:17 2015 +0800
-
-    SystemUI: Set Occluded to false when keyguard is not showing
-    
-    When quiting incall view, "Occluded" was not set to false, then
-    it fitted system window in keyguard view, so status bar display a
-    new black bar.
-    
-    Set Occluded to false when keyguard is not showing.
-    
-    Change-Id: Icb87def557e783c61a13f0de752b37324de8c6c0
-    CRs-Fixed: 809699
-
-commit a55f9db19f0d21b10ed56bb8ffa77611d82ee8aa
-Author: Uday Kiran Jandhyala <ukiran@codeaurora.org>
-Date:   Wed Apr 8 19:05:14 2015 +0800
-
-    Black Screen: Fix dlfree error when delet mZipInflater.
-    
-    _CompressedAsset::close() and _CompressedAsset::getBuffer() may
-    delete mZipInflater object without mutex protection. This may cause
-    race condition during two thread try to delete mZipInflater object
-    at the same time. Fix this issue by adding auto local mutex lock in
-    _CompressedAsset::close() and _CompressedAsset::getBuffer().
-    
-    CRs-Fixed: 822097
-    
-    Change-Id: I7c8d2e308e196db54c6a91bc2d16545b331f87bc
-
-commit 9617feb6184ad8d2db04e4e8a62ee342860cbd86
-Author: Lars Greiss <kufikugel@googlemail.com>
-Date:   Sat Apr 25 03:01:35 2015 +0300
-
-    Launch app privacy settings when tapping on PG notification (1/2)
-    
-    Based on https://github.com/SlimRoms/frameworks_base/commit/97ccae06cd0ad1aa366c3a70e8e744277c409b06
-    
-    JIRA: CYAN-6077
-    Change-Id: I8632e8c944c1d5d7ad2fb2a2276bae5fe2d4a0a0
-
-commit fc5ede4fd670bffcaca263249627b0584c53a275
-Author: DvTonder <david.vantonder@gmail.com>
-Date:   Sat Apr 25 01:06:17 2015 -0700
-
-    Frameworks: Allow/Prevent notification light in Zen mode (1 of 2)
-    
-    This allows the user to prevent the notification lights from showing during Zen mode as per Android 5.0.x
-    
-    Change-Id: I831c475204c8647d8ee281094aca837ee9594eb4
-    
-    Conflicts:
-    	core/java/android/provider/Settings.java
-
-commit 4259fd26e636a3930d9fc8012237cc93c4e27788
-Author: ZION959 <ziontran@gmail.com>
-Date:   Sat Apr 25 01:20:58 2015 -0700
-
-    Revert "Option to use volume keys to control media volume anytime [1/2]"
-    
-    This reverts commit ce574fb80b28e8de76462ec059ed4c6a332d39a1.
-    
-    Conflicts:
-    
-    	core/java/android/provider/Settings.java
-    
-    Change-Id: I4dcc23c8bca98a2311173083c34fd95914c1d7de
-
-commit 38e5b5bd94d67d2e8342a03fb220b702adacd5a4
-Author: Pawit Pornkitprasan <p.pawit@gmail.com>
-Date:   Sat Apr 25 01:25:09 2015 -0700
-
-    Option to use volume keys to control media volume anytime (2/2)
-    
-    See Settings part for description
-    
-    Change-Id: I78d26b0bd41f5b58514ae9c68208a8c950396823
-    
-    Conflicts:
-    
-    	media/java/android/media/AudioService.java
-    
-    Conflicts:
-    	core/java/android/provider/Settings.java
-
-commit 19554c8aa6c53deab3c68768be490c71eb7022e7
-Author: ZION959 <ziontran@gmail.com>
-Date:   Sat Apr 25 16:12:09 2015 -0700
-
-    [Squash] Revert Slim Stuffs
-    
-    Revert: Framework: SlimAction as QuickTile (1/2)
-    
-    Configure which Slim actions you want to use as tile and then add the 'SlimAction' tile.
-    Single press will switch between Slim actions and long press will execute the Slim action. If the tile has only one Slim action, single press will execute the action.
-    
-    Screw'd:
-    Modified for Screw'd AOSP sources
-    
-    Change-Id: I229b2163152f73b4870878837117204dd0aad960
-    
-    Conflicts:
-    	core/java/android/provider/Settings.java
-    	core/java/com/android/internal/util/cm/QSConstants.java
-    	packages/SystemUI/src/com/android/systemui/statusbar/phone/QSTileHost.java
-    
-    Conflicts:
-    	core/java/android/provider/Settings.java
-    
-    Conflicts:
-    	core/java/android/provider/Settings.java
-    	core/java/com/android/internal/util/cm/QSConstants.java
-    	packages/SystemUI/src/com/android/systemui/statusbar/phone/QSTileHost.java (reverted from commit 7e4d255cf5f6e4aaa980013bf2d5d0f36592ef90)
-    Revert: Action: Add kill-app and last-app actions
-    
-    Forward port from KitKat
-    
-    Change-Id: If8326ffed21faa2452e22b2afb717f4c123bd2a0
-    
-    Conflicts:
-    	core/java/com/android/internal/statusbar/IStatusBar.aidl
-    	core/java/com/android/internal/statusbar/IStatusBarService.aidl
-    	packages/SystemUI/src/com/android/systemui/statusbar/CommandQueue.java
-    
-    Conflicts:
-    	packages/SystemUI/res/values/cr_strings.xml
-    	packages/SystemUI/src/com/android/systemui/statusbar/BaseStatusBar.java
-    
-    Conflicts:
-    	packages/SystemUI/src/com/android/systemui/statusbar/CommandQueue.java (reverted from commit de238bc085a357f458fece6597ebc2ac96313a97)
-    Revert: Action: Add screenshot action
-    
-    Change-Id: I98960f6bc9987da763342f491611dc54c44fca43
-    
-    Conflicts:
-    	packages/SystemUI/src/com/android/systemui/statusbar/CommandQueue.java
-    
-    Conflicts:
-    	packages/SystemUI/src/com/android/systemui/statusbar/CommandQueue.java (reverted from commit 085be268d7e5b19feb49f30f6ddb3bf3406f6077)
-    Revert "[1/2] Base: Configurable overflow menu button"
-    
-    This reverts commit 4df3814aa871cb4a1eeaa4a94151025d00599a4a.
-    
-    Change-Id: If96ae5df993232f0aba51b46e5fa25fef86a7850
-
-commit efe045f6f3603e5edd52f46338c6fbc3315b7dbf
-Author: Dragon <dragon7780@hotmail.nl>
-Date:   Sat Apr 25 16:17:37 2015 -0700
-
-    Base: SlimPie (1/2)
-    Implement SlimPie for lp5.0 ported from kitkat.
-    
-    PS1: Implement SlimPie for KDP
-    
-    PS2: Fx some derp!
-    
-    WIP
-    Still need to bring back a few more slimpie features.
-    
-    Signed-off-by: Dragon <dragon7780@hotmail.nl>
-    
-    Change-Id: Ib74c5fa40c90825177d088bf6f76cd8636b79cc2
-    
-    Conflicts:
-    	core/java/android/provider/Settings.java
-    	packages/SystemUI/res/values/cr_colors.xml
-    	packages/SystemUI/res/values/cr_dimens.xml
-    	packages/SystemUI/res/values/cr_strings.xml
-    	packages/SystemUI/src/com/android/systemui/statusbar/CommandQueue.java
-
-commit a8275f210bc242b97a20f4d16dc8901d2cf881b2
-Author: fusionjack <dogfight60-fusionjack@yahoo.de>
-Date:   Sat Apr 25 16:17:37 2015 -0700
-
-    Action: Add kill-app and last-app actions
-    
-    Forward port from KitKat
-    
-    Change-Id: If8326ffed21faa2452e22b2afb717f4c123bd2a0
-    
-    Conflicts:
-    	core/java/com/android/internal/statusbar/IStatusBar.aidl
-    	core/java/com/android/internal/statusbar/IStatusBarService.aidl
-    	packages/SystemUI/res/values/cr_strings.xml
-    	packages/SystemUI/src/com/android/systemui/statusbar/BaseStatusBar.java
-    	packages/SystemUI/src/com/android/systemui/statusbar/CommandQueue.java
-    
-    Conflicts:
-    	packages/SystemUI/res/values/cmr_strings.xml
-
-commit 60419f0dcd7ae94863a580d8df8e9c859fe71268
-Author: fusionjack <dogfight60-fusionjack@yahoo.de>
-Date:   Sat Apr 25 16:17:37 2015 -0700
-
-    Action: Add screenshot action
-    
-    Change-Id: I98960f6bc9987da763342f491611dc54c44fca43
-    
-    Conflicts:
-    	packages/SystemUI/src/com/android/systemui/statusbar/CommandQueue.java
-
-commit 58015573317b62fd4b23ed7da7629546de50bec2
-Author: Trishool Narayanasetty <tnarayan@codeaurora.org>
-Date:   Sat Apr 25 16:17:37 2015 -0700
-
-    frameworks/base: Make minfree values optimal for 32bit devices
-    
-    This change makes lowmemorykiller minfree values optimal for 32bit
-    devices. Arrived at these values after evaluating UX and launch
-    latencies.
-    
-    Change-Id: Ia797ead2d330ec3347ee964ac5ec3dd6513134a4
-    
-    Patchset: 1
-    http://review.cyanogenmod.org/#/c/96187/
-
-commit ec575a1de0f27bbff360ee6ced08575b710ac0d0
-Author: ZION959 <ziontran@gmail.com>
-Date:   Sat Apr 25 19:10:00 2015 -0700
-
-    Revert: App sidebar: notify if app is not installed
-    
-    better than force close
-    
-    Change-Id: I9eebe1a3a4be2dad16ed9a8cff9c0694900d833d (reverted from commit 988d73b0b2e47c5c9bce8428cffd3d9004b97f3a)
-
-commit 5e5cef254474a64db7dcf3f2d480942fb614770a
-Author: ZION959 <ziontran@gmail.com>
-Date:   Sat Apr 25 19:12:42 2015 -0700
-
-    Revert: App sidebar: some adjustments
-    - Cleanup
-    - fix disappearing appbar on changing appbar position
-    - may fix endless FC on changing appbar contents
-    
-    Change-Id: I2e94290dc128447f0da8937eb5dc0ed10296a155
-    
-    Conflicts:
-    	packages/SystemUI/src/com/android/systemui/statusbar/phone/PhoneStatusBar.java
-    
-    Conflicts:
-    	packages/SystemUI/src/com/android/systemui/statusbar/phone/PhoneStatusBar.java (reverted from commit 8a71a12daa5d4d5e19dbfe4257b4083053ec3ca3)
-
-commit 8b5e45477ce9520b95cdc7c00c8315f2f6b1b19e
-Author: d34d <clark@cyngn.com>
-Date:   Thu Apr 23 20:25:35 2015 -0700
-
-    Themes: Add rotation and translation to composed icons
-    
-    This feature allows a theme to specify a rotation and translation
-    in addition to scaling the original icon when composing.
-    
-    To use this new feature a theme designer will need to include the
-    <rotate /> and/or <translate /> tags with the following syntax:
-    
-    <rotate angle="angle_to_rotate" />
-        where angle_to_rotate can be from 0 to 360 degrees
-    
-    <translate xOffset="x_value" yOffset="y_value" />
-        where x_value and y_value are device indipendent pixels
-        and can be any value (both positive and negative depending
-        on which way you want to move the icon)
-    
-    ex:
-    <rotate angle="45"/>
-    <translate xOffset="-10" yTranslate="15"/>
-    
-    Change-Id: I37ccf7861d22ee3aa21fce25e7e1b1afc49b3bcc
-
-commit 9cffb83cf0278e57c13f6bb25f6ca6081a42b5f7
-Author: dhacker29 <dhackerdvm@gmail.com>
-Date:   Sat Apr 25 02:02:50 2015 -0400
-
-    SettingsProvider: Make the default battery style Circle
-    
-    This will allow us to remove the overlay in vendor/cm so devices
-    with no battery, aka fugu, can override this to none.
-    
-    Change-Id: Idb8decc5e999849e3fe3d6b72419dd3d96ff1ad2
-
-commit 39385846351efa6b46ed1bd7d168d5ceceb47155
-Author: cristianomatos <cristianobmatos@gmail.com>
-Date:   Sun Apr 26 11:54:15 2015 -0700
-
-    Add lastapp/killapp/screenshots to actions
-    
-    Reference
-    https://github.com/temasek/android_frameworks_base/commit/900d251187944faea5ea4f1ab2f97481fa810d80
-    
-    Authorship to cristianomatos
-    
-    Forward ported to cm-12.1 to temasek build
-    
-    Conflicts:
-    	packages/SystemUI/res/drawable-hdpi/ic_sysbar_lastapp.png
-    	packages/SystemUI/res/drawable-mdpi/ic_sysbar_lastapp.png
-    	packages/SystemUI/res/drawable-xhdpi/ic_sysbar_lastapp.png
-    	packages/SystemUI/res/drawable-xxhdpi/ic_sysbar_lastapp.png
-
-commit 4ceff02678cddae8f6d45f9043dcb9a5f63e5f38
-Author: Janson Kang <temasek71@gmail.com>
-Date:   Sun Apr 26 17:28:05 2015 +0800
-
-    SystemUI: Reset status bar clock color before hiding
-    
-    This fixes status bar clock re-appearing after hiding
-
-commit 63dd05bb50265a265e2eaac92e383d4c3469acdd
-Author: Janson Kang <temasek71@gmail.com>
-Date:   Sun Apr 26 20:20:52 2015 +0800
-
-    Fix heads up tile
-
-commit ee42ce56fe05bc0156f279324e07472bc0fa97f0
-Author: padarshr <padarshr@codeaurora.org>
-Date:   Fri Jan 23 18:51:36 2015 +0530
-
-    Bootanimation crashes if Audio is not ready
-    
-    This change makes sure bootanimation does
-    not crash even if Audio is not up.
-    
-    Change-Id: I3ef510bf7fc26008eacbe02957a34cdccda2b548
-
-commit 9ddfc354dafd9b830dfd30f0ff5c2baf5df9de6e
-Author: Chaitanya Saggurthi <csaggurt@codeaurora.org>
-Date:   Wed Apr 15 20:48:48 2015 +0530
-
-    Fix system server crash
-    
-    Fix system server crash by adding null check to
-    subscriptionManger API for isub service.
-    
-    Change-Id: Ie113ae110136979b00bd5f254baff02182b2ce53
-    CRs-Fixed: 822865
-
-commit 77f339a4c59b4031ae9517e4baf838c3df7ccee2
-Author: Muhammed Siju <msiju@codeaurora.org>
-Date:   Thu Mar 19 21:27:12 2015 +0530
-
-    IMSVT: Fix data usage value.
-    
-    Data usage value was always received as 0 due to
-    wrong API used for sending Message.
-    
-    Change-Id: I4626e51f28f64a33fcb6245da9cdbdca36a8215d
-    CRs-Fixed: 810409
-
-commit caffb622f02e52875ee262c9931a6ea08b3c4160
-Author: Omkar Kolangade <omkark@codeaurora.org>
-Date:   Mon Mar 23 17:51:16 2015 -0700
-
-    IMS Connection Capabilities Update
-    
-    IMS connection capabilities were not getting
-    propagated to the upper layers whenever a
-    capability was added or removed. Adding the
-    same.
-    
-    Change-Id: Ic67d76df05c8b2a1b8abaf27f266fe9693764e52
-    CRs-Fixed: 806868
-
-commit 0d6bb968c7969efc6cf67f1ef0cc340d57e6ea93
-Author: Suchand Ghosh <suchan@codeaurora.org>
-Date:   Fri Feb 27 13:47:53 2015 +0530
-
-    IMS: Allow add participant with normal IMS call.
-    
-    We should allow add participant with normal IMS
-    call to make it conference.
-    Send add participant through existing connection
-    of normal IMS call.
-    
-    Change-Id: Ia634b10addc682bd9a41ae2273228345f1181953
-    CRs-Fixed: 800563
-
-commit ae7e2679cd38415a39e0462f4eabc7b0aab42159
-Author: Ravinder Konka <rkonka@codeaurora.org>
-Date:   Wed Jan 21 20:54:57 2015 +0530
-
-    NetworkPolicyManagerService: Handling IllegalArgumentException
-    
-    - Avoid throwing IllegalArgumentException in case of
-      MOBILE_WILDCARD and WIFI_WILDCARD Network Templates
-    
-    - Catching the exception to avoid the system crash in case of
-      an invalid or unknown NetworkTemplate
-    
-    CRs-Fixed: 773212
-    Change-Id: Ie782eec1373fb44601d180f732e4835fadcbddd2
-
-commit e618bb7c8dfd38ccb640b4062f34817d4a536a4c
-Author: Rakesh Pallerla <rakesh@codeaurora.org>
-Date:   Fri Mar 27 19:11:56 2015 +0530
-
-    Update Signal Strength on sim state change.
-    
-    Update Signal Strength on sim state change, so that when
-    SIM is removed the signal icon will be updated and proper
-    value is displayed on inserting other SIM
-    
-    Change-Id: Ie392716e0ad7783306570258fd4ec411d5dfaab6
-    CRs-Fixed: 807798
-
-commit 4bf9a39be59480169d4457c06c06d4011d8002cc
-Author: Ravinder Konka <rkonka@codeaurora.org>
-Date:   Thu Feb 26 17:03:48 2015 +0530
-
-    ConnectivityService: Updating init_rwnd based on RAT class
-    
-    Get RAT class info and update TCP_DEFAULT_INIT_RWND accordingly
-    for 2g and Non-2g Networks
-    
-    CRs-Fixed: 679127
-    Change-Id: I1a05bac05f20a86fb8e19735b74d178d1e5ce3b0
-
-commit 6cc441a6eeadcbebc6309a8e039315de1304a95e
-Author: Rekha Kumar <rekhak@codeaurora.org>
-Date:   Thu Jan 22 15:01:22 2015 -0800
-
-    IMS-VT: Add additional error codes for upgrade downgrade
-    
-    -Add support to send additional error codes to UI during
-     upgrade downgrade
-    
-    Change-Id: Id452d225098fe3bccdcd37d242985c5c761144c1
-    CRs-Fixed: 769916
-
-commit 2d4ecb4077672691767f17035e71e8bbc27911e6
-Author: Evan Charlton <evanc@google.com>
-Date:   Sat Nov 8 15:49:16 2014 -0800
-
-    Apply @hide / @SystemApi to android.telecom.*
-    
-    Move the android.telecom.* namespace back to @hide, and also mark it
-    with @SystemApi so that system-privileged apps can use them.
-    
-    Bug: 18302450
-    Change-Id: I33ae1b9b0dfdb1c5eff51ca3c829196bcfc9411c
-
-commit 44d38dcf1786920c23efda24513c750d216ec7c1
-Author: Kiran Kelageri <kkelageri@codeaurora.org>
-Date:   Wed Apr 8 14:28:03 2015 -0700
-
-    Bluetooth: Fix for crash in multi advertiser
-    
-    Subsequent bt on/off's causes the callback to be rendered later than
-    the actuall sequence so as to ensure the rigidity of the flow
-    check is added to make sure that bluetooth is enabled before performing
-    advertising.
-    
-    Change-Id: I1fbd35d9009abc510ac01739e37360b4eb6d3717
-
-commit cd0e9d200e66e0ff302bb330abcd8a2c12de4cd6
-Author: Tyler Gunn <tgunn@google.com>
-Date:   Thu Jan 29 11:47:24 2015 -0800
-
-    Fixing conference merge where only one party is added to conference.
-    
-    - Adding "onConferenceStarted" listener for Connections.
-    - This is necessary so that an ImsCall can report the fact that it has
-    went from being a single party call to a multiparty call. This was not
-    previously necessary since the multiparty bit change would be detected
-    when one of the connections being merged changed state.  Since we now must
-    defer the establishment of the conference until all connections have been
-    merged, we need a means of detecting when the call becomes multiparty.
-    
-    Bug: 18960042
-    Change-Id: I3ba138cb546e3efdf89b29d6676d00257a5e00cd
-    CRs-Fixed: 820312
-
-commit 332df72f7f6065d5cbb6ee5a8696c03e00fcb6b7
-Author: Brian Carlstrom <bdc@google.com>
-Date:   Thu Mar 26 22:41:45 2015 -0700
-
-    Document hprof-conv -z
-    
-    Bug: 18473132
-    Change-Id: I3c0fcc2c15d4c590ed852f41aa4fd2a2531a6db8
-
 commit dd4044e249983c0a80942b4ddc2799adc16ba364
 Author: Muhammed Siju <msiju@codeaurora.org>
 Date:   Thu Mar 12 14:26:01 2015 +0530
@@ -1946,14 +1269,391 @@ Date:   Sat May 2 02:50:39 2015 +0300
     
     Change-Id: I3936018c255cec208050fce2f24d658ba8f69bbb
 
-project frameworks/native/
-commit 9c16578a0e20a323812c476b3004bd74fc0317a2
-Merge: 521ce7b f22a457
+commit af36d46ebaf165dd772d0be13b03170fba590458
+Author: Alexander Martinz <eviscerationls@gmail.com>
+Date:   Tue Nov 18 20:28:11 2014 +0100
+
+    (1/2) Base: instant reboot action trigger
+    
+    Change-Id: If32b4fb898866a3064443074344e8ea494ec5ff7
+    Signed-off-by: Alexander Martinz <eviscerationls@gmail.com>
+
+commit 5861ba386cc9c648865ff444932bc4e1e2239035
+Author: LuK1337 <priv.luk@gmail.com>
+Date:   Sat May 2 19:09:41 2015 +0200
+
+    SystemUI: Use smaller battery padding
+    
+    Change-Id: I70ee56d3281ea7e8cf0380824784d2c2cee4b021
+
+commit 68fb921d48f4f86f6481e8675e269590989098eb
+Author: Rajshekar Eashwarappa <reashw@codeaurora.org>
+Date:   Thu Nov 7 12:34:24 2013 +0530
+
+    framework:Thread synchronization for UI update
+    
+    Issue : Framework reboot was observed due to out of sync between
+            two threads which inturn causes Null pointer exception
+            while updating airplanemode.
+    Fix : Handled Null pointer exception and the crash is not observed.
+    CRs-Fixed: 570122
+    
+    Change-Id: I2e969f6e7726ffcf8648b366ebb54cb2b0afc292
+
+commit c53dd31934075c8ae99135d0faa510d0dfffbb24
 Author: ZION959 <ziontran@gmail.com>
-Date:   Sat Apr 25 17:49:46 2015 -0700
+Date:   Sun May 3 00:57:39 2015 -0700
 
-    Merge remote-tracking branch 'CM/cm-12.1' into cm-12.1
+    Revert "AudioManager: update references to application context"
+    This reverts commit 8a366a1.
 
+commit 9ea79a257e2bf499ff67e99f50123a02b364c706
+Author: ZION959 <ziontran@gmail.com>
+Date:   Sun May 3 00:58:00 2015 -0700
+
+    Revert "Sometimes the application context is null"
+    
+    This reverts commit e6713e6a88ecef4fbbbd511122cb17946eb69896.
+
+commit 7111135c76f9aa186444cd4b763897f8a809f720
+Author: Marco Nelissen <marcone@google.com>
+Date:   Fri Apr 17 09:50:56 2015 -0700
+
+    Sometimes the application context is null
+    
+    when called from systemui.
+    
+    Bug: https://code.google.com/p/android/issues/detail?id=152173
+    Change-Id: I27153a48d7edce7006517507d813e24ce6f63a7d
+
+commit f703c040a5bc0fc7a73196160bef92f876b176c4
+Author: Mathieu Chartier <mathieuc@google.com>
+Date:   Fri May 1 11:30:22 2015 -0700
+
+    Look at map extensions before /dev/ + ashmem.
+    
+    Prevents stuff like:
+    dalvik-classes.dex appearing as GC overhead.
+    
+    (cherry picked from commit 9308462a5972192a1ad9abd01b36e1ad545eef99)
+    
+    Bug: 20752953
+    Change-Id: Iab0935e882a5d938651ec2581845d8242aaf98af
+
+commit e9af3e17f2380f091af9da060d2d86c3b843f4d2
+Author: Alexander Martinz <eviscerationls@gmail.com>
+Date:   Tue Apr 21 15:51:13 2015 +0200
+
+    AudioManager: update references to application context
+    
+    Change-Id: If458c17c44bc68f1a0c4172b11240e2053fad42e
+    Signed-off-by: Alexander Martinz <eviscerationls@gmail.com>
+
+commit 1554d3ef38ce2148f165805b908012637f893566
+Author: riddle_hsu <riddle_hsu@htc.com>
+Date:   Fri May 1 01:52:58 2015 +0800
+
+    Fix NPE in JobServiceContext when closing job.
+    
+    Disconnect may come after job is canceled.
+    Add a finished state to avoid cleanup finished job again.
+    
+    Real case:
+    http://code.google.com/p/android/issues/detail?id=170814
+    
+    * CP from here:
+    https://github.com/android/platform_frameworks_base/commit/6a94aba734b0dffedeb1744bdbe59341760b56b6
+    
+    Change-Id: I9c7a1b944a8393e30396f473ebeb8332e51f21f1
+
+commit f4c96230fd5e1b99701cc737251348a804d707e1
+Author: abun880007 <tigger2014@team-ub.co.uk>
+Date:   Sun Apr 5 18:48:14 2015 +0100
+
+    Fix showing heads up if IME is showing
+
+commit d48b0f1019d26546a85506c57a6bd00976f8ad52
+Author: Christopher R. Palmer <crpalmer@gmail.com>
+Date:   Fri May 1 06:15:47 2015 -0400
+
+    ambient display: Fix volume key music control
+    
+    Previously the dream service would only report whether or not it was dreaming.
+    Ambient display counts as dreaming.  When dreaming, the volume inputs are
+    passed back to the application which is not what we want for ambient
+    display.
+    
+    Fix this by exposing isDozing() and allow volume keys to control music
+    when we are dreaming and have moved into doze mode (aka, sleeping).
+    
+    Change-Id: I508c86668bc62c47acd0fc6958270362464213f5
+
+commit eae82b7a48f497c16a766a5ea581cf7b7873c0d2
+Author: Mathieu Chartier <mathieuc@google.com>
+Date:   Tue Apr 28 16:30:30 2015 -0700
+
+    Properly describe exception
+    
+    Previously we used DetachCurrentThread which raised a SIGABRT from
+    within ART. The new approach is to use ExceptionDescribe and exit.
+    
+    Bug: 20640601
+    
+    * includes fix of commit 97a29433c33f4e2c8ab60167a4be41664f56c314
+    
+    Change-Id: If87d9de46fde71a72ae7687f42ff1de182f651bd
+
+commit d0dd78363731bc02cf09279b0369f563924ac404
+Author: ZION959 <ziontran@gmail.com>
+Date:   Sun May 3 00:59:49 2015 -0700
+
+    Revert "SystemUI: small optimization for notification icon numbers"
+    
+    This reverts commit 177abf951bd74f5d4dbdd13c0aff6bacbcbd5869.
+
+commit 9c99037df5f3791000ec3e2de6e662b29ac635cb
+Author: ZION959 <ziontran@gmail.com>
+Date:   Sun May 3 01:48:07 2015 -0700
+
+    AppSideBar Tile 2/2
+    
+    Drawables stolen from bliss(thanks) and modified by @TheGeekyNimrod
+    
+    Conflicts:
+    	packages/SystemUI/res/values/cyanide_strings.xml
+
+commit ac4ec52fa5636166bf60f09d8704004ddb3496e8
+Author: ZION959 <ziontran@gmail.com>
+Date:   Sun May 3 02:00:00 2015 -0700
+
+    [Squash] Revert: (Omni) Implement ambient display as Active Display
+    
+    Currently Ambient Display fully support if device has
+      Significant motion sensor and wake gesture sensor
+    
+    with this change allow Ambient Display to work like
+        Active Display
+    
+    -- Allow wake up using shake event
+    -- use different class to manage sensor
+    
+    enable this via overlay custom_config.xml
+    
+    inside Frameworks base
+    
+        <!-- Doze: force using accelerometer as pick up sensor -->
+        <bool name="config_dozeUseAccelerometer">false</bool>
+    
+    inside System UI
+    
+        <!-- Doze: shake accelerometer threshold -->
+        <integer name="doze_shake_accelerometer_threshold">10</integer>
+    
+    also dont forget to setup other value for Ambient Display
+    
+    see https://gerrit.omnirom.org/10140
+    
+    PS. 12 : prepare for user configurations
+    
+    <!------------------------------------------------------------>
+    
+    NOTE:
+       Shake event aka Wake up will not triggered until
+       Proximity is Covered (need to put inside pocket)
+    
+       for shake accelerometer, you must setup based on your device
+       each device has different threshold
+    
+    <!------------------------------------------------------------>
+    
+    NOTE 2 :
+    
+       you can also overwrite all value for Ambient Display inside BUILD.PROP
+       but i recommend only overwrite value from overlay fw base and system Ui
+    
+       example value inside BUILD.PROP :
+    
+       <!-- Doze: does this device support STATE_DOZE and STATE_DOZE_SUSPEND?  -->
+       doze.display.supported=true
+    
+       <!-- Doze: pulse parameter - how long does it take to fade in? -->
+       doze.pulse.duration.in=1000
+    
+       <!-- Doze: pulse parameter - once faded in, how long does it stay visible? -->
+       doze.pulse.duration.visible=3000
+    
+       <!-- Doze: pulse parameter - how long does it take to fade out? -->
+       doze.pulse.duration.out=1000
+    
+       <!-- Doze: should notifications be used as a pulse signal? -->
+       doze.pulse.notifications=true
+    
+       <!-- Doze: when to pulse after a buzzworthy notification arrives -->
+       doze.pulse.schedule=1s,10s,30s,60s,120s
+    
+       <!-- Doze: maximum number of times the notification pulse schedule can be reset -->
+       doze.pulse.schedule.resets=3
+    
+       <!-- Doze: shake accelerometer threshold -->
+       doze.shake.acc.threshold=10
+    
+       <!-- Doze: force using accelerometer as pick up sensor -->
+       doze.use.accelerometer=true
+    
+    <!------------------------------------------------------------>
+    
+    With this change now we have 3 mode :
+    
+        1. pocket mode = proximity enabled after screen off, if detect NEAR state (covered by hand or somethings), doze will disable
+              until FAR state (uncovered), if FAR state is triggered, Doze will appears.
+    
+        2. pulse mode = doze is triggered by notifications, and so after notifications arrive, doze will show up, and doze will setup
+              time to show again (see doze.pulse.schedule=1s,10s,30s,60s,120s inside config.xml) and reset after see doze.pulse.schedule.resets=3
+        pulse mode by default is already there if device is support ambient display (e.g nexus 6), so there is no change in the code
+        (still using original code logic)
+    
+        3. shake mode = enabled after proximity detect FAR state (pocket mode) or Doze is triggerd by notifications (pulse mode), and disabled
+              if proximity detect NEAR state, or user already shake
+    
+    <!------------------------------------------------------------>
+    
+    Feature describes:
+        1. Full mode (pocket,shake,pulse)
+        2. Pocket and shake only
+        3. Pocket and pulse only
+        4. Pocket only
+        5. Shake and pulse only
+        6. Pulse only (default)
+    
+    <!------------------------------------------------------------>
+    
+    Note :
+        Shake mode only enabled after Doze is triggered by proximity or notifications (depends on option)
+        so if doze not triggered by that, shake mode will stay disabled.
+    
+    <!------------------------------------------------------------>
+    
+    AICPfy
+    
+    Change-Id: I6e1d634c9c8b1c3d3ac938c572d9f79902e6e9e5
+    
+    Conflicts:
+    	core/java/android/provider/Settings.java
+    	core/res/res/values/config.xml
+    	core/res/res/values/symbols.xml
+    
+    Conflicts:
+    	core/java/android/provider/Settings.java (reverted from commit 10bb637236b3d88bcf390401467cd420e43040ce)
+    SystemUI: Update doze pulse-in option
+    
+    * add hardcoded stock values if using overwrite option instead of fetching them from resources
+    
+    Change-Id: I0765e2068e58286425adf1c1360c2c67bb1636bb
+    
+    Conflicts:
+    
+    	core/java/android/provider/Settings.java (reverted from commit 79a2f361169248c97ca7121e1f7a865e532c1edf)
+    Frameworks: Add ability to control default value of DOZE_ENABLED
+    
+    Devices can enable the doze feature. Devices without AMODLED screens can use it
+    but it will use then of course more battery. This devices should disable this feature
+    by default and let the user decide to turn it on.
+    
+    to change the default behaviour add into device overlay
+    
+    config_doze_enabled_by_default and set it to false
+    
+    Change-Id: I1afbf1d09fa0d7e68aea40f2f165a72ff34d0040
+    
+    Conflicts:
+    	core/res/res/values/cmr_config.xml
+    	core/res/res/values/cr_symbols.xml (reverted from commit a0422c3e3e76956627dd4dd2626dca3d8b5b634f)
+    doze: Do not bother checking proximity for the DOZE_ACTION intent
+    
+    The intent is a desire to show the intent and trust the sender to
+    determine whether or not it should really be shown.
+    
+    Change-Id: I1c613071b136de61f12bc0556283a80e1248a4a8 (reverted from commit 80a6a21d36b367ad7e2ce49d6bf2ecb94d523913)
+
+commit 37b64087602550917e6cf74e585aa73f097fd4b9
+Author: dankoman <dankoman30@gmail.com>
+Date:   Mon Feb 2 01:37:07 2015 +0100
+
+    [2/2] Framework: Slim doze options
+    
+    option to turn off TriggerSensors for doze pulse (pick-up/
+            significant motion sensors)
+    patchset: doze schedule preference
+    patchset: notification trigger preference
+    patchset: split pickup gesture sensor and significant
+            motion sensor triggers into two preferences
+    patchset: doze brightness
+    patchset: custom values to slim_config
+    Change-Id: I2a1be925ac58721f12da04a6164641ffa1c4a654
+
+commit 8cbdf0d692c30ec2944642004aea07499235abf2
+Author: Uday Kiran jandhyala <ukiran@codeaurora.org>
+Date:   Wed Apr 8 00:18:34 2015 +0530
+
+    MediaSessionService: Error checks for UserRecord object
+    
+    Checking UserRecord object for NULL, before accessing its members
+    
+    Change-Id: Icf1fbbe35647a9cbc22cb4418c468c4a275db36d
+    CRs-Fixed: 817083
+
+commit fd84cbdc7ee6393b2e1c74084d92b55126444d85
+Author: wangjing <wangjing@codeaurora.org>
+Date:   Thu Apr 9 16:16:31 2015 +0800
+
+    libandroidfw: Fatal exception of dlfree often causes the system crashed
+    
+    When the function 'getBuffer' are called at the same time by the threads,
+    mZipInflater will be 'delete' twice if mZipInflater isn't NULL,
+    that is 'mZipInflater = NULL' has not be reached,
+    at this time it will cause system server crashed.
+    
+    Add AutoMutex at the beginning of the function to avoid getBuffer to
+    be called at the same time.
+    
+    CRs-Fixed: 812950
+    Change-Id: I283b43a01b97ae6a149749ff2186efda9df4dc42
+
+commit 9b8ce89d4c09b8f51ff7be074c7e85336f2b770d
+Author: 0xD34D <clark@scheffsblend.com>
+Date:   Sun May 3 22:17:15 2015 -0700
+
+    Frameworks: Gesture Lockscreen (1/2)
+    
+    This adds the ability to us a hand drawn gesture as
+    a means to unlock the device.
+    
+    In the case that the gesture is forgotton or not
+    being recognized correctly, the fallback will be the
+    same as when using patterns.
+    
+    Androidx:
+    Some changes needed for 5.0
+    
+    pimpmaneaton:
+    Some changes needed for 5.1
+    
+    Change-Id: Iedaed283bfc317d4b14f21bad6fca1a3ffd4a190
+    
+    Conflicts:
+    	core/java/android/gesture/GestureOverlayView.java
+    	core/java/com/android/internal/widget/LockPatternUtils.java
+    
+    Conflicts:
+    	core/java/android/provider/Settings.java
+
+commit f85843c76d65738572d6a5f62110a129fb566808
+Author: Janson Kang <temasek71@gmail.com>
+Date:   Mon May 4 09:53:35 2015 +0800
+
+    Add missing boolean for gesture
+
+project frameworks/native/
 commit 5ac19fa6c9a52bc1a97c66feda0f84e2ccd92017
 Author: Lars Greiss <kufikugel@googlemail.com>
 Date:   Sat Dec 14 02:58:19 2013 +0100
@@ -1963,25 +1663,6 @@ Date:   Sat Dec 14 02:58:19 2013 +0100
     Change-Id: Ibc5aaec5661455477815043440fae86052a395ce
 
 project frameworks/opt/telephony/
-commit d4df7d205703b8a5a70721118d058ff94854ab71
-Merge: 2838601 ed68de0
-Author: ZION959 <ziontran@gmail.com>
-Date:   Sat Apr 25 17:51:30 2015 -0700
-
-    Merge remote-tracking branch 'CM/cm-12.1' into cm-12.1
-
-commit d61a1880e506cb7b97864a75c9f906298f9c8902
-Author: Dan Pasanen <dan.pasanen@gmail.com>
-Date:   Wed Dec 31 18:21:00 2014 -0800
-
-    CdmaLteServiceStateTracker: allow forcing reading eri from xml
-    
-    * Some devices rely on eri.xml for their cdma text display and
-      must be forced to use it. Not reading from eri.xml results in
-      weird carrier display like NAM1 when on a cdma data network
-    
-    Change-Id: I73cbedafda912e52817d57e791bf57f8fb32ab48
-
 commit b9bf02b3d651a248b8cd692ce921e78c1bee452b
 Author: Erica Chang <echang@cyngn.com>
 Date:   Thu Apr 9 12:37:20 2015 -0700
@@ -2057,84 +1738,22 @@ Date:   Sun Apr 26 23:01:22 2015 -0300
     
     Change-Id: I514e96676578a97b9481643e58a0e49a8d017678
 
-project kernel/samsung/hlte/
-commit da9dae79da954082cca3a62b6b55db334da9d0d7
-Author: Steve Kondik <steve@cyngn.com>
-Date:   Mon Feb 9 12:40:00 2015 +0000
+project kernel/samsung/trlte/
+commit d8c4c105e4ae46a2a35b8f2436949ef09b8d51a6
+Author: ZION959 <ziontran@gmail.com>
+Date:   Sat Mar 21 00:53:53 2015 -0700
 
-    video: mdss: Color temperature interface using PCC
-     * MDSS5 supports Polynomial Color Correction. Use this to implement
-       a simple sysfs API for adjusting RGB scaling values. This can be
-       used to implement color temperature and other controls.
-     * Why use this when we have KCAL? This code is dead simple, the
-       interface is in the right place, and it allows for 128X accuracy.
+    msm cpu frequency limit (faux123)
     
-    Change-Id: Ib848d6c9dbdf41f61cc7539a61138d6632ceba94
+    Change-Id: I043247aee52cfb78a4b6994787651981d530e27b
 
-commit cf23d320e981fdad971a8dc644e8ffa63c40483e
-Author: Erik Kline <ek@google.com>
-Date:   Tue Oct 28 18:11:14 2014 +0900
+commit 6bbede27c04735cf2c3e9a5bb23e1102454c961e
+Author: ZION959 <ziontran@gmail.com>
+Date:   Sun May 3 20:10:52 2015 -0700
 
-    net: ipv6: Add a sysctl to make optimistic addresses useful candidates
+    readjust hardlimit
     
-    Add a sysctl that causes an interface's optimistic addresses
-    to be considered equivalent to other non-deprecated addresses
-    for source address selection purposes.  Preferred addresses
-    will still take precedence over optimistic addresses, subject
-    to other ranking in the source address selection algorithm.
-    
-    This is useful where different interfaces are connected to
-    different networks from different ISPs (e.g., a cell network
-    and a home wifi network).
-    
-    The current behaviour complies with RFC 3484/6724, and it
-    makes sense if the host has only one interface, or has
-    multiple interfaces on the same network (same or cooperating
-    administrative domain(s), but not in the multiple distinct
-    networks case.
-    
-    For example, if a mobile device has an IPv6 address on an LTE
-    network and then connects to IPv6-enabled wifi, while the wifi
-    IPv6 address is undergoing DAD, IPv6 connections will try use
-    the wifi default route with the LTE IPv6 address, and will get
-    stuck until they time out.
-    
-    Also, because optimistic nodes can receive frames, issue
-    an RTM_NEWADDR as soon as DAD starts (with the IFA_F_OPTIMSTIC
-    flag appropriately set).  A second RTM_NEWADDR is sent if DAD
-    completes (the address flags have changed), otherwise an
-    RTM_DELADDR is sent.
-    
-    Also: add an entry in ip-sysctl.txt for optimistic_dad.
-    
-    [backport of net-next 7fd2561e4ebdd070ebba6d3326c4c5b13942323f]
-    
-    Signed-off-by: Erik Kline <ek@google.com>
-    Acked-by: Lorenzo Colitti <lorenzo@google.com>
-    Acked-by: Hannes Frederic Sowa <hannes@stressinduktion.org>
-    Signed-off-by: David S. Miller <davem@davemloft.net>
-    Bug: 17769720
-    Change-Id: I440a9b8c788db6767d191bbebfd2dff481aa9e0d
-
-commit 933c2daa05d19ff5e31bba4f569b49c43eaed5f8
-Author: Erik Kline <ek@google.com>
-Date:   Fri Dec 5 19:45:10 2014 +0900
-
-    net: ipv6: allow choosing optimistic addresses with use_optimistic
-    
-    The use_optimistic sysctl makes optimistic IPv6 addresses
-    equivalent to preferred addresses for source address selection
-    (e.g., when calling connect()), but it does not allow an
-    application to bind to optimistic addresses. This behaviour is
-    inconsistent - for example, it doesn't make sense for bind() to
-    an optimistic address fail with EADDRNOTAVAIL, but connect() to
-    choose that address outgoing address on the same socket.
-    
-    Bug: 17769720
-    Bug: 18609055
-    Change-Id: I9de0d6c92ac45e29d28e318ac626c71806666f13
-    Signed-off-by: Erik Kline <ek@google.com>
-    Signed-off-by: Lorenzo Colitti <lorenzo@google.com>
+    Change-Id: I5fad4906c35f1d660d52e211247a9cf5d868e451
 
 project packages/apps/AudioFX/
 commit b2e8ba3988af3a617fe22180ac1ba7eb2ed7a5cc
@@ -2162,14 +1781,6 @@ Date:   Sat May 2 02:51:02 2015 +0300
     Automatic translation import
     
     Change-Id: Ibabb1f02cb1aa7d1dbc84a4f1c6441d4ef9b0994
-
-project packages/apps/Browser/
-commit 45284de420f2674b7a28cebaf02b6e5880050f22
-Merge: dd822c5 9d321ea
-Author: ZION959 <ziontran@gmail.com>
-Date:   Sat Apr 25 18:04:18 2015 -0700
-
-    Merge remote-tracking branch 'CM/cm-12.1' into cm-12.1
 
 project packages/apps/CMFileManager/
 commit bd68f575327b3a1fde2ce4be83c0f837355d9be1
@@ -2301,30 +1912,6 @@ Date:   Sat May 2 02:52:03 2015 +0300
     Change-Id: Ie08388de6681960f659eac36e9d121f0d9a7050f
 
 project packages/apps/Dialer/
-commit c2b914999e19b0bd4758d09152ea3a9bb533d9d6
-Author: NBruderman <nbruderman@gmail.com>
-Date:   Mon Mar 2 20:27:11 2015 +0200
-
-    Dialer: Whitelist few EU countries for call recording
-    
-    All entries to this list patch should state the country being modified
-    and
-    provide a URL reference (either government law, precedent or similar).
-    
-    A disclaimer item will also be added to the InCallUI view for the user
-    to
-    acknowledge that it is their responsibility to conduct/maintain and use
-    recordings in conjunction with their respective country/region's laws.
-    
-    Change-Id: Id6aa02447e9e8b6520cbe7c6eada7df333ee42a0
-
-commit 8951136add43f4471765d7d5a59556a2e19cea6d
-Merge: 2c62386 8d9ceaf
-Author: ZION959 <ziontran@gmail.com>
-Date:   Sat Apr 25 18:06:35 2015 -0700
-
-    Merge remote-tracking branch 'CM/cm-12.1' into cm-12.1
-
 commit 0c1b9eaef7715981b11cfb816c1a50e716727672
 Merge: 8951136 c2b9149
 Author: ZION959 <ziontran@gmail.com>
@@ -2357,13 +1944,6 @@ Date:   Sat May 2 02:52:14 2015 +0300
     Change-Id: Ib44ae71a0eaef8df5c473639746083c4800b67da
 
 project packages/apps/Email/
-commit 108dfdce54f86529bdd75969b8fcc11bf77ad155
-Merge: 3080c4d f325778
-Author: ZION959 <ziontran@gmail.com>
-Date:   Sat Apr 25 18:06:56 2015 -0700
-
-    Merge remote-tracking branch 'CM/cm-12.1' into cm-12.1
-
 commit a348e9a488871fa68f7f3829750c36a0b5a53d99
 Author: Jorge Ruesga <jorge@ruesga.com>
 Date:   Mon Apr 20 04:16:04 2015 +0200
@@ -2403,22 +1983,7 @@ Date:   Fri May 1 21:40:33 2015 -0700
 
     Merge remote-tracking branch 'CM/cm-12.1' into cm-12.1
 
-project packages/apps/Exchange/
-commit 6a42f289648b64a69e7505e1e4982cd382a509bc
-Merge: ff98419 8d5fbea
-Author: ZION959 <ziontran@gmail.com>
-Date:   Sat Apr 25 18:07:13 2015 -0700
-
-    Merge remote-tracking branch 'CM/cm-12.1' into cm-12.1
-
 project packages/apps/InCallUI/
-commit 8381be34cea4dd29b73b4e1964d5e276ac943d31
-Merge: 9612017 54cc6d4
-Author: ZION959 <ziontran@gmail.com>
-Date:   Sat Apr 25 18:07:55 2015 -0700
-
-    Merge remote-tracking branch 'CM/cm-12.1' into cm-12.1
-
 commit b3e301024b62373bb57e503f25d27e0d2fcc83c2
 Author: Altaf-Mahdi <altaf.mahdi@gmail.com>
 Date:   Tue Apr 28 20:40:29 2015 +0100
@@ -2484,281 +2049,6 @@ Date:   Fri May 1 21:41:42 2015 -0700
     	src/com/android/incallui/ProximitySensor.java
 
 project packages/apps/KernelAdiutor/
-commit 84102f14a3b26d31e868e49f9a9f0faa0136be4c
-Author: Willi Ye <williye97@gmail.com>
-Date:   Thu Apr 23 21:30:45 2015 +0200
-
-    Revamp the FABs
-    
-    Conflicts:
-    	app/src/main/java/com/grarak/kerneladiutor/fragments/PathReaderFragment.java
-    	app/src/main/java/com/grarak/kerneladiutor/fragments/RecyclerViewFragment.java
-    	app/src/main/java/com/grarak/kerneladiutor/fragments/tools/BuildpropFragment.java
-    	app/src/main/java/com/grarak/kerneladiutor/fragments/tools/RecoveryFragment.java
-    	app/src/main/res/values/arrays.xml
-    
-    Change-Id: I2b082b2525fc608879272f7e355627b521d1b804
-
-commit 9977bffc1720345a22b71c2394f89332329e242a
-Author: Willi Ye <williye97@gmail.com>
-Date:   Thu Apr 23 21:35:57 2015 +0200
-
-    version 0.9.2.1 beta
-
-commit 6ba3d0c08bfe5f396d92d3c9be981c241e10c084
-Author: Willi Ye <williye97@gmail.com>
-Date:   Thu Apr 23 23:25:35 2015 +0200
-
-    Fix applyonboot in ViewPagerFragment
-    and hide applyonboot when scrolling
-    
-    Conflicts:
-    	app/src/main/java/com/grarak/kerneladiutor/fragments/RecyclerViewFragment.java
-    	app/src/main/java/com/grarak/kerneladiutor/fragments/kernel/CPUFragment.java
-    	app/src/main/java/com/grarak/kerneladiutor/fragments/kernel/IOFragment.java
-    
-    Change-Id: Ice177c6708aa2f32e29225917e642e87dc840297
-
-commit 71e1697fb3d1e0a26b32c4533b6a317d658707e8
-Author: Willi Ye <williye97@gmail.com>
-Date:   Thu Apr 23 23:28:02 2015 +0200
-
-    version 0.9.2.1.1 beta
-
-commit 0dc85a721c42e8674c650d4a2f1155bb60ffc5af
-Author: Willi Ye <williye97@gmail.com>
-Date:   Thu Apr 23 23:31:38 2015 +0200
-
-    Import translations from crowdin
-
-commit eff49242af7c075715ef7c027c43eb01844588d6
-Author: Willi Ye <williye97@gmail.com>
-Date:   Thu Apr 23 23:36:05 2015 +0200
-
-    Remove unnecessary logging
-
-commit 6866bf649604796d589ea908f9026e1a28b3ce5e
-Author: Willi Ye <williye97@gmail.com>
-Date:   Thu Apr 23 23:50:02 2015 +0200
-
-    Make sure database is not null
-
-commit dd9459e8b9514a322759b9a39a82411b94c8c90d
-Author: Willi Ye <williye97@gmail.com>
-Date:   Sat Apr 25 02:46:14 2015 +0200
-
-    Add own file browser
-    
-    Conflicts:
-    	app/src/main/java/com/grarak/kerneladiutor/fragments/tools/RecoveryFragment.java
-    
-    Change-Id: I89e8bea17129a0d22ff1f853ee7601a2321714ce
-
-commit 2bb1801eff346858200091dfe93fa2e9fc59d8f2
-Author: Willi Ye <williye97@gmail.com>
-Date:   Sat Apr 25 02:49:04 2015 +0200
-
-    version 0.9.2.2 beta
-    
-    Conflicts:
-    	app/app.iml
-    
-    Change-Id: I1ed247f7bb426acbc91f41f3e131faacc372a55c
-
-commit 7a3afd3c269c6bdb95d6e372db2f1c1887349795
-Author: fusionjack <dogfight60-fusionjack@yahoo.de>
-Date:   Sat Apr 25 15:12:53 2015 +0200
-
-    libs: Update support libraries to 22.1.1
-    
-    Change-Id: If3fc9fcae4675a787ddbc1e4dc84169e01a8a42d
-
-commit 78deb67ece164017f137897b69cc935679b84fee
-Author: fusionjack <dogfight60-fusionjack@yahoo.de>
-Date:   Sat Apr 25 15:14:34 2015 +0200
-
-    AndroidStudio: Include dictionaries
-    
-    Change-Id: Iaa45df3cf4a9cf4a0fb7d48f7facedbc165f0e6d
-
-commit 6adee1e1e3410ad2adcc2e06f7d47c3c1a877a94
-Author: Willi Ye <williye97@gmail.com>
-Date:   Sat Apr 25 02:52:12 2015 +0200
-
-    Import translations from crowdin
-
-commit b972ea2e57c17cae9f57486c7a77056b04bcd9e3
-Author: Willi Ye <williye97@gmail.com>
-Date:   Sat Apr 25 15:03:02 2015 +0200
-
-    Add option to disable hide apply on boot
-    
-    Conflicts:
-    	app/src/main/java/com/grarak/kerneladiutor/fragments/tools/RecoveryFragment.java
-    
-    Change-Id: Ia55addab1f349eced892269d12f299448f8de46e
-
-commit 368f4e305672274d44c8daf2460237dae237231f
-Author: fusionjack <dogfight60-fusionjack@yahoo.de>
-Date:   Sat Apr 25 15:29:13 2015 +0200
-
-    Bump version to 0.9.2.2
-    
-    Change-Id: I5545ee103c82fd71f808e6505100ce7b6d64340e
-
-commit ade351cf74b727608a618b3d670ceb8e26d38532
-Author: fusionjack <dogfight60-fusionjack@yahoo.de>
-Date:   Sat Apr 25 19:00:44 2015 +0200
-
-    AndroidStudio: Bypass lint errors
-    
-    Change-Id: I3c2894a3cc5f0f9d90ff318e17daf0d2af1bb5b8
-
-commit 5c422b434724de3e9c3f86cfbd0703395ef8b2c2
-Author: fusionjack <dogfight60-fusionjack@yahoo.de>
-Date:   Sat Apr 25 19:02:09 2015 +0200
-
-    AndroidStudio: Updates
-    
-    Change-Id: I23cc2f4b069afc916398bb58ea156a844f5a475d
-
-commit b25ef69c168d8a3edeb06ea2d703dc4998b551b5
-Author: fusionjack <dogfight60-fusionjack@yahoo.de>
-Date:   Sat Apr 25 17:36:52 2015 +0200
-
-    Add missing FileBrowserActivity
-    
-    Change-Id: I5327f5f3b8e719e53961b863785b93c8b63246a4
-
-commit e120520aa0c6ce05523dde72913f929009f3ebd9
-Author: fusionjack <dogfight60-fusionjack@yahoo.de>
-Date:   Sat Apr 25 18:58:30 2015 +0200
-
-    FileBrowser: Fix FC caused by /storage/usbdisk
-    
-    Documentation of listFiles() : ...Returns null if this abstract pathname does not denote a directory, or if an I/O error occurs.
-    
-    Change-Id: I1665704a048e73cb24effe94e8fb93abc1b02191
-
-commit 879c0d9a874442f7656c7d0b33b6742c44ad124c
-Author: Willi Ye <williye97@gmail.com>
-Date:   Sat Apr 25 15:45:22 2015 +0200
-
-    Remove some unnecessary return functions
-
-commit 76aebd33a27ccc812c192542c57ac96aba8cfd5e
-Author: Willi Ye <williye97@gmail.com>
-Date:   Sat Apr 25 22:36:23 2015 +0200
-
-    Add Init.d support
-    
-    Conflicts:
-    	app/src/main/java/com/grarak/kerneladiutor/fragments/kernel/MiscFragment.java
-    	app/src/main/res/values/arrays.xml
-    
-    Change-Id: I50dc39ecf96bc4391c5faa8f99cdc3cdebbb0d2f
-
-commit 356f73bac0b6d41bd6450976245ed48017617178
-Author: Willi Ye <williye97@gmail.com>
-Date:   Sat Apr 25 23:06:41 2015 +0200
-
-    version 0.9.3
-
-commit 8c499aeab33db928ba2538196bbeadb2dad1d5b7
-Author: Willi Ye <williye97@gmail.com>
-Date:   Sat Apr 25 23:11:05 2015 +0200
-
-    Import translations from crowdin
-
-commit bb9b86b0c7131a23ea6e33e29d60124d12a03ea2
-Author: Willi Ye <williye97@gmail.com>
-Date:   Sat Apr 25 23:44:40 2015 +0200
-
-    Init.d: Pathreader: Some fixes
-    
-    Conflicts:
-    	app/src/main/java/com/grarak/kerneladiutor/fragments/tools/InitdFragment.java
-    
-    Change-Id: Icaeae57669f549ddae60493a03c01ec00ff1178b
-
-commit a979580a278f34ce82d5470e2f1a012b86bf650c
-Author: Willi Ye <williye97@gmail.com>
-Date:   Sat Apr 25 23:49:44 2015 +0200
-
-    Import translations from crowdin
-
-commit 1a5c995bad1c29cd877d5fd9e418f7f0a7118637
-Author: Willi Ye <williye97@gmail.com>
-Date:   Sun Apr 26 01:15:22 2015 +0200
-
-    Add support for vdd voltage
-
-commit 0ab4b44614f7deed6756734f8fa8bddff4d27c1e
-Author: Willi Ye <williye97@gmail.com>
-Date:   Sun Apr 26 11:17:51 2015 +0200
-
-    Voltage: Fix vdd levels
-    don't divide voltage by 1000
-
-commit 3517c185f38cba8be1e22d466db5a6d13993b541
-Author: Willi Ye <williye97@gmail.com>
-Date:   Sun Apr 26 14:03:47 2015 +0200
-
-    Some UI fixes
-    move dimens to values
-
-commit 604a77b9494cb65726cdafe970962fb0abc6c2e6
-Author: Willi Ye <williye97@gmail.com>
-Date:   Sun Apr 26 16:57:23 2015 +0200
-
-    Update README.md
-
-commit d6766c921268bcfb3d8cbcdd02db3190bd8d7d3f
-Author: Willi Ye <williye97@gmail.com>
-Date:   Sun Apr 26 17:13:12 2015 +0200
-
-    Don't start animation if fragment is not attached
-    
-    Conflicts:
-    	app/src/main/java/com/grarak/kerneladiutor/fragments/RecyclerViewFragment.java
-    
-    Change-Id: Ibab5ca804092f1d3f006a830625847220704e1fb
-
-commit 8fffb2836d2bb971fcd6b9fc8372eb08929d0236
-Author: fusionjack <dogfight60-fusionjack@yahoo.de>
-Date:   Sun Apr 26 20:09:52 2015 +0200
-
-    AsyncTask: Execute it on a thread pool
-    
-    Change-Id: I5cb085505503d72d22fb6e11497d472e9aa5f347
-
-commit 6fa9e6c6ff0e3b1090c9c914918a15169a84c380
-Author: fusionjack <dogfight60-fusionjack@yahoo.de>
-Date:   Sun Apr 26 20:11:37 2015 +0200
-
-    Bump version to 0.9.3
-    
-    Change-Id: I69e1ac6b0ec771c7a88858052e389a7ae113dc51
-
-commit a45ecf0ee820f0cc99f6f1080c13002809072b5e
-Author: Willi Ye <williye97@gmail.com>
-Date:   Sun Apr 26 21:07:12 2015 +0200
-
-    Add more wakelock controls
-    
-    Conflicts:
-    	app/src/main/java/com/grarak/kerneladiutor/utils/Constants.java
-    
-    Change-Id: I1f14be6c33148a6891db8d803553b47bb956e8fa
-
-commit 5c13c94b644b03c2b6d71bf8b749ea298eaae0b6
-Author: fusionjack <dogfight60-fusionjack@yahoo.de>
-Date:   Mon Apr 27 00:15:00 2015 +0200
-
-    Misc: Fix android logging not showing up
-    
-    Change-Id: I5b9ce3cd5d75ff30e9df2981ff14783f162bdd45
-
 commit b6090c6a346545d9d2c2acdf19520e352b20be97
 Author: Willi Ye <williye97@gmail.com>
 Date:   Mon Apr 27 13:33:38 2015 +0200
@@ -2874,13 +2164,6 @@ Date:   Sat May 2 02:52:37 2015 +0300
     Change-Id: I2572d734c1d2e434384b8ea79e87201381e2dfa1
 
 project packages/apps/Mms/
-commit 1f3ff020a1e016ecff1dae19a00316c509ffa9b2
-Merge: 75dcf8c 09bb735
-Author: ZION959 <ziontran@gmail.com>
-Date:   Sat Apr 25 18:08:47 2015 -0700
-
-    Merge remote-tracking branch 'CM/cm-12.1' into cm-12.1
-
 commit 183af12250aa0fb61f1b0aad749cd5efa8e667bf
 Author: Michael Bestas <mikeioannina@gmail.com>
 Date:   Sat May 2 02:52:41 2015 +0300
@@ -2905,266 +2188,7 @@ Date:   Sat May 2 02:52:48 2015 +0300
     
     Change-Id: I28325cf53a1a68efac1e6ee3389936d188820043
 
-project packages/apps/Profiles/
-commit 8fa506205ec1fdeabd965d3622a825ddfe30794c
-Author: Roman Birg <roman@cyngn.com>
-Date:   Sun Apr 26 11:07:19 2015 -0700
-
-    StartUpReceiver: handle case when there were no trust agents
-    
-    Change-Id: I2261c1720e6b69c1bbb15d2fa3b0536be855ec3a
-    Signed-off-by: Roman Birg <roman@cyngn.com>
-
 project packages/apps/Settings/
-commit 6a65d1c18b08b3df078ead1cc383fda36fb3b337
-Author: Raj Yengisetty <rajesh@cyngn.com>
-Date:   Thu Apr 23 15:27:25 2015 -0700
-
-    Settings: pass intent extra EXTRA_REQUIRE_PASSWORD after selecting pattern size
-    
-    Change-Id: I4b851e69610f16203d10e70cec6b73b563193b9b
-
-commit 035b9a684f8d6e94b1be4c0f23f36d69afe8a9b7
-Author: DvTonder <david.vantonder@gmail.com>
-Date:   Wed Apr 22 11:38:21 2015 -0400
-
-    Settings: Allow/Prevent notification light in Zen mode (2 of 2)
-    
-    This allows the user to prevent the notification lights from showing during Zen mode as per Android 5.0.x
-    
-    Change-Id: Ia3563d79f5c1fc012411496c7b8901099a78282e
-
-commit d8fba7ac1889044b9ab4f2d3a933fffe74806576
-Author: Roman Birg <roman@cyngn.com>
-Date:   Mon Apr 20 16:23:02 2015 -0700
-
-    Settings: allow more than one trust agent
-    
-    Change-Id: I6ae3e6c7e37ae4e203676e6c664210e2f63d8215
-    Signed-off-by: Roman Birg <roman@cyngn.com>
-
-commit ba39107e372336574bc9ffe9c02bbaf1fb876e26
-Author: ZION959 <ziontran@gmail.com>
-Date:   Sat Apr 25 01:39:26 2015 -0700
-
-    Allow launching notification manager settings externally
-    
-    Change-Id: Ic9acab571fc78d139d4924f9a95194423bf1d267
-
-commit 380572d9b547a535d82a82b9c9d60a490633ce1a
-Author: ZION959 <ziontran@gmail.com>
-Date:   Sat Apr 25 01:44:10 2015 -0700
-
-    Revert: Option to use volume keys to control media volume anytime [2/2]
-    
-    The volume keys control the Media volume rather than the Ringer
-    hence removing the issue of accidentaly changing the Ringer volume.
-    
-    Credits: Pawitp
-    
-    Change-Id: Ic0a1c04ae41eac65e9535d6de5f11c0456730315
-    
-    Conflicts:
-    	res/values/cr_strings.xml
-    
-    (cherry picked from commit 82e813263298ab084a1f428489b3ea2fcd5a23b9)
-    Revert "Option to use volume keys to control media volume anytime [2/2]"
-    
-    This reverts commit 9493e927849b0c4e548953f9409f2548aaf196bb.
-    
-    Conflicts:
-    
-    	res/values/cr_strings.xml
-
-commit a821e0bc944871bd2b9070403bd349a0a582005e
-Author: Pawit Pornkitprasan <p.pawit@gmail.com>
-Date:   Sun Apr 21 22:52:33 2013 +0700
-
-    Option to use volume keys to control media volume anytime (1/2)
-    
-    Some users don't adjust ringtone volume often (e.g. only use toggle to
-    switch between silent and non-silent) mode. Having an option to
-    use the volume keys to control media volume anytime allows media
-    volume to be controllled/muted before entering a game or other apps
-    with sound in an undesirable location.
-    
-    Change-Id: I6dbd25d1a14bcf5b1bf0b0468b96f4b4f8efdb14
-    
-    Conflicts:
-    
-    	src/com/android/settings/ButtonSettings.java
-
-commit 37ac18ad584f65b7e88be040133027ada7b4320d
-Author: Roman Birg <roman@cyngn.com>
-Date:   Thu Feb 19 14:05:03 2015 -0800
-
-    Settings: use correct default value for backlight brightness
-    
-    When the user has enabled the nav bar through the setupwizard and
-    returns back to the buttons settings and toggles the nav bar off, the
-    backlight brightness would not be restored because there was no previous
-    value to read from, so use the default framework value if none exists.
-    
-    Change-Id: If4ce90bcde3c9a59f26e49be2c585df844ead6bd
-    Signed-off-by: Roman Birg <roman@cyngn.com>
-
-commit 29372596a72bb5b7850ef27c35fe523e93ddb24b
-Author: Michael Bestas <mikeioannina@gmail.com>
-Date:   Sat Apr 25 01:14:50 2015 +0300
-
-    Automatic translation import
-    
-    Change-Id: I6fb39fdee4fa4a9bfda42d180f6cf5180bb84c1d
-
-commit 6902cf383902e4d1d0dd738a07c324c8b6b6bb98
-Author: ZION959 <ziontran@gmail.com>
-Date:   Sat Apr 25 15:39:10 2015 -0700
-
-    [Squash] Revert Slim stuffs
-    
-    Revert: Settings: Slim Actions to Shortcuts
-    
-    Change-Id: I8c9a524f3628c47e882347225372ff065b4f2b94
-    
-    Conflicts:
-    	res/values/cr_arrays.xml
-    
-    Conflicts:
-    	res/values/cmr_arrays.xml
-    	res/values/cmr_strings.xml
-    
-    Conflicts:
-    	res/values/cmr_arrays.xml
-    	res/values/cmr_strings.xml (reverted from commit 8795806a9331b2ecea82f35eda92ed88886fe06e)
-    Revert: Settings: SlimAction as QuickTile (2/2)
-    
-    Configure which Slim actions you want to use as tile and then add the 'SlimAction' tile.
-    Single press will switch between Slim actions and long press will execute the Slim action. If the tile has only one Slim action, single press will execute the action.
-    
-    Change-Id: I6a01ca065801a2ceabf1b0c21dc9d9c0a0289af2
-    
-    Conflicts:
-    	res/xml/notification_drawer_settings.xml
-    
-    Conflicts:
-    	res/values/cmr_arrays.xml
-    	res/xml/notification_drawer_settings.xml
-    
-    Conflicts:
-    	res/xml/notification_drawer_settings.xml
-    	src/com/android/settings/cyanogenmod/qs/QSTileHolder.java (reverted from commit a3aef7066f2b3d8e7bf03e3d4d658093ada3c7f4)
-    Revert:  [2/2] Settings: Configurable overflow menu button
-    
-    Forward port from SlimBean. It was part of the hardware key custom rebinding.
-    
-    (cherry picked from commit 10e658f258a07f8aa2961c2eca266f08b7ff47e4)
-    
-    Conflicts:
-    	res/values/cmr_strings.xml
-    	src/com/android/settings/ButtonSettings.java (reverted from commit b96ffd5f6ac36930c189d64c43e8a6bb9a48d81d)
-    
-    Change-Id: I5b1edf45c30beb1b23f115235b72a68a52af0cfa
-    Revert "Fix NPE on overflow due to removal of HW Keys category"
-    
-    This reverts commit 558e4704b56a527f3da2b6fb6ba7a6db1d24ba49.
-    
-    Change-Id: I24d10e29f739d0a9cdf80cbbddee550877d69d55
-
-commit 9e0d9387a10bb92050804642dfe3d912f07d363d
-Author: Dragon <dragon7780@hotmail.nl>
-Date:   Sat Apr 25 03:02:25 2015 -0700
-
-    Settings: SlimPie (2/2)
-    Implement SlimPie for lp5.0 ported from kitkat.
-    
-    PS1: Implement SlimPie based on Fusion Commits
-    
-    WIP
-    Still need to bring back a few more SlimPie features.
-    
-    Change-Id: I4c60d3e2bea1bc30969d74d7373848d33820143c
-    Signed-off-by: Dragon <dragon7780@hotmail.nl>
-
-commit d6944b14e1230f8cd7bead35180f00cb9ebdcaaf
-Author: Lars Greiss <kufikugel@googlemail.com>
-Date:   Sat Apr 25 05:16:58 2015 +0300
-
-    Add link to Privacy Guard from app info screen
-    
-    Based on https://github.com/SlimRoms/packages_apps_Settings/commit/46bb1442aa96aad6890e3ce7b6f3c0466ababf25
-    
-    JIRA: CYAN-3826
-    Change-Id: I9591ee7b0ffcce7f2257f988bc2aa5dcf39be4ff
-
-commit dca2179324d263c622a8bbc69c4aad6e2293cc85
-Author: ZION959 <ziontran@gmail.com>
-Date:   Sun Apr 26 15:54:04 2015 -0700
-
-    Revert: [1/2] Kernel Auditor Tweaker
-    
-    Change-Id: I571b7f25b20f8edac31434317e6b76ebb3e6d6df (reverted from commit 67a0de7973ae81fb136de66e332b0bdf1feedd8e)
-
-commit 40a28d44a505b6cce10231a37abf877dd9e1174c
-Author: fusionjack <dogfight60-fusionjack@yahoo.de>
-Date:   Sun Apr 26 16:07:26 2015 -0700
-
-    Settings: Add shortcut to KernelAdiutor
-    
-    Change-Id: Ibe1ece98d542d81a990472180f6ab3e355a31e4b
-    
-    Conflicts:
-    	AndroidManifest.xml
-    	res/values/slim_strings.xml
-    	res/xml/dashboard_categories.xml
-
-commit 4442c7b600f7e03457cdd3a7670c6e03b36c2328
-Author: Janson Kang <temasek71@gmail.com>
-Date:   Sun Apr 26 08:47:22 2015 +0800
-
-    Move "Allow lights" in zen mode to "Allow alarms" category
-
-commit dfc604a33c6ece3679307c27eb361cbc5e73dc17
-Author: Jubakuba <Jubakuba@gmail.com>
-Date:   Sun Apr 26 16:25:34 2015 -0700
-
-    Settings: Slim Actions to Shortcuts
-
-commit 676ee7800d73f9490111e8114457c84c1ced2b69
-Author: tristan202 <tristan202@gmail.com>
-Date:   Sun Apr 26 16:42:49 2015 -0700
-
-    Settings: enable reset option to status bar clock color
-    
-    Reference
-    https://github.com/temasek/android_packages_apps_Settings/commit/fbd59b5a38dfe4a12a97eeeb1d9055a6301399c7
-    
-    Modified for use in cm-12.1
-    
-    Conflicts:
-    	src/com/android/settings/cyanogenmod/StatusBarSettings.java
-
-commit e5949a5fc917691fa0e044de59594e7e6a0a9661
-Author: ZION959 <ziontran@gmail.com>
-Date:   Sun Apr 26 21:34:18 2015 -0700
-
-    status bar house keeping
-
-commit 644d2963134505c25566476ae953f67097aec7cd
-Author: longping.zou <longping.zou@ck-telecom.com>
-Date:   Wed Apr 22 20:30:34 2015 -0700
-
-    Settings: Update sync widget state
-    
-    1. Go to Settings ->Accounts ->Click Menu ->Toggle Auto-sync data
-    2. Go to Launcher and check the power control widget.
-       The power control Widget fails to update
-    
-    Change-Id: I22d92be63c9ac9ef168b4193ae82e007d4a7ac1c
-    (cherry picked from commit 197eedf8960835c754f2c7a4a344f9d4360bf709)
-    
-    Patchset: 1
-    http://review.cyanogenmod.org/#/c/96337/
-
 commit 0bcd401d1821e746328a824c1f6ceddc270ffbbe
 Author: fusionjack <dogfight60-fusionjack@yahoo.de>
 Date:   Mon Apr 27 02:26:56 2015 -0700
@@ -3584,6 +2608,214 @@ Date:   Sat May 2 02:52:52 2015 +0300
     Automatic translation import
     
     Change-Id: I9fd530907d8d5dc5595b0bd518c8d049d57a894d
+
+commit c611a126cbfe5e17d03332cda67b9e359042b9a5
+Author: LorDClockaN <davor@losinj.com>
+Date:   Mon Apr 6 08:23:08 2015 +0200
+
+    AdBlocker: We rule the device, not SELinux
+    
+    Change-Id: If7c7bdd296e3e9ad2cef91d651bec9851e5f0426
+
+commit f109273acb8172b8c88ba95ba2f7a6486bc1d81c
+Author: Evisceration <eviscerationls@gmail.com>
+Date:   Sun May 3 23:06:27 2015 -0700
+
+    (2/2) Settings: instant reboot action trigger
+    
+    Change-Id: I56969b52b5b875cc345f8e851c8ea88c343ed922
+    
+    Conflicts:
+    	res/xml/power_menu_settings.xml
+    
+    Conflicts:
+    	res/values/cmr_strings.xml
+    	res/xml/power_menu_settings.xml
+    
+    Conflicts:
+    	res/values/cmr_strings.xml
+
+commit 5f6d9388283721bd9d90468254377552a245267d
+Author: rogersb11 <brettrogers11@gmail.com>
+Date:   Sun May 3 23:10:55 2015 -0700
+
+    AppSideBar Tile 1/2
+    
+    Single click toggle, long click settings as per usual setup
+    
+    Conflicts:
+    	AndroidManifest.xml
+    	res/values/cm_strings.xml
+    	src/com/android/settings/Settings.java
+    	src/com/android/settings/SettingsActivity.java
+    
+    Conflicts:
+    	AndroidManifest.xml
+    	src/com/android/settings/cyanogenmod/qs/QSTileHolder.java
+
+commit c944ac5029ba9e091536ce1ffdbe5c8b3b234923
+Author: ZION959 <ziontran@gmail.com>
+Date:   Sun May 3 02:08:33 2015 -0700
+
+    [Squash] Revert Settings: Ambient Display configurations
+    
+    AICPfy
+    Move all to system settings
+    Add SystemSettingsCheckBoxPreference that we had in kk
+    PS2: Added Time category and played with strings
+    
+    Change-Id: Ib85c25d50dc924d4f07658dac033e6581184317d
+    Signed-off-by: scott <scott@beanstalk.com>
+    
+    Conflicts:
+    	res/values/bs_strings.xml
+    	res/xml/display_settings.xml
+    	src/com/android/settings/search/SearchIndexableResources.java
+    
+    Conflicts:
+    	res/values/cmr_strings.xml
+    	res/xml/display_settings.xml
+    	src/com/android/settings/DisplaySettings.java
+    
+    Conflicts:
+    	res/xml/display_settings.xml
+    	src/com/android/settings/DisplaySettings.java (reverted from commit 16c112170e1476630bc30621557906105dda1006)
+    Update Ambient to PS23
+    
+    Change-Id: I1268e75ff3b84cdaacfee93634973837c6c6a1ab (reverted from commit 5ca78fee5d931711ce422d3bf3232a414e6b5c8c)
+    Update Ambient to PS29
+    
+    Change-Id: Ia1080b736b89ac02e817d34c93da1a63e5049863 (reverted from commit b169f9b4f2f46e07804677baa89d105f5baccc25)
+    Fix build aftger ambient patch update
+    
+    Change-Id: Id53ec1d6cffb2278b39a14240e0cf6dbdff051c0 (reverted from commit dd52e38d32ac2449d774093addbeedab21a860d3)
+    Settings: use switch preference for Ambient Display
+    
+    Change-Id: I2dc12b83ac24ac7a120d2a8808c17b2425c118ef (reverted from commit 51bc07f8e1683740e3f09c1bfed25167c3425f9c)
+    Display settings: show enabled/disabled summary for ambient display
+    Change-Id: I97aee7aafd69f3e60d2c518aa514a7cd1dff9ecf
+    
+    Conflicts:
+    	res/values/custom_strings.xml (reverted from commit f41f19f5bb79886ef6e1d8e0aefec5de9caa16a1)
+    Display settings: remove ambient display screen when advanced mode is disabled
+    
+    now when advanced mode is disabled ambient display will be a simple switch preference
+    
+    Change-Id: Ia50897590b56a7d295255828da3d62e9535c0c60
+    
+    Conflicts:
+    
+    	res/xml/display.xml
+    	src/com/android/settings/DisplaySettings.java
+    
+    Conflicts:
+    	res/xml/display.xml (reverted from commit 3a9299f4bc2a6279a06e247bceb7475ee3d6f0bc)
+    Settings: enable/disable doze through Profiles (2/2)
+    
+    * moved isDozeAvailable boolean to Utils so we can check for it in profiles
+    
+    Change-Id: I5a768098b4ed00b28931bee58a58efa8280262a1
+    
+    Conflicts:
+    
+    	src/com/android/settings/DisplaySettings.java
+    	src/com/android/settings/Utils.java (reverted from commit e01b6b2f77c9b2e38b0ec5afcf15d9874b1b4562)
+
+commit 86e59eee7ff6e7727771d72a35c9ea100c835348
+Author: ZION959 <ziontran@gmail.com>
+Date:   Sun May 3 18:08:30 2015 -0700
+
+    Revert : QS: add Ambient display tile
+    * add Ambient display settings activity for long press on tile
+    
+    Drawables thanks to Alexander Westphal <westphal.alex94@gmail.com>
+    
+    Change-Id: Id52c668d7d73d66feac7282861459bd15972f4ac
+    
+    Conflicts:
+    	res/values/custom_strings.xml
+    	src/com/android/settings/Settings.java
+    	src/com/android/settings/SettingsActivity.java
+    	src/com/android/settings/cyanogenmod/qs/QSTileHolder.java
+    
+    Conflicts:
+    	AndroidManifest.xml
+    	src/com/android/settings/Settings.java
+    	src/com/android/settings/SettingsActivity.java
+    	src/com/android/settings/cyanogenmod/qs/QSTileHolder.java
+    
+    Conflicts:
+    	src/com/android/settings/Settings.java
+    	src/com/android/settings/SettingsActivity.java
+    
+    Conflicts:
+    	res/values/cm_strings.xml (reverted from commit 88df6a1d5ae633c81f794f747a38b26825e55ee9)
+
+commit 6c8ee493e62f45316f24c022dcb36c3e5cd103ae
+Author: dankoman <dankoman30@gmail.com>
+Date:   Sun May 3 21:55:57 2015 -0700
+
+    [1/2] Settings: Slim doze options
+    
+    option to turn off TriggerSensors for doze pulse (pick-up/
+            significant motion sensors)
+    patchset: doze schedule preference
+    patchset: notification trigger preference
+    patchset: split pickup gesture sensor and significant
+            motion sensor triggers into two preferences
+    patchset: move doze options to own preference screen
+    patchset: config booleans from systemui:
+            This changes the conditions under which the TriggerSensor
+            preferences (pickup gesture and significant motion sensor)
+            are displayed. If the device is configured to use the sensor
+            by default (according to the boolean resource in SystemUI's
+            config.xml, or the device-specific overlay), the preference
+            for that sensor will appear under doze options.
+    patchset: doze brightness preference
+    Change-Id: Id9b98403477deced056fdc30212f69e48e670e2b
+
+commit cf0c10a25821e7e322f83c4fd75cccc1a61b458f
+Author: 0xD34D <clark@scheffsblend.com>
+Date:   Sun May 3 23:13:52 2015 -0700
+
+    Settings: Gesture Lockscreen (2/2)
+    Lets give this a go again.
+    
+    Changes needed for lollipop
+    
+    AICPfy
+    
+    Change-Id: Icf2f5a5cd3474ea325097437bc2956c10e2ae9d7
+    
+    Conflicts:
+    	res/layout/smbanner_row.xml
+    	res/values/cmr_strings.xml
+    
+    Conflicts:
+    	res/values/cmr_attrs.xml
+
+commit 5b779110ed41e5b1b31446c774e1a5505e75b5cd
+Author: Martin Brabham <optedoblivion@cyngn.com>
+Date:   Thu Apr 30 16:07:07 2015 -0700
+
+    Settings: fix bad MTP uncheck behavior
+    
+    Unchecking MTP will cause it to attempt to
+    set MTP again which never fires the callback
+    to re-enable the UI state.  So if the user unchecks it
+    don't disable UI.
+    
+    Change-Id: I6d6f3f13cc91fe4df0126b1cf43e571ccb42d62c
+
+commit 754406266facfa5f272893880b101cb09fe4c581
+Author: Altaf-Mahdi <altaf.mahdi@gmail.com>
+Date:   Wed Apr 15 19:03:00 2015 +0100
+
+    Settings: enable/disable doze through Profiles (2/2)
+    
+    * moved isDozeAvailable boolean to Utils so we can check for it in profiles
+    
+    Change-Id: I5a768098b4ed00b28931bee58a58efa8280262a1
 
 project packages/apps/SlimLauncher/
 commit 545bd8acc5ebeadcb14f7e3fda51b875ef8fa274
@@ -4279,17 +3511,6 @@ Date:   Sat May 2 02:53:13 2015 +0300
     Change-Id: I78ae6bf37e33077b58d4d95274a6671a32f46b28
 
 project packages/apps/Stk/
-commit 21fa071f8dc60a91a86cf4f49f81d1bc0e0a133f
-Author: Pawit Pornkitprasan <p.pawit@gmail.com>
-Date:   Fri Apr 24 13:32:38 2015 +0700
-
-    STK: use single icon as per latest AOSP 5.1
-    
-    This partially reverts commit b9676c91039df24dfe7bea589bfd277efa1b5b9a.
-    and bring some code back in from AOSP 5.1.
-    
-    Change-Id: I25a76bb95e49ca8effa34332adc1f87b90effb2f
-
 commit 656cd2757c0d91311485fdd95328c3b08719d6e5
 Author: Michael Bestas <mikeioannina@gmail.com>
 Date:   Sat May 2 02:53:18 2015 +0300
@@ -4308,13 +3529,6 @@ Date:   Sat May 2 02:53:22 2015 +0300
     Change-Id: I37ce3c2917606ca5ceeaebdac494fbc99d958203
 
 project packages/apps/ThemeChooser/
-commit 3c9f0e11e056993a8b46934d357144e37cfac1c6
-Merge: 8ebc84c ab6137a
-Author: ZION959 <ziontran@gmail.com>
-Date:   Sat Apr 25 18:10:47 2015 -0700
-
-    Merge remote-tracking branch 'CM/cm-12.1' into cm-12.1
-
 commit 6951d6021d04b155f8506ae9984f84d0d23ac4f9
 Author: Michael Bestas <mikeioannina@gmail.com>
 Date:   Sat May 2 02:53:26 2015 +0300
@@ -4331,30 +3545,6 @@ Date:   Fri May 1 21:44:54 2015 -0700
     Merge remote-tracking branch 'CM/cm-12.1' into cm-12.1
 
 project packages/apps/TvSettings/
-commit bb15ca7bf6f9cbe6af7bd3870024df99300954b5
-Author: dhacker29 <dhackerdvm@gmail.com>
-Date:   Sat Apr 25 22:01:11 2015 -0400
-
-    Add preference for enabling root access
-    
-    Change-Id: Id0f089ac811c11cb09ae2aa63899e28872f31ed2
-
-commit 57b15c9e2b3a5cafcd4d69df262b82a0b6219cc9
-Author: dhacker29 <dhackerdvm@gmail.com>
-Date:   Sat Apr 25 20:32:42 2015 -0400
-
-    Ues more descriptive strings for add accessory page
-    
-    Change-Id: Idafee3ea797bf753c0ada283c2eee0ad29014d7e
-
-commit eaffa731df2a024cf75def2cb61b9568d45247d3
-Author: dhacker29 <dhackerdvm@gmail.com>
-Date:   Sun Apr 26 22:09:33 2015 -0400
-
-    About: Change the intent to call CMUpdater with Leanback theme (2/2)
-    
-    Change-Id: I8024fe3325f3651fac59e1266ac34a2ffdc37588
-
 commit ce581cff9a4cf1e1c4f6c372436e1688bd001bc7
 Merge: 57b15c9 eaffa73
 Author: Abhisek Devkota <ciwrl@cyanogenmod.com>
@@ -4431,13 +3621,6 @@ Date:   Fri May 1 14:01:31 2015 -0400
     Change-Id: I81ce701c66e52f9e43927158a6d9c7282b3f3271
 
 project packages/apps/UnifiedEmail/
-commit 865682e1f7b6abb80d001567b69bdb9f965f1fea
-Merge: 2bba20c 8110c12
-Author: ZION959 <ziontran@gmail.com>
-Date:   Sat Apr 25 18:11:20 2015 -0700
-
-    Merge remote-tracking branch 'CM/cm-12.1' into cm-12.1
-
 commit 97762e5d3c2504ab0dc1d630bac4df18a0451177
 Author: Jorge Ruesga <jorge@ruesga.com>
 Date:   Mon Apr 20 04:17:22 2015 +0200
@@ -4512,13 +3695,6 @@ Date:   Sat May 2 02:54:49 2015 +0300
     Change-Id: Id474011d23c1bf0fa1418eafef680bbd6807608f
 
 project packages/services/Telecomm/
-commit e4b451a18cca714db1dd306ace45b477c2b543f9
-Merge: 446e65b ef6be14
-Author: ZION959 <ziontran@gmail.com>
-Date:   Sat Apr 25 18:09:51 2015 -0700
-
-    Merge remote-tracking branch 'CM/cm-12.1' into cm-12.1
-
 commit ccf6031a786ba968f669f125d972ad355552b961
 Author: Michael Bestas <mikeioannina@gmail.com>
 Date:   Sat May 2 02:54:52 2015 +0300
@@ -4535,13 +3711,6 @@ Date:   Fri May 1 21:44:12 2015 -0700
     Merge remote-tracking branch 'CM/cm-12.1' into cm-12.1
 
 project packages/services/Telephony/
-commit 11ce1e8f25f3c22da1e8695145bb5b93b5f5bad0
-Merge: 7e68590 d57df97
-Author: ZION959 <ziontran@gmail.com>
-Date:   Sat Apr 25 18:10:23 2015 -0700
-
-    Merge remote-tracking branch 'CM/cm-12.1' into cm-12.1
-
 commit c3c55852de04fab7a813c9e6258320f9b8952126
 Author: LuK1337 <priv.luk@gmail.com>
 Date:   Wed Apr 29 13:31:53 2015 +0200
@@ -4661,23 +3830,7 @@ Date:   Sat May 2 02:55:13 2015 +0300
     
     Change-Id: I14c3c1fbb67fdb189f8f03275e239f5536953237
 
-project prebuilts/ndk/
-commit 9c744e25e9288ef771c5f072b917e905ba144e66
-Author: ZION959 <ziontran@gmail.com>
-Date:   Sun Apr 26 14:45:47 2015 -0700
-
-    fixed buidld for clang qcom 3.6
-    
-    Change-Id: I6d516fd6edd6d51bec2cdb389cf731f96e2dbf55
-
 project system/core/
-commit a62d6161bb5a6ee55cd4ac9ccd3fe929b291bafb
-Merge: 00a598a 01e3a95
-Author: ZION959 <ziontran@gmail.com>
-Date:   Sat Apr 25 17:48:54 2015 -0700
-
-    Merge remote-tracking branch 'CM/cm-12.1' into cm-12.1
-
 commit 35493c4c327406a46c32a219db4be30cad5a0256
 Author: Danny Baumann <dannybaumann@web.de>
 Date:   Mon Apr 20 17:19:46 2015 +0200
@@ -4697,65 +3850,7 @@ Date:   Tue Apr 28 19:20:27 2015 -0700
 
     Merge remote-tracking branch 'CM/cm-12.1' into cm-12.1
 
-project system/extras/
-commit 440188e143e77c6521a5f10d48d632d83c300c9a
-Author: David Ferguson <ferguson.david@gmail.com>
-Date:   Thu Jun 7 21:00:41 2012 -0400
-
-    ext4_utils: add BoardConfig define to suppress EMMC-corrupting wipe command
-    
-    If BOARD_SUPPRESS_EMMC_WIPE is true, the EMMC wipe command will not be
-    issued. This works around a bug in some firmware revisions of Samsung EMMC's
-    that permanently damages the device when the wipe command is issued.
-    
-    For affected devices with kernel source, MMC_CAP_ERASE should be removed
-    from the kernel instead.
-    
-    This is only part of the solution but it does handle the "flashing CM9
-    for the first time on an unsafe kernel" situation.
-    
-    Change-Id: Ie4e31f9268a65218e5d344ae3068b021790fc33c
-
-commit 31fe061daac530269120c70540f17109a898f934
-Author: Arne Coucheron <arco68@gmail.com>
-Date:   Sun Apr 26 01:19:37 2015 +0200
-
-    ext4_utils: Fix build
-    
-     * include $(BUILD_EXECUTABLE) was listed twice.
-    
-    Change-Id: Id1c7f5d588d70126035409dff87f6caf599eba64
-
-commit 972c9f1a7fd2602786bca7ca73ad04414edf5ee8
-Author: Andrew Dodd <atd7@cornell.edu>
-Date:   Fri Jul 27 08:40:53 2012 -0400
-
-    ext4_utils: Fix bad merge of EMMC wipe suppression
-    
-    The order of the modules in the Makefile changed.
-    
-    The Makefile items for eMMC wipe suppression should be
-    in the sections for target static and dynamic
-    libext4_utils.  These were the first two modules in the
-    file previously, but no longer are.
-    
-    Move the eMMC wipe configuration handling to the proper
-    modules.
-    
-    Change-Id: I86861a89824af04a3b08e75049580df28bd239f7
-
 project vendor/cm/
-commit 17e5661017b955131f828ad37dbb65414e71ed6b
-Author: dhacker29 <dhackerdvm@gmail.com>
-Date:   Sat Apr 25 02:03:49 2015 -0400
-
-    overlay: Remove the default battery style and set it in frameworks
-    
-    This will allow us to remove the overlay in vendor/cm so devices
-    with no battery, aka fugu, can override this to none.
-    
-    Change-Id: I80c0cc06d3aed344c7c705d420af297c96baf706
-
 commit 70d7e18828953d43381e7e7a0dc70d74ae10ba35
 Author: Ricardo Cerqueira <ricardo@cyngn.com>
 Date:   Mon Apr 27 15:06:49 2015 +0100
@@ -4817,48 +3912,6 @@ Date:   Sat May 2 08:24:32 2015 +0930
     Change-Id: Ic2dfde51e419f95a72bff238d1542b17728f9ac7
 
 project vendor/cmremix/
-commit b2888f35a98729bab91d67826390634066b2a276
-Author: Paul Beeler <pbeeler80@gmail.com>
-Date:   Sat Apr 25 01:59:04 2015 -0700
-
-    Make SaberMod ARM Mode enabled by default and use 4.9 for hammerhead:
-    Now that bluetooth is fixed when SaberMod ARM Mode is enabled, I
-    see no reason why this shouldn't be default.  SaberMod ARM Mode also
-    fixes other bugs, that allow gcc 4.9 for the ROM to function with force
-    closes of setup wizard.
-    
-    Change-Id: I6ac2e9d0f5371a95b13786ab01989096a0da351b
-    Signed-off-by: Paul Beeler <pbeeler80@gmail.com>
-
-commit 62d8b1bd8d57f95bf485bdb34ca1276fff036a5c
-Author: Paul Beeler <pbeeler80@gmail.com>
-Date:   Sat Apr 25 01:36:42 2015 -0600
-
-    sm.mk: more dependency fixes:
-    
-    I see no benifit to loop optimizations on arm thumb mode.
-    
-    Change-Id: Ia1f49ffe7ad7462e80c4add44abb5606ff6c915d
-    Signed-off-by: Paul Beeler <pbeeler80@gmail.com>
-
-commit be977aae7cbf802016a9944edd1ed38f43b6e0f9
-Author: Paul Beeler <pbeeler80@gmail.com>
-Date:   Sat Apr 25 02:07:34 2015 -0700
-
-    small cleanup
-    
-    Change-Id: Iade992780810c8cb2cd23d8e9586910debdd2980
-    Signed-off-by: Paul Beeler <pbeeler80@gmail.com>
-    
-    Conflicts:
-    	products/sm_hlte.mk
-
-commit a80ed73f99c5ed6f262deb2cec9428b21d0e4727
-Author: ZION959 <ziontran@gmail.com>
-Date:   Sun Apr 26 19:18:40 2015 -0700
-
-    enabled clang qcom 3.6 and fixed bluetooth UNINITIALIZED
-
 commit ea28b1de21c273f050a9a83a7d1653c3cecd8c64
 Author: Your Name <you@example.com>
 Date:   Mon Apr 27 17:29:21 2015 +0200
@@ -4986,32 +4039,6 @@ Date:   Fri May 1 00:22:12 2015 -0700
     clean up
 
 project vendor/samsung/
-commit 5274eeaf94e68f3d63e93c0d69cd5bd51fe3f558
-Author: Tony Layher <layhertony@gmail.com>
-Date:   Sat Apr 25 17:03:35 2015 -0400
-
-    trlte-common: Update camera HAL for 12.1
-    
-    Change-Id: Ic78228e72c4e5282b26911695fad25c9d5428cbf
-
-commit 706db98f915a8d6bc57c87f55bd83bb0ac2f28dd
-Merge: 0401727 5274eea
-Author: ciwrl <ciwrl05@gmail.com>
-Date:   Sat Apr 25 14:04:55 2015 -0700
-
-    Merge pull request #609 from slayher/cm-12.1
-    
-    trlte-common: Update camera HAL for 12.1
-
-commit 44cb70e178058a7894f4831605799eafedce95e8
-Merge: 706db98 d564cd6
-Author: Arne Coucheron <arco68@gmail.com>
-Date:   Sun Apr 26 05:55:54 2015 +0200
-
-    Merge pull request #610 from arco/cm-12.1
-    
-    serrano: Adreno blobs from Flo LMY47O
-
 commit ea5f4eec1ca017bb68aa44ece8bda5b460674f7d
 Author: Dave Daynard <nardholio@gmail.com>
 Date:   Tue Apr 28 21:00:02 2015 -0400
