@@ -1,10 +1,4 @@
 project CMRemix/
-commit 91f917aa9e1911d8bccf87f6173d746d93a103eb
-Author: ZION959 <ziontran@gmail.com>
-Date:   Tue Apr 28 03:25:51 2015 -0700
-
-    track development
-
 commit 330b2937e85eb77e4eb3a66a13683c59dfbd58be
 Author: ZION959 <ziontran@gmail.com>
 Date:   Tue Apr 28 18:57:25 2015 -0700
@@ -23,36 +17,7 @@ Date:   Fri May 1 11:39:39 2015 -0700
 
     track ContactsProvider
 
-project bootable/recovery/
-commit 0225ffe3ff195eae032131b0c1ff9c9fb87fc047
-Author: Danny Baumann <dannybaumann@web.de>
-Date:   Mon Apr 20 11:27:18 2015 +0200
-
-    Remove spammy debug output.
-    
-    Change-Id: Id152a6b57a8749fb6a68d8132bbd6bb5e87b7336
-
-commit e63fbec600fecfc5038bc6e6babb8f476b906144
-Author: Johan Redestig <johan.redestig@sonymobile.com>
-Date:   Tue Apr 14 21:20:06 2015 +0200
-
-    imgdiff: Avoid infinite loop if inflate fails
-    
-    Break out of the loop if inflate returns an error
-    and print some details.
-    
-    Change-Id: Ie157cf943291b1a26f4523b17691dfcefbc881dc
-
 project build/
-commit cfc20667a3a9f572bd188563903891478d333c93
-Author: Paul Beeler <pbeeler80@gmail.com>
-Date:   Tue Apr 28 10:44:20 2015 -0600
-
-    Add a option to disable vectorization flags (2/2)
-    
-    Change-Id: I2bd7a1a554b0680faa2da36be1866e8f57e0166c
-    Signed-off-by: Paul Beeler <pbeeler80@gmail.com>
-
 commit 3ae29bccd6304fba3b45d850d169bf649dd16ffc
 Author: Paul Beeler <pbeeler80@gmail.com>
 Date:   Wed Apr 29 13:11:59 2015 -0600
@@ -157,28 +122,6 @@ Date:   Sat May 2 02:55:17 2015 +0300
     Change-Id: I0078d634e54e91daec6f80633f6523ce40e7a180
 
 project frameworks/av/
-commit fb629ad8e893fb6f1817dbccb5178ab04de63f54
-Author: RenJian <jian.ren@ck-telecom.com>
-Date:   Wed Apr 15 11:32:15 2015 +0800
-
-    Ensure there is no two same storages showing on the computer.
-    
-    [Preconditions]
-    1. Insert a SIM card into phone and set the SIM lock as "on"
-    2. Select MTP mode
-    3. Power off the mobile
-    
-    [Procedures]
-    1.Connected the phone and PC with usb cable
-    2.Power on the phone->Input PIN code of SIM lock to enter the IDLE view
-    3.Check the storage list on PC
-    
-    [Reproduce]
-    Rarely
-    
-    Change-Id: I8efc3f812b669f2d4e2c3be89e3f97b5cc895628
-    (cherry picked from commit 8b8d02886bd9fb8d5ad451c03e486cfad74aa74e)
-
 commit bd4881c961173dd7b5aa4708a7444cc4d556c2ca
 Author: Diogo Ferreira <defer@cyngn.com>
 Date:   Wed Apr 29 17:36:32 2015 +0100
@@ -297,99 +240,6 @@ Date:   Thu Apr 30 11:35:06 2015 -0700
     Merge remote-tracking branch 'CM/cm-12.1' into cm-12.1-2
 
 project frameworks/base/
-commit 571c7ed0cf23764e76a41b321ca3ff91103b8da3
-Author: Lars Greiss <kufikugel@googlemail.com>
-Date:   Tue Apr 28 03:01:41 2015 -0700
-
-    fb: TRDS 5.0 (1/4)
-    
-    patchset: add holodark resources
-    
-    patchset: add to slim actions
-    
-    patchset: import Toast library in Action.java
-    
-    patchset: some tweaks and fixes
-    
-    patchset: change auto detect light conditions method
-    
-    patchset: fix possible UI freeze on auto mode change
-    
-    patchset: import ServiceManager library into uimodemanagerservice
-    
-    patchset: fix aapt shit
-    
-    patchset: fix context in UiModeManagerService?
-    
-    patchset: set mContext to BroadcastReceiver's context,
-            add toasts to debug light sensor stuff
-    
-    patchset: adjust DARK_CONDITION value
-    
-    patchset: clean up toasts
-    
-    patchset: fix NPE in Resources.java?
-    
-    PS20: update BridgePowerManager to fix SDK build
-    
-    PS21: revert to original BridgePowerManager (if building SDK tools,
-            need to use patchset 20 or it will error out)
-    
-    PS22: more debugging toasts grrrrr
-    
-    PS23: change holodark to darktheme, hololight to lighttheme.
-            remove holodark resources.
-    
-    PS24: add darktheme resources.
-    
-    PS26: qs tile
-    
-    PS27: reset theme mode on longpress qs tile
-    
-    PS: fix qs icon
-    
-    CyanideL: Fix up to work ALONGSIDE theme engine
-    Change-Id: Ic88838247c47d2a92b55d1cb1b00330f2d62fb88
-    
-    Conflicts:
-    	core/java/android/provider/Settings.java
-    	core/res/res/values/cr_symbols.xml
-
-commit caa3276748106ddd69652bdc9ebcae4bb32e1fb2
-Author: rogersb11 <brettrogers11@gmail.com>
-Date:   Thu Apr 23 03:43:57 2015 -0400
-
-    Update trds colors
-    
-    Change-Id: I3f97326752d71d142212a99fcc220975032654d0
-
-commit 2247cbf697d4d216c34949ecfec500f84041cea4
-Author: Lars Greiss <kufikugel@googlemail.com>
-Date:   Tue Apr 28 03:03:32 2015 -0700
-
-    Frameworks: SlimPie give user ability to reduce trigger heights if IME keyboard shows (1/2)
-    
-    Add a user option to reduce left and right trigger of SlimPie if keyboard shows up
-    (especially usefull for swipe keyboard which most keyboards are nowadays). Enabled
-    by default user can disable it in settings.
-    
-    Change-Id: Idc985ebc1d2b14706c26c5c69894b4393b5d57ff
-    
-    Conflicts:
-    	core/java/android/provider/Settings.java
-
-commit cc55fe45881125d3471053e0a7c13b39158b6282
-Author: Lokesh Chamane <lokesh.c703@gmail.com>
-Date:   Tue Apr 28 03:05:19 2015 -0700
-
-    SlimPIE: Configurable sensitivity [1/2]
-    
-    Change-Id: I636bbbf3a63104625e1cf4698392a480c1f9458a
-    Signed-off-by: Lokesh Chamane <lokesh.c703@gmail.com>
-    
-    Conflicts:
-    	core/java/android/provider/Settings.java
-
 commit 3da027ea507b0f22e902d04d8458e87cd4c04463
 Author: Richard MacGregor <rmacgregor@cyngn.com>
 Date:   Wed Apr 15 17:13:40 2015 -0700
@@ -1367,14 +1217,277 @@ Date:   Mon May 4 09:53:35 2015 +0800
 
     Add missing boolean for gesture
 
-project frameworks/native/
-commit 5ac19fa6c9a52bc1a97c66feda0f84e2ccd92017
-Author: Lars Greiss <kufikugel@googlemail.com>
-Date:   Sat Dec 14 02:58:19 2013 +0100
+commit d5a415fddc1417a224cfad706e9bf65aab3654af
+Author: ZION959 <ziontran@gmail.com>
+Date:   Tue May 5 00:25:55 2015 -0700
 
-    native: TRDS 5.0 (2/4)
+    Revert: Revert: App sidebar: some adjustments
+    - Cleanup
+    - fix disappearing appbar on changing appbar position
+    - may fix endless FC on changing appbar contents
     
-    Change-Id: Ibc5aaec5661455477815043440fae86052a395ce
+    Change-Id: I2e94290dc128447f0da8937eb5dc0ed10296a155
+    
+    Conflicts:
+    	packages/SystemUI/src/com/android/systemui/statusbar/phone/PhoneStatusBar.java
+    
+    Conflicts:
+    	packages/SystemUI/src/com/android/systemui/statusbar/phone/PhoneStatusBar.java (reverted from commit 8a71a12daa5d4d5e19dbfe4257b4083053ec3ca3) (reverted from commit 5e5cef254474a64db7dcf3f2d480942fb614770a) (reverted from commit a29d20c393f684b8744652d15ab6c9c788cb1a9f)
+
+commit 69eafcc33f4d4271c37886158aac7e5c1a7cfc0f
+Author: BlackDragon <blackdragon.fusionteam@gmail.com>
+Date:   Tue May 5 00:31:32 2015 -0700
+
+    App sidebar: Fix Left/Right position.
+    
+    Signed-off-by: BlackDragon <blackdragon.fusionteam@gmail.com>
+    
+    Conflicts:
+    	packages/SystemUI/src/com/android/systemui/statusbar/BaseStatusBar.java
+    	packages/SystemUI/src/com/android/systemui/statusbar/phone/PhoneStatusBar.java
+
+commit 28a1e1de11a22387e1e881656973eaa83100ca86
+Author: sethyx <sethyx@gmail.com>
+Date:   Tue May 5 00:34:02 2015 -0700
+
+    NFC Polling Mode (3/3)
+    
+    Conflicts:
+    	core/java/android/provider/Settings.java
+    
+    Conflicts:
+    	core/java/android/provider/Settings.java
+
+commit a9912219d1a240137a58ba8e0283cfc33f2034c4
+Author: Ethan Chen <intervigil@gmail.com>
+Date:   Tue May 5 11:15:14 2015 -0700
+
+    doze: Separate proximity check by reason
+    
+    * Devices that pulse by intent typically check the proximity sensor as
+      part of sensor wakeup. Allow pulse by intent to control proximity
+      check separate from pulse by sensor wakeup.
+    
+    Change-Id: I9955013b864746c52ee576ff0f4de3672bf7fe0e
+    
+    Conflicts:
+    	packages/SystemUI/src/com/android/systemui/doze/DozeService.java
+
+commit b14b0de213603a7230e86a72c25501679d065d6a
+Author: Christopher R. Palmer <crpalmer@gmail.com>
+Date:   Sun Apr 26 05:12:15 2015 -0400
+
+    doze: Make delay and duration of intent triggered dozes configurable
+    
+    Devices that have IR sensors can trigger dozes due directly to user
+    action (gestures) and the user expects a more immediate response
+    to this actions because  the user may be looking directly at
+    the screen and expecting immediate feedback.
+    
+    It makes sense to differentiate this from the pickup sensor values
+    and notification sensor values because of the different user focus
+    (directly acting on the phone).
+    
+    Change-Id: I085701bb7e5c0e1feb632ce945d615c7ae4e24a5
+
+commit b2a950107ab378af3cfb28a2ce50700eb504b592
+Author: Squadzone <ai.the.smarties.physics@gmail.com>
+Date:   Tue May 5 13:22:11 2015 -0700
+
+    base: Implement ambient display as Active Display [1/2]
+    
+    Currently Ambient Display fully support if device has
+      Significant motion sensor and wake gesture sensor
+    
+    with this change allow Ambient Display to work like
+        Active Display
+    
+    -- Allow wake up using shake event
+    -- use different class to manage sensor
+    
+    enable this via overlay pac_config.xml
+    credit PAC
+    inside Frameworks base
+    
+        <!-- Doze: force using accelerometer as pick up sensor -->
+        <bool name="config_dozeUseAccelerometer">false</bool>
+    
+    inside System UI
+    
+        <!-- Doze: shake accelerometer threshold -->
+        <integer name="doze_shake_accelerometer_threshold">10</integer>
+    
+    also dont forget to setup other value for Ambient Display
+    
+    see https://gerrit.omnirom.org/10140
+    
+    PS. 12 : prepare for user configurations
+    
+    <!------------------------------------------------------------>
+    
+    NOTE:
+       Shake event aka Wake up will not triggered until
+       Proximity is Covered (need to put inside pocket)
+    
+       for shake accelerometer, you must setup based on your device
+       each device has different threshold
+    
+    <!------------------------------------------------------------>
+    
+    NOTE 2 :
+    
+       you can also overwrite all value for Ambient Display inside BUILD.PROP
+       but i recommend only overwrite value from overlay fw base and system Ui
+    
+       example value inside BUILD.PROP :
+    
+       <!-- Doze: does this device support STATE_DOZE and STATE_DOZE_SUSPEND?  -->
+       doze.display.supported=true
+    
+       <!-- Doze: pulse parameter - how long does it take to fade in? -->
+       doze.pulse.duration.in=1000
+    
+       <!-- Doze: pulse parameter - once faded in, how long does it stay visible? -->
+       doze.pulse.duration.visible=3000
+    
+       <!-- Doze: pulse parameter - how long does it take to fade out? -->
+       doze.pulse.duration.out=1000
+    
+       <!-- Doze: should notifications be used as a pulse signal? -->
+       doze.pulse.notifications=true
+    
+       <!-- Doze: when to pulse after a buzzworthy notification arrives -->
+       doze.pulse.schedule=1s,10s,30s,60s,120s
+    
+       <!-- Doze: maximum number of times the notification pulse schedule can be reset -->
+       doze.pulse.schedule.resets=3
+    
+       <!-- Doze: shake accelerometer threshold -->
+       doze.shake.acc.threshold=10
+    
+       <!-- Doze: force using accelerometer as pick up sensor -->
+       doze.use.accelerometer=true
+    
+    <!------------------------------------------------------------>
+    
+    With this change now we have 3 mode :
+    
+        1. pocket mode = proximity enabled after screen off, if detect NEAR state (covered by hand or somethings), doze will disable
+              until FAR state (uncovered), if FAR state is triggered, Doze will appears.
+    
+        2. pulse mode = doze is triggered by notifications, and so after notifications arrive, doze will show up, and doze will setup
+              time to show again (see doze.pulse.schedule=1s,10s,30s,60s,120s inside config.xml) and reset after see doze.pulse.schedule.resets=3
+        pulse mode by default is already there if device is support ambient display (e.g nexus 6), so there is no change in the code
+        (still using original code logic)
+    
+        3. shake mode = enabled after proximity detect FAR state (pocket mode) or Doze is triggerd by notifications (pulse mode), and disabled
+              if proximity detect NEAR state, or user already shake
+    
+    <!------------------------------------------------------------>
+    
+    Feature describes:
+        1. Full mode (pocket,shake,pulse)
+        2. Pocket and shake only
+        3. Pocket and pulse only
+        4. Pocket only
+        5. Shake and pulse only
+        6. Pulse only (default)
+    
+    <!------------------------------------------------------------>
+    
+    Note :
+        Shake mode only enabled after Doze is triggered by proximity or notifications (depends on option)
+        so if doze not triggered by that, shake mode will stay disabled.
+    
+    <!------------------------------------------------------------>
+    
+    Change-Id: Id7818c2d86bad279ae9f238e8e2573639bcfff5f
+    
+    Conflicts:
+    	packages/SystemUI/src/com/android/systemui/doze/DozeService.java
+
+commit 70d30136ea54fd33f72b410186c5780c3ccacfc8
+Author: Janson Kang <temasek71@gmail.com>
+Date:   Tue May 5 13:51:00 2015 -0700
+
+    SystemUI: Fix PIE control not sticking on reboot
+    
+    Conflicts:
+    	packages/SystemUI/src/com/android/systemui/statusbar/phone/PhoneStatusBar.java
+
+commit b0fdd1a3f6aa086b1681e8d2f8f09b49b6072e90
+Author: naman14 <namandwivedi14@gmail.com>
+Date:   Mon May 4 11:19:45 2015 +0530
+
+    Fix IllegalStateException in Printspooler
+    
+    Open webpage in chrome(or any thing to print) and click print and then press
+    back, throws a IllegalStateException.
+    Currently in onDestroy, doFinish() is called which further calls
+    unbindService()in PrintSpoolerProvider,but since service has already been
+    unbinded,it throws a Service not registered error.
+    
+    Change-Id: If58a951e9e66a4048f0ece3100aabe49cee0ab84
+
+commit 9ee72d1556f00ce6d057847a7d8089be79cb6161
+Author: Roman Birg <roman@cyngn.com>
+Date:   Mon May 4 13:01:20 2015 -0700
+
+    allow overlaying default quick settings tiles
+    
+    Change-Id: Ia92e562318c05a127ddccc99dc7461feaa7ed9cb
+    Signed-off-by: Roman Birg <roman@cyngn.com>
+
+commit 4dad59bf6c91b10b73b0096a61e9e62cbe61b6b2
+Author: Christopher R. Palmer <crpalmer@gmail.com>
+Date:   Tue May 5 05:44:11 2015 -0400
+
+    base: Fix notification sounds for wifi only devices
+    
+    The linking of voice & notification doesn't take into account the
+    fact that a device may not actually have voice capabilities.  Whenever
+    checking whether or not to link notification and ring volumes, also
+    verify that the device really is voice capable.
+    
+    Change-Id: Iae49302d3b5934d36b182e289e4975f5dd85b834
+
+commit 3c5828a1aece848222069989d1db7a3d81f663c4
+Author: Roman Birg <roman@cyngn.com>
+Date:   Fri May 1 10:14:00 2015 -0700
+
+    Improve SeekBarVolumizer behavior with unlinked streams
+    
+    - Fix notification stream enabling at 0 volume
+    - Fix the notification slider being set when moving ringer stream
+    
+    Change-Id: If3705cc833c07f726f8ad7b1ec79a42e86e8ff22
+    Signed-off-by: Roman Birg <roman@cyngn.com>
+
+commit 67db59b9a799318612211af6f28eb4b1a5547d83
+Author: Roman Birg <roman@cyngn.com>
+Date:   Tue May 5 09:46:08 2015 -0700
+
+    policy: fix device sleeping with lid with incoming call
+    
+    Change-Id: Idd538ee25009eeb4f5a9e11602ac739926493a81
+    Signed-off-by: Roman Birg <roman@cyngn.com>
+
+commit 657191a2280a68d98136f3481c7a1d25a464f11f
+Author: Roman Birg <roman@cyngn.com>
+Date:   Wed Aug 20 11:04:31 2014 -0700
+
+    policy: respect FLAG_TURN_SCREEN_ON flag with device flip covers
+    
+    If an application uses WindowManager.LayoutParams.FLAG_TURN_SCREEN_ON
+    and the device supports covers and the cover is closed, then after the
+    screen would turn on due to this flag, it would immediately be turned off
+    because PhoneWindowManager thinks the cover is closed, so it puts the device to
+    sleep.
+    
+    Respect this flag and do nothing if it is detected.
+    
+    Change-Id: I7eb36ce676730e47c551518e214b08561c401ea5
+    Signed-off-by: Roman Birg <roman@cyngn.com>
 
 project frameworks/opt/telephony/
 commit ce6bd446dfdb2dec08629b55d7b6507d5168da06
@@ -1461,27 +1574,15 @@ Date:   Mon May 4 11:25:24 2015 -0700
     
     Change-Id: I9f0edc0c870a2f33d51aef4457917b19bd341d5f
 
-commit 67cacfe15a847ae5c8de17344c36eb22f49655b5
+commit b83151fc04d6781afbe478a1e421761c1d2476f1
 Author: ZION959 <ziontran@gmail.com>
-Date:   Mon May 4 15:06:39 2015 -0700
+Date:   Tue May 5 02:38:56 2015 -0700
 
     Sweep2Wake & doubletap2wake : v1.7 & support for powersuspend [showp1984]
     
-    4. Disable by default [UpInTheAir]
-    
-    3. Fix Sweep2Wake Early Suspend handling [LoungeKatt]
-    LCD Notify was mixed in with the latest update and handled incorrectly.
-    Removes LCD Notify and fixes Early Suspend.
-    
-    2. Update Sweep2Sleep [Dorimanx]
-    
-    1. Sweep2Wake: v1.5 & support for powersuspend [showp1984]
-    
-    fixed DT2W buidl error
-    
     Change-Id: Idd7a174450f6f8724fb2a255da78cadb99c39559
 
-commit bd9d9842471345bbed1173b29945a2582b25d80d
+commit ddbee86be4569794f35a49bdaa7898e069b48014
 Author: ZION959 <ziontran@gmail.com>
 Date:   Mon May 4 16:28:03 2015 -0700
 
@@ -1489,7 +1590,7 @@ Date:   Mon May 4 16:28:03 2015 -0700
     
     Change-Id: Ia6df25b3c0a1b55e5474d77e4c7e7b95703df930
 
-commit 6105de0c4cb32106f6f587cc05af1eeb289d3cde
+commit c2a9fed97af6aa5df53e2420fee5651b3216d226
 Author: ZION959 <ziontran@gmail.com>
 Date:   Mon May 4 16:39:56 2015 -0700
 
@@ -1497,7 +1598,7 @@ Date:   Mon May 4 16:39:56 2015 -0700
     
     Change-Id: I3dc3c84397f165b000ffc6e1c6f1b9e75c77bcdc
 
-commit 756ee8df601b07bbdfea0297bb9329daf155ef88
+commit d0238ee33406a4d4c61a3ba1ce611e423c5ea9db
 Author: ZION959 <ziontran@gmail.com>
 Date:   Mon May 4 21:41:44 2015 -0700
 
@@ -1505,13 +1606,21 @@ Date:   Mon May 4 21:41:44 2015 -0700
     
     Change-Id: Ic2413f8653553cad0d3494f3126cf27153cd84e9
 
-commit 2bdce6ab2f4b14103236229859c91701142ae1bf
+commit 7abd4fa917441257a61db755144ccec43e137451
 Author: ZION959 <ziontran@gmail.com>
 Date:   Mon May 4 22:16:15 2015 -0700
 
     disabled yank555 hardlimit
     
     Change-Id: Ie95ec983824c78c96b20e6a2d7dab1748c6a09d0
+
+commit b02d0cc91fd4ca3b3972bfc4bda2434b0a7bb03c
+Author: ZION959 <ziontran@gmail.com>
+Date:   Tue May 5 03:03:52 2015 -0700
+
+    doubletap2wake: Add user selected feather radius (savoca)
+    
+    Change-Id: I7377dc6ba816a7b5204ef4b2d240f0d521dd34ce
 
 project packages/apps/AudioFX/
 commit b2e8ba3988af3a617fe22180ac1ba7eb2ed7a5cc
@@ -1806,34 +1915,6 @@ Date:   Fri May 1 21:41:42 2015 -0700
     Conflicts:
     	src/com/android/incallui/ProximitySensor.java
 
-project packages/apps/KernelAdiutor/
-commit ff7b88e3a45ad4186f5a019cfe0fb3dc1c7737a1
-Author: Willi Ye <williye97@gmail.com>
-Date:   Tue Apr 28 00:03:08 2015 +0200
-
-    version 0.9.3.1.1 beta
-
-commit 7ffd04ad66026d4b51c0bfbee1f9bceb20c78855
-Author: Willi Ye <williye97@gmail.com>
-Date:   Tue Apr 28 21:10:44 2015 +0200
-
-    Fix gamma profiles not showing up
-    and add a wakelock section in misc
-
-commit 5da0f384d74bba5e64a08b4fd1820f81891841c0
-Author: Willi Ye <williye97@gmail.com>
-Date:   Tue Apr 28 21:20:21 2015 +0200
-
-    version 0.9.3.1.2 beta
-
-commit 6dcb4e63bb8fbe115b23d3ab5a543bd429f2d002
-Author: fusionjack <dogfight60-fusionjack@yahoo.de>
-Date:   Tue Apr 28 22:23:53 2015 +0200
-
-    Bump version to 0.9.3.1.2
-    
-    Change-Id: I2c84d4abc4f31870b9285b43b001709fe51e16e2
-
 project packages/apps/LockClock/
 commit fafa209b5802162aa4b0062e587b68ff83b79083
 Author: Michael Bestas <mikeioannina@gmail.com>
@@ -1859,6 +1940,16 @@ Date:   Fri May 1 21:43:04 2015 -0700
 
     Merge remote-tracking branch 'CM/cm-12.1' into cm-12.1
 
+project packages/apps/Nfc/
+commit 4c83a259b02eb10b86fd8ba962f39cdd6421ee6e
+Author: sethyx <sethyx@gmail.com>
+Date:   Sat Apr 27 21:08:29 2013 +0800
+
+    NFC polling mode (1/3)
+    
+    Change-Id: Ie15764ec785d41eb85568ee1a65730514d1a501e
+    Signed-off-by: sethyx <sethyx@gmail.com>
+
 project packages/apps/PhoneCommon/
 commit c703c7c5c08f64e7d17531ba1e302f9cce094876
 Author: Michael Bestas <mikeioannina@gmail.com>
@@ -1869,100 +1960,6 @@ Date:   Sat May 2 02:52:48 2015 +0300
     Change-Id: I28325cf53a1a68efac1e6ee3389936d188820043
 
 project packages/apps/Settings/
-commit 0f3e87bfefb6c73e9284028280659800f1a5a955
-Author: Paul Beeler <pbeeler80@gmail.com>
-Date:   Tue Apr 28 01:49:05 2015 -0700
-
-    Saberize > update to be inline with SaberMod
-    
-    Change-Id: Ic69016fb27fded392215f4f20c2fe6f24f065645
-    Signed-off-by: Paul Beeler <pbeeler80@gmail.com>
-    
-    Added SaberMod Android banner in About Phone
-    
-    Change-Id: Id23a1ac74b4a5eac0d2f57479780eb2d0e97de68
-    Signed-off-by: Paul Beeler <pbeeler80@gmail.com>
-    
-    Conflicts:
-    	res/drawable-hdpi/smbanner.png
-    	res/layout/smbanner_row.xml
-    	res/xml/device_info_settings.xml
-    	src/com/android/settings/DeviceInfoSettings.java
-
-commit 50ce5f2eaf29632bb809a511725c3be1419cc776
-Author: Lars Greiss <kufikugel@googlemail.com>
-Date:   Tue Apr 28 03:17:31 2015 -0700
-
-    Settings: TRDS 5.0 (4/4)
-    
-    patchset: add holodark resources
-    
-    patchset: fix up switch preference
-    
-    patchset: add to slim actions
-    
-    patchset: some tweaks and fixes
-    
-    patchset: Action instead of SlimActions
-    
-    patchset: fix icon
-    
-    patchset: remove holodark resources
-    
-    patchset: add darktheme resources
-    
-    patchset: light sensor is experimental
-    
-    patchset: themeenabler uses onpreferenceclicklistener instead
-            of onpreferencechangelistener
-    
-    patchset: add reset dialog (to reset to default theme)
-    Change-Id: I5b857c542d92b9fd253b3556f14c790226594c4f
-    
-    Conflicts:
-    	res/values/cmr_arrays.xml
-    	res/values/cmr_strings.xml
-    	res/xml/dashboard_categories.xml
-
-commit 56efa7ed4cb15e06bc107beed3d15e8b85c8616b
-Author: Lars Greiss <kufikugel@googlemail.com>
-Date:   Mon Feb 10 23:24:51 2014 +0100
-
-    Settings: SlimPie give user ability to reduce trigger heights if IME keyboard shows (2/2)
-    
-    Add a user option to reduce left and right trigger of SlimPie if keyboard shows up
-    (especially usefull for swipe keyboard which most keyboards are nowadays). Enabled
-    by default user can disable it in settings
-    
-    PS:
-    - fix category string
-    
-    Change-Id: Ia5ae621a5e63b2efd10180cfbe1876b14a63c866
-
-commit 7487e9474d3792da242d32c9be457f2447adeb5b
-Author: Lokesh Chamane <lokesh.c703@gmail.com>
-Date:   Tue Apr 28 13:47:21 2015 -0700
-
-    SlimPIE: Configurable sensitivity [2/2]
-    
-    Change-Id: I7afc315bbf922f7f5ff3ba93cca38bfcd359f0ab
-    Signed-off-by: Lokesh Chamane <lokesh.c703@gmail.com>
-    
-    Conflicts:
-    	res/values/cr_strings.xml
-
-commit bdcd1b031465a9b9b14eb531d48b47f22187574f
-Author: ZION959 <ziontran@gmail.com>
-Date:   Tue Apr 28 03:28:08 2015 -0700
-
-    Revert Settings: use correct default value for backlight brightness
-
-commit 07efc1e7cb10b6909a1569f8efa7b018a79a34ed
-Author: ZION959 <ziontran@gmail.com>
-Date:   Tue Apr 28 14:08:14 2015 -0700
-
-    add SeekBarPreferenceCHOS.java
-
 commit 99e9d858ba635c65a3c71e7b44a107340cbff12e
 Author: ZION959 <ziontran@gmail.com>
 Date:   Tue Apr 28 14:18:48 2015 -0700
@@ -2454,586 +2451,132 @@ Date:   Wed Apr 15 19:03:00 2015 +0100
     
     Change-Id: I5a768098b4ed00b28931bee58a58efa8280262a1
 
+commit 8d8756f206b4225e849fe87d293dc3a28ff4976e
+Author: sethyx <sethyx@gmail.com>
+Date:   Sat Apr 27 20:43:46 2013 +0800
+
+    NFC Polling Mode (2/3)
+    
+    Change-Id: I0e17ded93e9b82095e6bf8301c268017c49dd12b
+    Signed-off-by: Jubakuba <Jubakuba@gmail.com>
+
+commit f83ab09257254210a6d205cae2a074d027c9f69b
+Author: Squadzone <ai.the.smarties.physics@gmail.com>
+Date:   Tue May 5 11:56:45 2015 -0700
+
+    Settings: Ambient Display configurations [2/2]
+    
+    make simple options
+    
+    PS17
+    -use ListPreference value as summary
+    
+    fix dependency
+    change string
+    
+    PS24
+    -reworked shake test handling
+    
+    <!------------------------------------------------------------>
+    
+    Note :
+    
+       since each minimum and maximum value for device is different
+       (minimum and maximum value in this patch is for hammerhead and shamu)
+       you must replace :
+    
+       1. doze_pulse_duration_in_entries and doze_pulse_duration_in_values
+       2. doze_pulse_duration_visible_entries and doze_pulse_duration_visible_values
+    
+       and put in PAC overlay inside your device repo
+    
+    <!------------------------------------------------------------>
+    
+    Example :
+       my device is falcon a.k.a Moto G, cant handle with value that present in this patch
+       so i need to check which minimum and maximum value that working
+    
+       after that, i get minimum 1 s and maximum 2s for time in and out
+       also i get minimum 2 s and maximum 4 s for visible time
+    
+       then i put value into overlay
+    
+        <string-array name="doze_pulse_duration_in_entries" translatable="false">
+            <item>@string/one_second_default</item>
+            <item>@string/onehalf_second</item>
+            <item>@string/two_second</item>
+        </string-array>
+    
+        <string-array name="doze_pulse_duration_in_values" translatable="false">
+            <item>1000</item>
+            <item>1500</item>
+            <item>2000</item>
+        </string-array>
+    
+        <string-array name="doze_pulse_duration_visible_entries" translatable="false">
+            <item>@string/two_second</item>
+            <item>@string/twohalf_second</item>
+            <item>@string/three_second_default</item>
+            <item>@string/threehalf_second</item>
+            <item>@string/four_second</item>
+        </string-array>
+    
+        <string-array name="doze_pulse_duration_visible_values" translatable="false">
+            <item>2000</item>
+            <item>2500</item>
+            <item>3000</item>
+            <item>3500</item>
+            <item>4000</item>
+        </string-array>
+    
+        make sure the you keep default value in the array
+    <!------------------------------------------------------------>
+    
+    last patch: make sure option not showing in search mode if not support
+    
+    Change-Id: Ibf8714509049b234a90435f6bacef275ad1bce19
+    
+    Conflicts:
+    	res/values/pac_arrays.xml
+    	res/values/pac_strings.xml
+    	src/com/android/settings/DisplaySettings.java
+
+commit 55121f6e7d2e9c210cee443e49f7d160b8e3585a
+Author: Lokesh Chamane <lokesh.c703@gmail.com>
+Date:   Tue May 5 12:00:06 2015 -0700
+
+    Ambient Settings: use switch preference
+    
+    Change-Id: I92d07f487f79a7d95272ce881754f9590012ce2b
+    Signed-off-by: Lokesh Chamane <lokesh.c703@gmail.com>
+    
+    Conflicts:
+    	res/xml/ambient_settings.xml
+    	src/com/android/settings/cmremix/AmbientSettings.java
+
+commit eddbf91eb2644c6db6d738504d90cc33a9d9156c
+Author: ZION959 <ziontran@gmail.com>
+Date:   Tue May 5 13:48:08 2015 -0700
+
+    Settings: Ambient Display add dependency and derp fixed
+
+commit afb97c2f2ff571f40b582f83a8a19ba76b281b08
+Author: ZION959 <ziontran@gmail.com>
+Date:   Tue May 5 13:58:05 2015 -0700
+
+    QS: Add Ambient Display Tile (2/2)
+    
+    Change-Id: I332ac0b9d69d7c3c8029511fd97ae81277ebe598
+
+commit fca03b7c1269e14004c8213c571e76d1a0fcab23
+Author: Tom Marshall <tdm.code@gmail.com>
+Date:   Thu Oct 3 20:49:37 2013 +0000
+
+    Add LCD density setting
+    
+    Change-Id: I3d55615127cc735ea0443d519520d0cb6cfbfb38
+
 project packages/apps/SlimLauncher/
-commit 545bd8acc5ebeadcb14f7e3fda51b875ef8fa274
-Author: Sunny Goyal <sunnygoyal@google.com>
-Date:   Tue Oct 14 16:12:12 2014 -0700
-
-    Moving the focus indicator instantly to the target position, instead
-    of begining the next animation from the middle.
-    
-    Bug: 17958897
-    Change-Id: Ie5a39b80ff9788edf368e0f4e23c07c2ed5b3d2c
-
-commit d357d5884c55ad8bdcf4a5c9fde9fae3c119778d
-Author: Sunny Goyal <sunnygoyal@google.com>
-Date:   Tue Oct 14 16:42:54 2014 -0700
-
-    Adding NPE check in InstallShortcutReceiver
-    
-    > Removing some unused methods
-    
-    Bug: 17971165
-    Change-Id: I1bc5c764fd65b44c950a58371b60d2b53c221995
-    
-    Conflicts:
-    	src/com/slim/slimlauncher/InstallShortcutReceiver.java
-
-commit c0ed928b5dba9a3428b670a5e1e83c953c6022ff
-Author: Geoff Mendal <mendal@google.com>
-Date:   Wed Oct 15 10:46:05 2014 -0700
-
-    Import translations. DO NOT MERGE
-    
-    Change-Id: Ied5954dcd88f900ae2f9e21b1ec0cdbe01cad06b
-    Auto-generated-cl: translation import
-    
-    Conflicts:
-    	res/values-ms-rMY/strings.xml
-
-commit db34f57223d235b9f6b2766939bd6f5029a93f9f
-Author: Adam Cohen <adamcohen@google.com>
-Date:   Tue Oct 7 18:14:53 2014 -0700
-
-    Use LauncherCallbacks model instead of method overrides
-    
-    -> When extending the Launcher Activity, instead of overriding
-       public and protected methods, create a proper interface
-    -> This helps define the interface when extending Launcher
-       more formally and more clearly
-    
-    Change-Id: Ib38e8a376b2242d4078bf6856bb145f5b5f0da80
-    
-    Conflicts:
-    	src/com/slim/slimlauncher/Launcher.java
-
-commit 4de7ca7d870c52a77e7245d5732085d7480e98cb
-Author: Helena Josol <helenajosol@google.com>
-Date:   Thu Oct 9 17:04:09 2014 +0100
-
-    Add more Launcher files to delete on Clear Launcher Data
-    
-    Bug: 12753154
-    Change-Id: I00679bdc6eff70a1398122aaa955c08eabd556b1
-    
-    Conflicts:
-    	src/com/android/launcher3/LauncherFiles.java
-    	src/com/slim/slimlauncher/Launcher.java
-    	src/com/slim/slimlauncher/LauncherAppState.java
-
-commit 41b08e1d8428caf3f30088e2c60b93694d1ea91b
-Author: Sunny Goyal <sunnygoyal@google.com>
-Date:   Wed Oct 8 10:47:28 2014 -0700
-
-    Showing widgets in a disabled state, when running in safe mode
-    
-    Bug: 15172107
-    
-    Change-Id: I7209836ca4ffacde7b7b232e230e9b9f1a0e54bb
-    
-    Conflicts:
-    	src/com/slim/slimlauncher/Launcher.java
-
-commit 1fad5f6bbb79cf95bab3d207c2f08ab31112e043
-Author: Sunny Goyal <sunnygoyal@google.com>
-Date:   Thu Oct 16 12:08:41 2014 -0700
-
-    Not opening all apps again when AppInfo or Uninstall is selected
-    
-    Bug: 17460202
-    Change-Id: Id67a9637324abceb5b446fff5999db2a0910401b
-    
-    Conflicts:
-    	src/com/slim/slimlauncher/DeleteDropTarget.java
-
-commit 3beca13868f89e47b13d43bf655dd9123319993a
-Author: Sunny Goyal <sunnygoyal@google.com>
-Date:   Thu Oct 16 12:18:37 2014 -0700
-
-    Deleting workspace items from db which have an invalid placement
-    
-    Change-Id: I1d616e8cd533acd6ecd334d85e6468163f31f6a4
-    
-    Conflicts:
-    	src/com/slim/slimlauncher/LauncherModel.java
-
-commit 91682ebd5422f68c7767cd163e93ddbb85f11a29
-Author: Sunny Goyal <sunnygoyal@google.com>
-Date:   Thu Oct 16 14:07:29 2014 -0700
-
-    Fixing some IconCache methods not  thread safe
-    
-    Bug: 17981568
-    Change-Id: I0d49604c2e38bc9017cba527d87e24e8b086f1da
-    
-    Conflicts:
-    	src/com/slim/slimlauncher/IconCache.java
-
-commit c0c5b1c6323f7c16437dcf244ab334c1802b90d2
-Author: Adam Cohen <adamcohen@google.com>
-Date:   Thu Oct 16 09:49:52 2014 -0700
-
-    Adding ability to list folder items in separate file
-    
-    -> remove all apps default layouts
-    
-    Bug 17569015
-    
-    Change-Id: I39b899b61d5b1cff2d7801d281dacfc804c403c5
-    Conflicts:
-    	res/xml/default_workspace_4x4_no_all_apps.xml
-    	res/xml/default_workspace_5x5_no_all_apps.xml
-    	res/xml/default_workspace_5x6_no_all_apps.xml
-
-commit 3ad1b131e5eee559d8762db54659e107f5d31dab
-Author: Sunny Goyal <sunnygoyal@google.com>
-Date:   Thu Oct 16 16:03:21 2014 -0700
-
-    Removing all traces of Market button and TabIndicator
-    
-    Change-Id: I9dc10d990321697723560986834ebeef3e0f1c0d
-    Conflicts:
-    	res/layout/tab_widget_indicator.xml
-
-commit b2075788be152468eff651b86808a10dcb1bf8b2
-Author: Sunny Goyal <sunnygoyal@google.com>
-Date:   Wed Oct 1 15:33:41 2014 -0700
-
-    Refactoring layout parsing code
-    
-    Change-Id: Iee5b2280cb1e841bcfe91fdcf523de6fa7f7f3b8
-    
-    Conflicts:
-    	src/com/slim/slimlauncher/AutoInstallsLayout.java
-    	src/com/slim/slimlauncher/LauncherProvider.java
-
-commit 01fdc0d28686b6049b19e4da3cf988710aecc67c
-Author: Nick Kralevich <nnk@google.com>
-Date:   Sat Oct 18 06:57:06 2014 -0700
-
-    fix build
-    
-    Bug: 18040469
-    Change-Id: I24db4d3f4b7ee10ecf5a2c65035ce112271539fb
-
-commit 47cb8e237f55e6332f081b49d857735ea3cd0ffb
-Author: Nick Kralevich <nnk@google.com>
-Date:   Sat Oct 18 08:14:09 2014 -0700
-
-    fix build
-    
-    Bug: 18040469
-    Change-Id: I2938c7b950470eeacfb20391f109ae44d95060c7
-
-commit a956d490a619f0a212e153882e40dd0a2fd20c35
-Author: Sunny Goyal <sunnygoyal@google.com>
-Date:   Tue Oct 21 10:04:54 2014 -0700
-
-    Removing AccessibleTabView and some other dead code.
-    
-    Change-Id: Ia122a6277f924e6077dbf15a4dc40b5042aa987d
-    
-    Conflicts:
-    	src/com/slim/slimlauncher/AccessibleTabView.java
-
-commit 86c9afd1fdcf08714228ea04d9a617316d91c251
-Author: Sunny Goyal <sunnygoyal@google.com>
-Date:   Thu Oct 23 11:09:18 2014 -0700
-
-    Removing landscape string overrides
-    
-    Change-Id: Idbfc600dfb32b195726f1b035d18be92c26883fd
-
-commit 37ce7fe8fdb54f3bb336e6daf0ef901596c49edb
-Author: Sunny Goyal <sunnygoyal@google.com>
-Date:   Thu Oct 23 11:38:15 2014 -0700
-
-    Some resource fixes for drop target
-    
-    > Making it singleline with ellipsis everywhere
-    > Decreasing the text size on smaller devices
-    > Decreasing char limit for various labels
-    
-    Bug: 17563793
-    Bug: 17938450
-    Change-Id: I8ad1a156de0601d07419b2cc6418389bc2e24a4e
-    
-    Conflicts:
-    	res/layout/drop_target_bar.xml
-    	res/layout/search_drop_target_bar.xml
-    	res/values/styles.xml
-
-commit 5b21fc82539bc3aa143bd1fe2dc5d76e6505df22
-Author: Adam Cohen <adamcohen@google.com>
-Date:   Thu Oct 23 17:28:30 2014 -0700
-
-    Allow LauncherOverlay to access and manage insets
-    
-    Change-Id: Ib9faf37eb22ad2a0b18c076978ec9f2fd8864c0c
-    
-    Conflicts:
-    	res/layout-land/launcher.xml
-    	res/layout-port/launcher.xml
-    	res/layout-sw720dp/launcher.xml
-    	res/layout/launcher_overlay_example.xml
-    	res/layout/tab_widget_indicator.xml
-    	src/com/android/launcher3/LauncherCallbacks.java
-    	src/com/android/launcher3/LauncherExtension.java
-    	src/com/slim/slimlauncher/DragLayer.java
-    	src/com/slim/slimlauncher/Launcher.java
-
-commit 75df5446b9eb8bc53fb6318633371668af93e293
-Author: Adam Cohen <adamcohen@google.com>
-Date:   Fri Oct 24 12:20:20 2014 -0700
-
-    Was seeing some duplicated icons in the migration flow
-    
-    -> The only delta between the two icons was slightly different flags
-    -> No need to consider flags for the purposes of duplication
-    
-    Change-Id: I161f6ad6023d829e5ebbb15f1a9fbc9306795d80
-
-commit b9ebeed5fd5fcdb8d15677d8e6da8f0f2ddb75f4
-Author: Adam Cohen <adamcohen@google.com>
-Date:   Fri Oct 24 16:45:59 2014 -0700
-
-    Add InsettableFrameLayout layout params to easily ignore insets
-    
-    Change-Id: I117fc34627e24ea5f909c3c87e9c2dbca46babb6
-    
-    Conflicts:
-    	res/values/attrs.xml
-    	res/values/styles.xml
-
-commit 6f208c2898f0b071ddb5638dd97dbbedd15524bd
-Author: Adam Cohen <adamcohen@google.com>
-Date:   Fri Oct 24 17:40:34 2014 -0700
-
-    Fix edge case where LauncherOverlay scroll woudln't be reset
-    
-    -> If the Workspace has a single page and the user goes from overscrolling
-       in one direction, and then the other, the LauncherOverlay scroll wouldn't
-       be set to 0 until the scrolling settled
-    
-    Change-Id: I29ee9abdfa023ae3599d1590cdaebf457e2220fa
-    
-    Conflicts:
-    	src/com/slim/slimlauncher/Workspace.java
-
-commit 1fb9608a459fcc5a9adcc835cbbf0b9d0624fbb2
-Author: Sunny Goyal <sunnygoyal@google.com>
-Date:   Thu Oct 23 14:21:02 2014 -0700
-
-    Loading internal default layout if partner layout fails to load
-    
-    Bug: 18033885
-    Change-Id: I8399d0107cc3570c0e03d833601abf2cd194b3d3
-
-commit 1c90fb3ecdb4a956eced0fe06cc520f3e432d66a
-Author: Sunny Goyal <sunnygoyal@google.com>
-Date:   Thu Oct 16 09:24:19 2014 -0700
-
-    Updating backup restore logic
-    
-    > Adding DeviceProfile information in the backup
-    > Removing SharedPreference backup
-    > Adding helper methods to abort backup in the middle
-    > Comparing keys against the backup journal during restore
-    to avoid restoring corrupt/lost entries
-    > Old backups are still compatible, but lost keys verification
-    will be ignored in that case.
-    
-    Bug: 17937935
-    Bug: 17951775
-    Bug: 17260941
-    Change-Id: Iad48646cfdd69abaff5c163b2055f3b8a9b39b19
-    
-    Conflicts:
-    	src/com/android/launcher3/LauncherBackupAgentHelper.java
-    	src/com/android/launcher3/LauncherBackupHelper.java
-    	src/com/slim/slimlauncher/Launcher.java
-    	src/com/slim/slimlauncher/LauncherAppState.java
-
-commit 29f30089c321a9c7eb1aee27709cb53270d1abd0
-Author: Adam Cohen <adamcohen@google.com>
-Date:   Tue Oct 28 16:16:02 2014 -0700
-
-    Make sure DragLayer layout params are of the correct type
-    
-    bug 18141419
-    
-    Change-Id: I50695a62cf9e1f25c054ac2c7197cd056d54cfae
-
-commit 42fe4781b9810e87b4dd43f99ac64069b9923267
-Author: Sunny Goyal <sunnygoyal@google.com>
-Date:   Tue Oct 28 16:30:20 2014 -0700
-
-    Fixing insets of launcher clings
-    
-    Change-Id: Idbf46680f96086c93d667c26dc9ed214eeaf835e
-    
-    Conflicts:
-    	res/layout-land/longpress_cling.xml
-    	res/layout-port/longpress_cling.xml
-    	res/layout-sw600dp-port/longpress_cling.xml
-
-commit 1904bc16b849be4661804b70feffc3fbce2a50a8
-Author: Sunny Goyal <sunnygoyal@google.com>
-Date:   Thu Oct 30 10:16:49 2014 -0700
-
-    Moving methods which update internal sets on a separate thread
-    
-    Bug: 18152117
-    Change-Id: I5fccd203b5fe65e79dcc5aead6cb1cb6c3b622fe
-
-commit 6e4de03a69b9ec251a8cf3b07468290fd68a0118
-Author: Adam Cohen <adamcohen@google.com>
-Date:   Fri Oct 31 11:48:25 2014 -0700
-
-    Adding a couple memory optimizations to Launcher
-    
-    -> Always dispose of widget page views when leaving the activity.
-       These pages hold onto many bitmaps.
-    -> Clear database cache when leaving the activity.
-    
-    Bug: 17967108
-    Change-Id: I10ebaaed14e7cd86f09a9afcabd73043705f21b8
-    
-    Conflicts:
-    	src/com/slim/slimlauncher/AppsCustomizePagedView.java
-
-commit 28a3cd9ac05bd2073a3844ad6636752a1e31504a
-Author: Adam Cohen <adamcohen@google.com>
-Date:   Fri Oct 31 16:15:36 2014 -0700
-
-    Overlay shouldn't show up above Intro screen
-    
-    bug: 18173340
-    Change-Id: Icf738a55398023ab6bad5cced05b25e053dec0a2
-
-commit 3719f1b0ccb30e0ee08fcc325f23bddf6cc3a277
-Author: Adam Cohen <adamcohen@google.com>
-Date:   Fri Oct 31 16:58:00 2014 -0700
-
-    Fix folder hint text color. Likely a regression from upgrading the Activity theme
-    
-    Bug: 18204650
-    Change-Id: I5e23df5f4f8f1f8ca7a22c8a62797e77c9a4a9e1
-
-commit e68d8b43ed6ccc4706a5c144c24e0443144421ef
-Author: Adam Cohen <adamcohen@google.com>
-Date:   Mon Nov 3 16:13:45 2014 -0800
-
-    Updating page indicator assets
-    
-    Bug: 17318376
-    Change-Id: I4e73bf4892575bbb31f28d2cf1a4e476f8895dfa
-
-commit a6054f4f8508ff17d75e59b61f222fd3ec426d40
-Author: Sunny Goyal <sunnygoyal@google.com>
-Date:   Wed Nov 5 10:34:43 2014 -0800
-
-    Removing InstallWidgetReceiver related obsolete code.
-    
-    Change-Id: I61700b363f8af6434e750bcb5323e0ad4e5bf011
-    
-    Conflicts:
-    	src/com/slim/slimlauncher/InstallWidgetReceiver.java
-
-commit 2113224eb70d838b90eaf0c59db5542fc8484b0a
-Author: Sunny Goyal <sunnygoyal@google.com>
-Date:   Mon Nov 10 16:01:44 2014 -0800
-
-    Proguard changing methods required for click feedback aniamtion
-    
-    Bug: 18323452
-    Change-Id: Iac6d75a3c46c3a4c2a74af43bd1fca738235c2d5
-
-commit 1bd65c5454b6caddccf7554fa14cd20bde9baac8
-Author: Sunny Goyal <sunnygoyal@google.com>
-Date:   Tue Nov 11 12:23:59 2014 -0800
-
-    Removing some duplicate methods
-    
-    Change-Id: I8a1295ab74890984e8d8508aaa18fd79ac2a032d
-    
-    Conflicts:
-    	src/com/slim/slimlauncher/LauncherAppState.java
-
-commit 2474fd9491fb93da30ea1e69bd1acf4cbe123e10
-Author: Sunny Goyal <sunnygoyal@google.com>
-Date:   Mon Nov 10 18:05:31 2014 -0800
-
-    Adding shortcuts corresponding to ManagedUsers automatically.
-    
-    Bug: 16188104
-    Change-Id: Ic07578dd187263f59f3c431cbb78dea90d0c24f4
-    
-    Conflicts:
-    	src/com/slim/slimlauncher/InstallShortcutReceiver.java
-    	src/com/slim/slimlauncher/LauncherModel.java
-
-commit dd13aac26cba839f1f8aeada074a104bb1d6dcf2
-Author: Sunny Goyal <sunnygoyal@google.com>
-Date:   Fri Nov 14 10:14:18 2014 -0800
-
-    Fixing NullPointer Exception when user is deleted.
-    
-    Bug: 18388507
-    Change-Id: I4176ea37a019c2a862e6b2875cc6b03ec9118571
-
-commit 3f21e64f9926c6e2103cbeb42d6cc9b6a281abb6
-Author: Sunny Goyal <sunnygoyal@google.com>
-Date:   Fri Nov 14 11:59:57 2014 -0800
-
-    Adding a few null checks.
-      1) During migration, if launcher2 has deleted user data,
-    migration oes not happen
-      2) If Launcher3 does not has bind widget permission,
-    QSB would be null.
-    
-    Bug: 18388507
-    Change-Id: Ief81f6f77ce154e7b3ecd4b77caf24239401e738
-    
-    Conflicts:
-    	src/com/slim/slimlauncher/Launcher.java
-    	src/com/slim/slimlauncher/Workspace.java
-
-commit a356ee08484ddec97a279aff57d436f4ad433ecd
-Author: Adam Cohen <adamcohen@google.com>
-Date:   Mon Nov 17 17:45:34 2014 -0800
-
-    Add callback which got missed in refactor
-    
-    Bug 18418855
-    
-    Change-Id: Ia3a1cec76721bbbc118dd7389b5e960802a64b88
-
-commit c41d36bd46d8de6b986190afc139cccf624bba38
-Author: Adam Cohen <adamcohen@google.com>
-Date:   Tue Nov 18 17:53:44 2014 -0800
-
-    Prevent multiple workspace state animators from being started
-    
-    -> Probably an issue with the way we're wrapping ViewPropertyAnimator
-       which can lead to us acting like it's valid to have multiple
-       instances of a VPA. In reality I think this is very problematic.
-    -> For now, we can just make sure the previous animation is canceled
-       if it hasn't yet completed.
-    
-    Bug 18428886
-    
-    Change-Id: I097eec08ec68ed098e68866fb5eda72734c51b00
-
-commit bef1ce4b50c828fb4a077a6548d46ffc6ca4648b
-Author: Adam Cohen <adamcohen@google.com>
-Date:   Wed Nov 19 16:03:20 2014 -0800
-
-    Fix a couple regressions from resetting AppsCustomizeTabHost
-    
-    Bug 18409435
-    Bug 18358080
-    
-    Change-Id: I07a071342b5c5e062ab2bb562b672d93ba0d5c2e
-    
-    Conflicts:
-    	src/com/slim/slimlauncher/AppsCustomizePagedView.java
-
-commit e4cf3eb031c033b19fc764b3c982a2f0c3902d8b
-Author: Adam Cohen <adamcohen@google.com>
-Date:   Thu Nov 20 14:27:27 2014 -0800
-
-    Updating default page indicator asset
-    
-    Change-Id: If1be59c8c6590125c2347ba2928f61522f15f959
-
-commit 6596fbe3e789270475697720716663cdc174ae65
-Author: Sunny Goyal <sunnygoyal@google.com>
-Date:   Thu Nov 20 17:01:00 2014 -0800
-
-    Disabling auto addition of managed profile shortcuts
-    
-    Bug: 16188104
-    Change-Id: Ib6464c22140df6d60112eb35f5983718b3db6288
-
-commit 39b08d15b7c55a294bfaeb375cc6342927f652c3
-Author: Chris Wren <cwren@android.com>
-Date:   Mon Nov 24 16:57:54 2014 -0500
-
-    Don't try to create an app state instance during restore.
-    
-    Added a static utility function to get the DeviceProfile instead.
-    
-    Bug: 18504164
-    Change-Id: Ia510a84f1c195e58acf3bf4d1f6a42c739fdd413
-    
-    Conflicts:
-    	src/com/android/launcher3/LauncherBackupHelper.java
-    	src/com/slim/slimlauncher/LauncherAppState.java
-
-commit 7eaad376e0eb6b6922801c89bfc0a69be7562e6f
-Author: Winson Chung <winsonc@google.com>
-Date:   Mon Dec 1 15:05:17 2014 -0800
-
-    Ignoring specific db exception to workaround Bug. 18554839.
-    
-    Change-Id: I80f2dd62297eea671f2d129ae22263e72e506ae4
-    
-    Conflicts:
-    	src/com/slim/slimlauncher/WidgetPreviewLoader.java
-
-commit e5cf48148ca349280a3dd0e4cc60fce877df0eb0
-Author: Adam Cohen <adamcohen@google.com>
-Date:   Tue Dec 2 15:24:52 2014 -0800
-
-    Ensure that FirstFrameAnimatorHelper doesn't set play time when animation is complete
-    
-    Bug: 18567716
-    
-    Change-Id: I656e869b8553d650916c2abe6dc83282c8b6fd65
-
-commit 0a94f287f9ceb7b8706e5c6e4cf208bc0cc16238
-Author: Sunny Goyal <sunnygoyal@google.com>
-Date:   Wed Dec 3 14:25:16 2014 +0530
-
-    Fixing wrong package check when adding shortcuts
-    
-    Bug: 18571789,18535867
-    Change-Id: I2544fa634879846d812b00f8649520400f66d29e
-
-commit f3411f7cb73b986bb9df1fd2eda7a3cb589919e8
-Author: Adam Cohen <adamcohen@google.com>
-Date:   Thu Dec 4 10:34:57 2014 -0800
-
-    Avoid db exception on L and above
-    
-    Bug 18554839
-    
-    Change-Id: I43f391b7cc376f697ce7b5b363e8be3aa85814b5
-
-commit 41135322bcdf74cf915015ce356aca98e2db26da
-Author: Griffin Millender <griffinn.millender@gmail.com>
-Date:   Tue Apr 28 16:20:44 2015 -0500
-
-    Cleanup after merge
-
-commit 39db00a376b5afe3a18dd63de98e057ca377ee66
-Author: Sunny Goyal <sunnygoyal@google.com>
-Date:   Thu Oct 2 15:58:31 2014 -0700
-
-    Keeping icons in disabled state when SD-card is unmounted
-    
-    > changing shortcutInfo.isDisabled to be a flag based variable
-    > on received OnPackageUnavailable, icons are disabled from desktop
-    instead of being removed. Icons in all apps are removed
-    
-    Bug: 15852084
-    Bug: 16238283
-    Change-Id: I126d23c709682a917d4bbb84de71032593dce8f9
-    
-    Conflicts:
-    	src/com/slim/slimlauncher/LauncherModel.java
-
 commit 6f2cf2256ffd50e26e4be46bdde7c5fa5c3a2c15
 Author: Sunny Goyal <sunnygoyal@google.com>
 Date:   Mon Oct 6 16:23:56 2014 -0700
@@ -3182,17 +2725,6 @@ Date:   Fri May 1 21:44:54 2015 -0700
     Merge remote-tracking branch 'CM/cm-12.1' into cm-12.1
 
 project packages/apps/TvSettings/
-commit ab29d3f3f4356df0cd06d63fdb8dbf6a06126975
-Author: dhacker29 <dhackerdvm@gmail.com>
-Date:   Tue Apr 28 03:29:36 2015 -0400
-
-    Developer Settings: Add setting for updating recovery
-    
-    When enabled, the recovery of the device will be updated with the
-    version of the installed system.
-    
-    Change-Id: I552293af5bf179227e5ee1163b4653fa00f3261b
-
 commit fa2e1904c4bb73d04b4921486289981442a2160e
 Author: dhacker29 <dhackerdvm@gmail.com>
 Date:   Tue Apr 28 19:42:06 2015 -0400
@@ -3483,46 +3015,6 @@ Date:   Sat May 2 08:24:32 2015 +0930
     Change-Id: Ic2dfde51e419f95a72bff238d1542b17728f9ac7
 
 project vendor/cmremix/
-commit 9d835a583eca69e098adadab0e78e2b4b3e23ae8
-Author: Paul Beeler <pbeeler80@gmail.com>
-Date:   Mon Apr 27 16:05:30 2015 -0700
-
-    Update changes from build
-    
-    Change-Id: I82e8efffee4589bb7dcd1add6545ae1e749859cc
-    Signed-off-by: Paul Beeler <pbeeler80@gmail.com>
-    
-    Conflicts:
-    	config/cmremix_sm.mk
-    	products/sm_hlte.mk
-
-commit d387b02b5cb978cfde5e8f961ca5795502c24f2b
-Author: Paul Beeler <pbeeler80@gmail.com>
-Date:   Mon Apr 27 03:23:56 2015 -0600
-
-    Remove flag -fprefetch-loop-arrays
-    
-    Change-Id: I4ab35836b460c20d75bcc2e08fdb6a194c1b9064
-    Signed-off-by: Paul Beeler <pbeeler80@gmail.com>
-
-commit 81558032eef8ae5aa151945cdc9246d73bea086a
-Author: ZION959 <ziontran@gmail.com>
-Date:   Tue Apr 28 02:33:37 2015 -0700
-
-    sm.mk : disabled bunchs of violate strict aliasing modules for CM-12.1 Base
-
-commit 9be9c8c6e43dd219a704da31e62df0f6b058a933
-Author: Paul Beeler <pbeeler80@gmail.com>
-Date:   Tue Apr 28 13:36:53 2015 -0700
-
-    Add a option to disable vectorization flags for bluetooth (1/2)
-    
-    Change-Id: I90f1e2489d16096401000b00d530805db470a32b
-    Signed-off-by: Paul Beeler <pbeeler80@gmail.com>
-    
-    Conflicts:
-    	config/cmremix_sm.mk
-
 commit 02a3112c45ba1d05642cc606d80eb716580abef1
 Author: Paul Beeler <pbeeler80@gmail.com>
 Date:   Wed Apr 29 13:00:34 2015 -0600
