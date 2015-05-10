@@ -1,19 +1,29 @@
 
 **** github:CMRemix/android_kernel_samsung_trlte ****
+51527ac : decompressor: add LZ4 decompressor module <Kyungsik Lee> 1 year, 10 months ago
+b212bd2 : build base CMRemix v0.2 <ZION959> 4 hours ago
+6ad0de7 : doubletap2wake: Add user selected feather radius (savoca) <ZION959> 5 days ago
+7f5b00b : Sweep2Wake & doubletap2wake : v1.7 & support for powersuspend [showp1984] <ZION959> 4 hours ago
+71cc764 : msm: mdss: Adding lcd notifier <ZION959> 4 hours ago
+440a142 : leds: add LED control (fading & brightness) <R Sricharan> 2 years, 2 months ago
+a3817c1 : Enable quickwakeup <friedrich420> 6 weeks ago
 cec366a : Faux123 Sound Control: 3.6 <Pavel> 3 months ago
-043e20f : Enable last_kmsg and increase log buffer shift plus add pr_alert when last_kmsg is not initialized and add shit load of tcp congestion control options & enabled f2fs <ZION959> 8 weeks ago
+043e20f : Enable last_kmsg and increase log buffer shift plus add pr_alert when last_kmsg is not initialized and add shit load of tcp congestion control options & enabled f2fs <ZION959> 9 weeks ago
 1ecf757 : Force Fast Charge v1.2 [Yank555.lu] <ZION959> 2 months ago
 c02ee32 : binfmt_elf.c: use get_random_int() to fix entropy depleting (Jeff Liu ) <yank555-lu> 1 year, 3 months ago
 349b956 : block: fiops ioscheduler - squashed commit (all credits for forward port to faux123) <yank555-lu> 4 months ago
 606b06a : fs: sync: Asynchronous Fsync from HTC <imoseyon> 5 months ago
 71ea4a5 : msm: mdss: Add pa_v2 support to KCAL <savoca> 3 months ago
 99d9a6b : msm: mdss: Replace PGC implementation with PCC for KCAL <savoca> 3 months ago
-9fe445f : msm: mdss: savoca's KCAL pp control adapted for shamu (via imoseyon) <ZION959> 8 weeks ago
-1752319 : cpufreq: CPU max. hardlimit v2.2 (Yank555.lu) <ZION959> 66 minutes ago
-3701441 : cpufreq: CPU max. hardlimit v2.1 (Yank555.lu) <ZION959> 67 minutes ago
-eb99c53 : Simple GPU Algorithm: Initial coding for devfreq based Adreno Drivers (faux123) <ZION959> 70 minutes ago
+9fe445f : msm: mdss: savoca's KCAL pp control adapted for shamu (via imoseyon) <ZION959> 9 weeks ago
+1752319 : cpufreq: CPU max. hardlimit v2.2 (Yank555.lu) <ZION959> 24 hours ago
+3701441 : cpufreq: CPU max. hardlimit v2.1 (Yank555.lu) <ZION959> 24 hours ago
+eb99c53 : Simple GPU Algorithm: Initial coding for devfreq based Adreno Drivers (faux123) <ZION959> 24 hours ago
 08bbd56 : PM: devfreq: Fix simple_ondemand crashing on startup <myfluxi> 1 year, 3 months ago
-fe8a71e : intelli_plug: intelligent hotplug cpu driver with eco mode - squashed committ to v4.0 (faux123) <faux123> 72 minutes ago
-edff604 : kernel/power/powersuspend: new PM kernel driver for Android w/o early_suspend v1.2 - v1.7 (faux123/Yank555.lu) <ZION959> 8 weeks ago
-c74b2f5 : Make the kernel permissive [thank you @chenglu] <ZION959> 87 minutes ago
+fe8a71e : intelli_plug: intelligent hotplug cpu driver with eco mode - squashed committ to v4.0 (faux123) <faux123> 24 hours ago
+edff604 : kernel/power/powersuspend: new PM kernel driver for Android w/o early_suspend v1.2 - v1.7 (faux123/Yank555.lu) <ZION959> 9 weeks ago
+c74b2f5 : Make the kernel permissive [thank you @chenglu] <ZION959> 24 hours ago
+ 
+**** cmR:android_vendor_cmremix ****
+e0f9b04 : set prebuilt chromium default again <ZION959> 22 hours ago
  
