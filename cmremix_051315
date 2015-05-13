@@ -1,0 +1,90 @@
+
+**** github:CMRemix/android_device_samsung_trltespr ****
+11cde80 : Delete gps.conf <Keith Lynch> 6 weeks ago
+f911ca9 : Update full_trltespr.mk <Keith Lynch> 6 weeks ago
+14fb851 : Update init_trlte.c <Keith Lynch> 6 weeks ago
+116bbe0 : Update proprietary-files.txt <Keith Lynch> 6 weeks ago
+35a0fe8 : Update system.prop <Keith Lynch> 6 weeks ago
+64b560e : Update trlteRIL.java <Keith Lynch> 6 weeks ago
+300995a : Update init_trlte.c <Keith Lynch> 6 weeks ago
+4aea811 : Update init_trlte.c <Keith Lynch> 6 weeks ago
+e0d9115 : Update system.prop <Keith Lynch> 6 weeks ago
+066ea65 : Update system.prop <Keith Lynch> 6 weeks ago
+f9d8836 : Update trlteRIL.java <Keith Lynch> 6 weeks ago
+321e995 : Update init_trlte.c <Keith Lynch> 6 weeks ago
+e10287c : Update proprietary-files.txt <Keith Lynch> 7 weeks ago
+6148219 : Update full_trltespr.mk <Keith Lynch> 7 weeks ago
+5c035c2 : Delete apns-conf.xml <Keith Lynch> 7 weeks ago
+89f7cfb : Update system.prop <Keith Lynch> 7 weeks ago
+9d4b533 : Update init_trlte.c <Keith Lynch> 7 weeks ago
+8a7ec89 : Update init_trlte.c <Keith Lynch> 7 weeks ago
+3c61a58 : Update full_trltespr.mk <Keith Lynch> 7 weeks ago
+e215502 : Create gps.conf <Keith Lynch> 7 weeks ago
+35e0a68 : Create apns-conf.xml <Keith Lynch> 7 weeks ago
+a4ae459 : Update full_trltespr.mk <Keith Lynch> 7 weeks ago
+83dae2c : Update init_trlte.c <Keith Lynch> 7 weeks ago
+3476ffd : Update init_trlte.c <Keith Lynch> 7 weeks ago
+22c1db8 : Update init_trlte.c <Keith Lynch> 7 weeks ago
+8f51980 : Update init_trlte.c <Keith Lynch> 7 weeks ago
+cd4d82c : Update init_trlte.c <Keith Lynch> 7 weeks ago
+5e33406 : Update init_trlte.c <Keith Lynch> 7 weeks ago
+a8b822d : Update system.prop <Keith Lynch> 7 weeks ago
+acb9b37 : Update trlteRIL.java <Keith Lynch> 7 weeks ago
+f24b434 : Update system.prop <Keith Lynch> 7 weeks ago
+a17ccde : Update init_trlte.c <Keith Lynch> 7 weeks ago
+3a0da81 : Update init_trlte.c <Keith Lynch> 7 weeks ago
+bf88976 : Update trlteRIL.java <Keith Lynch> 7 weeks ago
+ec1a8fa : Update trlteRIL.java <Keith Lynch> 7 weeks ago
+1d22e50 : Update trlteRIL.java <Keith Lynch> 8 weeks ago
+c114a37 : Update init_trlte.c <Keith Lynch> 8 weeks ago
+33d1ad7 : Update system.prop <Keith Lynch> 8 weeks ago
+0f5da7f : Update system.prop <Keith Lynch> 8 weeks ago
+97ec5fc : Update trlteRIL.java <Keith Lynch> 8 weeks ago
+7c6b7c2 : Update trlteRIL.java <Keith Lynch> 8 weeks ago
+f19a70f : Update trlteRIL.java <Keith Lynch> 9 weeks ago
+c2d2469 : Update trlteRIL.java <Keith Lynch> 9 weeks ago
+9001855 : Update system.prop <Keith Lynch> 9 weeks ago
+6d17c15 : Update system.prop <Keith Lynch> 9 weeks ago
+a3cb05e : Update system.prop <Keith Lynch> 9 weeks ago
+d1d6a79 : Update trlteRIL.java <Keith Lynch> 9 weeks ago
+7621ee9 : Update system.prop <Keith Lynch> 9 weeks ago
+19cca26 : Update trlteRIL.java <Keith Lynch> 9 weeks ago
+0bd224d : Update init_trlte.c <Keith Lynch> 9 weeks ago
+ 
+**** cmR:android_frameworks_base ****
+d789360 : SystemUI: fix quick settings on secure lockscreen feature again <Altaf-Mahdi> 8 weeks ago
+795ef70 : SystemUI: fix quick settings on secure lockscreen feature <Altaf-Mahdi> 3 months ago
+f48a887 : SystemUI: Use smaller battery padding <LuK1337> 11 days ago
+9a9ddf8 : Revert: SystemUI: Use smaller battery padding <ZION959> 29 hours ago
+d5712e0 : Fix PackageManager crashes w/ queryIntent using callerUID of 0 <Andy Mast> 31 hours ago
+3063013 : TorchService: close all opened cameras <Roman Birg> 4 days ago
+df2e0e9 : Remove resources.apk from ZipSet when removing overlay <d34d> 2 days ago
+2fa9e7b : textclock: Update the time when performing a doze pulse <Christopher R. Palmer> 2 days ago
+d4d0e32 : dozeui: Broadcast an intent when beginning a doze pulse <Christopher R. Palmer> 2 days ago
+af03c84 : Notification drawer: Custom clear all icon color, (1/2): <XXMrHyde> 29 hours ago
+0c4b182 : framework/base: Make the base framework default to google.android.webview. <Zyg0te> 2 days ago
+ 
+**** cmR:android_frameworks_opt_telephony ****
+395eea5 : Change SubId from long to int type. <Sridhar Dubbaka> 7 weeks ago
+ 
+**** github:CMRemix/android_kernel_samsung_trlte ****
+644b2ad : cpufreq_elementalx: remove fb notifier <flar2> 3 weeks ago
+a04d219 : cpufreq_elementalx: pick next freq from freq tables <flar2> 7 weeks ago
+f00d323 : cpufreq_elementalx: tune and make less aggressive <flar2> 8 weeks ago
+2b0bfba : cpufreq_elementalx: replace input boost with down factor and floor frequency <flar2> 8 weeks ago
+45eb8ba : cpufreq_elementalx: disable input boost <flar2> 8 weeks ago
+2d3518c : cpufreq_elementalx: let input boost drop to lower frequency <flar2> 3 months ago
+8719006 : cpufreq_elementalx: increase max screen off freq <flar2> 3 months ago
+4dc11ff : cpufreq_elementalx: apply input boost per-cpu <flar2> 3 months ago
+94b3d01 : cpufreq_elementalx: refactor and adjust <flar2> 4 months ago
+f37ab6a : ElementalX governor version 2 (flar2) <ZION959> 28 hours ago
+ 
+**** cmR:android_packages_apps_Settings ****
+46cf9b2 : Notification drawer clear all icon - Remove dependency <Janson Kang> 29 hours ago
+7bbd1c9 : Notification drawer icon default color - Comment out unnecessary <Janson Kang> 30 hours ago
+21072a0 : Notification drawer: Custom clear all icon color, (2/2): <XXMrHyde> 29 hours ago
+ 
+**** cmR:android_packages_services_Telephony ****
+f8ec9e0 : Telecom : Rename blacklist <Danesh M> 2 weeks ago
+8de0502 : Telephony: Improve NetworkSelection <BadDaemon> 6 days ago
+ 
