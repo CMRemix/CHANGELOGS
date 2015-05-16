@@ -1,21 +1,20 @@
 
 **** cmR:CMRemix ****
-96cd930 : welcome android.5.1.1_r2 <ZION959> 78 minutes ago
-e3ccd59 : CyanogenMod: Add libaxolotl, curve25519 and libtextsecure from external. <Adnan Begovic> 6 days ago
+96cd930 : welcome android.5.1.1_r2 <ZION959> 16 hours ago
+e3ccd59 : CyanogenMod: Add libaxolotl, curve25519 and libtextsecure from external. <Adnan Begovic> 7 days ago
  
 **** github:CyanogenMod/android_bionic ****
-6bb134b : libc: denver should compile bcopy <HashBang> 13 hours ago
+6bb134b : libc: denver should compile bcopy <HashBang> 28 hours ago
  
 **** github:CyanogenMod/android_bootable_recovery ****
 bcf98fe : updater: Allow devices to suppress BLKDISCARD <andi34> 4 days ago
  
 **** cmR:android_build ****
-dc8a1cc : I'm not happy with strict <Paul Beeler> 4 hours ago
-269a23a : Merge tag android-5.1.1_r2 into cmremix <ZION959> 74 minutes ago
-3e6cc43 : build: Add IGNORE_SUBDIR to clear vars. <Adnan Begovic> 2 hours ago
+269a23a : Merge tag android-5.1.1_r2 into cmremix <ZION959> 16 hours ago
+3e6cc43 : build: Add IGNORE_SUBDIR to clear vars. <Adnan Begovic> 17 hours ago
 b79daa0 : build/core: Create means of ignoring subdir layer for packages. <Adnan Begovic> 5 days ago
 360d0e9 : build/target: Include CM platform jar in system server. <Adnan Begovic> 2 weeks ago
-2497791 : kernel: Fix kernelconfig build <Michael Bestas> 2 days ago
+2497791 : kernel: Fix kernelconfig build <Michael Bestas> 3 days ago
  
 **** github:CMRemix/android_device_qcom_common ****
 f427524 : init: Set permissions for dynamic partial update node <Jeykumar Sankaran> 9 months ago
@@ -76,7 +75,7 @@ d1d6a79 : Update trlteRIL.java <Keith Lynch> 9 weeks ago
 0bd224d : Update init_trlte.c <Keith Lynch> 9 weeks ago
  
 **** github:CyanogenMod/android_external_ffmpeg ****
-566fb12 : ffmpeg: Update Android build configuration <Steve Kondik> 4 days ago
+566fb12 : ffmpeg: Update Android build configuration <Steve Kondik> 5 days ago
 a2ad7fd : fate: Include branch information in the payload header <Timothy Gu> 4 weeks ago
 5fd5b8e : avformat/utils: Ensure that AVFMT_FLAG_CUSTOM_IO is set before use <Michael Niedermayer> 3 weeks ago
 3f629c8 : avformat/img2dec: do not rewind custom io buffers <Michael Niedermayer> 3 weeks ago
@@ -142,30 +141,32 @@ f6c1083 : stagefright: Correct total duration of HFR clips <Leena Winterrowd> 1 
 c51bd95 : audio: Fix media server crash at the start of voice call <Venkata Narendra Kumar Gutta> 3 weeks ago
  
 **** cmR:android_frameworks_base ****
-45903f3 : fixed build <ZION959> 12 minutes ago
+4263c80 : SystemUI: Point to correct permission for BIND_CUSTOM_TILE_LISTENER. <Adnan Begovic> 18 hours ago
+40c7b47 : SystemUI: Disable QS by default on secure lock screen (1/2) <ZION959> 7 hours ago
+45903f3 : fixed build <ZION959> 15 hours ago
 f5305fd : connectivity: Remove net id broadcast change event <Bryse Flowers> 7 weeks ago
-2106fc5 : base: Nat464: unregister network observer when we stop! <Christopher R. Palmer> 15 hours ago
-54fde29 : SystemUI: Squash custom tile commits <Adnan Begovic> 2 hours ago
-d684ad3 : SystemServer: Allow starting of overlaid external services. <Adnan Begovic> 2 weeks ago
-0dd3a28 : SystemUI: Fix unnecessary camel case <ZION959> 2 hours ago
-f3f0f90 : SystemUI: Fix EL translation <Michael Bestas> 22 hours ago
-96c8e63 : fixed build for fix quich settings on secure keyguard <ZION959> 2 hours ago
+2106fc5 : base: Nat464: unregister network observer when we stop! <Christopher R. Palmer> 30 hours ago
+54fde29 : SystemUI: Squash custom tile commits <Adnan Begovic> 17 hours ago
+d684ad3 : SystemServer: Allow starting of overlaid external services. <Adnan Begovic> 3 weeks ago
+0dd3a28 : SystemUI: Fix unnecessary camel case <ZION959> 17 hours ago
+f3f0f90 : SystemUI: Fix EL translation <Michael Bestas> 2 days ago
+96c8e63 : fixed build for fix quich settings on secure keyguard <ZION959> 17 hours ago
 d789360 : SystemUI: fix quick settings on secure lockscreen feature again <Altaf-Mahdi> 8 weeks ago
 795ef70 : SystemUI: fix quick settings on secure lockscreen feature <Altaf-Mahdi> 3 months ago
 f48a887 : SystemUI: Use smaller battery padding <LuK1337> 11 days ago
-9a9ddf8 : Revert: SystemUI: Use smaller battery padding <ZION959> 31 hours ago
-d5712e0 : Fix PackageManager crashes w/ queryIntent using callerUID of 0 <Andy Mast> 33 hours ago
+9a9ddf8 : Revert: SystemUI: Use smaller battery padding <ZION959> 2 days ago
+d5712e0 : Fix PackageManager crashes w/ queryIntent using callerUID of 0 <Andy Mast> 2 days ago
 3063013 : TorchService: close all opened cameras <Roman Birg> 5 days ago
 df2e0e9 : Remove resources.apk from ZipSet when removing overlay <d34d> 2 days ago
-2fa9e7b : textclock: Update the time when performing a doze pulse <Christopher R. Palmer> 2 days ago
-d4d0e32 : dozeui: Broadcast an intent when beginning a doze pulse <Christopher R. Palmer> 2 days ago
-af03c84 : Notification drawer: Custom clear all icon color, (1/2): <XXMrHyde> 31 hours ago
-0c4b182 : framework/base: Make the base framework default to google.android.webview. <Zyg0te> 2 days ago
+2fa9e7b : textclock: Update the time when performing a doze pulse <Christopher R. Palmer> 3 days ago
+d4d0e32 : dozeui: Broadcast an intent when beginning a doze pulse <Christopher R. Palmer> 3 days ago
+af03c84 : Notification drawer: Custom clear all icon color, (1/2): <XXMrHyde> 2 days ago
+0c4b182 : framework/base: Make the base framework default to google.android.webview. <Zyg0te> 3 days ago
  
 **** cmR:android_frameworks_native ****
 e1d34a5 : SurfaceFlinger: Fix integer overflow in Mesh ctor <Dan Stoza> 2 weeks ago
-0f46ff7 : libgui: Clear frame number while freeing slot <Dan Stoza> 11 days ago
-6db553c : Close Fence FDs in error cases of Surface and GraphicBufferMapper <Taiju Tsuiki> 13 days ago
+0f46ff7 : libgui: Clear frame number while freeing slot <Dan Stoza> 12 days ago
+6db553c : Close Fence FDs in error cases of Surface and GraphicBufferMapper <Taiju Tsuiki> 2 weeks ago
 0afb1a3 : Remove gamma correction from color correction shader <Alan Viverette> 2 weeks ago
  
 **** github:CyanogenMod/android_frameworks_opt_hardware ****
@@ -180,7 +181,7 @@ e1d34a5 : SurfaceFlinger: Fix integer overflow in Mesh ctor <Dan Stoza> 2 weeks 
 a25137d : hwc: Add check for dirtyRect clear call. <Ramakant Singh> 5 months ago
  
 **** github:CMRemix/android_hardware_samsung ****
-f7a63e5 : libril: Fix network operator search <Utkarsh Gupta> 3 days ago
+f7a63e5 : libril: Fix network operator search <Utkarsh Gupta> 4 days ago
  
 **** github:CMRemix/android_kernel_samsung_trlte ****
 644b2ad : cpufreq_elementalx: remove fb notifier <flar2> 3 weeks ago
@@ -190,9 +191,9 @@ f00d323 : cpufreq_elementalx: tune and make less aggressive <flar2> 8 weeks ago
 45eb8ba : cpufreq_elementalx: disable input boost <flar2> 8 weeks ago
 2d3518c : cpufreq_elementalx: let input boost drop to lower frequency <flar2> 3 months ago
 8719006 : cpufreq_elementalx: increase max screen off freq <flar2> 3 months ago
-4dc11ff : cpufreq_elementalx: apply input boost per-cpu <flar2> 3 months ago
+4dc11ff : cpufreq_elementalx: apply input boost per-cpu <flar2> 4 months ago
 94b3d01 : cpufreq_elementalx: refactor and adjust <flar2> 4 months ago
-f37ab6a : ElementalX governor version 2 (flar2) <ZION959> 30 hours ago
+f37ab6a : ElementalX governor version 2 (flar2) <ZION959> 2 days ago
  
 **** github:CyanogenMod/android_packages_apps_Contacts ****
 6e26e34 : Summarize local phone storage in MemoryStatusActivity. <Matt Garnes> 8 weeks ago
@@ -202,51 +203,57 @@ fc1a70a : Store all local contacts in only one account. <Matt Garnes> 8 weeks ag
 f5bf44d : contactscommon: ensure preferences are loaded before reload data <Jorge Ruesga> 8 weeks ago
  
 **** cmR:android_packages_apps_InCallUI ****
-04b7efe : InCallUI: Update another blacklist string <Michael Bestas> 20 hours ago
-4184f9d : InCallUI: Update blacklist strings <Michael Bestas> 21 hours ago
+04b7efe : InCallUI: Update another blacklist string <Michael Bestas> 35 hours ago
+4184f9d : InCallUI: Update blacklist strings <Michael Bestas> 2 days ago
  
 **** cmR:android_packages_apps_Mms-caf ****
-0a8f504 : Mms: Update blacklist strings <Michael Bestas> 22 hours ago
+0a8f504 : Mms: Update blacklist strings <Michael Bestas> 2 days ago
  
 **** cmR:android_packages_apps_Settings ****
-4aae7e6 : Settings: add Bluetooth tethering option to BT overflow menu <Roman Birg> 12 days ago
-53ce111 : Settings: give better hint when checking BT "Internet access" fails <Roman Birg> 12 days ago
+57ed41c : Settings: Disable QS by default on secure lock screen (2/2) <ZION959> 7 hours ago
+4aae7e6 : Settings: add Bluetooth tethering option to BT overflow menu <Roman Birg> 13 days ago
+53ce111 : Settings: give better hint when checking BT "Internet access" fails <Roman Birg> 13 days ago
 36ed57b : Expose text color in MSIM edit dialog. <Dave Kover> 2 days ago
-719f6f5 : Settings: Improve strings <ZION959> 2 hours ago
-0d61baa : Cleanup. <Danny Baumann> 28 hours ago
+719f6f5 : Settings: Improve strings <ZION959> 16 hours ago
+0d61baa : Cleanup. <Danny Baumann> 2 days ago
 243419c : Settings: update About screen device model fields <Roman Birg> 3 weeks ago
 218b983 : Settings : Update blacklist strings <Danesh M> 2 weeks ago
 166854e : Settings: add killswitch logic to factory reset screen <Roman Birg> 8 weeks ago
-46cf9b2 : Notification drawer clear all icon - Remove dependency <Janson Kang> 31 hours ago
-7bbd1c9 : Notification drawer icon default color - Comment out unnecessary <Janson Kang> 33 hours ago
-21072a0 : Notification drawer: Custom clear all icon color, (2/2): <XXMrHyde> 31 hours ago
+46cf9b2 : Notification drawer clear all icon - Remove dependency <Janson Kang> 2 days ago
+7bbd1c9 : Notification drawer icon default color - Comment out unnecessary <Janson Kang> 2 days ago
+21072a0 : Notification drawer: Custom clear all icon color, (2/2): <XXMrHyde> 2 days ago
  
 **** github:CyanogenMod/android_packages_apps_TvSettings ****
-d21dd3a : TvSettings: Improve strings <Michael Bestas> 20 hours ago
+d21dd3a : TvSettings: Improve strings <Michael Bestas> 35 hours ago
  
 **** github:CyanogenMod/android_packages_providers_TelephonyProvider ****
 4fa5ded : TelephonyProvider: change default IDD for Indonesia <emancebo> 13 days ago
  
 **** cmR:android_packages_services_Telecomm ****
-0e97d44 : Telecomm: Update blacklist strings <Michael Bestas> 22 hours ago
+0e97d44 : Telecomm: Update blacklist strings <Michael Bestas> 2 days ago
  
 **** cmR:android_packages_services_Telephony ****
 f8ec9e0 : Telecom : Rename blacklist <Danesh M> 3 weeks ago
-8de0502 : Telephony: Improve NetworkSelection <BadDaemon> 6 days ago
+8de0502 : Telephony: Improve NetworkSelection <BadDaemon> 7 days ago
  
 **** cmR:android_system_core ****
 5cccf81 : fastboot: Add MMX fastboot USB ID <Chao Chen> 2 weeks ago
  
 **** github:CyanogenMod/android_vendor_cm ****
-aaac132 : Build Platform resource package. <Adnan Begovic> 7 days ago
+a6b8d30 : cm: Ignore filters for platform library. <Adnan Begovic> 14 hours ago
+aaac132 : Build Platform resource package. <Adnan Begovic> 8 days ago
 b53c503 : Build CM Platform Library <Adnan Begovic> 2 weeks ago
 4f810fe : Overlay external services start. <Adnan Begovic> 2 weeks ago
-7520a20 : Revert "vendor/cm: add CMBugReport" <Roman Birg> 33 hours ago
+7520a20 : Revert "vendor/cm: add CMBugReport" <Roman Birg> 2 days ago
 94645ab : vendor/cm: add CMBugReport <Roman Birg> 9 months ago
  
 **** github:CyanogenMod/cm_platform_sdk ****
+5a08354 : Rename resource files <Michael Bestas> 11 hours ago
+37c4b96 : CMSDK: Don't share a namespace with the library. <Adnan Begovic> 13 hours ago
+7267e32 : Fix package name. <Danny Baumann> 16 hours ago
+3f13414 : CMSDK: Make sure we're binding the correct permission for enforcement. <Adnan Begovic> 16 hours ago
 4f0c2c3 : CMSDK: Update tests for new permissions. <Adnan Begovic> 6 days ago
 2383b60 : CMSDK: Update sample for new declared permission. <Adnan Begovic> 6 days ago
 6bcee3f : CMSDK: Ignore subdir layer for resource package. <Adnan Begovic> 2 days ago
-37fc76f : CMSDK: Create cyanogenmod platform resource package. <Adnan Begovic> 7 days ago
+37fc76f : CMSDK: Create cyanogenmod platform resource package. <Adnan Begovic> 8 days ago
  
