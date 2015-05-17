@@ -1,8 +1,8 @@
 
 **** cmR:android_build ****
-e73db44 : strict: more fixups (1/2) <Paul Beeler> 25 hours ago
-6a5d608 : Remove debugging from optimizations: <Paul Beeler> 34 hours ago
-853252f : Extra sabermod flags:  Enable the gcc memory leak detector <Paul Beeler> 34 hours ago
+e73db44 : strict: more fixups (1/2) <Paul Beeler> 27 hours ago
+6a5d608 : Remove debugging from optimizations: <Paul Beeler> 2 days ago
+853252f : Extra sabermod flags:  Enable the gcc memory leak detector <Paul Beeler> 2 days ago
 3837d32 : I'm not happy with strict <Paul Beeler> 3 days ago
  
 **** github:CyanogenMod/android_external_bluetooth_bluedroid ****
@@ -12,25 +12,25 @@ e73db44 : strict: more fixups (1/2) <Paul Beeler> 25 hours ago
 949ae01 : stagefright-plugins: Add -Wno-psabi for ARM64 builds as well <Ethan Chen> 2 days ago
  
 **** github:CyanogenMod/android_external_whispersystems_WhisperPush ****
-00d880b : Automatic translation import <Michael Bestas> 11 hours ago
+00d880b : Automatic translation import <Michael Bestas> 14 hours ago
  
 **** cmR:android_frameworks_av ****
 a1fa45c : audio: Fixed streamType for non-media streams <Ramjee Singh> 8 days ago
  
 **** cmR:android_frameworks_base ****
-931db7e : Remove unused symbols <Janson Kang> 6 hours ago
-04979d3 : Re-add missing ellipsis string <Abhisek Devkota> 14 hours ago
-0eb5caa : Don't dismiss keyguard if recreating status bar <d34d> 11 hours ago
+931db7e : Remove unused symbols <Janson Kang> 9 hours ago
+04979d3 : Re-add missing ellipsis string <Abhisek Devkota> 17 hours ago
+0eb5caa : Don't dismiss keyguard if recreating status bar <d34d> 14 hours ago
 62759c1 : [1/3] Improve PreviewsColumns Implementation <Richard MacGregor> 2 weeks ago
-c9b4be5 : Automatic translation import <Michael Bestas> 11 hours ago
-d25f71a : Profiles: make Default profile change ring mode back on <Roman Birg> 15 hours ago
+c9b4be5 : Automatic translation import <Michael Bestas> 14 hours ago
+d25f71a : Profiles: make Default profile change ring mode back on <Roman Birg> 17 hours ago
 e71635e : [ActivityManager] Fix activity always visible. <riddle_hsu> 3 months ago
 9b07eee : [ActivityManager] Move UI operation to UI handler <riddle_hsu> 4 weeks ago
 c32d871 : KeyGuard: Fix the wrong Plmn/SPN display. <Umashankar Godachi> 4 weeks ago
-8c41a06 : SystemBars: Allow the StatusBarComponent be externally defined <bmc08gt> 4 hours ago
+8c41a06 : SystemBars: Allow the StatusBarComponent be externally defined <bmc08gt> 7 hours ago
 b24bc2e : Revert "ConnectivityService: add persist.radio.noril" <Dan Pasanen> 2 weeks ago
 465043b : Remove some useless debug spam. <Danny Baumann> 9 days ago
-8c84b62 : fixup volume stream linking <Roman Birg> 35 hours ago
+8c84b62 : fixup volume stream linking <Roman Birg> 2 days ago
  
 **** cmR:android_frameworks_opt_telephony ****
 2b50344 : Remove useless debug spam. <Danny Baumann> 9 days ago
@@ -42,116 +42,116 @@ b24bc2e : Revert "ConnectivityService: add persist.radio.noril" <Dan Pasanen> 2 
 a708ad9 : post_proc: add support for virtualizer capability query <Weiyin Jiang> 8 weeks ago
  
 **** github:CyanogenMod/android_hardware_ril ****
-6ffe26f : ril-caf: Allow using RIL version 10 <Steve Kondik> 35 hours ago
+6ffe26f : ril-caf: Allow using RIL version 10 <Steve Kondik> 2 days ago
 60308b2 : Rild: Use division instead of mod to determine array size <Dheeraj Shetty> 4 months ago
 e7c6279 : Added support for acquiring CAP_BLOCK_SUSPEND capability <Dheeraj Shetty> 4 months ago
 94ab42d : Enabling RIL_QCOM_VERSION <Ravinder Konka> 4 months ago
  
 **** github:CyanogenMod/android_packages_apps_AudioFX ****
-672d5a7 : Automatic translation import <Michael Bestas> 11 hours ago
+672d5a7 : Automatic translation import <Michael Bestas> 14 hours ago
  
 **** github:CyanogenMod/android_packages_apps_Bluetooth ****
-d56399b : Automatic translation import <Michael Bestas> 11 hours ago
+d56399b : Automatic translation import <Michael Bestas> 14 hours ago
  
 **** github:CyanogenMod/android_packages_apps_BluetoothExt ****
-aac31fd : Automatic translation import <Michael Bestas> 11 hours ago
+aac31fd : Automatic translation import <Michael Bestas> 14 hours ago
  
 **** cmR:android_packages_apps_Browser ****
-6d90275 : Automatic translation import <Michael Bestas> 11 hours ago
+6d90275 : Automatic translation import <Michael Bestas> 14 hours ago
  
 **** github:CyanogenMod/android_packages_apps_CMFileManager ****
-3a81139 : Automatic translation import <Michael Bestas> 11 hours ago
-2ed65f0 : Fix back arrow discoloration in action bar <Stephen Bird> 15 hours ago
+3a81139 : Automatic translation import <Michael Bestas> 14 hours ago
+2ed65f0 : Fix back arrow discoloration in action bar <Stephen Bird> 18 hours ago
 c5c6852 : CM Easy Mode File Manager Navigation fixes <Stephen Bird> 3 days ago
-da3e50d : Prevent possible OOBE when ran under monkey test <Martin Brabham> 33 hours ago
+da3e50d : Prevent possible OOBE when ran under monkey test <Martin Brabham> 2 days ago
 439c98b : [CMFileManager]Fix the software don't hide when the drawerlayout open. <kai.cao> 4 days ago
  
 **** github:CyanogenMod/android_packages_apps_CMWallpapers ****
-993ba51 : Automatic translation import <Michael Bestas> 11 hours ago
+993ba51 : Automatic translation import <Michael Bestas> 14 hours ago
  
 **** github:CyanogenMod/android_packages_apps_Calculator ****
-e84f50a : Automatic translation import <Michael Bestas> 11 hours ago
+e84f50a : Automatic translation import <Michael Bestas> 14 hours ago
  
 **** github:CyanogenMod/android_packages_apps_Calendar ****
-b25c6c5 : Fix for days that are expected to be 3chars end up being longer. <Stephen Bird> 10 hours ago
-5b8aac9 : Automatic translation import <Michael Bestas> 11 hours ago
+b25c6c5 : Fix for days that are expected to be 3chars end up being longer. <Stephen Bird> 13 hours ago
+5b8aac9 : Automatic translation import <Michael Bestas> 14 hours ago
 44d9d0c : Calendar:"ADD ACCOUNT" has no function when long tapping date to creat new event in month view. <michael.yang> 12 days ago
  
 **** github:CyanogenMod/android_packages_apps_Camera2 ****
-b13ecf2 : Automatic translation import <Michael Bestas> 11 hours ago
+b13ecf2 : Automatic translation import <Michael Bestas> 14 hours ago
  
 **** github:CyanogenMod/android_packages_apps_CellBroadcastReceiver ****
-03b30b5 : Automatic translation import <Michael Bestas> 11 hours ago
+03b30b5 : Automatic translation import <Michael Bestas> 14 hours ago
  
 **** github:CyanogenMod/android_packages_apps_Contacts ****
-4c91781 : Automatic translation import <Michael Bestas> 11 hours ago
+4c91781 : Automatic translation import <Michael Bestas> 14 hours ago
  
 **** github:CyanogenMod/android_packages_apps_ContactsCommon ****
-3285787 : Automatic translation import <Michael Bestas> 11 hours ago
+3285787 : Automatic translation import <Michael Bestas> 14 hours ago
  
 **** github:CyanogenMod/android_packages_apps_DeskClock ****
-5e50aef : Automatic translation import <Michael Bestas> 11 hours ago
+5e50aef : Automatic translation import <Michael Bestas> 14 hours ago
  
 **** cmR:android_packages_apps_Dialer ****
-d3d5cc7 : Automatic translation import <Michael Bestas> 11 hours ago
+d3d5cc7 : Automatic translation import <Michael Bestas> 14 hours ago
  
 **** github:CyanogenMod/android_packages_apps_Eleven ****
-d2fa91a : Automatic translation import <Michael Bestas> 11 hours ago
+d2fa91a : Automatic translation import <Michael Bestas> 14 hours ago
  
 **** cmR:android_packages_apps_Email ****
-5779a29 : Automatic translation import <Michael Bestas> 11 hours ago
+5779a29 : Automatic translation import <Michael Bestas> 14 hours ago
  
 **** cmR:android_packages_apps_Exchange ****
-b3f3790 : Automatic translation import <Michael Bestas> 11 hours ago
+b3f3790 : Automatic translation import <Michael Bestas> 14 hours ago
  
 **** github:CyanogenMod/android_packages_apps_Gallery2 ****
-9231926 : Automatic translation import <Michael Bestas> 11 hours ago
+9231926 : Automatic translation import <Michael Bestas> 14 hours ago
  
 **** cmR:android_packages_apps_InCallUI ****
-64bc81c : Automatic translation import <Michael Bestas> 11 hours ago
+64bc81c : Automatic translation import <Michael Bestas> 14 hours ago
  
 **** github:CyanogenMod/android_packages_apps_LockClock ****
-ecfe031 : Automatic translation import <Michael Bestas> 11 hours ago
+ecfe031 : Automatic translation import <Michael Bestas> 14 hours ago
  
 **** cmR:android_packages_apps_Mms-caf ****
-f6b0db8 : Automatic translation import <Michael Bestas> 11 hours ago
+f6b0db8 : Automatic translation import <Michael Bestas> 14 hours ago
 c25966c : Mms: fix recipients getting lost when toggling "Mobile numbers only" <Joe> 3 days ago
 a64160e : Mms: Fix copying "null" for Mms without text <Joe> 4 days ago
  
 **** cmR:android_packages_apps_Nfc ****
-9739a31 : Automatic translation import <Michael Bestas> 11 hours ago
+9739a31 : Automatic translation import <Michael Bestas> 14 hours ago
  
 **** github:CyanogenMod/android_packages_apps_PhoneCommon ****
-b9c601b : Automatic translation import <Michael Bestas> 11 hours ago
+b9c601b : Automatic translation import <Michael Bestas> 14 hours ago
  
 **** cmR:android_packages_apps_Settings ****
-d40acb8 : Settings: Update Wakelock blocker drawable Credits to DirtyUnicorns for the drawables. <Lokesh Chamane> 2 hours ago
+d40acb8 : Settings: Update Wakelock blocker drawable Credits to DirtyUnicorns for the drawables. <Lokesh Chamane> 5 hours ago
  
 **** github:CyanogenMod/android_packages_apps_SoundRecorder ****
-4981681 : Automatic translation import <Michael Bestas> 11 hours ago
+4981681 : Automatic translation import <Michael Bestas> 14 hours ago
  
 **** github:CyanogenMod/android_packages_apps_Stk ****
-3d46a7f : Automatic translation import <Michael Bestas> 11 hours ago
+3d46a7f : Automatic translation import <Michael Bestas> 14 hours ago
  
 **** github:CyanogenMod/android_packages_apps_Terminal ****
-15983c8 : Automatic translation import <Michael Bestas> 11 hours ago
+15983c8 : Automatic translation import <Michael Bestas> 14 hours ago
  
 **** cmR:android_packages_apps_ThemeChooser ****
 3988a79 : [2/2] Use files instead of blobs <Richard MacGregor> 8 days ago
 ff1bab8 : [3/3] Improve PreviewsColumns Implementation <Richard MacGregor> 11 days ago
-d1d2a8e : Automatic translation import <Michael Bestas> 11 hours ago
+d1d2a8e : Automatic translation import <Michael Bestas> 14 hours ago
  
 **** github:CyanogenMod/android_packages_apps_TvSettings ****
-107e728 : Automatic translation import <Michael Bestas> 11 hours ago
+107e728 : Automatic translation import <Michael Bestas> 14 hours ago
  
 **** cmR:android_packages_apps_UnifiedEmail ****
-917885f : Automatic translation import <Michael Bestas> 11 hours ago
+917885f : Automatic translation import <Michael Bestas> 14 hours ago
  
 **** cmR:android_packages_inputmethods_LatinIME ****
-f317890 : Automatic translation import <Michael Bestas> 11 hours ago
+f317890 : Automatic translation import <Michael Bestas> 14 hours ago
  
 **** github:CyanogenMod/android_packages_providers_DownloadProvider ****
-ea11e80 : Automatic translation import <Michael Bestas> 11 hours ago
+ea11e80 : Automatic translation import <Michael Bestas> 14 hours ago
  
 **** github:CyanogenMod/android_packages_providers_TelephonyProvider ****
 81e3036 : Add another db upgrade <Dave Daynard> 11 days ago
@@ -159,25 +159,25 @@ ea11e80 : Automatic translation import <Michael Bestas> 11 hours ago
 **** github:CyanogenMod/android_packages_providers_ThemesProvider ****
 8fd765a : [1/2] Use files instead of blobs <Richard MacGregor> 8 days ago
 c169904 : [2/3] Improve PreviewsColumns Implementation <Richard MacGregor> 11 days ago
-3b2e3e3 : Automatic translation import <Michael Bestas> 11 hours ago
+3b2e3e3 : Automatic translation import <Michael Bestas> 14 hours ago
  
 **** github:CyanogenMod/android_packages_services_Mms ****
-56d3c6a : Automatic translation import <Michael Bestas> 11 hours ago
+56d3c6a : Automatic translation import <Michael Bestas> 14 hours ago
  
 **** cmR:android_packages_services_Telecomm ****
-3319fcd : Automatic translation import <Michael Bestas> 11 hours ago
+3319fcd : Automatic translation import <Michael Bestas> 14 hours ago
  
 **** cmR:android_packages_services_Telephony ****
-2b48acf : Automatic translation import <Michael Bestas> 11 hours ago
+2b48acf : Automatic translation import <Michael Bestas> 14 hours ago
  
 **** github:CyanogenMod/android_packages_wallpapers_Galaxy4 ****
-ddd1171 : Automatic translation import <Michael Bestas> 11 hours ago
+ddd1171 : Automatic translation import <Michael Bestas> 14 hours ago
  
 **** github:CyanogenMod/android_packages_wallpapers_PhaseBeam ****
-2629b96 : Automatic translation import <Michael Bestas> 11 hours ago
+2629b96 : Automatic translation import <Michael Bestas> 14 hours ago
  
 **** github:CyanogenMod/android_packages_wallpapers_PhotoPhase ****
-058947f : Automatic translation import <Michael Bestas> 11 hours ago
+058947f : Automatic translation import <Michael Bestas> 14 hours ago
  
 **** bb:arm-linux-androideabi-4.9 ****
 fea1b64 : update SaberMod Gcc 5-11-2015 <ZION959> 2 days ago
@@ -190,12 +190,12 @@ a5c460a : Added APN for Costa Rica ICE Kolbi <Zyg0te> 5 days ago
 71a61f4 : Removed obsolete internet APN for Indosat <Zyg0te> 7 days ago
  
 **** cmR:android_vendor_cmremix ****
-767b59c : strict: more fixups (2/2) <ZION959> 24 minutes ago
-fa836cc : strict: more fixups (2/2) <Paul Beeler> 25 hours ago
-dea588a : Enable strict-aliasing <Paul Beeler> 5 hours ago
-16d0b54 : General update <Paul Beeler> 5 hours ago
+767b59c : strict: more fixups (2/2) <ZION959> 3 hours ago
+fa836cc : strict: more fixups (2/2) <Paul Beeler> 28 hours ago
+dea588a : Enable strict-aliasing <Paul Beeler> 8 hours ago
+16d0b54 : General update <Paul Beeler> 8 hours ago
 4de288c : export GRAPHITE_UNROLL_AND_JAM to the kernel <Paul Beeler> 3 weeks ago
  
 **** github:CyanogenMod/cm_platform_sdk ****
-1fa41bb : Automatic translation import <Michael Bestas> 11 hours ago
+1fa41bb : Automatic translation import <Michael Bestas> 14 hours ago
  
