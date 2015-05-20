@@ -1,41 +1,16 @@
 
 **** cmR:CMRemix ****
-8064ad2 : revert, revert track art and bionic (reverted from commit f6e2690eb55aa20fb7ca6d868302d701606a12f0) <ZION959> 27 hours ago
+8064ad2 : revert, revert track art and bionic (reverted from commit f6e2690eb55aa20fb7ca6d868302d701606a12f0) <ZION959> 29 hours ago
 b04680e : 5.1.1_r1 -> 5.1.1_r2 <Dušan Šušić> 4 days ago
  
 **** cmR:android_art ****
-62217d6 : Support map data in the backtrace data structure. <ZION959> 3 hours ago
-6d68843 : Add Non-debug cflags to debug cflags <Joe Maples> 3 months ago
-efbe16d : Disable Clang as Host Compiler <frap129> 3 months ago
-9f4dea0 : Add all cortex-a15 variants <frap129> 3 months ago
-eeaa7a8 : Support map data in the backtrace data structure. <Christopher Ferris> 3 months ago
-102bcea : Remove dex2oat watchdog warning <Maunik Shah> 6 months ago
-828cd56 : Guard against name == null in ShortDump <Mathieu Chartier> 4 weeks ago
-24b0d17 : Fix possible null deference in Throwable::Dump <Mathieu Chartier> 3 weeks ago
-53ccc3f : Fix compaction unsafe DescribeWait <Mathieu Chartier> 4 months ago
-0aef781 : Revert "AArch64: Fix incorrect use of preceding LIR." <Ricardo Cerqueira> 7 hours ago
-12bdb0f : AArch64: Fix incorrect use of preceding LIR. <Ningsheng Jian> 5 months ago
-e77fc3d : AArch64: Addressing Cortex-A53 erratum 835769. <Matteo Franchin> 7 months ago
- 
-**** cmR:android_bionic ****
-43d14cd : fix derp in linking for linker <Your Name> 8 weeks ago
-ee03320 : fixed stuff added linking with qcom libraries for linker in order to compile with "-fparallel" and "-mllvm -arm-expand-memcpy-runtime=16 -mllvm -arm-opt-memcpy=1" <Your Name> 8 weeks ago
-205a26c : libc: arm: add optimized memchr implementation <Yingshiuan Pan> 9 weeks ago
-88ddc6c : Revert "Import memchr implementation from cortex-strings for Cortex A15" <arter97> 5 weeks ago
-3c2d7b5 : Revert "krait: use A15 memchr" <arter97> 5 weeks ago
-f4906f7 : Revert "Reimplement the generic version of strcat" <arter97> 5 weeks ago
-4a7109f : Revert "Reimplement the generic version of strncat" <arter97> 5 weeks ago
-4e17dae : libc: arm: a15: add optimized memcpy implementation <Yingshiuan Pan> 9 weeks ago
-c5a0afc : Re-export libgcc's __aeabi_fcmplt <arter97> 8 weeks ago
-4d51ab5 : linker: convert 'mov pc' instruction to 'bx' <arter97> 6 months ago
-fc67590 : Reimplement the generic version of strncat <Bernhard Rosenkränzer> 9 weeks ago
-2e0d54e : Reimplement the generic version of strcat <Bernhard Rosenkränzer> 9 weeks ago
-8cb2591 : Fix build with clang <Bernhard Rosenkränzer> 10 weeks ago
-a0c1adf : Specify .cpu cortex-a15 <Bernhard Rosenkränzer> 6 months ago
+be62737 : Revert "AArch64: Fix incorrect use of preceding LIR." <Ricardo Cerqueira> 10 hours ago
+1e14008 : AArch64: Fix incorrect use of preceding LIR. <Ningsheng Jian> 5 months ago
+47e066e : AArch64: Addressing Cortex-A53 erratum 835769. <Matteo Franchin> 7 months ago
  
 **** cmR:android_build ****
-fa6ec4f : SaberMod Name to SaberMod Version <ZION959> 2 hours ago
-f8add95 : OpenMP: Add libs to C/CPP flags <Paul Beeler> 9 hours ago
+fa6ec4f : SaberMod Name to SaberMod Version <ZION959> 4 hours ago
+f8add95 : OpenMP: Add libs to C/CPP flags <Paul Beeler> 12 hours ago
  
 **** cmR:android_external_sqlite ****
 608f6a0 : sqlite: upgrade to SQLite 3.8.10 <Nick Kralevich> 12 days ago
@@ -53,14 +28,26 @@ a9faa80 : Do not pass QC_PERF into host build of sqlite3. <Koushik Dutta> 1 year
 eef2c43 : Store inodes in unsigned long long <Martin Storsjo> 6 months ago
  
 **** cmR:android_frameworks_base ****
-c0b349b : Fix tiles with custom colors toggle issues <rogersb11> 73 minutes ago
-7982d68 : NavigationRing: Added two new target actions * Last app: Open last app * Expanded desktop: Switch expanded desktop on/off <SpiritCroc> 68 minutes ago
-dbcec73 : Make ACCESS_THEME_MANAGER permission system|signature <d34d> 7 hours ago
+4e97702 : Themes: Fix Reboot Background <Andy Mast> 4 days ago
+8de36b2 : Theme reboot menu <rmcc> 4 days ago
+d7a1647 : Revert "Remove unnecessary sleep in ActivityThread." <Steve Kondik> 2 months ago
+bb78332 : Fix bug of unnecessary wakeups after completed syncs. <Sara Ting> 3 months ago
+8a07adaa : Remove the window whose client process has died or become zombie <tiger_huang> 10 months ago
+bd34595 : Don't relayout based on a window that isn't visible <Craig Mautner> 3 months ago
+b29d2cf : Not include fullscreen opaque window on screenshot <tingna_sung> 7 months ago
+00468e3 : Only one task within the stack should moveToBack <raysb.kim> 6 months ago
+d953849 : Fix racing condition of mTouchExcludeRegion <tingna_sung> 7 months ago
+99e0b88 : Measure absolute value of pointer motion distance <tingna_sung> 7 months ago
+7a93072 : Revert "Fix racing condition of mTouchExcludeRegion" <Janson Kang> 2 hours ago
+50e72fb : Add Feature: Heads Up custom text/background color/transparency <Daniel Koman> 2 hours ago
+c0b349b : Fix tiles with custom colors toggle issues <rogersb11> 4 hours ago
+7982d68 : NavigationRing: Added two new target actions * Last app: Open last app * Expanded desktop: Switch expanded desktop on/off <SpiritCroc> 3 hours ago
+dbcec73 : Make ACCESS_THEME_MANAGER permission system|signature <d34d> 10 hours ago
 61c8ef1 : Return original value if icon info is null <d34d> 2 days ago
-610c81d : Make default overlay for "spell checker" <ZION959> 4 hours ago
+610c81d : Make default overlay for "spell checker" <ZION959> 6 hours ago
 df85607 : BaseStatusBar: Inform StatusBarService if a notification is flagged spam <Phillip Berndt> 12 days ago
 5e542ff : AudioService: persist volume of ring stream when ringer mode changed <Zhou Song> 5 months ago
-a3b625f : Add double tap option to lockscreen shortcuts <gmillz> 28 hours ago
+a3b625f : Add double tap option to lockscreen shortcuts <gmillz> 31 hours ago
 ae5de50 : apps2sd: Only allow "move to ___" if the media is mounted [2/2] <Christopher R. Palmer> 13 days ago
 b5d1aba : [1/3] Implement better legacy support for themes <Richard MacGregor> 2 days ago
 b96d589 : PackageManager: don't attempt to get theme on core boot <Scott Mertz> 9 weeks ago
@@ -72,7 +59,7 @@ c94df64 : Also restart provider if there is external handle. <riddle_hsu> 7 days
 c030aa1 : Check caller status precisely when registering receiver. <riddle_hsu> 4 months ago
 83e0fea : fix return value scale of notifyANR() <baik.han> 5 weeks ago
 2957b82 : Frameworks/base: Fix old code in MediaPlayer <Andreas Gampe> 9 weeks ago
-6bf194a : Fix LiveDisplay QS icon size. <Dave Kover> 5 days ago
+6bf194a : Fix LiveDisplay QS icon size. <Dave Kover> 6 days ago
  
 **** cmR:android_frameworks_opt_net_wifi ****
 10c17ae : Silence verbose Wifi logging <jumoog> 2 days ago
@@ -86,6 +73,7 @@ e4a56f5 : RIL : allow RILReceiver to be overridden <Varun Chitre> 4 days ago
 63f2249 : hal: Allow building hardware audio encoders <Arne Coucheron> 4 months ago
  
 **** github:CMRemix/android_kernel_samsung_trlte ****
+c1960c5 : Revert trlte enabled module <ZION959> 43 minutes ago
 eeefe82 : trlte enabled module <ZION959> 2 days ago
 ea9b590 : Set SELinux to permissive "permanently" <ZION959> 2 days ago
 ef44987 : msm: Add MSM limiter driver <ZION959> 2 days ago
@@ -110,23 +98,24 @@ f863f8a : Dialer: remove contact importing from Dialer <emancebo> 4 days ago
 5f8fa15 : Fix weird bug in LockClock <naman14> 2 weeks ago
  
 **** cmR:android_packages_apps_Settings ****
-690f99d : fixed build LockscreenBottomShortcuts <ZION959> 45 minutes ago
-55c200f : Settings: Livedisplay: Respect default values passed from CMHW <Dave Daynard> 28 hours ago
-2320519 : Settings: improve Search <Roman Birg> 28 hours ago
-d293c97 : Add double tap option to lockscreen shortcuts <gmillz> 28 hours ago
+f180312 : Add Feature: Heads Up custom text/background color, transparency <Daniel Koman> 2 hours ago
+690f99d : fixed build LockscreenBottomShortcuts <ZION959> 3 hours ago
+55c200f : Settings: Livedisplay: Respect default values passed from CMHW <Dave Daynard> 31 hours ago
+2320519 : Settings: improve Search <Roman Birg> 31 hours ago
+d293c97 : Add double tap option to lockscreen shortcuts <gmillz> 31 hours ago
 be538b9 : Exclude themes from being moved to external storage <d34d> 4 days ago
 67c03dc : apps2sd: Only allow "move to ___" if the media is mounted [1/2] <Christopher R. Palmer> 13 days ago
 46246fb : apps2sd: Enable apps2sd for apps with unspecified install location <Christopher R. Palmer> 13 days ago
 781216b : Settings: AppSidebar drawable and settings fix <Lokesh Chamane> 9 days ago
 ff0d8e0 : Do not allow privacy guard for core system apps. <Matt Garnes> 4 days ago
-387164f : Automatic translation import <Michael Bestas> 4 days ago
+387164f : Automatic translation import <Michael Bestas> 5 days ago
 59a9326 : Settings: setup Default Profile after OOBE has run <Roman Birg> 5 days ago
 f127a71 : Fix mobile network switch for CDMA phones <cody ferber> 8 days ago
 c9eba9b : Settings: fix BT switch enabling discoverable mode <Roman Birg> 5 days ago
 e374bd1 : Change Usb not connected string to capital letters. <Matt Garnes> 6 days ago
 b00f0b8 : Show Toast if usb not connected in Storage Settings <naman14> 2 weeks ago
-3917ebc : Used fixed size for app icon width in default sms dialog <d34d> 6 days ago
-5dce417 : Hide soft keyboard when opening LockPatternActivity. <Matt Garnes> 7 days ago
+3917ebc : Used fixed size for app icon width in default sms dialog <d34d> 7 days ago
+5dce417 : Hide soft keyboard when opening LockPatternActivity. <Matt Garnes> 8 days ago
 1088edc : Fix battery settings crash on Asturian/Luxembourgish <Michael Bestas> 7 days ago
  
 **** cmR:android_packages_apps_SlimLauncher ****
@@ -139,17 +128,18 @@ b00f0b8 : Show Toast if usb not connected in Storage Settings <naman14> 2 weeks 
 d2d2ffd : [2/3] Implement better legacy support for themes <Richard MacGregor> 2 days ago
  
 **** bb:arm-eabi-4.9 ****
-52bba95 : Update SaberMod GCC arm-eabi-4.9-05182015 <ZION959> 4 hours ago
+52bba95 : Update SaberMod GCC arm-eabi-4.9-05182015 <ZION959> 7 hours ago
  
 **** bb:arm-linux-androideabi-4.9 ****
-db96e1f : Update SaberMod GCC arm-linux-androideabi-4.9-05182015 <ZION959> 4 hours ago
+db96e1f : Update SaberMod GCC arm-linux-androideabi-4.9-05182015 <ZION959> 7 hours ago
  
 **** cmR:android_vendor_cmremix ****
-90b4e9a : [General update] [default android rom toolchain 4.9] [1/2] <Paul Beeler> 4 hours ago
+7db9b9b : Opt7 >> OPT7 <ZION959> 2 hours ago
+90b4e9a : [General update] [default android rom toolchain 4.9] [1/2] <Paul Beeler> 6 hours ago
 52739a0 : build script: option to remove/default prebuilt chromium <ZION959> 2 days ago
  
 **** github:CyanogenMod/cm_platform_sdk ****
-2217bb4 : CMSDK: Remove dead code. <Adnan Begovic> 32 hours ago
+2217bb4 : CMSDK: Remove dead code. <Adnan Begovic> 35 hours ago
  
 **** github:CMRemix/proprietary_vendor_samsung ****
 bd4cc24 : klte:add kltechnduo <ljzyal> 3 days ago
