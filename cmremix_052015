@@ -1,16 +1,16 @@
 
 **** cmR:CMRemix ****
-8064ad2 : revert, revert track art and bionic (reverted from commit f6e2690eb55aa20fb7ca6d868302d701606a12f0) <ZION959> 29 hours ago
+8064ad2 : revert, revert track art and bionic (reverted from commit f6e2690eb55aa20fb7ca6d868302d701606a12f0) <ZION959> 30 hours ago
 b04680e : 5.1.1_r1 -> 5.1.1_r2 <Dušan Šušić> 4 days ago
  
 **** cmR:android_art ****
-be62737 : Revert "AArch64: Fix incorrect use of preceding LIR." <Ricardo Cerqueira> 10 hours ago
+be62737 : Revert "AArch64: Fix incorrect use of preceding LIR." <Ricardo Cerqueira> 11 hours ago
 1e14008 : AArch64: Fix incorrect use of preceding LIR. <Ningsheng Jian> 5 months ago
 47e066e : AArch64: Addressing Cortex-A53 erratum 835769. <Matteo Franchin> 7 months ago
  
 **** cmR:android_build ****
-fa6ec4f : SaberMod Name to SaberMod Version <ZION959> 4 hours ago
-f8add95 : OpenMP: Add libs to C/CPP flags <Paul Beeler> 12 hours ago
+fa6ec4f : SaberMod Name to SaberMod Version <ZION959> 5 hours ago
+f8add95 : OpenMP: Add libs to C/CPP flags <Paul Beeler> 13 hours ago
  
 **** cmR:android_external_sqlite ****
 608f6a0 : sqlite: upgrade to SQLite 3.8.10 <Nick Kralevich> 12 days ago
@@ -38,16 +38,16 @@ b29d2cf : Not include fullscreen opaque window on screenshot <tingna_sung> 7 mon
 00468e3 : Only one task within the stack should moveToBack <raysb.kim> 6 months ago
 d953849 : Fix racing condition of mTouchExcludeRegion <tingna_sung> 7 months ago
 99e0b88 : Measure absolute value of pointer motion distance <tingna_sung> 7 months ago
-7a93072 : Revert "Fix racing condition of mTouchExcludeRegion" <Janson Kang> 2 hours ago
-50e72fb : Add Feature: Heads Up custom text/background color/transparency <Daniel Koman> 2 hours ago
+7a93072 : Revert "Fix racing condition of mTouchExcludeRegion" <Janson Kang> 3 hours ago
+50e72fb : Add Feature: Heads Up custom text/background color/transparency <Daniel Koman> 3 hours ago
 c0b349b : Fix tiles with custom colors toggle issues <rogersb11> 4 hours ago
-7982d68 : NavigationRing: Added two new target actions * Last app: Open last app * Expanded desktop: Switch expanded desktop on/off <SpiritCroc> 3 hours ago
-dbcec73 : Make ACCESS_THEME_MANAGER permission system|signature <d34d> 10 hours ago
+7982d68 : NavigationRing: Added two new target actions * Last app: Open last app * Expanded desktop: Switch expanded desktop on/off <SpiritCroc> 4 hours ago
+dbcec73 : Make ACCESS_THEME_MANAGER permission system|signature <d34d> 11 hours ago
 61c8ef1 : Return original value if icon info is null <d34d> 2 days ago
-610c81d : Make default overlay for "spell checker" <ZION959> 6 hours ago
+610c81d : Make default overlay for "spell checker" <ZION959> 7 hours ago
 df85607 : BaseStatusBar: Inform StatusBarService if a notification is flagged spam <Phillip Berndt> 12 days ago
 5e542ff : AudioService: persist volume of ring stream when ringer mode changed <Zhou Song> 5 months ago
-a3b625f : Add double tap option to lockscreen shortcuts <gmillz> 31 hours ago
+a3b625f : Add double tap option to lockscreen shortcuts <gmillz> 32 hours ago
 ae5de50 : apps2sd: Only allow "move to ___" if the media is mounted [2/2] <Christopher R. Palmer> 13 days ago
 b5d1aba : [1/3] Implement better legacy support for themes <Richard MacGregor> 2 days ago
 b96d589 : PackageManager: don't attempt to get theme on core boot <Scott Mertz> 9 weeks ago
@@ -73,7 +73,7 @@ e4a56f5 : RIL : allow RILReceiver to be overridden <Varun Chitre> 4 days ago
 63f2249 : hal: Allow building hardware audio encoders <Arne Coucheron> 4 months ago
  
 **** github:CMRemix/android_kernel_samsung_trlte ****
-c1960c5 : Revert trlte enabled module <ZION959> 43 minutes ago
+c1960c5 : Revert trlte enabled module <ZION959> 2 hours ago
 eeefe82 : trlte enabled module <ZION959> 2 days ago
 ea9b590 : Set SELinux to permissive "permanently" <ZION959> 2 days ago
 ef44987 : msm: Add MSM limiter driver <ZION959> 2 days ago
@@ -92,22 +92,22 @@ c56019f : msm: thermal: Proceed thermal late init only if probe is successful <S
 80a93a5 : Check date string size before trimming it <Stephen Bird> 3 days ago
  
 **** cmR:android_packages_apps_Dialer ****
-f863f8a : Dialer: remove contact importing from Dialer <emancebo> 4 days ago
+f863f8a : Dialer: remove contact importing from Dialer <emancebo> 5 days ago
  
 **** github:CyanogenMod/android_packages_apps_LockClock ****
 5f8fa15 : Fix weird bug in LockClock <naman14> 2 weeks ago
  
 **** cmR:android_packages_apps_Settings ****
-f180312 : Add Feature: Heads Up custom text/background color, transparency <Daniel Koman> 2 hours ago
-690f99d : fixed build LockscreenBottomShortcuts <ZION959> 3 hours ago
-55c200f : Settings: Livedisplay: Respect default values passed from CMHW <Dave Daynard> 31 hours ago
-2320519 : Settings: improve Search <Roman Birg> 31 hours ago
-d293c97 : Add double tap option to lockscreen shortcuts <gmillz> 31 hours ago
+f180312 : Add Feature: Heads Up custom text/background color, transparency <Daniel Koman> 3 hours ago
+690f99d : fixed build LockscreenBottomShortcuts <ZION959> 4 hours ago
+55c200f : Settings: Livedisplay: Respect default values passed from CMHW <Dave Daynard> 32 hours ago
+2320519 : Settings: improve Search <Roman Birg> 32 hours ago
+d293c97 : Add double tap option to lockscreen shortcuts <gmillz> 32 hours ago
 be538b9 : Exclude themes from being moved to external storage <d34d> 4 days ago
 67c03dc : apps2sd: Only allow "move to ___" if the media is mounted [1/2] <Christopher R. Palmer> 13 days ago
 46246fb : apps2sd: Enable apps2sd for apps with unspecified install location <Christopher R. Palmer> 13 days ago
 781216b : Settings: AppSidebar drawable and settings fix <Lokesh Chamane> 9 days ago
-ff0d8e0 : Do not allow privacy guard for core system apps. <Matt Garnes> 4 days ago
+ff0d8e0 : Do not allow privacy guard for core system apps. <Matt Garnes> 5 days ago
 387164f : Automatic translation import <Michael Bestas> 5 days ago
 59a9326 : Settings: setup Default Profile after OOBE has run <Roman Birg> 5 days ago
 f127a71 : Fix mobile network switch for CDMA phones <cody ferber> 8 days ago
@@ -128,18 +128,18 @@ b00f0b8 : Show Toast if usb not connected in Storage Settings <naman14> 2 weeks 
 d2d2ffd : [2/3] Implement better legacy support for themes <Richard MacGregor> 2 days ago
  
 **** bb:arm-eabi-4.9 ****
-52bba95 : Update SaberMod GCC arm-eabi-4.9-05182015 <ZION959> 7 hours ago
+52bba95 : Update SaberMod GCC arm-eabi-4.9-05182015 <ZION959> 8 hours ago
  
 **** bb:arm-linux-androideabi-4.9 ****
-db96e1f : Update SaberMod GCC arm-linux-androideabi-4.9-05182015 <ZION959> 7 hours ago
+db96e1f : Update SaberMod GCC arm-linux-androideabi-4.9-05182015 <ZION959> 8 hours ago
  
 **** cmR:android_vendor_cmremix ****
-7db9b9b : Opt7 >> OPT7 <ZION959> 2 hours ago
-90b4e9a : [General update] [default android rom toolchain 4.9] [1/2] <Paul Beeler> 6 hours ago
+7db9b9b : Opt7 >> OPT7 <ZION959> 3 hours ago
+90b4e9a : [General update] [default android rom toolchain 4.9] [1/2] <Paul Beeler> 7 hours ago
 52739a0 : build script: option to remove/default prebuilt chromium <ZION959> 2 days ago
  
 **** github:CyanogenMod/cm_platform_sdk ****
-2217bb4 : CMSDK: Remove dead code. <Adnan Begovic> 35 hours ago
+2217bb4 : CMSDK: Remove dead code. <Adnan Begovic> 2 days ago
  
 **** github:CMRemix/proprietary_vendor_samsung ****
 bd4cc24 : klte:add kltechnduo <ljzyal> 3 days ago
