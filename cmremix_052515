@@ -1,12 +1,8 @@
 
 **** cmR:android_build ****
-1cb4885 : [extra][OpenMP] Small cleanup <Paul Beeler> 3 hours ago
-e03466d : [extra] Make -fsanitize=leak a C only flag <Paul Beeler> 34 hours ago
-ce43767 : Disable OpenMP for arm64 until the issues are resolved... <Paul Beeler> 34 hours ago
-917b5e4 : remove unused <ZION959> 2 days ago
-fabcd33 : SaberMod Name to SaberMod Version <ZION959> 5 days ago
-30e81e0 : OpenMP: Add libs to C/CPP flags <Paul Beeler> 5 days ago
-311718e : Build: Allow board to specify additional flags <ZION959> 8 days ago
+b7943e4 : [extra][OpenMP] Small cleanup <Paul Beeler> 5 hours ago
+00f9ea6 : [extra] Make -fsanitize=leak a C only flag <Paul Beeler> 2 days ago
+870e678 : Disable OpenMP for arm64 until the issues are resolved... <Paul Beeler> 2 days ago
  
 **** github:CMRemix/android_device_samsung_qcom-common ****
 5652358 : doze: Set gesture to disabled by default <Arne Coucheron> 5 days ago
@@ -26,20 +22,20 @@ c9a4555 : EAP-pwd server: Fix payload length validation for Commit and Confirm <
 8c7552b : EAP-pwd peer: Fix payload length validation for Commit and Confirm <Jouni Malinen> 3 weeks ago
  
 **** cmR:android_frameworks_base ****
-1e090bc : Status bar expanded header: Custom background color, (1/2) <XXMrHyde> 26 hours ago
-61f890c : Frameworks: SlimPie (1/2) <ezio84> 6 hours ago
-4bd9f90 : [squash] Revert "Base: SlimPie (1/2)" <ZION959> 6 hours ago
+1e090bc : Status bar expanded header: Custom background color, (1/2) <XXMrHyde> 28 hours ago
+61f890c : Frameworks: SlimPie (1/2) <ezio84> 8 hours ago
+4bd9f90 : [squash] Revert "Base: SlimPie (1/2)" <ZION959> 8 hours ago
 b24c338 : SystemUI: DozeService: Prevent NPE <Lokesh Chamane> 2 days ago
  
 **** cmR:android_frameworks_webview ****
-fcf0714 : frameworks/webview: Use prebuilt java library for building if using prebuilt Chromium <Jiangyi> 10 months ago
+b2305a0 : Update WebView 42.0.2311.138 to 43.0.2357.76 <arter97> 3 days ago
  
 **** github:CyanogenMod/android_packages_apps_CMFileManager ****
 9a75e1b : [CMFileManager]Fix CMFileManager sometimes crash. <kai.cao> 5 days ago
 0d31e17 : [CMFileManager]Fix the FileManager Crash. <kai.cao> 5 days ago
  
 **** cmR:android_packages_apps_CMRemixOTA ****
-3aa63ca : update ota config <ZION959> 5 hours ago
+3aa63ca : update ota config <ZION959> 7 hours ago
  
 **** github:CyanogenMod/android_packages_apps_Eleven ****
 4427680 : Add Landscape support to Eleven <Linus Lee> 5 weeks ago
@@ -51,26 +47,24 @@ fcf0714 : frameworks/webview: Use prebuilt java library for building if using pr
 5144625 : exchange: imap push <Jorge Ruesga> 4 weeks ago
  
 **** cmR:android_packages_apps_Settings ****
-6f0f712 : derp <ZION959> 68 minutes ago
-5b0ea81 : fixed changelog icon color <ZION959> 2 hours ago
-99611cb : removed wakelock blocker vector icon and add color to add blocker <ZION959> 3 hours ago
-49e4c60 : Status bar expanded header: Custom background color, (2/2): <XXMrHyde> 26 hours ago
-dac1f77 : Settings: SlimPie (2/2) <ezio84> 26 hours ago
-653405a : [squash] Revert: Settings: SlimPie (2/2) <ZION959> 26 hours ago
+6f0f712 : derp <ZION959> 3 hours ago
+5b0ea81 : fixed changelog icon color <ZION959> 4 hours ago
+99611cb : removed wakelock blocker vector icon and add color to add blocker <ZION959> 5 hours ago
+49e4c60 : Status bar expanded header: Custom background color, (2/2): <XXMrHyde> 28 hours ago
+dac1f77 : Settings: SlimPie (2/2) <ezio84> 28 hours ago
+653405a : [squash] Revert: Settings: SlimPie (2/2) <ZION959> 28 hours ago
  
 **** cmR:android_packages_apps_SlimLauncher ****
-d823ecb : Make new app drawers respect hidden apps setting <Griffin Millender> 21 hours ago
+d823ecb : Make new app drawers respect hidden apps setting <Griffin Millender> 23 hours ago
  
 **** cmR:android_packages_apps_UnifiedEmail ****
 1c2391e : email: do not close the input attachment buffer in Conversion#parseBodyFields <Jorge Ruesga> 5 days ago
  
 **** cmR:android_vendor_cmremix ****
-973515b : sm.mk: disable strict to third_party_WebKit source <ZION959> 3 hours ago
-7a4e3ee : update backuptool version <ZION959> 4 hours ago
-45ce09d : build CMRemixOTA <ZION959> 4 days ago
-a75b279 : Opt7 >> OPT7 <ZION959> 5 days ago
-5d134ca : [General update] [default android rom toolchain 4.9] [1/2] <Paul Beeler> 5 days ago
-a8a42f9 : update kernel strict flags to trlte <ZION959> 8 days ago
+9e29da2 : sm.mk: disable strict to third_party_WebKit source (reverted from commit 6ff0c8d24e3fff10fd8ec261364917a8896251a7) <ZION959> 60 minutes ago
+6ff0c8d : sm.mk: disable strict to third_party_WebKit source <ZION959> 5 hours ago
+6188b97 : update backuptool version <ZION959> 6 hours ago
+0217d89 : build CMRemixOTA <ZION959> 4 days ago
  
 **** github:CMRemix/proprietary_vendor_samsung ****
 173355a : kltechnduo: Update RIL to lollipop <ljzyal> 2 days ago
