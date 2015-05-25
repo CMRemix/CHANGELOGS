@@ -1,14 +1,14 @@
 
 **** cmR:android_build ****
-0c53d6a : remove unused <ZION959> 2 hours ago
+0c53d6a : remove unused <ZION959> 3 hours ago
  
 **** cmR:android_frameworks_base ****
-f51b4ee : SystemServer: Skip TorchService construction if no flash feature detected <dhacker29> 2 hours ago
-dae20dd : Add alternate WebView provider package <Alberto97> 2 hours ago
-162f330 : Revert: framework/base: Make the base framework default to google.android.webview. <ZION959> 2 hours ago
-e9a6636 : base: Fix array bounds exception in getSecondaryStorageState <Christopher R. Palmer> 16 hours ago
+f51b4ee : SystemServer: Skip TorchService construction if no flash feature detected <dhacker29> 3 hours ago
+dae20dd : Add alternate WebView provider package <Alberto97> 3 hours ago
+162f330 : Revert: framework/base: Make the base framework default to google.android.webview. <ZION959> 3 hours ago
+e9a6636 : base: Fix array bounds exception in getSecondaryStorageState <Christopher R. Palmer> 17 hours ago
 456b58a : unbreak density scaling <Roman Birg> 2 days ago
-be57348 : Revert "Revert "fix CTS DisplayTest.testGetMetrics()"" <ZION959> 2 hours ago
+be57348 : Revert "Revert "fix CTS DisplayTest.testGetMetrics()"" <ZION959> 3 hours ago
  
 **** cmR:android_packages_apps_Settings ****
 afe7076 : Keep the content when change the orientation <xuke.yin> 6 weeks ago
