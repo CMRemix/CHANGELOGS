@@ -1,0 +1,205 @@
+
+**** cmR:CMRemix ****
+9741c23 : track CM 's art & bionic again <ZION959> 3 hours ago
+a13c75d : revert: Revert: track CM 's art & bionic <ZION959> 26 hours ago
+ 
+**** cmR:android_bionic ****
+d21c79e : fix derp in linking for linker <Your Name> 3 months ago
+b6bc003 : fixed stuff added linking with qcom libraries for linker in order to compile with "-fparallel" and "-mllvm -arm-expand-memcpy-runtime=16 -mllvm -arm-opt-memcpy=1" <Your Name> 3 months ago
+ 
+**** github:CyanogenMod/android_device_qcom_sepolicy ****
+881eea7 : sepolicy: add rule to support tcm write on dpmwrapper socket <Susheel Yadagiri> 7 months ago
+42fc5b9 : sepolicy: allow dpmd to create self socket and netlink socket. <Susheel Yadagiri> 3 months ago
+af2c6fd : sepolicy: allow dpmd to connect to system_server <Susheel Yadagiri> 4 months ago
+6fdf10d : sepolicy: Allow iptable rule addition when WQE is enabled <Susheel Yadagiri> 5 months ago
+6599f2c : cnd: Allow nims to be removed <Sanket Khidkikar> 5 months ago
+324ba9f : Sepolicy: add rule to support ATP feature <Boxiang Pan> 6 months ago
+ 
+**** github:CyanogenMod/android_device_samsung_qcom-common ****
+77eb079 : Automatic translation import <Michael Bestas> 32 hours ago
+ 
+**** cmR:android_external_chromium_org ****
+f02dfc7 : net: disable SSLv3. <Adam Langley> 8 months ago
+ 
+**** github:CyanogenMod/android_external_chromium_org_v8 ****
+0180c85 : Fix build for MacOSX 10.10.X and CLI Tools 6.1.1 <Simon Wörne> 7 weeks ago
+ 
+**** github:CyanogenMod/android_external_whispersystems_WhisperPush ****
+f22222a : WhisperPush: accept registration SMS from any number <Wilhelm Fitzpatrick> 9 hours ago
+d4bae94 : Automatic translation import <Michael Bestas> 32 hours ago
+9edd25a : WhisperPush: add weekly active users metric <Wilhelm Fitzpatrick> 6 days ago
+ba78f1e : WhisperPush: service for WPv2 update to interrogate/disable v1 <Wilhelm Fitzpatrick> 7 days ago
+ 
+**** cmR:android_frameworks_av ****
+0c2d0c6 : CameraService: Bump up the maximum number of cameras <Emilian Peev> 1 year, 4 months ago
+ 
+**** cmR:android_frameworks_base ****
+1f7edf2 : Keyguard: Show retry text on unidentified fingerprint <Andy Mast> 2 hours ago
+bfcd787 : SystemUI: fix clock jumping when expanding QS from lockscreen <Roman Birg> 11 hours ago
+bd40643 : Keyguard: Show fallback after 2 failed auth attempts <Andy Mast> 3 days ago
+9b4fc64 : Keyguard: Authenticate with fingerprint <Andy Mast> 6 days ago
+60b36a6 : Automatic translation import <Michael Bestas> 32 hours ago
+b6d9710 : SystemUI: fix pie icon size if icon is not a vector <Daniel Koman> 26 hours ago
+af70856 : move ColorUtils to cmremix <ZION959> 25 hours ago
+b94aa05 : frameworks: fix potential NPE on drawableToBitmap <Daniel Koman> 26 hours ago
+dd0d198 : Fingerprint: disallow API calls when fingerprint is not available <Scott Mertz> 2 days ago
+d407fc6 : Remove memory leak in PersistentDataBlockService jni <Henrik Baard> 10 days ago
+9f9e11f : Fix AppSideBar FC on Theme Change <MrApocalypse> 24 hours ago
+5b7dbf9 : Enable mobile data by default <Janson Kang> 30 hours ago
+899f78e : dynamic tiles: debrand adb icon <Alexander Martinz> 2 days ago
+8dd55b8 : Revert : Revert: Show carrier label / custom & change color [1/2] <ZION959> 22 hours ago
+ 
+**** github:CyanogenMod/android_hardware_ti_wlan ****
+1cdbebc : ti: Add interface_mtu request <Dmitry Shmidt> 2 years, 1 month ago
+ 
+**** github:CMRemix/android_kernel_samsung_hlte ****
+f740529 : update Sweep2wake & dt2w <ZION959> 2 days ago
+72e9238 : Set SELinux to permissive "permanently" <arter97> 5 months ago
+d32294e : Introduce Adreno idler for devfreq-based Adreno devices v1.1 by Park Ju Hyung (arter97) <ZION959> 2 days ago
+ 
+**** github:CMRemix/android_kernel_samsung_trlte ****
+6423d53 : Voltage Control: generic voltage control for DTS based kernels [@faux123] <ZION959> 3 weeks ago
+915027b : revert: trlte: user voltage control (flar2) <ZION959> 22 hours ago
+78b20eb : Hardlimit: moderate boost to frequency defaults (placiano) <ZION959> 23 hours ago
+bd6e45d : Revert "powersuspend: add power_suspended boolean for global access" <ZION959> 23 hours ago
+58455f8 : Added Hardlimit for Note4 ( placiano ) <ZION959> 23 hours ago
+af27425 : Revert : cpufreq: CPU max. hardlimit v2.1 (Yank555.lu) <ZION959> 23 hours ago
+dcff4f0 : revert: add DT2W again <ZION959> 24 hours ago
+8955e57 : trlte: user voltage control (flar2) <ZION959> 26 hours ago
+5623d09 : msm: limiter: The necessary evil <Pranav Vashi> 3 months ago
+fffdf9e : cpufreq: Fix limiter interfaces <Pranav Vashi> 4 months ago
+5d8b872 : drivers: Add state notifier driver (neobuddy89) <ZION959> 3 weeks ago
+9d48e5d : msm: mdss: Adding lcd notifier <ZION959> 8 weeks ago
+fbc7ab0 : add DT2W again <ZION959> 2 days ago
+bbabd0d : s2w derp fixed <ZION959> 2 days ago
+5ee5c2c : arm: add Krait optimized strcmp <arter97> 2 weeks ago
+9aff829 : arm: add arm optimized memcmp <arter97> 2 weeks ago
+d90dc77 : arm: lib: Fix makefile bug <Hong-Mei Li> 1 year, 2 months ago
+89dff56 : gpio_keys: force sync on KEY_POWER, KEY_HOME press This should help in situations when the device or the OS is stalled but the kernel is alive and running. <arter97> 5 days ago
+1ea9cc2 : sweep2wake: make it work <Pafcholini> 2 weeks ago
+d2301d4 : add Sweep2wake <Pavel> 6 months ago
+4f5d1bd : msm: zen_decision: Don't set default settings in zd_probe <Brandon Berhent> 7 weeks ago
+306f442 : msm: zen_decision: I'm a dummy - Correctly allow bat_threshold_ignore to be changed in the userspace... <Brandon Berhent> 8 weeks ago
+4a061e9 : msm: zen_decision: Missed f(x) name change <Brandon Berhent> 8 weeks ago
+9688277 : msm: zen_decision: Only call INIT_DELAYED_WORK once - Only call it once, not every time we want to run a thread - Rename some functions for clarity <Brandon Berhent> 8 weeks ago
+20a8cff : msm: zen_decision: change queue_delayed_work_on to queue_delayed_work - Not necessary to explicitly queue work on CPU0 anymore <Brandon Berhent> 8 weeks ago
+ef9f009 : msm: zen_decision: Use WQ_UNBOUND and max_active = 1 when allocating WQ - Set WQ_UNBOUND flag on alloc_workqueue which gives the CPU scheduler freedom to move it to other CPUs - Pass 1 as max_active, ensure only 1 task is running at a time from the WQ <Brandon Berhent> 8 weeks ago
+d88da30 : msm_zen_decision: disable by default - What this does now with screen off/on doesn't really have a point. I thought MPDec was messing with this before. - Leaving for future expansion <Brandon Berhent> 9 weeks ago
+ 
+**** github:CyanogenMod/android_packages_apps_BluetoothExt ****
+9b7bdf8 : Automatic translation import <Michael Bestas> 32 hours ago
+ 
+**** github:CyanogenMod/android_packages_apps_CMFileManager ****
+a2f4a60 : Automatic translation import <Michael Bestas> 32 hours ago
+dad28ad : ActionBar TextSelection: Prevent overlay of textfield <Stephen Bird> 3 days ago
+ 
+**** github:CyanogenMod/android_packages_apps_Calculator ****
+51f90c4 : Automatic translation import <Michael Bestas> 32 hours ago
+ 
+**** github:CyanogenMod/android_packages_apps_Calendar ****
+25f247c : Automatic translation import <Michael Bestas> 32 hours ago
+ 
+**** github:CyanogenMod/android_packages_apps_Camera2 ****
+3f22bec : Automatic translation import <Michael Bestas> 32 hours ago
+ 
+**** github:CyanogenMod/android_packages_apps_Contacts ****
+f81964f : Automatic translation import <Michael Bestas> 32 hours ago
+b267d4b : Contacts: Fixed "%s" appearing in contact options in some languages <Elike24> 2 days ago
+ 
+**** github:CyanogenMod/android_packages_apps_ContactsCommon ****
+68932a5 : Automatic translation import <Michael Bestas> 32 hours ago
+ 
+**** github:CyanogenMod/android_packages_apps_DeskClock ****
+9c89be4 : Automatic translation import <Michael Bestas> 32 hours ago
+ 
+**** cmR:android_packages_apps_Dialer ****
+a5f3526 : Automatic translation import <Michael Bestas> 32 hours ago
+ 
+**** github:CyanogenMod/android_packages_apps_Eleven ****
+3acc661 : Automatic translation import <Michael Bestas> 32 hours ago
+ 
+**** cmR:android_packages_apps_Email ****
+aa11058 : Automatic translation import <Michael Bestas> 32 hours ago
+ 
+**** github:CyanogenMod/android_packages_apps_Gallery2 ****
+7a90da1 : Automatic translation import <Michael Bestas> 32 hours ago
+ 
+**** cmR:android_packages_apps_InCallUI ****
+a27f9ea : Automatic translation import <Michael Bestas> 32 hours ago
+ 
+**** github:CyanogenMod/android_packages_apps_LockClock ****
+b84dc10 : Automatic translation import <Michael Bestas> 32 hours ago
+ 
+**** cmR:android_packages_apps_Mms-caf ****
+da1502d : Automatic translation import <Michael Bestas> 32 hours ago
+ 
+**** cmR:android_packages_apps_OmniSwitch ****
+60b15c2 : OmniSwitch: pixel pushing and hardening <maxwen> 9 days ago
+ 
+**** cmR:android_packages_apps_Settings ****
+ae89a82 : Fix patch derpage for fingerprint settings <d34d> 2 days ago
+aa0bb7b : Automatic translation import <Michael Bestas> 32 hours ago
+3257597 : Settings: use WhisperPush v2 if it is installed in place of v1 <Wilhelm Fitzpatrick> 8 days ago
+8a3d1cd : Revert: revert:  Show carrier label / custom & change color [2/2] <ZION959> 26 hours ago
+ 
+**** github:CyanogenMod/android_packages_apps_SoundRecorder ****
+279e7c3 : Automatic translation import <Michael Bestas> 32 hours ago
+ 
+**** github:CyanogenMod/android_packages_apps_Stk ****
+2f91312 : Automatic translation import <Michael Bestas> 32 hours ago
+ 
+**** github:CyanogenMod/android_packages_apps_Terminal ****
+70bf0bf : Automatic translation import <Michael Bestas> 32 hours ago
+ 
+**** cmR:android_packages_apps_ThemeChooser ****
+20b9f90 : Automatic translation import <Michael Bestas> 32 hours ago
+ 
+**** cmR:android_packages_apps_TvSettings ****
+4574978 : Automatic translation import <Michael Bestas> 32 hours ago
+ 
+**** cmR:android_packages_apps_UnifiedEmail ****
+1bb85d9 : Automatic translation import <Michael Bestas> 32 hours ago
+ 
+**** cmR:android_packages_inputmethods_LatinIME ****
+33da3c2 : Automatic translation import <Michael Bestas> 32 hours ago
+ 
+**** github:CyanogenMod/android_packages_providers_DownloadProvider ****
+4d94436 : Automatic translation import <Michael Bestas> 32 hours ago
+ 
+**** github:CyanogenMod/android_packages_providers_ThemesProvider ****
+b016009 : Automatic translation import <Michael Bestas> 32 hours ago
+ 
+**** cmR:android_packages_services_Telecomm ****
+9cf9699 : Automatic translation import <Michael Bestas> 32 hours ago
+ 
+**** cmR:android_packages_services_Telephony ****
+07866b3 : Automatic translation import <Michael Bestas> 32 hours ago
+ 
+**** github:CyanogenMod/android_packages_wallpapers_Galaxy4 ****
+5cf246b : Automatic translation import <Michael Bestas> 32 hours ago
+ 
+**** github:CyanogenMod/android_packages_wallpapers_PhaseBeam ****
+185c9a3 : Automatic translation import <Michael Bestas> 32 hours ago
+ 
+**** github:CyanogenMod/android_packages_wallpapers_PhotoPhase ****
+553bd98 : Automatic translation import <Michael Bestas> 32 hours ago
+ 
+**** cmR:android_system_core ****
+e05665a : Add Wileyfox VID part 2 <Ethan Chen> 34 hours ago
+429e98c : Add Wileyfox VID <Ethan Chen> 2 days ago
+ 
+**** github:CyanogenMod/android_vendor_cm ****
+71983e8 : Additional APN cleanup and modifications <Abhisek Devkota> 10 hours ago
+c38581c : Thou shalt not nano <Abhisek Devkota> 8 hours ago
+9dfe560 : Vendor: Fix "mts" carrier password <NBruderman> 2 days ago
+a0040ca : vendorsetup: Handle new jenkins build parameters <Brandon McAnsh> 2 days ago
+3f7699f : Additional European MVNOs <Abhisek Devkota> 2 days ago
+015d4fd : Massive APN Update <Abhisek Devkota> 6 weeks ago
+ 
+**** github:CyanogenMod/cm_platform_sdk ****
+1ba6ee2 : Automatic translation import <Michael Bestas> 32 hours ago
+cc97903 : CMSDK: Make sure to initialize ProfileTriggerHelper. <Adnan Begovic> 2 days ago
+ 
+**** cmR:android_vendor_SaberMod ****
+bd0bb9d : Disabled  one more module for falcon <ZION959> 35 hours ago
+ 

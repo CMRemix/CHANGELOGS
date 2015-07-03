@@ -1,0 +1,10 @@
+
+**** cmR:android_frameworks_base ****
+981a0b0 : Screen pinning improvements <Alex Cruz> 24 hours ago
+6e5e4e9 : Battery saver enhancements <Alex Cruz> 58 minutes ago
+334b3d6 : Slim action float tile 2/2 <rogersb11> 60 minutes ago
+ 
+**** cmR:android_packages_apps_Settings ****
+d0372bf : Slim action floats tile 1/2 <rogersb11> 69 minutes ago
+09e66b8 :  [2/2] Settings: Add option to launch slim actions apps in floating wi… <siracuervo> 78 minutes ago
+ 

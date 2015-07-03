@@ -1,0 +1,68 @@
+
+**** cmR:android_build ****
+18948ac : Revert "build: use common factory script and input more parameters" <Edward Wang> 13 hours ago
+ffe99e0 : update cmremix changelog zip name for OTA purpose <ZION959> 27 hours ago
+ 
+**** github:CMRemix/android_device_samsung_hlte-common ****
+204d9a9 : hlte: add L1/L2 cache size parameters optimizations <arter97> 5 months ago
+7e12a46 : set zion mainline kernel config <ZION959> 9 weeks ago
+ 
+**** cmR:android_external_sepolicy ****
+126d57e : sepolicy: Remove profiles from context, moved to cm <Adnan Begovic> 4 days ago
+ 
+**** cmR:android_frameworks_av ****
+5dd0f80 : libstagefright: back off exynos4_enhancements HWC_HWOVERLAY usage <Caio Schnepper> 3 weeks ago
+143ed19 : Revert "libstagefright: free mMoovBoxBuffer" <Ricardo Cerqueira> 31 hours ago
+ 
+**** cmR:android_frameworks_base ****
+62154ec : Status bar: set default signal cluster colors <tobitege> 11 hours ago
+d9d93e7 : Stop checking for resources.arsc in shouldCreateIdmap <d34d> 9 hours ago
+145f444 : frameworks: Factor out Profiles API to CMSDK Change-Id: I58ef6ca9abc9d525a48a105793b421a6897f37b8 <Adnan Begovic> 2 hours ago
+19cdac2 : SystemUI: fix recents task view height calculation <Roman Birg> 2 days ago
+28b510b : SystemUI: don't launch visualizer before we are attached <Roman Birg> 14 hours ago
+aac6014 : Don't use the SPN_STRINGS_UPDATED broadcast. <Danny Baumann> 2 weeks ago
+aa70af9 : Recalculate emergency after adding or removing mobile controllers. <Danny Baumann> 7 days ago
+e92c734 : Sync status bar signal cluster code with AOSP <maniac103> 3 hours ago
+d10a283 : Added carrier selection to DataUsageTile <BadDaemon> 3 months ago
+dc5f974 : Revert: Show carrier label / custom & change color [1/2] <ZION959> 6 hours ago
+33f94d4 : Fix chrome in floating mode <abun880007> 8 months ago
+c3aebbc : Keep app when opening floating window from recents panel <oreiche> 8 days ago
+6519fe7 : Dismiss IME when floating window is dismissed <Evan Anderson> 1 year, 1 month ago
+396fe02 : Add on-the-spot user preference dialog <Sean Hoyt> 5 hours ago
+06c3e45 : SystemUI: Extend swipe helper (Part1) <oreiche> 1 year, 1 month ago
+77a6f1a : Forward Port: Floating Window with Multitasking. <BigBrother1984> 4 hours ago
+84701a4 : NavBarTile: fix long click intent with button path <cristianomatos> 2 days ago
+f64c7db : Display: Initialize mRotation to panel orientation. <Panneer Arumugam> 2 years, 1 month ago
+ 
+**** github:CyanogenMod/android_packages_apps_DeskClock ****
+5419fe6 : DeskClock: Refactor to point at Profiles in CMSDK. <Adnan Begovic> 4 days ago
+ 
+**** cmR:android_packages_apps_Email ****
+84e293f : Allow saving attachments even if there's no intent handling them. <Danny Baumann> 3 days ago
+3afa9da : Allow download of compressed attachments. <Danny Baumann> 3 days ago
+ 
+**** github:CyanogenMod/android_packages_apps_Profiles ****
+f854275 : Profiles: Refactor to point at Profiles in CMSDK. <Adnan Begovic> 4 days ago
+ 
+**** cmR:android_packages_apps_Settings ****
+2cc5bab : Settings: Refactor to point at Profiles in CMSDK. <Adnan Begovic> 2 hours ago
+33da9bc : revert:  Show carrier label / custom & change color [2/2] <ZION959> 3 hours ago
+258f236 : organized CMRemix Settings <ZION959> 13 hours ago
+ 
+**** github:CyanogenMod/android_vendor_cm ****
+4c4e428 : vendor/cm: overlay start for ProfileService in external framework. <Adnan Begovic> 4 days ago
+ 
+**** cmR:android_vendor_CMRemix ****
+de6268f : change proprietary_vendor_samsung to CMRemix <ZION959> 12 hours ago
+ 
+**** github:CyanogenMod/cm_platform_sdk ****
+4334b3d : CMSDK: Introduce Profiles API from frameworks. <Adnan Begovic> 4 days ago
+4e081ae : CMSDK: Update iconography for resource package. <Adnan Begovic> 6 days ago
+ 
+**** github:CMRemix/proprietary_vendor_samsung ****
+7a0007e : Squash Update GPS libs to Lollipop and add GPS location service use trltetmo GPS blobs. <ZION959> 2 days ago
+c7ea259 : Squash Update GPS libs to Lollipop and add GPS location service use tmo GPS blobs. <nicklovell23> 3 days ago
+ 
+**** cmR:android_vendor_SaberMod ****
+730d7c4 : turn off qcom clang debug <ZION959> 12 hours ago
+ 

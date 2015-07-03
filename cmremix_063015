@@ -1,0 +1,93 @@
+
+**** github:CMRemix/android_device_samsung_hlte-common ****
+65a11d6 : hlte: Enable tethering without provisioning app <Janson Kang> 5 months ago
+db829c8 : hlte-common: Remove density from PRODUCT_AAPT_CONFIG <Adam Lesinski> 8 months ago
+579c581 : hlte-common: merge some permission stuffs with stock Touchwiz <arter97> 3 weeks ago
+d5ea07e : hlte-common:  fix permissions for radio <arter97> 3 weeks ago
+3b86417 : hlte-common: tweak some Bluetooth settings <arter97> 9 weeks ago
+e886fd7 : Hlte: Set call recording source to voice line <willl03> 3 months ago
+ 
+**** cmR:android_frameworks_base ****
+a5340c7 : density: do not apply to virtual displays <Roman Birg> 2 days ago
+ab7879e : Density scaling: scale compatibility apps, wm command support <Roman Birg> 4 weeks ago
+7381131 : Add default for Settings.System.DOUBLE_TAP_SLEEP_GESTURE. <Matt Garnes> 12 hours ago
+a141b67 : SystemUI: recalculate clock position on removing empty shade views <Roman Birg> 28 hours ago
+f1f02c7 : Enable fingerprint option in Settings [1/3] <Andy Mast> 12 hours ago
+aa0b8f1 : Fingerprint [1/2]: Numerous Fingerprint Improvements <Andy Mast> 12 hours ago
+265f211 : SystemUI: hide navigation bar faster in SetupWizard <Roman Birg> 3 months ago
+ecc49e8 : Don't inflate new phone states on callbacks. <Danny Baumann> 2 days ago
+c187138 : Clear callback handler queue when unregistering a phone state listener. <Danny Baumann> 2 days ago
+ 
+**** cmR:android_frameworks_native ****
+916232e : Enable fingerprint option in Settings [2/3] <Andy Mast> 8 days ago
+ 
+**** cmR:android_frameworks_opt_telephony ****
+af066e1 : msim: fix parse error when roaming with slot 2 only <emancebo> 33 hours ago
+ 
+**** github:CyanogenMod/android_hardware_libhardware ****
+bba9dff : Fingerprint [2/2]: Numerous Fingerprint Improvements <Andy Mast> 2 weeks ago
+ 
+**** github:CyanogenMod/android_hardware_qcom_audio ****
+0fe80ca : audio: Extend platform parser to allow device name aliasing <Ethan Chen> 10 months ago
+ 
+**** github:CMRemix/android_kernel_samsung_trlte ****
+969e425 : msm: limiter: The necessary evil <Pranav Vashi> 3 months ago
+d03d2f7 : cpufreq: Fix limiter interfaces <Pranav Vashi> 4 months ago
+80bad5a : drivers: Add state notifier driver (neobuddy89) <ZION959> 3 weeks ago
+9abb363 : msm: mdss: Adding lcd notifier <ZION959> 7 weeks ago
+8d147b0 : add DT2W again <ZION959> 3 hours ago
+49c57bb : msm: Add MSM limiter driver (Pranav Vashi) <ZION959> 9 hours ago
+14bdeba : s2w derp fixed <ZION959> 13 hours ago
+cb10f38 : dts: test <ZION959> 15 hours ago
+638573d : dts: Fix 268 MHz & fixed cpufreq derp <ZION959> 21 hours ago
+713800f : arm: add Krait optimized strcmp <arter97> 13 days ago
+4a7e66b : arm: add arm optimized memcmp <arter97> 13 days ago
+e4ae98b : arm: lib: Fix makefile bug <Hong-Mei Li> 1 year, 2 months ago
+60518db : gpio_keys: force sync on KEY_POWER, KEY_HOME press This should help in situations when the device or the OS is stalled but the kernel is alive and running. <arter97> 3 days ago
+0fffddc : sweep2wake: make it work <Pafcholini> 2 weeks ago
+17811f5 : add Sweep2wake <Pavel> 6 months ago
+0ebcf44 : msm: zen_decision: Don't set default settings in zd_probe <Brandon Berhent> 7 weeks ago
+294fa7e : msm: zen_decision: I'm a dummy - Correctly allow bat_threshold_ignore to be changed in the userspace... <Brandon Berhent> 8 weeks ago
+c2cf9c3 : msm: zen_decision: Missed f(x) name change <Brandon Berhent> 8 weeks ago
+b3acab4 : msm: zen_decision: Only call INIT_DELAYED_WORK once - Only call it once, not every time we want to run a thread - Rename some functions for clarity <Brandon Berhent> 8 weeks ago
+afc15b6 : msm: zen_decision: change queue_delayed_work_on to queue_delayed_work - Not necessary to explicitly queue work on CPU0 anymore <Brandon Berhent> 8 weeks ago
+2b1e3da : msm: zen_decision: Use WQ_UNBOUND and max_active = 1 when allocating WQ - Set WQ_UNBOUND flag on alloc_workqueue which gives the CPU scheduler freedom to move it to other CPUs - Pass 1 as max_active, ensure only 1 task is running at a time from the WQ <Brandon Berhent> 8 weeks ago
+5557fc2 : msm_zen_decision: disable by default - What this does now with screen off/on doesn't really have a point. I thought MPDec was messing with this before. - Leaving for future expansion <Brandon Berhent> 9 weeks ago
+6f12744 : Fix ISO declaration error <ktoonsez> 4 months ago
+7b07d42 : Fix include header Samsung mistake <ktoonsez> 4 months ago
+8e44d2c : mdss: Ya you stop spamming me to death too <ktoonsez> 8 months ago
+ad4964b : rmnet: Good-bye moronic idiotic read/write buffer dump <ktoonsez> 8 months ago
+94ee326 : cpufreq: Just a bunch of crap trying to debug cpu_up() not working in Linux 3.10 and making max freq obey Fix ISO declaration error <ZION959> 3 weeks ago
+9046811 : cpu-boost: Make sure the boost module isnt a dumb ass and trying to set lower than the selected scaling max from twistedumbrella <ktoonsez> 8 months ago
+0da71de : Add KT Hotplug <ZION959> 3 weeks ago
+d60bcf5 : Add KThermal <ZION959> 3 weeks ago
+991cfbf7 : OC and voltage control (ktoonsez) <ZION959> 22 hours ago
+05c7202 : Revert : cpufreq: CPU max. hardlimit v2.1 (Yank555.lu) <ZION959> 3 weeks ago
+0e8dc7c : Revert: cpufreq: CPU max. hardlimit v2.2 (Yank555.lu) <ZION959> 23 hours ago
+984c086 : cpufreq: CPU max. hardlimit v2.2 (Yank555.lu) <ZION959> 23 hours ago
+9a01619 : Revert: msm: Add MSM limiter driver <ZION959> 2 weeks ago
+3399cdb : Revert: leds: add LED control (fading & brightness) <ZION959> 23 hours ago
+ 
+**** cmR:android_packages_apps_InCallUI ****
+062ec69 : Revert "[2/2] InCallUI: let InCallUI handle proximity sensor for incoming calls" <Danesh M> 13 days ago
+ 
+**** cmR:android_packages_apps_Settings ****
+bb71b98 : removed duplicate lock screen bottom shortcut.due to this commit https://github.com/CMRemix/android_packages_apps_Settings/commit/2f8047f2200ad314e92226afaa10e4f3c971582d <ZION959> 3 hours ago
+a19dc1c : Add ButtonSettings to manifest and use it here: <cristianomatos> 9 hours ago
+c390de8 : display density: fixed build due to CM's density scaling commit. <ZION959> 9 hours ago
+36d7f59 : Show dialog if max number of fingerprints has been reached <Andy Mast> 6 days ago
+f7ed62d : Rename/Delete UI in fingerprint list <Andy Mast> 7 days ago
+c59e5c0 : Enable fingerprint option in Settings [3/3] <Andy Mast> 12 hours ago
+b189557 : Settings: add wifi ap dialog 'show password' default overlay <Roman Birg> 12 hours ago
+904c8d9 : settings: Fix developer options crash when mBackupManager is null <Christopher R. Palmer> 3 days ago
+ 
+**** github:CMRemix/proprietary_vendor_samsung ****
+93facb7 : hlte: minor update to N9005XXUGBOB6 <arter97> 10 weeks ago
+c0db9d9 : hlte: sort hlte-vendor-blobs.mk <arter97> 10 weeks ago
+3d7b613 : hlte-common add missing dependencies <arter97> 10 weeks ago
+46a2a68 : hlte-common: sort hlte-common-vendor-blobs.mk <arter97> 10 weeks ago
+2d489e0 : hlte-common: strip libarcsoft_nighthawk <arter97> 10 weeks ago
+ 
+**** cmR:android_vendor_SaberMod ****
+72631da : add CMRemix rom verion to sm dumpvar make file <ZION959> 11 hours ago
+ 
