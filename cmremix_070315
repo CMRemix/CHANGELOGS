@@ -1,0 +1,35 @@
+
+**** cmR:android_frameworks_base ****
+59280c1 : Lockscreen: colorize carrier label <tobitege> 12 hours ago
+15e1ee6 : Lockscreen: increase weather icons <tobitege> 12 hours ago
+58ad1225 : Add Wi-Fi SSID display option to Adv Wifi settings (2/2) <tobitege> 48 minutes ago
+1c64ea1 : HeadsUp: only snooze when swiping up <Altaf-Mahdi> 5 days ago
+90a7cac : Slim recents: Fixup float mode string. <BlackDragon> 32 hours ago
+b1b334b : Recents: Launch as Floating app. <BlackDragon> 33 hours ago
+f9cde17 : Remove: "Recents: Launch as floating app." <ZION959> 2 hours ago
+23851f2 : Store manifest hash code in PackageParser.Package <d34d> 2 days ago
+626a863 : Keyguard: fix misaligned ripple for pin-entry backspace button <Daniel Koman> 2 days ago
+8a811a4 : Screen pinning improvements <Alex Cruz> 4 days ago
+8d3ce3b : revert: Screen pinning improvements <ZION959> 2 hours ago
+ 
+**** github:CMRemix/android_kernel_samsung_trlte ****
+0b800c8 : msm: thermal: Limit the emergency mitigation messages <ZION959> 22 hours ago
+715e1ae : msm: thermal: Store temperature of tsens on kernel panic notification <Anji Jonnala> 9 months ago
+e22c3b4 : thermal: msm: Remove early init from board file <ZION959> 22 hours ago
+b711973 : msm: thermal: Prevent mitigation if not required ( neobuddy89) <ZION959> 22 hours ago
+a3e86e9 : Revert "msm: thermal: Keep core_control_mask coincident with boot_cpu_mask" <Ram Chandrasekar> 8 months ago
+102c485 : thermal-core: Fix to send correct trip type to get trip temperature <Ram Chandrasekar> 22 hours ago
+5cc5ab9 : revert: cpufreq/thermal: frequency mitigation preventer V2 <ZION959> 22 hours ago
+dd8f8e1 : revert: thermal: fix limited_max_freq being undefined or out of range <ZION959> 22 hours ago
+91b0e52 : devfreq: adreno_idler: Use state notifier helper <ZION959> 24 hours ago
+cb82201 : drivers: state_notifier: Export suspend status <ZION959> 24 hours ago
+773ae2f : remove: msm: mdss: Adding lcd notifier <ZION959> 24 hours ago
+08afca9 : add DT2W again <ZION959> 25 hours ago
+0b7573c : Dtsi: realign voltages with userspace values [@Twistesumbrella & @Ktoonsez] <ZION959> 22 hours ago
+183ff0b : oc to 2.9ghz, uc 223mhz & msm cpu frequency limit <ZION959> 23 hours ago
+ 
+**** cmR:android_packages_apps_Settings ****
+1459bf3 : Add Wi-Fi SSID display option to Adv Wifi settings (1/2) <tobitege> 46 minutes ago
+0e31ddd : Settings: Remove Performance Settings <BMc08GT> 2 hours ago
+c986bd8 : revert: Settings: Implement Kernel Adiutor <ZION959> 3 hours ago
+ 

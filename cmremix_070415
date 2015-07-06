@@ -1,0 +1,177 @@
+
+**** cmR:CMRemix ****
+5fe9731 : 5.1.1_r3 -> 5.1.1_r6 <Ricardo Cerqueira> 17 hours ago
+ 
+**** cmR:android_build ****
+a175930 :  Merge tag 'android-5.1.1_r6' into cm-12.1 <Ricardo Cerqueira> 71 minutes ago
+ 
+**** github:CyanogenMod/android_device_qcom_sepolicy ****
+238dd07 : sepolicy: add permissions to set system property <Dinesh K Garg> 7 months ago
+ 
+**** github:CMRemix/android_device_samsung_hlte-common ****
+f2dcaa3 : revert: set zion mainline kernel config <ZION959> 23 hours ago
+ 
+**** github:CyanogenMod/android_external_flac ****
+fe03f73 : libFLAC: merge master from Xiph <Robert Shih> 6 months ago
+ 
+**** github:CyanogenMod/android_external_libnfc-nci ****
+48ea540 : pn547: Don't attempt to downgrade firmware <Ricardo Cerqueira> 1 year, 1 month ago
+09f86f3 : pn547: Force rewrite of config even if we think it's the same <Ricardo Cerqueira> 3 months ago
+18862aa : libnfc-nci: Add NXP chip type disambiguation <Steve Kondik> 5 days ago
+8e4a826 : Rename NXP HAL <Jizhou Liao> 11 months ago
+47b6816 : Include stl symbols and headers <Rashed Abdel-Tawab> 5 weeks ago
+9cfc94e : Update .conf file <Jizhou Liao> 3 weeks ago
+9ae659e : Add Peer-To-Peer priority mechanism <Jizhou Liao> 4 weeks ago
+6de0db5 : Adding MiFARE DESFire format support <Jizhou Liao> 4 weeks ago
+6114606 : Correct corrupted CC value on MIFARE ULC tag <Jizhou Liao> 5 weeks ago
+5629b15 : T1T HR0 and HR1 parameters missing in tag dectection <Jizhou Liao> 5 weeks ago
+fc700c3 : Increase maximum AID routing buffer length and entry size. <Jizhou Liao> 4 weeks ago
+a18233a : Increase APDU buffer size to support extended APDU <Jizhou Liao> 5 weeks ago
+102fc9b : Fix unhandled NCI errors and wrong states <Jizhou Liao> 5 weeks ago
+e8720be : Increase HCI EVT buffer size <Jizhou Liao> 4 weeks ago
+4c66914 : Fix maximum HCP package size <Jizhou Liao> 4 weeks ago
+fd41b76 : Memory leak and NULL pointer check fixes <Jizhou Liao> 5 weeks ago
+c631944 : Code inspection fixes <Jizhou Liao> 4 weeks ago
+955c4b1 : Changes base on coding conventions rules <Jizhou Liao> 5 weeks ago
+382b6a7 : Fix board-specific HAL module naming <Shareef Ali> 7 months ago
+8c3a43e : nfc_nci: Allow passing in the HAL suffix as a variable <Steve Kondik> 2 years, 1 month ago
+ca49e1a : Add NFC-DEP routing <Jizhou Liao> 3 weeks ago
+4619345 : Adding NXP NCI Hal implementation <Jizhou Liao> 7 weeks ago
+8e290d3 : Fix <string.h> include. <Martijn Coenen> 3 months ago
+4817764 : Bump LLCP version to 1.2 <Martijn Coenen> 3 months ago
+e4ecc7d : Add system prop for enabling protocol logging <Andres Morales> 9 months ago
+a8e7eb7 : Add NOTICE and MODULE_LICENSE <Conley Owens> 4 months ago
+82c3eed : Add missing includes. <Elliott Hughes> 5 months ago
+be6e686 : Add missing includes. <Elliott Hughes> 5 months ago
+9265e29 : Cleanup Obsolete LOCAL_PRELINK_MODULE. <Ying Wang> 7 months ago
+ed16726 : Move libnfc-nci to libc++. <Dan Albert> 8 months ago
+6d45985 : Fix Clang compilation errors. <Chih-Hung Hsieh> 9 months ago
+fe2c97f : Don't set a pthread_t to NULL <Bernhard Rosenkraenzer> 9 months ago
+027cc57 : Don't manually link stlport. <Dan Albert> 9 months ago
+ 
+**** cmR:android_external_libpng ****
+1a173d9 : Backport of fix for CVE-2015-0973 to libpng 1.2. <Narayan Kamath> 3 months ago
+481d525 : Revert "Fix buffer overwrite in png_build_index" DO NOT MERGE <Narayan Kamath> 3 months ago
+bea4e6d : Restore a width check that was removed from png.c (CVE-2015-0973) <Narayan Kamath> 4 months ago
+6b38063 : Fix buffer overwrite in png_build_index <Henrik Smiding> 5 months ago
+41cf547 : Incrementally increase the index size based on when the data structures are allocated. <Derek Sollenberger> 10 months ago
+30cb953 : Fix buffer overflow security vulnerability (CVE-2014-9495) <Henrik Smiding> 5 months ago
+ 
+**** github:CyanogenMod/android_external_stagefright-plugins ****
+e9eddbf : stagefright-plugins: Disable lowres <Steve Kondik> 2 days ago
+ 
+**** cmR:android_frameworks_av ****
+33a8884 : libmedia: restrict nuplayer from using track offload <Alexy Joseph> 8 weeks ago
+ 
+**** cmR:android_frameworks_base ****
+48fd113 : release CMRemix lollipop 5.1.1_R6 <ZION959> 52 minutes ago
+2909696 : Turn off screen pinning off by default in recents <Alex Cruz> 10 hours ago
+a40fea9 : SystemUI: Fix FC when mHandler is null <LuK1337> 21 hours ago
+fe0a365 : DO NOT MERGE Don't take flags when creating app widget config activity. <Svet Ganov> 3 months ago
+bf87d61 : Remove implementation of deprecated method. <Deepanshu Gupta> 3 months ago
+318a248 : Make Bitmap_createFromParcel check the color count. DO NOT MERGE <Leon Scroggins III> 4 months ago
+4f3e93a : Do not paint shadow if outside of the clip area <Diego Perez> 5 months ago
+a293783 : Add Asset management support for fonts. <Deepanshu Gupta> 5 months ago
+6d5899d : Mark persistent apps as such when the ProcessRecord is created <Christopher Tate> 8 weeks ago
+63bba48 : Wi-Fi SSID display option move to CMREMIX settings <ZION959> 6 hours ago
+ 
+**** github:CyanogenMod/android_frameworks_compile_slang ****
+aabf3b4 : Explicitly set DataLayout for 32-bit. <Tim Murray> 6 months ago
+ 
+**** github:CyanogenMod/android_frameworks_opt_colorpicker ****
+25ec099 : Remove unnecessary themes <Scott Kennedy> 4 months ago
+ 
+**** github:CyanogenMod/android_frameworks_opt_photoviewer ****
+2181c0e : Add @Nullable where required in ActionBarInterface <Scott Kennedy> 4 months ago
+ 
+**** github:CyanogenMod/android_frameworks_support ****
+11b8398 : Update support repo version (22.0.1/13) and add javadoc <Xavier Ducrohet> 3 months ago
+2fa1702 : Fix android-support-v17-leanback-docs build. <Ying Wang> 4 months ago
+e4cf5a9 : workaround for aar dependencies in pom. <Xavier Ducrohet> 4 months ago
+f48e02e : Fix support lib compilation. DO NOT MERGE. <Xavier Ducrohet> 4 months ago
+941d64e : Update version of the support lib. DO NOT MERGE. <Xavier Ducrohet> 4 months ago
+96f1e91 : Update Support library gradle build files. DO NOT MERGE. <Chris Banes> 4 months ago
+ 
+**** github:CyanogenMod/android_hardware_qcom_audio ****
+298039c : audio: Refactor amplifier_set_device logic <Ethan Chen> 26 hours ago
+ 
+**** github:CyanogenMod/android_hardware_qcom_keymaster ****
+8e39456 : keymaster: fix build for msm8994 <Scott Mertz> 2 days ago
+f33d1ad : keystore: Enable building on msm8992 and msm8994 <Rashed Abdel-Tawab> 2 days ago
+ 
+**** github:CMRemix/android_kernel_samsung_hlte ****
+e3b9759 : scripts: remove localversion "+" from kernel version strings <yank555-lu> 7 months ago
+b429b82 : hlte cmremix defconfig version 0.1 <ZION959> 23 hours ago
+034411b : Optimized Overhaul <ZION959> 23 hours ago
+7db381d : net: ipv6: allow choosing optimistic addresses with use_optimistic <Erik Kline> 7 months ago
+fe5b700 : net: ipv6: Add a sysctl to make optimistic addresses useful candidates <Erik Kline> 8 months ago
+17ddaf7 : video: mdss: Color temperature interface using PCC  * MDSS5 supports Polynomial Color Correction. Use this to implement    a simple sysfs API for adjusting RGB scaling values. This can be    used to implement color temperature and other controls.  * Why use this when we have KCAL? This code is dead simple, the    interface is in the right place, and it allows for 128X accuracy. <Steve Kondik> 5 months ago
+b582336 : ASoC: msm: qdsp6v2: Add the matrix mixer call during ASM loopback <Damir Didjusto> 1 year, 2 months ago
+1265dff : ASoC: msm: qdsp6v2: requeue read buffers in mmap device switch <Banajit Goswami> 11 months ago
+c6645e9 : ASoC: msm: compr: Ensure drain sequence is executed <Haynes Mathew George> 11 months ago
+71f6162 : ASoC: msm: qdsp6v2: Fix for cmd status overwrite <Haynes Mathew George> 10 months ago
+3bab7b9 : hlte: upgrade sensorhub driver and firmware from g900f update <Shareef Ali> 6 months ago
+e475038 : hlte: merge in g900f msm-serial-hs <Shareef Ali> 6 months ago
+55e5ceb : hlte: fix mis merge fail <Shareef Ali> 6 months ago
+a6a7f14 : msm-serial-bus: old cruft <Shareef Ali> 6 months ago
+44949c4 : hlte: reenable hostwake gpio <Shareef Ali> 6 months ago
+aa5d743 : msm: vidc: add new control for limiting i/p buffer size <Manikanta Sivapala> 11 months ago
+7ccbb6d : msm: vidc: Add instance to instance list prior to CORE_INIT <Srinu Gorle> 1 year ago
+92b647e : msm: vidc: Change in input buffer size calculation <Praneeth Paladugu> 1 year, 9 months ago
+cfed34b :  hlte fix mismerge <Shareef Ali> 6 months ago
+361bc17 : msm: vidc: Handle max clients error from video hardware <Maheshwar Ajja> 1 year, 2 months ago
+8d6aa38 : msm: vidc: Handle hfi session creation failures properly <Deva Ramasubramanian> 1 year, 4 months ago
+9e434fe : msm: vidc: Fix race condition in power collapse sequence <Maheshwar Ajja> 8 months ago
+6fd1eae : msm: vidc: Refactor OCMEM alloc, set, unset and free <Shalaj Jain> 10 months ago
+a328b2a : msm: vidc: Enable clocks before iommu attach <Maheshwar Ajja> 10 months ago
+d59a90f : msm: vidc: Increase firmware unload delay <Maheshwar Ajja> 11 months ago
+7f246d3 : msm: vidc: Unload firmware immediately after sys error <Maheshwar Ajja> 11 months ago
+e00da9b : msm: vidc: Increase max buffers to VB2_MAX_FRAME (i.e. 64) <Deva Ramasubramanian> 12 months ago
+a4a2183 : msm: vidc: Bug fix in instance clean-up <Praneeth Paladugu> 1 year, 9 months ago
+2f1b012 : msm: vidc: Delay firmware unload during session close <Maheshwar Ajja> 1 year ago
+45c340a : msm: vidc: handle dynamic buffers in pendingq during flush <Arun Menon> 1 year ago
+f1d88bb : msm: vidc: flush queued work during device suspend <Vikash Garodia> 1 year, 1 month ago
+b4940c7 : defconfig: switch to LZMA <arter97> 6 months ago
+bde5af6 : msm: vidc: change concealment color <Manikanta Sivapala> 1 year, 1 month ago
+e946866 : msm: vidc: avoid setting smoothstreaming for Q6 <Vikash Garodia> 1 year ago
+b947f72 : msm-vidc: Modify HFI not to alter VP8 max supported width <Manikanta Sivapala> 1 year, 1 month ago
+4975742 : msm-vidc: Modify Q6 HFI not to alter VP8 max supported width <Ravi Kiran Vonteddu> 1 year, 1 month ago
+421d7ff : msm: vidc: Print out the proper height and width in debugfs <Deva Ramasubramanian> 1 year, 9 months ago
+558b590 : v4l2: vb2: replace VIDEO_MAX_FRAME with VB2_MAX_FRAME <Balamurugan Alagarsamy> 11 months ago
+d99adf7 : hlte: fix mismerge of LA.BF.1.1.1_rb1.1 <Shareef Ali> 6 months ago
+6b42d03 : slim_ngd: Ensure device state consistency with runtime-pm during SSR <Sagar Dharia> 8 months ago
+e3a1d3a : slim_ngd: Use DSP before-shutdown notification for DSP SSR <Sagar Dharia> 8 months ago
+5c7c871 : ngd_slim: Ignore pm_runtime_get error when runtime-pm is not enabled <Sagar Dharia> 10 months ago
+82e5a95 : slim_msm: support non-blocking writes from slimbus MSM controller <Sagar Dharia> 1 year, 3 months ago
+374fda3 : [media] Revert "[media] v4l2: vb2: one more fix for REQBUFS()" <Marek Szyprowski> 4 years, 1 month ago
+50c6da6 : videobuf2-core: Avoid locking userpages if no current->mm <Deva Ramasubramanian> 1 year, 4 months ago
+346b729 : Revert "[media] videobuf2-core: Use current->mm_active when locking USERPTR" <Deva Ramasubramanian> 1 year, 4 months ago
+c012328 : Kgsl: fix mismerge of LA.BF.1.1.1_rb1.1. <Shareef Ali> 6 months ago
+dc6f976 : sync: Only print details for active fences <Jordan Crouse> 9 months ago
+f2d50d0 : sync: Add a "details" callback for sync points <Jordan Crouse> 10 months ago
+2dc107b : msm: kgsl: Keep track of kernel space mappings to memory <Shubhraprakash Das> 1 year, 10 months ago
+ 
+**** github:CMRemix/android_kernel_samsung_trlte ****
+7966a78 : trlte: CPU overclocking 2.9ghz <ZION959> 2 hours ago
+5383e8e : msm: limiter: Export tunables to header file <Pranav Vashi> 3 months ago
+e808c0f : msm: thermal: Limit the emergency mitigation messages <ZION959> 2 days ago
+a325f49 : msm: thermal: Store temperature of tsens on kernel panic notification <Anji Jonnala> 9 months ago
+2d53365 : thermal: msm: Remove early init from board file <ZION959> 2 days ago
+5b052f3 : msm: thermal: Prevent mitigation if not required ( neobuddy89) <ZION959> 2 days ago
+2baa774 : Revert "msm: thermal: Keep core_control_mask coincident with boot_cpu_mask" <Ram Chandrasekar> 8 months ago
+d4b186d : thermal-core: Fix to send correct trip type to get trip temperature <Ram Chandrasekar> 2 days ago
+bae0a39 : revert: cpufreq/thermal: frequency mitigation preventer V2 <ZION959> 2 days ago
+0032b2e : revert: thermal: fix limited_max_freq being undefined or out of range <ZION959> 2 days ago
+6ffa560 : devfreq: adreno_idler: Use state notifier helper <ZION959> 2 days ago
+8efb0f1 : drivers: state_notifier: Export suspend status <ZION959> 2 days ago
+fafc8da : remove: msm: mdss: Adding lcd notifier <ZION959> 2 days ago
+2cf237a : add DT2W again <ZION959> 2 days ago
+ae70e31 : Voltage Control: generic voltage control for DTS based kernels [@faux123] <ZION959> 3 weeks ago
+ 
+**** cmR:android_packages_apps_Dialer ****
+8a7faff : Fix Dialer FC on guest user with phone calls allowed <LuK1337> 21 hours ago
+ 
+**** cmR:android_vendor_CMRemix ****
+14c5d48 : add more adblock host <ZION959> 65 minutes ago
+a5b0426 : add cmremix performance tweak to default.prop <ZION959> 24 hours ago
+ 

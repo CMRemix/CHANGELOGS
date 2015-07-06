@@ -1,0 +1,6 @@
+
+**** github:CMRemix/android_kernel_samsung_trlte ****
+100ebe3 : add savoca's patch for color control MDSS 8084 to kernel <gekkehenkie11> 7 weeks ago
+1c62345 : revert: msm: mdss: savoca's KCAL pp control adapted for shamu (via imoseyon) <ZION959> 2 hours ago
+abdeb11 : sweep2wake: enable s2w from left to right <ZION959> 3 hours ago
+ 
