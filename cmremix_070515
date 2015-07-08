@@ -1,6 +1,28 @@
 
+**** cmR:android_frameworks_av ****
+38a308c : libmedia: restrict nuplayer from using track offload <Alexy Joseph> 8 weeks ago
+ 
+**** cmR:android_frameworks_base ****
+5a64067 : Notifications: Launch in floating mode button. <rogersb11> 3 days ago
+b3831ac : Floating windows update: Fixes and Improvements. <BlackDragon> 3 hours ago
+7dac507 : Prevent data usage cycle month to get below 0 <tobitege> 13 hours ago
+3455e07 : Custom carrier label: fix usage when option is off (2/2) <tobitege> 3 hours ago
+520dc5a : Settings: Sounds/Ringer Icon consistency change <Nicholas Chum> 34 hours ago
+434d211 : BluetoothAdapter: disable logspew <Alexander Martinz> 2 days ago
+9f41395 : Delete unused testing scripts and WithFramework. <Narayan Kamath> 11 days ago
+73b5393 : Barrier only messages shouldn't prevent the idle handlers from running <Christian Poetzsch> 5 weeks ago
+8c67c60 : Use isolated thread to perform onStart() <Charles Tsai> 7 weeks ago
+1ae97a5 : DNSCrypt: Encrypt dns queries     - Add DNS encryption settings constants.     - Listen for settings changes and handle rerouting dns queries     - Handle switching servers <Martin Brabham> 6 months ago
+ef350c9 : Add Process IOWAIT info to ANR dump <Emmanuel Berthier> 1 year, 1 month ago
+2fa77b9 : [ActivityManager] Refactor broadcast and reduce deliver delay. <riddle_hsu> 8 days ago
+ 
 **** github:CMRemix/android_kernel_samsung_trlte ****
+102634d : revert: sweep2wake: enable s2w from left to right <ZION959> 2 hours ago
 100ebe3 : add savoca's patch for color control MDSS 8084 to kernel <gekkehenkie11> 7 weeks ago
-1c62345 : revert: msm: mdss: savoca's KCAL pp control adapted for shamu (via imoseyon) <ZION959> 2 hours ago
-abdeb11 : sweep2wake: enable s2w from left to right <ZION959> 3 hours ago
+1c62345 : revert: msm: mdss: savoca's KCAL pp control adapted for shamu (via imoseyon) <ZION959> 21 hours ago
+abdeb11 : sweep2wake: enable s2w from left to right <ZION959> 21 hours ago
+ 
+**** cmR:android_packages_apps_Settings ****
+16321fe : DataUsage: limit data usage cycle generation loop <tobitege> 12 hours ago
+3da146d : Custom carrier label: fix usage when option is off (1/2) <tobitege> 3 hours ago
  

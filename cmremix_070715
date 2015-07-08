@@ -1,0 +1,92 @@
+
+**** cmR:CMRemix ****
+755e68a : track providers_DownloadProvider <ZION959> 3 hours ago
+cdc112d : derp fixed <ZION959> 24 hours ago
+7307423 : Track cmremix SetupWizard and CMAccount <ZION959> 24 hours ago
+ 
+**** github:CMRemix/android_device_samsung_trlte-common ****
+f60eb0a : move art optimization to vendor cmremix <ZION959> 8 minutes ago
+ 
+**** cmR:android_frameworks_base ****
+149dd3a : Floating windows: Fix minimize/maximize buttons coloring. <BlackDragon> 2 days ago
+7ef3938 : Floating windows: Fix when we close floating window also remove the task. <BlackDragon> 2 days ago
+0d2f98f : Buttons: Launch camera activity instead of BroadcastReceiver <Roman Birg> 3 hours ago
+f9340f6 : Even more duplicates <Abhisek Devkota> 8 hours ago
+c8f9b30 : [1/3] Documents: Full providers rework <Yamil Ghazi> 3 months ago
+eda2e2c : Lets round the corners of Recents windows a bit. <Shaun Eaton> 10 hours ago
+6e279bf :  Lock screen: Update Handle no weather information available: <XXMrHyde> 3 hours ago
+ef6ac17 : Lock screen weather: Add options to hide the weather when notifications are visible, (1/2): <XXMrHyde> 3 hours ago
+01d2a95 : [1/2] Base: option to launch heads up in floating mode. <lion0738> 3 hours ago
+934c630 : revert: SystemUI: Fix Settings not updating properly <ZION959> 23 hours ago
+ 
+**** github:CyanogenMod/android_packages_apps_Calculator ****
+c6121ca : Cursor: Keep visible for long numbers <Stephen Bird> 30 hours ago
+ 
+**** cmR:android_packages_apps_Settings ****
+e50f64b : Settings: Make themable SuperSU drawable <José Adolfo Galdámez> 5 weeks ago
+2b4cf69 : CheckBox to Switch. <Shaun Eaton> 32 hours ago
+ac48b24 :  Lock screen weather: Add options to hide the weather when notificatio… <XXMrHyde> 3 hours ago
+31b419e : [2/2] Settings: option to launch heads up in floating mode <lion0738> 3 hours ago
+ 
+**** cmR:android_packages_apps_SetupWizard ****
+01df479 : SetupWizard: CMRemix Version <Lokesh Chamane> 23 hours ago
+a1c8217 : Automatic translation import <Michael Bestas> 6 days ago
+ee89d29 : Clarify touch event consumption logic <Ethan Chen> 3 weeks ago
+e8ae2d7 : Automatic translation import <Michael Bestas> 2 weeks ago
+b31cb54 : Fix incorrect retrieval of SIM Network Operator. <Matt Garnes> 3 weeks ago
+b72e820 : SetupWizard: protect against IllegalStateExceptions in telephony <Raj Yengisetty> 3 weeks ago
+ffc0dbd : SetupWizard: add overlay to uncheck cyanogen theme option by default <emancebo> 7 weeks ago
+c5e926d : SetupWizard: Add hook to finish setup for CTS automation <cretin45> 3 weeks ago
+1fc47a0 : SetupWizard: allow FINISH_SETUP to be granted via whitelist <Roman Birg> 4 weeks ago
+761381f : Automatic translation import <Michael Bestas> 4 weeks ago
+b7c5182 : SetupWizard: Ensure setup complete flags are set for secondary users <cretin45> 4 weeks ago
+82bbed9 : Automatic translation import <Michael Bestas> 4 weeks ago
+b94d443 : Automatic translation import <Michael Bestas> 5 weeks ago
+a9d0039 : Automatic translation import <Michael Bestas> 6 weeks ago
+b2ceb1f : OOBE: fix NPE in choose data sim page <emancebo> 8 weeks ago
+3d884ce : Automatic translation import <Michael Bestas> 8 weeks ago
+bfd3abd : SetupWizard: hide WhisperPush if it's not installed <Roman Birg> 8 weeks ago
+7710855 : SetupWizard: Add kill switch implementation <cretin45> 9 weeks ago
+4d08b90 : SetupWizard: Use the system property mobile data page visibility <cretin45> 9 weeks ago
+b076a55 : SetupWizard: Use new LegaleseViewer for privacy policy web views <cretin45> 9 weeks ago
+ac84dc0 : Setupwizard: Fix msim NPE where sim only in slot 2 <cretin45> 2 months ago
+676081a : Automatic translation import <Michael Bestas> 10 weeks ago
+9dd952e : SetupWizard: Increase delay for accessibility <cretin45> 10 weeks ago
+3c37b0b : SetupWizard: update stats permission and package <Roman Birg> 2 months ago
+2a98e6f : Disable the CyanogenServicesPage if FEATURE_LEANBACK detected <dhacker29> 3 months ago
+3371e61 : Automatic translation import <Michael Bestas> 2 months ago
+218deb9 : If this is a TV device launch bluetooth pairing before Welcome page <dhacker29> 3 months ago
+de06181 : WifiSetup: If device has Leanback feature specify tv.settings <dhacker29> 3 months ago
+cfc4a0d : SetupWizard: handle skipping id in SubInfoRecords <Pawit Pornkitprasan> 3 months ago
+dd500a1 : SetupWizard: don't access SubscriptionController directly <Pawit Pornkitprasan> 3 months ago
+317a6cb : Automatic translation import <Michael Bestas> 3 months ago
+f654deb : SetupWizard: Give radio a 10 second chance to come up <cretin45> 3 months ago
+bfd7ca0 : Setupwizard: Make sure to advance if GMS is absent <cretin45> 3 months ago
+714be1a : SetupWizard: Aggressively hide nav bar on soft key devices <cretin45> 3 months ago
+317a15e : SetupWizard: Ensure page object isn't null if FM destroyed <cretin45> 3 months ago
+e68543a : Automatic translation import <Michael Bestas> 3 months ago
+6d63e95 : SetupWizard: Handle all touch events in EnableAccessibilityController <cretin45> 3 months ago
+e79aa7f : SetupWizard: Don't assume order of SubInfoRecords <cretin45> 3 months ago
+22df001 : SetupWizard: Disable Checkbox on Resume <Aaahh> 3 months ago
+645ffa8 : Automatic translation import <Michael Bestas> 3 months ago
+2745741 : SetupWizard: Lock orientation prior to finish animation <cretin45> 4 months ago
+b00440e : Automatic translation import <Michael Bestas> 4 months ago
+7610171 : SetupWizard: Initialize the nav keys bundle boolean <cretin45> 4 months ago
+2a01a24 : SetupWizard: Fix regression for devices without custom default theme <cretin45> 4 months ago
+d0389e4 : SetupWizard: Fix regression, only init pages once <cretin45> 4 months ago
+dbc1ceb : SetupWizard: Better handling of launching into other activities <cretin45> 4 months ago
+88aba00 : Disable theme components for secondary users <d34d> 4 months ago
+2104b3f : Automatic translation import <Michael Bestas> 4 months ago
+ 
+**** cmR:android_packages_providers_DownloadProvider ****
+ae179a1 : [3/3] Documents: Full providers rework <Yamil Ghazi> 3 months ago
+ 
+**** cmR:android_packages_providers_MediaProvider ****
+f477188 : [2/3] Documents: Full providers rework <Yamil Ghazi> 3 months ago
+ 
+**** cmR:android_vendor_CMRemix ****
+e5c4b69 : add cmremix tweak and otimization to default.prop <ZION959> 15 minutes ago
+6e9ec42 : build CMRemixSetupWizard <ZION959> 23 hours ago
+18678ad : fixed name for savoca-kcal <ZION959> 23 hours ago
+227d89f : add more adblock host <ZION959> 3 days ago
+ 

@@ -1,0 +1,84 @@
+
+**** cmR:android_build ****
+cb41110 : Revert "build: use common factory script and input more parameters" <Edward Wang> 8 days ago
+475e65b : update cmremix changelog zip name for OTA purpose <ZION959> 8 days ago
+e47daf1 : build: use common factory script and input more parameters <Edward Wang> 10 days ago
+6454a08 : removed chromium prebuilt support to envsetup.sh && The core Makefile <ZION959> 9 days ago
+da4ab0f : Update O3 variables to match vendor <Paul Beeler> 13 days ago
+661d2c0 : update flags for lto <ZION959> 2 weeks ago
+fc21499 : qcom-clang: fixed build <ZION959> 3 weeks ago
+d493da2 : add lto optimization <ZION959> 3 weeks ago
+2218654 : Use Qualcomm Snapdragon LLVM Compiler 3.6 (https://developer.qualcomm.com/mobile-development/increase-app-performance/snapdragon-llvm-compiler-android) for Android Lollipop 5.x for devices with Qualcomm CPU <Your Name> 3 weeks ago
+f3fb705 : Revert: Compile TARGET MODULES with the Snapdragon LLVM Compiler 3.6 for Android instead of LLVM which comes with Android <ZION959> 3 weeks ago
+8552eaa : add name for kernel boot zip <ZION959> 4 weeks ago
+82b5037 : Revert: Add F2FS Compatibility <ZION959> 4 weeks ago
+5c109a7 : Change CMRemix colors output <ZION959> 4 weeks ago
+606ed41 : core: Set ro.adb.secure=0 for recovery default.prop <Bjorn Hutmacher> 7 months ago
+4ecdeb6 : core/config.mk: Add SED_INPLACE <Bjorn Hutmacher> 7 months ago
+9d100bf : build: Prebuilt Chromium files check <Lokesh Chamane> 4 months ago
+329751f : build: move chromium call... <JoseGalRe> 4 weeks ago
+8321e7f : build: Rainbow unicorn puke [1/2] <MaDc0w> 4 weeks ago
+a9956bf : build: cleanup console out of prebuilt chromium <JoseGalRe> 5 months ago
+6b25b01 : build: change style console output of prebuilt chromium <JoseGalRe> 9 months ago
+a052a20 : build: Fix PreBuilt Chromium refs <rooque> 7 months ago
+de62867 : Prebuilt chromium: Run a check for target device directory <Ayysir> 11 months ago
+b18156a : build: Add chromium prebuilt support to envsetup.sh && The core Makefile <Jiangyi> 4 weeks ago
+c47bcef : Mock Location should be off! <Chet Kener> 6 months ago
+be01d98 : Do Not Build Recovery Or Use it <Chet Kener> 8 months ago
+27547ae : Remove Default Combos <Chet Kener> 8 months ago
+6a2de8e : Build Stk and CellBroadcastReceiver <Chet Kener> 8 months ago
+17df570 : Expand Module Vendors <Chet Kener> 8 months ago
+56e77ad : Remove Annoying Goldfish Stuff <Chet Kener> 8 months ago
+2745611 : Remove ro.kernel.android.checkjni <Chet Kener> 6 months ago
+609d408 : Create 0 compression ratio jar files <arter97> 3 months ago
+06e7d67 : Build: Allow board to specify additional flags <ZION959> 5 weeks ago
+01d3589 : set CMRemix Kernel zip name <ZION959> 6 weeks ago
+72f35a4 : Add back mka bootzip <RobbieL811> 6 weeks ago
+25e4f22 : restore kernel.mk deleted by this commit & add custom target kernel toolchain for kernel build <ZION959> 6 weeks ago
+20bdd7c : Add PRODUCT_PACKAGES for Google's prebuilt WebView <arter97> 7 weeks ago
+ed9c5a1 : add cmremix build version info <ZION959> 6 weeks ago
+5233dfa : Compile TARGET MODULES with the Snapdragon LLVM Compiler 3.6 for Android instead of LLVM which comes with Android <ZION959> 6 weeks ago
+a75ad42 : Move sabermod related files to vendor/sm [2/2] <Paul Beeler> 6 weeks ago
+bccf725 : [extra] Make -fsanitize=leak a C only flag <Paul Beeler> 6 weeks ago
+23d1f82 : Disable OpenMP for arm64 until the issues are resolved... <Paul Beeler> 6 weeks ago
+e99de9d : Saberize v5 (3/5) <Paul Beeler> 6 weeks ago
+64f4600 : build: slim launcher <ZION959> 4 months ago
+0f89907 : Build Launcher3 instead of 2 <Chet Kener> 8 months ago
+968ca92 : repopick: Always expand paths to the repo executable. <fattire> 5 months ago
+e8a86ef : Add F2FS Compatibility <Chet Kener> 8 months ago
+2d2401e : JDK8: JDK check should succeed with OpenJDK 8 <mar-v-in> 7 months ago
+6acbc39 : Don't stop if JDK version doesn't match <SferaDev> 8 months ago
+7570b58 : Add Make Dirty Option <Chet Kener> 6 months ago
+ba99197 : Add a Whole bunch of Clean Options <Chet Kener> 6 months ago
+ 
+**** github:CyanogenMod/android_device_samsung_qcom-common ****
+97d53d9 : SamsungDoze: restore proximity wake preference on boot <Dave Daynard> 3 days ago
+ 
+**** cmR:android_frameworks_av ****
+7533421 : audio: Reduce logging verbosity <Ethan Chen> 26 hours ago
+b2eb385 : Acodec: Add interlaced video support <Paras Nagda> 5 months ago
+1a4c727 : audio: fallback to SW decoder for video clips <Pavan Chikkala> 10 weeks ago
+ 
+**** cmR:android_frameworks_base ****
+399bdb8 : Fix Keyboard crashes <Alberto97> 4 weeks ago
+43d16f8 : SystemUI: Fix Settings not updating properly <Lokesh Chamane> 4 hours ago
+aef58bb : Rewrite Keyguard Visualizer <Utkarsh Gupta> 4 hours ago
+95d778b : Add fingerprint permission [1/2] <Andy Mast> 4 hours ago
+e5e4e12 : Add a few more default QS tiles <Steve Kondik> 3 days ago
+c977938 : livedisplay: Fix outdoor mode detection <Steve Kondik> 3 days ago
+15492e7 : SystemUI: dismiss brightness slider on screen off <Roman Birg> 7 days ago
+8883ed2 : Fingerprint: Reset state when client cancels <Andy Mast> 6 days ago
+c1a7819 : Keyguard: Increase time to show hint texts <Andy Mast> 6 days ago
+941af27 : Keyguard: Add fingerprint icon to the bottom view <Andy Mast> 6 days ago
+ 
+**** cmR:android_frameworks_webview ****
+5fd5949 : Update WebView for arm and arm64 to 44.0.2403.73 <Björn Hutmacher> 4 days ago
+08212e3 : Update WebView for arm and arm64 to 44.0.2403.64 <Björn Hutmacher> 7 days ago
+383b799 : Individual apk files per arch <Björn Hutmacher> 11 days ago
+2266e9a : Add x86 targets <Björn Hutmacher> 12 days ago
+ed1cbbd : Add WebView 43.0.2357.121 for x86 <Björn Hutmacher> 12 days ago
+ 
+**** github:CMRemix/android_kernel_samsung_trlte ****
+982eba9 : Add faux'es IntelliThermal <gekkehenkie11> 4 hours ago
+54aaf52 : revert: msm: thermal: Limit the emergency mitigation messages <ZION959> 4 hours ago
+ 
