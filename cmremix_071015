@@ -1,0 +1,10 @@
+
+**** cmR:android_frameworks_base ****
+7874c3c : App side bar : Fix hardcore switch & System uı FC <westcripp> 2 hours ago
+6bf64e9 : App Sidebar : Fix NPE - Add missing activity launch icon <westcripp> 4 days ago
+ 
+**** cmR:android_packages_apps_Settings ****
+c6e30b4 : Optimize new banner image <Paul Beeler> 12 days ago
+58e61b4 : Update new sabermod banner in about phone <Paul Beeler> 12 days ago
+b771b31 : apps side bar use SeekBarPreferenceCham <ZION959> 3 hours ago
+ 

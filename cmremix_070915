@@ -1,0 +1,42 @@
+
+**** github:CMRemix/android_device_samsung_trlte-common ****
+fc30886 : trlte-common: update proprietary files <gekkehenkie11> 32 hours ago
+85fefd6 : enable intellithermal and use Samsung's CPU governor parameters <gekkehenkie11> 3 days ago
+ 
+**** github:CMRemix/android_device_samsung_trltespr ****
+8a5c064 : cm-12.1 bringup of trltespr <Michael Wawrzyniak> 2 days ago
+ 
+**** github:CMRemix/android_device_samsung_trltexx ****
+7d389ab : trltexx: update proprietary-files.txt <gekkehenkie11> 32 hours ago
+ 
+**** cmR:android_frameworks_base ****
+8f35d63 : Dark Material themed Advanced Power Menu <Nicholas Chum> 72 minutes ago
+9303ebb : Color picker: Improvements and fixes, (1/2) <ZION959> 2 hours ago
+527fc0b : WallpaperManagerService: use a single file observer <Roman Birg> 12 hours ago
+b0d6cb6 : Fingerprint: Vibrate device. <Matt Garnes> 2 days ago
+609f8ac : SystemUI: fix keyguard unlock drawable not updating <Roman Birg> 2 days ago
+d500a6b : Fingerprint: Get current user id via Process.myUserHandle() <Andy Mast> 31 hours ago
+5b6b2f4 : Miss USB device Interface from UsbManager.getDeviceList(). <wang.zhenyu> 6 days ago
+8afc3c4 : Fix "Bluetooh" logging typo. <Elliott Hughes> 3 days ago
+888c595 : Android always has <malloc.h>. <Elliott Hughes> 2 days ago
+7d942c6 : Clean up floating mode option handling code <tobitege> 34 hours ago
+bd4549c : Revert "Remove long click intent for floating window." <tobitege> 34 hours ago
+9340d62 : Add fingerprint to DB before calling clients <d34d> 2 days ago
+6856134 : [1/2] Camera button support <HazouPH> 5 weeks ago
+c6d89c9 : Lets make notifications and buttons square again <tobitege> 2 days ago
+ 
+**** cmR:android_packages_apps_Settings ****
+ac322b7 :  Color picker: Improvements and fixes, (2/2): <XXMrHyde> 76 minutes ago
+e9a7810 : Add Color picker from XXMrHyde <XXMrHyde> 4 hours ago
+36013f1 : squash: revert: Add margaritov colorpicker from SlimRoms <ZION959> 4 hours ago
+e4819fc : Fingerprint: Fingerprint enrollment <d34d> 2 days ago
+8d8d288 : Fingerprint: Add summary text to 'manage fingerprints' <Andy Mast> 35 hours ago
+7de5d7c : [2/2] Camera button support <HazouPH> 5 weeks ago
+ 
+**** github:CMRemix/proprietary_vendor_samsung ****
+387b294 : revert: Squash Update GPS libs to Lollipop and add GPS location service use trltetmo GPS blobs. <ZION959> 4 hours ago
+0f006f1 : revert: Squash Update GPS libs to Lollipop and add GPS location service use tmo GPS blobs. <ZION959> 4 hours ago
+33c49df : trlte-common: add qualcomm location service and bring makefiles up to date <gekkehenkie11> 18 hours ago
+dd3cc52 : Add libalarmservice_jni.so to trltespr-vendor-blobs.mk <Michael Wawrzyniak> 2 days ago
+f8fdab4 : Update trltespr GPS blobs <Michael Wawrzyniak> 3 days ago
+ 

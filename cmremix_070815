@@ -1,0 +1,82 @@
+
+**** github:CMRemix/android_device_samsung_hlte-common ****
+7429879 : revert: revert: set zion mainline kernel config <ZION959> 4 hours ago
+ 
+**** cmR:android_frameworks_base ****
+4ddf291 : Fix keyguard wallpaper issues <Roman Birg> 25 hours ago
+bd6c2fd : Keyguard Fingerprint: Don't cancel if device doesn't have the feature <Andy Mast> 26 hours ago
+ea96c7e : SystemUI: Add uses-permission for fingerprint <Andy Mast> 31 hours ago
+0e3cac9 : Fingerprint: Secure the dump <Andy Mast> 32 hours ago
+2cc8369 : DO NOT MERGE Fix JNI global references leak in AudioEffect <Lucas Gomez Jimenez> 3 weeks ago
+0953818 : Avoid AsyncTask ThreadPool leak in RecentTaskLoaser <jshe32X> 1 year, 10 months ago
+0aa71ec : backup: Fix a system server crash <Steve Kondik> 29 hours ago
+76de2ab : Appcirclebar float mode switch <Shaun Eaton> 3 hours ago
+cc81f26 : Gesture anywhere floating switch 1/2 <rogersb11> 4 hours ago
+0a92e66 : Add switch to launch Appsidebar apps in floating mode. <Shaun Eaton> 4 hours ago
+f75676b : Remove long click intent for floating window. <Shaun Eaton> 8 hours ago
+ 
+**** github:CMRemix/android_kernel_samsung_hlte ****
+5b1b157 : dt2w: use powersuspend instead lcd notifier <ZION959> 4 hours ago
+f740529 : update Sweep2wake & dt2w <ZION959> 8 days ago
+72e9238 : Set SELinux to permissive "permanently" <arter97> 5 months ago
+d32294e : Introduce Adreno idler for devfreq-based Adreno devices v1.1 by Park Ju Hyung (arter97) <ZION959> 8 days ago
+933c2da : net: ipv6: allow choosing optimistic addresses with use_optimistic <Erik Kline> 7 months ago
+cf23d32 : net: ipv6: Add a sysctl to make optimistic addresses useful candidates <Erik Kline> 8 months ago
+da9dae7 : video: mdss: Color temperature interface using PCC  * MDSS5 supports Polynomial Color Correction. Use this to implement    a simple sysfs API for adjusting RGB scaling values. This can be    used to implement color temperature and other controls.  * Why use this when we have KCAL? This code is dead simple, the    interface is in the right place, and it allows for 128X accuracy. <Steve Kondik> 5 months ago
+6f390d3 : Revert: update defconfig (reverted from commit 6859815c6ffd467aedc766bce3754698cea918eb) <ZION959> 4 months ago
+6859815 : update defconfig <ZION959> 4 months ago
+a11714fa : ASoC: msm: qdsp6v2: Add the matrix mixer call during ASM loopback <Damir Didjusto> 1 year, 2 months ago
+5633623 : ASoC: msm: qdsp6v2: requeue read buffers in mmap device switch <Banajit Goswami> 11 months ago
+52abd36 : ASoC: msm: compr: Ensure drain sequence is executed <Haynes Mathew George> 11 months ago
+88d2285 : ASoC: msm: qdsp6v2: Fix for cmd status overwrite <Haynes Mathew George> 10 months ago
+7d0ee62 : fix flags <ZION959> 5 months ago
+3ac5ba7 : Update and shrink the flags <ZION959> 5 months ago
+0f25b69 : hlte: upgrade sensorhub driver and firmware from g900f update <ZION959> 5 months ago
+2b4f4e8 : hlte: merge in g900f msm-serial-hs <Shareef Ali> 6 months ago
+cdaa8e7 : hlte: fix mis merge fail <Shareef Ali> 6 months ago
+f5ec57f : msm-serial-bus: old cruft <Shareef Ali> 6 months ago
+7b32478 : hlte: reenable hostwake gpio <Shareef Ali> 6 months ago
+518d6e2 : msm: vidc: add new control for limiting i/p buffer size <Manikanta Sivapala> 11 months ago
+7177863 : msm: vidc: Add instance to instance list prior to CORE_INIT <Srinu Gorle> 1 year ago
+14feb94 : msm: vidc: Change in input buffer size calculation <Praneeth Paladugu> 1 year, 9 months ago
+b0d60b1 :  hlte fix mismerge <Shareef Ali> 6 months ago
+6702ad5 : msm: vidc: Handle max clients error from video hardware <Maheshwar Ajja> 1 year, 2 months ago
+f0ae1e2 : msm: vidc: Handle hfi session creation failures properly <Deva Ramasubramanian> 1 year, 4 months ago
+2ebd695 : msm: vidc: Fix race condition in power collapse sequence <Maheshwar Ajja> 8 months ago
+b5bbf8b : msm: vidc: Refactor OCMEM alloc, set, unset and free <Shalaj Jain> 10 months ago
+1f3d8cf : msm: vidc: Enable clocks before iommu attach <Maheshwar Ajja> 10 months ago
+ab80f3f : msm: vidc: Increase firmware unload delay <Maheshwar Ajja> 11 months ago
+4cb4b67 : msm: vidc: Unload firmware immediately after sys error <Maheshwar Ajja> 11 months ago
+99c7496 : msm: vidc: Increase max buffers to VB2_MAX_FRAME (i.e. 64) <Deva Ramasubramanian> 12 months ago
+5f6b9f8 : msm: vidc: Bug fix in instance clean-up <Praneeth Paladugu> 1 year, 9 months ago
+15fd74d : msm: vidc: Delay firmware unload during session close <Maheshwar Ajja> 1 year ago
+2ca70c5 : msm: vidc: handle dynamic buffers in pendingq during flush <Arun Menon> 1 year ago
+dd135a9 : msm: vidc: flush queued work during device suspend <Vikash Garodia> 1 year, 1 month ago
+7cb1635 : msm: vidc: change concealment color <Manikanta Sivapala> 1 year, 1 month ago
+47ec91b : msm: vidc: avoid setting smoothstreaming for Q6 <Vikash Garodia> 1 year ago
+94e1109 : msm-vidc: Modify HFI not to alter VP8 max supported width <Manikanta Sivapala> 1 year, 1 month ago
+6275853 : msm-vidc: Modify Q6 HFI not to alter VP8 max supported width <Ravi Kiran Vonteddu> 1 year, 1 month ago
+0072140 : msm: vidc: Print out the proper height and width in debugfs <Deva Ramasubramanian> 1 year, 9 months ago
+2dd88f3 : v4l2: vb2: replace VIDEO_MAX_FRAME with VB2_MAX_FRAME <Balamurugan Alagarsamy> 11 months ago
+fbf019d : hlte: fix mismerge of LA.BF.1.1.1_rb1.1 <Shareef Ali> 6 months ago
+fe47935 : slim_ngd: Ensure device state consistency with runtime-pm during SSR <Sagar Dharia> 8 months ago
+5777fb4 : slim_ngd: Use DSP before-shutdown notification for DSP SSR <Sagar Dharia> 9 months ago
+cf44edf : ngd_slim: Ignore pm_runtime_get error when runtime-pm is not enabled <Sagar Dharia> 10 months ago
+85272eb : slim_msm: support non-blocking writes from slimbus MSM controller <Sagar Dharia> 1 year, 3 months ago
+cdc146b : [media] Revert "[media] v4l2: vb2: one more fix for REQBUFS()" <Marek Szyprowski> 4 years, 1 month ago
+a56124c : videobuf2-core: Avoid locking userpages if no current->mm <Deva Ramasubramanian> 1 year, 4 months ago
+72f765c : Revert "[media] videobuf2-core: Use current->mm_active when locking USERPTR" <Deva Ramasubramanian> 1 year, 4 months ago
+ 
+**** github:CMRemix/android_kernel_samsung_trlte ****
+6c6e2c0 : trlte: CPU overclocking 2.9ghz <ZION959> 15 hours ago
+5da7c86 : revert : trlte: CPU overclocking 2.9ghz <ZION959> 15 hours ago
+ 
+**** cmR:android_packages_apps_Settings ****
+8167730 : [squash] CMRemix Floating settings <Shaun Eaton> 2 hours ago
+0b1fe1f : add back trds <ZION959> 2 hours ago
+d2a53dc : update fixed breathing notification <ZION959> 2 hours ago
+2898158 : Settings: vectorize supersu drawable <José Adolfo Galdámez> 19 hours ago
+ 
+**** cmR:android_packages_apps_SetupWizard ****
+069b6c4 : Change to brand CyanogenMod to CMRemix <ZION959> 17 hours ago
+ 
