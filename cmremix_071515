@@ -1,0 +1,418 @@
+
+**** cmR:CMRemix ****
+71eeb92 : track CM 's art & bionic again (reverted from commit 9741c2371cc9f11d8016fd116b401e8c97e4bc3c) <ZION959> 11 hours ago
+aa47169 : cm: Use fork of aarch64 gcc for darwin as well <Brandon McAnsh> 29 hours ago
+5515fd9 : cm: Use fork of aarch64 gcc <Steve Kondik> 3 days ago
+ 
+**** github:CyanogenMod/android_art ****
+1782e2d : Improve dalvik cache pruning <Chirayu Desai> 6 days ago
+913010c : Revert "Revert "AArch64: Fix incorrect use of preceding LIR."" <Steve Kondik> 3 days ago
+ 
+**** cmR:android_build ****
+be9ae46 : Use Qualcomm Snapdragon LLVM Compiler 3.6 (https://developer.qualcomm.com/mobile-development/increase-app-performance/snapdragon-llvm-compiler-android) for Android Lollipop 5.x for devices with Qualcomm CPU <ZION959> 15 hours ago
+6dc1fb9 : revert: Use Qualcomm Snapdragon LLVM Compiler 3.6 (https://developer.qualcomm.com/mobile-development/increase-app-performance/snapdragon-llvm-compiler-android) for Android Lollipop 5.x for devices with Qualcomm CPU <ZION959> 27 hours ago
+1e8eaf9 : arm64: Enable Cortex A53 Errata 843419, 835769 ldflags <David Ng> 3 months ago
+808531f : AArch64: Addressing Cortex-A53 erratum 835769 <Wei Wang> 3 months ago
+8ab3618 : Revert "Disable -mcpu=cortex-a15 flag for krait" <Steve Kondik> 3 days ago
+0f1ef4b : tools:releasetools:Use timestamp from build.prop while building system.img <Ameya Thakur> 4 months ago
+ 
+**** github:CyanogenMod/android_device_qcom_common ****
+c3f88a7 : power: Send 8994 perf commands ourselves <Steve Kondik> 33 hours ago
+a8bf98b : power: Add features to the 8994 PowerHAL <Steve Kondik> 3 weeks ago
+ 
+**** github:CyanogenMod/android_device_samsung_qcom-common ****
+a77bf93 : Automatic translation import <Michael Bestas> 3 days ago
+ 
+**** github:CyanogenMod/android_external_bluetooth_bluedroid ****
+a7d6435 : bluedroid: Fix uninitialized variable warning <Steve Kondik> 25 hours ago
+ 
+**** github:CyanogenMod/android_external_stagefright-plugins ****
+b384c5f : stagefright-plugins: Restructure the code <Steve Kondik> 8 days ago
+ 
+**** github:CyanogenMod/android_external_whispersystems_WhisperPush ****
+8226960 : WhisperPush: Update Terms Of Service and Privacy URL <Brinly Taylor> 3 days ago
+69f768b : Automatic translation import <Michael Bestas> 3 days ago
+ 
+**** github:CyanogenMod/android_external_wpa_supplicant_8 ****
+48e2a66 : eap_peer: Make the QMI EAP proxy a standalone lib <Ricardo Cerqueira> 4 days ago
+ 
+**** cmR:android_frameworks_av ****
+9c7bf97 : revert: stagefright: Remove deprecated FFMPEG config to fixed build <ZION959> 11 hours ago
+b55b927 : stagefright: Remove deprecated FFMPEG config <Ethan Chen> 29 hours ago
+57db9b4 : Prevent reading past the end of the buffer in 3GPP <Joshua J. Drake> 2 months ago
+9824bfd : Prevent integer underflow if size is below 6 <Joshua J. Drake> 2 months ago
+889ae4a : Fix integer overflow when handling MPEG4 tx3g atom <Joshua J. Drake> 2 months ago
+b1f2929 : Fix integer underflow in covr MPEG4 processing <Joshua J. Drake> 2 months ago
+7ff5505 : Prevent integer overflow when processing covr MPEG4 atoms <Joshua J. Drake> 2 months ago
+ac27b63 : stagefright: Move a bunch of FFMPEG stuff out of here <Steve Kondik> 7 days ago
+d562715 : stagefright: Add support for loading a custom OMXPlugin <Steve Kondik> 7 days ago
+ 
+**** cmR:android_frameworks_base ****
+fe0f13e : AppSidebar: remove duplicate call <ZION959> 13 hours ago
+38076f8 : Battery text position options fix (2/2) <tobitege> 3 days ago
+fcaca3d : Fix mounting of non-FAT formatted SD cards (1/2) <Michael Bestas> 31 hours ago
+8129358 : MediaScanner: Add support for default ringtones per sim <Danesh M> 8 months ago
+9bd1525 : Revert CAF's default system sound settings <Chirayu Desai> 3 weeks ago
+d073bf7 : revert: RP: Notification and ringtone can't be overlaid by carrier <ZION959> 13 hours ago
+de11ac0 : MediaPlayer: Add multi SIM ringtone support <padarshr> 1 year, 2 months ago
+82dd7be : livedisplay: Fix issue where settings weren't applied <Steve Kondik> 2 days ago
+a9b72ac : CaptivePortal: Remove captive_portal_login intent-filter <Brandon McAnsh> 3 weeks ago
+ec04d94f : CaptivePortal: Assert dataUri to prevent possible NPE <Brandon McAnsh> 3 weeks ago
+8860ef6 : Revert "Bluetooth: Check for mPanservice before changing tethering state" <Ricardo Cerqueira> 2 days ago
+e2bc3f6 : Automatic translation import <Michael Bestas> 3 days ago
+df42948 : disable slim recents by default[1/2] <srisurya95> 4 days ago
+ 
+**** cmR:android_frameworks_native ****
+7c2c333 : Revert "Add OMX_AUDIO_CodingAPE and OMX_AUDIO_CodingDTS" <Steve Kondik> 9 days ago
+ 
+**** cmR:android_frameworks_opt_net_wifi ****
+1391ee9 : Fix memory leak in WifiNative <Henrik Baard> 13 days ago
+ 
+**** cmR:android_frameworks_rs ****
+077abae : Use Qualcomm Snapdragon LLVM Compiler 3.5 to compile driver runtime <Your Name> 24 hours ago
+431e85c : revert: fixed build for Qclang 3.6 <ZION959> 15 hours ago
+a4f29f5 : fixed build for Qclang 3.6 <ZION959> 4 months ago
+ 
+**** github:CyanogenMod/android_hardware_qcom_audio ****
+8d3b159 : Add special case for stereo camcorder <alanht_wu> 9 days ago
+aa958e9 : hal: Fix sidetone sequence during voice call <Bhalchandra Gajare> 5 weeks ago
+209f990 : hal: pass samplerate as is to tiny compress <Ravi Kumar Alamanda> 8 months ago
+6653a09 : hal: allow to get render position for non-offload use cases <Zhou Song> 2 months ago
+0841437 : hal: Set ddp endpoint params for Dolby decoder <Pradnya Chaphekar> 3 months ago
+cbf8854 : hal: update input source type during open input stream <Vidyakumar Athota> 4 months ago
+ 
+**** github:CyanogenMod/android_hardware_qcom_display ****
+8751e83 : hwc: Handle DOZE_SUSPEND properly <Naseer Ahmed> 9 months ago
+ 
+**** github:CyanogenMod/android_hardware_qcom_display ****
+96d868c : hwc: Limit BWC to content with height within 4092 <Saurabh Shah> 5 weeks ago
+f5fb324 : hwc: Handle layers marked as PROTECTED flag as secure <Arun Kumar K.R> 6 weeks ago
+8056408 : hwc: Fix incorrect compType for HWCursor <Arun Kumar K.R> 9 weeks ago
+f06b607 : display: Add support for HW Cursor <Arun Kumar K.R> 4 months ago
+7e8f7e2 : hwc: Reset mode tracking in MDPComp constructor <Saurabh Shah> 8 weeks ago
+342a007 : gralloc: Fix RAW16 stride <Shuzhen Wang> 11 months ago
+4fdb6fb : Revert "hwc: Skip load based composition for video playback." <Jeykumar Sankaran> 9 weeks ago
+b7a790a : gralloc: Fix a missed unmap. <Saurabh Shah> 3 months ago
+b904230 : hwc: Revert reset pipebook format and retain 8992 specific change <Ramkumar Radhakrishnan> 3 months ago
+30e24a3 : libhdmi: set sync polarity based on HDMI mode <Casey Piper> 3 months ago
+4e41e58 : liboverlay: Do not dump error logs for pipe priority failures. <Jeykumar Sankaran> 3 months ago
+9e6c1a2 : hwc: Use one GPU composition round for video transition <Saurabh Shah> 3 months ago
+5321275 : hwc: Avoid redoing GPU comp under certain conditions <Raj Kamal> 4 months ago
+ 
+**** github:CyanogenMod/android_hardware_qcom_media ****
+6baa455 : Revert "mm-video-v4l2: Add error handling in component_open" <Ashray Kulkarni> 4 weeks ago
+f3f84c7 : mm-video-v4l2: vidc: Open video device nodes rather than symbolic links <Praveen Chavan> 8 weeks ago
+08bfff1 : mm-video-v4l2: compilation fixes for C++11 compiler <Praveen Chavan> 3 months ago
+96fec1f : mm-video-v4l2: vidc: venc: fix settings CSC flags <Praveen Chavan> 8 weeks ago
+2409d1a : mm-video-v4l2: venc: Increase min i/p buffer count for 4K session <Ashray Kulkarni> 3 months ago
+f581cf7 : mm-video-v4l2: Add error handling in component_open <Ashray Kulkarni> 3 months ago
+ 
+**** github:CMRemix/android_kernel_samsung_trlte ****
+611580d : cmremix ultimate kernel v1.0 <ZION959> 9 days ago
+98f7385 : Add faux'es IntelliThermal <gekkehenkie11> 9 days ago
+f56609b : revert: msm: thermal: Limit the emergency mitigation messages <ZION959> 9 days ago
+d169dc4 : revert: intelli_thermal v3.0: initial coding for Linux 3.10 Qualcomm kernels <ZION959> 9 days ago
+0af4bf3 : revert: sweep2wake: enable s2w from left to right <ZION959> 11 days ago
+5ae2641 : usb: gadget: mass_storage: make 3 LUNs: removable, cdrom and nonremovable <FrozenCow> 9 weeks ago
+62cfcd8 : usb: gadget: mass_storage: added sysfs entry for cdrom to LUNs This patch adds a cdrom sysfs entry for each mass_storage LUN, just like ro sysfs entry. This allows switching between USB and CD-ROM emulation without reinserting the module or recompiling the kernel. <FrozenCow> 9 weeks ago
+44bb199 : build ultimate beta9 <ZION959> 11 days ago
+2f01a81 : add savoca's patch for color control MDSS 8084 to kernel <gekkehenkie11> 9 weeks ago
+2f41d3f : revert: msm: mdss: savoca's KCAL pp control adapted for shamu (via imoseyon) <ZION959> 11 days ago
+cacaa9b : sweep2wake: enable s2w from left to right <ZION959> 11 days ago
+d292bbf : msm: thermal: Limit the emergency mitigation messages <ZION959> 13 days ago
+714b7d6 : msm: thermal: Store temperature of tsens on kernel panic notification <Anji Jonnala> 10 months ago
+b94fca9 : thermal: msm: Remove early init from board file <ZION959> 13 days ago
+48afdee : msm: thermal: Prevent mitigation if not required ( neobuddy89) <ZION959> 13 days ago
+9b8560e : Revert "msm: thermal: Keep core_control_mask coincident with boot_cpu_mask" <Ram Chandrasekar> 9 months ago
+c28a05a : thermal-core: Fix to send correct trip type to get trip temperature <Ram Chandrasekar> 13 days ago
+fcaadbd : revert: cpufreq/thermal: frequency mitigation preventer V2 <ZION959> 13 days ago
+7a1e646 : revert: thermal: fix limited_max_freq being undefined or out of range <ZION959> 13 days ago
+1798bb6 : devfreq: adreno_idler: Use state notifier helper <ZION959> 13 days ago
+a8c5e7b : drivers: state_notifier: Export suspend status <ZION959> 13 days ago
+d51f5b5 : remove: msm: mdss: Adding lcd notifier <ZION959> 13 days ago
+ccba5c3 : add DT2W again <ZION959> 13 days ago
+3a2f747 : revert: add DT2W again <ZION959> 2 weeks ago
+63497b0 : Revert "powersuspend: add power_suspended boolean for global access" <ZION959> 2 weeks ago
+57cd0fa : Hardlimit: moderate boost to frequency defaults <placiano> 4 weeks ago
+2e709e5 : Added Hardlimit for Note4 <placiano> 4 weeks ago
+258c0f0 : Dtsi: realign voltages with userspace values [@Twistesumbrella & @Ktoonsez] <ZION959> 13 days ago
+079476b8 : trlte CPU Overclocking, add steps to 3.09GHz & uc 268 mhz <ZION959> 13 days ago
+951918d : Voltage Control: generic voltage control for DTS based kernels [@faux123] <ZION959> 4 weeks ago
+5ae23fc : [squash] revert: OC and voltage control (ktoonsez) <ZION959> 2 weeks ago
+9f9c163 : update defconfig <ZION959> 2 weeks ago
+5a831d0 : msm: limiter: The necessary evil <Pranav Vashi> 3 months ago
+8d4a6cb : cpufreq: Fix limiter interfaces <Pranav Vashi> 4 months ago
+1896e6f : revert back to apq8084_sec_defconfig for easy manage <ZION959> 2 weeks ago
+ce6ced9 : msm: Add MSM limiter driver (Pranav Vashi) <ZION959> 2 weeks ago
+3fa81e5 : s2w derp fixed <ZION959> 2 weeks ago
+7cbe890 : dts: test <ZION959> 2 weeks ago
+b3bab42 : arm: add Krait optimized strcmp <arter97> 4 weeks ago
+33c51b9 : arm: add arm optimized memcmp <arter97> 4 weeks ago
+b0c6810 : gpio_keys: force sync on KEY_POWER, KEY_HOME press This should help in situations when the device or the OS is stalled but the kernel is alive and running. <arter97> 3 weeks ago
+a165925 : sweep2wake: make it work <Pafcholini> 4 weeks ago
+1d0ee76 : msm: zen_decision: Don't set default settings in zd_probe <Brandon Berhent> 9 weeks ago
+68a6feb7 : msm: zen_decision: I'm a dummy - Correctly allow bat_threshold_ignore to be changed in the userspace... <Brandon Berhent> 2 months ago
+f491ffe : msm: zen_decision: Missed f(x) name change <Brandon Berhent> 2 months ago
+1afbf08 : msm: zen_decision: Only call INIT_DELAYED_WORK once - Only call it once, not every time we want to run a thread - Rename some functions for clarity <Brandon Berhent> 2 months ago
+5a149a8 : msm: zen_decision: change queue_delayed_work_on to queue_delayed_work - Not necessary to explicitly queue work on CPU0 anymore <Brandon Berhent> 2 months ago
+e9014bf : msm: zen_decision: Use WQ_UNBOUND and max_active = 1 when allocating WQ - Set WQ_UNBOUND flag on alloc_workqueue which gives the CPU scheduler freedom to move it to other CPUs - Pass 1 as max_active, ensure only 1 task is running at a time from the WQ <Brandon Berhent> 2 months ago
+5feabbe : msm_zen_decision: disable by default - What this does now with screen off/on doesn't really have a point. I thought MPDec was messing with this before. - Leaving for future expansion <Brandon Berhent> 3 months ago
+d75454c : cpufreq: impulse: calculate load before freq change <Pranav Vashi> 3 months ago
+ 
+**** github:CyanogenMod/android_packages_apps_Bluetooth ****
+b473fdb : Automatic translation import <Michael Bestas> 3 days ago
+ 
+**** github:CyanogenMod/android_packages_apps_BluetoothExt ****
+85af06e : Automatic translation import <Michael Bestas> 3 days ago
+ 
+**** github:CyanogenMod/android_packages_apps_CMAccount ****
+dff2d23 : Automatic translation import <Michael Bestas> 3 days ago
+58f3401 : Automatic translation import <Michael Bestas> 2 weeks ago
+8d801e6 : Automatic translation import <Michael Bestas> 3 weeks ago
+993e456 : Automatic translation import <Michael Bestas> 5 weeks ago
+32deb55 : Automatic translation import <Michael Bestas> 5 weeks ago
+a4574cd : Automatic translation import <Michael Bestas> 7 weeks ago
+63c90e6 : Automatic translation import <Michael Bestas> 9 weeks ago
+4d5f38c : Automatic translation import <Michael Bestas> 3 months ago
+aa5cf78 : Automatic translation import <Michael Bestas> 3 months ago
+6bc9bff : Automatic translation import <Michael Bestas> 3 months ago
+f72bbee : Automatic translation import <Michael Bestas> 4 months ago
+06601ae : Automatic translation import <Michael Bestas> 4 months ago
+7a50f49 : Automatic translation import <Michael Bestas> 4 months ago
+ 
+**** github:CyanogenMod/android_packages_apps_CMFileManager ****
+7310a29 : Automatic translation import <Michael Bestas> 3 days ago
+ 
+**** github:CyanogenMod/android_packages_apps_Calendar ****
+a2a65e2 : Automatic translation import <Michael Bestas> 3 days ago
+ 
+**** github:CyanogenMod/android_packages_apps_Camera2 ****
+53d6854 : Automatic translation import <Michael Bestas> 3 days ago
+ 
+**** github:CyanogenMod/android_packages_apps_Contacts ****
+e2cc11b : Automatic translation import <Michael Bestas> 3 days ago
+ 
+**** github:CyanogenMod/android_packages_apps_ContactsCommon ****
+ec13cc9 : CheckableFlipDrawable : Add getter for front drawable <Rohit Yengisetty> 2 days ago
+9109519 : Automatic translation import <Michael Bestas> 3 days ago
+ 
+**** github:CyanogenMod/android_packages_apps_DeskClock ****
+d815eef : Fix rescheduling of alarms that are snoozed <d34d> 2 days ago
+bc4da38 : Automatic translation import <Michael Bestas> 3 days ago
+ 
+**** cmR:android_packages_apps_Dialer ****
+473c0e1 : Automatic translation import <Michael Bestas> 3 days ago
+ 
+**** github:CyanogenMod/android_packages_apps_Eleven ****
+39dc0b6 : eleven: fix invalid srt formats <Jorge Ruesga> 2 days ago
+0481caf : Automatic translation import <Michael Bestas> 3 days ago
+ 
+**** cmR:android_packages_apps_Email ****
+b294161 : Automatic translation import <Michael Bestas> 3 days ago
+ 
+**** github:CyanogenMod/android_packages_apps_Gallery2 ****
+fe5101b : Automatic translation import <Michael Bestas> 3 days ago
+ 
+**** cmR:android_packages_apps_InCallUI ****
+2106d69 : Automatic translation import <Michael Bestas> 3 days ago
+ 
+**** cmR:android_packages_apps_KernelAdiutor ****
+222112d : Bump version to 0.9.6 <fusionjack> 2 days ago
+0e5eed1 : Fix compile error <fusionjack> 2 days ago
+12a75f1 : Fix formatting <777jon> 3 days ago
+fea4da2 : Add support for LG G3 <777jon> 3 days ago
+d612221 : Add transition animation in downloads <Willi Ye> 4 days ago
+040872a : Don't online CPU to read out cpufreq <Willi Ye> 4 days ago
+a555544 : NPE rekt me <Willi Ye> 5 days ago
+ea45792 : version 0.9.6 <Willi Ye> 5 days ago
+7939a66 : Add Entropy settings <Willi Ye> 5 days ago
+c444d3c : Add per core support for cpu boost input freq <Willi Ye> 5 days ago
+afa5429 : version 0.9.5.1.1 beta <Willi Ye> 6 days ago
+d042a49 : Fix background when dark theme is used <Willi Ye> 6 days ago
+64e86f1 : Import Translations from crowdin <Willi Ye> 6 days ago
+0919253 : Init.d: Add edit, delete and new options also new icons <Willi Ye> 6 days ago
+8e4946a : Use HttpURLConnection to read websites <Willi Ye> 6 days ago
+933c15e : Some FC fixes <Willi Ye> 6 days ago
+fee9acf : FrequencyTable: Fix additional card and set permission for init.d <Willi Ye> 6 days ago
+184a5cf : Fix derp on non big.LITTLE devices <Willi Ye> 6 days ago
+3036ae5 : Fix derp <Willi Ye> 7 days ago
+683206e : version 0.9.5.1 beta <Willi Ye> 7 days ago
+25b1ed4 : Import translations from crowdin <Willi Ye> 7 days ago
+8d7374b : Add big.LITTLE support <Willi Ye> 7 days ago
+86bb95c : Some clean up <Willi Ye> 7 days ago
+edc08d6 : Boot/Recovery path of HMP exynos devices <Willi Ye> 7 days ago
+efd8353 : Add some copyright notes in CpuSpy <Willi Ye> 7 days ago
+09a7563 : Fix formating in JSON files <Willi Ye> 7 days ago
+9b9ada4 : Add big.LITTLE support in frequency table <Willi Ye> 7 days ago
+1d6295c : Fix governor tunables on HMP exynos devices <Willi Ye> 7 days ago
+a76df45 : Make sure we read the right cpu temp file <Willi Ye> 7 days ago
+9436279 : fix derp <Akhil Narang> 7 days ago
+64f17e3 : add support for android one and oneplus one <Akhil Narang> 8 days ago
+182552c : Create sprout.json <Akhil Narang> 8 days ago
+d869a02 : Create oneplusone.json <Akhil Narang> 8 days ago
+f7c625d : Create nexus5.json <Yusuf Mostafa> 8 days ago
+ef9f1bf : Add support for nexus 5 <Yusuf Mostafa> 9 days ago
+27196b8 : Import translations from crowdin Add a link to download wiki in README <Willi Ye> 9 days ago
+c62b2ed : version 0.9.5 <Willi Ye> 9 days ago
+d6b1b83 : Add extra_free_kbytes <Willi Ye> 9 days ago
+22aba0e : DT2W for Nexus 9 <Willi Ye> 9 days ago
+21615df : Format celsius properly <Willi Ye> 9 days ago
+f7697ec : Add custom downloads.json support and minor bug fixes <Willi Ye> 9 days ago
+65ca6e5 : Introducing Kernel downloader An option to download third party kernels from developers. This works with JSON files. Kernel developers have to maintain their JSON database and keep them up to date. I will write up a documentation, so people can easily add support for their kernel. <Willi Ye> 12 days ago
+ 
+**** github:CyanogenMod/android_packages_apps_LockClock ****
+652fb4e : LockClock: Only show timestamp if it can fit <Brandon McAnsh> 7 days ago
+ad1d777 : Automatic translation import <Michael Bestas> 3 days ago
+ 
+**** cmR:android_packages_apps_Mms-caf ****
+e0d4d06 : QuickMessage: Add shortMessage to inputType <Brandon McAnsh> 2 weeks ago
+86408dd : Automatic translation import <Michael Bestas> 3 days ago
+ 
+**** cmR:android_packages_apps_Nfc ****
+9feec31 : Automatic translation import <Michael Bestas> 3 days ago
+ 
+**** cmR:android_packages_apps_OmniSwitch ****
+730a724 : OmniSwitch: new app icons <Adam Lapinski> 8 days ago
+ 
+**** cmR:android_packages_apps_PackageInstaller ****
+ee5b2b7 : PackageInstaller: add hook to manage packages via PRE_BOOT_COMPLETED event <emancebo> 7 days ago
+ 
+**** github:CyanogenMod/android_packages_apps_PhoneCommon ****
+813e946 : Automatic translation import <Michael Bestas> 3 days ago
+ 
+**** cmR:android_packages_apps_Settings ****
+6cee00a : Hopefully this shuts off prevent accidental wake-up <APOPHIS9283> 21 hours ago
+1a0ccbe : Battery text position options fix (1/2) <tobitege> 13 hours ago
+f6c053d : MasterClear: fix FRP wipe crash <Roman Birg> 22 hours ago
+43abb64 : Keep screen on during fingerprint enrollment <d34d> 27 hours ago
+d4a42a3 : Protected Apps: Monitor unlock status <Stephen Bird> 2 days ago
+b609069 : Settings: fix setting light FC <Roman Birg> 2 days ago
+1c194a8 : Fingerprint: Include "Fingerprint" in the unlock title <Andy Mast> 2 days ago
+0cf5f77 : Fix aliasing in FingerprintProgressBar <d34d> 2 days ago
+33afdbf : Fix navigating fallback security via setup wizard <d34d> 2 days ago
+0809132 : Fingerprint: Match Enrollment UI with SetupWizard <Andy Mast> 2 days ago
+0d28d81 : settings: Fix livedisplay settings <Steve Kondik> 2 days ago
+c47e12c : Fingerprint: Cancel timeout if user leaves enrollment <Andy Mast> 2 days ago
+21d5e58 : Use theme_accent for manage_fingerptins_primary_color <d34d> 2 days ago
+65ab02a : Remove manage fingerprints from enrollment setup <d34d> 2 days ago
+25b124b : OOBE: Set next label when fingerprint enrollment done <d34d> 2 days ago
+defd02d : Add LOCKSCREEN_BIOMETRIC_WEAK_FALLBACK to fallbackIntent <d34d> 2 days ago
+3b72924 : Remove unused xml <Michael Bestas> 3 days ago
+7775ea0 : Automatic translation import <ZION959> 13 hours ago
+fe39900 : Set untranslatable <Michael Bestas> 3 days ago
+02c72f8 : Add fingerprint enrollment stats <d34d> 5 days ago
+e7aebce : disable slim recents by default[2/2] <srisurya95> 4 days ago
+ 
+**** cmR:android_packages_apps_SetupWizard ****
+b6c8dbf : Automatic translation import <Lokesh Chamane> 13 hours ago
+d34b399 : Reword strings on FingerprintSetupPage <d34d> 2 days ago
+3d39586 : Move fingerprint setup to end of OOBE <d34d> 2 days ago
+a7c680e : WifiSetup: Pass the correct componentName and data for captivePortal <Brandon McAnsh> 3 weeks ago
+bf5d410 : Automatic translation import <Michael Bestas> 3 days ago
+702cf3c : SetupWizard: Fix translatability <black> 5 days ago
+9d6c61f : Enroll fingerprint via SetupWizard [2/2] <d34d> 8 days ago
+ 
+**** github:CyanogenMod/android_packages_apps_Stk ****
+73dd243 : Revert "STK: use single icon as per latest AOSP 5.1" <Ricardo Cerqueira> 2 days ago
+f7df6b5 : Automatic translation import <Michael Bestas> 3 days ago
+ 
+**** cmR:android_packages_apps_ThemeChooser ****
+4c096d3 : Automatic translation import <Michael Bestas> 3 days ago
+ 
+**** cmR:android_packages_apps_TvSettings ****
+5121874 : Automatic translation import <Michael Bestas> 3 days ago
+ 
+**** cmR:android_packages_apps_UnifiedEmail ****
+e8e14aa : Automatic translation import <Michael Bestas> 3 days ago
+ 
+**** cmR:android_packages_inputmethods_LatinIME ****
+27f8abb : Automatic translation import <Michael Bestas> 3 days ago
+ 
+**** cmR:android_packages_providers_MediaProvider ****
+646d632 : Fix mounting of non-FAT formatted SD cards (2/2) <Michael Bestas> 31 hours ago
+ 
+**** github:CyanogenMod/android_packages_providers_TelephonyProvider ****
+fbf5822 : Automatic translation import <Michael Bestas> 3 days ago
+ 
+**** github:CyanogenMod/android_packages_services_Mms ****
+bcfd519 : Automatic translation import <Michael Bestas> 3 days ago
+ 
+**** cmR:android_packages_services_Telecomm ****
+bcea2b8 : Automatic translation import <Michael Bestas> 3 days ago
+ 
+**** cmR:android_packages_services_Telephony ****
+d8be3e7 : Automatic translation import <Michael Bestas> 3 days ago
+ 
+**** github:CyanogenMod/android_packages_wallpapers_PhaseBeam ****
+ae59914 : Automatic translation import <Michael Bestas> 3 days ago
+ 
+**** github:CyanogenMod/android_prebuilts_cmsdk ****
+5ec9336 : cmsdk: Fix spelling error. <Adnan Begovic> 27 hours ago
+1a66ba2 : prebuilts/cmsdk: Update for API level naming. <Adnan Begovic> 2 days ago
+aefbc1f : prebuilts/cmsdk: Create and update 2nd api level text files. <Adnan Begovic> 2 days ago
+279b0c0 : prebuilts/cmsdk: Update perms file for API level 2. <Adnan Begovic> 2 days ago
+7701364 : prebuilts/cmsdk: Update readme for perms. <Adnan Begovic> 2 days ago
+fc45eab : prebuilts/cmsdk: Update readme. <Adnan Begovic> 2 days ago
+74e87d7 : prebuilts/cmsdk: Create new future-release blobs. <Adnan Begovic> 2 days ago
+ 
+**** github:CyanogenMod/android_prebuilts_gcc_darwin-x86_aarch64_aarch64-linux-android-4.9 ****
+4855805 : [darwin-x86] Refresh gcc prebuilts for aarch64 Refresh gcc-4.9 prebuilts for aarch64. This new prebuilts contain (1) workaround for cortex-a53 erratum 843419, (2) some compiler bug fixes, (3) bug fixes for gold. <Rong Xu> 2 months ago
+42dcea5 : [darwin-x86] Refresh gcc prebuilds for aarch64. Fixed Cortex-A53 Erratum 835769 -- LD segfaults with unordered maps. <Rong Xu> 7 months ago
+e5d520b : [darwin-x86] Refresh gcc prebuilts for aarch64 Refresh gcc 4.9 prebuilts for aarch64. This new prebuilts: (1) provide corex-a53 erranum 835769 workaround, (2) fix a few compiler bugs. <Rong Xu> 8 months ago
+7b14592 : Add ld.mcld <Andrew Hsieh> 10 months ago
+5c00418 : [darwin-x86] Refresh gcc-4_9 prebuilts to aarch64 gcc.4-9 source is from google/gcc-4_9 branch. <Rong Xu> 10 months ago
+ 
+**** github:CyanogenMod/android_prebuilts_gcc_linux-x86_aarch64_aarch64-linux-android-4.9 ****
+6c7dfef : [linux-x86] Refresh gcc prebuilts for aarch64 Refresh gcc-4.9 prebuilts for aarch64. This new prebuilts contain (1) workaround for cortex-a53 erratum 843419, (2) some compiler bug fixes, (3) bug fixes for gold. <Rong Xu> 3 months ago
+6b551d8 : [linux-x86] Refresh gcc prebuilds for aarch64. Fixed Cortex-A53 Erratum 835769 -- LD segfaults with unordered maps. <Rong Xu> 7 months ago
+a7bb6f3 : [linux-x86] Refresh gcc prebuilts for aarch64 Refresh gcc 4.9 prebuilts for aarch64. This new prebuilts: (1) provide corex-a53 erranum 835769 workaround, (2) fix a few compiler bugs. <Rong Xu> 8 months ago
+cee064f : Add ld.mcld <Andrew Hsieh> 10 months ago
+a1f277f : [linux-x86] Refresh gcc prebuilts for aarch64 This prebuilts uses gcc 4.9 source from google/gcc-4_9 branch. <Rong Xu> 10 months ago
+ 
+**** bb:arm-eabi-4.9 ****
+49b0b4f : update 07-04-2015 <ZION959> 11 hours ago
+ 
+**** bb:arm-linux-androideabi-4.9 ****
+d2fb877 : update 07-04-2015 <ZION959> 11 hours ago
+ 
+**** cmR:android_system_core ****
+58e24e4 : healthd: Support QC2.0 type charger <Chao Chen> 22 hours ago
+813e0a0 : Added umount to init <Tony Layher> 4 years, 6 months ago
+b0161ae : libutils: Improve support for POSIX timers <Steve Kondik> 3 weeks ago
+ 
+**** github:CyanogenMod/android_system_extras_su ****
+afd9cff : su: allow init to automatically restart daemon <Pawit Pornkitprasan> 3 weeks ago
+ 
+**** github:CyanogenMod/android_vendor_cm ****
+f208523 : sepolicy: system_app: Remove performace setting related entries <Brandon McAnsh> 4 days ago
+2254bba : Yet another massive APN list <Abhisek Devkota> 5 days ago
+bcb6d98 : vendor/cm: Bump cmsdk version. <Adnan Begovic> 2 days ago
+7c96869 : cm: Update properties and libs for stagefright-plugins <Steve Kondik> 7 days ago
+ 
+**** cmR:android_vendor_CMRemix ****
+130945c : set ultimate kernel as default <ZION959> 14 hours ago
+ 
+**** github:CyanogenMod/cm_platform_sdk ****
+e953794 : cmsdk: Add CMStatusBarManager and CustomTile.Builder tests. <Adnan Begovic> 23 hours ago
+ca648dc : cmsdk: Update profiles functional tests. <Adnan Begovic> 24 hours ago
+c9295fb : cmsdk: Clear calling identity when resetAll is called. <Adnan Begovic> 24 hours ago
+f9ec3a4 : cmsdk: Add boysenberry to api text. <Adnan Begovic> 2 days ago
+a7fb315 : cmsdk: Name api level 2 as boysenberry. <Adnan Begovic> 2 days ago
+6352497 : cmsdk: fix cannot create handler <Jorge Ruesga> 2 days ago
+eddb89c : cmsdk: Update api text files. <Adnan Begovic> 2 days ago
+e3ad391 : cmsdk: Target 2nd API level on documentation generation. <Adnan Begovic> 2 days ago
+6f58446 : cmsdk: @hide everything relating to ProfileGroups, until complete. <Adnan Begovic> 2 days ago
+5c8fe31 : cmsdk: Update profile settings documentation. <Adnan Begovic> 2 days ago
+a7579da : Automatic translation import <Michael Bestas> 3 days ago
+ 
+**** github:CMRemix/proprietary_vendor_samsung ****
+4b07381 : GPS TRLTEUSC UPDATES LP <ZION959> 12 hours ago
+8f62dd8 : Add klteduos <ljzyal> 21 hours ago
+743ee11 : kltechnduo:Update blob <ljzyal> 5 days ago
+ 
+**** cmR:android_vendor_SaberMod ****
+c3b2279 : new update flag for qcom-clang <ZION959> 15 hours ago
+21e4be5 : Spice up the FORCE_DISABLE_DEBUGGING option <Joe Maples> 12 days ago
+07259f3 : Add kernel toolchains to TARGET_ARCH_LIB_PATH <Paul Beeler> 3 weeks ago
+0250fd0 : Add Shamu <ZION959> 15 hours ago
+ 

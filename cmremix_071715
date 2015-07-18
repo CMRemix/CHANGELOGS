@@ -1,0 +1,41 @@
+
+**** cmR:android_build ****
+21e6c74 : add ACSII art for CMREmix <ZION959> 2 days ago
+ 
+**** cmR:android_frameworks_base ****
+e995d7e : Navbar: use correct Navigation Bar theme style etc. <tobitege> 7 minutes ago
+e313a8a : SystemUI: SlimDim [1/2] <Daniel Koman> 3 hours ago
+d4855ec : FWB: Hide carrier on lock screen (1/2) <LorDClockaN> 3 hours ago
+96c8abd : fixed slim navigationbar build error <ZION959> 3 hours ago
+3a486f8 : livedisplay: Round values up <Steve Kondik> 3 days ago
+c5938eb : Track current user id in ThemeService <d34d> 3 days ago
+b63e175 : Re-add the Navigation bar callback: <ezio84-xda> 3 days ago
+96276a1 : Fix long press for Legacy menu buttons: <Lars Greiss> 3 days ago
+da0837e :  Fix crash with RTL layouts <Nico60> 3 days ago
+0c4d29f : SystemUI: fix navbar icon too big when using custom icon <Daniel Koman> 3 days ago
+a385bfc : SystemUI: fix navbar/pie icon size if icon is not a vector <Daniel Koman> 3 days ago
+07d44fd : buttonsConfig to actionConfig. <Shaun Eaton> 3 days ago
+6267551 : Fb: Re add a modified method to DelegateViewHelper <siracuervo> 3 weeks ago
+ec33621 : Fix screen pinning message to fit the double 3-dot menu to unpin introduced with SlimNavBar <Jean-Pierre Rasquin> 3 weeks ago
+ad5e600 : [1/2] Display cursor buttons in navigation bar while typing. <GWX> 22 hours ago
+3b32100 : Frameworks Base: Fix app icon on legacy menu <siracuervo> 4 weeks ago
+d4604da : [1/2] Legacy Menu Customizations <siracuervo> 22 hours ago
+ffac729 : [2/2] Left handed navbar during landscape mode <Shuhao Wu> 22 hours ago
+29172f3 : SystemUI: fix incorrectly sized navbar back icon <Roman Birg> 3 months ago
+58e3e9a : SystemUI: change back button to hide ime buttom with rotate animation. <Kyrylo Mikos> 8 months ago
+aca6ee7 : fb: Slims navbar customizations <Lars Greiss> 22 hours ago
+8385154 : Remove @AlmightyMegadeth00 customizable navbar <ZION959> 22 hours ago
+ 
+**** cmR:android_packages_apps_Settings ****
+0a82a49 : Fix Adaway once and for all. <Davor Bertovic> 2 hours ago
+ae0a4dd : Settings: SlimDim  [2/2] <Daniel Koman> 2 hours ago
+f26fe15 :  Settings: Hide carrier on lock screen (2/2) <Davor Bertovic> 2 hours ago
+be84a8b : add string for shortcut_action_assist <ZION959> 2 hours ago
+d484f64 : Change coding style to Slim: <ezio84> 21 hours ago
+ba56bb8 :  [2/2] Display cursor buttons in navigation bar while typing. <GWX> 21 hours ago
+7714720 : [2/2] Legacy Menu Customizations <siracuervo> 21 hours ago
+ab0aefb : Settings: Axxion Tweaks to SlimRoms NavBar <siracuervo> 21 hours ago
+e2fa181 : Fix custom icons in navbar <Griffin Millender> 9 weeks ago
+cec90bb : Settings: Slims navbar customizations <Lars Greiss> 21 hours ago
+14033be : Remove Dave Kessler NavBar <ZION959> 21 hours ago
+ 
