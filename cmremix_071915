@@ -1,0 +1,24 @@
+
+**** cmR:android_frameworks_base ****
+f4c6d3c : Navbar: improve buttons handling on theme change <tobitege> 9 hours ago
+f38e99d : Dock battery: fix merge derps (hotfix) <tobitege> 15 hours ago
+b07d544 : Dock battery: fix merge derps <tobitege> 35 hours ago
+120bc9d : Keyguard: apply custom color to carrier label <tobitege> 2 weeks ago
+5080a98 : Revert "Lockscreen: colorize carrier label" <tobitege> 63 minutes ago
+3a94fad : Fix a bug disappearing installerPackageName info of packages after reboot. <hyemin.hwang> 11 days ago
+f839532 : Automatic translation import <Michael Bestas> 15 hours ago
+6a28be0 : PhoneNumberUtils: Add rewrite rule for CDMA networks in Ukraine <nadlabak> 3 days ago
+66b4f07 : SlimDim: don't dim navbar on lockscreen <Daniel Koman> 34 hours ago
+ 
+**** github:CMRemix/android_kernel_samsung_trlte ****
+6cc0d37 : revert: msm: Add MSM limiter driver (Pranav Vashi) <ZION959> 22 hours ago
+8f808ed : removed dt2w, s2w, sls <ZION959> 22 hours ago
+ 
+**** cmR:android_packages_apps_SetupWizard ****
+9a9e05d : disabled cm navigationbar keys and enabled slim navigationbar and hardware keys <ZION959> 2 hours ago
+210aa7c : Automatic translation import <Michael Bestas> 15 hours ago
+ 
+**** cmR:android_vendor_CMRemix ****
+93dac9b : vendor: add prebuilt Kernel Adiutor <ZION959> 81 minutes ago
+1f65305 : add back removed apps from squisher <ZION959> 89 minutes ago
+ 

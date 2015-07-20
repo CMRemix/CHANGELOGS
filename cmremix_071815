@@ -1,0 +1,136 @@
+
+**** cmR:CMRemix ****
+a02faae : remove eleven and track du's apollo <srisurya95> 2 days ago
+ 
+**** cmR:android_build ****
+1db3c6e : Allow setting the recovery density separately from the aapt config <Chirayu Desai> 4 days ago
+ 
+**** github:CMRemix/android_device_samsung_trlte-common ****
+7c89948 : trlte-common: Don't copy FFMPEG config anymore <Steve Kondik> 4 weeks ago
+ 
+**** github:CyanogenMod/android_external_icu ****
+36dc0a7 : icu: add Kiev summer time zone translation <Roman Birg> 3 days ago
+ 
+**** cmR:android_frameworks_av ****
+9443983 : revert: revert: stagefright: Remove deprecated FFMPEG config to fixed build <ZION959> 20 hours ago
+9d665ab : camera: add ability for a device to specify MAX_CAMERAS <Dan Pasanen> 1 year, 3 months ago
+ 
+**** cmR:android_frameworks_base ****
+e4f1930 : SystemUI: SlimDim - pref to listen on entire screen for touches [1/2] <Daniel Koman> 18 hours ago
+ee69d2eb : SlimDim: listen for touches in navbar empty areas also <Daniel Koman> 2 days ago
+a57fc54 : SystemUI: update notification clipping when reset <Roman Birg> 2 days ago
+87d72b6 : SettingsProvider: Update action for Profile picker. <Adnan Begovic> 2 days ago
+d364389 : Fingerprint: Add break after MSG_REMOVED <Andy Mast> 2 days ago
+c7c366b : Authenticate When Keyguard Resumes From Camera <Andy Mast> 3 days ago
+ 
+**** github:CyanogenMod/android_frameworks_opt_hardware ****
+0a583f1 : cmhw: Add auto contrast support <Steve Kondik> 3 days ago
+ 
+**** github:CyanogenMod/android_hardware_qcom_display ****
+f82a8c9 : hwc: Ensure pipe unset is called before wfd commit <Baldev Sahu> 6 weeks ago
+9bf65fa : hwc: Avoid switching rotator session between secure and non secure <Baldev Kumar Sahu> 8 weeks ago
+7c71a24 : hwc: Avoid switching rotator session between secure and non secure <Baldev Kumar Sahu> 8 weeks ago
+aa26e2d : hwc: initialize viewFrame for primary display <Arun Kumar K.R> 1 year, 1 month ago
+b582a0e : hwc: Avoid partial frame update on secure display <Jeykumar Sankaran> 1 year, 1 month ago
+46dc44f : hwc: Avoid redoing GPU comp under certain conditions <Raj Kamal> 4 months ago
+26dfb57 : hwc: vds: isActive need to be set for wfd using vds solution <Baldev Kumar Sahu> 3 months ago
+99ea81f : hwc: Add check for dirtyRect clear call. <Ramakant Singh> 7 months ago
+ab89fcf : hwc: Set min panel refresh rate during idle timeout <Praveena Pachipulusu> 8 months ago
+0e049ea : h/q/d: Add binder-api support to change refresh-rate. <Raj Kamal> 8 months ago
+1d4bbd2 : display: Add support for dynamic refresh rate <Arun Kumar K.R> 11 months ago
+ 
+**** github:CyanogenMod/android_hardware_qcom_display ****
+bc86209 : gralloc: Fix RAW10 stride <Ranjith Kagathi Ananda> 4 weeks ago
+ 
+**** github:CyanogenMod/android_hardware_qcom_media ****
+fb60ff2 : mm-video-v4l2: vidc: venc: Pass correct input buffers for gralloc source <c_sisanj> 9 weeks ago
+22a20a7 : mm-video-v4l2: vidc: support hevc 720p Full-DSP up to 1280x768 <Balamurugan Alagarsamy> 3 months ago
+2b8d662 : mm-video-v4l2: vidc: vdec: handle flush while codec config ETB for hevc decoder <Balamurugan Alagarsamy> 3 months ago
+ 
+**** github:CyanogenMod/android_hardware_qcom_media ****
+394d7c6 : mm-core: Limit number of NT mode audio decoders <Fred Oh> 3 weeks ago
+ 
+**** github:CyanogenMod/android_hardware_ti_wlan ****
+3c91c48 : wl12xx: Fix compilation warnings <Michael Bestas> 5 days ago
+ 
+**** github:CyanogenMod/android_packages_apps_CMFileManager ****
+a7f33f3 : Update launcher iconography. <Dave Kover> 31 hours ago
+84ff5ed : Changed NavigationView.refresh() in onResume() of the activity to try to restore the original position. <herriojr> 3 days ago
+b8aa362 : Preferences: Move huge paragraph description to own item <Stephen Bird> 10 days ago
+707e828 : ProgressDialog: Require user to explicitly use the cancel button. <Stephen Bird> 3 days ago
+e09d843 : Editor: Handle content uri's in the editor <Stephen Bird> 2 weeks ago
+ 
+**** github:CyanogenMod/android_packages_apps_ContactsCommon ****
+49ff098 : ContactPhotoManager - Add ability to fetch contact bitmap based on photo id <Rohit Yengisetty> 11 days ago
+ 
+**** github:CyanogenMod/android_packages_apps_Gallery2 ****
+0e0c914 : Gallery2: Intents for image/video directory viewing/picking <cretin45> 3 days ago
+ 
+**** cmR:android_packages_apps_Mms-caf ****
+d655920 : Mms : Ensure text mode supports multiple content-types <Danesh M> 3 days ago
+e63abd6 : Drafts: Prevent duplicate drafts from being added <Stephen Bird> 2 days ago
+651cbbd : Compose:  Hiding the "To" label when editing the subject <Stephen Bird> 4 days ago
+0e5e3aa : Show Calendar Event attachment only if an activity can respond to the intent <Rohit Yengisetty> 4 weeks ago
+ 
+**** cmR:android_packages_apps_Settings ****
+e921707 : Settings: SlimDim - pref to listen on entire screen for touches [2/2] <Daniel Koman> 17 hours ago
+f5a85db : fixed navbar build error <ZION959> 19 hours ago
+4f653a9 : Settings: add Kiev time zones to picker <Roman Birg> 3 days ago
+6425fd6 : Settings: Update profiles settings dashboard icon. <ZION959> 20 hours ago
+52f2ca2 : Settings: Make sure we're getting the instance of ProfileManager. <Adnan Begovic> 30 hours ago
+517696f : Setup: Call setUseFingerprint() when enrollment finished <d34d> 33 hours ago
+1368c23 : Remove hardcoded textAppearance for better theme support. <Dave Kover> 2 days ago
+ee9477c : fixed build for slim navigationbar <ZION959> 20 hours ago
+d475f54 : Fix Adaway once and for all. <Davor Bertovic> 23 hours ago
+12ea26c : Settings: SlimDim  [2/2] <Daniel Koman> 23 hours ago
+6974d52 :  Settings: Hide carrier on lock screen (2/2) <Davor Bertovic> 23 hours ago
+e357b1d : add string for shortcut_action_assist <ZION959> 23 hours ago
+3770548 : Change coding style to Slim: <ezio84> 2 days ago
+5a0a7d5 :  [2/2] Display cursor buttons in navigation bar while typing. <GWX> 2 days ago
+c22a7f6 : [2/2] Legacy Menu Customizations <siracuervo> 2 days ago
+9f5d2ed : Settings: Axxion Tweaks to SlimRoms NavBar <siracuervo> 2 days ago
+42379c8 : Fix custom icons in navbar <Griffin Millender> 9 weeks ago
+448d27f : Settings: Slims navbar customizations <Lars Greiss> 2 days ago
+ 
+**** cmR:android_packages_apps_SetupWizard ****
+244386d : update slimnavigationbar and fixed build error <ZION959> 20 hours ago
+ 
+**** cmR:android_packages_apps_ThemeChooser ****
+255d0cf : Update iconography. <Dave Kover> 3 days ago
+ 
+**** cmR:android_packages_providers_DownloadProvider ****
+4bf2413 : Automatic translation import <Michael Bestas> 6 days ago
+ 
+**** cmR:android_packages_services_Telecomm ****
+c023867 : Update to latest api level <Chris Sarbora> 10 days ago
+ 
+**** github:CyanogenMod/android_prebuilts_cmsdk ****
+6ead612 : cmsdk: Update for future* cmsdk changes. <Adnan Begovic> 30 hours ago
+d9c2662 : prebuilts/cmsdk: Make sure readme is markdown format. <Adnan Begovic> 2 days ago
+ 
+**** github:CyanogenMod/android_vendor_cm ****
+7135af8 : Fix Rogers APN <Patrick> 2 days ago
+bbeb27c : APN fine tuning <Abhisek Devkota> 2 days ago
+9bf517f : Hack in support for the old version of Maven that Ubuntu apparently ships with <Chris Sarbora> 2 days ago
+d5420c0 : rendang: Remove unwanted APNs <Lin Ma> 2 days ago
+5a6bda2 : CYNGNOS-454 - Fix config_preferred_apn Overrides <Abhisek Devkota> 3 days ago
+ 
+**** github:CyanogenMod/cm_platform_sdk ****
+75cd945 : cmsdk: Update intent action extras to match new namespace. <Adnan Begovic> 28 hours ago
+02e761f : cmsdk: Fix javadoc comment for CM_VERSION_CODES. <Adnan Begovic> 30 hours ago
+ce52da6 : cmsdk: Update api files for intent action change. <Adnan Begovic> 30 hours ago
+af4e7b4 : cmsdk: Update PROFILE_PICKER intent action. <Adnan Begovic> 2 days ago
+c67a9eb : cmsdk: Clean up constant linking for javadoc. <Adnan Begovic> 2 days ago
+06fc449 : cmsdk: Return UNKNOWN for impossible sdk ints. <Adnan Begovic> 2 days ago
+6714bfe : cmsdk: Add documentation for validating API level. <Adnan Begovic> 2 days ago
+577fe6a : cmsdk: Add copyright header for ProfileManagerTest. <Adnan Begovic> 3 days ago
+d848990 : cmsdk: Add functional manual test for custom uri publish tile. <Adnan Begovic> 3 days ago
+32e97d8 : cmsdk: Add unit tests for CustomTile parceling. <Adnan Begovic> 3 days ago
+1f5ae92 : cmsdk: Add simple profile manager tests. <Adnan Begovic> 3 days ago
+662628a : cmsdk: Add unit tests for Profile parceling. <Adnan Begovic> 4 days ago
+acc8708 : cmsdk: Add unit tests for versioning with os.Build <Adnan Begovic> 4 days ago
+e341fb2 : cmsdk: Fix Profile parceling. <Adnan Begovic> 4 days ago
+ 
+**** cmR:android_vendor_SaberMod ****
+6636995 : new update flag for qcom-clang <srisurya95> 4 days ago
+ 

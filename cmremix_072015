@@ -1,0 +1,10 @@
+
+**** cmR:android_frameworks_base ****
+c63080a : Navbar: improve buttons handling on theme change (hotfix) <tobitege> 3 hours ago
+cd75bd3 : Dock battery: fix merge derps (hotfix 2) <Dark_Eyes> 6 hours ago
+2d81760 : Header view: fix empty gap between battery and profile switcher <tobitege> 25 hours ago
+8175c3c : organized cmremix PhoneStatusBar.java <ZION959> 27 minutes ago
+ 
+**** github:CMRemix/android_kernel_samsung_trlte ****
+20f2d5c : fixed oc table <ZION959> 3 hours ago
+ 
