@@ -1,0 +1,194 @@
+
+**** cmR:CMRemix ****
+ad0a6c0 : revert: Track SlimSaber WallpaperPicker. (reverted from commit 8e43b1bb0370dbfa646a54d07c67b1f31f69c6c4) <ZION959> 2 hours ago
+9d59cee : track libcxx & bionic & arm-linux-androideabi-5.1 <ZION959> 2 days ago
+ 
+**** cmR:android_bionic ****
+e729f7b : revert: Add gitreview file <ZION959> 2 days ago
+6fa4cbc : bionic: Remove gnu99 and use gnu11 <Chet Kener> 5 days ago
+3d9b637 : bionic: Set proper memcpy.S path and remove duplicate files <Men_in_black007> 7 days ago
+de6b2d1 : cortex-a7: set proper memcmp.S path <LuK1337> 8 days ago
+0f60b5d : Add optimized cortex-a7/cortex-a53 memset/memcpy. <Christopher Ferris> 4 weeks ago
+f577eb6 : libm: Fix makefiles <Steve Kondik> 5 weeks ago
+54e3715 : Add aarch64 instructions wherever possible <Amaury Le Leyzour> 6 months ago
+2345fc0 : libm: arm: Add arm specific floor() optimization <Shu Zhang> 1 year, 1 month ago
+108ea9c : Fix our <complex.h> support. <Elliott Hughes> 9 months ago
+c084ac1 : Get new coshl, sinhl, and tanhl implementations from upstream. <Elliott Hughes> 11 months ago
+45421bd : Sync libm with upstream. <Elliott Hughes> 11 months ago
+26d032a : Fix Build For Cortex A15 Devices <Men_in_black007> 10 weeks ago
+dbea918 : libc : memcpy : allow to disable opt for some targets <Varun Chitre> 3 months ago
+35e571c : Do not pack relocations for libc.so <Dmitriy Ivanov> 4 months ago
+fd693f7 : linker: initialize system properties <Dmitriy Ivanov> 4 months ago
+6c5acb4 : Fix pthread_attr_getstack__main_thread failure on glibc. <Yabin Cui> 3 months ago
+f6d008b : Fix error handling for negative size in ftruncate. <Dan Albert> 3 months ago
+cbd45d7 : Revert "Use unified syntax to compile with both llvm and gcc." <Tobias> 3 months ago
+4ea8603 : Update NOTICE files (the second time today). <Elliott Hughes> 3 months ago
+2a2741e : Update NOTICE files. <Elliott Hughes> 3 months ago
+ab2325f : Use unified syntax to compile with both llvm and gcc. <Chih-Hung Hsieh> 3 months ago
+c296da7 : Fix various bugs in the check-symbols script. <Elliott Hughes> 3 months ago
+35b52df : libc: denver should compile bcopy <HashBang> 3 months ago
+3f36000 : Add support for DT_MIPS_RLD_MAP2 tag. <Raghu Gandham> 8 months ago
+c7c00b1 : Add memchr.v7a.S to cortex-a53 <tobitege> 3 months ago
+5b249d8 : Define char16_t and char32_t to make gcc 5.1 happy <Bernhard Rosenkränzer> 4 months ago
+bcb75a5 : Update to tzdata 2015d <Neil Fuller> 4 months ago
+c5fc27d : Update to tzdata 2015c <Neil Fuller> 4 months ago
+6f6fb00 : Upgrade timezone data to 2015b <Neil Fuller> 4 months ago
+b7e983a : Remove no-op sed step when compiling crtbrand.o <Colin Cross> 6 months ago
+f7832e2 : libc: arm: add optimized memchr implementation <Yingshiuan Pan> 5 months ago
+ef91d5a : Revert "Import memchr implementation from cortex-strings for Cortex A15" <arter97> 4 months ago
+4b2dd77 : Revert "krait: use A15 memchr" <arter97> 4 months ago
+f37911c : Revert "Reimplement the generic version of strcat" <arter97> 4 months ago
+4f34fd9 : Revert "Reimplement the generic version of strncat" <arter97> 4 months ago
+b35726d : libc: arm: a15: add optimized memcpy implementation <Yingshiuan Pan> 5 months ago
+e5f3844 : Re-export libgcc's __aeabi_fcmplt <arter97> 5 months ago
+692cad0 : linker: convert 'mov pc' instruction to 'bx' <arter97> 9 months ago
+d0a96bd : Reimplement the generic version of strncat <Bernhard Rosenkränzer> 5 months ago
+2935be3 : libc: Filter stpcpy and bcopy by architecture. <Utkarsh Gupta> 5 months ago
+a92888d : Revert "Revert "Reenable support for non-PIE executables"" <Michael Bestas> 9 months ago
+32ddf36 : Exynos 4: Add back missing bcopy <ivanmeler> 5 months ago
+ea4a868 : Revert "Revert "Revert "Reenable support for non-PIE executables""" <Patrick Graber> 5 months ago
+4d39eb8 : Revert "Revert "Reenable support for non-PIE executables"" <Michael Bestas> 9 months ago
+dc4a83b : Add gitreview file <Shaun Eaton> 5 months ago
+3266311 : Update findfp.c <tobitege> 5 months ago
+ 
+**** github:CyanogenMod/android_device_samsung_qcom-common ****
+eb956b3 : Automatic translation import <Michael Bestas> 9 hours ago
+ 
+**** github:CMRemix/android_device_samsung_trlte-common ****
+30e8f94 : switch to zion defconfig <ZION959> 2 days ago
+ 
+**** cmR:android_external_libcxx ****
+9eb3e89 : Allow libc++ to be built with GCC 5.0 compiler <Alexey Volkov> 12 months ago
+ 
+**** cmR:android_frameworks_av ****
+a5bd4cd : libmedia: Increase framecount in Track Offload <Alexy Joseph> 3 weeks ago
+c736699 : stagefright: Add libhwc to exynos include paths <Christopher R. Palmer> 3 days ago
+ 
+**** cmR:android_frameworks_base ****
+4a95d67 : WallpaperCropper: use same action bar style as Launcher3 <maxwen> 5 days ago
+04256e4 : base: add keyguard support in WallpaperCropActivity <maxwen> 2 weeks ago
+538591e : Automatic translation import <Michael Bestas> 9 hours ago
+a7cd521 : Revert "Revert "Wait until the Keyguard is drawn to dismiss the boot dialog."" <d34d> 5 days ago
+1eb13b0 : Revamp 'Stay awake' choices <Brandon McAnsh> 8 weeks ago
+f70d984 : SignalStrength: Allow for custom signal buckets in LTE <Ricardo Cerqueira> 3 days ago
+bf5e235 : base: don't refresh visualizer tile once the tile is destroyed <Jorge Ruesga> 2 days ago
+ 
+**** github:CyanogenMod/android_hardware_qcom_audio ****
+db526d2 : hal: Fix voice session setup failure <Venkata Narendra Kumar Gutta> 7 weeks ago
+5fb5911 : hal: allow to get render position for non-offload use cases <Zhou Song> 4 months ago
+5795c09 : hal: ensure EC reference is disabled before enabling <Ravi Kumar Alamanda> 9 months ago
+79ec707 : audio_hal: increase written frames size when HAL is in SSR <Zhou Song> 5 months ago
+ 
+**** github:CyanogenMod/android_hardware_qcom_bt ****
+9ac0567 : Bluetooth: load btaddr from NV if QCOM_BT_USE_BTNV is set <Scott Mertz> 4 days ago
+ 
+**** github:CyanogenMod/android_hardware_qcom_display ****
+e6f11ce : hwc: Reset the refresh rate alone to avoid stack corruption. <Praveena Pachipulusu> 3 months ago
+d6f0ece : liblight: Add support for bluetooth LED <Shimrit Malichi> 3 months ago
+9a8905c : hwc: increase app buffers to 3 on 8909_512 increase the app buffers to 3 to improve the performance of the Ux scenarios. <Sanjeev Jakkilinki> 6 months ago
+f02ecc9 : hwc: Avoid fullMDPComp[WithPTOR] on primary when secondary has YUV layer <Raj Kamal> 4 months ago
+ad5bc6c : hwc: Avoid MDPComp in certain conditions. <Raj Kamal> 5 months ago
+d0aa564 : hwc: Do not compose when there is no update in Frame content <Dileep Kumar Reddi> 4 months ago
+53bc638 : hwc: Do not unset pipe for MDP3 targets <Dileep Kumar Reddi> 4 months ago
+dfdcb15 : hwc: Avoid redoing GPU comp under certain conditions <Raj Kamal> 5 months ago
+f77f9c1 : hwc: mark layer as foreground for no blending <Ramakant Singh> 4 months ago
+9c67dd1 : libqdutils: Send ACK to partial update from PP via dynamic link <Nitesh Gupta> 4 months ago
+d4c902f : libqservice: Correct enum declarations w.r.t. dyn_pu node value <Nitesh Gupta> 4 months ago
+931db87 : libqservice: Defer enabling partial update until PP turns off <Nitesh Gupta> 4 months ago
+d1baa10 : Revert "hwc: avoid composition for static screen use-cases" <Gopal G Goberu> 4 months ago
+5ccf154 : hwc: avoid composition for static screen use-cases <Dileep Kumar Reddi> 5 months ago
+1c729b0 : hwc: Do not use ABC when geometry is changing <Dileep Kumar Reddi> 5 months ago
+590d753 : hwc: Support for reading FB format from driver <radhakrishna> 5 months ago
+5c35eca : hwc: Apply Default Mode only after Bootanimation is really completed <Nitesh Gupta> 5 months ago
+bce0731 : hwc: Add NULL check for gralloc private_hnd_t <Ramakant Singh> 5 months ago
+9811170 : hwc: Do not use visible regions when scaling is involved <Dileep Kumar Reddi> 5 months ago
+eec3ef9 : hwc: fix shaking issue due to swap rect in mdp3 <Ramakant Singh> 5 months ago
+ 
+**** github:CMRemix/android_kernel_samsung_trlte ****
+01a2be5 : temp fixed for compiled error "platform.h" <ZION959> 6 hours ago
+351c327 : revert: Fix... <ZION959> 7 hours ago
+c67adc3 : update defconfig <ZION959> 18 hours ago
+aa53679 : derp <ZION959> 18 hours ago
+a0a939f : Revert "kbuild: Use relative path for $(objtree)" <placiano> 3 weeks ago
+656dac4 : Revert "kbuild: Use relative path when building in the source tree" <placiano> 3 weeks ago
+88e2cba : Revert "kbuild: Use relative path when building in a subdir of the source tree" <placiano> 3 weeks ago
+e0b361a : dm crypt: add TCW IV mode for old CBC TCRYPT containers <Milan Broz> 1 year, 10 months ago
+668075f : dm crypt: properly handle extra key string in initialization <Milan Broz> 1 year, 10 months ago
+9340f02 : Revert "Makefile: Build with -Werror=date-time if the compiler supports it" <ZION959> 18 hours ago
+54b11e3 : Revert "modules: do not depend on kconfig to set 'modules' option to symbol MODULES" <placiano> 3 weeks ago
+f7c97f0 : scripts/sortextable: support objects with more than 64K sections. <Jamie Iles> 1 year, 9 months ago
+d00251a : scripts/gen_initramfs_list.sh: fix flags for initramfs LZ4 compression <Daniel M. Weeks> 1 year, 5 months ago
+e3bf123 : initramfs: read CONFIG_RD_ variables for initramfs compression <P J P> 1 year, 9 months ago
+6410b82 : initramfs: several internal adjustments <javilonas> 3 months ago
+73d7025 : Fix... <placiano> 4 months ago
+3163457 : scripts/extract-ikconfig: Support LZ4-compressed images. <Alex Pilon> 4 months ago
+5901794 : Squashfs: Add LZ4 compression configuration option <Phillip Lougher> 9 months ago
+245b7c8 : Squashfs: add LZ4 compression support <Phillip Lougher> 9 months ago
+70a25d5 : lz4: fix system halt at boot kernel on x86_64 <Krzysztof Kolasa> 4 months ago
+8413dc2 : lib/lz4: Pull out constant tables <Rasmus Villemoes> 6 months ago
+52536c6 : kbuild: trivial - use tabs for code indent where possible <Masahiro Yamada> 1 year, 2 months ago
+4f984a6 : kallsyms: generalize address range checking <Kees Cook> 1 year, 5 months ago
+d72ce94 : kconfig: make allnoconfig disable options behind EMBEDDED and EXPERT <Josh Triplett> 1 year, 4 months ago
+7377b1d : kconfig: fix bug in search results string: use strlen(gstr->s), not gstr->len <Martin Walch> 1 year, 10 months ago
+c4c577f : kconfig: adjust warning message for conflicting types <Martin Walch> 1 year, 10 months ago
+da0448b : kconfig: do not allow more than one symbol to have 'option modules' <Yann E. MORIN> 1 year, 11 months ago
+e696547 : kconfig: do not special-case 'MODULES' symbol <Yann E. MORIN> 1 year, 11 months ago
+01cc67f : modules: do not depend on kconfig to set 'modules' option to symbol MODULES <Yann E. MORIN> 2 years ago
+bc154d4 : Makefile: include arch/*/include/generated/uapi before .../generated <Michal Marek> 7 months ago
+73f46a6 : Revert "Makefile: Fix install error with make -j option" <Linus Torvalds> 2 years, 1 month ago
+899dee2 : build: Enable unsafe-math-optimizations <Pranav Vashi> 11 months ago
+e936c16 : ARM: 7835/2: fix modular build of xor_blocks() with NEON enabled <Ard Biesheuvel> 1 year, 11 months ago
+3c87376 : msm: mmi: export pvs bin info <Youngkyo Jung> 18 hours ago
+0d8239c : arm: msm: mmi: export unit info to Modem over SMEM <Youngkyo Jung> 18 hours ago
+ccb54c7 : ARM: vfp: Use neon-vfpv4 and softfp <Pranav Vashi> 8 months ago
+0366b2d : VFP: neon instead of VFP <Javier Sayago> 3 months ago
+3c176b6 : kbuild: use mixed-targets when two or more config targets are given <Masahiro Yamada> 8 months ago
+41249aa : kbuild: Fix make help-<board series> on powerpc <Michal Marek> 9 months ago
+a0c7a72 : kbuild: Automatically remove stale <linux/version.h> file <Michal Marek> 9 months ago
+e991884 : Makefile: sort list of defconfig targets in make help output <Konstantin Khlebnikov> 10 months ago
+9f32cb4 : kbuild: collect shorthands into scripts/Kbuild.include <Masahiro Yamada> 9 months ago
+f1d4d8b : kbuild: remove obj-n and lib-n handling <Masahiro Yamada> 11 months ago
+99c903d : scripts/Makefile.clean: clean also $(extra-m) and $(extra-) <Masahiro Yamada> 1 year, 2 months ago
+9d71a90 : kbuild: Fix handling of backslashes in *.cmd files <Michal Marek> 1 year ago
+e088e45 : kbuild: move "quote" to Kbuild.include to be consistent <Masahiro Yamada> 1 year, 5 months ago
+13d1a32 : Kbuild, lto: add ld-version and ld-ifversion macros <Andi Kleen> 1 year, 6 months ago
+103a47c : kbuild: simplify build, clean, modbuiltin shorthands <Masahiro Yamada> 11 months ago
+d28f6b8 : kbuild: handle C=... and M=... after entering into build directory <Masahiro Yamada> 11 months ago
+7eb72b0 : kbuild: use $(Q) for sub-make target <Masahiro Yamada> 11 months ago
+ 
+**** github:CyanogenMod/android_packages_apps_CMFileManager ****
+4083b8a : Automatic translation import <Michael Bestas> 9 hours ago
+ 
+**** github:CyanogenMod/android_packages_apps_DeskClock ****
+b5cabc4 : Automatic translation import <Michael Bestas> 9 hours ago
+ 
+**** cmR:android_packages_apps_InCallUI ****
+d21a74c : Automatic translation import <Michael Bestas> 9 hours ago
+ 
+**** github:CyanogenMod/android_packages_apps_LockClock ****
+118bbb9 : Automatic translation import <Michael Bestas> 9 hours ago
+c4b791a : Allow user to change background color/transparency for the widget, for greater compatibility with various wallpapers <Zach Prezkuta> 8 days ago
+ 
+**** cmR:android_packages_apps_Settings ****
+3b9e6bf : LockscreenWallpaper: Use FB's WallpaperCropper <fusionjack> 2 hours ago
+152c1b8 : revert: Bliss Lock Screen Setting: Add Lockscreen wallpaper <ZION959> 2 hours ago
+f0a9102 : Automatic translation import <Michael Bestas> 9 hours ago
+fbc46db : Development: Add choices to 'Stay Awake' preference <Brandon McAnsh> 6 hours ago
+8b2280a : Settings: add a way to not localize zone selections <Roman Birg> 5 days ago
+f2a9100 : Settings: Match pulse speed to frameworks default <Matt Mower> 3 days ago
+ 
+**** github:CyanogenMod/android_packages_apps_Terminal ****
+5e30f8e : Automatic translation import <Michael Bestas> 9 hours ago
+ 
+**** cmR:android_packages_apps_ThemeChooser ****
+31bf21b : Automatic translation import <Michael Bestas> 9 hours ago
+ 
+**** cmR:android_packages_services_Telephony ****
+d846adf : Automatic translation import <Michael Bestas> 9 hours ago
+ 
+**** cmR:android_vendor_CMRemix ****
+043bc19 : revert: build lock screen wallpapers <ZION959> 2 hours ago
+ 
+**** github:CyanogenMod/cm_platform_sdk ****
+8b5a4d9 : Automatic translation import <Michael Bestas> 9 hours ago
+ 
