@@ -1,0 +1,63 @@
+
+**** cmR:android_build ****
+577e463 : Build: slim up sounds and update (2/2) <Lars Greiss> 8 months ago
+ba7e53f : build: Enable custom ccache cache dir for Android <Matt Mower> 10 weeks ago
+64d3073 : build/core: Allow EXTERNAL_CLEAN_TARGETS to dump vars. <Adnan Begovic> 2 days ago
+ 
+**** github:CyanogenMod/android_device_qcom_sepolicy ****
+936bbf2 : sepolicy: allow mm-pp-daemon to set debug property <Krishna Chaitanya Parimi> 7 weeks ago
+ 
+**** cmR:android_frameworks_av ****
+625c9f1 : stagefright: Add support for Exynos hardware audio decoding <Christopher N. Hesse> 7 days ago
+b874571 : stagefright: Update makefile for Exynos variants. <Ethan Chen> 30 hours ago
+ 
+**** cmR:android_frameworks_base ****
+8b1e73c : QSTiles: Set number of tile columns (1 of 2) <Randall Rushing> 3 hours ago
+4170abf : Revert "Barrier only messages shouldn't prevent the idle handlers from running" <Roman Birg> 5 hours ago
+f1d9b2b : Themes: don't recreateDefaults on typeface when locale changes <Roman Birg> 30 hours ago
+c210d50 : Slim Vector for Kernel Adiutor tile <Daniel Koman> 2 weeks ago
+1569d12 : TRDS: Fix "Set Notifications and QS colors on theme change" on by default. <BlackDragon> 4 days ago
+872be9b : fix three_finger_gesture <ghbhaha> 34 hours ago
+1533359 : Add three-fingers-swipe to screenshot [1/2] <ghbhaha> 2 days ago
+ce3f026 : Disable PIN entry after successful quick unlock <Veeti Paananen> 10 weeks ago
+054bf16 : Fix forcing media stream control on tablet <Marcel Dopita> 3 days ago
+0509161 : systemui: Provide empty view for empty lists published in QSTile. <Adnan Begovic> 2 days ago
+53cf128 : [ActivityManager] Bring up Service if not schedule to restart <louis_chang> 7 weeks ago
+80a1e32 : PBD: Apply the same emmc discard logic as ext4_utils <Ricardo Cerqueira> 3 days ago
+36b0e90 : SystemUI: fix empty notification space in shade_locked <Roman Birg> 3 days ago
+7ecaadb : Keyguard: Don't show keyguard if CryptKeeper enabled <d34d> 3 days ago
+f397848 : SystemUI: add missed super window calls <Roman Birg> 3 days ago
+3c9eb21 : Automatic translation import <Tom Powell> 3 days ago
+451a042 : Fix telephony property access for CDMA rewrite rules in PhoneNumberUtils <emancebo> 5 days ago
+8ca5279 : Automatic translation import <Tom Powell> 4 days ago
+889db85 : Automatic translation import <Tom Powell> 8 days ago
+670b34a : National roaming info for new Tuenti MNC in Spain <Kra1o5> 12 days ago
+9265972 : Fix intent resolution of default preferred apps. <Matt Garnes> 5 days ago
+a9c28cb : PhoneWinowManager: resolve home car intent <Roman Birg> 5 days ago
+d08e309 : Automatic translation import <Michael Bestas> 3 weeks ago
+ 
+**** cmR:android_frameworks_native ****
+f5410e9 : binder: Update makefile for Exynos variants <Ethan Chen> 30 hours ago
+ 
+**** cmR:android_packages_apps_Settings ****
+2fab619 : Dashboard changes (Rohan Purohit) <ZION959> 2 hours ago
+985204d : Expand on the original settings commit to expose dashboard categories <sdroyds> 2 hours ago
+c06ea50 : Rounded settings cards <OptX> 10 days ago
+3386374 : revert: Expose values for themes. Move category margin dimension to exposed value. Add background to category title textview and make value accessible via cm_colors. Clean up formatting in cm_colors. <ZION959> 2 hours ago
+40f1907 : QSTiles: Set number of tile columns (2 of 2) <Randall Rushing> 2 hours ago
+f0834f9 : revert: QS: Option to show four tiles per row (2/2) <ZION959> 3 hours ago
+8034bd5 : Add three-fingers-swipe to screenshot [2/2] <ghbhaha> 2 days ago
+393d103 : Device info: Remove IMEI info from SIM status <Brandon McAnsh> 4 weeks ago
+c3dba27 : settings: add IMEI information to msim device status page <emancebo> 4 days ago
+549e80a : Automatic translation import <Tom Powell> 3 days ago
+70af39f : Automatic translation import <Tom Powell> 4 days ago
+b5888ba : Automatic translation import <Tom Powell> 8 days ago
+ 
+**** github:CyanogenMod/cm_platform_sdk ****
+bf57636 : cmsdk: Rename gradle-sample package namespace. <Adnan Begovic> 19 hours ago
+203a9bc : cmsdk: Add gradle sample project. <Adnan Begovic> 19 hours ago
+5a51835 : cmsdk: Fix README. (Add period). <Jon Dinneen> 21 hours ago
+ 
+**** cmR:android_vendor_SaberMod ****
+2ee12db : add support for Google Android One(sprout4) <ZION959> 22 hours ago
+ 
