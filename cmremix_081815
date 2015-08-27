@@ -1,0 +1,96 @@
+
+**** cmR:CMRemix ****
+1c97676 : add cmremix CHANGELOGS <ZION959> 57 minutes ago
+c85695c : organized cmremix <ZION959> 62 minutes ago
+6c0557d : Fixup Freetype project & revision <Abhisek Devkota> 6 hours ago
+ 
+**** cmR:android_bionic ****
+7a63f99 : cortex-a7: Fix build <Ujwal P> 18 hours ago
+ 
+**** aosp:platform/external/chromium_org/third_party/freetype ****
+512d7c3 : Update makefiles after merge of Chromium at 39.0.2171.95 <Ben Murdoch> 8 months ago
+8651496 : Update makefiles after merge <Torne (Richard Coles)> 11 months ago
+6e89810 : Update makefiles after merge of Chromium at 37.0.2062.21 <Bo Liu> 1 year, 1 month ago
+ 
+**** aosp:platform/external/freetype ****
+fb6b5b1 : Update to freetype 2.6.0 <Makoto Onuki> 2 months ago
+688537f : Add ftmm.c to FreeType build. <Ben Wagner> 3 months ago
+ 
+**** github:CyanogenMod/android_external_icu ****
+7897b51 : Fix potential overflow issue <Zach Riggle> 9 weeks ago
+05eb04f : Cherrypick http://bugs.icu-project.org/trac/changeset/37162. <Elliott Hughes> 4 months ago
+ 
+**** cmR:android_frameworks_base ****
+f987170 : Update shake clean <ghbhaha> 13 hours ago
+2e19ce8 : OnTheSpot: Forward implement infrastructure [1/2] <BigBrother1984> 3 hours ago
+a92f560 : OnTheSpot: Shake to clear Recent Apps and Notification <mkodekar> 3 hours ago
+d141348 : systemUI: carrier first, weather second <ZION959> 3 hours ago
+4d8c0f5 : Clean themes and kernel tiles <rogersb11> 3 days ago
+ 
+**** github:CMRemix/android_kernel_samsung_trlte ****
+1916a66 : move platform.h again <ZION959> 25 hours ago
+9079f37 : revert SaberMod Optimization and add back old configs & flags <ZION959> 26 hours ago
+5a73159 : Ultimate v2.4 <ZION959> 26 hours ago
+e110cc9 : SELinux: use deletion-safe iterator to free list <Jeff Vander Stoep> 4 months ago
+6d3bbd2 : SELinux: ss: Fix policy write for ioctl operations <Jeff Vander Stoep> 4 months ago
+8cb2557 : selinux: add SOCK_DIAG_BY_FAMILY to the list of netlink message types <Paul Moore> 1 year, 7 months ago
+c626ad4 : selinux/nlmsg: add XFRM_MSG_MAPPING <Nicolas Dichtel> 4 months ago
+15bb360 : selinux/nlmsg: add XFRM_MSG_MIGRATE <Nicolas Dichtel> 4 months ago
+63f5526 : selinux/nlmsg: add XFRM_MSG_REPORT <Nicolas Dichtel> 4 months ago
+c8374f4 : selinux/nlmsg: add XFRM_MSG_[NEW|GET]SADINFO <Nicolas Dichtel> 4 months ago
+f5ef222 : selinux/nlmsg: add XFRM_MSG_GETSPDINFO <Nicolas Dichtel> 4 months ago
+24d190b : selinux/nlmsg: add XFRM_MSG_NEWSPDINFO <Nicolas Dichtel> 4 months ago
+b5a010c : SELinux: per-command whitelisting of ioctls <Jeff Vander Stoep> 4 months ago
+3d0a15e : security: lsm_audit: add ioctl specific auditing <Jeff Vander Stoep> 5 months ago
+deda054 : SELinux: Update policy version to support constraints info <Richard Haines> 1 year, 9 months ago
+2faef43 : selinux: add force_audit sysfs node to enable logging of dontaudit <imoseyon> 7 months ago
+7bf6306 : sched/fair: Optimize find_busiest_queue() <Peter Zijlstra> 2 years ago
+59914bb : sched: Remove one division operation in find_busiest_queue() <Joonsoo Kim> 2 years ago
+30722d7 : sched/tg: Remove tg.load_weight <Alex Shi> 2 years, 2 months ago
+f2a0e25 : sched/cfs_rq: Change atomic64_t removed_load to atomic_long_t <ZION959> 27 hours ago
+a3d7675 : sched/tg: Use 'unsigned long' for load variable in task group <Alex Shi> 2 years, 2 months ago
+a855b1e : sched: Change cfs_rq load avg to unsigned long <Alex Shi> 2 years, 2 months ago
+5b2a096 : sched: Consider runnable load average in move_tasks() <Alex Shi> 2 years, 2 months ago
+b0a9cda : sched: Update cpu load after task_tick <Alex Shi> 2 years, 2 months ago
+6cb0f20 : sched: patcking task to per cpu horse power in periodic balance <Alex Shi> 2 years, 4 months ago
+bfa62f6 : sched: packing task per cpu power in fork/exec/wakeup balance <Alex Shi> 2 years, 4 months ago
+a0b8c40 : sched: only use instant utilization in burst wakeup balance <Alex Shi> 2 years, 4 months ago
+3084efe : sched: make sure select_tas_rq_fair get a cpu <Preeti U Murthy> 2 years, 5 months ago
+75b44e0 : sched: don't do power balance on share cpu power domain <Alex Shi> 2 years, 5 months ago
+4e73ea1 : sched: lazy power balance <Alex Shi> 2 years, 6 months ago
+7187110 : sched: power aware load balance <Alex Shi> 2 years, 5 months ago
+27e781f : sched: add new members of sd_lb_stats <Alex Shi> 2 years, 5 months ago
+2b89ebc : sched: no balance for prefer_sibling in power scheduling <Alex Shi> 2 years, 9 months ago
+a3e305b : sched: pull all tasks from source group <Alex Shi> 2 years, 9 months ago
+9ad8a6e : sched: add power/performance balance allow flag <Alex Shi> 2 years, 9 months ago
+cb4b113 : sched: packing transitory tasks in wakeup power balancing <Alex Shi> 2 years, 6 months ago
+a575794 : sched: using avg_idle to detect bursty wakeup <Alex Shi> 2 years, 5 months ago
+2ccd9f4 : sched: add sched_burst_threshold_ns as wakeup burst indicator <Alex Shi> 2 years, 5 months ago
+3f17791 : sched: add power aware scheduling in fork/exec/wake <Alex Shi> 2 years, 5 months ago
+28926c9 : sched: get rq potential maximum utilization <Alex Shi> 2 years, 5 months ago
+8bda798 : sched: scale_rt_power rename and meaning change <Alex Shi> 2 years, 6 months ago
+bb1d188 : sched: move sg/sd_lb_stats struct ahead <Alex Shi> 2 years, 6 months ago
+2d6b022 : sched: add new sg/sd_lb_stats fields for incoming fork/exec/wake balancing <Alex Shi> 2 years, 6 months ago
+ca28257 : sched: log the cpu utilization at rq <Alex Shi> 2 years, 8 months ago
+e7b47c5 : sched: add sysfs interface for sched_balance_policy selection <Alex Shi> 2 years, 6 months ago
+55efd4e : sched: add sched balance policies in kernel <Alex Shi> 2 years, 9 months ago
+dd02e1e : sched: set initial value of runnable avg for new forked task <Alex Shi> 2 years, 9 months ago
+9ea9057 : lowmemorykiller: enable adaptive_lmk by default <imoseyon> 4 months ago
+0dfb5db : mm: vmpressure: allow in-kernel clients to subscribe for events <ZION959> 27 hours ago
+d542b2e : lowmemorykiller: adapt to vmpressure <ZION959> 27 hours ago
+ 
+**** github:CyanogenMod/android_packages_apps_CMFileManager ****
+2bb6f04 : Fix Navigation back from Search <herriojr> 30 hours ago
+ecc7159 : Refresh: stop refreshes in action <Stephen Bird> 5 days ago
+ 
+**** cmR:android_packages_apps_Settings ****
+1df106a : PGM: Permute simple and long click behaviour <Jean-Pierre Rasquin> 4 months ago
+10ebfe4 : OnTheSpot: Forward implement infrastructure [2/2] <BigBrother1984> 3 hours ago
+9043813 : Change up the Dashboard: <Shaun Eaton> 3 hours ago
+ 
+**** github:CyanogenMod/android_packages_apps_Stk ****
+a560f61 : DO NOT MERGE Change to add STK_PERMISSION for stk related commands. <Amit Mahajan> 10 weeks ago
+ 
+**** github:CyanogenMod/android_vendor_cm ****
+80d23eb : vendor:cm: contributors: Add a new maintainers <Brinly Taylor> 5 weeks ago
+ 
