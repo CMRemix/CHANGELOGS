@@ -1,0 +1,187 @@
+
+**** cmR:CMRemix ****
+7c02dd1 : track CMFilemanager, Calculator, Deskclock, Gallery2, Eleven, Lockclock <ZION959> 46 minutes ago
+5c4c000 : revert: Use custom, updated jemalloc <ZION959> 4 hours ago
+1765f93 : Use custom, updated jemalloc <Park Ju Hyung> 5 hours ago
+d1ba6f5 : track SaberMod GCC 6.0 <ZION959> 24 hours ago
+ 
+**** cmR:android_bionic ****
+5cae820 : cortex-a7: Fix build <LuK1337> 4 weeks ago
+aed2a15 : Remove pushes from memsets (krait/cortex-a9). <Christopher Ferris> 6 weeks ago
+825c9f5 : Replace bx lr with update of pc from the stack. <Christopher Ferris> 9 weeks ago
+3586623 : Use unified syntax to compile with both llvm and gcc. <Chih-Hung Hsieh> 4 months ago
+7afc606 : libc: remove bcopy from memmove on 64-bit architectures <Jake Weinstein> 3 weeks ago
+924d1c2 : Fix lgamma_r/lgammaf_r/lgammal_r for -0. <Elliott Hughes> 12 months ago
+0bdde56 : Add optimized cortex-a7/cortex-a53 memset/memcpy. <Christopher Ferris> 7 weeks ago
+563fa15 : Squash revert "optimized cortex-a7 and cortex-a53 (memset/memcpy)" <BlackDragon> 15 hours ago
+7eb4e76 : libc: Fix strict-aliasing violations. <Kyle Repinski> 5 months ago
+7cf7c70 : bionic: Remove gnu99 and use gnu11 <Cl3Kener> 6 days ago
+fc0d44c : bionic: Remove Multiple Memcpy Definations <Men_in_black007> 2 weeks ago
+59463b7 : Remove unneeded build flag. <BlackDragon> 4 weeks ago
+183e00c : Fix build x64 devices. <BlackDragon> 4 weeks ago
+cf07e57 : cortex-a7: Fix build <LuK1337> 4 weeks ago
+7ebd973 : cortex-a7: set proper memcmp.S path <LuK1337> 4 weeks ago
+044018b : Add optimized cortex-a7/cortex-a53 memset/memcpy. <Christopher Ferris> 7 weeks ago
+fe823d8 : libm: Fix makefiles <Steve Kondik> 8 weeks ago
+9ae0452 : Add aarch64 instructions wherever possible <Amaury Le Leyzour> 7 months ago
+76e3d40 : libm: arm: Add arm specific floor() optimization <Shu Zhang> 1 year, 2 months ago
+83c7a6d : Fix our <complex.h> support. <Elliott Hughes> 10 months ago
+6383a78 : Get new coshl, sinhl, and tanhl implementations from upstream. <Elliott Hughes> 12 months ago
+b0a4a11 : Sync libm with upstream. <Elliott Hughes> 12 months ago
+f63768a : Fix Build For Cortex A15 Devices <Men_in_black007> 3 months ago
+bae35d1 : libc : memcpy : allow to disable opt for some targets <Varun Chitre> 4 months ago
+6ac3fcf : Do not pack relocations for libc.so <Dmitriy Ivanov> 4 months ago
+4b96d2e : linker: initialize system properties <Dmitriy Ivanov> 4 months ago
+ebd5c3e : Fix pthread_attr_getstack__main_thread failure on glibc. <Yabin Cui> 4 months ago
+7d283e8 : Fix error handling for negative size in ftruncate. <Dan Albert> 4 months ago
+f46b434 : Update NOTICE files (the second time today). <Elliott Hughes> 4 months ago
+22b8f14 : Update NOTICE files. <Elliott Hughes> 4 months ago
+33f7851 : Fix various bugs in the check-symbols script. <Elliott Hughes> 4 months ago
+6c2e6dc : libc: denver should compile bcopy <HashBang> 4 months ago
+c147be4 : Add support for DT_MIPS_RLD_MAP2 tag. <Raghu Gandham> 9 months ago
+bc63b25 : Define char16_t and char32_t to make gcc 5.1 happy <Bernhard Rosenkränzer> 5 months ago
+3e85fe7 : Update to tzdata 2015d <Neil Fuller> 4 months ago
+0ec5150 : Update to tzdata 2015c <Neil Fuller> 5 months ago
+6f9a6f4 : Upgrade timezone data to 2015b <Neil Fuller> 5 months ago
+f4b819d : Remove no-op sed step when compiling crtbrand.o <Colin Cross> 7 months ago
+337308f : libc: arm: add optimized memchr implementation <Yingshiuan Pan> 6 months ago
+78973c9 : Revert "Import memchr implementation from cortex-strings for Cortex A15" <arter97> 5 months ago
+abcedbe : Revert "krait: use A15 memchr" <arter97> 5 months ago
+7dafad2 : Revert "Reimplement the generic version of strcat" <arter97> 5 months ago
+319866c : Revert "Reimplement the generic version of strncat" <arter97> 5 months ago
+e33184b : Re-export libgcc's __aeabi_fcmplt <arter97> 6 months ago
+017db0b : linker: convert 'mov pc' instruction to 'bx' <arter97> 10 months ago
+b2a5600 : Reimplement the generic version of strncat <Bernhard Rosenkränzer> 6 months ago
+d2cae65 : libc: Filter stpcpy and bcopy by architecture. <Utkarsh Gupta> 5 months ago
+76f39b3 : Exynos 4: Add back missing bcopy <ivanmeler> 5 months ago
+7c67bc7 : Revert "Revert "Reenable support for non-PIE executables"" <Michael Bestas> 10 months ago
+ 
+**** cmR:android_build ****
+1b41caf : Viper4Android: Add my lib and conf installer package [2/2] <mydongistiny> 19 hours ago
+cde7ae9 : Use Qualcomm Snapdragon LLVM Compiler 3.6 [mustermaxmueller] <ZION959> 21 hours ago
+cba09f9 : revert: Use Qualcomm Snapdragon LLVM Compiler 3.6 (https://developer.qualcomm.com/mobile-development/increase-app-performance/snapdragon-llvm-compiler-android) for Android Lollipop 5.x for devices with Qualcomm CPU <ZION959> 21 hours ago
+d7a213b : Add darwin support for f2fs host tools <Keith Mok> 5 days ago
+f28d284 : releasetools: Fix the bug when deleting files. <Tao Bao> 5 days ago
+2eeb136 : releasetools: Fix the bug in symlink deletion. <Tao Bao> 6 days ago
+91f91b8 : build: allow using host flex binary <luca020400> 2 days ago
+338b399 : build: Allow QC platforms to share/customize HAL variants <Anthony King> 6 days ago
+665e136 : Revert "msm8909 uses the same branches as msm8916" <Ethan Chen> 6 days ago
+4ad2485 : msm8909 uses the same branches as msm8916 <Marcos Marado> 7 days ago
+e703199 : repopick: open changes are either NEW or OPEN, not just OPEN <Tom Powell> 7 days ago
+7e980a7 : Fix custom URL error. Merged from cm_build_config <Tom Powell> 7 days ago
+ 
+**** github:CyanogenMod/android_external_f2fs-tools ****
+4ed43ea : Fix f2fs_trim_device multiple definitions <Keith Mok> 19 hours ago
+69e9384 : Add darwin support for building the host tools <Keith Mok> 5 days ago
+ 
+**** cmR:android_frameworks_base ****
+949e6c6 : SystemUI: unregister visualizer on hide <Roman Birg> 6 hours ago
+a1f1ee0 : SpamFilter : Avoid a requery for each item <Danesh M> 5 days ago
+f5610da : base: start nfc service prior to systemui <Jorge Ruesga> 3 days ago
+2df59ac : SystemUI: hide visualizer when keyguard is occluded <Roman Birg> 6 hours ago
+59543c1 : power: Boost improvements <Steve Kondik> 5 days ago
+67c0286 : Enable/disable notification color inversion [1/2] <Randall Rushing> 23 hours ago
+da9fb41 :  Prevent doze notification color inversion <Daniel Koman> 24 hours ago
+ 
+**** cmR:android_frameworks_native ****
+11e0aba : SurfaceFlinger: Fix integer overflow in Mesh ctor <Dan Stoza> 4 months ago
+94e9c4c : libgui: Clear frame number while freeing slot <Dan Stoza> 4 months ago
+ 
+**** github:CMRemix/android_kernel_samsung_trlte ****
+8f0c410 : revert: revert: : decompress.o: Over kill to disable opts for GCC 5.1. <ZION959> 19 hours ago
+ 
+**** github:CyanogenMod/android_packages_apps_CMFileManager ****
+788a54c : TRDS: Material Dark theme [WIP] <BlackDragon> 4 days ago
+448d760 : TRDS: Fix aapt removing the darktheme resources. <BlackDragon> 4 days ago
+ 
+**** github:CyanogenMod/android_packages_apps_Calculator ****
+ffcd85f : TRDS: Material Dark theme. <BlackDragon> 5 weeks ago
+25a2342 : TRDS: Fix aapt removing the darktheme resources. <BlackDragon> 5 weeks ago
+ 
+**** github:CyanogenMod/android_packages_apps_DeskClock ****
+5ee3ca8 : Automatic translation import <Michael Bestas> 8 days ago
+fa3ce46 : Automatic translation import <Tom Powell> 3 weeks ago
+07e2561 : Automatic translation import <Tom Powell> 3 weeks ago
+113c516 : Automatic translation import <Tom Powell> 3 weeks ago
+f570923 : Automatic translation import <Tom Powell> 3 weeks ago
+6d748cf : Automatic translation import <Michael Bestas> 3 weeks ago
+cc8935a : Automatic translation import <Tom Powell> 4 weeks ago
+5f3b175 : Automatic translation import <Tom Powell> 4 weeks ago
+37bbfba : Improve & fix alarm permission strings <Michael Bestas> 4 weeks ago
+7367c65 : Allow alarms to be modified by 3rd parties. <Matt Garnes> 8 weeks ago
+ddd164f : Automatic translation import <Michael Bestas> 5 weeks ago
+847a3ca : Automatic translation import <Michael Bestas> 6 weeks ago
+21c92bf : Allow theming numpad <Yadrishnikov Yaroslav> 8 weeks ago
+eacb6fe : Automatic translation import <Michael Bestas> 7 weeks ago
+a3cc51f : Fix rescheduling of alarms that are snoozed <d34d> 8 weeks ago
+e9e6323 : Automatic translation import <Michael Bestas> 8 weeks ago
+66e7a0b : Automatic translation import <Michael Bestas> 10 weeks ago
+ac28d3d : DeskClock: Refactor to point at Profiles in CMSDK. <Adnan Begovic> 3 months ago
+c024b14 : Automatic translation import <Michael Bestas> 3 months ago
+f40e4fe : DeskClock: fix behavior with alarms when device is off <Raj Yengisetty> 3 months ago
+5e9f45e : Automatic translation import <Michael Bestas> 3 months ago
+f9d3d00 : DeskClock: Correctly reschedule alarms on system time change <Annie Chin> 3 months ago
+2bccb6b : Automatic translation import <Michael Bestas> 3 months ago
+a3554b4 : Automatic translation import <Michael Bestas> 3 months ago
+5db1aca : Automatic translation import <Michael Bestas> 4 months ago
+80ea74b : Automatic translation import <Michael Bestas> 4 months ago
+bea3493 : Expose background colors for theming. <Dave Kover> 4 months ago
+d7217e6 : Automatic translation import <Michael Bestas> 4 months ago
+79428f0 : Make new menu entry to link to cLock widget settings. <Martin Brabham> 5 months ago
+abc8c0d : TimerReceiver: Correctly show the remaining time for 100 hours <Diogo Ferreira> 6 months ago
+53b058b : Automatic translation import <Michael Bestas> 5 months ago
+a3e6cb2 : Hide flip setting if the phone doesn't have the required hardware sensor. <Martin Brabham> 6 months ago
+079020c : Automatic translation import <Michael Bestas> 5 months ago
+fd18b2f : Automatic translation import <Michael Bestas> 6 months ago
+7c7fdfd : Automatic translation import <Michael Bestas> 6 months ago
+ 
+**** github:CyanogenMod/android_packages_apps_Eleven ****
+b3ca414 : TRDS: Material Dark theme <BlackDragon> 4 days ago
+b2ccb5f : TRDS: Fix aapt removing the darktheme resources. <BlackDragon> 4 days ago
+ 
+**** github:CyanogenMod/android_packages_apps_Gallery2 ****
+76e7e0b : Automatic translation import <Michael Bestas> 8 days ago
+14cd814 : Automatic translation import <Tom Powell> 4 weeks ago
+331a527 : Automatic translation import <Tom Powell> 4 weeks ago
+cd49c8e : Automatic translation import <Michael Bestas> 5 weeks ago
+dd5d9bf : Automatic translation import <Michael Bestas> 6 weeks ago
+d66abcb : Automatic translation import <Michael Bestas> 7 weeks ago
+44500f9 : Gallery2: Intents for image/video directory viewing/picking <cretin45> 8 weeks ago
+ae7dd97 : Automatic translation import <Michael Bestas> 8 weeks ago
+e5dd2cc : Photo Gallery widget: fix NPE in getViewAt <Raj Yengisetty> 9 weeks ago
+6336ff4 : Automatic translation import <Michael Bestas> 10 weeks ago
+2070300 : Automatic translation import <Michael Bestas> 3 months ago
+cf50c6c : Automatic translation import <Michael Bestas> 3 months ago
+d92e666 : Automatic translation import <Michael Bestas> 3 months ago
+322fa35 : Gallery2: Fix crash when Bluetooth service is disabled <root> 3 months ago
+77849d6 : Add Storage preference (2/2) <Scott Warner> 5 months ago
+bc64905 : Revert "Gallery2: readd storage selection support (2/2)" <BlackDragon> 3 months ago
+26ebce7 : Automatic translation import <Michael Bestas> 4 months ago
+e93dcfc : Automatic translation import <Michael Bestas> 4 months ago
+93e3076 : Gallery2: Use a slimmed down manifest on .inc builds <cretin45> 4 months ago
+74cabab : Gallery2: Fix RTL album picking <Caio Schnepper> 4 months ago
+664a62c : Automatic translation import <Michael Bestas> 4 months ago
+ade1458 : Automatic translation import <Michael Bestas> 5 months ago
+4b5794c : Gallery2: readd storage selection support (2/2) <maxwen> 8 months ago
+ 
+**** github:CyanogenMod/android_packages_apps_LockClock ****
+951e144 : Material Dark Theme (1/2): <XXMrHyde> 9 months ago
+ 
+**** cmR:android_packages_apps_OmniSwitch ****
+53668a1 : I got a fever: <Shaun Eaton> 6 weeks ago
+bfcc577 : OmniSwitch: add menu action <maxwen> 11 days ago
+ 
+**** cmR:android_packages_apps_Settings ****
+a248f2c : Settings : Update filterSpam to new contract <Danesh M> 3 days ago
+032c2bb : Settings: Only show multi-sim card configuration for owners <Diogo Ferreira> 6 days ago
+097bc76 : Enable/disable notification color inversion [2/2] <Randall Rushing> 23 hours ago
+7e0f2ce : Long press no longer copies to clipboard if there is nothing to copy <James Hiew> 7 days ago
+40b5e17 : Revert "Fix exception on Display font settings" <Janson Kang> 4 days ago
+49e63e5 : Settings: System app remover <ILWT> 3 hours ago
+ 
+**** bb:arm-eabi-4.9 ****
+51c6d90 : 4.9.4-20150904 <mydongistiny> 5 days ago
+ 
+**** bb:arm-eabi-5.2 ****
+98727ec : 5.2.0-20150907 <mydongistiny> 2 days ago
+ 

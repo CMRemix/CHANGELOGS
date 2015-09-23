@@ -1,0 +1,12 @@
+
+**** cmR:android_frameworks_base ****
+8b910f2 : fixed build <ZION959> 68 minutes ago
+4d07e01 :  Improve lockscreen weather layout. <AlmightyMegadeth00> 2 hours ago
+7be0b97 : Fix weather colored icon size issue <Alex Cruz> 5 hours ago
+7adfa71 :  Clean up the lockscreen colors / fix bottom shortcuts <Alex Cruz> 5 hours ago
+fa341e6 : Lockscreen colors [1/2] <Alex Cruz> 5 hours ago
+ 
+**** cmR:android_packages_apps_Settings ****
+4e806c0 : Settings: Fix Seekbar attributes <Lokesh Chamane> 4 hours ago
+6d4afb3 : Lockscreen colors [2/2] <Alex Cruz> 5 hours ago
+ 

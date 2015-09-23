@@ -1,0 +1,29 @@
+
+**** cmR:android_frameworks_base ****
+f1c5d1e : SystemUI: Add new HD poly effect contextual header images <Nicholas Chum> 53 minutes ago
+570918d : lockscreen: Add option for showing unlock screen directly (Gesture) <jollaman999> 2 days ago
+453b80a : SystemUI: don't show recents if not provisioned <Roman Birg> 31 hours ago
+493aaea : Fingerprint wakeup: more consistent behavior <Roman Birg> 2 days ago
+546caeb : fingerprint wakeup: improve state and error handling <Roman Birg> 3 days ago
+0ea423e : Fingerprint wakeup: don't count failed attempts when screen is off <Roman Birg> 3 days ago
+02d674a : QS: Make WiFi and Bluetooth tile detail view consistent <d34d> 2 days ago
+2eb54db : Fixed: Wrong status bar notification layout width. <Danilo Krummrich> 5 months ago
+c9c1c86 : QS: Slim Pie Control tile (1/2) <rogersb11> 22 hours ago
+ 
+**** cmR:android_packages_apps_Settings ****
+c656e4c : Setting: Match brightness override padding to volume override <Jon S> 6 days ago
+5032d50 : APN: Fix typo <Ricardo Cerqueira> 2 days ago
+c4c672a : QS: Slim Pie Control tile (1/2) <rogersb11> 22 hours ago
+ 
+**** bb:arm-eabi-4.9 ****
+d12dda1 : 4.9.4-20150915 <mydongistiny> 2 days ago
+ 
+**** bb:arm-eabi-5.2 ****
+2fa0c3b : 5.2.1-20150913 <mydongistiny> 5 days ago
+ 
+**** bb:arm-linux-androideabi-4.9 ****
+e7b5e4d : 4.9.4-20150915 <mydongistiny> 2 days ago
+ 
+**** cmR:android_vendor_SaberMod ****
+49ee721 : enabled polly for trlte varients <ZION959> 2 days ago
+ 

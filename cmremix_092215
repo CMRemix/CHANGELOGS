@@ -1,0 +1,229 @@
+
+**** github:CyanogenMod/android_art ****
+624f867 : art: Fix whitespace errors added by caf <Christopher R. Palmer> 3 days ago
+ 
+**** cmR:android_build ****
+86ea4c8 : Revert "build: better zsh dopush support" <Roman Birg> 30 hours ago
+f1b8364 : Fix: unknown warning option '-Wno-clobbered' <Ujwal P> 5 days ago
+ 
+**** github:CyanogenMod/android_device_qcom_common ****
+4697ca4 : common: Change the Hi-Speed freq to 800Mhz for camcorder case <vaibhav bhalla> 6 months ago
+ec19782 : power: override encode hint for 8909 <vaibhav bhalla> 7 months ago
+ 
+**** github:CyanogenMod/android_device_qcom_sepolicy ****
+0e7a34a : Revert "SEPolicy : Added policy for oma drm" <Alexander Martinz> 3 days ago
+4cf68fa : SEPolicy : Added policy for oma drm <Paramananda Pradhan> 9 months ago
+10ac2c3 : seandroid: imscm needs to communicate with apps <Avijit Kanti Das> 4 months ago
+5270bef : Sepoilcy : add new file for CSVT specific policies <Venkatraman Nerellapalli> 5 months ago
+1c200f0 : Seandroid: Allow dumpsys to work from adb shell <Avijit Kanti Das> 8 months ago
+cd60a25 : sepolicy: policy for imscm to app binder call <Avijit Kanti Das> 9 months ago
+ 
+**** github:CMRemix/android_device_samsung_trlte-common ****
+432f6bd : Sepolicy update <Abhisek Devkota> 5 days ago
+ 
+**** github:CyanogenMod/android_external_bluetooth_bluedroid ****
+cd9e008 : Bluetooth: Unlock mutex before destroying the BTIF task <Srinu Jella> 6 months ago
+9f2be75 : BLuetooth: Avoid calling bte disable for the second time <Srinu Jella> 7 months ago
+ 
+**** github:CyanogenMod/android_external_busybox ****
+0098dcf : Define a writeable CONFDIR for iproute. <Sreeram Ramachandran> 1 year, 3 months ago
+714fe14 : iproute - Don't hardcode the path to config files <Christoph J. Thompson> 3 years, 7 months ago
+ 
+**** github:CyanogenMod/android_external_libphonenumbergoogle ****
+6d3030c : JAVA: Update metadata for ID to include 12 digits for possible numbers <Yvonne Wong> 28 hours ago
+ 
+**** cmR:android_frameworks_av ****
+2cdeeb4 : Fix integer overflow in time conversion <Marco Nelissen> 5 days ago
+ 
+**** cmR:android_frameworks_base ****
+ff8a4a3 : framework: add "Turn wifi off" string <Roman Birg> 12 days ago
+3ca327c : ResourcesManager: fix lookups with ThemeConfig <Roman Birg> 6 hours ago
+da6bdcc : Revert "SettingsProvider: change default battery style to portrait" <Roman Birg> 4 hours ago
+2ad62c1 : Resources: cache themed resources <Roman Birg> 5 days ago
+6994022 : SysUI: Clean up objects when recreating statusbar <0xD34D> 8 hours ago
+e7b4423 : SystemUI: don't recreate zen controller, handler thread <Roman Birg> 4 days ago
+0ff5bc7 : SystemUi: Don't show cellular data tile on secondary users. <Adnan Begovic> 29 hours ago
+ea2f7c0 : SystemUI: set fingerprint auth properly after occluded change <Roman Birg> 4 days ago
+9330587 : SystemUI: fix crypt keeper race condition <Roman Birg> 4 days ago
+143f610 : core: Fix Wi-Fi string <Michael Bestas> 2 days ago
+7c1415c : Fix some of the icons being null and set defaults for all. <Shaun> 2 days ago
+12c5413 : Fix the layout of the 5 navrings <Alex Cruz> 3 weeks ago
+c7a651a :  systemui: left hand navigation ring <Jorge Ruesga> 2 days ago
+490206f : SystemUI: Navbar ring five targets. <voidz777> 22 hours ago
+b405c8e : Slimified CM Navigation Ring Targets [1/2] <Jean-Pierre Rasquin> 2 hours ago
+580debd : DocumentsUI: Move & improve CAF string <Michael Bestas> 2 days ago
+1667531 : IMS: revert: ims: More backwards-compatibility stuff <Deepak Kundra> 5 weeks ago
+f6b4a92 : Add call log types definition for Ims call. <cdu> 10 months ago
+2ec907e : Ims: Add support to query Packet Count and Packet Error Count <Ravi Paluri> 6 months ago
+acf7f78 : Add support for wifi calling settings <Suresh Koleti> 5 months ago
+4f441f3 : IMS: During CS retry, propagate reason code to UI <Suresh Kumar Sugguna> 4 months ago
+7c22aa7 : IMS: add ImsConfig api to get volte provisioned value. <Libin.Tang@motorola.com> 10 months ago
+1da0bce : IMS: change getMasterValue to getProvisionedValue. <Libin.Tang@motorola.com> 11 months ago
+a8d2060 : IMS: Add interface to query call forward for specific service class. <Muhammed Siju> 5 months ago
+1e30fab : Revert "ims: Bring in line with current release" <Deepak Kundra> 8 weeks ago
+df669b0 : QS: Update visibility of items in Bluetooth/WiFi tiles <d34d> 5 days ago
+9445cb0 : Themes: Set composed icon scale to 1f default <d34d> 6 days ago
+2395351 : Default to Resolver Theme <herriojr> 5 days ago
+a5eff24 : SettingsProvider: move Profile picker activity (1/2) <Roman Birg> 5 weeks ago
+aa7e5b5 : SystemUI: add missing super viewgroup method calls <Roman Birg> 11 days ago
+b75b64c : framework: add string for wifi subscription change notification <Roman Birg> 2 days ago
+ebcbda1 : Allow disabling the privacy guard notification (2/2) <Chirayu Desai> 4 days ago
+91d0766 : base: fix window bounds for left hand navigationbar <Jorge Ruesga> 9 days ago
+5f5d9ad : Fix race condition in panel expansion handling. <Danny Baumann> 5 days ago
+91ea992 : SlimPIE: Configurable sensitivity [1/2] updated <Lokesh Chamane> 4 days ago
+990e65e : fb: navigationbar add contentdescription <Lars Greiss> 5 days ago
+b147908 : Roll back some changes: <Shaun> 5 days ago
+cdd5f6a : Recents: Delay cleanup of remaining tasks when dismissing <d34d> 7 days ago
+ 
+**** cmR:android_frameworks_native ****
+b5f98d7 : Set explicit ioprio where required <Steve Kondik> 2 days ago
+f12bd0c : input: Adjust priority <Steve Kondik> 3 days ago
+ 
+**** github:CyanogenMod/android_frameworks_opt_net_ims ****
+f804ec0 : IMS CallGroup Cleanup for 4-Way Conference <Omkar Kolangade> 6 months ago
+e7e5242 : Ims: Enable IMS feature in multi-sim <Suresh Kumar Sugguna> 12 months ago
+5b44e02 : Ims: Add support to query Packet Count and Packet Error Count <Ravi Paluri> 6 months ago
+fd33435 : Add support for wifi calling settings <Suresh Koleti> 5 months ago
+f0163c8 : Add UT interface to query call forward setting for service class. <Muhammed Siju> 5 months ago
+4eae9cf : IMS: During CS retry, propagate reason code to UI <Suresh Kumar Sugguna> 4 months ago
+06f03a6 : Revert "ims: Bring in line with current release" <Deepak Kundra> 8 weeks ago
+ 
+**** cmR:android_frameworks_opt_net_wifi ****
+d03be29 : Wifi: add "turn wifi off" action to open network notification <Roman Birg> 12 days ago
+ab00742 : tethering: User defined wifi/usb tether network. [2/3] <Tom Hite> 9 months ago
+5a4704d : wifi: disable access point on subscription change <Roman Birg> 13 days ago
+1948cf6 : Revert of "Revert "wifi: do not adjust wifi score when WQE is enabled"" <Dhiraj Shantilal Patil> 4 weeks ago
+dee3d04 : Revert "Revert "wifi: do not adjust wifi score when WQE is enabled"" <Ashwini Muduganti> 5 weeks ago
+5080392 : Revert "Wifi: Reduce auto join scans when p2p is connected" <Nalla Kartheek> 5 weeks ago
+53a5e83 : Revert "wifi: do not adjust wifi score when WQE is enabled" <Boxiang Pan> 6 weeks ago
+ 
+**** cmR:android_frameworks_opt_telephony ****
+8c34198 : IMS: During CS retry, propagate reason code to UI <Suresh Kumar Sugguna> 4 months ago
+e8cceac : Revert "IMS phone instantiation: add polling on base phone creation" <Suresh Koleti> 5 months ago
+5003df2 : IMS: Fix CF icon issue when enable from UI. <Suchand Ghosh> 6 months ago
+b972ca1 : IMS: Fix ConcurrentModification exception during SRVCC. <Muhammed Siju> 6 months ago
+305df78 : IMS: Propagating MMI error string to UI <Basudev Achary Konderpu> 6 months ago
+33d4741 : Fix the issue that Volte call is not cleaned up properly from telephony framework when call failure is notified through dial command response. <Libin.Tang@motorola.com> 8 months ago
+a579503 : IMS: Ims Registration error codes support <Rekha Kumar> 8 months ago
+31ac4e2 : IMS: add the api to get IMS registration information. <Libin.Tang@motorola.com> 9 months ago
+d2727fc : IMS: Add support for sending ADD_PARTICIPANTS response to apps. <Muhammed Siju> 8 months ago
+5c51019 : Notify ServiceState for IMS registration <jiadongz> 11 months ago
+d921af2 : IMS: Turn on radio during wifi scenario <Anju Mathapati> 7 months ago
+e4e5824 : Ims: Enable IMS feature in multi-sim <Suresh Kumar Sugguna> 12 months ago
+c865900 : Revert "telephony: Bring IMS in line with current relese" <Deepak Kundra> 8 weeks ago
+ 
+**** cmR:android_frameworks_webview ****
+d198583 : Updating WebView 45.0.2454.87 to 46.0.2490.28 (arm64) (beta) <José Adolfo Galdámez> 5 days ago
+dedd11b : Updating WebView 45.0.2454.87 to 46.0.2490.28 (arm) (beta) <José Adolfo Galdámez> 5 days ago
+3e13f3e : nochromium: use stable version by default <José Adolfo Galdámez> 5 days ago
+c436780 : webview: arm: 45.0.2454.87 to 45.0.2454.95 <Lokesh Chamane> 5 days ago
+ 
+**** github:CyanogenMod/android_hardware_qcom_display ****
+7313236 : hwc: Set ioprio for vsync thread <Steve Kondik> 2 days ago
+c115bfd : qdutils: Fix misleading log message <Steve Kondik> 4 days ago
+e9f7b80 : display: Set thread priority using cutils <Steve Kondik> 6 days ago
+ 
+**** github:CyanogenMod/android_hardware_qcom_display ****
+6d8eb85 : hwc: Set ioprio for vsync thread <Steve Kondik> 2 days ago
+d9816c5 : display: Set thread priority using cutils <Steve Kondik> 6 days ago
+ 
+**** github:CyanogenMod/android_hardware_qcom_display ****
+2ca9c7a : hwc: Set ioprio for vsync thread <Steve Kondik> 2 days ago
+36acb02 : display: Set thread priority using cutils <Steve Kondik> 6 days ago
+ 
+**** github:CyanogenMod/android_hardware_qcom_display ****
+0088877 : hwc: Set ioprio for vsync thread <Steve Kondik> 2 days ago
+a70c883 : display: Set thread priority using cutils <Steve Kondik> 6 days ago
+ 
+**** github:CyanogenMod/android_hardware_samsung ****
+8409398 : ril: Support new sound manger RIL responses <Andreas Schneider> 7 days ago
+ 
+**** cmR:android_packages_apps_CMFileManager ****
+7676605 : [CMFileManager] Fix fail to move a folder <kai.cao> 2 weeks ago
+ 
+**** cmR:android_packages_apps_Gallery2 ****
+40a304a : Move & improve CAF strings <Michael Bestas> 2 days ago
+704bff7 : Gallery2 : Delete and Details options are not visible on Camera preview <Paramananda> 5 months ago
+ea87a93 : Gallery2 : Video share option is not working <Paramananda> 5 months ago
+ 
+**** github:CyanogenMod/android_packages_apps_Profiles ****
+aa39fbc : Profiles: add profile picker Activity (2/2) <Roman Birg> 5 weeks ago
+ 
+**** cmR:android_packages_apps_Settings ****
+b7bf80e : [2/2] Settings : Slimified CM Navigation Ring Targets <Jean-Pierre Rasquin> 4 hours ago
+1641cf0 : livedisplay: Disable Reduce power consumption by default <Meninblack007> 3 days ago
+a9a5832 : Add Battery saver activity: <Shaun> 5 days ago
+fdddf79 : SlimPIE: Configurable sensitivity [2/2] updated <eyosen> 5 days ago
+ddc6860 : Allow disabling the privacy guard notification (1/2) <Chirayu Desai> 7 days ago
+ 
+**** cmR:android_packages_apps_SetupWizard ****
+f53f0fc : SetupWizard: Tweak logic for showing/hiding sim missing page <cretin45> 5 days ago
+ 
+**** cmR:android_packages_apps_SlimLauncher ****
+93d1c26 : Fix compile <Griffin Millender> 7 days ago
+dbbe373 : Add longpress settings icon to go to system settings <Griffin Millender> 7 days ago
+d97eb73 : Allow tablets more dock icons <Griffin Millender> 5 months ago
+0c6e63c : Cleanup imports <Griffin Millender> 3 weeks ago
+abecc04 : Change smart folder logic a bit <Griffin Millender> 7 days ago
+5fe0239 : Cleanup overview panel <Griffin Millender> 7 days ago
+cdc8ece : Removing some dead code <Adam Cohen> 12 months ago
+acc0f59 : Add custom drawer background color <Griffin Millender> 4 weeks ago
+3d24385 : Add haptic feedback to all apps shortcut <Griffin Millender> 3 weeks ago
+bee76d9 : Updates for app drawer and add option to hide homescreen shadows <Griffin Millender> 7 days ago
+7a7d07e : Fix non transparent nav bar <Griffin Millender> 7 days ago
+cfb5c1a : Fix setApplicationContext being called twice <Griffin Millender> 3 weeks ago
+ 
+**** cmR:android_packages_inputmethods_LatinIME ****
+ba848b1 : Automatic translation import <Michael Bestas> 11 days ago
+ 
+**** cmR:android_packages_services_Telecomm ****
+7f9cf3c : Save Ims related call log after call disconnected. <cdu> 10 months ago
+ 
+**** cmR:android_packages_services_Telephony ****
+b7e3641 : Move & improve Wi-Fi call settings strings <Michael Bestas> 2 days ago
+ee6225f : IMS: Allow dial with empty URI List. <Suchand Ghosh> 6 months ago
+2c2eb43 : IMS: Fix crash during midcall disabled multicall SRVCC. <Muhammed Siju> 6 months ago
+62f16af : IMS: Allow add participant with normal IMS call. <Suchand Ghosh> 7 months ago
+8d2d16b : IMS: Turn on radio during wifi scenario <Anju Mathapati> 7 months ago
+8524741 : IMS: Update conferenceHostConnection state for a conference call <Garik Badalyan> 6 months ago
+ba90b47 : Revert "Ims: Update conferenceHostConnection state for a conference call" <Ravi Paluri> 6 months ago
+5468475 : MSIM IMS: convert to phone ID based selection. <Etan Cohen> 12 months ago
+14c4ce8 : IMS Conference notifyConferenceStarted API <Omkar Kolangade> 6 months ago
+70144a4 : Add support for Wifi calling settings UI <Suresh Koleti> 5 months ago
+37f3ebb : Ims: UI changes for Packet Count and Packet Error Count <Ravi Paluri> 6 months ago
+ 
+**** bb:arm-eabi-5.2 ****
+9f66ee6 : initial commit for SaberMod GCC arm-eabi-5.2 <ZION959> 5 days ago
+ 
+**** bb:arm-linux-androideabi-4.9 ****
+67164c3 : initial commit for SaberMod GCC arm-linux-androideabi-4.9 <ZION959> 5 days ago
+ 
+**** cmR:android_system_core ****
+8df64c7 : cutils: Remove ioprio magic <Steve Kondik> 2 days ago
+3328ca3 : cutils: Clean up ioprio grouping <Steve Kondik> 3 days ago
+a642430 : cutils: Fix display ioprio <Steve Kondik> 3 days ago
+d666fed : cutils: Fix copypasta in ioprio code <Steve Kondik> 3 days ago
+54521d0 : Revert "Add HTC Logging functions to support newer HTC props." <Matt Mower> 8 days ago
+ 
+**** github:CyanogenMod/android_vendor_cm ****
+6884792 : sepolicy: Allow system app to set boot anim property <myfluxi> 2 days ago
+da7d187 : APN: add Sprint MVNO Ringplus, Ting update <Brian Deery> 2 days ago
+b61b6df : cm: Clean up cgroups even more! <Steve Kondik> 2 days ago
+dcbf2aa : cm: Clean up cgroups <Steve Kondik> 3 days ago
+e2f23f0 : cm: Fix a few denials <Steve Kondik> 3 days ago
+100cc8e : cm: Remove xattr option from bfqio cgroup <Steve Kondik> 3 days ago
+4462dfa : cm: Update shared init.rc <Steve Kondik> 5 days ago
+d36909b : Removes Empty String For Resolver <herriojr> 4 days ago
+c815f70 : cm: Set IOPS mode for CFQ and BFQ automatically <Steve Kondik> 6 days ago
+78c6df1 : vendor/cm: Remove custom resolver from OSS builds. <Adnan Begovic> 5 days ago
+ 
+**** cmR:android_vendor_CMRemix ****
+75c86fc : Disable ADB authentication <ZION959> 68 minutes ago
+7aebc30 : update kernel script <ZION959> 4 hours ago
+43270b2 : update wallpapers <ZION959> 8 days ago
+8fc7ae0 : bacon: bye oppo_msm8974-common <boredSleepyHungryJoblessGuy> 5 days ago
+ 
+**** github:CyanogenMod/cm_platform_sdk ****
+e2daff9 : CMSettingsProvider: Remove attempts at closing sqlite db <Yvonne Wong> 29 hours ago
+806a91e : packages: Remove CMResolver <Brint E. Kriebel> 3 days ago
+ 

@@ -1,0 +1,254 @@
+
+**** github:CyanogenMod/android_bootable_recovery ****
+2bf0866 : updater: Hoist fsync() to outer loop. <Tao Bao> 5 weeks ago
+ 
+**** cmR:android_build ****
+529e3b2 : repopick: handle hardware_ril/ril-caf <Anthony King> 6 weeks ago
+df45e9f : repopick: skip abandoned commits <jrior001> 12 days ago
+00cbe08 : Adding msm8909 as a QCOM board platform <Marcos Marado> 3 weeks ago
+24ddce3 : build: kernel: arm64 uses Image.gz as the target <Scott Mertz> 5 weeks ago
+ 
+**** github:CyanogenMod/android_device_qcom_common ****
+9cb2917 : Adding init for msm8909 <Marcos Marado> 3 weeks ago
+4bf3e0b : power: Enable 4+0 core config for display off cases <Dilip Gudlur> 9 weeks ago
+ 
+**** github:CyanogenMod/android_device_qcom_sepolicy ****
+188ecce : sepolicy: Add thermal and irqbalancer sockets <Stephen Boyd> 8 months ago
+e821bc8 : sepolicy: Add policy for SurfaceFlinger access to rotator device <Tatenda Chipeperekwa> 8 months ago
+bcc374c : SEAndroid: Allow SurfaceFlinger to access dynamic_fps node <Arun Kumar K.R> 8 months ago
+ 
+**** github:CyanogenMod/android_device_samsung_qcom-common ****
+34d6794 : Automatic translation import <Michael Bestas> 2 days ago
+ 
+**** github:CMRemix/android_device_samsung_trlte-common ****
+e2d5f29 : update hardlimit for new oc table <ZION959> 6 hours ago
+ 
+**** github:CMRemix/android_device_samsung_trltespr ****
+e4cd47d : remove cm dependencies <ZION959> 10 hours ago
+ 
+**** github:CMRemix/android_device_samsung_trltetmo ****
+2581f0f : remove cm dependencies <ZION959> 10 hours ago
+1cd3566 : fixed up dependencies for CMRemix <ZION959> 13 hours ago
+c9c040f : trltetmo add board define for camera preview. <nicklovell23> 4 months ago
+7c2a3e1 : Remove unneeded ril props <nicklovell23> 8 months ago
+694334c : Kill init with fire/move to system.prop <ZION959> 14 hours ago
+cc37c9d : Expose the APN settings menu <WoundTight> 8 months ago
+ 
+**** github:CMRemix/android_device_samsung_trltexx ****
+5ca6422 : remove cm dependencies <ZION959> 10 hours ago
+5b439a8 : Kill init with fire/move to system.prop <ZION959> 13 hours ago
+c7b688e : Expose the APN settings menu <WoundTight> 8 months ago
+e5bfb77 : fixed up dependencies to CMRemix <ZION959> 13 hours ago
+ 
+**** github:CyanogenMod/android_external_whispersystems_WhisperPush ****
+82f94ba : Automatic translation import <Michael Bestas> 2 days ago
+ 
+**** cmR:android_frameworks_base ****
+6e76b19 : Camera: Longshot with Burst Functionality. <Vijay Kumar Tumati> 4 months ago
+89ac2ab : revert: Status bar clock: Add BOLD ITALIC to font style (1/2) (reverted from commit 3ab6c2896283a0d2b33b9ba8d65cc55970e00fc4) <ZION959> 22 hours ago
+3ab6c28 : Status bar clock: Add BOLD ITALIC to font style (1/2) <Janson Kang> 25 hours ago
+a15dacc : Status bar weather: Add BOLD ITALIC to font style (1/2) <Janson Kang> 25 hours ago
+6ba2c85 : Notifications: log notifications marked as spam to the event log <Roman Birg> 3 months ago
+6e44eb7 : Remove duplicate audio: Tejat is Argon <Abhisek Devkota> 29 hours ago
+c4e5db4 : Fingerprint: Allow disabling of vibration <d34d> 29 hours ago
+82741d6 : PackageManager: Move fingerprint feature out of android namespace. <Adnan Begovic> 2 days ago
+d518120 : core/SystemUI: Remove zh-rHK CAF translations <Michael Bestas> 34 hours ago
+6e9f033 : Automatic translation import <Michael Bestas> 2 days ago
+56beb8d : SystemUI: check RecentsConfiguration isn't null before running RecentsTaskLoader <Raj Yengisetty> 2 days ago
+b0400f9 : base: hide qs tiles with sensitive data <Jorge Ruesga> 24 hours ago
+ 
+**** cmR:android_frameworks_native ****
+e676b55 : native: Move fingerprint feature out of android namespace. <Adnan Begovic> 2 days ago
+a282ac5 : libagl: Fix buffer read overrun in eglCreatePbufferSurface <Jesse Hall> 13 days ago
+ 
+**** github:CyanogenMod/android_frameworks_opt_chips ****
+f101d20 : Revert "More Chip: use pendingcount instead of counting again" <Danesh M> 5 weeks ago
+ 
+**** cmR:android_frameworks_webview ****
+57e61b3 : Updating WebView 44.0.2403.90 to 44.0.2403.117 (x86) <Björn Hutmacher> 5 days ago
+4f2c917 : Updating WebView 45.0.2454.48 to 45.0.2454.64 (arm) <JoseGalRe> 6 days ago
+092a2b3 : Updating WebView 45.0.2454.37 to 45.0.2454.48 (arm) <JoseGalRe> 12 days ago
+c58c055 : Updating WebView 45.0.2454.27 to 45.0.2454.37 (arm) <JoseGalRe> 3 weeks ago
+a3126a8 : Updating WebView 45.0.2454.19 to 45.0.2454.27 (arm) <JoseGalRe> 4 weeks ago
+6ffb54b : nochromium: fix arm64 <JoseGalRe> 4 weeks ago
+45d176c : Updating WebView 44.0.2403.90 to 45.0.2454.19 (arm64) <Björn Hutmacher> 5 weeks ago
+6e70349 : WebView 44.0.2403.90 -> 45.0.2454.19 (arm) <Lokesh Chamane> 5 weeks ago
+8667c24 : Webview: Remove README.mkdn <Lokesh Chamane> 5 weeks ago
+ec0787f : Updating WebView 44.0.2403.83 to 44.0.2403.90 (arm64) <Björn Hutmacher> 5 weeks ago
+534a66f : Updating WebView 43.0.2357.121 to 44.0.2403.90 (x86) <Björn Hutmacher> 6 weeks ago
+a66f0fd : Updating WebView 44.0.2403.83 to 44.0.2403.90 (arm) <José Adolfo Galdámez> 6 weeks ago
+84ea05d : nochromium: restructure some things <José Adolfo Galdámez> 6 weeks ago
+dc18ba2 : Update WebView for arm and arm64 to 44.0.2403.83 <Björn Hutmacher> 8 weeks ago
+d9802b9 : Update WebView for arm and arm64 to 44.0.2403.73 <Björn Hutmacher> 9 weeks ago
+a882ca7 : Update WebView for arm and arm64 to 44.0.2403.64 <Björn Hutmacher> 9 weeks ago
+7712a28 : Individual apk files per arch <Björn Hutmacher> 10 weeks ago
+8411538 : Add x86 targets <Björn Hutmacher> 2 months ago
+0f97228 : Add WebView 43.0.2357.121 for x86 <Björn Hutmacher> 2 months ago
+ 
+**** github:CyanogenMod/android_hardware_qcom_audio ****
+4d8c8b2 : hal: Tell Huawei acdb loader which files to load <Thomas Wendt> 4 months ago
+ 
+**** github:CyanogenMod/android_hardware_samsung ****
+9427510 : libsecril-client: Fix SetCallAudioPath for current devices <Andreas Schneider> 9 days ago
+ 
+**** github:CyanogenMod/android_hardware_ti_omap4 ****
+395c41e : camera: add support for espresso <Ziyan> 3 weeks ago
+ 
+**** github:CMRemix/android_kernel_samsung_trlte ****
+5d93e5f : trlte: oc rework 268mhz - 307ghz <ZION959> 9 hours ago
+ 
+**** github:DirtyUnicorns/android_packages_apps_Apollo ****
+4d8b916 : Apollo: use fading scrollbars <maxwen> 6 months ago
+ 
+**** github:CyanogenMod/android_packages_apps_AudioFX ****
+91d6891 : Automatic translation import <Michael Bestas> 2 days ago
+ 
+**** cmR:android_packages_apps_Bluetooth ****
+67081fd : Automatic translation import <Michael Bestas> 2 days ago
+ 
+**** github:CyanogenMod/android_packages_apps_BluetoothExt ****
+8b093e6 : Automatic translation import <Michael Bestas> 2 days ago
+ 
+**** github:CyanogenMod/android_packages_apps_CMAccount ****
+b274bb5 : Automatic translation import <Michael Bestas> 2 days ago
+ 
+**** github:CyanogenMod/android_packages_apps_CMFileManager ****
+0f51785 : Automatic translation import <Michael Bestas> 2 days ago
+634a2b8 : Fix bookmark string <Michael Bestas> 7 days ago
+ 
+**** github:CyanogenMod/android_packages_apps_Calculator ****
+3045e4c : Automatic translation import <Michael Bestas> 2 days ago
+ 
+**** github:CyanogenMod/android_packages_apps_Calendar ****
+dd1dd45 : Automatic translation import <Michael Bestas> 2 days ago
+ 
+**** github:CyanogenMod/android_packages_apps_Camera2 ****
+597cd76 : Automatic translation import <Michael Bestas> 2 days ago
+ 
+**** github:CyanogenMod/android_packages_apps_CellBroadcastReceiver ****
+a31f1e2 : Automatic translation import <Michael Bestas> 2 days ago
+ 
+**** github:CyanogenMod/android_packages_apps_DeskClock ****
+6f61453 : Automatic translation import <Michael Bestas> 2 days ago
+ 
+**** cmR:android_packages_apps_Dialer ****
+9caca68 : Automatic translation import <Michael Bestas> 2 days ago
+ 
+**** github:CyanogenMod/android_packages_apps_Eleven ****
+cd2937a : Automatic translation import <Michael Bestas> 2 days ago
+ 
+**** cmR:android_packages_apps_Email ****
+a048f26 : Automatic translation import <Michael Bestas> 2 days ago
+ 
+**** github:CyanogenMod/android_packages_apps_Gallery2 ****
+218cfbb : Automatic translation import <Michael Bestas> 2 days ago
+ 
+**** cmR:android_packages_apps_InCallUI ****
+5db0800 : Automatic translation import <Michael Bestas> 2 days ago
+ 
+**** github:CyanogenMod/android_packages_apps_LockClock ****
+e379cd2 : Automatic translation import <Michael Bestas> 2 days ago
+ 
+**** cmR:android_packages_apps_Mms-caf ****
+a380361 : Automatic translation import <Michael Bestas> 2 days ago
+1b80da8 : Fix "To" label hide/show when adding/removing subject <Richard MacGregor> 6 days ago
+f51cfec : MMS: Change subject logic <Stephen Bird> 8 days ago
+ 
+**** cmR:android_packages_apps_Settings ****
+05a7413 : fixed statusbar weather fc <ZION959> 4 hours ago
+494d69a : revert: Status bar clock: Add BOLD ITALIC to font style (2/2) <ZION959> 22 hours ago
+1119d81 : revert: settings: option to disable lock screen dpm override (2/2) <ZION959> 23 hours ago
+913bcba : Status bar clock: Add BOLD ITALIC to font style (2/2) <Janson Kang> 24 hours ago
+a2a7b8e : Status bar weather: Add BOLD ITALIC to font style (2/2) <Janson Kang> 25 hours ago
+69a29c0 : settings: fix fc for system apps with null applicationInfo <Jorge Ruesga> 30 hours ago
+02af1d2 : Protected apps: fixup rotation states <Roman Birg> 30 hours ago
+cd73e9a : Settings: Update Gesture Anywhere save location <Lokesh Chamane> 4 days ago
+a77a993 : Settings: Increase AppSidebar and Gesture Anywhere default width <Lokesh Chamane> 30 hours ago
+7f8aff7 : settings: check bt pan service before use it <Jorge Ruesga> 3 weeks ago
+4ec8e95 : Automatic translation import <Michael Bestas> 2 days ago
+54a19d2 : settings: hide qs tiles with sensitive data <Jorge Ruesga> 2 days ago
+ 
+**** cmR:android_packages_apps_SlimLauncher ****
+6cc5d69 : Cleanup resources <Griffin Millender> 5 days ago
+ 
+**** github:CyanogenMod/android_packages_apps_SoundRecorder ****
+27f88f0 : Automatic translation import <Michael Bestas> 2 days ago
+ 
+**** github:CyanogenMod/android_packages_apps_Stk ****
+3ff329e : Automatic translation import <Michael Bestas> 2 days ago
+ 
+**** github:CyanogenMod/android_packages_apps_Terminal ****
+48527b3 : Automatic translation import <Michael Bestas> 2 days ago
+ 
+**** cmR:android_packages_apps_ThemeChooser ****
+4733494 : Automatic translation import <Michael Bestas> 2 days ago
+ 
+**** cmR:android_packages_apps_TvSettings ****
+be3e472 : Automatic translation import <Michael Bestas> 2 days ago
+ 
+**** cmR:android_packages_apps_UnifiedEmail ****
+b440e37 : Automatic translation import <Michael Bestas> 2 days ago
+ 
+**** cmR:android_packages_inputmethods_LatinIME ****
+a1bc171 : Automatic translation import <Michael Bestas> 2 days ago
+ 
+**** github:CyanogenMod/android_packages_providers_TelephonyProvider ****
+9762ec8 : Revert "MmsProvider : Add ability to get thread information in search" <Danesh M> 2 days ago
+ 
+**** github:CyanogenMod/android_packages_providers_ThemesProvider ****
+29f1d16 : Specify locale when using String.format() <d34d> 2 days ago
+ 
+**** github:CyanogenMod/android_packages_services_Mms ****
+d55f960 : Automatic translation import <Michael Bestas> 2 days ago
+ 
+**** cmR:android_packages_services_Telecomm ****
+c7306c2 : Automatic translation import <Michael Bestas> 2 days ago
+ 
+**** cmR:android_packages_services_Telephony ****
+724fb11 : Automatic translation import <Michael Bestas> 2 days ago
+2f29215 : Network Settings: don't crash on bad lookup <Roman Birg> 2 days ago
+ 
+**** github:CyanogenMod/android_packages_wallpapers_PhotoPhase ****
+a556392 : Automatic translation import <Michael Bestas> 2 days ago
+ 
+**** github:CyanogenMod/android_prebuilts_cmsdk ****
+505e076 : prebuilts/cmsdk: Update api text for CMSettings <Yvonne Wong> 2 days ago
+8fa9722 : prebuilts/cmsdk: Update api text for Hardware <Yvonne Wong> 2 days ago
+ 
+**** cmR:android_system_core ****
+de7a780 : Camera: Longshot with Burst Functionality. <Vijay Kumar Tumati> 4 months ago
+71b40a7 : Revert "fs_mgr: let fsck.f2fs actually attempt a fix" <Jaegeuk Kim> 6 months ago
+e575b4a : libcutils/liblog: Add functions required by Huawei g620_a2 binaries <Thomas Wendt> 4 months ago
+ 
+**** github:CyanogenMod/android_vendor_cm ****
+1e116da : vendor/cm: Start building in CMSettingsProvider. <Adnan Begovic> 32 hours ago
+80145f3 : Fix Airtel APN Selection <Abhisek Devkota> 2 days ago
+78822da : Updated APN settings for Latvian operators <Davis Mosenkovs> 3 days ago
+0e3db25 : Rogers LTE apn fix? <Abhisek Devkota> 6 days ago
+f9b05b9 : Fix Movistar APNs <Marcos Marado> 3 days ago
+ 
+**** cmR:android_vendor_CMRemix ****
+e70ef36 : update savoca kcal to v1.2 <ZION959> 29 hours ago
+ 
+**** github:CyanogenMod/cm_platform_sdk ****
+88bc996 : cmsdk: Fix toast in CMHardwareTest. <Adnan Begovic> 31 hours ago
+c0c27a6 : cmsdk: Add preliminary hardware manager tests. <Adnan Begovic> 32 hours ago
+3a502e9 : cmsdk: Change parceling for DisplayMode. <Adnan Begovic> 32 hours ago
+c5fa7bc : cmsdk: Fix spelling error in CMSettingsProvider makefile. <Adnan Begovic> 32 hours ago
+40a46bd : BugFix: Fix potential NPEs with getService() <BadDaemon> 2 days ago
+6850732 : Automatic translation import <Michael Bestas> 2 days ago
+95dadd8 : cmsdk: allow custom tiles to set the new qstile's sensitive data flag <Jorge Ruesga> 3 weeks ago
+0eb2999 : Add CMSettingsProvider and CMDatabaseHelper <Yvonne Wong> 13 days ago
+e949433 : cmsdk: Build in the Manifest and R classes for the sdk. <Adnan Begovic> 5 days ago
+a632fbc : cmsdk: Update cm api text files <Yvonne Wong> 5 days ago
+ 
+**** github:CMRemix/proprietary_vendor_samsung ****
+dd92b23 : mondrianwifi: Kang soundfx libs from hlte-common <Christopher R. Palmer> 19 hours ago
+6c32157 : ks01lte: Remove libgps.utils.so as intree one works fine now. <Vitalii Kulikov> 8 days ago
+3efbbb3 : ks01lte: Update blobs. <Vitalii Kulikov> 3 months ago
+5919d79 : jf: turnip for what? <dcd> 9 days ago
+a2327e7 : Galaxy Tab 2: squashed revert of "blobs from JB 4.2.2 update" <Andreas Blaesius> 12 days ago
+4365729 : Revert "i9500: Add memtracker HAL" <Ethan Chen> 12 days ago
+8a44cf9 : i9500: Add memtracker HAL <Alberto96> 13 days ago
+ddfc387 : i9500: Add missing Mobicore file <Alberto96> 13 days ago
+ 

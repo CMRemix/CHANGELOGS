@@ -1,0 +1,446 @@
+
+**** cmR:CMRemix ****
+45a8077 : android-5.1.1_r13 -> android-5.1.1_r18 <Ricardo Cerqueira> 32 hours ago
+715cfa5 : track calendar <ZION959> 2 days ago
+6a23fe3 : Revert: track ScreenRecorder <ZION959> 2 days ago
+0ced69b : Add hardware/cyanogen <Steve Kondik> 2 days ago
+2c98138 : android-5.1.1_r6 -> android-5.1.1_r13 <Ricardo Cerqueira> 2 days ago
+ 
+**** cmR:android_build ****
+0d5ae24 : add strict aliasing back again. <ZION959> 21 hours ago
+7598793 : repopick: Update script with some fixes <Brint E. Kriebel> 2 days ago
+05bb2bb : repopick: print the status of a skipped cherry pick <Dan Pasanen> 2 days ago
+6d2cb51 : Add -Ofast & -O3 flags to build <ZION959> 2 days ago
+1966a9e : build: Create a oem image when BOARD_OEMIMAGE_FILE_SYSTEM_TYPE is defined <Diogo Ferreira> 8 days ago
+5dee2dd : build: better zsh dopush support <Roman Birg> 8 weeks ago
+03ca3af : "LVY48F" <The Android Automerger> 4 weeks ago
+7c80b85 : "LVY48E" <The Android Automerger> 7 weeks ago
+e260e26 : "LVY48D" <The Android Automerger> 3 months ago
+e362738 : "LVY48C" <The Android Automerger> 3 months ago
+5bd813f : "LVY48B" <The Android Automerger> 5 months ago
+5475640 : "LVY47Z" <The Android Automerger> 5 months ago
+6775a97 : "LVZ20" <The Android Automerger> 5 months ago
+8ef7842 : "LVY47X" <The Android Automerger> 5 months ago
+b49345d : "LVY47K" <The Android Automerger> 5 months ago
+a03e28a : "LVZ07" <The Android Automerger> 5 months ago
+a14c43f : "LVY47J" <The Android Automerger> 5 months ago
+8c3d038 : "LVY47I" <The Android Automerger> 5 months ago
+3dc1ee2 : "LVZ01" <The Android Automerger> 5 months ago
+9830104 : "LVY47H" <The Android Automerger> 6 months ago
+29f45d8 : "LVY47G" <The Android Automerger> 6 months ago
+609e3fd : "LVY47F" <The Android Automerger> 6 months ago
+35a48c6 : "LVY62" <The Android Automerger> 6 months ago
+dce4c51 : "LVY47E" <The Android Automerger> 7 months ago
+1349b15 : "LVY47D" <The Android Automerger> 7 months ago
+d0a45ac : "LVY50" <The Android Automerger> 7 months ago
+67169cf : "LVY47C" <The Android Automerger> 7 months ago
+50588a2 : "LVY47B" <The Android Automerger> 7 months ago
+9c95d87 : "LVY47" <The Android Automerger> 7 months ago
+bdeec0c : "LVY44" <The Android Automerger> 7 months ago
+885268a : "LVY41" <The Android Automerger> 7 months ago
+e8ea815 : LVY36F <The Android Automerger> 7 months ago
+31e3941 : "LVY36E" <The Android Automerger> 7 months ago
+b863c99 : "LVY36D" <The Android Automerger> 7 months ago
+cf3495b : LVY36C <The Android Automerger> 7 months ago
+74a5c02 : "LVY36B" <The Android Automerger> 7 months ago
+b90c6e0 : "LVY35D" <The Android Automerger> 7 months ago
+cfbcbc3 : "LVY35C" <The Android Automerger> 7 months ago
+700fb5d : "LVY35B" <The Android Automerger> 7 months ago
+6a17d6a : LVY35 <The Android Automerger> 7 months ago
+f1bae0a : "LVY36" <The Android Automerger> 7 months ago
+3f2a597 : "LVY34B" <The Android Automerger> 7 months ago
+8a746ce : "LVY33" <The Android Automerger> 7 months ago
+12c5582 : LVY29G <The Android Automerger> 7 months ago
+1f73e71 : "LVY29F" <The Android Automerger> 7 months ago
+a00ec7b : "LVY29C" <The Android Automerger> 8 months ago
+c1d901e : "LVY29B" <The Android Automerger> 8 months ago
+653c85a : "LVY29" <The Android Automerger> 8 months ago
+e4570c4 : "LVY27B" <The Android Automerger> 8 months ago
+ef7e792 : "LVY28" <The Android Automerger> 8 months ago
+ 
+**** github:CyanogenMod/android_device_samsung_qcom-common ****
+5878c7e : SamsungDoze: fix typo <Dave Daynard> 3 days ago
+ 
+**** cmR:android_external_libpng ****
+275a4f8 : Restore a width check that was removed from png.c (CVE-2015-0973) <Narayan Kamath> 7 months ago
+ 
+**** github:CyanogenMod/android_external_skia ****
+8b3707d : DO NOT MERGE Prevent integer wrap around for malloc size when creating a SkRegion <djsollen> 4 months ago
+ 
+**** github:CyanogenMod/android_external_sonivox ****
+c76a325 : DLS parser: fix wave pool size check. <Eric Laurent> 4 months ago
+ 
+**** github:CyanogenMod/android_external_wpa_supplicant_8 ****
+f7a01d5 : P2P: Validate SSID element length before copying it <Jouni Malinen> 5 months ago
+ 
+**** cmR:android_frameworks_av ****
+e498ae6 : MPEG4Extractor.cpp: handle chunk_size > SIZE_MAX <Nick Kralevich> 5 weeks ago
+59e5d30 : Guard against codecinfo overflow <Marco Nelissen> 6 weeks ago
+1809c2f : audio effects: fix heap overflow <Eric Laurent> 3 months ago
+6cc7fe0 : Prevent integer underflow if size is below 6 <Joshua J. Drake> 4 months ago
+b242d24 : Prevent reading past the end of the buffer in 3GPP <Joshua J. Drake> 4 months ago
+b9bd167 : Prevent integer overflow when processing covr MPEG4 atoms <Joshua J. Drake> 4 months ago
+93ba37d : Fix integer overflow when handling MPEG4 tx3g atom <Joshua J. Drake> 4 months ago
+6e7e30d : Fix integer underflow in covr MPEG4 processing <Joshua J. Drake> 4 months ago
+b9f68d9 : IOMX: Enable buffer ptr to buffer id translation for arm32 <Andy Hung> 4 months ago
+409c1b9 : IOMX: Add buffer range check to emptyBuffer <Andy Hung> 4 months ago
+f7ccdd3 : HDCP: buffer over flow check -- DO NOT MERGE <Chong Zhang> 5 months ago
+d0f6f43 : Add AUtils::isInRange, and use it to detect malformed MPEG4 nal sizes <Lajos Molnar> 5 months ago
+f45c9fc : Add some sanity checks <Marco Nelissen> 5 months ago
+86ae2ee : Fix integer underflow in ESDS processing <Joshua J. Drake> 5 months ago
+8d88192 : Fix integer overflow during MP4 atom processing <Joshua J. Drake> 5 months ago
+894c7ba : Fix several ineffective integer overflow checks <Joshua J. Drake> 5 months ago
+ 
+**** cmR:android_frameworks_base ****
+a4bb240 : Add 44.1 kHz SlimSounds <andi34> 5 weeks ago
+0e5d4a1 : revert: Add 44.1 kHz SlimSounds <ZION959> 21 hours ago
+f924b32 : SystemUI: time-context header fixes <maxwen> 3 weeks ago
+81fc225 : revert: Re-do contextual notification header images <ZION959> 23 hours ago
+4a2267a : SystemUI: hide task manager button on keyguard <Altaf-Mahdi> 2 days ago
+77d56cb : fwb: replace the old/ugly default drawable :v <voidz777> 3 days ago
+fa86fed : DO NOT MERGE Backport of limited jank-tracking metrics <John Reck> 7 months ago
+cedb782 : GpsLocationProvider: Read data enabled status from TelephonyManager. <Shishir Agrawal> 8 months ago
+5356fb7 : Themes: Use current user ID when getting ThemeConfig <d34d> 2 days ago
+1016665 : Fix Custom Resolver Theming <herriojr> 2 days ago
+d0da15c : Revert a couple of badly-behaving ActivityManager patches. <Steve Kondik> 25 hours ago
+b24969e : Compilation fixes <Natiq Ahmed> 7 months ago
+119b1fa : Add network policy for each sub on powerup <Susheel nyamala> 8 months ago
+0e017a2 :  Themes: Don't use themed fonts for non themable packages <0xD34D> 25 hours ago
+c404913 : Base : Add more lockscreen shortcut custom icons Part2 Signed-off-by: westcrip <korukaltan@gmail.com> <westcripp> 8 months ago
+8e40730 : Base:Add new 73 hd lockscreen shortcus icons <westcripp> 8 months ago
+10019a7 : Add broadcast and query API for AudioSource.HOTWORD. <Matt Garnes> 7 days ago
+c46ea35 : android-5.1.1_r6 -> android-5.1.1_r13 <ZION959> 2 days ago
+772cd84 : Task Manager: Use one observer for changes, misc cleanup <Randall Rushing> 2 days ago
+def7c52 : StatusBarHeader: toggle drawable when switching between qs and task manager <Altaf-Mahdi> 5 days ago
+e6663a8 : SystemUI: change back button to hide ime buttom with rotate animation. <Kyrylo Mikos> 10 months ago
+cad2800 : StatusBarHeader: update headsup button onclick <Altaf-Mahdi> 5 days ago
+5a408fb : services: don't disable led's when user passes through lock screen <Altaf-Mahdi> 11 days ago
+e081586 : SystemUI: reset to QS panel if task manager was visible last <Altaf-Mahdi> 12 days ago
+b3b92f7 : Changes in Navigation Bar: <Daniel Koman> 3 days ago
+ac67036 : Add 44.1 kHz SlimSounds <andi34> 2 days ago
+6a63a0d : SystemUI: Prevent ClassCastException in navbar for RTL languages <Daniel Koman> 3 weeks ago
+bd97a7d : derp <ZION959> 2 days ago
+c58fe80 : Prevent insanely long passwords from crashing SystemUI <Adrian Roos> 7 weeks ago
+e471da0 : DO NOT MERGE: Ensure that unparcelling Region only reads the expected number of bytes <Leon Scroggins III> 4 months ago
+0d90fd2 : Check that the parcel contained the expected amount of region data. DO NOT MERGE <Leon Scroggins III> 4 months ago
+2ae417b : base: report wtf for external cm services <Jorge Ruesga> 6 days ago
+6f85f42 : Fix Android API exceptions <Joe Maples> 4 months ago
+75c337a : revert: Import Moto X Ringtones and Notifications <ZION959> 3 days ago
+ef6635f : On-The-Go mode improvements <BlackDragon> 2 days ago
+6e5566f : On-The-Go Mode (1/2) <BlackDragon> 2 days ago
+ 
+**** cmR:android_frameworks_native ****
+56710eb : Disregard alleged binder entities beyond parcel bounds <Christopher Tate> 4 months ago
+544b11d : Verify that the native handle was created <Adam Lesinski> 4 months ago
+ 
+**** github:CyanogenMod/android_frameworks_opt_hardware ****
+fa7272b : cmhw: Add PersistentStorage API <Steve Kondik> 11 days ago
+ 
+**** cmR:android_frameworks_opt_telephony ****
+6ff91ff : Telephony: Don't show as roaming if new state isn't in service. <Adnan Begovic> 2 days ago
+0d7a1dd : Catch possible NumberFormatException in ServiceStateTracker <d34d> 2 days ago
+a5c5024 : Externally-reported Moderate severity vulnerability in SMS: Apps can bypass the SMS short code notification prompt <Tom Taylor> 9 weeks ago
+e5cb1de : DO NOT MERGE Change to add STK_PERMISSION for stk related commands. <Amit Mahajan> 3 months ago
+2c7234e : Log last 20 CAT proactive commands. <Shishir Agrawal> 6 months ago
+eea3164 : UICC: Handle card level REFRESH RESET events. <Shishir Agrawal> 7 months ago
+29913ad : DcTracker: Cleanup connections when IccRecords is destroyed. <Shishir Agrawal> 7 months ago
+97fd1e0 : Log last 20 CAT proactive commands. <Shishir Agrawal> 6 months ago
+ae01da3 : UICC: Handle card level REFRESH RESET events. <Shishir Agrawal> 7 months ago
+b21322b : DcTracker: Cleanup connections when IccRecords is destroyed. <Shishir Agrawal> 7 months ago
+45a2cc9 : Log last 20 CAT proactive commands. <Shishir Agrawal> 6 months ago
+5f3f4bb : UICC: Handle card level REFRESH RESET events. <Shishir Agrawal> 7 months ago
+d69bc8d : DcTracker: Cleanup connections when IccRecords is destroyed. <Shishir Agrawal> 7 months ago
+610bafc : Make mImsPhone static. DO NOT MERGE ANYWHERE <Pavel Zhamaitsiak> 5 months ago
+05d3365 : Log last 20 CAT proactive commands. <Shishir Agrawal> 6 months ago
+b963beb : UICC: Handle card level REFRESH RESET events. <Shishir Agrawal> 7 months ago
+a95110b : DcTracker: Cleanup connections when IccRecords is destroyed. <Shishir Agrawal> 7 months ago
+47ca8fb : IMS phone instantiation: add polling on base phone creation <Etan Cohen> 7 months ago
+1a25df0 : Log last 20 CAT proactive commands. <Shishir Agrawal> 6 months ago
+a081eb7 : Lightweight fix for incorrect locale changes - DO NOT MERGE <Neil Fuller> 6 months ago
+af94615 : Notify subscriptionInfoChanged in setPlmnSpn even without sim. <Sanket Padawe> 7 months ago
+36d48c6 : Set carrierName of subInfo to null while creating/updating subInfo. <Sanket Padawe> 7 months ago
+210cd9a : UICC: Handle card level REFRESH RESET events. <Shishir Agrawal> 7 months ago
+d5a1f17 : DcTracker: Cleanup connections when IccRecords is destroyed. <Shishir Agrawal> 7 months ago
+8d1a3d1 : Revert "Remove special handling for length field." <Ian Pedowitz> 7 months ago
+43eaf7e : Adding a new param to calculateLength for SMS to indicate if called for a segment of multipart msg. <Amit Mahajan> 7 months ago
+7026d6c : Revert "Remove special handling for length field." <Ian Pedowitz> 7 months ago
+8e4af4a : Reverting change which uses spnoverride to set ONS. <Sanket Padawe> 7 months ago
+857a98f : Revert "Remove special handling for length field." <Junda Liu> 9 months ago
+d75e172 : Pass new connection object to telecomm layer after a phone switch. <Sanket Padawe> 7 months ago
+40dc777 : Treat a SIM power cycle as first boot. <Robert Greenwalt> 7 months ago
+0a6f8a7 : Revert "Remove special handling for length field." <Junda Liu> 9 months ago
+6e9744e : SmsSenderCallback: Run the callback with the phone UID. <Shishir Agrawal> 7 months ago
+f323afd : SmsSenderCallback: Run the callback with the phone UID. <Shishir Agrawal> 7 months ago
+a9a7b3a : Reduce binder call when determing whether or not to use CDMA format for MO SMS <Xia Ying> 7 months ago
+3aa60e9 : Revert "Remove special handling for length field." <Junda Liu> 9 months ago
+47f25ad : Reduce binder call when determing whether or not to use CDMA format for MO SMS <Xia Ying> 7 months ago
+c376534 : Supress phone number from logcat. <Sanket Padawe> 7 months ago
+1c547b8 : Revert "Remove special handling for length field." <Junda Liu> 9 months ago
+c029b57 : Fix mistake of calling wrong method to return sim country iso <Ye Wen> 7 months ago
+02728f4 : Revert "Remove special handling for length field." <Junda Liu> 9 months ago
+0710ff7 : Add comments to explain what we're currently doing <Robert Greenwalt> 7 months ago
+29b4388 : Remove phone number being displayed from logs <Sanket Padawe> 7 months ago
+4a51984 : Revert "Remove special handling for length field." <Junda Liu> 9 months ago
+6785511 : Revert "Remove special handling for length field." <Junda Liu> 9 months ago
+7c4170d : add missing import android.os.Binder. <The Android Automerger> 7 months ago
+19af803 : [DS] Correct the access method for telephony system property <Legler Wu> 8 months ago
+e70617d : [DS] Correct the access method for telephony system property <Legler Wu> 8 months ago
+35062bd : Revert "Remove special handling for length field." <Junda Liu> 9 months ago
+815c895 : Suppress logging to avoid showing phone number. <Sanket Padawe> 8 months ago
+ 
+**** cmR:android_frameworks_webview ****
+a569734 : Updating WebView 45.0.2454.19 to 45.0.2454.87 (arm64) <José Adolfo Galdámez> 6 days ago
+7d942b5 : Updating WebView 45.0.2454.64 to 45.0.2454.87 (arm) <José Adolfo Galdámez> 6 days ago
+57e61b3 : Updating WebView 44.0.2403.90 to 44.0.2403.117 (x86) <Björn Hutmacher> 2 weeks ago
+4f2c917 : Updating WebView 45.0.2454.48 to 45.0.2454.64 (arm) <JoseGalRe> 2 weeks ago
+092a2b3 : Updating WebView 45.0.2454.37 to 45.0.2454.48 (arm) <JoseGalRe> 3 weeks ago
+c58c055 : Updating WebView 45.0.2454.27 to 45.0.2454.37 (arm) <JoseGalRe> 4 weeks ago
+a3126a8 : Updating WebView 45.0.2454.19 to 45.0.2454.27 (arm) <JoseGalRe> 5 weeks ago
+6ffb54b : nochromium: fix arm64 <JoseGalRe> 5 weeks ago
+45d176c : Updating WebView 44.0.2403.90 to 45.0.2454.19 (arm64) <Björn Hutmacher> 6 weeks ago
+6e70349 : WebView 44.0.2403.90 -> 45.0.2454.19 (arm) <Lokesh Chamane> 6 weeks ago
+8667c24 : Webview: Remove README.mkdn <Lokesh Chamane> 6 weeks ago
+ec0787f : Updating WebView 44.0.2403.83 to 44.0.2403.90 (arm64) <Björn Hutmacher> 7 weeks ago
+534a66f : Updating WebView 43.0.2357.121 to 44.0.2403.90 (x86) <Björn Hutmacher> 7 weeks ago
+a66f0fd : Updating WebView 44.0.2403.83 to 44.0.2403.90 (arm) <José Adolfo Galdámez> 7 weeks ago
+84ea05d : nochromium: restructure some things <José Adolfo Galdámez> 7 weeks ago
+dc18ba2 : Update WebView for arm and arm64 to 44.0.2403.83 <Björn Hutmacher> 9 weeks ago
+d9802b9 : Update WebView for arm and arm64 to 44.0.2403.73 <Björn Hutmacher> 2 months ago
+a882ca7 : Update WebView for arm and arm64 to 44.0.2403.64 <Björn Hutmacher> 2 months ago
+7712a28 : Individual apk files per arch <Björn Hutmacher> 3 months ago
+8411538 : Add x86 targets <Björn Hutmacher> 3 months ago
+0f97228 : Add WebView 43.0.2357.121 for x86 <Björn Hutmacher> 3 months ago
+ 
+**** github:CyanogenMod/android_hardware_broadcom_wlan ****
+9ff2f18 : net: wireless: bcmdhd Update bcm4354/56 FW(Lollipop-MR1-7.35.79.7) <Ecco Park> 6 months ago
+ 
+**** github:CyanogenMod/android_hardware_qcom_display ****
+26056c1 : hwc: Reserve pipes for video layers first <Saurabh Shah> 6 months ago
+6aa55f2 : hwc: Avoid MDP comp for RGB downscaled layer <radhakrishna> 5 months ago
+59e9973 : hwc: Handle multiple YUV layer use case in low end targets <radhakrishna> 4 months ago
+99271ec : hwc: Avoid updating refresh-rate if already done <Raj Kamal> 9 weeks ago
+a75c025 : hwc: Use GPU to compose for smaller updates <Saurabh Shah> 5 months ago
+e619991 : hwc: Set refresh rate during idlefallback for unhandled cases <Raj Kamal> 3 months ago
+d0707e1 : hwc: Donot rely on previous comp type to trigger idlefallback <Raj Kamal> 3 months ago
+8de2868 : hwc: Roundoff the input fps to nearest standard fps <Raj Kamal> 3 months ago
+15b0492 : hwc: Trigger dynamic refresh-rate change for more usecases <Raj Kamal> 5 months ago
+ 
+**** github:CyanogenMod/android_hardware_qcom_media ****
+215b75e : mm-video: Calculate average fps to update refresh rate <Surajit Podder> 3 months ago
+dd5bb74 : mm-video-v4l2: handle flush done as buffer_done and not as cmd_done <Ashray Kulkarni> 3 months ago
+4bc8d24 : mm-video-v4l2: vdec: insert timestamps qeued by client in TS queue <Praveen Chavan> 9 months ago
+ 
+**** cmR:android_packages_apps_CMFileManager ****
+788a54c : TRDS: Material Dark theme [WIP] <BlackDragon> 7 days ago
+448d760 : TRDS: Fix aapt removing the darktheme resources. <BlackDragon> 7 days ago
+0f51785 : Automatic translation import <Michael Bestas> 11 days ago
+634a2b8 : Fix bookmark string <Michael Bestas> 2 weeks ago
+1ad09f7 : Regex metacharacters result in error post search <Richard MacGregor> 3 weeks ago
+1a23b92 : Search: Fix race condition with results display <Stephen Bird> 3 weeks ago
+450f3d5 : CMFM: don't apply search filter when search hasn't started <Roman Birg> 3 weeks ago
+8895e1c : CMFM: fix search mime type filter not applying <Roman Birg> 4 weeks ago
+85032a6 : Bookmarks: check to see if a bookmark exists before adding it <Stephen Bird> 3 weeks ago
+ 
+**** cmR:android_packages_apps_Calculator ****
+f6a6522 : Calculator: fix localization for the widget <Yvonne Wong> 8 days ago
+3045e4c : Automatic translation import <Michael Bestas> 11 days ago
+ffcd85f : TRDS: Material Dark theme. <BlackDragon> 6 weeks ago
+25a2342 : TRDS: Fix aapt removing the darktheme resources. <BlackDragon> 6 weeks ago
+ 
+**** cmR:android_packages_apps_Calendar ****
+d7e718c : Automatic translation import <Michael Bestas> 11 days ago
+fef64f4 : Automatic translation import <Tom Powell> 3 weeks ago
+dd1dd45 : Automatic translation import <Michael Bestas> 11 days ago
+9e145c3 : TRDS: Material Dark theme. <BlackDragon> 6 weeks ago
+6bb679e : TRDS: Fix aapt removing the darktheme resources. <BlackDragon> 6 weeks ago
+ 
+**** cmR:android_packages_apps_CellBroadcastReceiver ****
+7fb60b2 : Automatic translation import <Michael Bestas> 11 days ago
+a31f1e2 : Automatic translation import <Michael Bestas> 11 days ago
+a7131f3 : Navigation bar color for Material Dark theme. <BlackDragon> 4 weeks ago
+7b98621 : Automatic translation import <Michael Bestas> 7 weeks ago
+cefaebf : TRDS: Material Dark theme. <BlackDragon> 7 weeks ago
+ac981b7 : Revert "Material Dark" <BlackDragon> 7 weeks ago
+d908609 : TRDS: Fix aapt removing the darktheme resources. <BlackDragon> 7 weeks ago
+6d1292d : Again checkboxes to switches. <BlackDragon> 9 weeks ago
+5a9419b : Remove per-SIM CB configuration. <Danny Baumann> 3 months ago
+38817b9 : Revert "Checkboxes to switches" <Danny Baumann> 3 months ago
+cb78618 : Revert "Fixup SwitchPreference." <Danny Baumann> 3 months ago
+eab9efe : Automatic translation import <Michael Bestas> 3 months ago
+4086397 : Automatic translation import <Michael Bestas> 3 months ago
+effa545 : Automatic translation import <Michael Bestas> 4 months ago
+aedd0ca : Automatic translation import <Michael Bestas> 5 months ago
+55e2d3d : CellBroadcastReceiver : Show alerts in FIFO order <Danesh M> 5 months ago
+fe0d004 : Material Dark <Dragon> 8 months ago
+140b8b3 : Fixup SwitchPreference. <BlackDragon> 5 months ago
+3dfde50 : Checkboxes to switches <Dragon> 8 months ago
+ 
+**** github:CyanogenMod/android_packages_apps_CertInstaller ****
+1ab4169 : Catch corrupt cert error <Ed Falk> 3 days ago
+ 
+**** cmR:android_packages_apps_Contacts ****
+30fd65e : Automatic translation import <Michael Bestas> 11 days ago
+5188cfd : Automatic translation import <Tom Powell> 3 weeks ago
+469ec6c : Automatic translation import <Michael Bestas> 4 weeks ago
+3f9667f : Automatic translation import <Tom Powell> 4 weeks ago
+3ad03f4 : Automatic translation import <Michael Bestas> 5 weeks ago
+ 
+**** cmR:android_packages_apps_DeskClock ****
+5ee3ca8 : Automatic translation import <Michael Bestas> 11 days ago
+fa3ce46 : Automatic translation import <Tom Powell> 3 weeks ago
+07e2561 : Automatic translation import <Tom Powell> 3 weeks ago
+113c516 : Automatic translation import <Tom Powell> 3 weeks ago
+f570923 : Automatic translation import <Tom Powell> 3 weeks ago
+6d748cf : Automatic translation import <Michael Bestas> 4 weeks ago
+c1b451b : DeskClock: Externalize permissions to CMSDK. <Adnan Begovic> 10 days ago
+3fc8d67 : DeskClock: Utilize cyanogenmod.permission.MODIFY_PROFILES. <Adnan Begovic> 10 days ago
+6f61453 : Automatic translation import <Michael Bestas> 11 days ago
+cc8935a : Automatic translation import <Tom Powell> 4 weeks ago
+5f3b175 : Automatic translation import <Tom Powell> 4 weeks ago
+37bbfba : Improve & fix alarm permission strings <Michael Bestas> 5 weeks ago
+7367c65 : Allow alarms to be modified by 3rd parties. <Matt Garnes> 8 weeks ago
+ddd164f : Automatic translation import <Michael Bestas> 5 weeks ago
+847a3ca : Automatic translation import <Michael Bestas> 7 weeks ago
+21c92bf : Allow theming numpad <Yadrishnikov Yaroslav> 8 weeks ago
+eacb6fe : Automatic translation import <Michael Bestas> 8 weeks ago
+a3cc51f : Fix rescheduling of alarms that are snoozed <d34d> 9 weeks ago
+e9e6323 : Automatic translation import <Michael Bestas> 9 weeks ago
+66e7a0b : Automatic translation import <Michael Bestas> 2 months ago
+ac28d3d : DeskClock: Refactor to point at Profiles in CMSDK. <Adnan Begovic> 3 months ago
+c024b14 : Automatic translation import <Michael Bestas> 3 months ago
+f40e4fe : DeskClock: fix behavior with alarms when device is off <Raj Yengisetty> 3 months ago
+5e9f45e : Automatic translation import <Michael Bestas> 3 months ago
+f9d3d00 : DeskClock: Correctly reschedule alarms on system time change <Annie Chin> 3 months ago
+2bccb6b : Automatic translation import <Michael Bestas> 3 months ago
+a3554b4 : Automatic translation import <Michael Bestas> 3 months ago
+5db1aca : Automatic translation import <Michael Bestas> 4 months ago
+80ea74b : Automatic translation import <Michael Bestas> 4 months ago
+bea3493 : Expose background colors for theming. <Dave Kover> 4 months ago
+d7217e6 : Automatic translation import <Michael Bestas> 4 months ago
+79428f0 : Make new menu entry to link to cLock widget settings. <Martin Brabham> 5 months ago
+abc8c0d : TimerReceiver: Correctly show the remaining time for 100 hours <Diogo Ferreira> 6 months ago
+53b058b : Automatic translation import <Michael Bestas> 5 months ago
+a3e6cb2 : Hide flip setting if the phone doesn't have the required hardware sensor. <Martin Brabham> 6 months ago
+079020c : Automatic translation import <Michael Bestas> 5 months ago
+fd18b2f : Automatic translation import <Michael Bestas> 6 months ago
+7c7fdfd : Automatic translation import <Michael Bestas> 6 months ago
+ 
+**** cmR:android_packages_apps_Gallery2 ****
+76e7e0b : Automatic translation import <Michael Bestas> 11 days ago
+218cfbb : Automatic translation import <Michael Bestas> 11 days ago
+14cd814 : Automatic translation import <Tom Powell> 4 weeks ago
+331a527 : Automatic translation import <Tom Powell> 4 weeks ago
+cd49c8e : Automatic translation import <Michael Bestas> 5 weeks ago
+dd5d9bf : Automatic translation import <Michael Bestas> 7 weeks ago
+d66abcb : Automatic translation import <Michael Bestas> 8 weeks ago
+44500f9 : Gallery2: Intents for image/video directory viewing/picking <cretin45> 8 weeks ago
+ae7dd97 : Automatic translation import <Michael Bestas> 9 weeks ago
+e5dd2cc : Photo Gallery widget: fix NPE in getViewAt <Raj Yengisetty> 9 weeks ago
+6336ff4 : Automatic translation import <Michael Bestas> 2 months ago
+2070300 : Automatic translation import <Michael Bestas> 3 months ago
+cf50c6c : Automatic translation import <Michael Bestas> 3 months ago
+d92e666 : Automatic translation import <Michael Bestas> 3 months ago
+322fa35 : Gallery2: Fix crash when Bluetooth service is disabled <root> 3 months ago
+77849d6 : Add Storage preference (2/2) <Scott Warner> 5 months ago
+bc64905 : Revert "Gallery2: readd storage selection support (2/2)" <BlackDragon> 3 months ago
+26ebce7 : Automatic translation import <Michael Bestas> 4 months ago
+e93dcfc : Automatic translation import <Michael Bestas> 4 months ago
+93e3076 : Gallery2: Use a slimmed down manifest on .inc builds <cretin45> 4 months ago
+74cabab : Gallery2: Fix RTL album picking <Caio Schnepper> 4 months ago
+664a62c : Automatic translation import <Michael Bestas> 4 months ago
+ade1458 : Automatic translation import <Michael Bestas> 5 months ago
+4b5794c : Gallery2: readd storage selection support (2/2) <maxwen> 8 months ago
+ 
+**** cmR:android_packages_apps_LockClock ****
+e379cd2 : Automatic translation import <Michael Bestas> 11 days ago
+951e144 : Material Dark Theme (1/2): <XXMrHyde> 9 months ago
+ 
+**** cmR:android_packages_apps_Mms-caf ****
+86a2db4 : Temp Fix: Localize Smilies in Ukranian <Abhisek Devkota> 3 days ago
+ 
+**** cmR:android_packages_apps_Nfc ****
+f5f5eef : nfc: create a bootstrap service <Jorge Ruesga> 6 days ago
+ 
+**** cmR:android_packages_apps_Settings ****
+1adb04a : remove left over StatusBarExpandedHeaderSettings <ZION959> 2 days ago
+8c27453 : move Enable/disable notification color inversion to display <ZION959> 2 days ago
+bc686f6 : On-The-Go Mode (2/2) <BlackDragon> 2 days ago
+ 
+**** cmR:android_packages_apps_SetupWizard ****
+8d6ce07 : SetupWizard: Allow SetupWizard to use CMHW <martincz> 3 weeks ago
+158b2e3 : SetupWizard: Handle xfinity captival portal <cretin45> 2 weeks ago
+bc56c19 : SetupWizard: Check for frp in finish receiver <cretin45> 10 days ago
+444a797 : Automatic translation import <Michael Bestas> 11 days ago
+ 
+**** github:CyanogenMod/android_packages_apps_Stk ****
+ea855a3 : DO NOT MERGE Change to add STK_PERMISSION for stk related commands. <Amit Mahajan> 3 months ago
+ 
+**** cmR:android_packages_inputmethods_LatinIME ****
+f25263d : LatinIME: fix potential NPE <Christian Balster> 8 months ago
+1a87d63 : TRDS: Material dark theme. <BlackDragon> 7 weeks ago
+62b0bbf : Fix Thai numeric row button widths <tobitege> 3 months ago
+a455787 : Fixing layouts and adding 5th row to QWERTZ. <Shaun Eaton> 3 months ago
+8e4a458 : Add 5th number row to keyboard. <Shaun Eaton> 3 months ago
+c5d0d01 : Fix compile error in backwards file <tobitege> 3 months ago
+ 
+**** cmR:android_packages_services_Telephony ****
+6ff6899 : TeleService: Remove HomeAsUp arrow for nested pref screens <cretin45> 5 months ago
+db69251 : TeleService: Remove HomeAsUp arrow for nested pref screens <cretin45> 5 months ago
+301cb34 : Revert "Network Settings: don't crash on bad lookup" <Roman Birg> 9 days ago
+ 
+**** github:CyanogenMod/android_prebuilts_cmsdk ****
+c5f124b : prebuilts/cmsdk: Update api level 2 for PersistentStorage. <Adnan Begovic> 2 days ago
+ 
+**** bb:arm-linux-androideabi-4.9 ****
+d0e24a6 : 4.9.4-20150904 <mydongistiny> 8 days ago
+ 
+**** aosp:platform/prebuilts/sdk ****
+5e10681 : remove actions and calls for the old sms/mms api BUG: 18005911 <Cheuksan Wang> 9 months ago
+ 
+**** cmR:android_system_core ****
+b767d5d : Revert "Charger: Add font to show real battery capacity in charger mode." <Ethan Chen> 2 days ago
+6306b5e : Camera: Longshot with Burst Functionality. <Vijay Kumar Tumati> 5 months ago
+3e09a07 : fs_mgr: When formating ext4 volumes, respect the length parameter <Diogo Ferreira> 5 days ago
+d551b51 : fs_mgr: zram: allow specifying stream count <Sultan Qasim Khan> 5 days ago
+0e9caa6 : Fix build break for multiple definition <Keith Mok> 4 days ago
+979ef7f : init: Fire a trigger when a class is started/stopped <Steve Kondik> 4 days ago
+db97552 : Prevent integer overflow when allocating native_handle_t <Adam Lesinski> 5 months ago
+ 
+**** github:CyanogenMod/android_system_extras ****
+e084215 : f2fs_utils: fix block alignment calculation <Edward Wang> 2 days ago
+122ac16 : Add darwin support for the host tools <Keith Mok> 8 days ago
+ 
+**** github:CyanogenMod/android_system_security ****
+5c3f7e0 : Fix unchecked length in Blob creation <Chad Brubaker> 6 weeks ago
+ 
+**** github:CyanogenMod/android_vendor_cm ****
+e4f75ba : Update SPN override for China Telecom <dianlujitao> 2 days ago
+c37c231 : vendor/cm: cmsettings -> cmpartnerinterface <Adnan Begovic> 2 days ago
+a385501 : cm: SELinux policy for persistent properties API <Steve Kondik> 5 days ago
+1fd23a9 : CM SDK: rename SettingsManager to PartnerInterface <Raj Yengisetty> 3 days ago
+26731f5 : cm: Set the IO scheduler based on a system property <Steve Kondik> 4 days ago
+ 
+**** cmR:android_vendor_CMRemix ****
+4fc763c : Android 5.1.1 release 18 <ZION959> 23 hours ago
+3b79911 : Viper4Android: Update zip to make it a lot smaller. <mydongistiny> 3 months ago
+5a5af11 : Viper4Android: Add my lib and conf installer package [1/2] <ZION959> 4 days ago
+8ee234f : remove art tweak . it cause playstore fc <ZION959> 4 days ago
+5debbd8 : ro.build.selinux=0 <ZION959> 4 days ago
+e859d2b : add Synapse apk <ZION959> 4 days ago
+afde257 : enabled Synapse support for Note 4 <ZION959> 5 days ago
+de017db : add Google play services wakelock fix <ZION959> 7 days ago
+5f06388 : add Flar2 WakeGestures <ZION959> 5 days ago
+ 
+**** github:CyanogenMod/cm_platform_sdk ****
+9f381bc : cmsdk: Update api text for Persistent Storage API. <Adnan Begovic> 2 days ago
+7cef6f6 : cmsdk: Add persistent properties API <Steve Kondik> 11 days ago
+087f2b5 : Update API txt files for cyanogenmod.media.MediaRecorder. Update API txt files for PartnerInterface. <Matt Garnes> 8 days ago
+eabd575 : Add Broadcast action and query API for AudioSource.HOTWORD. <Matt Garnes> 6 days ago
+ 
+**** github:CMRemix/proprietary_vendor_samsung ****
+aa3cb37 : espressovzw: update blobs, fix all the things <jrior001> 7 days ago
+a3e19e2 : p31xx/p51xx: remove proprietary domx/camera blobs <Ziyan> 3 weeks ago
+ 
+**** cmR:android_vendor_SaberMod ****
+89bac15 : trlte use SM GCC 5.2 <ZION959> 3 days ago
+ 

@@ -1,0 +1,45 @@
+
+**** cmR:CMRemix ****
+84ed0c4 : track ScreenRecorder <ZION959> 7 hours ago
+c6d1c8c : track cellbroadcastreceiver, calendar <ZION959> 17 hours ago
+ 
+**** cmR:android_build ****
+66f88f0 : Viper4Android: Add my lib and conf installer package [2/2] <mydongistiny> 2 days ago
+ 
+**** cmR:android_frameworks_base ****
+1715941 : Prevent insanely long passwords from crashing SystemUI <Adrian Roos> 7 weeks ago
+0990953 : DO NOT MERGE: Ensure that unparcelling Region only reads the expected number of bytes <Leon Scroggins III> 3 months ago
+3e354a8 : Check that the parcel contained the expected amount of region data. DO NOT MERGE <Leon Scroggins III> 4 months ago
+2e18b59 : base: report wtf for external cm services <Jorge Ruesga> 4 days ago
+a3dcdaf : Fix Android API exceptions <Joe Maples> 4 months ago
+1d87354 : revert: Import Moto X Ringtones and Notifications <ZION959> 7 hours ago
+af7ee9d : On-The-Go mode improvements <BlackDragon> 8 hours ago
+4ecb5ac : fixed build <ZION959> 13 hours ago
+d802d35 : On-The-Go Mode (1/2) <BlackDragon> 14 hours ago
+fda929f : Screenrecord volume actions fixes. <BlackDragon> 4 months ago
+2b9cad4 : Fix power button not working after user pressed volume up botton. <BlackDragon> 5 months ago
+1455e98 : Screen Recorder: Catch NullPointerException <Janson Kang> 8 months ago
+09c443e : [1/2] Screen Recorder [0xD34D] <ZION959> 14 hours ago
+a9940b4 : revert: QS: add Screenrecord tile (1/2) <ZION959> 14 hours ago
+52f5f7a : revert: Add Screen Record to the Power Menu [1/2] <ZION959> 14 hours ago
+da65470 : Revert: screenrecord: fix key combo trigger <ZION959> 15 hours ago
+03dce06 : revert: base: screenrecord: forward port from 4.4 Squashed commit of the following: <ZION959> 15 hours ago
+ 
+**** cmR:android_frameworks_webview ****
+1ba2ebd : arm: update to 45.0.2454.48 <Park Ju Hyung> 2 weeks ago
+f09fa8a : Update WebView <Park Ju Hyung> 6 weeks ago
+64ea34a : Fix arm64 and add support for x86 <Park Ju Hyung> 6 weeks ago
+ 
+**** github:CyanogenMod/android_packages_apps_Calendar ****
+d7e718c : Automatic translation import <Michael Bestas> 9 days ago
+fef64f4 : Automatic translation import <Tom Powell> 3 weeks ago
+9e145c3 : TRDS: Material Dark theme. <BlackDragon> 5 weeks ago
+6bb679e : TRDS: Fix aapt removing the darktheme resources. <BlackDragon> 5 weeks ago
+ 
+**** cmR:android_packages_apps_Settings ****
+28814d8 : move Enable/disable notification color inversion to display <ZION959> 86 minutes ago
+9d7a596 : On-The-Go Mode (2/2) <BlackDragon> 9 hours ago
+80b4538 : [2/2] Screen recorder by 0xD34D <ZION959> 14 hours ago
+8ddc0d4 : revert: QS: add Screenrecord tile (2/2) <ZION959> 13 hours ago
+521685d : revert Add Screen Record to the Power Menu [2/2] <ZION959> 14 hours ago
+ 

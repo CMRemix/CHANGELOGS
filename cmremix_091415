@@ -1,0 +1,94 @@
+
+**** cmR:android_bionic ****
+e1e3752 : bionic: Allow devices to add device specfic static libs <Christopher R. Palmer> 5 days ago
+ 
+**** cmR:android_build ****
+16e1a2f : remove -fwhopr from lto flags <ZION959> 3 hours ago
+70c94e8 : add Polly to clang qcom <ZION959> 3 hours ago
+784fb8b : build: Separate commands in recovery foreach loops <Matt Mower> 6 days ago
+58ff1ed : img_from_target_files: Skip oem.img in fastboot image creation <Brint E. Kriebel> 6 days ago
+ 
+**** github:CyanogenMod/android_device_qcom_common ****
+8a0837c : power-8994: Adjust options for perf <Steve Kondik> 3 days ago
+0e72bb4 : power: Cleanups and improvements <Steve Kondik> 3 days ago
+ 
+**** github:CyanogenMod/android_device_samsung_qcom-common ****
+5ec09ee : Automatic translation import <Michael Bestas> 3 days ago
+ 
+**** github:CyanogenMod/android_external_whispersystems_WhisperPush ****
+21cbcdc : Automatic translation import <Michael Bestas> 3 days ago
+ 
+**** cmR:android_frameworks_av ****
+4d97392 : audiopolicy: Fix the incall fix <Steve Kondik> 2 days ago
+613cdc2 : audiopolicy: Never use low-latency audio for ringtones <Steve Kondik> 4 days ago
+ 
+**** cmR:android_frameworks_base ****
+bbaafde : Wallpaper: Create new WallpaperObserver on user switch <d34d> 4 hours ago
+ef3bd18 : SystemUI: Fix NPE <BadDaemon> 3 days ago
+ebd6086 : telephony: Handle NPE in setDataEnabledUsingSubId() <Sultanxda> 2 days ago
+62ef077 : Automatic translation import <Michael Bestas> 3 days ago
+70140f3 : core: Reduce mutex contention in ActivityManager <Steve Kondik> 3 days ago
+c7a58ff : fingerprint: wakeup and unlock <Roman Birg> 3 hours ago
+4999b2c : fingerprint: add generic set parameters <Scott Mertz> 12 days ago
+6059e89 : vibrator: Add a way to run the vibrator with reduced priority <Steve Kondik> 4 days ago
+e272868 : Revert "Notifications: Only check for spam if new" <d34d> 3 days ago
+8ea476a : SystemUi: Prioritize call notifications which interrupt. <Adnan Begovic> 4 hours ago
+8f881fa : Reduce risk of memory corruption due to finalization. <Hans Boehm> 10 months ago
+a3a8c21 : [2/2] Frameworks: Add option for position date left-right of clock <Jean-Pierre Rasquin> 4 hours ago
+ 
+**** cmR:android_frameworks_opt_telephony ****
+1d6d2e0 : Blacklist : Add helper methods <Danesh M> 4 days ago
+ 
+**** github:CyanogenMod/android_hardware_libhardware ****
+a4b99b7 : fingerprint: add generic set_parameters <Scott Mertz> 12 days ago
+2eb7781 : amplifier: add set_parameters method <Scott Mertz> 3 days ago
+ 
+**** github:CyanogenMod/android_hardware_qcom_audio ****
+b1b9544 : hal: notify amplifier of parameter changes <Scott Mertz> 3 days ago
+ 
+**** github:CyanogenMod/android_packages_apps_BluetoothExt ****
+0f33547 : Automatic translation import <Michael Bestas> 3 days ago
+ 
+**** github:CyanogenMod/android_packages_apps_CMAccount ****
+a3cd431 : Automatic translation import <Michael Bestas> 3 days ago
+ 
+**** github:CyanogenMod/android_packages_apps_Camera2 ****
+d4f3b73 : Automatic translation import <Michael Bestas> 3 days ago
+ 
+**** cmR:android_packages_apps_Settings ****
+60e37f9 : Settings : Add input checks for blacklist input <Danesh M> 4 days ago
+1b664a3 : Settings: persist privacy guard dialogs across rotates <Roman Birg> 5 days ago
+a04ede5 : Settings: fix rotation for managed service warning dialog <Roman Birg> 5 days ago
+2740bb7 : Automatic translation import <Michael Bestas> 3 days ago
+0558fdc : [1/2] Settings: Add option for position date left-right of clock <Jean-Pierre Rasquin> 3 hours ago
+ 
+**** github:CyanogenMod/android_packages_apps_SoundRecorder ****
+278a29c : Automatic translation import <Michael Bestas> 3 days ago
+ 
+**** github:CyanogenMod/android_packages_apps_Terminal ****
+6f424a7 : Automatic translation import <Michael Bestas> 3 days ago
+ 
+**** github:CyanogenMod/android_packages_providers_TelephonyProvider ****
+f1ac0c3 : BlacklistProvider : Use helper methods from utils for validity <Danesh M> 4 days ago
+ 
+**** github:CyanogenMod/android_packages_wallpapers_PhotoPhase ****
+4ebe904 : Automatic translation import <Michael Bestas> 3 days ago
+ 
+**** cmR:android_system_core ****
+fbb3be9 : rootdir: Set ioprio for SurfaceFlinger <Steve Kondik> 6 days ago
+8ce6fe3 : Revert "libcutils/liblog: Add functions required by Huawei g620_a2 binaries" <Rob Shannon> 5 days ago
+ 
+**** github:CyanogenMod/android_vendor_cm ****
+ed63484 : tethering: Do not override DUN in shipping builds <Ricardo Cerqueira> 3 days ago
+ 
+**** cmR:android_vendor_CMRemix ****
+cfead69 : bacon: update dependencies <boredSleepyHungryJoblessGuy> 2 days ago
+ 
+**** github:CyanogenMod/cm_platform_sdk ****
+35df988 : Automatic translation import <Michael Bestas> 3 days ago
+d39c839 : Update persistent storage permission string <Michael Bestas> 3 days ago
+44b9ae4 : Correct permission string. <Michael Bestas> 3 days ago
+ 
+**** cmR:android_vendor_SaberMod ****
+3d274b0 : bacon: update flags <boredSleepyHungryJoblessGuy> 2 days ago
+ 

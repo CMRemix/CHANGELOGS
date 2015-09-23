@@ -1,0 +1,51 @@
+
+**** cmR:android_frameworks_base ****
+49c97229 : SystemUI: Status bar weather font style (1/2) <Janson Kang> 15 hours ago
+ffcc863 : services: option to disable lock screen dpm override (1/2) <Altaf-Mahdi> 16 hours ago
+c679518 : Fix home key behavior for multiple CarHome app <kenzyun_chen> 9 months ago
+e94e428 : Revert "PhoneWinowManager: resolve home car intent" <Janson Kang> 3 days ago
+4761abb : LEDs Brightness [2/2]: Lights notifications brightness support <AdrianDC> 13 days ago
+87db26d : Added show volume panel tile to QS <stofstik> 16 hours ago
+cfd7682 : ResolverActivity: reduce elevation to make it flat <Hamster Tian> 3 days ago
+3203fe3 : Fingerprint Service: fix potential NPE <Roman Birg> 4 days ago
+208dc41 : SystemUI: do not load header bar if boot isn't complete <Raj Yengisetty> 2 weeks ago
+1f61f43 : base: Fix divide by zero when clearing recents <Nicholas Chum> 5 days ago
+be26141 : SystemUI: Change AudioFX tile name to Equalizer for V4A consistency <Nicholas Chum> 4 days ago
+a35f6fa : Fix NPE when visualizer enabled and music playing <Thecrazyskull> 5 days ago
+4365147 : FWB: Toast icon switch (1/2) <LorDClockaN> 16 hours ago
+d10d851 : Fix the cell standby mobile radio active issue <Jose Ferreira> 3 days ago
+559e1d6 : Set mProximity to PROXIMITY_UNKNOWN on screen off <d34d> 4 days ago
+ 
+**** github:CMRemix/android_kernel_samsung_trlte ****
+9ad598c : build ultimate v2.6 <ZION959> 3 days ago
+fbd1a8d : Linux 3.10.87 <placiano> 12 days ago
+cced235 : Revert "fs: support task's adj rbtree" <placiano> 7 days ago
+97661a1 : fs: ext4: use e/frandom, do not deplete entropy <placiano> 8 days ago
+19ebebf : random.h: declare erandom function <placiano> 8 days ago
+f65dfae2 : Revert "msm: kgsl: Bump the GPU frequency for long blocks of processing" <placiano> 11 days ago
+4a58aaf : Revert "mm: vmstat: make vmstat_work cpu bound during requeue" <placiano> 11 days ago
+d9156721 : Revert "lowmemorykiller: implement task's adj rbtree" <ZION959> 3 days ago
+af07b17 : adreno_idler: updates <placiano> 7 weeks ago
+2f8803c : power: update flag, and save time of last suspend/resume <placiano> 13 days ago
+3d74bda : Wake_Gestures: use system_wq instead of dedicated, avoid resource waste <placiano> 11 days ago
+f1b5e87 : Wake_Gestures: Fix S2S Right <placiano> 13 days ago
+a9f1c00 : Wake_Gestures: Updates 1.- fts_ts: attempt to use existing LOWPOWER to work with DT2W 2.- fts_ts: don't wait for irq events to be handled 3.- fts_ts: remove wakeup procedure for i2c device 4.- fts_ts: retry i2c commands if it fails at first 5.- fts_ts: fix cases when dt2w_switch is 0 <placiano> 13 days ago
+e479767 : Wake_Gestures: New feactures: 1.- Add haptic feedback 2.- Proximity Sensor Detect <placiano> 13 days ago
+e13606b : DT2S: added option to change the screen size <ZION959> 3 days ago
+dc948d2 : DT2S: Make it work <placiano> 2 weeks ago
+85f3a76 : Wake gesutures: Sweep2wake, Sweep2sleep, DoubleTap2Wake and DoubleTap2Sleep <ZION959> 3 days ago
+0c4fa5a : block: zen: set fifo batch to 16 to reduce overload on eMMC and CPU. Conflicts: 	block/sio-iosched.c 	block/zen-iosched.c <Dorimanx> 11 days ago
+ 
+**** cmR:android_packages_apps_Settings ****
+723dfa9 : settings: option to disable lock screen dpm override (2/2) <ZION959> 3 hours ago
+2ffbf69 : More weather font styles 1/2 <rogersb11> 17 hours ago
+31ae160 : Settings: Status bar weather font style (2/2) <Janson Kang> 15 hours ago
+7b9779d : Added show volume to tile chooser <stofstik> 2 weeks ago
+ec073ea : LEDs Brightness [1/2]: Lights notifications brightness support <AdrianDC> 13 days ago
+e30bfb7 : Lights with Screen On [2/2]: Optional allowment of lights <AdrianDC> 6 weeks ago
+2699bd0 : Revert "Lights with Screen On [2/2]: Optional allowment of lights" <ZION959> 15 hours ago
+73f7363 : set tapjacking protection for deviceadmin permission dialog <Stephan Huber> 7 months ago
+4ff7135 : settings: option to disable lock screen dpm override (2/2) <Altaf-Mahdi> 10 days ago
+e74e63f : settings: Display apk path in App info <Abhinav Jhanwar> 3 days ago
+719e758 : Settings: Toast icon switch (2/2) <LorDClockaN> 15 hours ago
+ 

@@ -1,0 +1,154 @@
+
+**** cmR:CMRemix ****
+12e54b8 : manifest: Remove separate paths for 8610/8226 HALs <Ethan Chen> 4 days ago
+ddd855b : adding android-support-test for espresso test <weldoncyngn> 3 weeks ago
+ 
+**** cmR:android_build ****
+9dcb44e : Fix TWRP warning about unmounted system <reS28raM> 4 months ago
+919d7b6 : UKM: add support for Synapse Universal Kernel Manager (2/2) <Petr kecinzer Řezníček> 3 months ago
+ 
+**** github:CyanogenMod/android_device_qcom_common ****
+fc552c7 : power: Boost improvements <Steve Kondik> 2 days ago
+3c85911 : power: Update boost parameters <Steve Kondik> 2 days ago
+e9f23d7 : power: Updates for msm8916/msm8939 <Steve Kondik> 3 days ago
+ 
+**** github:CyanogenMod/android_device_qcom_sepolicy ****
+a06d6bb : sepolicy: perfd to have access to mediaserver <Howard M. Harte> 2 days ago
+ 
+**** github:CyanogenMod/android_external_stagefright-plugins ****
+dc2a013 : ffmpeg-extractor: Fix deadlock when stopping the reader thread <Christopher R. Palmer> 6 days ago
+ 
+**** cmR:android_frameworks_av ****
+fd2e17b : mediascanner: handle DATE tag <Jorge Ruesga> 6 weeks ago
+ 
+**** cmR:android_frameworks_base ****
+7c132f2 : fixed build <ZION959> 11 hours ago
+41cc525 : Update mFillPaint color on GradientDrawable inflation <Snild Dolkow> 2 days ago
+e675bc8 : Add basic support for VorbisComment DATE tags <Daniel Martí> 7 weeks ago
+28dc0a3 : systemui: left hand navigation ring <Jorge Ruesga> 14 hours ago
+7664781 : systemui: respect navigation rings configuration <Jorge Ruesga> 5 days ago
+3a84214 : QSBar: Fix SystemUI FC for some devices <Apavayan Sinha> 24 hours ago
+9fc68e8 : Re-do contextual notification header images <Chris> 2 days ago
+b598c1c : Import Moto X Ringtones and Notifications <Peter Carenza> 9 weeks ago
+a5779b8 : Revert "Update API" <Janson Kang> 2 days ago
+3e02eb4 : base: delete obsolete context header images <maxwen> 2 days ago
+cb9b505 : Allow CAPTURE_AUDIO_HOTWORD to be whitelisted by signature. <Matt Garnes> 9 days ago
+1ebadda : FWB: Make all 14 font variants available to Weather (2/2) <rogersb11> 2 days ago
+c59c030 : FWB: Make all 14 font variants available to Statusbar Clock (1/2) <Janson Kang> 2 days ago
+e1368d2 : power: Add a new power hint for application launches <Steve Kondik> 2 days ago
+891c07f : [2/2] base: Add lockscreen rotation as an optional rotation setting <maxwen> 2 days ago
+4042eb2 : VolumePanel: Option to show as expanded mode by default (1/2) <fusionjack> 2 days ago
+0b39848 : FWB:Status bar carrier label font size 2/2 <rogersb11> 2 days ago
+905af3b : Spam: Close writable DB after use <d34d> 3 days ago
+d30bace : Status bar clock: Add BOLD ITALIC to font style (1/2) <Janson Kang> 5 days ago
+1f02990 : FWB: Statusbar clock font size (1/2) <Janson Kang> 3 days ago
+04bd07c : revert: FWB: Statusbar clock font size (1/2) <ZION959> 3 days ago
+80b0b28 : FWB: Statusbar clock font size (1/2) <Janson Kang> 3 days ago
+47dd700 : SlimShortcuts: Power menu <LorDClockaN> 4 days ago
+fd6a3c4 : SlimShortcuts: Restart SystemUI <LorDClockaN> 4 days ago
+1f088cd : SlimShortcuts: Volume panel <Jubakuba> 4 days ago
+89ba12c : Actually show COS in shortcuts and show all other when COS is enabled <LorDClockaN> 4 days ago
+3f47cb9 : Add Screen Sleep shortcut <Jubakuba> 4 days ago
+f0dec4c : Fix up chamber and Torch shortcuts <LorDClockaN> 3 days ago
+faea19d : Fingerprint: don't start auth if not showing <d34d> 4 days ago
+94886e1 : Allow default system profile state to be overlayed <Roman Birg> 4 days ago
+5802a2d : Keyguard: Remove bouncer when re-registering status bar <d34d> 4 days ago
+5b30c66 : Show infinity for large notification counts <d34d> 4 days ago
+26b70d9 : Let liblights adjust the brightness of LEDs while previewing it <Gabriele M> 6 days ago
+07afb68 : Notifications: Only check for spam if new <d34d> 5 days ago
+2e1f2b3 : Revert "Notifications: log notifications marked as spam to the event log" <Janson Kang> 4 days ago
+ 
+**** cmR:android_frameworks_opt_telephony ****
+9319b2d : Telephony: Make sure we're stripping non-digits prior checkDestination. <Adnan Begovic> 2 days ago
+60487ea : telephony: Fix FrameworksTelephonyTests. <Adnan Begovic> 2 days ago
+ 
+**** cmR:android_frameworks_webview ****
+a569734 : Updating WebView 45.0.2454.19 to 45.0.2454.87 (arm64) <José Adolfo Galdámez> 14 hours ago
+7d942b5 : Updating WebView 45.0.2454.64 to 45.0.2454.87 (arm) <José Adolfo Galdámez> 15 hours ago
+ 
+**** github:CyanogenMod/android_hardware_libhardware ****
+0f42a6c : libhardware: Add POWER_HINT_LAUNCH_BOOST for PowerHAL <Steve Kondik> 2 days ago
+ 
+**** github:CyanogenMod/android_packages_apps_Calculator ****
+f6a6522 : Calculator: fix localization for the widget <Yvonne Wong> 3 days ago
+ 
+**** github:CyanogenMod/android_packages_apps_DeskClock ****
+c1b451b : DeskClock: Externalize permissions to CMSDK. <Adnan Begovic> 5 days ago
+3fc8d67 : DeskClock: Utilize cyanogenmod.permission.MODIFY_PROFILES. <Adnan Begovic> 5 days ago
+ 
+**** github:CyanogenMod/android_packages_apps_Eleven ****
+441f4da : REAL_GET_TASKS > GET_TASKS <Abhisek Devkota> 4 days ago
+ 
+**** cmR:android_packages_apps_Mms-caf ****
+61c63da : Mms: Don't try to send an SMS to a null destination. <Adnan Begovic> 2 days ago
+f5f16e1 : Fix mms failures due to invalid mmsc url <Susheel nyamala> 4 months ago
+3c75cf9 : Mms: show default app icon for unresolved links <Roman Birg> 4 days ago
+309e658 : REAL_GET_TASKS > GET_TASKS <Abhisek Devkota> 4 days ago
+ 
+**** cmR:android_packages_apps_Settings ****
+8236a12 : Long press no longer copies to clipboard if there is nothing to copy <James Hiew> 5 days ago
+d33ca8c : Revert "Fix exception on Display font settings" <Janson Kang> 31 hours ago
+f3812b0 : Settings: System app remover <ILWT> 1 year, 7 months ago
+392a241 : Fix exception on Display font settings <Janson Kang> 2 days ago
+2856969 : Change refresh icon under Process Stats <Alex Cruz> 7 days ago
+61e4a31 : APN: Filter MVNOs by SPN, GID1 and IMSI <d34d> 10 days ago
+40b49df : InstalledAppDetails: Don't crash if application info is not available <Janson Kang> 2 days ago
+659bd32 : Housekeeping: Remove tabs in arrays <Janson Kang> 2 days ago
+1f5983c : Settings: Make all 14 font variants available to Weather (1/2) <rogersb11> 2 days ago
+6f721f8 : Settings: Make all 14 font variants available to Statusbar Clock (2/2) <Janson Kang> 2 days ago
+5ac0fac : Add lockscreen rotation as an optional rotation setting (2/2) <rogersb11> 2 days ago
+b7e9e50 : VolumePanel: Option to show as expanded mode by default (2/2) <fusionjack> 4 days ago
+937b206 : Settings:Status bar carrier label font size 1/2 <rogersb11> 2 days ago
+457f9dd : Get a handle for UserManager at creation <James Hiew> 3 days ago
+4f0cdb4 : Protected apps: fixup rotation states <Roman Birg> 5 days ago
+a49b825 : Revert "Protected apps: fixup rotation states" <Janson Kang> 2 days ago
+962e427 : Settings: Avoid possible NPE if resolve infos return null. <Adnan Begovic> 4 days ago
+d5b3021 : house keeping <ZION959> 2 days ago
+d67bad0 : Slim recent app sidebar derp fixed <ZION959> 2 days ago
+71d80d0 : Settings: Statusbar clock font size (2/2) <Janson Kang> 3 days ago
+eb182a8 : Status bar clock: Add BOLD ITALIC to font style (2/2) <Janson Kang> 5 days ago
+bb5c5a3 : Settings: Fix a crash caused by null pointer <Lin Ma> 4 days ago
+2159039 : Settings: Utilize cyanogenmod.permission.MODIFY_PROFILES. <Adnan Begovic> 3 days ago
+ 
+**** github:CyanogenMod/android_packages_apps_Stk ****
+2ddb566 : REAL_GET_TASKS > GET_TASKS <Abhisek Devkota> 4 days ago
+6275b32 : Indicate which sub-activity the app name broadcast applies to <Ricardo Cerqueira> 6 days ago
+7b924c0 : Add intent to send STK app name <Paramananda Pradhan> 8 months ago
+ 
+**** github:CyanogenMod/android_packages_providers_TelephonyProvider ****
+857572a : TelephonyProvider: change default user nw mode to invalid <Roman Birg> 4 days ago
+ 
+**** cmR:android_packages_services_Telephony ****
+d529e7a : Network Settings: default user mode to preferred mode <Roman Birg> 4 days ago
+ 
+**** github:CyanogenMod/android_packages_wallpapers_PhotoPhase ****
+54a7044 : REAL_GET_TASKS > GET_TASKS <Abhisek Devkota> 4 days ago
+ 
+**** github:CyanogenMod/android_prebuilts_cmsdk ****
+09001ca : prebuilts/cmsdk: Update latest api text file. <Adnan Begovic> 5 days ago
+ 
+**** cmR:android_system_core ****
+8af7057 : sdcard: Properly handle deleted nodes <Krzysztof Adamski> 1 year, 2 months ago
+4c1fa45 : sdcard: Turn on noatime for fuse mounted sdcard <Johan Redestig> 8 months ago
+ 
+**** github:CyanogenMod/android_vendor_cm ****
+cefa91c : Update Spain APNs <Kra1o5> 4 days ago
+b31f746 : Update India APNs to YU list <Abhisek Devkota> 4 days ago
+44752b7 : vendor/cm: add curl to build <Luca Stefani> 7 days ago
+ 
+**** cmR:android_vendor_CMRemix ****
+c7fdfdb : [WIP] UKM: Add support for Synapse Universal Kernel Manager (1/2) <CPA-Poke> 4 days ago
+ 
+**** github:CyanogenMod/cm_platform_sdk ****
+a458122 : Allow whitelist for MODIFY_NETWORK_SETTINGS permission. <Matt Garnes> 3 days ago
+26272cd : Add Hotword audio capture constants. <Matt Garnes> 6 days ago
+99b8c5d : cmsdk: Update documentation for Boysenberry release. <Adnan Begovic> 4 days ago
+bc2ea6b : cmsdk: Update documentation for HAF permission. <Adnan Begovic> 5 days ago
+04569c7 : cmsdk: Update tests for new ALARM permissions. <Adnan Begovic> 5 days ago
+9971604 : cmsdk: Update cm-api for hasSensitiveData() and new permissions. <Adnan Begovic> 5 days ago
+7f17704 : cmsdk: Add permissions for ALARMS. <Adnan Begovic> 5 days ago
+0523911 : cmsdk: Enforce cyanogenmod.permission.MODIFY_PROFILES for profiles. <Adnan Begovic> 5 days ago
+ 
+**** cmR:android_vendor_SaberMod ****
+8e5ed9e : add one more module for strict <ZION959> 64 minutes ago
+ 

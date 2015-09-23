@@ -1,0 +1,28 @@
+
+**** github:CMRemix/android_device_samsung_trltespr ****
+bd54b84 : Add get IMSI from SIM <nicklovell23> 5 weeks ago
+4ac3d7f : Move proprietary files to common <nicklovell23> 6 weeks ago
+88d76dd : Fix up system.prop <nicklovell23> 7 weeks ago
+baad278 : Kill init with fire/move to system.prop <ZION959> 2 hours ago
+ 
+**** cmR:android_frameworks_base ****
+9a4bd21 : [1/2] Slim Recent App Sidebar <SpiritCroc> 74 minutes ago
+1b1f3fd : NotificationTile: Ring ring my bell <fusionjack> 31 hours ago
+4327398 : NotificationTile: Fix wrong ringer index after reboot <fusionjack> 32 hours ago
+f1819a0 : Add new change for TRDS switch. <Shaun Eaton> 60 minutes ago
+5ae568d : More weather font styles 2/2 <rogersb11> 2 days ago
+37872e0 : Fix font type not refreshing on placement change <rogersb11> 2 days ago
+06d70bc : revert: [WIP] Update statusbar weather on state change <ZION959> 12 hours ago
+3339530 : Add support for Samsung extended AGPS <ghepeu> 2 years, 2 months ago
+da6c17c : [WIP] Update statusbar weather on state change <Janson Kang> 2 days ago
+1e5dd11 : SystemUI: Change long press lock screen lock icon to TORCH (1/2) <Janson Kang> 21 hours ago
+51fbfff : Revert: Flash notifications [1/2] Not Working <ZION959> 21 hours ago
+ 
+**** cmR:android_packages_apps_Settings ****
+beacd4b : Revert: settings: option to disable lock screen dpm override (2/2) <ZION959> 17 minutes ago
+9d0839d : [2/2] Slim Recent App Sidebar <SpiritCroc> 12 hours ago
+83b2096 : Lock Icon Torch: Add check for non-flash devices <eyosen> 33 hours ago
+4cf1c8b : Settings: Always enable the per-app pulse light settings <Gabriele M> 2 weeks ago
+89bba61 : revert: flash notifications [2/2] <ZION959> 20 hours ago
+5df9c99 :  Settings: Change long press lock screen lock icon to TORCH (2/2) <Janson Kang> 20 hours ago
+ 

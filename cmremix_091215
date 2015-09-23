@@ -1,0 +1,52 @@
+
+**** cmR:android_build ****
+11d79e1 : revert: Viper4Android: Add my lib and conf installer package [2/2] <ZION959> 2 hours ago
+ 
+**** cmR:android_frameworks_base ****
+6c9ea2e : Fix header bar color with theme change <Shaun> 3 days ago
+53a9407 : Base: Use seperate colors for all lines in Notification Header <Shaun Eaton> 72 minutes ago
+63d9bd3 : Changed contextual notification panel headers <Alex Cruz> 76 minutes ago
+8135b34 : Add 44.1 kHz SlimSounds <andi34> 5 weeks ago
+4dd2033 : revert: Add 44.1 kHz SlimSounds <ZION959> 24 hours ago
+1e1d198 : SystemUI: time-context header fixes <maxwen> 3 weeks ago
+65a4e7c : revert: Re-do contextual notification header images <ZION959> 26 hours ago
+f5df60d : SystemUI: hide task manager button on keyguard <Altaf-Mahdi> 2 days ago
+6a26ef9 : fwb: replace the old/ugly default drawable :v <voidz777> 3 days ago
+3f2d7cb : DO NOT MERGE Backport of limited jank-tracking metrics <John Reck> 7 months ago
+57d79b5 : GpsLocationProvider: Read data enabled status from TelephonyManager. <Shishir Agrawal> 8 months ago
+b9b58a8 : Themes: Use current user ID when getting ThemeConfig <d34d> 2 days ago
+e628ae9 : Fix Custom Resolver Theming <herriojr> 3 days ago
+17c887d : Revert a couple of badly-behaving ActivityManager patches. <Steve Kondik> 28 hours ago
+b921254 : Compilation fixes <Natiq Ahmed> 7 months ago
+bc0298b : Add network policy for each sub on powerup <Susheel nyamala> 8 months ago
+0d5665a :  Themes: Don't use themed fonts for non themable packages <0xD34D> 28 hours ago
+db2294e : Base : Add more lockscreen shortcut custom icons Part2 Signed-off-by: westcrip <korukaltan@gmail.com> <westcripp> 8 months ago
+e1e5b67 : Base:Add new 73 hd lockscreen shortcus icons <westcripp> 8 months ago
+64096db : Add broadcast and query API for AudioSource.HOTWORD. <Matt Garnes> 7 days ago
+5fa92f6 : android-5.1.1_r6 -> android-5.1.1_r13 <ZION959> 2 days ago
+877e20f : Task Manager: Use one observer for changes, misc cleanup <Randall Rushing> 2 days ago
+8802bdf : StatusBarHeader: toggle drawable when switching between qs and task manager <Altaf-Mahdi> 5 days ago
+548fa0d : SystemUI: change back button to hide ime buttom with rotate animation. <Kyrylo Mikos> 10 months ago
+44d6b18 : StatusBarHeader: update headsup button onclick <Altaf-Mahdi> 5 days ago
+da15dda4 : services: don't disable led's when user passes through lock screen <Altaf-Mahdi> 11 days ago
+72a0370 : SystemUI: reset to QS panel if task manager was visible last <Altaf-Mahdi> 13 days ago
+5f990e4 : Changes in Navigation Bar: <Daniel Koman> 3 days ago
+e4a7f39 : Add 44.1 kHz SlimSounds <andi34> 2 days ago
+ee1ebd7 : SystemUI: Prevent ClassCastException in navbar for RTL languages <Daniel Koman> 3 weeks ago
+1973f57 : derp <ZION959> 2 days ago
+643b51e : Prevent insanely long passwords from crashing SystemUI <Adrian Roos> 8 weeks ago
+30345a0 : DO NOT MERGE: Ensure that unparcelling Region only reads the expected number of bytes <Leon Scroggins III> 4 months ago
+69a276a : Check that the parcel contained the expected amount of region data. DO NOT MERGE <Leon Scroggins III> 4 months ago
+c36019b : base: report wtf for external cm services <Jorge Ruesga> 6 days ago
+8213ebb : Fix Android API exceptions <Joe Maples> 4 months ago
+64556e7 : revert: Import Moto X Ringtones and Notifications <ZION959> 3 days ago
+ 
+**** cmR:android_packages_apps_Settings ****
+d71400b : Settings: Use seperate colors for all lines in Notification Header <Shaun> 16 hours ago
+ba53ab9 : Settings: Add new HD lockscreen shortcut icons. <westcripp> 37 minutes ago
+1bce87d : Protected Apps: add some side padding in app list view <Altaf-Mahdi> 3 days ago
+ 
+**** cmR:android_vendor_CMRemix ****
+4987e32 : revert: Viper4Android: Add my lib and conf installer package [1/2] <ZION959> 2 hours ago
+df398d1 : revert: Viper4Android: Update zip to make it a lot smaller. <ZION959> 2 hours ago
+ 

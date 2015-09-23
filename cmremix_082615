@@ -1,14 +1,16 @@
 
 **** cmR:CHANGELOGS ****
+673c382 : update <ZION959> 6 hours ago
 f7b3c09 : update <ZION959> 7 days ago
  
 **** cmR:CMRemix ****
 ed67fb8 : track cm eleven <ZION959> 3 days ago
 005e50e : fixed remote for twrp <ZION959> 3 days ago
 819269a : track OmniRom twrp <ZION959> 4 days ago
-4188ad7 : manifest: move mips prebuilts into notdefault <Arnav Gupta> 5 days ago
+4188ad7 : manifest: move mips prebuilts into notdefault <Arnav Gupta> 6 days ago
  
 **** cmR:android_bionic ****
+bf88976 : cortex-a53: Unbreak the build <Pranav Vashi> 4 days ago
 66691b9 : Fix Build: Add memchr.S needed by cortex-a7 <Ujwal P> 5 days ago
  
 **** github:CyanogenMod/android_bootable_recovery ****
@@ -16,9 +18,14 @@ ed67fb8 : track cm eleven <ZION959> 3 days ago
 aa2f668 : Support resuming block based OTAs <Sami Tolvanen> 9 months ago
 a91f515 : Fix recovery image text rendering. <Elliott Hughes> 5 months ago
  
+**** github:omnirom/android_bootable_recovery ****
+d6821a1 : Add TW_IGNORE_ABS_MT_TRACKING_ID <Ethan Yonker> 10 hours ago
+89583ef : Fix up some TW_OEM_BUILD things <Ethan Yonker> 17 hours ago
+bc85b63 : Wipe crypto key when formatting data <Ethan Yonker> 3 weeks ago
+ 
 **** cmR:android_build ****
 bcfca47 : Change the cache partition size check into warnings. <Tao Bao> 3 weeks ago
-8a26e16 : Revise stash for BBOTAs when needed. <Tao Bao> 9 days ago
+8a26e16 : Revise stash for BBOTAs when needed. <Tao Bao> 10 days ago
 407cfc7 : Free the stash after its use in BBOTA v2. <Tao Bao> 13 days ago
 bb4ab1e : Assert the stash size when generating OTAs. <Tao Bao> 3 months ago
 52ffc46 : Check partition hash before resorting to block_image_verify <Sami Tolvanen> 4 months ago
@@ -26,7 +33,7 @@ bb4ab1e : Assert the stash size when generating OTAs. <Tao Bao> 3 months ago
 e1b7582 : Restrict the verification in block-based incremental OTAs <Tao Bao> 6 months ago
 a195bcf : Do not use block_verify on target-files where feature is missing. <Michael Runge> 7 months ago
 080390f : Fix the error that free_string is not defined. <Jesse Zhao> 6 months ago
-957f1ab : product: Let a device customize its own locales <Ricardo Cerqueira> 11 days ago
+957f1ab : product: Let a device customize its own locales <Ricardo Cerqueira> 12 days ago
 0cf0a18 : Change transfer list format to include block hashes <Sami Tolvanen> 9 months ago
 01e44ce : Support custom gerrit servers via HTTP or SSH <Tom Powell> 3 weeks ago
 b817b6c : build: Enable A53 errata workarounds on targets that need it <Rashed Abdel-Tawab> 6 weeks ago
@@ -40,13 +47,13 @@ abd57a2 : Allow -mcpu=cortex-a15 for clang <Bernhard Rosenkränzer> 5 months ago
 a56e687 : Bluetooth: Update Bluetooth security rules <Sungjun Park> 4 months ago
  
 **** github:CyanogenMod/android_device_samsung_qcom-common ****
-30449b1 : Automatic translation import <Tom Powell> 5 days ago
+30449b1 : Automatic translation import <Tom Powell> 6 days ago
  
 **** github:CMRemix/android_device_samsung_trlte-common ****
 6892d35 : update msm hotplugs default value <ZION959> 6 days ago
 a632ed7 : enabled various settings in zion kernel <ZION959> 6 days ago
 20ab415 : revert: switch to zion defconfig <ZION959> 6 days ago
-f7af41b : revert: fixed viper4android global <ZION959> 6 days ago
+f7af41b : revert: fixed viper4android global <ZION959> 7 days ago
  
 **** github:CyanogenMod/android_external_f2fs-tools ****
 6a5e46b : mkfs.f2fs: don't need to limit MIN_VOLUME SIZE <Jaegeuk Kim> 2 weeks ago
@@ -89,7 +96,7 @@ be3c8d1 : Upgrade to SQLite 3.8.11.1 <Park Ju Hyung> 3 weeks ago
 d4658fb : Upgrade to SQLite 3.8.10.2 <arter97> 3 months ago
  
 **** github:CyanogenMod/android_external_wpa_supplicant_8 ****
-b5ab0d9 : Revert "eap_peer: add more qmi dependencies with qmi proxy" <Scott Mertz> 6 days ago
+b5ab0d9 : Revert "eap_peer: add more qmi dependencies with qmi proxy" <Scott Mertz> 7 days ago
 2546986 : eap_peer: add more qmi dependencies with qmi proxy <Scott Mertz> 7 days ago
 8ed875d : EAP-pwd server: Fix payload length validation for Commit and Confirm <Jouni Malinen> 4 months ago
 bc6d395 : EAP-pwd server: Fix Total-Length parsing for fragment reassembly <Jouni Malinen> 3 months ago
@@ -118,21 +125,28 @@ eae6ae1 : stagefright: Correct Exynos4 stride alignment <Caio Schnepper> 3 weeks
 05c1863 : libstagefright: Add support for NV21 color format <Andreas Schneider> 10 days ago
  
 **** cmR:android_frameworks_base ****
+037677c : Flash notifications [1/2] <AlmightyMegadeth00> 2 days ago
+ca8b2da : revert: libaudioeffect_jni GREF leak fix <ZION959> 33 hours ago
+f5af405 : Fixes for  header options: <Shaun> 3 days ago
+e37ccc5 : Show icon of package associated with Toast <d34d> 28 hours ago
+0c4864f : Fix WallpaperCropper crash when setting wallpaper over 8MB <Stephen Woo> 7 weeks ago
+2039bf2 : Themes: Use warning level logging for getBootTheme <d34d> 14 hours ago
+39c61b5 : Fix "Select correct 12 or 24 time format" breaking Chrome <Wilhelm Fitzpatrick> 13 hours ago
 462454a : Select correct 12 or 24 time format according to Locale <Wilhelm Fitzpatrick> 2 days ago
-d6645d6 : NavRing: Update search assistant drawable <d34d> 25 hours ago
-1a88ba3 : revert Allow no applications in the navring <ZION959> 9 hours ago
-7140d80 : Themes: Compose icons that just have scale defined <d34d> 31 hours ago
+d6645d6 : NavRing: Update search assistant drawable <d34d> 32 hours ago
+1a88ba3 : revert Allow no applications in the navring <ZION959> 15 hours ago
+7140d80 : Themes: Compose icons that just have scale defined <d34d> 2 days ago
 d05a94d : Keyguard: increase clickable area of pin-entry backspace button <Daniel Koman> 4 days ago
 b03a6ce : SystemUI: Fade keyguard visualizer along with other icons <lion0738> 5 days ago
 cc16c2d : androidfw: fix cmsdk attribute lookup <Scott Mertz> 2 days ago
 c3158e1 : Add more icons for task manager switch <Alex Cruz> 5 days ago
 59553f4 : lockscreen: Add option for showing unlock screen directly (1/2) <eray orçunus> 2 months ago
-d2d83c2 : revert lockscreen: Add option to pass swipe-up-to-unlock (1/2) <ZION959> 9 hours ago
+d2d83c2 : revert lockscreen: Add option to pass swipe-up-to-unlock (1/2) <ZION959> 15 hours ago
 5f07218 : Add the user set network mode to the siminfo table <Chirayu Desai> 5 weeks ago
 234bd93 : SystemUI: time-context header fixes <maxwen> 6 days ago
 2f38d1e : [1/2] SystemUI: Add time-context headers to the notification header <xplodwild> 2 days ago
-d57843e : Fixes for status bar power menu. <Shaun> 2 days ago
-476ef7d : Update descriptions for when HW keys are disabled. <Shaun> 2 days ago
+d57843e : Fixes for status bar power menu. <Shaun> 3 days ago
+476ef7d : Update descriptions for when HW keys are disabled. <Shaun> 3 days ago
 84ec9eb : add config for proximity check on screen on default value <Scott Mertz> 2 days ago
 2e19b4d : Fix some issues with themes and notif bg color <LorDClockaN> 6 weeks ago
 d697818 : StatusBarHeaderView: Unbreak BG color on stock theme <Janson Kang> 4 days ago
@@ -142,8 +156,8 @@ ff89ef3 :  Observers, observers everywhere.. SIMPLIFY <Davor Bertovic> 5 days ag
 a7624ca : Automatic translation import <ZION959> 4 days ago
 2d39210 : Automatic translation import <Tom Powell> 6 days ago
 e651b84 : Automatic translation import <Tom Powell> 6 days ago
-bc459e1 : Fix shake clean notifications: <ghbhaha> 5 days ago
-7ef8497 : Change default for Override custom colors <Shaun> 5 days ago
+bc459e1 : Fix shake clean notifications: <ghbhaha> 6 days ago
+7ef8497 : Change default for Override custom colors <Shaun> 6 days ago
 8bed6eb : Blank area appears between QS and Notification <Shammi Khattar> 4 weeks ago
 149cd0d : Keyguard: Adding null check for dateformat <Jack Yoo> 3 months ago
 d943998 : Bluetooth: Check for mPanservice before changing tethering state <Nitin Shivpure> 6 months ago
@@ -153,7 +167,7 @@ d943998 : Bluetooth: Check for mPanservice before changing tethering state <Niti
 8051d2a : Themes: Allow packages to be set as non-themeable <d34d> 6 days ago
 6310f6b : Fingerprint: Don't start fingerprint auth in constructor <d34d> 9 days ago
 339c4a0 : DevicePolicy: Restore backup manager if the device owner is cleared <Ricardo Cerqueira> 10 days ago
-f0d9781 : backup: Fix the system server crash fix <myfluxi> 12 days ago
+f0d9781 : backup: Fix the system server crash fix <myfluxi> 13 days ago
 8efbec1 : Update shake features <ghbhaha> 7 days ago
 f880db1 : zygote: fix memory leak when fork process <Mykola Kondratenko> 4 weeks ago
 043184e : Notifications: test this default value <ZION959> 5 days ago
@@ -161,10 +175,6 @@ f880db1 : zygote: fix memory leak when fork process <Mykola Kondratenko> 4 weeks
 270a7c2 : cmhw: Move CMHW out of the framework and into CMSDK <Steve Kondik> 7 days ago
 bbb5026 : cmsdk: Start external services at the right time <Steve Kondik> 10 days ago
 18e801e : Fingerprint: Call SecurityCallback.dismiss when recognized <d34d> 8 days ago
-4719502 : Fix wrong Hungarian translation <Michael Bestas> 8 days ago
-50a0253 : Use Google Webview <martinusbe> 10 weeks ago
-6d0e343 : Update  shake clean of Recents and Notifications: <ghbhaha> 7 days ago
-1c7ad73 : Revert "Update shake clean" <Shaun> 8 days ago
  
 **** cmR:android_frameworks_native ****
 e8e1aef : Revert "binder: Remove deprecated Exynos platform variant logic" <Ethan Chen> 4 days ago
@@ -195,7 +205,7 @@ c5c3fbc : Add the user set network mode to the siminfo table <Chirayu Desai> 4 w
 7099af2 : DO NOT MERGE Change to add STK_PERMISSION for stk related commands. <Amit Mahajan> 3 months ago
  
 **** cmR:android_frameworks_webview ****
-1ba2ebd : arm: update to 45.0.2454.48 <Park Ju Hyung> 2 days ago
+1ba2ebd : arm: update to 45.0.2454.48 <Park Ju Hyung> 3 days ago
 f09fa8a : Update WebView <Park Ju Hyung> 4 weeks ago
 64ea34a : Fix arm64 and add support for x86 <Park Ju Hyung> 4 weeks ago
  
@@ -203,6 +213,7 @@ f09fa8a : Update WebView <Park Ju Hyung> 4 weeks ago
 256bdda : compress offload: use new sample rate representation. <Eric Laurent> 10 months ago
  
 **** github:CyanogenMod/android_hardware_qcom_audio ****
+4ec87c1 : hal: Tell Huawei acdb loader which files to load <Thomas Wendt> 3 months ago
 ec3df43 : hal: Genericize dual-SIM voice_extn implementation <Bruno Martins> 3 weeks ago
  
 **** github:CyanogenMod/android_hardware_qcom_audio ****
@@ -236,9 +247,14 @@ c0ad5df : mm-video-v4l2: vidc: update thread names <Ashray Kulkarni> 6 weeks ago
 b32ba1b : Automatic translation import <Tom Powell> 6 days ago
  
 **** github:CyanogenMod/android_packages_apps_CMFileManager ****
-37e57cf : Automatic translation import <Tom Powell> 5 days ago
+1ad09f7 : Regex metacharacters result in error post search <Richard MacGregor> 2 days ago
+1a23b92 : Search: Fix race condition with results display <Stephen Bird> 2 days ago
+450f3d5 : CMFM: don't apply search filter when search hasn't started <Roman Birg> 3 days ago
+8895e1c : CMFM: fix search mime type filter not applying <Roman Birg> 9 days ago
+85032a6 : Bookmarks: check to see if a bookmark exists before adding it <Stephen Bird> 2 days ago
+37e57cf : Automatic translation import <Tom Powell> 6 days ago
 17d800a : FileManager: Fix shortcuts <Richard MacGregor> 6 days ago
-d5372f9 : Fix MediaScan issue w/ Deleting <Stephen Bird> 5 days ago
+d5372f9 : Fix MediaScan issue w/ Deleting <Stephen Bird> 6 days ago
 530d6f6 : Automatic translation import <Tom Powell> 6 days ago
 037d635 : Fixed MediaScan Issue w/ Directories <herriojr> 8 days ago
  
@@ -247,37 +263,37 @@ d5372f9 : Fix MediaScan issue w/ Deleting <Stephen Bird> 5 days ago
  
 **** github:CyanogenMod/android_packages_apps_DeskClock ****
 a01047d : Expose FAB elevation value for themes. <Dave Kover> 5 days ago
-58238cf : Automatic translation import <Tom Powell> 5 days ago
+58238cf : Automatic translation import <Tom Powell> 6 days ago
 7662235 : Automatic translation import <Tom Powell> 6 days ago
 cc5f632 : Automatic translation import <Tom Powell> 6 days ago
 169fa50 : Automatic translation import <Tom Powell> 6 days ago
  
 **** cmR:android_packages_apps_Dialer ****
-109000d : Automatic translation import <Tom Powell> 5 days ago
+109000d : Automatic translation import <Tom Powell> 6 days ago
 7619a37 : Automatic translation import <Tom Powell> 6 days ago
  
 **** cmR:android_packages_apps_Email ****
-142a1f8 : Automatic translation import <Tom Powell> 5 days ago
+142a1f8 : Automatic translation import <Tom Powell> 6 days ago
 1874e00 : Automatic translation import <Tom Powell> 6 days ago
  
 **** cmR:android_packages_apps_Exchange ****
 96fbbaa : Fix authentication error notification click handling. <Danny Baumann> 2 weeks ago
  
 **** github:CyanogenMod/android_packages_apps_Gallery2 ****
-52a4634 : Automatic translation import <Tom Powell> 5 days ago
+52a4634 : Automatic translation import <Tom Powell> 6 days ago
  
 **** cmR:android_packages_apps_InCallUI ****
-ba25da7 : Automatic translation import <Tom Powell> 5 days ago
+ba25da7 : Automatic translation import <Tom Powell> 6 days ago
 23c5ef0 : Automatic translation import <Tom Powell> 6 days ago
  
 **** github:CyanogenMod/android_packages_apps_LockClock ****
-5e1f12d : Automatic translation import <Tom Powell> 5 days ago
+5e1f12d : Automatic translation import <Tom Powell> 6 days ago
 f70169f : Automatic translation import <Tom Powell> 6 days ago
 697c371 : Automatic translation import <Tom Powell> 6 days ago
 b0593c7 : Automatic translation import <Tom Powell> 6 days ago
  
 **** cmR:android_packages_apps_Mms-caf ****
-cf728d8 : Automatic translation import <Tom Powell> 5 days ago
+cf728d8 : Automatic translation import <Tom Powell> 6 days ago
 7d55bcb : Improve QuickMessage string <Michael Bestas> 5 days ago
 a1de05d : Mms: Check whether data is enabled on current subscription <Ethan Chen> 5 days ago
 cf56d78 : Mms: Use system API for setDataEnabled <Ethan Chen> 5 days ago
@@ -286,62 +302,64 @@ f4466dc : Automatic translation import <Tom Powell> 6 days ago
 3e5d957 : Automatic translation import <Tom Powell> 6 days ago
 ebcc561 : Automatic translation import <Tom Powell> 6 days ago
 8817bbe : Fix keyboard hiding and scrolling <Martin Brabham> 7 days ago
-563c323 : Automatic translation import <Michael Bestas> 9 days ago
+563c323 : Automatic translation import <Michael Bestas> 10 days ago
 22a4448 : Mms: fix keyboard hiding <Jorge Ruesga> 12 days ago
  
 **** github:CyanogenMod/android_packages_apps_Profiles ****
 fc903f8 : ProfileTrustAgent: remove onStart override <Roman Birg> 6 days ago
  
 **** cmR:android_packages_apps_Settings ****
-10cdc18 : Weather temp string change <Steve Kondik> 6 days ago
-842731d : lockscreen: Add option to pass swipe-up-to-unlock (Gesture) <Janson Kang> 9 hours ago
+d26130c : flash notifications [2/2] <ZION959> 2 hours ago
+1c8cc62 : Change default for Override custom colors <Dark Eyes> 6 days ago
+10cdc18 : Weather temp string change <Steve Kondik> 7 days ago
+842731d : lockscreen: Add option to pass swipe-up-to-unlock (Gesture) <Janson Kang> 15 hours ago
 6d912c6 : lockscreen: Add option to pass swipe-up-to-unlock (2/2) <eray orçunus> 2 months ago
-69d8d0f : revert lockscreen: Add option to pass swipe-up-to-unlock (2/2) <ZION959> 9 hours ago
+69d8d0f : revert lockscreen: Add option to pass swipe-up-to-unlock (2/2) <ZION959> 15 hours ago
 fd523d6 : Settings: obey prevent accidental wakeup default <Scott Mertz> 2 days ago
 56944e4 : [2/2] Settings: Add time-context headers to the notification header <ZION959> 2 days ago
 a6ed442 : revert: Selinux switch <ZION959> 3 days ago
 b34da87 : settings: LiveDisplay color profiles <Steve Kondik> 3 days ago
-6bd48b7 : Automatic translation import <Tom Powell> 5 days ago
+6bd48b7 : Automatic translation import <Tom Powell> 6 days ago
 26af4b8 : Automatic translation import <Tom Powell> 6 days ago
 53545ad : Automatic translation import <Tom Powell> 6 days ago
 64e962f : Settings: add Berlin to time zones list <tobitege> 6 weeks ago
 2cf8147 : Settings: add a way to reset quick settings tiles <Roman Birg> 4 days ago
 2d36b78 : lockscreenwallpapers: derp fixed <ZION959> 6 days ago
-9658922 : du to cmremix <ZION959> 6 days ago
+9658922 : du to cmremix <ZION959> 7 days ago
 d113952 : settings: Move CMHW to CMSDK <Steve Kondik> 7 days ago
  
 **** cmR:android_packages_apps_SetupWizard ****
-85a408b : Automatic translation import <Tom Powell> 5 days ago
+85a408b : Automatic translation import <Tom Powell> 6 days ago
 e202346 : Automatic translation import <Tom Powell> 6 days ago
-8133432 : SetupWizard: Don't wait for data connection to present the data toggle <Ricardo Cerqueira> 6 days ago
-c0533f4 : SetupWizard: Improve wait for data sim change logic <cretin45> 7 days ago
+8133432 : SetupWizard: Don't wait for data connection to present the data toggle <Ricardo Cerqueira> 7 days ago
+c0533f4 : SetupWizard: Improve wait for data sim change logic <cretin45> 8 days ago
 886a9e7 : setupwizard: Move CMHW to CMSDK <Steve Kondik> 7 days ago
 f5b72af : SetupWizard: Wait for data sim change <cretin45> 8 days ago
-8dc4974 : Automatic translation import <Michael Bestas> 9 days ago
+8dc4974 : Automatic translation import <Michael Bestas> 10 days ago
 83c87b7 : Automatic translation import <Tom Powell> 2 weeks ago
 967c7ca : Automatic translation import <Tom Powell> 2 weeks ago
 48e753d : Automatic translation import <Tom Powell> 3 weeks ago
  
 **** github:CyanogenMod/android_packages_apps_Stk ****
-eba68dd : Automatic translation import <Tom Powell> 5 days ago
+eba68dd : Automatic translation import <Tom Powell> 6 days ago
  
 **** github:CyanogenMod/android_packages_apps_Terminal ****
-4e4c908 : Automatic translation import <Tom Powell> 5 days ago
+4e4c908 : Automatic translation import <Tom Powell> 6 days ago
  
 **** cmR:android_packages_apps_ThemeChooser ****
-9ecc694 : Automatic translation import <Tom Powell> 5 days ago
+9ecc694 : Automatic translation import <Tom Powell> 6 days ago
 7ca56bf : Automatic translation import <Tom Powell> 6 days ago
 180d0f5 : Show an AlertDialog when clicking Get More <Andreas> 13 days ago
  
 **** cmR:android_packages_apps_TvSettings ****
-5ea63cb : Automatic translation import <Michael Bestas> 9 days ago
+5ea63cb : Automatic translation import <Michael Bestas> 10 days ago
 394a21f : Automatic translation import <Tom Powell> 2 weeks ago
 ca2a139 : Automatic translation import <Tom Powell> 2 weeks ago
 b1d65d1 : Automatic translation import <Michael Bestas> 3 weeks ago
  
 **** cmR:android_packages_apps_UnifiedEmail ****
 54eafdd : Automatic translation import <Tom Powell> 6 days ago
-bf4cf25 : Automatic translation import <Michael Bestas> 9 days ago
+bf4cf25 : Automatic translation import <Michael Bestas> 10 days ago
  
 **** cmR:android_packages_inputmethods_LatinIME ****
 9a08d6b : Update TRDS Colors: <Shaun> 4 weeks ago
@@ -351,36 +369,36 @@ c8874e6 : TRDS: Material dark theme. <BlackDragon> 4 weeks ago
 f684f82 : Add URI matcher entry for CONTACTS_GROUP <Raj Yengisetty> 8 days ago
  
 **** cmR:android_packages_providers_DownloadProvider ****
-b6ce267 : Automatic translation import <Tom Powell> 5 days ago
+b6ce267 : Automatic translation import <Tom Powell> 6 days ago
  
 **** github:CyanogenMod/android_packages_providers_TelephonyProvider ****
 9542f79 : Add the user set network mode to the siminfo table <Chirayu Desai> 5 weeks ago
  
 **** github:CyanogenMod/android_packages_providers_ThemesProvider ****
-c3469bf : Automatic translation import <Tom Powell> 5 days ago
+c3469bf : Automatic translation import <Tom Powell> 6 days ago
  
 **** cmR:android_packages_services_Telecomm ****
-54053f3 : Automatic translation import <Tom Powell> 5 days ago
-9552ca5 : Telecomm: Avoid NPE when invoking setAudioParameters <Bruno Martins> 6 days ago
+54053f3 : Automatic translation import <Tom Powell> 6 days ago
+9552ca5 : Telecomm: Avoid NPE when invoking setAudioParameters <Bruno Martins> 7 days ago
 6eea5e6 : telecom: Move CMHW to CMSDK <Steve Kondik> 10 days ago
  
 **** cmR:android_packages_services_Telephony ****
-05a7496 : Network settings: re-enable network preference selection <Roman Birg> 25 hours ago
+05a7496 : Network settings: re-enable network preference selection <Roman Birg> 31 hours ago
 9def8bc : For non-data SIMs, only set user configured mode, not preferred mode. <Chirayu Desai> 9 weeks ago
 0d8d3d5 : Remove network mode handling for other SIM <Chirayu Desai> 9 weeks ago
 c59ed1c : TRDS: Fixup Material Dark theme. <BlackDragon> 2 weeks ago
 23385ba : TRDS: Material dark theme (6/6) <BlackDragon> 5 weeks ago
-a8c1296 : Automatic translation import <Tom Powell> 5 days ago
+a8c1296 : Automatic translation import <Tom Powell> 6 days ago
 5a7b064 : Telephony : Null check cellInfo before calling addAll <Danesh M> 5 days ago
 1449403 : Telephony: Allow com.android.phone to use CMHW <LuK1337> 7 days ago
 11cbfa6 : telephony: Don't bypass telephony stack when switching RAT. <Adnan Begovic> 9 days ago
 2fd5ed7 : DO NOT MERGE Change to make STK related intents protected. <Amit Mahajan> 3 months ago
  
 **** github:CyanogenMod/android_packages_wallpapers_Galaxy4 ****
-c80e01d : Automatic translation import <Tom Powell> 5 days ago
+c80e01d : Automatic translation import <Tom Powell> 6 days ago
  
 **** github:CyanogenMod/android_packages_wallpapers_PhotoPhase ****
-3363962 : Automatic translation import <Tom Powell> 5 days ago
+3363962 : Automatic translation import <Tom Powell> 6 days ago
 59df4cc : Automatic translation import <Tom Powell> 6 days ago
  
 **** cmR:android_system_vold ****
@@ -394,7 +412,8 @@ cdf2467 : vendor:cm: contributors: Add maintainers for new device <Bruno Martins
 587a3cf : cm: Moving CMHW to CMSDK <Steve Kondik> 10 days ago
  
 **** cmR:android_vendor_CMRemix ****
-bae0fe0 : add deps <Akhil Narang> 10 hours ago
+3f7180f : add descriptions <ZION959> 7 hours ago
+bae0fe0 : add deps <Akhil Narang> 16 hours ago
 ce4994e : move required packages apps to main cmremix config <ZION959> 3 days ago
 050d274 : bacon :v :v <Akhil Narang> 4 days ago
 b83a75a : vendor: selinux: Allow init to setenforce to set SELinux permissive <Ethan Yonker> 3 months ago

@@ -1,0 +1,133 @@
+
+**** github:CyanogenMod/android_bootable_recovery ****
+53170a3 : Don't remove existing explicitly stashed blocks <Sami Tolvanen> 5 months ago
+18b30c0 : Always use strerror to report errno in recovery. <Elliott Hughes> 6 months ago
+ 
+**** cmR:android_build ****
+1519043 : qcom clang: lets use -O3 <ZION959> 21 hours ago
+63fd8f8 : add more polly flags to q-com clang <ZION959> 22 hours ago
+4e5f337 : remove -fwhopr lto flags <ZION959> 2 days ago
+ 
+**** github:CyanogenMod/android_device_qcom_sepolicy ****
+0f009b0 : sepolicy: Include qcom-specific sepolicy from vendor/cm <Steve Kondik> 16 hours ago
+ce47ba2 : SEPolicy : Added policy for oma drm <Paramananda Pradhan> 8 months ago
+ 
+**** github:CMRemix/android_device_samsung_trlte-common ****
+72716d7 : Remove display policy items to fixed build <ZION959> 2 hours ago
+ 
+**** cmR:android_frameworks_av ****
+e299e7c : frameworks/av : Drm media file uses mm-parser sniffer <Paramananda> 7 months ago
+d2612cc : Media: Make media support DRM file's playing <Paramananda> 9 months ago
+ 
+**** cmR:android_frameworks_base ****
+2288a73 : Consider using app adj to identify if it is a B-service <Kishore Srivenkata Ganesh Bolisetty> 7 weeks ago
+40eee10 : Replacing FloatMath native implementation with calls to Math <Nick Kralevich> 11 months ago
+e82e74c : DocumentsUi : Drm lock icon can be shown on documnets picker view. <Paramananda> 6 months ago
+dd52d7c : DocumentsUi : Drm lock icon is added for drm content <Paramananda> 6 months ago
+b331ab8 : frameworks : Introduced new private DRM APIs in graphics library <Paramananda> 6 months ago
+772cc28 : frameworks/base : Added support for OmaDrmEngine <Paramananda> 7 months ago
+4b47310 : frameworks/base : Remove drm api entries from current.txt <Paramananda Pradhan> 5 months ago
+ab63f03 : libdrm: Added support for Combined Delivery and Separate Delivery <Paramananda Pradhan> 5 hours ago
+b6f17ef : Revert "Remove obsolete OMA-DRM support". <Praveen Chavan> 8 months ago
+11afbc0 : Ringtones: Allow excluding from removable storage <d34d> 11 days ago
+369d7e4 : Fix Launch Notification as Float Icon <Myself5> 6 days ago
+e31c0a4 : Added Changes for Custom Resolver Activity <herriojr> 7 days ago
+9f13aa5 : SystemUI: screenshot: remove screenshot notification before taking screenshot <Alexander Martinz> 11 days ago
+c4d2046 : services: do not keep notification light on, while incall <Alexander Martinz> 10 days ago
+b9a48d8 : Fix scrolling of QS panel when no notification is present. <Jayasri bhattacharyya> 6 days ago
+ 
+**** github:CyanogenMod/android_hardware_broadcom_libbt ****
+6e7b90c : libbt-vendor: Fix wisol string comparison <Ethan Chen> 9 hours ago
+04fa278 : libbt-vendor: Add support for Samsung wisol flavor <Andreas Schneider> 2 days ago
+ 
+**** github:CyanogenMod/android_hardware_qcom_display ****
+1e93f5e : hwcomposer: Add support to specify dynamic FPS when idle <Steve Kondik> 30 hours ago
+ 
+**** cmR:android_packages_apps_CMFileManager ****
+93d66a3 : Automatic translation import <Michael Bestas> 5 days ago
+29cfd7e : CMFileManager : Switch to checked states <Danesh M> 4 days ago
+72920bf : Indicate number of items to be deleted in confirmation dialog <James Hiew> 9 days ago
+ 
+**** cmR:android_packages_apps_Calculator ****
+57ce726 : Automatic translation import <Michael Bestas> 5 days ago
+ 
+**** cmR:android_packages_apps_Dialer ****
+085f9a2 : Automatic translation import <Michael Bestas> 5 days ago
+ 
+**** cmR:android_packages_apps_Exchange ****
+d78074b : exchange: delay_sync_on_auth_error <Jorge Ruesga> 8 days ago
+ 
+**** cmR:android_packages_apps_Gallery2 ****
+b00985f : Gallery2 : Drm file can be set as wallpaper <Paramananda> 6 months ago
+4f3e496 : Gallery2 : Drm lock icon added on Photo widget for drm content <Paramananda> 6 months ago
+f5b491b : Gallery2 : GIF animated drm file can be visible in Gallery app <Paramananda> 6 months ago
+01f5f34 : Gallery2 : Uses internal Drm image decoder api in Gallery app <Paramananda> 6 months ago
+43044da : Gallery2 : Added support for Oma drm (CD and SD) <Paramananda> 7 months ago
+829f9ad : Gallery2: Make Gallery2 support OMADRM feature <Paramananda Pradhan> 9 months ago
+a5aa75d : Gallery3d : Fix CROP_ACTION for third party apps <Danesh M> 6 days ago
+78aee6b : Automatic translation import <Michael Bestas> 5 days ago
+ 
+**** cmR:android_packages_apps_InCallUI ****
+3cb0f21 : Automatic translation import <Michael Bestas> 5 days ago
+ 
+**** cmR:android_packages_apps_LockClock ****
+52d0cb8 : LockClock: Force ltr on clock display. <Adnan Begovic> 33 hours ago
+db50ca9 : Automatic translation import <Michael Bestas> 5 days ago
+4bdff09 : LockClock : Ensure configuration screen doesn't crash on orientation <Danesh M> 5 days ago
+ 
+**** cmR:android_packages_apps_Mms-caf ****
+5e7c1e9 : Enable ': ' added after sender in notification bar ticker <Brian Moyer> 5 days ago
+36140d3 : Mms: For any working message, also use default sms sub for mms. <Adnan Begovic> 3 days ago
+81c5033 : Automatic translation import <Michael Bestas> 5 days ago
+19c8223 : Mms : Fix OptionsActivity fragment instantiation <Danesh M> 6 days ago
+c468db0 : Mms: Utilize default sms sub id for mms transactions. <Adnan Begovic> 5 days ago
+ 
+**** cmR:android_packages_apps_Settings ****
+f9fdadc : Remove 'Pulse if battery low' option if unsupported <Alberto97> 3 days ago
+14fac9f : Use default subscription's slot ID when showing SIM status <Ethan Chen> 23 hours ago
+9dcc8e3 : Settings: reset root option selection as necessary <Roman Birg> 4 days ago
+3c00fd9 : Fix hiding color options if weather is disabled <Shaun> 2 days ago
+887f2a1 : fixed network_traffic fc <ZION959> 31 hours ago
+ 
+**** cmR:android_packages_apps_SetupWizard ****
+10b0ac4 : Revert "Bump HOME intent priority" <Danesh M> 13 hours ago
+0058b47 : Automatic translation import <Michael Bestas> 5 days ago
+5c21632 : Bump HOME intent priority <Raj Yengisetty> 5 weeks ago
+ 
+**** cmR:android_packages_apps_ThemeChooser ****
+e8f4258 : Automatic translation import <Michael Bestas> 5 days ago
+ 
+**** cmR:android_packages_apps_UnifiedEmail ****
+0d6cd35 : Automatic translation import <Michael Bestas> 5 days ago
+ 
+**** cmR:android_packages_services_Telecomm ****
+1099907 : Automatic translation import <Michael Bestas> 5 days ago
+d2a9065 : telecom: Use the low-priority vibrator for incoming calls <Steve Kondik> 5 days ago
+ 
+**** cmR:android_packages_services_Telephony ****
+c5af80d : Automatic translation import <Michael Bestas> 5 days ago
+ 
+**** github:CyanogenMod/android_prebuilts_cmsdk ****
+ae4715e : prebuilts/cmsdk: Update SNAPSHOT jar for api level 2. <Adnan Begovic> 28 hours ago
+32e0307 : prebuilts/cmsdk: Prepare for api 2 release, update text. <Adnan Begovic> 30 hours ago
+ 
+**** cmR:android_system_core ****
+eeaeeb6 : cutils: Add support for BFQIO cgroups <Steve Kondik> 8 days ago
+ 
+**** github:CyanogenMod/android_vendor_cm ****
+28dbc8b : cm: Create cgroups for BFQIO <Steve Kondik> 8 days ago
+b5c2cf0 : cm: sepolicy: Create central place for QC-specific policy <Steve Kondik> 19 hours ago
+b5dbbdf : cm: sepolicy: Create standard policy for LiveDisplay <Steve Kondik> 19 hours ago
+9cfe968 : backuptool: Add checks if it makes sense to execute commands <Andreas Schneider> 13 days ago
+c6d40c0 : Enable The AppSuggestService <herriojr> 7 days ago
+ 
+**** cmR:android_vendor_CMRemix ****
+95461da : update wallpapers <ZION959> 24 hours ago
+ 
+**** github:CyanogenMod/cm_platform_sdk ****
+0769cdb : CMResolver: Optimize restart if we know we don't have suggestions. <Adnan Begovic> 23 hours ago
+0d5b0b7 : CMSettingsProvider: Update app name <Michael Bestas> 17 hours ago
+688a045 : CMResolver: Fix bad equivalancy check by using known boolean. <Adnan Begovic> 23 hours ago
+3c45665 : cmsdk: Make sure the ACCESS_APP_SUGGESTIONS perm is not hidden. <Adnan Begovic> 29 hours ago
+e78ca4d : Added Application Suggestions. <herriojr> 7 days ago
+ 

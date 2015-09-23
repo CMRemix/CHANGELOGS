@@ -1,0 +1,27 @@
+
+**** cmR:android_frameworks_base ****
+a63e8d4 : rework carrier label 2/2 <Altaf-Mahdi> 8 minutes ago
+2a5d3dd : Changed contextual notification panel headers See images - http://i.imgur.com/PupEJ5p.jpg <Alex Cruz> 1 year, 7 months ago
+26ec182 : Move "modern" custom header images to nodpi for ALL densities usage <Janson Kang> 8 hours ago
+0550784 : Move poly hd custom header images to nodpi for ALL densities usage <Janson Kang> 8 hours ago
+b4f3f20 : SystemUI: Add option for "modern" custom headers (1/2) <Janson Kang> 25 hours ago
+eb13c63 : SystemUI: Add PAC's revamped contextual notification header images <Chris> 3 weeks ago
+9f7b3b1 : SystemUI: Add option for new poly hd custom headers (1/2) <Janson Kang> 2 hours ago
+c6cc6cb : SystemUI: Add new HD poly effect contextual header images <Nicholas Chum> 6 days ago
+edbe79a : [1/2] Bring back SmartPullDown to SlimActions. <GWX> 29 hours ago
+073a97a : [1/2] Base: Configurable overflow menu button <fusionjack> 4 hours ago
+f92e78f : Framework: SlimAction as QuickTile (1/2) <fusionjack> 5 hours ago
+ 
+**** cmR:android_packages_apps_Settings ****
+730218d : rework carrier label 2/1 <Altaf-Mahdi> 9 minutes ago
+fd02549 : Fix wonky rotation settings <Janson Kang> 2 hours ago
+0e6b284 : Statusbar Weather Font Style: Fix wrongly reversed styles <Janson Kang> 8 days ago
+db1303c : Use Theme.SettingsBase for notification log <LuK1337> 4 days ago
+2ad619b : Settings: Add option for "modern" custom headers (2/2) <Janson Kang> 2 hours ago
+2c9e79f : Settings: Custom header switch On-The-Fly <Janson Kang> 2 hours ago
+be4f70a : Settings: Add option for new poly hd custom headers (2/2) <Janson Kang> 2 hours ago
+3b87eee : [2/2] Bring back SmartPullDown to SlimActions. <ZION959> 2 hours ago
+94c0059 : [2/2] Settings: Configurable overflow menu button Forward port from SlimBean. It was part of the hardware key custom rebinding. <fusionjack> 4 hours ago
+5a95861 : move slim action up to panel customized <ZION959> 4 hours ago
+18e2bee : Settings: SlimAction as QuickTile (2/2) <fusionjack> 5 hours ago
+ 
