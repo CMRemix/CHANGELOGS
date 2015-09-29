@@ -1,0 +1,390 @@
+
+**** cmR:CMRemix ****
+d6deda7 : track bluedroid <ZION959> 23 hours ago
+abaaad9 : track cm hardware & sdk <ZION959> 2 days ago
+412f659 : Add qrd.xml for working with caf projects <Raj Yengisetty> 3 days ago
+ 
+**** cmR:android_bionic ****
+69b8f22 : Speed-up ARM memcmp by leveraging NEON. <Kyle Repinski> 5 months ago
+5ca6162 : Simplify _ALIGN_TEXT. <Elliott Hughes> 1 year, 1 month ago
+7546103 : bionic: Allow devices to add device specfic static libs <Christopher R. Palmer> 2 weeks ago
+c350195 : cortex-a53: Use cortex-a7/bionic/memset.S instead of cortex-a15/bionic/memset.S <Men_in_black007> 3 weeks ago
+7accb4d : Revert "Revert "Reenable support for non-PIE executables"" <Michael Bestas> 10 months ago
+517208a : Re-export libgcc's __aeabi_fcmplt <arter97> 6 months ago
+60e9b45 : linker: convert 'mov pc' instruction to 'bx' <arter97> 11 months ago
+c27119c : Fix build with clang <Bernhard Rosenkränzer> 7 months ago
+8ff7664 : Specify .cpu cortex-a15 <Bernhard Rosenkränzer> 10 months ago
+3225b83 : Remove pushes from memsets (krait/cortex-a9). <Christopher Ferris> 9 weeks ago
+22ee2dc : Replace bx lr with update of pc from the stack. <Christopher Ferris> 3 months ago
+2e5e2d0 : Use unified syntax to compile with both llvm and gcc. <Chih-Hung Hsieh> 5 months ago
+02b4462 : Add optimized cortex-a7/cortex-a53 memset/memcpy. <Christopher Ferris> 9 weeks ago
+49bb841 : Revert "Replace memcpy with the cortex-strings implementation" <Steve Kondik> 5 weeks ago
+0196aa9 : Revert "Add optimized cortex-a7/cortex-a53 memset/memcpy." <Steve Kondik> 5 weeks ago
+cbb6fcc : libc: remove bcopy from memmove on 64-bit architectures <Jake Weinstein> 6 weeks ago
+94c894b : Fix lgamma_r/lgammaf_r/lgammal_r for -0. <Elliott Hughes> 1 year ago
+4bb237a : libc: Fix strict-aliasing violations. <Kyle Repinski> 5 months ago
+d937421 : cortex-a7: Fix build <LuK1337> 7 weeks ago
+7053372 : cortex-a7: set proper memcmp.S path <LuK1337> 7 weeks ago
+a2cd3dd : Add optimized cortex-a7/cortex-a53 memset/memcpy. <Christopher Ferris> 9 weeks ago
+3e8f62d : libm: Fix makefiles <Steve Kondik> 3 months ago
+2b8a776 : Add aarch64 instructions wherever possible <Amaury Le Leyzour> 7 months ago
+65dff07 : libm: arm: Add arm specific floor() optimization <Shu Zhang> 1 year, 2 months ago
+8c0b20f : Fix our <complex.h> support. <Elliott Hughes> 11 months ago
+bee6fbf : Get new coshl, sinhl, and tanhl implementations from upstream. <Elliott Hughes> 1 year ago
+2549ca1 : Sync libm with upstream. <Elliott Hughes> 1 year ago
+8b8e5d3 : libc : memcpy : allow to disable opt for some targets <Varun Chitre> 4 months ago
+6bb134b : libc: denver should compile bcopy <HashBang> 5 months ago
+8a96ea6 : libc: Filter stpcpy and bcopy by architecture. <Utkarsh Gupta> 6 months ago
+ 
+**** cmR:android_build ****
+f832f51 : fixed twrp mount and unmount error when flash supersu <ZION959> 18 hours ago
+9e561a4 : revert: Fix TWRP warning about unmounted system <ZION959> 23 hours ago
+ 
+**** github:CyanogenMod/android_device_samsung_qcom-common ****
+4989b4b : Automatic translation import <Michael Bestas> 2 days ago
+ 
+**** github:CMRemix/android_device_samsung_trlte-common ****
+e27325d : TRLTE: fix rotation sensor <gekkehenkie11> 32 hours ago
+ 
+**** cmR:android_external_bluetooth_bluedroid ****
+95da42d : revert: Create README.md <ZION959> 23 hours ago
+76ad678 : revert: add in gitreview file <ZION959> 23 hours ago
+e682856 : BLuetooth: Avoid calling bte disable for the second time <Srinu Jella> 7 months ago
+ef7e701 : Bluetooth: Unlock mutex before destroying the BTIF task <Srinu Jella> 6 months ago
+c76cc31 : Create README.md <Shaun Eaton> 6 weeks ago
+481a166 : Enable -Os back to bluedroid <arter97> 1 year ago
+1e866c2 : Bluetooth losing HF connection to car-kit after 5 seconds <Markus Schmidt> 2 years, 9 months ago
+312b701 : Fix compile error in btif_rfcomm due to invalid comparison <tobitege> 9 weeks ago
+5a04cb5 : bluetooth: a2dp: Property account pcm.counter <Christopher R. Palmer> 4 months ago
+4f43a00 : bluetooth: a2dp: Allow 2 full tick's worth of data to be sent <Christopher R. Palmer> 4 months ago
+ab6895b : bluetooth: a2dp: Buffer sufficient data to keep devices happy <Christopher R. Palmer> 4 months ago
+ddd0059 : Revert "bluedroid: Support dynamic A2DP stream parameters" <Pat Erley> 4 months ago
+2fb9715 : Add NOTICE and MODULE_LICENSE files <Conley Owens> 7 months ago
+496f89f : Suppress the warning compiled with gcc-4.9 <Lai Wei-Chih> 1 year ago
+341745c : add in gitreview file <Patrick Graber> 5 months ago
+ 
+**** github:CyanogenMod/android_external_whispersystems_WhisperPush ****
+6417cb3 : Automatic translation import <Michael Bestas> 2 days ago
+ 
+**** cmR:android_frameworks_base ****
+e65e030 : add back "media.AudioAttributes" to fixed build <ZION959> 20 hours ago
+24d5343 : Themes: Don't recreate theme when mTheme is null <d34d> 32 hours ago
+92e9b02 : base: fix dialog neutral button <Jorge Ruesga> 2 days ago
+6481cc2 : Fix text color on darktheme <Nicholas Chum> 2 days ago
+27e41d6 : StrictMode: Disable all strict mode functions when disable prop is set Strict mode can still be used to produce red border flashes even when the disable property is set, among other things. <Sultanxda> 10 days ago
+f979502 : SystemUI: statusbar: some smaller cleanups and NPE fixes <Alexander Martinz> 8 days ago
+ec0a4e5 : SystemUI: statusbar: cache and reuse power manager <Alexander Martinz> 8 days ago
+3beecbd : Frameworks: Lockscreen blur & see through (1/2) <lion0738> 2 days ago
+8e7651e : Don't set defaults for all. <Shaun> 4 days ago
+8fb87dd : Add observer for Context header default switch: <Shaun> 5 days ago
+4c85312 : Fingerprint Wakeup: add some error handling; fix race conditions <Roman Birg> 3 days ago
+462e281 : Fingerprint: don't report as active without any fp's <Roman Birg> 2 days ago
+01e369f : On-the-go : Improve quick settings dialog <westcripp> 8 days ago
+9f14383 : LS: Add option for showing unlock screen directly (1/2) - PS18 FINAL <eray orçunus> 3 months ago
+a622879 : Automatic translation import <Michael Bestas> 2 days ago
+9713882 : SystemUI: improve switching users <Roman Birg> 2 days ago
+d57872c : SysUI: Fix retrieving of statusbar icon with no theme <d34d> 3 days ago
+94ae936 : Themes: Call recreateTheme when theme changed <d34d> 3 days ago
+bc123d0 : Allow additional permissions to be whitelisted by signature. <Matt Garnes> 4 days ago
+4d7d542 : Fix issue where non-themable app still had themed fonts <d34d> 4 days ago
+9e9ffa3 : core: Remove duplicate declaration of AppsFailureReceiver. <Adnan Begovic> 2 days ago
+ 
+**** cmR:android_frameworks_opt_hardware ****
+90d3456 : CmHW : Add thermal monitor stub <Danesh M> 4 days ago
+d45ac53 : cmhw: add classic sweep gestures (1/3) <eyosen> 5 days ago
+fa7272b : cmhw: Add PersistentStorage API <Steve Kondik> 4 weeks ago
+ 
+**** cmR:android_frameworks_opt_net_wifi ****
+c9bfa8e : Wifi: add "turn wifi off" action to open network notification <Roman Birg> 2 weeks ago
+ 
+**** aosp:platform/frameworks/testing ****
+3bc925f : Ignore suite()s and don't ignore init errors when using method filters. <Brett Chabot> 4 weeks ago
+b2e0985 : Fix treatment of suite() and class filters <Brett Chabot> 2 weeks ago
+d859cdd : fixed intentScheme test, cleaned up externalWithTypoe test <Stephan Linzner> 2 weeks ago
+1822b7b : Help Espresso synchronize keyboard closure animations <Nick Korostelev> 2 weeks ago
+d8c1a9b : Add special case multidex installation for ICS and lower. <Brett Chabot> 4 weeks ago
+b443ccd : Fixed intents test on api 23 due to package name change <Stephan Linzner> 2 weeks ago
+cf26f76 : Fix service related tests <Nick Korostelev> 2 weeks ago
+aead44b : Add include/exclude filters to class and package <Stuart Scott> 6 weeks ago
+e96aa38 : Support lib and build-tools 23.0.1 and extra version bump <Stephan Linzner> 3 weeks ago
+9d55364 : Bumped all version numbers and fixed new build errors <Stephan Linzner> 5 weeks ago
+dbb90c0 : Rename janktesthelper-v21 to janktesthelper-v23 <Allen Hair> 4 weeks ago
+d3b58c3 : Supressed TaskStackTest partly <Stephan Linzner> 4 weeks ago
+808b4be : Final sync with G3 <Stephan Linzner> 5 weeks ago
+cc06086 : Temporarily suppressed failing tests <Stephan Linzner> 5 weeks ago
+d0831f2 : Sync Espresso to latest codebase <Stephan Linzner> 5 weeks ago
+daccf4a : Revert "Temporarily revert tests dependent on JUnit 4.12" <Guang Zhu> 7 weeks ago
+cbd8735 : Revert "Temporarily revert JUnit to 4.10" <Guang Zhu> 7 weeks ago
+32f8bbf : Temporarily revert tests dependent on JUnit 4.12 <Guang Zhu> 7 weeks ago
+1e06f77 : Temporarily revert JUnit to 4.10 <Guang Zhu> 7 weeks ago
+75d765d : Fix JUnit3 timeout issues <Nick Korostelev> 8 weeks ago
+c0c8944 : Update runner JavaDoc about coverage options. <Michal Bendowski> 3 months ago
+f103ece : Make sure RunnerArgs.Builder.fromBundle works for all fields. <Michal Bendowski> 3 months ago
+15185eb : Bumped versions to 0.4, 2.2.1, Rev 16 Support <Stephan Linzner> 3 months ago
+46c93d0 : Fix for race condition in JavascriptBridgeLoading <Stephan Linzner> 3 months ago
+163db85 : Parse "coverage" runner argument. <Michal Bendowski> 3 months ago
+0a27ba9 : Revert "Temporarily remove janktesthelper." <Allen Hair> 4 months ago
+ 
+**** cmR:android_frameworks_webview ****
+3f7bc77 : Updating WebView 46.0.2490.28 to 46.0.2490.41 (arm64) (beta) <José Adolfo Galdámez> 4 days ago
+9a1a8f9 : Updating WebView 46.0.2490.28 to 46.0.2490.41 (arm) (beta) <José Adolfo Galdámez> 4 days ago
+ 
+**** github:CMRemix/android_kernel_samsung_trlte ****
+c75a994 : update SaberMod to latest roms change <Paul Beeler> 18 hours ago
+29f4578 : update defconfig <ZION959> 3 days ago
+14bd180 : Revert "sched: Provide an easy method to log context switch latencies" <placiano> 4 days ago
+5493ef3 : sched: fix incorrect prev_runnable_sum accounting with long ISR run <Joonwoo Park> 3 months ago
+69aa6dc : sched: fix race conditions where HMP tunables change <Joonwoo Park> 6 months ago
+80b126c : sched: check HMP scheduler tunables validity <Joonwoo Park> 6 months ago
+ab89139 : sched: add preference for prev_cpu in HMP task placement <Steve Muckle> 9 months ago
+eeec395 : sched: optimize best_small_task_cpu() loop <Joonwoo Park> 4 months ago
+d924893 : sched: optimize select_best_cpu() where !sched_enable_power_aware <Joonwoo Park> 4 months ago
+8c78a27 : sched: optimize select_best_cpu() with same power cost CPU mask <Joonwoo Park> 4 months ago
+22991aa : sched: look for least busy and fallback CPU only when it's needed <Joonwoo Park> 4 months ago
+268fa54 : sched: Optimize the select_best_cpu() "for" loop <Syed Rameez Mustafa> 4 months ago
+bcec5f0 : sched: Optimize select_best_cpu() to reduce execution time <Syed Rameez Mustafa> 4 months ago
+d50d869 : Revert "sched: add preference for prev_cpu in HMP task placement" <Pavankumar Kondeti> 10 weeks ago
+2ae8831 : sched: report loads greater than 100% only during load alert notifications <Srivatsa Vaddagiri> 5 months ago
+86c69e8 : futex: Implement lockless wakeups <Davidlohr Bueso> 5 months ago
+403c9c3 : sched: Implement lockless wake-queues <Peter Zijlstra> 5 months ago
+a71b3b3 : sched: do not set window until sched_clock is fully initialized <Steve Muckle> 11 months ago
+b5df511 : sched: tighten up jiffy to sched_clock mapping <Steve Muckle> 12 months ago
+c7d9a3d : sched_clock: Avoid corrupting hrtimer tree during suspend <Stephen Boyd> 1 year, 2 months ago
+100050f : sched_clock: Add support for >32 bit sched_clock <Stephen Boyd> 2 years, 2 months ago
+7623309 : sched_clock: Use an hrtimer instead of timer <Stephen Boyd> 2 years, 2 months ago
+096b293 : sched_clock: Use seqcount instead of rolling our own <Stephen Boyd> 1 year, 8 months ago
+0bcb311 : clocksource: Extract max nsec calculation into separate function <Stephen Boyd> 2 years, 2 months ago
+3f21a9a : sched_clock: Make ARM's sched_clock generic for all architectures <Stephen Boyd> 2 years, 4 months ago
+5d1b84d : cpufreq: interactive: enable use_sched_load early <Hanumath Prasad> 3 months ago
+5c59d30 : cpufreq: impulse: call __cpufreq_driver_target() for cur frequency <Pranav Vashi> 6 weeks ago
+eba1901 : cpufreq: set policy with user_policy data <Lianwei Wang> 5 months ago
+afbfeba : cpufreq: interactive:call __cpufreq_driver_target() for cur frequency <ZION959> 3 days ago
+50e3bf6 : sched: Update cur_freq for offline CPUs in notifier callback <Syed Rameez Mustafa> 9 months ago
+6a6be64 : cpufreq: impulse: Add HMP scheduling updates <Pranav Vashi> 6 weeks ago
+811d459 : cpufreq: interactive: Add HMP scheduling updates <Pranav Vashi> 6 weeks ago
+d633700 : sched: add preference for prev_cpu in HMP task placement <Steve Muckle> 9 months ago
+80fe1f5 : sched: Prevent race conditions where upmigrate_min_nice changes <Joonwoo Park> 9 months ago
+fea4fe9 : Revert "sched: per-cpu mostly_idle threshold" <Hanumath Prasad> 7 months ago
+bc05979 : Revert "sched: Packing support until a frequency threshold" <Hanumath Prasad> 7 months ago
+30327eb : sched: Consider PF_WAKE_UP_IDLE in select_best_cpu() <Srivatsa Vaddagiri> 9 months ago
+0a78c30 : sched: Packing support until a frequency threshold. <Srivatsa Vaddagiri> 10 months ago
+194ffc4 : sched: per-cpu mostly_idle threshold. <Srivatsa Vaddagiri> 11 months ago
+d9dc517 : sched: Provide an easy method to log context switch latencies <Syed Rameez Mustafa> 1 year ago
+4a60af9 : sched: bias small task wakeups to same cluster as their waker <Steve Muckle> 11 months ago
+dc45729 : sched: extend sched_task_load tracepoint to indicate sync wakeup <Steve Muckle> 11 months ago
+21c6165 : sched: run sync wakeup small tasks on current CPU when possible <Steve Muckle> 11 months ago
+3e9c07e : sched: Distinguish between idle and active high power CPUs for small tasks <Syed Rameez Mustafa> 11 months ago
+7d1298f : sched: add sync wakeup recognition in select_best_cpu <Steve Muckle> 11 months ago
+3b271b4 : sched: adjust small task wakeup preference, add sync wakeup support <Steve Muckle> 11 months ago
+010c58a : sched: Provide knob to prefer mostly_idle over idle cpus <Srivatsa Vaddagiri> 11 months ago
+81cdf1f : sched: use C-states in non-small task wakeup placement logic <Syed Rameez Mustafa> 11 months ago
+3eb282d : sched: Add C-state tracking to the sched_cpu_load trace event <Syed Rameez Mustafa> 1 year, 1 month ago
+f0b133e : sched: take rq lock prior to saving idle task's mark_start <Steve Muckle> 11 months ago
+ 
+**** github:CyanogenMod/android_packages_apps_AudioFX ****
+741bd48 : Automatic translation import <Michael Bestas> 2 days ago
+ 
+**** cmR:android_packages_apps_Bluetooth ****
+eab31a5 : revert: Create README.md <ZION959> 23 hours ago
+5325c44 : revert: Add gitreview file <ZION959> 23 hours ago
+9cdbf29 : Create README.md <Shaun Eaton> 6 weeks ago
+6d4bae9 : Automatic translation import <Michael Bestas> 3 months ago
+21f9979 : Bluetooth: request audio focus on incoming call <Roman Birg> 3 months ago
+5707778 : Automatic translation import <Michael Bestas> 4 months ago
+3354c19 : Automatic translation import <Michael Bestas> 4 months ago
+deb0cfe : Automatic translation import <Michael Bestas> 4 months ago
+b9a0ac9 : Automatic translation import <Michael Bestas> 4 months ago
+8855a1c : Remove executable flag from java file permissions <tobitege> 5 months ago
+9369cc5 : Fix file permissions <tobitege> 5 months ago
+30d31b3 : Bluetooth: GAP: Call system.exit in cleanup <venkata Jagadeesh> 8 months ago
+365c7c5 : Bluetooth-OPP: Start outbound transfer only after OPPService is up <Juffin Alex Varghese> 8 months ago
+760a6ca : Bluetooth-OPP: Check URI of sending file before entry cleanup <Juffin Alex Varghese> 1 year, 1 month ago
+56ca87e : PBAP: Check for PBAP Connected state as well to grant access <Hemant Gupta> 7 months ago
+ed0c0c0 : MAP: Report sendingSuccess notifcation only when MCE initiated. <Ashwini Munigala> 6 months ago
+0028ab6 : BT: HFP: ATD related cleanup when headset is disconnected <Satish Kodishala> 6 months ago
+c903b36 : Bluetooth: Stop inquiry while initiating outgoing connection <Nitin Shivpure> 7 months ago
+402a710 : Bluetooth: Fix crash caused from re-trials to start OPP listener <Nitin Shivpure> 6 months ago
+2afb297 : Bluetooth: Acquire AdapterService handle in start of profile services <Bhakthavatsala Raghavendra> 6 months ago
+22545b5 : Prevents setting of APCF scan filters more than the supported limit <Subramanian Srinivasan> 6 months ago
+efc6511 : MAP: Fix Sqlite email db query syntax. <Ashwini Munigala> 7 months ago
+bc4f81d : MAP: Fix fatal exception for content resolver leak. <Ashwini Munigala> 6 months ago
+f6c21e6 : Bluetooth: Increase wait timeout value after sending LE adv command <Satish kumar sugasi> 6 months ago
+8fb6e76 : Bluetooth: Reset the bluetotoh disabling flag while turn on <Ajay Kumar> 6 months ago
+dc6ed51 : Automatic translation import <Michael Bestas> 5 months ago
+f109194 : Enable -Os back to Bluetooth jni <arter97> 5 months ago
+c8e845c : Bluetooth: fix StaleDataException when pairing with other device <Szymon Pusz> 5 months ago
+ac34cb7 : Automatic translation import <Michael Bestas> 5 months ago
+1f00c4a : Automatic translation import <Michael Bestas> 6 months ago
+b514689 : Automatic translation import <Michael Bestas> 7 months ago
+a4583a6 : Merge branch 'LA.BF64.1.2.1_rb2.6' of git://codeaurora.org/platform/packages/apps/Bluetooth into cm-12.1 <Steve Kondik> 6 months ago
+cf72465 : Bluetooth: The item disappears after open it in Bluetooth received. <tao.pei> 6 months ago
+d11e80a : Bluetooth-OPP: Check socket congestion status before writing the data <Juffin Alex Varghese> 8 months ago
+c40a95e : Add gitreview file <Shaun Eaton> 6 months ago
+ 
+**** github:CyanogenMod/android_packages_apps_BluetoothExt ****
+0c3dd4a : Automatic translation import <Michael Bestas> 2 days ago
+ 
+**** cmR:android_packages_apps_Browser ****
+99dd14b : Browser: add DuckDuckGo search engine to ES locale <Kra1o5> 4 days ago
+ 
+**** github:CyanogenMod/android_packages_apps_CMAccount ****
+d3a7220 : Automatic translation import <Michael Bestas> 2 days ago
+ 
+**** cmR:android_packages_apps_CMFileManager ****
+085427a : Automatic translation import <Michael Bestas> 2 days ago
+ 
+**** github:CyanogenMod/android_packages_apps_CMWallpapers ****
+40b498e : Automatic translation import <Michael Bestas> 2 days ago
+ 
+**** cmR:android_packages_apps_Calculator ****
+f5d1bf6 : Automatic translation import <Michael Bestas> 2 days ago
+ 
+**** cmR:android_packages_apps_Calendar ****
+9aee465 : Automatic translation import <Michael Bestas> 2 days ago
+ 
+**** github:CyanogenMod/android_packages_apps_Camera2 ****
+1759210 : Automatic translation import <Michael Bestas> 2 days ago
+ 
+**** cmR:android_packages_apps_CellBroadcastReceiver ****
+5b05d08 : Automatic translation import <Michael Bestas> 2 days ago
+ 
+**** cmR:android_packages_apps_DeskClock ****
+ccd6fc2 : Automatic translation import <Michael Bestas> 2 days ago
+697a9d6 : Fix wrong icon used in notification bar. <Dave Kover> 13 days ago
+cca96bb : Automatic translation import <Michael Bestas> 2 weeks ago
+ 
+**** cmR:android_packages_apps_Dialer ****
+0a93dc3 : Automatic translation import <Michael Bestas> 2 days ago
+ 
+**** cmR:android_packages_apps_Email ****
+eefcd38 : Automatic translation import <Michael Bestas> 2 days ago
+ 
+**** cmR:android_packages_apps_Gallery2 ****
+ebd8198 : Automatic translation import <Michael Bestas> 2 days ago
+ 
+**** cmR:android_packages_apps_InCallUI ****
+f13e91f : Automatic translation import <Michael Bestas> 2 days ago
+08a6ebe : Add call state check for answering or decline an incomingCall. <chengzhi.hou> 9 days ago
+0d28e17 : Fix: Have no incomingCall notification. <chengzhi.hou> 9 days ago
+ 
+**** cmR:android_packages_apps_LockClock ****
+480ce7e : Automatic translation import <Michael Bestas> 2 days ago
+ 
+**** cmR:android_packages_apps_Mms-caf ****
+25eea27 : Automatic translation import <Michael Bestas> 2 days ago
+ 
+**** github:CyanogenMod/android_packages_apps_PhoneCommon ****
+b97ebfa : Automatic translation import <Michael Bestas> 2 days ago
+ 
+**** cmR:android_packages_apps_Settings ****
+7886c66 : ApnSettings : Ensure default apn dialog isn't shown twice <Danesh M> 3 days ago
+76641c3 : OnTheGo: Add missing alpha value settings <LorDClockaN> 21 hours ago
+a2a150d : Lockscreen see-through & blur (2/2) <Corey Edwards> 2 days ago
+cd08847 : Settings : Save instance state for app group deletes <Danesh M> 4 days ago
+83dc849 : Settings : Remove duplicate ProtectedApps definition <Danesh M> 3 days ago
+de54533 : Settings : Fix blacklist delete number crash <Danesh M> 3 days ago
+ 
+**** cmR:android_packages_apps_SetupWizard ****
+c92ba11 : Automatic translation import <Michael Bestas> 2 days ago
+ 
+**** cmR:android_packages_apps_SlimLauncher ****
+200e994 : Automatic translation import <Andreas Blaesius> 4 days ago
+ 
+**** github:CyanogenMod/android_packages_apps_SoundRecorder ****
+2b61591 : Automatic translation import <Michael Bestas> 2 days ago
+ 
+**** github:CyanogenMod/android_packages_apps_Stk ****
+f27b962 : Automatic translation import <Michael Bestas> 2 days ago
+ 
+**** github:CyanogenMod/android_packages_apps_Terminal ****
+d8a5db6 : Automatic translation import <Michael Bestas> 2 days ago
+ 
+**** cmR:android_packages_apps_ThemeChooser ****
+56002b5 : Automatic translation import <Michael Bestas> 2 days ago
+ 
+**** cmR:android_packages_apps_TvSettings ****
+67962b3 : Automatic translation import <Michael Bestas> 2 days ago
+96deb39 : Automatic translation import <Michael Bestas> 2 weeks ago
+ 
+**** cmR:android_packages_apps_UnifiedEmail ****
+3619120 : Automatic translation import <Michael Bestas> 2 days ago
+ 
+**** cmR:android_packages_inputmethods_LatinIME ****
+79cb2c5 : Automatic translation import <Michael Bestas> 2 days ago
+ 
+**** cmR:android_packages_providers_DownloadProvider ****
+193bc2b : Automatic translation import <Michael Bestas> 2 days ago
+ 
+**** github:CyanogenMod/android_packages_providers_ThemesProvider ****
+0559bec : Use DialerNext icon when available <d34d> 32 hours ago
+bfecba0 : Automatic translation import <Michael Bestas> 2 days ago
+ 
+**** cmR:android_packages_services_Telecomm ****
+23e496a : Automatic translation import <Michael Bestas> 2 days ago
+ 
+**** cmR:android_packages_services_Telephony ****
+81d5332 : Automatic translation import <Michael Bestas> 2 days ago
+4dec89c : Telephony: Create work around on modem vt change during emergency redial. <Adnan Begovic> 8 days ago
+5cb3ca5 : Network settings: don't send preferred network changes <Roman Birg> 5 weeks ago
+ 
+**** github:CyanogenMod/android_packages_wallpapers_Galaxy4 ****
+e7e5f96 : Automatic translation import <Michael Bestas> 2 days ago
+ 
+**** github:CyanogenMod/android_packages_wallpapers_PhaseBeam ****
+3745404 : Automatic translation import <Michael Bestas> 2 days ago
+ 
+**** github:CyanogenMod/android_packages_wallpapers_PhotoPhase ****
+74c35e0 : Automatic translation import <Michael Bestas> 2 days ago
+ 
+**** github:CyanogenMod/android_prebuilts_cmsdk ****
+6eee3d3 : Prebuilts cmsdk : Update api text for thermal monitor <Danesh M> 2 days ago
+ 
+**** github:CyanogenMod/android_vendor_cm ****
+344e448 : Build CMSettingsProvider for all devices <Michael Bestas> 30 hours ago
+8a5d3bb : Update HK APNs <Abhisek Devkota> 31 hours ago
+6a5fc00 : cm: Add defaults for CMSettingsProvider <Yvonne Wong> 2 days ago
+5318973 : apns: combine internet and mms apns for vzw <Dan Pasanen> 9 weeks ago
+ 
+**** cmR:cm_platform_sdk ****
+e502ce3 : Remove cm nav bar <Janson Kang> 29 hours ago
+05d0129 : Add way to migrate CM specific settings to CMSettingsProvider <Yvonne Wong> 4 weeks ago
+8fc6aff : cmsdk: Add classpathtests. <Adnan Begovic> 2 days ago
+4997be3 : cmsdk: add classic sweep gestures (2/3) <eyosen> 2 days ago
+c56b48e : CmSdk : Update api text for thermal monitor <Danesh M> 2 days ago
+b4ef25a : CMSdk : Initial thermal state to STATE_UNKNOWN <Danesh M> 2 days ago
+ce92e37 : Automatic translation import <Michael Bestas> 2 days ago
+b4f88fa : CMSdk : Add thermal monitor service impl <Danesh M> 2 days ago
+2acf3ea : CMSdk : Add ThermalMonitor <Danesh M> 5 days ago
+e2daff9 : CMSettingsProvider: Remove attempts at closing sqlite db <Yvonne Wong> 5 days ago
+806a91e : packages: Remove CMResolver <Brint E. Kriebel> 7 days ago
+0769cdb : CMResolver: Optimize restart if we know we don't have suggestions. <Adnan Begovic> 12 days ago
+0d5b0b7 : CMSettingsProvider: Update app name <Michael Bestas> 12 days ago
+688a045 : CMResolver: Fix bad equivalancy check by using known boolean. <Adnan Begovic> 12 days ago
+3c45665 : cmsdk: Make sure the ACCESS_APP_SUGGESTIONS perm is not hidden. <Adnan Begovic> 12 days ago
+e78ca4d : Added Application Suggestions. <herriojr> 3 weeks ago
+35df988 : Automatic translation import <Michael Bestas> 2 weeks ago
+d39c839 : Update persistent storage permission string <Michael Bestas> 2 weeks ago
+44b9ae4 : Correct permission string. <Michael Bestas> 2 weeks ago
+9f381bc : cmsdk: Update api text for Persistent Storage API. <Adnan Begovic> 2 weeks ago
+7cef6f6 : cmsdk: Add persistent properties API <Steve Kondik> 4 weeks ago
+087f2b5 : Update API txt files for cyanogenmod.media.MediaRecorder. Update API txt files for PartnerInterface. <Matt Garnes> 3 weeks ago
+eabd575 : Add Broadcast action and query API for AudioSource.HOTWORD. <Matt Garnes> 3 weeks ago
+a458122 : Allow whitelist for MODIFY_NETWORK_SETTINGS permission. <Matt Garnes> 3 weeks ago
+26272cd : Add Hotword audio capture constants. <Matt Garnes> 4 weeks ago
+99b8c5d : cmsdk: Update documentation for Boysenberry release. <Adnan Begovic> 3 weeks ago
+bc2ea6b : cmsdk: Update documentation for HAF permission. <Adnan Begovic> 4 weeks ago
+04569c7 : cmsdk: Update tests for new ALARM permissions. <Adnan Begovic> 4 weeks ago
+9971604 : cmsdk: Update cm-api for hasSensitiveData() and new permissions. <Adnan Begovic> 4 weeks ago
+7f17704 : cmsdk: Add permissions for ALARMS. <Adnan Begovic> 4 weeks ago
+0523911 : cmsdk: Enforce cyanogenmod.permission.MODIFY_PROFILES for profiles. <Adnan Begovic> 4 weeks ago
+88bc996 : cmsdk: Fix toast in CMHardwareTest. <Adnan Begovic> 4 weeks ago
+c0c27a6 : cmsdk: Add preliminary hardware manager tests. <Adnan Begovic> 4 weeks ago
+3a502e9 : cmsdk: Change parceling for DisplayMode. <Adnan Begovic> 4 weeks ago
+c5fa7bc : cmsdk: Fix spelling error in CMSettingsProvider makefile. <Adnan Begovic> 4 weeks ago
+40a46bd : BugFix: Fix potential NPEs with getService() <BadDaemon> 4 weeks ago
+6850732 : Automatic translation import <Michael Bestas> 4 weeks ago
+95dadd8 : cmsdk: allow custom tiles to set the new qstile's sensitive data flag <Jorge Ruesga> 6 weeks ago
+0eb2999 : Add CMSettingsProvider and CMDatabaseHelper <Yvonne Wong> 5 weeks ago
+e949433 : cmsdk: Build in the Manifest and R classes for the sdk. <Adnan Begovic> 4 weeks ago
+a632fbc : cmsdk: Update cm api text files <Yvonne Wong> 4 weeks ago
+ 

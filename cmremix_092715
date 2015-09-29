@@ -1,0 +1,20 @@
+
+**** github:CMRemix/android_device_samsung_trlte-common ****
+5623a64 : kernel: add zion959 kernel config file and run kernel config script on boot <ZION959> 16 hours ago
+ 
+**** cmR:android_frameworks_base ****
+0fb5f2a : On-the-go : Improve quick settings dialog <westcripp> 9 days ago
+2640369 : Squashed On-The-Go mode (1/2) <Alexander Martinz> 13 hours ago
+39f89c8 : revert: On-The-Go Mode (1/2) <ZION959> 14 hours ago
+fde77b6 : [1/2] base: network activity indicators <maxwen> 15 hours ago
+ 
+**** github:CMRemix/android_kernel_samsung_trlte ****
+2f7aa3d : derp fixed <ZION959> 17 hours ago
+ 
+**** cmR:android_packages_apps_Settings ****
+f06c728 : [2/2] Settings: On-The-Go mode <Evisceration> 12 hours ago
+7140d7f : [2/2] Settings: network activity indicators <maxwen> 14 hours ago
+ 
+**** cmR:android_vendor_CMRemix ****
+7a5b1b3 : update zion kernel script (disabled for now) <ZION959> 16 hours ago
+ 

@@ -1,0 +1,29 @@
+
+**** cmR:CMRemix ****
+78bbf34 : revert libcxx <ZION959> 7 hours ago
+d05662a : cm: Add repositories for additional Netfilter features <Steve Kondik> 31 hours ago
+ 
+**** cmR:android_build ****
+f3cb158 : Make rtti default for gcc >=5.2 <Paul Beeler> 4 weeks ago
+eccf0a1 : Simplify build display ID <Paul Beeler> 4 months ago
+46278bd : revert: Add -Ofast & -O3 flags to build <ZION959> 22 hours ago
+ 
+**** github:CMRemix/android_device_samsung_trlte-common ****
+8e075c9 : fixed wake gesture value <ZION959> 2 hours ago
+6442dc7 : update zion kernel scritpt <ZION959> 3 hours ago
+d6f6a04 : trlte-common: increase recording volume <gekkehenkie11> 25 hours ago
+e015ecc : trlte-common: update proprietary files <gekkehenkie11> 31 hours ago
+64f2410 : TRLTE: fix MMS data drop <gekkehenkie11> 32 hours ago
+7091856 : TRLTE: fix audio_effects.conf <gekkehenkie11> 35 hours ago
+ec18990 : TRLTE: fix rotation sensor <gekkehenkie11> 3 days ago
+ 
+**** cmR:android_frameworks_base ****
+c40b07a : Tether: add ipa tether stats to the existing design <Nilesh Poddar> 4 months ago
+0984d81 : SystemUI: Add missing accessibility message for volume panel QS tile <Michael Bestas> 3 days ago
+f0a9415 : revert Fixed: Wrong status bar notification layout width. <ZION959> 9 hours ago
+ 
+**** github:CMRemix/android_kernel_samsung_trlte ****
+c0255ba : update for arm-eabi-5.2 toolchains <Paul Beeler> 4 weeks ago
+51d8413 : Update for latest ROM changes <Paul Beeler> 21 hours ago
+f1f556b : add missing "CONFIG_FORCE_FAST_CHARGE" to driver/battery/makefile <ZION959> 2 days ago
+ 
