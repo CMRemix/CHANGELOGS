@@ -27,3 +27,62 @@ c0255ba : update for arm-eabi-5.2 toolchains <Paul Beeler> 4 weeks ago
 51d8413 : Update for latest ROM changes <Paul Beeler> 21 hours ago
 f1f556b : add missing "CONFIG_FORCE_FAST_CHARGE" to driver/battery/makefile <ZION959> 2 days ago
  
+**** cmR:android_packages_apps_Settings ****
+acf81e4 : update CMRemix logo and banner <ZION959> 2 hours ago
+ 
+**** cmR:android_vendor_CMRemix ****
+aa21d77 : synapse derp fixed <ZION959> 4 hours ago
+f1061da : revert: add Synapse apk <ZION959> 19 hours ago
+ 
+**** cmR:android_vendor_SaberMod ****
+f8ac8a8 : clean up & add back sm support devices <ZION959> 56 minutes ago
+e228dc0 : extra kernel gcc version info writing to build.prop <ZION959> 2 hours ago
+0ba96ce : [Firefox] Don't build Browser if using Firefox Removes Browser from PRODUCT_PACKAGES if it is set. <Joe Maples> 5 weeks ago
+13cdd62 : [armv7-a] Add prebuilt mozilla firefox browser compiled with sm-4.9 by @frap129 <Paul Beeler> 5 weeks ago
+5ded65c : update SlimRemix and CMRemix Products to new Vendor SaberMod updated <ZION959> 7 hours ago
+9e109a2 : build: Use more IPA Optimizations <Joe Maples> 3 days ago
+267117f : build: Use IPA Analyser on all modules <Joe Maples> 4 days ago
+0ccfe32 : configs: Fix tune check logic <Joe Maples> 8 days ago
+c682f1e : configs: Use NO_OPTIMIZATIONS globally <Joe Maples> 8 days ago
+7983919 : [hybrid/arm] small cleanup for version checks <Paul Beeler> 13 days ago
+e1ccefe : Tune host modules as native with -march=native and -mtune=native. <infected_> 12 days ago
+ba60d8f : [strict][arm/arm64] WTF <Paul Beeler> 13 days ago
+d2bbf8e : Include ndk version in dumpvar.mk <Paul Beeler> 13 days ago
+bd3b46f : build: Add CPU Tunning flags <Joe Maples> 2 weeks ago
+e1cc6ba : general update: <Paul Beeler> 2 weeks ago
+e13d208 : Revert "[armv7-a] Add prebuilt mozilla firefox browser compiled with sm-4.9 by @frap129" <infected_> 3 weeks ago
+229f393 : SaberMod vendor refresh! <infected_> 3 weeks ago
+1094838 : [config] Fix typo and remove redundant gcc version check filters <Paul Beeler> 3 weeks ago
+746343b : [Hybrid][Graphite] Add -floop-unroll-and-jam back for GCC 5.2 ROM builds with a new function to check if graphite is enabled <Paul Beeler> 3 weeks ago
+4f8c8b9 : [Hybrid] Make GCC_4_9_MODULES configurable through device makefiles or elsewhere for roms <Paul Beeler> 3 weeks ago
+1540cae : [Hybrid] Fix build with gcc 5.2 as primary <Paul Beeler> 3 weeks ago
+c383a1d : Add darwin support: <Paul Beeler> 4 weeks ago
+0b3bd5f : Code shrink/cleanup: <Paul Beeler> 4 weeks ago
+7e647d7 : Revert "[arm] Allow bluetooth to be optimized with gcc 4.8 instead of 4.9" <Paul Beeler> 4 weeks ago
+19dc398 : Make busybox for all aosp based roms. <Paul Beeler> 4 weeks ago
+01cc810 : add GCC_4_9_MODULES to clear_vars.mk <Paul Beeler> 4 weeks ago
+bbce562 : Update clear_vars.mk with some kernel strings <Paul Beeler> 4 weeks ago
+3b0c896 : Update mako and shamu kernel versions <Paul Beeler> 4 weeks ago
+858db25 : Add gcc hybrid mode supported all the way up to gcc 5.2 <Paul Beeler> 4 weeks ago
+f9abf44 : Add SuperSU as a flashable zip in the ROM (1/2) AICP ROMs <Paul Beeler> 5 weeks ago
+1bcf84e : [SuperSU] add missing binaries <Paul Beeler> 5 weeks ago
+fe6d132 : Revert "[SuperSU] Move binaries from xbin to bin" <Paul Beeler> 5 weeks ago
+c98fff3 : update some strings <Paul Beeler> 5 weeks ago
+f459cbf : [SuperSU] Move binaries from xbin to bin <Paul Beeler> 5 weeks ago
+9fe64a2 : [SuperSU/ARM] Add missing lib <Paul Beeler> 5 weeks ago
+fc41de7 : Install arm64 libs to lib64 <Paul Beeler> 5 weeks ago
+5c6a045 : Add SuperSU for aosp based ROMs. <Paul Beeler> 5 weeks ago
+cfc0bd7 : [mdnsd] Disable SaberMod ARM mode instead of using gcc 4.8 (test #3) <Paul Beeler> 5 weeks ago
+5d9688c : [arm] Allow bluetooth to be optimized with gcc 4.8 instead of 4.9 <Paul Beeler> 5 weeks ago
+408b857 : [Firefox] Don't build Browser if using Firefox Removes Browser from PRODUCT_PACKAGES if it is set. <Joe Maples> 5 weeks ago
+51c3180 : [armv7-a] Add prebuilt mozilla firefox browser compiled with sm-4.9 by @frap129 <Paul Beeler> 5 weeks ago
+2f9946e : [arm] Allow modules to be compiled with different gcc versions <Paul Beeler> 5 weeks ago
+b4c92a5 : Revert "Don't optimize mdnsd:" <Paul Beeler> 5 weeks ago
+71a2f40 : Let vendor/sm handle the gcc default flags (1/2) <Paul Beeler> 6 weeks ago
+e75fa5b : Don't optimize mdnsd: <Paul Beeler> 6 weeks ago
+368258e : Fix baconcaf support <Joe Maples> 7 weeks ago
+6593eb4 : Add baconcaf to supported devices <Joe Maples> 7 weeks ago
+3c9598f : Add RadonX to AOSP Products <Joe Maples> 7 weeks ago
+bc86c1f : 5.1-5.2 <Paul Beeler> 2 months ago
+abb89ce : Disable building of the PA OTA updater app. <Paul Beeler> 3 months ago
+ 
