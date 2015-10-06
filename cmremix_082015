@@ -1,9 +1,9 @@
 
 **** cmR:CMRemix ****
-1c97676 : add cmremix CHANGELOGS <ZION959> 28 hours ago
-c85695c : organized cmremix <ZION959> 29 hours ago
-6c0557d : Fixup Freetype project & revision <Abhisek Devkota> 33 hours ago
-ad0a6c0 : revert: Track SlimSaber WallpaperPicker. (reverted from commit 8e43b1bb0370dbfa646a54d07c67b1f31f69c6c4) <ZION959> 2 days ago
+1c97676 : add cmremix CHANGELOGS <ZION959> 35 hours ago
+c85695c : organized cmremix <ZION959> 35 hours ago
+6c0557d : Fixup Freetype project & revision <Abhisek Devkota> 2 days ago
+ad0a6c0 : revert: Track SlimSaber WallpaperPicker. (reverted from commit 8e43b1bb0370dbfa646a54d07c67b1f31f69c6c4) <ZION959> 3 days ago
 9d59cee : track libcxx & bionic & arm-linux-androideabi-5.1 <ZION959> 4 days ago
  
 **** github:CyanogenMod/android_bootable_recovery ****
@@ -14,7 +14,7 @@ a91f515 : Fix recovery image text rendering. <Elliott Hughes> 5 months ago
 **** cmR:android_build ****
 0cf0a18 : Change transfer list format to include block hashes <Sami Tolvanen> 8 months ago
 01e44ce : Support custom gerrit servers via HTTP or SSH <Tom Powell> 2 weeks ago
-b817b6c : build: Enable A53 errata workarounds on targets that need it <Rashed Abdel-Tawab> 5 weeks ago
+b817b6c : build: Enable A53 errata workarounds on targets that need it <Rashed Abdel-Tawab> 6 weeks ago
 4ae8bf5 : Force bsdiff for recovery_from_boot.p if not using GZIP <Andreas Blaesius> 3 months ago
 de428e3 : Don't use -Wl,--fix-cortex-a8 for Cortex A7, A9, A15, Krait or Denver <Bernhard Rosenkränzer> 5 months ago
 abd57a2 : Allow -mcpu=cortex-a15 for clang <Bernhard Rosenkränzer> 5 months ago
@@ -28,6 +28,7 @@ a56e687 : Bluetooth: Update Bluetooth security rules <Sungjun Park> 4 months ago
 eb956b3 : Automatic translation import <Michael Bestas> 3 days ago
  
 **** github:CMRemix/android_device_samsung_trlte-common ****
+f7af41b : revert: fixed viper4android global <ZION959> 24 minutes ago
 30e8f94 : switch to zion defconfig <ZION959> 4 days ago
  
 **** aosp:platform/external/chromium_org/third_party/freetype ****
@@ -50,36 +51,36 @@ d6de198 : lvm: allow access to hw_random_device <Alexander Martinz> 3 months ago
 ccc18f2 : sepolicy: allow init to write and create files <Evisceration> 8 months ago
  
 **** cmR:android_frameworks_av ****
+52aab97 : C++11 compatibility. <Dan Albert> 12 minutes ago
 7d45d73 : audio effects: fix heap overflow <Eric Laurent> 9 weeks ago
 05c1863 : libstagefright: Add support for NV21 color format <Andreas Schneider> 3 days ago
 a5bd4cd : libmedia: Increase framecount in Track Offload <Alexy Joseph> 3 weeks ago
-835cfaa : C++11 compatibility. <ZION959> 4 days ago
 c736699 : stagefright: Add libhwc to exynos include paths <Christopher R. Palmer> 5 days ago
  
 **** cmR:android_frameworks_base ****
 2c30d08 : livedisplay: Fix boot-time race condition <Steve Kondik> 3 days ago
-270a7c2 : cmhw: Move CMHW out of the framework and into CMSDK <Steve Kondik> 2 hours ago
+270a7c2 : cmhw: Move CMHW out of the framework and into CMSDK <Steve Kondik> 8 hours ago
 bbb5026 : cmsdk: Start external services at the right time <Steve Kondik> 3 days ago
-18e801e : Fingerprint: Call SecurityCallback.dismiss when recognized <d34d> 35 hours ago
+18e801e : Fingerprint: Call SecurityCallback.dismiss when recognized <d34d> 2 days ago
 4719502 : Fix wrong Hungarian translation <Michael Bestas> 2 days ago
 50a0253 : Use Google Webview <martinusbe> 9 weeks ago
-6d0e343 : Update  shake clean of Recents and Notifications: <ghbhaha> 2 hours ago
+6d0e343 : Update  shake clean of Recents and Notifications: <ghbhaha> 8 hours ago
 1c7ad73 : Revert "Update shake clean" <Shaun> 2 days ago
 f987170 : Update shake clean <ghbhaha> 2 days ago
-2e19ce8 : OnTheSpot: Forward implement infrastructure [1/2] <BigBrother1984> 30 hours ago
-a92f560 : OnTheSpot: Shake to clear Recent Apps and Notification <mkodekar> 30 hours ago
-d141348 : systemUI: carrier first, weather second <ZION959> 31 hours ago
+2e19ce8 : OnTheSpot: Forward implement infrastructure [1/2] <BigBrother1984> 2 days ago
+a92f560 : OnTheSpot: Shake to clear Recent Apps and Notification <mkodekar> 2 days ago
+d141348 : systemUI: carrier first, weather second <ZION959> 2 days ago
 4d8c0f5 : Clean themes and kernel tiles <rogersb11> 4 days ago
 4a95d67 : WallpaperCropper: use same action bar style as Launcher3 <maxwen> 7 days ago
 04256e4 : base: add keyguard support in WallpaperCropActivity <maxwen> 3 weeks ago
 538591e : Automatic translation import <Michael Bestas> 3 days ago
-a7cd521 : Revert "Revert "Wait until the Keyguard is drawn to dismiss the boot dialog."" <d34d> 7 days ago
+a7cd521 : Revert "Revert "Wait until the Keyguard is drawn to dismiss the boot dialog."" <d34d> 8 days ago
 1eb13b0 : Revamp 'Stay awake' choices <Brandon McAnsh> 8 weeks ago
-f70d984 : SignalStrength: Allow for custom signal buckets in LTE <Ricardo Cerqueira> 5 days ago
+f70d984 : SignalStrength: Allow for custom signal buckets in LTE <Ricardo Cerqueira> 6 days ago
 bf5e235 : base: don't refresh visualizer tile once the tile is destroyed <Jorge Ruesga> 5 days ago
  
 **** github:CyanogenMod/android_frameworks_opt_hardware ****
-0a2704d : hardware: Add DisplayModeControl API <Steve Kondik> 4 days ago
+0a2704d : hardware: Add DisplayModeControl API <Steve Kondik> 5 days ago
  
 **** cmR:android_frameworks_opt_telephony ****
 7099af2 : DO NOT MERGE Change to add STK_PERMISSION for stk related commands. <Amit Mahajan> 2 months ago
@@ -98,7 +99,7 @@ db526d2 : hal: Fix voice session setup failure <Venkata Narendra Kumar Gutta> 7 
 ec3df43 : hal: Genericize dual-SIM voice_extn implementation <Bruno Martins> 2 weeks ago
  
 **** github:CyanogenMod/android_hardware_qcom_bt ****
-9ac0567 : Bluetooth: load btaddr from NV if QCOM_BT_USE_BTNV is set <Scott Mertz> 6 days ago
+9ac0567 : Bluetooth: load btaddr from NV if QCOM_BT_USE_BTNV is set <Scott Mertz> 7 days ago
  
 **** github:CyanogenMod/android_hardware_qcom_display ****
 e6f11ce : hwc: Reset the refresh rate alone to avoid stack corruption. <Praveena Pachipulusu> 3 months ago
@@ -125,7 +126,7 @@ eec3ef9 : hwc: fix shaking issue due to swap rect in mdp3 <Ramakant Singh> 5 mon
 **** github:CMRemix/android_kernel_samsung_trlte ****
 1916a66 : move platform.h again <ZION959> 2 days ago
 9079f37 : revert SaberMod Optimization and add back old configs & flags <ZION959> 2 days ago
-5a73159 : Ultimate v2.4 <ZION959> 2 days ago
+5a73159 : Ultimate v2.4 <ZION959> 3 days ago
 e110cc9 : SELinux: use deletion-safe iterator to free list <Jeff Vander Stoep> 4 months ago
 6d3bbd2 : SELinux: ss: Fix policy write for ioctl operations <Jeff Vander Stoep> 4 months ago
 8cb2557 : selinux: add SOCK_DIAG_BY_FAMILY to the list of netlink message types <Paul Moore> 1 year, 7 months ago
@@ -142,7 +143,7 @@ deda054 : SELinux: Update policy version to support constraints info <Richard Ha
 7bf6306 : sched/fair: Optimize find_busiest_queue() <Peter Zijlstra> 2 years ago
 59914bb : sched: Remove one division operation in find_busiest_queue() <Joonsoo Kim> 2 years ago
 30722d7 : sched/tg: Remove tg.load_weight <Alex Shi> 2 years, 2 months ago
-f2a0e25 : sched/cfs_rq: Change atomic64_t removed_load to atomic_long_t <ZION959> 2 days ago
+f2a0e25 : sched/cfs_rq: Change atomic64_t removed_load to atomic_long_t <ZION959> 3 days ago
 a3d7675 : sched/tg: Use 'unsigned long' for load variable in task group <Alex Shi> 2 years, 2 months ago
 a855b1e : sched: Change cfs_rq load avg to unsigned long <Alex Shi> 2 years, 2 months ago
 5b2a096 : sched: Consider runnable load average in move_tasks() <Alex Shi> 2 years, 2 months ago
@@ -171,15 +172,15 @@ e7b47c5 : sched: add sysfs interface for sched_balance_policy selection <Alex Sh
 55efd4e : sched: add sched balance policies in kernel <Alex Shi> 2 years, 9 months ago
 dd02e1e : sched: set initial value of runnable avg for new forked task <Alex Shi> 2 years, 9 months ago
 9ea9057 : lowmemorykiller: enable adaptive_lmk by default <imoseyon> 4 months ago
-0dfb5db : mm: vmpressure: allow in-kernel clients to subscribe for events <ZION959> 2 days ago
-d542b2e : lowmemorykiller: adapt to vmpressure <ZION959> 2 days ago
+0dfb5db : mm: vmpressure: allow in-kernel clients to subscribe for events <ZION959> 3 days ago
+d542b2e : lowmemorykiller: adapt to vmpressure <ZION959> 3 days ago
  
 **** github:CyanogenMod/android_packages_apps_CMFileManager ****
-037d635 : Fixed MediaScan Issue w/ Directories <herriojr> 35 hours ago
-2bb6f04 : Fix Navigation back from Search <herriojr> 2 days ago
-ecc7159 : Refresh: stop refreshes in action <Stephen Bird> 6 days ago
+037d635 : Fixed MediaScan Issue w/ Directories <herriojr> 2 days ago
+2bb6f04 : Fix Navigation back from Search <herriojr> 3 days ago
+ecc7159 : Refresh: stop refreshes in action <Stephen Bird> 7 days ago
 4083b8a : Automatic translation import <Michael Bestas> 3 days ago
-d3154ae : NavigationActivity: Do not reload screen on rotation <LuK1337> 4 days ago
+d3154ae : NavigationActivity: Do not reload screen on rotation <LuK1337> 5 days ago
  
 **** github:CyanogenMod/android_packages_apps_DeskClock ****
 b5cabc4 : Automatic translation import <Michael Bestas> 3 days ago
@@ -192,34 +193,34 @@ d21a74c : Automatic translation import <Michael Bestas> 3 days ago
  
 **** github:CyanogenMod/android_packages_apps_LockClock ****
 118bbb9 : Automatic translation import <Michael Bestas> 3 days ago
-c4b791a : Allow user to change background color/transparency for the widget, for greater compatibility with various wallpapers <Zach Prezkuta> 10 days ago
+c4b791a : Allow user to change background color/transparency for the widget, for greater compatibility with various wallpapers <Zach Prezkuta> 11 days ago
  
 **** cmR:android_packages_apps_Mms-caf ****
-8817bbe : Fix keyboard hiding and scrolling <Martin Brabham> 13 hours ago
+8817bbe : Fix keyboard hiding and scrolling <Martin Brabham> 19 hours ago
 563c323 : Automatic translation import <Michael Bestas> 3 days ago
 22a4448 : Mms: fix keyboard hiding <Jorge Ruesga> 6 days ago
  
 **** cmR:android_packages_apps_Settings ****
-d113952 : settings: Move CMHW to CMSDK <Steve Kondik> 2 hours ago
+d113952 : settings: Move CMHW to CMSDK <Steve Kondik> 8 hours ago
 1df106a : PGM: Permute simple and long click behaviour <Jean-Pierre Rasquin> 4 months ago
-10ebfe4 : OnTheSpot: Forward implement infrastructure [2/2] <BigBrother1984> 30 hours ago
-9043813 : Change up the Dashboard: <Shaun Eaton> 30 hours ago
-3b9e6bf : LockscreenWallpaper: Use FB's WallpaperCropper <fusionjack> 2 days ago
-152c1b8 : revert: Bliss Lock Screen Setting: Add Lockscreen wallpaper <ZION959> 2 days ago
+10ebfe4 : OnTheSpot: Forward implement infrastructure [2/2] <BigBrother1984> 2 days ago
+9043813 : Change up the Dashboard: <Shaun Eaton> 2 days ago
+3b9e6bf : LockscreenWallpaper: Use FB's WallpaperCropper <fusionjack> 3 days ago
+152c1b8 : revert: Bliss Lock Screen Setting: Add Lockscreen wallpaper <ZION959> 3 days ago
 f0a9102 : Automatic translation import <Michael Bestas> 3 days ago
 fbc46db : Development: Add choices to 'Stay Awake' preference <Brandon McAnsh> 3 days ago
 8b2280a : Settings: add a way to not localize zone selections <Roman Birg> 7 days ago
-f2a9100 : Settings: Match pulse speed to frameworks default <Matt Mower> 5 days ago
+f2a9100 : Settings: Match pulse speed to frameworks default <Matt Mower> 6 days ago
 9e7ec9e : Selinux switch <Alex Cruz> 4 days ago
  
 **** cmR:android_packages_apps_SetupWizard ****
-c0533f4 : SetupWizard: Improve wait for data sim change logic <cretin45> 15 hours ago
-886a9e7 : setupwizard: Move CMHW to CMSDK <Steve Kondik> 65 minutes ago
+c0533f4 : SetupWizard: Improve wait for data sim change logic <cretin45> 21 hours ago
+886a9e7 : setupwizard: Move CMHW to CMSDK <Steve Kondik> 7 hours ago
 f5b72af : SetupWizard: Wait for data sim change <cretin45> 2 days ago
 8dc4974 : Automatic translation import <Michael Bestas> 3 days ago
 83c87b7 : Automatic translation import <Tom Powell> 8 days ago
-967c7ca : Automatic translation import <Tom Powell> 8 days ago
-48e753d : Automatic translation import <Tom Powell> 12 days ago
+967c7ca : Automatic translation import <Tom Powell> 9 days ago
+48e753d : Automatic translation import <Tom Powell> 13 days ago
  
 **** github:CyanogenMod/android_packages_apps_Stk ****
 a560f61 : DO NOT MERGE Change to add STK_PERMISSION for stk related commands. <Amit Mahajan> 2 months ago
@@ -233,14 +234,14 @@ a560f61 : DO NOT MERGE Change to add STK_PERMISSION for stk related commands. <A
 **** cmR:android_packages_apps_TvSettings ****
 5ea63cb : Automatic translation import <Michael Bestas> 3 days ago
 394a21f : Automatic translation import <Tom Powell> 8 days ago
-ca2a139 : Automatic translation import <Tom Powell> 8 days ago
+ca2a139 : Automatic translation import <Tom Powell> 9 days ago
 b1d65d1 : Automatic translation import <Michael Bestas> 2 weeks ago
  
 **** cmR:android_packages_apps_UnifiedEmail ****
 bf4cf25 : Automatic translation import <Michael Bestas> 3 days ago
  
 **** cmR:android_packages_providers_ContactsProvider ****
-f684f82 : Add URI matcher entry for CONTACTS_GROUP <Raj Yengisetty> 35 hours ago
+f684f82 : Add URI matcher entry for CONTACTS_GROUP <Raj Yengisetty> 2 days ago
  
 **** cmR:android_packages_services_Telecomm ****
 6eea5e6 : telecom: Move CMHW to CMSDK <Steve Kondik> 3 days ago
@@ -295,7 +296,7 @@ a86dece : Reserve space on disk using fallocate <Łukasz Szymczyk> 7 months ago
 df4c844 : fix memory leak in copy_remote_dir_local <Riley Andrews> 8 months ago
 d6c22e0 : Allow updates for open file descriptors <Marco Nelissen> 8 months ago
 0665ff2 : notify: dynamically allocate filename buffer <Johan Redestig> 9 months ago
-6737fe7 : Sdcard: Initialize the padding output value <Daisuke Okitsu> 2 years ago
+6737fe7 : Sdcard: Initialize the padding output value <Daisuke Okitsu> 2 years, 1 month ago
 8f9fee0 : Fix segfault in get_character_device_symlinks() <Tomasz Kondel> 1 year, 9 months ago
 3ca75dd : Close fd on error path in do_mount() <Tomasz Kondel> 1 year, 6 months ago
 8ea1761 : Fix deadlocks. <Bao Haojun> 1 year, 3 months ago
@@ -303,16 +304,16 @@ d6c22e0 : Allow updates for open file descriptors <Marco Nelissen> 8 months ago
 e8dedea : init: added exec_context call <maxwen> 5 months ago
  
 **** github:CyanogenMod/android_vendor_cm ****
-30ed4d1 : vendor:cm: contributors: Add maintainers for HTC One M9 <Brinly Taylor> 9 hours ago
-cdf2467 : vendor:cm: contributors: Add maintainers for new device <Bruno Martins> 12 hours ago
+30ed4d1 : vendor:cm: contributors: Add maintainers for HTC One M9 <Brinly Taylor> 15 hours ago
+cdf2467 : vendor:cm: contributors: Add maintainers for new device <Bruno Martins> 18 hours ago
 587a3cf : cm: Moving CMHW to CMSDK <Steve Kondik> 3 days ago
 80d23eb : vendor:cm: contributors: Add a new maintainers <Brinly Taylor> 5 weeks ago
  
 **** cmR:android_vendor_CMRemix ****
-043bc19 : revert: build lock screen wallpapers <ZION959> 2 days ago
+043bc19 : revert: build lock screen wallpapers <ZION959> 3 days ago
  
 **** github:CyanogenMod/cm_platform_sdk ****
-e18f6d8 : cmsdk: Add initial DisplayMode and AutoContrast support to CMHW <Steve Kondik> 2 days ago
+e18f6d8 : cmsdk: Add initial DisplayMode and AutoContrast support to CMHW <Steve Kondik> 3 days ago
 5ee87cb : cmsdk: Transplant CMHW into CMSDK <Steve Kondik> 3 days ago
 435e2f3 : profiles: Don't bind the keyguard until ActivityManager is up <Steve Kondik> 3 days ago
 8b5a4d9 : Automatic translation import <Michael Bestas> 3 days ago
@@ -320,5 +321,5 @@ e18f6d8 : cmsdk: Add initial DisplayMode and AutoContrast support to CMHW <Steve
 **** cmR:android_vendor_SaberMod ****
 bb0101d : trlte varients 4.9 >>> 5.1 <ZION959> 4 days ago
 4a4a5c7 : disable more modules for SM gcc-5.1 <ZION959> 4 days ago
-aaf8a9d : disable qcom clang for sprout4 <ZION959> 4 days ago
+aaf8a9d : disable qcom clang for sprout4 <ZION959> 5 days ago
  

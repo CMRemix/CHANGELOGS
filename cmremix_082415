@@ -1,0 +1,22 @@
+
+**** cmR:android_frameworks_base ****
+5f07218 : Add the user set network mode to the siminfo table <Chirayu Desai> 5 weeks ago
+234bd93 : SystemUI: time-context header fixes <maxwen> 4 days ago
+2f38d1e : [1/2] SystemUI: Add time-context headers to the notification header <xplodwild> 66 minutes ago
+d57843e : Fixes for status bar power menu. <Shaun> 14 hours ago
+476ef7d : Update descriptions for when HW keys are disabled. <Shaun> 13 hours ago
+84ec9eb : add config for proximity check on screen on default value <Scott Mertz> 68 minutes ago
+2e19b4d : Fix some issues with themes and notif bg color <LorDClockaN> 6 weeks ago
+d697818 : StatusBarHeaderView: Unbreak BG color on stock theme <Janson Kang> 2 days ago
+ 
+**** cmR:android_frameworks_opt_telephony ****
+c5c3fbc : Add the user set network mode to the siminfo table <Chirayu Desai> 4 weeks ago
+67c4a99 : Change network mode on data sub change <Chirayu Desai> 9 weeks ago
+ 
+**** cmR:android_packages_apps_Settings ****
+fd523d6 : Settings: obey prevent accidental wakeup default <Scott Mertz> 57 minutes ago
+56944e4 : [2/2] Settings: Add time-context headers to the notification header <ZION959> 59 minutes ago
+ 
+**** cmR:android_vendor_CMRemix ****
+ce4994e : move required packages apps to main cmremix config <ZION959> 20 hours ago
+ 
