@@ -1,0 +1,27 @@
+
+**** cmR:android_build ****
+1e58499 : [LD <Joe Maples> 2 days ago
+9298475 : [LD] Add mini descriptions to Gold and BFD <Joe Maples> 2 days ago
+a26b5db : Add options to enable gold and bfd linkers <Joe Maples> 2 days ago
+ 
+**** cmR:android_frameworks_base ****
+966ae59 : IndexOutOfBoundsException on addPreference in PreferenceGroup <Daniel 2 Olofsson> 1 year, 8 months ago
+d6e1189 : Reset the setOnKeyListener callback when view is destroyed <Mykola Kondratenko> 8 months ago
+2405d3e : Text size for empty view shall be styled according to theme <Raju Yadav> 1 year, 3 months ago
+20ccf6a : Remove hard-coded DrawSelectorOnTop on ListFragment's default ListView. <Benoit Lubek> 2 years, 2 months ago
+110639b : Frameworks/base: Fix AdapterViewAnimator.createOrReuseLayoutParams <Andreas Gampe> 7 months ago
+3e17582 : core: Fix AOSP ES typo <Michael Bestas> 2 hours ago
+72bed2b : audio: Add overlay to fix analog docks. <Brian Beloshapka> 2 years, 5 months ago
+186200b : Add Dock USB Audio Support for Samsung Car / Desk Docks <StevenHarperUK> 2 years, 10 months ago
+c210005 : AudioService: allow volume control on analog dock <Takazumi Matsumoto> 2 years, 9 months ago
+7d791fa : Live lock screen support [1/2] <d34d> 5 months ago
+1fcc617 : Keyguard: Third party keyguard support <0xD34D> 2 hours ago
+8f06b18 : Fix issue #23116383: Include security patch level in Settings <Dianne Hackborn> 8 weeks ago
+ 
+**** cmR:android_packages_apps_Settings ****
+82e99a3 : Present the security patch date in a human-friendly format <Christopher Tate> 7 weeks ago
+c178803 : Fix issue #23116383: Include security patch level in Settings <Dianne Hackborn> 2 hours ago
+ 
+**** cmR:android_vendor_SaberMod ****
+331c428 : disabled Saberfox packgage <ZION959> 26 hours ago
+ 

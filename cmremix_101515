@@ -1,0 +1,259 @@
+
+**** cmR:android_bionic ****
+bf9163b : bionic: add electric fence into memory debug list, use code 15. <Edward Wang> 7 days ago
+ 
+**** github:omnirom/android_bootable_recovery ****
+8499b08 : Add support for RGBA_8888 pixel format <Kra1o5> 2 days ago
+ 
+**** cmR:android_build ****
+a606db3 : build: Generalize kernel DTB path <David Ng> 1 year, 10 months ago
+2f9989d : generate_extra_images: Look for 3.10 dtbs <Stephen Boyd> 2 years, 2 months ago
+f828f55 : Set the Security Patch level with Oct 1 for LP <Michael Bestas> 10 days ago
+f3f529b : Fix issie #23116383: Include security patch level in Settings <Dianne Hackborn> 9 weeks ago
+ 
+**** github:CyanogenMod/android_device_qcom_common ****
+91fda27 : Revert "msm8994: Set a property to track battery mode" <Steve Kondik> 2 days ago
+2565d56 : msm8994: Set a property to track battery mode <Pat Erley> 2 days ago
+6479863 : dtbtool: Clear misc build warnings <savoca> 8 days ago
+ 
+**** github:CyanogenMod/android_device_qcom_sepolicy ****
+06765fd : DPM : sepolicy: allow netdomain access to cnd and dpmd <Ravinder Konka> 7 months ago
+ 
+**** github:CyanogenMod/android_device_samsung_qcom-common ****
+3a26861 : Automatic translation import <Michael Bestas> 4 days ago
+ 
+**** github:CyanogenMod/android_external_connectivity ****
+055dc92 : add support for legacy wqe feature <sanketk> 4 months ago
+ 
+**** github:CyanogenMod/android_external_ffmpeg ****
+f035d76 : Changelog update <Andreas Cadhalpun> 3 months ago
+ecb45bd : imc: use correct position for flcoeffs2 calculation <Andreas Cadhalpun> 3 months ago
+6958254 : hevc: check slice address length <Andreas Cadhalpun> 3 months ago
+59fd4fb : snow: remove an obsolete av_assert2 <Andreas Cadhalpun> 3 months ago
+456db47 : webp: fix infinite loop in webp_decode_frame <Andreas Cadhalpun> 4 months ago
+b059a7f : wavpack: limit extra_bits to 32 and use get_bits_long <Andreas Cadhalpun> 4 months ago
+feee4a2 : ffmpeg: only count got_output/errors in decode_error_stat <Andreas Cadhalpun> 4 months ago
+9727169 : ffmpeg: exit_on_error if decoding a packet failed <Andreas Cadhalpun> 4 months ago
+327f67e : pthread_frame: forward error codes when flushing <Andreas Cadhalpun> 4 months ago
+67965fb : huffyuvdec: validate image size <Andreas Cadhalpun> 4 months ago
+ba494aa : wavpack: use get_bits_long to read up to 32 bits <Andreas Cadhalpun> 4 months ago
+13a3d95 : nutdec: check maxpos in read_sm_data before returning success <Andreas Cadhalpun> 4 months ago
+549ea74 : s302m: fix arithmetic exception <Andreas Cadhalpun> 4 months ago
+0c6563d : vc1dec: use get_bits_long and limit the read bits to 32 <Andreas Cadhalpun> 4 months ago
+2fb1921 : mpegaudiodec: copy AVFloatDSPContext from first context to all contexts <Andreas Cadhalpun> 4 months ago
+8357878 : Update for FFmpeg 2.7.2 <Michael Niedermayer> 3 months ago
+7ccd30c : avcodec/vp8: Check buffer size in vp8_decode_frame_header() <Michael Niedermayer> 3 months ago
+7d176c1 : avcodec/vp8: Fix null pointer dereference in ff_vp8_decode_free() <Michael Niedermayer> 3 months ago
+96463b9 : avcodec/diracdec: Check for hpel_base allocation failure <Michael Niedermayer> 3 months ago
+ed6980b : avcodec/rv34: Clear pointers in ff_rv34_decode_init_thread_copy() <Michael Niedermayer> 3 months ago
+e3ef27b : avfilter/af_aresample: Check ff_all_* for allocation failures <Michael Niedermayer> 3 months ago
+8b2b8ca : avcodec/pthread_frame: clear priv_data, avoid stale pointer in error case <Michael Niedermayer> 3 months ago
+0f1a361 : swscale/utils: Clear pix buffers <Michael Niedermayer> 3 months ago
+1854616 : avutil/fifo: Fix the case where func() returns less bytes than requested in av_fifo_generic_write() <Zhang Rui> 3 months ago
+1c2a6a2 : ffmpeg: Fix cleanup after failed allocation of output_files <Michael Niedermayer> 3 months ago
+4a6b99f : avformat/mov: Fix deallocation when MOVStreamContext failed to allocate <Michael Niedermayer> 3 months ago
+d01bae0 : ffmpeg: Fix crash with ost->last_frame allocation failure <Michael Niedermayer> 3 months ago
+5788365 : ffmpeg: Fix cleanup with ost = NULL <Michael Niedermayer> 3 months ago
+3ee2620 : avcodec/pthread_frame: check avctx on deallocation <Michael Niedermayer> 3 months ago
+35f6ada : avcodec/sanm: Reset sizes in destroy_buffers() <Michael Niedermayer> 3 months ago
+7cc130f : avcodec/alac: Clear pointers in allocate_buffers() <Michael Niedermayer> 3 months ago
+aa17fe0 : bytestream2: set the reader to the end when reading more than available <Anton Khirnov> 3 months ago
+331a865 : avcodec/utils: use a minimum 32pixel width in  avcodec_align_dimensions2() for H.264 <Michael Niedermayer> 3 months ago
+49bb285 : avcodec/mpegvideo: Clear pointers in ff_mpv_common_init() <Michael Niedermayer> 3 months ago
+fa9db0e : oggparsedirac: check return value of init_get_bits <Chris Watkins> 3 months ago
+6877d4a : wmalosslessdec: reset frame->nb_samples on packet loss <Andreas Cadhalpun> 4 months ago
+a4d7ab0 : wmalosslessdec: avoid reading 0 bits with get_bits <Andreas Cadhalpun> 4 months ago
+0d8511b : Put a space between string literals and macros. <Chris Watkins> 3 months ago
+ff41c9e : avcodec/rawenc: Use ff_alloc_packet() instead of ff_alloc_packet2() <Michael Niedermayer> 3 months ago
+3e81529 : avcodec/aacsbr: Assert that bs_num_env is positive <Michael Niedermayer> 4 months ago
+e044495 : avcodec/aacsbr: check that the element type matches before applying SBR <Michael Niedermayer> 4 months ago
+ebb8f36 : avcodec/h264_slice: Use w/h from the AVFrame instead of mb_w/h <Michael Niedermayer> 4 months ago
+a4a7559 : vp9/update_prob: prevent out of bounds table read <James Zern> 4 months ago
+9a0e44d : avfilter/vf_transpose: Fix rounding error <Michael Niedermayer> 4 months ago
+dc18b1e : avcodec/h264_refs: discard mismatching references <Michael Niedermayer> 4 months ago
+2bd9dc7 : avcodec/mjpegdec: Fix small picture upscale <Michael Niedermayer> 4 months ago
+e140145 : avcodec/pngdec: Check values before updating context in decode_fctl_chunk() <Michael Niedermayer> 4 months ago
+04caa2e : avcodec/pngdec: Copy IHDR & plte state from last thread <Michael Niedermayer> 4 months ago
+a122b8f : avcodec/pngdec: Require a IHDR chunk before fctl <Michael Niedermayer> 4 months ago
+022a5b0 : avcodec/pngdec: Only allow one IHDR chunk <Michael Niedermayer> 4 months ago
+ 
+**** github:CyanogenMod/android_external_stagefright-plugins ****
+832d937 : ffmpeg: Fix crash when avio_check is called <Keith Mok> 8 days ago
+ 
+**** github:CyanogenMod/android_external_whispersystems_WhisperPush ****
+60e90dc : Switch WhisperPush to use CMSettings <Yvonne Wong> 2 weeks ago
+d60781b : Automatic translation import <Michael Bestas> 4 days ago
+ 
+**** cmR:android_frameworks_base ****
+97dad07 : SystemUI: attach a queue to media player notifications <Roman Birg> 3 months ago
+8c2bbc9 : systemui: Support remote expanded style. <Adnan Begovic> 2 hours ago
+5aa2a2a : Fix rotation tile animation <Jason Monk> 4 months ago
+4cfffe1 : SystemUI: Update screenshot notification icon to material <Michael Bestas> 8 days ago
+1041dfb : Services : Ensure proximity check is taken into consideration <Danesh M> 1 year, 2 months ago
+d086a96 : FingerprintService: synchronize access to clients <Roman Birg> 3 days ago
+3002606 : Fix horrible warning on every systemui startup. <John Spurlock> 4 months ago
+47cb6e8 : Fix huge bounce-back in ListView when double-flinging <Vladislav Kaznacheev> 4 months ago
+9aecdfe : Automatic translation import <Michael Bestas> 2 hours ago
+a3359b8 : Don't accidently clear TRANSPARENT_VERTICAL_NAV <Wilhelm Fitzpatrick> 7 days ago
+5a48f87 : Multiple LEDs [3/3]: Illumination Bars support <AdrianDC> 2 hours ago
+82ff3b7 : Revert "RotationPolicy: fix rotation toggle logic" <Roman Birg> 6 days ago
+1fff99a : Add volume boosted ringtones (2/2) <Abhisek Devkota> 2 hours ago
+3e3735c : Add live lock screen previews [1/2] <d34d> 7 days ago
+191605a : SettingsProvider : load region-specific settings for mobile data <Rohit Yengisetty> 6 days ago
+6d54dec : PackageManager : Extend prebundled logic <Danesh M> 8 days ago
+3353850 : RotationPolicy: fix rotation toggle logic <Roman Birg> 7 days ago
+1c7a369 : Window rotation: fix up sensor logic <Roman Birg> 8 days ago
+3ea2810 : BatteryService: Prevent UUC scenarios at 0% <Ricardo Cerqueira> 2 weeks ago
+ 
+**** cmR:android_frameworks_webview ****
+8bc41ee : Updating WebView 46.0.2490.64 to 46.0.2490.76 (arm64) (beta) <José Adolfo Galdámez> 25 hours ago
+493024d : Updating WebView 46.0.2490.64 to 46.0.2490.76 (arm) (beta) <José Adolfo Galdámez> 25 hours ago
+e3602d0 : Updating WebView 46.0.2490.41 to 46.0.2490.64 (arm64) (beta) <José Adolfo Galdámez> 8 days ago
+e4640b0 : Updating WebView 46.0.2490.41 to 46.0.2490.64 (arm) (beta) <José Adolfo Galdámez> 8 days ago
+ 
+**** github:CyanogenMod/android_hardware_broadcom_libbt ****
+f03bd64 : libbt-vendor: Fix Samsung patchfile detection. <Andreas Schneider> 3 weeks ago
+ 
+**** github:CyanogenMod/android_hardware_libhardware ****
+2748948 : LEDs Brightness: Add the libhardware comment indications <AdrianDC> 4 weeks ago
+e75e2a3 : Multiple LEDs [1/3]: Illumination Bars support <AdrianDC> 3 months ago
+ 
+**** github:CyanogenMod/android_hardware_qcom_display ****
+fd42788 : hwc: Set ioprio for vsync thread <Steve Kondik> 4 weeks ago
+abdb58b : display: Set thread priority using cutils <Steve Kondik> 4 weeks ago
+ 
+**** github:CyanogenMod/android_packages_apps_AudioFX ****
+bebcbe6 : Automatic translation import <Michael Bestas> 4 days ago
+ 
+**** cmR:android_packages_apps_Bluetooth ****
+20cba87 : Automatic translation import <Michael Bestas> 4 days ago
+ 
+**** github:CyanogenMod/android_packages_apps_CMAccount ****
+d2316e6 : Automatic translation import <Michael Bestas> 4 days ago
+ 
+**** cmR:android_packages_apps_CMFileManager ****
+25bcc73 : Secure file moving issue fix <root> 9 days ago
+b284ba6 : Prevent NPE collecting title, which was preventing the print action.  Use Uri for title and timestamp for print title. <Martin Brabham> 3 days ago
+d8e4b49 : Automatic translation import <Michael Bestas> 4 days ago
+0e79150 : Make MimeTypes Lowercase <herriojr> 10 days ago
+c4cb9fb : Automatic translation import <Michael Bestas> 13 days ago
+0420929 : Adding a few MS MimeTypes <herriojr> 2 weeks ago
+d28d148 : Check If System Wants Intent <herriojr> 2 weeks ago
+ 
+**** github:CyanogenMod/android_packages_apps_CMWallpapers ****
+3e1a80e : CMWallpapers : Hide default wallpaper <Danesh M> 6 days ago
+ 
+**** cmR:android_packages_apps_Calculator ****
+210cdb6 : Automatic translation import <Michael Bestas> 13 days ago
+ 
+**** github:CyanogenMod/android_packages_apps_Camera2 ****
+6b17037 : Automatic translation import <Michael Bestas> 4 days ago
+ 
+**** cmR:android_packages_apps_CellBroadcastReceiver ****
+af5a060 : Automatic translation import <Michael Bestas> 4 days ago
+ 
+**** cmR:android_packages_apps_DeskClock ****
+862dad1 : Automatic translation import <Michael Bestas> 4 days ago
+517b62d : Automatic translation import <Michael Bestas> 13 days ago
+ 
+**** cmR:android_packages_apps_Dialer ****
+486941b : Automatic translation import <Michael Bestas> 4 days ago
+3b90c16 : Automatic translation import <Michael Bestas> 13 days ago
+ 
+**** cmR:android_packages_apps_Eleven ****
+d5f4407 : Automatic translation import <Michael Bestas> 4 days ago
+38f0dcd : Automatic translation import <Michael Bestas> 13 days ago
+341df3a : Eleven: check app settings when starting service <Mikalacki Sava> 2 weeks ago
+ 
+**** cmR:android_packages_apps_Email ****
+9d3bfb6 : Automatic translation import <Michael Bestas> 4 days ago
+af25454 : email: fix empty body update <Jorge Ruesga> 9 days ago
+ 
+**** cmR:android_packages_apps_Gallery2 ****
+8de5289 : Automatic translation import <Michael Bestas> 4 days ago
+51ef6d9 : Automatic translation import <Michael Bestas> 13 days ago
+ 
+**** cmR:android_packages_apps_InCallUI ****
+bf1878e : Automatic translation import <Michael Bestas> 4 days ago
+2b3937d : Automatic translation import <Michael Bestas> 13 days ago
+ 
+**** cmR:android_packages_apps_LockClock ****
+76ba8cb : Automatic translation import <Michael Bestas> 4 days ago
+cf85872 : Automatic translation import <Michael Bestas> 13 days ago
+ 
+**** cmR:android_packages_apps_Mms-caf ****
+1c1d32e : Automatic translation import <Michael Bestas> 4 days ago
+a8b6735 : Fixed issues with QuickMessagePopup on lock screen <Vineet Patil> 8 days ago
+211ee02 : added enabledNotifyWapMMSC flag to mms_config.xml <gkipnis> 7 days ago
+6e34e8b : added default sms validity period <gkipnis> 8 days ago
+ 
+**** cmR:android_packages_apps_Settings ****
+5aa0976 : Revert "Don't allow deleting last remaining fingerprint" <Danny Baumann> 11 days ago
+7ec429d : Improve fingerprint management activity UX. <Danny Baumann> 2 weeks ago
+d3812a7 : Settings: use consistent behavior after forgetting networks <Roman Birg> 2 days ago
+4e0c06f : Revert "Settings: clear dialog states when forgetting network" <Roman Birg> 2 days ago
+34e2edd : Settings: clear dialog states when forgetting network <Roman Birg> 3 days ago
+e0ddc89 : Automatic translation import <Michael Bestas> 2 hours ago
+2fc3b53 : Multiple LEDs [2/3]: Illumination Bars support <AdrianDC> 8 weeks ago
+44ae9e2 : Settings: Fix RuntimeException in InputMethod Settings <BadDaemon> 12 days ago
+ 
+**** cmR:android_packages_apps_SetupWizard ****
+7a3bd3f : Automatic translation import <Michael Bestas> 4 days ago
+ 
+**** github:CyanogenMod/android_packages_apps_Stk ****
+ac9810c : Automatic translation import <Michael Bestas> 4 days ago
+ 
+**** github:CyanogenMod/android_packages_apps_Terminal ****
+71475d2 : Automatic translation import <Michael Bestas> 4 days ago
+ 
+**** cmR:android_packages_apps_ThemeChooser ****
+acc2ce1 : Automatic translation import <Michael Bestas> 4 days ago
+ 
+**** cmR:android_packages_apps_UnifiedEmail ****
+8759969 : Automatic translation import <Michael Bestas> 4 days ago
+ 
+**** cmR:android_packages_inputmethods_LatinIME ****
+8fa1e0e : Automatic translation import <Michael Bestas> 4 days ago
+b60a9b9 : Automatic translation import <Michael Bestas> 13 days ago
+ 
+**** cmR:android_packages_providers_ContactsProvider ****
+c23f25b : Ensure contact preloading is dependent on regional configuration <Rohit Yengisetty> 2 days ago
+b3bc906 : Unbreak build breakage when NO overlay is present <Marcos Marado> 4 days ago
+9d6f99b : preloaded_contacts schema moved, to unbreak builds <Marcos Marado> 4 days ago
+c2cf89f : Add a richer system around preloading contacts <Rohit Yengisetty> 7 days ago
+ 
+**** cmR:android_packages_providers_DownloadProvider ****
+d64cb33 : Automatic translation import <Michael Bestas> 13 days ago
+04870c1 : Fixed application/octet-stream to guess mimetype <herriojr> 2 weeks ago
+ 
+**** github:CyanogenMod/android_packages_providers_ThemesProvider ****
+1cc81dd : Add live lock screen previews [2/2] <d34d> 7 days ago
+ 
+**** cmR:android_packages_services_Telephony ****
+7fea959 : Automatic translation import <Michael Bestas> 4 days ago
+ 
+**** github:CyanogenMod/android_packages_wallpapers_PhotoPhase ****
+474f79c : Automatic translation import <Michael Bestas> 4 days ago
+ 
+**** github:CyanogenMod/android_vendor_cm ****
+151761e : contributors: Add Oppo R7 and R7 Plus <Rashed Abdel-Tawab> 9 days ago
+4a6706b : Add volume boosted ringtones (1/2) <Abhisek Devkota> 7 days ago
+26d9952 : Missed Capital Letter <herriojr> 8 days ago
+91bf290 : Overlay to set up the voicemail number on MEO <Marcos Marado> 9 days ago
+ce7b570 : Overlays to set up the voicemail number on O2 <Marcos Marado> 10 days ago
+ 
+**** cmR:android_vendor_CMRemix ****
+0b93794 : Huashan mk file <dario> 10 hours ago
+dc849ff : Add huashan support <dario> 10 hours ago
+ 
+**** cmR:cm_platform_sdk ****
+e649146 : CMSettings: add notification play queue setting <Roman Birg> 6 weeks ago
+29be6a6 : Improve several permission description Strings. <Matt Garnes> 34 hours ago
+0edb893 : Automatic translation import <Michael Bestas> 4 days ago
+21c6d08 : Remove AOSP settings from CMSettings/CMSettingsProvider <Yvonne Wong> 8 days ago
+ 
+**** cmR:android_vendor_SaberMod ****
+d6df411 : Huashan mk file <dario> 10 hours ago
+9a66afa : Add huashan support <dario> 10 hours ago
+eaccfa0 : Fix build <Ujwal P> 9 days ago
+ 

@@ -1,0 +1,300 @@
+
+**** cmR:CMRemix ****
+a1a71ff : android-5.1.1_r24 -> android-5.1.1_r26 <Ricardo Cerqueira> 7 hours ago
+7043987 : Revert "efence: Add electric fence to default manifest." <Edward Wang> 12 days ago
+0afdadf : efence: Add electric fence to default manifest. <Howard M. Harte> 4 weeks ago
+ 
+**** cmR:android_bionic ****
+852eb1a : bionic: add electric fence into memory debug list, use code 15. <Edward Wang> 4 weeks ago
+ 
+**** github:CyanogenMod/android_bootable_recovery ****
+4224760 : Blank screen during shutdown and reboot <Pat Erley> 12 days ago
+840c175 : update-binary: support reboot_now on older recoveries <Brint E. Kriebel> 7 months ago
+e6fd45c : Track usage of Vector / SortedVector from libutils DO NOT MERGE <Narayan Kamath> 9 weeks ago
+ 
+**** cmR:android_build ****
+efa52fa : generate_extra_images: Allow supplying arguments to dtbtool <Michael Bestas> 5 days ago
+67416e9 : build: Adjust for device-specific HAL paths <Ethan Chen> 5 days ago
+22a3719 : "LMY48Y" <The Android Automerger> 12 days ago
+7fc9ab7 : envsetup: Show error when supplied dir isn't present with mmm <Abhinav1997> 2 weeks ago
+9f5ee48 : edify: Fix _WordWrap function calls <Martin Blumenstingl> 2 weeks ago
+9c32ee8 : kernel: Don't update defconfig with KERNEL_ADDITIONAL_CONFIG options <Matt Wagantall> 3 weeks ago
+8237106 : kernel: use merge-config.sh for integrating KERNEL_ADDITIONAL_CONFIG <Matt Wagantall> 3 weeks ago
+4754814 : mka: allow mka to be run from anywhere in the tree <Khalid Zubair> 4 weeks ago
+b620b89 : DO NOT MERGE - Backport of ag/748221 - Security Patch Level in Settings CL#2/3 <Zach Jang> 8 weeks ago
+c814f4a : LMY48X <The Android Automerger> 5 weeks ago
+ 
+**** github:CyanogenMod/android_cts ****
+04eebc6 : rename android_security_cts_AudioflingerBinderTest.cpp to android_security_cts_AudioFlingerBinderTest.cpp <Wei Jia> 6 weeks ago
+9446958 : Manually fix build errors from an MNC cherry-pick. <Vishwath Mohan> 4 weeks ago
+a49f503 : add more binder tests for AudioFlinger and AudioPolicyService. <Wei Jia> 7 weeks ago
+4783561 : CTS: verify ConnectivityManager.requestNetwork throws for restricted networks <Paul Jensen> 6 weeks ago
+74d90b3 : Test if libstagefright dies in onInputBufferFilled on currupted file <Robert Shih> 7 weeks ago
+59cddac : Add 5-second timeout to testFlacHeapOverflow <Robert Shih> 8 weeks ago
+f0ec278 : DO NOT MERGE - Add security test for IEffect binder command <Andy Hung> 9 weeks ago
+a41f1b6 : DO NOT MERGE: Test whether mediaserver leaks info across invalid binder calls <Robert Shih> 9 weeks ago
+b0e6092 : DO NOT MERGE - Add CTS tests for IAudioflinger binder checks. <Eric Laurent> 10 weeks ago
+ 
+**** github:CyanogenMod/android_device_qcom_common ****
+62e2fc0 : power: enable perf options for power bias <Scott Mertz> 5 days ago
+6948d77 : power: add support for bias modes on 8994 <Steve Kondik> 13 days ago
+ 
+**** aosp:platform/external/aac ****
+6ae3a48 : Fix crash on invalid channel config <Marco Nelissen> 8 weeks ago
+ 
+**** github:CyanogenMod/ion ****
+3e1cfb0 : Ion: Support exif rotation when using deepzoom <cretin45> 2 weeks ago
+ 
+**** cmR:android_external_sepolicy ****
+cfce3d6 : sepolicy: create new conditional bootchart <Edward Wang> 3 weeks ago
+ 
+**** cmR:android_external_sqlite ****
+3ba627f : Upgrade to SQLite 3.9.0 <Park Ju Hyung> 3 weeks ago
+ 
+**** github:CyanogenMod/android_external_stagefright-plugins ****
+61bf067 : codecs: Disable AC3/EAC3 <Ricardo Cerqueira> 6 days ago
+ 
+**** aosp:platform/external/tremolo ****
+115d568 : libvorbisidec: sanity check index of marker. <Wei Jia> 8 weeks ago
+ 
+**** cmR:android_frameworks_av ****
+3868162 : camera: Allow devices to load custom CameraParameter code <Ethan Chen> 6 days ago
+951acde : IAudioFlinger: fix the missing initialization of variable to ensure no info leak when writing them to Parcel. <Wei Jia> 7 weeks ago
+b7903b4 : DO NOT MERGE - IAudioFlinger: always initialize variables to ensure no info leak when writing them to Parcel. <Wei Jia> 8 weeks ago
+114193c : Fix heap data leak vulnerability <Jeff Tinker> 7 weeks ago
+8977f0e : Fix for security vulnerability in media server DO NOT MERGE <Jeff Tinker> 7 weeks ago
+7184a34 : DO NOT MERGE Avoid size_t overflow in base64 decoding once again <Wonsik Kim> 8 weeks ago
+8a9a159 : DO NOT MERGE - IAudioFlinger: clear config before reading it from parcel. <Wei Jia> 8 weeks ago
+c38bb44 : DO NOT MERGE - libstagefright: sanity check size before dereferencing pointer in Utils.cpp <Wei Jia> 9 weeks ago
+7e354f5 : Ogg: avoid size_t overflow in base64 decoding <Wonsik Kim> 9 weeks ago
+db514f5 : Zero out return values in audio binder calls <Robert Shih> 9 weeks ago
+2a5c025 : Zero out return values in media binder calls <Robert Shih> 9 weeks ago
+5b29dd5 : Make IEffect command more robust (second try) <Andy Hung> 9 weeks ago
+66eac8b : Fix timedtext parsing <Marco Nelissen> 10 weeks ago
+218ec63 : IMediaPlayer.cpp: make sure structures are initialized to 0 <Nick Kralevich> 3 months ago
+f692aa2 : libmedia: clear reply data for IEffect command <Andy Hung> 10 weeks ago
+18f6575 : Fail more gracefully on allocation failure <Marco Nelissen> 1 year, 5 months ago
+7ff5fab : stagefright: check IMemory::pointer() before using the allocation <Chong Zhang> 6 months ago
+19d59d1 : DO NOT MERGE: Protect data source access with mutex during disconnect <Robert Shih> 9 weeks ago
+e79ea52 : Revert "DO NOT MERGE: Lock drm plugin API calls globally, not per MediaDrm instance" <Baligh Uddin> 3 months ago
+075552b : DO NOT MERGE: Lock drm plugin API calls globally, not per MediaDrm instance <Jeff Tinker> 7 months ago
+4f725ba : Revert "DO NOT MERGE: Lock drm plugin API calls globally, not per MediaDrm instance" <Baligh Uddin> 3 months ago
+5104178 : DO NOT MERGE - Fix software video decoder buffer size calculation <Marco Nelissen> 5 months ago
+9245d5f : libstagefright: fix overflow in pvdec_api.cpp. <Wei Jia> 3 months ago
+2e1c694 : Revert "Fix compile after rI431aa2b7d30a942350ab6d105451c6b77e2f99d4" <Abhishek Arya> 3 months ago
+649eeb9 : libstagefright: check memory size for overflow before allocation. <Wei Jia> 5 months ago
+5e7815e : DO NOT MERGE: Lock drm plugin API calls globally, not per MediaDrm instance <Jeff Tinker> 7 months ago
+b3cc9b0 : DO NOT MERGE - SoftwareRenderer: sanity check buffer size before copying data. <Wei Jia> 5 months ago
+e37e52e : libstagefright: check overflow before memory allocation in OMXCodec.cpp <Wei Jia> 2 months ago
+0fd9ff7 : Prevent integer issues in ID3::Iterator::findFrame <Joshua J. Drake> 3 months ago
+3f8a389 : DO NOT MERGE Part of fix for libmedia OOB write anywhere <Jeff Tinker> 3 months ago
+0cbede8 : libstagefright: fix overflow in MPEG4Source::parseSampleAuxiliaryInformationOffsets. <Wei Jia> 3 months ago
+6be0261 : Check RTSP payload length <Marco Nelissen> 3 months ago
+53cb6c3 : libstagefright: Fix crash in convertMetaDataToMessage <Wei Jia> 4 months ago
+4a7e92a : libstagefright: fix handling of mSampleTimeEntries and mNumSampleSizes in SampleTable. <Wei Jia> 3 months ago
+c7cf4c1 : DO NOT MERGE - audio flinger: fix fuzz test crash <Eric Laurent> 6 months ago
+8ca0d21 : Sanity check padding/delay values for gapless playback <Marco Nelissen> 3 months ago
+0959f39 : SoftAVCEncoder: fix auto merge error, member names have changed. <Wei Jia> 3 months ago
+520cd7c : MatroskaExtractor: detect infinite loop when parsing NALs <Robert Shih> 4 months ago
+65b1cf3 : Fix for memory corruption in ID3::removeUnsynchronizationV2_4(). Bug: 23227354 <Neel Mehta> 3 months ago
+bbff8c7 : SoftAVCEncoder: fix mismatched type for comparison. <Wei Jia> 3 months ago
+815cc6c : Fix compile failure after rI431aa2b7d30a942350ab6d105451c6b77e2f99d4 <Abhishek Arya> 3 months ago
+73e9dfc : MPEG4Source::fragmentedRead: check range before writing into buffers <Robert Shih> 4 months ago
+e856d51 : Fix compile after rI431aa2b7d30a942350ab6d105451c6b77e2f99d4 <Abhishek Arya> 3 months ago
+57beddd : do not dequeue from native window after we hit fatal error -- DO NOT MERGE <Chong Zhang> 3 months ago
+e88d81b : libstagefright: check remaining data size before parsing it. <Wei Jia> 3 months ago
+53788a1 : SoftAVCEnc: check requested memory size before allocation. <Wei Jia> 3 months ago
+9aa63d1 : Check integer overflow to prevent memory corruption <Jeff Tinker> 3 months ago
+2bd303a : SoftOpus: Fix output buffer capacity. <Vignesh Venkatasubramanian> 5 months ago
+61d9a7e : Check buffer size before using it <Marco Nelissen> 4 months ago
+e15476a : Fix comparison sign warnings. <Dan Albert> 6 months ago
+ 
+**** cmR:android_frameworks_base ****
+896aa6d : CMRemix Lollipop 5.1.1_R26 <ZION959> 7 hours ago
+c346d32 : Merge tag 'android-5.1.1_r26' into cm-12.1 <Ricardo Cerqueira> 8 hours ago
+6f78ca9 : Fix crash if Exif-Tag buffer-length and component-count are both 0 <tobigun> 4 months ago
+8d7fd0c : SystemUI: HeadsUp: Check if view isn't already in windowManager <LuK1337> 7 hours ago
+fe3f830 : Keyguard: Show backdrop when sim pin secure screen shown <0xD34D> 7 hours ago
+1ebabf5 : Only accept user rotations when in USER_ROTATION_FREE mode <Roman Birg> 3 weeks ago
+3e0a6e2 : SettingsProvider: load animation defaults into correct table <Roman Birg> 3 weeks ago
+75139ad : Keyguard: fix fingerprint not starting after user switch <Roman Birg> 12 days ago
+cbaddbf : FingerprintService: fix fingerprints disappearing <Roman Birg> 7 days ago
+0440fda : Automatic translation import <Michael Bestas> 6 days ago
+9fddfb6 : SystemUI: update keyguard state when profiles disable keyguard <Roman Birg> 8 days ago
+ee4b2cf : perf: Add support for additional power profiles <Steve Kondik> 7 hours ago
+7b640be : Wifi tile: don't set items visible from non-ui thread <Roman Birg> 2 weeks ago
+24fe5a5 : AssetAtlasService: fix a potential race condition <Xiaohui Chen> 7 months ago
+b719f9d : Automatic translation import <Michael Bestas> 7 hours ago
+12b28bd : SystemUI: Improve play queue string <Michael Bestas> 2 weeks ago
+d0be7a5 : base: initialized context ContentResolver reference before use it. <Jorge Ruesga> 2 weeks ago
+ab887f3 : Lights Modes: Avoid regular values updates <AdrianDC> 2 weeks ago
+5c6aa2f : Support for faster brightness response to light changes. <Filip Gruszczynski> 9 months ago
+8bd2740 : ZenMode : Remove config_setZenModeWhenSilentModeOn <Danesh M> 3 weeks ago
+5d4c955 : Revert "Modify SILENT profile to restrict notification sound" <Danesh M> 3 weeks ago
+2535e01 : Fix network stats logspam. <Danny Baumann> 3 weeks ago
+c1abca0 : SystemUI: Remove duplicated permission <Lokesh Chamane> 3 weeks ago
+ 
+**** cmR:android_frameworks_native ****
+e4759c3 : sensorservice: customize sensor fusion mag filter via prop <Khalid Zubair> 2 weeks ago
+67a7582 : Initialize local variables to avoid data leak <Naveen Leekha> 6 weeks ago
+2beb44c : Initialize local variables to avoid data leak <Naveen Leekha> 6 weeks ago
+e68cbc3 : Disregard alleged binder entities beyond parcel bounds <Christopher Tate> 5 months ago
+7dcd0ec : Verify that the native handle was created <Adam Lesinski> 6 months ago
+ 
+**** cmR:android_frameworks_opt_telephony ****
+e47a042 : Revert: DcTrackerBase/DcTracker: privatize mAllApnSettings. <ZION959> 2 hours ago
+c1b6b90 : Fix NOT_RESTRICTED network capability and enforce it. <Paul Jensen> 10 weeks ago
+f1cd40b : Add getPreferredApn() in buildWaitingApns() <Sungmin Choi> 4 months ago
+2217a0c : Make sure the APN setting list is never null. <Danny Baumann> 2 weeks ago
+8c08c03 : Fix NPE on SIM hot swap. <Danny Baumann> 3 weeks ago
+1d714a7 : Fix NOT_RESTRICTED network capability and enforce it. <Paul Jensen> 10 weeks ago
+ 
+**** cmR:android_frameworks_webview ****
+53f77c5 : Updating WebView 45.0.2454.87 to 46.0.2490.76 (arm64) (stable) <José Adolfo Galdámez> 13 days ago
+68ecb6b : Updating WebView 45.0.2454.95 to 46.0.2490.76 (arm) (stable) <José Adolfo Galdámez> 13 days ago
+5aaf2f9 : Updating WebView 44.0.2403.117 to 46.0.2490.76 (x86) (stable) <José Adolfo Galdámez> 13 days ago
+ 
+**** github:CyanogenMod/android_hardware_qcom_audio ****
+90db087 : add line out to device sharing codec backend <Eric Laurent> 10 months ago
+359e995 : hal: updates for DEVICE_OUT_LINE <Eric Laurent> 1 year, 1 month ago
+e845ba1 : hal: Add support for AUDIO_DEVICE_OUT_LINE <Eric Laurent> 1 year, 3 months ago
+ 
+**** github:CyanogenMod/android_hardware_qcom_display ****
+d4c3461 : hwc: reset overlay and writeback in unblank if writeback is active <Naseer Ahmed> 1 year, 2 months ago
+ 
+**** github:CyanogenMod/android_hardware_qcom_media ****
+bb144e5 : Build mm-video-v4l2 on msm8909's <Marcos Marado> 7 hours ago
+ 
+**** github:CyanogenMod/android_hardware_samsung ****
+cbdae12 : ril: Use debug log level and not error <Andreas Schneider> 12 days ago
+7f60587 : ril: Fix network operator search <Andreas Schneider> 12 days ago
+ 
+**** github:CyanogenMod/android_hardware_ti_omap4 ****
+b401521 : sgxfreq: add sysfs interface to store frequency limit <Ketut Putu Kumajaya> 2 years, 2 months ago
+ 
+**** github:CyanogenMod/android_packages_apps_BluetoothExt ****
+ef81181 : Automatic translation import <Michael Bestas> 6 days ago
+ 
+**** cmR:android_packages_apps_CMFileManager ****
+ab89abc : Automatic translation import <Michael Bestas> 6 days ago
+b2e715e : Automatic translation import <Michael Bestas> 13 days ago
+06b63a7 : Thumbnail update on copy and overwrite issue of pictures <root> 2 weeks ago
+3a4d70f : Use System Resolver <herriojr> 3 weeks ago
+ 
+**** cmR:android_packages_apps_Calendar ****
+de4e6ca : Automatic translation import <Michael Bestas> 13 days ago
+ 
+**** github:CyanogenMod/android_packages_apps_Camera2 ****
+44d2333 : Fix crash if Exif-Tag buffer-length and component-count are both 0 <tobigun> 4 months ago
+ 
+**** cmR:android_packages_apps_DeskClock ****
+3cc92a9 : Proguard causing RuntimeException <Keith Mok> 11 days ago
+df1817d : Null-check in case an AlarmInstance's Alarm no longer exists. <Annie Chin> 3 months ago
+5b4d6c3 : Automatic translation import <Michael Bestas> 13 days ago
+ 
+**** cmR:android_packages_apps_Eleven ****
+c544b6a : Automatic translation import <Michael Bestas> 6 days ago
+ 
+**** cmR:android_packages_apps_Email ****
+b9984de : email: junk icon <Jorge Ruesga> 13 days ago
+db1ca54 : email: return default folder name for subfolders <Jorge Ruesga> 13 days ago
+7aa1f50 : email: Add an ActionBar to the mail app's PreferenceActivity <Jorge Ruesga> 3 weeks ago
+ 
+**** cmR:android_packages_apps_Gallery2 ****
+77db8c7 : Fix crash if Exif-Tag buffer-length and component-count are both 0 <tobigun> 4 months ago
+7127cd4 : Automatic translation import <Michael Bestas> 6 days ago
+9a39c44 : Automatic translation import <Michael Bestas> 13 days ago
+ 
+**** cmR:android_packages_apps_InCallUI ****
+85ab64d : Automatic translation import <Michael Bestas> 6 days ago
+ 
+**** cmR:android_packages_apps_Mms-caf ****
+7965b67 : Fix crash if Exif-Tag buffer-length and component-count are both 0 <tobigun> 4 months ago
+b9e9ff2 : Fixed Messaging: Overflow menu options change after screen ON/OFF <Vineet Patil> 5 days ago
+8297e7b : Fix subject limit checking. <Martin Brabham> 2 weeks ago
+2db7fb3 : Fix formatting <Martin Brabham> 12 days ago
+4598153 : Correct AOSP DE translation error <DanielRieken> 13 days ago
+ca2b9bc : Fix NPE causing crash when copying message with no body. <Martin Brabham> 3 weeks ago
+ 
+**** cmR:android_packages_apps_Settings ****
+0c7c104 : Automatic translation import <Michael Bestas> 7 hours ago
+8a61c8a : Settings : Update performance tile drawable reference <Danesh M> 7 days ago
+9cae30e : HighTouchSensitivity [2/2]: Add Settings preference <AdrianDC> 2 weeks ago
+b8aa908 : settings: ensure we don't call isProtectedApp with an invalid reference <Jorge Ruesga> 7 days ago
+d47f188 : WirelessSettings: Remove NFC category if there's no NFC adapter <LuK1337> 7 hours ago
+75cc2b0 : settings: update control ring stream string <Jorge Ruesga> 12 days ago
+65c8af7 : protected-apps: don't show a progress dialog for short operations <Diogo Ferreira> 2 months ago
+3e893c1 : Settings: update layouts <jrizzoli> 7 hours ago
+7fd1bee : Automatic translation import <Michael Bestas> 7 hours ago
+ 
+**** cmR:android_packages_apps_SetupWizard ****
+a97c1ee : Automatic translation import <Michael Bestas> 13 days ago
+ 
+**** cmR:android_packages_apps_ThemeChooser ****
+7d117f9 : Automatic translation import <Michael Bestas> 6 days ago
+ 
+**** cmR:android_packages_apps_UnifiedEmail ****
+8ef4be4 : unifiedemail: junk icon <Jorge Ruesga> 13 days ago
+95cc3e9 : email: allow move/copy operations to more system folders <Jorge Ruesga> 13 days ago
+322e058 : Automatic translation import <Michael Bestas> 13 days ago
+671d932 : Add an ActionBar to the mail app's PreferenceActivity. <Danny Baumann> 3 weeks ago
+ 
+**** cmR:android_packages_inputmethods_LatinIME ****
+305b050 : Automatic translation import <Michael Bestas> 13 days ago
+ 
+**** github:CyanogenMod/android_packages_providers_TelephonyProvider ****
+798426f : BlacklistProvider : Make provider single user only <Danesh M> 5 weeks ago
+ 
+**** github:CyanogenMod/android_packages_providers_ThemesProvider ****
+2fdddef : Fix live lock screen previews not showing up <d34d> 8 days ago
+057608d : Re-apply live lock screen on update <d34d> 3 weeks ago
+ 
+**** github:CyanogenMod/android_packages_services_Mms ****
+537889f : Automatic translation import <Michael Bestas> 13 days ago
+ 
+**** cmR:android_packages_services_Telecomm ****
+9638535 : telecomm: initialize defaultOutgoing status <Jorge Ruesga> 4 weeks ago
+ 
+**** cmR:android_packages_services_Telephony ****
+70674fd : Automatic translation import <Michael Bestas> 6 days ago
+0c2f1f4 : Automatic translation import <Michael Bestas> 13 days ago
+62d5dea : TeleService: Make ongoing mwi notification overlayable <cretin45> 2 weeks ago
+ 
+**** github:CyanogenMod/android_packages_wallpapers_Basic ****
+a62a6f5 : PolarClock: Don't draw on invisible surfaces <Diogo Ferreira> 7 months ago
+ 
+**** bb:arm-eabi-4.9 ****
+a79dc70 : update 09-27-2015 <ZION959> 9 days ago
+ 
+**** cmR:android_system_core ****
+4743d5c : healthd: Turn screen off before rebooting <Pat Erley> 12 days ago
+441cdba : bootchart: call 'bootchart_init' after remount_all is done <Edward Wang> 3 weeks ago
+38c06b1 : libutils: Fix integer overflows in VectorImpl. <Narayan Kamath> 10 weeks ago
+2040543 : libutils: fix overflow in String8::allocFromUTF8 <Sergio Giro> 3 months ago
+5490545 : libutils: fix overflow in SharedBuffer [DO NOT MERGE] <Sergio Giro> 3 months ago
+d32a1d2 : Fix compile failure after rIfe1dc0791040150132bea6884f1e6c8d31972d1b <Abhishek Arya> 3 months ago
+e8c62fb : Prevent integer overflow when allocating native_handle_t <Adam Lesinski> 6 months ago
+ 
+**** github:CyanogenMod/android_vendor_cm ****
+902c2cc : Update boosted audio files 2/2 <Abhisek Devkota> 3 hours ago
+7a218f8 : Ventelo is now Phonero <Arne Coucheron> 9 days ago
+48a042e : contributors: add LG G4, remove cody from some devices <Daniel Hillenbrand> 2 days ago
+6807df0 : sepolicy: allow various process access /data/bootchart folder <Edward Wang> 3 weeks ago
+900d6cc : Updated CHANGELOG and (c) date <Marcos Marado> 2 weeks ago
+6b4620f : sepolicy: qcom: Remove duplicate entry <myfluxi> 7 weeks ago
+ 
+**** cmR:cm_platform_sdk ****
+694c14c : Automatic translation import <Michael Bestas> 6 days ago
+826c1aa : HighTouchSensitivity [1/2]: Add Settings preference <AdrianDC> 2 weeks ago
+20cecb7 : CMSettingsProvider: Add ability to read region locked themes <Yvonne Wong> 4 weeks ago
+8c87673 : Automatic translation import <Michael Bestas> 13 days ago
+ 
+**** github:CMRemix/proprietary_vendor_samsung ****
+2f501be : klte-common: Add radish binary <Ethan Chen> 13 days ago
+e66cfa1 : d2-common: Use bcm4334 firmware from kltemini <Dave Daynard> 2 weeks ago
+e4894c6 : trlte-common: add libmysound.so <gekkehenkie11> 5 weeks ago
+9d716b6 : hlte-common: update bluetooth and add aDSP <Christer> 5 weeks ago
+ 
+**** cmR:android_vendor_SaberMod ****
+218af23 : Improve huashan sabermod <dario> 3 weeks ago
+ 
