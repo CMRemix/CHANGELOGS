@@ -1,0 +1,99 @@
+
+**** cmR:android_frameworks_base ****
+7715d6a : Squashed On-The-Go mode (1/2) <Evisceration> 66 minutes ago
+a1eef9e : SystemUI: Power Button - Toggle nav item visibility based on IME <beanstown106> 4 days ago
+fc71d60 : Services:Fix Derp From Lockscreen Toggle Merge Cms Commit here :-https://github.com/ResurrectionRemix/android_frameworks_base/commit/4601c9fda34494c2b5f9b34e328a560cc153b7d9 The Broadcast Intent In KeyguardServicdeligcate Throws NPE at Boot With a Heavy Gapps Package  to launch receivers of broadcast intent Intent { act=com.android.internal.action.KEYGUARD_SERVICE_STATE_CHANGED (has extras) } before boot completion <Varun> 11 days ago
+f3e0183 : Services: DO NOT send Broadcast On boot <Varun> 12 days ago
+4938674 : Navbar power XML drawables <OptX> 2 days ago
+d2d7322 : Navbar: add power button <AndroidRul3z> 4 days ago
+6076546 : Fix Activity.onConfigurationChanged may not be called. <riddle_hsu> 3 days ago
+d5adba2 : Make sure NaturalSurfaceLayout is consistent with SurfaceControl <yang.xa.liu> 10 days ago
+b5f0546 : Add Screen Record to the Power Menu [1/2] <eyosen> 20 hours ago
+714e1a4 : Status bar header long click actions <Altaf-Mahdi> 6 hours ago
+d73f3ba : SystemUI: screenrecord: make sure to always delete tmp file <maxwen> 4 weeks ago
+cccbd93 : base: bring back screen record shortcut <maxwen> 3 weeks ago
+f06a0c6 : base: screenrecord: forward port from 4.4 Squashed commit of the following: <maxwen> 25 hours ago
+25e3374 : Match AOKP changes for system animations <cristianomatos> 12 months ago
+fd8116c : AOKP system animations: add Animation controls exit only and Animations controls reverse exit [1/2] <cristianomatos> 12 months ago
+b185690 : AOKP system animations: remove no app override <cristianomatos> 12 months ago
+7c79294 : AOKP animations: Add an entry for TRANSIT_TASK_OPEN_BEHIND [1/2] <cristianomatos> 12 months ago
+8affb26 : AOKP custom system animations (1/2) <Stevespear426> 3 hours ago
+5a40e62 : Return: Listanimation Views and Interpolator [1/2] <jkl5616> 1 year ago
+700d448 : FW_Base - XuiMod: Toast Animations [1/2] <GwonHyeok> 25 hours ago
+fb3e8bf : Add option to disable scrolling cache [1/2] <Sang Tae Park> 5 months ago
+662eeec : Fix permission for Development shortcut <sarbyn> 4 weeks ago
+51880da : Implement App circle sidebar [1/2] <Squadzone> 25 hours ago
+26e4a39 : App sidebar: Fix Left/Right position. <NL-BlackDragon> 25 hours ago
+bb24a28 : App sidebar: notify if app is not installed <lion0738> 1 year, 8 months ago
+c0a43e3 : Fix force close for App Sidebar. <mydongistiny> 7 months ago
+3b5f2b4 : App sidebar (1/2) <0xD34D> 6 hours ago
+d74e000 : Marshmallow logo instead of 'No recent apps' <mydongistiny> 9 weeks ago
+7b68003 : Fix NPE with WeatherStatus on KeyguardStatusView <tobitege> 5 months ago
+f250385 : Ls weather: options to hide the weather when notifications are visible (1/2) <XXMrHyde> 25 hours ago
+f163d68 : Fix theme issue with reboot dialog <Alex Cruz> 4 weeks ago
+7d7d4cb : Bye Bye holo blue... <Alex Cruz> 25 hours ago
+6c0bfba : Increase gesture anywhere width to 40px [1/2] <Alex Cruz> 10 months ago
+f7c7485 : Gesture Anywhere [1/2] <0xD34D> 25 hours ago
+37bd9d5 : SystemUI: Move onchange for status bar weather <ZION959> 25 hours ago
+bc71613d : fab dimension fixs *drop margin top as it didnt work *set fab height and with to google material design standards <beanstown106> 4 weeks ago
+c20a881 : Recents Fab: change dimensions of portrait/landscape *change portrait dimens *change landscape dimens *add margin top dimension <beanstown106> 25 hours ago
+0237e00 : Disable Lockscreen Media Art [1/2] <beanstown106> 4 months ago
+0d39008 : FWB:Status bar carrier label font size 2/2 <rogersb11> 25 hours ago
+a52c75a : Lockscreen weather options [1/2] <XXMrHyde> 6 hours ago
+d968956 : Show carrier label / custom & change color [1/2] [Squashed] <beanstown106> 6 hours ago
+1962f2d : FWB: Make all 14 font variants available to Weather (2/2) <rogersb11> 5 weeks ago
+7f4b68d : More weather font styles 2/2 <rogersb11> 4 months ago
+704e172 : SystemUI: Status bar weather font style (1/2) <Janson Kang> 4 months ago
+ceecc14 : FWB: statusbar weather font size (1/2) <LorDClockaN> 5 weeks ago
+bd03c5c : FWB: Statusbar weather color (1/2) <LorDClockaN> 5 weeks ago
+b71d692 : FWB: statusbar weather temperature placement (2/2) <eyosen> 5 weeks ago
+6ebf76f : Weather Temprature Status Bar Icon 1/2 <Randall Rushing> 6 hours ago
+ 
+**** cmR:android_packages_apps_Settings ****
+06d5655 : [2/2] Settings: On-The-Go mode On-The-Go turns on the camera of your phone and streams it to an overlay, which is drawn over everything. this makes you feel like your display is transparent, as you see the content behind it. <Alexander Martinz> 38 minutes ago
+d3dff8c : set animation duration controls to value 10 <ZION959> 2 hours ago
+af184d3 : App Circle Sidebar: Support for Configurable Trigger Region[2/2] <zeetherocker> 1 year ago
+c1c7b46 : [2/2] Settings: Implement App circle sidebar <Squadzone> 23 hours ago
+376fcf1 : Add Screen Record to the Power Menu [2/2] <eyosen> 3 weeks ago
+b060fe3 : aokp animation use SlimSeekBarPreference <ZION959> 3 hours ago
+47ac8a1 : Screen and Animations: Update & clean up <Janson Kang> 3 weeks ago
+7ca0641 : Match AOKP changes for system animations <cristianomatos> 12 months ago
+a3ed581 : AOKP system animations: add Animation controls exit only and Animations controls reverse exit [2/2] <cristianomatos> 12 months ago
+309f964 : AOKP system animations: remove no app override <cristianomatos> 12 months ago
+4b94de1 : AOKP animations: Add and entry for TRANSIT_TASK_OPEN_BEHIND [2/2] <cristianomatos> 3 hours ago
+97e64c3 : AOKP custom system animations (2/2) <Stevespear426> 3 hours ago
+3abfe39 : Add option to disable scrolling cache [2/2] <Sang Tae Park> 5 months ago
+da20dc4 : Return: Listanimation Views and Interpolator [2/2] <jkl5616> 9 months ago
+23fb7b0 : XuiMod: Toast Animations [2/2] <codex-corp> 23 hours ago
+a9a83f8 : Color picker enable alpha slider as default <westcripp> 4 weeks ago
+e93e799 : Settings :Add new lockscreen shortcus icons <westcripp> 23 hours ago
+edb785e : Add option to Restart SystemUI to DevSettings <Schubi> 2 years, 3 months ago
+e59cb25 : App sidebar (2/2) <0xD34D> 23 hours ago
+223e495 : Lock screen weather: Add options to hide the weather when notificatio… …ns are visible, (2/2) <XXMrHyde> 6 months ago
+b188cf8 : Launch LockClock from settings <Janson Kang> 24 hours ago
+8269848 : Increase gesture anywhere width to 40px [2/2] <Alex Cruz> 5 weeks ago
+e9126d2 : Settings: Gesture Anywhere - bring it back [2/2] <0xD34D> 24 hours ago
+e679ce7 : Disable Lockscreen Media Art [2/2] <beanstown106> 24 hours ago
+23073cf : Settings: Status bar carrier label font size 1/2 <rogersb11> 4 hours ago
+8035498 : Lockscreen weather: checkbox to switches <Andres> 6 months ago
+f791bd4 : Lock screen: Weather panel improvements, (2/2) <ZION959> 24 hours ago
+e2be522 : Show carrier label / custom & change color [2/2] [Squashed] <beanstown106> 24 hours ago
+cbcb226 : Housekeeping: Remove tabs in arrays <Janson Kang> 4 months ago
+b429191 : Statusbar Weather Font Style: Fix wrongly reversed styles <Janson Kang> 3 months ago
+0a261bb : Settings: Make all 14 font variants available to Weather (1/2) <rogersb11> 24 hours ago
+674a47c : Status bar weather: Add BOLD ITALIC to font style (2/2) <Janson Kang> 24 hours ago
+83c6824 : Status bar weather: Add BOLD ITALIC to font style (2/2) <rogersb11> 4 hours ago
+6721103 : More weather font styles 1/2 <rogersb11> 24 hours ago
+5b7223d : Settings: Status bar weather font style (2/2) <Janson Kang> 4 hours ago
+6a3e9b7 : Settings: statusbar weather font size (2/2) <LorDClockaN> 4 hours ago
+73cbd3b : Disable weather settings if hidden <LorDClockaN> 24 hours ago
+b270ce4 : Settings: Statusbar weather color (2/2) <LorDClockaN> 24 hours ago
+542b7e1 : Settings: statusbar weather temperature placement (1/2) <eyosen> 24 hours ago
+811396a : Weather Temprature Status Bar Icon 2/2 <Randall Rushing> 24 hours ago
+77bfe28 : Battery Bar: Though shall use switch NOT check <Janson Kang> 26 hours ago
+ 
+**** github:CMRemix/proprietary_vendor_samsung ****
+63e0ab0 : update adreno driver for trlte <ZION959> 12 days ago
+36faf02 : update mm compatibility blobs for sprints <ZION959> 13 hours ago
+574e486 : init commit for samsung galaxy note 4 trlte mm blobs <ZION959> 10 days ago
+ 

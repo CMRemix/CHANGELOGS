@@ -1,0 +1,172 @@
+
+**** cmR:CMRemix ****
+f45850b : track cmremix tvsettings <ZION959> 17 hours ago
+ 
+**** omni:android_bootable_recovery ****
+80f7b36 : exfat: Build fsck and update path to mkfs <Matt Mower> 12 days ago
+2d50cad : Remove dead code: TW_HAS_DUAL_STORAGE <Matt Mower> 3 weeks ago
+9a5b8b7 : pixelflinger: Fix local src arch includes <Matt Mower> 2 weeks ago
+231daef : minzip: Fixup libselinux includes <Matt Mower> 6 weeks ago
+3aa66be : Append AOSP recovery commands inline <Ethan Yonker> 2 days ago
+38c3aa7 : openrecoveryscript: really append ORS command to ORS script file. <xiaolu> 7 months ago
+047723c : selinux: Only union sepolicy in SDKs 21,22 <Matt Mower> 2 weeks ago
+666d151 : twrpTar: Remove redundant -g CFLAG <Matt Mower> 6 weeks ago
+1777cdc : Remove unnecessary quoting from twres path <Matt Mower> 3 months ago
+ceb1e8a : Fix CLANG error in cryptfs.c <Ethan Yonker> 2 days ago
+72cf09d : mtp: Address clang compilation errors <Matt Mower> 6 weeks ago
+5829491 : f2fs: Update make rules for CM compatibility <Matt Mower> 2 weeks ago
+ 
+**** cmR:android_build ****
+1b148a3 : disabled libft2 graphite for graphite optimization <ZION959> 23 hours ago
+3baca31 : build: update cmremix gcc and build info to dumpvar <ZION959> 27 hours ago
+af4f89f : build: add clang Polly otpimziation <ZION959> 3 weeks ago
+39a8ce3 : build: Uber MM Optimization <Chet Kener> 3 weeks ago
+d87b558 : Allow Unsecure <Chet Kener> 1 year, 2 months ago
+a110aa1 : revert: disabled supersu for now <ZION959> 5 weeks ago
+4b96860 : Build: Use 0 compression ratio for jar files <arter97> 9 months ago
+c1e7af8 : build: Hide ansi art at build end <ZION959> 5 weeks ago
+38007ce : [1/2] temp fixed for trlte build id error <ZION959> 6 weeks ago
+be114be : disabled supersu for now <ZION959> 7 weeks ago
+6b6bafe : add cmremix build version info <ZION959> 7 months ago
+c2517f8 : build: remove all stops if using different make/openjdk-java version <MrBaNkS> 12 months ago
+2c904fa : Don't stop if JDK version doesn't match <SferaDev> 1 year, 1 month ago
+cc48ae0 : Add Make Dirty Option <Chet Kener> 12 months ago
+331409a : Add a Whole bunch of Clean Options <Chet Kener> 12 months ago
+46a395c : Introduce New Squisher/Opticharger for Lollipop (2/2) <Chet Kener> 1 year ago
+724113a : updater-script: Format system before installing ROM <fusionjack> 7 weeks ago
+00dc4cf : UKM: add support for Synapse Universal Kernel Manager (2/2) <Petr kecinzer Řezníček> 7 weeks ago
+b637b01 : Add SuperSU to releasetools <LorDClockaN> 7 weeks ago
+c8c7013 : Build: Use system ccache version over prebuilt <José Adolfo Galdámez> 7 weeks ago
+58ac160 : core: Set ro.adb.secure=0 for recovery default.prop <Bjorn Hutmacher> 1 year ago
+01a68f9 : core/config.mk: Add SED_INPLACE <Bjorn Hutmacher> 1 year ago
+cd1c1d6 : Add back mka bootzip <RobbieL811> 7 months ago
+6431415 : add linker option <ZION959> 9 weeks ago
+03d5637 : build: CMRemix Changelog [1/2] <ZION959> 2 months ago
+9b38622 : build: CMRemix Version & build prop info & add ACSII art for CMREmix <ZION959> 7 weeks ago
+60c5c6a : custom toolchain support <ZION959> 6 weeks ago
+f0b8bff : repopick: Allow commits to be excluded from a topic importation <AdrianDC> 2 weeks ago
+ 
+**** github:CyanogenMod/android_device_generic_goldfish ****
+2083610 : goldfish: Add gateway using 'ip route' <Diogo Ferreira> 2 days ago
+ 
+**** github:CMRemix/android_device_samsung_trlte-common ****
+73d910e : trlte-common:  default kernel settings at boot <ZION959> 4 hours ago
+5c79232 : enabled hardware keys <Zion-Tran> 1 year ago
+883afd2 : Add some audio configuration files <fat-tire> 26 hours ago
+c8d35de : add to audio policy: AUDIO_DEVICE_IN_AUX_DIGITAL and AUDIO_DEVICE_IN_COMMUNICATION <fat-tire> 26 hours ago
+7f35be7 : add media_codecs_performance.xml <fat-tire> 26 hours ago
+92f21c3 : build a few more things like libxml2 <fat-tire> 26 hours ago
+257a005 : BoardConfig tweaks- F2FS support included <fat-tire> 26 hours ago
+6b23732 : add shims, libcnefeatureconfig, and libstlport <fat-tire> 26 hours ago
+b0137fd : update some overlay items <fat-tire> 27 hours ago
+b63049d : libwvm.so is in /vendor/lib not /lib/ <fat-tire> 27 hours ago
+6f7eebe : add external connectivity repo <fat-tire> 27 hours ago
+6d46a23 : update bluetooth bldcfg values <fat-tire> 27 hours ago
+525c292 : update some selinux stuff + bluetooth access to .cid file <fat-tire> 27 hours ago
+eb74ac7 : fix trlte.mk <gekkehenkie11> 6 weeks ago
+c8487a3 : build camera wrapper again <gekkehenkie11> 6 weeks ago
+dcafb1a : trlte: fix Sdcard. See: https://source.android.com/devices/storage/config-example.html#android_6_both <gekkehenkie11> 6 weeks ago
+17c0246 : trlte-common: update fingerprint HAL <gekkehenkie11> 6 weeks ago
+ 
+**** github:CMRemix/android_device_samsung_trltetmo ****
+ab59d9c : add working trlteRIL + Operators.java <fat-tire> 27 hours ago
+ 
+**** github:CyanogenMod/android_external_bash ****
+52936c4 : bash: prefer toybox's ls <Dan Pasanen> 3 days ago
+ 
+**** github:CyanogenMod/android_external_libpng ****
+8a03077 : Make compatible with SaberMod ARM mode. <Paul Beeler> 8 months ago
+ 
+**** github:CyanogenMod/android_external_stagefright-plugins ****
+6c89800 : stagefright-plugins: remove global dictionaries <Scott Mertz> 34 hours ago
+ 
+**** cmR:android_frameworks_base ****
+ded593d : Fix api <Janson Kang> 4 weeks ago
+9ce6120 : [squash] Frameworks: port SlimSeekBarPreference to cmremix <dankoman> 9 months ago
+a15302a : Update fix for DT2S breakage <LorDClockaN> 5 months ago
+3b6e815 : Fix DT2S on navbar after SlimDim <LorDClockaN> 5 months ago
+939090b : SlimDim: Use semaphore to cancel ontouch callback <Jean-Pierre Rasquin> 5 months ago
+e1f817c : SlimDim: don't dim navbar on lockscreen <Daniel Koman> 5 months ago
+c5dfe99 : SystemUI: SlimDim - pref to listen on entire screen for touches [1/2] <Daniel Koman> 5 months ago
+e9bb232 : SlimDim: listen for touches in navbar empty areas also <Daniel Koman> 5 months ago
+79431e5 : SystemUI: SlimDim [1/2] <Daniel Koman> 6 months ago
+b17e6bf : Double tap to sleep on navigation bar [1/2] <TheMrcool212> 10 months ago
+f54e2b7 : Navigation bar button color (1/2) <lichti1901> 11 months ago
+e93b894 : BluetoothAdapter: disable logspew <Alexander Martinz> 6 months ago
+21bff55 : Keyguard: Implement KeyguardExternalViewCallbacks <d34d> 2 days ago
+f068b9f : Keyguard: Pass keyguard events to KeyguardExternalView <d34d> 3 days ago
+da7ac01 : Add config_autoBrightnessAmbientLightHorizon overlay <Danesh M> 2 days ago
+0f79906 : hwui: Allow devices to opt-out of asynchronouse setSurface initialization <Christopher R. Palmer> 2 days ago
+76323e4 : NavigationBar : Switch to display orientation from config orientation <Danesh M> 3 days ago
+c08411b : PowerManagerService: Log when proximity blocks wake <Pat Erley> 13 days ago
+92a8a50 : Add custom camera shutter <Abhisek Devkota> 8 days ago
+ 
+**** cmR:android_frameworks_opt_telephony ****
+158e9fd : telephony: Respect user nw mode, handle DSDS non-multi-rat. <Adnan Begovic> 7 days ago
+ 
+**** github:CyanogenMod/android_hardware_qcom_display ****
+420cc3a : msm8996: remove unused qcom features <Scott Mertz> 2 days ago
+ 
+**** github:CyanogenMod/android_hardware_qcom_media ****
+beb3f68 : mm-video: vidc: Add support for picture order count <Deva Ramasubramanian> 2 years, 11 months ago
+ 
+**** github:CyanogenMod/android_hardware_ril ****
+a9c266d : reference-ril: Return success for RIL_REQUEST_ALLOW_DATA <Diogo Ferreira> 2 days ago
+ 
+**** github:CyanogenMod/android_packages_apps_DeskClock ****
+1cf3c56 : Make new menu entry to link to cLock widget settings. <Martin Brabham> 8 months ago
+ 
+**** cmR:android_packages_apps_Settings ****
+684b997 : Settings: Fix some settings <lion0738> 31 hours ago
+16c38bd : Settings: Fix NFC Tap & pay removal <AdrianDC> 4 days ago
+73d63c2 : Add AudioFX and ViPER4Android Add embedded Kernel Adiutor to main settings <ZION959> 28 hours ago
+912d4ca : Settings: SlimDim - pref to listen on entire screen for touches [2/2] <Daniel Koman> 5 months ago
+f7da64b : Settings: SlimDim [2/2] <dankoman> 3 days ago
+30666d9 : Double tap to sleep on navigation bar [2/2] <TheMrcool212> 10 months ago
+18c8f46 : Navigation bar button color (2/2) <lichti1901> 3 days ago
+827b732 : Revert "Settings: Show Baseband version on MSIM devices" <Michael Bestas> 2 days ago
+c9c271d : Introduce SystemSettingsCheckBoxPreference <Danny Baumann> 1 year, 1 month ago
+8353698 : bluetooth: Show a refresh icon on the select devices screen <Diogo Ferreira> 1 year, 1 month ago
+20c040d : Settings: Conditionally remove Buttons tile from Dashboard <Brandon McAnsh> 1 year, 1 month ago
+716714a : Light settings: reduce tone if preview image color is very light <Sam Mortimer> 1 year, 1 month ago
+3e2025a : Settings: Show Baseband version on MSIM devices <Willi Ye> 1 year, 1 month ago
+9cd3524 : Always show band 0 (Automatic) <Dave Daynard> 2 years ago
+7423a61 : Add missing blacklist xxhdpi drawables. <Danny Baumann> 1 year, 1 month ago
+ 
+**** github:CyanogenMod/android_packages_apps_Trebuchet ****
+336600c : Trebuchet: Don't resize BubbleTextView based on all apps pref <cretin45> 35 hours ago
+c30f77d : Trebuchet: Adjust device profiles and add one for bacon <cretin45> 35 hours ago
+cc3bc30 : Trebuchet: Add migration for new messaging app <cretin45> 2 days ago
+0cabbc2 : Trebuchet: Auto collapse settings panel <cretin45> 2 days ago
+ 
+**** github:CyanogenMod/android_packages_providers_ThemesProvider ****
+8f6d976 : Use CmLockPatternUtils instead of LockPatternUtils <d34d> 2 days ago
+59167a4 : Re-apply live lock screen on update <d34d> 2 months ago
+ 
+**** github:CyanogenMod/android_packages_services_Telephony ****
+4ee48b4 : TelephonyService: Use user preferred nw for selections. <Adnan Begovic> 6 days ago
+ 
+**** github:CyanogenMod/android_system_bt ****
+bc32aeb : bt: Kill some logspam <Christopher R. Palmer> 23 hours ago
+ 
+**** github:CyanogenMod/android_vendor_cm ****
+33cff38 : cm: add Screencast by default <Scott Mertz> 3 days ago
+ 
+**** cmR:android_vendor_CMRemix ****
+e87f471 : build ultimate kernel (reverted from commit d2510895a2af6c99aded78cef353cddd4308a5b3) <ZION959> 51 minutes ago
+d251089 : build ultimate kernel <ZION959> 3 hours ago
+304b1cf : downgrade for viper4android v 2.3.4.0 <ZION959> 3 hours ago
+99d0b5c : update cmremix optimization for more testing <ZION959> 6 hours ago
+ 
+**** github:CyanogenMod/cm_platform_sdk ****
+afa4fef : ExtView: Add samples for using KeyguardExternalViews <d34d> 2 days ago
+8cc5a55 : ExtViews: Add callbacks for ExtView->Host communication <d34d> 3 days ago
+f2741cb : ExtView: Add keyguard specific interface for KeyguardExternalView <d34d> 3 days ago
+d1f0a6e : CMSettings: fixup ENABLE_PEOPLE_LOOKUP res <Khalid Zubair> 2 days ago
+6ff47d4 : CMSettings : Add default overlay for people lookup <Danesh M> 2 days ago
+7bdcaa5 : cmsdk: Fixup stub generation. <Adnan Begovic> 2 days ago
+2ba238b : ProfileManagerService: fix broadcasting crash <Roman Birg> 2 days ago
+ 
+**** github:CMRemix/proprietary_vendor_samsung ****
+0dc1fff : update proximity sensor <ZION959> 5 hours ago
+ 

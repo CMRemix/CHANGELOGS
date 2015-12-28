@@ -1,0 +1,185 @@
+
+**** cmR:CMRemix ****
+4d3843a : revert: revert: track compiled-rt frameworks/rs and prebuilts/ndk <ZION959> 2 hours ago
+fad368e : revert track compiled-rt frameworks/rs and prebuilts/ndk <ZION959> 13 hours ago
+c0e41bd : track cmremix updater and ota <ZION959> 14 hours ago
+bf71d9a : track various sm gcc <ZION959> 5 days ago
+0356f02 : Update for 6.0.1_r3 <Steve Kondik> 8 days ago
+ 
+**** cmR:android_art ****
+b9d3c11 : Make sure debug flags mirror non-debug flags <Chet Kener> 7 weeks ago
+84ba027 : Disable Clang <ZION959> 10 days ago
+4b24e29 : art: Use Optimized compiler by default <Chet Kener> 7 weeks ago
+c838a03 : art: Disable Some Debugging <Chet Kener> 7 weeks ago
+29bd42b : art: allow devices to disable CAF bailout patches <Simon Shields> 10 days ago
+ 
+**** cmR:android_bionic ****
+ecc9846 : temp fixed for trlte build error [2/2] <ZION959> 5 weeks ago
+6d79500 : bionic: Do not allow LD_SHIM_LIBS for setuid executables <Christopher R. Palmer> 3 days ago
+d45ca0d : Make shim lib load failure non-fatal. <Danny Baumann> 5 days ago
+3dc9613 : libc: ARM64: denver64: optimized memmove breaks denver <André Pinela> 5 days ago
+4c6ac31 : bionic: Notify userspace about packets with CHECKSUM_UNNECESSARY <Subash Abhinov Kasiviswanathan> 5 weeks ago
+7ae68d1 : libc: AArch64: Tune memcpy <Wilco Dijkstra> 6 weeks ago
+b46dedc : libc: ARM64: improve performance in strlen <Wilco Dijkstra> 11 months ago
+aa25dc9 : libc: ARM64: optimize memmove <Wilco Dijkstra> 5 months ago
+c6067e8 : libc: ARM64: Optimize memcpy. <Wilco Dijkstra> 5 months ago
+e3681aa : libc: ARM64: optimize memset. <Wilco Dijkstra> 5 months ago
+d923296 : libc: ARM64: remove bcopy from memset <Jake Weinstein> 3 months ago
+d010c5a : Use __builtin_* in <math.h>. <Elliott Hughes> 4 months ago
+5c1212f : Bionic/libm: Prefer branches and VFP ABI. <Lucas Crowthers> 3 years, 4 months ago
+b190c6c : fix the mremap signature <Daniel Micay> 6 weeks ago
+9c4d4b5 : libc: arm: add optimized memchr implementation <Yingshiuan Pan> 8 months ago
+00bd88b : bionic: Detect userspace memory leak <Maunik Shah> 2 years, 5 months ago
+eff5c18 : Use bionic lock in pthread_internal_t. <Yabin Cui> 8 weeks ago
+78d297c : bionic: Update gcc to gnu11 to match cpp <mydongistiny> 6 weeks ago
+3bd07da : Performance: krait: Implement optimized versions of memmove <Xin Qi> 1 year, 4 months ago
+2ffc692 : libm: ARM: reorganize a bit to match ARM64 <Jake Weinstein> 4 months ago
+561c41f : Fix over read in strcpy/stpcpy/strcat. <Christopher Ferris> 3 months ago
+76caead : Make all labels local. <Christopher Ferris> 5 months ago
+25d4c2b : libc: krait: Use performance version of memcpy <Brent DeGraaf> 2 years, 2 months ago
+ad21b95 : Remove pushes from memsets (krait/cortex-a9). <Christopher Ferris> 5 months ago
+a850ae8 : Replace bx lr with update of pc from the stack. <Christopher Ferris> 5 months ago
+6d39816 : libc: Avoid building some extra debug stuff. <Kyle Repinski> 8 months ago
+dc6669a : libc: arm: Add asm strchr. <Kyle Repinski> 8 months ago
+e8d7a3a : cortex-a9: Fix reference to __memcpy_base_aligned. <Kyle Repinski> 8 months ago
+c610883 : libc: arm: Add __aeabi_d2uiz to libgcc_compat. <Kyle Repinski> 8 months ago
+0e69dd9 : libc: Don't build malloc leak check for userdebug. <Kyle Repinski> 8 months ago
+664809c : libc: arm: Update libgcc_compat. <Kyle Repinski> 8 months ago
+95f7e4f : libc: Fix strict-aliasing violations. <Kyle Repinski> 8 months ago
+b180939 : Add md5 back to libc/bionic for targets that need it. <Kyle Repinski> 1 year, 1 month ago
+e2a3f58 : Add optimized cortex-a7/cortex-a53 memset/memcpy. <Christopher Ferris> 5 months ago
+3c710df : Define char16_t and char32_t to make gcc 5.1 happy <Bernhard Rosenkränzer> 8 months ago
+ca68c0c : Speed-up ARM memcmp by leveraging NEON. <Kyle Repinski> 8 months ago
+73d06c9 : Disable Clang <frap129> 10 months ago
+055a66c : Sync with upstream NetBSD lib/libc/regex. <Elliott Hughes> 3 months ago
+beb6e08 : Sync with upstream NetBSD lib/libc/regex. <Elliott Hughes> 3 months ago
+9a9572d : Sync with upstream NetBSD lib/libc/regex. <Elliott Hughes> 3 months ago
+cf92738 : Ensure that readlink has access to /proc/self/fd <Dmitriy Ivanov> 9 weeks ago
+cd92787 : Update timezone data to 2015g <Neil Fuller> 10 weeks ago
+f32b689 : Log dlopen failures caused by text relocations <Dmitriy Ivanov> 9 weeks ago
+a828a2f : linker: don't pass dlextinfo to dependent loads. <Torne (Richard Coles)> 3 months ago
+ 
+**** github:CyanogenMod/android_bootable_recovery ****
+52d12a0 : recovery: Assimilate minivold <ZION959> 12 days ago
+ec63d56 : Track usage of Vector / SortedVector from libutils DO NOT MERGE <Narayan Kamath> 3 months ago
+ 
+**** omni:android_bootable_recovery ****
+dc3bc46 : Rename libexfat target to prevent conflicts <Ethan Yonker> 7 days ago
+eb028c1 : pixelflinger-twrp: don't build with clang <Dan Pasanen> 5 weeks ago
+ 
+**** github:CyanogenMod/android_cts ****
+88c326c : DO NOT MERGE ANYWHERE: bumping CTS 5.1 to R4 <Daniel Xie> 7 weeks ago
+473c226 : DO NOT MERGE: Add FEATURE_CAMERA_EXTERNAL to front-facing camera condition <Takayuki Hoshi> 3 months ago
+658da1e : Add FEATURE_CAMERA_EXTERNAL to front-facing camera condition <Takayuki Hoshi> 3 months ago
+49175b0 : DO NOT MERGE: Fix ION memory leak for camera2 testStillPreviewCombination tstcase <Junjie Hu> 8 months ago
+60e3381 : DO NOT MERGE: Camera: add testAllOutputYUVResolutions back to known failure <Yin-Chia Yeh> 7 weeks ago
+d476b03 : Increase wait timeout for ContextWrapperTest <Fyodor Kupolov> 7 weeks ago
+236f986 : Change CTS verifier HifiUltrasound Tests text to be consistent with CDD text <Raymond> 7 weeks ago
+c0f70ce : CTS: DO tests for DISALLOW_CONFIG_VPN <Mahaver Chopra> 9 weeks ago
+73d9ee1 : Fix CameraManagerTest logic. <Przemyslaw Szczepaniak> 8 weeks ago
+3905dd3 : cts: Skip encodeDecode tests when there is no needed encoder <Prashant Malani> 3 months ago
+d40ad32 : Stop android.print tests from executing if the device does not support print. <Michael Kwan> 8 weeks ago
+90cbf47 : DO NOT MERGE Add running time hints to CTS package config <Jed Estep> 8 weeks ago
+6dcff9f : CameraITS: use linear tonemap in test_exposure <Gaurav Batra> 4 months ago
+c004f8f : TIF: Make sure that Cursor.moveToNext() is called before using Cursor <Dongwon Kang> 8 weeks ago
+16a9ec8 : DO NOT MERGE: Adding testConnectivityConstraintExecutes_withMobile to knownfailure list. <Daniel Xie> 8 weeks ago
+ace696d : Adding testConnectivityConstraintExecutes_withMobile to knownfailure list. <Daniel Xie> 8 weeks ago
+032fd6b : DO NOT MERGE CTS version is now 6.0_r1.5 <Daniel Xie> 8 weeks ago
+37b9b9b : AudioRecordTest: Remove assert check on cold input start time <Andy Hung> 8 weeks ago
+f7f7d59 : Stop android.print tests from executing if the device does not support print. <Michael Kwan> 8 weeks ago
+761b466 : Restrict telephony.cts.CellInfoTest to Devices with FEATURE_TELEPHONY <Nathan Harold> 9 weeks ago
+35addd3 : DO NOT MERGE: Disable two multi user tests for TV devices <Dongwon Kang> 3 months ago
+6aab9db : DO NOT MERGE Add running time hints to CTS package config <Jed Estep> 8 weeks ago
+b8a45aa : add get_achievable_rates.py under cts-media tools <Lajos Molnar> 9 weeks ago
+ffc3697 : Squashed commit of the following: <Marco Nelissen> 8 weeks ago
+d301957 : testReleaseAfterFlush: extend to audio encoders <Robert Shih> 9 weeks ago
+a41d497 : Squashed mnc-dev changes: <Daniel Xie> 8 weeks ago
+1a9e4e5 : testDecodeAfterFlush: extend to audio <Robert Shih> 9 weeks ago
+0fda173 : security: Test mediaserver crash against an invalid MIDI file <Wonsik Kim> 3 months ago
+793e295 : CTS verifier issue "Screen Pinning Test will fail" <Junjie Hu> 9 weeks ago
+13c1585 : MediaMetadataRetrieverTest: add new test to handle overflowed padding. <Wei Jia> 9 weeks ago
+859f10d : In tests tearDown() method, ignore IllegalArgumentException from unregisterReceiver method. Sometimes the tests may have failed to register a receiver. In such cases, trying to unregister it later on in tearDown() is unnecessary and so ignore IllegalArgumentException from unregisterReceiver. <Vasu Nori> 9 weeks ago
+db56817 : CTS: Test for sound capture <Mahaver Chopra> 9 weeks ago
+7fe1f92 : DO NOT MERGE CtsVerifier: Remove failed cases in BYOD Disable NFC beam <Alex Chau> 9 weeks ago
+f55c3f6 : Use requestNetwork with all transport types that hardware features report <Zoltan Szatmary-Ban> 9 weeks ago
+8dc18fe : Camera: allow FULLHD_ALT in jpeg sizes <Yin-Chia Yeh> 9 weeks ago
+2a920db : Fix for android.media.cts.DecoderTest#testH264Decode60fps1920x1080 <Kuldeep Modi> 9 weeks ago
+f08dc24 : media: add mpeg4 qcif test to VideoDecoderPerfTest. <Ronghua Wu> 3 months ago
+a7b5b95 : Fix test incompatibilities with Nemo (watch) device. <Paul McLean> 9 weeks ago
+384f95e : Capture Build.VERSION.BASE_OS and Build.VERISON.SECURITY_PATCH <Stuart Scott> 9 weeks ago
+2751d70 : Change TextView break strategy to meet Android Wear configuration. <Seigo Nonaka> 9 weeks ago
+2440aa9 : DO NOT MERGE Capture fields in CTS: ro.build.version.base_os ro.build.version.security_patch <Nicholas Sauer> 4 months ago
+7118cd4 : Camera2: fix video stabilization test <Zhijun He> 9 weeks ago
+3691968 : DO NOT MERGE security: Test OOB arbitrary write at AMessage::FromParcel <Wonsik Kim> 3 months ago
+b69bdab : DO NOT MERGE security: Test OOB arbitrary write at AMessage::FromParcel <Wonsik Kim> 3 months ago
+e272993 : Camera: fix wrong assertion logic <Yin-Chia Yeh> 9 weeks ago
+bc0d8c6 : MotionEvents must check for invalid sample/pointer counts <Adam Lesinski> 9 weeks ago
+83eea62 : Ensure test notification is properly announced <Ned Burns> 10 weeks ago
+ce4cf2e : Revert "CTS5.1_r2 : Fix testActionNextAndPreviousAtGranularityLineOverTextExtend" <Daniel Xie> 10 weeks ago
+a604e38 : [PATCH] CTS4.4 : Fix ThemeHostTest#testHoloThemes <Takeshi Katae> 10 weeks ago
+5e689a8 : Allow number of supported Bitmap to be greater than 4. <Wally Yau> 10 weeks ago
+ 
+**** aosp:platform/dalvik ****
+f8ed7d3 : Fixes unnecessary multi-merge steps. <Esteban de la Canal> 3 months ago
+ 
+**** github:CyanogenMod/android_development ****
+23936f4 : idegen: don't use hardcoded out directory <Khalid Zubair> 7 days ago
+28bb8be : Update the Connectivity debug app to the multinetwork API. <Lorenzo Colitti> 9 weeks ago
+19923db : Update build tools rev to <API>.0.2. DO NOT MERGE. <Xavier Ducrohet> 9 weeks ago
+afe2d24 : Fix llvm-rs-cc.exe crash for windows <Miao Wang> 9 weeks ago
+c60faf6 : Update system images to revision 4 <bohu> 3 months ago
+ 
+**** github:CyanogenMod/android_device_qcom_common ****
+874fa19 : dtbtool: Recursively search input directory for dtb files <Scott Mertz> 7 days ago
+ 
+**** github:CyanogenMod/android_device_qcom_sepolicy ****
+2e1893b : sepolicy : Add permissions to Camera HAL <Matt Trusten> 7 weeks ago
+5e9f634 : sepolicy: Add btnvtool to be part bluetooth domain <Srinu Jella> 5 weeks ago
+98b3548 : Allow ANR sepolicy read permissions for RIDL/LK2 <Divya Sharma> 6 weeks ago
+ 
+**** aosp:device/sample ****
+afdacb6 : Remove TMO & MetroPCS entries for mcc/mnc 310/580 in apn-conf <Sanket Padawe> 7 weeks ago
+136d262 : Updating MTS Canada APN config (302-660) <Eliseu Massing> 3 months ago
+d7a1fbf : Fix APN configs for SoftBank JP (MCCMNC=44020) per their request. This issue was reported on Shamu with mnc-release, but we couldn't fix it before M OTA because of schedule issue. <Takeshi Kishimoto> 9 weeks ago
+8d46143 : Change to add user_visible field to Carriers table. <Amit Mahajan> 10 weeks ago
+ 
+**** github:CMRemix/android_device_samsung_trlte-common ****
+63a389f : test new extract and setup make proprietary files <ZION959> 4 days ago
+ddf8961 : trlte-common: Add rmt_storage shim <ZION959> 3 weeks ago
+fa57e17 : trlte-common: Add RIL shim library <ZION959> 4 weeks ago
+f483957 : revert: trlte-common: Update partition info (for now) <ZION959> 4 weeks ago
+74835f4 : trlte-common: general update <Hamada Badr> 4 weeks ago
+ 
+**** github:CMRemix/android_device_samsung_trltetmo ****
+774c62c : update ril <ZION959> 12 hours ago
+1e829fe : trlte: overlay valid network modes <ZION959> 7 days ago
+2d0128b : addd operator.java <ZION959> 5 days ago
+14ba59b : update ll Ril <ZION959> 5 days ago
+ 
+**** aosp:platform/docs/source.android.com ****
+0fda4ae : Docs: Change to the Fingerprint HAL doc <Bert McMeen> 8 weeks ago
+5819eee : Docs: Android 6.0 CDD initial release <Bert McMeen> 9 weeks ago
+ffb1309 : CDD: Changelog addition for app links requirement <Bert McMeen> 9 weeks ago
+903634a : CDD: Update intent resolution requirements for app links <Unsuk Jung> 9 weeks ago
+48289c6 : Change keymaster and gatekeeper requirements to strong recommendations. <Shawn Willden> 9 weeks ago
+857d22c : Add requirements for IPv6 implementation. <Lorenzo Colitti> 9 weeks ago
+727f7d7 : CDD: Update resource numbers in section 7-end. Update Resources list. <Danielle Roberts> 10 weeks ago
+2c0bb6b : CDD: Relax NfcV requirement from MUST to STRONGLY RECOMMENDED <Atsushi Mito> 10 weeks ago
+7e1c3b1 : CDD: Updates to changelog and misc. fixes <Bert McMeen> 10 weeks ago
+516abae : CDD: Renumber Resources in the CDD <Danielle Roberts> 10 weeks ago
+e97c923 : CDD: Add new sections for power-saving modes and accounting <Clay Murphy> 2 months ago
+16032dc : CDD: Clarify relationship of managed profile and multiple users <Unsuk Jung> 10 weeks ago
+accc58c : CDD: Clarify language around Assistant requirements <Clay Murphy> 10 weeks ago
+9ddf383 : CDD: Update video decoding req. to support up to screen size <Unsuk Jung> 3 months ago
+302ee7a : CDD: require mDNS packet support on Wi-Fi even in low-power <Unsuk Jung> 3 months ago
+ 
+**** aosp:platform/external/aac ****
+48b330d : Remove __DATE__/__TIME__ <Dan Willemsen> 8 weeks ago
+ 
+**** github:CyanogenMod/android_external_android-clat ****
+32961d0 : clatd: Relay checksum information from packet socket to TUN interface <Subash Abhinov Kasiviswanathan> 7 weeks ago
+b38ac86 : Revert "clatd: Use the TUN_NOCHECKSUM flag for the tun device" <Subash Abhinov Kasiviswanathan> 7 weeks ago
+ 
+**** cmR:android_external_chromium-webview ****
+5a40ec2 : Update webview to version 48.0.2564.37 (arm+arm64) <mydongistiny> 5 days ago
+ 

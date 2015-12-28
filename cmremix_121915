@@ -1,0 +1,183 @@
+
+**** github:CyanogenMod/android_bootable_recovery ****
+075c29d : recovery: Assimilate minivold <ZION959> 2 weeks ago
+3010668 : recovery: fstools: Honor TARGET_USES_EXFAT <Tom Marshall> 5 days ago
+ 
+**** omni:android_bootable_recovery ****
+58a4133 : dosfstools: restore buildability with Android 4.4 <that> 12 days ago
+d18a821 : Use ioctl to get block device size <Ethan Yonker> 6 days ago
+74db157 : Multiple Language Support <Ethan Yonker> 7 weeks ago
+28f0a92 : gui: stock theme rework <z31s1g> 6 weeks ago
+ 
+**** github:CMRemix/android_device_samsung_trlte-common ****
+e2b1a93 : allow bluetooth access cid file & don't set permissions for CID file <ZION959> 20 hours ago
+bf73853 : enabled hardware keys <Zion-Tran> 12 months ago
+8e5c35c : ril: Fix incoming calls <ZION959> 20 hours ago
+ 
+**** github:CyanogenMod/android_external_mksh ****
+d9b3f0d : mksh: Alias ls to /system/xbin/ls <Steve Kondik> 2 days ago
+ 
+**** github:CyanogenMod/android_external_stagefright-plugins ****
+566f1cb : stagefright-plugins: Return supported profiles for MPEG4 <Steve Kondik> 2 days ago
+ 
+**** github:CyanogenMod/android_external_toybox ****
+0e32430 : toybox: Symlink 'ls' to xbin <Diogo Ferreira> 3 days ago
+ 
+**** cmR:android_frameworks_av ****
+ed8be1e : media: Disable extra debug <Ethan Chen> 2 days ago
+7b3a9da : nuplayer: Error checks for PCM format extensions <Steve Kondik> 2 days ago
+53ac41b : stagefright: Fix some aac file cannot be played back <Keith Mok> 3 days ago
+ 
+**** cmR:android_frameworks_base ****
+dc84262 : SystemUI: More stings cleanup on QS tiles <Michael Bestas> 11 months ago
+c682ba5 : core: String improvements from cm-12.1 <Michael Bestas> 30 hours ago
+7651c9f : pm: Update PackageManagerServiceTests <Adnan Begovic> 25 hours ago
+753a484 : Lockscreen: Introduce window type TYPE_KEYGUARD_PANEL <d34d> 10 days ago
+f128c0c : base: Complete sms prompt interfaces. <Adnan Begovic> 3 days ago
+2368c7d : SystemUI : Add DemoModeActivity hook for settings <Danesh M> 32 hours ago
+d171b9a : Option to use volume keys to control media volume anytime (2/2) <Pawit Pornkitprasan> 2 years, 8 months ago
+46a77b3 : Port over linked volumes from 12.1 <Adnan Begovic> 2 years, 2 months ago
+ 
+**** cmR:android_frameworks_native ****
+8befd14 : sensor: Allow devices to skip the permission request <Christopher N. Hesse> 3 weeks ago
+ 
+**** cmR:android_frameworks_opt_telephony ****
+d5ab179 : telephony: Complete interfaces for sms prompt. <Adnan Begovic> 3 days ago
+ 
+**** github:CyanogenMod/android_hardware_qcom_audio ****
+d9ff371 : hal: Actually make low-latency capture optional <Gabriele M> 2 days ago
+44b0192 : Add more allowed frame counts to be configured <Glenn Kasten> 8 months ago
+ 
+**** github:CyanogenMod/android_hardware_qcom_audio ****
+eec6acf : audio: Fix flac offload not working <Keith Mok> 2 days ago
+ 
+**** github:CyanogenMod/android_hardware_qcom_display ****
+b9f52c3 : overlay: add tertiary display definition in overlay <Vinu Deokaran> 3 days ago
+ 
+**** github:CyanogenMod/android_hardware_qcom_display ****
+7a75b3e : gralloc: add cflag to use nv21 format for camera preview <codeworkx> 6 hours ago
+ 
+**** github:CyanogenMod/android_hardware_qcom_display ****
+5bdcfa4 : Additional pathmap & build fixes <Scott Mertz> 8 days ago
+ 
+**** github:CyanogenMod/android_hardware_qcom_media ****
+d84d430 : media: Avoid collision with FFMPEG plugin <Steve Kondik> 1 year, 7 months ago
+ 
+**** github:CyanogenMod/android_packages_apps_BluetoothExt ****
+5b2f3d7 : BluetoothExt: Remove unused strings <Michael Bestas> 2 days ago
+ 
+**** github:CyanogenMod/android_packages_apps_CMFileManager ****
+56d1485 : cmfm: this is TOYBOX <Gianmarco Reverberi> 5 weeks ago
+a8625e0 : Fix filemanager not launch <Keith Mok> 7 weeks ago
+85732e2 : CMFileManager: remove org.apache.http import <Dan Pasanen> 10 weeks ago
+aa616f5 : Automatic translation import <Michael Bestas> 3 days ago
+4d187b0 : Automatic translation import <Michael Bestas> 3 weeks ago
+8c39954 : Automatic translation import <Michael Bestas> 6 weeks ago
+ab89abc : Automatic translation import <Michael Bestas> 7 weeks ago
+b2e715e : Automatic translation import <Michael Bestas> 8 weeks ago
+06b63a7 : Thumbnail update on copy and overwrite issue of pictures <root> 9 weeks ago
+3a4d70f : Use System Resolver <herriojr> 9 weeks ago
+25bcc73 : Secure file moving issue fix <root> 2 months ago
+b284ba6 : Prevent NPE collecting title, which was preventing the print action.  Use Uri for title and timestamp for print title. <Martin Brabham> 10 weeks ago
+d8e4b49 : Automatic translation import <Michael Bestas> 10 weeks ago
+0e79150 : Make MimeTypes Lowercase <herriojr> 3 months ago
+c4cb9fb : Automatic translation import <Michael Bestas> 3 months ago
+0420929 : Adding a few MS MimeTypes <herriojr> 3 months ago
+d28d148 : Check If System Wants Intent <herriojr> 3 months ago
+085427a : Automatic translation import <Michael Bestas> 3 months ago
+7676605 : [CMFileManager] Fix fail to move a folder <kai.cao> 3 months ago
+93d66a3 : Automatic translation import <Michael Bestas> 3 months ago
+29cfd7e : CMFileManager : Switch to checked states <Danesh M> 3 months ago
+72920bf : Indicate number of items to be deleted in confirmation dialog <James Hiew> 3 months ago
+0f51785 : Automatic translation import <Michael Bestas> 4 months ago
+634a2b8 : Fix bookmark string <Michael Bestas> 4 months ago
+1ad09f7 : Regex metacharacters result in error post search <Richard MacGregor> 4 months ago
+1a23b92 : Search: Fix race condition with results display <Stephen Bird> 4 months ago
+450f3d5 : CMFM: don't apply search filter when search hasn't started <Roman Birg> 4 months ago
+8895e1c : CMFM: fix search mime type filter not applying <Roman Birg> 4 months ago
+85032a6 : Bookmarks: check to see if a bookmark exists before adding it <Stephen Bird> 4 months ago
+37e57cf : Automatic translation import <Tom Powell> 4 months ago
+17d800a : FileManager: Fix shortcuts <Richard MacGregor> 4 months ago
+d5372f9 : Fix MediaScan issue w/ Deleting <Stephen Bird> 4 months ago
+530d6f6 : Automatic translation import <Tom Powell> 4 months ago
+037d635 : Fixed MediaScan Issue w/ Directories <herriojr> 4 months ago
+2bb6f04 : Fix Navigation back from Search <herriojr> 4 months ago
+ecc7159 : Refresh: stop refreshes in action <Stephen Bird> 4 months ago
+4083b8a : Automatic translation import <Michael Bestas> 4 months ago
+d3154ae : NavigationActivity: Do not reload screen on rotation <LuK1337> 4 months ago
+ceef4c4 : Fix FileSystemInfo's ImageView shows incorrect picture in BreadcrumbView . <kai.cao> 5 months ago
+2444ef3 : Fix improper exception handling during copy operation. <Matt Garnes> 4 months ago
+21560d8 : CMFM: improved search performance <Roman Birg> 5 months ago
+bd79d58 : Improve copy/move performance with nio and reintroduce cancel. <Matt Garnes> 4 months ago
+b5c78a6 : Automatic translation import <Tom Powell> 4 months ago
+602f3de : RTL: move buttons to proper spot in nav drawer <Stephen Bird> 4 months ago
+eb58bd8 : Automatic translation import <Tom Powell> 4 months ago
+13879c7 : Fix don't pop up "Actions" menu when long pressing on a file/folder after open and close "Use swipe gesture". <kai.cao> 5 months ago
+6f6094d : Fixed ANR & Memory Leak Associated with 3GP <herriojr> 5 months ago
+c740f92 : Fixed search to actually open the clicked folder <herriojr> 5 months ago
+ddb22bb : Fixed ANR associated with SecureStorage <herriojr> 5 months ago
+cb05075 : Revert "Made NavigationView reliant on FileObserver to keep up to date." <herriojr> 5 months ago
+ 
+**** github:CyanogenMod/android_packages_apps_Contacts ****
+07db402 : Contacts: More strings cleanup <Michael Bestas> 29 hours ago
+9984447 : Revert "Support adding contacts to blacklist and whitelist" <Michael Bestas> 29 hours ago
+ 
+**** github:CyanogenMod/android_packages_apps_Dialer ****
+7a55259 : Dialer: Update a string from cm-12.1 <Michael Bestas> 29 hours ago
+ 
+**** github:CyanogenMod/android_packages_apps_Gallery2 ****
+65196ed : Revert "Gallery2: Properly declare the own permissions" <Michael Bestas> 9 hours ago
+cf90a15 : Gallery2: Properly declare the own permissions <AdrianDC> 4 weeks ago
+ 
+**** github:CyanogenMod/android_packages_apps_InCallUI ****
+b96ed6e : InCallUI: Update a string from cm-12.1 <Michael Bestas> 29 hours ago
+ 
+**** cmR:android_packages_apps_Settings ****
+396f12d : Settings: Move NFC payment under NFC category <Michael Bestas> 12 hours ago
+a9b6e2c : Settings: update About screen device model fields <Roman Birg> 8 months ago
+c7c9553 : Power Menu: remove power as an option <Dave Kessler> 10 months ago
+429a4e6 : Settings: Add some more entries into 'SMS message limit' menu <kuci> 1 year, 11 months ago
+17a4c79 : Settings: Cleanup ALL the strings <Michael Bestas> 27 hours ago
+4b8a76a : settings: LiveDisplay color profiles <Steve Kondik> 4 months ago
+5fc6f2e : Settings: Utilize frameworks sms prompt interfaces as fallback. <Adnan Begovic> 3 days ago
+ff9cea3 : Settings : Launch demo mode on triple tap of build date <Danesh M> 32 hours ago
+7cb203d : Settings : Cleanup control media volume toggle <Danesh M> 2 days ago
+efff568 : Settings : Add warning for lcd density <Danesh M> 2 days ago
+f2b1fc1 : Settings : Add volume link notification <Danesh M> 2 days ago
+d948c83 : setings: Fix livedisplay settings <Steve Kondik> 5 months ago
+b84189d : Settings: adapt lock screen visualizer toggle <AdrianDC> 3 days ago
+d73745d : Settings: Fix the SoundSettings activity and intents <AdrianDC> 3 days ago
+ 
+**** github:CyanogenMod/android_packages_apps_Trebuchet ****
+788d8e8 : Trebuchet: Fix some icon size and flush cache issues <cretin45> 29 hours ago
+4ee7080 : Trebuchet: Fix hidden folder list text color <cretin45> 31 hours ago
+8be2145 : Trebuchet: Ignore mnc/mcc config changes <cretin45> 2 days ago
+0db76b8 : Trebuchet: Exclude from recents <cretin45> 33 hours ago
+dca57f3 : Trebuchet: Add ability to disable the scroller completely <Martin Herndl> 3 days ago
+ 
+**** github:CyanogenMod/android_packages_apps_TvSettings ****
+6050e36 : TvSettings: Improve strings <Michael Bestas> 7 months ago
+ 
+**** github:CyanogenMod/android_packages_services_Telecomm ****
+438af33 : Telecom: fix test compilation <Roman Birg> 25 hours ago
+ 
+**** cmR:android_system_core ****
+f517c97 : Revert "Lose ls to toybox." <Diogo Ferreira> 3 days ago
+ 
+**** github:CyanogenMod/android_system_vold ****
+8610cec : minivold: Build as static library for linkage into recovery <ZION959> 2 weeks ago
+b0693d7 : Also change emulated device id separator from comma to underscore <Sam Mortimer> 2 days ago
+5fc50f6 : vold: dont't use commas in device names <morckx> 4 weeks ago
+b134799 : vold: hw_fde: fix OTA issues from L to M <Dinesh K Garg> 9 weeks ago
+ 
+**** github:CyanogenMod/android_vendor_cm ****
+076a1ea : sepolicy: Set the context for fsck.exfat/ntfs to fsck_exec <dhacker29> 13 days ago
+ 
+**** github:CyanogenMod/cm_platform_sdk ****
+9a83dc6 : cm: Improve permission strings <Michael Bestas> 26 hours ago
+582ba4c : ExtView: Allow window type and flags to be overridden <d34d> 5 days ago
+637e40f : Introduce KeyguardExternalView <Luis Vidal> 8 days ago
+b9d7733 : External views for cm13 <Chris Sarbora> 5 months ago
+9691d42 : Keyguard: Introduce 3rd party keyguard perms and utils <d34d> 10 days ago
+22ec538 : CMSDK : Remove VOLUME_LINK_NOTIFICATION <Danesh M> 2 days ago
+ 

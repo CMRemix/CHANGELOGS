@@ -1,0 +1,47 @@
+
+**** cmR:CMRemix ****
+7bbafb3 : track cmremix SetupWizard <ZION959> 24 hours ago
+ 
+**** github:CMRemix/android_device_samsung_trlte-common ****
+671a67a : move trlteRil to trlte-common <ZION959> 2 hours ago
+ 
+**** github:CMRemix/android_device_samsung_trltetmo ****
+d223723 : move trlteRIL to trlte-common <ZION959> 21 hours ago
+e97cbf3 : update new Ril <ZION959> 25 hours ago
+ 
+**** github:CMRemix/android_device_samsung_trltexx ****
+b3d86ba : moved trlteRil ..  to trlte-common <ZION959> 42 minutes ago
+ 
+**** cmR:android_frameworks_base ****
+55d9585 : [Base] HW keys tweaks <cristianomatos> 5 days ago
+1d4b912 : Removal of cm nav bar <Janson Kang> 3 weeks ago
+714d106 : Base: Navigation bar options (1/2) -Toggle on/off -Height and width <Lars Greiss> 5 days ago
+14ef698 : SystemUI: Add back status bar clock color option (1/2) <Allan Hedelain> 8 months ago
+7347b12 : Add back slim date customizations <Allan Hedelain> 5 weeks ago
+3d19eab : Toast icon switch [1/2] <LorDClockaN> 5 weeks ago
+2ea3bb8 : [squash} Correct RAM Bar text color and also made it themeable <cristianomatos> 5 days ago
+60ab111 : Add membar to recents options [1/2] <Dave Kessler> 9 months ago
+70e1f81 : Frameworks: add ability to disable bar color in battery saver mode (1/2) <Lars Greiss> 1 year ago
+6b53ca4 : Move KILL_APP_LONGPRESS_TIMEOUT to Settings.Secure <cristianomatos> 5 weeks ago
+aa40d6b : [Base] long press back to kill configurable timeout <cristianomatos> 5 weeks ago
+9c97168 : Add the ability to hide superuser status bar icon [1/2] <cristianomatos> 5 days ago
+e817000 : Don't refresh ui when screen off <Lars Greiss> 1 year ago
+3fbae7e : Battery saver enhancements <Alex Cruz> 8 weeks ago
+64a0bbe : Screen pinning improvements <Alex Cruz> 9 weeks ago
+ 
+**** cmR:android_packages_apps_Settings ****
+240e34d : [Settings] Nav bar tweaks + HW keys tweaks - Toggle on/off (CyanogenMod alredy did but only for hw keys devices). crDroid allow all devices to do that for those using PIE apps. - Nav bar dimensions (height and width) <cristianomatos> 23 minutes ago
+79a0594 : Settings: make unaccounted and over-counted battery usage configurable <Lars Greiss> 2 hours ago
+fceaa41 : Add marginov color picker <Lars Greiss> 2 hours ago
+cc0f4dc : Settings: add back status bar date & style options (2/2) <tristan202> 2 hours ago
+95131b6 : fixed changelog detection <ZION959> 9 hours ago
+4bfbc3f : Settings: Toast icon switch (2/2) <LorDClockaN> 23 hours ago
+dcb532f : Add membar to recents options [2/2] <ZION959> 23 hours ago
+310de21 : Settings: add ability to disable bar color in battery saver mode (2/2) <Lars Greiss> 23 hours ago
+5be0737 : [Settings] long press back to kill configurable timeout <cristianomatos> 23 hours ago
+ed7d786 : Add the ability to hide superuser status bar icon [2/2] - Add a simple option to hide the su icon placed in status bar when a session is active <cristianomatos> 23 hours ago
+249b4ec : Settings: Wi-Fi WPS Materialized icon <undefined> 1 year ago
+9eff34f : DeviceInfo: correctly grab the processor info from /proc/cpuinfo <yank555-lu> 11 months ago
+11468eb : DeviceInfo: remove unused variable in getMemInfo() <yank555-lu> 11 months ago
+686bba2 : [squash] Revert "Settings: Anonymous Statistics (CMStats)" <ZION959> 24 hours ago
+ 
