@@ -1,0 +1,176 @@
+
+**** cmR:CMRemix ****
+a1a455b : track services/Telephony & incallUI & toybox <ZION959> 3 hours ago
+ 
+**** cmR:android_build ****
+1b62eff : repopick: Allow commits to be excluded from a topic importation <AdrianDC> 3 weeks ago
+6f39ff2 : build: Add msm8952 as a QCOM board platform <Ethan Chen> 4 days ago
+6ef19eb : build: ipa &  lgomp &  fopenmp & fsanitize=leak <ZION959> 5 hours ago
+b4a481a : build: cmremix MM Optimization <ZION959> 5 hours ago
+ 
+**** github:CMRemix/android_device_samsung_trltetmo ****
+a0f9def : trltetmo: allow logcats at boot <ZION959> 83 minutes ago
+ 
+**** cmR:android_frameworks_base ****
+ff81963 : systemui: animate clear recents exit <Jorge Ruesga> 6 weeks ago
+e907501 : Add Restart SystemUI to reboot menu <LorDClockaN> 7 weeks ago
+2c4a832 : Lockscreen: Add timeout and instant lock option to slide lock (2/2) <KhasMek> 7 weeks ago
+521b4f1 : LockscreenShortcuts: Since Voice assist is default use its icon *previously cm had the phone icon even though voice assist is default <beanstown106> 7 weeks ago
+7607a99 : DocumentsUI: Add navigation bar color <Hernán Castañon Álvarez> 11 months ago
+d5ee71c : Show a more descriptive message when vendor.img is out of date <beanstown106> 7 weeks ago
+567c050 : Allow disabling of FC dialogs [1/2] <Jmz> 6 weeks ago
+ec659e9 : Status bar: Update notification count icons <XXMrHyde> 12 months ago
+0f48c0c : Insert Android Keystore JCA Provider at the correct position. <Alex Klyubin> 6 weeks ago
+48ff8d0 : Add 'bluetooth' user to the 'system' group. <Sharvil Nanavati> 4 months ago
+79a56a6 : Add hidden support for arrays of raw file descriptors <Casey Dahlin> 8 weeks ago
+5858c90 : Add NetworkSecurityConfigProvider.install <Chad Brubaker> 7 weeks ago
+16c930b : Dedupe trust anchors <Chad Brubaker> 7 weeks ago
+3bc08ec : Support X509TrustManagerExtensions methods <Chad Brubaker> 7 weeks ago
+9a689db : Add NetworkSecurityConfigProvider <Chad Brubaker> 7 weeks ago
+f7c9c34 : Add support for debug-overrides configuration <Chad Brubaker> 7 weeks ago
+a30024c : Support nested domain-config elements <Chad Brubaker> 7 weeks ago
+2675bd7 : Add xml source for network security configuration <Chad Brubaker> 8 weeks ago
+20f6e39 : Fix incorrect hstsEnforced lookup <Chad Brubaker> 7 weeks ago
+9550460 : Fix directory check in UserCertificateSource <Chad Brubaker> 8 weeks ago
+cb7c160 : Fix incorrect hasPerDomainConfigs check <Chad Brubaker> 8 weeks ago
+7663eeb : Use a builder for NetworkSecurityConfig <Chad Brubaker> 8 weeks ago
+33ed5e9 : Add initial network security config implementation <Chad Brubaker> 10 weeks ago
+9e28e31 : FWB: Hide power menu on lockscreen [1/2] <cmorlok> 4 weeks ago
+ab2c71b : Update camera and video ui sounds from new nexus's <beanstown106> 8 weeks ago
+4a77125 : Use Google Nexus Audio Files [1/2] <BeansTown106> 12 months ago
+4a64444 : FWB: Hold back to kill timeout (1/2) <LorDClockaN> 6 hours ago
+c1427e3 : SystemUI: dont roll but add :) <maxwen> 18 hours ago
+9c50168 : Power Menu animations [1/2] <Alex Cruz> 6 hours ago
+f2dce84 : Fix FC when killing apps with app circlebar <Alex Cruz> 4 weeks ago
+afe7a60 : Base: Add a controller for in-call proximity sensor (1/3) <Altaf-Mahdi> 8 months ago
+9fe1dbd : Profiles: option to disable lock screen device policy override (1/2) <Altaf-Mahdi> 4 months ago
+4cfa545 : QS: use CM's profiles vector from settings <Altaf-Mahdi> 5 months ago
+5faecbd : SystemUI: Update WiFi indicator drawable sizes <Matt Mower> 1 year ago
+63a7eb9 : Quick Settings: add some more tiles <Altaf-Mahdi> 3 months ago
+5d5c72f : InputMethodService: We are using CM's "Volume key cursor control" <Janson Kang> 9 months ago
+8cf90ea : FWB: PIE: Always on the right switch (1/2) <LorDClockaN> 2 weeks ago
+c0ec28d : FWB: PIE 3.0 (1/2) <drcmda> 15 hours ago
+3b86f4a : fb: add back all keyboard IME features back (1/2) <Lars Greiss> 2 years, 2 months ago
+4102712 : Lockscreen shortcuts improvements 2/2 <rogersb11> 2 weeks ago
+83e98ef : Add double tap option to lockscreen shortcuts <Griffin Millender> 8 months ago
+60f9173 : [1/2] base: move UI Tuner to dev settings <maxwen> 15 hours ago
+637fe69 : Live Volume Steps [1/2] <Meticulus> 9 months ago
+55ef703 : Update contextual headers per original from Omni <maxwen> 2 weeks ago
+34a2c9d : New contextual header images <Alexander Westphal> 2 weeks ago
+36a9dfc : DocumentsUI: fix list selection display <maxwen> 2 weeks ago
+21a97aa : On-the-go : Improve quick settings dialog <westcripp> 3 months ago
+3a9ecf3 : Fix battery bar glitch on NavBar <westcripp> 9 months ago
+1fd4b61 : Enable/disable notification color inversion [1/2] <Randall Rushing> 5 months ago
+e5e54bb : Set carrier label on keyguard to empty string if isWifiOnly device <LorDClockaN> 15 hours ago
+ 
+**** github:CMRemix/android_kernel_samsung_trlte ****
+cc6b8c2 : revert: cpufreq: cpu-boost: Resolve deadlock when waking up sync thread <ZION959> 46 minutes ago
+30fa246 : cpufreq: Add a notifer chain that governors can use to report information <ripng> 10 months ago
+3b90f8b : ARM: 8087/1: ptrace: reload syscall number after secure_computing() check <Will Deacon> 1 year, 6 months ago
+5c4bd8d : dwc3: gadget: Fix unbalanced pm usage count in dwc3_gadget_pullup() <Azhar Shaikh> 4 months ago
+c19e96e : cfg80211: Specify frame and reason code for NL80211_CMD_DEL_STATION <Jouni Malinen> 1 year, 2 months ago
+711bb6a : cfg80211: Convert del_station() callback to use a param struct <Jouni Malinen> 1 year, 2 months ago
+978d53d : cfg80211: Define macro to indicate bssid hint backport support <Edhar, Mahesh Kumar> 3 months ago
+360eec2 : diag: Mutex protect the deinitialization steps for diag clients <Katish Paran> 3 months ago
+708d855 : diag: Cleanup client information on the deinit Ioctl <Sreelakshmi Gownipalli> 5 months ago
+dd5fdc3 : msm: mdss: fix ret value during error case <Dhaval Patel> 9 months ago
+273201e : netfilter: xt_socket: add XT_SOCKET_NOWILDCARD flag <Eric Dumazet> 2 years, 6 months ago
+432126d : netfilter: xt_socket: fix broken v0 support <Harout Hedeshian> 5 months ago
+0809c40 : netfilter: xt_socket: use IP early demux <Eric Dumazet> 2 years, 7 months ago
+96ec61d : cpufreq: cpu-boost: Resolve deadlock when waking up sync thread <ZION959> 73 minutes ago
+2e5c376 : nl80211: use attributes to parse beacons <Simon Wunderlich> 2 years, 7 months ago
+eea202c : ALSA: compress: Add support to send codec specific data <Chaithanya Krishna Bacharaju> 5 months ago
+8561d72 : nl80211: Fix backport of struct wiphy_vendor_command <Anand N Sunkad> 4 months ago
+b833045 : diag: Update SSIDs, event ids and log codes <Ravi Aravamudhan> 8 months ago
+a2cddcd : msm: vidc: return EBUSY when hw is overloaded <Jia Meng> 1 year, 9 months ago
+19e55b4 : wcd9xxx: Fix NCP fclk level enable/disable sequence <Vidyakumar Athota> 6 months ago
+2d79815 : net: msm_rmnet: extend SET_INGRESS_DATA_FORMAT to include AGG data <Harout Hedeshian> 9 months ago
+6f85c37 : net: msm_rmnet: Add an IOCTL definition to deregister a net device <Ravinder Konka> 12 months ago
+2a2bca7 : SELinux: use deletion-safe iterator to free list <Jeff Vander Stoep> 8 months ago
+4dc91dd : Enable setting security contexts on rootfs inodes. <Stephen Smalley> 2 years, 8 months ago
+6b51a38 : revert: update to shamu oc voltage table, under clock 268mhz >>> 3.09ghz overclock <ZION959> 2 hours ago
+8cea680 : update defconfig <ZION959> 2 hours ago
+7c1386c : Revert "sched: Provide an easy method to log context switch latencies" <placiano> 3 months ago
+b5ca3a9 : sched: fix incorrect prev_runnable_sum accounting with long ISR run <Joonwoo Park> 6 months ago
+a0e1ee5 : sched: fix race conditions where HMP tunables change <Joonwoo Park> 9 months ago
+f6a0547 : sched: check HMP scheduler tunables validity <Joonwoo Park> 9 months ago
+3e25538 : sched: add preference for prev_cpu in HMP task placement <Steve Muckle> 1 year ago
+da785de : sched: optimize best_small_task_cpu() loop <Joonwoo Park> 7 months ago
+2a6b58a : sched: optimize select_best_cpu() where !sched_enable_power_aware <Joonwoo Park> 7 months ago
+5410bf1 : sched: optimize select_best_cpu() with same power cost CPU mask <Joonwoo Park> 7 months ago
+7318275 : sched: look for least busy and fallback CPU only when it's needed <Joonwoo Park> 7 months ago
+a474f15 : sched: Optimize the select_best_cpu() "for" loop <Syed Rameez Mustafa> 7 months ago
+bf488da : sched: Optimize select_best_cpu() to reduce execution time <Syed Rameez Mustafa> 7 months ago
+505f8bd : Revert "sched: add preference for prev_cpu in HMP task placement" <Pavankumar Kondeti> 5 months ago
+37d7a7e : sched: report loads greater than 100% only during load alert notifications <Srivatsa Vaddagiri> 8 months ago
+6ed9414 : futex: Implement lockless wakeups <Davidlohr Bueso> 8 months ago
+f36ddb4 : sched: Implement lockless wake-queues <Peter Zijlstra> 8 months ago
+22ff282 : sched: do not set window until sched_clock is fully initialized <Steve Muckle> 1 year, 1 month ago
+69d308d : sched: tighten up jiffy to sched_clock mapping <Steve Muckle> 1 year, 2 months ago
+3047254 : sched_clock: Avoid corrupting hrtimer tree during suspend <Stephen Boyd> 1 year, 5 months ago
+19bdfd0 : sched_clock: Add support for >32 bit sched_clock <Stephen Boyd> 2 years, 5 months ago
+b19c9c7 : sched_clock: Use an hrtimer instead of timer <Stephen Boyd> 2 years, 5 months ago
+9d7eab6 : sched_clock: Use seqcount instead of rolling our own <Stephen Boyd> 1 year, 11 months ago
+38560de : clocksource: Extract max nsec calculation into separate function <Stephen Boyd> 2 years, 5 months ago
+0865af1 : sched_clock: Make ARM's sched_clock generic for all architectures <Stephen Boyd> 2 years, 7 months ago
+d7a47ce : cpufreq: interactive: enable use_sched_load early <Hanumath Prasad> 6 months ago
+ 
+**** cmR:android_packages_apps_Settings ****
+e0277d5 : Lockscreen: Add timeout and instant lock option to slide lock (1/2) <KhasMek> 5 hours ago
+5ba0bc7 : Allow disabling of FC dialogs [2/2] <Jmz> 5 hours ago
+5be222c : Temasek Extra Info <Alex Cruz> 5 hours ago
+426f2d7 : Settings: Hold back to kill timeout (2/2) <LorDClockaN> 5 hours ago
+d893f40 : Profiles: option to disable lock screen device policy override (2/2) <Altaf-Mahdi> 5 hours ago
+ 
+**** github:CMRemix/proprietary_vendor_samsung ****
+ad4cfa4 : update blobs for sprint tw N910PVPS4COK1 <ZION959> 3 days ago
+0dc1fff : update proximity sensor <ZION959> 5 days ago
+c2eedaa : update adreno driver for trlte <ZION959> 13 days ago
+3adc359 : update new blobs <ZION959> 13 days ago
+e84ac48 : smdk4412-common: use hammerhead drm blobs <Simon Shields> 3 weeks ago
+7b8be40 : Revert "d2: Use rild and libril.so from Galaxy A5 lollipop" <Dan Pasanen> 3 weeks ago
+f98e011 : klteduos: Update proprietary libraries <ljzyal> 3 weeks ago
+c04df9f : kltechn: Update proprietary libraries <ljzyal> 3 weeks ago
+623ae17 : kltechnduo: Update proprietary libraries <ljzyal> 3 weeks ago
+c99ad0f : Revert "smdk4412-common: wifi firmware update from i9305" <Dan Pasanen> 3 weeks ago
+7edba4f : smdk4412-common: wifi firmware update from i9305 <DerTeufel> 1 year ago
+2309aa0 : jf: add back libdivxdrmdecrypt dependencies <Dan Pasanen> 3 weeks ago
+78b5da0 : msm8960: add back libdivxdrmdecrypt dependencies <Dan Pasanen> 3 weeks ago
+3a11af2 : Revert "serrano: Use rild and libril.so from Galaxy A5 lollipop" <Arne Coucheron> 3 weeks ago
+2939adb : Revert "serrano: Use rild/libril blobs from I9505" <Arne Coucheron> 3 weeks ago
+57261ba : jf: remove blobs we no longer use <Dan Pasanen> 4 weeks ago
+0c3bc36 : serrano: Kill mm-parser blobs <Arne Coucheron> 5 weeks ago
+17e9565 : serrano: Use rild/libril blobs from I9505 <Arne Coucheron> 5 weeks ago
+21d3bd0 : treltexx: Add missing IR Blaster HAL <Christopher N. Hesse> 4 weeks ago
+302d200 : jf: remove mm-parser <Dan Pasanen> 5 weeks ago
+821f671 : msm8960: remove mm-parser <Dan Pasanen> 5 weeks ago
+dc7b5bb : smdk4412-common and galaxys2-common:Mali API 29 <rogersb11> 9 months ago
+7837360 : i9300: use grouper blobs for GPS <forkbomb> 5 weeks ago
+61507f8 : klte: copy libdsi_netctrl.so to correct place <Matt Filetto> 5 weeks ago
+8fb744b : klte: add missing gps dependent libs <Matt Filetto> 5 weeks ago
+4fed5fe : mondrianwifi: update widevine from hammerhead-mra58k <Christopher R. Palmer> 6 weeks ago
+6bc8a62 : mondrianwifi: update adreno from hammerhead-mra58k <Dan Pasanen> 8 weeks ago
+1920d15 : jf: blob gps from OK1 <NucWin> 6 weeks ago
+d428c32 : n5100 : RIL blobs from 4.4.4 <RGIB> 6 weeks ago
+ca82c52 : omap4: gralloc: Recognize GRALLOC_USAGE_CURSOR as a valid usage flag. <Kyle Repinski> 6 weeks ago
+c6395f6 : Initial import of treltexx (Galaxy Note 4 Exynos) blobs <Christopher N. Hesse> 6 weeks ago
+965f6ef : klte: Update proprietary libraries <Ethan Chen> 6 weeks ago
+a025732 : kltespr: Update proprietary libraries <Ethan Chen> 6 weeks ago
+5e93e62 : klte-common: Update Adreno libraries <Ethan Chen> 6 weeks ago
+8c87bf6 : klte-common: Update proprietary libraries <Ethan Chen> 6 weeks ago
+a663bc3 : jflteusc: Move to jflter970 <Paul Keith> 7 weeks ago
+6a74fe4 : jflte[vzw,spr,usc]: remove proprietary libcnefeatureconfig <Dan Pasanen> 7 weeks ago
+543caf2 : d2: Use rild and libril.so from Galaxy A5 lollipop <Arne Coucheron> 7 weeks ago
+6d2dc57 : d2: hex libqc-opt for M <Dan Pasanen> 8 weeks ago
+40d1519 : d2: update blob list <Dan Pasanen> 8 weeks ago
+a74e04e : jf: update blobs and de-commonize <Dan Pasanen> 8 weeks ago
+1c90390 : d2: update widevine from razor-mra58k <Dan Pasanen> 9 weeks ago
+fc0784d : jf: update widevine from razor-mra58k <Dan Pasanen> 9 weeks ago
+a2185a9 : serrano: DRM libs from Flo MRA58K <Arne Coucheron> 9 weeks ago
+2f129e9 : missed adreno blobs <Shareef Ali> 9 weeks ago
+ab28b57 : Revert "serrano: Remove DRM libs" <Arne Coucheron> 9 weeks ago
+b749e15 : serrano: Use rild and libril.so from Galaxy A5 lollipop <Arne Coucheron> 10 weeks ago
+3ee37f9 : serrano: Remove DRM libs <Arne Coucheron> 10 weeks ago
+0693714 : Update manta for M <Scott Warner> 10 weeks ago
+31fe112 : klte-common: Update Adreno libraries from hammerhead <Ethan Chen> 10 weeks ago
+ 

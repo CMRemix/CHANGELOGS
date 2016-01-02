@@ -1,0 +1,180 @@
+
+**** cmR:CMRemix ****
+6c55e9e : derp fixed <ZION959> 61 minutes ago
+f72841c : track cmsdk <ZION959> 2 hours ago
+4cdc0f6 : fixed up custom clang branch <ZION959> 16 hours ago
+7e738c4 : track DragonTC custom Clang v3.7.1 <ZION959> 22 hours ago
+ 
+**** omni:android_bootable_recovery ****
+54f34fc : twrp: fix a typo and remove whitespace <Andreas Blaesius> 3 days ago
+677b13f : gui: fix screenshot_saved message <that> 4 days ago
+10ae24f : get rid of console thread for OpenRecoveryScript <that> 4 days ago
+ 
+**** cmR:android_build ****
+18dc202 : build: disabled more module for DragonTC <ZION959> 15 hours ago
+8636755 : DragonTC and Polly support <Joe Maples> 28 hours ago
+4e97ada : build: cmremix MM Optimization <ZION959> 21 hours ago
+5ba2045 : envsetup: make reposync use --force-sync as well <Alexander Martinz> 5 months ago
+d57940c : Build: Use 0 compression ratio for jar files <arter97> 9 months ago
+032c751 : Allow Unsecure <Chet Kener> 1 year, 2 months ago
+428ec5d : makedirty: delete changelog too! <ZION959> 10 days ago
+0f28526 : build: System ccache for Android and kernel <mydongistiny> 7 weeks ago
+4ad0a74 : [1/2] temp fixed for trlte build id error <ZION959> 7 weeks ago
+1b29042 : Add back mka bootzip <RobbieL811> 7 months ago
+63271f1 : Add Make Dirty Option <Chet Kener> 12 months ago
+414b3ec : Add a Whole bunch of Clean Options <Chet Kener> 12 months ago
+4f18ffa : Introduce New Squisher/Opticharger for Lollipop (2/2) <Chet Kener> 1 year, 1 month ago
+7aa410f : general update for cmremix <ZION959> 3 weeks ago
+f434e09 : build: CMRemix Changelog [1/2] <ZION959> 3 months ago
+33fc5c2 : build: CMRemix Version & build prop info & add ACSII art for CMREmix <ZION959> 8 weeks ago
+2c9a1ea : build: Add msm8952 as a QCOM board platform <Ethan Chen> 6 days ago
+f0b8bff : repopick: Allow commits to be excluded from a topic importation <AdrianDC> 3 weeks ago
+ 
+**** github:CMRemix/android_device_samsung_trlte-common ****
+dabe2e6 : Use overlay to replace SensorService.cpp <fat-tire> 3 hours ago
+5455817 : Disable gsiff_daemon service (for now) <fat-tire> 3 hours ago
+1b7033b : SELinux status:  Enforcing <fat-tire> 3 hours ago
+5143747 : update sepolicy for mm <fat-tire> 3 hours ago
+7bd7266 : trlte-common: update mk boot args <ZION959> 7 weeks ago
+ 
+**** github:CMRemix/android_device_samsung_trltespr ****
+20cb385 : trltespr: update overlay for network mod <ZION959> 3 days ago
+ 
+**** github:CyanogenMod/android_external_stagefright-plugins ****
+e13ea55 : stagefright-plugins: Refactor packet queue locking <Steve Kondik> 4 hours ago
+30ab9dc : stagefright-plugins: Fix shutdown deadlock <Steve Kondik> 22 hours ago
+644d57a : stagefright-plugins: Fix crash during testDecodeWithEOSOnLastBuffer <Steve Kondik> 25 hours ago
+61710f5 : stagefright-plugins: Wait for reader shutdown on EOS <Steve Kondik> 25 hours ago
+09f677f : stagefright-plugins: Only do as much sniffing as necessary <Steve Kondik> 2 days ago
+e7ea399 : stagefright-plugins: Increase confidence on HEVC mp2p files <Keith Mok> 9 days ago
+c0742cd : stagefright-plugins: Fix audio trimmed when reaching eos <Keith Mok> 7 days ago
+28d6141 : stagefright-plugins: Fix crash <Keith Mok> 7 days ago
+8caee14 : stagefright-plugins: Fix thumbnail issues <Steve Kondik> 4 days ago
+cea1cb3 : stagefright-plugins: Pass the container format in the metadata <Steve Kondik> 4 days ago
+94932fa : stagefright-plugins: Remove voodoo from sniff logic <Steve Kondik> 4 days ago
+f9e21d7 : stagefright-plugins: Add special case for DivX containers <Steve Kondik> 4 days ago
+5e9d63d : stagefright-plugins: Fix HEVC extradata handling <Steve Kondik> 4 days ago
+8107a7f : stagefright-plugins: Always use FFMPEG for FLAC audio <Steve Kondik> 4 days ago
+4ecbcbb : stagefright-plugins: Correctly check if audio codec is open <Steve Kondik> 4 days ago
+ 
+**** cmR:android_frameworks_av ****
+8ca3dfd : nuplayer: Enable PCM offload for any source <Steve Kondik> 2 days ago
+b19f360 : stagefright: Those who cannot remember history are doomed to repeat it <Steve Kondik> 2 days ago
+020adf2 : nuplayer: Pass along the sniffed metadata from GenericSource <Steve Kondik> 3 days ago
+4adc183 : stagefright: Remove special handling of FFMPEG extractor <Steve Kondik> 4 days ago
+1bb6c3e : stagefright: Add more hardware codec support for our extractor <Steve Kondik> 4 days ago
+1b5f480 : stagefright: Remove special case for FLAC offload <Steve Kondik> 4 days ago
+5712d5c : stagefright: Copy the thumbnail time <Steve Kondik> 4 days ago
+d2c00b4 : Validation of Number of Channels on WAV files. <Niel Alejandro Paz> 7 months ago
+efa19ab : Fix overflows in amrwbenc <Marco Nelissen> 3 weeks ago
+ 
+**** cmR:android_frameworks_base ****
+d6952e8 : Add IME Switcher icon back into the statusbar <Alex Cruz> 11 days ago
+c12906d : Reduce the delay during headset removal <Sudheer Papothi> 6 weeks ago
+4997441 : base: header image tweaks <maxwen> 3 weeks ago
+1b9042f : MediaScanner behavior on boot (1/3) <blk_jack> 2 years, 8 months ago
+f92a46a : National Data Roaming [3/3] <lichti1901> 5 weeks ago
+20a5fae : QS: Fix battery saver tile <Janson Kang> 13 hours ago
+a177bf9 : Add Battery Saver QS Tile <Altaf-Mahdi> 3 weeks ago
+34254b7 : Reboot/Recovery QS Tile <fusionjack> 3 hours ago
+2378ba4 : Add Music QS Tile <kufikugel> 5 weeks ago
+19a03d0 : QS: add Expanded desktop tile <Altaf-Mahdi> 7 weeks ago
+e7064e3 : Scroll: modified velocitytracker <PrimeDirective> 2 years, 3 months ago
+5a6828f : Memorize memory class lookup methods <fusionjack> 1 year, 1 month ago
+64589e9 : InputWrapper: opt out early if session == null <Lars Greiss> 1 year, 5 months ago
+f6cede7 : Core: Fix setupwizard FC <snak3ater> 3 months ago
+02fcca5 : fixed build <ZION959> 29 hours ago
+652cb72 : systemui: animate clear recents exit <Jorge Ruesga> 6 weeks ago
+55a8bc3 : Add Restart SystemUI to reboot menu <LorDClockaN> 7 weeks ago
+88eec9d : Lockscreen: Add timeout and instant lock option to slide lock (2/2) <KhasMek> 7 weeks ago
+561af4b : LockscreenShortcuts: Since Voice assist is default use its icon *previously cm had the phone icon even though voice assist is default <beanstown106> 7 weeks ago
+f7c45d0 : DocumentsUI: Add navigation bar color <Hernán Castañon Álvarez> 11 months ago
+f19a01c : Show a more descriptive message when vendor.img is out of date <beanstown106> 7 weeks ago
+a9d95eb : Allow disabling of FC dialogs [1/2] <Jmz> 6 weeks ago
+0f37c51 : Status bar: Update notification count icons <XXMrHyde> 12 months ago
+9430349 : FWB: Hide power menu on lockscreen [1/2] <cmorlok> 4 weeks ago
+1a32220 : Update camera and video ui sounds from new nexus's <beanstown106> 8 weeks ago
+6f08aca : Use Google Nexus Audio Files [1/2] <BeansTown106> 12 months ago
+3d694d3 : FWB: Hold back to kill timeout (1/2) <LorDClockaN> 2 days ago
+26bc01b : SystemUI: dont roll but add :) <maxwen> 2 days ago
+7ba1e8c : Power Menu animations [1/2] <Alex Cruz> 2 days ago
+c50968f : Fix FC when killing apps with app circlebar <Alex Cruz> 4 weeks ago
+1ad88c3 : Base: Add a controller for in-call proximity sensor (1/3) <Altaf-Mahdi> 8 months ago
+62f2bd3 : Profiles: option to disable lock screen device policy override (1/2) <Altaf-Mahdi> 4 months ago
+d3f44a1 : QS: use CM's profiles vector from settings <Altaf-Mahdi> 5 months ago
+6585d85 : SystemUI: Update WiFi indicator drawable sizes <Matt Mower> 1 year ago
+2b64024 : Quick Settings: add some more tiles <Altaf-Mahdi> 3 months ago
+bdcc79d : Themes: Expose hard code color for divider sim pin <Bryan Owens> 3 weeks ago
+a962ef8 : Themes: Expose Hard coded colors in Quick Settings Tiles <Bryan Owens> 3 weeks ago
+ 
+**** cmR:android_frameworks_native ****
+fa0c2f8 : revert: sensor patch <ZION959> 2 hours ago
+ 
+**** cmR:android_frameworks_opt_telephony ****
+f04cd9f : National Data Roaming [1/3] <lichti1901> 5 weeks ago
+714676c : RIL: Allow returning static radio capabilitiy from getRadioCapability <Michael Gernoth> 2 weeks ago
+ 
+**** cmR:android_frameworks_rs ****
+63351e7 : runtime: Simplify <Joe Maples> 4 days ago
+ca47ed8 : runtime: Turns out DragonTC wont work <Joe Maples> 5 days ago
+9dd1f8a : runtime: Fix compile with newer Clang versions <Joe Maples> 5 days ago
+ 
+**** github:CyanogenMod/android_hardware_cyanogen ****
+e1c6405 : cmhw: Add color enhancement impl for LiveDisplay driver <Steve Kondik> 6 days ago
+ 
+**** github:CyanogenMod/android_hardware_qcom_audio ****
+a065400 : hal: Allow building hardware audio encoders <Arne Coucheron> 11 months ago
+ 
+**** github:CyanogenMod/android_hardware_qcom_audio ****
+a495e40 : hal: Allow building hardware audio encoders <Arne Coucheron> 11 months ago
+ 
+**** github:CyanogenMod/android_hardware_qcom_display ****
+a0dd49b : gralloc: cflag to use nv21 format for camera write <codeworkx> 2 days ago
+ 
+**** github:CyanogenMod/android_hardware_qcom_keymaster ****
+052319e : keymaster: Allow 8952 to build <Ethan Chen> 6 days ago
+ 
+**** github:CyanogenMod/android_packages_apps_AudioFX ****
+7944518 : AudioFX: platform sign <jrizzoli> 4 days ago
+ 
+**** github:CyanogenMod/android_packages_apps_CellBroadcastReceiver ****
+dd6bee9 : Themes: Expose hardcoded styles and colors for themes <Bryan Owens> 6 days ago
+ 
+**** cmR:android_packages_apps_Settings ****
+be547a9 : Settings: MediaScanner behavior on boot (3/3) <Author blk_jack> 2 hours ago
+827fa12 : Lockscreen: Add timeout and instant lock option to slide lock (1/2) <KhasMek> 2 days ago
+84dca3d : Allow disabling of FC dialogs [2/2] <Jmz> 2 days ago
+a2ef567 : CMRemix Extra Info <Alex Cruz> 2 days ago
+4066b6e : Settings: Hold back to kill timeout (2/2) <LorDClockaN> 4 hours ago
+139003d : Profiles: option to disable lock screen device policy override (2/2) <Altaf-Mahdi> 2 days ago
+015130c : Fingerprint: Forward challenge extras <d34d> 31 hours ago
+f1d64bf : Settings: Expose backgroundTint from Single Button Panel <Nicholas Chum> 4 weeks ago
+2c63abc : Settings: Expose Fingerprint Enrollment Checkmark Tint to an XML <Nicholas Chum> 3 weeks ago
+87ab413 : settings: Animation scale seekbars <Steve Kondik> 1 year, 8 months ago
+fcb4673 : Profiles: Cleanup the code <Michael Bestas> 3 days ago
+77450be : Settings: improve empty Profile trigger icons <Roman Birg> 9 months ago
+52e7a40 : Settings: make empty profile views fit on hdpi <Roman Birg> 9 months ago
+70c5fb7 : Improve profile setting layouts. <Danny Baumann> 9 months ago
+4635398 : profiles: Make the actions wizard buttons show up <Diogo Ferreira> 1 year, 1 month ago
+5bf4924 : Profiles: remove unused code <Scott Mertz> 11 months ago
+e14b877 : Settings: always allow profile app groups to be linked/unlinked <Roman Birg> 10 months ago
+1fb74bb : Settings : Save instance state for app group deletes <Danesh M> 3 months ago
+91f19f2 : Settings: fix empty Wifi triggers screen <Roman Birg> 11 months ago
+8e9e003 : Settings: make empty profile trigger screens more useful <Roman Birg> 12 months ago
+a48f165 : Settings: merge ProfilesList into ProfilesSettings <Roman Birg> 10 months ago
+80b4c35 : Profiles: Fix override item summary not displaying none <LuK1337> 6 days ago
+09b4c0c : Hide usb mode chooser dialog after disconnected <Du, Changbin> 2 weeks ago
+59f77c5 : apn: Update the add actionbar icon <Diogo Ferreira> 12 months ago
+ 
+**** github:CyanogenMod/android_packages_providers_MediaProvider ****
+f7ce3d3 : MediaProvider: MediaScanner behavior on boot (2/3) <blk_jack> 2 hours ago
+ 
+**** cmR:android_prebuilts_ndk ****
+6a78eaf : clang Qcom 3.7 compatibility <ZION959> 28 hours ago
+ 
+**** github:CyanogenMod/android_vendor_cm ****
+053b180 : sepolicy: label exfat and ntfs mkfs executables <codeworkx> 30 hours ago
+ 
+**** cmR:android_vendor_CMRemix ****
+a8585c7 : fixed duplicate in trlte dependencies <ZION959> 66 minutes ago
+ 
