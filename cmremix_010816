@@ -1,0 +1,202 @@
+
+**** cmR:CMRemix ****
+a1ad3ca : revert jemaloc and sqlite <ZION959> 55 minutes ago
+06f1220 : removed cm updater and bugreport <ZION959> 2 hours ago
+50be19e : Sorry BusyBox, you've been disrupted. <Steve Kondik> 8 weeks ago
+ 
+**** cmR:android_art ****
+39ebcf2 : art: force optimizing compiler and optimize everything <Park Ju Hyung> 5 weeks ago
+ 
+**** cmR:android_bionic ****
+225b1b6 : Use bionic lock in pthread_internal_t. <Yabin Cui> 3 months ago
+0872f6d : bionic: Update gcc to gnu11 to match cpp <mydongistiny> 9 weeks ago
+1f17801 : Fix bug in dlmalloc's version of calloc. <Christopher Ferris> 3 weeks ago
+b80e473 : A special linker for ASan executables. <Evgenii Stepanov> 6 months ago
+51c6d42 : Improve library lookup logic <Dmitriy Ivanov> 7 months ago
+759c0dd : Replace NULL with nullptr <Dmitriy Ivanov> 7 months ago
+f2935e4 : Add <sysexits.h>. <Elliott Hughes> 6 months ago
+1f59f9a : Name the thread stack and signal stack guard pages. <Elliott Hughes> 6 months ago
+52c30fd : Use new sanitizer option. <Dan Albert> 7 months ago
+cee3195 : Don't use TIMER_ABSTIME in time_test. <Yabin Cui> 7 months ago
+8ff6b58 : Add some glibc-like #defines for libchrome. <Elliott Hughes> 6 months ago
+75c6694 : libc: Add sys/fcntl.h for compatibility. <Daniel Erat> 6 months ago
+ab40c48 : Prevent user-defined basename_r from breaking basename(3). <Elliott Hughes> 6 months ago
+494cc1d : Add constant for zip separator <Dmitriy Ivanov> 6 months ago
+e202320 : Add test for an Android kernel bug about prctl. <Yabin Cui> 6 months ago
+0b44090 : Add timespec/timeval conversion helpers. <Bertrand SIMONNET> 6 months ago
+00d0799 : <sys/time.h> should include [most of] <sys/select.h>. <Elliott Hughes> 6 months ago
+1c0cc30 : Revert "Revert "make vdso function pointers read-only at runtime"" <Elliott Hughes> 6 months ago
+f219f22 : libc: Avoid building some extra debug stuff. <Kyle Repinski> 8 months ago
+b72e540 : libc: arm: Add asm strchr. <Kyle Repinski> 8 months ago
+6c0c81b : cortex-a9: Fix reference to __memcpy_base_aligned. <Kyle Repinski> 9 months ago
+e2b9d53 : libc: arm: Add __aeabi_d2uiz to libgcc_compat. <Kyle Repinski> 9 months ago
+76d4d1b : libc: Don't build malloc leak check for userdebug. <Kyle Repinski> 9 months ago
+c69e96c : libc: arm: Update libgcc_compat. <Kyle Repinski> 12 days ago
+1e21ff2 : libc: Fix strict-aliasing violations. <Kyle Repinski> 9 months ago
+90e86ff : Add md5 back to libc/bionic for targets that need it. <Kyle Repinski> 1 year, 2 months ago
+c504e64 : Speed-up ARM memcmp by leveraging NEON. <Kyle Repinski> 8 months ago
+a25a864 : Define char16_t and char32_t to make gcc 5.1 happy <Bernhard Rosenkränzer> 9 months ago
+77d5b23 : temp fixed for trlte build error [2/2] <ZION959> 8 weeks ago
+4b78f6a : Re-export libgcc's __aeabi_fcmplt <arter97> 10 months ago
+105281c : linker: convert 'mov pc' instruction to 'bx' <arter97> 1 year, 2 months ago
+ 
+**** omni:android_bootable_recovery ****
+1964d19 : gui: add terminal emulator <that> 34 hours ago
+8834a0f : gui: add keyboard support for Ctrl layer and more special keys <that> 3 days ago
+4c105b9 : Fix translation spellings <Ethan Yonker> 3 days ago
+ 
+**** github:CMRemix/android_device_samsung_trlte-common ****
+3ec342d : change default (after boot) governor to interactiveX <ZION959> 5 hours ago
+2cfaf26 : trlte-common: enabled  Hardware keys for note 4 remove cmr_config overlay <ZION959> 5 hours ago
+1b176ae : Enable CPUSETS <agsola> 6 days ago
+b543af5 : Sync with fattire's Ril <ZION959> 2 weeks ago
+1c7a08e : rever: ril: Update namePresentation for LP blobs <ZION959> 2 weeks ago
+4b816b9 : ril: Update namePresentation for LP blobs <ZION959> 3 weeks ago
+92c00b9 : update overlay <Robert Greenwalt> 8 months ago
+8837d50 : trlte-common: Allow device to skip the sensor-permission request <ZION959> 3 weeks ago
+e2b1a93 : allow bluetooth access cid file & don't set permissions for CID file <ZION959> 3 weeks ago
+bf73853 : enabled hardware keys <Zion-Tran> 1 year, 1 month ago
+8e5c35c : ril: Fix incoming calls <ZION959> 3 weeks ago
+671a67a : move trlteRil to trlte-common <ZION959> 3 weeks ago
+123acb4 : trlte-common: change preload to shim <Michael Wawrzyniak> 3 weeks ago
+9fb5040 : trlte-common: update aapt config <Michael Wawrzyniak> 4 weeks ago
+e873704 : trlte-common: change charge mode <Michael Wawrzyniak> 4 weeks ago
+6d74532 : trlte-common: re-add overlays <ZION959> 3 weeks ago
+f8e7d01 : trlte-common: re-add libdetectmodem.so <Michael Wawrzyniak> 5 weeks ago
+7b57f02 : trlte-common: update external sd <Michael Wawrzyniak> 8 weeks ago
+fafb309 : L1/L2 cache size parameters by @JustArchi <ZION959> 4 weeks ago
+ddf8961 : trlte-common: Add rmt_storage shim <ZION959> 7 weeks ago
+fa57e17 : trlte-common: Add RIL shim library <ZION959> 7 weeks ago
+f483957 : revert: trlte-common: Update partition info (for now) <ZION959> 8 weeks ago
+74835f4 : trlte-common: general update <Hamada Badr> 8 weeks ago
+ed7454f : trlte: fix Sdcard. See: https://source.android.com/devices/storage/co… …nfig-example.html#android_6_both <gekkehenkie11> 8 weeks ago
+0f6144d : kernel: add zion959 kernel config file and run kernel config script on boot <ZION959> 8 weeks ago
+02097a8 : trlte-common: add cache image size to fix build error <Michael Wawrzyniak> 9 weeks ago
+1e07ec9 : trlte-common: let's build a camera again! <Michael Wawrzyniak> 9 weeks ago
+673c3a2 : trlte-common: update proprietary_files.txt <Michael Wawrzyniak> 9 weeks ago
+87f5ac7 : trlte-common: update fingerprint HAL <gekkehenkie11> 8 weeks ago
+dc7c253 : trlte-common: update mk boot args <ZION959> 8 weeks ago
+ 
+**** github:CyanogenMod/android_external_p7zip ****
+5553c3f : Revert "p7zip: Add lib7z as a dependency so it gets built" <Khalid Zubair> 2 days ago
+ 
+**** github:CyanogenMod/android_external_stagefright-plugins ****
+7ba6a02 : stagefright-plugins: Fix certain HEVC file cannot playback <Keith Mok> 2 days ago
+ 
+**** cmR:android_frameworks_opt_telephony ****
+66ff5db : UiccController: add back registerForOn <Pawit Pornkitprasan> 1 year ago
+2ef0af4 : National Data Roaming [1/3] <lichti1901> 6 weeks ago
+ 
+**** github:CyanogenMod/android_hardware_libhardware ****
+2a6aac5 : Revert "libhardware: Only support tertiary display in QTI_BSP is defined" <Abhisek Devkota> 5 hours ago
+ 
+**** github:CyanogenMod/android_hardware_qcom_fm ****
+8c0da85 : libfm_jni: Add support for internal antenna hardware <AdrianDC> 3 days ago
+ 
+**** github:CyanogenMod/android_hardware_samsung ****
+40afadb : libsecril-client: spell AUDIO correctly <Android-Andi> 23 hours ago
+ 
+**** github:CyanogenMod/android_hardware_samsung_slsi_exynos5 ****
+3ac2ff8 : Only log non-null invalid pointers <Scott Warner> 18 hours ago
+ 
+**** github:CyanogenMod/android_hardware_ti_omap4 ****
+1cea79b : camera: add Pixel{X,Y}Dimension and Orientation EXIF tags <Michael Gernoth> 15 hours ago
+ 
+**** github:ZION959/android_kernel_samsung_trlte ****
+b0fae77 : net: add length argument to skb_copy_and_csum_datagram_iovec <Sabrina Dubroca> 3 months ago
+d0622df : Force Fast Charge v1.2 [yank555] <ZION959> 4 hours ago
+748eb96 : power: quickwakeup: initial driver <Joe Swantek> 1 year, 11 months ago
+70f27ac : hsic: avoid keeping the ws activated after sysfs disable <imoseyon> 11 months ago
+475c9ac : hsic: allow wl_divide = 0 to completely disable hsic wake source <imoseyon> 11 months ago
+cc18b9a : hsic: introduce user configurable timeout for msm_hsic_host wakelock <imoseyon> 4 hours ago
+03023e0 : sched/fair: Implement fast idling of CPUs when the system is partially loaded <Tim Chen> 1 year, 7 months ago
+a3e04e3 : fs/namei.c: fix potential memory leak in path_lookupat <imoseyon> 9 months ago
+ad9a2f4 : pinctrl: msm: fix potential NULL pointer dereference <Joonwoo Park> 1 year, 5 months ago
+1565163 : wake gestures: make it easy for Kernel Adiutor <Pafcholini> 3 months ago
+e21d761 : msm: mdss: limit log spam <ZION959> 5 hours ago
+f597428 : Wake gesutures: Sweep2wake, Sweep2sleep, DoubleTap2Wake and DoubleTap2Sleep <placiano> 5 months ago
+9a76c52 : Display hooks for Power Suspend <ZION959> 5 hours ago
+b29dae6 : msm_adreno_tz: allow trap into trustzone in adreno idler <imoseyon> 3 months ago
+71c9642 : msm_adreno_tz: be aware of suspended state <arter97> 7 months ago
+359b169 : adreno idler: use my screen off detection global variable instead <imoseyon> 7 months ago
+473427b : Introduce Adreno idler for devfreq-based Adreno devices <arter97> 6 hours ago
+105bad2 : cpufreq: interactiveX: create a matching sysfs group for interactiveX <imoseyon> 1 year, 1 month ago
+f15fa51 : cpufreq: interactiveX V4: limit max freq when screen off <imoseyon> 1 year, 1 month ago
+ea16a36 : mdss: expose panel on/off events as a global variable (imoseyon) <ZION959> 6 hours ago
+a53b9b9 : arm/kernel/irq.c: remove irq affinity warnings <Paul Reioux> 7 months ago
+18d6bb4 : PM: devfreq: Fix simple_ondemand crashing on startup <myfluxi> 7 months ago
+0208f4e : fs: sync: Asynchronous Fsync from HTC <imoseyon> 1 year, 1 month ago
+c3eee94 : block: fiops ioscheduler - squashed commit (all credits for forward port to faux123) <ZION959> 6 hours ago
+425ddfd : Simple GPU Algorithm: Initial coding for devfreq based Adreno Drivers <Paul Reioux> 7 months ago
+dfe8445 : kernel/power/powersuspend: new PM kernel driver for Android w/o early_suspend v1.7 (faux123/Yank555.lu) <ZION959> 7 hours ago
+0acd3a2 : msm: kgsl: Wake up GPU only for touch events <Sunil Khatri> 1 year, 3 months ago
+eee3987 : random: sprinkle e/f/prandom in places that deplete entropy often <imoseyon> 1 year, 1 month ago
+aac9496 : net/packet: merge fix <imoseyon> 1 year, 1 month ago
+eb70442 : random.h: declare erandom function <imoseyon> 1 year, 1 month ago
+50838f2 : fs: ext4: use e/frandom, do not deplete entropy <imoseyon> 1 year, 1 month ago
+3877d30 : binfmt_elf: use prandom - do not deplete entropy <imoseyon> 1 year, 1 month ago
+ff5bcd3 : random32: use e/frandom for reseeding, and a merge fixup <imoseyon> 1 year, 1 month ago
+c29b846 : random: allow architectures to optionally define random_get_entropy() <Theodore Ts'o> 2 years, 4 months ago
+4c1df86 : random32: add prandom_u32_max and convert open coded users <Daniel Borkmann> 2 years ago
+4c2ef33 : random32: improvements to prandom_bytes <Daniel Borkmann> 1 year, 5 months ago
+1674088 : random32: mix in entropy from core to late initcall <Hannes Frederic Sowa> 1 year, 5 months ago
+1cbc06e : lib/random32.c: minor cleanups and kdoc fix <Daniel Borkmann> 1 year, 9 months ago
+c7d4293 : random32: avoid attempt to late reseed if in the middle of seeding <Sasha Levin> 1 year, 9 months ago
+d28d6da : random32: use msecs_to_jiffies for reseed timer <Daniel Borkmann> 2 years, 2 months ago
+3471699 : random32: add __init prefix to prandom_start_seed_timer <Daniel Borkmann> 2 years, 2 months ago
+6b5768a : random32: add test cases for taus113 implementation <Daniel Borkmann> 2 years, 2 months ago
+a186901 : random32: upgrade taus88 generator to taus113 from errata paper <Daniel Borkmann> 2 years, 2 months ago
+4938b9d : random32: move rnd_state to linux/random.h <Daniel Borkmann> 2 years, 2 months ago
+d07e5b6 : random32: add prandom_reseed_late() and call when nonblocking pool becomes initialized <Hannes Frederic Sowa> 2 years, 2 months ago
+864cf59 : random32: add periodic reseeding <Hannes Frederic Sowa> 2 years, 2 months ago
+24e9f77 : char: frandom: initial commit v1.1 <imoseyon> 1 year, 5 months ago
+b266898 : msm: vidc: avoid crash due to division by zero <Srinu Gorle> 1 year, 4 months ago
+03d880f : PM / sleep: unregister wakeup source when disabling device wakeup <Zhang Rui> 1 year, 7 months ago
+cd83cc4 : ion: this debugfs creation fails - remove code for it <imoseyon> 1 year, 1 month ago
+ 
+**** cmR:android_libcore ****
+541b8e6 : Fix spurious finalizer timeouts on shutdown. <Hans Boehm> 8 weeks ago
+633b8fd : Speed up Finalizer Daemon <Hans Boehm> 3 months ago
+995c489 : Fix more race conditions in WeakHashMapTest. <Roland Levillain> 9 weeks ago
+8962faf : Fix BigDecimal.equals() when scales are the same <Neil Fuller> 3 months ago
+4f1e1ad : Delete obsolete SystemPropertiesBenchmark. <Vladimir Marko> 3 months ago
+fd06f46 : Performance tweak to CollectionUtils.removeDuplicates <Ian Rogers> 4 years, 2 months ago
+09dd948 : Implemented ceil and floor in StrictMath <agicsaki> 7 months ago
+e0ca941 : Delete some unused cruft from OldAndroidMonitorTest. <Narayan Kamath> 6 months ago
+5b8635c : Rewrite testInterruptTest. <Narayan Kamath> 6 months ago
+a17351c : Repurpose SHA1PRNG_SecureRandomTest. <Narayan Kamath> 6 months ago
+4aaf3b3 : Remove harmony provider and default SecureRandom impl. <Narayan Kamath> 6 months ago
+72763a9 : Remove a couple of bogus test cases from SecureRandom2Test. <Narayan Kamath> 6 months ago
+7d6f1f1 : Use __ANDROID__ instead of HAVE_ANDROID_OS. <Elliott Hughes> 5 months ago
+d632d50 : Clean up some dead code. <Elliott Hughes> 5 months ago
+8155f82 : Convert ByteBuffers to byte[] correctly. <Narayan Kamath> 5 months ago
+a1b46fa : Handle OutOfMemoryError from allocating InterruptedExceptions <Mathieu Chartier> 4 months ago
+29cbc6f : libcore: remove cancelled tasks from the queue in Timer at the time they're scheduled <Sergio Giro> 3 months ago
+9685f8b : libcore: rewrite Timer <Sergio Giro> 4 months ago
+3b8ea63 : Patch for awaitNanos() for coarse-grained clocks <Neil Fuller> 4 months ago
+3ae44f5 : Fix MessageDigest.update(ByteBuffer) and .digest(byte[],...). <Alex Klyubin> 3 months ago
+ 
+**** github:CyanogenMod/android_packages_apps_Dialer ****
+5f8afa7 : Dialer: stop asking for granted loc permission <Roman Birg> 34 hours ago
+ 
+**** github:CyanogenMod/android_packages_apps_Trebuchet ****
+4fa46ac : Trebuchet: Ensure workspace is invisibile while in all apps view <cretin45> 11 hours ago
+ 
+**** cmR:android_packages_services_Telephony ****
+4e4b275 : National Data Roaming [2/3] <lichti1901> 6 weeks ago
+a2495ad : TeleService: Add a controller for in-call proximity sensor (3/3) <mengsun> 10 days ago
+ 
+**** github:CyanogenMod/android_prebuilts_cmsdk ****
+6ff8b3c : cmsdk: Update for api level 4 snapshot release. <Adnan Begovic> 32 hours ago
+ 
+**** github:CyanogenMod/android_system_bt ****
+8c41c59 : bt: Enable Bluedroid debugging only on eng. <Aaron Kling> 2 days ago
+ 
+**** github:CyanogenMod/android_system_extras ****
+0677949 : bootsignature: includes dt image size for signed boot image <Ankit Gupta> 2 weeks ago
+ 
+**** github:CyanogenMod/android_vendor_cm ****
+c7469c6 : APN: Add Smartfren IMS for Volte support RENDANG-525 <Francis Guevarra> 16 hours ago
+311a862 : cm: add lib7z to product packages <Khalid Zubair> 2 days ago
+7ea4580 : APN: Fixup Vodafone IT and remove Noverca <Gabriele M> 2 days ago
+ 
