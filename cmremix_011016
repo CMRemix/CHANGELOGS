@@ -1,0 +1,489 @@
+
+**** cmR:CMRemix ****
+7c96eea : track DragonTC 3.8 <ZION959> 2 days ago
+cb5c682 : android-6.0.1_r3 -> android-6.0.1_r10 <HridayHS> 6 days ago
+333b4a0 : cm: Remove qcom/opensource/display-frameworks <Steve Kondik> 2 days ago
+57c4ce6 : Add Snap camera to main manifest <Michael Bestas> 4 days ago
+ 
+**** cmR:android_art ****
+fa93670 : revert: Art: disable host clang by default <ZION959> 2 days ago
+43acc98 : art: force optimizing compiler and optimize everything <Park Ju Hyung> 6 weeks ago
+e5c6b04 : Art: disable host clang by default <Dave Daynard> 7 weeks ago
+ 
+**** cmR:android_build ****
+54b93f4 : revert: clang: use DragonTC 3.8 <ZION959> 23 hours ago
+7dbffd3 : clang: use DragonTC 3.8 <ZION959> 2 days ago
+72a2b56 : DragonTC and Polly support <Joe Maples> 6 days ago
+428fb21 : build: cmremix MM Optimization <ZION959> 12 days ago
+32c54b8 : Show compiler used when building <Joe Maples> 10 days ago
+7c6d62c : core: Add USE_GCC_PLATFORM_BUILD Option <Joe Maples> 6 weeks ago
+48550ae : binary: Update rtti logic <Tyler Dunn> 8 days ago
+42133ba : Make rtti default for gcc >=5.2 <Paul Beeler> 4 months ago
+87bfe0b : Enable color output from gcc and clang <Colin Cross> 4 months ago
+ece0a29 : build: Set ANDROID_BUILD_TOP earlier <mydongistiny> 3 months ago
+c79938e : build: allow using host flex binary <luca020400> 4 months ago
+48f8826 : build: Allow use of Oracle Java. <mydongistiny> 6 months ago
+ 
+**** github:CyanogenMod/android_device_qcom_common ****
+9200c08 : power-8960: Remove set_interactive handling <Zhao Wei Liew> 6 days ago
+5c87d2b : power-8960: Implement performance profiles <Zhao Wei Liew> 8 weeks ago
+ 
+**** github:CMRemix/android_device_samsung_trlte-common ****
+886b24a : update snap camera config <ZION959> 21 hours ago
+31101f5 : trlteRil: Fix preferred network type switching <ZION959> 33 hours ago
+6f7244a : trlte-common: use snap camera <OptX> 2 days ago
+e5d3721 : Use overlay to replace SensorService.cpp <fat-tire> 11 days ago
+87eed14 : Disable gsiff_daemon service (for now) <fat-tire> 11 days ago
+7dc536a : update sepolicy for mm <fat-tire> 11 days ago
+d5735c6 : Add some audio configuration files <fat-tire> 3 weeks ago
+4d49e5a : add to audio policy: AUDIO_DEVICE_IN_AUX_DIGITAL and AUDIO_DEVICE_IN_COMMUNICATION <fat-tire> 3 weeks ago
+e60b647 : add media_codecs_performance.xml <fat-tire> 3 weeks ago
+17ae027 : libwvm.so is in /vendor/lib not /lib/ <fat-tire> 3 weeks ago
+c54ff2f : update bluetooth bldcfg values <fat-tire> 3 weeks ago
+5dc5384 : update some selinux stuff + bluetooth access to .cid file <ZION959> 33 hours ago
+3afccd1 : Enable CPUSETS <ZION959> 33 hours ago
+1a69fb3 : update zion kernel script <ZION959> 2 days ago
+668bf06 : revert change default (after boot) governor to interactiveX <ZION959> 3 days ago
+f68bc72 : change default (after boot) governor to interactiveX <ZION959> 3 days ago
+9f68111 : trlte-common: enabled  Hardware keys for note 4 remove cmr_config overlay <ZION959> 3 days ago
+ 
+**** aosp:platform/external/libhevc ****
+cc92338 : Added few memsets to avoid uninitialized reads for error clips <Harish Mahendrakar> 3 months ago
+ 
+**** aosp:platform/external/noto-fonts ****
+8f0a9cf : Better compression for NotoColorEmoji <Raph Levien> 9 weeks ago
+4e14473 : Update NotoColorEmoji font to Unicode 7 and 8 <Raph Levien> 9 weeks ago
+a037025 : Revert "Update NotoColorEmoji font to Unicode 7 and 8" <Bart Sears> 8 weeks ago
+de94b35 : Revert "Better compression for NotoColorEmoji" <Bart Sears> 8 weeks ago
+ 
+**** github:CyanogenMod/android_external_wpa_supplicant_8 ****
+e8a0905 : FST: Improve parsing of Multiband IEs <Dedy Lansky> 7 weeks ago
+cb7ecf9 : FST: Make FST peer connection check more permissive in hostapd <Anton Nayshtut> 9 weeks ago
+87704cf : FST: Fix STA MB IEs creation <Anton Nayshtut> 5 months ago
+9e78bad : hostapd: Process MAC ACLs on a station association event (SME in driver) <Anton Nayshtut> 3 months ago
+bea2a16 : EAP-pwd peer: Fix error path for unexpected Confirm message <Jouni Malinen> 2 months ago
+0ca1c06 : EAP-pwd server: Fix last fragment length validation <Jouni Malinen> 2 months ago
+d8ae7df : EAP-pwd peer: Fix last fragment length validation <Jouni Malinen> 2 months ago
+0114b30 : WPS: Reconnect for a failed data connection when STA_AUTOCONNECT is 0 <Sunil Dutt> 8 weeks ago
+439233f : WNM: Ignore Key Data in WNM Sleep Mode Response frame if no PMF in use <Jouni Malinen> 3 months ago
+c05ef85 : EAP-pwd peer: Fix error path for unexpected Confirm message <Jouni Malinen> 2 months ago
+e4854ef : EAP-pwd server: Fix last fragment length validation <Jouni Malinen> 2 months ago
+1ded6ef : EAP-pwd peer: Fix last fragment length validation <Jouni Malinen> 2 months ago
+1be2527 : WNM: Ignore WNM-Sleep Mode Response if WNM-Sleep Mode has not been used <Jouni Malinen> 3 months ago
+ 
+**** cmR:android_frameworks_av ****
+c2a6c58 : Use standard arm assembly syntax. <Chih-Hung Hsieh> 8 months ago
+fcd3c6e : Fix overflow in amrwbenc <Marco Nelissen> 5 weeks ago
+60fc867 : codecs: update for check ifeq ($(TARGET_ARCH),arm) <Yongqin Liu> 10 weeks ago
+6877308 : Use unified syntax to compile with both llvm and gas. <Chih-Hung Hsieh> 5 months ago
+94f3841 : Disable integer sanitization for amrwbenc <Marco Nelissen> 5 days ago
+3fec0e5 : cameraservice: Change the error mapping for ERROR_CAMERA_DEVICE. <Sai Kumar Sanagavarapu> 3 weeks ago
+f8eea5d : drm : Give permission to access drm service api from Oma Drm engine <Paramananda Pradhan> 5 weeks ago
+6981543 : Clean up time zone handling in MtpUtils::parseDateTime. <Elliott Hughes> 5 days ago
+8c4d014 : Fix more potential (benign) AMRWB overflows <Marco Nelissen> 5 days ago
+a6e3ed3 : Fix more amrwbenc overflows <Marco Nelissen> 4 weeks ago
+4f4723a : Tabs -> spaces <Marco Nelissen> 5 weeks ago
+8bdd095 : ACodec: Fix error handling in OutputPortSettingsChangedState <Shivaprasad Hongal> 4 weeks ago
+ 
+**** cmR:android_frameworks_base ****
+1cf5c25 : utils move to cmremix <ZION959> 9 hours ago
+001c63e : WiredAccessoryManager: remove warning about Samsung dock support <Michael Gernoth> 10 hours ago
+51f975f : Add Motorola EMU audio dock jack sensing support <nadlabak> 2 years, 4 months ago
+15a691b : SystemUI: Add LTE Tile (1/2) <Decad3nce> 22 hours ago
+9d68ddc : Disable PIN entry after successful quick unlock <Veeti Paananen> 7 months ago
+d433841 : Keyguard: Forward port lockscreen quick unlock (1/2) <Davor Bertovic> 34 hours ago
+a23d7e1 : Fix WFD source incoming persistent connection when device is P2P client <Cedric Baudelet> 5 weeks ago
+08c45aa9 : Update PackageInstaller install handing <Todd Kennedy> 3 months ago
+92c6eff : Remove graphics-related RenderScript tests. <Stephen Hines> 5 weeks ago
+720f966 : SystemUI: Possibly Fix IndexOutofBoundException On adding More than 4 QsPages <Varun> 2 days ago
+ba35bda : New drawables for play and reboot tiles <Vasilj Milošević> 34 hours ago
+b1ed5d9 : Fixed calendar fields comparison <Philipp Hasper> 7 months ago
+3c436fb : Qs:systemUI Restart Tile [1/2] <Davor Bertovic> 24 hours ago
+0603976 : QS:Add App SideBar Tile [1/2] <Varun> 24 hours ago
+b76d513 : SystemUI: Add Five New Tiles[1/2] <Varun> 24 hours ago
+cd7c8b7 : Statusbar header: add long click for settings button, task manager, alarm & vibrate on qspanel <ZION959> 29 hours ago
+14f50d2 : [1/2] base: app notifications hide when locked <maxwen> 5 days ago
+b3bda69 : FWB: Option to disable auto brightness icon in brightness slider [1/2] <varund7726> 2 days ago
+da7e89e : Navigationbar: Add just one more button <voidz777> 2 days ago
+5d25623 : Update navbar power icon <Vasilj Milošević> 3 days ago
+677882a : FWB: Add notification toggle button to navbar (1/2) <LorDClockaN> 3 days ago
+eeab969 : Reset battery stats [1/2] <jruesga> 2 days ago
+08501bc : base: qs brightness toggle rework <maxwen> 8 days ago
+dfebda9 : QSBrighnessIcon: Make it show in notification panel <LorDClockaN> 5 days ago
+e5a49e6 : base: add  auto brightness toggle to qs <maxwen> 8 days ago
+5008166 : [WindowManagerService] fix starting window issue <Ronnie Leng> 7 days ago
+66c4fef : Do not start music app when headset is unplugged <ILWT> 10 days ago
+32f02c2 : AudioService: launch default music player on headset connect [2/2] <Danesh M> 10 days ago
+432b69b : FWB: Dotted circle battery (1/3) <LorDClockaN> 10 days ago
+4354ca6 : Fix leftAffordanceView visibility bug <Alex Cruz> 9 days ago
+eb61598 : Fix janky layout <Alex Cruz> 6 days ago
+8e339a2 : network tile: Change long click action <pranav> 9 days ago
+d2938af : QSpanel: Fix FC when adding New Tile <varund7726> 5 days ago
+7a74cc0 : telephony: Hack GSM and LTE signal strength <Sultanxda> 3 months ago
+bd59a43 : FEB: Disable/Enable screenshot sound [1/2] <htchoi1995> 7 days ago
+8f01f44 : FWB: Add clock/date in recents while in fullscreen mode (1/2) <LorDClockaN> 7 days ago
+de50c8c : FWB: LS clock fonts: Add more fonts (1/2) <LorDClockaN> 8 days ago
+aba5ca4 : Lockscreen Clock Widget Fonts [1/2] <Alex Cruz> 7 days ago
+818a656 : Clean Up Lockscreen Weather (items & layout) [1/2] <beanstown106> 7 days ago
+77385fb : Update private copy of Palette <Steve Kondik> 10 days ago
+aedba1f : [WindowManagerService] fix starting window issue <Ronnie Leng> 7 days ago
+d6d9ab5 : Update private copy of Palette <Steve Kondik> 10 days ago
+80922ca : fw: Remove duplicated locales. <Adnan Begovic> 2 days ago
+d4bc5b6 : SystemUI: fix navbar drawing issues in landscape <Roman Birg> 5 days ago
+ 
+**** cmR:android_frameworks_native ****
+8af4e66 : Revert "Revert "gui: only support tertiary display if QTI_BSP is defined"" <Abhisek Devkota> 2 days ago
+c86c815 : SurfaceFlinger: Move Extended SF classes to same repository <Arun Kumar K.R> 6 weeks ago
+cda438d : sf: Change log message in layer query method from ALOGE to ALOGW <Tatenda Chipeperekwa> 3 months ago
+fd95bb1 : Revert "gui: only support tertiary display if QTI_BSP is defined" <Abhisek Devkota> 3 days ago
+ 
+**** cmR:android_frameworks_opt_telephony ****
+2f53537 : National Data Roaming [1/3] <lichti1901> 7 weeks ago
+54f645f : telephony: Override nw mode on creation and when trying to calculate nw type. <Adnan Begovic> 2 days ago
+fd6eb59 : DcTracker: Fix CDMA NV mode data connection <Gabriele M> 5 weeks ago
+8b74377 : DCTracker: HACK Fix eHRPD/LTE data connection. <Shareef Ali> 1 year, 1 month ago
+a8c5801 : Add dummy SUB record in CDMA NV mode <Chaitanya Saggurthi> 11 months ago
+c5f1a18 : Revert "telephony: Also override nw mode on creation of phone objects." <Ethan Chen> 2 days ago
+a2c4d49 : telephony: Also override nw mode on creation of phone objects. <Adnan Begovic> 3 days ago
+ 
+**** github:CyanogenMod/android_hardware_libhardware ****
+a9d5943 : Revert "Revert "libhardware: Only support tertiary display in QTI_BSP is defined"" <Abhisek Devkota> 2 days ago
+598fdcc : hardware/libhw: Add display_defs.h to declare custom enums/flags <Arun Kumar K.R> 6 weeks ago
+ 
+**** github:CyanogenMod/android_hardware_qcom_audio ****
+afc9cb7 : Check if hardware_info has been updated or not. <Benjamin Legrand> 4 days ago
+ 
+**** github:CyanogenMod/android_hardware_qcom_audio ****
+0a4706f : HAL: Identify the track offload session <Sharad Sangle> 5 weeks ago
+7a4e7a5 : hal: spkr_prot: release adev lock during sleep <Vidyakumar Athota> 5 weeks ago
+b1880e1 : hal: spk_prot: remove speaker thermal zone name check <Vidyakumar Athota> 5 weeks ago
+db9bc84 : hal: fix resource leak issues in platform.c <Mingming Yin> 6 weeks ago
+0ae3bee : libaudiopolicymanager: DirectPCM: fix 44.1 clip playing noisy issue <vivek mehta> 7 weeks ago
+3a2c6b3 : hal: Surround sound record enhancement <Naresh Tanniru> 3 months ago
+0e1e23e : hal: Use AUDIO_TX_MONO_COPP topology for incall record usecases <Karthik Reddy Katta> 8 weeks ago
+a5ed27f : audio: update flags for selection of VoIP direct output <Karthik Reddy Katta> 7 weeks ago
+768abda : hal: Update format table with AAC ADTS formats. <Ashish Jain> 8 weeks ago
+06e6fbb : hal: add audio notification acknowledge feature <Mingming Yin> 2 months ago
+9519e9c : hal: add support for external codec <Preetam Singh Ranawat> 8 weeks ago
+8a29093 : hal: Fix condition for offload small buffer use <Amit Shekhar> 8 weeks ago
+db05783 : Merge DAX2 changes <Gao Jie> 9 weeks ago
+515e71e : hal: get wsa881x temperature zone names using key value pair <Venkata Narendra Kumar Gutta> 8 weeks ago
+62142aa : HAL: Identify Track offload session <Alexy Joseph> 8 weeks ago
+7051648 : hal: Add support for 3-mic surround sound recording <Shiv Maliyappanahalli> 6 months ago
+6211dd0 : post_proc: complete reverb environmental interfaces <Weiyin Jiang> 9 weeks ago
+9c4ba54 : hal: Add support for LINE out device <Naresh Tanniru> 9 weeks ago
+a1e3235 : hal: update apptype configuration logic for recording usecase <Srikanth Uyyala> 3 months ago
+c652895 : hal: policy: fallback to deep buffer if stream is music <vivek mehta> 3 months ago
+837dc46 : hal: Limit multichannel clips >48khz to 48Khz <Manish Dewangan> 8 months ago
+4b0d819 : hal: policy: fallback to deep buffer if stream is music <vivek mehta> 3 months ago
+cbe2b4f : hal: fix compilation issues with audio FM extention <Dhananjay Kumar> 3 months ago
+882890f : hal: expose offload functions only for offload playback <Mingming Yin> 3 months ago
+b726e84 : policy_hal: add support for fm device loopback <Dhananjay Kumar> 3 months ago
+b76ed86 : audio: Updated correct end point for Dolby <Pavan Chikkala> 4 months ago
+41da25b : haL: audio_extn: fix pop noise when FM is interrupted by voice call <Dhananjay Kumar> 3 months ago
+be61ed0 : hal: update in_call state to false when call stopped <Zhou Song> 4 months ago
+9a93aa3 : audio_policy: modify few methods to appropriately override base <Dhananjay Kumar> 3 months ago
+f490be5 : hal: use a new key to query the DSP decoder availability <Sidipotu Ashok> 3 months ago
+265dde9 : hal: spk_prot: update initial calibration idle time check <Laxminath Kasam> 5 months ago
+0ab589f : policy_hal: Fix pop noise when MO call is started, while playing music <Venkata Narendra Kumar Gutta> 3 months ago
+9df066f : policy-hal: Fix for alarm tone heard even after dismissing. <Ramjee Singh> 3 months ago
+661541d : policy_hal: Add Direct PCM flags for track offload <Naresh Tanniru> 3 months ago
+06f9943 : policy_hal: hal: add support to enable Direct PCM <Naresh Tanniru> 5 months ago
+14c57d8 : hal: update error handling for pcm_prepare failures <Ravi Kumar Alamanda> 3 months ago
+a5d9faa : policy_hal: Reject offload path for AV streaming usecase <Manish Dewangan> 3 months ago
+27fb405 : policy_hal: Override stopOutput method in policy_hal <Ramjee Singh> 4 months ago
+515f5d4 : hal: audio_hw: Allow 50ms sleep if audio start fails before exit <Laxminath Kasam> 4 months ago
+bfeca7f : audiopolicy: Fix to close all opened inputs in closeAllInputs <Dhanalakshmi Siddani> 3 months ago
+d53b669 : audio HAL: fix thread starvation <Shiv Maliyappanahalli> 3 months ago
+cc70d4b : hal: check offload_callback not NULL before calling <vivek mehta> 4 months ago
+b859f54 : hal: effect: visualizer: support two offload sessions <vivek mehta> 4 months ago
+706d4d4 : hal: limit 44.1 Native to tasha codecs <Sidipotu Ashok> 4 months ago
+061306f : hal: limit 44.1 Native to tasha codecs <Sidipotu Ashok> 4 months ago
+bc739cb : audio: hal: Add support to send codec specific data in gapless <Chaithanya Krishna Bacharaju> 6 months ago
+31a9735 : hal: audio_extn: detect wsa analog mono speaker on 8976 QRD <Xiaojun Sang> 4 months ago
+1b50290 : hal: add a new key to query for decoder viability <Sidipotu Ashok> 4 months ago
+4a08014 : hal: integrate ADM module <Naresh Tanniru> 7 months ago
+3a7dbe7 : hal: add support for ull audio playback <Naresh Tanniru> 7 months ago
+ 
+**** github:CyanogenMod/android_hardware_qcom_bt ****
+2a304f2 : Fixed the issue that BT cannot be turned on after overnight testing <Luke Zhang> 8 weeks ago
+ 
+**** github:CyanogenMod/android_hardware_qcom_display ****
+05673d3 : Revert "overlay: add tertiary display definition in overlay" <Abhisek Devkota> 2 days ago
+ 
+**** github:CyanogenMod/android_hardware_qcom_display ****
+16b5976 : hwc: Fix compile errors after display-frameworks removal <ZION959> 31 hours ago
+ 
+**** github:CyanogenMod/android_hardware_qcom_display ****
+563759a : hwc: Fix compile errors after display-frameworks removal <Arne Coucheron> 2 days ago
+a13ca36 : hwc: Fix compile errors after display-frameworks removal <Arne Coucheron> 2 days ago
+ 
+**** github:CyanogenMod/android_hardware_qcom_display ****
+a74edfb : hwc: Remove references to display-frameworks <Ethan Chen> 29 hours ago
+c7cce05 : hwc: Fix compile errors after display-frameworks removal <Arne Coucheron> 2 days ago
+b375570 : hwc: Support for QDCM Preference when PU enabled <Nitesh Gupta> 3 weeks ago
+ 
+**** github:CyanogenMod/android_hardware_qcom_display ****
+f1b49f2 : hwc: Fix compile errors after display-frameworks removal <Arne Coucheron> 2 days ago
+ 
+**** github:CyanogenMod/android_hardware_qcom_display ****
+3b3f95d : hwc: Fix compile errors after display-frameworks removal <Arne Coucheron> 2 days ago
+ 
+**** github:CyanogenMod/android_hardware_qcom_display ****
+1f09140 : Default flexible YUV format to NV21 <Tanmaya Godbole> 5 months ago
+8b353b3 : Revert "Change the IMPLEMENTATION_DEFINED preview buffers format". <JinHee Kim> 4 weeks ago
+2e8b4c1 : Revert "Default flexible YUV format to NV21_ZSL". <JinHee Kim> 4 weeks ago
+17ad546 : Revert "gralloc: add cflag to use nv21 format for camera preview" <Daniel Hillenbrand> 16 hours ago
+866c928 : Revert "gralloc: cflag to use nv21 format for camera write" <Daniel Hillenbrand> 16 hours ago
+2b1bb1e : hwc: Fix compile errors after display-frameworks removal <codeworkx> 34 hours ago
+4e68b37 : hwc: Fix compile errors after display-frameworks removal <Arne Coucheron> 2 days ago
+ 
+**** github:CyanogenMod/android_hardware_qcom_display ****
+99aa8ca : sdm: Fix uninitialized HWLayers object <Saurabh Shah> 6 weeks ago
+572b2bf : sdm: Do not copy surfaceDamage rects for SKIP layers <Sushil Chauhan> 6 weeks ago
+074314d : gralloc: Add support for PRIV_FLAGS_DISP_CONSUMER <Surajit Podder> 7 months ago
+8f8f6c7 : sdm : Add support for dynamic BW limit management <Prabhanjan Kandula> 3 months ago
+83a945b : libqdutils: Refer to standard definitions for display types. <Dileep Marchya> 8 weeks ago
+f29ff14 : sdm: Fix buffer overflow <Manoj Kumar AVM> 9 weeks ago
+99ef378 : sdm: HWDevice: Set correct HWDisplayMode <Arun Kumar K.R> 10 weeks ago
+ddca4e7 : sdm: Remove unused function in rect utility <Manoj Kumar AVM> 9 weeks ago
+8d22bad : sdm: Fix memory leaks. <Dileep Marchya> 9 weeks ago
+1c3f9a3 : hwc: Handle SBM operation set for all layers <Saurabh Shah> 9 weeks ago
+b8067a4 : qdMetadata: Use uint32_t instead of bool <Saurabh Shah> 9 weeks ago
+a0db84b : sdm: hdmi: Set the default grayscale value to RGB888 <Tatenda Chipeperekwa> 3 months ago
+e94e78c : sdm: Add bandwidth and clock members <Sushil Chauhan> 5 months ago
+959863b : sdm: Update HWPanelInfo during primary resolution switch <Sushil Chauhan> 10 weeks ago
+b8ecfbf : display: Enable clang for all display modules <Naseer Ahmed> 10 weeks ago
+63e8c95 : sdm: Source crop top needs adjustment for interlaced <Sushil Chauhan> 2 months ago
+f1c8357 : sdm: Remove closing of fd during Sync operations <Manoj Kumar AVM> 2 months ago
+44e2be1 : sdm: Do not process blit configuration for zero app layers. <Dileep Marchya> 2 months ago
+61ef29b : sdm: Add support for single buffer layers <Saurabh Shah> 3 months ago
+a816961 : sdm: Use FB resolution for virtual display <radhakrishna> 3 months ago
+a0394ad : qdMetaData: Remove unused metadata fields. <Arun Kumar K.R> 3 months ago
+50ff0bb : sdm: Panel name retrieval support <Dileep Marchya> 3 months ago
+95f8368 : gralloc/metadata: Add support for single buffer mode <Saurabh Shah> 3 months ago
+d7131e6 : sdm: Add support for UBWC in C2D <radhakrishna> 3 months ago
+67c1f90 : sdm: Allow draw cycle in doze state. <Dileep Marchya> 3 months ago
+5fb6d40 : sdm: Perform GPU target layer validation. <Manoj Kumar AVM> 3 months ago
+226646c : sdm: Populate correct WB index for virtual <radhakrishna> 3 months ago
+3edaf83 : sdm: Read rotator capabilities from driver <radhakrishna> 3 months ago
+492ab99 : sdm: Fix ROI and Split info in SF dumpsys <Sushil Chauhan> 3 months ago
+a9fb396 : sdm: Remove buffer format validation from hwc wrapper. <Ramkumar Radhakrishnan> 3 months ago
+76750f2 : sdm: Add support for YCbCr420 Semiplanar format <Ramkumar Radhakrishnan> 3 months ago
+bddb952 : gralloc: Use only metadata for color space <Saurabh Shah> 3 months ago
+4a31ec4 : sdm: Make premultiplied as default blending <Saurabh Shah> 3 months ago
+e1f01dd : sdm: Flush after first successful commit only. <Dileep Marchya> 3 months ago
+1a7e1f1 : sdm: Add support for IGC. <Dileep Marchya> 4 months ago
+9b99074 : sdm: Fix memory leaks. <Dileep Marchya> 3 months ago
+ec8fe35 : sdm: Fix HDMI & virtual display concurrency. <Dileep Marchya> 3 months ago
+d433464 : sdm: Add interface to consider rotator during scaling validation. <Ramkumar Radhakrishnan> 3 months ago
+a5b764f : sdm: Add support for minimum encryption level settings for HDCP. <Dileep Marchya> 3 months ago
+55fe304 : sdm: Add SPD information for HDMI <Arun Kumar K.R> 3 months ago
+06078aa : sdm: Acquire lock during hwcomposer module open and close <Ramkumar Radhakrishnan> 3 months ago
+d169be9 : sdm: properly close all the fence Fds <Ping Li> 3 months ago
+87ec8c3 : sdm: Change minHdcpEncryptionLevelChanged api to extern "C" <Dileep Marchya> 3 months ago
+b2c2189 : sdm: Update layer buffer dimensions with aligned dimensions <Manoj Kumar AVM> 4 months ago
+ 
+**** github:CyanogenMod/android_hardware_qcom_media ****
+8baa29b : mm-video-v4l2: Restrict hevc hybrid usecases upto 720p <Balamurugan Alagarsamy> 5 weeks ago
+ 
+**** github:CyanogenMod/android_hardware_qcom_media ****
+be989ef : audio: Add entry for ALAC/APE software component <Preetam Singh Ranawat> 7 weeks ago
+ab3e6cf : Include kernel header dependency for libOmxVidcCommon <Divya Sharma> 8 weeks ago
+f5b8f20 : Include kernel header dependency for libOmxVidcCommon <Divya Sharma> 8 weeks ago
+2266025 : mm-video-v4l2: vidc: Ensure async_message_thread always exits <Arun Menon> 7 weeks ago
+b0d352b : media : Add Max CSD values for ALAC and APE <Preetam Singh Ranawat> 2 months ago
+a04219f : mm-video-v4l2: vdec: skip enabling extn_user extradata for secure session <Srinu Gorle> 7 weeks ago
+622d480 : mm-video-v4l2: vidc: Enhance VQZIP checks <Praneeth Paladugu> 4 months ago
+2b5bd8a : mm-video-v4l2: vidc: venc: Fix input extradata issues <Praneeth Paladugu> 8 weeks ago
+ce13944 : mm-video-v4l2: vidc: vdec: Add UBWC color format support <Srinu Gorle> 8 weeks ago
+a725170 : mm-video: venc: Initialize m_graphicBufferSize <Deva Ramasubramanian> 7 weeks ago
+8be933c : mm-video-v4l2: vidc: vdec: Add support for downscalar in component <Srinu Gorle> 8 months ago
+c29ae31 : mm-video-v4l2: vidc: Fix race condition with msg thread fd close <Shalaj Jain> 8 weeks ago
+6a50516 : mm-video-v4l2: vdec: Fix CTS issue with color coversion <Vinay Kalia> 8 weeks ago
+ab08584 : mm-core: Add extensions for FRC <Vinay Kalia> 8 weeks ago
+b12f245 : mm-video-v4l2: Handle async_message_thread error <Arun Menon> 8 weeks ago
+9952fd8 : mm-core: Add secure component registry entry <Vikash Garodia> 9 weeks ago
+8d855cc : mm-video: common: update OmxVidcCommon dependency list <Srinu Gorle> 9 weeks ago
+3c3fe6c : mm-video-v4l2: vdec: Change preferred color format default order <Arun Menon> 9 weeks ago
+c73daac : mm-video-v4l2: Add registry entry for openmax components. <Vikash Garodia> 10 weeks ago
+bcb448c : mm-video: swvdec: Add SwVdec registry entries for 8937. <Manikanta Sivapala> 3 months ago
+e592d0a : mm-video: swvdec: Add SwVdec OMX component. <Manikanta Sivapala> 9 weeks ago
+41cf898 : mm-core: Update the correct instance index for storing VPP handle <Praneeth Paladugu> 10 weeks ago
+c8827e2 : mm-video-v4l2: vidc: Allocate secure bitstream buffers from CMA <Shalaj Jain> 10 weeks ago
+cf6d469 : mm-video: vidc: Fully drainbuffers from the driver if batch not complete <Deva Ramasubramanian> 9 weeks ago
+093280d : mm-core: Unload the component library after the session is done <Praneeth Paladugu> 10 weeks ago
+fb36868 : mm-video: venc: Revert Venus native support for RGBA8888 <Deva Ramasubramanian> 3 months ago
+0ec71b0 : mm-video: Add extensions to enable and configure ROI QP info <Vinay Kalia> 3 months ago
+ 
+**** github:CyanogenMod/android_hardware_qcom_wlan ****
+546da46 : Wifi-HAL: Free the nlmsg after receiving the response <Srinivas Dasari> 9 weeks ago
+ 
+**** github:CyanogenMod/android_hardware_ti_omap4 ****
+ed9b5b7 : gralloc: disable GRALLOC_USAGE_CURSOR <Michael Gernoth> 2 days ago
+ 
+**** github:CMRemix/android_kernel_samsung_trlte ****
+d899b02 : arm: implement kexec-hardboot (by vbocek@gmail.com) <ZION959> 2 days ago
+ 
+**** github:CyanogenMod/android_packages_apps_AudioFX ****
+b9f160f : AudioFX: Remove up navigation from action bar <Zhao Wei Liew> 7 days ago
+ 
+**** github:CyanogenMod/android_packages_apps_Bluetooth ****
+b90faf3 : Improve AVRCP metadata string <Michael Bestas> 4 hours ago
+66668ac : Fix to avoid JNI crashes <Ayan Ghosh> 5 weeks ago
+b8a461b : Bluetooth: Killing the process in case of stop_timeout <Ajay Kumar> 8 weeks ago
+a86f6c2 : Bluetooth: OPP: Single Contentresolver thread will be started during transfer <Sravan Kumar V> 7 weeks ago
+19575c5 : Bluetooth-OPP: Don't wait on Socket thread while turning off BT. <Sravan Kumar V> 5 weeks ago
+15ff96a : Bluetooth-OPP: Update notifications after batch canceled. <Sravan Kumar V> 5 weeks ago
+69e9fc8 : Bluetooth: Avoid calls on Null reference <Srinu Jella> 6 weeks ago
+ebd5b6c : Bluetooth-OPP: Optimatize file transfer progress <Sravan Kumar V> 8 weeks ago
+513ebac : Bluetooth: Check Broadcast Action before starting service. <Sravan Kumar V> 8 weeks ago
+097d4de : Bluetooth: Single Contentresolver thread will be started during transfer <Sravan Kumar V> 8 weeks ago
+09ef174 : Bluetooth-OPP: Optimatize file transfer progress <Sravan Kumar V> 8 weeks ago
+2b3626d : Fix crash during profile auto connection. <Satish Kodishala> 8 weeks ago
+5756d9c : Multiuser: Check if valid user before starting service <Hemant Gupta> 8 months ago
+da4fc98 : Bluetooth: Set SCO volume to 0. <Gaurav Asati> 10 weeks ago
+a9fe56b : A2DP Sink: Fix the issue with pause cmd send <Venkateshwarlu Domakonda> 3 months ago
+bb718bd : Bluetooth: Proper handling of BTRH command in HFP client <Bhakthavatsala Raghavendra> 9 weeks ago
+affd0f0 : MAP: Fix following issues for MAP Server: <Ashwini Munigala> 9 weeks ago
+f5294f6 : Multiuser: Check if valid user before starting service <Hemant Gupta> 8 months ago
+8c0e151 : Bluetooth: Set SCO volume to 0. <Gaurav Asati> 10 weeks ago
+01e70d1 : AVRCP1.5: Correct content resolver query for playlist items. <Sumit Bajpai> 10 weeks ago
+1187b7e : Bluetooth: Auto Connect for HFP Client. <Gaurav Asati> 2 years ago
+3043a5e : SAP: Prevent waiting in main thread to prevent ANR <Hemant Gupta> 2 months ago
+9fd009c : PBAP: Update intent parameters for connection <Hemant Gupta> 10 weeks ago
+16070d7 : AVRCP1.5: Correct content resolver query for playlist items. <Sumit Bajpai> 10 weeks ago
+f313ae4 : SAP: Fix PTS issues for disconnection from server <Smriti Gupta> 5 months ago
+54ef1c6 : Bluetooth: Send the state change before cleanup <Venkateshwarlu Domakonda> 3 months ago
+a957ce0 : MAP: Handle possible NPE while disconnect map. <Ashwini Munigala> 3 months ago
+acf906a : Bluetooth: Update ContentResolver if not interrupted. <Sravan Kumar V> 3 months ago
+76d16d9 : HF CLIENT: Let audio manager know when BT is turned off <Satish Kodishala> 3 months ago
+4762efd : Avrcp: Move cursor to proper item during browse operation on playlist. <JivakDhadse> 3 months ago
+74244db : HFP AG: Don't cache call states for VOIP calls <Satish Kodishala> 3 months ago
+28c8610 : Bluetooth: Enable debug logs to debug app level issues <Ajay Kumar> 3 months ago
+0e8a890 : Bluetooth: Increase sdp search time out value <Sravan Kumar V> 3 months ago
+ 
+**** github:CyanogenMod/android_packages_apps_Browser ****
+b152ea3 : Browser: Resurface incognito button <Zhao Wei Liew> 6 days ago
+ 
+**** github:CyanogenMod/android_packages_apps_CarrierConfig ****
+bc6e66f : Add carrier config for Smartfren for IMS support RENDANG-525 <Francis Guevarra> 4 days ago
+ 
+**** github:CyanogenMod/android_packages_apps_Contacts ****
+2bb707d : Don't show default and favorites groups in group overview. <Danny Baumann> 10 months ago
+1ec8222 : Display group memberships in a meaningful way. <Danny Baumann> 10 months ago
+c90fc75 : Remove unused strings <Michael Bestas> 2 days ago
+209b45a : Clean up multi picker activity. <Danny Baumann> 1 year, 4 months ago
+ 
+**** github:CyanogenMod/android_packages_apps_ContactsCommon ****
+533a7db : Propagate group default and favorites state into GroupMembershipDataItem. <Danny Baumann> 10 months ago
+3ff9ac0 : Revert "Move info_lookup's LookupHandlerThread into src/" <Rohit Yengisetty> 2 days ago
+72fb9f8 : Revert "Refactor contact info lookup" <Rohit Yengisetty> 2 days ago
+6ecfe52 : Move info_lookup's LookupHandlerThread into src/ <Rohit Yengisetty> 2 days ago
+d262583 : Add additional SIM constants <Rohit Yengisetty> 2 days ago
+51aabe6 : Refactor contact info lookup <Rohit Yengisetty> 4 days ago
+ 
+**** cmR:android_packages_apps_Settings ****
+21e7c90 : reccents: fixed derp <ZION959> 9 hours ago
+1b13c8c : Keyguard: Forward port lockscreen quick unlock (2/2) <Davor Bertovic> 23 hours ago
+65b1c66 : Option to Disable Brightness Icon In Brightness Slider [2/2] <Varun> 30 hours ago
+5539ca7 : [2/2] Settings: app notifications hide when locked <maxwen> 2 days ago
+6439a7a : Reset battery stats [2/2] <Jorge Ruesga> 2 days ago
+7acaa72 : Settings: Dotted circle battery (2/3) <LorDClockaN> 10 days ago
+865729f : Settings: Disable/Enable screenshot sound [2/2] <htchoi1995> 2 days ago
+767413e : Settings: Add clock/date in recents while in fullscreen mode (2/2) <LorDClockaN> 2 days ago
+760cc42 : Settings: LS clock fonts: Add more fonts (1/2) <LorDClockaN> 8 days ago
+60cf3ef : Clean Up Lockscreen Weather (items & layout) [2/2] <Alex Cruz> 2 days ago
+3f8ba64 : Lockscreen Clock Widget Fonts [2/2] <Alex Cruz> 2 days ago
+490b586 : BlacklistSettings : Ensure contact picker mirrors edit state <Danesh M> 3 days ago
+4c798e0 : Settings : Disable editing existing entries for blacklist <Danesh M> 3 days ago
+ 
+**** github:CyanogenMod/android_packages_providers_ThemesProvider ****
+cd48300 : Guard to prevent inserting a record twice when a new theme is installed <Luis Vidal> 2 days ago
+ 
+**** cmR:android_packages_services_Telephony ****
+6b8548c : Fix National Roaming <Janson Kang> 1 year ago
+5a1c63b : Fix Lte Tile <Varun> 5 days ago
+623872c : Allow MobileNetworkSettings to be invoked for selected SIM. <Danny Baumann> 6 days ago
+ 
+**** bb:arm-eabi-4.9 ****
+be2c644 : 4.9.4-20160102 <mydongistiny> 8 days ago
+ 
+**** bb:arm-eabi-6.0 ****
+72478b7 : 6.0.0-20160102 <mydongistiny> 8 days ago
+ 
+**** bb:arm-linux-androideabi-4.9 ****
+a372e59 : 4.9.4-20160102 <mydongistiny> 8 days ago
+ 
+**** bb:arm-linux-androideabi-5.3 ****
+93422ca : 5.3.1-20160102 <mydongistiny> 8 days ago
+ 
+**** github:CyanogenMod/android_system_bt ****
+e7ed494 : btsnoop: Remove the ext snoop dependency on snoop socket <Mallikarjuna GB> 5 weeks ago
+adb5875 : Cleanup AV callbacks in BTIF context <Ayan Ghosh> 5 weeks ago
+0b789c5 : Initialize the peer sep type based on A2DP role <Venkateshwarlu Domakonda> 4 weeks ago
+23f46f8 : Bluetooth: Offload config save functionality to btif thread <Srinu Jella> 9 weeks ago
+14e47ee : Bluetooth: Free hash map entry to avoid memory leak <Srinu Jella> 9 weeks ago
+a69b205 : Bluetooth: Boost timer callback thread priority to high <Srinu Jella> 10 weeks ago
+3fa86d6 : Bluetooth: Offload config save functionality to btif thread <Srinu Jella> 9 weeks ago
+cc6166e : Bluetooth: Free hash map entry to avoid memory leak <Srinu Jella> 9 weeks ago
+74a2952 : Bluetooth: Boost timer callback thread priority to high <Srinu Jella> 10 weeks ago
+cc03499 : Split A2dp implementation <Ayan Ghosh> 3 months ago
+e67cb5d : Disable opening network debug ports for security reasons <Pavlin Radoslavov> 4 months ago
+d95a451 : Validates the PDU length of GATT Write attribute requests <Subramanian Srinivasan> 3 months ago
+75fb90d : Avoid indications/notifications without clcb allocation <Nitin Arora> 2 months ago
+a8dc3a3 : Bluetooth: Offload config save functionality to btif thread <Srinu Jella> 9 weeks ago
+b8f5e9a : Loads BLE keys stored in NVRAM to btm_sec for BR/EDR devices with derived LE keys <Subramanian Srinivasan> 9 weeks ago
+5eb2ba4 : Avoid indications/notifications without clcb allocation <Nitin Arora> 2 months ago
+9d28827 : Bluetooth: Offload config save functionality to btif thread <Srinu Jella> 9 weeks ago
+c67e006 : Avoid indications/notifications without clcb allocation <Nitin Arora> 2 months ago
+b6fff8a : Bluetooth: Correct the max sdu length used from BT-IF layer <Srinu Jella> 2 months ago
+60d6245 : Bluetooth: Boost timer callback thread priority to high <Srinu Jella> 10 weeks ago
+18f673e : Bluetooth: Free hash map entry to avoid memory leak <Srinu Jella> 9 weeks ago
+957677e : Prevents rejection of valid max connection interval parameter update requests <Pradeep Panigrahi> 10 weeks ago
+cf985e4 : Bluetooth: Corrected UUID parsing logic from config <venkata Jagadeesh> 3 months ago
+c5e34fb : Bluetooth: Free memory after event is processed <Gaurav Asati> 10 weeks ago
+aea16e4 : Revert "Fixed the problem that HCI command times out even without pending command." <Srinu Jella> 10 weeks ago
+cc0fbdb : Bluetooth : GAP : Dont initiate role switch for blacklisted remotes <venkata Jagadeesh> 3 months ago
+b14b191 : Bluetooth : GAP : Dont initiate role switch for blacklisted remotes <venkata Jagadeesh> 3 months ago
+8cd2b40 : Revert "Fixed the problem that HCI command times out even without pending command." <Srinu Jella> 10 weeks ago
+b76b6ba : Bluetooth: Free memory after event is processed <Gaurav Asati> 10 weeks ago
+1fcf9c4 : Bluetooth: Corrected UUID parsing logic from config <venkata Jagadeesh> 3 months ago
+975c8aa : Prevents rejection of valid max connection interval parameter update requests <Pradeep Panigrahi> 10 weeks ago
+4597a66 : Bluetooth: Enable scan refresh notificatons for ScPP profile <Satish kumar sugasi> 1 year, 3 months ago
+8c06604 : Prevent BR/EDR conn/disconnection from changing LE link's Xmit quota <Subramanian Srinivasan> 4 months ago
+ae99dff : Bluetooth: Correct the max sdu length used from BT-IF layer <Srinu Jella> 2 months ago
+9f5151a : Bluetooth: Reset bluetooth status to download NVM tags <Srinu Jella> 3 months ago
+6543559 : Power Manager: Correcting sniff behaviour in multiconnection scenerio <Hemant Gupta> 3 months ago
+ae184c7 : Bluetooth: Dynamic ACL buffer allocation based on ACL Priority <pramod kotreshappa> 1 year, 8 months ago
+f35ca6a : Bluetooth: Gap: Adding NULL check in HAL interface <Balraj Selvaraj> 3 months ago
+72016e8 : Bluetooth: Hogp fix for certification <Satish kumar sugasi> 1 year, 4 months ago
+096f013 : Bluetooth: Ignore unexpected notifications to cause disconnection <Nitin Arora> 3 months ago
+6de08d6 : Bluetooth: Add support to read BD address from bt_nv.bin <Srinu Jella> 3 months ago
+220c900 : Check for valid fd before closing the same. <Ayan Ghosh> 3 months ago
+aafbaf8 : Fixed the problem that HCI command times out even without pending command. <Luke Zhang> 3 months ago
+c3db199 : Bluetooth: OSI: Immediately save bt_config file to NVRAM <Balraj Selvaraj> 3 months ago
+0888213 : Bluetooth: Fix to increase the PAN throughput <Nitin Shivpure> 3 months ago
+00ef74f : Bluetooth: Get RSSI information via tool bdt <juncao> 3 months ago
+ 
+**** cmR:android_system_core ****
+c01b964 : core: add our init file [1/2] <ZION959> 12 months ago
+ 
+**** github:CyanogenMod/android_vendor_cm ****
+74d7c57 : Update IMS APN based on Smartfren Device Technical document-v1 2 <Deepak Kundra> 2 days ago
+ 
+**** cmR:android_vendor_CMRemix ****
+d566dc2 : update cmremix local.rc <ZION959> 2 days ago
+ 
+**** cmR:cm_platform_sdk ****
+4f3fb05 : CMSDK: Add LTE tile back (2/2) <LorDClockaN> 2 days ago
+a497bb7 : Add SystemUI Restart Tile [2/2] <Varun> 24 hours ago
+9fc2639 : Add App SideBar Tile [2/2] <Varun> 24 hours ago
+d37112d : SystemUI: Add Five New Tiles[2/2] <Varun> 24 hours ago
+743bf35 : CMSDK: Add notification toggle button to navbar (2/2) <LorDClockaN> 3 days ago
+5c35cde : Cmsdk: Dotted circle battery (3/3) <LorDClockaN> 9 days ago
+ 
+**** github:CMRemix/proprietary_vendor_samsung ****
+066ce6d : update proximity sensor <ZION959> 3 weeks ago
+574e486 : init commit for samsung galaxy note 4 trlte mm blobs <ZION959> 3 weeks ago
+ 
