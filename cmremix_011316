@@ -1,0 +1,31 @@
+
+**** cmR:android_frameworks_base ****
+0890c14 : Notification drawer: Custom clear all icon color, (1/2): <XXMrHyde> 70 minutes ago
+2a3dacd : Notifications: Custom colors, (1/2): ("normal", heads up and lock screen notifications) <XXMrHyde> 6 hours ago
+579204a : Make G notification font colors more compatible with dark and light themes <westcripp> 10 months ago
+80008a9 : revert: Core: Fix setupwizard FC <ZION959> 7 hours ago
+a032a70 : FWB: Make all 18 font variants available to Statusbar weather temp (1/2) <Janson Kang> 18 hours ago
+714fb2b : FWB: Make all 18 font variants available to Statusbar Clock (1/2) <Janson Kang> 18 hours ago
+a631389 : SystemUI: clean up tuner <Roman Birg> 12 days ago
+79b57f0 : revert: [1/2] base: move UI Tuner to dev settings <ZION959> 7 hours ago
+4368342 : revert: SystemUI: clean up tuner <ZION959> 7 hours ago
+b3cd51c : base: fix num cpu check for CPU overlay <maxwen> 10 days ago
+e762af0 : Fix typo <Jack Boswell> 14 hours ago
+d16e298 : Fix WallpaperCropper crash when setting wallpaper over 8MB <Stephen Woo> 6 months ago
+17b07c4 : Turn advanced devices and file sizes on by default <Alex Cruz> 11 months ago
+be6a48d : Animate backlight quickly when display state request to change or power mode changed <mochangming> 2 weeks ago
+ 
+**** github:CMRemix/android_kernel_samsung_trlte ****
+adb589e : revert: no optimize for size <ZION959> 2 days ago
+dff420f : no optimize for size <ZION959> 2 days ago
+f24420e : update defconfig <ZION959> 2 days ago
+0820be2 : update defconfig <ZION959> 15 hours ago
+ 
+**** cmR:android_packages_apps_Settings ****
+0a9c251 : Settings: Make all 18 font variants available to Statusbar weather temp (2/2) <Janson Kang> 7 hours ago
+581627b : Settings: Make all 18 font variants available to Statusbar Clock (2/2) <Janson Kang> 7 hours ago
+ 
+**** github:CMRemix/proprietary_vendor_samsung ****
+63e0ab0 : update adreno driver for trlte <ZION959> 4 weeks ago
+36faf02 : update mm compatibility blobs for sprints <ZION959> 2 weeks ago
+ 

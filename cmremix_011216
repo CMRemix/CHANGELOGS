@@ -1,0 +1,333 @@
+
+**** cmR:CHANGELOGS ****
+d81960e : update <ZION959> 2 days ago
+ 
+**** cmR:CMRemix ****
+4a98a25 : track cmremix dialer <ZION959> 5 hours ago
+99e239b : Add QC dataservices by default <Ethan Chen> 3 days ago
+ 
+**** github:CyanogenMod/android_bootable_recovery ****
+cd60d87 : recovery: Enable the menu for User builds <Pat Erley> 7 days ago
+ 
+**** cmR:android_build ****
+b704706 : kernel: Add a way to quickly regenerate defconfigs <Michael Bestas> 8 weeks ago
+438a8ff : kernel: Don't use override config in kernel(x)config <Michael Bestas> 9 days ago
+420da62 : qcom: Add dataservices to project pathmap <Ethan Chen> 3 days ago
+d55bce5 : qcom: Fix non-QC target pathmappings <Ethan Chen> 3 days ago
+be202af : qcom: Select Sony display/media variants for Sony devices <Adam Farden> 11 days ago
+ 
+**** github:CyanogenMod/android_device_qcom_common ****
+542ac97 : power: Add support for 8952 <Ethan Chen> 9 days ago
+ 
+**** github:CyanogenMod/android_device_samsung_qcom-common ****
+82da0a1 : Automatic translation import <Michael Bestas> 32 hours ago
+ 
+**** github:CMRemix/android_device_samsung_trlte-common ****
+3da995c : build snap camera <ZION959> 5 hours ago
+604f68f : kernel: add zion959 kernel config file and run kernel config script on boot <ZION959> 21 hours ago
+8a1bd23 : L1/L2 cache size parameters by @JustArchi <ZION959> 21 hours ago
+e1e427c : trlte-common: use snap camera <ZION959> 21 hours ago
+7dba3c4 : enabled our hardware keys <ZION959> 21 hours ago
+95c0e7f : Power-related changes:  Update power HAL, charger stuff, etc. <fat-tire> 24 hours ago
+0d1661a : remove redundant lines in bdroid_buildcfg.h <fat-tire> 24 hours ago
+caf296b : Use overlay to replace SensorService.cpp <fat-tire> 13 days ago
+f1422c1 : Disable gsiff_daemon service (for now) <fat-tire> 13 days ago
+fb34bff : SELinux status:  Enforcing <fat-tire> 13 days ago
+f458208 : update sepolicy for mm <fat-tire> 13 days ago
+883afd2 : Add some audio configuration files <fat-tire> 3 weeks ago
+c8d35de : add to audio policy: AUDIO_DEVICE_IN_AUX_DIGITAL and AUDIO_DEVICE_IN_COMMUNICATION <fat-tire> 3 weeks ago
+7f35be7 : add media_codecs_performance.xml <fat-tire> 3 weeks ago
+92f21c3 : build a few more things like libxml2 <fat-tire> 3 weeks ago
+257a005 : BoardConfig tweaks- F2FS support included <fat-tire> 3 weeks ago
+6b23732 : add shims, libcnefeatureconfig, and libstlport <fat-tire> 3 weeks ago
+b0137fd : update some overlay items <fat-tire> 3 weeks ago
+b63049d : libwvm.so is in /vendor/lib not /lib/ <fat-tire> 3 weeks ago
+6f7eebe : add external connectivity repo <fat-tire> 3 weeks ago
+6d46a23 : update bluetooth bldcfg values <fat-tire> 3 weeks ago
+525c292 : update some selinux stuff + bluetooth access to .cid file <fat-tire> 3 weeks ago
+eb74ac7 : fix trlte.mk <gekkehenkie11> 9 weeks ago
+c8487a3 : build camera wrapper again <gekkehenkie11> 9 weeks ago
+dcafb1a : trlte: fix Sdcard. See: https://source.android.com/devices/storage/config-example.html#android_6_both <gekkehenkie11> 9 weeks ago
+17c0246 : trlte-common: update fingerprint HAL <gekkehenkie11> 9 weeks ago
+ 
+**** github:CMRemix/android_device_samsung_trltetmo ****
+fffbc5f : trltetmo: logcats ftw <ZION959> 10 days ago
+ 
+**** github:CyanogenMod/android_external_f2fs-tools ****
+3e88e81 : mkfs.f2fs: Disable clang <LuK1337> 2 days ago
+ 
+**** cmR:android_external_toybox ****
+3fac1bd : Update generated files after toybox sync. <Elliott Hughes> 8 days ago
+7b746d2 : First pass at iotop. <Rob Landley> 11 days ago
+adf6f03 : Tweak error message. <Rob Landley> 12 days ago
+4ff9295 : Don't let mktemp -q /path/to/file delete arbitrary files, and don't have "mktemp -u > /dev/full" leave file around. <Rob Landley> 13 days ago
+46ddb55 : lsb/mktemp: Add -u flag <Kylie McClain> 3 weeks ago
+08dc20a : First half of iotop. Add READ, WRITE, IO, DREAD, DWRITE, SWAP, DIO, and corresponding percentile fields to ps. Move FLAG_ macro usage to ps-specific code (top/iotop have their own flag contexts). Split init and match code into shared and ps-specific parts. Fix bug in COMMAND for privileged processes. <Rob Landley> 13 days ago
+f82a848 : Add more keys to scan_key() and fix hang in scan_key_getsize(). <Rob Landley> 13 days ago
+3a70500 : make "ls -m | cat" assume 80 columns. <Rob Landley> 13 days ago
+1b7c02a : I didn't add comma_args() to lib.c, I added it with the other comma functions. (Oops. Missed a file checkin, build break, my bad.) <Rob Landley> 13 days ago
+4d3ad67 : Add strafter() to lib. <Rob Landley> 2 weeks ago
+1bf8442 : Make pidof use comma_scan() <Rob Landley> 2 weeks ago
+21ede08 : Move comma_args() from ps.c to lib. <Rob Landley> 2 weeks ago
+4b4ab6a : Add scan_key_getsize() doing the ANSI probe, switch scan_key() to TAGGED_ARRAY, and add test_scankey. <Rob Landley> 2 weeks ago
+6769f8e : Move get_line() header to pending.h because posix has FILE * versions. <Rob Landley> 3 weeks ago
+e32e802 : Factor out draw_str() and friends. <Rob Landley> 3 weeks ago
+432d2f1 : First guess at cp xattr support, ala --preserve=context,xattr <Rob Landley> 3 weeks ago
+53a1aa3 : Revert "Don't add a symlink for killall --- it's broken." <Josh Gao> 3 weeks ago
+d9d19c1 : Convert cp from magic constants to TAGGED_ARRAY() <Rob Landley> 3 weeks ago
+55a4467 : Cleanup tail -f. <Rob Landley> 3 weeks ago
+6be15f4 : Rich Felker's reading of posix is that fchown() and fchmod() must be allowed on files opened read-only, so revert last commit (force writeable logic). <Rob Landley> 3 weeks ago
+fde3a93 : Add ps -o psr,rtprio,sched. <Elliott Hughes> 3 weeks ago
+908d9ed : Implement tail -f. <Josh Gao> 6 weeks ago
+146d219 : Redo linestack to handle embedded NULs. <Rob Landley> 3 weeks ago
+b64abbc : Start of vi. <Rob Landley> 3 weeks ago
+8b64a3e : Next giant chunk of ps work: add _NAME_TAG bitmask values to tags.h (leading underscore version is 1<<NAME_TAG version, with 1LL for >31 shift), suck lots of magic constants out of ps and use tag macros instead, redo command line display so there's now 6 variants (CMD COMM ARGS from posix, NAME CMDLINE from android, and COMMAND for completeness). Document more cases where posix is nuts or widely ignored. <Rob Landley> 4 weeks ago
+1efcb17 : Don't discard previous block when mkstatus finds another span tag with same id. <Rob Landley> 4 weeks ago
+f96bb3d : Start of TAGGED_ARRAY() infrastructure. <Rob Landley> 4 weeks ago
+fc7543b : Make "ps -o TIME+ -k TIME+" work. Factor out -o field names, field lengths, and slot numers into a structure. (Keeping multiple arrays in sync may have been efficient but it was ugly.) Fix duplicate command name copying that corrupted the name of kernel threads. Tighten up slot[] docs. <Rob Landley> 4 weeks ago
+047bcb8 : Add a useless memset (under CFG_TOYBOX_DEBUG) to shut up valgrind. <Rob Landley> 5 weeks ago
+ 
+**** cmR:android_frameworks_av ****
+ddf0593 : libstagefright: Support YVU420SemiPlanar camera format <Ethan Chen> 9 days ago
+ 
+**** cmR:android_frameworks_base ****
+9147570 : fixed build break by this commits <ZION959> 66 minutes ago
+adb285e : SystemUI: Fix CallbackHandler and NetworkControllerBase tests. <Adnan Begovic> 5 hours ago
+2f47c98 : SysUI: Disable window animation when using KeyguardExternalView <d34d> 5 days ago
+9f84cac : SysUI: Handle KgdExtView callbacks on UI thread <d34d> 6 days ago
+8406b5c : SystemUI: Removing padding on mobile signal group. <Adnan Begovic> 7 hours ago
+eb91bd8 : Ringtone: Add support for selection of phone ringtone for SIM-2. <Karthik Reddy Katta> 1 year, 10 months ago
+7d21b54 : SettingsProvider: Disable data roaming by default <Gabriele M> 9 hours ago
+fe976b7 : SystemUi: Reintroduce always_show_roaming config. <Adnan Begovic> 30 hours ago
+df5e230 : ThemeService: ManagedProvisioning is a setup package too. <Ricardo Cerqueira> 14 hours ago
+385a189 : PhoneWindowManager:cmremix and version to boot diaglog <ZION959> 19 hours ago
+7ae8bb5 : telephony: Handle NPE in setDataEnabledUsingSubId() <Sultanxda> 4 months ago
+f20ea48 : SystemUi: Nuke DONT_TRACK label, and introduce CMMetricsLogger constants. <Adnan Begovic> 31 hours ago
+dd2be59 : Make WIFI_IDLE_MS default into an overlay <Danesh M> 34 hours ago
+50ff24f : Automatic translation import <Michael Bestas> 32 hours ago
+2b30269 : Fix drawing of VectorDrawables that are rotated by 90 or 270 degrees. <Danny Baumann> 2 days ago
+e62097f : Increase brightness faster if ambient light is brightening quickly. <Danny Baumann> 10 months ago
+e357576 : Optimize GPS property reloading. <Danny Baumann> 7 months ago
+41ab56e : Align checkbox and description in permission confirmation dialog <Gabriele M> 7 days ago
+ 
+**** github:CyanogenMod/android_frameworks_opt_net_ims ****
+dfb59ac : Add method to check volte provisioning by phone id <Yvonne Wong> 6 days ago
+ 
+**** github:CyanogenMod/android_frameworks_opt_net_wifi ****
+53cbe97 : Use def_wifi_idle_ms to fetch WIFI_IDLE_MS defaults <Danesh M> 30 hours ago
+ 
+**** cmR:android_frameworks_opt_telephony ****
+943ea3d : RIL: Allow returning static radio capabilitiy from getRadioCapability <Michael Gernoth> 4 weeks ago
+2857d06 : DcTracker: Select only carrier enabled APNs <Gabriele M> 4 weeks ago
+ 
+**** github:CyanogenMod/android_hardware_qcom_audio ****
+3a44f58 : HAL: Identify the track offload session <Sharad Sangle> 5 weeks ago
+5df33b2 : libaudiopolicymanager: DirectPCM: fix 44.1 clip playing noisy issue <vivek mehta> 7 weeks ago
+b4eabaf : audio: update flags for selection of VoIP direct output <Karthik Reddy Katta> 7 weeks ago
+6d4ef37 : Merge DAX2 changes <Gao Jie> 9 weeks ago
+ 
+**** github:CyanogenMod/android_hardware_qcom_display ****
+fc41c61 : hwc: Fix compile errors after display-frameworks removal <Arne Coucheron> 4 days ago
+ 
+**** github:CyanogenMod/android_hardware_qcom_display ****
+8c9082a : gralloc: allow forcing old pixel alignment <Sultan Qasim Khan> 12 hours ago
+ 
+**** github:CyanogenMod/android_hardware_qcom_display ****
+9af38ff : Default flexible YUV format to NV21 <Tanmaya Godbole> 5 months ago
+6bda53a : Revert "Change the IMPLEMENTATION_DEFINED preview buffers format". <JinHee Kim> 4 weeks ago
+e236c71 : Revert "Default flexible YUV format to NV21_ZSL". <JinHee Kim> 4 weeks ago
+ 
+**** github:CyanogenMod/android_hardware_qcom_gps ****
+1b6461e : gps: Use project pathmap to determine build eligibility <Ethan Chen> 3 days ago
+ 
+**** github:CMRemix/android_kernel_samsung_trlte ****
+7851a6f : disabled cpuset for now. cause sod <ZION959> 5 hours ago
+0b27fb5 : revert: no optimize for size <ZION959> 19 hours ago
+2441123 : no optimize for size <ZION959> 20 hours ago
+9f821be : update defconfig <ZION959> 21 hours ago
+5aa8cac : arm: irq: warn only when affinity really breaks <Peng Liu> 7 months ago
+e39556d : arm: irq: Notify affinity change when migrating IRQs during hotplug <Praveen Chidambaram> 1 year, 7 months ago
+f750db4 : genirq: Fix null pointer reference in irq_set_affinity_hint() <Jesse Brandeburg> 12 months ago
+6d8c7e9 : genirq: Set initial affinity in irq_set_affinity_hint() <Jesse Brandeburg> 1 year, 1 month ago
+90705ae : irq_flow_handler_t now returns bool <Iliyan Malchev> 10 months ago
+2263e9d : irq: smp_affinity: Initialize work struct only once <Praveen Chidambaram> 1 year, 2 months ago
+952515d : irq: Allow multiple clients to register for irq affinity notification <Lina Iyer> 1 year, 5 months ago
+a05e194 : genirq: Allow forcing cpu affinity of interrupts <Thomas Gleixner> 1 year, 9 months ago
+f7da17f : seccomp: Replace BUG(!spin_is_locked()) with assert_spin_lock <Guenter Roeck> 1 year, 5 months ago
+b6fcdd1 : seccomp: implement SECCOMP_FILTER_FLAG_TSYNC <Kees Cook> 1 year, 7 months ago
+39e57dd : seccomp: allow mode setting across threads <Kees Cook> 1 year, 7 months ago
+6071432 : seccomp: introduce writer locking <Kees Cook> 1 year, 7 months ago
+16a7969 : seccomp: split filter prep from check and apply <Kees Cook> 1 year, 7 months ago
+c2d12d1 : removed unknowed flags -Wno-format-security-ffast-math <ZION959> 22 hours ago
+169f568 : sched/balancing: Reduce the rate of needless idle load balancing <franciscofranco> 2 weeks ago
+6f8764c : sched: Fix race in idle_balance() <Steve Kondik> 23 hours ago
+42c654f : sched/fair: Stop searching for tasks in newidle balance if there are runnable tasks <ZION959> 23 hours ago
+1d34a73 : sched/balancing: Prevent the reselection of a previous env.dst_cpu if some tasks are pinned <Vladimir Davydov> 2 years, 4 months ago
+baa4307 : sched/fair: Optimize find_busiest_queue() <ZION959> 23 hours ago
+f31c782 : sched: Remove one division operation in find_busiest_queue() <Joonsoo Kim> 2 years, 5 months ago
+87ab950 : sched/fair: Implement fast idling of CPUs when the system is partially loaded <franciscofranco> 9 months ago
+a7ba3b0 : sched: Fix bug in average nr_running and nr_iowait calculation <Srivatsa Vaddagiri> 11 months ago
+3feb122 : sched/fair: Fix tg_set_cfs_bandwidth() deadlock on rq->lock <Roman Gushchin> 1 year, 8 months ago
+e0ba5cd : Don't call acct_update_power on ARCH=um. <Lorenzo Colitti> 5 months ago
+742d576 : sched: per-cpu mostly_idle threshold. <Srivatsa Vaddagiri> 1 year, 2 months ago
+dcba214 : sched: inline function scale_load_to_cpu() <Joonwoo Park> 7 months ago
+a391e5d : defconfig: generate owned config <ZION959> 30 hours ago
+7cd5c40 : Drop POK1 & DOK2 Source Code [Pafcholini] <ZION959> 30 hours ago
+a47658c : -O3 optimization <ZION959> 26 hours ago
+ 
+**** github:CyanogenMod/android_packages_apps_AudioFX ****
+49c1954 : Automatic translation import <Michael Bestas> 32 hours ago
+ 
+**** github:CyanogenMod/android_packages_apps_Bluetooth ****
+4885bdd : Automatic translation import <Michael Bestas> 32 hours ago
+ 
+**** github:CyanogenMod/android_packages_apps_BluetoothExt ****
+9061adc : Automatic translation import <Michael Bestas> 32 hours ago
+ 
+**** github:CyanogenMod/android_packages_apps_Browser ****
+f99d466 : Automatic translation import <Michael Bestas> 32 hours ago
+ 
+**** github:CyanogenMod/android_packages_apps_CMFileManager ****
+9efd883 : Automatic translation import <Michael Bestas> 32 hours ago
+a836aa8 : dead lock case <longyu.huang> 9 days ago
+ 
+**** github:CyanogenMod/android_packages_apps_CMWallpapers ****
+d7e4964 : Automatic translation import <Michael Bestas> 32 hours ago
+ 
+**** github:CyanogenMod/android_packages_apps_Calendar ****
+2c28b43 : Automatic translation import <Michael Bestas> 32 hours ago
+ 
+**** github:CyanogenMod/android_packages_apps_Camera2 ****
+ebd0718 : Automatic translation import <Michael Bestas> 32 hours ago
+ 
+**** github:CyanogenMod/android_packages_apps_Contacts ****
+019f467 : Automatic translation import <Michael Bestas> 32 hours ago
+64a9c32 : Fix "Copy to .. " overflow menu item title <Rohit Yengisetty> 30 hours ago
+ 
+**** github:CyanogenMod/android_packages_apps_ContactsCommon ****
+b5b16f7 : Automatic translation import <Michael Bestas> 32 hours ago
+ 
+**** github:CyanogenMod/android_packages_apps_DeskClock ****
+e6065f8 : Automatic translation import <Michael Bestas> 32 hours ago
+ 
+**** github:CyanogenMod/android_packages_apps_Eleven ****
+329816e : Automatic translation import <Michael Bestas> 32 hours ago
+ 
+**** github:CyanogenMod/android_packages_apps_Email ****
+fab6ba7 : Automatic translation import <Michael Bestas> 32 hours ago
+ 
+**** github:CyanogenMod/android_packages_apps_Gallery2 ****
+29e8669 : Automatic translation import <Michael Bestas> 32 hours ago
+ 
+**** cmR:android_packages_apps_InCallUI ****
+7107206 : Automatic translation import <Michael Bestas> 32 hours ago
+ 
+**** github:CyanogenMod/android_packages_apps_LockClock ****
+a461a5c : Automatic translation import <Michael Bestas> 32 hours ago
+ 
+**** github:CyanogenMod/android_packages_apps_PhoneCommon ****
+47f9c4b : Automatic translation import <Michael Bestas> 32 hours ago
+ 
+**** github:CyanogenMod/android_packages_apps_Profiles ****
+a53da5a : Automatic translation import <Michael Bestas> 32 hours ago
+ 
+**** github:CyanogenMod/android_packages_apps_Screencast ****
+eaf1ce6 : Automatic translation import <Michael Bestas> 32 hours ago
+ 
+**** cmR:android_packages_apps_Settings ****
+19aa1dc : Settings: Set regulatory information dialog to non-translatable. <Adnan Begovic> 7 hours ago
+8605334 : Settings: Show ringtone per sim for multi sim device <Adnan> 1 year ago
+2c3e40d : Squash commit of SAR and IC Code. <Adnan Begovic> 12 months ago
+35a185c : Settings: Add CMMetricsLogger constants to proper pages. <Adnan Begovic> 31 hours ago
+1b1716e : Automatic translation import <Michael Bestas> 32 hours ago
+c28091b : Lower minimum vertical range for data usage. <Danny Baumann> 7 days ago
+de3445e : Update vertical axis bounds when resetting network policy. <Danny Baumann> 7 days ago
+5d9dead : Revert "Hide usage graph on app usage details pages." <Danny Baumann> 7 days ago
+b064ddf : Some text are missing in eject sdcard warning <Henrik Baard> 4 weeks ago
+6864747 : Settings: Set default value for 'Volume keys control ringer stream' <Gabriele M> 13 days ago
+b7827e7 : Settings: request runtime permissions inside VoiceWakeup <Roman Birg> 4 days ago
+8b9411e : Settings: increase default regulatory info drawable dimensions <Scott Mertz> 34 hours ago
+566c2f8 : Settings: EL AOSP translation fixes <Michael Bestas> 1 year, 10 months ago
+f75451c : set animation duration to 5 <ZION959> 35 hours ago
+1eaeb2d : Improve DPI warning string <Michael Bestas> 2 days ago
+ 
+**** cmR:android_packages_apps_SetupWizard ****
+fd29a41 : SetupWizard: Don't disable packages on main thread <cretin45> 6 hours ago
+75f8bbd : SetupWizard: Upgrade sdk to 23 <cretin45> 5 hours ago
+ 
+**** github:CyanogenMod/android_packages_apps_Snap ****
+8461f25 : Snap: remove captureUI pngdrawables <jrizzoli> 33 hours ago
+358ebe9 : Snap: Add more resolutions <Ethan Chen> 31 hours ago
+66b3a0c : Snap: More strings cleanup <Michael Bestas> 34 hours ago
+f6a57b1 : Snap: special handling of hdr-mode parameter for lge devices <codeworkx> 4 days ago
+2d5e458 : Fix mismerge of "SnapdragonCamera: fix screen flash on resuming" <Arne Coucheron> 3 days ago
+8f10ee0 : Don't do touch-to-focus for touches outside of the preview. <Danny Baumann> 3 days ago
+6f16347 : SnapdragonCamera: Hide camera controllers when review captured image <likaid> 5 months ago
+a1b0f7a : Move mApplicationContext to init() <LuK1337> 2 days ago
+42a806a : Snap: support setting default preview resolution via overlay <codeworkx> 3 days ago
+f4f5854 : Snap: Fix NPE when parameters.getSupportedVideoSizes() is null <Michael Bestas> 2 days ago
+3615cea : Snap: Fall back to default quality instead of 352x288 <Michael Bestas> 2 days ago
+bc69af7 : Snap: Fix NPE if mCameraDevice == null <Björn Fries> 3 days ago
+ 
+**** github:CyanogenMod/android_packages_apps_SoundRecorder ****
+40977bf : Automatic translation import <Michael Bestas> 32 hours ago
+ 
+**** github:CyanogenMod/android_packages_apps_Stk ****
+1f10bf6 : Automatic translation import <Michael Bestas> 32 hours ago
+ 
+**** github:CyanogenMod/android_packages_apps_Terminal ****
+ff50b7d : Automatic translation import <Michael Bestas> 32 hours ago
+ 
+**** github:CyanogenMod/android_packages_apps_ThemeChooser ****
+19981c2 : Automatic translation import <Michael Bestas> 32 hours ago
+ 
+**** github:CyanogenMod/android_packages_apps_Trebuchet ****
+4eaa0a5 : Trebuchet: Fix resource not found exception when picking a wallpaper <myfluxi> 10 hours ago
+b0c1a0d : Automatic translation import <Michael Bestas> 32 hours ago
+ef97694 : Prevent possible NPE during monkey test <Martin Brabham> 5 days ago
+ 
+**** github:CyanogenMod/android_packages_apps_UnifiedEmail ****
+a5cb4a5 : Automatic translation import <Michael Bestas> 32 hours ago
+ 
+**** github:CyanogenMod/android_packages_inputmethods_LatinIME ****
+7593ae3 : Automatic translation import <Michael Bestas> 32 hours ago
+ 
+**** github:CyanogenMod/android_packages_providers_DownloadProvider ****
+da87869 : Automatic translation import <Michael Bestas> 32 hours ago
+ 
+**** github:CyanogenMod/android_packages_providers_ThemesProvider ****
+3b82b9c : Queries live lock screen preview path <Luis Vidal> 9 hours ago
+c9796fc : Automatic translation import <Michael Bestas> 32 hours ago
+ 
+**** github:CyanogenMod/android_packages_services_Mms ****
+0b83525 : Automatic translation import <Michael Bestas> 32 hours ago
+ 
+**** github:CyanogenMod/android_packages_services_Telecomm ****
+2ae2624 : Automatic translation import <Michael Bestas> 32 hours ago
+ 
+**** cmR:android_packages_services_Telephony ****
+044982b : Automatic translation import <Michael Bestas> 32 hours ago
+de23ef9 : Use correct theme for USSD dialog. <Danny Baumann> 6 days ago
+ 
+**** github:CyanogenMod/android_packages_wallpapers_Galaxy4 ****
+699976c : Automatic translation import <Michael Bestas> 32 hours ago
+ 
+**** github:CyanogenMod/android_packages_wallpapers_PhaseBeam ****
+6fe94fd : Automatic translation import <Michael Bestas> 32 hours ago
+ 
+**** github:CyanogenMod/android_packages_wallpapers_PhotoPhase ****
+1304d69 : Automatic translation import <Michael Bestas> 32 hours ago
+ 
+**** github:CyanogenMod/android_vendor_cm ****
+bd3d22e : init: Create directories needed by sshd <Luca Stefani> 4 days ago
+ 
+**** cmR:android_vendor_CMRemix ****
+bf638c9 : update cmremix local.rc <ZION959> 4 days ago
+ 
+**** cmR:cm_platform_sdk ****
+c7e69de : cmsdk: Introduce internal MetricsLogger class. <Adnan Begovic> 31 hours ago
+cc517bf : Automatic translation import <Michael Bestas> 32 hours ago
+ 
+**** github:CMRemix/proprietary_vendor_samsung ****
+ca94bdf : revert: Revert: update hal for tmo <ZION959> 4 hours ago
+ 

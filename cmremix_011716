@@ -1,0 +1,249 @@
+
+**** cmR:CMRemix ****
+58bbcc9 : Add UICommon <cretin45> 3 days ago
+6f8a980 : Use 3 more of our own intel repos (psb_headers, omx-components, libva) <Christopher R. Palmer> 4 days ago
+47d94a1 : manifest: move mips prebuilts into notdefault <Arnav Gupta> 5 months ago
+ 
+**** omni:android_bootable_recovery ****
+6bb26b5 : Add toybox getprop and setprop for M trees <Ethan Yonker> 7 days ago
+483e9f4 : Improve sdcard partitioning process <Ethan Yonker> 6 days ago
+5618952 : gui: theme changes for terminal <z31s1g> 4 days ago
+a17f175 : gui: reap terminal child process to avoid zombies <that> 7 days ago
+ 
+**** github:CMRemix/android_device_samsung_trlte-common ****
+63e8dce : move trlteRil to trlte-common <ZION959> 4 days ago
+f9cabef : change default (after boot) governor to interactiveX <ZION959> 10 days ago
+8f261d6 : L1/L2 cache size parameters by @JustArchi <ZION959> 6 days ago
+a480e12 : trlte-common: use snap camera <ZION959> 19 hours ago
+64ccaa1 : enabled our hardware keys <ZION959> 19 hours ago
+123acb4 : trlte-common: change preload to shim <Michael Wawrzyniak> 5 weeks ago
+9fb5040 : trlte-common: update aapt config <Michael Wawrzyniak> 5 weeks ago
+e873704 : trlte-common: change charge mode <Michael Wawrzyniak> 6 weeks ago
+6d74532 : trlte-common: re-add overlays <ZION959> 5 weeks ago
+f8e7d01 : trlte-common: re-add libdetectmodem.so <Michael Wawrzyniak> 6 weeks ago
+7b57f02 : trlte-common: update external sd <Michael Wawrzyniak> 9 weeks ago
+fafb309 : L1/L2 cache size parameters by @JustArchi <ZION959> 5 weeks ago
+ddf8961 : trlte-common: Add rmt_storage shim <ZION959> 8 weeks ago
+fa57e17 : trlte-common: Add RIL shim library <ZION959> 9 weeks ago
+f483957 : revert: trlte-common: Update partition info (for now) <ZION959> 9 weeks ago
+74835f4 : trlte-common: general update <Hamada Badr> 9 weeks ago
+ed7454f : trlte: fix Sdcard. See: https://source.android.com/devices/storage/co… …nfig-example.html#android_6_both <gekkehenkie11> 9 weeks ago
+0f6144d : kernel: add zion959 kernel config file and run kernel config script on boot <ZION959> 10 weeks ago
+02097a8 : trlte-common: add cache image size to fix build error <Michael Wawrzyniak> 2 months ago
+1e07ec9 : trlte-common: let's build a camera again! <Michael Wawrzyniak> 2 months ago
+673c3a2 : trlte-common: update proprietary_files.txt <Michael Wawrzyniak> 2 months ago
+87f5ac7 : trlte-common: update fingerprint HAL <gekkehenkie11> 10 weeks ago
+dc7c253 : trlte-common: update mk boot args <ZION959> 10 weeks ago
+ 
+**** github:CMRemix/android_device_samsung_trltetmo ****
+f5f0bb0 : move trlteRIL to trlte-common <ZION959> 11 days ago
+e02d87a : tlttetmo: define radio access family <ZION959> 4 days ago
+c20d99a : update init <ZION959> 4 days ago
+c88ec8e : trltetmo: logcats ftw <ZION959> 2 weeks ago
+ 
+**** github:CyanogenMod/android_external_libpng ****
+75a4e74 : libpng: fix hang during read when inflate fails <Khalid Zubair> 6 days ago
+ 
+**** cmR:android_frameworks_av ****
+8ad6568 : av: Add support for loading audio_effects_vendor.conf <Steve Kondik> 5 days ago
+ 
+**** cmR:android_frameworks_native ****
+77f84f2 : revert: add writeString16(const uint16_t* str, size_t len) to parcel functions <ZION959> 21 hours ago
+6fc17ed : add writeString16(const uint16_t* str, size_t len) to parcel functions <gekkehenkie11> 3 months ago
+ 
+**** cmR:android_frameworks_opt_telephony ****
+95fb573 : Skip unknown tags instead of aborting when parsing UICC TLV data <Thomas Wendt> 11 months ago
+1fa5ccc : Implement UICC TLV Data decoding. <Shantur Rathore> 1 year, 2 months ago
+6d6213a : telephony: Fix persistence of automatic network selection <Christopher R. Palmer> 3 days ago
+ 
+**** github:CyanogenMod/android_frameworks_support ****
+6f0a2cb : Make sure that AppBarLayout is laid out correctly <Chris Banes> 5 months ago
+2ae0ed1 : AppBarLayout layout/measure fixes <Chris Banes> 5 months ago
+ 
+**** github:CyanogenMod/android_hardware_intel_common_libmix ****
+347c889 : intel: videoencoder: Kill logspam when casting a screen <Christopher R. Palmer> 4 days ago
+fea1c72 : intel: videodecoder: Remove attrib_ptr for zenfone2 blobs <Christopher R. Palmer> 9 days ago
+eaa09ab : intel: videodecoder: mpeg4: Remove got_vol/got_vop for zenfone2 <Christopher R. Palmer> 9 days ago
+543245f : intel: videodecoder: AVC: Remove "constraint_set5_flag" for zenfone2 <Christopher R. Palmer> 9 days ago
+e01cfdd : intel: libmix: Use ASUS_ZENFONE2_LP_BLOBS instead <Christopher R. Palmer> 5 days ago
+ 
+**** github:CyanogenMod/android_hardware_intel_common_libwsbm ****
+b2fc92b : intel: libwsbm: Use ASUS_ZENFONE2_LP_BLOBS instead <Christopher R. Palmer> 5 days ago
+ 
+**** github:CyanogenMod/android_hardware_intel_img_hwcomposer ****
+8b7b71a : intel: hwcomposer: csc mode is only supported on newer blobs <Christopher R. Palmer> 9 days ago
+a2bc976 : intel: hwcomposer: Use ASUS_ZENFONE2_LP_BLOBS instead <Christopher R. Palmer> 5 days ago
+72e9fcf : HWC: adapt VirtualDevice for old blob compliance <Jason Riordan> 4 weeks ago
+e8f0703 : Hwcomposer: Enable VirtualDisplay feature <Saadi Maalem> 7 months ago
+ 
+**** github:CyanogenMod/android_hardware_intel_img_psb_video ****
+a1c9ae0 : intel: psb_video: LP blob compatibility <Christopher R. Palmer> 3 weeks ago
+28f732b : intel: psb_video: Use ASUS_ZENFONE2_LP_BLOBS instead <Christopher R. Palmer> 5 days ago
+ 
+**** github:CyanogenMod/android_hardware_qcom_audio ****
+1c5250f : audio HAL: fix thread starvation <Eric Laurent> 7 months ago
+793548e : audiopolicy: use deep buffer output by default for music streams <Sharad Sangle> 6 months ago
+86d47ef : hal: Support the msm8939-florida-snd-card. <Benjamin Legrand> 9 days ago
+ 
+**** github:CyanogenMod/android_hardware_qcom_media ****
+79e831d : Fix flooding of message in calcLumaAlign <Keith Mok> 2 days ago
+ 
+**** github:CyanogenMod/android_hardware_ti_omap4 ****
+9ce3921 : add CMHW for ColorCalibration/LiveDisplay <Michael Gernoth> 4 days ago
+ 
+**** github:CyanogenMod/android_packages_apps_CMFileManager ****
+26fd0d7 : Bump target SDK version to 23 <Martin Brabham> 6 days ago
+ 
+**** github:CyanogenMod/android_packages_apps_CarrierConfig ****
+7b25cb4 : Set voicemail's notification persistent for O2 UK <Marcos Marado> 11 days ago
+ 
+**** github:CyanogenMod/android_packages_apps_Contacts ****
+a08be42 : Add contact blocking and unblocking <Rohit Yengisetty> 5 days ago
+ 
+**** github:CyanogenMod/android_packages_apps_ContactsCommon ****
+b88149f : Add required permission to read vcf from gmail <Martin Brabham> 3 days ago
+f1501f5 : Ensure non-null encoded uri before attempting to parse <Rohit Yengisetty> 3 days ago
+cf86693 : Add block contact dialog and supporting helper classes <Rohit Yengisetty> 5 days ago
+bbf7e82 : Refactor contact info lookup <Rohit Yengisetty> 11 days ago
+ 
+**** github:CyanogenMod/android_packages_apps_Email ****
+34fb128 : email: junk icon <Jorge Ruesga> 3 months ago
+c929853 : email: return default folder name for subfolders <Jorge Ruesga> 3 months ago
+ 
+**** github:CyanogenMod/android_packages_apps_LockClock ****
+ff1cf25 : LockClock : Update to v23 + runtime permissions <Danesh M> 5 days ago
+ 
+**** github:CyanogenMod/android_packages_apps_Messaging ****
+7fc9cfe : Adhere to the revised lookup provider api <Rohit Yengisetty> 5 days ago
+ 
+**** cmR:android_packages_apps_Settings ****
+2fe3649 : Settings: QS shade transparency (2/2) <LorDClockaN> 60 minutes ago
+09c0437 : Disable Quick Settings on secure lockscreen (2/2) <Lars Greiss> 62 minutes ago
+d013d7b : Update Lockscreen clock font option [2/2] <beanstown106> 7 days ago
+c2ac6e0 : Support multiple SAR values, separate args list with ',' <Edward Wang> 3 days ago
+c852bb6 : Settings: option to show network traffic in expanded header (2/2) <Altaf-Mahdi> 4 days ago
+b352792 : Notifications: Custom colors, (2/2): <XXMrHyde> 4 days ago
+c971ae3 : Settings: show warning in lock screen settings when disabled by qs <Roman Birg> 9 days ago
+ 
+**** cmR:android_packages_apps_SetupWizard ****
+fa72da2 : SetupWizard: Upgrade sdk to 23 <cretin45> 5 days ago
+33fa078 : SetupWizard: Don't disable packages on main thread <cretin45> 5 days ago
+2024d3a : Automatic translation import <Michael Bestas> 6 days ago
+dbfe66b : Revert "SetupWizard: declare setupwizard category in manifest" <Roman Birg> 9 days ago
+08f846c : SetupWizard: declare setupwizard category in manifest <Roman Birg> 11 days ago
+ 
+**** github:CyanogenMod/android_packages_apps_Snap ****
+44cfc31 : Don't needlessly make menu button larger than the other toggle buttons. <Danny Baumann> 4 days ago
+3b96d32 : Snap: Set some qcom features as untranslatable <Michael Bestas> 2 days ago
+d8420e3 : Drop new focus indicator into Camera2. <Paul Rohde> 1 year, 1 month ago
+db27186 : Snap: Actually select the highest quality video by default <Christopher R. Palmer> 4 days ago
+2233950 : CameraActivity: Don't hide navigation bar <Danny Baumann> 4 days ago
+607a2f0 : SnapdragonCamera: limit video file size on SD card <likaid> 4 months ago
+f0e709d : SnapdragonCamera: Hide all camera setting when countdown timer starts <likaid> 4 months ago
+24081ba : SnapdragonCamera: Set color effect as none when turn HDR on <likaid> 5 months ago
+645970f : SnapdragonCamera: Fixing NullPointerException in onCreate of VideoModule <Sanjeev Garg> 5 months ago
+8a0414d : SnapdragonCamera: fix thumbnail display <Likai Ding> 6 months ago
+ff10b54 : SnapdragonCamera: fix crash taking Macro+ from MMS <Likai Ding> 6 months ago
+8eeafc1 : SnapdragonCamera: fix NumberFormatException when input value invalide <likaid> 7 months ago
+cd14209 : Snap: Remove touch AF/AEC option <Steve Kondik> 2 years, 1 month ago
+4b6ac95 : Snap: Support 1:1 aspect ratio <Arne Coucheron> 8 days ago
+0ad4095 : Snap: Support for HTC's HDR mode <Steve Kondik> 2 years, 1 month ago
+7f73524 : Snap: support more resolutions <Jason Riordan> 6 days ago
+ 
+**** github:CyanogenMod/android_packages_apps_Trebuchet ****
+ab66f21 : Trebuchet: Fix NPE when app search controller is off <Gabriele M> 2 days ago
+fb312de : Trebuchet: Remove app search controller if turned off <cretin45> 4 days ago
+5b04456 : Trebuchet: Fix some monkey test race condition bugs <cretin45> 4 days ago
+ 
+**** github:CyanogenMod/android_packages_apps_UnifiedEmail ****
+032f3a2 : Remove mail signatures from notification text. <Danny Baumann> 10 days ago
+7a5f09b : unifiedemail: junk icon <Jorge Ruesga> 3 months ago
+b50cac5 : email: allow move/copy operations to more system folders <Jorge Ruesga> 3 months ago
+ 
+**** github:CyanogenMod/android_packages_providers_TelephonyProvider ****
+37604de : TelephonyProvider: Handle database migration from cm-11.0. <Adnan> 1 year, 2 months ago
+ 
+**** github:CyanogenMod/android_packages_providers_ThemesProvider ****
+59bff5c : No default lock wallpaper and live lock screen for system theme <Luis Vidal> 3 days ago
+ 
+**** github:CyanogenMod/android_packages_wallpapers_PhotoPhase ****
+6a4f804 : PhotoPhase: ask for runtime permissions <Roman Birg> 6 days ago
+ 
+**** github:CyanogenMod/android_system_media ****
+c969dad : effects: Add AUDIO_EFFECT_VENDOR_CONFIG_FILE2 <Steve Kondik> 5 days ago
+ 
+**** github:CyanogenMod/android_system_vold ****
+78f24b1 : vold ext4/f2fs: do not use dirsync if we're mounting adopted storage <Sam Mortimer> 7 weeks ago
+6ab045a : vold: hw_fde: Fix merge damage <Ethan Chen> 3 days ago
+ba3b7bd : cryptfs: Set HW FDE flags when building libvold <myfluxi> 4 days ago
+ 
+**** github:CyanogenMod/android_vendor_cm ****
+04864b1 : Fixed Maven Artifactory to work with jack <herriojr> 2 days ago
+356bb56 : APN: Remove wrong T-Mobile CZ and Vodafone CZ APNs <Michael Gernoth> 5 days ago
+6f6e11f : fix cricket APN <HashBang> 2 weeks ago
+e8df21c : sepolicy: Add perfprofd with set_prop macro <myfluxi> 9 weeks ago
+ 
+**** cmR:android_vendor_CMRemix ****
+f933a08 : trlte varients use ZION959 repo kernel <ZION959> 2 days ago
+dcb73ee : update dependencies for trlte kernel <ZION959> 4 days ago
+ 
+**** cmR:cm_platform_sdk ****
+5400b2f : cmsdk: Add battery saver tile (2/2) <Michael Bestas> 3 days ago
+55cb123 : cmsdk: Add heads up tile (2/2) <Michael Bestas> 3 days ago
+cf3f38c : cmsdk: Add CYANOGENMOD_VERSION constant. <Adnan Begovic> 2 days ago
+969cda0 : cmsdk/tests: Temp hack to fix `mka` builds. <Adnan Begovic> 2 days ago
+b9f80b6 : cmsdk: Load notification led customization defaults <Edward Wang> 4 days ago
+bf9cc6d : cmsdk: add lockscreen internal enabled setting <Roman Birg> 9 days ago
+ 
+**** github:CMRemix/proprietary_vendor_samsung ****
+aad64da : Revert: update hal for tmo <ZION959> 2 weeks ago
+23dce5f : BT Fix <WoundTight> 2 weeks ago
+240dead : M updates **Thanks to WoundTight** <nicklovell23> 2 weeks ago
+53d9b2b : Switch to SlimRemix blobs "trlteusc" <nicklovell23> 2 weeks ago
+9d3936b : Kill old blobs <nicklovell23> 2 weeks ago
+0fab667 : Fix derp <nicklovell23> 2 weeks ago
+f538b95 : Updates for M **Thanks to WoundTight** <nicklovell23> 2 weeks ago
+0512b9e : update hal for tmo <ZION959> 2 weeks ago
+0dc1fff : update proximity sensor <ZION959> 4 weeks ago
+c2eedaa : update adreno driver for trlte <ZION959> 5 weeks ago
+3adc359 : update new blobs <ZION959> 5 weeks ago
+e84ac48 : smdk4412-common: use hammerhead drm blobs <Simon Shields> 6 weeks ago
+7b8be40 : Revert "d2: Use rild and libril.so from Galaxy A5 lollipop" <Dan Pasanen> 6 weeks ago
+f98e011 : klteduos: Update proprietary libraries <ljzyal> 6 weeks ago
+c04df9f : kltechn: Update proprietary libraries <ljzyal> 6 weeks ago
+623ae17 : kltechnduo: Update proprietary libraries <ljzyal> 6 weeks ago
+c99ad0f : Revert "smdk4412-common: wifi firmware update from i9305" <Dan Pasanen> 6 weeks ago
+7edba4f : smdk4412-common: wifi firmware update from i9305 <DerTeufel> 1 year, 1 month ago
+2309aa0 : jf: add back libdivxdrmdecrypt dependencies <Dan Pasanen> 6 weeks ago
+78b5da0 : msm8960: add back libdivxdrmdecrypt dependencies <Dan Pasanen> 6 weeks ago
+3a11af2 : Revert "serrano: Use rild and libril.so from Galaxy A5 lollipop" <Arne Coucheron> 6 weeks ago
+2939adb : Revert "serrano: Use rild/libril blobs from I9505" <Arne Coucheron> 6 weeks ago
+57261ba : jf: remove blobs we no longer use <Dan Pasanen> 7 weeks ago
+0c3bc36 : serrano: Kill mm-parser blobs <Arne Coucheron> 7 weeks ago
+17e9565 : serrano: Use rild/libril blobs from I9505 <Arne Coucheron> 7 weeks ago
+21d3bd0 : treltexx: Add missing IR Blaster HAL <Christopher N. Hesse> 7 weeks ago
+302d200 : jf: remove mm-parser <Dan Pasanen> 7 weeks ago
+821f671 : msm8960: remove mm-parser <Dan Pasanen> 7 weeks ago
+dc7b5bb : smdk4412-common and galaxys2-common:Mali API 29 <rogersb11> 10 months ago
+7837360 : i9300: use grouper blobs for GPS <forkbomb> 8 weeks ago
+61507f8 : klte: copy libdsi_netctrl.so to correct place <Matt Filetto> 8 weeks ago
+8fb744b : klte: add missing gps dependent libs <Matt Filetto> 8 weeks ago
+4fed5fe : mondrianwifi: update widevine from hammerhead-mra58k <Christopher R. Palmer> 9 weeks ago
+6bc8a62 : mondrianwifi: update adreno from hammerhead-mra58k <Dan Pasanen> 3 months ago
+1920d15 : jf: blob gps from OK1 <NucWin> 8 weeks ago
+d428c32 : n5100 : RIL blobs from 4.4.4 <RGIB> 9 weeks ago
+ca82c52 : omap4: gralloc: Recognize GRALLOC_USAGE_CURSOR as a valid usage flag. <Kyle Repinski> 9 weeks ago
+c6395f6 : Initial import of treltexx (Galaxy Note 4 Exynos) blobs <Christopher N. Hesse> 9 weeks ago
+965f6ef : klte: Update proprietary libraries <Ethan Chen> 9 weeks ago
+a025732 : kltespr: Update proprietary libraries <Ethan Chen> 9 weeks ago
+5e93e62 : klte-common: Update Adreno libraries <Ethan Chen> 9 weeks ago
+8c87bf6 : klte-common: Update proprietary libraries <Ethan Chen> 9 weeks ago
+a663bc3 : jflteusc: Move to jflter970 <Paul Keith> 2 months ago
+6a74fe4 : jflte[vzw,spr,usc]: remove proprietary libcnefeatureconfig <Dan Pasanen> 2 months ago
+543caf2 : d2: Use rild and libril.so from Galaxy A5 lollipop <Arne Coucheron> 2 months ago
+6d2dc57 : d2: hex libqc-opt for M <Dan Pasanen> 2 months ago
+40d1519 : d2: update blob list <Dan Pasanen> 2 months ago
+a74e04e : jf: update blobs and de-commonize <Dan Pasanen> 3 months ago
+1c90390 : d2: update widevine from razor-mra58k <Dan Pasanen> 3 months ago
+fc0784d : jf: update widevine from razor-mra58k <Dan Pasanen> 3 months ago
+ 
