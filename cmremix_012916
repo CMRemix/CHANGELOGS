@@ -1,0 +1,260 @@
+
+**** cmR:CHANGELOGS ****
+9aee8c8 : update chanlog * <ZION959> 3 days ago
+ 
+**** github:CyanogenMod/android_bootable_recovery ****
+a6a4c8a : recovery: Fix mount_for_wipe <Pat Erley> 8 hours ago
+c7610f2 : recovery: Fix recursive rm wipe of data <Pat Erley> 2 weeks ago
+ 
+**** omni:android_bootable_recovery ****
+4fea38a : twrp: default to GGL_PIXEL_FORMAT_BGRA_8888 if vi.red.offset == 16 <Ziyan> 32 hours ago
+7a36a8c : data: fix setting brightness at startup <that> 9 hours ago
+e95c486 : ifdef and comment out libjpeg <Ethan Yonker> 2 days ago
+fbb4353 : Update minuitwrp graphics in line with latest minui <Ethan Yonker> 5 weeks ago
+ 
+**** cmR:android_build ****
+a321927 : releasetools: Store and use the dt image file through target files <Brint E. Kriebel> 11 months ago
+1b6aaec : build: force .config update if additional kernel config changes <Scott Mertz> 3 days ago
+30ca83f : If a console doesn't exist, read password from stdin. <adattatr> 5 months ago
+bef5252 : binary: Don't run protobuf header relocations if origin/target are the same <Ricardo Cerqueira> 3 days ago
+ 
+**** aosp:platform/cts ****
+1247bca : Revert "Cts test fix for shortcode 48000" BUG: 26714654 <Daniel Xie> 29 hours ago
+ 
+**** github:CMRemix/android_device_samsung_trlte-common ****
+06ba8c1 : trlte-common: update overlay <ZION959> 2 hours ago
+8f33e46 : SELinux status: Enforcing <ZION959> 3 hours ago
+7df6cec : test camera sepolicy <ZION959> 12 hours ago
+6a8f317 : add lib/libdetectmodem.so to fix call audio issue this lib not on 5.1.1 DOK2 firmware. <ZION959> 12 hours ago
+42fb188 : trlte-common: Update proprietary file listing <ZION959> 26 hours ago
+ 
+**** github:CMRemix/android_device_samsung_trltetmo ****
+c3dfdbc : delete duplicate libconfigdb.so <ZION959> 26 hours ago
+77785ff : trltetmo: Update proprietary file listing for MM <ZION959> 26 hours ago
+ 
+**** github:CMRemix/android_device_samsung_trltexx ****
+a0ccf0a : revert: move trlteRIL to trlte-common <ZION959> 2 days ago
+ 
+**** cmR:android_external_chromium-webview ****
+a586311 : Update webview to version 48.0.2564.95 (arm+arm64) <mydongistiny> 2 days ago
+8c7d7af : Update webview to version 48.0.2564.85 (arm+arm64) <mydongistiny> 7 days ago
+ 
+**** cmR:android_external_sepolicy ****
+cd1c126 : Allow sdcardd tmpfs read access. <dcashman> 2 days ago
+c5f7126 : vold: allow execute cp and rm <Jeff Vander Stoep> 8 days ago
+3658174 : Settings: Add option to disable logging <Mark Salyzyn> 5 weeks ago
+2ce0c1a : Add permissions back to app / shell domains <Nick Kralevich> 8 weeks ago
+54daf1f : adbd: allow "adb pull /sdcard/" <Nick Kralevich> 7 weeks ago
+ 
+**** cmR:android_external_toybox ****
+96ce721 : toybox: stat: Fix -t option <Michael Bestas> 4 days ago
+82f338a : toybox: Fix compilation warning in fdisk <Steve Kondik> 5 days ago
+c7df6fe : Regenerate generated files. <Elliott Hughes> 7 days ago
+83c6d22 : Replace slot[] constants with SLOT_blah, fix some that weren't displaying right. <Rob Landley> 7 days ago
+5c725e9 : I cleaned up the code in 'netstat.c' as belows. <Lipi Lee> 8 days ago
+2081ec6 : Add a sed test from the posix mailing list. <Rob Landley> 8 days ago
+08db7e5 : Disable CFG_TOYBOX_DEBUG for now. <Elliott Hughes> 8 days ago
+a729fc8 : Regenerate generated files. <Elliott Hughes> 8 days ago
+be7e9e0 : Correct units of %MEM and %VSZ. <Rob Landley> 8 days ago
+941f9d6 : Add basic top support to ps.c, delete toys/pending/top.c. <Rob Landley> 8 days ago
+59781de : First stab at making readfileat() realloc() in a loop to read long files. <Rob Landley> 8 days ago
+e9dce28 : Another CFG_TOYBOX_DEBUG test. <Rob Landley> 9 days ago
+ee660c9 : runcon needs to exec, not recurse. <Rob Landley> 9 days ago
+29d9820 : Set CONFIG_TOYBOX_NORECURSE. <Elliott Hughes> 10 days ago
+559f36c : Implement pgrep -clv (and remove some accidentally checked in debug code). <Rob Landley> 10 days ago
+36b7cb7 : Implement basic pkill plumbing, and fix FORCE_FLAGS on flag context switch. <Rob Landley> 10 days ago
+ba86864 : Extend utf8 fontmetrics so ps can use them. <Rob Landley> 11 days ago
+3b17f66 : Add -L label and UUID support to mkswap. <Rob Landley> 12 days ago
+544c1ec : Update draw_str() and friends to do standard escaping for ^X <AB> U+ABCD. <Rob Landley> 12 days ago
+5493916 : Move create_uuid() to lib and xpoll() to lib/net.c. <Rob Landley> 12 days ago
+7279b84 : Add swapon -d (discard) <Rob Landley> 13 days ago
+e56796d : Regenerate generated files. <Elliott Hughes> 13 days ago
+633ae50 : Turn on CFG_TOYBOX_DEBUG for valgrind. <Elliott Hughes> 3 weeks ago
+7d6f210 : Command line files without paths were attempting to use stdin as their dirfd, (because ls uses nonstandard directory recursion which collates all the command line arguments under a fake top node, which needs more thorough initialization). <Rob Landley> 13 days ago
+deb31c8 : Locale setting is case sensitive. <Rob Landley> 13 days ago
+a90fd0a : More utf8 test files. <Rob Landley> 13 days ago
+7ca9078 : Fix sort -f, add tests, make TEST_HOST pass new tests. <Rob Landley> 2 weeks ago
+7d4d042 : Implement most of pgrep and pkill. <Rob Landley> 2 weeks ago
+1921555 : Make "find -execdir toys echo {} +" batch correctly and show topdir results. <Rob Landley> 2 weeks ago
+456b363 : Expand defconfig/allyesconfig/allnoconfig help text to explain what they're for. <Rob Landley> 2 weeks ago
+b7ab12c : Regenerate generated files. <Elliott Hughes> 3 weeks ago
+5f58880 : Fix tail -f /does/not/exist. <Elliott Hughes> 3 weeks ago
+c55d30d : Fix hwclock -u. <Elliott Hughes> 3 weeks ago
+e894358 : Fix perror_exit_raw. <Elliott Hughes> 3 weeks ago
+1b98374 : Make cursor left/right change sort type in iotop. <Rob Landley> 3 weeks ago
+2ff26de : Regenerate generated files. <Elliott Hughes> 3 weeks ago
+8784d8d : Fix cat -. <Elliott Hughes> 3 weeks ago
+0229ee4 : The sense of -L was flipped. <Elliott Hughes> 3 weeks ago
+efb309d : Make scan_key() specify timeout in miliseconds, split out terminal_probesize(), add function key definitions and shift/ctrl/alt cursor keys. <Rob Landley> 3 weeks ago
+d3a435e : Add error_msg_raw() and friends, replace error_msg("%s", s) uses, enable format checking, and fix up format checking complaints. <Rob Landley> 3 weeks ago
+8dfbf2e : Some utf8/unicode stress test files. <Rob Landley> 3 weeks ago
+80c6b26 : Work towards making "find . -execdir echo {} + -execdir ls {} +" work, (not finished yet) plus some error message improvements. <Rob Landley> 3 weeks ago
+3d33dd8 : Fix find --prune. <Rob Landley> 4 weeks ago
+aa784b0 : Fix "find . -exec echo {}" segfault, and stop measuring environment space, <Rob Landley> 4 weeks ago
+ 
+**** github:CyanogenMod/android_external_cyanogen_UICommon ****
+0216401 : Make into module <cretin45> 3 days ago
+ 
+**** cmR:android_frameworks_base ****
+f5c681a : Intent: Fix a NPE on readFromParcel <AdrianDC> 4 weeks ago
+b655a56 : SettingsProvider: Add missing INTERACT_ACROSS_USERS_FULL permission <AdrianDC> 4 weeks ago
+b51f068 : SystemUI: Don't update if HeadsUp is disabled <lion0738> 4 days ago
+623d991 : SystemUI: make online cpu color green for cpu overlay <Altaf-Mahdi> 10 months ago
+fe164b4 : Don't reuse weather controller before it's changed <LorDClockaN> 2 days ago
+61ae0f4 : Add keylayout for Xbox One controller <Tim Clark> 3 weeks ago
+2c66694 : Ensure reused task uses target stack. <riddle_hsu> 2 days ago
+8944af7 : Hide arrows in network traffic indicators [1/2] <Nico60> 3 hours ago
+f0a9cc1 : Remove dead code <Jean-Pierre Rasquin> 10 months ago
+3f9b238 : QS: Power Menu Tile [1/2] <varund7726> 3 hours ago
+f564f48 : SeekBarVolumizer : Disable notification volume if RINGER_MODE_VIBRATE <Danesh M> 14 hours ago
+2bc8257 : Partially revert 'SOFTAP: implement SOFTAP new requirement in framework.' <Ethan Chen> 33 hours ago
+cfac73e : ZenMode : Update defaults for CTSVerifier <Danesh M> 9 weeks ago
+32fd3e9 : Tethering: Fix number of device connected <Benjamin Legrand> 2 weeks ago
+f2f5d27 : am: Don't take down activity process if target intent component is null. <Adnan Begovic> 14 hours ago
+fc4d2da : Themes: Fix CMSetupWizard package name in ThemeService <d34d> 2 days ago
+ae92c83e : Themes: def theme package is defined in CMSettings <d34d> 4 days ago
+eb8cfc8 : Wifi tile: don't set items visible from non-ui thread <Roman Birg> 3 months ago
+cf7f9d3 : SystemUI: fix contracting qs settings page <Roman Birg> 2 days ago
+5b3e9b0 : SystemUI: improve tile caching mechanism <Roman Birg> 3 days ago
+a186728 : allow whitelisting of ACCESS_KEYGUARD_SECURE_STORAGE <Roman Birg> 35 hours ago
+813805a : Make lights out mode of navigation bar consistent to normal mode. <Danny Baumann> 9 days ago
+e93425b : fixed build <ZION959> 2 days ago
+5ce1643 : FWB: Power/reboot dialogs dim amount (1/2) <LorDClockaN> 6 days ago
+537990a : Configurable dashboard columns [2/2] <Alex Cruz> 7 days ago
+468f03a : Dashboard tileview double lines toggle [2/2] <LorDClockaN> 2 days ago
+75572ef : FWB: Power/reboot menu transparency (1/2) <LorDClockaN> 7 days ago
+e25801c : FWB: Volume dialog transparency (1/2) <LorDClockaN> 8 days ago
+08fbb1c : FWB: QS header transparency (1/2) <LorDClockaN> 8 days ago
+18f0427 : FWB: QS header transparency (1/2) <LorDClockaN> 8 days ago
+080ae32 : Add a timer to screen record <Evisceration> 1 year, 11 months ago
+74561f6 : Screenrecord: save screenrecord in "Screenrecords" directory <Alexander Martinz> 10 days ago
+0017dba : [1/4] Breathing missedcall/voicemail <garwedgess> 2 years ago
+ab8628b : long press torch tile to open camera <pranav> 10 days ago
+5bb9701 : SettingsProvider : Don't replay aosp defaults every boot <Danesh M> 2 days ago
+ce8027e : aapt: add check for untranslatable "string-array"s <Chirayu Desai> 2 years, 9 months ago
+0ee5894 : pm: Fix ordering of parameters for sendPackageBroadcast. <Adnan Begovic> 2 days ago
+f20c8bd : SystemUI: disable editing tiles while in lock screen <Roman Birg> 3 days ago
+8c547fd : allow priveleged phone state permission to be whitelisted <Roman Birg> 9 days ago
+ 
+**** cmR:android_frameworks_opt_telephony ****
+b55c639 : National Data Roaming [1/3] <lichti1901> 9 weeks ago
+ 
+**** github:CyanogenMod/android_hardware_qcom_audio ****
+b5b6d33 : hal: Update format table with AAC ADTS formats. <Ashish Jain> 2 months ago
+102616d : HAL: Identify the track offload session <Sharad Sangle> 7 weeks ago
+8c21ad7 : Merge DAX2 changes <Gao Jie> 3 months ago
+ 
+**** github:CyanogenMod/android_hardware_qcom_fm ****
+93ad52e : libfm_jni: Confine the firmware-load skipping to the actual loading <Ricardo Cerqueira> 3 days ago
+208ee64 : FM: Do not stop FMRadioService if FM is still on <juncao> 4 weeks ago
+ 
+**** github:CyanogenMod/android_hardware_qcom_media ****
+ccc0be9 : Fix flooding of message in calcLumaAlign <Keith Mok> 2 weeks ago
+ 
+**** github:CyanogenMod/android_hardware_samsung ****
+79a9b15 : Initial unified Samsung lights HAL <Christopher N. Hesse> 3 days ago
+ 
+**** github:ZION959/android_kernel_samsung_trlte ****
+294daa1 : revert: Set Selinux permissive [chenglu] <ZION959> 3 hours ago
+e0ac965 : update defconfig <ZION959> 2 days ago
+c20044f : cpufreq: convert "index" to corresponding variable <TwistedUmbrella> 1 year ago
+b206cbf : fixed build error for savoca kcal <ZION959> 3 days ago
+b594788 : cpufreq: interactive: add input_boost_freq <Pafcholini> 9 weeks ago
+d5c105a : input: touchboost: conservative samples every 10ms, no point in limiting input_time to update its value in 50ms intervals <franciscofranco> 12 months ago
+aa0c135 : input: add generic touch event listener <franciscofranco> 12 months ago
+34b903b : cpufreq: Introduce new relation for freq selection Introduce CPUFREQ_RELATION_C for frequency selection. It selects the frequency with the minimum euclidean distance to target. In case of equal distance between 2 frequencies, it will select the greater freq. <Stratos Karafotis> 1 year, 7 months ago
+8cdb2ec : block: row: Fix crash when adding a new field in bio struct <Tanya Brokhman> 1 year, 7 months ago
+7f21a6e : Optimize copy_page for modern ARM platforms <Harm Hanemaaijer> 2 years, 7 months ago
+635a320 : mdss: silence annoying kmsg <ffolkes> 10 months ago
+a46715a : [squash] savoca's patch for color control MDSS 8084 to kernel <Pafcholini> 10 days ago
+0bd8ff8 : Sysfs interface for Gentle_Fair_Sleepers [neobuddy89] <placiano> 1 year ago
+547df71 : revert: add savoca's patch for color control MDSS 8084 to kernel <ZION959> 3 days ago
+d2390e7 : Added LED Control & Fading Control <placiano> 9 months ago
+eebe4d2 : Add Led control [Twistedumbrella & Ktoonsez] <placiano> 12 months ago
+8f3612d : include: linux: add Sysfs_helpers: Allow negative values <Pavel> 1 year, 1 month ago
+cca9494 : cpufreq: cpu-boost: we can hit a small performance loss by not queuing input works less than 150ms apart when our default input work duration is only 40ms, so use that 40ms as a magic value instead of the 150ms minimum interval. <franciscofranco> 1 year, 3 months ago
+b8bc5ef : cpufreq: cpu-boost: don't boost migrations with load below the threshold Even if we don't use load_based_syncs (there seems to be a bug that make min_freq stuck at random frequencies) we can prevent this feature to boost the target cpu if the task load is below the migration threshold. We might save some mA down the road with this. <Pavel> 1 year, 1 month ago
+eca4bc6 : wcd9xxx: Fix NCP fclk level enable/disable sequence <Vidyakumar Athota> 7 months ago
+f5495d9 : asoc: wcd9xxx: Improve headset detection Change the plug detection timeout to 2sec. <Pafcholini> 10 months ago
+eb0b6a2 : sound/fauxsound: Updates <placiano> 5 months ago
+2cf102f : sound/soc/codecs: add TOMTOM_A_CDC_RX8 <Pavel> 12 months ago
+bfecc6e : Sound Control: 3.6 <Pavel> 1 year ago
+522ada9 : sound/soc/codecs: add sound_control_locked <Pavel> 1 year ago
+16e522c : sound/soc/codecs: fix speaker gain and mic gain for the Note 4 <Pavel> 1 year ago
+5f74764 : sound/soc/codecs: Faux Sound control for WCD9330 TomTom codec driver <Pavel> 1 year ago
+f67bc52 : ASoC: wcd9xxx: Avoid micbias glitches during audio playback During audio playback over headset, micbias output is switched to vddio and it's parameters are programmed so that it will do button polling with a voltage equal to vddio (1.8v). It is observed that during this polling interval there is a drop in micbias voltage which would cause issues with button press. Avoid this voltage drop by disabling mbhc micbias when vddio switch is enabled. <Pavel> 1 year ago
+bd3a0c8 : ASoC: wcd9xxx: Changes for High performance mode <Sudheer Papothi> 1 year, 6 months ago
+3ac3d11 : logger: Add sysfs interface to Enable / Disable Android Logger <Mohamed Karami> 2 years, 8 months ago
+e7d4f3f : qdsp6v2: Stereo Call Recording Support <ZION959> 3 days ago
+ 
+**** github:CyanogenMod/android_packages_apps_CMFileManager ****
+d6ce089 : Refine CMFM permissions. <Martin Brabham> 2 days ago
+ 
+**** github:CyanogenMod/android_packages_apps_Messaging ****
+8668700 : Framework to Local Blacklist Synchronization Fix <gkipnis> 35 hours ago
+ 
+**** github:CyanogenMod/android_packages_apps_PhoneCommon ****
+a809cc0 : Add last call fail cause 26 string. <Andalam Parthasarathi> 4 months ago
+ 
+**** cmR:android_packages_apps_Settings ****
+efd99f5 : Selinux Switch: Show toast only for permissive on boot <LorDClockaN> 2 hours ago
+e1da20a : Selinux Switch <Alex Cruz> 2 hours ago
+070839f : Hide arrows in network traffic indicators [2/2] <Nico60> 3 hours ago
+44f6d94 : VPN settings: grey out policy-restricted menus <Robin Lee> 4 months ago
+aa69904 : Fix "division by zero" crash after USB mass storage disconnects <Xinghan Yue> 5 weeks ago
+a3edbcc : fix out of memory with continuous entry and exit InstalledAppDetail. <daqiangx> 6 weeks ago
+1584ea7 : Settings: change annoying "ERMAHGERD YOU'VE BECOME A DEVELOPER!!!" message to something more indicative of what's actually happening. <jerdog> 9 months ago
+c5ff8df : Fingerprint: do not error out when stopping to listen <Alexander Martinz> 34 hours ago
+de00b25 : ProtectedApps: add up navigation and fix action bar icons <Alexander Martinz> 35 hours ago
+62d50cc : Settings : Finish SimPreferenceDialog on dismiss <Danesh M> 11 hours ago
+5895648 : Settings : Fix linked volume crash + inconsistent state <Danesh M> 14 hours ago
+456e21e : Settings : Improve app info screen <Danesh M> 12 hours ago
+7b613ae : [2/2] Settings: blacklist: update iconography <jrizzoli> 3 days ago
+bc5366f : Settings: hide light pulse settings if not available <Roman Birg> 7 months ago
+2d5803e : Settings: fix a few color picker inconsistentcies <Roman Birg> 6 months ago
+db44284 : MasterClear: update UI <Roman Birg> 8 months ago
+33fe180 : Settings: Breathing missedcall/voicemail <Bajee11> 2 days ago
+79b16fd : Settings: QS header transparency (2/2) <LorDClockaN> 2 days ago
+2a9cad5 : Dashboard tileview double lines toggle [1/2] <Alex Cruz> 2 days ago
+9bda95f : Configurable dashboard columns [1/2] <Alex Cruz> 2 days ago
+ed3b783 : Settings : Add overlay for hiding wifi region code <Danesh M> 2 days ago
+41a3a31 : Fix alignment on dashboard. <Dave Kover> 9 days ago
+ 
+**** cmR:android_packages_apps_SetupWizard ****
+95246f2 : SetupWizard : Use MccTable for mcc -> locale lookup <Danesh M> 32 hours ago
+06aa3eb : Themes: Re-enable applying theme in OOBE <d34d> 4 days ago
+578df09 : Automatic translation import <Michael Bestas> 4 days ago
+00ad221 : SetupWizard : Ensure we don't override user locale picks <Danesh M> 4 days ago
+d59304c : SetupWizard : Switch to mcc/mnc locale <Danesh M> 10 days ago
+ 
+**** github:CyanogenMod/android_packages_apps_Snap ****
+59f0f0b : Snap: support resolutions used by Moto X Play <Sultan Qasim Khan> 4 days ago
+ 
+**** github:CyanogenMod/android_packages_apps_Trebuchet ****
+7df0227 : Port Remote Folder from 12.1 to 13. <Tyson Miller> 3 months ago
+84dfd2a : Revert "fix CTS failure on Trebuchet - manually picked from a269d518db02c8383e3621dff9d6054e3e9e48d6" <Matt Garnes> 31 hours ago
+e76e868 : Trebuchet: Fix hidden folder name color <Michael Bestas> 3 days ago
+2cdfb1d : Trebuchet: Fix hidden folder remove icon color <Michael Bestas> 4 days ago
+ 
+**** cmR:android_packages_apps_TvSettings ****
+26d5ad1 : Automatic translation import <Michael Bestas> 4 days ago
+b9f2f01 : Automatic translation import <Michael Bestas> 3 weeks ago
+ 
+**** github:CyanogenMod/android_packages_services_Telecomm ****
+4f7086f : [1/2] Telecomm: blacklist: update iconography <jrizzoli> 5 days ago
+ 
+**** cmR:android_system_core ****
+5e856dd : revert: Allow SELinux to be disabled, set it to permissive by default <ZION959> 3 hours ago
+4e25c92 : rootdir: Update cpufreq permissions when governor changes <Steve Kondik> 3 years, 5 months ago
+ 
+**** github:CyanogenMod/android_vendor_cm ****
+db4fb0e : recovery: Add new rules for recursive wipe <Pat Erley> 2 weeks ago
+ 
+**** cmR:android_vendor_CMRemix ****
+30a02db : revert: revert: update kernel adiuter <ZION959> 2 days ago
+8401a3b : revert: update kernel adiuter <ZION959> 2 days ago
+88d44a2 : use sm 4.9 for trlte <ZION959> 2 days ago
+ 
+**** cmR:cm_platform_sdk ****
+6edf5ff : Add Power Menu Tile [2/2] <varund7726> 2 hours ago
+ 
