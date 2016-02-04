@@ -1,0 +1,154 @@
+
+**** cmR:CMRemix ****
+562939b : track busybox again <ZION959> 27 minutes ago
+3899518 : delete busybox and track services/Telecomm <ZION959> 9 hours ago
+6bb5a95 : track snap camera <ZION959> 10 hours ago
+ 
+**** omni:android_bootable_recovery ****
+9ee045a : Add compare xml script and move/update relink-binaries.sh <Ethan Yonker> 2 days ago
+da31ac4 : Remove execute permissions from source files <that> 2 days ago
+f54e539 : partition.cpp: fix build, add missing include <that> 2 days ago
+b5fab76 : Replace fix permissions with fix contexts for emulated storage <Ethan Yonker> 3 days ago
+ebc4cfa : adds TW_ADDITIONAL_RES to TW_RES <Xuefer> 8 days ago
+b6e5fd9 : add Simplified and Tranditional Chinese language <Xuefer> 5 days ago
+793ec58 : Fix translation spellings <sndnvaps> 3 days ago
+c12a7f0 : gui: move "(Up A Level)" in file selector to resource string <that> 3 days ago
+62c188c : Fix minuitwrp include mistake <Greg Wallace> 4 days ago
+558aef7 : Reduce format f2fs time <Greg Wallace> 12 days ago
+ 
+**** cmR:android_build ****
+4378138 : clang: use DragonTC 3.8 <ZION959> 3 weeks ago
+0b2c5fa : kernel: Add a way to quickly regenerate defconfigs <Michael Bestas> 3 months ago
+20ab6de : kernel: Don't use override config in kernel(x)config <Michael Bestas> 4 weeks ago
+e129b5e : releasetools: add compatibility for full ota functions with incrementals <Brint E. Kriebel> 10 months ago
+1a1555c : releasetools: Use the first entry of a mount point when reading fstab <Brint E. Kriebel> 2 days ago
+ 
+**** github:CMRemix/android_device_samsung_trltetmo ****
+bcccb9f : fixed gps location bugs <ZION959> 33 hours ago
+ 
+**** cmR:android_frameworks_base ****
+b8fb268 : revert: SystemUI: Add LTE Tile (1/2) <ZION959> 9 hours ago
+df4085b : SystemUI: add better hints when trying to delete edit tile <Roman Birg> 5 days ago
+ 
+**** github:CyanogenMod/android_hardware_qcom_audio ****
+26eab94 : post_proc: include BT A2DP headset for BassBoost effect <Dhananjay Kumar> 8 months ago
+f9cdf29 : post_proc: fix copyright marking for bass_boost.h <Dhananjay Kumar> 10 months ago
+8d3ca75 : post_proc: add PBE effect for speaker <Dhananjay Kumar> 1 year, 8 months ago
+19fc911 : hal: pass samplerate as is to tiny compress. <Ravi Kumar Alamanda> 1 year, 3 months ago
+e281b53 : Revert "hal: Fix voice session setup failure" <Shiv Maliyappanahalli> 6 months ago
+cbee005 : audiopolicy: Fixed build error <Pavan Chikkala> 8 weeks ago
+b43b922 : hal: add support for AudioSphere effects. <Dhananjay Kumar> 9 months ago
+4f0cc57 : hal: Support config selection for playback on speaker <Amit Shekhar> 1 year, 4 months ago
+515e481 : audiopolicy: Fixed build error <Pavan Chikkala> 8 weeks ago
+dbcce50 : hal: Port wcd9326 changes to 8909 <Manish Dewangan> 10 months ago
+410c530 : hal: update error handling for pcm_prepare failures <Ravi Kumar Alamanda> 4 months ago
+ff79309 : hal: fix compilation issues with audio FM extention <Ramjee Singh> 2 months ago
+762d7eb : policy_hal: add support for fm device loopback <Ramjee Singh> 2 months ago
+7c418f9 : audio_policy: modify few methods to appropriately override base <Ramjee Singh> 9 weeks ago
+8b12163 : audio: Add support to enable split A2DP <Ramlal Karra> 11 months ago
+550c6a0 : hal: fix compilation issues with audio FM extention <Ramjee Singh> 2 months ago
+8b8bfef : policy_hal: add support for fm device loopback <Ramjee Singh> 2 months ago
+e0f993c : audio_policy: modify few methods to appropriately override base <Ramjee Singh> 2 months ago
+8944e04 : Revert "policy_hal: Function prototype correction for custom policy". <Ramjee Singh> 2 months ago
+a0559fa : Revert "Revert "policy_hal: Function prototype correction for custom policy"." <Ramjee Singh> 10 weeks ago
+6f95516 : Merge DAX2 changes <Gao Jie> 3 months ago
+c073923 : Revert "policy_hal: Function prototype correction for custom policy". <Ramjee Singh> 2 months ago
+104f38b : hal: add support to offload VORBIS, ALAC  formats <Satya Krishna Pindiproli> 9 months ago
+790d462 : policy_hal: Add voip changes to audio policy <Karthik Reddy Katta> 7 months ago
+218ce44 : policy-hal: Fix for alarm tone heard even after dismissing. <Ramjee Singh> 4 months ago
+3f5668a : policy-hal: fix glitch in playback while applying setForceUse <Dhananjay Kumar> 5 months ago
+d45aae8 : hal: add a new key to query for decoder viability <Sidipotu Ashok> 5 months ago
+ 
+**** github:CyanogenMod/android_hardware_qcom_display ****
+845cb50 : gralloc: allow forcing old pixel alignment <Sultan Qasim Khan> 3 weeks ago
+696adeb : gralloc: fall back to old pixel alignment on old blobs <Sultan Qasim Khan> 7 weeks ago
+fc0fbbc :  hwc: hdmi: Fix compilation with new HDMI resolutions <Sachin Bhayare> 3 weeks ago
+ 
+**** github:CyanogenMod/android_hardware_qcom_media ****
+aecbc7a : mm-video-v4l2: handle flush done as buffer_done and not as cmd_done <Ashray Kulkarni> 8 months ago
+ 
+**** github:CyanogenMod/android_hardware_ti_omap4 ****
+d3699e4 : Add common omap4 init file <Ziyan> 7 days ago
+f3f7678 : Add common sepolicy <Ziyan> 7 days ago
+ 
+**** github:CMRemix/android_kernel_samsung_trlte ****
+2f9d86f : revert: Set Selinux permissive [chenglu] <ZION959> 3 days ago
+8eb6930 : update defconfig <ZION959> 5 days ago
+4d3c6a5 : cpufreq: convert "index" to corresponding variable <TwistedUmbrella> 1 year ago
+31e18a9 : fixed build error for savoca kcal <ZION959> 5 days ago
+8e75941 : cpufreq: interactive: add input_boost_freq <Pafcholini> 10 weeks ago
+360f27f : input: touchboost: conservative samples every 10ms, no point in limiting input_time to update its value in 50ms intervals <franciscofranco> 12 months ago
+c473003 : input: add generic touch event listener <franciscofranco> 12 months ago
+9f24ba6 : cpufreq: Introduce new relation for freq selection Introduce CPUFREQ_RELATION_C for frequency selection. It selects the frequency with the minimum euclidean distance to target. In case of equal distance between 2 frequencies, it will select the greater freq. <Stratos Karafotis> 1 year, 7 months ago
+96d3110 : block: row: Fix crash when adding a new field in bio struct <Tanya Brokhman> 1 year, 7 months ago
+a937252 : Optimize copy_page for modern ARM platforms <Harm Hanemaaijer> 2 years, 7 months ago
+9dc48be : mdss: silence annoying kmsg <ffolkes> 10 months ago
+698a5e8 : [squash] savoca's patch for color control MDSS 8084 to kernel <Pafcholini> 12 days ago
+d3a9aeb : Sysfs interface for Gentle_Fair_Sleepers [neobuddy89] <placiano> 1 year ago
+129dc2c : revert: add savoca's patch for color control MDSS 8084 to kernel <ZION959> 5 days ago
+b6ae164 : Added LED Control & Fading Control <placiano> 9 months ago
+9b11c55 : Add Led control [Twistedumbrella & Ktoonsez] <placiano> 1 year ago
+20f21f2 : include: linux: add Sysfs_helpers: Allow negative values <Pavel> 1 year, 1 month ago
+1f0d060 : cpufreq: cpu-boost: we can hit a small performance loss by not queuing input works less than 150ms apart when our default input work duration is only 40ms, so use that 40ms as a magic value instead of the 150ms minimum interval. <franciscofranco> 1 year, 4 months ago
+eef83fe : cpufreq: cpu-boost: don't boost migrations with load below the threshold Even if we don't use load_based_syncs (there seems to be a bug that make min_freq stuck at random frequencies) we can prevent this feature to boost the target cpu if the task load is below the migration threshold. We might save some mA down the road with this. <Pavel> 1 year, 1 month ago
+a7aaeff : wcd9xxx: Fix NCP fclk level enable/disable sequence <Vidyakumar Athota> 7 months ago
+08f14a2 : asoc: wcd9xxx: Improve headset detection Change the plug detection timeout to 2sec. <Pafcholini> 10 months ago
+c8d2b23 : sound/fauxsound: Updates <placiano> 5 months ago
+30ef86b : sound/soc/codecs: add TOMTOM_A_CDC_RX8 <Pavel> 1 year ago
+0ad9ddf : Sound Control: 3.6 <Pavel> 1 year ago
+15cf85a : sound/soc/codecs: add sound_control_locked <Pavel> 1 year ago
+a3735b4 : sound/soc/codecs: fix speaker gain and mic gain for the Note 4 <Pavel> 1 year ago
+75e858d : sound/soc/codecs: Faux Sound control for WCD9330 TomTom codec driver <Pavel> 1 year ago
+9b8b8bf : ASoC: wcd9xxx: Avoid micbias glitches during audio playback During audio playback over headset, micbias output is switched to vddio and it's parameters are programmed so that it will do button polling with a voltage equal to vddio (1.8v). It is observed that during this polling interval there is a drop in micbias voltage which would cause issues with button press. Avoid this voltage drop by disabling mbhc micbias when vddio switch is enabled. <Pavel> 1 year, 1 month ago
+134393b : ASoC: wcd9xxx: Changes for High performance mode <Sudheer Papothi> 1 year, 6 months ago
+5af5051 : logger: Add sysfs interface to Enable / Disable Android Logger <Mohamed Karami> 2 years, 8 months ago
+0d1a7af : qdsp6v2: Stereo Call Recording Support <ZION959> 5 days ago
+13db367 : revert: update tmo defconfig <ZION959> 6 days ago
+a0491a9 : fixed build error <ZION959> 6 days ago
+56aad8c : cpufreq: Add a notifer chain that governors can use to report information <ZION959> 6 days ago
+0140f04 : cpufreq: stats: Don't update cpufreq_stats_table if it's NULL <Junjie Wu> 1 year, 3 months ago
+b7f5598 : perf: remove duplicate call when removing per cpu events <imoseyon> 1 year, 2 months ago
+f886b1b : msm: Fix high load average from uninterruptible waits <ZION959> 6 days ago
+3e6cc6f : fs/namei.c: fix potential memory leak in path_lookupat <imoseyon> 10 months ago
+8cd4640 : msm_hsic_host: reduce wakelock <flar2> 11 months ago
+4026c0a : block: Reserve only one queue tag for sync IO if only 3 tags are available <Jan Kara> 2 years, 7 months ago
+7231a26 : readahead: make context readahead more conservative <Fengguang Wu> 2 years, 5 months ago
+1d6ffc7 : writeback: fix writeback cache thrashing <Namjae Jeon> 3 years, 1 month ago
+f757630 : writeback: fix race that cause writeback hung <Junxiao Bi> 2 years, 5 months ago
+81cd6dd : sync: don't block the flusher thread waiting on IO <Dave Chinner> 2 years, 7 months ago
+84c314a : ext4: Speedup WB_SYNC_ALL pass called from sync(2) <Jan Kara> 1 year, 11 months ago
+0af6313 : ElementalX governor version 2 <flar2> 11 months ago
+b322f59 : cpufreq: remove race while accessing cur_policy <Bibek Basu> 1 year, 8 months ago
+f1e5f00 : cpufreq: governor: remove copy_prev_load from 'struct cpu_dbs_common_info' <Viresh Kumar> 1 year, 8 months ago
+e09c68a : cpufreq: governor: Be friendly towards latency-sensitive bursty workloads <Srivatsa S. Bhat> 1 year, 8 months ago
+91ce17e : msm: kgsl: Bump the GPU frequency for long blocks of processing <Lucille Sylvester> 1 year, 3 months ago
+ 
+**** github:CyanogenMod/android_packages_apps_CMFileManager ****
+e0318a5 : Cleanup permission strings again <Michael Bestas> 2 days ago
+ 
+**** cmR:android_packages_apps_Dialer ****
+4ca90e6 : Automatic translation import <Michael Bestas> 6 days ago
+a1739cf : Add back call stats feature. <Danny Baumann> 3 weeks ago
+ 
+**** github:CyanogenMod/android_packages_apps_Messaging ****
+005a261 : Messaging: Port of quick message from MMS <emancebo> 1 year, 3 months ago
+7f5fbb7 : Messaging: Fix for UnicodeStripping for multi-character replacement <Szymon Pusz> 4 days ago
+ 
+**** github:CyanogenMod/android_packages_apps_Stk ****
+f61ae60 : Launcher: Present STK app name if possible <Ricardo Cerqueira> 2 days ago
+e2d12df : Update layout to Material <Ricardo Cerqueira> 2 weeks ago
+ 
+**** cmR:android_packages_services_Telephony ****
+e242ea1 : revert: Fix Lte Tile <ZION959> 9 hours ago
+1291781 : [2/4] Breathing missedcall/voicemail <garwedgess> 2 years ago
+ 
+**** cmR:android_vendor_CMRemix ****
+039dbe1 : update trlte dependencies <ZION959> 12 hours ago
+ 
+**** cmR:cm_platform_sdk ****
+56fe5bf : revert: CMSDK: Add LTE tile back (2/2) <ZION959> 9 hours ago
+ad6f85c : CMSettingsProvider: Don't trample default values on migrate. <Adnan Begovic> 5 days ago
+3629a57 : cmsdk: remove visualizer from default qs tile list <Keith Mok> 5 days ago
+a3c05bf : Revert "cmsdk: Add example service test." <Khalid Zubair> 5 days ago
+25a7147 : Revert "cmsdk/tests: Temp hack to fix `mka` builds." <Khalid Zubair> 5 days ago
+ 
