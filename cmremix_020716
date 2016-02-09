@@ -1,0 +1,39 @@
+
+**** cmR:android_build ****
+44a9de5 : Add Global posix thread aka pthread Support (1/2) <ZION959> 5 hours ago
+ 
+**** cmR:android_frameworks_base ****
+2d3dd7c : Themes: Get default theme from CMSettings <d34d> 11 days ago
+0a0c633 : backup: backup manager is using the wrong transport <Simon Sickle> 3 days ago
+b3bc1f6 : Update new navbar button icons <Vasilj Milošević> 2 days ago
+59de220 : FWB: Carrier label font style (1/2) <LorDClockaN> 3 hours ago
+ac790ae : FWB: change default for show carrier on keyguard <Ali B> 2 days ago
+d20364e : FWB: Add carrier label location to keyguard <eyosen> 3 hours ago
+2c8ed49 : libhwui: handle eglSwapBuffers with EGL_BAD_NATIVE_WINDOW error case <Zhang Dongsheng> 2 weeks ago
+744bb7e : SysUI: Make sure LLS is enabled after inflation <d34d> 4 days ago
+4084904 : Fonts: add sans-serif fallback fonts first <d34d> 4 days ago
+319ee55 : Revert "SettingsProvider : Make WIFI_IDLE_MS into an overlay" <Danesh M> 2 days ago
+0a0d714 : SettingsProvider : Make WIFI_IDLE_MS into an overlay <Danesh M> 4 weeks ago
+4bf2a8e : OmniJAWS: Imperial uses miles per hour <Jake Whatley> 5 days ago
+36fa9ce : base: set condensed font in detailt weather <maxwen> 2 weeks ago
+9330cb9 : base: refactor weather data [2/2] <maxwen> 3 weeks ago
+e227347 : base: header weather tweaks <maxwen> 4 hours ago
+05dffab : base: Update weather header view <maxwen> 4 hours ago
+035bee8 : base: weather in header view [1/2] <maxwen> 5 hours ago
+ 
+**** github:CMRemix/android_kernel_samsung_trlte ****
+1b7b83d : selinux: permissive by default <ZION959> 6 hours ago
+3affcc6 : selinux: honour command line enforcing setting <ZION959> 7 hours ago
+ 
+**** cmR:android_system_core ****
+596459f : Allow SELinux to be disabled, set it to permissive by default <Park Ju Hyung> 10 weeks ago
+8e57fed : core: add our init file [1/2] <ZION959> 1 year, 1 month ago
+d2ff95f : liblog: Fix strict unknown warning message <mydongistiny> 3 months ago
+2d0dfde : core: Fix error when building <mydongistiny> 4 months ago
+ 
+**** cmR:android_vendor_CMRemix ****
+9c9b335 : vendor: build OmniJaws <ZION959> 4 hours ago
+ 
+**** github:CMRemix/proprietary_vendor_samsung ****
+1f2532a : trltexx: bluetooth fixed <ZION959> 4 hours ago
+ 
