@@ -1,0 +1,48 @@
+
+**** cmR:android_build ****
+b6c67fe : build: show cmremix version info <ZION959> 19 minutes ago
+cd4f06e : build: comments out check API to fixed build error <ZION959> 29 hours ago
+ 
+**** github:CMRemix/android_device_samsung_trlte-common ****
+05bd42c : revert: setPrefNwTypeOnUnsolConnected <ZION959> 2 hours ago
+ 
+**** cmR:android_frameworks_base ****
+ca30702 : FWB: Option for date style/position, left-right of clock (1/2) <yank555-lu> 43 minutes ago
+8d5b0b0 : Add option to hide lockscreen alarm text & cleanup [1/2] <beanstown106> 47 minutes ago
+1029070 : SystemUI: fix quick settings on secure lockscreen feature again <Altaf-Mahdi> 11 months ago
+71be28c : Return: Smart Pulldown [1/2][Squashed] <Lars Greiss> 50 minutes ago
+e31a3f1 : SystemUI: Double tap to sleep anywhere on the lock screen (1/2) <Altaf-Mahdi> 52 minutes ago
+b3de513 : add Kill app toast string to fixed build <ZION959> 58 minutes ago
+76f4180 : update secure keyguard check <Roman Birg> 3 hours ago
+ada943d : Revert "DndTile: Always open the detailed view" <Roman Birg> 2 days ago
+1dccacb : SystemUI: add volume tones back <Roman Birg> 7 days ago
+481d9b6 : Recents: Fix Clear All Button Dissappearing Again <Varun> 3 hours ago
+9b3f735 : SystemUI: add caffeine qs tile (1/2) <Keith Mok> 3 hours ago
+b500420 : FWB: Add rotation animation to navbar icons (1/2) <LorDClockaN> 3 hours ago
+ff7670d : [Squashed] More Navbar Buttons Part 2[1/2] <varund7726> 3 hours ago
+f71cdcc : Fix leftAffordanceView visibility bug <Alex Cruz> 6 weeks ago
+73cfaa9 : Lockscreen colors [1/2] <Alex Cruz> 4 hours ago
+591b970 : revert: Fix leftAffordanceView visibility bug <ZION959> 4 hours ago
+cad2466 : QS: Kill App Tile [1/2] <varund7726> 4 hours ago
+ 
+**** cmR:android_frameworks_opt_telephony ****
+78d1894 : For NV-based devices like CDMA only devices, ignore ICC Card status change EVENT. <Wei Ying> 2 years, 5 months ago
+aa5e09d : DcSwitchStateMachine: support RILs not implementing REQUEST_ALLOW_DATA <Michael Gernoth> 12 hours ago
+536cddc : Suppress error pop-ups for single digit dials. <Abhishek Gilra> 7 days ago
+ 
+**** cmR:android_packages_apps_Settings ****
+a735f2f : Settings: Add notification light setting to system profiles (2/2) <Petr Sedlacek> 4 days ago
+3405f95 : Settings: Option for date style/position, left-right of clock (2/2) <yank555-lu> 32 minutes ago
+afaa983 : Return: Smart Pulldown [2/2] <Lars Greiss> 37 minutes ago
+b1faf04 : LockScreen Colors 2/2 <Alex Cruz> 41 minutes ago
+ 
+**** cmR:android_vendor_CMRemix ****
+e3693cc : back to system root supersu v2.56 <ZION959> 2 hours ago
+ 
+**** cmR:cm_platform_sdk ****
+3e0132c : Kill App Tile [2/2] <varund7726> 3 hours ago
+594029d : CMSettings:Add More Navbar Buttons Part 2 [2/2] <ZION959> 3 hours ago
+5c7be89 : CMSDK : Add caffeine tile (2/2) <Keith Mok> 8 days ago
+06965d4 : cmsdk: adjust default tile order <Roman Birg> 2 days ago
+e67ae8f : CMSettings: Enforce correct permission for writing settings <d34d> 33 hours ago
+ 
