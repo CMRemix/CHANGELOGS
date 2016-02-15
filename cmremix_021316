@@ -1,10 +1,13 @@
 
+**** cmR:CHANGELOGS ****
+fead6cc : update changelog 02-13-2016 <ZION959> 3 hours ago
+ 
 **** github:CyanogenMod/android_bootable_recovery ****
-d8501d9 : recovery: don't override selinux for cache partition <Pat Erley> 29 hours ago
-72319de : recovery: User recovery shouldn't allow mounting system <Pat Erley> 31 hours ago
+d8501d9 : recovery: don't override selinux for cache partition <Pat Erley> 33 hours ago
+72319de : recovery: User recovery shouldn't allow mounting system <Pat Erley> 34 hours ago
  
 **** cmR:android_build ****
-c4983cd : build: clean up supersu and UKM <ZION959> 3 hours ago
+c4983cd : build: clean up supersu and UKM <ZION959> 6 hours ago
 b1bd6c9 : build: comments out check API to fixed build error <ZION959> 2 days ago
 c5035b2 : build: show cmremix kernel & build vesion info <ZION959> 4 days ago
  
@@ -12,14 +15,14 @@ c5035b2 : build: show cmremix kernel & build vesion info <ZION959> 4 days ago
 1b48675 : power: Remove custom low power mode hint handling <Zhao Wei Liew> 5 weeks ago
  
 **** aosp:platform/external/chromium-webview ****
-2b79841 : Google Webview 49.0.2623.47 (arm+arm64) <mydongistiny> 8 hours ago
+2b79841 : Google Webview 49.0.2623.47 (arm+arm64) <mydongistiny> 11 hours ago
  
 **** github:CyanogenMod/android_external_libtar ****
 e628c20 : libtar: Make file sizes 64-bit clean <Tom Marshall> 2 days ago
  
 **** github:CyanogenMod/android_external_toybox ****
 40128c4 : toybox: tar: Fix support for long names <Tom Marshall> 3 days ago
-554eccb : toybox: tar: Fix tar tests <Tom Marshall> 3 days ago
+554eccb : toybox: tar: Fix tar tests <Tom Marshall> 4 days ago
  
 **** github:CyanogenMod/android_external_wpa_supplicant_8 ****
 302da8b : EAP-pwd server: Fix last fragment length validation <Jouni Malinen> 3 months ago
@@ -27,17 +30,17 @@ e628c20 : libtar: Make file sizes 64-bit clean <Tom Marshall> 2 days ago
 e977995 : P2P: Filter control chars in group client device name similarly to peer <Hu Wang> 4 months ago
  
 **** cmR:android_frameworks_base ****
-cc4e02a : Add wakelock option for flashlight <niks255> 2 hours ago
-80be83a : AudioService: Prevent crash when there is no music app <Michael Bestas> 32 hours ago
+cc4e02a : Add wakelock option for flashlight <niks255> 5 hours ago
+80be83a : AudioService: Prevent crash when there is no music app <Michael Bestas> 35 hours ago
 2147ca7 : AudioService: don't launch music player while in call <Roman Birg> 8 months ago
 e16b54c : Do not start music app when headset is unplugged <tsubus> 11 months ago
 369fcbf : AudioService: launch default music player on headset connect [2/3] <Danesh M> 3 years, 1 month ago
-1ed826e : revert: AudioService: launch default music player on headset connect [2/2] <ZION959> 2 hours ago
-d27f183 : revert: Do not start music app when headset is unplugged <ZION959> 2 hours ago
+1ed826e : revert: AudioService: launch default music player on headset connect [2/2] <ZION959> 5 hours ago
+d27f183 : revert: Do not start music app when headset is unplugged <ZION959> 5 hours ago
 381f27e : SystemUI: Switch to AOSP CHARGING_SOUNDS_ENABLED <Michael Bestas> 3 days ago
-9905afc : SysUI: Show LLS when state is SHADE_LOCKED <d34d> 3 days ago
-9864dae : Notification Colors Switch[1/2] <varund7726> 2 hours ago
-4a2a8eb : revert: Status bar: Custom notification icons colors, (1/2): <ZION959> 3 hours ago
+9905afc : SysUI: Show LLS when state is SHADE_LOCKED <d34d> 4 days ago
+9864dae : Notification Colors Switch[1/2] <varund7726> 5 hours ago
+4a2a8eb : revert: Status bar: Custom notification icons colors, (1/2): <ZION959> 6 hours ago
  
 **** cmR:android_frameworks_native ****
 4711655 : surfaceflinger: Don't allow QC HWC virtual display without QC HWC copy <Ethan Chen> 2 days ago
