@@ -1,19 +1,32 @@
 
 **** cmR:CHANGELOGS ****
-31dc43f : update 02-15-2016 <ZION959> 35 hours ago
+13cda83 : update 2-16-2016 <ZION959> 6 hours ago
+31dc43f : update 02-15-2016 <ZION959> 2 days ago
+ 
+**** cmR:CMRemix ****
+aab21a8 : track cmremix's OmniStyle <ZION959> 2 hours ago
  
 **** github:CyanogenMod/android_bootable_recovery ****
-4987934 : recovery: Remove empty header line <Tom Marshall> 19 hours ago
+4987934 : recovery: Remove empty header line <Tom Marshall> 29 hours ago
  
 **** omni:android_bootable_recovery ****
+a7e63a2 : cryptfs: major overhaul and cleanup <Sultan Qasim Khan> 4 days ago
 09f380d : Remove inexplicable checks for enabling/disabled UMS support <James Christopher Adduono> 9 days ago
-e5a288c : Fix up logd make file rules <Ethan Yonker> 29 hours ago
+e5a288c : Fix up logd make file rules <Ethan Yonker> 2 days ago
+ 
+**** cmR:android_build ****
+8e72e6a : ota_from_target_files: Don't validate data signatures with data wipe <Brint E. Kriebel> 4 months ago
+3aadec3 : releasetools: Store the proper base64 release key in the target files <Brint E. Kriebel> 4 hours ago
+a2e4559 : Implement 'mmap' command <Martin Brabham> 11 days ago
+9896d16 : repopick: Don't crash if change not found <Matt Mower> 3 weeks ago
+c6752b5 : build: flash chainfire's supersu (1/2) <ZION959> 2 hours ago
  
 **** github:CMRemix/android_device_samsung_trlte-common ****
-d001df0 : trlte-common: lets use cm powerhal <ZION959> 2 minutes ago
-aa2e552 : revert: change default (after boot) governor to interactiveX <ZION959> 20 minutes ago
-80ae80e : trlte-common: GPS debugging set to none <ZION959> 16 hours ago
-7f01bce : trlte-common: shim libqc-opt.so <ZION959> 17 hours ago
+61f0e0f : trlte-common: update media_codecs.xml & media_profiles.xml <ZION959> 3 hours ago
+296b799 : trlte-common: use cm powerhal <ZION959> 6 hours ago
+3285cbe : revert: change default (after boot) governor to interactiveX <ZION959> 10 hours ago
+445d812 : trlte-common: GPS debugging set to none <ZION959> 26 hours ago
+96de55c : trlte-common: shim libqc-opt.so <ZION959> 26 hours ago
  
 **** github:CMRemix/android_device_samsung_trltespr ****
 a42d79c : trltespr: transition to CarrierConfig and fix APN/remove Carrier Settings <Michael Wawrzyniak> 12 days ago
@@ -25,21 +38,81 @@ e761a62 : Google Webview 48.0.2564.99 (arm+arm64) <mydongistiny> 2 weeks ago
 d9f50bd : Add Google webview 46.0.2490.64 (arm+arm64) <mydongistiny> 4 months ago
 380d800 : Remove AOSP history and only support arm and arm64 <mydongistiny> 4 months ago
  
+**** github:CyanogenMod/android_external_ffmpeg ****
+bc38d9f : ffmpeg: Update configs and makefiles for FFMPEG 3.0 <Steve Kondik> 2 days ago
+35a79f6 : Add MODULE_LICENSE and NOTICE files <Ricardo Cerqueira> 8 weeks ago
+c5379ca : ffmpeg: Enable the vectorizer <Steve Kondik> 3 months ago
+f61f21b : ffmpeg: Don't use Clang's integrated assembler <Steve Kondik> 4 months ago
+e51641e : ffmpeg: Don't build with Clang for now <Steve Kondik> 4 months ago
+b638e62 : ffmpeg: Install binaries to /vendor <Steve Kondik> 4 months ago
+272a1af : avutil: Fix a warning when building with clang <Steve Kondik> 4 months ago
+1f0d502 : ffmpeg: Update configurations for FFMPEG 2.8 <Steve Kondik> 4 months ago
+87dbab9 : Update gen-android-configs for new GCC versions <Steve Kondik> 4 months ago
+57d683d : ffmpeg: Set cpu arch for silvermont config <dhacker29> 8 months ago
+938ba50 : ffmpeg: Readd missing X86 fixups <Steve Kondik> 8 months ago
+8b97ca4 : ffmpeg: Regenerate configurations for FFMPEG 2.7 <Steve Kondik> 8 months ago
+189bc1a : ffmpeg: Add script to regenerate the configs <Steve Kondik> 8 months ago
+5d46b56 : ffmpeg: Update Android build configuration <Steve Kondik> 9 months ago
+62c636e : x86: Use yasm from prebuilts and don't depend on host install <dhacker29> 11 months ago
+0fcc73f : Add configuration for silvermont CPU based on Atom. <Howard M. Harte> 1 year, 1 month ago
+ec3768a : Clean up some build-time warnings <Ricardo Cerqueira> 1 year, 1 month ago
+94d023d : Get ffmpeg building for emulatorx86 <Chris Sarbora> 1 year, 1 month ago
+1b8415d : ffmpeg: Fix variable collisions <Steve Kondik> 1 year, 2 months ago
+41f8009 : build: Use ARM mode for arm32 builds <Ricardo Cerqueira> 1 year, 2 months ago
+66efaec : Fixup armv8-a building, and make multiarch builds work <Ricardo Cerqueira> 1 year, 2 months ago
+2c8b081 : avutil: Use _SC_NPROCESSORS_CONF <Steve Kondik> 1 year, 2 months ago
+22d65d7 : Update Android build for FFMPEG 2.5 <Steve Kondik> 1 year, 2 months ago
+ba49959 : Android porting for ffmpeg 2.1 release <Chih-Wei Huang> 2 years, 4 months ago
+0aa2fbd : vc2enc: fix use of uninitialized variables in the rate control system <Rostislav Pehlivanov> 2 days ago
+c40983a : fate/source-check.sh: Use "git show" instead of git --version to test for git <Michael Niedermayer> 2 days ago
+bd0497b : avcodec/cfhd: Temporary disable frame threading until related bugs have been fixed <Michael Niedermayer> 2 days ago
+4d95207 : x86: use the new helper macros where useful <James Almer> 10 days ago
+1e8a75f : x86: add some more helper macros to check for slow cpuflags <James Almer> 10 days ago
+380980e : Changelog: add entries for the SMPTE VC-2 decoder and encoder <Rostislav Pehlivanov> 2 days ago
+1fd8eb4 : Basic updates for 3.0 <Michael Niedermayer> 2 days ago
+bb9f7bf : Changelog/APIChanges Put 3.0 release marker <Michael Niedermayer> 2 days ago
+b401854 : avformat/img2enc: remove unused variable <Michael Niedermayer> 2 days ago
+0eb4092 : avutil/imgutils: remove special case for aligning the palette <Michael Niedermayer> 3 days ago
+8352f5c : doc/protocols: document protocol_whitelist <Michael Niedermayer> 6 days ago
+e5655a3 : avcodec/h264_cabac: Check decode_cabac_mb_mvd() for failure <Michael Niedermayer> 3 weeks ago
+dcb6d5b : avformat/genh: Mark coef_splitted as av_unused <Michael Niedermayer> 4 months ago
+ae51f9b : avutil/parseutils: remove 2112 date from fate test <Marton Balint> 3 days ago
+bcc2235 : x86/vc1dsp: Port vc1_*_hor_16b_shift2 to NASM format <Timothy Gu> 3 days ago
+ebf648d : checkasm/vf_blend: Decrease iteration count <Timothy Gu> 2 days ago
+a953a29 : checkasm: Add vf_blend tests <Timothy Gu> 7 days ago
+8c56a4a : vf_blend: Move C dsp function mapping to separate function <Timothy Gu> 7 days ago
+8395b6e : libavcodec/dnxhd_parser: add parser and probe support raw 444 and dnxhr formats <Mark Reid> 3 days ago
+b8bc6b1 : compat/os2threads: split long lines <KO Myung-Hun> 3 days ago
+6bf5e7d : compat/os2threads: support the return value of joined thread <KO Myung-Hun> 3 days ago
+22a4046 : compat/os2threads: Improve pthread_cond_xxx() functions <KO Myung-Hun> 3 days ago
+b65ea6a : avfilter/vf_tinterlace: fix image alignment <Michael Niedermayer> 3 days ago
+a678d66 : vf_blend: Use integers for divide mode <Timothy Gu> 3 days ago
+4b75010 : lavf/spdifenc: Support MLP encapsulation. <David Monro> 3 days ago
+4574323 : vf_blend: Reduce number of arguments for kernel function <Timothy Gu> 3 days ago
+ 
+**** github:CyanogenMod/android_external_libtar ****
+e18b457 : libtar: Cleanup, secure, and extend numeric fields <Tom Marshall> 5 days ago
+ 
 **** cmR:android_frameworks_base ****
+a61b599 : Fix systemUI restart command <Ali B> 3 days ago
+9785e9e : SysUI: Call dismiss() in executeAfterKeyguardGoneAction <d34d> 10 hours ago
+2e0fd8f : framework: Log applied theme when apps crash <d34d> 8 hours ago
+249368f : Screen Pinning: Show correct text for on screen nav. <Adnan Begovic> 5 days ago
+bae6570 : SysUI: Wait for keyguard gone before starting activity <d34d> 26 hours ago
 3da4f64 : Use std::unique_ptr instead of UniquePtr. <Dan Albert> 3 months ago
-b81ee89 : GoogleApps: Grant a couple more apps default permissions & clean up (mydongistiny) <ZION959> 4 hours ago
-653f549 : base: daylight header packs extensions [1/2] <maxwen> 2 days ago
-29f855e : base: header image packs [1/2] <maxwen> 12 hours ago
-65ae4bc : revert: SystemUI: Add option for new poly hd custom headers (1/2) <ZION959> 12 hours ago
-3be8964 : revert: SystemUI: Add option for "modern" custom headers (1/2) <ZION959> 12 hours ago
-c7a0102 : DocumentsUI: use proper provider client for cut <maxwen> 21 hours ago
-ac3e626 : SysUI: Keep sensitive notifications redacted for swipe <d34d> 20 hours ago
-6633cfe : derp <ZION959> 16 hours ago
-04cba16 : DreamManager: only notify power manager if lid state changes <Scott Mertz> 22 hours ago
+b81ee89 : GoogleApps: Grant a couple more apps default permissions & clean up (mydongistiny) <ZION959> 13 hours ago
+653f549 : base: daylight header packs extensions [1/2] <maxwen> 3 days ago
+29f855e : base: header image packs [1/2] <maxwen> 21 hours ago
+65ae4bc : revert: SystemUI: Add option for new poly hd custom headers (1/2) <ZION959> 22 hours ago
+3be8964 : revert: SystemUI: Add option for "modern" custom headers (1/2) <ZION959> 22 hours ago
+c7a0102 : DocumentsUI: use proper provider client for cut <maxwen> 30 hours ago
+ac3e626 : SysUI: Keep sensitive notifications redacted for swipe <d34d> 30 hours ago
+6633cfe : derp <ZION959> 25 hours ago
+04cba16 : DreamManager: only notify power manager if lid state changes <Scott Mertz> 31 hours ago
 2f23cb9 : When the device boots up, netd works more than required <Soi, Yoshinari> 8 weeks ago
 22fceb9 : onAccountsUpdated shouldn't be called back after listener unregistered <Hiroaki Kuriyama> 4 months ago
 e6c4cef : PDBS: bail out early if package name is not defined <Alexander Martinz> 3 days ago
-8eeb2a1 : SystemUI: disable QS tile Edit mode on screen off <Roman Birg> 24 hours ago
+8eeb2a1 : SystemUI: disable QS tile Edit mode on screen off <Roman Birg> 33 hours ago
 3a94b98 : bootanimation: Move the bootanimation playaudio code <sundarajan srinivasan> 3 weeks ago
 1d0efc4 : Recents : Don't show clear all if no tasks <Danesh M> 4 days ago
 276bc96 : SystemUI: Don't update if HeadsUp is disabled <lion0738> 3 weeks ago
@@ -47,23 +120,32 @@ e6c4cef : PDBS: bail out early if package name is not defined <Alexander Martinz
 6e9add9 : Fix up AwesomeAnimationHelper <LorDClockaN> 2 days ago
 fe0bd37 : FWB: IME animations (1/2) <Squadzone> 2 days ago
  
+**** github:CyanogenMod/android_frameworks_opt_net_wifi ****
+a137281 : Fix invalid offset error <Legrand Benjamin> 3 months ago
+ 
+**** cmR:android_frameworks_opt_telephony ****
+3a312ef : GsmMmiCode: Fix USSD NPE <Ketut Putu Kumajaya> 2 days ago
+ 
 **** github:CyanogenMod/android_hardware_qcom_audio ****
 3a059bd : Revert "audio: Reduce low latency buffer size" <Arne Coucheron> 4 weeks ago
  
 **** github:CyanogenMod/android_hardware_qcom_audio ****
-41fd9b0 : hal: Fix input source usecase selection <Gabriele M> 3 days ago
+41fd9b0 : hal: Fix input source usecase selection <Gabriele M> 4 days ago
  
 **** github:CyanogenMod/android_hardware_qcom_display ****
-68a2e3a : gralloc: Add a switch to use 16 byte pixel alignment <Skrilax_CZ> 5 days ago
+68a2e3a : gralloc: Add a switch to use 16 byte pixel alignment <Skrilax_CZ> 6 days ago
  
 **** github:CyanogenMod/android_hardware_samsung ****
 12e3f26 : ril: Group next gen Samsung modem's in same CFLAG <Brandon McAnsh> 3 days ago
  
 **** github:CyanogenMod/android_packages_apps_ContactsCommon ****
-847234f : ContactPhotoManager: Consider BITMAP_UNAVAILABLE as a cache miss <Diogo Ferreira> 11 days ago
+847234f : ContactPhotoManager: Consider BITMAP_UNAVAILABLE as a cache miss <Diogo Ferreira> 12 days ago
  
 **** cmR:android_packages_apps_Dialer ****
-a35c7cc : Automatic translation import <Michael Bestas> 2 days ago
+a35c7cc : Automatic translation import <Michael Bestas> 3 days ago
+ 
+**** github:CyanogenMod/android_packages_apps_FMRadio ****
+c4799b4 : FMRadio : Bump targetSdk to 23 <Danesh M> 6 hours ago
  
 **** github:CyanogenMod/android_packages_apps_LockClock ****
 96f7b8c : LockClock : Switch over to new yahoo location api <Danesh M> 2 days ago
@@ -72,27 +154,31 @@ a35c7cc : Automatic translation import <Michael Bestas> 2 days ago
 2e4574e : Messaging: change Avatar fontFamily to sans-serif-medium <Altaf-Mahdi> 10 weeks ago
  
 **** cmR:android_packages_apps_Settings ****
-e947525 : revert: Get rid of divider lines in settings.. RIP <ZION959> 2 hours ago
+300b883 : SIM: Only trigger sub updates if the lifecycle isn't ending <Diogo Ferreira> 7 days ago
+7004c97 : DevelopmentSettings: initialize recovery update property at boot <Scott Mertz> 12 hours ago
+98bf4cf : Settings: Only show multi-sim card configuration for owners <Diogo Ferreira> 6 months ago
+e947525 : revert: Get rid of divider lines in settings.. RIP <ZION959> 11 hours ago
 fa2327b : Settings: add support for chronus weather icon packs <maxwen> 3 weeks ago
-9a597c3 : Settings: daylight header packs extensions [2/2] <maxwen> 2 days ago
-4baf252 : Settings: header image packs [2/2] <maxwen> 4 hours ago
-bf8a56b : Settings: clean up and Revert "Settings: Add option for new poly hd custom headers (2/2)" <ZION959> 12 hours ago
-8faec012 : clean up status bar settings <ZION959> 10 hours ago
+9a597c3 : Settings: daylight header packs extensions [2/2] <maxwen> 3 days ago
+4baf252 : Settings: header image packs [2/2] <maxwen> 14 hours ago
+bf8a56b : Settings: clean up and Revert "Settings: Add option for new poly hd custom headers (2/2)" <ZION959> 21 hours ago
+8faec012 : clean up status bar settings <ZION959> 20 hours ago
 fe70263 : Settings: fix 'CyanogenMod legal' link <Roman Birg> 10 months ago
 cde8771 : Settings: Allow/Prevent notification light in Zen mode (2 of 3) <DvTonder> 10 months ago
 5a0f7f5 : Settings: Fix ethernet data usage tab crash <Michael Bestas> 6 days ago
 462b91d : Add ability to ignore interruptions while active media playback <Danesh M> 1 year ago
 6874347 : Settings: Add CMGlobalSettingSwitchPreference <Michael Bestas> 7 days ago
-bc76051 : Settings: hook up volume tone preference to CMSettings <Roman Birg> 3 days ago
-0caa4cf : Get rid of divider lines in settings.. RIP <xWASABI> 7 days ago
-9bcf6da : Add single & double tap option to mid-lockscreen shortcuts 2/2 <gmillz> 16 hours ago
+bc76051 : Settings: hook up volume tone preference to CMSettings <Roman Birg> 4 days ago
+0caa4cf : Get rid of divider lines in settings.. RIP <xWASABI> 8 days ago
+9bcf6da : Add single & double tap option to mid-lockscreen shortcuts 2/2 <gmillz> 25 hours ago
 bedd6ef : Settings: IME animations (2/2) <Squadzone> 2 days ago
  
+**** cmR:android_packages_apps_SetupWizard ****
+6bce9d5 : Automatic translation import <Michael Bestas> 3 days ago
+ 
 **** cmR:android_packages_apps_Snap ****
-7cb1272 : SnapdragonCamera: Fix highlight after rotating device <Byunghun Jeon> 4 weeks ago
-f9929fc : Revert "Snap: Support 1:1 aspect ratio" <Arne Coucheron> 4 days ago
-d43ee10 : Snap: small fixes for HDR-related code <Nikita> 3 days ago
-837c6c2 : SnapdragonCamera: Implementing SelfieFlash feature <ZION959> 4 hours ago
+d43ee10 : Snap: small fixes for HDR-related code <Nikita> 4 days ago
+837c6c2 : SnapdragonCamera: Implementing SelfieFlash feature <ZION959> 13 hours ago
 a2e5f4d : SnapdragonCamera: Calculate in top bottom margin for the preview <Jack Yoo> 3 weeks ago
 766428f : SnapdragonCamera: fix the incorrect aspect ratio calculation <Camera Software Integration> 6 weeks ago
 688d977 : SnapdragonCamera: Updating preview size again <Camera Software Integration> 4 months ago
@@ -100,24 +186,37 @@ eab66fc : SnapdragonCamera: Adjust margin on PhotoUI <Camera Software Integratio
 1d9d00a : SnapdragonCamera: Fix to make camera display normally <likaid> 5 months ago
 b8868c8 : Snap: update icon <jrizzoli> 8 days ago
 3679ceb : Snap: Unhide all options <Michael Bestas> 5 weeks ago
-7e1aa4a : Add 11.9MP 16:9 and 8.9MP picture resolutions <Andreas Schneider> 10 hours ago
-c584b55 : De-uglify menu. <Danny Baumann> 6 days ago
-40bcbea : Snap: add resolutions used on Nexus 6P <razorloves> 33 hours ago
-ec8e680 : Automatic translation import <Michael Bestas> 2 days ago
+7e1aa4a : Add 11.9MP 16:9 and 8.9MP picture resolutions <Andreas Schneider> 20 hours ago
+c584b55 : De-uglify menu. <Danny Baumann> 7 days ago
+40bcbea : Snap: add resolutions used on Nexus 6P <razorloves> 2 days ago
+ec8e680 : Automatic translation import <Michael Bestas> 3 days ago
  
 **** github:CyanogenMod/android_packages_apps_Trebuchet ****
-01b60e8 : Add remote folder hook for view setup. <Artem Shvadskiy> 21 hours ago
-60bb0d6 : Trebuchet: Don't animate folder if locked state changed <cretin45> 24 hours ago
-577d342 : Trebuchet: Fix measuring error when reloading app drawer <cretin45> 27 hours ago
+01b60e8 : Add remote folder hook for view setup. <Artem Shvadskiy> 30 hours ago
+60bb0d6 : Trebuchet: Don't animate folder if locked state changed <cretin45> 34 hours ago
+577d342 : Trebuchet: Fix measuring error when reloading app drawer <cretin45> 2 days ago
+ 
+**** cmR:android_packages_apps_TvSettings ****
+21d6c05 : Automatic translation import <Michael Bestas> 3 days ago
+ 
+**** cmR:android_packages_services_Telephony ****
+c324079 : Single digit MMI codes invalid. <Abhishek Gilra> 11 days ago
  
 **** github:CyanogenMod/android_system_extras ****
 96b141c : Fix memory leak of dirbuf. <Chih-Hung Hsieh> 4 days ago
  
+**** github:CyanogenMod/android_system_vold ****
+894bd92 : cryptfs: Fix returning to default password <Ricardo Cerqueira> 13 hours ago
+ 
 **** github:CyanogenMod/android_vendor_cm ****
+2b4ec05 : Revert "recovery: default recovery updating to false" <Scott Mertz> 12 hours ago
+3f4d843 : Cleanup APN list for Norway <Arne Coucheron> 30 hours ago
 cb8c139 : Contributors: Update Note 2 <rogersb11> 3 days ago
  
 **** cmR:android_vendor_CMRemix ****
-aa97eb8 : vendor: build OmniStyle <ZION959> 4 hours ago
+d16bb4e : vendor: flash chainfire's supersu (2/2) <ZION959> 2 hours ago
+ddb24ba : clean up <ZION959> 2 hours ago
+aa97eb8 : vendor: build OmniStyle <ZION959> 13 hours ago
  
 **** cmR:cm_platform_sdk ****
 34ff00c : PerformanceManager : Keep in sync with low power mode <Danesh M> 4 days ago
