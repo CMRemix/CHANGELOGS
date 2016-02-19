@@ -1,0 +1,183 @@
+
+**** cmR:CMRemix ****
+1f4e742 : track cmremix's sqlite <ZION959> 23 hours ago
+ 
+**** cmR:android_bionic ****
+02b1d48 : bionic: linker: Load shim libs *before* the self-linked libs <Christopher R. Palmer> 5 days ago
+ 
+**** omni:android_bootable_recovery ****
+7a48a66 : patternpassword: update large grid password scheme <Sultan Qasim Khan> 6 days ago
+d3e96ff : Restore some old decrypt functionality <Ethan Yonker> 33 hours ago
+ 
+**** github:CMRemix/android_device_samsung_trltetmo ****
+9063d7e : trltetmo: Update fingerprint <ZION959> 25 hours ago
+ 
+**** aosp:platform/external/chromium-webview ****
+a9031c9 : WebView AOSP Drop Request - 44.0.2403.119 <Alex Mineer> 6 months ago
+2773fff : Add README explaining how to build WebView. <Torne (Richard Coles)> 7 months ago
+ 
+**** github:CyanogenMod/android_external_ffmpeg ****
+b8fa3ff : avcodec/wavpackenc: print channel count in av_log call <James Almer> 5 weeks ago
+0639289 : configure: bump copyright year to 2016 <James Almer> 7 weeks ago
+e303ca3 : Update for 2.8.5 <Michael Niedermayer> 5 weeks ago
+28f89bc : avformat/hls: Even stricter URL checks <Michael Niedermayer> 5 weeks ago
+23b903a : avformat/hls: More strict url checks <Michael Niedermayer> 5 weeks ago
+4676e20 : avcodec/pngenc: Fix mixed up linesizes <Michael Niedermayer> 5 weeks ago
+0c5a71f : avcodec/pngenc: Replace memcpy by av_image_copy() <Michael Niedermayer> 5 weeks ago
+07da255 : swscale/vscale: Check that 2 tap filters are bilinear before using bilinear code <Michael Niedermayer> 5 weeks ago
+be9b893 : swscale: Move VScalerContext into vscale.c <Michael Niedermayer> 5 weeks ago
+cdac68f : swscale/utils: Detect and skip unneeded sws_setColorspaceDetails() calls <Michael Niedermayer> 5 weeks ago
+1fd9556 : swscale/yuv2rgb: Increase YUV2RGB table headroom <Michael Niedermayer> 5 weeks ago
+c781a1e : swscale/yuv2rgb: Factor YUVRGB_TABLE_LUMA_HEADROOM out <Michael Niedermayer> 5 weeks ago
+b7d54d6 : avformat/hls: forbid all protocols except http(s) & file <Maxim Andreev> 5 weeks ago
+90c2256 : avformat/aviobuf: Fix end check in put_str16() <Michael Niedermayer> 5 weeks ago
+f459afd : avformat/asfenc: Check pts <Michael Niedermayer> 5 weeks ago
+d408261 : avcodec/mpeg4video: Check time_incr <Michael Niedermayer> 5 weeks ago
+d7f7586 : avcodec/wavpackenc: Check the number of channels <Michael Niedermayer> 5 weeks ago
+f05e0e7 : avcodec/wavpackenc: Headers are per channel <Michael Niedermayer> 5 weeks ago
+e5567f2 : avcodec/aacdec_template: Check id_map <Michael Niedermayer> 6 weeks ago
+b8382a1 : avcodec/dvdec: Fix "left shift of negative value -254" <Michael Niedermayer> 6 weeks ago
+9cad208 : avcodec/g2meet: Check for ff_els_decode_bit() failure in epic_decode_run_length() <Michael Niedermayer> 6 weeks ago
+34e06ce : avcodec/mjpegdec: Fix negative shift <Michael Niedermayer> 6 weeks ago
+df4ee16 : avcodec/mss2: Check for repeat overflow <Michael Niedermayer> 6 weeks ago
+cb4ba74 : avformat: Add integer fps from 31 to 60 to get_std_framerate() <Michael Niedermayer> 6 weeks ago
+d79b6dd : avformat/ivfenc: fix division by zero <Michael Niedermayer> 6 weeks ago
+3686155 : avcodec/mpegvideo_enc: Clip bits_per_raw_sample within valid range <Michael Niedermayer> 6 weeks ago
+3fb97a0 : avfilter/vf_scale: set proper out frame color range <Thomas Mundt> 7 weeks ago
+6457cd1 : avcodec/motion_est: Fix mv_penalty table size <Michael Niedermayer> 6 weeks ago
+aee9aa9 : avcodec/h264_slice: Fix integer overflow in implicit weight computation <Michael Niedermayer> 6 weeks ago
+14c63dc : swscale/utils: Use normal bilinear scaler if fast cannot be used due to tiny dimensions <Michael Niedermayer> 6 weeks ago
+709abc7 : avcodec/put_bits: Always check buffer end before writing <Michael Niedermayer> 7 weeks ago
+83c0df9 : mjpegdec: extend check for incompatible values of s->rgb and s->ls <Andreas Cadhalpun> 7 weeks ago
+0a6324f : swscale/utils: Fix intermediate format for cascaded alpha downscaling <Michael Niedermayer> 8 weeks ago
+2f65366 : avformat/mov: Update handbrake_version threshold for full mp3 parsing <Michael Niedermayer> 8 weeks ago
+3e3aa25 : x86/float_dsp: zero extend offset from ff_scalarproduct_float_sse <James Almer> 6 weeks ago
+6a1bf98 : avfilter/vf_zoompan: do not free frame we pushed to lavfi <Paul B Mahol> 7 weeks ago
+c09118c : Add MODULE_LICENSE and NOTICE files <Ricardo Cerqueira> 8 weeks ago
+79f407b : nuv: sanitize negative fps rate <Andreas Cadhalpun> 9 weeks ago
+174ec7d : nutdec: reject negative value_len in read_sm_data <Andreas Cadhalpun> 9 weeks ago
+778c8de : xwddec: prevent overflow of lsize * avctx->height <Andreas Cadhalpun> 9 weeks ago
+38f8c809 : nutdec: only copy the header if it exists <Andreas Cadhalpun> 9 weeks ago
+945ae04 : exr: fix out of bounds read in get_code <Andreas Cadhalpun> 10 weeks ago
+6d7b4db : on2avc: limit number of bits to 30 in get_egolomb <Andreas Cadhalpun> 9 weeks ago
+644179e : Update Changelog <Michael Niedermayer> 9 weeks ago
+9be3441 : rawdec: only exempt BIT0 with need_copy from buffer sanity check <Andreas Cadhalpun> 9 weeks ago
+63ecbb8 : mlvdec: check that index_entries exist <Andreas Cadhalpun> 9 weeks ago
+bdc6ba4 : avcodec/mpeg4videodec: also for empty partitioned slices <Michael Niedermayer> 9 weeks ago
+3a3be02 : avcodec/h264_refs: Fix long_idx check <Michael Niedermayer> 9 weeks ago
+cabd9ae : avcodec/h264_mc_template: prefetch list1 only if it is used in the MB <Michael Niedermayer> 9 weeks ago
+cfbf608 : avcodec/h264_slice: Simplify ref2frm indexing <Michael Niedermayer> 9 weeks ago
+ 
+**** github:CyanogenMod/android_external_libtar ****
+9d133fd : libtar: Store gzFile in a global to avoid non-portable casting <Tom Marshall> 2 days ago
+ 
+**** cmR:android_frameworks_base ****
+dc59539 : Fix NPE by not restore task record correctly. <riddle_hsu> 3 months ago
+e2ad64b : Add support for reading and writing double array values <Samuel Tan> 3 months ago
+56d31ef : Add ICU4J APIs for Android <Neil Fuller> 3 months ago
+c898770 : Rethrow remote's ServiceSpecificException <Christopher Wiley> 3 months ago
+152e023 : bless python versions newer than 2.6 <Li Li> 2 years, 2 months ago
+a3fca5b : Current view findFocus maybe null, which cause NullPointerException. <duzhaoxi> 1 year, 10 months ago
+13720cc : Fix NullPointerException in IntentForwarderActivity#canForward <hoon123.kim> 5 months ago
+c323722 : ProcessStats: Handle IndexOutOfBoundsException <yograj> 1 year, 5 months ago
+55a0e75 : Wrong argument: isValidLockdownProfile <You Kim> 2 years, 6 months ago
+4a6bf64 : Widget: Catch null point exception in AbsListViewAutoScroller <kaiyiz> 1 year, 1 month ago
+56ab46b : Fix multi-touch PointerLocation androidui crash issue <lisa.at_chen> 1 year, 1 month ago
+7d56d6b : Fix the wrong error message reported by SurfaceTexture_releaseTexImage. <Jun Jiang> 1 year, 10 months ago
+08f3186 : Delete unused testing scripts and WithFramework. <Narayan Kamath> 8 months ago
+2317356 : Avoid duplicate call to onLoadFinished() <Romain Vimont (®om)> 2 years, 2 months ago
+185cc42 : Input command can fail (with exceptions) if the touchscreen id is not 0 <Christopher Desjardins> 9 months ago
+d516850 : bundle init.rc contents with its service <Tom Cherry> 6 months ago
+61a199f : Possible NPE in ChooseAccountTypeActivity <László Dávid> 3 years, 4 months ago
+c856e14 : Videos: Disable listselector when scroll is enabled <Monika Alekhya> 10 months ago
+61d6555 : Prevent breaking of combining characters <Alexander Toresson> 2 years, 5 months ago
+4aabfea : Release SQLite page cache as much as it can <yi.jang> 2 years ago
+4cce855 : Camera2: create new streams if surface size has changed <Mikael Persson> 3 months ago
+2dc28d6 : Frameworks/base: Fix null-pointer access <Andreas Gampe> 11 months ago
+0740c0f : Handle ActivityNotFoundException for contacts activity <kaiyiz> 1 year ago
+26966bc : [ScrollView] Invalid pointerId <ferro_chang> 1 year, 2 months ago
+5930e1f : [GridView] Fix the issue that setSelectionFromTop() does not work. <josh_kang> 1 year, 1 month ago
+eb85116 : ExpandableListView: Fix to nofity group collapse event <Vairavan Srinivasan> 3 years ago
+6fbe8cb : Frameworks/base: Fix AdapterViewAnimator.createOrReuseLayoutParams <Andreas Gampe> 11 months ago
+503d39b : [AbsListView] Fix IndexOutOfBoundException issue when handling generic motion events. <josh_kang> 1 year, 2 months ago
+02bebbc : Null Check before accessing to avoid exception when view is made null in another thread. <Shasidhar Ganiga> 7 months ago
+c27037e : Add MotionEvent flag indicating that the window is obscured <Iwo Banas> 8 months ago
+50f6e16 : Protect check for mReceiverPtr in nativeFinishInputEvent <Maunik Shah> 1 year ago
+97095f7 : extend PreferenceActivity for title text on a single pane mode <Sang Tae Park> 3 years, 10 months ago
+1c81cef : Avoid scanning unneeded items in Bundle#hasFileDescriptors() <Taiju Tsuiki> 10 months ago
+d406453 : AsyncTask: Fix to remove canceled tasks from executor's queue. <Vairavan Srinivasan> 11 months ago
+a8ee267 : IInputMethodWrapper to recycle SomeArgs in all cases. <Vairavan Srinivasan> 2 years, 3 months ago
+b5bbcce : Catch corruptexception during Transaction operation <muzbit.kim> 2 years, 3 months ago
+08eac8e : Fixed can not read android:editorExtras resource problem <envislife> 1 year, 1 month ago
+41ec677 : Fixed issue leading to state loss about child fragments <Benjamin Dobell> 2 years ago
+189f565 : [DownloadManager] Enqueue download request might fail and cause NullPointerException <hank_chiu> 11 months ago
+8ba98f7 : [ActivityManager] handle dumpHeap() but no free space case. <Mark Lu> 1 year, 2 months ago
+39df9ea : ChooseTypeAndAccountActivity: Fix the NullPointerException <kaiyiz> 2 years, 7 months ago
+655fee6 : Fix to NullPointerException when activity is relaunched <Daniel 2 Olofsson> 2 years, 10 months ago
+744c7bd : SystemUI: Add new Navigation buttons by Rohit Chouhan <ZION959> 22 hours ago
+f2a568f : Fix PersistableBundle handling in Parcel.writeValue <Samuel Tan> 10 weeks ago
+357b380 : UsbdeviceManager: Avoid sending extra USB_STATE broadcast intent <Maunik Shah> 10 weeks ago
+1ebec33 : common_time_server.cpp: more O_CLOEXEC <Nick Kralevich> 9 weeks ago
+edcfe13 : Access mView in the thread which created the ViewRootImpl <tiger_huang> 8 weeks ago
+0531c86 : Remove infinity invalidation when both scrollbars are shown <kwanyoung.son> 8 weeks ago
+b05c9ae : Reduce synchronized region when checking idle states. <riddle_hsu> 8 weeks ago
+79dd93d : Don't apply clang flag to gcc builds. <Dan Albert> 4 months ago
+ 
+**** github:CyanogenMod/android_hardware_qcom_audio ****
+8abf4f4 : policy_hal: fix for FM playback without active music stream <Mingming Yin> 6 weeks ago
+c0b58d1 : policy_hal: fix for volume burst during FM device switch <Mingming Yin> 6 weeks ago
+7eaaf12 : policy: Delay FM volume update to start of FM playback <Haynes Mathew George> 8 weeks ago
+ce12f66 : policy: Avoid unnecessary set_parameter calls <Haynes Mathew George> 9 weeks ago
+affe0da : policy-hal: Fix for alarm tone heard even after dismissing. <Ramjee Singh> 4 months ago
+ 
+**** github:CyanogenMod/android_hardware_qcom_display ****
+4e0d825 : hwc: Use display_defs.h <Arun Kumar K.R> 8 weeks ago
+ 
+**** github:CyanogenMod/android_hardware_qcom_media ****
+35ab4c8 : mm-video-v4l2: vidc: venc: Fix rotation issue for 180 degrees <Praneeth Paladugu> 3 months ago
+fe89335 : mm-video-v4l2: vidc: venc: Optimize color align function <Praneeth Paladugu> 4 months ago
+ 
+**** github:CyanogenMod/android_hardware_qcom_media ****
+6316605 : vidc: Fix makefiles <Steve Kondik> 10 months ago
+ 
+**** github:CyanogenMod/android_hardware_qcom_wlan ****
+b62f03e : Wifi-HAL: Free the nlmsg after receiving the response <Srinivas Dasari> 3 months ago
+0bc7b21 : Wifi-Hal: Return the length of O/P buffer for GETANTENNAMODE DRIVER CMD <Archana Ramachandran> 5 weeks ago
+ 
+**** github:CyanogenMod/android_hardware_ril ****
+aacb69b : Add p2 option in openLogicalChannel <Wileen Chiu> 3 months ago
+6f3304a : Add pdp data call reject throttle error code <Andalam Parthasarathi> 8 weeks ago
+d33397b : Fix memory leaks and use of uninitialized pointers. <Pavel Zhamaitsiak> 6 months ago
+ 
+**** github:CyanogenMod/android_hardware_samsung ****
+1f58eca : ril: fix $(filter ...) derp <Simon Shields> 2 days ago
+ 
+**** github:CMRemix/android_kernel_samsung_trlte ****
+ea06f1e : trlte: update fingerprint drivers <ZION959> 9 minutes ago
+ 
+**** github:CyanogenMod/android_packages_apps_Messaging ****
+00577e6 : Fix crash in Blacklist sync task <Rohit Yengisetty> 2 days ago
+599098c : Fix partial draws of images received from a Lookup Provider <Rohit Yengisetty> 2 days ago
+ 
+**** cmR:android_packages_apps_Settings ****
+20bb05c : Get rid of divider lines in settings.. RIP <xWASABI> 10 days ago
+ca73b3d : Dashoard tileview dividers toggle [2/2] <Alex Cruz> 22 hours ago
+9b6498f : Settings: regulatory: Wrap the layout in a ScrollView <Diogo Ferreira> 3 months ago
+48c28ed : RegulatoryDialog : Use String.split to avoid crash on empty args <Danesh M> 30 hours ago
+e66e822 : Settings: Add CM-specific settings <Diogo Ferreira> 2 weeks ago
+f5d3129 : Set number of tile columns [2/2] <Randall Rushing> 24 hours ago
+ 
+**** github:CyanogenMod/android_packages_apps_SoundRecorder ****
+ebf0748 : SoundRecorder: sign with platform key <Scott Mertz> 33 hours ago
+e1eb52c : SoundRecorder: Change the method of get SD card path. <yongga> 5 weeks ago
+ 
+**** github:CyanogenMod/android_packages_apps_Trebuchet ****
+9be4dbb : Trebuchet: Don't do reveal animation from apps/widgets to overview <cretin45> 32 hours ago
+58f05fa : Trebuchet: always set initial wallpaper offsets <Roman Birg> 1 year, 7 months ago
+ 
+**** cmR:android_packages_services_Telecomm ****
+22c32ad : telecomm: Support DSDA without LCH <Christopher R. Palmer> 5 weeks ago
+ 
+**** github:CyanogenMod/android_system_vold ****
+73ed08e : Fix ioctl parameter <caozhiyuan> 4 months ago
+ 
