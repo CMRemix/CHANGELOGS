@@ -1,0 +1,103 @@
+
+**** cmR:CHANGELOGS ****
+126bd3f : update 2-19 <ZION959> 3 days ago
+78980e9 : update 02-17-2016 <ZION959> 5 days ago
+13cda83 : update 2-16-2016 <ZION959> 5 days ago
+31dc43f : update 02-15-2016 <ZION959> 7 days ago
+fead6cc : update changelog 02-13-2016 <ZION959> 9 days ago
+4e1ccf0 : update 02-12-2016 <ZION959> 10 days ago
+ 
+**** cmR:CMRemix ****
+b6cdd11 : track cmremix's DragonTC_3.9 <ZION959> 26 hours ago
+67329fa : track cmremix'S frameworks_opt_net_wifi <ZION959> 28 hours ago
+1f4e742 : track cmremix's sqlite <ZION959> 4 days ago
+aab21a8 : track cmremix's OmniStyle <ZION959> 5 days ago
+bbc5947 : update manifest <ZION959> 13 days ago
+ 
+**** cmR:android_art ****
+0e54f0d : ART: Recognize cortex-a53.a57 for ARM features <Andreas Gampe> 10 weeks ago
+0299788 : art: Disable ART_HOST_CLANG on darwin builds. <Adnan Begovic> 6 weeks ago
+ 
+**** cmR:android_bionic ****
+02b1d48 : bionic: linker: Load shim libs *before* the self-linked libs <Christopher R. Palmer> 8 days ago
+ 
+**** github:CyanogenMod/android_bootable_recovery ****
+4987934 : recovery: Remove empty header line <Tom Marshall> 6 days ago
+d8501d9 : recovery: don't override selinux for cache partition <Pat Erley> 10 days ago
+72319de : recovery: User recovery shouldn't allow mounting system <Pat Erley> 10 days ago
+ 
+**** omni:android_bootable_recovery ****
+eadfd2e : Fix storage selection with adopted storage <Ethan Yonker> 3 days ago
+506fc80 : minuitwrp: fix and hopefully speed up fbdev screen flipping <that> 13 days ago
+2948b6f : twrp: Add support for TW_SECONDARY_BRIGHTNESS_PATH <AdrianDC> 2 weeks ago
+07926a3 : Fix OEM compile <Ethan Yonker> 3 days ago
+fcf3f24 : Fix adopted storage when andsec flag is present <Ethan Yonker> 6 days ago
+7a48a66 : patternpassword: update large grid password scheme <Sultan Qasim Khan> 9 days ago
+d3e96ff : Restore some old decrypt functionality <Ethan Yonker> 5 days ago
+a7e63a2 : cryptfs: major overhaul and cleanup <Sultan Qasim Khan> 9 days ago
+09f380d : Remove inexplicable checks for enabling/disabled UMS support <James Christopher Adduono> 2 weeks ago
+e5a288c : Fix up logd make file rules <Ethan Yonker> 7 days ago
+ 
+**** cmR:android_build ****
+0a50f66 : revert: Squash commit changes by arter97 <ZION959> 2 hours ago
+4df5743 : Disable detection of bugs on global variables. <Evgenii Stepanov> 7 months ago
+0a84ab0 : Remove unneeded aapt dependency <Brian Carlstrom> 7 months ago
+2abcb20 : Remove WITHOUT_(HOST|TARGET)_CLANG. <Dan Albert> 5 months ago
+cfe9aeb : Use libgcov OR libclang_rt.profile, not both. <Dan Albert> 5 months ago
+1ce3404 : Remove unused "host/Directories.h". <Elliott Hughes> 7 months ago
+30b7a0e : Turn on _FORTIFY_SOURCE=2 for the host. <Elliott Hughes> 10 months ago
+b4dce6d : Remove -Wa,noexecstack from unsupported arm clang flags <Dan Willemsen> 4 hours ago
+156a42c : Enable -fstack-protector-strong for arm. <Elliott Hughes> 4 hours ago
+b0d4d55 : build: use dragonTC 3.9 <ZION959> 4 hours ago
+8e72e6a : ota_from_target_files: Don't validate data signatures with data wipe <Brint E. Kriebel> 4 months ago
+3aadec3 : releasetools: Store the proper base64 release key in the target files <Brint E. Kriebel> 5 days ago
+a2e4559 : Implement 'mmap' command <Martin Brabham> 2 weeks ago
+9896d16 : repopick: Don't crash if change not found <Matt Mower> 3 weeks ago
+c6752b5 : build: flash chainfire's supersu (1/2) <ZION959> 5 days ago
+c4983cd : build: clean up supersu and UKM <ZION959> 9 days ago
+b1bd6c9 : build: comments out check API to fixed build error <ZION959> 11 days ago
+c5035b2 : build: show cmremix kernel & build vesion info <ZION959> 13 days ago
+ea31825 : Add Global posix thread aka pthread Support (1/2) <ZION959> 2 weeks ago
+213c2d3 : build: force rebuild build.prop <Arnav Gupta> 4 weeks ago
+a6d0fdd : DragonTC and Polly support <Joe Maples> 8 weeks ago
+32f1ef0 : separate clang & clang -O3 <ZION959> 3 weeks ago
+0589e23 : Sabermod Optimization <ZION959> 3 weeks ago
+1c9f92b : Squash commit changes by arter97 <Park Ju Hyung> 3 months ago
+17bcddd : Saberize v6 custom toolchain support <Paul Beeler> 3 weeks ago
+8e7c53c : binary: Update rtti logic <Tyler Dunn> 7 weeks ago
+7e3d3e2 : Make rtti default for gcc >=5.2 <Paul Beeler> 6 months ago
+0ccb992 : Show compiler used when building <Joe Maples> 7 weeks ago
+8f25a48 : core: Add USE_GCC_PLATFORM_BUILD Option <Joe Maples> 3 months ago
+db967b8 : Enable color output from gcc and clang <Colin Cross> 5 months ago
+2c4aeef : Add back mka bootzip <RobbieL811> 9 months ago
+5f26dbf : build: Set ANDROID_BUILD_TOP earlier <mydongistiny> 4 months ago
+c070f23 : envsetup: make reposync use --force-sync as well <Alexander Martinz> 6 months ago
+9de38ff : Build: Use 0 compression ratio for jar files <arter97> 11 months ago
+22fbed7 : Add Make Dirty Option <Chet Kener> 1 year, 2 months ago
+9a37286 : Add a Whole bunch of Clean Options <Chet Kener> 1 year, 2 months ago
+7d18fff : [1/2] temp fixed for trlte build id error <ZION959> 3 months ago
+3f23b9b : Introduce New Squisher/Opticharger for Lollipop (2/2) <Chet Kener> 1 year, 2 months ago
+b26d484 : general update for cmremix <ZION959> 2 months ago
+abd0da5 : build: CMRemix Changelog [1/2] <ZION959> 4 months ago
+6f315a7 : build: CMRemix Version & build prop info & add ACSII art for CMREmix <ZION959> 4 months ago
+521a73b : build: Enforce checkapi-cm on system image gen. <Adnan Begovic> 13 days ago
+e3f7e68 : qcom: Add support for custom device specific paths <Chirayu Desai> 2 weeks ago
+391562e : releasetools: Don't extract BOOTABLE_IMAGES when signing target files <Brint E. Kriebel> 11 days ago
+50e34c9 : Set mcpu targets based on cpu variant. <Christopher Ferris> 5 months ago
+a4a3d47 : Revert "build: Fix external checkapi mechanism for marshmallow." <Adnan Begovic> 12 days ago
+31ed6e0 : prebuild: compress shared libraries in prebundled apks <Scott Mertz> 13 days ago
+5a61a0d : build: Fix external checkapi mechanism for marshmallow. <Adnan Begovic> 13 days ago
+d063c0f : releasetools: Replace key values in permission files during re-signing <Brint E. Kriebel> 2 weeks ago
+470b95c : build: Always run checkapi when building system image <Tom Marshall> 10 weeks ago
+ 
+**** github:CyanogenMod/android_device_qcom_common ****
+e41d02c : init: Add msm8952-specific init extension library <Abhishek Arpure> 11 months ago
+0703400 : power-8992: Add launch boost profile <Zhao Wei Liew> 8 days ago
+1b48675 : power: Remove custom low power mode hint handling <Zhao Wei Liew> 6 weeks ago
+ 
+**** github:CyanogenMod/android_device_qcom_sepolicy ****
+4a71601 : healthd : allow healthd to read RTC/alarm devices <Chao Chen> 5 days ago
+ 
+**** github:CyanogenMod/android_device_samsung_qcom-common ****
+e8fc583 : Automatic translation import <Michael Bestas> 8 days ago
+ 
