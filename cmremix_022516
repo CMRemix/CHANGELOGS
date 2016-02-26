@@ -1,0 +1,96 @@
+
+**** github:CyanogenMod/android_bootable_recovery ****
+d66f66e : recovery: handle back button when navigating recovery logs <Scott Mertz> 27 hours ago
+ 
+**** omni:android_bootable_recovery ****
+9a561dd : partitions: Fix path based Find_Next_Storage <Matt Mower> 3 days ago
+ 
+**** github:CMRemix/android_device_samsung_trlte-common ****
+8adaccc : revert: trlte-common: add back Use low latency for primary <ZION959> 7 hours ago
+62e6e36 : trlte-common: add back Use low latency for primary <ZION959> 2 days ago
+6f633bf : SELinux status: permissive <ZION959> 2 days ago
+ 
+**** github:CMRemix/android_device_samsung_trltetmo ****
+c3c63c6 : trltetmo: Add oldril feature setPrefNwTypeOnUnsolConnected.(testing) from this commit: https://review.cyanogenmod.org/#/c/132076/ <ZION959> 22 hours ago
+ 
+**** github:CyanogenMod/android_external_ffmpeg ****
+ea5478c : fix invalid linked for target atom , move x86-atom to atom <artefvck> 3 weeks ago
+ 
+**** cmR:android_external_sepolicy ****
+e420226 : Add SElinux rules for /data/misc/trace <Calin Juravle> 20 hours ago
+ 
+**** cmR:android_frameworks_base ****
+dc4938c : ThemeTile: misc touch up <Randall Rushing> 2 days ago
+18ce555 : SharedStorageAgent: fix off by 1 <Pat Erley> 2 days ago
+4486012 : Alarm: Support devices using timerfd without CLOCK_POWEROFF_ALARM <Keith Mok> 2 days ago
+6e5fe56 : Revert "Alarm: Don't use invalid timerfd alarm types" <Keith Mok> 2 days ago
+17f2bff : SystemUI: Add new Navigation buttons by Rohit Chouhan <ZION959> 8 days ago
+c8d0253 : ActivityManager : Remove POWER_OFF_ALARM_MODE HOME_KEY button override <Danesh M> 3 days ago
+69ee10c : SystemUI: Listen for phone state change <chengzhi.hou> 3 months ago
+522defe : Inflate custom notifications with the app's theme. <Danny Baumann> 3 weeks ago
+98ddae1 : WifiTracker : Don't queue up duplicate messages for updating access points <Danesh M> 3 days ago
+7351f38 : NetworkPolicyManager: Null check list of packages belonging to UID <Ethan Chen> 3 days ago
+976c9be : SystemUI: Show lockscreen wallpaper if no album art is available <lion0738> 3 days ago
+b374018 : QS: Show # of clients connected to hotspot <d34d> 6 days ago
+8dc1b68 : Automatic translation import <Michael Bestas> 4 days ago
+09a813f : More Lockscreen Colors [1/2] <Alex Cruz> 3 days ago
+d3c10e1 : FWB: Even more fonts to LS clock (1/2) <LorDClockaN> 3 weeks ago
+32cf479 : base: add always quick pulldown option [1/2] <beanstown106> 4 days ago
+8f2717c : SystemUI: set number of QS rows (1/2) <eyosen> 4 days ago
+24c82e1 : Camera: Force HAL1 for predefined package list. <Sai Kumar Sanagavarapu> 7 months ago
+6c3be91 : Fix for reboot on connecting to TV through HDMI. <Sashidhar Ganiga> 6 weeks ago
+367bef86 : BT: Allow user processes to bind to HeadsetService in guest login <Satish Kodishala> 7 weeks ago
+be31753 : audio: register for device shutdown notification <Preetam Singh Ranawat> 6 months ago
+ab40f4d : Pattern: Correct the web URL to remove the starting Chinese <kaiyiz> 1 year ago
+9229d35 : Performance: Postpone service restart during app launch. <Suyog Sarda> 5 months ago
+f408540 : bootanimation: Use CLOCK_MONTONIC for pthread <Keith Mok> 6 days ago
+62a5c73 : base: Fix proximity check on power key <Christopher R. Palmer> 6 days ago
+76f1042 : aapt: Hide "No comment for public symbol" warnings <Michael Bestas> 5 days ago
+e336d80 : Show SIM card settings in MSIM devices <Luis Vidal> 8 days ago
+5ef92e2 : SystemUI: fix screentimeout tile icon disappearing <Roman Birg> 6 days ago
+fc72463 : runtime: Handle prebundles on BOARD_NEEDS_VENDORIMAGE_SYMLINK. <Adnan Begovic> 7 days ago
+9e8a663 : FWB: Battery light: 100% charged level (1/2) <UtkarshGupta> 7 days ago
+c931384 : base: add config to apply custom shadow on header images [1/2] <maxwen> 7 days ago
+09a2601 : Performance Optimization: Align texture dirty rect <ywen> 11 days ago
+dfee3fe : Fix NullPointerException in DhcpPacket.getTransactionId() <Damien Vagner> 4 weeks ago
+16d17e5 : Sound Tile improvement <beantstown106> 8 days ago
+7c2c677 : SystemUI: add Sound tile to QS (1/2) <eyosen> 7 days ago
+78752ee : Qs: Hardware Keys Tile [1/2] <varund7726> 7 days ago
+eb018bb : SystemUI: Make sure to dismiss after disabling ext kg focus. <Adnan Begovic> 7 days ago
+8f3a627 : services: Fix publishing of ime tile. <Adnan Begovic> 9 days ago
+8955c05 : SystemUI: handle camera launch gesture from keyhadler <Roman Birg> 7 days ago
+fd08b31 : SystemUI: Dismiss external keyguard views on FP auth. <Adnan Begovic> 8 days ago
+5e34349 : SystemUI: Prevent search bar flicker between recents and launcher <cretin45> 7 days ago
+2e9ee07 : SysUI: Don't blur when showing a Live lock screen <d34d> 13 days ago
+1f54d7e : revert: revert: Fix show charging speed on Keyguard <ZION959> 7 days ago
+c9226c9 : Don't apply clang flag to gcc builds. <Dan Albert> 4 months ago
+ 
+**** github:CyanogenMod/android_hardware_qcom_keymaster ****
+0919e4a : keymaster: add msm8909 into support list <Edward Wang> 2 days ago
+ 
+**** github:CyanogenMod/android_hardware_qcom_media ****
+f0608db : Build mm-video-v4l2 on msm8909's <Marcos Marado> 4 months ago
+ 
+**** github:CyanogenMod/android_hardware_ril ****
+06af52d : libril: correct include <Alexander Martinz> 8 days ago
+ 
+**** github:CyanogenMod/android_hardware_ril ****
+ed04ee9 : libril: correct include <Alexander Martinz> 8 days ago
+ 
+**** github:CMRemix/android_kernel_samsung_trlte ****
+a82c780 : msm: Add MSM Hotplug driver <ZION959> 70 minutes ago
+40ac23f : selinux: Android kernel compatibility with M userspace <Jeff Vander Stoep> 4 months ago
+ce009ca : selinux: extended permissions for ioctls <Jeff Vander Stoep> 8 months ago
+215d268 : selinux: remove unnecessary pointer reassignment <Jeff Vander Stoep> 12 months ago
+8852ca9 : selinux: do not check open perm on ftruncate call <Jeff Vander Stoep> 5 months ago
+158a107 : selinux: enable genfscon labeling for sysfs and pstore files <Stephen Smalley> 9 months ago
+e0daf28 : selinux: enable per-file labeling for debugfs files. <Stephen Smalley> 9 months ago
+ac8b148 : selinux: Remove obsolete selinux_audit_data initialization. <Stephen Smalley> 1 year, 1 month ago
+75d6d59 : revert: SELinux: per-command whitelisting of ioctls <ZION959> 5 hours ago
+ebec5f8 : revert: SELinux: use deletion-safe iterator to free list <ZION959> 5 hours ago
+4ea5885 : revert: SELinux: ss: Fix policy write for ioctl operations <ZION959> 5 hours ago
+3e9cddb : arm: implement kexec-hardboot (by vbocek@gmail.com) <ZION959> 3 days ago
+6f057cc : drivers/cpufreq/cpu-boost: Allow input boost code to be excludable in defconfig (yank555) <ZION959> 3 days ago
+d6170d5 : scripts: remove localversion "+" & "-dirty" from kernel version strings <ZION959> 3 days ago
+88a4dde : android: binder: use GPF_HIGHUSER flag since binder is designed for userspace <Paul Reioux> 12 months ago
+ 
