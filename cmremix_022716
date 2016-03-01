@@ -1,0 +1,59 @@
+
+**** cmR:CHANGELOGS ****
+475675a : update 02-26-2016 <ZION959> 26 hours ago
+ 
+**** cmR:CMRemix ****
+cf3ec33 : another derp fixed <ZION959> 26 hours ago
+01efcb5 : derp fixed <ZION959> 26 hours ago
+ 
+**** cmR:android_build ****
+ce8ae4a : build: disabled strict libbluetooth_jni module <ZION959> 5 days ago
+0d2535a : revert: Squash commit changes by arter97 <ZION959> 5 days ago
+3e5df1a : Disable detection of bugs on global variables. <Evgenii Stepanov> 8 months ago
+a7523c7 : Remove unneeded aapt dependency <Brian Carlstrom> 7 months ago
+87d5d2d : Remove WITHOUT_(HOST|TARGET)_CLANG. <Dan Albert> 5 months ago
+0bc3557 : Use libgcov OR libclang_rt.profile, not both. <Dan Albert> 5 months ago
+cebd6e9 : Remove unused "host/Directories.h". <Elliott Hughes> 7 months ago
+5af6db8 : Turn on _FORTIFY_SOURCE=2 for the host. <Elliott Hughes> 10 months ago
+fec3f0c : Remove -Wa,noexecstack from unsupported arm clang flags <Dan Willemsen> 5 days ago
+bba903e : Enable -fstack-protector-strong for arm. <Elliott Hughes> 5 days ago
+c932300 : build: use dragonTC 3.9 <ZION959> 5 days ago
+7a00925 : build: flash chainfire's supersu (1/2) <ZION959> 10 days ago
+c63e390 : build: clean up supersu and UKM <ZION959> 2 weeks ago
+00cc54f : build: comments out check API to fixed build error <ZION959> 2 weeks ago
+82b6041 : build: show cmremix kernel & build vesion info <ZION959> 3 weeks ago
+5c71eaf : Add Global posix thread aka pthread Support (1/2) <ZION959> 3 weeks ago
+7209f36 : build: force rebuild build.prop <Arnav Gupta> 5 weeks ago
+453fccf : DragonTC and Polly support <Joe Maples> 9 weeks ago
+ec7cb30 : separate clang & clang -O3 <ZION959> 3 weeks ago
+99123ea : Sabermod Optimization <ZION959> 3 weeks ago
+885f034 : Squash commit changes by arter97 <Park Ju Hyung> 3 months ago
+92b6611 : Saberize v6 custom toolchain support <Paul Beeler> 3 weeks ago
+dccbc42 : binary: Update rtti logic <Tyler Dunn> 8 weeks ago
+1ec7b8b : Make rtti default for gcc >=5.2 <Paul Beeler> 6 months ago
+08cb197 : Show compiler used when building <Joe Maples> 8 weeks ago
+2251fa9 : core: Add USE_GCC_PLATFORM_BUILD Option <Joe Maples> 3 months ago
+f0a384b : Enable color output from gcc and clang <Colin Cross> 5 months ago
+0b0da2c : Add back mka bootzip <RobbieL811> 9 months ago
+a3dce9f : build: Set ANDROID_BUILD_TOP earlier <mydongistiny> 4 months ago
+d0f4a54 : envsetup: make reposync use --force-sync as well <Alexander Martinz> 7 months ago
+cb05c0f : Build: Use 0 compression ratio for jar files <arter97> 11 months ago
+79c4a5b : Add Make Dirty Option <Chet Kener> 1 year, 2 months ago
+b24137a : Add a Whole bunch of Clean Options <Chet Kener> 1 year, 2 months ago
+45c82d7 : [1/2] temp fixed for trlte build id error <ZION959> 4 months ago
+467fbee : Introduce New Squisher/Opticharger for Lollipop (2/2) <Chet Kener> 1 year, 2 months ago
+4b76fb5 : general update for cmremix <ZION959> 3 months ago
+5cca329 : build: CMRemix Changelog [1/2] <ZION959> 5 months ago
+1996608 : build: CMRemix Version & build prop info & add ACSII art for CMREmix <ZION959> 4 months ago
+ba29741 : binary: Generate dummy rule for relocated protobuf headers <Ricardo Cerqueira> 17 hours ago
+c34b558 : releasetool: add OSIP partitions specifics <Artefvck 07> 3 weeks ago
+01da997 : envsetup: cmgerrit: fix for zsh <Khalid Zubair> 3 weeks ago
+695992c : envsetup: add function to detect shell <Khalid Zubair> 3 weeks ago
+ebddb95 : kernel: Don't use override config in kernel(x)config <Michael Bestas> 8 weeks ago
+d12e3a1 : build: add build module from root <Artefvck 07> 4 weeks ago
+bfedecc : build: e2fsck missing from emulator <msfkonsole> 5 weeks ago
+e2b09b2 : ota_from_target_files: Don't validate data signatures with data wipe <Brint E. Kriebel> 4 months ago
+7847927 : releasetools: Store the proper base64 release key in the target files <Brint E. Kriebel> 10 days ago
+b77db58 : Implement 'mmap' command <Martin Brabham> 3 weeks ago
+620c1e5 : repopick: Don't crash if change not found <Matt Mower> 4 weeks ago
+ 

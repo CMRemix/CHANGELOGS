@@ -1,0 +1,144 @@
+
+**** cmR:CMRemix ****
+812b95b : track cmremix's packages_apps_Messaging <ZION959> 20 hours ago
+ 
+**** omni:android_bootable_recovery ****
+64ffe73 : Unix file endings and remove execute permission <Matt Mower> 3 weeks ago
+b9d8f62 : minuitwrp: retry opening fb0 if it failed <that> 7 days ago
+98ebdaf : Fix verifier_test build <Ethan Yonker> 5 days ago
+a60c786 : Remove busybox modprobe to fix slow performance for some devices <Ethan Yonker> 4 days ago
+ 
+**** aosp:platform/cts ****
+0d1e320 : DO NOT MERGE ANYWHERE: BUMP CTS to 6.0R4 <Daniel Xie> 2 hours ago
+c05e90e : Add tests for the existence of the OS Patch String, and to detect obsolete versions. <Dave Weinstein> 12 days ago
+ 
+**** github:CMRemix/android_device_samsung_trlte-common ****
+1403460 : trlte-common: Add sensorhub <OzzysCmAcc> 6 days ago
+d91894c : trlte-common: Support Fingerprint Hardware (ljzyal) <ZION959> 3 days ago
+1cc35e5 : remove unneeded overlay <fat-tire> 4 days ago
+1a30550 : revert: trlte-common: add back Use low latency for primary <ZION959> 4 days ago
+17c1d05 : trlte-common: add back Use low latency for primary <ZION959> 6 days ago
+3caaa75 : SELinux status: permissive <ZION959> 6 days ago
+5cd67cb : trlte-common: removed hardlitmit, we don't use it for mainline kernel <ZION959> 7 days ago
+ 
+**** cmR:android_frameworks_av ****
+bf88c76 : Forward Port: Add Camera sound toggle [3/3] <Muhammed Nazim> 6 weeks ago
+ 
+**** cmR:android_frameworks_base ****
+4db94c0 : revert: Fix systemUI restart command <ZION959> 59 minutes ago
+edb2ff0 : Make CaptivePortalLoginActivity compatible with setupwizard. <Ramswaroop Ghanshyam Somani> 10 days ago
+99cb9e3 : SystemUI: fix zen mode panel warning not showing <Roman Birg> 4 days ago
+8ddcfde : HotSpot: Store # of connected clients in receiver <d34d> 7 days ago
+5527a9e : Systemui: Set back default clear all button color when switch is off - Now uses default theme resources colors when switch is off <westcripp> 3 hours ago
+59652d2 : Update Headset Icon <Varun> 9 hours ago
+3ef749f : Base: Clean Up StatusBar Colors[1/2] <varund7726> 2 hours ago
+e28d039 : Fix recents Fab button default color derp <westcripp> 11 hours ago
+03dfc74 : FWB: StatusBar Colors Switch [1/2] <varund7726> 10 hours ago
+25ac2120 : Status bar colors, (1/2): <XXMrHyde> 10 hours ago
+1c9e33a : add missing breathing sms to settings <ZION959> 18 hours ago
+efbe292 : add vibrate/silent string to fixed build error <ZION959> 19 hours ago
+34d7e08 : Recents: Clean up FAB animations[1/2] <Varun> 23 hours ago
+1e995f9 : Recents: FAB animations[1/2] <varund7726> 20 hours ago
+51dbdce : Add vibrate/silent, headset, and vpn to statusbar icon blacklist <beanstown106> 21 hours ago
+7b8d218 : Pimp multi-window <Jean-Pierre Rasquin> 6 days ago
+231a649 : base: display headset when plug <martincz> 21 hours ago
+4f1f597 : frameworks_base: Intrusive InCall UI switch [1/2] <Victor Lapin> 2 days ago
+ebd789b : Fix android.opengl.Matrix.setRotateEulerM <Dan Stoza> 3 days ago
+9cae31a : Recents: Button Customization Fixups <varund7726> 2 days ago
+f085c83 : [2/2] Base: Add lockscreen rotation as an optional rotation setting <maxwen> 2 days ago
+243aba5 : Optional Dashboard switches [1/2] <Alex Cruz> 2 days ago
+b080146 : QS/TM : Update task manager UI & add fab button - Update and vectorize task close button + tint as accent color <westcripp> 2 days ago
+1d07956 : Recents: More Buttons and Colors[1/2] <varund7726> 2 days ago
+4730a85 : SystemUI: Don't vibrate on touchscreen camera gesture <Michael Bestas> 10 days ago
+3acfdb6 : Recents: Add Color Customizations [1/2] <varund7726> 3 days ago
+7962862 : Recents: Custom Kill All Buttons [1/2] <varund7726> 3 days ago
+2e97252 : Immersive Recents [1/2] This adds on to previous mod called FULL SCREEN RECENTS but now adds options to show recents with statusbar only or navbar only as well as fullscreen. <Alex Cruz> 3 days ago
+c97c314 : fix crash on boot <Dirk Rettschlag> 4 days ago
+48e5bb9 : derp fixed <ZION959> 4 days ago
+cc48a36 : Fingerprint authentication vibration [1/2] <beanstown106> 4 days ago
+adac11e : livedisplay: Factoring out color temperature to RGB conversion algorithm <Steve Kondik> 4 days ago
+dc328b1 : am: Cancel protected app notification on validation launch. <Adnan Begovic> 6 days ago
+2bb60ae : FullBackup: Add handling for shared storage <Pat Erley> 11 days ago
+37bc597 : Show correct pinning message for accessibility <Danesh M> 4 days ago
+0b18e96 : Show correct pinning message without navbar <Danesh M> 4 days ago
+24692c7 : NotificationPanelView : Fix incorrect panel translation <Danesh M> 6 days ago
+658f024 : SystemUI: reset tile page after inactivity <Roman Birg> 4 days ago
+4381613 : FWB: QsDrag Panel Colors [1/2] <varund7726> 4 days ago
+03af0fd : FWB: Header Vibration Customization [1/2] <varund7726> 4 days ago
+600a9e5 : FWB:Qs DragPanel Vibration Customizations[1/2] <varund7726> 4 days ago
+c7577e4 : SystemUI: Fix LS Bouncer [1/2] <beanstown106> 5 days ago
+66a26dd : Configurable Keyguard alpha and Keyguard Bouncer alpha [1/2] inspired by the BrightLockscreen xposed module: https://github.com/Generalbrus/BrightLockscreen <beanstown106> 4 days ago
+973c022 : revert: SystemUI: add haptic feedback to quick tiles <ZION959> 4 days ago
+20d02e7 : Secure Lockscreen Bouncer Bypass configuration [1/2] <beanstown106> 6 days ago
+15ae8ca : NFC Polling Mode (1/3) <Jubakuba> 6 days ago
+dc4938c : ThemeTile: misc touch up <Randall Rushing> 6 days ago
+18ce555 : SharedStorageAgent: fix off by 1 <Pat Erley> 6 days ago
+4486012 : Alarm: Support devices using timerfd without CLOCK_POWEROFF_ALARM <Keith Mok> 6 days ago
+6e5fe56 : Revert "Alarm: Don't use invalid timerfd alarm types" <Keith Mok> 6 days ago
+ 
+**** cmR:android_frameworks_opt_net_wifi ****
+9dbc74c : When wificonfiguration is null, return a failure message to the caller. <zhangshuxiao> 4 days ago
+becf59e : Add missing liblog dependency <ZION959> 21 hours ago
+3dc987e : wifi: Don't call wpa_supplicant from binder thread context <Pontus Fuchs> 1 year ago
+32652e4 : Fix NullPointerException in reportScanResults <Daichi Ueura> 9 weeks ago
+3b3f17f : Fix NullPointerException from getChannelsForBand <Daichi Ueura> 9 weeks ago
+5b6e789 : Fix NullPointerException in AutoJoinController <Aymen Ben Alaya> 5 months ago
+8fcb622 : Fix potential memory leak <Shun Iio> 3 months ago
+ 
+**** github:CyanogenMod/android_hardware_qcom_audio ****
+692a5cc : hal: Fix potential memory leaks in HAL <Alexy Joseph> 3 weeks ago
+ 
+**** github:CyanogenMod/android_hardware_qcom_display ****
+25957da : hwc: hdmi: Add support for S3D video <Yang Xu> 7 weeks ago
+ 
+**** github:CyanogenMod/android_hardware_qcom_media ****
+49aecee : mm-video-v4l2: vidc: vdec: skip enabling S3D extra data for secure session <Srinu Gorle> 11 months ago
+54bfdc2 : mm-video-v4l2: vidc: vdec: Add support for S3D metadata <Ashray Kulkarni> 1 year, 1 month ago
+ 
+**** github:CyanogenMod/android_hardware_samsung ****
+6eec819 : Fix memory leaks and use of uninitialized pointers. <Pavel Zhamaitsiak> 7 months ago
+ 
+**** cmR:android_packages_apps_Settings ****
+2687afb : Expose values for themes. <Dave Kover> 2 hours ago
+65caf12 : Settings: Meet BYOD check intent filter expectations. <Adnan Begovic> 5 days ago
+4c9531d : Settings : Fix back button for sim card lock <Danesh M> 4 days ago
+7cbb33c : Settings: Set back default clear all button color when switch is off - Now uses default theme resources colors when switch is off <westcripp> 3 hours ago
+a71ab78 : Settings:Clean Up StatusBar Colors[2/2] <Varun> 9 hours ago
+9d06d52 : Fix recents membar and Fab button default color issue <westcripp> 12 hours ago
+ebb44fe : Settings: StatusBar Colors Switch [2/2] <varund7726> 11 hours ago
+0af592b : Statusbar icon color [2/2] <XXMrHyde> 11 hours ago
+4a2e4ce : Settings: recents Clean up FAB animations[2/2] <varund7726> 20 hours ago
+a7baf5d : Settings:Recents FAB animations[2/2] <varund7726> 20 hours ago
+2fdeaa9 : [1/2] Settings: Add lockscreen rotation as an optional rotation setting Based on : <yank555-lu> 2 days ago
+bab70de : Configurable Dashboard Switches [1/2] <Alex Cruz> 2 days ago
+1793840 : Settings: More Recents Buttons and Colors[2/2] <varund7726> 2 days ago
+bec3ea1 : Settings: Recents Color Customizations [2/2] <varund7726> 3 days ago
+8da4aac : Immersive Recents [1/2] <Alex Cruz> 3 days ago
+ 
+**** github:CyanogenMod/android_packages_apps_Trebuchet ****
+1cd4587 : Trebuchet: Handle random crash during theme change / user switch <cretin45> 5 hours ago
+c5454ec : Trebuchet: Scale icons in portrait if using condensed grid <cretin45> 8 hours ago
+1acee18 : Trebuchet: re-enable rotation by default on tablets <Andreas Blaesius> 6 days ago
+ 
+**** github:CyanogenMod/android_packages_providers_ContactsProvider ****
+4417d18 : Don't suspend aggregation for new contacts <Gabriele M> 30 hours ago
+ 
+**** cmR:android_packages_services_Telephony ****
+fe6c190 : Make voicemail notifications dismissable on all carriers <beanstown106> 4 months ago
+fede11c : Show 4G instead of LTE switch (Telephony part) <jereksel> 4 weeks ago
+f49d367 : Telephony: Intrusive InCall UI switch [2/2] <Victor Lapin> 32 hours ago
+528ca37 : Flip to Mute/Reject Call [2/3] <Lars Greiss> 8 weeks ago
+ 
+**** cmR:android_vendor_CMRemix ****
+121eb1b : revert: vendor: logcat ftw <ZION959> 2 hours ago
+053d71f : vendor: logcat ftw <ZION959> 23 hours ago
+f0cb820 : vendor: update supersu to v2.68 <ZION959> 23 hours ago
+639ddde : fixed dragontc version <ZION959> 23 hours ago
+ 
+**** cmR:cm_platform_sdk ****
+73fafc1 : cmsdk: Add touch gesture haptic feedback setting <Michael Bestas> 10 days ago
+ 
+**** github:CMRemix/proprietary_vendor_samsung ****
+1e9dc24 : revert: trlte-common: Update missing audiofx blobs <ZION959> 2 days ago
+444b3c2 : trlte-common: add sensorhubs <ZION959> 3 days ago
+ 
