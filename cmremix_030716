@@ -1,0 +1,98 @@
+
+**** cmR:CMRemix ****
+a554e56 : track cm vendor <ZION959> 14 hours ago
+ 
+**** cmR:android_build ****
+4780f55 : build: disabled strict libbluetooth_jni module <ZION959> 2 weeks ago
+bed689a : revert: Squash commit changes by arter97 <ZION959> 2 weeks ago
+decd375 : Disable detection of bugs on global variables. <Evgenii Stepanov> 8 months ago
+36d76e4 : Remove unneeded aapt dependency <Brian Carlstrom> 8 months ago
+a0fdb15 : Remove WITHOUT_(HOST|TARGET)_CLANG. <Dan Albert> 6 months ago
+76703eb : Use libgcov OR libclang_rt.profile, not both. <Dan Albert> 5 months ago
+39917d9 : Remove unused "host/Directories.h". <Elliott Hughes> 7 months ago
+9b7dcd8 : Turn on _FORTIFY_SOURCE=2 for the host. <Elliott Hughes> 10 months ago
+560ca9d : Remove -Wa,noexecstack from unsupported arm clang flags <Dan Willemsen> 2 weeks ago
+d7e21bf : Enable -fstack-protector-strong for arm. <Elliott Hughes> 2 weeks ago
+e496813 : build: use dragonTC 3.9 <ZION959> 2 weeks ago
+1c94cda : build: flash chainfire's supersu (1/2) <ZION959> 3 weeks ago
+4e79871 : build: clean up supersu and UKM <ZION959> 3 weeks ago
+9b9f38a : build: comments out check API to fixed build error <ZION959> 4 weeks ago
+fcbf258 : build: show cmremix kernel & build vesion info <ZION959> 4 weeks ago
+e159377 : Add Global posix thread aka pthread Support (1/2) <ZION959> 4 weeks ago
+0da0646 : build: force rebuild build.prop <Arnav Gupta> 6 weeks ago
+5d8f92b : DragonTC and Polly support <Joe Maples> 10 weeks ago
+d14987c : separate clang & clang -O3 <ZION959> 5 weeks ago
+fbc1ac3 : Sabermod Optimization <ZION959> 5 weeks ago
+7cfd029 : Squash commit changes by arter97 <Park Ju Hyung> 3 months ago
+992b41f : Saberize v6 custom toolchain support <Paul Beeler> 5 weeks ago
+a67b9d0 : binary: Update rtti logic <Tyler Dunn> 9 weeks ago
+fbdf307 : Make rtti default for gcc >=5.2 <Paul Beeler> 6 months ago
+ec58288 : Show compiler used when building <Joe Maples> 10 weeks ago
+5979e8c : core: Add USE_GCC_PLATFORM_BUILD Option <Joe Maples> 3 months ago
+f68a506 : Enable color output from gcc and clang <Colin Cross> 6 months ago
+42726a4 : Add back mka bootzip <RobbieL811> 10 months ago
+9e28bad : build: Set ANDROID_BUILD_TOP earlier <mydongistiny> 5 months ago
+b1a1ffc : envsetup: make reposync use --force-sync as well <Alexander Martinz> 7 months ago
+8fac830 : Build: Use 0 compression ratio for jar files <arter97> 11 months ago
+2a7fed2 : Add Make Dirty Option <Chet Kener> 1 year, 2 months ago
+0ebfa25 : Add a Whole bunch of Clean Options <Chet Kener> 1 year, 2 months ago
+67c5e18 : [1/2] temp fixed for trlte build id error <ZION959> 4 months ago
+c858468 : Introduce New Squisher/Opticharger for Lollipop (2/2) <Chet Kener> 1 year, 3 months ago
+183d010 : general update for cmremix <ZION959> 3 months ago
+7e4b614 : build: CMRemix Changelog [1/2] <ZION959> 5 months ago
+585a467 : build: CMRemix Version & build prop info & add ACSII art for CMREmix <ZION959> 4 months ago
+759f573 : kernel: add banner for defconfig and header install steps <Khalid Zubair> 4 days ago
+99f8e96 : kernel: allow toolchain prefix to be overridden <Khalid Zubair> 4 days ago
+9f2ad7c : kernel: add docs for config vars <Khalid Zubair> 4 days ago
+2b7b9ce : kernel: remove support for unused MTK Kernel <Khalid Zubair> 4 days ago
+5771f5d : build: better compatibility between zsh shells <Roman Birg> 6 days ago
+521aa1e : envesetup: mmm/mmma: fix for zsh <Khalid Zubair> 4 weeks ago
+ 
+**** cmR:android_frameworks_base ****
+ba21670 : revert: fix crash on boot <ZION959> 47 minutes ago
+df7a491 : revert: revert: Fix theme issue with reboot dialog <ZION959> 7 hours ago
+b160abe : SystemUI : 9 More Custom logos [1/2] <westcripp> 2 days ago
+ 
+**** cmR:android_frameworks_native ****
+9e37519 : surfaceflinger: Use only one EventThread when phase offsets are same. <Omprakash Dhyade> 4 weeks ago
+ 
+**** cmR:android_frameworks_opt_net_wifi ****
+36d4b5c : Fix invalid offset error <Legrand Benjamin> 3 months ago
+ 
+**** cmR:android_packages_apps_Dialer ****
+72a6e47 : Automatic translation import <Michael Bestas> 3 days ago
+b91511e : Add Ukrainian T9 symbol map <Ricardo Cerqueira> 4 days ago
+ 
+**** cmR:android_packages_apps_InCallUI ****
+f724909 : Automatic translation import <Michael Bestas> 3 days ago
+ 
+**** cmR:android_packages_apps_Messaging ****
+b139580 : Automatic translation import <Michael Bestas> 3 days ago
+ 
+**** cmR:android_packages_apps_Settings ****
+87d697d : fixed cmremix's vector icons color and update <ZION959> 6 hours ago
+f734d92 : Settings: add devicecontrol option to dashboard (1/2) <ZION959> 2 days ago
+ 
+**** cmR:android_packages_apps_Snap ****
+43b3ae8 : Automatic translation import <Michael Bestas> 3 days ago
+2d0a116 : Snap: Fix filtering of unsupported HFR/HSR modes <Michael Bestas> 3 weeks ago
+b74262c : SnapdragonCamera: Fix HSR recording <Sultanxda> 6 weeks ago
+6707dc2 : SnapdragonCamera: Fix timelapse recording <Sultanxda> 4 months ago
+a4c4f8f : SnapdragonCamera: Enable audio recording for HSR videos <Sultanxda> 4 months ago
+ 
+**** cmR:android_packages_inputmethods_LatinIME ****
+bdf269e : Automatic translation import <Michael Bestas> 3 days ago
+ 
+**** cmR:android_packages_services_Telecomm ****
+6862630 : Automatic translation import <Michael Bestas> 3 days ago
+ 
+**** cmR:android_packages_services_Telephony ****
+511fbb2 : Automatic translation import <Michael Bestas> 3 days ago
+ 
+**** cmR:android_vendor_CMRemix ****
+a147842 : vendor: inherit linux sepolicy from CMRemix <ZION959> 19 minutes ago
+95fcb2d : vendor: DeviceControl: version 0.8.6.4 (146) (2/2) <ZION959> 2 days ago
+ 
+**** github:CMRemix/proprietary_vendor_samsung ****
+d04bfee : Fix date and time reset at every boot The issue of the reset of the date and time on every reboot was caused by mismanagement of the binary time daemon. When it is replaced by this new file the error is resolved. <placiano> 4 weeks ago
+ 

@@ -1,0 +1,171 @@
+
+**** cmR:CMRemix ****
+62c39a7 : revert: track cm vendor <ZION959> 14 hours ago
+c2b9c18 : android-6.0.1_r13 -> android-6.0.1_r17 <Jessica Wagantall> 17 hours ago
+7356f96 : manifest: Fork dalvik to CM. <Adnan Begovic> 5 days ago
+ 
+**** cmR:android_art ****
+bc97168 : ART: make ART extension available only in 32bit for msm8996 <Scott Mertz> 4 months ago
+fdbc583 : art: fix dex2oat watchdog timeout <Mustaavalkosta> 4 weeks ago
+ 
+**** cmR:android_build ****
+83b0977 : included vendor cmremix sepolicy <ZION959> 11 hours ago
+695c46e : build: Update make installclean <Lokesh Chamane> 3 days ago
+779b215 : build: disabled strict libbluetooth_jni module <ZION959> 2 weeks ago
+83960a6 : revert: Squash commit changes by arter97 <ZION959> 2 weeks ago
+5641c4b : Disable detection of bugs on global variables. <Evgenii Stepanov> 8 months ago
+4305e63 : Remove unneeded aapt dependency <Brian Carlstrom> 8 months ago
+7bf233d : Remove WITHOUT_(HOST|TARGET)_CLANG. <Dan Albert> 6 months ago
+7933314 : Use libgcov OR libclang_rt.profile, not both. <Dan Albert> 5 months ago
+de2a957 : Remove unused "host/Directories.h". <Elliott Hughes> 7 months ago
+45c18c4 : Turn on _FORTIFY_SOURCE=2 for the host. <Elliott Hughes> 10 months ago
+d9a2cdf : Remove -Wa,noexecstack from unsupported arm clang flags <Dan Willemsen> 2 weeks ago
+c00ddf9 : Enable -fstack-protector-strong for arm. <Elliott Hughes> 2 weeks ago
+46f5012 : build: use dragonTC 3.9 <ZION959> 2 weeks ago
+b3a9626 : build: flash chainfire's supersu (1/2) <ZION959> 3 weeks ago
+498d5b4 : build: clean up supersu and UKM <ZION959> 4 weeks ago
+7747d57 : build: comments out check API to fixed build error <ZION959> 4 weeks ago
+ab8f7ee : build: show cmremix kernel & build vesion info <ZION959> 4 weeks ago
+47ae8da : Add Global posix thread aka pthread Support (1/2) <ZION959> 4 weeks ago
+4fda971 : build: force rebuild build.prop <Arnav Gupta> 6 weeks ago
+b87426d : DragonTC and Polly support <Joe Maples> 2 months ago
+e46780b : separate clang & clang -O3 <ZION959> 5 weeks ago
+ac6beb7 : Sabermod Optimization <ZION959> 5 weeks ago
+2ea730f : Squash commit changes by arter97 <Park Ju Hyung> 3 months ago
+cb3c372 : Saberize v6 custom toolchain support <Paul Beeler> 5 weeks ago
+e198924 : binary: Update rtti logic <Tyler Dunn> 9 weeks ago
+0de92a4 : Make rtti default for gcc >=5.2 <Paul Beeler> 6 months ago
+edf136d : Show compiler used when building <Joe Maples> 10 weeks ago
+5556e1f : core: Add USE_GCC_PLATFORM_BUILD Option <Joe Maples> 3 months ago
+412973a : Enable color output from gcc and clang <Colin Cross> 6 months ago
+74459a8 : Add back mka bootzip <RobbieL811> 10 months ago
+0be1ab8 : build: Set ANDROID_BUILD_TOP earlier <mydongistiny> 5 months ago
+3865bf6 : envsetup: make reposync use --force-sync as well <Alexander Martinz> 7 months ago
+229879e : Build: Use 0 compression ratio for jar files <arter97> 11 months ago
+f6112b4 : Add Make Dirty Option <Chet Kener> 1 year, 2 months ago
+3d15f09 : Add a Whole bunch of Clean Options <Chet Kener> 1 year, 2 months ago
+68b933d : [1/2] temp fixed for trlte build id error <ZION959> 4 months ago
+dbb78fb : Introduce New Squisher/Opticharger for Lollipop (2/2) <Chet Kener> 1 year, 3 months ago
+e1b5344 : general update for cmremix <ZION959> 3 months ago
+0ab21a5 : build: CMRemix Changelog [1/2] <ZION959> 5 months ago
+d2a767f : build: CMRemix Version & build prop info & add ACSII art for CMREmix <ZION959> 4 months ago
+71a40f9 : "MMB29V" <The Android Automerger> 7 weeks ago
+ee03c8c : Updating security patch string to 2016-03-01 <Zach Jang> 8 weeks ago
+ 
+**** aosp:platform/external/conscrypt ****
+4bdc877 : Prevent duplicate certificates in TrustedCertificateIndex <Chad Brubaker> 3 months ago
+04e7d1d : Cache intermediate CA separately <Chad Brubaker> 3 months ago
+ 
+**** github:CyanogenMod/android_external_libavc ****
+c64afe7 : Decoder Update mb count after mb map is set. <Harish Mahendrakar> 9 weeks ago
+ 
+**** aosp:platform/external/libmpeg2 ****
+5422a29 : Return error for wrong mb_type <Harish Mahendrakar> 4 months ago
+154dea8 : Fixed bit stream access to make sure that it is not read beyond the allocated size. <Harish Mahendrakar> 10 weeks ago
+ 
+**** github:CyanogenMod/android_external_stagefright-plugins ****
+770d66e : stagefright-plugins: Skip 2nd parsing for ogg <Keith Mok> 2 weeks ago
+ 
+**** cmR:android_frameworks_av ****
+38f1da3 : Camera: Disallow dumping clients directly <Eino-Ville Talvala> 8 weeks ago
+d764049 : Fix out-of-bounds write <Marco Nelissen> 8 weeks ago
+3491698 : fix possible overflow in effect wrappers. <Eric Laurent> 9 weeks ago
+ 
+**** cmR:android_frameworks_base ****
+e764079 : base: CMRemix android-6.0.1_r13 -> android-6.0.1_r17 <ZION959> 13 hours ago
+4072bf6 : Merge tag 'android-6.0.1_r17' into HEAD <Jessica Wagantall> 17 hours ago
+63ebd41 : SystemUI: fix always_show_roaming <Shaleen Jain> 4 days ago
+2c9ec58 : frameworks: squash of leak & race fixes <liquid0624> 1 year, 1 month ago
+5d56c6a : SystemUI: hide navigation bar faster in SetupWizard <Roman Birg> 11 months ago
+6b6d57c : Enhance dexopt with random colours Edited by @zephiK * adapted to work for android 6.0 (marshmallow) <Jaime Lopez> 1 year, 2 months ago
+c733735 : Fix problem with BootAnimation exit <Russell Webb> 2 years, 4 months ago
+b6cdc1f : support separate encryption/lockscreen passwords <Daniel Micay> 3 months ago
+0c42dd9 : base: CMRemix start up strings <ZION959> 19 hours ago
+349a585 : fix crash on boot <Dirk Rettschlag (MarcLandis)> 20 hours ago
+ 
+**** cmR:android_frameworks_native ****
+daca8c3 : IGraphicBufferProducer: fix QUEUE_BUFFER info leak <Robert Shih> 8 weeks ago
+93312a3 : IGraphicBufferConsumer: fix ATTACH_BUFFER info leak <Robert Shih> 8 weeks ago
+ 
+**** cmR:android_frameworks_opt_net_wifi ****
+9dbc74c : When wificonfiguration is null, return a failure message to the caller. <zhangshuxiao> 11 days ago
+becf59e : Add missing liblog dependency <ZION959> 9 days ago
+3dc987e : wifi: Don't call wpa_supplicant from binder thread context <Pontus Fuchs> 1 year ago
+32652e4 : Fix NullPointerException in reportScanResults <Daichi Ueura> 2 months ago
+3b3f17f : Fix NullPointerException from getChannelsForBand <Daichi Ueura> 2 months ago
+5b6e789 : Fix NullPointerException in AutoJoinController <Aymen Ben Alaya> 6 months ago
+8fcb622 : Fix potential memory leak <Shun Iio> 3 months ago
+a137281 : Fix invalid offset error <Legrand Benjamin> 3 months ago
+ 
+**** cmR:android_frameworks_opt_telephony ****
+33a347a : Allow to ignore presentation indicator of outgoing calls [2/3] <Gabriele M> 13 days ago
+c078223 : Check permissions on getDeviceId. <Robert Greenwalt> 3 months ago
+ 
+**** github:CyanogenMod/android_hardware_samsung ****
+621e63e : libril: Make ST-E Thor M7450 and Intel XMM7260 next gen modems as well <Christopher N. Hesse> 2 weeks ago
+f15d7f4 : powerhal: Add set_profile support <Andreas Schneider> 5 weeks ago
+ 
+**** github:CMRemix/android_kernel_samsung_trlte ****
+fb97215 : add our own config <ZION959> 17 hours ago
+415ba85 : Makefile: fixed No such file or directory when make mrproper <ZION959> 18 hours ago
+0f79720 : add missing earlysuspend.h <ZION959> 19 hours ago
+ 
+**** github:CyanogenMod/android_packages_apps_Bluetooth ****
+fb02583 : DO NOT MERGE Fix SMS delivered successfully but stuck SENDING issue <Ashwini Munigala> 6 months ago
+ 
+**** github:CyanogenMod/android_packages_apps_ContactsCommon ****
+1196024 : Fix resource clean-up in LookupProviderImpl <Rohit Yengisetty> 21 hours ago
+4d67195 : Update info_lookup to use AmbientSDK directly <Raj Yengisetty> 11 days ago
+ 
+**** cmR:android_packages_apps_InCallUI ****
+34d0d93 : Fix to answer call in DSDS mode. <Ravindra> 3 months ago
+dc3aadd : Fix to answer call in DSDS mode. <Ravindra> 3 months ago
+ 
+**** cmR:packages_apps_OmniStyle ****
+330da6c : OmniStyle: image update <maxwen> 2 weeks ago
+ 
+**** cmR:android_packages_apps_OmniSwitch ****
+e0fdc7f : fixed build <ZION959> 11 hours ago
+23fc691 : OmniSwitch: tweak DragGripView <maxwen> 5 days ago
+68b0b60 : OmniSwitch: bugfix update 01/2016 <maxwen> 7 weeks ago
+ 
+**** cmR:android_packages_apps_PackageInstaller ****
+1cfd1a4 : Fix crash in OnDismiss <Ciesla, Jakub 2 (EXT)> 5 months ago
+9cf99be : PackageInstaller: Show current & new version <Dirk Rettschlag> 2 years, 3 months ago
+cb079ef : Automatic translation import <Michael Bestas> 4 days ago
+ 
+**** cmR:android_packages_apps_Settings ****
+27eb2a5 : AppOps: Guard against themes without colorAccent defined <d34d> 11 days ago
+97e4628 : Settings: Remove "Learn More" clickable text if not overlaid. <Adnan Begovic> 5 days ago
+f6b1548 : Settings: Allow disabling default allcaps state in tabtext. <Adnan Begovic> 5 days ago
+ 
+**** cmR:android_packages_apps_SetupWizard ****
+4a8c4d4 : disabled cm navigationbar keys and enabled slim navigationbar and hardware keys <ZION959> 10 hours ago
+ 
+**** cmR:android_packages_apps_Snap ****
+b38ff9e : lets build camera2 also <ZION959> 13 hours ago
+ 
+**** cmR:android_packages_services_Telephony ****
+773cab5 : Allow to ignore presentation indicator of outgoing calls [3/3] <Gabriele M> 5 days ago
+ 
+**** cmR:llvm-Snapdragon_LLVM_for_Android ****
+9a7fa96 : Update Prebuilt February29 <Joe Maples> 8 days ago
+ 
+**** github:CyanogenMod/android_system_bt ****
+ed1563b : Fix crashes with lots of discovered LE devices <Marie Janssen> 3 months ago
+ 
+**** github:CyanogenMod/android_vendor_cm ****
+8ab71a0 : vendor: Add maintainer for LG G3 (Sprint) (LS990) <Kasual> 6 days ago
+6f978dc : Add Z00T maintainers <LuK1337> 26 hours ago
+fd28e9d : Include AmbientSDK artifact <Raj Yengisetty> 11 days ago
+ 
+**** cmR:android_vendor_CMRemix ****
+250182b : android-6.0.1_r13 -> android-6.0.1_r17 <ZION959> 13 hours ago
+ 
+**** cmR:cm_platform_sdk ****
+3a590c3 : Allow to ignore presentation indicator of outgoing calls [1/3] <Gabriele M> 4 days ago
+ 
+**** github:TheMuppets/proprietary_vendor_lge ****
+6842b1e : g3: add variant sensor configs and finish commonizing sensors <Hendrik Hagendorn> 3 days ago
+d0316ed : g3: update and commonize blobs from D85530b <Hendrik Hagendorn> 10 weeks ago
+ 

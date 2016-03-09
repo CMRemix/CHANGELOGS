@@ -1,0 +1,41 @@
+
+**** cmR:CHANGELOGS ****
+3d957fc : update 3-1-2016 <ZION959> 25 hours ago
+ 
+**** github:CMRemix/android_device_samsung_trlte-common ****
+d3ab89b : trlte: fix charging off mode Now works properly <ZION959> 81 minutes ago
+80b4a1b : trlte-common: add sensorhub service sepolicy <ZION959> 29 hours ago
+33cc8dc : trlte-common: move gps proprietary to trlte-common <ZION959> 29 hours ago
+3ca8211 : trlte-common: Remove deprecated & update board flags <ZION959> 24 hours ago
+ 
+**** github:CMRemix/android_device_samsung_trltespr ****
+29ef07e : trltespr: update samsung 5.1.1 proprietary and moved gps to trlte-common <ZION959> 24 hours ago
+ 
+**** github:CMRemix/android_device_samsung_trltexx ****
+f329df8 : trltexx: move gps proprietary to trlte-common <ZION959> 24 hours ago
+ 
+**** cmR:android_frameworks_base ****
+7f4f885 : Fix bottom shortcuts default icon tint color <westcripp> 2 hours ago
+1804008 : Clear views on theme apply <westcripp> 23 minutes ago
+85604de : SystemUI: Clear children and shade views to improve recreatestatusbar <westcripp> 24 minutes ago
+a843601 : Statusbar: Custom Logos and Styles [1/2] <varund7726> 45 minutes ago
+d9c3f5a : Qs : Improve Navbar Tile Logic <varund7726> 2 hours ago
+2a59303 : Qs: Fix Wifi Tile Derp <Varun> 25 hours ago
+1ca173c : Fix NPE in BaseStatusbar in onListenerConnected <Kent Persson> 1 year, 3 months ago
+261af39 : Fix layout of alarm info on the expanded status bar for RTL <Martin Törnqvist> 12 months ago
+2e844fa : Frameworks: Fix hw menu key from unlocking on swipe <Shahan> 3 months ago
+aff6da2 : revert: Systemui: Set back default clear all button color when switch is off - Now uses default theme resources colors when switch is off (reverted from commit 5527a9e7eb0d300c4b76214cae0e8d6e7df12ffa) <ZION959> 22 hours ago
+12ac3ab : FWB : Add Alt NavRecents Button as an Option [1/2] <varund7726> 23 hours ago
+0b40978 : FWB : Clock Color Switch (1/2) <varund7726> 23 hours ago
+0a54684 : [squash] clean up & fixed <westcripp> 24 hours ago
+ 
+**** cmR:android_packages_apps_Settings ****
+07d259c : Settings: Fix SecuritySettings filtering. <Adnan Begovic> 34 hours ago
+6e13c43 : Settings: Statusbar Custom Logos and Styles [1/2] <varund7726> 2 hours ago
+50bf6ef : move Qs Vibrate & Qs Colors from notification panel to qs panel <ZION959> 20 hours ago
+40eca7d : Settings: Scatter and CleanUp Notification Drawer Settings <varund7726> 20 hours ago
+bcb5398 : Settings:  Add Alt NavRecents Button as an Option [2/2] <varund7726> 22 hours ago
+e1a3ecc : Settings: Clock Color Switch (2/2) <varund7726> 22 hours ago
+a1d1b57 : Settings: Move Clock Settings To A Different Preference --Also Clean Up statusBarSettings a bit <varund7726> 22 hours ago
+eb1fbe9 : Fix QsColors reset and default colors <westcripp> 23 hours ago
+ 
