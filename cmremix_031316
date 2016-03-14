@@ -1,0 +1,1951 @@
+
+**** cmR:CHANGELOGS ****
+a257480 : update build <ZION959> 5 days ago
+3d957fc : update 3-1-2016 <ZION959> 12 days ago
+81e363a : update 2-29-2016 <ZION959> 13 days ago
+475675a : update 02-26-2016 <ZION959> 2 weeks ago
+a05ebd7 : update 2-22-2016 <ZION959> 3 weeks ago
+ 
+**** cmR:CMRemix ****
+c7718ad : cm: Change external/pdfium to CM <Steve Kondik> 12 hours ago
+ee17c6d : cm: Update to 6.0.1_r22 <Steve Kondik> 12 hours ago
+dc9956e : revert external/chromium-webview <ZION959> 4 days ago
+62c39a7 : revert: track cm vendor <ZION959> 6 days ago
+c2b9c18 : android-6.0.1_r13 -> android-6.0.1_r17 <Jessica Wagantall> 6 days ago
+7356f96 : manifest: Fork dalvik to CM. <Adnan Begovic> 10 days ago
+fa3b5eb : android-6.0.1_r13 -> android-6.0.1_r17 <Jessica Wagantall> 6 days ago
+a554e56 : track cm vendor <ZION959> 7 days ago
+8d101bd : manifest: Fork dalvik to CM. <Adnan Begovic> 10 days ago
+04fc7ce : Remove projects that do not have any files and last commit was more than two years old. <Xin Li> 7 weeks ago
+812b95b : track cmremix's packages_apps_Messaging <ZION959> 2 weeks ago
+cf3ec33 : another derp fixed <ZION959> 2 weeks ago
+01efcb5 : derp fixed <ZION959> 2 weeks ago
+855b4c2 : track cmremix's PackageInstaller & nfc <ZION959> 2 weeks ago
+443086d : trck cmremix's libcore & chromium-webview <ZION959> 2 weeks ago
+b6cdd11 : track cmremix's DragonTC_3.9 <ZION959> 3 weeks ago
+67329fa : track cmremix'S frameworks_opt_net_wifi <ZION959> 3 weeks ago
+5c44250 : Remove projects that do not have any files and last commit was more than two years old. <Xin Li> 7 weeks ago
+eed6135 : android-6.0.1_r10 -> android-6.0.1_r13 <zeeshanhussain> 6 weeks ago
+ 
+**** cmR:android_art ****
+bc97168 : ART: make ART extension available only in 32bit for msm8996 <Scott Mertz> 4 months ago
+fdbc583 : art: fix dex2oat watchdog timeout <Mustaavalkosta> 5 weeks ago
+9d96bd6 : ART: Decrease dex2oat watchdog timeout <Andreas Gampe> 6 months ago
+ 
+**** cmR:android_bionic ****
+f6f0445 : linker: Allow text-relocs for x86 (only) <Christopher R. Palmer> 5 weeks ago
+030d5fe : If you're going to use memset... <Elliott Hughes> 2 weeks ago
+bb48721 : GCC doesn't like {}, and clang doesn't like {0}... <Elliott Hughes> 2 weeks ago
+b2fb49b : Fix a structure initialisation in pthread_exit(). <Anton Kirilov> 3 weeks ago
+2cbb50f : Add adjtimex <Greg Hackmann> 7 weeks ago
+93655ce : socket.h: update AF_* constants <Greg Hackmann> 6 weeks ago
+77ea758 : Add check for pthread_self() when looking up a thread <Dimitry Ivanov> 5 weeks ago
+dc9130a : linker: remove soinfo::entry <Dimitry Ivanov> 4 weeks ago
+f6f4b51 : Fixes for Clang 3.9 <mydongistiny> 4 weeks ago
+14bc1dc : Fix missing parentheses. <Christopher Ferris> 3 months ago
+30e2ec2 : Fix stdio read after EOF behavior. <Elliott Hughes> 5 months ago
+4270d7c : Fix inet_addr/inet_aton/inet_network. <Elliott Hughes> 5 months ago
+5833446 : Move several FreeBSD functions to OpenBSD. <Elliott Hughes> 6 months ago
+c8687ac : Rename debug_stacktrace to debug_backtrace. <Elliott Hughes> 6 months ago
+56025a8 : Don't re-export libunwind_llvm. <Dan Albert> 7 months ago
+eeb799c : Copy the entire zero-separated DNS seach domain string. <Pierre Imai> 2 weeks ago
+193e423 : Create logging sockets with SOCK_NONBLOCK... <Elliott Hughes> 2 weeks ago
+d8dc1e0 : Remove unused libm_clang variable. <Stephen Hines> 3 weeks ago
+b114037 : Add a memcpy(a, a, n) test. <Christopher Ferris> 4 weeks ago
+8e82ff6 : Fix regerror(..., nullptr, 0). <Elliott Hughes> 4 days ago
+0dcf179 : Allow uchar.h to be used with gcc 5.x <Bernhard Rosenkränzer> 5 months ago
+a0d5061 : Sync with upstream OpenBSD. <Elliott Hughes> 8 weeks ago
+9105716 : Bionic/libm: Prefer branches and VFP ABI. <Lucas Crowthers> 3 years, 7 months ago
+f7a8d05 : fix the mremap signature <Daniel Micay> 4 months ago
+e31f2d8 : Don't leak sockets if setsockopt() or fchown() fail. <Erik Kline> 10 days ago
+1bb333c : Fix GNU/POSIX basename headers. <Josh Gao> 4 months ago
+4954aab : Add prlimit to LP32. <Elliott Hughes> 5 months ago
+4f80102 : Fix potential race condition on CTS TC pthread_gettid_np <Junjie Hu> 4 months ago
+ 
+**** github:CyanogenMod/android_bootable_recovery ****
+1faa075 : recovery: bu: Make 64-bit clean <Tom Marshall> 4 weeks ago
+6c20b00 : recovery: Implement sysbar <Tom Marshall> 4 weeks ago
+d66f66e : recovery: handle back button when navigating recovery logs <Scott Mertz> 3 weeks ago
+a5d5082 : Revert "Byte swap to support BGRA in recovery mode" <Andriy Naborskyy> 9 weeks ago
+8e9c680 : recovery: Fix the bug that truncates menu entries. <Tao Bao> 6 months ago
+337db14 : recovery: Factor out wear_ui.{cpp,h} into bootable/recovery. <Tao Bao> 7 months ago
+ 
+**** omni:android_bootable_recovery ****
+fddbdfa : Don't add subpartitions to restore list <James Christopher Adduono> 13 days ago
+6f57f7c : Merge code from upstream libtar + bug fixes <James Christopher Adduono> 12 days ago
+64ffe73 : Unix file endings and remove execute permission <Matt Mower> 5 weeks ago
+b9d8f62 : minuitwrp: retry opening fb0 if it failed <that> 3 weeks ago
+98ebdaf : Fix verifier_test build <Ethan Yonker> 3 weeks ago
+a60c786 : Remove busybox modprobe to fix slow performance for some devices <Ethan Yonker> 2 weeks ago
+9a561dd : partitions: Fix path based Find_Next_Storage <Matt Mower> 3 weeks ago
+ 
+**** cmR:android_build ****
+b7e6572 : Merge tag 'android-6.0.1_r22' of https://android.googlesource.com/platform/build into cm-13.0 <Steve Kondik> 3 days ago
+6dafbe7 : Fix a race condition while building the recovery patch <Martin Blumenstingl> 7 days ago
+83b0977 : included vendor cmremix sepolicy <ZION959> 6 days ago
+695c46e : build: Update make installclean <Lokesh Chamane> 8 days ago
+779b215 : build: disabled strict libbluetooth_jni module <ZION959> 3 weeks ago
+83960a6 : revert: Squash commit changes by arter97 <ZION959> 3 weeks ago
+5641c4b : Disable detection of bugs on global variables. <Evgenii Stepanov> 8 months ago
+4305e63 : Remove unneeded aapt dependency <Brian Carlstrom> 8 months ago
+7bf233d : Remove WITHOUT_(HOST|TARGET)_CLANG. <Dan Albert> 6 months ago
+7933314 : Use libgcov OR libclang_rt.profile, not both. <Dan Albert> 5 months ago
+de2a957 : Remove unused "host/Directories.h". <Elliott Hughes> 8 months ago
+45c18c4 : Turn on _FORTIFY_SOURCE=2 for the host. <Elliott Hughes> 10 months ago
+d9a2cdf : Remove -Wa,noexecstack from unsupported arm clang flags <Dan Willemsen> 3 weeks ago
+c00ddf9 : Enable -fstack-protector-strong for arm. <Elliott Hughes> 3 weeks ago
+46f5012 : build: use dragonTC 3.9 <ZION959> 3 weeks ago
+b3a9626 : build: flash chainfire's supersu (1/2) <ZION959> 4 weeks ago
+498d5b4 : build: clean up supersu and UKM <ZION959> 4 weeks ago
+7747d57 : build: comments out check API to fixed build error <ZION959> 5 weeks ago
+ab8f7ee : build: show cmremix kernel & build vesion info <ZION959> 5 weeks ago
+47ae8da : Add Global posix thread aka pthread Support (1/2) <ZION959> 5 weeks ago
+4fda971 : build: force rebuild build.prop <Arnav Gupta> 7 weeks ago
+b87426d : DragonTC and Polly support <Joe Maples> 3 months ago
+e46780b : separate clang & clang -O3 <ZION959> 6 weeks ago
+ac6beb7 : Sabermod Optimization <ZION959> 6 weeks ago
+2ea730f : Squash commit changes by arter97 <Park Ju Hyung> 3 months ago
+cb3c372 : Saberize v6 custom toolchain support <Paul Beeler> 6 weeks ago
+e198924 : binary: Update rtti logic <Tyler Dunn> 2 months ago
+0de92a4 : Make rtti default for gcc >=5.2 <Paul Beeler> 7 months ago
+edf136d : Show compiler used when building <Joe Maples> 2 months ago
+5556e1f : core: Add USE_GCC_PLATFORM_BUILD Option <Joe Maples> 4 months ago
+412973a : Enable color output from gcc and clang <Colin Cross> 6 months ago
+74459a8 : Add back mka bootzip <RobbieL811> 10 months ago
+0be1ab8 : build: Set ANDROID_BUILD_TOP earlier <mydongistiny> 5 months ago
+3865bf6 : envsetup: make reposync use --force-sync as well <Alexander Martinz> 7 months ago
+229879e : Build: Use 0 compression ratio for jar files <arter97> 11 months ago
+f6112b4 : Add Make Dirty Option <Chet Kener> 1 year, 2 months ago
+3d15f09 : Add a Whole bunch of Clean Options <Chet Kener> 1 year, 2 months ago
+68b933d : [1/2] temp fixed for trlte build id error <ZION959> 4 months ago
+dbb78fb : Introduce New Squisher/Opticharger for Lollipop (2/2) <Chet Kener> 1 year, 3 months ago
+e1b5344 : general update for cmremix <ZION959> 3 months ago
+0ab21a5 : build: CMRemix Changelog [1/2] <ZION959> 5 months ago
+d2a767f : build: CMRemix Version & build prop info & add ACSII art for CMREmix <ZION959> 4 months ago
+759f573 : kernel: add banner for defconfig and header install steps <Khalid Zubair> 10 days ago
+99f8e96 : kernel: allow toolchain prefix to be overridden <Khalid Zubair> 10 days ago
+9f2ad7c : kernel: add docs for config vars <Khalid Zubair> 10 days ago
+2b7b9ce : kernel: remove support for unused MTK Kernel <Khalid Zubair> 10 days ago
+5771f5d : build: better compatibility between zsh shells <Roman Birg> 12 days ago
+521aa1e : envesetup: mmm/mmma: fix for zsh <Khalid Zubair> 4 weeks ago
+ba29741 : binary: Generate dummy rule for relocated protobuf headers <Ricardo Cerqueira> 2 weeks ago
+c34b558 : releasetool: add OSIP partitions specifics <Artefvck 07> 5 weeks ago
+ 
+**** aosp:platform/cts ****
+1a219ed : Disabling tests which depend on a non-NDK shared library. <Dave Weinstein> 11 days ago
+7ea817b : Revert "media: skip unsupported test clip in adaptive playback test" <Daniel Xie> 12 days ago
+29016e3 : Revert "Revert "CTS test for libmedia OOB write anywhere"" <Daniel Xie> 12 days ago
+e5955cd : Camera: remove StaticMetadataCollectionTest <Yin-Chia Yeh> 12 days ago
+d3e6313 : Bug #201268 android.telecom.cts.RemoteConnectionTest -- testRemoteConnectionVideoCallbacks_CallDataUsage fail <xiaohong.fan> 4 weeks ago
+dbdf508 : DO NOT MERGE: Camera: collect camera device info in CTS <Yin-Chia Yeh> 3 weeks ago
+0d1e320 : DO NOT MERGE ANYWHERE: BUMP CTS to 6.0R4 <Daniel Xie> 13 days ago
+669a66c : DO NOT MERGE ANYWHERE: BUMP CTS to 6.0R4 <Daniel Xie> 13 days ago
+c05e90e : Add tests for the existence of the OS Patch String, and to detect obsolete versions. <Dave Weinstein> 4 weeks ago
+7e9f105 : Modify comment follwing the change at 205144. <Jey Lee> 2 weeks ago
+b881011 : Increase threshold for shadow test from 30 to 35. <Jey Lee> 2 weeks ago
+219c117 : Revert "CTS test for libmedia OOB write anywhere" <Jeff Tinker> 2 weeks ago
+321f4fd : media: skip unsupported test clip in adaptive playback test <Ronghua Wu> 3 weeks ago
+c69a655 : DO NOT MERGE Fix CTS failures on AudioFlingerBinderTest <Jey Lee> 3 weeks ago
+cab7ded : Camera: backport CameraDeviceInfo to M <Yin-Chia Yeh> 3 weeks ago
+b81173f : Revert "DO NOT MERGE ANYWHERE: bump version to 201604s" <Daniel Xie> 3 weeks ago
+656adb1 : DO NOT MERGE ANYWHERE: bump version to 201604s <Daniel Xie> 3 weeks ago
+0035c75 : Update tests for the existence of the OS Patch String, and to detect obsolete versions. <Dave Weinstein> 3 weeks ago
+8e40bf3 : VideoDecoderPerfTest: limit test runs if we have many codecs <Lajos Molnar> 3 weeks ago
+90112a2 : Fix failures of BYOD Managed Provisioning <Yang YangX A> 4 weeks ago
+a77b38b : Add tests for the existence of the OS Patch String, and to detect obsolete versions. <Dave Weinstein> 4 weeks ago
+a489738 : Removed test from knownfailures <Esteban Talavera> 3 weeks ago
+6fcb274 : Require device admin feature for device admin CTSV tests. <Michael Kwan> 3 weeks ago
+eb68333 : Handle output parsing errors in DeqpTestRunner <Kalle Raita> 4 weeks ago
+ab8bdbd : Camera : Increase timeout for long-running test. <gayoung85.lee> 4 weeks ago
+56e4387 : tearDown: Wait for wifi previous state to actually be restored <Anders 4 Fridlund> 6 months ago
+9b0ceb6 : Move EDI to InfoStore <Stuart Scott> 6 weeks ago
+70169c4 : collect available_processors in device info <Nash Lincoln> 5 weeks ago
+85110e2 : Fix cts verifier crash when test Policy Serialization Test <Zhou,KaiX K> 5 weeks ago
+c2536a2 : Fix the sensor fusion test <Chia-Kai Liang> 6 weeks ago
+830ed7f : Should use getSupportedVideoSizes() <Masanori OGINO> 6 months ago
+dfa5f6d : Fix crash when exiting the Significant Motion test <Zhou,KaiX K> 6 weeks ago
+0867cfd : Add 310260 (Republic Wireless US) to NO_DELIVERY_REPORTS and UNSUPPORT_DATA_SMS_MESSAGES <Dengfeng Jiang> 6 weeks ago
+f02a899 : FileSystemPermissionTest.java: Add /data/misc/sensor <Nick Kralevich> 6 weeks ago
+ec25af0 : Camera: fix maxImage acquired issue <Yin-Chia Yeh> 6 weeks ago
+9588d45 : ClonedSecureRandomTest: try to deal with process death <Kenny Root> 7 weeks ago
+fa4e2c9 : Revert "Cts test fix for shortcode 48000" BUG: 26714654 <Daniel Xie> 7 weeks ago
+c087376 : EncryptionTest: add "xts-aes-aesni" <kungaox> 9 weeks ago
+b89fd58 : Camera: Update testAvailableStreamConfigs to use correct profile <Mark Ryan> 4 months ago
+a04e613 : DO NOT MERGE: Fix testActionNextAndPreviousAtGranularityLineOverText test <Svetoslav> 1 year, 9 months ago
+9d28f09 : [DO NOT MERGE ANYWHERE]Camera: allow more time for AF <Yin-Chia Yeh> 9 months ago
+6133d24 : Fix RVCVXCheck OpenCV load error and other improvements <Peng Xu> 6 months ago
+1caabc7 : Fix failing android.view.cts.FocusFinderTest.testFindNearestTouchable <George Mount> 8 weeks ago
+b18d3a1 : Fix monkey package test <Nicholas Sauer> 8 weeks ago
+5a15196 : camera2: Log for skipped HFR recording test <Chien-Yu Chen> 8 weeks ago
+878a9f1 : Lower the amount of scroll conducted at once in the leanbackjank test. This change will make the benchmark load more close to actual situation. <Tatsuhisa Yamaguchi> 3 months ago
+d265a1e : Add CtsVerifier tests for DISALLOW_USB_FILE_TRANSFER and DISALLOW_APPS_CONTROL <Zoltan Szatmary-Ban> 2 months ago
+5053c2f : Bug #524571 android.voiceinteraction.cts.VoiceInteractionTest--testAll fail <heqiang1008> 9 weeks ago
+964263c : Fix NotificationManagerTest.checkNotificationExistence <Kouji Shiotani> 3 months ago
+a151b34 : DO NOT MERGE Output XML version of cts coverage info <Nicholas Sauer> 3 months ago
+ 
+**** aosp:platform/developers/build ****
+a7d757c : Removing NOTICE files as per b/20081220 <Alexander Lucas> 11 months ago
+ 
+**** github:CyanogenMod/android_development ****
+171957c : idegen: Check if environment variable exists <Mete Polat> 2 weeks ago
+adce814 : Update SDK Platform revision for API 23 to 2. [DO NOT MERGE] <Deepanshu Gupta> 4 months ago
+372bb98 : Update TabLayout demo to use new ViewPager functionality <Chris Banes> 4 months ago
+d775d3a : SupportLeanbackDemos: guidedstep changes <Dake Gu> 4 months ago
+fffb247 : Add "select tab" to the tab layout / view pager demo. <Kirill Grouchnikov> 4 months ago
+8d3349a : Add sample activity for ViewPager in Support4Demos <Alan Viverette> 7 months ago
+0c356e4 : GuidedStepFragment: Example of two columns actions <Dake Gu> 4 months ago
+d0b4919 : Remove pre-Material drawer demo apps. <Kirill Grouchnikov> 4 months ago
+220a8ec : Material-compliant sample app for drawer layout. <Kirill Grouchnikov> 5 months ago
+caaf7b0 : Dont use R.id.content to host GuidedStepFragment <Dake Gu> 5 months ago
+37836fd : GuidedStep example: Use standard action IDs and titles <Dake Gu> 5 months ago
+d80cfde : SupportLeanbackDemo: add example finishGuidedStepFragments() <Dake Gu> 5 months ago
+84d4654 : Add a comment on drawer layout file. <Kirill Grouchnikov> 5 months ago
+afeff42 : Test app for ViewPager. <Kirill Grouchnikov> 5 months ago
+193f0c9 : Update version to 23.1.1. DO NOT MERGE. <Chris Flatt> 5 months ago
+58ccc4a : GuidedStep: More example of editing <Dake Gu> 5 months ago
+a4404b1 : Change LOCAL_MODULE_TAGS from "eng" to "optional" in Dev Tools app. <Marco Loaiza> 5 months ago
+0fc3f91 : Add AppBar sample using SwipeRefreshLayout <Chris Banes> 5 months ago
+88436bd : Add demo for TextInputLayout's counter <Chris Banes> 5 months ago
+dcd18d5 : Update version to 23.1.0. DO NOT MERGE. <Chris Flatt> 5 months ago
+00ada54 : Update support library to 23.1.1. DO NOT MERGE <Chris Flatt> 5 months ago
+6327806 : Remove route providers which use RouteGroup <Sungsoo Lim> 5 months ago
+2157e7f : SupportLeanbackShowcase: get rid of card view background overdraw <Dake Gu> 5 months ago
+2bd1f62 : Support7Demos: Update the MediaRouter demo <Jae Seo> 5 months ago
+0750ff8 : SupportLeanbackShowcase: performance fix of ImageCardView resource <Dake Gu> 5 months ago
+7d12018 : SupportLeanbackShowcase: dont expand side info <Dake Gu> 5 months ago
+c8ad1e5 : Leanback Demo: demo of edit title <Dake Gu> 5 months ago
+6fe262d : Supportleanbackshowcase: Polishing 2 and transition performance fix <Dake Gu> 5 months ago
+ab2a8a7 : Supportleanbackshowcase: Polishing <Dake Gu> 5 months ago
+5bf3eba : Showcase: Update SDK to 23 and support lib to 23.0.1 <Dake Gu> 5 months ago
+2e3684e : GuidedStepFragment Subclass need explcitly specify a container id for background <Dake Gu> 5 months ago
+c7e4f19 : Generate test for PlaybackOverlaySupportFragment <Dake Gu> 6 months ago
+48b4a13 : Generate support version of leanback fragment tests <Dake Gu> 6 months ago
+d9b5ca8 : Add usage of app:actionLayout in NavigationView <Yuichi Araki> 6 months ago
+e088638 : Add usage of BottomSheetBehavior <Yuichi Araki> 6 months ago
+3d1224e : RecyclerView in place animations <Yigit Boyar> 6 months ago
+9e5a6a8 : Revert "Revert "Add example of vertical grid transition and GuidedStepFragment"" <Dake Gu> 6 months ago
+c1e0465 : Revert "Add example of vertical grid transition and GuidedStepFragment" <Dake Gu> 6 months ago
+1585785 : Generate example of GuidedStepSupportFragment <Dake Gu> 6 months ago
+7b42f57 : Add example of vertical grid transition and GuidedStepFragment <Dake Gu> 7 months ago
+16d9874 : Update platform-tools version to 23.0.1 <Tor Norbye> 6 months ago
+69bd278 : Add proguard configuration to support design demos sample app <Mady Mellor> 6 months ago
+4e650fb : Add snapping scroll example to SupportDesignDemos <Chris Banes> 6 months ago
+063b68e : Add DrawableCompat demo to Support4Demos <Chris Banes> 6 months ago
+3dd5d84 : Fix typo in SDK generation <Tony Mantler> 7 months ago
+fab9a1f : Add preference and recommendation libs to SDK build <Tony Mantler> 7 months ago
+106e334 : MediaRouter: Remove uses of not-yet-public API <Jae Seo> 7 months ago
+fbe6c81 : Pass in current android.jar to api-generator <Tor Norbye> 7 months ago
+3fb1da7 : MediaRouter: Remove an unused member in SampleMediaRouteProvider <Jae Seo> 7 months ago
+b26f52f : MediaRouter: Add a sample for the custom route icon <Jae Seo> 7 months ago
+ 
+**** github:CyanogenMod/android_device_qcom_common ****
+0125db4 : power: Handle POWER_HINT_INTERACTION <Steve Kondik> 3 days ago
+83fd4f1 : power-8992: Fix build error and warnings <Zhao Wei Liew> 3 weeks ago
+e41d02c : init: Add msm8952-specific init extension library <Abhishek Arpure> 11 months ago
+0703400 : power-8992: Add launch boost profile <Zhao Wei Liew> 4 weeks ago
+ 
+**** github:CyanogenMod/android_device_qcom_sepolicy ****
+4a71601 : healthd : allow healthd to read RTC/alarm devices <Chao Chen> 4 weeks ago
+ 
+**** aosp:device/sample ****
+efaef57 : Remove TMO & MetroPCS entries for mcc/mnc 310/580 in apn-conf <Sanket Padawe> 5 months ago
+ 
+**** github:CyanogenMod/android_device_samsung_qcom-common ****
+7a1234d : Automatic translation import <Michael Bestas> 9 days ago
+5ef0d41 : Automatic translation import <Michael Bestas> 3 weeks ago
+ 
+**** github:CMRemix/android_device_samsung_trlte-common ****
+496fe7e : trlte-common: update the slow/fast charging thresholds <Michael Wawrzyniak> 9 days ago
+3d9dc38 : trlte-common: update slow charge threshold <Michael Wawrzyniak> 9 days ago
+1dc97cc : trlte-common: allow qseecomd EFS access; fix fingerprint <Michael Wawrzyniak> 9 days ago
+4a99728 : selinux: enforce <ZION959> 9 days ago
+c12fa02 : trlte-common: Fix automatic backlight <placiano> 12 days ago
+d3ab89b : trlte: fix charging off mode Now works properly <ZION959> 11 days ago
+80b4a1b : trlte-common: add sensorhub service sepolicy <ZION959> 12 days ago
+33cc8dc : trlte-common: move gps proprietary to trlte-common <ZION959> 12 days ago
+3ca8211 : trlte-common: Remove deprecated & update board flags <ZION959> 12 days ago
+a7281ba : trlte-common: use cm gps hal <ZION959> 12 days ago
+12ed5b4 : trlte-common: Support Fingerprint Hardware (ljzyal) <ZION959> 12 days ago
+d8d4edf : Fix AudioFX crash by restoring audio_effects to original <ZION959> 2 weeks ago
+47dcefc : trlte-common: Add sensorhub <ZION959> 2 weeks ago
+1cc35e5 : remove unneeded overlay <fat-tire> 2 weeks ago
+1a30550 : revert: trlte-common: add back Use low latency for primary <ZION959> 2 weeks ago
+17c1d05 : trlte-common: add back Use low latency for primary <ZION959> 3 weeks ago
+3caaa75 : SELinux status: permissive <ZION959> 3 weeks ago
+5cd67cb : trlte-common: removed hardlitmit, we don't use it for mainline kernel <ZION959> 3 weeks ago
+ac5dc10 : trlte-common: update intellithermal and add hard limit for boot <ZION959> 3 weeks ago
+84e4624 : trlte-common : add PRODUCT_PROPERTY_OVERRIDES and quiet mpdecision spam re: core 1 status to offline <ZION959> 3 weeks ago
+578fd68 : some minor changes from nivron (@niv71) <ZION959> 3 weeks ago
+3535062 : trlte-common: stop mpdecision and use intelliplug by default on boot <ZION959> 4 weeks ago
+ 
+**** github:CMRemix/android_device_samsung_trltespr ****
+29ef07e : trltespr: update samsung 5.1.1 proprietary and moved gps to trlte-common <ZION959> 12 days ago
+ 
+**** github:CMRemix/android_device_samsung_trltetmo ****
+30ab7c4 : revert: trltetmo: Add oldril feature setPrefNwTypeOnUnsolConnected.(testing) from this commit: https://review.cyanogenmod.org/#/c/132076/ <ZION959> 12 days ago
+d60601e : trltetmo: move gps to trlte-common <ZION959> 12 days ago
+c3c63c6 : trltetmo: Add oldril feature setPrefNwTypeOnUnsolConnected.(testing) from this commit: https://review.cyanogenmod.org/#/c/132076/ <ZION959> 3 weeks ago
+ 
+**** github:CMRemix/android_device_samsung_trltexx ****
+f329df8 : trltexx: move gps proprietary to trlte-common <ZION959> 12 days ago
+ 
+**** aosp:platform/external/aac ****
+2d435aa : Remove __DATE__/__TIME__ <Dan Willemsen> 5 months ago
+ 
+**** github:CyanogenMod/android_external_boringssl ****
+e6a7906 : boringssl: Fix compilation <Ethan Chen> 3 weeks ago
+e7d1294 : Add |EVP_des_ecb| from OpenSSL at fd682e4c. <Matt Braithwaite> 7 months ago
+b58f8d1 : DO NOT MERGE ANYWHERE Revert "Whitelist windows modules" <Kenny Root> 5 months ago
+184bc93 : BoringSSL: always build with symbol visibility flags. <Adam Langley> 6 months ago
+b849459 : Revert "Revert "external/boringssl: sync with upstream."" <Kenny Root> 6 months ago
+a04d78d : Revert "external/boringssl: sync with upstream." <Kenny Root> 6 months ago
+1e4884f : external/boringssl: sync with upstream. <Adam Langley> 6 months ago
+08656b6 : Whitelist windows modules <Dan Willemsen> 7 months ago
+e25abed : Fix and re-enable clang build. <Dan Albert> 7 months ago
+13204c3 : Disable clang build temporarily to fix build. <Dan Albert> 7 months ago
+71a0705 : Add a build target to build bssl for host. <Narayan Kamath> 9 months ago
+bd9957e : Handle RDRAND failures. <Adam Langley> 9 months ago
+e0846be : dsa_pub_encode: Write out DSA parameters (p, q, g) in addition to key. <Adam Langley> 9 months ago
+98856d4 : Fix for CVE-2015-1789. <Adam Langley> 9 months ago
+56d2503 : Fixes for CVE-2015-1791. <Adam Langley> 9 months ago
+0e6bb1c : Add ECDHE-PSK-AES{128,256}-SHA cipher suites. <Adam Langley> 9 months ago
+a4be71c : Drop ECDHE-PSK-AES-128-GCM. <Adam Langley> 9 months ago
+cfb958c : Fix Windows SDK build again <Kenny Root> 9 months ago
+f4e4272 : Bump revision of BoringSSL. <Adam Langley> 9 months ago
+0d4deb2 : Disable 0xcafe cipher suite (PSK with AES-GCM). <Adam Langley> 10 months ago
+86426f7 : s/-Wno-unused-parameters/-Wno-unused-parameter/ <Adam Langley> 10 months ago
+12addf8 : external/boringssl: fix |SSLeay|. <Adam Langley> 10 months ago
+71cbcbe : external/boringssl: add -Wno-unused-parameters. <Adam Langley> 10 months ago
+190eb16 : external/boringssl: fix use after free in X509. <Adam Langley> 10 months ago
+3ca955a : Copy ecdsa_meth in EC_KEY_copy. <Adam Langley> 10 months ago
+f5cea4e : Add |BIO_read_asn1| to read a single ASN.1 object. <Adam Langley> 10 months ago
+5a0d510 : Copy ecdsa_meth in EC_KEY_copy. <Adam Langley> 10 months ago
+dfce004 : Add rules.mk for building Trusty. <Adam Langley> 10 months ago
+a070e05 : external/boringssl: disable ChaCha20-Poly1305 cipher suites. <Adam Langley> 10 months ago
+9eb412c : external/boringssl: update #define guards for x86_64-gcc.c. <Adam Langley> 10 months ago
+9385cb1 : MinGW on Linux uses lowercase include files, part 2 <Kenny Root> 1 year ago
+ 
+**** github:CyanogenMod/android_external_bouncycastle ****
+a657c1d : DO NOT MERGE bouncycastle: limit input length as specified by the NIST spec <Sergio Giro> 4 months ago
+ 
+**** aosp:platform/external/chromium-webview ****
+a9031c9 : WebView AOSP Drop Request - 44.0.2403.119 <Alex Mineer> 7 months ago
+2773fff : Add README explaining how to build WebView. <Torne (Richard Coles)> 8 months ago
+ 
+**** aosp:platform/external/conscrypt ****
+4c9f9c2 : Prevent duplicate certificates in TrustedCertificateIndex <Chad Brubaker> 3 months ago
+c4ab1b9 : Cache intermediate CA separately <Chad Brubaker> 3 months ago
+c061be0 : Remove OpenSSLEngine.getSecretKeyById. <David Benjamin> 9 months ago
+59c1304 : Remove references to OpenSSL's |wbuf|. <Adam Langley> 6 months ago
+ec8f7ef : Switch OpenSSLMac from EVP_PKEY_HMAC to HMAC_CTX. <David Benjamin> 9 months ago
+08fdfb4 : Prepare for BoringSSL update. <Adam Langley> 6 months ago
+f95bf50 : Move BlockGuard and CloseGuard to Platform <Kenny Root> 5 months ago
+126ec77 : Move BlockGuard and CloseGuard to Platform <Kenny Root> 5 months ago
+9a648e9 : ct: Add code to verify timestamps for certificates. <Paul Lietar> 7 months ago
+05f3b16 : ct: Add basic data structures and serialization routines. <Paul Lietar> 7 months ago
+7b3add1 : Prepare the GmsCore target for BoringSSL <Kenny Root> 6 months ago
+13e50a1 : Move CloseGuard and BlockGuard to stubs <Kenny Root> 6 months ago
+2e93943 : Move CloseGuard and BlockGuard to stubs <Kenny Root> 6 months ago
+5e3abd2 : NativeCrypto: Add TLS SCT extension support. <Paul Lietar> 8 months ago
+32f3453 : NativeCrypto: support OCSP stapling <Paul Lietar> 8 months ago
+f45afe9 : NativeCrypto: add method to extract extensions from an OCSP response. <Paul Lietar> 6 months ago
+8acb72c : Fix typo in previous checkin <Kenny Root> 6 months ago
+9c2fa52 : Allow compilation with other build systems <Kenny Root> 6 months ago
+da47304 : Do not waste entropy when using BoringSSL <Kenny Root> 8 months ago
+e5b2ed0 : Restore compatibility with OpenSSL <Kenny Root> 6 months ago
+64c8565 : Add method to delete extension from a certificate <Paul Lietar> 8 months ago
+eced839 : Remove references to OpenSSL's |wbuf|. <Adam Langley> 6 months ago
+bb70f6a : Add methods to parse keys from PEM input. <Paul Lietar> 7 months ago
+f417aca : Prepare for BoringSSL update. <Adam Langley> 6 months ago
+dbdd143 : GCM: set default tag size to 12 bytes <Kenny Root> 8 months ago
+363ec65 : GCM: return the correct AlgorithmParameters <Kenny Root> 8 months ago
+ed628f9 : external/conscrypt: allow server-initiated renegotiations. <Adam Langley> 9 months ago
+6e2618d : OpenSSLX509Certificate: use OID if alg name unavailable <Kenny Root> 8 months ago
+a958f45 : Update conscrypt build.gradle for the native generator <Jie Dai> 9 months ago
+134dc92 : external/conscrypt: control binary-field EC with OPENSSL_NO_EC2M. <Adam Langley> 9 months ago
+5429f72 : Update NativeCryptoTest <Kenny Root> 9 months ago
+089b401 : Adjust Signature interface for BoringSSL <Kenny Root> 9 months ago
+97e54bd : external/conscrypt: remove assertion SSL_OP_NO_SSLv2 is set <Sergio Giro> 9 months ago
+086dd64 : Update CryptoUpcalls documentation <Kenny Root> 9 months ago
+c63e8fa : Documentation fixes <Kenny Root> 9 months ago
+d47aa92 : OpenSSLCipher: remove unused variable <Kenny Root> 9 months ago
+c0010ca : conscrypt: change test of SSL_set_cipher_lists <Sergio Giro> 9 months ago
+e981ca9 : Use the *_up_ref functions always <Kenny Root> 9 months ago
+a001421 : Switch OpenSSLMac from EVP_PKEY_HMAC to HMAC_CTX. <David Benjamin> 9 months ago
+922aa71 : Remove OpenSSLEngine.getSecretKeyById. <David Benjamin> 9 months ago
+c05697c : Use SSL_CTX_set_tmp_ecdh instead of SSL_CTX_set_tmp_ecdh_callback. <David Benjamin> 9 months ago
+3b510c7 : Consistently use ARRAY_OFFSET_*INVALID macros. <David Benjamin> 9 months ago
+d9a48aa : Fix compilation with OpenSSL <Kenny Root> 9 months ago
+79f05f4 : Fix error conditions in certificate/PKCS#7 reading <Kenny Root> 9 months ago
+c590a93 : Try to get preferred external provider <Kenny Root> 9 months ago
+edc4f27 : Fix up JNI_TRACE for AEAD <Kenny Root> 10 months ago
+279e984 : Fix RSA upcalls from TLS/SSL into JCA. <Alex Klyubin> 9 months ago
+61c66eb : Fix ECDSA upcalls from TLS/SSL into JCA. <Adam Langley> 9 months ago
+5b6a5ec : NativeCrypto: special case for empty cipher list <Kenny Root> 9 months ago
+a8a4643 : Add clang-format file to approximate existing style <Kenny Root> 9 months ago
+ 
+**** aosp:platform/external/deqp ****
+3f450ec : Increase GLES2 fbo comparison threshold to 0.03 <Mika Isojärvi> 9 weeks ago
+3f71117 : Remove few tests affected by a HW limitation <Pyry Haulos> 3 months ago
+6b37e7d : DO NOT MERGE: Restore accidentally reverted mustpass .txt changes <Pyry Haulos> 3 months ago
+85fcb8d : Remove GLES2-texture.wrap tests from mustpass <David Sodman> 3 months ago
+b84fd4b : Remove GLES2.functional.texture.units.2_units.only_cube.9 from mustpass <David Sodman> 4 months ago
+d8e85a9 : DO NOT MERGE Refresh GLES 3.1 must-pass XML <Kalle Raita> 3 months ago
+ee0868c : Remove wide line bounding box cases <Kalle Raita> 5 months ago
+0fb14e8 : DO NOT MERGE Remove MSAA wide line derivate tests <Kalle Raita> 3 months ago
+9a42bb8 : Remove GLES2.functional.dither.disable.gradient.* tests from mustpass <David Sodman> 4 months ago
+75da7d2 : DO NOT MERGE add running time hints for dEQP packages <Jed Estep> 5 months ago
+494bb5a : Exclude RGB565 blending cases from the must-pass <Kalle Raita> 5 months ago
+57f1d6d : Change MSAA sample-count error to warning <Kalle Raita> 4 months ago
+e625e2d : DO NOT MERGE Restore accidentally commented line <Kalle Raita> 4 months ago
+e3f31fb : DO NOT MERGE Split GLES31 copy image tests in 3. <Kalle Raita> 5 months ago
+e98edf6 : DO NOT MERGE: Add cube gather tests that avoid corners; remove D32F from mustpass <Pyry Haulos> 1 year, 4 months ago
+91be034 : Remove broken record_variable_selection test from MR1 must-pass. <Jarkko Pöyry> 1 year, 2 months ago
+a77161b : DO NOT MERGE: Apply fix for tessellation fractional even test verification. <Jarkko Pöyry> 1 year ago
+5b076d9 : DO NOT MERGE Do not require signed zero support in ldexp tests() <Pyry Haulos> 1 year, 1 month ago
+5c7feb8 : DO NOT MERGE: Ignore denormals in floatUlpThresholdCompare. <Jarkko Pöyry> 9 months ago
+ 
+**** github:CyanogenMod/android_external_dhcpcd ****
+f6c4d2c : Don't fork and exec ls when the shell can stat files. <Elliott Hughes> 7 months ago
+ 
+**** aosp:platform/external/doclava ****
+77cd5e5 : Properly expose methods that override a non-hidden method in a hidden superclass in the API files. <C. Sean Young> 7 months ago
+7d88743 : Add a flag to control the annotated field visibility exception <Omari Stephens> 7 months ago
+7252230 : DO NOT MERGE Revert "D.N.M. Revert "Display annotations and annotation values when they are requested"" <Omari Stephens> 7 months ago
+846e468 : DO NOT MERGE Revert "Display annotations and annotation values when they are requested" <Justin Morey> 7 months ago
+ 
+**** aosp:platform/external/drm_hwcomposer ****
+e3141c6 : drm_hwcomposer: Always call PrepareFrame() for compositions <Sean Paul> 3 months ago
+6c18b3b : drm_hwcomposer: Save the atomic_test result between tests <Sean Paul> 4 months ago
+6afbb6a : drm_hwcomposer: only check the composition after a geometry change <Haixia Shi> 4 months ago
+b100837 : drm_hwcomposer: Skip layers which aren't on-screen <Sean Paul> 4 months ago
+0c7da1e : drm_hwcomposer: set blending mode to kPreMult for GL output <Haixia Shi> 4 months ago
+04b47ea : drm_hwcomposer: Allow for multiple transforms at once <Sean Paul> 4 months ago
+647beb2 : drm_hwcomposer: Check the composition before sending to frame worker <Sean Paul> 4 months ago
+d51c761 : drm_hwcomposer: Split DrmDisplayCompositor::SquashAll() <Sean Paul> 4 months ago
+c07b211 : drm_hwcomposer: Add test_only mode to CommitFrame <Sean Paul> 4 months ago
+35301f4 : drm_hwcomposer: Create mode blob on modeset queue <Sean Paul> 4 months ago
+2b4b1ee : drm_hwcomposer: during SquashAll, skip layers with kSourceNone <Zach Reizner> 4 months ago
+bff33ac : drm_hwcomposer: composite down to a primary plane after a timeout <Zach Reizner> 4 months ago
+faca209 : drm_hwcomposer: Increase the virtual display compositor's fence timeout <Sean Paul> 4 months ago
+cb1cfc8 : drm_hwcomposer: avoid creating release fences for invalid OutputFd <Zach Reizner> 4 months ago
+49446bc : drm_hwcomposer: add AutoLock to automatically handle pthread_mutex_lock <Zach Reizner> 4 months ago
+8467b12 : drm_hwcomposer: add optional timeout for WaitForSignalOrExitLocked <Zach Reizner> 4 months ago
+db81fce : drm_hwcomposer: always put protected layers on hardware planes <Zach Reizner> 5 months ago
+aa2f4a5 : drm_hwcomposer: fix spelling of "separate". <Haixia Shi> 4 months ago
+f3d3603 : drm_hwcomposer: filter out empty or invalid rects. <Haixia Shi> 4 months ago
+bd61c8d : drm_hwcomposer: Handle HWC_SKIP_LAYER properly <Sean Paul> 5 months ago
+3979f7d : drm_hwcomposer: add ATRACE_CALL. <Haixia Shi> 5 months ago
+7642c92 : drm_hwcomposer: update #include's for drm_hwcomposer.h <Zach Reizner> 5 months ago
+d8c19a0 : drm_hwcomposer: rename file with underscore to not use underscore <Zach Reizner> 5 months ago
+ff30b52 : drm_hwcomposer: polish for old DRM wrapper code <Zach Reizner> 5 months ago
+ 
+**** github:CyanogenMod/android_external_ffmpeg ****
+ea5478c : fix invalid linked for target atom , move x86-atom to atom <artefvck> 5 weeks ago
+bc38d9f : ffmpeg: Update configs and makefiles for FFMPEG 3.0 <Steve Kondik> 4 weeks ago
+35a79f6 : Add MODULE_LICENSE and NOTICE files <Ricardo Cerqueira> 3 months ago
+c5379ca : ffmpeg: Enable the vectorizer <Steve Kondik> 4 months ago
+f61f21b : ffmpeg: Don't use Clang's integrated assembler <Steve Kondik> 4 months ago
+e51641e : ffmpeg: Don't build with Clang for now <Steve Kondik> 4 months ago
+b638e62 : ffmpeg: Install binaries to /vendor <Steve Kondik> 5 months ago
+272a1af : avutil: Fix a warning when building with clang <Steve Kondik> 5 months ago
+1f0d502 : ffmpeg: Update configurations for FFMPEG 2.8 <Steve Kondik> 5 months ago
+87dbab9 : Update gen-android-configs for new GCC versions <Steve Kondik> 5 months ago
+57d683d : ffmpeg: Set cpu arch for silvermont config <dhacker29> 9 months ago
+938ba50 : ffmpeg: Readd missing X86 fixups <Steve Kondik> 9 months ago
+8b97ca4 : ffmpeg: Regenerate configurations for FFMPEG 2.7 <Steve Kondik> 9 months ago
+189bc1a : ffmpeg: Add script to regenerate the configs <Steve Kondik> 9 months ago
+5d46b56 : ffmpeg: Update Android build configuration <Steve Kondik> 10 months ago
+62c636e : x86: Use yasm from prebuilts and don't depend on host install <dhacker29> 11 months ago
+0fcc73f : Add configuration for silvermont CPU based on Atom. <Howard M. Harte> 1 year, 1 month ago
+ec3768a : Clean up some build-time warnings <Ricardo Cerqueira> 1 year, 2 months ago
+94d023d : Get ffmpeg building for emulatorx86 <Chris Sarbora> 1 year, 2 months ago
+1b8415d : ffmpeg: Fix variable collisions <Steve Kondik> 1 year, 3 months ago
+41f8009 : build: Use ARM mode for arm32 builds <Ricardo Cerqueira> 1 year, 3 months ago
+66efaec : Fixup armv8-a building, and make multiarch builds work <Ricardo Cerqueira> 1 year, 3 months ago
+2c8b081 : avutil: Use _SC_NPROCESSORS_CONF <Steve Kondik> 1 year, 3 months ago
+22d65d7 : Update Android build for FFMPEG 2.5 <Steve Kondik> 1 year, 3 months ago
+ba49959 : Android porting for ffmpeg 2.1 release <Chih-Wei Huang> 2 years, 4 months ago
+0aa2fbd : vc2enc: fix use of uninitialized variables in the rate control system <Rostislav Pehlivanov> 4 weeks ago
+c40983a : fate/source-check.sh: Use "git show" instead of git --version to test for git <Michael Niedermayer> 4 weeks ago
+bd0497b : avcodec/cfhd: Temporary disable frame threading until related bugs have been fixed <Michael Niedermayer> 4 weeks ago
+4d95207 : x86: use the new helper macros where useful <James Almer> 5 weeks ago
+1e8a75f : x86: add some more helper macros to check for slow cpuflags <James Almer> 5 weeks ago
+380980e : Changelog: add entries for the SMPTE VC-2 decoder and encoder <Rostislav Pehlivanov> 4 weeks ago
+1fd8eb4 : Basic updates for 3.0 <Michael Niedermayer> 4 weeks ago
+bb9f7bf : Changelog/APIChanges Put 3.0 release marker <Michael Niedermayer> 4 weeks ago
+b401854 : avformat/img2enc: remove unused variable <Michael Niedermayer> 4 weeks ago
+0eb4092 : avutil/imgutils: remove special case for aligning the palette <Michael Niedermayer> 4 weeks ago
+8352f5c : doc/protocols: document protocol_whitelist <Michael Niedermayer> 5 weeks ago
+e5655a3 : avcodec/h264_cabac: Check decode_cabac_mb_mvd() for failure <Michael Niedermayer> 7 weeks ago
+dcb6d5b : avformat/genh: Mark coef_splitted as av_unused <Michael Niedermayer> 5 months ago
+ae51f9b : avutil/parseutils: remove 2112 date from fate test <Marton Balint> 4 weeks ago
+bcc2235 : x86/vc1dsp: Port vc1_*_hor_16b_shift2 to NASM format <Timothy Gu> 4 weeks ago
+ebf648d : checkasm/vf_blend: Decrease iteration count <Timothy Gu> 4 weeks ago
+a953a29 : checkasm: Add vf_blend tests <Timothy Gu> 5 weeks ago
+8c56a4a : vf_blend: Move C dsp function mapping to separate function <Timothy Gu> 5 weeks ago
+8395b6e : libavcodec/dnxhd_parser: add parser and probe support raw 444 and dnxhr formats <Mark Reid> 4 weeks ago
+b8bc6b1 : compat/os2threads: split long lines <KO Myung-Hun> 4 weeks ago
+6bf5e7d : compat/os2threads: support the return value of joined thread <KO Myung-Hun> 4 weeks ago
+22a4046 : compat/os2threads: Improve pthread_cond_xxx() functions <KO Myung-Hun> 4 weeks ago
+b65ea6a : avfilter/vf_tinterlace: fix image alignment <Michael Niedermayer> 4 weeks ago
+a678d66 : vf_blend: Use integers for divide mode <Timothy Gu> 4 weeks ago
+4b75010 : lavf/spdifenc: Support MLP encapsulation. <David Monro> 4 weeks ago
+ 
+**** aosp:platform/external/hamcrest ****
+3e8fd45 : Revert "Add a configuration to hamcrest-library build.gradle" <Jie Dai> 8 months ago
+87e430c : Add a configuration to hamcrest-library build.gradle <Jie Dai> 8 months ago
+ 
+**** github:CyanogenMod/android_external_icu ****
+df0d763 : Cherrypick http://bugs.icu-project.org/trac/changeset/37162. DO NOT MERGE <Elliott Hughes> 11 months ago
+ 
+**** aosp:platform/external/jetty ****
+7bed928 : Add files necessary for building with gradle to external/jetty. <Mitchell Katz> 6 months ago
+ 
+**** github:CyanogenMod/android_external_jpeg ****
+ca613a2 : Add arm64 downsampler acceleration <Keith Mok> 5 weeks ago
+516cd86 : upgrade 64bits arm neon optimization <Keith Mok> 5 weeks ago
+ 
+**** github:CyanogenMod/android_external_libavc ****
+c64afe7 : Decoder Update mb count after mb map is set. <Harish Mahendrakar> 10 weeks ago
+943323f : Return error when there are more mmco params than allocated size <Naveen Kumar Ponnusamy> 3 months ago
+4a524d3 : Decoder Update mb count after mb map is set. <Harish Mahendrakar> 10 weeks ago
+1c01bc1 : Remove __DATE__/__TIME__ from Android builds <Dan Willemsen> 5 months ago
+ 
+**** aosp:platform/external/libhevc ****
+2060081 : DO NOT MERGE Added few memsets to avoid uninitialized reads for error clips <Harish Mahendrakar> 4 months ago
+b9f7c2c : DO NOT MERGE Added few memsets to avoid uninitialized reads for error clips <Harish Mahendrakar> 5 months ago
+552578a : Revert "Added few memsets to avoid uninitialized reads for error clips" <Marco Nelissen> 4 months ago
+6ae135c : Remove __DATE__/__TIME__ from Android builds <Dan Willemsen> 5 months ago
+dca46f9 : Added few memsets to avoid uninitialized reads for error clips <Harish Mahendrakar> 5 months ago
+d71abc6 : Added few memsets to avoid uninitialized reads for error clips <Harish Mahendrakar> 5 months ago
+e8bfec1 : Aligned ps_pic_pu to 4 bytes <Harish Mahendrakar> 5 months ago
+ 
+**** aosp:platform/external/libmpeg2 ****
+58a6822 : Return error for wrong mb_type <Harish Mahendrakar> 4 months ago
+ba604d3 : Fix for handling streams which resulted in negative num_mbs_left <Harish Mahendrakar> 2 months ago
+8b4ed5a : Fixed stack buffer overflow <Harish Mahendrakar> 4 months ago
+ffab15e : Fixed bit stream access to make sure that it is not read beyond the allocated size. <Harish Mahendrakar> 3 months ago
+ae6d9f7 : Remove __DATE__/__TIME__ from Android builds <Dan Willemsen> 5 months ago
+ 
+**** github:CyanogenMod/android_external_libnfc-nci ****
+633b73f : Don't free memory that shouldn't be freed. <Martijn Coenen> 4 months ago
+920423e : Fix 256-bit Thinfilm NFC barcode. <Martijn Coenen> 5 months ago
+ 
+**** github:CyanogenMod/android_external_libpng ****
+8d5e858 : libpng: turn off warnings <Colin Cross> 6 months ago
+bbe98b4 : Update libpng to 1.6.20 <Matt Sarett> 9 weeks ago
+ 
+**** github:CyanogenMod/android_external_libvpx ****
+41607d2 : Fix ParseElementHeader to support 0 payload elements <Vignesh Venkatasubramanian> 9 weeks ago
+ 
+**** github:CyanogenMod/android_external_lzma ****
+e0f90d7 : Set xz-java library to compile using current sdk for use by unbundled apps <Griff Hazen> 3 months ago
+1e977d7 : Import org.tukaani <Vinod Krishnan> 8 months ago
+ad6cd04 : Import org.tukaani <Vinod Krishnan> 8 months ago
+ea63289 : Update the Android makefile to include most C files. <David Srbecky> 10 months ago
+cd66d54 : Updated LZMA SDK to 9.38 beta. <David Srbecky> 10 months ago
+ 
+**** aosp:platform/external/mdnsresponder ****
+0aa6558 : Stop building __DATE__/__TIME__ into Android binaries <Dan Willemsen> 5 months ago
+ 
+**** aosp:platform/external/noto-fonts ****
+42d158f : Better compression for NotoColorEmoji <Raph Levien> 4 months ago
+b1a370c : Update NotoColorEmoji font to Unicode 7 and 8 <Raph Levien> 4 months ago
+ 
+**** github:CyanogenMod/android_external_okhttp ****
+62dc0a1 : DO NOT MERGE: Fix URLConnectionTest.writeTimeouts with large receive buffers <Neil Fuller> 4 months ago
+57813a7 : Revert "DO NOT MERGE Revert "okio: increase segment size to 8 KiB"" <Thierry Strudel> 4 months ago
+0051544 : DO NOT MERGE Revert "okio: increase segment size to 8 KiB" <Ye Wen> 4 months ago
+ 
+**** aosp:platform/external/parameter-framework ****
+531c26b : stlport library is needed for versions of Android before M <Zhengyin Qian> 7 months ago
+ 
+**** aosp:platform/external/protobuf ****
+d2195e1 : Update CodedOutputByteBufferNano to properly handle a malformed surrogate pair with a buffer too small to output a potentially well formed surrogate pair. This behavior mimics that of the ByteBuffer based methods. <Daniel Weis> 9 months ago
+6d7e42a : Update thei Protocol Buffer descriptor.proto with the new javanano_use_deprecated_package FileOption. Regenerated the descriptor.pb.{c,h} based on the new proto file. <Daniel Weis> 9 months ago
+999188d : Add MODULE_LICENSE and NOTICE <Bill Yi> 10 months ago
+4a00786 : Fixed Unused Parameter warning in headers. <Austin Schuh> 1 year, 4 months ago
+4f87f0d : Add a flag to use offset/length with byte arrays. <Jeff Davidson> 10 months ago
+b6872c8 : Speed up little endian int/long writes. <Jeff Davidson> 10 months ago
+5843810 : Handle 0-length byte buffers in micro and nano protobufs <Andre Eisenbach> 10 months ago
+ 
+**** aosp:platform/external/robolectric ****
+f522a20 : Upgrade Robolectric v3 <Fiona Zheng> 6 months ago
+a9e2f60 : Update Robolectric v3. <Jon Boekenoogen> 7 months ago
+5525767 : Update Robolectric v3. <Jon Boekenoogen> 8 months ago
+6d201a1 : Add MODULE_LICENSE and NOTICE <Bill Yi> 10 months ago
+99fafb7 : Add Robov3 to external/robolectric <Jon Boekenoogen> 11 months ago
+e5966b3 : Add Robov3 to external/robolectric <Jon Boekenoogen> 11 months ago
+ 
+**** cmR:android_external_sepolicy ****
+e420226 : Add SElinux rules for /data/misc/trace <Calin Juravle> 3 weeks ago
+57531ca : DO NOT MERGE: Further restrict access to socket ioctl commands <Jeff Vander Stoep> 10 weeks ago
+4fc1397 : Add policies for system_server to delete fpdata folder <Amith Yamasani> 3 months ago
+32d207e : Enable permission checking by binderservicedomain. <dcashman> 5 months ago
+2d8c2d9 : Revert "Update sepolicy to allow ThermalObserver system service" <Anthony Hugh> 5 months ago
+cda36e3 : Update sepolicy to allow ThermalObserver system service <Bryce Lee> 6 months ago
+bea8a99 : DO NOT MERGE Grant Bluetooth the ability to acquire wake locks. <Sharvil Nanavati> 7 months ago
+ 
+**** github:CyanogenMod/android_external_sonivox ****
+24d7c40 : Sonivox: add SafetyNet log. <Wei Jia> 9 weeks ago
+3ac0443 : Sonivox: sanity check numSamples. <Wei Jia> 10 weeks ago
+ 
+**** cmR:android_external_sqlite ****
+cccf840 : Fix world-readable permissions due to sqlite race condition - DO NOT MERGE <Jeff Vander Stoep> 1 year, 6 months ago
+12dfd61 : sqlite: upgrade to patched SQLite 3.7.11 - DO NOT MERGE <Jon Larimer> 7 months ago
+58a0c48 : sqlite: upgrade to SQLite 3.8.6.1 - DO NOT MERGE <Jon Larimer> 7 months ago
+ 
+**** github:CyanogenMod/android_external_stagefright-plugins ****
+770d66e : stagefright-plugins: Skip 2nd parsing for ogg <Keith Mok> 3 weeks ago
+32e5c38 : stagefright-plugins: enlarge audio/video queue <Keith Mok> 4 weeks ago
+dad687e : stagefright-plugins: prevent deadlock <Keith Mok> 4 weeks ago
+d306446 : stagefright-plugins: workaround negative timestamp <Keith Mok> 6 weeks ago
+ 
+**** github:CyanogenMod/android_external_toybox ****
+d68bb2e : Fix cflags pollution from other projects <Ricardo Cerqueira> 4 days ago
+8f459b0 : toybox: Fix build <Steve Kondik> 4 days ago
+1b74e24 : toybox: Update makefile, generated files, and configuration <Steve Kondik> 5 days ago
+7d5136d : toybox: Fix build of static executable <Steve Kondik> 5 days ago
+06108e6 : Regenerate generated files. <Elliott Hughes> 6 days ago
+b3e9c92 : Elliott pointed out that we output "unlimited" instead of "infinity", so accept that as input. (And that I screwed up the test.) <Rob Landley> 9 days ago
+5ad93f3 : Fix bzcat integer overflow reported by John Regehr. <Rob Landley> 10 days ago
+ffc6fbb : Fix file for Java class files, improve script detection, and add tests. <Elliott Hughes> 13 days ago
+5231bb5 : More minor cleanup (inline a function, simplify name of another). <Rob Landley> 11 days ago
+53dc99a : Minor cleanup. <Rob Landley> 11 days ago
+0dfa601 : Fix base64 so == wraps properly. <Rob Landley> 11 days ago
+336c44a : Factor out command name at the start of test name, have runtest.sh print it. <Rob Landley> 11 days ago
+eb83072 : Print command name at start of each test. <Rob Landley> 11 days ago
+b69e1ef : Split lsattr/chattr tests. <Rob Landley> 11 days ago
+54f95bd : Command name at start of each test. <Rob Landley> 11 days ago
+b73d9a2 : Add fstype test. <Rob Landley> 11 days ago
+9ef6fbf : Try to consistently print command name at the start of each test. <Rob Landley> 11 days ago
+7ae108f : split pgrep/pkill tests. <Rob Landley> 11 days ago
+7ca5dc4 : For years the man pages have said to #include <sys/types.h> to get major/minor/makedev, but glibc has vowed to break existing programs (https://sourceware.org/ml/libc-alpha/2015-11/msg00253.html) and replace it with _another_ non-standard header (not in posix or lsb), so let's just add functions to lib/ that do the transform ourselves. <Rob Landley> 11 days ago
+323819c : The last-ever release of uClibc hasn't got prlimit, so probe. <Rob Landley> 12 days ago
+dfc44f1 : SYS_finit_module isn't there on Ubuntu 12.04 because it was only added to the 3.8 kernel in 2012. That's way too new to assume the build environment has it, so #ifdef and simulate a failure if it's not there. <Rob Landley> 12 days ago
+86f7c04 : Use shell builtins instead of calling wc/awk/sed. (Fewer forks in build loop.) Based on suggestions from Nicholas Boichat. <Rob Landley> 12 days ago
+5a44e4a : The last-ever release of uClibc didn't #define MS_RELATIME. <Rob Landley> 12 days ago
+789d2c1 : Use the correct types for recvfrom. <George Burgess IV> 3 weeks ago
+d3904ef : Fix "make help" again. <Elliott Hughes> 2 weeks ago
+bef3a51 : config2help: add missing ctype.h include <Mike Frysinger> 13 days ago
+c1161cf : do_regular_file() prints output line, don't fall through to print default. <Rob Landley> 13 days ago
+77e56de : Regenerate generated files. <Elliott Hughes> 13 days ago
+226c1cb : Fix trailing spaces on ps -o cmdline. <Elliott Hughes> 13 days ago
+1b3fd4a : Fix inverted test. <Rob Landley> 13 days ago
+830f256 : pending/file: add cpio, tar, zip formats. <Isaac Dunham> 13 days ago
+4b141e6 : Fix a typo from last time, and Isaac Dunham's todo list: <Rob Landley> 13 days ago
+44c7958 : Second pass at the ELF type table. <Rob Landley> 2 weeks ago
+e17fbf1 : Switch to $! for make.sh process enumeration. <Rob Landley> 2 weeks ago
+f9ca79a : Fix more warnings on 32 bit builds. <Rob Landley> 2 weeks ago
+8fffeff : Fix bug where mount -o leftover string didn't get passed through to kernel for 2-argument version. <Rob Landley> 2 weeks ago
+fd6c947 : Typecast a printf argument because wchar_t isn't a rigidly defined size. <Rob Landley> 2 weeks ago
+3879cd9 : Musl needs an extra #include. <Rob Landley> 2 weeks ago
+5e3d1e3 : implement simple 'wget' and port name can be specified in URL if default port 80 is not used. <Lipi C. H. Lee> 3 weeks ago
+36ffaee : lsof cleanup <Rob Landley> 3 weeks ago
+bae185a : Regenerate generated files. <Elliott Hughes> 3 weeks ago
+81f31e4 : Implement "insmod -". <Elliott Hughes> 3 weeks ago
+5ec9f52 : Add test_COMMAND for each command, update "make help" to describe TEST_HOST and VERBOSE=fail, and fix a quote mismatch. <Rob Landley> 3 weeks ago
+137f5c9 : Help text update from Isaac Dunham, tweaked slightly. <Rob Landley> 3 weeks ago
+577b7ca : Add xxd -p and -r. <Elliott Hughes> 3 weeks ago
+42cad12 : RLIMIT_RTTIME was added to the kernel in 2008, you can't expect uClibc to have noticed yet. <Rob Landley> 3 weeks ago
+32b3587 : The perl build's attempt to escape spaces and such in LD_LIBRARY_PATH is _SAD_. It uses a sed expression that assumes you can escape - to use it as a literal (you can't, it has to be first or last char of the range), and assumes you have to escape delimiters in sed [] context (you don't), and/or that non-printf escapes become the literal character (they don't, the backslash is preserved as a literal), meaning it winds up doing "s/[\-\]//" which is a length 1 range, which is officially undefined behavior according to posix, and regcomp errors out. <Rob Landley> 4 weeks ago
+b66a29a : Add support for getprop -Z <Tom Cherry> 4 weeks ago
+289ca9b : Fix remounting /system on Android. <Elliott Hughes> 4 weeks ago
+b75c7df : Testfile with the 3 different types of "not utf8 output" escaped chars in it. <Rob Landley> 4 weeks ago
+ 
+**** aosp:platform/external/tremolo ****
+0cf80af : Check partword is in range for # of partitions <Marco Nelissen> 5 months ago
+ 
+**** aosp:platform/external/webrtc ****
+d0e5361 : Remove __DATE__ and __TIME__ from tracing <Dan Willemsen> 5 months ago
+ 
+**** github:CyanogenMod/android_external_wpa_supplicant_8 ****
+1e9857b : WNM: Ignore Key Data in WNM Sleep Mode Response frame if no PMF in use <Jouni Malinen> 5 months ago
+c61bad6 : EAP-pwd server: Fix last fragment length validation <Jouni Malinen> 4 months ago
+3aa9ad5 : EAP-pwd peer: Fix last fragment length validation <Jouni Malinen> 4 months ago
+ 
+**** github:CyanogenMod/android_external_zlib ****
+4423567 : Always use the NDK for unbundled branches. <Dan Albert> 7 months ago
+ 
+**** cmR:android_frameworks_av ****
+46da121 : nuplayer: Allow devices to force a flush when surface changes <Christopher R. Palmer> 9 weeks ago
+ba38778 : audiopolicy: squashed support for pre-kitkat audio blobs <c457> 10 weeks ago
+2fd815f : stagefright: Clear RenderQueue on port settings changed <Shalaj Jain> 7 weeks ago
+c3902bb : video: Add metadata support for DataSource <Surajit Podder> 6 weeks ago
+69714d4 : video: Add support to push blank buffers on surface switch <Surajit Podder> 9 weeks ago
+1aedff9 : Nuplayer: Flush the decoder if seamless format change is supported <Li Sun> 3 months ago
+97fc248 : ACodec: update the right size and crop in smooth streaming case <Santhosh Behara> 4 months ago
+41d4ad5 : SoftVorbis: memory access check <Haynes Mathew George> 10 weeks ago
+47f8c73 : audiopolicy: Defer release of output session effects <Steve Kondik> 7 days ago
+0479d7c : audiopolicy: Add notification when default effects are updated <Steve Kondik> 9 weeks ago
+51aee1e : stagefright: Support audio in slow motion <Keith Mok> 6 days ago
+808632f : stagefright: Don't crash on invalid / null AVCC atoms in MKV <Steve Kondik> 13 days ago
+ed255e3 : Added support for inband ringtone <Mudumba Ananth> 5 weeks ago
+213002d : bundle init.rc contents with its service <Tom Cherry> 7 months ago
+bf4a235 : audioflinger: Disable fake write for legacy ALSA <Arne Coucheron> 4 months ago
+99847e5 : Fix setTorchMode support for the old HAL version <Oleksiy Avramchenko> 6 months ago
+5c12c2c : camera: Fix high battery drain after using flashlight <Sultanxda> 4 months ago
+f23f3c3 : Avoid parsing CC SEI payload beyond buffer end <Patrik2 Carlsson> 10 months ago
+9bb8f22 : stagefright cmd: add software-only codecs flag <Anestis Bechtsoudis> 5 weeks ago
+5ab3856 : Camera3Device: wait for InFlightMap to become empty <Takanori Kato> 12 months ago
+c5fa90a : audio: omx encoder isn't expected for raw recording <Weiyin Jiang> 1 year, 4 months ago
+38f1da3 : Camera: Disallow dumping clients directly <Eino-Ville Talvala> 9 weeks ago
+d764049 : Fix out-of-bounds write <Marco Nelissen> 9 weeks ago
+3491698 : fix possible overflow in effect wrappers. <Eric Laurent> 9 weeks ago
+c400396 : Camera: Disallow dumping clients directly <Eino-Ville Talvala> 9 weeks ago
+c9ab2b0 : Camera: Disallow dumping clients directly <Eino-Ville Talvala> 9 weeks ago
+6dd6c54 : Camera: set mNumberOfNormalCameras correctly <Yin-Chia Yeh> 3 months ago
+5403587 : Fix out-of-bounds write <Marco Nelissen> 9 weeks ago
+113efbb : audioflinger: fix standby delay on A2DP output <Eric Laurent> 9 weeks ago
+9cebd7c : DO NOT MERGE ANYWHERE Revert "fix possible overflow in effect wrappers." <Eric Laurent> 9 weeks ago
+9e29523 : fix possible overflow in effect wrappers. <Eric Laurent> 9 weeks ago
+50270d9 : DO NOT MERGE - libstagefright: check requested memory size before allocation for SoftMPEG4Encoder and SoftVPXEncoder. <Wei Jia> 4 months ago
+22f824f : Fix security vulnerability in ICrypto DO NOT MERGE <Jeff Tinker> 3 months ago
+91a23ed : DO NOT MERGE nuplayer: do not use cached source for wvm content <Chong Zhang> 1 year, 1 month ago
+3d6a714 : DO NOT MERGE SoundPool: add lock for findSample access from SoundPoolThread <Andy Hung> 3 months ago
+6afc659 : DO NOT MERGE - libstagefright: check requested memory size before allocation for SoftMPEG4Encoder and SoftVPXEncoder. <Wei Jia> 4 months ago
+0462975 : DO NOT MERGE - libstagefright: check requested memory size before allocation for SoftMPEG4Encoder and SoftVPXEncoder. <Wei Jia> 4 months ago
+69bd1cf : libstagefright: check requested memory size before allocation for SoftMPEG4Encoder and SoftVPXEncoder. <Wei Jia> 4 months ago
+19c47af : DO NOT MERGE SoundPool: add lock for findSample access from SoundPoolThread <Andy Hung> 3 months ago
+3599745 : DO NOT MERGE Revert "AwesomePlayer: Separate cache buffer watermarks for offload audio" <Chris Elliott> 3 months ago
+92e4151 : DO NOT MERGE Revert "AwesomePlayer: Stop posting buffering events once at EOS" <Chris Elliott> 3 months ago
+ddbebb9 : AwesomePlayer: Separate cache buffer watermarks for offload audio <Sridhar Vashist> 8 months ago
+701cac1 : AwesomePlayer: Stop posting buffering events once at EOS <Sridhar Vashist> 8 months ago
+87f8cbb : libstagefright: check requested memory size before allocation for SoftMPEG4Encoder and SoftVPXEncoder. <Wei Jia> 4 months ago
+7845a1f : fix deadlock in MediaPlayerService BUG: 25263909 <Erik Wolsheimer> 5 months ago
+3994ffd : Revert "Revert "audio policy: bind setMode() and setPhoneState() operations"" <Zach Jang> 5 months ago
+a754b4f : Revert "Revert "AudioPolicyService: fix race in AudioCommandThread"" <Zach Jang> 5 months ago
+26ce11a : Revert "audio policy: bind setMode() and setPhoneState() operations" <Zach Jang> 5 months ago
+75c82b5 : Revert "AudioPolicyService: fix race in AudioCommandThread" <Zach Jang> 5 months ago
+76d4c7f : Reduce lock time for dump to make sure not locked when calling back to IResourceManagerClient. <Ronghua Wu> 5 months ago
+ 
+**** cmR:android_frameworks_base ****
+4924d4c : cmremix android-6.0.1_r22 <ZION959> 3 hours ago
+42c8c8b : Merge tag 'android-6.0.1_r22' of https://android.googlesource.com/platform/frameworks/base into cm-13.0 <Steve Kondik> 5 hours ago
+980faae : core: Add strings for hotswap configuration event. <Decad3nce> 5 hours ago
+aa9e9e3 : Move high touch sensitivity and hovering to InputService <Danesh M> 4 days ago
+feb56c8 : Move VIBRATOR_INTENSITY to vibrator service <Danesh M> 4 days ago
+c14c39c : LiveDisplayController : Reload settings for current user <Danesh M> 5 days ago
+82a4b7b : intel: Pick the best ABI based on number of libs, not just priority <Christopher R. Palmer> 3 months ago
+135c6e0 : perf: Remove scroll / fling boosting <Steve Kondik> 4 days ago
+705848b : Allow to ignore presentation indicator of outgoing calls [1/3] <Gabriele M> 10 days ago
+b99d934 : base: dock battery <Jorge Ruesga> 2 days ago
+dee2aba : Change No weather button as imagebutton layout <westcripp> 4 days ago
+7a24493 : SysUI: Fix hiding sensitive notification behavior <d34d> 4 days ago
+5bcdf97 : Remove opaque check in preparing dirty region for all QCOM device <dianlujitao> 13 days ago
+5f6c5f5 : sensors: Rename bool for selecting what timestamp to use for orientation sensor <Arne Coucheron> 4 days ago
+ee79182 : Fix volume expand arrow to be displayed correctly <Alexander Toresson> 3 months ago
+3d7b5f8 : SysUI: Clear notification data when recreating status bar <d34d> 5 days ago
+084f0e0 : SystemUI: Improve string in data capable, not selected scenario. <Adnan Begovic> 5 days ago
+6e08f02 : audiosystem: Add API for listening to effect session events <Steve Kondik> 7 days ago
+b8522da : sensors: Create bool to select what timestamp to use <0xD34D> 5 days ago
+fd70a97 : SysUI: Fix hiding per-app sensitive notifications <d34d> 11 days ago
+e625d04 : SystemUI: Add PERFORMANCE_ACCESS permission. <Decad3nce> 5 days ago
+c835a10 : base: Fix proximity check on non power key <vm03> 2 weeks ago
+e764079 : base: CMRemix android-6.0.1_r13 -> android-6.0.1_r17 <ZION959> 6 days ago
+4072bf6 : Merge tag 'android-6.0.1_r17' into HEAD <Jessica Wagantall> 6 days ago
+63ebd41 : SystemUI: fix always_show_roaming <Shaleen Jain> 10 days ago
+2c9ec58 : frameworks: squash of leak & race fixes <liquid0624> 1 year, 1 month ago
+5d56c6a : SystemUI: hide navigation bar faster in SetupWizard <Roman Birg> 11 months ago
+6b6d57c : Enhance dexopt with random colours Edited by @zephiK * adapted to work for android 6.0 (marshmallow) <Jaime Lopez> 1 year, 2 months ago
+c733735 : Fix problem with BootAnimation exit <Russell Webb> 2 years, 4 months ago
+b6cdc1f : support separate encryption/lockscreen passwords <Daniel Micay> 3 months ago
+0c42dd9 : base: CMRemix start up strings <ZION959> 6 days ago
+349a585 : fix crash on boot <Dirk Rettschlag (MarcLandis)> 6 days ago
+ba21670 : revert: fix crash on boot <ZION959> 6 days ago
+df7a491 : revert: revert: Fix theme issue with reboot dialog <ZION959> 6 days ago
+b160abe : SystemUI : 9 More Custom logos [1/2] <westcripp> 8 days ago
+d42f113 : revert: Services:Fix Derp From Lockscreen Toggle Merge <ZION959> 8 days ago
+5b9a9bb : [squash] revert: Themes tile <ZION959> 9 days ago
+1f16416 : Statusbar Header : Add no weather logo instead of text Before : https://drive.google.com/file/d/0B-nhdyBCbCSxT1Q1d0t6eHRWdHM/view?usp=sharing <westcripp> 9 days ago
+9be52f0 : StatusBar:More Custom logos[1/2] <Varun Date> 10 days ago
+2479516 : revert: Fix theme issue with reboot dialog <ZION959> 9 days ago
+98c325c : Fix GlobalActions sound panel iconography. <Dave Kover> 12 days ago
+f162908 : Themes: Refactor themes to CMSDK [1/6] <0xD34D> 9 days ago
+d0f2770 : SettingsProvider: allow ambient display/doze mode to be overlayed <Ankit Gupta> 3 weeks ago
+5a18f8a : QSList: Option to restore old items height <jereksel> 5 weeks ago
+f630120 : FWB: Powermenu Torch option [1/2] <LorDClockaN> 10 days ago
+7830621 : Only window position changed, update window crop. <ChangzhiX Wei> 4 weeks ago
+393c632 : Make accessing mWaitingForDrawn thread-safe <tiger_huang> 3 weeks ago
+2d07869 : SystemUI: Fix volume panel inconsistencies <Michael Bestas> 3 weeks ago
+a09fb9e : NetworkPolicyManager : Process low power mode change on background thread <Danesh Mondegarian> 11 days ago
+7f4f885 : Fix bottom shortcuts default icon tint color <westcripp> 11 days ago
+ 
+**** github:CyanogenMod/android_frameworks_minikin ****
+2e98eb6 : Tailor grapheme boundaries so sequence emoji are one grapheme - DO NOT MERGE <Raph Levien> 5 months ago
+ca8ac8a : Reject fonts with invalid ranges in cmap <Raph Levien> 10 weeks ago
+6299a6b : Avoid integer overflows in parsing fonts <Raph Levien> 3 months ago
+c65e6f1 : Suppress linebreaks in emoji ZWJ sequences - DO NOT MERGE <Raph Levien> 4 months ago
+adaf42f : Accept variation selector in emoji sequences - DO NOT MERGE <Raph Levien> 5 months ago
+ 
+**** cmR:android_frameworks_native ****
+65a4c0c : vds: Allocate Framebuffer target buffer <Manoj Kumar AVM> 9 weeks ago
+a9cbaf5 : SurfaceFlinger: Add support for continuous dumpsys to file. <Dileep Marchya> 3 months ago
+0e89896 : sf: ex-sf: Remove screenshot surface from secondary displays <Arun Kumar K.R> 3 months ago
+9e37519 : surfaceflinger: Use only one EventThread when phase offsets are same. <Omprakash Dhyade> 5 weeks ago
+b0cda68 : binder: MemoryHeapIon: Fix size_t vs integer formatting mismatch <Christopher N. Hesse> 3 weeks ago
+daca8c3 : IGraphicBufferProducer: fix QUEUE_BUFFER info leak <Robert Shih> 9 weeks ago
+93312a3 : IGraphicBufferConsumer: fix ATTACH_BUFFER info leak <Robert Shih> 9 weeks ago
+d983fd1 : Revert "inputflinger: Initial support for rotary encoders." <Prashant Malani> 9 weeks ago
+2c09b78 : Revert "inputflinger: Add support for scaling and true value reporting" <Prashant Malani> 9 weeks ago
+ee03865 : inputflinger: Add support for scaling and true value reporting <Prashant Malani> 9 weeks ago
+d06421f : IGraphicBufferProducer: fix QUEUE_BUFFER info leak <Robert Shih> 9 weeks ago
+dded8fd : IGraphicBufferConsumer: fix ATTACH_BUFFER info leak <Robert Shih> 9 weeks ago
+03d61d9 : dumpstate: increase logcat timeout to 40 seconds (DO NOT MERGE) <Mark Salyzyn> 3 months ago
+8c3e55f : Revert "DO NOT MERGE ANYWHERE Add new interface for sensor physical data" <Ben Fennema> 3 months ago
+d4db70a : DO NOT MERGE ANYWHERE Add new interface for sensor physical data <Jani Suonpera> 5 months ago
+bd65161 : DO NOT MERGE: add support for new sched tracepoint <Tim Murray> 3 months ago
+804339a : Increase raft timeout to 10min so we get complete logs from older devices. <Sharvil Nanavati> 4 months ago
+392db57 : Set cpuset from surfaceflinger. <Tim Murray> 4 months ago
+31baf8d : Revert "do not dumpstate raft BUG: 24159112" <Jason Parks> 5 months ago
+05c8622 : do not dumpstate raft BUG: 24159112 <Erik Wolsheimer> 5 months ago
+72da7fb : Installd: Fully decouple pre- and post-bootcomplete properties <Andreas Gampe> 6 months ago
+ac72bbf : inputflinger: Initial support for rotary encoders. <Prashant Malani> 7 months ago
+a180e85 : Add KEYCODE_SOFT_SLEEP for Ungaze. <Nick Armstrong-Crews> 6 months ago
+bcaa8d5 : OMX: clarify EOS signaling for tunneled decoders <Lajos Molnar> 7 months ago
+cbf4004 : Bug fix in SensorManager. <Aravind Akella> 8 months ago
+8d4cb7f : Dump raft logs in bugreports if they exist. <Sharvil Nanavati> 8 months ago
+e6406e3 : Check for the presence of accel and magnetometer sensors before adding AOSP fusion sensors. DO NOT MERGE <Aravind Akella> 8 months ago
+e6f6ad0 : DO NOT MERGE. Cancel touches as well as pointer gestures. <Michael Wright> 9 months ago
+ 
+**** github:CyanogenMod/android_frameworks_opt_chips ****
+2dcb104 : Import translations. DO NOT MERGE <Geoff Mendal> 5 months ago
+ 
+**** github:CyanogenMod/android_frameworks_opt_net_ims ****
+9510b1c : Turn on IMS if it is not allowed to turn it off for current carrier <Pavel Zhamaitsiak> 3 months ago
+8c065f5 : Add factoryReset() function to ImsManager <Pavel Zhamaitsiak> 4 months ago
+ 
+**** github:CyanogenMod/android_frameworks_opt_photoviewer ****
+f314150 : Import translations. DO NOT MERGE <Geoff Mendal> 5 months ago
+ 
+**** cmR:android_frameworks_opt_telephony ****
+c31d22d : telephony: Notify user for potential reconfiguration. <Adnan Begovic> 5 days ago
+e8a8a7f : telephony: Move COLP definition to android settings. <Adnan Begovic> 3 days ago
+33a347a : Allow to ignore presentation indicator of outgoing calls [2/3] <Gabriele M> 3 weeks ago
+b1f0283 : National Data Roaming [1/3] <lichti1901> 4 months ago
+0f6a630 : Forward port Samsung STK support (frameworks/opt/telephony) <Pawit Pornkitprasan> 1 year, 3 months ago
+c078223 : Check permissions on getDeviceId. <Robert Greenwalt> 3 months ago
+509e0e4 : DO NOT MERGE Send emergency call state change intent on emergency call start/end <Amit Mahajan> 9 weeks ago
+77a4ce6 : When Wi-Fi calling is available, be able to display only "Wi-Fi" <Hyejin Kim> 3 months ago
+634bfdf : Revert "Revert "Fix problem with cell data service after SIM swap"" <Vineeta Srivastava> 3 months ago
+0684984 : Revert "Revert "Fix problem with cell data service after SIM swap"" <Vineeta Srivastava> 3 months ago
+1da0e30 : Revert "Fix problem with cell data service after SIM swap" <Vineeta Srivastava> 3 months ago
+39f58e3 : Revert "Fix problem with cell data service after SIM swap" <Vineeta Srivastava> 3 months ago
+e61ea8c : Check permissions on getDeviceId. <Robert Greenwalt> 3 months ago
+f5bd5e9 : Check permissions on getDeviceId. <Robert Greenwalt> 3 months ago
+79eecef : Check permissions on getDeviceId. <Robert Greenwalt> 3 months ago
+de5bdca : Fix problem with cell data service after SIM swap <Pavel Zhamaitsiak> 4 months ago
+6238b40 : Use new StateMachine apis to check if a message is pending <Amit Mahajan> 4 months ago
+2df8a14 : Fix to return mno dun apn when mvno is not matched <Sungmin Choi> 4 months ago
+6d7e8df : Fix a crash while printing ICCID because of alphabets in UICC. <Sanket Padawe> 4 months ago
+2e66c63 : Set WIFI icon for connection based on connection extra. <Tyler Gunn> 4 months ago
+fdd04d4 : DO NOT MERGE ANYWHERE <Bryce Lee> 5 months ago
+3140302 : Use wear style dialog for ICC hotswap restart dialog. <Wei Liu> 5 months ago
+4c3aa35 : roamingProtocol should be used for roaming. <Wei Liu> 7 months ago
+32cefb7 : DO NOT MERGE Change auth_type value to 0 if AUTH_TYPE is -1 <Sungmin Choi> 7 months ago
+3658b47 : Do not turn on cellular radio if enable_cellular_on_boot is false. <Wei Liu> 7 months ago
+ 
+**** cmR:android_frameworks_rs ****
+53c51af : Enable error logcat for rsDispatch. <Miao Wang> 4 months ago
+ 
+**** github:CyanogenMod/android_frameworks_support ****
+405f6d6 : Avoid absolute path loading .so after M <Yang Ni> 8 weeks ago
+06b40bb : Import translations. DO NOT MERGE <Geoff Mendal> 3 months ago
+79b1370 : Import translations. DO NOT MERGE <Geoff Mendal> 3 months ago
+08e1bcc : Import translations. DO NOT MERGE <Geoff Mendal> 3 months ago
+4448a8e : MediaRouter: Make getThemeColor() work properly <Sungsoo Lim> 4 months ago
+7c78904 : Reset SwipeRefreshLayout on window detaches. <Aurimas Liutikas> 4 months ago
+d57359e : Don't mutate StateListDrawables on API 7 <Chris Banes> 4 months ago
+d9d9aec : Initial proof-of-concept pass for TextViewCompat host testing. <Kirill Grouchnikov> 4 months ago
+9ad8054 : Don't animate TIL error if we've been given the same error <Chris Banes> 4 months ago
+ac54e3e : Copy over the wrapped drawable's bounds in wrap() <Chris Banes> 4 months ago
+8e5ae27 : GuidedStep: sync selectorView translationY to focused view <Dake Gu> 4 months ago
+ed517ae : Make sure we keep Annotations in design's proguard <Chris Banes> 4 months ago
+3645905 : Fix a constructor of ForegroundLinearLayout <Yuichi Araki> 4 months ago
+47543aa : AppBarLayout fixes <Chris Banes> 4 months ago
+a5acc84 : MediaRouter: Fix for background colors of group volume controls <Sungsoo Lim> 4 months ago
+dbe6b40 : MediaRouter: Make volume sliders move smoothly <Sungsoo Lim> 4 months ago
+7f43e18 : Theme dark version of brand color and guided actions background <Dake Gu> 4 months ago
+ae6d147 : MediaBrowser: Handle null results properly in onLoadChildren <Sungsoo Lim> 4 months ago
+669b23b : Ensure that the indicator area is set to GONE <Chris Banes> 4 months ago
+422fa46 : GuidedStepFragment: fix temporary black screen in activity enter <Dake Gu> 4 months ago
+517a5ef : GuidedStepFragment Refactoring background handling <Dake Gu> 4 months ago
+129a2ef : Add elevation to leanback list dialogs <Tony Mantler> 4 months ago
+d85f3e0 : Use android namespace in (Animated)VectorDrawableCompat. <Teng-Hui Zhu> 4 months ago
+e1b81bb : Make sure we honor canChildScrollUp() <Chris Banes> 4 months ago
+4705eed : GuidedStepFragment: Allow app to override Ime Action text <Dake Gu> 4 months ago
+aa35ba5 : [RenderScript] Load from the full path of librsjni and libRSSupport. <Miao Wang> 4 months ago
+1888ec3 : Fix wiping out a view's translationY <Chris Banes> 4 months ago
+fc3d825 : Ignore iml files and out directory <Teng-Hui Zhu> 4 months ago
+a666629 : update leanback eclipse project settings <Dake Gu> 4 months ago
+11cb62d : GuidedStep: support checkbox and use standard android drawable <Dake Gu> 4 months ago
+c5f1ad7 : Add new extensible API to Palette <Chris Banes> 11 months ago
+b656c7a : Move test APKs to DIST_DIR <Yigit Boyar> 4 months ago
+43e10e9 : GuidedStepFragment: allow move focus to button action list <Dake Gu> 4 months ago
+00e0529 : GridLayoutManager: fire selected event when selected item type changed <Dake Gu> 4 months ago
+242b255 : MediaRouter: Dismiss the controller dialog only when a pending intent is set <Dongwon Kang> 4 months ago
+af0a2a4 : Fix build <Sungsoo Lim> 4 months ago
+eb51f61 : MediaRouter: Loosen up the condition to show the play control layout <Jae Seo> 4 months ago
+eb17dae : Remove framework dummy classes in the output of jack build <Sungsoo Lim> 4 months ago
+ee1e0df : Update docs <Tony Mantler> 4 months ago
+104ba18 : Add drawable tint support to CardView <Chris Banes> 4 months ago
+625c9c3 : Allow AppCompat to work with long-press-back-menu gesture <Chris Banes> 4 months ago
+1cf203e : GuidedStepFragment: fix initial selector view size flicking <Dake Gu> 4 months ago
+0b38116 : GuidedStepFragment: morph action panel size change in fragment transaction <Dake Gu> 4 months ago
+2b1d1d9 : Fix doc build <Chris Banes> 4 months ago
+6fa3c92 : Fix crash in CTL on pre-v18 devices with no title <Chris Banes> 4 months ago
+38cc44c : Add dynamic tab support to TabLayout <Chris Banes> 4 months ago
+fe1cbed : Workaround TextInputLayout state changes becoming permanent <Chris Banes> 4 months ago
+6d7a9a0 : Add compat padding to FloatingActionButton ala CardView <Chris Banes> 5 months ago
+f291fbb : MediaRouter: Start the session activity when a content item is clicked <Jae Seo> 4 months ago
+6d7f4ef : Leanback: support RTL in slide transition <Dake Gu> 4 months ago
+ 
+**** github:CyanogenMod/android_frameworks_volley ****
+82462cd : Make default timeout/retry/multiplier values public <Tom Ye> 9 months ago
+ 
+**** github:CyanogenMod/android_frameworks_webview ****
+7102c36 : Import translations. DO NOT MERGE <Geoff Mendal> 5 months ago
+bb3e2d9 : Import translations. DO NOT MERGE <Geoff Mendal> 5 months ago
+1db8b6b : Revert "Implement stub functions" <Selim Gurun> 1 year ago
+63deb68 : Implement stub functions <Selim Gurun> 1 year ago
+aba5740 : Add version code support for mips64. <Douglas Leung> 1 year, 1 month ago
+2013533 : Import translations. DO NOT MERGE <Geoff Mendal> 1 year, 1 month ago
+cb0c757 : Fix remaining references to hidden fields. <Torne (Richard Coles)> 1 year, 3 months ago
+0485a46 : Track move of android.net.http.ErrorStrings. <Narayan Kamath> 1 year, 4 months ago
+12399ba : Fix WebView targetSDK checks. <Ben Murdoch> 1 year, 4 months ago
+c6c1f3d : Add support for SmartClip interface in the glue layer. <Ben Murdoch> 1 year, 4 months ago
+0dd72dc : [WebView] Start building against the System SDK. <Ignacio Solla> 1 year, 4 months ago
+4570250 : [WebView] Remove direct dependencies on hidden APIs. <Ignacio Solla> 1 year, 5 months ago
+edcfb0f : [WebView] Remove unused method in CookieManager <Ignacio Solla> 1 year, 4 months ago
+446ce2c : Add support for SmartClip interface in the glue layer. <Ben Murdoch> 1 year, 4 months ago
+4eb3b4b : [WebView] Remove dependencies on DebugFlags. <Ignacio Solla> 1 year, 4 months ago
+bf95f76 : [WebView] Remove dependency on Build.IS_DEBUGGABLE. <Ignacio Solla> 1 year, 5 months ago
+9ee9488 : Import translations. DO NOT MERGE <Baligh Uddin> 1 year, 4 months ago
+4bb8eed : Revert "Wrap one more Context" <Torne (Richard Coles)> 1 year, 4 months ago
+5112943 : [WebView] Remove dependency on FileUtils. <Ignacio Solla> 1 year, 5 months ago
+8a2779d : Always add the path to the WebView assets. <Ben Murdoch> 1 year, 5 months ago
+ddbcc03 : Always add the path to the WebView assets. <Ben Murdoch> 1 year, 5 months ago
+011b28c : Remove DRP manager code <Selim Gurun> 1 year, 5 months ago
+9f3473a : Fix reflection for detecting fullscreen API support. <Ben Murdoch> 1 year, 5 months ago
+6fb047a : Match removal of config_webSettingsDefaultTextEncoding. <Marcin Kosiba> 1 year, 5 months ago
+e494d2a : Match removal of config_webSettingsDefaultTextEncoding. <Marcin Kosiba> 1 year, 5 months ago
+2de594d : Remove the default text encoding resource. <Marcin Kosiba> 1 year, 5 months ago
+53dc1aa : Match removal of config_webSettingsDefaultTextEncoding. <Marcin Kosiba> 1 year, 5 months ago
+d6a17bc : Use overridden resources. <Ben Murdoch> 1 year, 5 months ago
+f696600 : Webview: Remove dexpreopt flag <Andreas Gampe> 1 year, 5 months ago
+b20977d : Remove WebView DRP Setting from Developer Settings <Hui Shu> 1 year, 5 months ago
+f0c97c1 : Wrap one more Context <Hector Dearman> 1 year, 5 months ago
+e41c9c1 : Suport initializing DRP from cmd line switches. <Hui Shu> 1 year, 6 months ago
+a1b0248 : Wrap all of the WebView Contexts <Hector Dearman> 1 year, 6 months ago
+85e03c0 : WebView does not require a touch screen. <Ben Murdoch> 1 year, 6 months ago
+8473b38 : Update WebView manifest to target/minSDK 21. <Ben Murdoch> 1 year, 6 months ago
+fd23af2 : Fix resource rewriting in apps with other shared libs. <Torne (Richard Coles)> 1 year, 6 months ago
+b1100a8 : Use drawables instead of mipmap for WebView icon. <Ben Murdoch> 1 year, 6 months ago
+df873b4 : Import translations. DO NOT MERGE <Baligh Uddin> 1 year, 6 months ago
+a8cbb40 : Disable dex-preopt. <Ying Wang> 1 year, 6 months ago
+a17d86e : Don't use reflection to rewrite the WebView resources. <Marcin Kosiba> 1 year, 6 months ago
+03af49a : WebViewChromiumFactoryProvider should import ResourceExtractor fromorg.chromium.base <Vivek Galatage> 1 year, 6 months ago
+91c538c : Remove check for styleable resources in WebView ResourceRewriter. <Ben Murdoch> 1 year, 6 months ago
+3571668 : Implement FileChooserParams.createIntent and parseResult <Tao Bai> 1 year, 6 months ago
+b709ef5 : Match rename of WebResourceRequest.hasUserGestureInsecure to hasGesture. <Marcin Kosiba> 1 year, 6 months ago
+98f9a27 : Prepare for rename of WebResourceRequest.hasUserGestureInsecure to hasGesture. <Marcin Kosiba> 1 year, 6 months ago
+44d477c : Remove the plumbing for optOutDataReductionProxy API <Selim Gurun> 1 year, 6 months ago
+e73e669 : Update some content classes to content_public <Bo Liu> 1 year, 6 months ago
+5b026de : Remove the plumbing for optOutDataReductionProxy API <Selim Gurun> 1 year, 6 months ago
+db0b20b : Import translations. DO NOT MERGE <Baligh Uddin> 1 year, 6 months ago
+29ddcde : Don't declare WebView as a library. <Torne (Richard Coles)> 1 year, 7 months ago
+ 
+**** github:CyanogenMod/android_hardware_broadcom_libbt ****
+e6879e3 : libbt conf file for koi devices : add FW_PATCH_SETTLEMENT_DELAY_MS <Masakazu Yamazaki> 4 months ago
+260d431 : Revert "Disable wake via proc for nemo" <Zach Johnson> 3 months ago
+012bdaf : Disable wake via proc for nemo <Zach Johnson> 3 months ago
+8a15086 : DO NOT MERGE Final Revert "A2DP Offload BRCM vendor specific implementation" <Chris Elliott> 3 months ago
+2ba22c8 : DO NOT MERGE Final Revert "carp: copy smelt vendor config" <Chris Elliott> 3 months ago
+cda874f : DO NOT MERGE Final Revert "Make A2DP Offload max bitpool configurable by device." <Chris Elliott> 3 months ago
+4fecb32 : DO NOT MERGE Revert "Fix A2DP Offload lockup when RE-STARTING" <Chris Elliott> 3 months ago
+3e1fc82 : Fix build breakage by removing ad2p impl. <Chris Elliott> 3 months ago
+00bb3af : carp: copy smelt vendor config <Sridhar Vashist> 5 months ago
+49b5e6f : Make A2DP Offload max bitpool configurable by device. <Sridhar Vashist> 7 months ago
+6708688 : Fix A2DP Offload lockup when RE-STARTING <Sridhar Vashist> 7 months ago
+d51ab12 : A2DP Offload BRCM vendor specific implementation <Sridhar Vashist> 10 months ago
+534fc6a : DO NOT MERGE Make A2DP Offload max bitpool configurable by device. <Sridhar Vashist> 7 months ago
+cd4b75f : add casio koi settings. <yamazaki-m> 7 months ago
+50ada07 : bt: create dedicated configurations for Grant and Glacier <Saadi Maalem> 10 months ago
+13e0e2f : Bluetooth:config SCO seting for HFP call <Zhao Xuewen> 6 months ago
+a128dc1 : DO NOT MERGE Fix A2DP Offload lockup when RE-STARTING <Chris Elliott> 6 months ago
+dff0926 : nemo: Increase firmware settlement delay <Devin Kim> 7 months ago
+59b9a96 : Set transport timeout to 600ms <Chris Elliott> 7 months ago
+da064d0 : Wren:Bluetooth: Increase firmware settlement delay <beryl hou> 7 months ago
+db91769 : Sparrow:Bluetooth: Increase firmware settlement delay <beryl hou> 7 months ago
+3f154f7 : Bluetooth: Fix the FW loading in BCM4343 <Devin Kim> 10 months ago
+ 
+**** github:CyanogenMod/android_hardware_broadcom_wlan ****
+3a30c03 : Fix a potential leak of nl_msg objects <Vinit Deshpande> 3 months ago
+2ce1c49 : Fix use-after-free in wifi_cleanup() <Paul Stewart> 4 months ago
+0bdf1ae : Revert "Revert "net: wireless: bcmdhd: update bcm4358 FW (7.112.100.44)"" <Zach Jang> 5 months ago
+6c751ac : Revert "Revert "net: wireless: bcmdhd: update bcm4358 FW (7.112.100.41)"" <Zach Jang> 5 months ago
+be0867b : Revert "net: wireless: bcmdhd: update bcm4358 FW (7.112.100.44)" <Zach Jang> 5 months ago
+c907db1 : Revert "net: wireless: bcmdhd: update bcm4358 FW (7.112.100.41)" <Zach Jang> 5 months ago
+2bdea8b : bcm4343: Update firmware BCM4343A0/BCM4343A1 <Prashant Malani> 5 months ago
+0f377dc : bcm4343: Update firmware BCM4343A1 chip to 7.13.53.2 <Prashant Malani> 10 months ago
+9e5fed2 : bcm4343: Add firmware BC4343A1 chip to 7.13.53.1 <Prashant Malani> 10 months ago
+ 
+**** github:CyanogenMod/android_hardware_cyanogen ****
+fa60003 : cmhw: UniqueDeviceId: don't generate hardware IDs from SD card CIDs <Matt Wagantall> 2 weeks ago
+ 
+**** github:CyanogenMod/android_hardware_intel_img_hwcomposer ****
+f65be04 : Use default csc mode and video range setting for HDMI. Update VideoPayloadBuffer to align with palyload in video driver <mahongpe> 3 months ago
+37c6cdc : IMG HWC: DDK1.5 upgrade for Merrifield <Victor Tasayco Loarte> 4 months ago
+f2c6d3a : hwc: Enabling ION - HWC <Victor Tasayco Loarte> 4 months ago
+ec73412 : DrmConfig: Change DRM_MODE_ENCODER_MIPI to DRM_MODE_ENCODER_DSI <Victor Tasayco Loarte> 3 months ago
+a47d9a7 : Fix M Upgrade Compilation issues <Victor Tasayco Loarte> 8 months ago
+219b696 : Display: power consumption saving <Saadi Maalem> 8 months ago
+040739a : Hwcomposer: Enable VirtualDisplay feature <Saadi Maalem> 9 months ago
+79c344a : Set proper blanking mode for DOZE <Victor Tasayco Loarte> 10 months ago
+59b4d76 : Set proper blanking mode for DOZE <Victor Tasayco Loarte> 10 months ago
+ 
+**** aosp:platform/hardware/intel/sensors ****
+68dc9e7 : remove robby sensor code <Zhengyin Qian> 3 months ago
+2f7df31 : add an option to use prebuilts <Zhengyin Qian> 3 months ago
+ddb7674 : Fix libsensors_iio build after stlport removed <Andriy Naborskyy> 4 months ago
+968fe44 : sensors: als & tilt: fix E build errors <Andriy Naborskyy> 6 months ago
+50adf5f : [Grant] libsensor_iio: fix build errors <Andriy Naborskyy> 6 months ago
+6ff827f : sensor: poll for POLLOUT event before writing pipe <Saadi Maalem> 4 months ago
+b219170 : sensor: generate flush_complete event when data timestamps matches <Saadi Maalem> 4 months ago
+4d9b8f6 : sensor: increase pipe size to avoid pipe overrun <Saadi Maalem> 4 months ago
+db6e001 : sensor: fix step counter data type casting <Saadi Maalem> 5 months ago
+7193963 : sensor: add iio buffer store length support <Saadi Maalem> 5 months ago
+1748bd6 : Revert "sensor: sensor events timestamp out of expected range" <Zhengyin Qian> 5 months ago
+c430675 : sensor: sensor events timestamp out of expected range <Saadi Maalem> 5 months ago
+7a7aa43 : sensor: scaling gyro data for better accuracy <Saadi Maalem> 5 months ago
+f4cc133 : sensor: change als timestamp to CLOCK_BOOTTIME <Saadi Maalem> 5 months ago
+d230af7 : sensor: fix lsm6ds3 HAL bug for more accurate sampling rate <Saadi Maalem> 5 months ago
+beeb640 : sensor: correct gyro direction of y axis <Saadi Maalem> 5 months ago
+864d352 : sensor: fix flush interface implement <Saadi Maalem> 5 months ago
+f86fa3a : sensor: remove debug logs from HAL code of tilt and ALS <Saadi Maalem> 6 months ago
+7973c2f : sensor: fix lsm6ds3 HAL bug which abondons sensor events by mistake <Saadi Maalem> 6 months ago
+3b77ab1 : sensor: remove unnecessary set_delay and batch function implementation <Saadi Maalem> 6 months ago
+aedbd2b : sensor: add Gravity and Linear Accelerometer virtual sensors support <Saadi Maalem> 8 months ago
+7a627f4 : Sensor: change activate tilt sequences <Saadi Maalem> 7 months ago
+7e89936 : Sensor: adjust lsm6ds3 axis since PCB is assembled bottom-up. <Saadi Maalem> 8 months ago
+76227f0 : Sensor: load calibration data for wakeup/non-wakeup sensor <Saadi Maalem> 9 months ago
+90158e8 : Sensor: Correct flush function for different types of sensors <Saadi Maalem> 9 months ago
+5957f5f : Sensor: Set robby as common device <Saadi Maalem> 7 months ago
+f75e2d2 : Sensor: load calibration data at boot <Fei Li> 9 months ago
+94781c7 : Sensor: Change sensor type definition for tilt on Diamond <Li,Fei> 10 months ago
+be1c9f4 : Sensor: Implement ALS flush function <Baixing Tan> 10 months ago
+fb2fb5a : Sensor: Implement tilt sensor flush function <Baixing Tan> 10 months ago
+1f9b03c : Add ambient light sensor HAL <Baixing Tan> 11 months ago
+91428d8 : Modify ST-HAL-IIO to adapt marvin product <Baixing Tan> 12 months ago
+049ab1d : Original code get from ST for lsm6ds3 sensor base on iio subsystem <Baixing Tan> 12 months ago
+0d5f998 : add lis3dsh tilt sensor HAL code <Li,Fei> 1 year, 2 months ago
+c5ad85b : Sensor: Allow inclusion only for Robby sensors <Victor Tasayco Loarte> 8 months ago
+ 
+**** github:CyanogenMod/android_hardware_invensense ****
+f332a4e : Sensor: Invensense: 6515: fix step counter corrupting event queue <Nick Vaccaro> 9 weeks ago
+12e29ea : Sensor: Invensense: 6515: return one flush complete per flush <Nick Vaccaro> 4 months ago
+7af2cd1 : Sensors: Invensense: 6515: don't send duplicate events <Nick Vaccaro> 4 months ago
+63e566c : Sensors: Invensense: 6515: ignore SMD event if vibrator active <Nick Vaccaro> 4 months ago
+822ea53 : Sensors: Invensense: 6515: Merge timestamp fixes <Nick Vaccaro> 5 months ago
+980569f : Fix compilation error on emerald-dev <Ching Tzung Lin> 8 months ago
+70d66cf : Invensense: 6515: use CLOCK_BOOTTIME for timestamps <Nick Vaccaro> 8 months ago
+ 
+**** github:CyanogenMod/android_hardware_libhardware ****
+4fd217a : Fix compilation error on emerald-dev <Ching Tzung Lin> 8 months ago
+ 
+**** github:CyanogenMod/android_hardware_qcom_audio ****
+b4df3f3 : hal: fix resource leak issues in platform.c <Mingming Yin> 3 months ago
+3dd89ad : hal: close audio calibration fd <Mingming Yin> 3 months ago
+ 
+**** github:CyanogenMod/android_hardware_qcom_audio ****
+c7baa3b : hal: Reduce minimum offload fragment size for PCM offload <Naresh Tanniru> 9 months ago
+a7e38b7 : hal: Disable perf boost by default <Steve Kondik> 5 days ago
+ 
+**** github:CyanogenMod/android_hardware_qcom_audio ****
+692a5cc : hal: Fix potential memory leaks in HAL <Alexy Joseph> 5 weeks ago
+ 
+**** github:CyanogenMod/android_hardware_qcom_audio ****
+582e0a5 : audio: msm8909w caf release LW.BR.1.0-00410-8x09w.0 <Uday Kishore Pasupuleti> 10 weeks ago
+ebbb823 : post proc : volume listener : fix effect release crash <Eric Laurent> 3 months ago
+b14d76b : hal: audio_stream_frame_size is deprecated <Uday Kishore Pasupuleti> 4 months ago
+a1f4805 : hal: Support mute/unmute for HFP Tx <Uday Kishore Pasupuleti> 6 months ago
+e9ef478 : hal: Use default acdb id for hfp <Uday Kishore Pasupuleti> 6 months ago
+7629719 : hal: Add support for HFP feature <Uday Kishore Pasupuleti> 6 months ago
+28ddc6f : hal: Support an external BT chip for HFP <Uday Kishore Pasupuleti> 7 months ago
+fe121d5 : hal: add default SND device <vivek mehta> 7 months ago
+c92c596 : Revert "Revert "hal: add support for multi-mic input and multi-channel output"" <Prashant Malani> 7 months ago
+93be0a5 : Revert "hal: add support for multi-mic input and multi-channel output" <Bryce Lee> 7 months ago
+075842f : Hal: Support an external BT chip for HFP <Uday Kishore Pasupuleti> 8 months ago
+45849f6 : Add voice call support for msm8x26 target <Uday Kishore Pasupuleti> 11 months ago
+11dd223 : hal: fix to load wcd9330 mixer path file <Uday Kishore Pasupuleti> 9 months ago
+ 
+**** github:CyanogenMod/android_hardware_qcom_camera ****
+8b3ca9d : mm_camera: Retry opening camera for ENODEV error <Chien-Yu Chen> 7 weeks ago
+eeeffc0 : QCamera2: HAL3: replace abort with exit <Zhijun He> 8 weeks ago
+ecc5ece : QCamera2: HAL3: Restart daemon and mediaserver when buffer is lost. <Shuzhen Wang> 9 weeks ago
+ 
+**** github:CyanogenMod/android_hardware_qcom_display ****
+f1812e0 : Enable color temperature developer setting <Steve Pfetsch> 9 weeks ago
+48857cd : display: edo panel: display quality optimization <Zhao Xuewen> 4 months ago
+e198c38 : DO NOT MERGE display: HAL: FB pipe type select <Uday Kishore Pasupuleti> 6 months ago
+07bbf1e : msm8909: Populate display code for msm8x09 <Prashant Malani> 3 months ago
+f48303a : overlay: Allow to set target specific max rot session <Uday Kishore Pasupuleti> 5 months ago
+4c9a29a : gralloc: Default flexible YUV format to NV21_ZSL <Prashant Malani> 6 months ago
+a7e7e0a : set some qdhwcomposer setPowerMode logs to verbse <Joe LaPenna> 8 months ago
+ 
+**** github:CyanogenMod/android_hardware_qcom_display ****
+25957da : hwc: hdmi: Add support for S3D video <Yang Xu> 9 weeks ago
+ 
+**** github:CyanogenMod/android_hardware_qcom_fm ****
+71997bb : fmapp2: String improvements <Michael Bestas> 2 days ago
+92871d4 : FMRecorder : Save to a private temporary file while recording <Danesh M> 1 year, 4 months ago
+10f12bc : Fm : Update India bands <Danesh M> 1 year, 4 months ago
+db904f4 : Automatic translation import <Michael Bestas> 5 weeks ago
+505678b : Automatic translation import <Michael Bestas> 6 weeks ago
+d1e021c : Automatic translation import <Michael Bestas> 9 weeks ago
+691981c : Automatic translation import <Michael Bestas> 10 weeks ago
+d4fac5f : Automatic translation import <Michael Bestas> 3 months ago
+526d909 : Automatic translation import <Michael Bestas> 3 months ago
+d0c1142 : Automatic translation import <Michael Bestas> 4 months ago
+5af5a12 : FMRadio : Fix headphone icon <Ed Falk> 5 months ago
+77e07b7 : FMRadio : Fix settings UI bugs <Ed Falk> 5 months ago
+a006984 : Fix camel case <Michael Bestas> 5 months ago
+893a0d7 : Fix compile <Abhisek Devkota> 5 months ago
+2259d4d : FMRadio : Localization of band types <Ed Falk> 6 months ago
+6265c14 : Automatic translation import <Michael Bestas> 5 months ago
+5fa1a69 : Automatic translation import <Michael Bestas> 6 months ago
+282af6b : FMRadio : improved band selection <Ed Falk> 6 months ago
+ad34b71 : FMRadio : cleaned up band selection code <Ed Falk> 6 months ago
+67a026b : Automatic translation import <Michael Bestas> 6 months ago
+bcf0e3b : FMRadio : Select band based on country <Ed Falk> 6 months ago
+d4d8237 : Automatic translation import <Michael Bestas> 7 months ago
+d66f3a7 : Automatic translation import <Tom Powell> 7 months ago
+a3161fd : FMRadio : Keep track of scanned frequencies in service <Danesh M> 7 months ago
+4149330 : Automatic translation import <Michael Bestas> 7 months ago
+3a71df1 : FMRadio : Ensure scan state is kept in sync <Danesh M> 7 months ago
+0f42b8e : Automatic translation import <Michael Bestas> 7 months ago
+ee5cf3a : Automatic translation import <Michael Bestas> 8 months ago
+24a21c0 : FM: The collect channel disappear when quit FM <lijun.xie> 8 months ago
+0031ad5 : Automatic translation import <Michael Bestas> 8 months ago
+ea1f7ff : Automatic translation import <Michael Bestas> 9 months ago
+7917505 : Fix status text to reflect when FM is enabled. <Martin Brabham> 9 months ago
+57e98f0 : Automatic translation import <Michael Bestas> 9 months ago
+5ab904c : Automatic translation import <Michael Bestas> 9 months ago
+0a446a8 : FM: fix mRadioTextScroller usage in transmitter activity <Hamster Tian> 10 months ago
+31d6260 : Automatic translation import <Michael Bestas> 9 months ago
+19b868f : Automatic translation import <Michael Bestas> 10 months ago
+6085325 : Automatic translation import <Michael Bestas> 10 months ago
+5d39c2e : FM: respect hw.fm.internal_antenna <Dhruv Paranjape> 10 months ago
+fa75ffe : Automatic translation import <Michael Bestas> 10 months ago
+d991d7b : FMRadio : Launch station list automatically after scan <Danesh M> 11 months ago
+3a9393e : Automatic translation import <Michael Bestas> 11 months ago
+d559652 : Automatic translation import <Michael Bestas> 11 months ago
+dde1c56 : Automatic translation import <Michael Bestas> 11 months ago
+273065f : Automatic translation import <Michael Bestas> 11 months ago
+48d5b35 : FM: reenable radio text visibility after station info updated <Edward Wang> 11 months ago
+c41b123 : FM: Store tag num/value in sequence <Edward Wang> 11 months ago
+ae7d8f7 : FM: always use overlay default country <Edward Wang> 11 months ago
+755c888 : FM: retune last frequency when resume after call <Edward Wang> 11 months ago
+e891e05 : FM2: one more missing materialization change <linuxx> 11 months ago
+ 
+**** github:CyanogenMod/android_hardware_qcom_gps ****
+e7c9864 : gps: msm8909w caf release LW.BR.1.0-00410-8x09w.0 <Uday Kishore Pasupuleti> 10 weeks ago
+ 
+**** github:CyanogenMod/android_hardware_qcom_keymaster ****
+0919e4a : keymaster: add msm8909 into support list <Edward Wang> 3 weeks ago
+888834f : Remove legacy keymaster support for msm8226 <Uday Kishore Pasupuleti> 6 months ago
+ 
+**** github:CyanogenMod/android_hardware_qcom_media ****
+f0608db : Build mm-video-v4l2 on msm8909's <Marcos Marado> 4 months ago
+ 
+**** github:CyanogenMod/android_hardware_qcom_media ****
+49aecee : mm-video-v4l2: vidc: vdec: skip enabling S3D extra data for secure session <Srinu Gorle> 11 months ago
+54bfdc2 : mm-video-v4l2: vidc: vdec: Add support for S3D metadata <Ashray Kulkarni> 1 year, 1 month ago
+ 
+**** github:CyanogenMod/android_hardware_qcom_media ****
+347b90c : libc2dcolorconvert: refer c2d header from display <Praveen Chavan> 1 year, 10 months ago
+ 
+**** github:CyanogenMod/android_hardware_qcom_media ****
+2cd19ff : mm-video-v4l2: vdec: disable cached allocation for input <Praveen Chavan> 4 months ago
+ 
+**** aosp:platform/hardware/qcom/msm8x26 ****
+8b098e3 : msm8x26: Update audio headers <Prashant Malani> 6 months ago
+bc5e7a0 : msm8x26: Update rmnet header <Prashant Malani> 8 months ago
+ 
+**** github:CyanogenMod/android_hardware_qcom_wlan ****
+f0c9628 : Fix leaked nl_msg objects <Vinit Deshpande> 3 months ago
+ 
+**** github:CyanogenMod/android_hardware_ril ****
+06af52d : libril: correct include <Alexander Martinz> 4 weeks ago
+ 
+**** github:CyanogenMod/android_hardware_ril ****
+ed04ee9 : libril: correct include <Alexander Martinz> 4 weeks ago
+ 
+**** github:CyanogenMod/android_hardware_samsung ****
+02302a7 : macloader: add n5100 murata wifi address <RGIB> 2 days ago
+57eacca : libsecril-client: Use the correct incall audio paths <Christopher N. Hesse> 5 days ago
+621e63e : libril: Make ST-E Thor M7450 and Intel XMM7260 next gen modems as well <Christopher N. Hesse> 3 weeks ago
+f15d7f4 : powerhal: Add set_profile support <Andreas Schneider> 6 weeks ago
+438a27e : macloader: Add another SEMCO mac address half <Christopher N. Hesse> 13 days ago
+6eec819 : Fix memory leaks and use of uninitialized pointers. <Pavel Zhamaitsiak> 7 months ago
+ 
+**** github:CMRemix/android_kernel_samsung_trlte ****
+b80e3db : futexes: Increase hash table size for better performance <Davidlohr Bueso> 2 years, 2 months ago
+16c8a81 : futex: use freezable blocking call <Colin Cross> 2 years, 10 months ago
+d72894c : fs/buffer.c: increase the buffer-head per-CPU LRU size <Sebastien Buisson> 1 year, 5 months ago
+3cc9eaa : arch/arm/Kconfig: enable unaligned capability for ARM <JTrefzger> 1 year, 1 month ago
+4aac012 : tick: don't update idle time if cpu offline <franciscofranco> 12 months ago
+84561d4 : fsync control files <ZION959> 17 hours ago
+db562c8 : vfp: use hard-float instead of soft-float <Your Name> 6 months ago
+e250456 : cm_trlte: Optimization <ZION959> 17 hours ago
+d49d26d : revert: arm: implement kexec-hardboot (by vbocek@gmail.com) <ZION959> 18 hours ago
+2e84c78 : revert: cpu: keep 2 cores always online (andip71) <ZION959> 18 hours ago
+59ac391 : arm:lib: Correct Neon Flags <Chet Kener> 1 year, 5 months ago
+dbf5db4 : build: Enable unsafe-math-optimizations <Pranav Vashi> 1 year, 5 months ago
+2ebc10e : ARM: Honor udelay convention for timer-based delay <Alex Frid> 2 years, 7 months ago
+e343a68 : ARM: 7835/2: fix modular build of xor_blocks() with NEON enabled <Ard Biesheuvel> 2 years, 6 months ago
+c33c202 : ARM: crypto: add NEON accelerated XOR implementation <Ard Biesheuvel> 2 years, 10 months ago
+d1034c3 : Disable More Tracer <Chet Kener> 1 year, 8 months ago
+388bb10 : Disable Tracer <Chet Kener> 1 year, 8 months ago
+675d8ea : cpufreq: Initial CPU utilization should be 0 <Stratos Karafotis> 2 years, 3 months ago
+6ecefe6 : debug: remove: remove some dmesg logspam from Linux mainline 3.4 fs <ktoonsez> 2 years, 9 months ago
+5fcb0d7 : mmc: do not build tests <Chet Kener> 1 year ago
+9c43e0a : msm: mdss: remove more logging spam <Evisceration> 1 year, 3 months ago
+9015235 : cpufreq: impulse: tuning and burning values into governor <ZION959> 4 days ago
+d30f95d : block: Update sio to sioplus iosched & zen <ZION959> 4 days ago
+4340fc8 : sched: Move wait.c into kernel/sched/ <Peter Zijlstra> 4 days ago
+e20f44c : sched: Add sched_class->task_dead() method <Dario Faggioli> 2 years, 4 months ago
+ed464ab : cpufreq: add linux 3.18 interactive governor <ZION959> 4 days ago
+408389b : power: quickwakeup: initial driver <ZION959> 4 days ago
+fb97215 : add our own config <ZION959> 6 days ago
+415ba85 : Makefile: fixed No such file or directory when make mrproper <ZION959> 6 days ago
+0f79720 : add missing earlysuspend.h <ZION959> 6 days ago
+b8a28c4 : Selinux: add config for permissive <ZION959> 9 days ago
+1aa0f82 : revert: selinux: honour command line enforcing setting <ZION959> 9 days ago
+9fa7e31 : msm: mdss: Adding lcd notifier <ZION959> 5 weeks ago
+5408b4f : add few governors <ZION959> 11 days ago
+083a17f : revert: trlte: update fingerprint drivers <ZION959> 3 weeks ago
+a82c780 : msm: Add MSM Hotplug driver <ZION959> 2 weeks ago
+40ac23f : selinux: Android kernel compatibility with M userspace <Jeff Vander Stoep> 5 months ago
+ce009ca : selinux: extended permissions for ioctls <Jeff Vander Stoep> 8 months ago
+215d268 : selinux: remove unnecessary pointer reassignment <Jeff Vander Stoep> 1 year, 1 month ago
+8852ca9 : selinux: do not check open perm on ftruncate call <Jeff Vander Stoep> 6 months ago
+158a107 : selinux: enable genfscon labeling for sysfs and pstore files <Stephen Smalley> 10 months ago
+e0daf28 : selinux: enable per-file labeling for debugfs files. <Stephen Smalley> 10 months ago
+ac8b148 : selinux: Remove obsolete selinux_audit_data initialization. <Stephen Smalley> 1 year, 2 months ago
+75d6d59 : revert: SELinux: per-command whitelisting of ioctls <ZION959> 2 weeks ago
+ebec5f8 : revert: SELinux: use deletion-safe iterator to free list <ZION959> 2 weeks ago
+4ea5885 : revert: SELinux: ss: Fix policy write for ioctl operations <ZION959> 2 weeks ago
+3e9cddb : arm: implement kexec-hardboot (by vbocek@gmail.com) <ZION959> 3 weeks ago
+6f057cc : drivers/cpufreq/cpu-boost: Allow input boost code to be excludable in defconfig (yank555) <ZION959> 3 weeks ago
+d6170d5 : scripts: remove localversion "+" & "-dirty" from kernel version strings <ZION959> 3 weeks ago
+88a4dde : android: binder: use GPF_HIGHUSER flag since binder is designed for userspace <Paul Reioux> 1 year ago
+ 
+**** cmR:android_libcore ****
+344ecbe : Add special return code for extract-only oat files. <Calin Juravle> 3 weeks ago
+1ed396d : Work around 32 bit glibc bug. <Narayan Kamath> 1 year, 1 month ago
+09ce0ed : [1/4] JDK8: Do explicit cast of EnumMapIterator.next() return value <mar-v-in> 1 year, 3 months ago
+e7bdc26 : Check for RFC 5746 TLS extension <Kenny Root> 10 weeks ago
+161ab7a : Change FinalizeTest to use helper function <Mathieu Chartier> 3 months ago
+541b8e6 : Fix spurious finalizer timeouts on shutdown. <Hans Boehm> 4 months ago
+633b8fd : Speed up Finalizer Daemon <Hans Boehm> 6 months ago
+995c489 : Fix more race conditions in WeakHashMapTest. <Roland Levillain> 4 months ago
+8962faf : Fix BigDecimal.equals() when scales are the same <Neil Fuller> 5 months ago
+4f1e1ad : Delete obsolete SystemPropertiesBenchmark. <Vladimir Marko> 5 months ago
+fd06f46 : Performance tweak to CollectionUtils.removeDuplicates <Ian Rogers> 4 years, 4 months ago
+09dd948 : Implemented ceil and floor in StrictMath <agicsaki> 10 months ago
+e0ca941 : Delete some unused cruft from OldAndroidMonitorTest. <Narayan Kamath> 8 months ago
+5b8635c : Rewrite testInterruptTest. <Narayan Kamath> 8 months ago
+a17351c : Repurpose SHA1PRNG_SecureRandomTest. <Narayan Kamath> 8 months ago
+4aaf3b3 : Remove harmony provider and default SecureRandom impl. <Narayan Kamath> 8 months ago
+72763a9 : Remove a couple of bogus test cases from SecureRandom2Test. <Narayan Kamath> 8 months ago
+7d6f1f1 : Use __ANDROID__ instead of HAVE_ANDROID_OS. <Elliott Hughes> 8 months ago
+d632d50 : Clean up some dead code. <Elliott Hughes> 7 months ago
+8155f82 : Convert ByteBuffers to byte[] correctly. <Narayan Kamath> 7 months ago
+a1b46fa : Handle OutOfMemoryError from allocating InterruptedExceptions <Mathieu Chartier> 6 months ago
+29cbc6f : libcore: remove cancelled tasks from the queue in Timer at the time they're scheduled <Sergio Giro> 5 months ago
+9685f8b : libcore: rewrite Timer <Sergio Giro> 6 months ago
+3b8ea63 : Patch for awaitNanos() for coarse-grained clocks <Neil Fuller> 6 months ago
+3ae44f5 : Fix MessageDigest.update(ByteBuffer) and .digest(byte[],...). <Alex Klyubin> 5 months ago
+36363b0 : Fix time calculation in test_SSLSession_getLastAccessedTime <zhulin0910> 6 months ago
+ef2d585 : Add more debugging to the DigestTest <Kenny Root> 6 months ago
+dd303ca : Patch for awaitNanos() for coarse-grained clocks <Neil Fuller> 6 months ago
+ 
+**** github:CyanogenMod/android_packages_apps_AudioFX ****
+22e31f3 : Automatic translation import <Michael Bestas> 9 days ago
+b3278c1 : Automatic translation import <Michael Bestas> 3 weeks ago
+ 
+**** github:CyanogenMod/android_packages_apps_BasicSmsReceiver ****
+321806c : Automatic translation import <Michael Bestas> 9 days ago
+ 
+**** github:CyanogenMod/android_packages_apps_Bluetooth ****
+0fe7495 : Revert "Bluetooth: Disconnect SCO for In-Band Ringtone." <Steve Kondik> 2 days ago
+a84eaf5 : Automatic translation import <Michael Bestas> 9 days ago
+4146cd3 : Automatic translation import <Michael Bestas> 3 weeks ago
+fb02583 : DO NOT MERGE Fix SMS delivered successfully but stuck SENDING issue <Ashwini Munigala> 6 months ago
+1983bcc : DO NOT MERGE Fix SMS delivered successfully but stuck SENDING issue <Ashwini Munigala> 6 months ago
+3a4b869 : Fix memory leak in Bluetooth AVRCP JNI <Casper Bonde> 10 weeks ago
+0a9659d : Map Bluetooth profiles correctly in isProfileDisabled helper function. <Bryce Lee> 3 months ago
+3602a64 : Monitor disabled profile setting and enable/disable profiles on change. <Bryce Lee> 3 months ago
+9e1b34b : Allow for automatic routing on HF AG to be disabled. <Bryce Lee> 4 months ago
+22bb394 : Implement setting/getting whether audio can be routed to the HFP HF device. <Bryce Lee> 5 months ago
+84d1aab : Revert "Allow HFP HF implementations to specify a client controller." <Bryce Lee> 5 months ago
+8843d8a : Allow HFP HF implementations to specify a client controller. <Bryce Lee> 5 months ago
+65842bf : Remove receiver status foreground flag <Zach Johnson> 5 months ago
+371e204 : Allow for supported profiles to be reloaded on enable. <Bryce Lee> 5 months ago
+5040e76 : Only apply foreground flag for audio state connected <Zach Johnson> 5 months ago
+5d0f297 : Add FLAG_RECEIVER_FOREGROUND to audio state broadcasts <Zach Johnson> 5 months ago
+7618faa : Avoid NPE when dumping headset profile state. <Sharvil Nanavati> 6 months ago
+9379389 : Read connection intervals from config.xml so it can be overriden by device. <Sharvil Nanavati> 6 months ago
+a27628d : Send the AUDIO_CONNECTED broadcast after switching to the AudioOn state. <Sharvil Nanavati> 6 months ago
+157a5b4 : HFP should let the system handle ringtones <Zach Johnson> 7 months ago
+3760400 : Fix low volume on Nemo devices after accepting incoming HFP call. <Sharvil Nanavati> 7 months ago
+a0f6ccc : Remove extra logging with privacy info DO NOT MERGE <Chenjie Luo> 8 months ago
+ 
+**** github:CyanogenMod/android_packages_apps_BluetoothExt ****
+0bcedd3 : Automatic translation import <Michael Bestas> 9 days ago
+78b36b1 : Automatic translation import <Michael Bestas> 3 weeks ago
+ 
+**** github:CyanogenMod/android_packages_apps_Browser ****
+751d60b : Automatic translation import <Michael Bestas> 9 days ago
+4266993 : Automatic translation import <Michael Bestas> 3 weeks ago
+ 
+**** github:CyanogenMod/android_packages_apps_CMFileManager ****
+a72ed8c : Automatic translation import <Michael Bestas> 9 days ago
+029bcc5 : PickerActivity: Request for permissions <Diogo Ferreira> 11 days ago
+f7631d5 : Automatic translation import <Michael Bestas> 3 weeks ago
+ec22bb5 : CMFilemanager: fix build without jack <Markus Menzel> 5 weeks ago
+ 
+**** github:CyanogenMod/android_packages_apps_CMWallpapers ****
+c41b295 : Automatic translation import <Michael Bestas> 3 weeks ago
+ 
+**** github:CyanogenMod/android_packages_apps_Calendar ****
+3bc4d84 : Automatic translation import <Michael Bestas> 9 days ago
+8e72284 : Automatic translation import <Michael Bestas> 3 weeks ago
+ 
+**** github:CyanogenMod/android_packages_apps_Camera2 ****
+ef203f8 : Automatic translation import <Michael Bestas> 9 days ago
+c64d7cb : Automatic translation import <Michael Bestas> 3 weeks ago
+ 
+**** github:CyanogenMod/android_packages_apps_CarrierConfig ****
+32a3bfa : DO NOT MERGE Set broadcast_emergency_call_state_changes_bool to true for VZW <Amit Mahajan> 9 weeks ago
+ 
+**** github:CyanogenMod/android_packages_apps_CellBroadcastReceiver ****
+fedb720 : Automatic translation import <Michael Bestas> 9 days ago
+42a60b2 : Hide CMAS dev options in user builds <Luis Vidal> 3 weeks ago
+ 
+**** github:CyanogenMod/android_packages_apps_CertInstaller ****
+477f738 : Automatic translation import <Michael Bestas> 9 days ago
+958f46f : Import translations. DO NOT MERGE <Geoff Mendal> 5 months ago
+33c079a : Nemo CTS: Call the right class for SSL <Vinod Krishnan> 5 months ago
+ 
+**** github:CyanogenMod/android_packages_apps_Contacts ****
+cd5f671 : Automatic translation import <Michael Bestas> 9 days ago
+13a402e : Trigger BlockContactHelper's resource clean-up <Rohit Yengisetty> 3 weeks ago
+1b8519a : Automatic translation import <Michael Bestas> 3 weeks ago
+ 
+**** github:CyanogenMod/android_packages_apps_ContactsCommon ****
+1196024 : Fix resource clean-up in LookupProviderImpl <Rohit Yengisetty> 6 days ago
+4d67195 : Update info_lookup to use AmbientSDK directly <Raj Yengisetty> 2 weeks ago
+463be6a : Automatic translation import <Michael Bestas> 9 days ago
+38d016c : Expose method to clean up resources in BlockContactHelper <Rohit Yengisetty> 3 weeks ago
+b35ec75 : Automatic translation import <Michael Bestas> 3 weeks ago
+3f2006a : Import translations. DO NOT MERGE <Geoff Mendal> 4 months ago
+cab7db5 : Import translations. DO NOT MERGE <Geoff Mendal> 4 months ago
+47fda83 : Import translations. DO NOT MERGE <Geoff Mendal> 4 months ago
+ 
+**** github:CyanogenMod/android_packages_apps_DeskClock ****
+4623c88 : DeskClock: Remove "Week Start" preference <cretin45> 5 days ago
+fb52be3 : Automatic translation import <Michael Bestas> 9 days ago
+ae8bcce : Alarm: Bind start-of-week to the locale <Ricardo Cerqueira> 5 weeks ago
+a1de334 : DeskClock : Don't set POWER_OFF_ALARM_MODE unecessarily <Danesh M> 3 weeks ago
+aa1c1fd : Automatic translation import <Michael Bestas> 3 weeks ago
+ 
+**** cmR:android_packages_apps_Dialer ****
+72a6e47 : Automatic translation import <Michael Bestas> 9 days ago
+b91511e : Add Ukrainian T9 symbol map <Ricardo Cerqueira> 10 days ago
+b2381ef : Automatic translation import <Michael Bestas> 3 weeks ago
+ 
+**** github:CyanogenMod/android_packages_apps_Eleven ****
+c4984e2 : Automatic translation import <Michael Bestas> 9 days ago
+640067b : Automatic translation import <Michael Bestas> 3 weeks ago
+bc1632e : Codecleanup: Use Chained append calls to improve the performance <RazorSharp> 6 weeks ago
+9af5f0c : CodeCleanup : Remove redundant Type Casting <RazorSharp> 6 weeks ago
+81cd344 : Eleven: Synchronization on a non-final field 'mPauseLock' <RazorSharp> 6 weeks ago
+ 
+**** github:CyanogenMod/android_packages_apps_Email ****
+457778a : Automatic translation import <Michael Bestas> 9 days ago
+7ffe95d : Automatic translation import <Michael Bestas> 3 weeks ago
+ 
+**** github:CyanogenMod/android_packages_apps_ExactCalculator ****
+1cb2671 : Automatic translation import <Michael Bestas> 9 days ago
+ 
+**** github:CyanogenMod/android_packages_apps_Exchange ****
+ed65f46 : Automatic translation import <Michael Bestas> 9 days ago
+ 
+**** github:CyanogenMod/android_packages_apps_FMRadio ****
+fad359f : Automatic translation import <Michael Bestas> 9 days ago
+ 
+**** github:CyanogenMod/android_packages_apps_Gallery2 ****
+515039d : Automatic translation import <Michael Bestas> 9 days ago
+0e30c3a : Automatic translation import <Michael Bestas> 3 weeks ago
+ 
+**** github:CyanogenMod/android_packages_apps_HTMLViewer ****
+79ab2cd : Automatic translation import <Michael Bestas> 9 days ago
+ 
+**** cmR:android_packages_apps_InCallUI ****
+34d0d93 : Fix to answer call in DSDS mode. <Ravindra> 3 months ago
+dc3aadd : Fix to answer call in DSDS mode. <Ravindra> 3 months ago
+f724909 : Automatic translation import <Michael Bestas> 9 days ago
+d560be6 : Automatic translation import <Michael Bestas> 3 weeks ago
+4946460 : Update call record overflow menu item when updating record state. <Danny Baumann> 4 weeks ago
+166b112 : Automatic translation import <Michael Bestas> 4 weeks ago
+a94a117 : DO NOT MERGE Workaround for java.lang.IllegalArgumentException in android.util.ArrayMap <Ta-wei Yen> 9 weeks ago
+2e5cfc1 : Show child number in incoming call notification. <Tyler Gunn> 4 months ago
+ 
+**** github:CyanogenMod/android_packages_apps_KeyChain ****
+83e9885 : Automatic translation import <Michael Bestas> 9 days ago
+ 
+**** github:CyanogenMod/android_packages_apps_LockClock ****
+242fc38 : Automatic translation import <Michael Bestas> 9 days ago
+30b30e6 : Automatic translation import <Michael Bestas> 3 weeks ago
+753f27d : LockClock: Enable all calendars during first time setup <Khalid Zubair> 4 weeks ago
+1f1a0aa : Don't warn about webkit <niks255> 7 weeks ago
+ 
+**** github:CyanogenMod/android_packages_apps_ManagedProvisioning ****
+58c563b : Automatic translation import <Michael Bestas> 9 days ago
+5e71956 : Import translations. DO NOT MERGE <Geoff Mendal> 5 months ago
+ 
+**** cmR:packages_apps_OmniStyle ****
+330da6c : OmniStyle: image update <maxwen> 3 weeks ago
+ 
+**** cmR:android_packages_apps_OmniSwitch ****
+e0fdc7f : fixed build <ZION959> 6 days ago
+23fc691 : OmniSwitch: tweak DragGripView <maxwen> 10 days ago
+68b0b60 : OmniSwitch: bugfix update 01/2016 <maxwen> 7 weeks ago
+ 
+**** github:CyanogenMod/android_packages_apps_PhoneCommon ****
+23676f9 : Automatic translation import <Michael Bestas> 9 days ago
+5bd46ba : Add Ukrainian T9 symbol map <Ricardo Cerqueira> 10 days ago
+ 
+**** github:CyanogenMod/android_packages_apps_Profiles ****
+a3941e8 : Automatic translation import <Michael Bestas> 9 days ago
+9d7bfc3 : Automatic translation import <Michael Bestas> 3 weeks ago
+ 
+**** github:CyanogenMod/android_packages_apps_Screencast ****
+286cbc3 : Automatic translation import <Michael Bestas> 9 days ago
+7aff8c2 : Screencast: Don't show touches for non-owners <Diogo Ferreira> 10 days ago
+2fc265b : Automatic translation import <Michael Bestas> 3 weeks ago
+ 
+**** cmR:android_packages_apps_Settings ****
+77e3b47 : Merge tag 'android-6.0.1_r22' of https://android.googlesource.com/platform/packages/apps/Settings into cm-13.0 <Steve Kondik> 4 hours ago
+4478d98 : settings: dock battery <Jorge Ruesga> 3 days ago
+b8176fc : settings: return MetricsLogger.MAIN_SETTINGS; <ZION959> 4 days ago
+cf740f8 : Settings: Modify RU translation for Ambient display <Vladislav Koldobskiy> 5 days ago
+d373ea0 : Settings: Add PERFORMANCE_ACCESS permission. <Adnan Begovic> 6 days ago
+c6a8c08 : MSIM: Fix erroneous defaults display in slot selection dialog <Ricardo Cerqueira> 5 days ago
+27eb2a5 : AppOps: Guard against themes without colorAccent defined <d34d> 2 weeks ago
+97e4628 : Settings: Remove "Learn More" clickable text if not overlaid. <Adnan Begovic> 10 days ago
+f6b1548 : Settings: Allow disabling default allcaps state in tabtext. <Adnan Begovic> 10 days ago
+87d697d : fixed cmremix's vector icons color and update <ZION959> 6 days ago
+f734d92 : Settings: add devicecontrol option to dashboard (1/2) <ZION959> 8 days ago
+25ed581 : Development: add lazy dexopt entry <Alexander Martinz> 8 days ago
+921a471 : Settings: 9 More Statusbar Custom Logos [2/2] - Clean up code white spaces <westcripp> 8 days ago
+381aec5 : Update bottom shortcuts default icon tint color (White transparent) <westcripp> 9 days ago
+dcca61f : Settings: More Statusbar Custom Logos [2/2] <varund7726> 9 days ago
+7e0bf00 : Settings: auto hide fast scroll bar in manage apps screen <Altaf-Mahdi> 8 months ago
+cd8a88b : AppOps: Bring up to speed with fwb changes <Chet Kener> 3 months ago
+99c4f9f : Settings: Enable App Ops <Chet Kener> 4 months ago
+cf0bcfd : Automatic translation import <Michael Bestas> 9 days ago
+f1d0f11 : Settings: Default edge gesture service to false. <Adnan Begovic> 7 weeks ago
+a72d9e8 : Settings: Powermenu Torch option [2/2] <LorDClockaN> 10 days ago
+4811fc6 : Settings: no more holo for navbar editor <jrizzoli> 2 weeks ago
+b806e2e : Better expose text color for single button panel button <Dave Kover> 11 days ago
+a1e911f : Themes: Expose Hard colors for storage settings <Bryan Owens> 3 weeks ago
+9f59ade : Use correct icon for ring volume <Michael Bestas> 3 weeks ago
+1cd5d82 : Settings: Fix "Fix SecuritySettings filtering" copy pasta <Alexander Martinz> 10 days ago
+07d259c : Settings: Fix SecuritySettings filtering. <Adnan Begovic> 12 days ago
+6e13c43 : Settings: Statusbar Custom Logos and Styles [1/2] <varund7726> 11 days ago
+50bf6ef : move Qs Vibrate & Qs Colors from notification panel to qs panel <ZION959> 12 days ago
+40eca7d : Settings: Scatter and CleanUp Notification Drawer Settings <varund7726> 12 days ago
+bcb5398 : Settings:  Add Alt NavRecents Button as an Option [2/2] <varund7726> 12 days ago
+e1a3ecc : Settings: Clock Color Switch (2/2) <varund7726> 12 days ago
+a1d1b57 : Settings: Move Clock Settings To A Different Preference --Also Clean Up statusBarSettings a bit <varund7726> 12 days ago
+eb1fbe9 : Fix QsColors reset and default colors <westcripp> 12 days ago
+550ceaa : Settings: fix indexing for saved access point settings <Roman Birg> 3 weeks ago
+76a5d79 : [5/5] Breathing missedcall/sms/voicemail <ZION959> 13 days ago
+f0e29e4 : revert: Settings: Breathing missedcall/voicemail <ZION959> 13 days ago
+2687afb : Expose values for themes. <Dave Kover> 13 days ago
+65caf12 : Settings: Meet BYOD check intent filter expectations. <Adnan Begovic> 3 weeks ago
+4c9531d : Settings : Fix back button for sim card lock <Danesh M> 2 weeks ago
+7cbb33c : Settings: Set back default clear all button color when switch is off - Now uses default theme resources colors when switch is off <westcripp> 13 days ago
+a71ab78 : Settings:Clean Up StatusBar Colors[2/2] <Varun> 13 days ago
+9d06d52 : Fix recents membar and Fab button default color issue <westcripp> 13 days ago
+ebb44fe : Settings: StatusBar Colors Switch [2/2] <varund7726> 13 days ago
+0af592b : Statusbar icon color [2/2] <XXMrHyde> 13 days ago
+4a2e4ce : Settings: recents Clean up FAB animations[2/2] <varund7726> 2 weeks ago
+a7baf5d : Settings:Recents FAB animations[2/2] <varund7726> 2 weeks ago
+2fdeaa9 : [1/2] Settings: Add lockscreen rotation as an optional rotation setting Based on : <yank555-lu> 2 weeks ago
+bab70de : Configurable Dashboard Switches [1/2] <Alex Cruz> 2 weeks ago
+1793840 : Settings: More Recents Buttons and Colors[2/2] <varund7726> 2 weeks ago
+ 
+**** cmR:android_packages_apps_SetupWizard ****
+5e98f96 : disabled cm navigationbar and enabled slim navigationbar and hardware keys <ZION959> 5 days ago
+2009ae2 : Automatic translation import <Michael Bestas> 9 days ago
+c31682d : cm to cmremix <ZION959> 12 days ago
+5407a3c : add CMRemix icons and brand <ZION959> 12 days ago
+8104310 : Themes: Refactor themes to CMSDK [6/6] <d34d> 3 weeks ago
+ca63326 : SetupWizard: Modify intent for CaptivePortalLogin <cretin45> 2 weeks ago
+01e57cd : Automatic translation import <Michael Bestas> 3 weeks ago
+ 
+**** cmR:android_packages_apps_Snap ****
+0ad0216 : Snap: Do not crash when cur-focus-scale is null <LuK1337> 2 weeks ago
+b38ff9e : lets build camera2 also <ZION959> 6 days ago
+43b3ae8 : Automatic translation import <Michael Bestas> 9 days ago
+2d0a116 : Snap: Fix filtering of unsupported HFR/HSR modes <Michael Bestas> 4 weeks ago
+b74262c : SnapdragonCamera: Fix HSR recording <Sultanxda> 7 weeks ago
+6707dc2 : SnapdragonCamera: Fix timelapse recording <Sultanxda> 4 months ago
+a4c4f8f : SnapdragonCamera: Enable audio recording for HSR videos <Sultanxda> 4 months ago
+61ba5d8 : Snap: Fix incorrect preview layout surface size in landscape mode <Nikita> 3 weeks ago
+84f7004 : Revert "Snap: Support 1:1 aspect ratio" <Arne Coucheron> 4 weeks ago
+d87916d : SnapdragonCamera: Fix highlight after rotating device <Byunghun Jeon> 8 weeks ago
+208ba64 : Snap: Cleanup flash icons <Michael Bestas> 4 weeks ago
+2c11a50 : Snap: Don't crash if user saved preference is not valid <Gabriele M> 4 weeks ago
+b3da3b5 : SnapdragonCamera: Scale up bitrate for HSR recordings <Sultanxda> 4 months ago
+633c248 : SnapdragonCamera: Remove bitrate and framerate scaling for HFR <Sultanxda> 10 weeks ago
+582df7f : Snap: Remove face detection option if not supported <Arne Coucheron> 3 weeks ago
+2aafd3f : Automatic translation import <Michael Bestas> 3 weeks ago
+3035516 : Snap: fix camera hang on LGE G4 when flash got used <codeworkx> 3 weeks ago
+fdc4cbc : Snap: Remove video snapshot size when not supported <Michael Bestas> 4 weeks ago
+059975b : Snap: Remove auto HDR option when not supported <Michael Bestas> 3 weeks ago
+ed00428 : camera: Keep touch focus intact during back-to-back ZSL shots <Steve Kondik> 2 years, 3 months ago
+ 
+**** github:CyanogenMod/android_packages_apps_SoundRecorder ****
+ef9e243 : Automatic translation import <Michael Bestas> 9 days ago
+ae80482 : Automatic translation import <Michael Bestas> 3 weeks ago
+3f8c315 : SoundRecorder: use sane bit operations <Scott Mertz> 4 weeks ago
+493a907 : SoundRecorder: fix menu behavior on devices with hardware menu button <Scott Mertz> 4 weeks ago
+ 
+**** github:CyanogenMod/android_packages_apps_SpeechRecorder ****
+d97c587 : Remove SpeechRecorder from clockwork eng builds. <Marco Loaiza> 5 months ago
+ 
+**** github:CyanogenMod/android_packages_apps_Stk ****
+cd94f37 : Automatic translation import <Michael Bestas> 9 days ago
+ 
+**** github:CyanogenMod/android_packages_apps_Tag ****
+8e7f84f : Automatic translation import <Michael Bestas> 9 days ago
+ 
+**** github:CyanogenMod/android_packages_apps_Terminal ****
+44cbc9a : Automatic translation import <Michael Bestas> 9 days ago
+d029cb4 : Automatic translation import <Michael Bestas> 3 weeks ago
+ 
+**** github:CyanogenMod/android_packages_apps_ThemeChooser ****
+4366f66 : ThemeChooser: update icon <Dave Kover> 7 weeks ago
+4adc638 : Automatic translation import <Michael Bestas> 9 days ago
+de9323a : Themes: Refactor themes to CMSDK [5/6] <d34d> 3 weeks ago
+6a06140 : Automatic translation import <Michael Bestas> 3 weeks ago
+ac66e05 : ThemeChooser: update preview packages names <jrizzoli> 7 weeks ago
+ 
+**** github:CyanogenMod/android_packages_apps_Trebuchet ****
+e48ef94 : Trebuchet: Guard against NPE while querying for widget updates <cretin45> 5 days ago
+0a244ba : Trebuchet: Highlight section being touched even when not scrolling scrubber <cretin45> 5 days ago
+ff12f71 : Automatic translation import <Michael Bestas> 9 days ago
+1cd4587 : Trebuchet: Handle random crash during theme change / user switch <cretin45> 13 days ago
+c5454ec : Trebuchet: Scale icons in portrait if using condensed grid <cretin45> 13 days ago
+1acee18 : Trebuchet: re-enable rotation by default on tablets <Andreas Blaesius> 3 weeks ago
+3e6ed3e : Trebuchet: Featured Apps uses themed composed icons and responds to theme changes <Tyson Miller> 4 weeks ago
+b4ff2a9 : Automatic translation import <Michael Bestas> 3 weeks ago
+2c29ac6 : Import translations. DO NOT MERGE <Baligh Uddin> 1 year, 7 months ago
+c81b061 : Import translations. DO NOT MERGE <Baligh Uddin> 1 year, 8 months ago
+c1ac011 : Import translations. DO NOT MERGE <Baligh Uddin> 1 year, 8 months ago
+8140396 : Import translations. DO NOT MERGE <Baligh Uddin> 1 year, 9 months ago
+01614d6 : Import translations. DO NOT MERGE <Baligh Uddin> 1 year, 10 months ago
+c4d66cf : Import translations. DO NOT MERGE <Baligh Uddin> 1 year, 11 months ago
+ 
+**** github:CyanogenMod/android_packages_apps_UnifiedEmail ****
+a9dcd82 : Automatic translation import <Michael Bestas> 9 days ago
+94099d2 : Automatic translation import <Michael Bestas> 3 weeks ago
+ 
+**** cmR:android_packages_inputmethods_LatinIME ****
+bdf269e : Automatic translation import <Michael Bestas> 9 days ago
+8c1cd30 : Don't interrupt active gesture input by modifier key presses. <Danny Baumann> 7 weeks ago
+f6d1c5f : Import translations. DO NOT MERGE <Geoff Mendal> 3 months ago
+fdbd6fe : Import translations. DO NOT MERGE <Geoff Mendal> 4 months ago
+888712e : Import translations. DO NOT MERGE <Geoff Mendal> 4 months ago
+6cca573 : Import translations. DO NOT MERGE <Geoff Mendal> 4 months ago
+006c30a : Import translations. DO NOT MERGE <Geoff Mendal> 4 months ago
+76218d9 : Import translations. DO NOT MERGE <Geoff Mendal> 4 months ago
+7674a65 : Unicode 8.0 emoji additions to Google Keyboard. <Chieu Nguyen> 4 months ago
+4de1e22 : Import translations. DO NOT MERGE <Geoff Mendal> 4 months ago
+e1d5012 : Revert "Unicode 8.0 emoji changes to Google Keyboard." <Ian Pedowitz> 4 months ago
+354d009 : Revert "Add description strings for Unicode 8.0 new emoji." <Ian Pedowitz> 4 months ago
+9cc4254 : Unicode 8.0 emoji changes to Google Keyboard. <Chieu Nguyen> 4 months ago
+332181b : Add description strings for Unicode 8.0 new emoji. <Chieu Nguyen> 4 months ago
+ 
+**** github:CyanogenMod/android_packages_providers_BookmarkProvider ****
+0093d70 : Automatic translation import <Michael Bestas> 9 days ago
+ 
+**** github:CyanogenMod/android_packages_providers_CalendarProvider ****
+5db71f6 : Automatic translation import <Michael Bestas> 9 days ago
+9b2d8e1 : Work on issue #25467052: System lagged out <Dianne Hackborn> 4 months ago
+ 
+**** github:CyanogenMod/android_packages_providers_CallLogProvider ****
+80d18d1 : Automatic translation import <Michael Bestas> 9 days ago
+ 
+**** github:CyanogenMod/android_packages_providers_ContactsProvider ****
+3b52dc7 : ContactsProvider : Hard code group resource ids <Danesh M> 2 days ago
+65e4ac5 : Automatic translation import <Michael Bestas> 9 days ago
+4417d18 : Don't suspend aggregation for new contacts <Gabriele M> 2 weeks ago
+59af846 : Update directories when initializing ContactsProvider. <Tingting Wang> 3 months ago
+99ccd51 : Remove extra logging with privacy info DO NOT MERGE <Chenjie Luo> 8 months ago
+ 
+**** github:CyanogenMod/android_packages_providers_DownloadProvider ****
+483b755 : Automatic translation import <Michael Bestas> 9 days ago
+c9f3201 : Automatic translation import <Michael Bestas> 3 weeks ago
+616188b : Revert "Use resolved path for both checking and opening." <Jeff Sharkey> 7 weeks ago
+6947a09 : Revert "Use resolved path for both checking and opening." <Jeff Sharkey> 8 weeks ago
+5accb13 : Use resolved path for both checking and opening. <Jeff Sharkey> 9 weeks ago
+5c08fb8 : Use resolved path for both checking and opening. <Jeff Sharkey> 9 weeks ago
+bdc8313 : Use resolved path for both checking and opening. <Jeff Sharkey> 9 weeks ago
+8fbf120 : Use resolved path for both checking and opening. <Jeff Sharkey> 9 weeks ago
+6608eb8 : Use resolved path for both checking and opening. <Jeff Sharkey> 9 weeks ago
+366af2e : Use resolved path for both checking and opening. <Jeff Sharkey> 9 weeks ago
+ 
+**** github:CyanogenMod/android_packages_providers_MediaProvider ****
+8a3b33c : Automatic translation import <Michael Bestas> 9 days ago
+ 
+**** github:CyanogenMod/android_packages_providers_TelephonyProvider ****
+490b1b0 : Automatic translation import <Michael Bestas> 9 days ago
+cecbabc : Try-catch for deletePreferredApnId() <Amit Mahajan> 4 months ago
+ 
+**** github:CyanogenMod/android_packages_providers_ThemesProvider ****
+68b1a55 : Automatic translation import <Michael Bestas> 9 days ago
+43532de : Themes: Refactor themes to CMSDK [4/6] <d34d> 3 weeks ago
+a163818 : Automatic translation import <Michael Bestas> 3 weeks ago
+ 
+**** github:CyanogenMod/android_packages_providers_UserDictionaryProvider ****
+7376fff : Automatic translation import <Michael Bestas> 9 days ago
+ 
+**** github:CyanogenMod/android_packages_screensavers_Basic ****
+881cdda : Automatic translation import <Michael Bestas> 9 days ago
+ 
+**** github:CyanogenMod/android_packages_screensavers_PhotoTable ****
+4310098 : Automatic translation import <Michael Bestas> 9 days ago
+ 
+**** cmR:android_packages_services_Telecomm ****
+81999fd : Implement call waiting answer options dialog <Martin Brabham> 3 weeks ago
+6862630 : Automatic translation import <Michael Bestas> 9 days ago
+c35dc89 : Automatic translation import <Michael Bestas> 3 weeks ago
+818a79f : Import translations. DO NOT MERGE <Geoff Mendal> 3 months ago
+f1c1679 : DO NOT MERGE Add timer to make in-call ui reflect bluetooth state <Hall Liu> 4 months ago
+65f3b56 : Import translations. DO NOT MERGE <Geoff Mendal> 3 months ago
+7f03f5e : Import translations. DO NOT MERGE <Geoff Mendal> 3 months ago
+beb1b42 : Import translations. DO NOT MERGE <Geoff Mendal> 3 months ago
+0a9cfab : Revert string resource to previous version. <Tyler Gunn> 3 months ago
+18ceebc : Fix log type used for logging silence. <Bryce Lee> 3 months ago
+0da5fa4 : DO NOT MERGE ANYWHERE <Bryce Lee> 3 months ago
+6d96252 : Notify connections when the ringer is silenced. <Bryce Lee> 3 months ago
+88f900a : Make rerouting audio to speaker when docked configurable. <Bryce Lee> 4 months ago
+7bab665 : Fix log message for phone-account unregistration. <Bryce Lee> 5 months ago
+7d53dd2 : Broadcast when a phone account is unregistered. <Bryce Lee> 5 months ago
+6afefa4 : Account for scheme when checking if we can handle a call. <Bryce Lee> 5 months ago
+de0ac37 : Disconnect calls when there is no call capable account available. <Bryce Lee> 5 months ago
+a0bb705 : Handle emergency only phone accounts. <Bryce Lee> 5 months ago
+5a6441d : Do not ring in theater mode. <Wei Liu> 6 months ago
+ddd966e : Properly route rejection reply when capability is set. <Bryce Lee> 7 months ago
+6134090 : Only add callback into missed call notification with non-null handle. <Bryce Lee> 7 months ago
+41045b4 : Allow a custom component to receive notification of missed call. <Bryce Lee> 7 months ago
+ 
+**** cmR:android_packages_services_Telephony ****
+df6ddbe : Fix "multi-sim: fallback on active subId on emergency calls" <Abhisek Devkota> 2 days ago
+1b895dd : telephony: Move COLP definition to android settings. <Adnan Begovic> 3 days ago
+2f06ab7 : multi-sim: fallback on active subId on emergency calls <Francis Guevarra> 4 days ago
+773cab5 : Allow to ignore presentation indicator of outgoing calls [3/3] <Gabriele M> 10 days ago
+511fbb2 : Automatic translation import <Michael Bestas> 9 days ago
+fe6c190 : Make voicemail notifications dismissable on all carriers <beanstown106> 5 months ago
+fede11c : Show 4G instead of LTE switch (Telephony part) <jereksel> 6 weeks ago
+f49d367 : Telephony: Intrusive InCall UI switch [2/2] <Victor Lapin> 2 weeks ago
+528ca37 : Flip to Mute/Reject Call [2/3] <Lars Greiss> 2 months ago
+0b3b6e9 : Automatic translation import <Michael Bestas> 3 weeks ago
+0d95258 : DO NOT MERGE Make android.intent.action.EMERGENCY_CALL_STATE_CHANGED protected <Amit Mahajan> 9 weeks ago
+18f85e2 : Import translations. DO NOT MERGE <Geoff Mendal> 9 weeks ago
+d0a745c : Fix potential ClassCastException. <Tyler Gunn> 9 weeks ago
+cfc2d35 : getPreferredNetworkType should return int[] instead of -1 on error. <Sanket Padawe> 10 weeks ago
+ca74014 : Import translations. DO NOT MERGE <Geoff Mendal> 3 months ago
+79be28d : Import translations. DO NOT MERGE <Geoff Mendal> 3 months ago
+59cacee : Post updateExtras to handler to avoid potential concurrency issue. <Tyler Gunn> 4 months ago
+b1a2824 : Import translations. DO NOT MERGE <Geoff Mendal> 3 months ago
+5ccda61 : Remove BluetoothManager. <Bryce Lee> 3 months ago
+6f9f5c0 : Remove TDSCDMA-only menu <Sungmin Choi> 4 months ago
+5ca7a9b : Import translations. DO NOT MERGE <Geoff Mendal> 4 months ago
+2dad7c6 : Import translations. DO NOT MERGE <Geoff Mendal> 4 months ago
+edb2cb1 : Revert "Ensure sim contacts import screen supports rotation." <Tyler Gunn> 4 months ago
+831ff85 : Import translations. DO NOT MERGE <Geoff Mendal> 4 months ago
+06f2ca3 : Ensure connection extras are propagated on start of call. <Tyler Gunn> 5 months ago
+2c8b258 : Allow for PSTN accounts to be marked as not emergency call capable. <Bryce Lee> 5 months ago
+779841a : Fixes Telephony ProgressDialog to use system theme <Alex Hills> 5 months ago
+04bcb68 : Unregister emergency only telephony phone accounts. <Bryce Lee> 5 months ago
+38c19ab : Mark emergency accounts with the correct capability for wear. <Bryce Lee> 5 months ago
+be96458 : Make the intent of network operator settings notification configurable. <Wei Liu> 7 months ago
+10f9aff : NetworkQueryService.onBind() should not return LocalBinder unless the intent has action ACTION_LOCAL_BINDER. <Wei Liu> 7 months ago
+5dc9084 : Add redirection of voicemail notification to a custom component. <Bryce Lee> 7 months ago
+aa5a84b : Add configuration flag for disabling visual voicemail. <Bryce Lee> 7 months ago
+9eab038 : Move the SIM state check to the Telephony package. <Wei Liu> 8 months ago
+ 
+**** github:CyanogenMod/android_packages_wallpapers_Basic ****
+d6cd7cb : Automatic translation import <Michael Bestas> 9 days ago
+ 
+**** github:CyanogenMod/android_packages_wallpapers_LivePicker ****
+14d171f : Automatic translation import <Michael Bestas> 9 days ago
+ 
+**** github:CyanogenMod/android_packages_wallpapers_MagicSmoke ****
+b70c3d5 : Automatic translation import <Michael Bestas> 9 days ago
+ 
+**** github:CyanogenMod/android_packages_wallpapers_PhaseBeam ****
+ee994ec : Automatic translation import <Michael Bestas> 9 days ago
+ 
+**** github:CyanogenMod/android_packages_wallpapers_PhotoPhase ****
+314b93b : Automatic translation import <Michael Bestas> 9 days ago
+c7c0742 : Automatic translation import <Michael Bestas> 3 weeks ago
+ 
+**** aosp:platform/platform_testing ****
+e34a2bf : YouTube jank test fix <Ashita Sriraman> 8 weeks ago
+5cc2d27 : Added Automated User Profile Test runner <Guang Zhu> 8 weeks ago
+d7e8f0d : Bringup System app Jank tests for clockwork. Updated MIN frames and some code clean up. <vijaym> 3 months ago
+13a6c45 : move UbSystemUiJankTests to open source location <Guang Zhu> 3 months ago
+a794ccf : Remove reference to UiObjectNotFoundException that are never thrown <Guang Zhu> 3 months ago
+9b88fdf : Fixes wakeup issue on some of the wear devices <Kevin Neas> 3 months ago
+ebf81a4 : UiBench Jank Tests adapted for clockwork <Kevin Neas> 4 months ago
+54ed832 : Revert "UiBenchJankTests for Wear." <Kevin Neas> 4 months ago
+0db51d1 : UiBenchJankTests for Wear. <Kevin Neas> 4 months ago
+5581e68 : test improvement: dump window hierarchy line by line <Guang Zhu> 4 months ago
+ 
+**** github:CyanogenMod/android_prebuilts_cmsdk ****
+7b8b4c8 : prebuilts/cmsdk: Remove COLP definitions. <Adnan Begovic> 3 days ago
+ 
+**** aosp:platform/prebuilts/gradle-plugin ****
+e5300c3 : Add newest gradle plugin. <android-devtools-build> 8 weeks ago
+9ed6726 : Add gradle plugin 2.0.0-alpha3. <android-devtools-build> 3 months ago
+ 
+**** aosp:platform/prebuilts/maven_repo/android ****
+f2983ee : Add 2-way data binding prebuilts (v 1.1) <George Mount> 8 weeks ago
+12b26c4 : Support library 23.1.1 <Chris Flatt> 4 months ago
+ 
+**** aosp:platform/prebuilts/misc ****
+c2e2a81 : Update sdk-common prebuilt <Diego Perez> 5 months ago
+788f879 : Update UiAutomator prebuilt with tool type support. am: e97ddac5cb am: a2e2cb8e96 am: e060cfa38d <Allen Hair> 5 months ago
+ 
+**** cmR:android_prebuilts_ndk ****
+44612e0 : NDK: Make compatible with Clang 3.9 <mydongistiny> 4 weeks ago
+b67cf98 : NDK: More files for clang 3.7+ compatibility <mydongistiny> 10 weeks ago
+388a267 : NDK: Make compatible with Clang 3.7 and 3.8 <Joe Maples> 3 months ago
+c61df37 : Hack to get GCC 5.3 to work with NDK. <mydongistiny> 3 months ago
+ba3c567 : Hack to get GCC 6.0 to work with NDK. <mydongistiny> 6 months ago
+78afacf : Hack to get GCC 5.2 to work with NDK. <mydongistiny> 8 months ago
+ede1c08 : revert: clang Qcom 3.7 compatibility <ZION959> 3 weeks ago
+ 
+**** aosp:platform/prebuilts/qemu-kernel ****
+c4fbb41 : Update x86 and x86_64 kernel images [DO NOT MERGE] automerge: baaba1db6d  -s ours automerge: 1e01450b8b  -s ours automerge: 25a197bba5  -s ours automerge: 805d4ae347  -s ours automerge: 162077fe89  -s ours <Jin Qian> 6 months ago
+ 
+**** aosp:platform/prebuilts/sdk ****
+73b3e19 : [RenderScript] Update prebuilts to avoid absolute path loading .so after M am: e68bfd67f9 am: bf1e157db5 <Miao Wang> 8 weeks ago
+668681e : DO NOT MERGE: Update RenderScript support lib prebuilts for buildTools. am: b5261ec912 am: 632c6f20b1 am: 2354438e1a <Miao Wang> 4 months ago
+ 
+**** aosp:platform/prebuilts/tools ****
+a0512e4 : Merge "Update api-generator prebuilt" into mnc-ub-dev <Tor Norbye> 7 months ago
+ 
+**** github:CyanogenMod/android_system_bt ****
+5db0f54 : l2cap: ifdef checks for BLE_INCLUDED <Shantur Rathore> 3 weeks ago
+04e4c54 : Additional headsets blacklisted for absolute volume <tturney> 7 weeks ago
+ed1563b : Fix crashes with lots of discovered LE devices <Marie Janssen> 3 months ago
+79dc36d : Do not send AT+CHLD=? if the 3-way call feature is not supported <Devin Kim> 9 weeks ago
+a8bb3ae : DO NOT MERGE ANYWHERE Disable 3Mbps packets for AVDT ACL links <Sathya Kumar> 9 weeks ago
+39f2d63 : Per Motorola, we're going to revert this change and submit Moto-specific code for this. <Sharvil Nanavati> 9 weeks ago
+5707038 : Offload config save functionality to BTIF thread <Srinu Jella> 3 months ago
+dc0909c : Additional headsets blacklisted for absolute volume <Andre Eisenbach> 9 weeks ago
+26bb308 : Disable 3Mbps packets for AVDT ACL links <Sathya Kumar> 9 weeks ago
+420dfac : A2DP task media alarm non-null protection <Ajay Panicker> 10 weeks ago
+b32b3d7 : Fix bug where a bonded device could enter BONDING and BONDED states again. <Sharvil Nanavati> 10 weeks ago
+7bc89ee : Fix crash in HFP client's +COPS parsing code. <Sharvil Nanavati> 10 weeks ago
+61b8ebf : Only send first 16 characters of operator name in +COPS. <Sharvil Nanavati> 10 weeks ago
+a8ace38 : Fix crashes with lots of discovered LE devices <Marie Janssen> 3 months ago
+05419c8 : Fix crashes with lots of discovered LE devices <Marie Janssen> 3 months ago
+bef3492 : DO NOT MERGE Blacklist devices for absolute volume control <Andre Eisenbach> 3 months ago
+22c5f47 : Revert "Blacklist devices for absolute volume control" <Ian Pedowitz> 3 months ago
+2c8897c : Blacklist devices for absolute volume control <Andre Eisenbach> 3 months ago
+786a7e5 : DO NOT MERGE ANYWHERE net_test_bluetooth: replace with gtest variant <Scott James Remnant> 4 months ago
+9b0aa81 : Fix absolute volume reporting if AVRC_ADV_CTRL_INCLUDED is false <Sharvil Nanavati> 3 months ago
+198abcd : Fix BT connection failures <Devin Kim> 3 months ago
+e52633c : DO NOT MERGE ANYWHERE: osi: Remove error_fclose goto and redundant fflush. <Alain Vongsouvanh> 3 months ago
+02f35e6 : DO NOT MERGE ANYWHERE: Add file write error checks to config_save <Amadeusz Slawinski> 4 months ago
+797ac5e : DO NOT MERGE ANYWHERE Rename gtest_net_test_bluedroid to gtest_net_test_bluetooth. <Joshua Schwarz> 3 months ago
+17e048f : DO NOT MERGE Revert "A2DP SRC offload support" <Chris Elliott> 3 months ago
+a09c5aa : DO NOT MERGE Revert "Make default SBC bitrate configurable by device." <Chris Elliott> 3 months ago
+775667a : DO NOT MERGE Revert "Always send a SUSPEND_CFM event when suspended due to A2DP RECONFIGURE." <Chris Elliott> 3 months ago
+95004fd : Mark secure link as authenticated for LE <Andre Eisenbach> 4 months ago
+8b1c7af : Always send a SUSPEND_CFM event when suspended due to A2DP RECONFIGURE. <Sridhar Vashist> 7 months ago
+5f30839 : Make default SBC bitrate configurable by device. <Sridhar Vashist> 5 months ago
+6ff83ab : A2DP SRC offload support <Abhijit Adsule> 10 months ago
+ecb3b83 : Only initiate codec negotiation if feature is supported <Chenjie Luo> 4 months ago
+76d0401 : Fix broken test caused by misordered callback arguments. <Sharvil Nanavati> 4 months ago
+03d1711 : Always update remote address type during LE scan <Andre Eisenbach> 4 months ago
+7312c6d : Fix bug in SDP 128-bit UUID lookup <Andre Eisenbach> 4 months ago
+4da5ccf : Do not mask out secure connections (SC) bit for BT <4.2 <Andre Eisenbach> 4 months ago
+864e773 : Serialize remote version query over LE <Andre Eisenbach> 5 months ago
+b8cc54d : DO NOT MERGE Use POSIX timer API for wake alarms instead of OSI callouts. <Sharvil Nanavati> 6 months ago
+25efb50 : DO NOT MERGE Directly acquire wake locks from the Bluetooth stack. <Sharvil Nanavati> 7 months ago
+3f795d9 : Implementation of net_test_bluedroid as a GTest. <Joshua Schwarz> 7 months ago
+0fa8cd4 : Send current RPA instead of pseudo-address on connect. <Sharvil Nanavati> 7 months ago
+f060365 : Add a SCO routing command to net_hci. <Sharvil Nanavati> 8 months ago
+ 
+**** cmR:android_system_core ****
+3cc2ca8 : init: Add a hook to turn a shutdown into a reboot <Christopher R. Palmer> 3 days ago
+a41177e : init: Add property_get_bool <Christopher R. Palmer> 2 days ago
+36060dd : liblog: build log_event_write regardless of TARGET_USES_LOGD <Simon Shields> 4 days ago
+5a02b40 : revert: Allow SELinux to be disabled, set it to permissive by default <ZION959> 10 days ago
+73e251e : Add optional target-specific LD_PRELOAD to environment <David Ng> 12 days ago
+71f4da2 : revert: IPA tether: support for netlink event from ipa <ZION959> 3 weeks ago
+372f540 : sysutils: Hush logging <Steve Kondik> 6 months ago
+03aecc7 : IPA tether: support for netlink event from ipa <Nilesh Poddar> 12 months ago
+df144e9 : findParam: don't check empty param name <tobitege> 11 months ago
+f81fd9a : healthd: use timerfd if dev alarm not exist <Keith Mok> 3 weeks ago
+1724115 : fastboot: add 'fastboot update -a' argument <Khalid Zubair> 3 weeks ago
+515ea00 : fs_mgr: BLKGETSIZE causes memory corruption <Keith Mok> 4 weeks ago
+6fe2b6e : Software-accelerated Pixel Flinger <Chih-Wei Huang> 7 months ago
+4248ea7 : healthd: Reduce permissions needed for alarm tracking <Ethan Chen> 4 weeks ago
+eaac34d : healthd: Reboot to Android when off mode charger timer expires <Chao Chen> 4 weeks ago
+4ca66c4 : healthd: Separate power off alarm implementation into MSM specific HAL <Chao Chen> 4 weeks ago
+d2583c8 : healthd: Support alarm in power off charging mode <Matthew Qin> 1 year, 5 months ago
+ac5175f : [DO NOT MERGE] Use FUSE_SHORTCIRCUIT if available <Thierry Strudel> 9 weeks ago
+df2d782 : Mount debugfs earlier regardless build variant <Ching Tzung Lin> 9 weeks ago
+d31cb63 : Fix logspam from system-background cpuset. <Tim Murray> 3 months ago
+f7aad11 : Re-derive permissions after package changes. <Jeff Sharkey> 3 months ago
+2f18b54 : logcatd: up size from 16MB to 256MB <Alain Vongsouvanh> 5 months ago
+a53ec32 : DO NOT MERGE: add support for new sched tracepoint <Tim Murray> 3 months ago
+6eee56c : Improve cpuset support for surfaceflinger. <Tim Murray> 4 months ago
+5b0d59d : logcat: continue where we left off <Mark Salyzyn> 5 months ago
+f6891c0 : Add macro to call event logger for errors. <William Luh> 7 months ago
+9a86c28 : Add macro to call event logger for errors. DO NOT MERGE <William Luh> 7 months ago
+f34258f : Add macro to call event logger for errors. DO NOT MERGE <William Luh> 7 months ago
+4fd8210 : Add macro to call event logger for errors. DO NOT MERGE <William Luh> 7 months ago
+653316a : logd: pruning time horizon <Mark Salyzyn> 5 months ago
+36b24a4 : Remove __DATE__/__TIME__ from init and debuggerd <Dan Willemsen> 5 months ago
+d917514 : Fix incorrect check of descsz value. <Christopher Ferris> 5 months ago
+5b65f86 : Backport missing null check in "adb get-state". <Elliott Hughes> 6 months ago
+24f165f : Minimal fix for adb backup. <Elliott Hughes> 7 months ago
+ 
+**** github:CyanogenMod/android_system_extras ****
+e2534e3 : Fix showmap SIGSEGV. <Elliott Hughes> 3 months ago
+76617dd : librank: fix pm_memusage_t init and layout <Thierry Strudel> 3 months ago
+9f82eca : Showmap: show swap. <Martijn Coenen> 3 months ago
+08ea6e7 : procrank: add proportional swap accounting <Thierry Strudel> 4 months ago
+5e20c25 : procrank: Fix some printf alignements <Thierry Strudel> 4 months ago
+aa5a7df : Swap column in procrank not reported with swap enabled <Yu Liu> 9 months ago
+3c1f664 : DO NOT MERGE Update rand_emmc_perf makefile. <Joshua Schwarz> 5 months ago
+241ffaf : Prepare for BoringSSL update. <Adam Langley> 6 months ago
+2b28ca2 : Add a system tool - ANRdaemon <Zhengyin Qian> 9 months ago
+ 
+**** aosp:platform/system/gatekeeper ****
+3c4cbf7 : Add static gatekeeper library <Anand Prasad> 5 months ago
+ 
+**** github:CyanogenMod/android_system_keymaster ****
+ee62ff1 : Fix build failure caused by merge from DR. <Shawn Willden> 4 months ago
+6d7f048 : Return correct error from keymaster0engine for large RSA input <Shawn Willden> 5 months ago
+ 
+**** github:CyanogenMod/android_system_media ****
+30bf75b : Camera: update FPS range spec <Yin-Chia Yeh> 4 months ago
+0429269 : Camera: Documentation updates <Eino-Ville Talvala> 4 months ago
+ 
+**** github:CyanogenMod/android_system_security ****
+ddab0bb : Limit maximum number of concurrent keystore operations. <Shawn Willden> 5 months ago
+358bd11 : Prepare for BoringSSL update. <Adam Langley> 6 months ago
+ 
+**** github:CyanogenMod/android_system_vold ****
+cba83a9 : minivold: Use libblkid for readMetadata <Tom Marshall> 3 days ago
+ 
+**** github:CyanogenMod/android_vendor_cm ****
+8b0f16f : apns: fix build <Kasual> 2 days ago
+bc61d86 : apns: Add ATT Nextgenphone <Steve Kondik> 2 days ago
+73acac5 : Resolve Orange RO authtype <Abhisek Devkota> 2 days ago
+15c9ef4 : config: Lower the priority of vendor/cm overlays <Ricardo Cerqueira> 2 days ago
+6a04a23 : cm: Always verify against current CMSDK version. <Adnan Begovic> 3 days ago
+fd018d5 : Modify APN for Orange Romania <Evan Widger> 5 weeks ago
+8ab71a0 : vendor: Add maintainer for LG G3 (Sprint) (LS990) <Kasual> 11 days ago
+6f978dc : Add Z00T maintainers <LuK1337> 6 days ago
+fd28e9d : Include AmbientSDK artifact <Raj Yengisetty> 2 weeks ago
+651dd50 : cm: Create cmsdk coverage task. <Adnan Begovic> 10 days ago
+e7036e8 : Themes: Refactor themes to CMSDK [3/6] <d34d> 3 weeks ago
+7ad2824 : vendor: Add maintainers of OnePlus X (onyx) <Ashwin Ramesh> 3 weeks ago
+92b7259 : add yufone APN <Evan Widger> 3 weeks ago
+36cb29d : recovery: Add new rule for sys.usb.ffs.ready <AdrianDC> 5 weeks ago
+ec0322e : cm: sepolicy: allow kernel to read storage <FrozenCow> 9 weeks ago
+4a2f567 : init: add permissions for max_freq_hysteresis node <Dave Daynard> 8 weeks ago
+2880cc8 : apns: Net10 310410: Fix port <Matt Mower> 5 weeks ago
+ 
+**** cmR:android_vendor_CMRemix ****
+06a2f89 : vendor: release cmremix android 6.0.1_r22 <ZION959> 2 hours ago
+0a78297 : vendor: add prebuit.mk for cmremix support apps <ZION959> 2 hours ago
+250182b : android-6.0.1_r13 -> android-6.0.1_r17 <ZION959> 6 days ago
+a147842 : vendor: inherit linux sepolicy from CMRemix <ZION959> 6 days ago
+95fcb2d : vendor: DeviceControl: version 0.8.6.4 (146) (2/2) <ZION959> 8 days ago
+0d34d9d : vendor : Use 4 threads for dex2oat <ZION959> 11 days ago
+e9ed2b0 : vendor: update default wallpaper <ZION959> 13 days ago
+121eb1b : revert: vendor: logcat ftw <ZION959> 13 days ago
+053d71f : vendor: logcat ftw <ZION959> 2 weeks ago
+f0cb820 : vendor: update supersu to v2.68 <ZION959> 2 weeks ago
+639ddde : fixed dragontc version <ZION959> 2 weeks ago
+a803643 : vendor: update ls990 lg g3 dependencies <ZION959> 3 weeks ago
+159da19 : vendor: clean up and update products support <ZION959> 3 weeks ago
+191c73f : vendor: update viper <ZION959> 3 weeks ago
+fa4ba97 : revert: vendor: update mm 2.4.0.1 viper4android <ZION959> 3 weeks ago
+6ba7347 : vendor: add DragonTC version to buildprop <ZION959> 3 weeks ago
+2051b88 : revert: vendor: update sm config <ZION959> 3 weeks ago
+978d424 : vendor: trlte varients use sabermod gcc 5.3 for rom & 6.0 for kernel <ZION959> 3 weeks ago
+d0ee0b3 : vendor: update sm config <ZION959> 3 weeks ago
+48836f2 : vendor: update mm 2.4.0.1 viper4android <ZION959> 3 weeks ago
+ 
+**** cmR:cm_platform_sdk ****
+5e2d5a6 : CMSettings: Add VIBRATOR_INTENSITY setting <d34d> 2 days ago
+9714d7f : CMSettings: Add FEATURE_TOUCH_HOVERING <d34d> 2 days ago
+9f12465 : cmsdk: Minor string improvement <Michael Bestas> 2 days ago
+32788b0 : ExtViews: Guard against bad LLS providers <d34d> 5 days ago
+2f2d432 : Revert "Allow to ignore presentation indicator of outgoing calls [1/3]" <Adnan Begovic> 3 days ago
+f8d4978 : cmsdk: Fix resource name. <Adnan Begovic> 5 days ago
+6356c9b : cmsdk: Update README for release artifact numerics. <Adnan Begovic> 6 days ago
+b4eafda : cmsdk: Add PerformanceManager tests, Change target permission. <Adnan Begovic> 6 days ago
+7ed4fca : cmsdk: Keep generated java classes from aidl interfaces. <Adnan Begovic> 6 days ago
+c0bd6d0 : cmsdk: Clean up proguard flags. <Adnan Begovic> 6 days ago
+3a590c3 : Allow to ignore presentation indicator of outgoing calls [1/3] <Gabriele M> 9 days ago
+ff120fe : revert themes tile <ZION959> 9 days ago
+a4efc11 : Automatic translation import <Michael Bestas> 9 days ago
+f2fd836 : Update stubs to include cyanogenmod.themes package <d34d> 9 days ago
+873364c : cmsdk: Remove debugging from proguard. <Adnan Begovic> 9 days ago
+11a4d48 : Add missing WRITE_THEMES from cm_system-current <d34d> 9 days ago
+ba01275 : cmsdk: Strip unused cmsdk members for codecoverage. <Adnan Begovic> 10 days ago
+b3ea285 : Themes: Refactor themes to CMSDK [2/6] <d34d> 3 weeks ago
+567b430 : cmsdk: Add cyanogenmod.util to stubs and update API <Steve Kondik> 2 weeks ago
+8a25943 : cmsdk: Add device-specific strings <Michael Bestas> 3 weeks ago
+73fafc1 : cmsdk: Add touch gesture haptic feedback setting <Michael Bestas> 3 weeks ago
+6f3c30a : cmsdk: Factoring out color temperature to RGB conversion algorithm <Steve Kondik> 2 weeks ago
+5f29b66 : CMSettings: Add Always Quick PullDown <beanstown106> 3 weeks ago
+e3c9668 : cmsdk: send intent to intialize CMHW <Roman Birg> 3 weeks ago
+c2efaa7 : Uncomment out getHotwordPackageNameInternal impl <Matt Garnes> 3 weeks ago
+61afdc1 : PerformanceManager : Ensure we clear calling identity <Danesh M> 4 weeks ago
+9c902f8 : cmsdk: Update binder transaction tests for new interfaces. <Adnan Begovic> 3 weeks ago
+6c1aa2f : Automatic translation import <Michael Bestas> 3 weeks ago
+60a4ebc : cmsdk: insert dnd & edit tiles for 12.1 -> 13.0 upgrade <Roman Birg> 4 weeks ago
+ccce292 : cmsdk: Add sanity checks in ColorUtils <Steve Kondik> 3 weeks ago
+ 
+**** github:CMRemix/proprietary_vendor_samsung ****
+b53a97d : trlte-common: add missing drm file <placiano> 31 hours ago
+714a3a9 : update gps libs to fixed sprint no gps issues <ZION959> 3 days ago
+3ce4eca : trlte-common: fixed gps issue for sprint <ZION959> 4 days ago
+d04bfee : Fix date and time reset at every boot The issue of the reset of the date and time on every reboot was caused by mismanagement of the binary time daemon. When it is replaced by this new file the error is resolved. <placiano> 5 weeks ago
+6c1dd9f : trlte-common: update gps proprietary & moved gps proprietaty of all varients to trlte-common <ZION959> 12 days ago
+1e9dc24 : revert: trlte-common: Update missing audiofx blobs <ZION959> 2 weeks ago
+444b3c2 : trlte-common: add sensorhubs <ZION959> 2 weeks ago
+75ad918 : trlte-common: Update missing audiofx blobs <ZION959> 3 weeks ago
+2f40648 : trlte-common: update to shamu's adreno & widevine  driver for trlte varients <ZION959> 3 weeks ago
+56e8594 : Bring up to date <nicklovell23> 3 weeks ago
+ 
