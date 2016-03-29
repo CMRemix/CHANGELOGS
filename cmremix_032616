@@ -1,0 +1,129 @@
+
+**** cmR:CHANGELOGS ****
+19a3e3c : update last build changelog <ZION959> 5 hours ago
+ 
+**** cmR:android_build ****
+98c5358 : build: add "changelog" installclean logic <ZION959> 5 hours ago
+90844a2 : Revert "binary: Generate dummy rule for relocated protobuf headers" <Ricardo Cerqueira> 6 hours ago
+ 
+**** github:CMRemix/android_device_samsung_trlte-common ****
+897161b : trlte-common: import init.cmremix.rc <ZION959> 4 days ago
+b9e52be : klte-common: Fix for remove finger BUG <ljzyal> 6 days ago
+3615df4 : trlte-common: denoise in Snap by default <ZION959> 6 days ago
+0432355 : trlte-common: remove qcmediaplayer and tcmiface <Michael Wawrzyniak> 9 days ago
+fd022ca : trlte_common: update system.prop: gps configs, sap.conf, izat.conf, radio, wifi, qcom-common, nitz, init.qcom.rc <ZION959> 10 days ago
+b379f9a : revert: trlte-common: use cm gps hal <ZION959> 2 weeks ago
+af24171 : trlte-common: add  hardware/samsung/cmhw <ZION959> 2 weeks ago
+ 
+**** cmR:android_external_chromium-webview ****
+bca32f2 : Google Webview 50.0.2661.49 (arm64) <mydongistiny> 2 days ago
+3fb2d96 : Google Webview 50.0.2661.49 (arm) <mydongistiny> 2 days ago
+ 
+**** cmR:android_external_sqlite ****
+f0a835f : enable secure_delete by default <Daniel Micay> 11 months ago
+c495e0d : sqlite: upgrade to SQLite 3.11.1 <mydongistiny> 2 weeks ago
+ 
+**** cmR:android_frameworks_base ****
+2cde8a4 : LagFix failed attempt #1: Don't set any transparency if it's set to default value <LorDClockaN> 3 days ago
+4bda559 : SystemUI improvements - Patch #3 - Update maps and remove children,views after the recreate statusbar will fix the observers and functions .that makes intens progress more smoother after remove views and childs . and avoild many known issues (like resets fling logo color) after every recreatestatusbar and fixes more issus like this . - Fix keyguard UI refresh issues when device is sleeping - Added helper for keyguard to clear all views to avoild the lag after device is wake up from the deepsleep <westcripp> 62 minutes ago
+9c3b08e : Fix weather items npe <beanstown106> 2 hours ago
+223a2bc : set default journal mode to TRUNCATE, not PERSIST <Daniel Micay> 2 days ago
+0fa6444 : SystemUI: attach a queue to media player notifications <Roman Birg> 5 hours ago
+1e20377 : Enable shader cache for applications that shared UID with multiple packages too <Shuo Gao> 4 weeks ago
+ 
+**** github:CyanogenMod/android_hardware_qcom_audio ****
+9828fdc : post_proc: Squash upstream changes <wjiang> 2 years ago
+ 
+**** github:CyanogenMod/android_hardware_qcom_fm ****
+b1bfaea : Reset FM audio settings on off. <Rupesh Tatiya> 4 weeks ago
+aae515a : Add two new callbacks for FM start/stop. <Rupesh Tatiya> 4 weeks ago
+7ea733e : Restore default wired headset on FM power off <Rupesh Tatiya> 7 weeks ago
+525a5c6 : Update mute API usage to fix pops and consistency <Dhananjay Kumar> 9 weeks ago
+4df923a : Need to update UI in onResume though fmservice not bound <Mingbo Zhang> 7 weeks ago
+1fb70c3 : Do not disable FM receiver on Music Service commands <Rupesh Tatiya> 8 weeks ago
+9106d4e : Disable/enable radio on factory reset <Rupesh Tatiya> 8 weeks ago
+ef247c4 : Request for audio focus on activity resume <Rupesh Tatiya> 9 weeks ago
+8f2d9e0 : Check for audio focus before enabling audio path <Rupesh Tatiya> 8 weeks ago
+e48b2e6 : Stop recording only if its storage is unmounted <Rupesh Tatiya> 10 weeks ago
+daaa11b : Change value of mSpeakerPhoneOn when BT becomes on or off <juncao> 3 months ago
+6706ef9 : Reset notch filter only if it is set. <Rupesh Tatiya> 2 months ago
+10d0ec6 : FM: Fix ANR due to incorrect error handling in stopRecording <Dibyendu Roy> 4 months ago
+97cca41 : FM: stop AudioTrack before switching output device <kexiao> 3 months ago
+d7dd054 : Change FM off button to release media and audio resources. <Rupesh Tatiya> 5 months ago
+a8ad0bd : fmapp2: de-select A2DP audio route on A2DP disconnection. <Rupesh Tatiya> 4 months ago
+63e7e75 : fmapp2: Allow switching between wired and Bluetooth headset <Rupesh Tatiya> 4 months ago
+40a5d4b : FM: Regional requirement for FM <Xuebo Li> 5 months ago
+bd28479 : Revert "FMRecorder : Save to a private temporary file while recording" <Xuebo Li> 5 months ago
+28adb84 : FM: update fm app to use device loopback <Dhananjay Kumar> 5 months ago
+ 
+**** github:CyanogenMod/android_hardware_qcom_media ****
+1f27f2c : Revert "mm-video-v4l2: vidc: venc: Update color conversion decision" <Srinu Gorle> 8 months ago
+b2df30f : mm-video-v4l2: venc: Accept Venus color format in opaque mode <Praveen Chavan> 1 year, 3 months ago
+d44cb37 : mm-video-v4l2: vidc: venc: Update color conversion decision <Ashray Kulkarni> 1 year, 2 months ago
+b564be7 : mm-video-v4l2: vidc: venc: make color conversion independent of filledlen <Praneeth Paladugu> 1 year, 3 months ago
+838db82 : mm-video-vidc: change buffer index logic in EBD <Pushkaraj Patil> 1 year, 2 months ago
+ 
+**** github:CyanogenMod/android_hardware_samsung ****
+a6d5bd7 : Move Advanced Display so exynos5/7 can use it <deadman96385> 5 days ago
+ 
+**** github:CyanogenMod/android_packages_apps_AudioFX ****
+bf30e5b : audiofx: Add support for session callback API <Steve Kondik> 3 days ago
+ 
+**** github:CyanogenMod/android_packages_apps_DeskClock ****
+b30c145 : Revert "Import translations. DO NOT MERGE" <Geoff Mendal> 9 months ago
+ 
+**** github:CyanogenMod/android_packages_apps_FMRadio ****
+6cd7a60 : FMRadio: Immediately mute AudioTrack once stopRender is called <Ethan Chen> 33 hours ago
+c2c2cbf : FMRadio: Pause and stop AudioTrack before stopping <Ethan Chen> 33 hours ago
+4711f65 : FMRadio: Run render thread at THREAD_PRIORITY_AUDIO <Ethan Chen> 33 hours ago
+ 
+**** github:CyanogenMod/android_packages_apps_LockClock ****
+00c55e0 : ForecastActivity: Display over lockscreen <Stephen Bird> 7 months ago
+ 
+**** cmR:android_packages_apps_Settings ****
+ba1a643 : Add kcal to display <Pafcholini> 5 hours ago
+ 
+**** cmR:android_packages_apps_SetupWizard ****
+4da02b0 : SetupWizard: Update for themes api changes. <Adnan Begovic> 16 hours ago
+ 
+**** github:CyanogenMod/android_packages_apps_ThemeChooser ****
+bc079ea : ThemeChooser: Update for Theme api changes. <Adnan Begovic> 16 hours ago
+ 
+**** github:CyanogenMod/android_packages_apps_Trebuchet ****
+c8e0058 : Ignore tap below scrubber in the app container padding area <Kamaljeet Maini> 8 days ago
+e812052 : Trebuchet: Fix NPE while binding unavailable items <cretin45> 2 days ago
+ 
+**** github:CyanogenMod/android_packages_providers_ThemesProvider ****
+e7d94a6 : ThemesProvider: Update for themes api changes. <Adnan Begovic> 16 hours ago
+ 
+**** github:CyanogenMod/android_prebuilts_cmsdk ****
+5a08d04 : prebuilts/cmsdk: Update themes api text. <Adnan Begovic> 15 hours ago
+ 
+**** cmR:android_system_core ****
+26bc3e9 : sched_policy: split add_tid_to_cgroup <Pat Erley> 3 days ago
+bc667ac : sched_policy: Split cpuset/cgroup init <Pat Erley> 8 days ago
+266e3dd : libcutils: Add process name to logs <Pat Erley> 8 days ago
+8b964f3 : libcutils: make sched_policy more robust <Pat Erley> 8 days ago
+ 
+**** github:CyanogenMod/android_vendor_cm ****
+7877680 : cm: Introduce partner feature xml. <Adnan Begovic> 14 hours ago
+37e59c1 : cm: Introduce performance feature xml. <Adnan Begovic> 14 hours ago
+0edc641 : cm: Introduce telephony feature xml. <Adnan Begovic> 33 hours ago
+7ff86fa : cm: Introduce appsuggest feature xml. <Adnan Begovic> 33 hours ago
+78a12ed : cm: Introduce profiles feature xml. <Adnan Begovic> 10 days ago
+14768c4 : cm: Introduce statusbar feature xml. <Adnan Begovic> 11 days ago
+ 
+**** cmR:cm_platform_sdk ****
+b271dcf : cmsdk: Mandate partner feature xml's for service implementation. <Adnan Begovic> 14 hours ago
+279ce42 : cmsdk: Mandate performance feature xml's for service implementation. <Adnan Begovic> 14 hours ago
+ccdb292 : cmsdk: Mandate themes feature xml's for service implementation. <Adnan Begovic> 33 hours ago
+c406211 : cmsdk: Mandate telephony feature xml's for service implementation. <Adnan Begovic> 33 hours ago
+fe7fd1d : cmsdk: Mandate app suggest feature xml's for service implementation. <Adnan Begovic> 33 hours ago
+21a5674 : cmsdk: Mandate profile feature xml's for service implementation. <Adnan Begovic> 10 days ago
+cdf85ad : cmsdk: Mandate cm sb feature xml's for service implementation. <Adnan Begovic> 11 days ago
+1bf0cf2 : cmsdk: fix javadoc for performance profiles <Roman Birg> 8 days ago
+ 
+**** github:TheMuppets/proprietary_vendor_lge ****
+738730f : bullhead: Remove audio libs and stray binaries <Steve Kondik> 16 hours ago
+d18db45 : bullhead: MHC19J <Jake Whatley> 3 weeks ago
+ 

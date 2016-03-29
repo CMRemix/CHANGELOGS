@@ -1,0 +1,268 @@
+
+**** cmR:CMRemix ****
+a5aa9df : track cmremix's packages/providers/MediaProvider <ZION959> 41 minutes ago
+355f44f : revert: revert: track external/chromium-webview <ZION959> 3 hours ago
+50571f8 : revert: track external/chromium-webview <ZION959> 3 hours ago
+da5dc4f : revert: track cmremix external/v8 <ZION959> 15 hours ago
+3863b28 : track cmremix external/v8 <ZION959> 15 hours ago
+ 
+**** github:CyanogenMod/android_bootable_recovery ****
+17102a2 : ui: Also detect KEY_HOME <Michael Bestas> 8 hours ago
+ 
+**** cmR:android_build ****
+cebcc9b : build:Make sure to include WebViewGoogle if present <ZION959> 3 hours ago
+6bd8ccb : build: update cmremix optimization <ZION959> 17 hours ago
+ 
+**** aosp:platform/cts ****
+34bb9fd : DO NOT MERGE: Increase AdoptableHostTest timeout. <Jeff Sharkey> 10 days ago
+bb9317a : Temporarily disable com.android.cts.cpptools.RunAsHostTest#testRunAs <Grigory Dzhavadyan> 13 days ago
+9ac7d3e : Fix issues in SensorBatchingTests <Peng Xu> 3 weeks ago
+a6d2f6b : DO NOT MERGE ANYWHERE: Bumping CTS 6.0 to R5 <Daniel Xie> 23 hours ago
+ 
+**** github:CyanogenMod/android_device_qcom_common ****
+41b58e4 : power: Encode optimization <Dilip Gudlur> 3 months ago
+5436ef0 : power: Modify camera encode/preview hint <Dilip Gudlur> 5 months ago
+032f125 : power: Enable camera preview hint in powerhal <Dilip Gudlur> 1 year, 1 month ago
+1915eb6 : power: Add and update resources for encode powerHAL <Charles Bin> 6 months ago
+c798dcf : power: Introduce 8996 specific handling <Dilip Gudlur> 9 months ago
+cd39e2e : init: Add MSM-specific init extension library for msm8996 <dianlujitao> 4 days ago
+ 
+**** github:CyanogenMod/android_device_samsung_qcom-common ****
+092b370 : Automatic translation import <Michael Bestas> 26 hours ago
+ 
+**** github:CMRemix/android_device_samsung_trlte-common ****
+4125b60 : trlte-common: update overlay for snap camera <ZION959> 28 hours ago
+ 
+**** cmR:android_external_chromium-webview ****
+451ca2f : Update arm/arm64 webview to 49.0.2623.63 & x86 48.0.2564.106 <beanstown106> 4 weeks ago
+15f5218 : Update arm/arm64 webview to 48.0.2564.106 <Chet Kener> 6 weeks ago
+8457be0 : Update arm/arm64 to 48.0.2564.99 <beanstown106> 8 weeks ago
+f811667 : Update x86 to 47.0.2526.100 <dhacker29> 8 weeks ago
+9a2f0b3 : Update arm/arm64 to 48.0.2564.85 <Chet Kener> 10 weeks ago
+24baf6f : Update arm/arm64 to 48.0.2564.71 <Chet Kener> 3 months ago
+a333104 : Update arm/arm64 to 48.0.2564.37 <Chet Kener> 4 months ago
+d3c3f2d : Update arm/arm64 WebViewGoogle to 47.0.2526.77 <Chet Kener> 4 months ago
+cb0d8e2 : Update x86 to 46.0.2490.76 <dhacker29> 4 months ago
+08f42a5 : Fix CleanSpec Locations <Chet Kener> 5 months ago
+1ace5ef : Update arm/arm64 to 47.0.2526.35 <Chet Kener> 5 months ago
+71ee305 : Update arm/arm64 to 46.0.2490.76 <Chet Kener> 5 months ago
+d49bac7 : Initial Push of WebViewGoogle Prebuilts <Chet Kener> 5 months ago
+ 
+**** cmR:android_frameworks_base ****
+a1afc9f : SystemUI: remove deleted broadcast receiver <Roman Birg> 3 hours ago
+6e8441d : pm: Don't call into AppSuggestManager before service available. <Adnan Begovic> 7 hours ago
+fde0662 : Don't block wake locks for required always-on system apps <Roman Birg> 11 days ago
+2ad3b18 : Frameworks AppOps: Enable MODE_IGNORED for OP_WAKE_LOCK <Sam Mortimer> 2 years, 4 months ago
+6539351 : SystemUI: stop hiding hotspot & color inversion tiles <Roman Birg> 69 minutes ago
+6e52fd0 : Automatic translation import <Michael Bestas> 26 hours ago
+ 
+**** github:CyanogenMod/android_hardware_qcom_fm ****
+7f9e252 : Automatic translation import <Michael Bestas> 26 hours ago
+ 
+**** github:CyanogenMod/android_hardware_samsung ****
+c694ff0 : libril: Move vendor commands header <Christopher N. Hesse> 29 hours ago
+812f99c : Automatic translation import <Michael Bestas> 26 hours ago
+ 
+**** github:CyanogenMod/android_packages_apps_AudioFX ****
+f2e65d6 : Automatic translation import <Michael Bestas> 26 hours ago
+ 
+**** github:CyanogenMod/android_packages_apps_BasicSmsReceiver ****
+dcf25e2 : Automatic translation import <Michael Bestas> 26 hours ago
+ 
+**** github:CyanogenMod/android_packages_apps_Bluetooth ****
+d7199f6 : Automatic translation import <Michael Bestas> 26 hours ago
+ 
+**** github:CyanogenMod/android_packages_apps_BluetoothExt ****
+835ae50 : hiddTestApp: disable from launcher <Ankit Gupta> 6 days ago
+8c812f6 : Automatic translation import <Michael Bestas> 26 hours ago
+ 
+**** github:CyanogenMod/android_packages_apps_Browser ****
+6cbb497 : Automatic translation import <Michael Bestas> 26 hours ago
+ 
+**** github:CyanogenMod/android_packages_apps_CMFileManager ****
+ef48c44 : Automatic translation import <Michael Bestas> 26 hours ago
+ 
+**** github:CyanogenMod/android_packages_apps_CMWallpapers ****
+01dbbfe : Automatic translation import <Michael Bestas> 26 hours ago
+ 
+**** github:CyanogenMod/android_packages_apps_Calendar ****
+0f26215 : Automatic translation import <Michael Bestas> 26 hours ago
+ 
+**** github:CyanogenMod/android_packages_apps_Camera2 ****
+09b03eb : Automatic translation import <Michael Bestas> 26 hours ago
+ 
+**** github:CyanogenMod/android_packages_apps_CellBroadcastReceiver ****
+d08c6e7 : Automatic translation import <Michael Bestas> 26 hours ago
+ 
+**** github:CyanogenMod/android_packages_apps_CertInstaller ****
+8963303 : Automatic translation import <Michael Bestas> 26 hours ago
+ 
+**** github:CyanogenMod/android_packages_apps_Contacts ****
+1b9de1a : Automatic translation import <Michael Bestas> 26 hours ago
+ 
+**** github:CyanogenMod/android_packages_apps_ContactsCommon ****
+0d14760 : Automatic translation import <Michael Bestas> 26 hours ago
+ 
+**** github:CyanogenMod/android_packages_apps_DeskClock ****
+2920ea4 : Automatic translation import <Michael Bestas> 26 hours ago
+ 
+**** cmR:android_packages_apps_Dialer ****
+fae4e43 : Automatic translation import <Michael Bestas> 26 hours ago
+ 
+**** github:CyanogenMod/android_packages_apps_Eleven ****
+2c9da4a : Automatic translation import <Michael Bestas> 26 hours ago
+ 
+**** github:CyanogenMod/android_packages_apps_Email ****
+bab9090 : Automatic translation import <Michael Bestas> 26 hours ago
+ 
+**** github:CyanogenMod/android_packages_apps_ExactCalculator ****
+0811be0 : Automatic translation import <Michael Bestas> 26 hours ago
+ 
+**** github:CyanogenMod/android_packages_apps_Exchange ****
+899a3a2 : Automatic translation import <Michael Bestas> 26 hours ago
+ 
+**** github:CyanogenMod/android_packages_apps_FMRadio ****
+91b8bae : Automatic translation import <Michael Bestas> 26 hours ago
+ 
+**** github:CyanogenMod/android_packages_apps_Gallery2 ****
+2bca058 : Automatic translation import <Michael Bestas> 26 hours ago
+ 
+**** github:CyanogenMod/android_packages_apps_HTMLViewer ****
+324672f : Automatic translation import <Michael Bestas> 26 hours ago
+ 
+**** cmR:android_packages_apps_InCallUI ****
+97a8ab2 : Automatic translation import <Michael Bestas> 26 hours ago
+ 
+**** github:CyanogenMod/android_packages_apps_KeyChain ****
+6c5a184 : Automatic translation import <Michael Bestas> 26 hours ago
+ 
+**** github:CyanogenMod/android_packages_apps_LockClock ****
+475447a : Automatic translation import <Michael Bestas> 26 hours ago
+ 
+**** github:CyanogenMod/android_packages_apps_ManagedProvisioning ****
+3af74ba : Automatic translation import <Michael Bestas> 26 hours ago
+ 
+**** cmR:android_packages_apps_Nfc ****
+474bd34 : Automatic translation import <Michael Bestas> 26 hours ago
+ 
+**** cmR:android_packages_apps_PackageInstaller ****
+4dae9f3 : Automatic translation import <Michael Bestas> 26 hours ago
+ 
+**** github:CyanogenMod/android_packages_apps_PhoneCommon ****
+8967f2f : Automatic translation import <Michael Bestas> 26 hours ago
+ 
+**** github:CyanogenMod/android_packages_apps_Profiles ****
+615f4c8 : Automatic translation import <Michael Bestas> 26 hours ago
+ 
+**** github:CyanogenMod/android_packages_apps_Screencast ****
+ff5ff1c : Automatic translation import <Michael Bestas> 26 hours ago
+ 
+**** cmR:android_packages_apps_Settings ****
+421899c : Settings: Fix one-time vibration intensity restore <Gabriele M> 3 hours ago
+db6a55c : Settings: reflect/inform user of disabled wakelock appop <Roman Birg> 11 days ago
+760ba68 : Automatic translation import <Michael Bestas> 26 hours ago
+ 
+**** cmR:android_packages_apps_SetupWizard ****
+f9fe68c : Automatic translation import <Michael Bestas> 26 hours ago
+ 
+**** cmR:android_packages_apps_Snap ****
+bf93e1b : Automatic translation import <Michael Bestas> 26 hours ago
+98a1a3c : Protect against multiple shutter callbacks per frame in longshot mode. <Danny Baumann> 4 days ago
+d525fe3 : Re-enable processing of drawable state. <Danny Baumann> 4 days ago
+ 
+**** github:CyanogenMod/android_packages_apps_SoundRecorder ****
+6042d6c : Automatic translation import <Michael Bestas> 26 hours ago
+ 
+**** github:CyanogenMod/android_packages_apps_Stk ****
+bf57068 : Automatic translation import <Michael Bestas> 26 hours ago
+ 
+**** github:CyanogenMod/android_packages_apps_Tag ****
+cc441c8 : Automatic translation import <Michael Bestas> 26 hours ago
+ 
+**** github:CyanogenMod/android_packages_apps_Terminal ****
+cf0ce29 : Automatic translation import <Michael Bestas> 26 hours ago
+ 
+**** github:CyanogenMod/android_packages_apps_ThemeChooser ****
+007e5b1 : Automatic translation import <Michael Bestas> 26 hours ago
+ 
+**** github:CyanogenMod/android_packages_apps_Trebuchet ****
+fd94d2f : Automatic translation import <Michael Bestas> 26 hours ago
+ 
+**** github:CyanogenMod/android_packages_apps_TvSettings ****
+b9dda27 : Automatic translation import <Michael Bestas> 26 hours ago
+ 
+**** github:CyanogenMod/android_packages_apps_UnifiedEmail ****
+3ae2975 : Automatic translation import <Michael Bestas> 26 hours ago
+ 
+**** cmR:android_packages_inputmethods_LatinIME ****
+2608af8 : Automatic translation import <Michael Bestas> 26 hours ago
+ 
+**** github:CyanogenMod/android_packages_providers_BookmarkProvider ****
+bffe7bd : Automatic translation import <Michael Bestas> 26 hours ago
+ 
+**** github:CyanogenMod/android_packages_providers_CalendarProvider ****
+1d0a091 : Automatic translation import <Michael Bestas> 26 hours ago
+ 
+**** github:CyanogenMod/android_packages_providers_CallLogProvider ****
+0cbcc78 : Automatic translation import <Michael Bestas> 26 hours ago
+ 
+**** github:CyanogenMod/android_packages_providers_ContactsProvider ****
+8259514 : Automatic translation import <Michael Bestas> 26 hours ago
+ 
+**** github:CyanogenMod/android_packages_providers_DownloadProvider ****
+ed04a8a : Automatic translation import <Michael Bestas> 26 hours ago
+ 
+**** github:CyanogenMod/android_packages_providers_MediaProvider ****
+17f0028 : Automatic translation import <Michael Bestas> 26 hours ago
+f7ce3d3 : MediaProvider: MediaScanner behavior on boot (2/3) <blk_jack> 3 months ago
+ 
+**** github:CyanogenMod/android_packages_providers_TelephonyProvider ****
+ea5a496 : Automatic translation import <Michael Bestas> 26 hours ago
+ 
+**** github:CyanogenMod/android_packages_providers_ThemesProvider ****
+e981c2b : Automatic translation import <Michael Bestas> 26 hours ago
+ 
+**** github:CyanogenMod/android_packages_providers_UserDictionaryProvider ****
+274e2e5 : Automatic translation import <Michael Bestas> 26 hours ago
+ 
+**** github:CyanogenMod/android_packages_screensavers_Basic ****
+d06b108 : Automatic translation import <Michael Bestas> 26 hours ago
+ 
+**** github:CyanogenMod/android_packages_screensavers_PhotoTable ****
+8b474fb : Automatic translation import <Michael Bestas> 26 hours ago
+ 
+**** github:CyanogenMod/android_packages_services_Mms ****
+0bc7241 : Automatic translation import <Michael Bestas> 26 hours ago
+ 
+**** cmR:android_packages_services_Telecomm ****
+51a5dd8 : Automatic translation import <Michael Bestas> 26 hours ago
+ 
+**** github:CyanogenMod/android_packages_wallpapers_Basic ****
+1fab5d5 : Automatic translation import <Michael Bestas> 26 hours ago
+ 
+**** github:CyanogenMod/android_packages_wallpapers_Galaxy4 ****
+7da1e29 : Automatic translation import <Michael Bestas> 26 hours ago
+ 
+**** github:CyanogenMod/android_packages_wallpapers_LivePicker ****
+489e1c1 : Automatic translation import <Michael Bestas> 26 hours ago
+ 
+**** github:CyanogenMod/android_packages_wallpapers_MagicSmoke ****
+fd64cf9 : Automatic translation import <Michael Bestas> 26 hours ago
+ 
+**** github:CyanogenMod/android_packages_wallpapers_PhaseBeam ****
+90de936 : Automatic translation import <Michael Bestas> 26 hours ago
+ 
+**** github:CyanogenMod/android_packages_wallpapers_PhotoPhase ****
+2bc3ccb : Automatic translation import <Michael Bestas> 26 hours ago
+ 
+**** cmR:llvm-Snapdragon_LLVM_for_Android ****
+0840b0d : Update Prebuilt March15 <Joe Maples> 13 days ago
+ 
+**** cmR:android_vendor_CMRemix ****
+5367a6c : vendor: use gcconly optimnization <ZION959> 4 hours ago
+ 
+**** cmR:cm_platform_sdk ****
+11334c9 : cmsdk: Add hidden interface for getService on AppSuggestManager. <Adnan Begovic> 7 hours ago
+3f42978 : Automatic translation import <Michael Bestas> 26 hours ago
+374a17e : Fix: "cmsdk: Mandate partner feature xml's for service implementation." <Michael Bestas> 12 hours ago
+ 
