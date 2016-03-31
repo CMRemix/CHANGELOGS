@@ -1,0 +1,46 @@
+
+**** omni:android_bootable_recovery ****
+a5db712 : Improve input box text handling <Ethan Yonker> 2 weeks ago
+20eb0bc : Detect and install custom themes as part of zip installs <Ethan Yonker> 8 days ago
+6a89459 : gui: rewrite theme loading code <that> 2 weeks ago
+d6f94ac : Allow restoring to read-only file system <James Christopher Adduono> 4 weeks ago
+ 
+**** aosp:platform/cts ****
+3e4e12c : Any charging device will stay awake during CTS <Aaron Holden> 4 weeks ago
+ 
+**** cmR:android_external_DUtils ****
+0142996 : Utils: Convenience method for calling navigationBarCanMove from wm [2/3] <Randall Rushing> 35 hours ago
+ 
+**** cmR:android_frameworks_base ****
+d7b973a : Correctly init code cache path for RS <Yang Ni> 3 weeks ago
+74b14b9 : Revert "Correctly init code cache path for RS" <mydongistiny> 11 days ago
+e5746e5 : overlaytests: fix testrunner.py md5sum invocation <Stephen Smalley> 10 months ago
+6c69bc7 : Fix javadoc for Adapter.getViewTypeCount() <Minhyeok Jeong> 9 months ago
+4739c4a : Prevent NPE in PkgMgr getUserIfProfile() <tobitege> 9 months ago
+7d3d76c : Fix overflow/underflow problem in comparison <Charles Tsai> 11 months ago
+df847ba : potential GraphRunner leak in camera effects <PrimeDirective> 2 years, 8 months ago
+fbedbfb : Switch frameworks/base/core/jni from gcc to clang. <Ben Wagner> 12 days ago
+525a5aa : QSTileView: fix label recreate order <tobitege> 70 minutes ago
+9a9285d : Fix incorrect behavior for statusbar and quicksettings panel <Yinlin Cai> 4 months ago
+eb66ccd : Race in WapPushManager under multi-thread environment <chao.bi> 2 weeks ago
+9230a95 : Use async thread for performPoll in NetworkStats <Wang Haoran> 21 hours ago
+4d79d8b : SystemUI: ensure volume record exists before showing notification <Scott Mertz> 34 hours ago
+936b686 : MountService: ensure VolumeRecord with UUID exists before modifying <Scott Mertz> 34 hours ago
+9186d66 : Fix FragmentManager to save state of a Fragment only when needed <Vairavan Srinivasan> 1 year, 5 months ago
+7be9e85 : Fix crash on invitation request from persistent GC <daisuke niwa> 1 year, 1 month ago
+5964f68 : Fix the bug in replacing a fragment with itself. <Kang Zhang> 3 years ago
+2bf9130 : animateNoDamage failed to remove from current frame list <Ye Ouyang> 8 months ago
+abb8762 : frameworks/base: synchronize surface control object access. <Sashidhar Ganiga> 11 months ago
+5cfeadd : Get animation update timing for AVD <Doris Liu> 3 months ago
+f71d1ad : [ViewRootImpl] suppress the accessibility IllegalStateException <yinghsuan_wang> 2 days ago
+4e4db6b : revert: Show icons of only background apps in Toasts <ZION959> 2 hours ago
+0a81f06 : Cleaup Makestatusbar View <varund7726> 2 hours ago
+dfc4d11 : FWBase : Port & Improve CPU boosting Hooks && Interface Credits to CM  * Boosts CPU using Power HAL for the given duration.  * Duration is given in microseconds.  * Power HAL must implement POWER_HINT_CPU_BOOST.  * Boost CPU to max during scrolling  * Boost CPU to max on activity start/resume  * Inspired by a patch from CodeAuora. <westcripp> 2 hours ago
+ec28509 : base: API to expose mNavigationBarCanMove from window manager [1/3] <Randall Rushing> 4 days ago
+021a54b : Fix SystemUI FC when using Carrier Label for the first time <LorDClockaN> 3 days ago
+b11bc97 : fb: helper > we now use toybox <ZION959> 24 hours ago
+ 
+**** cmR:android_frameworks_opt_telephony ****
+8b4c5b0 : Fix LTE attach issue due to wrong initial attach profile. <Muhammed Siju> 4 months ago
+7a2fa62 : telephony: Add oldril feature setPrefNwTypeOnUnsolConnected. <Adnan Begovic> 7 weeks ago
+ 

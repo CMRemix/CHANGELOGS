@@ -1,0 +1,25 @@
+
+**** github:CMRemix/android_device_samsung_trlte-common ****
+9493db5 : trlte-common: Allow Snap to use mediaserver & remove duplicate doze overlay <ZION959> 38 minutes ago
+ 
+**** cmR:android_frameworks_base ****
+77d2baa : fb: we now use toybox <ZION959> 19 hours ago
+ 
+**** github:CyanogenMod/android_hardware_samsung ****
+5608dcb : libril: Remove RIL_REQUEST_DIAL_EMERGENCY <Christopher N. Hesse> 2 days ago
+d82d1d6 : ril: fix libril if we don't overwrite the header in our device tree <Andreas Blaesius> 30 hours ago
+ 
+**** cmR:android_packages_apps_Settings ****
+86ea635 : settings: helper > we now used toybox <ZION959> 19 hours ago
+be66fc2 : Settings: Fix selinux OnBoot <placiano> 20 hours ago
+ 
+**** cmR:android_packages_apps_Snap ****
+6058c38 : Fix histogram not being hidden after disabling it. <Danny Baumann> 3 days ago
+6611f21 : Beautify and optimize histogram view. <Danny Baumann> 5 days ago
+ 
+**** cmR:android_vendor_CMRemix ****
+420eb54 : vendor: use prebuilt AdvancedDisplay <ZION959> 23 minutes ago
+ 
+**** github:CMRemix/proprietary_vendor_samsung ****
+73e7b8a : trlte-common: fixed gps issue for all trlte varients <ZION959> 4 days ago
+ 
