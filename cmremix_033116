@@ -1,0 +1,96 @@
+
+**** cmR:CHANGELOGS ****
+8e7ced4 : update <ZION959> 3 hours ago
+ 
+**** cmR:CMRemix ****
+459f460 : LLS: Add live lock screen service [4/4] <d34d> 2 days ago
+ 
+**** github:CMRemix/android_device_samsung_trlte-common ****
+3ac567d : power: Remove custom low power mode hint handling <ZION959> 37 minutes ago
+0fdd353 : trlte-common: use CAF Power HAL instead of CM <ZION959> 2 hours ago
+ 
+**** github:CyanogenMod/android_external_stagefright-plugins ****
+4295c11 : stagefright-plugins: Convert calls to av_free_packet to av_packet_unref <Ethan Chen> 2 weeks ago
+ 
+**** cmR:android_frameworks_base ****
+13cd710 : LLS: Add LiveLockScreenController <0xD34D> 6 minutes ago
+4666324 : FWBase : Port & Improve CPU boosting Hooks && Interface Credits to CM  * Boosts CPU using Power HAL for the given duration.  * Duration is given in microseconds.  * Power HAL must implement POWER_HINT_CPU_BOOST.  * Boost CPU to max during scrolling  * Boost CPU to max on activity start/resume  * Inspired by a patch from CodeAuora. <westcripp> 26 hours ago
+ 
+**** github:CyanogenMod/android_packages_apps_Bluetooth ****
+ba1e36f : Opp : Fix NPE issue while stopping Listeners. <Sravan Kumar V> 5 weeks ago
+da9c082 : Bluetooth-opp: Optimize OPP Power consummation. <Sravan Kumar V> 8 weeks ago
+09bc94e : OPP: Initialize obex socket listeners while starting Listening <Smriti Gupta> 7 weeks ago
+899ab76 : BT: Fix following issues in data profiles <Hemant Gupta> 8 weeks ago
+eb964ec : HF: Do not remove connect defer messages in Connected state <Satish Kodishala> 8 weeks ago
+25cca2c : SAP: Fix following issues in SAP code <Smriti Gupta> 4 months ago
+b2d3d09 : MAP: Add following conditional checks from MAPServer : <Ashwini Munigala> 2 months ago
+0258e73 : Bluetooth: Do not send Pairing cancel intent during ACL disconnection <Pradeep Panigrahi> 4 months ago
+fc35896 :  MAP: Fix service shutdown procedure <Ashwini Munigala> 4 months ago
+f110b2f : SAP: Fix following issues in SAP Code <Smriti Gupta> 3 months ago
+977ff92 : PBAPS: Get vcard when asked in alphabetical order <Smriti Gupta> 4 months ago
+ 
+**** github:CyanogenMod/android_packages_apps_BluetoothExt ****
+9c0b5b0 : Bluetooth: Update the sdk version <Venkateshwarlu Domakonda> 3 months ago
+39c754f : BTLogKit: setLowPriority for BTStateReceiver intentFilter. <Ashwini Munigala> 5 months ago
+ 
+**** github:CyanogenMod/android_packages_apps_CMFileManager ****
+de3fb3d : Default file manager fails to search files with Russian file name <jaffersulaiman> 24 hours ago
+ 
+**** cmR:android_packages_apps_DUI ****
+b218ca0 : DUI: use wm api to determine phone or tablet behavior [3/3] <Randall Rushing> 2 days ago
+ec83469 : DUI: Reload SmartBar icons on boot complete <Randall Rushing> 4 days ago
+efd3700 : Rewrite fling gesture handler <Andrzej Ressel> 5 days ago
+8f58f9e : Rename Overview to Recents 	1) Under DU-Tweaks/Multi-Tasking its referred to as Recents 	2) Users be asking all the time "Why u no recents button?" <nickd81> 10 days ago
+ 
+**** github:CyanogenMod/android_packages_apps_FMRadio ****
+f9e74ef : Fix force close when Google Play Music is not installed <Gabriele M> 2 days ago
+ 
+**** cmR:android_packages_apps_Settings ****
+78f44c8 : LLS: Add LiveLockScreenSettings to ENTRY_FRAGMENTS <0xD34D> 2 hours ago
+87c24ea : Settings: implicitly link to lls settings <Roman Birg> 2 hours ago
+415d96f : LLS: Use LiveLockScreenManager for selecting LLS <d34d> 2 weeks ago
+ 
+**** cmR:android_packages_apps_Snap ****
+46af9a2 : Snap: small fixes for HDR-related code <Nikita> 7 weeks ago
+ 
+**** cmR:android_packages_services_Telephony ****
+8716894 : Phone: Sprint MWI Quirk: Phantom message wait indicator workaround <Kasual> 2 weeks ago
+bc16bb2 : Automatic translation import <Michael Bestas> 4 days ago
+ 
+**** github:CyanogenMod/android_prebuilts_cmsdk ****
+3094da8 : prebuilts/cmsdk: Update release api text for LL. <Adnan Begovic> 15 hours ago
+ 
+**** github:CyanogenMod/android_system_bt ****
+58a8b99 : Bluetooth: Clean up l2cap socket properly on closure <Srinu Jella> 5 weeks ago
+c0029ea : Bluetooth: Optimize the L2cap FCR tx timer <Srinu Jella> 3 months ago
+b761261 : Bluetooth: Disable eager reader threads in RX path <Srinu Jella> 4 months ago
+9233de6 : Stops all BLE timers when BT turn off request is issued to BT stack <Subramanian Srinivasan> 8 weeks ago
+eceec1d : Increase number of semaphores for media workqueue <Ayan Ghosh> 6 weeks ago
+e273902 : Bluetooth: Synchronizing access to hashmap in counter module <Gurpreet Ghai> 6 weeks ago
+f4a4e2f : Bluetooth: Fix to decrease power during OPP TX/RX <Nitin Shivpure> 4 months ago
+0b4dec7 : Bluetooth: Increasing the size of security service record and Adding null check to avoid exception after l2cap psm assigned <Gurpreet Ghai> 8 weeks ago
+dbf76f8 : Bluetooth: Offload config save functionality to btif thread <Srinu Jella> 3 months ago
+b20358c : Fix crashes with lots of discovered LE devices <Marie Janssen> 4 months ago
+4ea955c : Bluetooth: GAP: Setting remove device pending status as FALSE <Balraj Selvaraj> 7 weeks ago
+4cec95d : Cancel SDP if it had been started -  To avoid the crash, cancel SDP if it is started before    av_disable free  memory for p_disc_db. <JivakDhadse> 9 weeks ago
+5b1ce47 : Bluetooth: Enforce BT state check during GATT operations. <Pradeep Panigrahi> 10 weeks ago
+e4ea3a7 : LE: Fix to show mouse pointer movements on UI <Nitin Shivpure> 3 months ago
+d85ce9e : btsnoop: Remove the ext snoop dependency on snoop socket <Mallikarjuna GB> 4 months ago
+e2f4279 : Bluetooth: GAP: Update Paging and inquiry busy level seperately <Srinu Jella> 2 years, 3 months ago
+c960577 : Bluetooth: Reset the pairing_cb for bredr/cross key pairing address <venkata Jagadeesh> 4 months ago
+ 
+**** github:CyanogenMod/android_vendor_cm ****
+3bfd87e : cm: Add further verbose messaging for api breaking changes. <Adnan Begovic> 15 hours ago
+2cf159c : LLS: Add live lock screen service [3/4] <d34d> 3 weeks ago
+ce22225 : LatinIME: Refresh remaining dictionaries <Michael Bestas> 2 days ago
+ 
+**** cmR:cm_platform_sdk ****
+a50a323 : LLS: add type <Roman Birg> 12 days ago
+9f6530b : cmsdk: add live lock screen settings action intent <Roman Birg> 6 days ago
+bfa500d : LLS: Add live lock screen service [1/4] <d34d> 3 weeks ago
+ 
+**** github:CMRemix/proprietary_vendor_samsung ****
+e7f7753 : trlte-common: update Samsung 6.0.1 adreno & drm proprietary <ZION959> 6 days ago
+6129e71 : Fix date and time reset at every boot The issue of the reset of the date and time on every reboot was caused by mismanagement of the binary time daemon. When it is replaced by this new file the error is resolved. <placiano> 7 weeks ago
+eb7ac07 : trlte-common: add sensorhubs <ZION959> 5 weeks ago
+ 

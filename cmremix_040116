@@ -1,0 +1,76 @@
+
+**** omni:android_bootable_recovery ****
+f177066 : 3.0.1-0 <Ethan Yonker> 13 hours ago
+ca85957 : language: add 2 new strings to DE <z31s1g> 14 hours ago
+f4d1686 : languages: add Reboot Option translation <Daniel Sikorski> 14 hours ago
+ec0b432 : HACK: fix input focus on terminal <Ethan Yonker> 14 hours ago
+a869fc7 : TWRP Install Reboot Option <bigbiff> 4 weeks ago
+14f8ac1 : progress: Initialize display percentage variable <Matt Mower> 16 hours ago
+472f506 : Improve progress bar handling for backup / restore / image flash <Ethan Yonker> 5 weeks ago
+fe91611 : DataManager Updates <Ethan Yonker> 3 weeks ago
+d4f3082 : languages: fix and improve german translation <Andreas Blaesius> 7 weeks ago
+67940a2 : languages: add Polish translation <dadi11> 7 weeks ago
+0d2a822 : twrp: update Dutch translations <Andreas Blaesius> 8 weeks ago
+d905c8d : Update & Fix ru.xml <SevenMaxs> 7 weeks ago
+6e64e8e : recovery: update italian translation <Andreas Blaesius> 4 weeks ago
+c17f5f3 : gui: add italian translation <Diegool> 7 weeks ago
+e9d3fc2 : TWRP: hungarian translation <Wechy77> 6 weeks ago
+d946aa4 : Add language_helper.py <Ethan Yonker> 2 days ago
+0de3b7e : Flashutils: detect /dev/block/sd* as emmc <James Christopher Adduono> 3 days ago
+4f74d14 : Stop loading languages for the splash screen <Ethan Yonker> 20 hours ago
+86404bd : Stop trying to load /script/ui.xml <Ethan Yonker> 20 hours ago
+9023b1c : recovery: czech translation <Andreas Blaesius> 4 weeks ago
+ 
+**** aosp:platform/cts ****
+7c40fe3 : Revert "Removed test from knownfailures" <Daniel Xie> 10 hours ago
+ 
+**** github:CMRemix/android_device_samsung_trlte-common ****
+9c08939 : trlte-common: use CAF Power HAL instead of CM <ZION959> 6 hours ago
+ 
+**** cmR:android_frameworks_base ****
+d4c3d2f : fw: Implement hungarian cipher text. <John McAfee> 17 hours ago
+d54a9c3 : LLS: Use window attachment callbacks <d34d> 8 days ago
+618bb2d : Fix CPU boosting derp <westcripp> 2 hours ago
+09ed997 : fb: helper > we now use toybox (reverted from commit b11bc97188f67d89df914bb44147ece55e456ab6) <ZION959> 2 hours ago
+ 
+**** cmR:android_frameworks_opt_telephony ****
+9b0d0c3 : Use registerForAvailable when device is encrypted only for RIL version >= 9 <Arne Coucheron> 8 days ago
+e0e82e2 : telephony: Workaround default sms sub id not being set. <Adnan Begovic> 35 hours ago
+ 
+**** cmR:android_packages_apps_Messaging ****
+bc9e661 : msim: Fix broken assumptions around the meaning of subId/slotId/selfId <Ricardo Cerqueira> 15 hours ago
+0132f00 : Messaging: Fix file mode <cretin45> 4 days ago
+503af9b : Automatic translation import <Michael Bestas> 4 days ago
+a831659 : Messaging App is crashing when storage  memory is full <jaffersulaiman> 10 days ago
+252ac72 : Change lookup request's origin to INCOMING_SMS <Rohit Yengisetty> 10 days ago
+fed2b36 : Fix menu item highlight color. <Danny Baumann> 2 weeks ago
+ad4d0b5 : Automatic translation import <Michael Bestas> 2 weeks ago
+ 
+**** cmR:android_packages_apps_Settings ****
+97db258 : Add Weather Content Provider [2/5] <Luis Vidal> 44 minutes ago
+6116511 : Settings: add marquee to Device administrators screen <Roman Birg> 11 months ago
+1e4e800 : revert: settings: helper > we now used toybox (reverted from commit 86ea63502e55bf2b46b3e7eda5366cbd9b752306) <ZION959> 2 hours ago
+e60c59f : revert: Settings: Fix selinux OnBoot <ZION959> 2 hours ago
+ 
+**** github:CyanogenMod/android_prebuilts_cmsdk ****
+a005d3f : prebuilts/cmsdk: Update method params in api text. <Adnan Begovic> 2 days ago
+ 
+**** github:CyanogenMod/android_vendor_cm ****
+6d61d30 : Add Weather Content Provider [3/5] <Luis Vidal> 11 days ago
+0ce9abc : Fix typo <Evan Widger> 14 hours ago
+ 
+**** cmR:cm_platform_sdk ****
+3726f6b : cmsdk: Add test coverage for parceling of ThemeChangeRequests. <Adnan Begovic> 2 days ago
+3916ed7 : cmsdk: Add test coverage for ThemeChangeRequestBuilder and object. <Adnan Begovic> 2 days ago
+127c0cf : cmsdk: Change parameter type of unregisterProcessingListener. <Adnan Begovic> 2 days ago
+22859ef : cmsdk: Add preliminary ThemeManager test coverage. <Adnan Begovic> 7 days ago
+d2e7e04 : cmsdk: Fix cm system api stub generation. <Adnan Begovic> 3 days ago
+eafcdbd : cmsdk: Create Concierge parcel handler concept. <Adnan Begovic> 3 days ago
+4195a1c : Add Weather Content Provider [4/5] <Luis Vidal> 11 days ago
+4682130 : CMSettings: add event live lock component key <Roman Birg> 13 hours ago
+2c5d3d5 : Add callbacks for window attachment <d34d> 8 days ago
+c995822 : LLS: Don't build LlsInfo when defComponent is empty <d34d> 16 hours ago
+ 
+**** github:CMRemix/proprietary_vendor_samsung ****
+774fdb8 : trlte-common: update Samsung 6.0.1 adreno & drm proprietary <ZION959> 7 days ago
+ 
