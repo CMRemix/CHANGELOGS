@@ -1,0 +1,389 @@
+
+**** cmR:CMRemix ****
+fbbed0f : derp fixed <ZION959> 16 hours ago
+5fa27de : track du navbar utils and cmsdk <ZION959> 20 hours ago
+ 
+**** github:CyanogenMod/android_device_qcom_common ****
+eed780b : qcom: power: Allow devices to write their own platform specific bits <Christopher R. Palmer> 4 days ago
+ 
+**** github:CMRemix/android_device_samsung_trlte-common ****
+260b382 : trlte-common: hardware keys overlay. <ZION959> 16 hours ago
+ 
+**** cmR:android_external_chromium-webview ****
+309ff34 : Update arm/arm64 to 49.0.2623.105 <Chet Kener> 12 days ago
+ 
+**** github:CyanogenMod/android_frameworks_av ****
+a412380 : audiopolicy: Be a little smarter with auto-attach <Steve Kondik> 4 days ago
+ 
+**** cmR:android_frameworks_base ****
+476e563 : SystemUI: make online cpu color green for cpu overlay <Altaf-Mahdi> 12 months ago
+06c52a9 : base: fix num cpu check for CPU overlay <maxwen> 3 months ago
+46ad311 : [1/2] base: add CPU info overlay <maxwen> 2 years, 5 months ago
+bec53a2 : FWBase : Port & Improve CPU boosting Hooks && Interface <westcripp> 16 hours ago
+5a5ae28 : fixed compilation error when add hardware key tweaks <ZION959> 17 hours ago
+1efd02b : [Base] HW keys tweaks <cristianomatos> 18 hours ago
+87f5e89 : Removal of cm nav bar <ZION959> 19 hours ago
+ecbcdbc : Fix NavBar tile compilation <ZION959> 20 hours ago
+4180f21 : fb: add back all keyboard IME features back (1/2) <Lars Greiss> 1 year ago
+23380d0 : [DUI] Gallery icon support [1/5] <Andrzej Ressel> 4 weeks ago
+3f75642 : navigation_bar.xml - typo <LorDClockaN> 4 weeks ago
+c799a63 : Fix NavBar tile compilation <ZION959> 21 hours ago
+c044260 : Navigation bar tile: fix toggle state <Nico60> 4 weeks ago
+243010a : NavbarTile: improve icons state <Nico60> 4 weeks ago
+67633ec : NavbarTile: go to bar specific settings onLongPress [2/2] <Randall Rushing> 9 weeks ago
+2e265d2 : Navigation Bar Tile <Nico60> 22 hours ago
+d4a6a1c : [SQUASHED]Introduce DU Fling, Pulse ,Navbar into RR [1/4] <ZION959> 23 hours ago
+efdfb35 : SystemUI: screenrecord: make sure to always delete tmp file <maxwen> 5 months ago
+e5b153b : base: bring back screen record shortcut <maxwen> 2 days ago
+4dd6236 : base: screenrecord: forward port from 4.4 Squashed commit of the following: <maxwen> 2 days ago
+2ec05a9 : BatteryBar [1/2] <cphelps76> 2 days ago
+d5cdfa0 : revert: Revert "[2/2] framework/base: Add EdgeGesture service." <ZION959> 2 days ago
+baeab26 : revert: Revert "PhoneWindowManager: add ability to use EdgeGestureService for system gestures." <ZION959> 2 days ago
+e0554d4 : media: Add flags, channelMask, and UID to audio session callbacks <Steve Kondik> 3 days ago
+726377a : SysUI: Add event logs for live lock screen interactions <d34d> 3 days ago
+f8d9e89 : Lockscreen target fixes <Danesh M> 4 days ago
+71dec8d : Fix typo in RankingHelper. <You Kim> 4 days ago
+f39d0b0 : SettingsProvider: fix build for volume adjust sound to be overlayed <Christopher R. Palmer> 4 days ago
+89c3e36 : SettingsProvider: Allow default volume adjust sound to be overlayed. <Ankit Gupta> 8 weeks ago
+9ce1a95 : com.android.cts.appsecurity.AdoptableHostTest may trigger below dead lock in system_server in the board with external adoptable storage as below stack: <guoyin.chen> 3 weeks ago
+967f4ad : Automatic translation import <Michael Bestas> 5 days ago
+ 
+**** github:CyanogenMod/android_frameworks_opt_telephony ****
+35c5326 : Convert multi_rat_capable property into an old RIL feature. <Danny Baumann> 6 days ago
+ 
+**** github:CyanogenMod/android_hardware_qcom_audio ****
+844647b : hal: Add support for AUDIO_DEVICE_OUT_LINE <Eric Laurent> 1 year, 8 months ago
+ 
+**** github:CyanogenMod/android_hardware_qcom_bt ****
+8d45c59 : Fixed the problem of ADSP crash while Fuzzing BT <Luke Zhang> 3 months ago
+ 
+**** github:CMRemix/android_kernel_samsung_trlte ****
+84e854c : display: add a simple api to query the display state (on/off) at any point in time <franciscofranco> 7 hours ago
+491c89c : use franco shamu interactive <ZION959> 7 hours ago
+d292dc4 : scripts: remove localversion "+" & "-dirty" from kernel version strings <ZION959> 7 weeks ago
+422d934 : enable vibrate for wake gesture <ZION959> 17 hours ago
+1589559 : drivers/motor: temporarily back to the old vibrator motor <Pafcholini> 17 hours ago
+5f44f72 : revert: msm: vidc: update with fixes and enhancements <ZION959> 17 hours ago
+ac829f5 : revert: msm: vidc: Send resolution along with output buffer <ZION959> 17 hours ago
+dcfe64e : revert: msm: vidc: removed the async v4l2 event for session unsupported <ZION959> 17 hours ago
+f0ecd3e : revert: msm: vidc: Allow clients to specify/query the colorspace <ZION959> 17 hours ago
+418444d : trlte: add sprint varients defconfig <ZION959> 5 days ago
+3cedc7b : revert: core, nfqueue, openvswitch: Orphan frags in skb_zerocopy and handle errors <ZION959> 7 days ago
+af5bd5a : net: wireless: bcmdhd: Protect sched_scan_req ptr <Dmitry Shmidt> 7 days ago
+4b063d3 : net: wireless: bcmdhd: Send results from all PNO scans <Ashwin> 5 months ago
+339205b : msm_serial_hs: release dma wakelock properly <Lianwei Wang> 1 year, 2 months ago
+793692a : core, nfqueue, openvswitch: Orphan frags in skb_zerocopy and handle errors <Zoltan Kiss> 2 years, 1 month ago
+89386d7 : sched/fair: Implement fast idling of CPUs when the system is partially loaded <Ingo Molnar> 7 days ago
+15aa173 : pinctrl: msm: fix potential NULL pointer dereference <Joonwoo Park> 1 year, 8 months ago
+c203b9b : PM / sleep: unregister wakeup source when disabling device wakeup <Zhang Rui> 1 year, 10 months ago
+fcde08a : ion: this debugfs creation fails - remove code for it <imoseyon> 1 year, 4 months ago
+de8b747 : diag: Reduce error message frequency <Russell King> 2 years, 3 months ago
+460af3a : msm: vidc: avoid crash due to division by zero <Srinu Gorle> 1 year, 7 months ago
+5795ec2 : net: Copy ndisc_nodetype from original skb in skb_clone <Subash Abhinov Kasiviswanathan> 9 months ago
+8cd2f2e : msm: ipc_socket: fix leak of kernel memory to userspace <Patrick Tjin> 6 months ago
+8580243 : ipv6: inet6_sk() should use sk_fullsock() <Eric Dumazet> 6 months ago
+c73db58 : net: add sk_fullsock() helper <Eric Dumazet> 1 year, 1 month ago
+f88a312 : ipc/sem.c: fully initialize sem_array before making it visible <Manfred Spraul> 1 year, 4 months ago
+19a15ca : binfmt_elf: use prandom - do not deplete entropy <imoseyon> 1 year, 4 months ago
+4905ffd : revert: binfmt_elf.c: use get_random_int() to fix entropy depleting (Jeff Liu ) <ZION959> 7 days ago
+9c38bc1 : random: sprinkle e/f/prandom in places that deplete entropy often <imoseyon> 1 year, 4 months ago
+f01ebb2 : random.h: declare erandom function <imoseyon> 1 year, 4 months ago
+5f73146 : fs: ext4: use e/frandom, do not deplete entropy <imoseyon> 1 year, 4 months ago
+75975af : random32: use e/frandom for reseeding, and a merge fixup <imoseyon> 1 year, 4 months ago
+86803af : random: allow architectures to optionally define random_get_entropy() <Theodore Ts'o> 2 years, 7 months ago
+2efbd01 : random32: add prandom_u32_max and convert open coded users <Daniel Borkmann> 2 years, 3 months ago
+66bf923 : random32: improvements to prandom_bytes <Daniel Borkmann> 1 year, 8 months ago
+749909d : random32: mix in entropy from core to late initcall <Hannes Frederic Sowa> 1 year, 8 months ago
+56d0a4d : lib/random32.c: minor cleanups and kdoc fix <Daniel Borkmann> 2 years ago
+c6b3a4f : random32: avoid attempt to late reseed if in the middle of seeding <Sasha Levin> 2 years ago
+e324876 : random32: use msecs_to_jiffies for reseed timer <Daniel Borkmann> 2 years, 5 months ago
+c8105dd : random32: add __init prefix to prandom_start_seed_timer <Daniel Borkmann> 2 years, 5 months ago
+0b055bd : random32: add test cases for taus113 implementation <Daniel Borkmann> 2 years, 5 months ago
+24f1a24 : random32: upgrade taus88 generator to taus113 from errata paper <Daniel Borkmann> 2 years, 5 months ago
+00c084d : random32: move rnd_state to linux/random.h <Daniel Borkmann> 2 years, 5 months ago
+c2542e5 : random32: add prandom_reseed_late() and call when nonblocking pool becomes initialized <Hannes Frederic Sowa> 2 years, 5 months ago
+79d84cd : random32: add periodic reseeding <Hannes Frederic Sowa> 2 years, 5 months ago
+524c763 : msm: mdss: Fix uninitialized return value for compact ioctl function <Ping Li> 1 year, 2 months ago
+6e9530b : hsic: avoid keeping the ws activated after sysfs disable <imoseyon> 1 year, 2 months ago
+990f5a3 : hsic: allow wl_divide = 0 to completely disable hsic wake source <imoseyon> 1 year, 2 months ago
+25ec79c : hsic: introduce user configurable timeout for msm_hsic_host wakelock (imoseyon) <ZION959> 7 days ago
+f684fa9 : wake gestures: make it easy for Kernel Adiutor <Pafcholini> 6 months ago
+ 
+**** github:CyanogenMod/android_packages_apps_AudioFX ****
+846d5ed : audiofx: Add support for line-out path <Steve Kondik> 2 days ago
+e4e3997 : audiofx: Don't link with android-visualizer <Steve Kondik> 2 days ago
+c227786 : audiofx-oss: Use new callback API <Steve Kondik> 3 days ago
+ 
+**** github:CyanogenMod/android_packages_apps_Bluetooth ****
+afa0cdb : Fix a logical error in isAbsoluteVolumeSupported. <kexiao> 3 weeks ago
+84a1077 : OPP: Add checks to initiate rfcomm connection in case sdp fails <Hemant Gupta> 3 months ago
+a8b88a3 : Revert "Bluetooth-OPP: Start outbound transfer only after OPPService is up" <Sravan Kumar V> 2 months ago
+8d71081 : Revert "Multiuser: Check if valid user before starting service" <Sravan Kumar V> 3 weeks ago
+a4c1808 : Bluetooth-OPP: Use long instead of int <Sravan Kumar V> 7 weeks ago
+06638f9 : SAP: Fix below issues during internal testing <Smriti Gupta> 9 weeks ago
+b164a36 : Bluetooth-OPP: Use a volatile variable to denote interrupt status <zhenchao> 5 weeks ago
+3e4ad7c : MAP: Fix ANR due wait on shutdown complete. <Ashwini Munigala> 9 weeks ago
+5b6543d : MAP: Handle following in MAPS: <Ashwini Munigala> 2 months ago
+ 
+**** github:CyanogenMod/android_packages_apps_Contacts ****
+5201b4b : Add null object check <Stephen Bird> 2 days ago
+7de12b0 : Add 'ims-common' build dependency <Stephen Bird> 2 days ago
+da1af0b : Contacts: fixed ConcurrentModificationException <Erica Chang> 5 days ago
+f17e2d0 : Fix: update ambiguous placeCall method <Raj Yengisetty> 6 days ago
+82bc10e : Contacts Card: nudge subtitle adjustment <Erica Chang> 13 days ago
+f2a6c4d : Contacts: show InCall plugin tab FAB in soft logged out state <Erica Chang> 13 days ago
+b5073fd : Contacts: added stats settings check <Erica Chang> 4 weeks ago
+53a12b4 : Contacts: metrics <Erica Chang> 4 weeks ago
+b0b05c8 : Contacts : ViewPager RTL fix <Erica Chang> 3 weeks ago
+6452c8e : [2/2]Contacts: handle soft logged out state <Erica Chang> 3 weeks ago
+33306c4 : Contacts: fixed contacts filter exception <Erica Chang> 4 weeks ago
+a32f6a3 : Contacts Card: fixed merged contacts with multiple plugin accounts <Erica Chang> 4 weeks ago
+dbdb27d : Contacts Card: fix nudges <Erica Chang> 4 weeks ago
+64e5ffe : Contacts: add plugin status change receiver <Erica Chang> 5 weeks ago
+4bfb173 : Adapt to the API changes in contact blocking classes <Rohit Yengisetty> 4 weeks ago
+00120c2 : (2/2) Contacts: fixed auth state handling and account handle <Erica Chang> 5 weeks ago
+4f95d89 : Contacts Card: fixed plugin call log <Erica Chang> 6 weeks ago
+e73c017 : Contacts: added fix for parcelable <Erica Chang> 6 weeks ago
+42fed27 : Fix build breakage in QuickContactActivity <Raj Yengisetty> 5 weeks ago
+a7f0f11 : Contacts: incall plugin implementation <Erica Chang> 3 months ago
+ 
+**** github:CyanogenMod/android_packages_apps_ContactsCommon ****
+0a27115 : Really change the ambient version <Stephen Bird> 2 days ago
+9d3da7d : Change ambient version <Richard MacGregor> 2 days ago
+fca7d21 : Automatic translation import <Michael Bestas> 5 days ago
+90b9d42 : Automatic translation import <Michael Bestas> 2 weeks ago
+3ac79f5 : Contacts : fix RTL ViewPager offset on configuration change <Erica Chang> 12 days ago
+2f2dd2e : Add origin option to call methods. <Stephen Bird> 7 weeks ago
+b725baf : LookupProviderImpl : add synchronization around ProviderInfo <Rohit Yengisetty> 4 weeks ago
+d2c67d9 : Add BlockContactActivity <Rohit Yengisetty> 4 weeks ago
+1d2d16a : Contacts: corrected login icon dimens <Erica Chang> 5 weeks ago
+0bda716 : Refactor BlockContactHelper and BlockContactDialogFragment <Rohit Yengisetty> 6 weeks ago
+70292ca : Switch to ambientsdk-internal <Raj Yengisetty> 5 weeks ago
+f5e144d : Provide implementations for new LookupProvider APIs <Rohit Yengisetty> 5 weeks ago
+1e182c5 : Add default avatar for spam callers <Rohit Yengisetty> 6 weeks ago
+bc6fada : Tie blocking to blacklist and contact_info provider <Kamaljeet Maini> 8 weeks ago
+8814936 : Fix incomplete text in call spinner <Stephen Bird> 8 weeks ago
+8de1b6a : Add additional resources for use with LookupProvider <Rohit Yengisetty> 8 weeks ago
+9a4f26b : Fix derp in labeling that breaks messaging <Stephen Bird> 9 weeks ago
+916ed1b : (2/2) T9 cleanup <Stephen Bird> 9 weeks ago
+77f642f : Extend LookupProvider APIs <Rohit Yengisetty> 9 weeks ago
+0531541 : Setup mimetypes for regular search <Stephen Bird> 9 weeks ago
+5f6e03a : Add setDrawable to assign a drawable directly <Stephen Bird> 9 weeks ago
+9526034 : [1/2] Use provider string instead of user name <Richard MacGregor> 10 weeks ago
+8055e09 : Explicity set extra number to null if one does not exist <Stephen Bird> 10 weeks ago
+9a5876f : Add Spinner to edittext <Stephen Bird> 10 weeks ago
+cdc7dd8 : Remove ambient related code <Stephen Bird> 2 months ago
+d72d686 : T9 search <Stephen Bird> 3 months ago
+f9b4a81 : Setup mime type data <Stephen Bird> 3 months ago
+f80c6d3 : Fix mimetype lookup for incall plugins <Stephen Bird> 3 months ago
+64356db : [2/3] Show incall plugin contacts in favorites <Richard MacGregor> 6 months ago
+0fb9fa4 : Stability fixes. -Check that mIndexForSelection is >=0 in ViewPagerTabStrip -Contact Loader: parse for a JSONarray if num is -1 -Contacts: fixed TrueCaller mimetype contact card parsing -Contacts: fixed tab sliding offset upon onRestore <Erica Chang> 3 months ago
+efac552 : Added plugin resources <Erica Chang> 3 months ago
+58ba3f3 : LookupProviderImpl : add synchronization around ProviderInfo <Rohit Yengisetty> 4 weeks ago
+8d3697c : Add RequestOrigin to LookupRequest <Rohit Yengisetty> 4 weeks ago
+37bf36a : Extend LookupProvider api to add an unique identifer <Rohit Yengisetty> 4 weeks ago
+d8f225d : Automatic translation import <Michael Bestas> 3 weeks ago
+5f2c899 : Enable support for groups in External contacts accounts <pulser> 1 year, 9 months ago
+701af64 : Import translations. DO NOT MERGE <Geoff Mendal> 5 months ago
+347b660 : Import translations. DO NOT MERGE <Geoff Mendal> 5 months ago
+ 
+**** github:CyanogenMod/android_packages_apps_Dialer ****
+0a5abcd : Fix rebase errors <Stephen Bird> 2 days ago
+795f46c : Port VoLTE support from DialerNext into AOSP Dialer <Kamaljeet Maini> 5 weeks ago
+153585f : Add new method for getting hinttext <Richard MacGregor> 4 weeks ago
+90ae36a : Call Log - fix issues with expanded call log options <Richard MacGregor> 6 days ago
+c9aa85c : Only clear dialpad on success <Stephen Bird> 3 weeks ago
+9c490ff : Check for phone permissions before gathering call history <Stephen Bird> 2 weeks ago
+d1684bf : Metrics: Fix some bugs found by testing <Stephen Bird> 2 weeks ago
+dc65a3c : Fix 'turn on phone permissions' hint <Richard MacGregor> 2 weeks ago
+56d8996 : Remove FAB hiding and showing <Stephen Bird> 3 weeks ago
+baf30ce : Update search drawable when dialpad is hidden <Stephen Bird> 3 weeks ago
+61583e1 : Fix expanded call options for InCallApi provider <Richard MacGregor> 3 weeks ago
+d8f7228 : Add Metrics for Dialer call origins and incall items <Stephen Bird> 8 weeks ago
+aff8cf3 : Update roaming text <Stephen Bird> 3 weeks ago
+2902377 : Add Wifi Call nudge <Stephen Bird> 5 weeks ago
+7ae75d5 : Temporarily revert DeepLink <Richard MacGregor> 4 weeks ago
+b338120 : Add RequestOrigin to ContactInfoHelper <Rohit Yengisetty> 4 weeks ago
+86f1f7b : Add metrics for logging a successful LookupProvider response <Rohit Yengisetty> 4 weeks ago
+6a89808 : Utilize status codes on LookupResponse <Rohit Yengisetty> 4 weeks ago
+36df0be : Add BlockContactActivity to the manifest <Rohit Yengisetty> 4 weeks ago
+3eb91f5 : Bring coachmark up to spec <Stephen Bird> 5 weeks ago
+94ea6cc : Use CALL_ACTION instead of InCallAPI for emergency calls <Richard MacGregor> 4 weeks ago
+58f0d08 : Construct encoded lookup uris for Lookup responses <Stephen Bird> 4 weeks ago
+d9623d5 : Modify BlockContactPresenter <Rohit Yengisetty> 4 weeks ago
+fae836f : [2/2] MultiSIM: Call using specified SIM <Richard MacGregor> 5 weeks ago
+c0553ca : Refactor Blacklist and Contact Blocking <Rohit Yengisetty> 5 weeks ago
+666fc39 : Wi-fi help text does not show first time when SIM is selected <Richard MacGregor> 4 weeks ago
+93f9bb5 : Use BrandIcon instead of BadgeIcon <Richard MacGregor> 5 weeks ago
+3d05339 : InCall plugin search shortcut text fix <Richard MacGregor> 5 weeks ago
+625ad12 : Only show enabled CallMethods <Stephen Bird> 5 weeks ago
+80cc555 : Move adapter updating into updateCallCreditInfo <Stephen Bird> 5 weeks ago
+bcbe31f : Create new drawable before we scale <Stephen Bird> 5 weeks ago
+86d7d78 : Fix crash where overflow does not exist <Stephen Bird> 6 weeks ago
+dde67a8 : Fix coachmark rotation and text size <Stephen Bird> 5 weeks ago
+cd91ec8 : Add null check to query string <Stephen Bird> 5 weeks ago
+cf41dae : Add back missing icon in portrait mode <Stephen Bird> 5 weeks ago
+8803300 : Fix text in call log to match specs <Stephen Bird> 5 weeks ago
+848c314 : Show credit banner if supported in dialpad and search ui <Richard MacGregor> 5 weeks ago
+ee66a85 : getCurrentCallMethod if it is currently null <Stephen Bird> 6 weeks ago
+4326931 : Port coachmark to DialerNow <Stephen Bird> 7 weeks ago
+c0b01af : Remove sign_in_credit_banner_text, this should live in PhoneCommon <Raj Yengisetty> 6 weeks ago
+21ce88f : Fix CallMethodHelper change <Erica Chang> 6 weeks ago
+4d9d892 : Use correct placeCall method <Richard MacGregor> 6 weeks ago
+4dfef33 : Fix InCall plugin user lookup <Richard MacGregor> 7 weeks ago
+1ac2c1d : Finally fix our search to behave as expected <Stephen Bird> 8 weeks ago
+3ac55cf : Fix race with credit listener removal <Stephen Bird> 6 weeks ago
+cd9060a : Fix NPE rotation issue <Richard MacGregor> 7 weeks ago
+a0cae1a : [1/2] Use UICommon simple SnackBar <Richard MacGregor> 7 weeks ago
+669a60e : Fix refreshing if data is already available <Stephen Bird> 7 weeks ago
+69dfa2b : Properly size icon for provider quickaction <Stephen Bird> 7 weeks ago
+83efea2 : Start using android support design from frameworks <Richard MacGregor> 7 weeks ago
+ 
+**** github:CyanogenMod/android_packages_apps_ExactCalculator ****
+a804631 : ExactCalculator: Remove override of Calculator package <Ethan Chen> 2 days ago
+ 
+**** github:CyanogenMod/android_packages_apps_InCallUI ****
+7ae53c9 : Port VoLTE support from InCallUINext to InCallUI <Kamaljeet Maini> 4 weeks ago
+25cd7bf : Temporarily revert DeepLink <Richard MacGregor> 4 weeks ago
+a5eb044 : Add RequestOrigin to ContactInfoCache <Rohit Yengisetty> 4 weeks ago
+d57745b : Add additional content to call Notifications <Rohit Yengisetty> 4 weeks ago
+ea294b5 : Ensure presence of a valid Call in LookupProvider callback <Rohit Yengisetty> 4 weeks ago
+070ba75 : Implement ability to add incoming call to Blacklist within Glow ring <Rohit Yengisetty> 5 weeks ago
+d4812c8 : Adjust end call fab relative to invite snackbar <Richard MacGregor> 7 weeks ago
+c05de72 : Resolves a few issues related to call buttons:  The DeepLink slot will now update after sending a link to be handled. onResume() will now start a new query.  This gives the handling application an opportunity to trigger a "view" action instead of receiving the content as if it were new. <NathanielWaggoner> 8 weeks ago
+61d7ca7 : Only get our enabled call methods <Stephen Bird> 8 weeks ago
+9a7a617 : Add LookupProvider to ContactInfoCache <Rohit Yengisetty> 8 weeks ago
+407efb4 : Resolves a NPE when the UI isn't available at the time of the callback ticket NOTES-16 <NathanielWaggoner> 8 weeks ago
+fef1a35 : Tints the DeepLink icons loaded into the callbuttonfragment to keep the look and feel consistent <NathanielWaggoner> 8 weeks ago
+4121225 : Fix incall button ordering <Richard MacGregor> 9 weeks ago
+a72e4cb : DeepLink Refactors for CallButtonPresenter and CallButtonFragment <NathanielWaggoner> 9 weeks ago
+ea458a1 : DeepLink integration phase 1 <NathanielWaggoner> 10 weeks ago
+ff82047 : Use CallMethodHelper for plugin info <Richard MacGregor> 3 months ago
+91d03c8 : InCallAPI Handover M-bringup <Richard MacGregor> 3 months ago
+ 
+**** github:CyanogenMod/android_packages_apps_Messaging ****
+49f0c07 : Add 'ims-common' build dependency <Rohit Yengisetty> 2 days ago
+ 
+**** github:CyanogenMod/android_packages_apps_PhoneCommon ****
+cf732b7 : Move VoLTE changes to PhoneCommon <Kamaljeet Maini> 5 weeks ago
+ade2cdf : Add new method for getting hinttext <Richard MacGregor> 4 weeks ago
+5bbda91 : Use subscription check <Stephen Bird> 10 days ago
+b36eab1 : Only clear dialpad on success <Stephen Bird> 3 weeks ago
+7823a59 : InCall: add low credit warnings <Richard MacGregor> 3 weeks ago
+18a593c : Fix equals and hashcode override <Richard MacGregor> 3 weeks ago
+64949d3 : Remove resources instance saved in CallMethodInfo <Richard MacGregor> 3 weeks ago
+89e5527 : [1/2]Contacts : handle soft logged out state <Erica Chang> 3 weeks ago
+27e78ce : Prioritize credits over subscriptions. <Stephen Bird> 5 weeks ago
+a7c8e41 : Contacts Card : fixed install nudge <Erica Chang> 4 weeks ago
+f55b2d2 : Fix FC on devices without AmbientCore <Stephen Bird> 4 weeks ago
+4a49180 : [1/2] MultiSIM: Call using specified SIM <Richard MacGregor> 5 weeks ago
+f8e338e : Use BrandIcon instead of BadgeIcon <Richard MacGregor> 5 weeks ago
+5176f88 : Add preference to track wifi call events <Stephen Bird> 5 weeks ago
+df5cb68 : (1/2) Contacts: fixed auth state handling <Erica Chang> 5 weeks ago
+ee5263f : Add comments for the expected drawable attributes <Richard MacGregor> 5 weeks ago
+e32e50e : Add back badgeicon after refactor <Stephen Bird> 6 weeks ago
+8d0e05b : Add sign_in_credit_banner_text <Raj Yengisetty> 6 weeks ago
+fbada9d : (1/2) Contacts: refactor <Erica Chang> 9 weeks ago
+86b7461 : InCall: check class of creditWarn value <Raj Yengisetty> 6 weeks ago
+70b3f14 : Decouple getAllCallMethods from refreshing <Stephen Bird> 8 weeks ago
+503b9dc : [1/2] fix spinner/hint issues <Richard MacGregor> 7 weeks ago
+0cd7e34 : [2/2] update credit colors <Stephen Bird> 7 weeks ago
+30dc785 : Fix crash with null mimetype <Stephen Bird> 8 weeks ago
+a1aefab : InCall: move CreditBarHelper to src-ambient <Raj Yengisetty> 8 weeks ago
+95562ec : Move Credits Bar to Helper class <Stephen Bird> 8 weeks ago
+e920421 : Reintroduce dynamic refresh <Stephen Bird> 8 weeks ago
+846ec78 : Helper methods for our t9 searches <Stephen Bird> 9 weeks ago
+5531533 : Fix Subscription button text <Richard MacGregor> 9 weeks ago
+5675262 : Remove everchanging items <Stephen Bird> 9 weeks ago
+02d4b70 : Create easy method to just grab enabled plugins <Stephen Bird> 9 weeks ago
+f0aa770 : Fix emergency call crash <Stephen Bird> 9 weeks ago
+7c94eb8 : Use new subscription format <Stephen Bird> 10 weeks ago
+ec3dbfa : Fix call method spinner width and selection area <Richard MacGregor> 10 weeks ago
+96733b9 : Add Login intent for credits bar <Stephen Bird> 10 weeks ago
+57e3b00 : setOverflowMenuButton custom button placement <Stephen Bird> 10 weeks ago
+fc97e72 : InCall: Port Authentication and CallCredit Listeners <Raj Yengisetty> 2 months ago
+7f660d9 : Various CallMethodInfo tweaks <Richard MacGregor> 2 months ago
+969c8f4 : InCall: clean up logs and add ImageUtils <Raj Yengisetty> 2 months ago
+22fef9c : CallMethodHelper/Info: Add icon and mimetype <Richard MacGregor> 3 months ago
+3d48977 : Incorporate namespace changes for PluginStatus <Richard MacGregor> 3 months ago
+a6049e6 : Bring CallMethod items here <Stephen Bird> 3 months ago
+c5f5b11 : Bringup credits and other minor things <Stephen Bird> 3 months ago
+77d3091 : Call Method Spinner Bringup <Stephen Bird> 3 months ago
+ 
+**** cmR:android_packages_apps_Settings ****
+148c1ca : Battery Bar [2/2] <Alex Cruz> 16 minutes ago
+782699f : [2/2] settings: add CPU info overlay <maxwen> 6 hours ago
+6a73a7d : [Settings]  HW keys tweaks (2/2) <cristianomatos> 17 hours ago
+490fd8f : settings: add back all keyboard IME features back (2/2) <Lars Greiss> 20 hours ago
+cb7781f : [DUI] Gallery icon support [3+4/5] <Andrzej Ressel> 3 weeks ago
+f9d053a : [SQUASHED] Settings : Add DU Fling,Pulse,SmartBar Action Picker Dialog : <Randall Rushing> 21 hours ago
+ 
+**** cmR:android_packages_apps_SetupWizard ****
+529ba72 : disabled cm navigationbar and enabled DU navigationbar and hardware keys <ZION959> 3 weeks ago
+b6c1574 : CMRemix's fy <ZION959> 6 weeks ago
+ 
+**** github:CyanogenMod/android_packages_providers_ContactsProvider ****
+b3bdb84 : Switch to ambientsdk <Stephen Bird> 2 days ago
+132b7de : Contacts: automatic merge count metrics <Erica Chang> 4 weeks ago
+e2b52e9 : Switch to ambientsdk-internal <Raj Yengisetty> 5 weeks ago
+2cb7161 : Bump targetSdkVersion to 23 <Matt Garnes> 9 weeks ago
+f29be69 : Get mimetype for strequestns <Stephen Bird> 3 months ago
+d77430b : AmbientSDK: set new target SDK to 22 <Raj Yengisetty> 3 months ago
+2de130b : Fix query if no username exists in path <Stephen Bird> 5 months ago
+d6942db : ContactsProvider: Join raw_contacts and data on the proper ID <Stephen Bird> 5 months ago
+22eeaf5 : (1/2) Call Lookup: Update call log handler to query usernames <Stephen Bird> 6 months ago
+b25f375 : [1/3] Show incall plugin contacts in favorites <Richard MacGregor> 6 months ago
+48f6d92 : Update addresBookIndexer when removing dupes <Richard MacGregor> 6 months ago
+f987131 : New uri path for removing duplicate callable contacts <Richard MacGregor> 6 months ago
+58956e1 : CallLog: change plugin to package <Stephen Bird> 7 months ago
+3e6a328 : CallLog: initial adding of new plugin columns <Stephen Bird> 7 months ago
+01c7baf : Query skype mime type when getting CALLABLE contacts <emancebo> 9 months ago
+ 
+**** github:CyanogenMod/android_prebuilts_cmsdk ****
+0306f90 : prebuilts/cmsdk: Update for latest SNAPSHOT release. <Adnan Begovic> 2 days ago
+ 
+**** cmR:android_prebuilts_ndk ****
+fbcc18e : Remove invalid clang ifdef about __builtin_isnan() and clang >= 3.7. <Stephen Hines> 7 months ago
+ 
+**** github:CyanogenMod/android_system_bt ****
+d120465 : BT: ACL and l2c out if sync after connection collision <Gurpreet Ghai> 5 weeks ago
+ 
+**** github:CyanogenMod/android_vendor_cm ****
+5c50f84 : Update ambientsdk version 1.5.2 <Raj Yengisetty> 2 days ago
+ 
+**** cmR:android_vendor_CMRemix ****
+676b11b : update changelog <ZION959> 3 hours ago
+d2fa0ec : update cmremix config and build script <ZION959> 7 hours ago
+083bea1 : vendor: add new default wallpaper <ZION959> 6 days ago
+f43753e : vendor: update supersu to v2.71 <ZION959> 7 days ago
+1aef1d0 : vendor: use zion959-proprietary_vendor_samsung for blobls <ZION959> 7 days ago
+5367a6c : vendor: use gcconly optimnization <ZION959> 13 days ago
+b9da625 : vendor: update supersu to RC v2.70 <ZION959> 3 weeks ago
+4ba2456 : vendor: update live su policy <ZION959> 3 weeks ago
+272ed6f : vendor: use prebuilt AdvancedDisplay <ZION959> 3 weeks ago
+5b84ce4 : DUI: get ready to get a DUI! [1/3] <Randall Rushing> 6 weeks ago
+3804bd4 : SmartBar: Fix NPE when changing button animation style <Randall Rushing> 6 weeks ago
+9ec6940 : SmartBar: Clean up tablet button dimens, some code cleanup [1/2] <Randall Rushing> 7 weeks ago
+4ac2da0 : Smartbar: make sure hidden context ime switcher stays hidden [2/2] <Randall Rushing> 6 weeks ago
+b42abdb : SmartBar: Battery Bar support [2/2] <Randall Rushing> 6 weeks ago
+71f8b64 : Navbar: Finalize navbar overlay resource management [1/2] <Randall Rushing> 6 weeks ago
+1f03b74 : Fix navbar secondary overlay resource handling [4/4] <Randall Rushing> 7 weeks ago
+75a69e7 : SmartBar: Introduce spring softkey touch animation [1/2] <Randall Rushing> 8 weeks ago
+4bac767 : SmartBar: speed up single tap timeout when double tap is enabled <Randall Rushing> 8 weeks ago
+ca7aeac : SmartBar: Completely overhaul button tap logic <Randall Rushing> 9 weeks ago
+3338b49 : Fling: Custom icon support [3/3] <Randall Rushing> 9 weeks ago
+92a9d9f : Introduce SmartBar navigation implementation for DirtyUnicorns <Randall Rushing> 3 months ago
+7e8fe5c : Pulse: Fix the "Buckmarble bug", Pulse not tracking volume stream events <Randall Rushing> 4 months ago
+1558b44 : Prebuilts: update to latest version bump so we aren't FUNAVBAR [4/4] <Randall Rushing> 4 months ago
+85fb0c1 : prebuilts: fix navbar visibility not showing after hiding <Randall Rushing> 4 months ago
+af7ae39 :  update some prebuilts. <wrapped> 4 weeks ago
+ 
+**** github:TheMuppets/proprietary_vendor_lge ****
+5fe36bf : hammerhead: update vendor binaries from MMB29X <pranav> 5 days ago
+8f980f2 : hammerhead: update all vendor blobs from MMB29V binaries <pranav> 4 weeks ago
+cf4e4e5 : hammerhead: add back missing soundfx lines <pranav> 5 weeks ago
+ 
+**** github:CMRemix/zion959-proprietary_vendor_samsung ****
+ead578e : Create README.md <ZION959> 8 days ago
+3fefb8a : trlte-common: Update 6.0.1 proprietary file listing libraries <ZION959> 8 days ago
+ 

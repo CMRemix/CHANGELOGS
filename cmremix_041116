@@ -1,0 +1,29 @@
+
+**** cmR:android_frameworks_base ****
+2356b98 : Custom ambient display settings (1/2) <beanstown106> 2 hours ago
+f62daca : Force Heads up in all applications [1/2] <beanstown106> 7 days ago
+e126675 : SystemUI: HeadsUp whitelists (2/3) <xyyx> 2 months ago
+2a3a3c1 : SystemUI: HeadsUp blacklists (2/3) <Decad3nce> 2 hours ago
+c12d0d7 : SystemUI: Don't update if HeadsUp is disabled <lion0738> 3 months ago
+6c6915f : Heads Up Snooze  2/2 <rogersb11> 10 weeks ago
+65c2de5 : HeadsUp: add timeout option (1/2) <Lars Greiss> 2 hours ago
+ 
+**** cmR:android_packages_apps_Settings ****
+826dd9f : moved util to utils <ZION959> 3 minutes ago
+f2cde55 : Fix: don't use runSuCommand when it ain't needed, for selinux changes <anders3408> 8 days ago
+a7dafd7 : Avoid running setenforce if it ain't needed <anders3408> 12 days ago
+25ba293 : Settings: Fix selinux OnBoot <placiano> 13 days ago
+298ebfc : Selinux Switch: Show toast only for permissive on boot <LorDClockaN> 2 months ago
+aa900e6 : Selinux Switch <Alex Cruz> 74 minutes ago
+81d3255 : add back utils <ZION959> 77 minutes ago
+bb8742e : Custom Ambient display options (2/2) <beanstown106> 87 minutes ago
+865b341 : Force Heads up in all applications [2/2] <beanstown106> 2 hours ago
+6577466 : Heads Up Snooze 1/2 <rogersb11> 2 hours ago
+af85dcf : HeadsUp: add timeout option (2/2) <Lars Greiss> 2 hours ago
+932795f : Settings: HeadsUp whitelists (3/3) <lion0738> 2 months ago
+fd9492d : Settings: HeadsUp blacklists (3/3) <Decad3nce> 2 hours ago
+ 
+**** cmR:cm_platform_sdk ****
+c0091e4 : CMSettings: HeadsUp whitelists (1/3) <lion0738> 30 minutes ago
+cada0af : CMSettings: HeadsUp blacklists (1/3) <lion0738> 32 minutes ago
+ 

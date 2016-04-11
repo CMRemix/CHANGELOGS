@@ -1,0 +1,69 @@
+
+**** cmR:CMRemix ****
+1b6938e : track cmremix's bionic, art, system/core, Changelog <ZION959> 20 hours ago
+ 
+**** github:CMRemix/android_device_samsung_trlte-common ****
+00565b7 : SELinux status: permissive <ZION959> 6 weeks ago
+ 
+**** cmR:android_frameworks_base ****
+59bc2e9 : Make BluetoothManagerCallback oneway to prevent waiting on response <Ajay Panicker> 3 weeks ago
+075363f : Avoid unregistering client while stopping LE Scan <Om Prakash Sahoo> 1 year, 1 month ago
+8587255 : Bluetooth: Clear Gatt Services when discovery initiated by stack <Nitin Arora> 9 weeks ago
+810c77d : Don't refresh ui when screen off <Lars Greiss> 1 year, 4 months ago
+2ba7ba0 : frameworks: squash of leak & race fixes <liquid0624> 1 year, 2 months ago
+75eadd1 : Delete media tests <Evan Anderson> 2 years, 5 months ago
+c26e1cf : Status bar notification: Use Material icons for missed calls <XXMrHyde> 1 year, 3 months ago
+4a99690 : core: Materialize text select handle <snak3ater> 1 year, 4 months ago
+c3c2779 : Materialize toast frames <Hernán Castañon Álvarez> 1 year, 2 months ago
+336eb56 : DEBUG: Turn off some debugging we don't need. <mydongistiny> 6 months ago
+d95adc1 : Bring scrolling back to a sane level <Altaf-Mahdi> 9 months ago
+35d0a57 : aapt: i hate if (true) statements <Evisceration> 1 year, 10 months ago
+593e28c : ActivityThread, shut the density up! <tobitege> 10 months ago
+587e275 : Unknown apps: enable by default <zephiK> 6 months ago
+295ed36 : aapt: silence these warnings <Evisceration> 1 year, 11 months ago
+8c7e133 : aapt: Don't compress qmg, wbp and arsc assets <arter97> 1 year ago
+0133bf1 : Forward Port: Smoother Upload and Download Animation <Muhammed Nazim> 4 months ago
+eeaf6f7 : Turn off debugging <fusionjack> 1 year, 4 months ago
+54aca3f : Reduce log verbosity: Don't spam logcat <fusionjack> 1 year, 10 months ago
+8c32cc7 : aapt: silence density flag warnings <Alexander Martinz> 1 year ago
+51e1a19 : aapt: Default to 0 compression ratio <arter97> 1 year ago
+cd3d366 : Change SQL to improve performance. <muzbit.kim> 2 years, 1 month ago
+03f9f7b : lowered animations duration <ZION959> 4 months ago
+3e8ece3 : Allow faster app switching <Chet Kener> 6 months ago
+cf84df8 : Speed up StatusBar <Chet Kener> 5 months ago
+f82688f :     Improve scrolling cache <undefined> 1 year, 5 months ago
+ee6e233 : Speed things up!! <Mazda> 1 year, 5 months ago
+3ae8602 : frameworks: I like it fast -25 <ZION959> 1 year, 1 month ago
+c4d34a3 : Frameworks: apple can do...we can do as well <Lars Greiss> 1 year, 5 months ago
+48bea25 : Fix build with gcc 5.1 <Bernhard Rosenkränzer> 12 months ago
+b333640 : Lockscreen : Fix bottom area visibility <Danesh M> 35 hours ago
+c6aef76 : audio: Don't play sound effects if stream is muted <Steve Kondik> 3 days ago
+779a3eb : SystemUI: show visualizer in shade-locked view <Roman Birg> 2 days ago
+6ccc513 : NPE fix for SyncStorageEngine read authority am: a962d9eba7 am: 339c4f2b05 am: 58048c1f17 <Shreyas Basarge> 7 weeks ago
+9dcf4bc : Redact Account info from getCurrentSyncs <Matthew Williams> 3 months ago
+ 
+**** github:CMRemix/android_kernel_samsung_trlte ****
+418444d : trlte: add sprint varients defconfig <ZION959> 34 hours ago
+ 
+**** cmR:android_packages_apps_CMRemixUpdater ****
+1a95c4b : update stable server for cmremix <ZION959> 17 minutes ago
+ 
+**** cmR:android_packages_apps_Settings ****
+148252a : Changelog: prettify Add colors and zest <pcarenza> 20 hours ago
+fc01213 : CMRemix updater OTA <ZION959> 4 months ago
+0d602ed : add changelog to CMRemix Settings <alviteri> 21 hours ago
+e0e9443 : vectorize cmremix settings <ZION959> 21 hours ago
+03e5537 : Settings: vectorize supersu drawable <José Adolfo Galdámez> 9 months ago
+4f90b2f : Settings: Make themable SuperSU drawable <José Adolfo Galdámez> 10 months ago
+9f8db17 : Launch SuperSU from Settings <ZION959> 21 hours ago
+4aa3736 : I like it fast -25 <ZION959> 1 year ago
+4276f45 : Settings: apple can do...we can do as well <Lars Greiss> 2 years ago
+848d8e1 : Settings: Display DragonTC custom Clang version if present <ZION959> 21 hours ago
+77a4439 : Added SaberMod info & cmremix banner in About Phone <ZION959> 22 hours ago
+dbfc404 : Settings: Remove some unwanted stuff <Lokesh Chamane> 22 hours ago
+3de83bc : settings: add CMRemix UI Settings <ZION959> 22 hours ago
+09b3a41 : Add CMRemix version to Device Info <ZION959> 24 hours ago
+ 
+**** cmR:android_vendor_CMRemix ****
+1489bf0 : fixed changelog derp <ZION959> 20 hours ago
+ 
