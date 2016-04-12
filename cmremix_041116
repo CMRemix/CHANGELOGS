@@ -1,29 +1,93 @@
 
+**** cmR:CHANGELOGS ****
+addf897 : update for cmremix-mm <ZION959> 22 hours ago
+ 
+**** cmR:android_build ****
+339f181 : build: update polly flags <ZION959> 22 hours ago
+ 
 **** cmR:android_frameworks_base ****
-2356b98 : Custom ambient display settings (1/2) <beanstown106> 2 hours ago
-f62daca : Force Heads up in all applications [1/2] <beanstown106> 7 days ago
+352c85c : use CMRemix color instead Benzo <ZION959> 11 minutes ago
+cb8f764 : Settings: add methods to put and get boolean values <Dirk Rettschlag (MarcLandis)> 4 months ago
+2e3efd3 : WallpaperCropper: use same action bar style as Launcher3 <maxwen> 2 hours ago
+0b15a44 : base: add keyguard support in WallpaperCropActivity <maxwen> 60 minutes ago
+647c7a7 : Frameworks: Lockscreen blur & see through (1/2) <lion0738> 61 minutes ago
+9f378a8 : Add color to network traffic arrows <Nico60> 11 months ago
+8da9e69 : FWB: Network Traffic [1/2] (Haus1) <ZION959> 2 hours ago
+9530d7a : fixed Uri cannot be resolved to a type <ZION959> 3 hours ago
+c4302f9 : Update task manager icon <westcripp> 4 months ago
+2886c7d : Improve expanded header icon padding <westcripp> 4 months ago
+163ba3e : Fix Task manager icon layout and get rid of QS emergency calls only text <westcripp> 4 months ago
+5908126 : SystemUI:Add Missing Parts for CAF Task Manager <Alex Cruz> 3 hours ago
+d53ccbb : Materialize task kill button <westcripp> 11 months ago
+f9a52b0 : Reset to QS panel if task manager was visible last <Altaf-Mahdi> 8 months ago
+1213821 : Task Manager: Use one observer for changes, misc cleanup <Randall Rushing> 3 hours ago
+1f72d42 : Add more icons for task manager switch <Alex Cruz> 8 months ago
+424f0c3 : Task manager : Remove empty notification after switch on/off logic <westcripp> 10 months ago
+9855ce3 : Task Manager : On switch recreate statusbar to fix task view <westcripp> 3 hours ago
+5ec5eb2 : Update some Task Manager functions <Lokesh Chamane> 10 months ago
+0bf2794 : SystemUI : Fix Task Manager strings <dexmc> 10 months ago
+911cb9d : Task manager improvements <Altaf-Mahdi> 4 hours ago
+45ba593 : Improve Task manager UI improved task and button view removed task manager text and layout Screenshot- https://drive.google.com/file/d/0B-nhdyBCbCSxbEdUUFZMU0p0Qnc/view?usp=sharing <westcripp> 11 months ago
+9beb3d7 : Expose task manager values for themers <Alex Cruz> 4 hours ago
+c81c7d1 : Fixed Task Manager bug described in post below <Alex Cruz> 11 months ago
+6cca775 : CAF Task Manager switch [1/2] <Alex Cruz> 11 months ago
+af2d4c4 : SystemUI: Add task manager <haiyangl> 4 hours ago
+8cfa20c : Add Screen Record to the Power Menu [1/2] <eyosen> 4 months ago
+2a99942 : Incorrect evictor key in TokenCache <You Kim> 5 days ago
+a59bf9d : SystemUI: add closed all tasks event log <Roman Birg> 12 hours ago
+c07b146 : SystemUI: add RecentsView EventLogs <Roman Birg> 11 months ago
+539883f : SystemUI: add haptic feedback to quick tiles <Evisceration> 21 hours ago
+ad76413 : [1/2]frameworks/base: Add three-fingers-swipe to screenshot The feature is ported from Oppo ColorOS. With the options on, users can swipe down on the screen to have a screenshot. <ghbhaha> 21 hours ago
+f6ae0c1 : Improve Heads up toggle [1/2] * Add multiuser support, provide a system setting to override heads up   showing. User can disable heads up within this one so we don't need to   mess with Settings.Global heads up dependencies and break Google wide   implementations like priority filtering etc. *updated heads up quicksetting tile to reflect changes as well <BigBrother1984> 21 hours ago
+2d54289 : Add new ReverseInterpolator <Morningstar> 4 weeks ago
+a614adf : Tweak dexopt dialog layout <Morningstar> 2 weeks ago
+cc17deb : Sexy up the dexopting dialog Based on and inspired by the following commit from Evisceration: NamelessRom/android_frameworks_base@7dc2850 <Morningstar> 14 hours ago
+2e8ab8c : BootMessage: Show each app name being optimized during boot <Brian Larsen> 5 months ago
+daed081 : Frameworks_base: add dt2w on doze [2/2] <yank555-lu> 22 hours ago
+52cd89a : Enable advanced power menu reboot by default <ZION959> 9 weeks ago
+2356b98 : Custom ambient display settings (1/2) <beanstown106> 24 hours ago
+f62daca : Force Heads up in all applications [1/2] <beanstown106> 8 days ago
 e126675 : SystemUI: HeadsUp whitelists (2/3) <xyyx> 2 months ago
-2a3a3c1 : SystemUI: HeadsUp blacklists (2/3) <Decad3nce> 2 hours ago
+2a3a3c1 : SystemUI: HeadsUp blacklists (2/3) <Decad3nce> 24 hours ago
 c12d0d7 : SystemUI: Don't update if HeadsUp is disabled <lion0738> 3 months ago
 6c6915f : Heads Up Snooze  2/2 <rogersb11> 10 weeks ago
-65c2de5 : HeadsUp: add timeout option (1/2) <Lars Greiss> 2 hours ago
+65c2de5 : HeadsUp: add timeout option (1/2) <Lars Greiss> 25 hours ago
+17297b7 : SysUI: reset mCanDismissKeyguard in setBarState <d34d> 2 days ago
  
 **** cmR:android_packages_apps_Settings ****
-826dd9f : moved util to utils <ZION959> 3 minutes ago
-f2cde55 : Fix: don't use runSuCommand when it ain't needed, for selinux changes <anders3408> 8 days ago
-a7dafd7 : Avoid running setenforce if it ain't needed <anders3408> 12 days ago
-25ba293 : Settings: Fix selinux OnBoot <placiano> 13 days ago
+ca1b157 : network-traffic: use batterry bar color for now <ZION959> 15 minutes ago
+db24850 : Lockscreen see-through & blur (2/2) <Corey Edwards> 4 months ago
+22ab780 : LockscreenWallpaper: Use FB's WallpaperCropper <fusionjack> 4 months ago
+8e6cb71 : [SQUASHED] [2/2] Settings: Status bar Network traffic <ZION959> 2 hours ago
+87e81b8 : Add fastscroll to the Manage applications screen so you don't need to scroll so much if you have alot of apps and want to go to the bottom of the list. <Jimmy> 6 months ago
+7b8bde6 : CAF Task Manager switch [2/2] Temp placed in status bar settings <Alex Cruz> 2 hours ago
+b3b4252 : update cmremix-OTA icon for theme <ZION959> 2 hours ago
+fd4dcfd : Add Screen Record to the Power Menu [2/2] <ZION959> 3 hours ago
+fdab7b6 : Settings: materialize grabber icon <dankoman> 1 year, 4 months ago
+fb056ec : Add three-fingers-swipe to screenshot [2/2] Change-Id: Ie9a6556a0e1065609d0b2bc67dd57c976efd440c <ghbhaha> 4 hours ago
+85a97fd : Enable Development Settings By Default regardless of build type <beanstown106> 9 weeks ago
+a8b5831 : Development: add lazy dexopt entry <Evisceration> 22 hours ago
+751e57b : Settings: Set advanced reboot by default <ZION959> 9 weeks ago
+1f8c53b : Development Settings: Add Doze toggle Add a toggle to control config_enableAutoPowerModes on the go. <Sultan> 22 hours ago
+33a6ab6 : Settings: add dt2w on doze [1/2] <yank555-lu> 14 hours ago
+826dd9f : moved util to utils <ZION959> 23 hours ago
+f2cde55 : Fix: don't use runSuCommand when it ain't needed, for selinux changes <anders3408> 9 days ago
+a7dafd7 : Avoid running setenforce if it ain't needed <anders3408> 13 days ago
+25ba293 : Settings: Fix selinux OnBoot <placiano> 2 weeks ago
 298ebfc : Selinux Switch: Show toast only for permissive on boot <LorDClockaN> 2 months ago
-aa900e6 : Selinux Switch <Alex Cruz> 74 minutes ago
-81d3255 : add back utils <ZION959> 77 minutes ago
-bb8742e : Custom Ambient display options (2/2) <beanstown106> 87 minutes ago
-865b341 : Force Heads up in all applications [2/2] <beanstown106> 2 hours ago
-6577466 : Heads Up Snooze 1/2 <rogersb11> 2 hours ago
-af85dcf : HeadsUp: add timeout option (2/2) <Lars Greiss> 2 hours ago
+aa900e6 : Selinux Switch <Alex Cruz> 24 hours ago
+81d3255 : add back utils <ZION959> 24 hours ago
+bb8742e : Custom Ambient display options (2/2) <beanstown106> 24 hours ago
+865b341 : Force Heads up in all applications [2/2] <beanstown106> 24 hours ago
+6577466 : Heads Up Snooze 1/2 <rogersb11> 24 hours ago
+af85dcf : HeadsUp: add timeout option (2/2) <Lars Greiss> 24 hours ago
 932795f : Settings: HeadsUp whitelists (3/3) <lion0738> 2 months ago
-fd9492d : Settings: HeadsUp blacklists (3/3) <Decad3nce> 2 hours ago
+fd9492d : Settings: HeadsUp blacklists (3/3) <Decad3nce> 24 hours ago
+ 
+**** cmR:android_vendor_CMRemix ****
+e34e4fd : removed viper4android <ZION959> 3 hours ago
  
 **** cmR:cm_platform_sdk ****
-c0091e4 : CMSettings: HeadsUp whitelists (1/3) <lion0738> 30 minutes ago
-cada0af : CMSettings: HeadsUp blacklists (1/3) <lion0738> 32 minutes ago
+c0091e4 : CMSettings: HeadsUp whitelists (1/3) <lion0738> 23 hours ago
+cada0af : CMSettings: HeadsUp blacklists (1/3) <lion0738> 23 hours ago
  
