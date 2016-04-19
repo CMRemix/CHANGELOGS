@@ -1,0 +1,97 @@
+
+**** cmR:CMRemix ****
+b34b96f : track cmremix sabermod arm-eabi-7.0 <ZION959> 26 hours ago
+ 
+**** cmR:android_build ****
+111864f : update DragonTC <Joe Maples> 2 hours ago
+98450a0 : build: Hide gcc and clang warnings <mydongistiny> 6 days ago
+b6736c7 : build: Add BOOTIMAGE_EXTRA_DEPS for BOOT_SIGNER products too <Ethan Chen> 3 days ago
+a251805 : build: Use compatibility DTB directory path for custom DTB tool builds <Ethan Chen> 4 days ago
+5334dce : build: Add MTK support <Diogo Ferreira> 5 weeks ago
+ 
+**** github:CMRemix/android_device_samsung_trlte-common ****
+b5d38cc : trlte-common: remove intelliplug, we use mpdecision hotplug now in new mm kernel <ZION959> 2 weeks ago
+ 
+**** cmR:android_external_DUtils ****
+c3c9601 : [1/3] Fling: Up swipe left/right support <Andrzej Ressel> 12 days ago
+ 
+**** cmR:android_frameworks_base ****
+e9269bc : Fix: the label "customize" is not updated after changing language <Yongjiang Wu> 8 weeks ago
+f4fc1ab : Fix race condition when writing UidState of appops. <riddle_hsu> 5 days ago
+eb4bcb2 : QSTiles: set disconnect callback in bluetooth details list adapter <Randall Rushing> 3 days ago
+fa74bce : SysUI: Fix reporting of swipe progess in notification panel <d34d> 2 days ago
+777dd99 : SettingsLib: Add back accidentally removed translations <Michael Bestas> 3 days ago
+ 
+**** github:CMRemix/android_kernel_samsung_trlte ****
+76de318 : GCC: Add support for GCC 7.0 <mydongistiny> 28 hours ago
+41624b9 : sound_control: clean up <Pafcholini> 2 days ago
+84e854c : display: add a simple api to query the display state (on/off) at any point in time <franciscofranco> 7 days ago
+491c89c : use franco shamu interactive <ZION959> 7 days ago
+d292dc4 : scripts: remove localversion "+" & "-dirty" from kernel version strings <ZION959> 8 weeks ago
+422d934 : enable vibrate for wake gesture <ZION959> 7 days ago
+1589559 : drivers/motor: temporarily back to the old vibrator motor <Pafcholini> 7 days ago
+5f44f72 : revert: msm: vidc: update with fixes and enhancements <ZION959> 7 days ago
+ac829f5 : revert: msm: vidc: Send resolution along with output buffer <ZION959> 7 days ago
+dcfe64e : revert: msm: vidc: removed the async v4l2 event for session unsupported <ZION959> 7 days ago
+f0ecd3e : revert: msm: vidc: Allow clients to specify/query the colorspace <ZION959> 7 days ago
+418444d : trlte: add sprint varients defconfig <ZION959> 12 days ago
+3cedc7b : revert: core, nfqueue, openvswitch: Orphan frags in skb_zerocopy and handle errors <ZION959> 2 weeks ago
+af5bd5a : net: wireless: bcmdhd: Protect sched_scan_req ptr <Dmitry Shmidt> 2 weeks ago
+4b063d3 : net: wireless: bcmdhd: Send results from all PNO scans <Ashwin> 6 months ago
+339205b : msm_serial_hs: release dma wakelock properly <Lianwei Wang> 1 year, 2 months ago
+793692a : core, nfqueue, openvswitch: Orphan frags in skb_zerocopy and handle errors <Zoltan Kiss> 2 years, 1 month ago
+89386d7 : sched/fair: Implement fast idling of CPUs when the system is partially loaded <Ingo Molnar> 2 weeks ago
+15aa173 : pinctrl: msm: fix potential NULL pointer dereference <Joonwoo Park> 1 year, 8 months ago
+c203b9b : PM / sleep: unregister wakeup source when disabling device wakeup <Zhang Rui> 1 year, 11 months ago
+fcde08a : ion: this debugfs creation fails - remove code for it <imoseyon> 1 year, 4 months ago
+de8b747 : diag: Reduce error message frequency <Russell King> 2 years, 3 months ago
+460af3a : msm: vidc: avoid crash due to division by zero <Srinu Gorle> 1 year, 7 months ago
+5795ec2 : net: Copy ndisc_nodetype from original skb in skb_clone <Subash Abhinov Kasiviswanathan> 9 months ago
+8cd2f2e : msm: ipc_socket: fix leak of kernel memory to userspace <Patrick Tjin> 6 months ago
+8580243 : ipv6: inet6_sk() should use sk_fullsock() <Eric Dumazet> 7 months ago
+c73db58 : net: add sk_fullsock() helper <Eric Dumazet> 1 year, 1 month ago
+f88a312 : ipc/sem.c: fully initialize sem_array before making it visible <Manfred Spraul> 1 year, 4 months ago
+19a15ca : binfmt_elf: use prandom - do not deplete entropy <imoseyon> 1 year, 4 months ago
+4905ffd : revert: binfmt_elf.c: use get_random_int() to fix entropy depleting (Jeff Liu ) <ZION959> 2 weeks ago
+9c38bc1 : random: sprinkle e/f/prandom in places that deplete entropy often <imoseyon> 1 year, 4 months ago
+f01ebb2 : random.h: declare erandom function <imoseyon> 1 year, 4 months ago
+5f73146 : fs: ext4: use e/frandom, do not deplete entropy <imoseyon> 1 year, 4 months ago
+75975af : random32: use e/frandom for reseeding, and a merge fixup <imoseyon> 1 year, 4 months ago
+86803af : random: allow architectures to optionally define random_get_entropy() <Theodore Ts'o> 2 years, 7 months ago
+2efbd01 : random32: add prandom_u32_max and convert open coded users <Daniel Borkmann> 2 years, 3 months ago
+66bf923 : random32: improvements to prandom_bytes <Daniel Borkmann> 1 year, 8 months ago
+749909d : random32: mix in entropy from core to late initcall <Hannes Frederic Sowa> 1 year, 9 months ago
+56d0a4d : lib/random32.c: minor cleanups and kdoc fix <Daniel Borkmann> 2 years ago
+c6b3a4f : random32: avoid attempt to late reseed if in the middle of seeding <Sasha Levin> 2 years, 1 month ago
+e324876 : random32: use msecs_to_jiffies for reseed timer <Daniel Borkmann> 2 years, 5 months ago
+c8105dd : random32: add __init prefix to prandom_start_seed_timer <Daniel Borkmann> 2 years, 5 months ago
+0b055bd : random32: add test cases for taus113 implementation <Daniel Borkmann> 2 years, 5 months ago
+24f1a24 : random32: upgrade taus88 generator to taus113 from errata paper <Daniel Borkmann> 2 years, 5 months ago
+00c084d : random32: move rnd_state to linux/random.h <Daniel Borkmann> 2 years, 5 months ago
+c2542e5 : random32: add prandom_reseed_late() and call when nonblocking pool becomes initialized <Hannes Frederic Sowa> 2 years, 5 months ago
+79d84cd : random32: add periodic reseeding <Hannes Frederic Sowa> 2 years, 5 months ago
+524c763 : msm: mdss: Fix uninitialized return value for compact ioctl function <Ping Li> 1 year, 2 months ago
+6e9530b : hsic: avoid keeping the ws activated after sysfs disable <imoseyon> 1 year, 2 months ago
+990f5a3 : hsic: allow wl_divide = 0 to completely disable hsic wake source <imoseyon> 1 year, 2 months ago
+ 
+**** cmR:android_packages_apps_DUI ****
+e287eb3 : [2/3] Fling: Up swipe left/right support <Andrzej Ressel> 12 days ago
+ 
+**** cmR:android_packages_apps_Settings ****
+3e3d4b2 : Prevent crash if weather settings activity can't be found <Luis Vidal> 2 days ago
+aae1f3b : Settings: check current ringtone for non-default sub ids <Roman Birg> 9 days ago
+6021ef3 : Restore double tap to wake string from CM 12.1. <maniac103> 31 hours ago
+ba3bb35 : Fix unavailable wifi icon in wifi priorities <Michael Bestas> 3 days ago
+14ee2ac : Javacrash when long press the SSID of connected AP in WiFi list <Mustapha Ben Zoubeir> 1 year, 2 months ago
+bc806b1 : [3/3] Fling: Up swipe left/right support <Andrzej Ressel> 29 hours ago
+ 
+**** cmR:android_system_core ****
+38ace86 : set permissions on /system/addon.d/ and files within. <beanstown106> 6 months ago
+ 
+**** cmR:android_vendor_CMRemix ****
+b8f9eda : disable arm mode to fixed bluetooth fc <ZION959> 32 hours ago
+ 
+**** github:CMRemix/zion959-proprietary_vendor_samsung ****
+ead578e : Create README.md <ZION959> 2 weeks ago
+3fefb8a : trlte-common: Update 6.0.1 proprietary file listing libraries <ZION959> 2 weeks ago
+ 

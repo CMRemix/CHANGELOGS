@@ -1,0 +1,78 @@
+
+**** cmR:android_bionic ****
+98ea086 : bionic: Teach fnmatch(3) to handle UTF-8 characters in patterns <Tom Marshall> 12 days ago
+ 
+**** cmR:android_build ****
+89be4e8 : build: Use compatibility DTB directory path for custom DTB tool builds <Ethan Chen> 30 hours ago
+80fd05e : build: Add MTK support <Diogo Ferreira> 4 weeks ago
+ 
+**** github:CyanogenMod/android_external_toybox ****
+d5de717 : toybox: find: Fix segfault when using -iname/-ipath with -exec <Tom Marshall> 5 days ago
+ 
+**** cmR:android_frameworks_av ****
+6635a58 : omx: softcodecs: Support HAL_PIXEL_FORMAT_RGBX_8888 <Diogo Ferreira> 3 weeks ago
+baf93ea : CameraClient: MTK Support <Ricardo Cerqueira> 4 weeks ago
+ 
+**** cmR:android_frameworks_base ****
+624ce31 : Themes: Restore original value if getValue fails <d34d> 29 hours ago
+eb9a31b : Check for deprecated third party keyguard perm <d34d> 11 hours ago
+6268ab9 : livedisplay: Moving LiveDisplay to CMSDK <Steve Kondik> 2 weeks ago
+02549d0 : Add check whether wallpaper's size has changed <qiushihan> 3 days ago
+ 
+**** cmR:android_frameworks_native ****
+2b4df0b : surfaceflinger: Add support for secondary color matrix <Steve Kondik> 34 hours ago
+ 
+**** github:CyanogenMod/android_hardware_cyanogen ****
+df9286e : cmhw: Add support for GPU-based color calibration <Steve Kondik> 34 hours ago
+ 
+**** github:CyanogenMod/android_packages_apps_Bluetooth ****
+f64343e : hdp: do not return a null value when hdp interface unavailable <Arnav Gupta> 9 weeks ago
+ 
+**** github:CyanogenMod/android_packages_apps_CarrierConfig ****
+426a0d0 : Telefonica MMS Max sending limit files Added <jaffersulaiman> 19 hours ago
+ 
+**** cmR:android_packages_apps_Dialer ****
+f222cf9 : InCallMetrics: null check our content resolver query <Stephen Bird> 11 hours ago
+9e8a087 : Dialer: Customize features for regional package <kaiyiz> 1 year, 7 months ago
+ 
+**** cmR:android_packages_apps_InCallUI ****
+b63eca0 : InCallUI: add LookupProvider and VoLTE to landscape layout <Michael Gernoth> 14 hours ago
+20f930a : Missed rebase: add coordinator layout <Richard MacGregor> 2 days ago
+f8f8032 : Change in InCallAPI handover button UI <Richard MacGregor> 30 hours ago
+ 
+**** cmR:android_packages_apps_Nfc ****
+307de80 : Automatic translation import <Michael Bestas> 8 days ago
+ 
+**** cmR:android_packages_apps_Settings ****
+e2058eb : livedisplay: Update Settings for new LiveDisplay API <Steve Kondik> 3 days ago
+e7ff538 : move device control to system section <ZION959> 26 hours ago
+ 
+**** github:CyanogenMod/android_packages_apps_Trebuchet ****
+5e5f825 : Trebuchet: Don't crash when AppWidgetService is unavailable <cretin45> 8 hours ago
+ 
+**** cmR:llvm-Snapdragon_LLVM_for_Android ****
+1f725a4 : update 3.8-DragonTC-20160413 <ZION959> 2 hours ago
+ 
+**** github:CyanogenMod/android_prebuilts_cmsdk ****
+f8f3aaf : Remove public default constructor from CMWeatherManager.RequestStatus [2/2] <Luis Vidal> 6 hours ago
+ 
+**** github:CyanogenMod/android_vendor_cm ****
+512d428 : cm: Moving LiveDisplay to CMSDK <Steve Kondik> 2 weeks ago
+ 
+**** cmR:android_vendor_CMRemix ****
+7e08b44 : update viper4android <ZION959> 56 minutes ago
+ 
+**** cmR:cm_platform_sdk ****
+ad5e5d0 : Remove public default constructor from CMWeatherManager.RequestStatus [1/2] <Luis Vidal> 6 hours ago
+b49885a : ExtViews: Pass input events to underlying Window <d34d> 6 hours ago
+fe1812f : Weather API: Delegate the responsability of rejecting back to back requests [1/2] <Luis Vidal> 22 hours ago
+377fffc : Use temperature unit from CMSettings on weather update requests <Luis Vidal> 23 hours ago
+ed4d063 : Add WEATHER_TEMPERATURE_UNIT to CMSettings [1/2] <Luis Vidal> 26 hours ago
+10da08a : cmsdk: correct naming of THIRD_PARTY_KEYGUARD perm <d34d> 3 months ago
+ad0d8c5 : Weather API: Return ID rather than RequestInfo [1/2] <Luis Vidal> 29 hours ago
+1dab5a0 : cmsdk: Refactoring LiveDisplay <Steve Kondik> 2 weeks ago
+ 
+**** github:TheMuppets/proprietary_vendor_lge ****
+81a943b : g3: decommonize acdb blobs <bryan2894> 3 weeks ago
+7cca822 : g3: remove leftover libxml <bryan2894> 3 weeks ago
+ 

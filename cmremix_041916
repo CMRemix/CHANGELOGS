@@ -1,0 +1,373 @@
+
+**** cmR:android_build ****
+838568a : DragonTC: Enable ThinLTO <Joe Maples> 3 days ago
+f8ce9e7 : DragonTC and Polly support <Joe Maples> 6 hours ago
+ 
+**** aosp:platform/cts ****
+f010e48 : DO NOT MERGE: Fix build break <Daniel Xie> 13 hours ago
+8b47757 : Revert "Obtain min frame rate from codec capabilities" <Daniel Xie> 13 hours ago
+9789389 : DO NOT MERGE: Set priority for notification in a11y cts test. <Phil Weaver> 8 weeks ago
+eae5dc9 : DO NOT MERGE: Disabling sensor tests and policy permission <Daniel Xie> 28 hours ago
+93d35b3 : DO NOT MERGE: fixed breakage <Daniel Xie> 2 days ago
+c21273b : DO NOT MERGE: Fix the profile-wifi-cleanup test by increasing the timeout. <Lenka Trochtova> 2 weeks ago
+23630f2 : DO NOT MERGE: Fix the profile-wifi-cleanup test by increasing the timeout. <Lenka Trochtova> 2 weeks ago
+858f8a7 : DO NOT MERGE: Disable CVE 2015_3826 test <Daniel Xie> 2 days ago
+b059e04 : DO NOT MERGE: Remove testDumpProtected <Daniel Xie> 2 days ago
+c7b2f8d : DO NOT MERGE ANYWHERE: Bump CTS 6.0 to R6 <Daniel Xie> 2 days ago
+c0c6f0b : DO NOT MERGE ANYWHERE: Bump CTS 6.0 to R6 <Daniel Xie> 2 days ago
+c062132 : DO NOT MERGE ANYWHERE: Bump CTS 5.0 to R6 <Daniel Xie> 2 days ago
+b27454c : DO NOT MERGE ANYWHERE: Bump CTS 5.1 to R7 <Daniel Xie> 2 days ago
+388969b : patch for the BYOD test testManagedContacts <Keisuke Hasegawa> 6 weeks ago
+c786ccc : Bug #530599 android.net.cts.legacy.api22.ConnectivityManagerLegacyTest - testStartUsingNetworkFeature_enableHipri - change the WIFI state <heqiang1008> 3 months ago
+a0322dd : Fix DecoderTest#testTunneledVideoPlayback <Andy Hung> 4 weeks ago
+b17f020 : DO NOT MERGE Fix transient video call CTS test failure. <Tyler Gunn> 12 days ago
+7a1a43b : Add test to catch wrong sensor event timestamp clock source <Nick Vaccaro> 6 weeks ago
+e60194e : Revert "Add a few test cases in SensorBatchingTests into knownfailures" <Peng Xu> 12 days ago
+05b3b03 : Remove test_listAudioPatches <Dave Weinstein> 2 weeks ago
+8f74198 : DO NOT MERGE Change placeAndVerifyCall to wait until connection is fully added to CS. <Tyler Gunn> 13 days ago
+d9b568d : Add feature check to testPackageInstallUserRestrictions <Benjamin Franz> 13 days ago
+6012a99 : Obtain min frame rate from codec capabilities <Warren Rehman> 3 weeks ago
+917529c : DO NOT MERGE Sonivox: add CTS test. <Wei Jia> 3 months ago
+7f27162 : DO NOT MERGE Additional CTS test for robust handling of invalid cmap <Raph Levien> 3 months ago
+ed0da50 : DO NOT MERGE: Revert "Revert "Revert "Fix for ByodFlowTestActivity""" <Daniel Xie> 2 weeks ago
+e514136 : DO NOT MERGE MediaServerCrashTest: add testDrmManagerClientReset. <Wei Jia> 5 months ago
+08f6f87 : DO NOT MERGE security: Test mediaserver crash against an invalid MIDI file <Wonsik Kim> 7 months ago
+72ea05e : DO NOT MERGE Sonivox: add CTS test. <Wei Jia> 3 months ago
+d070fec : DO NOT MERGE Additional CTS test for robust handling of invalid cmap <Raph Levien> 3 months ago
+17744f2 : DO NOT MERGE Test new calls must have a PhoneAccount enabled <Brad Ebinger> 10 weeks ago
+f0c2b7a : DO NOT MERGE Updated the SecurityPatchTest to look for a minimum date of 2016-04 <Dave Weinstein> 8 weeks ago
+12fda40 : DO NOT MERGE Sonivox: add CTS test. <Wei Jia> 3 months ago
+4bba0f9 : DO NOT MERGE Additional CTS test for robust handling of invalid cmap <Raph Levien> 3 months ago
+4247db7 : DO NOT MERGE Remove corrupt test file <Marco Nelissen> 10 months ago
+5bb05ee : DO NOT MERGE Sonivox: add CTS test. <Wei Jia> 3 months ago
+c37ecc6 : Downgrade device precondition errors to warnings <Aaron Holden> 2 weeks ago
+144acf5 : Fix for checkKernelWakelock function : It contains a comma character in the "Kernel Wakelock". So When parts arr's length is more than 7, Fix check routine. <hyeongchan.kim> 9 months ago
+07f130c : Revert "Removed test from knownfailures" <Daniel Xie> 3 weeks ago
+79aeb4a : Fix telecom cts fail when  some project need to consider "7" as MMI call <Junjie Hu> 4 months ago
+4614316 : DO NOT MERGE Change Wifi check to warning <Aaron Holden> 3 weeks ago
+ac6b4b7 : Fix testTelephonyFeatures to handle feature absent case correctly. <Amit Mahajan> 6 weeks ago
+ca3fef0 : DO NOT MERGE ANYWHERE: Bump CTS 5.0 to R5 <Daniel Xie> 3 weeks ago
+8c9b6dc : DO NOT MERGE: Increase AdoptableHostTest timeout. <Jeff Sharkey> 4 weeks ago
+9c4d5e3 : DO NOT MERGE ANYWHERE: Bump CTS 5.1 to R6 <Daniel Xie> 3 weeks ago
+fc4c6ba : DO NOT MERGE ANYWHERE: Disabling android.security.cts.StagefrightTest#testStagefright_cve_2015_3826 <Daniel Xie> 8 weeks ago
+1ccc5f6 : DO NOT MERGE ANYWHERE: Bumping CTS 6.0 to R5 <Daniel Xie> 3 weeks ago
+ac6ae5f : Using longer wavefile for Visualizer based Test <rago> 4 weeks ago
+9c0933a : Revert "Revert "Add three test apks to white list"" <Daniel Xie> 4 weeks ago
+ff39a80 : Revert "Add three test apks to white list" <Daniel Xie> 4 weeks ago
+ 
+**** github:CyanogenMod/android_device_samsung_qcom-common ****
+bd209d1 : Automatic translation import <Michael Bestas> 3 days ago
+ 
+**** github:CyanogenMod/android_external_cyanogen_UICommon ****
+70656f2 : Make UICommon Snackbar attribute not conflict with appcompat <Richard MacGregor> 6 days ago
+ 
+**** github:CyanogenMod/android_external_wpa_supplicant_8 ****
+b5ff4de : wpa_supplicant: Force the p2p channels to reuse frequencies used by STA <Diogo Ferreira> 1 year, 1 month ago
+9fda75c : wpa_supplicant_conf: Let devices provide their own template <Ricardo Cerqueira> 3 days ago
+ 
+**** cmR:android_frameworks_av ****
+ca46178 : revert: revert: Disable integer sanitization for amrwbenc <ZION959> 7 minutes ago
+ac16132 : revert: Disable integer sanitization for amrwbenc <ZION959> 7 hours ago
+489c9fb : audiopolicy: Update legacy policy for session callbacks <Steve Kondik> 4 days ago
+c38d4f2 : frameworks/av: Fix video recording breaks <Keith Mok> 4 days ago
+ 
+**** cmR:android_frameworks_base ****
+a9fa31d : Global actions: fix airplane mode switch for MSIM <Roman Birg> 4 hours ago
+f56a174 : Lockscreen : Ensure window bounds change after view animations <Danesh M> 3 days ago
+7076a51 : SystemUI: don't crash with bad tiles <Roman Birg> 25 hours ago
+e0cbe78 : SystemUI: Move ADB_ENABLED to "Global" <Michael W> 4 days ago
+cf316e5 : SystemUI: fix some qs tile race conditions <Roman Birg> 5 hours ago
+bc7ef9c : Automatic translation import <Michael Bestas> 3 days ago
+77deb36 : revert: SystemUI: fix some qs tile race conditions <ZION959> 5 hours ago
+ 
+**** github:CyanogenMod/android_frameworks_opt_hardware ****
+39638c0 : cmhw: Fix DisplayColorCalibration GPU-mode issues <Steve Kondik> 11 hours ago
+d3ceb18 : cmhw: Fix return value <Steve Kondik> 3 days ago
+35568c6 : cmhw: Move DisplayColorCalibration from hardware/cyanogen to here <Steve Kondik> 4 days ago
+ 
+**** github:CyanogenMod/android_hardware_cyanogen ****
+240b860 : cmhw: Remove DisplayColorCalibration from hardware/cyanogen <Steve Kondik> 4 days ago
+ 
+**** github:CyanogenMod/android_hardware_qcom_audio ****
+f15ad14 : post_proc: fix inconsistency in virtualizer state from set_strength call <Dhananjay Kumar> 4 months ago
+ 
+**** github:CyanogenMod/android_hardware_qcom_fm ****
+c5fd4ca : Automatic translation import <Michael Bestas> 3 days ago
+ 
+**** github:CyanogenMod/android_hardware_samsung ****
+067a82c : Automatic translation import <Michael Bestas> 3 days ago
+05326f4 : exynos4: gralloc: we have an ALIGN macro, use it <Simon Shields> 4 days ago
+fb599ed : ril: Restore alphabetical order for modem barrier <Christopher N. Hesse> 4 days ago
+06ba105 : libril: add initial support for tss310 modem <messi2050> 5 days ago
+ 
+**** github:CMRemix/android_kernel_samsung_trlte ****
+c62228d : sound_control: Lock Output Gain active by default <placiano> 4 days ago
+ 
+**** github:CyanogenMod/android_packages_apps_AudioFX ****
+3819af8 : Automatic translation import <Michael Bestas> 3 days ago
+8bc1539 : audiofx: Ignore session callbacks if recording in progress <Steve Kondik> 3 days ago
+ 
+**** github:CyanogenMod/android_packages_apps_BasicSmsReceiver ****
+4176108 : Automatic translation import <Michael Bestas> 3 days ago
+ 
+**** github:CyanogenMod/android_packages_apps_Bluetooth ****
+1e3c122 : Automatic translation import <Michael Bestas> 3 days ago
+ 
+**** github:CyanogenMod/android_packages_apps_BluetoothExt ****
+a388570 : Automatic translation import <Michael Bestas> 3 days ago
+ 
+**** github:CyanogenMod/android_packages_apps_Browser ****
+0c11751 : Automatic translation import <Michael Bestas> 3 days ago
+ 
+**** github:CyanogenMod/android_packages_apps_CMFileManager ****
+e56b31d : Automatic translation import <Michael Bestas> 3 days ago
+ 
+**** github:CyanogenMod/android_packages_apps_CMWallpapers ****
+adbdb6d : Automatic translation import <Michael Bestas> 3 days ago
+ 
+**** github:CyanogenMod/android_packages_apps_Calendar ****
+4dfd7b8 : Automatic translation import <Michael Bestas> 3 days ago
+ 
+**** github:CyanogenMod/android_packages_apps_Camera2 ****
+14475d3 : Automatic translation import <Michael Bestas> 3 days ago
+ 
+**** github:CyanogenMod/android_packages_apps_CellBroadcastReceiver ****
+d0ca767 : Automatic translation import <Michael Bestas> 3 days ago
+ 
+**** github:CyanogenMod/android_packages_apps_CertInstaller ****
+18e746b : Automatic translation import <Michael Bestas> 3 days ago
+ 
+**** github:CyanogenMod/android_packages_apps_Contacts ****
+68cf084 : Automatic translation import <Michael Bestas> 3 days ago
+ 
+**** github:CyanogenMod/android_packages_apps_ContactsCommon ****
+398374a : Automatic translation import <Michael Bestas> 3 days ago
+ 
+**** github:CyanogenMod/android_packages_apps_DeskClock ****
+2fe4738 : Automatic translation import <Michael Bestas> 3 days ago
+ 
+**** cmR:android_packages_apps_Dialer ****
+581e03b : Dialer NPE - Search Results <Richard MacGregor> 4 days ago
+3fb7eeb : Automatic translation import <Michael Bestas> 3 days ago
+6685f01 : Dialer: Handle OEM Specific codes. <Ankit Gupta> 6 days ago
+114b9b5 : Expand clickable area of settings button <Richard MacGregor> 5 days ago
+7c88b51 : Search: Only clear focus if we are showing a coachmark <Stephen Bird> 7 days ago
+749d5f8 : [1/2] Use UICommon simple SnackBar <Richard MacGregor> 8 weeks ago
+b025fbb : Workaround for AOSP strings missing translations <Michael Bestas> 12 days ago
+dcc7560 : Remove superfluous method parameter. <Danny Baumann> 5 days ago
+ 
+**** github:CyanogenMod/android_packages_apps_Eleven ****
+7d14986 : Eleven: vertically recentre widgets <Sultan Qasim Khan> 2 days ago
+36a2a5b : CodeCleanup : Replace StringBuffer with String <RazorSharp> 3 months ago
+824ef07 : Eleven: Simplify a boolean expression <RazorSharp> 3 months ago
+16ae2d4 : Automatic translation import <Michael Bestas> 3 days ago
+120fc6d : Eleven: much material <Joey Rizzoli> 3 months ago
+ 
+**** github:CyanogenMod/android_packages_apps_Email ****
+38662a1 : Automatic translation import <Michael Bestas> 3 days ago
+ 
+**** github:CyanogenMod/android_packages_apps_ExactCalculator ****
+1e78c7d : Automatic translation import <Michael Bestas> 3 days ago
+ 
+**** github:CyanogenMod/android_packages_apps_Exchange ****
+b006750 : Automatic translation import <Michael Bestas> 3 days ago
+ 
+**** github:CyanogenMod/android_packages_apps_FMRadio ****
+d9054a9 : Automatic translation import <Michael Bestas> 3 days ago
+ 
+**** github:CyanogenMod/android_packages_apps_Gallery2 ****
+32f8e21 : Automatic translation import <Michael Bestas> 3 days ago
+ 
+**** github:CyanogenMod/android_packages_apps_HTMLViewer ****
+46cdabd : Automatic translation import <Michael Bestas> 3 days ago
+ 
+**** cmR:android_packages_apps_InCallUI ****
+ed656a4 : Automatic translation import <Michael Bestas> 3 days ago
+8164e82 : [2/2] Use UICommon simple SnackBar <Richard MacGregor> 8 weeks ago
+ 
+**** github:CyanogenMod/android_packages_apps_KeyChain ****
+7958df8 : Automatic translation import <Michael Bestas> 3 days ago
+ 
+**** github:CyanogenMod/android_packages_apps_LockClock ****
+8af8dab : Display humidity and wind data in forecast dialog <Martin Herndl> 3 weeks ago
+ed98ad9 : Automatic translation import <Michael Bestas> 3 days ago
+ 
+**** github:CyanogenMod/android_packages_apps_ManagedProvisioning ****
+5cbbaaa : Automatic translation import <Michael Bestas> 3 days ago
+ 
+**** cmR:android_packages_apps_Messaging ****
+97897a5 : Messaging: Reference the nontranslatable key instead of hardcoding value. <Adnan Begovic> 15 hours ago
+aa7672b : Automatic translation import <Michael Bestas> 3 days ago
+d9a5a83 : Messaging: Fix broken and untested features. <Adnan Begovic> 4 days ago
+369448c : Improve priority string <Michael Bestas> 5 days ago
+ 
+**** cmR:android_packages_apps_Nfc ****
+d63f166 : Automatic translation import <Michael Bestas> 3 days ago
+ 
+**** cmR:android_packages_apps_OmniSwitch ****
+8abc119 : OmniSwitch: we now need a layout-land for the drag handle config <maxwen> 5 days ago
+6a644c7 : revert: OmniSwitch: we now need a layout-land for the drag handle config <ZION959> 4 hours ago
+ 
+**** cmR:android_packages_apps_PackageInstaller ****
+0980d67 : Automatic translation import <Michael Bestas> 3 days ago
+ 
+**** github:CyanogenMod/android_packages_apps_PhoneCommon ****
+b2f6222 : Automatic translation import <Michael Bestas> 3 days ago
+ 
+**** github:CyanogenMod/android_packages_apps_Profiles ****
+09ee22c : Automatic translation import <Michael Bestas> 3 days ago
+ 
+**** github:CyanogenMod/android_packages_apps_Screencast ****
+828959e : Screencast: material makeover <jrizzoli> 3 months ago
+f5a3cb0 : Automatic translation import <Michael Bestas> 3 days ago
+ 
+**** cmR:android_packages_apps_Settings ****
+49ef1e1 : Settings: Move ADB_ENABLED to "Global" <Michael W> 4 days ago
+65f6594 : Settings: Save vibration intensity on close <Gabriele M> 3 weeks ago
+4553b21 : Settings: Rework vibration intensity slider <Gabriele M> 3 weeks ago
+d6d73f8 : Automatic translation import <Michael Bestas> 3 days ago
+ 
+**** cmR:android_packages_apps_SetupWizard ****
+55e251b : Prefer SIM carrier name over network carrier <Ricardo Cerqueira> 17 hours ago
+d9007ea : Automatic translation import <Michael Bestas> 3 days ago
+37b26f8 : SetupWizard: Don't reprompt setup if account already exists. <Adnan Begovic> 5 days ago
+de6676d : Update the theme apply label string <Dave Kover> 9 weeks ago
+e3e6eb3 : SetupWizard: Wait for data connection <cretin45> 11 days ago
+4b2c0d6 : Automatic translation import <Michael Bestas> 13 days ago
+ 
+**** cmR:android_packages_apps_Snap ****
+c1945c8 : Snap: Add missing return for SET_ONESHOT_PREVIEW_CALLBACK case <Sultanxda> 3 weeks ago
+437d36c : Automatic translation import <Michael Bestas> 3 days ago
+57799db : Snap: Improve focusing <Steve Kondik> 7 weeks ago
+ 
+**** github:CyanogenMod/android_packages_apps_SoundRecorder ****
+1a6ccbf : Automatic translation import <Michael Bestas> 3 days ago
+ 
+**** github:CyanogenMod/android_packages_apps_Stk ****
+bb75646 : Automatic translation import <Michael Bestas> 3 days ago
+ 
+**** github:CyanogenMod/android_packages_apps_Tag ****
+48a4e08 : Automatic translation import <Michael Bestas> 3 days ago
+ 
+**** github:CyanogenMod/android_packages_apps_Terminal ****
+39644b9 : Automatic translation import <Michael Bestas> 3 days ago
+ 
+**** github:CyanogenMod/android_packages_apps_ThemeChooser ****
+1f5c627 : ThemeChooser: update UI <jrizzoli> 3 months ago
+df0a366 : Automatic translation import <Michael Bestas> 3 days ago
+ 
+**** github:CyanogenMod/android_packages_apps_Trebuchet ****
+bd7c086 : Trebuchet: sign when not building with test keys <Roman Birg> 6 days ago
+8c11bd8 : Automatic translation import <Michael Bestas> 3 days ago
+ 
+**** github:CyanogenMod/android_packages_apps_TvSettings ****
+9bf8494 : Automatic translation import <Michael Bestas> 3 days ago
+ 
+**** github:CyanogenMod/android_packages_apps_UnifiedEmail ****
+30a1786 : Automatic translation import <Michael Bestas> 3 days ago
+ 
+**** cmR:android_packages_inputmethods_LatinIME ****
+9b7f198 : Automatic translation import <Michael Bestas> 3 days ago
+ 
+**** github:CyanogenMod/android_packages_providers_BookmarkProvider ****
+cb9b55f : Automatic translation import <Michael Bestas> 3 days ago
+ 
+**** github:CyanogenMod/android_packages_providers_CalendarProvider ****
+9fd7d2a : Automatic translation import <Michael Bestas> 3 days ago
+ 
+**** github:CyanogenMod/android_packages_providers_CallLogProvider ****
+4eba5f5 : Automatic translation import <Michael Bestas> 3 days ago
+ 
+**** github:CyanogenMod/android_packages_providers_ContactsProvider ****
+b496a82 : Automatic translation import <Michael Bestas> 3 days ago
+ 
+**** github:CyanogenMod/android_packages_providers_DownloadProvider ****
+a60bcb8 : Automatic translation import <Michael Bestas> 3 days ago
+ 
+**** cmR:android_packages_providers_MediaProvider ****
+c8dacd0 : Automatic translation import <Michael Bestas> 3 days ago
+ 
+**** github:CyanogenMod/android_packages_providers_TelephonyProvider ****
+59816d3 : Automatic translation import <Michael Bestas> 3 days ago
+ 
+**** github:CyanogenMod/android_packages_providers_ThemesProvider ****
+66df087 : Automatic translation import <Michael Bestas> 3 days ago
+ 
+**** github:CyanogenMod/android_packages_providers_UserDictionaryProvider ****
+7057644 : Automatic translation import <Michael Bestas> 3 days ago
+ 
+**** github:CyanogenMod/android_packages_providers_WeatherProvider ****
+0a7e4bb : Automatic translation import <Michael Bestas> 3 days ago
+ 
+**** github:CyanogenMod/android_packages_screensavers_Basic ****
+76d7a60 : Update THIRD_PARTY_KEYGUARD perm name <d34d> 15 hours ago
+6f8df69 : Automatic translation import <Michael Bestas> 3 days ago
+ 
+**** github:CyanogenMod/android_packages_screensavers_PhotoTable ****
+201f8a7 : Automatic translation import <Michael Bestas> 3 days ago
+ 
+**** github:CyanogenMod/android_packages_services_LiveLockScreenService ****
+7bc0493 : Automatic translation import <Michael Bestas> 3 days ago
+ 
+**** github:CyanogenMod/android_packages_services_Mms ****
+ff77069 : MmsRequest: Turn on data for the MMS transaction if required <Ricardo Cerqueira> 34 hours ago
+b7a3f51 : MmsRequest: Switch data subscription on MSIM if needed <Ricardo Cerqueira> 2 days ago
+c642b5a : Automatic translation import <Michael Bestas> 3 days ago
+ 
+**** cmR:android_packages_services_Telecomm ****
+302e70c : Automatic translation import <Michael Bestas> 3 days ago
+ 
+**** cmR:android_packages_services_Telephony ****
+a777be0 : Automatic translation import <Michael Bestas> 3 days ago
+ 
+**** github:CyanogenMod/android_packages_wallpapers_Basic ****
+33e4596 : Automatic translation import <Michael Bestas> 3 days ago
+ 
+**** github:CyanogenMod/android_packages_wallpapers_Galaxy4 ****
+8c158af : Automatic translation import <Michael Bestas> 3 days ago
+ 
+**** github:CyanogenMod/android_packages_wallpapers_LivePicker ****
+c418d68 : Automatic translation import <Michael Bestas> 3 days ago
+ 
+**** github:CyanogenMod/android_packages_wallpapers_MagicSmoke ****
+a0ae211 : Automatic translation import <Michael Bestas> 3 days ago
+ 
+**** github:CyanogenMod/android_packages_wallpapers_PhaseBeam ****
+e0e6749 : Automatic translation import <Michael Bestas> 3 days ago
+ 
+**** github:CyanogenMod/android_packages_wallpapers_PhotoPhase ****
+343b3d3 : Automatic translation import <Michael Bestas> 3 days ago
+ 
+**** cmR:llvm-Snapdragon_LLVM_for_Android ****
+8978431 : update 3.8-DragonTC-20160418 <ZION959> 18 hours ago
+ 
+**** cmR:llvm-Snapdragon_LLVM_for_Android ****
+e388da7 : update 3.9-DragonTC-20160415 <ZION959> 2 days ago
+ 
+**** github:CyanogenMod/android_system_bt ****
+bdcf617 : bt-vendor: Fix sporadic crashes on shutdown <Ricardo Cerqueira> 4 days ago
+ 
+**** cmR:android_system_core ****
+f5eb730 : healthd: Fix NO_CHARGER_LED <Christopher R. Palmer> 3 days ago
+74f658f : healthd: Allow devices to opt-out of enabling charger LED <Ethan Chen> 4 days ago
+ 
+**** github:CyanogenMod/android_vendor_cm ****
+30967f9 : MetroPCS APN update <Jason Riordan> 4 days ago
+a261670 : Irancell & MTS APN updates <Jason Riordan> 4 days ago
+10e4f5a : cm: Amend api text message. <Adnan Begovic> 4 days ago
+ 
+**** cmR:android_vendor_CMRemix ****
+51fc328 : vendor: add ThinLTO and use sm gcc 7.0 for kernel <ZION959> 76 minutes ago
+ 
+**** cmR:cm_platform_sdk ****
+02a71cc : Weather API: Honor the values set for today's low/high temp <Luis Vidal> 3 days ago
+18aa2f5 : cmsdk: Fix definition of live display tile, as its now dynamic. <Adnan Begovic> 13 hours ago
+380d31c : Automatic translation import <Michael Bestas> 3 days ago
+3944915 : livedisplay: Fix validator for the nudge counter <Steve Kondik> 3 days ago
+b62448a : Revert "CmSdk : Add deprecated THIRD_PARTY_KEYGUARD permission" <Danesh M> 3 days ago
+0918427 : CmSdk : Add deprecated THIRD_PARTY_KEYGUARD permission <Danesh M> 4 days ago
+e554528 : livedisplay: Update system-api <Luca Stefani> 4 days ago
+842344a : livedisplay: Fix endless loop for devices that don't support outdoor mode. <Danny Baumann> 4 days ago
+7cd7f79 : livedisplay: Fix bad state after bootup <Steve Kondik> 4 days ago
+0ec60c6 : livedisplay: Don't explode if no modes are available <Steve Kondik> 4 days ago
+ 

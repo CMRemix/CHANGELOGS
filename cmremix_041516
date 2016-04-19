@@ -1,0 +1,157 @@
+
+**** cmR:android_build ****
+0f16fc9 : build: Add BOOTIMAGE_EXTRA_DEPS for BOOT_SIGNER products too <Ethan Chen> 33 hours ago
+ 
+**** github:CyanogenMod/android_device_samsung_qcom-common ****
+253bb11 : healthd: Rename libhealthd library <Arne Coucheron> 5 hours ago
+ 
+**** github:CMRemix/android_device_samsung_trltetmo ****
+407eb60 : revert: trltetmo: move gps to trlte-common <ZION959> 2 hours ago
+ 
+**** github:CyanogenMod/android_external_jpeg ****
+60a4dc2 : porting jpeg_mem_src() from jpeg lib v8c <Dante Russo> 3 years, 9 months ago
+ 
+**** github:CyanogenMod/android_external_speex ****
+ca7a472 : Fix and suppress warnings in external/libspeex. <Aurimas Liutikas> 5 weeks ago
+ 
+**** github:CyanogenMod/android_external_toybox ****
+fafe427 : Regenerate generated files. <Elliott Hughes> 2 weeks ago
+9fcaca8 : Fix build when wchar_t is unsigned. <Elliott Hughes> 3 weeks ago
+0e05569 : Fix exit code of things like sed -i that use tempfile_handler(). <Rob Landley> 2 weeks ago
+e223cca : basename: fix segfault on null input; add tests <Samuel Holland> 4 weeks ago
+a823328 : Add od -w. <Elliott Hughes> 4 weeks ago
+d4d9b5f : toolbox prlimit is no more. <Elliott Hughes> 5 weeks ago
+af51034 : Debian bug 635570 did something horribly nonstandard (depending on a side effect of "sed -e 'a\'" with no trailing line). But there's an actual user, and it's not hard to implement, and it's not hard to implement, and there isn't an obvious _other_ way to do it, so add the behavior and a test for it. <Rob Landley> 3 weeks ago
+1ffa7f4 : Fix bzcat.test (as noted by Andy Chu), wean tests off $TOPDIR and supply $FILES instead, move tests/blkid into tests/files/blkid. <Rob Landley> 3 weeks ago
+b52f642 : The test infrastructure prints the command name now, so file.test shouldn't. <Rob Landley> 3 weeks ago
+5a7b147 : Minor blkid cleanup. (There was a while(ptr[-1]==' ') ptr--; that could fall off the start of the string. I pulled on the thread...) <Rob Landley> 3 weeks ago
+a8d0d13 : Redo build stuff in response to Andy Chu's suggestions. <Rob Landley> 3 weeks ago
+c23186d : blkid: Handle short/empty vfat labels; update tests <Samuel Holland> 4 weeks ago
+6aba814 : Posix requires "" to be false, and 00 should be false, and -0 should be false. Fix memory leaks in regex. Simplify regex check (if we matched, subexpression had to match). Don't exit() from a command, set exitval and return. <Rob Landley> 4 weeks ago
+4de04e8 : Make lsof 10x faster by caching /proc/net socket info. <Elliott Hughes> 4 weeks ago
+ada3c08 : Fix last commit (had newline before first ==> name <==) and add -f tests. <Rob Landley> 4 weeks ago
+426bc7f : Fix "tail -f single_file". <Josh Gao> 4 weeks ago
+0ec95b7 : expr cleanup: simplify get_str() and free returned allocations. <Rob Landley> 4 weeks ago
+68d7132 : Remove 'exit' from xargs test too. <Andy Chu> 4 weeks ago
+516f3d6 : Fix bug where all tests aren't being run with 'make test'. <Andy Chu> 4 weeks ago
+438fa71 : expr cleanup: traverse optargs with tok instead of incrementing optargs and copying itinto a second variable. Also add error message for empty ( ) <Rob Landley> 4 weeks ago
+1af3bad : Move whitespace and curly brackets around, move reference URLs to top of file, eliminate syntax_error() function (just call error_exit() directly), eliminate advance() wrapper, pipe expected error messages in test to /dev/null <Rob Landley> 4 weeks ago
+e6912f9 : Fix type coercion bugs in expr. <Andy Chu> 4 weeks ago
+14c91c1 : Fix the operator precedence in expr. <Andy Chu> 4 weeks ago
+2665cd0 : Add base64.test, and Izabera pointed out that -w0 should disable wrapping. <Rob Landley> 4 weeks ago
+2b999e6 : Add ls -b and make ls -q work with utf8. <Rob Landley> 4 weeks ago
+eb24df9 : Split out _xexit() from xexit() and give sigatexit() multiple callbacks. <Rob Landley> 5 weeks ago
+51d71f5 : factor: use long long math (64 bit on 32 bit platforms) and handle negative numbers even though we use unsigned math now. <Rob Landley> 5 weeks ago
+6d364fc : Update scripts/single.sh and cp.c so "make mv" isn't actually building cp. <Rob Landley> 5 weeks ago
+2f7c98e : The xattr functions were added during the 2.5 kernel, lsm.h can #include the header unconditionally. (This fixes the warning when CP_PRESERVE disabled.) <Rob Landley> 5 weeks ago
+96a5ed1 : Fix segfault in sed -e 'c\'. <Andy Chu> 6 weeks ago
+d9d7761 : Remove switch_root. <Elliott Hughes> 5 weeks ago
+1fd8065 : Add depends on TOYBOX_FORK for various commands that need nommu conversion. (This should fix allyesconfig.) <Rob Landley> 5 weeks ago
+8d95074 : Cleanup pass on the dirtree infrastructure, in preparation for making rm -r handle infinite depth. Fix docs, tweak dirtree_handle_callback() semantics, remove dirtree_start() and don't export dirtree_handle_callback(), instead offer dirtree_flagread(). (dirtree_read() is a wrapper around dirtree_flagread passing 0 for flags.) <Rob Landley> 6 weeks ago
+2a26ba4 : Fix warning (toys.optflags is a long long now). <Rob Landley> 6 weeks ago
+21701f1 : wget: clean up <Lipi Lee> 6 weeks ago
+2e4aff2 : Another pass at file.c: move posix-required "executable" to front of output, next few fields in the order the other implementation outputs, fewer commas, fix a big where big endian executable type wasn't detected right, and fix the filehandle leak. <Rob Landley> 6 weeks ago
+ 
+**** cmR:android_frameworks_av ****
+5153cdc : libmedia: Initialize mState/mActive value to avoid possible crash <Zhou Song> 3 weeks ago
+20f0782 : stagefright: Fix CLANG compilation for AMR decoder <Leena Winterrowd> 3 months ago
+4882796 : nuplayer: Seek to valid position in setVideoSurface <Manikanta Kanamarlapudi> 7 weeks ago
+51b3174 : video: Use boot clock for recording start time <Surajit Podder> 7 weeks ago
+7262eae : nuplayer: ignore openAudioSink while waiting for teardown completion <Dhananjay Kumar> 7 weeks ago
+3fe0fe6 : nuplayer: update anchor time for offload usecase <Sharad Sangle> 5 months ago
+d27aa05 : frameworks/av: Fix LOG_NDEBUG compilation issues <Leena Winterrowd> 4 months ago
+8a69897 : libavextensions: Add LOG_NDEBUG define <Leena Winterrowd> 4 months ago
+f888ced : libstagefright: handle error when B-frame is sent to MPEG4Writer <xiaoqiny> 1 year, 3 months ago
+0ecd6fb : cameraservice: Run HAL3 in Non ZSL mode <Abhishek Kondaveeti> 3 months ago
+0d34354 : audio: QTI resampler supports for 32 bit input format <Zhou Song> 5 months ago
+02d9acd : nuplayer: Reverting GenericSource changes done for STA integration <Manikanta Sivapala> 4 months ago
+9fd0a69 : rtsp: keep video damaged access unit to enhance fault tolerance <Li Sun> 6 months ago
+322d0a4 : libstagefright: Allow for MPEG4Writer extension <Deva Ramasubramanian> 5 months ago
+d38f175 : audioflinger: Compile 192k resampler for 32 bit environment <Ramjee Singh> 6 months ago
+804eeff : Update Instrumentation code <William Clark> 6 months ago
+135352e : NuPlayer: extend onResume funtion <Sidipotu Ashok> 7 months ago
+ 
+**** cmR:android_frameworks_base ****
+ef55e82 : revert: support separate encryption/lockscreen passwords <ZION959> 23 minutes ago
+8a3eec5 : SystemUI: fix some qs tile race conditions <Roman Birg> 7 hours ago
+e21f517 : systemui: Remove LiveDisplay tile <Steve Kondik> 6 hours ago
+923cdcb : LockPatternUtils: Use the actual user id to set pattern size <Scott Mertz> 31 hours ago
+4065342a : LockSettingsStorage: migrate user pattern size to correct userid <Roman Birg> 31 hours ago
+d8a95f8 : LockSettingsStorage: fallback to cm legacy gesture file <Roman Birg> 33 hours ago
+86a700e : SettingsProvider: move SYSTEM_PROFILES_ENABLED to CMSettings <Roman Birg> 35 hours ago
+3996ac6 : Lockscreen : Update shortcuts in onAttachWindow <Danesh M> 3 days ago
+d6a7a9b : Lockscreen : Ensure we hide bottom area in bouncer <Danesh M> 3 days ago
+719cec9 : Race in WapPushManager under multi-thread environment <chao.bi> 4 weeks ago
+bab13fb : Correct MediaAudioTrackTest testPlaybackHeadPositionAfterStop <Jimmy Dalqvist> 3 years ago
+8c26064 : packagemanager: Fix bootloop if packages.xml is deleted <Steve Kondik> 33 hours ago
+ 
+**** github:CyanogenMod/android_frameworks_support ****
+e05dca1 : fix "find: `dummy': No such file or directory" <Daniel Sikorski> 4 weeks ago
+ 
+**** github:CyanogenMod/android_packages_apps_Calendar ****
+1dbb27e : Fix alerts in doze mode <niks255> 4 days ago
+ 
+**** github:CyanogenMod/android_packages_apps_Contacts ****
+affff68 : [2/2] Add new method for determining whether to show block option <Richard MacGregor> 34 hours ago
+dd2acf1 : Make Block action contingent on system-wide Blacklist setting <Rohit Yengisetty> 3 days ago
+e4b31b7 : Fix camel case <Michael Bestas> 14 hours ago
+ 
+**** github:CyanogenMod/android_packages_apps_ContactsCommon ****
+0e6d8d4 : [1/2] Add new method for determining whether to show block option <Richard MacGregor> 34 hours ago
+5fdfde4 : Improve strings <Michael Bestas> 14 hours ago
+ 
+**** cmR:android_packages_apps_OmniSwitch ****
+c1e9288 : OmniSwitch: we now need a layout-land for the drag handle config <maxwen> 2 days ago
+adf02b6 : OmniSwitch: spring break 2016 <mweninge> 4 days ago
+ 
+**** github:CyanogenMod/android_packages_apps_PhoneCommon ****
+a495381 : Set untranslatables <Michael Bestas> 13 hours ago
+ 
+**** cmR:android_packages_apps_Settings ****
+3153cdd : Settings: Remove some unwanted stuff <Lokesh Chamane> 6 hours ago
+458b923 : Settings: use the actual user id to set pattern size <Scott Mertz> 31 hours ago
+ba038eb : Setting: Disable WPS Push Button/Pin Entry when WiFi is disabled <tao.pei> 3 weeks ago
+57ad240 : SpamList: Set correct color & remove text from notifications menu item <LuK1337> 6 days ago
+ 
+**** github:CyanogenMod/android_packages_apps_Trebuchet ****
+c14b404 : Trebuchet: Always cancel any pending dim animations <cretin45> 14 hours ago
+95d1934 : avoid NPE <Marcos Marado> 20 hours ago
+ 
+**** github:CyanogenMod/android_packages_providers_ContactsProvider ****
+a629c55 : ContactsProvider: Fix polyphones in Chinese. <YuanQY> 2 years, 7 months ago
+ 
+**** github:CyanogenMod/android_packages_providers_ThemesProvider ****
+9063435 : New icon <Dave Kover> 2 days ago
+b5f8923 : Update controls preview to properly render themed assets. <Dave Kover> 2 days ago
+ 
+**** github:CyanogenMod/android_prebuilts_cmsdk ****
+dd1bd68 : prebuilts/cmsdk: Prep for api 5.0 release artifact. <Adnan Begovic> 2 days ago
+ 
+**** cmR:android_system_core ****
+05a3648 : healthd: Rename default QCOM libhealthd library <Ethan Chen> 10 hours ago
+ 
+**** github:CyanogenMod/android_system_extras_su ****
+d2c8eb2 : su: Fix crash due to invalid file descriptor <Steve Kondik> 2 days ago
+ 
+**** github:CyanogenMod/android_system_vold ****
+e6339d3 : cryptfs: Fix OTA from cm<=12 for encrypted patterns > 9 <Ricardo Cerqueira> 20 hours ago
+ 
+**** github:CyanogenMod/android_vendor_cm ****
+8da5698 : Update APN name for Movistar INTERNET <Deepak Kundra> 4 hours ago
+40ab914 : APN: fixup single-digit mnc APNs <Jason Riordan> 31 hours ago
+ 
+**** cmR:android_vendor_CMRemix ****
+19dd6ac : trlte varients use ll kernel for now <ZION959> 3 hours ago
+f006595 : revert: vendor: use zion959-proprietary_vendor_samsung for blobls <ZION959> 3 hours ago
+a38a363 : KernelAdiutor: fixed sound values <Pafcholini> 5 hours ago
+e7ffc82 : update viper4android <ZION959> 29 hours ago
+ 
+**** cmR:cm_platform_sdk ****
+712426f : livedisplay: Publish our own damn tile! <Steve Kondik> 33 hours ago
+763e39a : livedisplay: Fix error checks when fetching config <Steve Kondik> 33 hours ago
+14190e4 : Fix LiveDisplay string <Michael Bestas> 13 hours ago
+62604cf : cmsdk: Exclude compiled 'cyanogenmod/library' java package. <Adnan Begovic> 2 days ago
+ 
+**** github:CMRemix/proprietary_vendor_samsung ****
+864a37e : trlte-common: update Samsung 6.0.1 DRM propritetary <ZION959> 12 days ago
+ 

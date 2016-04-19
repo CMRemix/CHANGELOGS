@@ -1,0 +1,378 @@
+
+**** cmR:CMRemix ****
+dd1a886 : default: Moving AOSP revision from r22 to r24 <Jessica Wagantall> 3 days ago
+7b2d61a : cm: Fork a few projects to bring in JDK8 fixes <Steve Kondik> 5 days ago
+ 
+**** github:CyanogenMod/android_bootable_recovery ****
+50ff158 : recovery: Add wipe system partition option <Michael Bestas> 3 months ago
+ec4df63 : Fix integer overflows in recovery procedure. <Yabin Cui> 7 weeks ago
+ 
+**** omni:android_bootable_recovery ****
+b894cd2 : Update hungarian translation <Wechy77> 3 days ago
+30f0c22 : translate install reboot option to dutch <thecrazyskull> 3 days ago
+2e21597 : Greek Translation from the updated en.xml <Alex Kalles> 5 days ago
+4b131f7 : 3.0.2-0 <Ethan Yonker> 4 days ago
+14138d9 : gui: don't mix up display value with actual value <Sultan Qasim Khan> 5 days ago
+b851896 : language: add 2 new strings in it.xml <SlimShadys> 7 days ago
+f7b048c : languages: add 2 new strings for RU <SevenMaxs> 7 days ago
+c53323a : fix typo <thecrazyskull> 5 days ago
+308b1ca : Really remove all old SP* flags and code <Ethan Yonker> 7 days ago
+ 
+**** cmR:android_build ****
+b45f61f : build: add cmts config to global build <Khalid Zubair> 5 weeks ago
+22fd4a0 : qcom: Allow usage of default QC HAL paths <Ethan Chen> 11 days ago
+ff23b9e : Preventing default locale from being overridden because of buildinfo.sh <Abhishek G> 4 days ago
+20a73c1 : Merge tag 'android-6.0.1_r24' into HEAD <Jessica Wagantall> 3 days ago
+ 
+**** aosp:platform/cts ****
+b6fd024 : Disable android.permission2.cts.PermissionPolicyTest#testPlatformPermissionPolicyUnaltered <Daniel Xie> 5 days ago
+ 
+**** github:CyanogenMod/android_device_samsung_qcom-common ****
+fc0b187 : Automatic translation import <Michael Bestas> 3 days ago
+ 
+**** github:CyanogenMod/android_external_bouncycastle ****
+288f88f : GCMParameters: fix insecure tag size <Sergio Giro> 6 weeks ago
+ 
+**** github:CyanogenMod/android_external_dhcpcd ****
+70f592d : Improve length checks in DHCP Options parsing of dhcpcd. <Pierre Imai> 8 weeks ago
+ 
+**** github:CyanogenMod/android_external_f2fs-tools ****
+5ce21e3 : f2fs-tools: android: release 1.6.1 <luca020400> 4 days ago
+d4e3c1f : f2fs-tools: release 1.6.1 <Jaegeuk Kim> 2 weeks ago
+f209c5a : fsck.f2fs: calculate orphan_blkaddr correctly <Junling Zheng> 3 weeks ago
+a43b7e1 : fsck.f2fs: refactor extent info verification flow <Chao Yu> 3 weeks ago
+1c8ee3b : fsck.f2fs: check dirent position <Chao Yu> 3 weeks ago
+31365f7 : mkfs.f2fs: set segment_count in super block correctly <Fan Li> 3 weeks ago
+3cf98bd : fsck.f2fs: check nat_entry->ino for all nodes <Sheng Yong> 7 weeks ago
+95d6208 : f2fs-tools: rebase struct f2fs_summary_block with upstream <Chao Yu> 4 weeks ago
+b966554 : fsck.f2fs: fix incorrect block_addr of node/meta <Junling Zheng> 5 weeks ago
+ec90e1f : fsck.f2fs: calculate the total size correctly <Junling Zheng> 6 weeks ago
+2165e06 : fsck.f2fs: check valid values for dot dentries <Liu Xue> 6 weeks ago
+6802dff : f2fs-tools: redefine MAX_SIT_BITMAP_SIZE <Junling Zheng> 6 weeks ago
+65ad52c : libf2fs: limit the total size up to 16T <Junling Zheng> 6 weeks ago
+10bd289 : fsck.f2fs: fix corrupted nat entry [0] <Sheng Yong> 6 weeks ago
+d9a8e13 : fsck.f2fs: remove corrupted nid entry from indirect/double-indirect node <Sheng Yong> 7 weeks ago
+c541f04 : fsck.f2fs: check /proc/mounts first to detect readonly <Jaegeuk Kim> 7 weeks ago
+e88571e : fsck.f2fs: show encrypted filenames matched with kernel <Jaegeuk Kim> 8 weeks ago
+9362475 : fsck.f2fs: check ino of an inode <Sheng Yong> 10 weeks ago
+1f1a81f : fsck.f2fs: check ino of an used nat entry <Sheng Yong> 10 weeks ago
+f94c606 : f2fs-tools: fix endianness of on-disk check_sum in summary_footer <Sheng Yong> 10 weeks ago
+6bcd4d1 : fsck.f2fs: avoid fix ssa in some case <Yunlei He> 2 months ago
+5353147 : mkfs.f2fs: reset dnode with zeros <Jaegeuk Kim> 3 months ago
+12a3257 : fsck.f2fs: nullify raw_super pointer <Jaegeuk Kim> 3 months ago
+ 
+**** github:CyanogenMod/android_external_libavc ****
+c57fc37 : Decoder: Fix stack underflow in CAVLC 4x4 parse functions <Harish Mahendrakar> 7 weeks ago
+50a580a : Ensure ih264d_start_of_pic() is not repeated in ih264d_mark_err_slice_skip() <Harish Mahendrakar> 10 weeks ago
+ 
+**** github:CyanogenMod/android_external_openssh ****
+3c974ed : _PATH_SSH_PROGRAM should point to ssh not sftp - this fixes scp <Andy Pilate> 4 days ago
+ 
+**** github:CyanogenMod/android_external_skia ****
+b49207a : Update SK_CRASH to default to abort(). DO NOT MERGE <Derek Sollenberger> 7 weeks ago
+ 
+**** github:CyanogenMod/android_external_stagefright-plugins ****
+9948eb3 : stagefright-plugin: Allow playback video with negative timestamp <Keith Mok> 7 weeks ago
+a6cec7d : Revert "stagefright-plugins: Fix timestamp calculation" <Keith Mok> 3 days ago
+a54c041 : stagefright-plugins: Fix timestamp calculation <Steve Kondik> 7 days ago
+ 
+**** github:CyanogenMod/android_external_wpa_supplicant_8 ****
+c3e08a5 : eap: Don't force reassociation when getting the identity and handshakes are in progress <Ricardo Cerqueira> 4 days ago
+ 
+**** cmR:android_frameworks_base ****
+e140141 : Lockscreen target fixes <Danesh M> 2 days ago
+2664cd7 : Fix typo in RankingHelper. <You Kim> 13 hours ago
+7243bbe : SettingsProvider: fix build for volume adjust sound to be overlayed <Christopher R. Palmer> 2 days ago
+51796ab : SettingsProvider: Allow default volume adjust sound to be overlayed. <Ankit Gupta> 7 weeks ago
+742f903 : com.android.cts.appsecurity.AdoptableHostTest may trigger below dead lock in system_server in the board with external adoptable storage as below stack: <guoyin.chen> 3 weeks ago
+e043e18 : Automatic translation import <Michael Bestas> 3 days ago
+bc923e8 : Lockscreen : Fix bottom area visibility <Danesh M> 3 days ago
+042bc9a : Merge tag 'android-6.0.1_r24' into HEAD <Jessica Wagantall> 3 days ago
+eaf5607 : audio: Don't play sound effects if stream is muted <Steve Kondik> 5 days ago
+913a204 : SystemUI: show visualizer in shade-locked view <Roman Birg> 4 days ago
+38f8f9b : SysUI/LLS: Slide panel out when collapse called <0xD34D> 13 hours ago
+ 
+**** github:CyanogenMod/android_frameworks_minikin ****
+555dbae : Add error logging on invalid cmap <Raph Levien> 8 weeks ago
+ 
+**** github:CyanogenMod/android_frameworks_opt_net_ims ****
+3e691ae : Volte: add volte feature system property and api's. <Francis Guevarra> 6 weeks ago
+ 
+**** github:CyanogenMod/android_hardware_qcom_audio ****
+624f14f : hal: allow compress voip on raw output streams <Scott Mertz> 3 days ago
+eba00b7 : hal: APQ8084 uses AUDIO_PARAMETER_KEY_BT_SCO_WB for bluetooth wideband <Skrilax_CZ> 3 months ago
+ 
+**** github:CyanogenMod/android_hardware_qcom_audio ****
+6e235c3 : post proc : volume listener : fix effect release crash <Eric Laurent> 4 months ago
+ 
+**** github:CyanogenMod/android_hardware_qcom_fm ****
+2cf28de : Automatic translation import <Michael Bestas> 3 days ago
+ 
+**** github:CyanogenMod/android_hardware_samsung ****
+5905f06 : Automatic translation import <Michael Bestas> 3 days ago
+ 
+**** github:CMRemix/android_kernel_samsung_trlte ****
+93471cb : ZeroLemon Fuel Gauge Fixed <ZION959> 8 months ago
+a4c8976 : pipe: iovec: Fix memory corruption when retrying atomic copy as non-atomic <Ben Hutchings> 10 months ago
+d1e36ab : selinux: enforce <ZION959> 3 weeks ago
+68ad236 : lowmemorykiller: enable adaptive_lmk by default <ZION959> 3 weeks ago
+dd5b7e0 : mm: vmpressure: allow in-kernel clients to subscribe for events <ZION959> 3 weeks ago
+e91225a : lowmemorykiller: adapt to vmpressure <ZION959> 3 weeks ago
+89e6d67 : Makefile: update gcc compile optimizations <ZION959> 3 weeks ago
+43fe266 : power: quickwakeup: initial driver <ZION959> 4 weeks ago
+8493f0d : block: Update sio to sioplus iosched & zen <ZION959> 4 weeks ago
+a2fd54d : cpufreq: impulse: tuning and burning values into governor <ZION959> 4 weeks ago
+d6f3269 : revert: arm: implement kexec-hardboot (by vbocek@gmail.com) <ZION959> 4 weeks ago
+4934a9e : revert: cpu: keep 2 cores always online (andip71) <ZION959> 4 weeks ago
+fb97215 : add our own config <ZION959> 5 weeks ago
+415ba85 : Makefile: fixed No such file or directory when make mrproper <ZION959> 5 weeks ago
+0f79720 : add missing earlysuspend.h <ZION959> 5 weeks ago
+b8a28c4 : Selinux: add config for permissive <ZION959> 5 weeks ago
+1aa0f82 : revert: selinux: honour command line enforcing setting <ZION959> 5 weeks ago
+9fa7e31 : msm: mdss: Adding lcd notifier <ZION959> 9 weeks ago
+5408b4f : add few governors <ZION959> 5 weeks ago
+083a17f : revert: trlte: update fingerprint drivers <ZION959> 7 weeks ago
+a82c780 : msm: Add MSM Hotplug driver <ZION959> 6 weeks ago
+40ac23f : selinux: Android kernel compatibility with M userspace <Jeff Vander Stoep> 6 months ago
+ce009ca : selinux: extended permissions for ioctls <Jeff Vander Stoep> 9 months ago
+215d268 : selinux: remove unnecessary pointer reassignment <Jeff Vander Stoep> 1 year, 1 month ago
+8852ca9 : selinux: do not check open perm on ftruncate call <Jeff Vander Stoep> 7 months ago
+158a107 : selinux: enable genfscon labeling for sysfs and pstore files <Stephen Smalley> 11 months ago
+e0daf28 : selinux: enable per-file labeling for debugfs files. <Stephen Smalley> 11 months ago
+ac8b148 : selinux: Remove obsolete selinux_audit_data initialization. <Stephen Smalley> 1 year, 3 months ago
+75d6d59 : revert: SELinux: per-command whitelisting of ioctls <ZION959> 6 weeks ago
+ebec5f8 : revert: SELinux: use deletion-safe iterator to free list <ZION959> 6 weeks ago
+4ea5885 : revert: SELinux: ss: Fix policy write for ioctl operations <ZION959> 6 weeks ago
+3e9cddb : arm: implement kexec-hardboot (by vbocek@gmail.com) <ZION959> 7 weeks ago
+6f057cc : drivers/cpufreq/cpu-boost: Allow input boost code to be excludable in defconfig (yank555) <ZION959> 7 weeks ago
+d6170d5 : scripts: remove localversion "+" & "-dirty" from kernel version strings <ZION959> 7 weeks ago
+88a4dde : android: binder: use GPF_HIGHUSER flag since binder is designed for userspace <Paul Reioux> 1 year, 1 month ago
+20a9d63 : msm: kgsl: show current power level since 8974 uses duplicate frequencies in its table, it's not possible to tell which of the duplicates is actually in use <Paul Reioux> 11 months ago
+4097fe1 : Voltage Control: generic voltage control for DTS based kernels (faux123) <ZION959> 7 weeks ago
+44f064d : revert: clock-krait/cpufreq: custom voltage control v1 <ZION959> 7 weeks ago
+ebf08e1 : revert: clock-krait: 8084 can go up to 1.275v safely <ZION959> 7 weeks ago
+98d2bb7 : Fix compilation warning for sabermod gcc 5&6 <ZION959> 9 weeks ago
+4c87044 : revert: revert: trlte: update fingerprint drivers <ZION959> 7 weeks ago
+c3cefa0 : revert: trlte: update fingerprint drivers <ZION959> 7 weeks ago
+127de47 : fixed compilation error by this commit <ZION959> 7 weeks ago
+8d0a86a : KEYS: Fix crash when attempt to garbage collect an uninstantiated keyring <David Howells> 6 months ago
+91facee : KEYS: Fix race between key destruction and finding a keyring by name <David Howells> 7 months ago
+a387be9 : pagemap: do not leak physical addresses to non-privileged userspace <Kirill A. Shutemov> 1 year, 1 month ago
+dd28fbc : __ptrace_may_access() should not deny sub-threads <Mark Grondona> 2 years, 7 months ago
+837aa74 : mm: reorder can_do_mlock to fix audit denial <Jeff Vander Stoep> 1 year, 1 month ago
+eeeab39 : KEYS: Fix handling of stored error in a negatively instantiated user key <David Howells> 7 weeks ago
+6376d2d : md: use kzalloc() when bitmap is disabled <Benjamin Randazzo> 9 months ago
+ 
+**** github:CyanogenMod/android_packages_apps_AudioFX ****
+cfa66e2 : Automatic translation import <Michael Bestas> 3 days ago
+ 
+**** github:CyanogenMod/android_packages_apps_BasicSmsReceiver ****
+5bd4af8 : Automatic translation import <Michael Bestas> 3 days ago
+ 
+**** github:CyanogenMod/android_packages_apps_Bluetooth ****
+5958468 : Automatic translation import <Michael Bestas> 3 days ago
+ 
+**** github:CyanogenMod/android_packages_apps_BluetoothExt ****
+dd6edd3 : Automatic translation import <Michael Bestas> 3 days ago
+ 
+**** github:CyanogenMod/android_packages_apps_Browser ****
+f14d057 : Automatic translation import <Michael Bestas> 3 days ago
+ 
+**** github:CyanogenMod/android_packages_apps_CMFileManager ****
+7099374 : Automatic translation import <Michael Bestas> 3 days ago
+ 
+**** github:CyanogenMod/android_packages_apps_Calendar ****
+c366862 : Automatic translation import <Michael Bestas> 3 days ago
+ 
+**** github:CyanogenMod/android_packages_apps_Camera2 ****
+cd8e14f : Automatic translation import <Michael Bestas> 3 days ago
+ 
+**** github:CyanogenMod/android_packages_apps_CellBroadcastReceiver ****
+e39ccdc : Automatic translation import <Michael Bestas> 3 days ago
+ 
+**** github:CyanogenMod/android_packages_apps_CertInstaller ****
+46a805c : Automatic translation import <Michael Bestas> 3 days ago
+ae7438e : Trust CA certificates added for the whole OS only <Robin Lee> 7 weeks ago
+ 
+**** github:CyanogenMod/android_packages_apps_Contacts ****
+1e2ad01 : Automatic translation import <Michael Bestas> 3 days ago
+ 
+**** github:CyanogenMod/android_packages_apps_ContactsCommon ****
+375869a : Automatic translation import <Michael Bestas> 3 days ago
+ 
+**** github:CyanogenMod/android_packages_apps_DeskClock ****
+b315295 : DeskClock : Move default action for flip and shake to overlay <Keith Mok> 7 days ago
+28a89cd : Automatic translation import <Michael Bestas> 3 days ago
+ 
+**** github:CyanogenMod/android_packages_apps_Eleven ****
+33f2164 : Automatic translation import <Michael Bestas> 3 days ago
+ 
+**** github:CyanogenMod/android_packages_apps_Email ****
+f1e5876 : Automatic translation import <Michael Bestas> 3 days ago
+ 
+**** github:CyanogenMod/android_packages_apps_ExactCalculator ****
+ab32d57 : Automatic translation import <Michael Bestas> 3 days ago
+ 
+**** github:CyanogenMod/android_packages_apps_Exchange ****
+0ad3058 : Automatic translation import <Michael Bestas> 3 days ago
+ 
+**** github:CyanogenMod/android_packages_apps_FMRadio ****
+010e4d8 : Automatic translation import <Michael Bestas> 3 days ago
+cfebddb : Fix incomplete app termination <Ricardo Cerqueira> 3 days ago
+ 
+**** github:CyanogenMod/android_packages_apps_Gallery2 ****
+fbd7d43 : Automatic translation import <Michael Bestas> 3 days ago
+ 
+**** github:CyanogenMod/android_packages_apps_HTMLViewer ****
+d57f92b : Automatic translation import <Michael Bestas> 3 days ago
+ 
+**** github:CyanogenMod/android_packages_apps_KeyChain ****
+4cd86c4 : Automatic translation import <Michael Bestas> 3 days ago
+ 
+**** github:CyanogenMod/android_packages_apps_LockClock ****
+ff6a3f0 : Automatic translation import <Michael Bestas> 3 days ago
+ 
+**** github:CyanogenMod/android_packages_apps_ManagedProvisioning ****
+af97d44 : Automatic translation import <Michael Bestas> 3 days ago
+ 
+**** github:CyanogenMod/android_packages_apps_PhoneCommon ****
+bdac5aa : Automatic translation import <Michael Bestas> 3 days ago
+ 
+**** github:CyanogenMod/android_packages_apps_Profiles ****
+7f9e053 : Automatic translation import <Michael Bestas> 3 days ago
+ 
+**** cmR:android_packages_apps_Settings ****
+7af688d : Add explanation for customizing apps <Michael W> 2 days ago
+6fd98db : Settings: use ActivityManager method for requesting bug report <Roman Birg> 1 year, 8 months ago
+9c75d38 : Settings: Disable and hide refresh button on power usage detail. <Adnan Begovic> 2 days ago
+3b9765e : Settings: Use cm build properties correctly. <Adnan Begovic> 2 days ago
+f00909a : Automatic translation import <Michael Bestas> 3 days ago
+c8fb732 : Revert "Settings: disable wifi display from search indexing if disabled" <Steve Kondik> 4 days ago
+1feca9e : DevelopmentSettings: Synchronize USB connection data state <Ethan Chen> 7 days ago
+851b25e : Settings: Use correct LOW_POWER_MODE_TRIGGER default <Ethan Chen> 8 days ago
+5de0a28 : Settings: disable wifi display from search indexing if disabled <Ankit Gupta> 6 weeks ago
+5d4c7be : Settings: fix profiles nw selection with 1 sim in MSIM DUT <Roman Birg> 4 days ago
+fe6998e : AppOps: Don't show option to restrict network usage for platform signed apps <Unpublished> 5 days ago
+47dab09 : Improve cellular data strings <Michael Bestas> 4 days ago
+ 
+**** cmR:android_packages_apps_Snap ****
+b7fd125 : Automatic translation import <Michael Bestas> 3 days ago
+31a10f9 : Fix view index tracking. <Danny Baumann> 5 days ago
+222c665 : Properly respect navigation bar size when laying out menus. <Danny Baumann> 12 days ago
+ba9f88b : snap: rearrange top view icons <jrizzoli> 7 weeks ago
+ 
+**** github:CyanogenMod/android_packages_apps_SoundRecorder ****
+bd001c3 : Automatic translation import <Michael Bestas> 3 days ago
+ 
+**** github:CyanogenMod/android_packages_apps_Stk ****
+d54b751 : Automatic translation import <Michael Bestas> 3 days ago
+ 
+**** github:CyanogenMod/android_packages_apps_Tag ****
+803ff4d : Automatic translation import <Michael Bestas> 3 days ago
+ 
+**** github:CyanogenMod/android_packages_apps_Terminal ****
+994aade : Automatic translation import <Michael Bestas> 3 days ago
+ 
+**** github:CyanogenMod/android_packages_apps_ThemeChooser ****
+90d1914 : Automatic translation import <Michael Bestas> 3 days ago
+ 
+**** github:CyanogenMod/android_packages_apps_Trebuchet ****
+b607527 : Trebuchet: add gello to hotseat <jrizzoli> 4 weeks ago
+9c0781a : Automatic translation import <Michael Bestas> 3 days ago
+ 
+**** github:CyanogenMod/android_packages_apps_TvSettings ****
+5224612 : Automatic translation import <Michael Bestas> 3 days ago
+ 
+**** github:CyanogenMod/android_packages_apps_UnifiedEmail ****
+56f6eb2 : Automatic translation import <Michael Bestas> 3 days ago
+c4614f6 : Don't allow file attachment from file:///data. <Régis Décamps> 6 weeks ago
+ 
+**** github:CyanogenMod/android_packages_providers_BookmarkProvider ****
+d28f43d : Automatic translation import <Michael Bestas> 3 days ago
+ 
+**** github:CyanogenMod/android_packages_providers_CalendarProvider ****
+b582f8f : Automatic translation import <Michael Bestas> 3 days ago
+ 
+**** github:CyanogenMod/android_packages_providers_CallLogProvider ****
+06ae943 : Automatic translation import <Michael Bestas> 3 days ago
+ 
+**** github:CyanogenMod/android_packages_providers_ContactsProvider ****
+edec4c1 : Automatic translation import <Michael Bestas> 3 days ago
+ 
+**** github:CyanogenMod/android_packages_providers_DownloadProvider ****
+504b247 : Automatic translation import <Michael Bestas> 3 days ago
+e74ee40 : DO NOT MERGE. Use resolved path when inserting and deleting. <Jeff Sharkey> 7 weeks ago
+8ec0057 : Use resolved path for both checking and opening. <Jeff Sharkey> 3 months ago
+ 
+**** cmR:android_packages_providers_MediaProvider ****
+f7ce3d3 : MediaProvider: MediaScanner behavior on boot (2/3) <blk_jack> 3 months ago
+ 
+**** github:CyanogenMod/android_packages_providers_TelephonyProvider ****
+a83ba96 : Automatic translation import <Michael Bestas> 3 days ago
+ 
+**** github:CyanogenMod/android_packages_providers_ThemesProvider ****
+89e9807 : Automatic translation import <Michael Bestas> 3 days ago
+ 
+**** github:CyanogenMod/android_packages_providers_UserDictionaryProvider ****
+59f774b : Automatic translation import <Michael Bestas> 3 days ago
+ 
+**** github:CyanogenMod/android_packages_providers_WeatherProvider ****
+64fda03 : Automatic translation import <Michael Bestas> 3 days ago
+ 
+**** github:CyanogenMod/android_packages_screensavers_Basic ****
+64dd84e : Automatic translation import <Michael Bestas> 3 days ago
+ 
+**** github:CyanogenMod/android_packages_screensavers_PhotoTable ****
+250e7ae : Automatic translation import <Michael Bestas> 3 days ago
+ 
+**** github:CyanogenMod/android_packages_services_LiveLockScreenService ****
+cf4bde6 : Automatic translation import <Michael Bestas> 3 days ago
+49c2d16 : Only observe current user's settings changes <d34d> 5 days ago
+ 
+**** github:CyanogenMod/android_packages_wallpapers_Basic ****
+eb270e8 : Automatic translation import <Michael Bestas> 3 days ago
+ 
+**** github:CyanogenMod/android_packages_wallpapers_LivePicker ****
+83966e6 : Automatic translation import <Michael Bestas> 3 days ago
+ 
+**** github:CyanogenMod/android_packages_wallpapers_MagicSmoke ****
+5766087 : Automatic translation import <Michael Bestas> 3 days ago
+ 
+**** github:CyanogenMod/android_packages_wallpapers_PhotoPhase ****
+288dfb4 : Automatic translation import <Michael Bestas> 3 days ago
+ 
+**** github:CyanogenMod/android_prebuilts_cmsdk ****
+6aececd : Update weather api <Luis Vidal> 12 hours ago
+ 
+**** bb:arm-eabi-6.0 ****
+f8b0896 : 6.0.1-20160322 <mydongistiny> 2 weeks ago
+ 
+**** bb:arm-linux-androideabi-5.3 ****
+5f580d3 : 5.3.1-20160322 <mydongistiny> 2 weeks ago
+ 
+**** github:CyanogenMod/android_system_bt ****
+b029b6e : Bluetooth: Allow REMOVE_EAGER_THREADS to be unset <Ivan Grinko> 3 days ago
+388db89 : DO NOT MERGE Remove Porsche car-kit pairing workaround <Andre Eisenbach> 9 weeks ago
+ 
+**** github:CyanogenMod/android_system_extras ****
+95085be : f2fs_utils: Update for f2fs-tools 1.6.1 <luca020400> 4 days ago
+ 
+**** github:CyanogenMod/android_vendor_cm ****
+ef1a479 : cm: sepolicy: allow platform apps to execute render scripts <Matthias Yzusqui> 8 days ago
+ 
+**** cmR:android_vendor_CMRemix ****
+5a093e7 : revert: vendor: use zion959-proprietary_vendor_samsung for blobls <ZION959> 11 hours ago
+083bea1 : vendor: add new default wallpaper <ZION959> 4 days ago
+f43753e : vendor: update supersu to v2.71 <ZION959> 4 days ago
+1aef1d0 : vendor: use zion959-proprietary_vendor_samsung for blobls <ZION959> 4 days ago
+ 
+**** cmR:cm_platform_sdk ****
+343245f : Add API to cancel an active weather request <Luis Vidal> 2 days ago
+2eddb5f : Reset timer when a new weather service provider is selected <Luis Vidal> 2 days ago
+d8c2556 : cmsdk: Actually return the system property in Build. <Adnan Begovic> 2 days ago
+f1b172d : Automatic translation import <Michael Bestas> 3 days ago
+45f1e04 : cmsdk: Improve data usage strings <Michael Bestas> 4 days ago
+ 
+**** github:TheMuppets/proprietary_vendor_lge ****
+d22e097 : bullhead: MHC19Q <Jake Whatley> 2 days ago
+ 
