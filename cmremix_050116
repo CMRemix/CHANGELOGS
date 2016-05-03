@@ -1,0 +1,321 @@
+
+**** cmR:CMRemix ****
+c9f8151 : Update API for Keyguard and Statubar Weather [3/3] <ZION959> 3 hours ago
+d4890ec : revert: track cmremix's bluetooth and friend <ZION959> 23 hours ago
+ 
+**** cmR:android_bionic ****
+e87a5b3 : bionic: Use a more simple strrchr for arm64 <Steve Kondik> 28 hours ago
+ 
+**** cmR:android_build ****
+175aa0c : qcom: Use correct path for BT vendor <Ethan Chen> 13 days ago
+b0fa40c : img_from_target_files: Skip oem.img in fastboot image creation <Brint E. Kriebel> 8 months ago
+e1caad2 : releasetools: Fix print in boot image signing <Brint E. Kriebel> 1 year, 2 months ago
+5f59260 : releasetools: Add bootable image signing <Brint E. Kriebel> 1 year, 2 months ago
+06a7227 : build: skip 'ro.product.device' using  new macro "TARGET_SKIP_PRODUCT_DEVICE" <Edward Wang> 2 weeks ago
+c9c78db : build: Create a oem image when BOARD_OEMIMAGE_FILE_SYSTEM_TYPE is defined <Diogo Ferreira> 8 months ago
+4bbce4f : build: Add BOOTIMAGE_EXTRA_DEPS for BOOT_SIGNER products too <Ethan Chen> 3 weeks ago
+f31558c : build: Use compatibility DTB directory path for custom DTB tool builds <Ethan Chen> 3 weeks ago
+e7ac98d : build: Add MTK support <Diogo Ferreira> 7 weeks ago
+375268c : build: add cmts config to global build <Khalid Zubair> 9 weeks ago
+f994a23 : qcom: Allow usage of default QC HAL paths <Ethan Chen> 5 weeks ago
+85fe638 : Preventing default locale from being overridden because of buildinfo.sh <Abhishek G> 4 weeks ago
+bc9ae3d : envsetup: Always look up JAVA_HOME path <Dark Eyes> 8 weeks ago
+3ef1982 : Revert "binary: Generate dummy rule for relocated protobuf headers" <Ricardo Cerqueira> 5 weeks ago
+2252918 : "MHC19Q" <The Android Automerger> 6 weeks ago
+01cad60 : Per Zach Jang: bump PLATFORM_SECURITY_PATCH date. <The Android Automerger> 6 weeks ago
+e76159e : MHC19P <The Android Automerger> 6 weeks ago
+9833719 : Update Security String to 2016-04-02 in preparation for April 2016 Security OTA v2 - kernel updates with patches for CVE-2015-1805 <Zach Jang> 6 weeks ago
+25b7ce3 : MOB30D <The Android Automerger> 6 weeks ago
+42d5725 : Update Security String to 2016-04-02 in preparation for April 2016 Security OTA v2 - kernel updates with patches for CVE-2015-1805 <Zach Jang> 6 weeks ago
+532238f : "MHC82" <The Android Automerger> 6 weeks ago
+31fe037 : MHC19O <The Android Automerger> 6 weeks ago
+de753e1 : Updating Security Patch String to: 2016-03-18 - March 2016 OTA v2 <Zach Jang> 6 weeks ago
+13678cf : MOB30C <The Android Automerger> 7 weeks ago
+078a4dc : qcom: Explicitly build the custom audio policy for legacy alsa <Arne Coucheron> 7 weeks ago
+cbf9692 : envsetup: fix mm under zsh <Khalid Zubair> 9 weeks ago
+ad12b36 : Fix a race condition while building the recovery patch <Martin Blumenstingl> 8 weeks ago
+3300537 : "MHC19N" <The Android Automerger> 8 weeks ago
+70593a0 : "MHC19M" <The Android Automerger> 9 weeks ago
+5250d69 : MOB30B <The Android Automerger> 9 weeks ago
+1b865fa : "MHC19L" <The Android Automerger> 9 weeks ago
+7e848b3 : Updating security string patch to 2016-04-01 <Zach Jang> 2 months ago
+5228b92 : "MHC19K" <The Android Automerger> 9 weeks ago
+0a9c18b : "MOB29Z" <The Android Automerger> 9 weeks ago
+f103e81 : Updating security string patch to 2016-04-01 <Zach Jang> 2 months ago
+5994b11 : MOB29Y <The Android Automerger> 10 weeks ago
+c322528 : "MOB29X" <The Android Automerger> 10 weeks ago
+49537b0 : "MOB29W" <The Android Automerger> 3 months ago
+57d06af : "MHC19J" <The Android Automerger> 3 months ago
+087c6f0 : "MHC19I" <The Android Automerger> 3 months ago
+4ce2b1d : "MHC19H" <The Android Automerger> 3 months ago
+f02556d : "MHC19G" <The Android Automerger> 3 months ago
+03b5c5d : "MHC19F" <The Android Automerger> 3 months ago
+0e99241 : "MHC19E" <The Android Automerger> 3 months ago
+8dd7085 : "MHC19D" <The Android Automerger> 3 months ago
+c782f95 : "MHC19C" <The Android Automerger> 3 months ago
+777fab4 : "MHC19B" <The Android Automerger> 3 months ago
+6c0d423 : "MHC19" <The Android Automerger> 3 months ago
+28fc15a : "MHC18" <The Android Automerger> 4 months ago
+7251731 : "MHC17" <The Android Automerger> 4 months ago
+ 
+**** github:CyanogenMod/android_device_qcom_common ****
+d657426 : power: Bring all CM features to 8992 PowerHAL <Steve Kondik> 2 days ago
+ 
+**** github:CyanogenMod/android_external_toybox ****
+8aadde6 : toybox: Do not install a symlink for traceroute6 <Martin Blumenstingl> 2 days ago
+ 
+**** github:CyanogenMod/android_external_zlib ****
+41a0457 : zlib: Disable Clang for now <Steve Kondik> 28 hours ago
+ 
+**** cmR:android_frameworks_av ****
+7592f6c : avextensions: Fix warnings on 64-bit clang <Steve Kondik> 28 hours ago
+ 
+**** cmR:android_frameworks_base ****
+c2c7655 : revert: Revert "SettingsLib: Add back accidentally removed translations" <ZION959> 2 hours ago
+2e65654 : Revert "SettingsLib: Add back accidentally removed translations" <Michael Bestas> 8 hours ago
+acbba46 : Update API for Keyguard and Statusbar Weather [1/3] <placiano> 4 hours ago
+ 
+**** github:CyanogenMod/android_hardware_qcom_audio ****
+866d090 : Fix incall music enabled error <Sean hoyt> 16 hours ago
+49054ba : policy_hal: Fix setOutputDevice call when starting source <Steve Kondik> 17 hours ago
+f17c099 : hal: Fix build break when incall music isn't set <Steve Kondik> 19 hours ago
+2a7df58 : hal: Fix warnings when building with clang <Steve Kondik> 26 hours ago
+4f1d6d3 : policy_hal: fix improper voice-playback concurrency handling <Dhananjay Kumar> 5 months ago
+ 
+**** github:CyanogenMod/android_hardware_qcom_display ****
+cedd62a : display: Fix warnings on 64-bit clang <Steve Kondik> 26 hours ago
+148e6da : hwc: cursor: Set cursor layer updating hint to driver <Arun Kumar K.R> 2 months ago
+ 
+**** github:CyanogenMod/android_hardware_qcom_media ****
+8f10396 : media: Fix issues when building with Clang <Steve Kondik> 6 months ago
+ 
+**** github:CyanogenMod/android_hardware_ti_omap4 ****
+10f354f : domx: connection robustness improvements <Luden> 8 days ago
+ 
+**** github:CMRemix/android_kernel_samsung_trlte ****
+e4aee93 : msm: vidc: Make buffer validity checks stronger <Deva Ramasubramanian> 3 months ago
+fed3d15 : msm: vidc: Do sanity check for different IOCTL cmd <Deva Ramasubramanian> 3 months ago
+cb36a66 : msm: vidc: Allow clients to specify/query the colorspace <Praveen Chavan> 7 months ago
+08ec07c : GCC: Add support for GCC 7.0 <mydongistiny> 2 weeks ago
+93471cb : ZeroLemon Fuel Gauge Fixed <ZION959> 9 months ago
+a4c8976 : pipe: iovec: Fix memory corruption when retrying atomic copy as non-atomic <Ben Hutchings> 11 months ago
+d1e36ab : selinux: enforce <ZION959> 6 weeks ago
+68ad236 : lowmemorykiller: enable adaptive_lmk by default <ZION959> 6 weeks ago
+dd5b7e0 : mm: vmpressure: allow in-kernel clients to subscribe for events <ZION959> 6 weeks ago
+e91225a : lowmemorykiller: adapt to vmpressure <ZION959> 6 weeks ago
+89e6d67 : Makefile: update gcc compile optimizations <ZION959> 6 weeks ago
+43fe266 : power: quickwakeup: initial driver <ZION959> 8 weeks ago
+8493f0d : block: Update sio to sioplus iosched & zen <ZION959> 8 weeks ago
+a2fd54d : cpufreq: impulse: tuning and burning values into governor <ZION959> 8 weeks ago
+d6f3269 : revert: arm: implement kexec-hardboot (by vbocek@gmail.com) <ZION959> 7 weeks ago
+4934a9e : revert: cpu: keep 2 cores always online (andip71) <ZION959> 7 weeks ago
+fb97215 : add our own config <ZION959> 8 weeks ago
+415ba85 : Makefile: fixed No such file or directory when make mrproper <ZION959> 8 weeks ago
+0f79720 : add missing earlysuspend.h <ZION959> 8 weeks ago
+b8a28c4 : Selinux: add config for permissive <ZION959> 8 weeks ago
+1aa0f82 : revert: selinux: honour command line enforcing setting <ZION959> 8 weeks ago
+9fa7e31 : msm: mdss: Adding lcd notifier <ZION959> 3 months ago
+5408b4f : add few governors <ZION959> 9 weeks ago
+083a17f : revert: trlte: update fingerprint drivers <ZION959> 2 months ago
+a82c780 : msm: Add MSM Hotplug driver <ZION959> 9 weeks ago
+40ac23f : selinux: Android kernel compatibility with M userspace <Jeff Vander Stoep> 6 months ago
+ce009ca : selinux: extended permissions for ioctls <Jeff Vander Stoep> 10 months ago
+215d268 : selinux: remove unnecessary pointer reassignment <Jeff Vander Stoep> 1 year, 2 months ago
+8852ca9 : selinux: do not check open perm on ftruncate call <Jeff Vander Stoep> 8 months ago
+158a107 : selinux: enable genfscon labeling for sysfs and pstore files <Stephen Smalley> 12 months ago
+e0daf28 : selinux: enable per-file labeling for debugfs files. <Stephen Smalley> 12 months ago
+ac8b148 : selinux: Remove obsolete selinux_audit_data initialization. <Stephen Smalley> 1 year, 3 months ago
+75d6d59 : revert: SELinux: per-command whitelisting of ioctls <ZION959> 9 weeks ago
+ebec5f8 : revert: SELinux: use deletion-safe iterator to free list <ZION959> 9 weeks ago
+4ea5885 : revert: SELinux: ss: Fix policy write for ioctl operations <ZION959> 9 weeks ago
+3e9cddb : arm: implement kexec-hardboot (by vbocek@gmail.com) <ZION959> 10 weeks ago
+6f057cc : drivers/cpufreq/cpu-boost: Allow input boost code to be excludable in defconfig (yank555) <ZION959> 10 weeks ago
+d6170d5 : scripts: remove localversion "+" & "-dirty" from kernel version strings <ZION959> 10 weeks ago
+88a4dde : android: binder: use GPF_HIGHUSER flag since binder is designed for userspace <Paul Reioux> 1 year, 2 months ago
+20a9d63 : msm: kgsl: show current power level since 8974 uses duplicate frequencies in its table, it's not possible to tell which of the duplicates is actually in use <Paul Reioux> 12 months ago
+4097fe1 : Voltage Control: generic voltage control for DTS based kernels (faux123) <ZION959> 10 weeks ago
+44f064d : revert: clock-krait/cpufreq: custom voltage control v1 <ZION959> 10 weeks ago
+ebf08e1 : revert: clock-krait: 8084 can go up to 1.275v safely <ZION959> 10 weeks ago
+98d2bb7 : Fix compilation warning for sabermod gcc 5&6 <ZION959> 3 months ago
+4c87044 : revert: revert: trlte: update fingerprint drivers <ZION959> 2 months ago
+c3cefa0 : revert: trlte: update fingerprint drivers <ZION959> 2 months ago
+127de47 : fixed compilation error by this commit <ZION959> 2 months ago
+8d0a86a : KEYS: Fix crash when attempt to garbage collect an uninstantiated keyring <David Howells> 7 months ago
+91facee : KEYS: Fix race between key destruction and finding a keyring by name <David Howells> 7 months ago
+a387be9 : pagemap: do not leak physical addresses to non-privileged userspace <Kirill A. Shutemov> 1 year, 2 months ago
+ 
+**** github:CyanogenMod/android_packages_apps_BasicSmsReceiver ****
+3e06852 : Revert "Merge tag 'android-6.0.1_r22' of https://android.googlesource.com/platform/packages/apps/BasicSmsReceiver into cm-13.0" <Michael Bestas> 10 hours ago
+ 
+**** github:CyanogenMod/android_packages_apps_Bluetooth ****
+f4546b1 : Partially revert "Merge tag 'android-6.0.1_r22' of https://android.googlesource.com/platform/packages/apps/Bluetooth into cm-13.0" <Michael Bestas> 10 hours ago
+2c9c545 : Ensure synchronized access of JNI callback object <Ayan Ghosh> 4 months ago
+1e3c122 : Automatic translation import <Michael Bestas> 2 weeks ago
+f64343e : hdp: do not return a null value when hdp interface unavailable <Arnav Gupta> 3 months ago
+5958468 : Automatic translation import <Michael Bestas> 4 weeks ago
+afa0cdb : Fix a logical error in isAbsoluteVolumeSupported. <kexiao> 6 weeks ago
+84a1077 : OPP: Add checks to initiate rfcomm connection in case sdp fails <Hemant Gupta> 3 months ago
+a8b88a3 : Revert "Bluetooth-OPP: Start outbound transfer only after OPPService is up" <Sravan Kumar V> 3 months ago
+8d71081 : Revert "Multiuser: Check if valid user before starting service" <Sravan Kumar V> 6 weeks ago
+a4c1808 : Bluetooth-OPP: Use long instead of int <Sravan Kumar V> 10 weeks ago
+06638f9 : SAP: Fix below issues during internal testing <Smriti Gupta> 3 months ago
+b164a36 : Bluetooth-OPP: Use a volatile variable to denote interrupt status <zhenchao> 8 weeks ago
+3e4ad7c : MAP: Fix ANR due wait on shutdown complete. <Ashwini Munigala> 3 months ago
+5b6543d : MAP: Handle following in MAPS: <Ashwini Munigala> 3 months ago
+674c089 : DO NOT MERGE Enhance AVRCP Absolute Volume control implementation <Liejun Tao> 5 months ago
+a71eb12 : DO NOT MERGE Read Bluetooth interop database entries from settings (2/2) <Andre Eisenbach> 4 months ago
+eb6e43c : Fix memory leak in Bluetooth AVRCP JNI <Casper Bonde> 4 months ago
+b026d70 : [DO NOT MERGE ANYWHERE] Null terminate MAP instance information <Ajay Panicker> 4 months ago
+ 
+**** github:CyanogenMod/android_packages_apps_BluetoothExt ****
+a388570 : Automatic translation import <Michael Bestas> 2 weeks ago
+dd6edd3 : Automatic translation import <Michael Bestas> 4 weeks ago
+ 
+**** github:CyanogenMod/android_packages_apps_Calendar ****
+288ecbb : Calendar: Fix translatability of buttons list <Michael Bestas> 1 year, 4 months ago
+ 
+**** github:CyanogenMod/android_packages_apps_Camera2 ****
+4770312 : Revert "Merge tag 'android-6.0.1_r22' of https://android.googlesource.com/platform/packages/apps/Camera2 into cm-13.0" <Michael Bestas> 10 hours ago
+ 
+**** github:CyanogenMod/android_packages_apps_CellBroadcastReceiver ****
+78dd173 : Revert "Merge tag 'android-6.0.1_r22' of https://android.googlesource.com/platform/packages/apps/CellBroadcastReceiver into cm-13.0" <Michael Bestas> 10 hours ago
+ 
+**** github:CyanogenMod/android_packages_apps_CertInstaller ****
+43e8a16 : Partially revert "Merge tag 'android-6.0.1_r22' of https://android.googlesource.com/platform/packages/apps/CertInstaller into cm-13.0" <Michael Bestas> 10 hours ago
+ 
+**** github:CyanogenMod/android_packages_apps_Contacts ****
+829ce77 : Revert "Merge tag 'android-6.0.1_r22' of https://android.googlesource.com/platform/packages/apps/Contacts into cm-13.0" <Michael Bestas> 10 hours ago
+ 
+**** github:CyanogenMod/android_packages_apps_DeskClock ****
+af121c5 : Revert "Merge tag 'android-6.0.1_r22' of https://android.googlesource.com/platform/packages/apps/DeskClock into cm-13.0" <Michael Bestas> 5 weeks ago
+ddbc283 : Revert "Revert "Import translations. DO NOT MERGE"" <Michael Bestas> 5 weeks ago
+ 
+**** cmR:android_packages_apps_Dialer ****
+bde990e : Revert "Merge tag 'android-6.0.1_r22' of https://android.googlesource.com/platform/packages/apps/Dialer into cm-13.0" <Michael Bestas> 10 hours ago
+11ed4a8 : Revert "Workaround for AOSP strings missing translations" <Michael Bestas> 10 hours ago
+ 
+**** github:CyanogenMod/android_packages_apps_Email ****
+89e216d : Revert "Merge tag 'android-6.0.1_r22' of https://android.googlesource.com/platform/packages/apps/Email into cm-13.0" <Michael Bestas> 10 hours ago
+ 
+**** github:CyanogenMod/android_packages_apps_ExactCalculator ****
+7e0d09a : Revert "Merge tag 'android-6.0.1_r22' of https://android.googlesource.com/platform/packages/apps/ExactCalculator into cm-13.0" <Michael Bestas> 10 hours ago
+ 
+**** github:CyanogenMod/android_packages_apps_FMRadio ****
+20b31d7 : Revert "Merge tag 'android-6.0.1_r22' of https://android.googlesource.com/platform/packages/apps/FMRadio into cm-13.0" <Michael Bestas> 10 hours ago
+ 
+**** github:CyanogenMod/android_packages_apps_Gallery2 ****
+55b2afc : Revert "Merge tag 'android-6.0.1_r22' of https://android.googlesource.com/platform/packages/apps/Gallery2 into cm-13.0" <Michael Bestas> 9 hours ago
+ 
+**** cmR:android_packages_apps_InCallUI ****
+2425096 : Partially revert "Merge tag 'android-6.0.1_r22' of https://android.googlesource.com/platform/packages/apps/InCallUI into cm-13.0" <Michael Bestas> 9 hours ago
+ 
+**** github:CyanogenMod/android_packages_apps_KeyChain ****
+1d01cb0 : Revert "Merge tag 'android-6.0.1_r22' of https://android.googlesource.com/platform/packages/apps/KeyChain into cm-13.0" <Michael Bestas> 9 hours ago
+ 
+**** github:CyanogenMod/android_packages_apps_ManagedProvisioning ****
+e1c1f4a : Revert "Merge tag 'android-6.0.1_r22' of https://android.googlesource.com/platform/packages/apps/ManagedProvisioning into cm-13.0" <Michael Bestas> 9 hours ago
+ 
+**** github:CyanogenMod/android_packages_apps_PhoneCommon ****
+158e6b3 : Revert "Merge tag 'android-6.0.1_r22' of https://android.googlesource.com/platform/packages/apps/PhoneCommon into cm-13.0" <Michael Bestas> 9 hours ago
+ 
+**** cmR:android_packages_apps_Settings ****
+7b4a34d : Point Amibent display tile longpress action to it's own settings [2/2] http://jira.dirtyunicorns.com/browse/MAR-49 <Alex Cruz> 25 hours ago
+1cc0905 : Settings: refresh ui on foce stop/diable <Roman Birg> 6 days ago
+e266d9c : Settings: Ensure user has to wait 30 before retrying pattern <cretin45> 3 days ago
+4d41c42 : Automatic translation import <Michael Bestas> 3 days ago
+ 
+**** cmR:android_packages_apps_Snap ****
+abd349c : comment out LOCAL_OVERRIDES_PACKAGES := Camera2 <ZION959> 4 hours ago
+ 
+**** github:CyanogenMod/android_packages_apps_SoundRecorder ****
+92f1897 : Revert "Merge tag 'android-6.0.1_r22' of https://android.googlesource.com/platform/packages/apps/SoundRecorder into cm-13.0" <Michael Bestas> 9 hours ago
+ 
+**** github:CyanogenMod/android_packages_apps_Stk ****
+fabbc12 : Revert "Merge tag 'android-6.0.1_r22' of https://android.googlesource.com/platform/packages/apps/Stk into cm-13.0" <Michael Bestas> 9 hours ago
+ 
+**** github:CyanogenMod/android_packages_apps_Tag ****
+f26dd77 : Revert "Merge tag 'android-6.0.1_r22' of https://android.googlesource.com/platform/packages/apps/Tag into cm-13.0" <Michael Bestas> 9 hours ago
+ 
+**** github:CyanogenMod/android_packages_apps_Trebuchet ****
+98fc7cb : Revert "Merge tag 'android-6.0.1_r22' of https://android.googlesource.com/platform/packages/apps/Launcher3 into HEAD" <Michael Bestas> 9 hours ago
+ 
+**** github:CyanogenMod/android_packages_apps_TvSettings ****
+3327e7b : Revert "Merge tag 'android-6.0.1_r22' of https://android.googlesource.com/platform/packages/apps/TvSettings into cm-13.0" <Michael Bestas> 9 hours ago
+ 
+**** github:CyanogenMod/android_packages_apps_UnifiedEmail ****
+6d39c78 : Revert "Merge tag 'android-6.0.1_r22' of https://android.googlesource.com/platform/packages/apps/UnifiedEmail into cm-13.0" <Michael Bestas> 9 hours ago
+ 
+**** github:CyanogenMod/android_packages_providers_ContactsProvider ****
+d849765 : Partially revert "Merge tag 'android-6.0.1_r22' of https://android.googlesource.com/platform/packages/providers/ContactsProvider into cm-13.0" <Michael Bestas> 9 hours ago
+ 
+**** github:CyanogenMod/android_packages_providers_DownloadProvider ****
+d94d7f8 : Partially revert "Import translations. DO NOT MERGE" <Michael Bestas> 7 hours ago
+7b3ecae : Revert "Merge tag 'android-6.0.1_r22' of https://android.googlesource.com/platform/packages/providers/DownloadProvider into cm-13.0" <Michael Bestas> 9 hours ago
+ 
+**** github:CyanogenMod/android_packages_providers_TelephonyProvider ****
+662c50e : Revert "Merge tag 'android-6.0.1_r22' of https://android.googlesource.com/platform/packages/providers/TelephonyProvider into cm-13.0" <Michael Bestas> 9 hours ago
+ 
+**** github:CyanogenMod/android_packages_providers_UserDictionaryProvider ****
+796f619 : Revert "Merge tag 'android-6.0.1_r22' of https://android.googlesource.com/platform/packages/providers/UserDictionaryProvider into cm-13.0" <Michael Bestas> 9 hours ago
+ 
+**** github:CyanogenMod/android_packages_screensavers_Basic ****
+c1813e3 : Revert "Merge tag 'android-6.0.1_r22' of https://android.googlesource.com/platform/packages/screensavers/Basic into cm-13.0" <Michael Bestas> 9 hours ago
+ 
+**** github:CyanogenMod/android_packages_screensavers_PhotoTable ****
+dd4a862 : Revert "Merge tag 'android-6.0.1_r22' of https://android.googlesource.com/platform/packages/screensavers/PhotoTable into cm-13.0" <Michael Bestas> 9 hours ago
+ 
+**** cmR:android_packages_services_Telephony ****
+a374161 : Partially revert "Merge tag 'android-6.0.1_r22' of https://android.googlesource.com/platform/packages/services/Telephony into cm-13.0" <Michael Bestas> 8 hours ago
+ 
+**** github:CyanogenMod/android_packages_wallpapers_Basic ****
+6983fd7 : Revert "Merge tag 'android-6.0.1_r22' of https://android.googlesource.com/platform/packages/wallpapers/Basic into cm-13.0" <Michael Bestas> 8 hours ago
+ 
+**** github:CyanogenMod/android_packages_wallpapers_HoloSpiral ****
+3d59c10 : Revert "Merge tag 'android-6.0.1_r22' of https://android.googlesource.com/platform/packages/wallpapers/HoloSpiral into cm-13.0" <Michael Bestas> 8 hours ago
+ 
+**** github:CyanogenMod/android_packages_wallpapers_LivePicker ****
+fb8dcdb : Revert "Merge tag 'android-6.0.1_r22' of https://android.googlesource.com/platform/packages/wallpapers/LivePicker into cm-13.0" <Michael Bestas> 8 hours ago
+ 
+**** github:CyanogenMod/android_packages_wallpapers_MagicSmoke ****
+15cab6a : Revert "Merge tag 'android-6.0.1_r22' of https://android.googlesource.com/platform/packages/wallpapers/MagicSmoke into cm-13.0" <Michael Bestas> 8 hours ago
+ 
+**** github:CyanogenMod/android_packages_wallpapers_NoiseField ****
+38435b4 : Revert "Merge tag 'android-6.0.1_r22' of https://android.googlesource.com/platform/packages/wallpapers/NoiseField into cm-13.0" <Michael Bestas> 8 hours ago
+ 
+**** github:CyanogenMod/android_packages_wallpapers_PhaseBeam ****
+1105ac7 : Revert "Merge tag 'android-6.0.1_r22' of https://android.googlesource.com/platform/packages/wallpapers/PhaseBeam into cm-13.0" <Michael Bestas> 8 hours ago
+ 
+**** github:CyanogenMod/android_system_bt ****
+0ffc2ce : BT-HFP: Add HFP 1.7 features only if supported by peer <Jean-Bernard Damiano> 5 days ago
+3a1764b : Add Renault MediaNav to HFP 1.7 blacklist <jmozmoz> 6 days ago
+87c9691 : add medianav to unsupported device for hfp 1.7 <Jean-Bernard Damiano> 8 days ago
+bdcf617 : bt-vendor: Fix sporadic crashes on shutdown <Ricardo Cerqueira> 2 weeks ago
+b029b6e : Bluetooth: Allow REMOVE_EAGER_THREADS to be unset <Ivan Grinko> 4 weeks ago
+3ddadd2 : DO NOT SUBMIT Revert "DO NOT MERGE Blacklist devices for absolute volume control" <Akshay Thakker> 7 weeks ago
+d120465 : BT: ACL and l2c out if sync after connection collision <Gurpreet Ghai> 8 weeks ago
+3f448e4 : DO NOT MERGE Blacklist devices for absolute volume control <Andre Eisenbach> 5 months ago
+11b7a84 : DO NOT MERGE Remove Porsche car-kit pairing workaround <Andre Eisenbach> 3 months ago
+a347893 : DO NOT MERGE Add ability to add interop entries dynamically (2/2) <Andre Eisenbach> 4 months ago
+ 
+**** cmR:android_system_core ****
+bbc34f8 : rootdir: Remove cpufreq mode settings <Steve Kondik> 33 hours ago
+ 
+**** github:CyanogenMod/android_vendor_cm ****
+de1ad36 : cm: Allow LiveDisplay to write to color_enhance <Zhao Wei Liew> 2 days ago
+7a92949 : cm: Remove garbage from sepolicy <Steve Kondik> 2 days ago
+ 
+**** cmR:android_vendor_CMRemix ****
+943b764 : revert: addons: Assertive Display <ZION959> 22 minutes ago
+04a77e6 : cmremix vendor: Update API for Keyguard and Statubar Weather [2/3] <ZION959> 4 hours ago
+77c0545 : cmremix vendor: update No Optimization Bluetooth modules <ZION959> 23 hours ago
+d63d7bc : we go back to LL kernel and blobs <ZION959> 23 hours ago
+ 
+**** cmR:cm_platform_sdk ****
+a4ab6bd : cmsdk: Fix warning from 64-bit clang <Steve Kondik> 27 hours ago
+ 
+**** github:CMRemix/proprietary_vendor_samsung ****
+62a75f9 : trlte varients: Fix bluetooth share fc after CM merge (6.0.1r30) <ZION959> 28 hours ago
+41d3f85 : Create README.md <ZION959> 9 days ago
+fc7199b : trlte-common: update Adreno-Nexus6-MMB29V proprietary <ZION959> 12 days ago
+864a37e : trlte-common: update Samsung 6.0.1 DRM propritetary <ZION959> 4 weeks ago
+ 

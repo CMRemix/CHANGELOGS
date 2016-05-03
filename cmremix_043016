@@ -1,0 +1,127 @@
+
+**** omni:android_bootable_recovery ****
+c62332b : Improve greek translation <Alex Kalles> 13 days ago
+f09a4fb : Languages: Add font for Japanese <AndroPlus> 2 weeks ago
+a9a4b50 : Languages: Update Japanese translation <AndroPlus> 2 weeks ago
+80bd165 : Restore TW_SCREEN_BLANK_ON_BOOT functionality. <¨Paul> 4 days ago
+9f1f2f7 : Fix decrypt of odd number length PIN on hardware crypto <Ethan Yonker> 9 days ago
+5da1302 : Partition: Fix parsing of several twrp fstab flags <Gordon Freeman> 3 weeks ago
+ 
+**** github:CMRemix/android_device_samsung_trlte-common ****
+7a426c0 : use camera2 for now. <ZION959> 45 minutes ago
+ 
+**** cmR:android_external_chromium-webview ****
+aae4f3c : update webview to version 51.0.2704.28 beta(arm/arm64) & version 50.0.2661.86 beta(x86) <ZION959> 3 hours ago
+ 
+**** github:CyanogenMod/android_external_skia ****
+9c5a1d3 : skia: Fix QC-PERF for msm8992 <Steve Kondik> 6 hours ago
+ 
+**** cmR:android_frameworks_base ****
+b52cc76 : SysUI: Animate notificaiton panel back into view <0xD34D> 3 hours ago
+cadb877 : Automatic translation import <Michael Bestas> 2 days ago
+c8bd044 : SystemUI: Handle null keys on settings reload. <Adnan Begovic> 3 days ago
+d1929b4 : Point Amibent display tile longpress action to it's own settings [1/2] <Alex Cruz> 3 weeks ago
+fea2692 : Keep cellular connection even when other network is active <Takayuki, Ogura> 2 weeks ago
+6357e0a : SwipeHelper: Let's cut Max Excape Animation in Half too <Chet Kener> 4 days ago
+e37e63f : revert: revert: Don't refresh ui when screen off <ZION959> 4 hours ago
+9dce394 : Pulse Visualizer Sanity Level [1/3] <Varun Date> 5 hours ago
+a03e8eb : Pulse Bar Customizations [1/3] <Varun Date> 5 hours ago
+ 
+**** github:CyanogenMod/android_hardware_qcom_audio ****
+211004f : hal: Fix warnings in audio HAL and policy <Alexy Joseph> 3 months ago
+a5ccf06 : hal: Add performance lock for playback usecase <Sudheer Papothi> 8 months ago
+034efca : hal: Add support for LINE out device <Ravi Kumar Alamanda> 7 months ago
+a88dde5 : policy_hal: handle incall sonification without checking output refCount <Weiyin Jiang> 2 months ago
+d25d853 : hal: Validate active input before accessing source <Leena Winterrowd> 4 months ago
+ 
+**** github:CMRemix/android_kernel_samsung_trlte ****
+0d3e06a : update defconfig <ZION959> 3 hours ago
+2aa7790 : wcd9330: disable fauxsound by default <imoseyon> 1 year, 3 months ago
+ 
+**** github:CyanogenMod/android_packages_apps_AudioFX ****
+ed3094d : Automatic translation import <Michael Bestas> 2 days ago
+ 
+**** github:CyanogenMod/android_packages_apps_CMWallpapers ****
+086b552 : Automatic translation import <Michael Bestas> 2 days ago
+ 
+**** github:CyanogenMod/android_packages_apps_Contacts ****
+b89eaa1 : Automatic translation import <Michael Bestas> 2 days ago
+ff1025e : [2/2] Contacts : fixed InCall plugin PendingIntent after refactor <Erica Chang> 3 days ago
+ 
+**** github:CyanogenMod/android_packages_apps_ContactsCommon ****
+849685b : Fix height calculation of ContactListItemView <Richard MacGregor> 16 hours ago
+510605f : Automatic translation import <Michael Bestas> 2 days ago
+ 
+**** cmR:android_packages_apps_DUI ****
+4164362 : Pulse Visualizer Sanity Level [3/3] <Varun Date> 2 days ago
+95e756a : Automatic translation import <Alex Cruz> 3 days ago
+1238742 : Pulse Bar Customizations [2/3] <Varun Date> 2 days ago
+c19df57 : Pulse: Make Sure Visualizer Starts On Dimension Change <Varun Date> 2 days ago
+ 
+**** cmR:android_packages_apps_Dialer ****
+fe086be : Quick Fix for NPE in Dialer <Richard MacGregor> 3 hours ago
+abec0f3 : Dialer DeepLink Integration <NathanielWaggoner> 10 days ago
+9d76b66 : Automatic translation import <Michael Bestas> 2 days ago
+ 
+**** github:CyanogenMod/android_packages_apps_Eleven ****
+e352d89 : Generate all color swatches. <Danny Baumann> 3 days ago
+8ece4c1 : Add toString() methods to BitmapWithColors class. <Danny Baumann> 3 days ago
+9e3dd80 : Load palette in background. <Danny Baumann> 3 days ago
+ 
+**** cmR:android_packages_apps_InCallUI ****
+09e5382 : DeepLink Integration in InCallUi <NathanielWaggoner> 10 days ago
+b98970a : Automatic translation import <Michael Bestas> 2 days ago
+ 
+**** github:CyanogenMod/android_packages_apps_LockClock ****
+c8e4f26 : Automatic translation import <Michael Bestas> 2 days ago
+ 
+**** github:CyanogenMod/android_packages_apps_PhoneCommon ****
+51aefeb : Add DeepLinkAPI to AmbientApiClient <Raj Yengisetty> 9 hours ago
+35f20a7 : Correctly mark data broadcast as done. <Danny Baumann> 22 hours ago
+0bf5c30 : Automatic translation import <Michael Bestas> 2 days ago
+f21fbc1 : DataSubscription: Broadcast if we have no plugins <Stephen Bird> 34 hours ago
+0c8f3a2 : Hide VoLTE label by default to prevent it from showing in emergency dialer <Kamaljeet Maini> 3 days ago
+4798621 : [1/2] Contacts : fix InCall plugin related PendingIntent <Erica Chang> 3 days ago
+dea0bdd : MimeTypes: Use the right ones <Stephen Bird> 2 days ago
+2c63819 : Fix NPE if getCreditResult is null <Richard MacGregor> 2 days ago
+ 
+**** github:CyanogenMod/android_packages_apps_Screencast ****
+c470796 : Automatic translation import <Michael Bestas> 2 days ago
+ 
+**** cmR:android_packages_apps_Settings ****
+6136e73 : Settings: Pulse Visualizer Sanity Level [3/3] <Varun Date> 5 hours ago
+f9f7659 : Settings: Pulse Bar Customizations[3/3] <Varun Date> 5 hours ago
+ 
+**** cmR:android_packages_apps_SetupWizard ****
+f06305a : Automatic translation import <Michael Bestas> 2 days ago
+ 
+**** github:CyanogenMod/android_packages_apps_SoundRecorder ****
+05da035 : Automatic translation import <Michael Bestas> 2 days ago
+ 
+**** github:CyanogenMod/android_packages_apps_ThemeChooser ****
+a245d3b : Automatic translation import <Michael Bestas> 2 days ago
+ 
+**** github:CyanogenMod/android_packages_apps_Trebuchet ****
+d20f779 : Revert "Trebuchet: send metrics directly when possible" <Roman Birg> 9 hours ago
+097b950 : Trebuchet: send metrics directly when possible <Roman Birg> 8 days ago
+4ed3669 : Trebuchet: Don't create shadow on 0 width/height icon <cretin45> 2 days ago
+ 
+**** github:CyanogenMod/android_packages_providers_WeatherProvider ****
+0153b37 : Automatic translation import <Michael Bestas> 2 days ago
+ 
+**** github:CyanogenMod/android_packages_services_LiveLockScreenService ****
+9ddcdb4 : Automatic translation import <Michael Bestas> 2 days ago
+ 
+**** cmR:android_packages_services_Telephony ****
+ab2393c : Automatic translation import <Michael Bestas> 2 days ago
+ 
+**** github:CyanogenMod/android_vendor_cm ****
+03b1834 : APN: Fix Saunalahti APN regression introduced by CYNGNOS-436 <Anssi Hannula> 16 hours ago
+49d4f8a : APN: update Batelco and Zain APNs for Bahrain <Kasual> 7 days ago
+ 
+**** cmR:cm_platform_sdk ****
+76ff069 : Automatic translation import <Michael Bestas> 2 days ago
+ 
+**** github:TheMuppets/proprietary_vendor_lge ****
+9e62a3d : Drop back to L-preview adreno <Abhisek Devkota> 35 hours ago
+ 

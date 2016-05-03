@@ -1,0 +1,79 @@
+
+**** cmR:android_build ****
+457da7b : build: Fix manual invocation of aar targets. <Adnan Begovic> 9 hours ago
+b5332f9 : build: Make sure to check for variable definition during execution. <Adnan Begovic> 10 hours ago
+1efc554 : build: allow to set a consumer proguard file <Jorge Ruesga> 4 days ago
+ 
+**** cmR:android_external_Emotroid_utils ****
+1089f7d : WeatherController: Fix Keyguard Weather Icon <Pafcholini> 3 hours ago
+ 
+**** cmR:android_external_chromium-webview ****
+02eb93d : update Android System WebView arm64 + arm 51.0.2704.28 beta <ZION959> 3 hours ago
+ 
+**** github:CyanogenMod/android_external_zlib ****
+55411b1 : zlib: Remove usage of cpu directive in inline asm <Steve Kondik> 14 hours ago
+ 
+**** cmR:android_frameworks_base ****
+adb65d1 : revert: Keep cellular connection even when other network is active <ZION959> 22 minutes ago
+14b5a8e : revert: revert: GApps Chromium and SaberChrome (reverted from commit e104fa5685efafc48474fa3d1cf9da442e902b12) revert: PermissionGrant: Introduce Support for flashing Gapps <ZION959> 2 hours ago
+585f90d : revert: Give LockClock the location permission by default * Otherwise, users may not know why weather doesn't work by default with the widget <ZION959> 2 hours ago
+854f9a0 : Revert "Selectively show zen footer." <Roman Birg> 4 days ago
+8edbacf : Lockscreen shortcuts: don't allow specific activities <Roman Birg> 3 days ago
+569eeca : keyguard: Allow disabling fingerprint wake-and-unlock <Steve Kondik> 21 hours ago
+d8c2887 : nms: Only generate LED colors if the device has a multicolored LED <Steve Kondik> 12 hours ago
+ 
+**** github:CyanogenMod/android_hardware_cyanogen ****
+ff81fca : cmhw: Correct TAG for Color Enhancement <Zhao Wei Liew> 3 days ago
+01801a2 : aw2013: Add header for malloc/free <Ethan Chen> 8 hours ago
+ 
+**** github:CMRemix/android_kernel_samsung_trlte ****
+8855720 : sound_control: Lock Output Gain active by default <placiano> 3 weeks ago
+e7370ca : sound_control: clean up <Pafcholini> 3 weeks ago
+c91d9a7 : revert: ZeroLemon Fuel Gauge Fixed <ZION959> 2 hours ago
+ 
+**** github:CyanogenMod/android_packages_apps_FMRadio ****
+b51931e : FmService: Make usage of audiopatch a build-time option <Ricardo Cerqueira> 19 hours ago
+ 
+**** github:CyanogenMod/android_packages_apps_PhoneCommon ****
+b5448ef : AmbientConnection: Permissions checking <Stephen Bird> 15 hours ago
+ 
+**** github:CyanogenMod/android_packages_apps_Screencast ****
+f88548a : ScreenRecorder: new icon <jrizzoli> 14 hours ago
+ 
+**** cmR:android_packages_apps_Settings ****
+707cee6 : revert: Settings: refresh ui on foce stop/diable <ZION959> 17 minutes ago
+ 
+**** cmR:android_packages_apps_SetupWizard ****
+d35618b : SetupWizard: Run as com.android.wizard task affinity <cretin45> 13 hours ago
+ 
+**** cmR:android_packages_apps_Snap ****
+56402da : comment out LOCAL_OVERRIDES_PACKAGES := Camera2 (reverted from commit abd349c34839d50067575b5bb7ba858b17d564da) <ZION959> 25 minutes ago
+ 
+**** github:CyanogenMod/android_packages_apps_Trebuchet ****
+1daec9c : Use bitmap filtering for shrinking app icons <Artem Shvadskiy> 12 hours ago
+a56a75d : Prevent crash when exiting grid size fragment <Artem Shvadskiy> 12 hours ago
+ 
+**** cmR:packages_services_OmniJaws ****
+9d19bc8 : OmniJaws: diaable Yahoo provider <maxwen> 5 weeks ago
+a082d82 : DON'T MERGE - Change OWM API key <mydongistiny> 5 weeks ago
+ 
+**** cmR:android_packages_services_Telecomm ****
+6c7dd77 : CallsManager: Fix racey disconnect-on-waiting <Ricardo Cerqueira> 17 hours ago
+ 
+**** cmR:android_packages_services_Telephony ****
+50e6e40 : Apply correct theme color to USSD progress dialog. <Arvin Quilao> 8 days ago
+ 
+**** github:CyanogenMod/android_prebuilts_cmsdk ****
+f2c8d86 : prebuilts/cmsdk: Overwrite release artifact. <Adnan Begovic> 9 hours ago
+ 
+**** cmR:android_vendor_CMRemix ****
+278882e : cmremix vendor: add floop-nest-optimiztion <ZION959> 2 hours ago
+cb389cb : cmremix vendor: set Debuggable by default option <ZION959> 25 hours ago
+ 
+**** cmR:cm_platform_sdk ****
+60f2acf : cmsdk: @hide protected variable <Roman Birg> 7 hours ago
+fd4b383 : CMSettings: intercept Settings calls to DEV_FORCE_SHOW_NAVBAR <Roman Birg> 3 days ago
+94dd91a : cmsdk: Fix PerformanceManagerTest expectations. <Adnan Begovic> 5 days ago
+c6550fd : cmsdk: include our own consumer proguard rules <Jorge Ruesga> 4 days ago
+de43b8c : cmsdk: set minsdk to api level 4 <Jorge Ruesga> 4 days ago
+ 
