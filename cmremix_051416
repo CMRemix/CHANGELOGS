@@ -1,0 +1,34 @@
+
+**** github:CMRemix/android_device_samsung_trlte-common ****
+d0754c0 : selinux status: permissive <ZION959> 2 hours ago
+ 
+**** cmR:android_frameworks_base ****
+b9df97d : SystemUI: fix weathercontroller callback <Ali B> 4 months ago
+9f90fd9 : statusbar weather: fix temp style after refresh <LorDClockaN> 73 minutes ago
+ 
+**** cmR:android_packages_apps_LockClock ****
+b9a9168 : Fix the label for the days in the forecast <Scott Warner> 2 days ago
+f1c6d27 : LockClock: cleanup <jrizzoli> 3 weeks ago
+e7debca : LockClock: update monochrome icon theme <jrizzoli> 3 weeks ago
+48cb645 : LockClock: remove holo dialog background <jrizzoli> 3 weeks ago
+da1168f : YahooWeatherProvider: Fix API URL <Zdrowy Gosciu> 3 weeks ago
+42a727b : Display humidity and wind data in forecast dialog <Martin Herndl> 6 weeks ago
+5353c03 : DON'T MERGE - Change OWM API key <mydongistiny> 6 weeks ago
+9269e4b : Automatic translation import <Michael Bestas> 2 months ago
+1632482 : Automatic translation import <Michael Bestas> 3 months ago
+6f5b981 : Don't warn about webkit <niks255> 4 months ago
+b448165 : Automatic translation import <Michael Bestas> 3 months ago
+896ad15 : Automatic translation import <Michael Bestas> 3 months ago
+aad6760 : Automatic translation import <Michael Bestas> 4 months ago
+9710cf1 : Automatic translation import <Michael Bestas> 4 months ago
+94662cc : Automatic translation import <Michael Bestas> 5 months ago
+4d05af8 : LockClock: Enable all calendars during first time setup <Khalid Zubair> 3 months ago
+315c976 : LockClock: Disable event calendars dialog if no calendars <Khalid Zubair> 3 months ago
+4cd5301 : LockClock: fix crash in calendar selection <Khalid Zubair> 3 months ago
+2a3d104 : LockClock: Update to v23 + runtime permissions <Danesh M> 4 months ago
+1021676 : LockClock : Switch over to new yahoo location api <Danesh M> 3 months ago
+a404b5a : change lockclock default weather provider <pranav> 3 months ago
+ce9d1ec : manifest: Enable LockClock preferences to show in LeanBack Settings row <dhacker29> 5 months ago
+5e2fdbd : LockClock : Add api key for open weather <Danesh M> 6 months ago
+f1086cf : LockClock: Update proguard for play services 8115000 <cretin45> 7 months ago
+ 

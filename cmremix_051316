@@ -1,0 +1,262 @@
+
+**** cmR:CMRemix ****
+e161758 : track cmremix"s deskclock and lockclock <ZION959> 2 hours ago
+ 
+**** cmR:android_build ****
+dc39ba2 : repopick: support specifying a range of commits to pick <Dan Pasanen> 1 year, 8 months ago
+ 
+**** github:CMRemix/android_device_samsung_trlte-common ****
+7ab7cce : trlte-common: Allow bluetooth to coexist with other interfaces <ZION959> 10 hours ago
+1f7df61 : update flags for hdmi <ZION959> 11 hours ago
+ff730ed : build AdvancedDisplay <ZION959> 11 hours ago
+2c9b0c8 : power: back to cm power hal <ZION959> 11 hours ago
+5a86097 : Remove debugfs mounting * This is done globally now. <ZION959> 11 hours ago
+869caef : Start time_daemon on early boot * Remembers the time set over reboots correctly <placiano> 30 hours ago
+dcdd094 : cmhw: don't crash if serial number file is unreadable <Dave Daynard> 3 months ago
+1a914e4 : cmhw: use CMHW to return proper device serial <Dave Daynard> 3 months ago
+69c5e77 : build gello <ZION959> 11 hours ago
+6a84151 : build Snap again <ZION959> 11 hours ago
+ 
+**** github:CyanogenMod/android_external_libnfc-nxp ****
+6b8b533 : Stop "LLC length mis-match" log spam <Vladislav Koldobskiy> 1 year, 11 months ago
+ 
+**** github:CyanogenMod/android_external_skia ****
+2673286 : skia: qc-perf: link against libqc-opt for msm8916 <Ethan Chen> 31 hours ago
+ 
+**** github:CyanogenMod/android_external_stagefright-plugins ****
+20a14f3 : stagefright-plugins: Fix crash with invalid FLAC file <Steve Kondik> 4 days ago
+ 
+**** cmR:android_frameworks_av ****
+8436846 : Revert "nuplayer: Fix audio EOS notifiy on AudioSink not ready" <Keith Mok> 35 hours ago
+5c76693 : FFMPEGSoftCodec: Initialize the OMX param struct before using it <Ricardo Cerqueira> 3 days ago
+ 
+**** cmR:android_frameworks_base ****
+0aaaa09 : Fix misc-macro-parentheses warnings. <Chih-Hung Hsieh> 2 days ago
+c427116 : Synchronize access of mSubscriptions <Shibin George> 7 days ago
+9ae05d6 : frameworks/base: Support for third party NFC features <Puneet Mishra> 6 months ago
+d270bb3 : Checking mCurrentValue twice instead of mCurrentValues <Thomas Leplus> 2 days ago
+78e39c0 : Boolean logic error could result in a NPE <Thomas Leplus> 2 days ago
+199d462 : Make android_net_NetUtils include what it actually uses. <Elliott Hughes> 2 days ago
+4e3ad03 : Fix: Fix dlfree error when delet mZipInflater. <Joeseph Chang> 1 year, 1 month ago
+7ebf147 : [RenderScript] Interrupt mMessageThread when tearing down context. <Miao Wang> 3 days ago
+a704f29 : Clear more native pointers in finalizers <Hans Boehm> 3 days ago
+865df08 : QS: fix performance profile tile observer <Scott Mertz> 6 hours ago
+93bb005 : SystemUI : Fix multi-user for keyguard <Danesh M> 11 hours ago
+5522ee9 : Update volume slider only if ringer mode changed <Luis Vidal> 2 days ago
+884393e : SystemUITests: fix compile error <Khalid Zubair> 9 hours ago
+557e563 : Lockscreen : Disable left edge after showing keyguard <Danesh M> 29 hours ago
+7f7a0e5 : Keyguard: Allow swiping up when trust managed <d34d> 2 days ago
+8950bf1 : SpamFilter : Hide option if notification cannot be filtered <Danesh M> 11 hours ago
+f094db8 : Give LockClock the location permission by default * Otherwise, users may not know why weather doesn't work by default with the widget <Raleigh Matlock> 2 hours ago
+d529cc5 : Fix SystemUI FC on Media Notification Queue <Varun Date> 2 days ago
+9f62aca : Tiles: Remove unused observer in AmbientDisplayTile <Randall Rushing> 6 days ago
+b462bcc : ThemeTile: tighten up how we execute a theme change <Randall Rushing> 6 days ago
+5aa04f4 : Fix recents apps passing through the google search bar when visible <Alex Cruz> 3 weeks ago
+2f6e50d : SystemUI: recents panel clear all button - sync with settings <Janson Kang> 4 months ago
+a31fd41 : Revert "SystemUI: Allow clearing recents tasks within recents button" <ZION959> 19 hours ago
+3abd550 : List the CONNECTION_STATE_CHANGED broadcast for MAP as protected <Ajay Panicker> 10 days ago
+d133f3d : Fix divergent equals and hashCode behavior <Pavlin Radoslavov> 7 days ago
+58dcac3 : revert: RF cutback feature for SAR <ZION959> 19 hours ago
+2e44d9f : Acquire wakelock until dream service acknowledges dream state change <Scott Mertz> 4 days ago
+9405f53 : Lockscreen : Only animate targets if launched via swipe <Danesh M> 4 days ago
+395c3ac : Ensure camera is launched if doing screen off gesture <Danesh M> 4 days ago
+bb20ce8 : Keyguard : Ensure we expand onIconClicked <Danesh M> 5 days ago
+dcd036d : WindowManagerService : Ensure we update both size/position <Danesh M> 7 days ago
+5c84879 : bootanimation: fix check for system bootanimation <Marcos Marado> 2 days ago
+c13ef4d : revert: Fix recents apps passing through the google search bar when visible <ZION959> 2 days ago
+4ea11c2 : Revert "LLS: Fix logic in isKeyguardInteractiveAndShowing" <Clark Scheff> 2 days ago
+dc29b48 : pm: Don't throw if invalid package setting or classname. <Adnan Begovic> 2 days ago
+9fe59e5 : Add hotword AudioService null check <Matt Garnes> 3 days ago
+4e4ac8d : LLS: Fix logic in isKeyguardInteractiveAndShowing <d34d> 2 days ago
+6d3aa33 : SystemUI: fix blank qs tile issues <Roman Birg> 2 days ago
+fa54ddc : only use proximity checks on wakeup keys <Roman Birg> 2 weeks ago
+b918f41 : SystemUI: fix potential NPE with Queue <Roman Birg> 3 days ago
+eae5d33 : am: Don't protect apps that atttempt to grant uri perms. <Adnan Begovic> 3 days ago
+fe18e03 : Automatic translation import <Abhisek Devkota> 3 days ago
+ 
+**** cmR:android_frameworks_native ****
+bd41ea3 : SurfaceFlinger : Ensure position changes are drawn with correct buffer size <Danesh M> 8 days ago
+ 
+**** cmR:android_frameworks_opt_telephony ****
+b9eeb61 : revert: RF cutback feature for SAR <ZION959> 19 hours ago
+ 
+**** github:CyanogenMod/android_hardware_invensense ****
+85c5a9a : invensense: Use sensor HAL only if device specific HAL is not present <sundarajan srinivasan> 34 hours ago
+ 
+**** github:CyanogenMod/android_hardware_qcom_audio ****
+fd42377 : hal: Clean up from merge <Ethan Chen> 2 days ago
+1b545a9 : hal: Remove obsolete FM_ENABLED flag <Arne Coucheron> 3 weeks ago
+d3a91d3 : hal: Add support for AUDIO_DEVICE_OUT_LINE <Eric Laurent> 1 year, 10 months ago
+a9f9ab1 : voice_extn: remove redundant check of mode when stop voice use case <Zhou Song> 5 months ago
+69c5cfc : audiopolicy: enable deep buffer output by default for music streams <Preetam Singh Ranawat> 9 months ago
+9c096fd : audiopolicy: use deep buffer output by default for music streams <Sharad Sangle> 10 months ago
+d0940b8 : mm-audio: omx: Fix OMX encoders timestamp <Ben Romberger> 10 months ago
+2631c84 : hal: fix resource leak issues in platform.c <Mingming Yin> 5 months ago
+e6292f1 : audio HAL: do not stop capture on overrun <Eric Laurent> 10 months ago
+52a8a8b : audio HAL: fix thread starvation <Eric Laurent> 11 months ago
+09948fc : hal: Validate active input before accessing source <Leena Winterrowd> 4 months ago
+51f015b : hal: fm: add parameter to set mute options <Dhananjay Kumar> 4 months ago
+9146016 : policy_hal: fix for FM playback without active music stream <Mingming Yin> 4 months ago
+73ebe4c : policy_hal: fix for volume burst during FM device switch <Mingming Yin> 4 months ago
+fb2fb50 : policy: Delay FM volume update to start of FM playback <Haynes Mathew George> 5 months ago
+f751a0c : policy: Avoid unnecessary set_parameter calls <Haynes Mathew George> 5 months ago
+96e68bb : hal: audio_extn: fix pop noise when FM is interrupted by voice call <Dhananjay Kumar> 8 months ago
+273b347 : audio: update flags for selection of VoIP direct output <Karthik Reddy Katta> 6 months ago
+bf3385b : hal: add support to use low latency as primary output <Mingming Yin> 1 year, 2 months ago
+ae5b04e : hal: Sync name_to_index table with pcm_device_table <Arne Coucheron> 2 months ago
+872303b : hal: Comment out FM recording usecase <Arne Coucheron> 2 months ago
+d4c2493 : hal: Fix voice call recording on msm8960 <Arne Coucheron> 1 year, 3 months ago
+00ddedb : hal: Adjust DEEP_BUFFER_OUTPUT_PERIOD_COUNT to match legacy kernel <Arne Coucheron> 1 year, 4 months ago
+12539a6 : hal: Reduce some logspam <Arne Coucheron> 1 year, 4 months ago
+161fcbd : hal: Update and cleanup makefiles <Arne Coucheron> 2 months ago
+ee5cce3 : hal: Use old API for setting voice volume and mute states <Arne Coucheron> 1 year, 4 months ago
+f3e2a15 : hal: Disable building multiple hw variants for msm8960 <Arne Coucheron> 5 weeks ago
+379317b : hal: Minor adjustments for msm8960 platform <Arne Coucheron> 1 year, 3 months ago
+bdd1994 : hal: Copy msm8974 platform to msm8960 <Arne Coucheron> 3 months ago
+ed8c216 : hal: Squashed set of updates and fixes from 8974 branch <Arne Coucheron> 3 months ago
+6135278 : hal: header file fix for audio_hw <Mingming Yin> 10 months ago
+259bb61 : audio: Fix compilation errors <Divya Sharma> 1 year ago
+0714198 : audio: fix member initialization <Haynes Mathew George> 1 year, 3 months ago
+e515bd7 : hal: fix the input device selection for headphones <Narsinga Rao Chella> 1 year, 7 months ago
+022a0f3 : hal: fix miscellaneous errors <Preetam Singh Ranawat> 1 year, 8 months ago
+dd384a1 : hal: fix unused param warnings <Ravi Kumar Alamanda> 1 year, 8 months ago
+61f6266 : hal: fix incompatible APIs <Ravi Kumar Alamanda> 1 year, 8 months ago
+01418bf : hal: avoid usage of extern functions and tables <Ravi Kumar Alamanda> 1 year, 9 months ago
+a9bb962 : hal: miscellaneous fixes <Haynes Mathew George> 1 year, 10 months ago
+277042c : hal: Remove unnecessary check in make file <Mingming Yin> 1 year, 11 months ago
+527073e : hal: Import LA.BF.1.1.3_rb1.13 <Arne Coucheron> 3 months ago
+ 
+**** github:CyanogenMod/android_hardware_qcom_display ****
+91790fc : Revert "gralloc: fall back to old pixel alignment on old blobs" <Ethan Chen> 10 hours ago
+c26ee91 : Revert "gralloc: allow forcing old pixel alignment" <OzzysCmAcc> 23 hours ago
+be4d5ed : Revert "gralloc: Use adreno_utils api for NV21 and NV12 alignment" <Baldev Sahu> 9 weeks ago
+9765c98 : hwc: Filter out interlace format from edid string <Baldev Kumar Sahu> 4 months ago
+ 
+**** github:CyanogenMod/android_packages_apps_AudioFX ****
+1f493c4 : Automatic translation import <Abhisek Devkota> 3 days ago
+ 
+**** cmR:android_packages_apps_Bluetooth ****
+38516fd : Automatic translation import <Michael Bestas> 4 days ago
+ 
+**** github:CyanogenMod/android_packages_apps_CMFileManager ****
+d027047 : Filter display of non-relevant results in search results <Kamaljeet Maini> 2 days ago
+ 
+**** github:CyanogenMod/android_packages_apps_Contacts ****
+af31083 : Use JobService for periodic InCallMetrics reporting <Erica Chang> 2 days ago
+f1e17cb : Contacts : prompt run time READ_SMS permission for M <Erica Chang> 7 days ago
+d90403f : Contacts InCall metrics test <Erica Chang> 4 weeks ago
+a721e70 : Automatic translation import <Abhisek Devkota> 3 days ago
+ 
+**** github:CyanogenMod/android_packages_apps_ContactsCommon ****
+c0b01a3 : Add additional synchronization around caller-info Provider state <Rohit Yengisetty> 3 days ago
+ 
+**** cmR:android_packages_apps_Dialer ****
+11118df : Add additional permissions needed to utilize BlacklistUtils <Rohit Yengisetty> 7 hours ago
+d2095b5 : [2/2] Credit text and action should be limited to single line <Richard MacGregor> 2 days ago
+6eceee2 : InCallApi plugin strings not updated on locale change <Richard MacGregor> 11 hours ago
+79a94cb : Metrics fixes and switching to job sched <Stephen Bird> 2 days ago
+c64a3f4 : NPE: make sure search fragment is visible <Stephen Bird> 10 hours ago
+98e0b00 : Fix SuperNotCalledException <Rohit Yengisetty> 11 hours ago
+388f636 : Fix NPE within CallLogFragment <Rohit Yengisetty> 2 days ago
+b441ca6 : Make sure search fragment is visible and attached <Stephen Bird> 35 hours ago
+6251ca1 : NPE: Providers might not have a singlecolorbrandicon <Stephen Bird> 2 days ago
+906b8d8 : NPE: mBadgeIcon is sometimes null <Stephen Bird> 2 days ago
+5a701ac : [1/2] Roaming Notification: restrict to provider selected values <Stephen Bird> 2 days ago
+fa0036e : Move hint text to main search fragment <Stephen Bird> 8 days ago
+7fafe8d : Settings: Remove Maxlines for summaries <Stephen Bird> 3 days ago
+87fa91e : NPE: make sure that the brand icon isnt null <Stephen Bird> 3 days ago
+8c5b299 : Automatic translation import <Abhisek Devkota> 3 days ago
+ 
+**** github:CyanogenMod/android_packages_apps_Gello ****
+7c7766b : Automatic translation import <Abhisek Devkota> 3 days ago
+ 
+**** cmR:android_packages_apps_InCallUI ****
+3210555 : Fixed crash in InCallActivity. <Luis Mejia> 4 days ago
+77f56a5 : Best fix for the case where ModButtonPresenter UI wasn't updating properly in onResume cases. <NathanielWaggoner> 3 days ago
+71aba70 : Mod buttons only enabled when incall <Richard MacGregor> 9 hours ago
+8404300 : Don't query incall plugin invite intent until its actually needed <Richard MacGregor> 4 days ago
+ 
+**** cmR:android_packages_apps_LockClock ****
+699e75f : Automatic translation import <Abhisek Devkota> 3 days ago
+b1f3b05 : Automatic translation import <Michael Bestas> 4 days ago
+bc233e9 : Automatic translation import <Michael Bestas> 2 weeks ago
+44cb9f5 : YahooWeatherProvider: Fix API URL <Zdrowy Gosciu> 3 weeks ago
+ 
+**** cmR:android_packages_apps_Messaging ****
+0dabdec : Save messages to SIM feature <tnmy-cyngn> 5 days ago
+ 
+**** cmR:android_packages_apps_Nfc ****
+558c1f5 : Treat more as a UINT8 like it should be. <Martijn Coenen> 6 months ago
+fe67aaa : Fix Mifare Classic semaphore issue <Jizhou Liao> 6 months ago
+869e797 : Fix all the warnings in packages/apps/Nfc/nci/jni. <Aurimas Liutikas> 3 months ago
+728f039 : Fix NPE in onAnimationEnd <Takashi Furukawa> 2 years, 11 months ago
+3f37e73 : Add "BT Pairing and Connection Request" retry sequence <Hiroki Yamamoto> 11 months ago
+04d04ed : Add null check before setDefaultForNextTap <Satoshi Fujita> 1 year, 3 months ago
+9fce89e : NFC: Fix WPS could not work with multiple NDEF data <Jan Michael Gardose> 1 year, 1 month ago
+8756fe9 : Reset BT headset handover timeout when accept confirmation dialog <hiroki,yamamoto> 2 years, 7 months ago
+a3fe64a : Fix crash when NFC process killed during BT Headset handover <Jan Michael Gardose> 1 year, 1 month ago
+7a118f0 : Handle invalid handover URI <fang.x.chen> 1 year, 2 months ago
+21b1639 : Ensure we can get the right package name about current Foregroud Activity. <guotao.deng> 6 months ago
+217d303 : NFC: Adding new vendor specific interface to NFC Service <Puneet Mishra> 6 months ago
+adbbb5d : Fix misc-macro-parentheses warnings. <Chih-Hung Hsieh> 35 hours ago
+987f8a7 : Don't disable NFC in airplane mode. <Martijn Coenen> 7 weeks ago
+ 
+**** github:CyanogenMod/android_packages_apps_PhoneCommon ****
+281a48f : AmbientDataSubscription: don't post results for unknown plugins <Raj Yengisetty> 7 days ago
+ff03279 : [1/2] Credit text and action should be limited to single line <Richard MacGregor> 2 days ago
+bdd80a2 : [2/2] Preferences for provider roaming call counts <Stephen Bird> 2 days ago
+b1dd2fb : Automatic translation import <Abhisek Devkota> 3 days ago
+ 
+**** cmR:android_packages_apps_Settings ****
+8ccca75 : Profiles: Disable notification item if ringtone & notification volumes are linked <Luis Vidal> 2 days ago
+6589605 : Disable cellular networks settings menu if airplane mode is enabled <Luis Vidal> 7 days ago
+db6ebf5 : Add config to hide/show weather menu <Luis Vidal> 3 days ago
+f4ca31c : Automatic translation import <Abhisek Devkota> 3 days ago
+ 
+**** cmR:android_packages_apps_SetupWizard ****
+36f15ef : SetupWizard: Alway show google pages if gms present <cretin45> 6 hours ago
+44026d9 : Automatic translation import <Michael Bestas> 4 days ago
+ 
+**** cmR:android_packages_apps_Snap ****
+90d46ce : Automatic translation import <Abhisek Devkota> 3 days ago
+006ef8d : Automatic translation import <Michael Bestas> 4 days ago
+1fdf46f : Snap: force enable zsl for lge hdr <codeworkx> 4 days ago
+ 
+**** github:CyanogenMod/android_packages_apps_SoundRecorder ****
+cafca7c : Automatic translation import <Abhisek Devkota> 3 days ago
+ 
+**** github:CyanogenMod/android_packages_apps_Trebuchet ****
+921eb83 : Check for null provider info when removing widget <Skrilax_CZ> 2 days ago
+fe7faac : Trebuchet: Make workspace layout configurable by prebundled mcc <cretin45> 2 days ago
+a5eada8 : Automatic translation import <Abhisek Devkota> 3 days ago
+1b2acd7 : Put apps with uncomputable section names in special bucket <Artem Shvadskiy> 3 days ago
+4999024 : Trebuchet: Index folder contents screen and cells on first load <cretin45> 3 days ago
+ 
+**** github:CyanogenMod/android_packages_providers_WeatherProvider ****
+9a2bbea : Automatic translation import <Abhisek Devkota> 3 days ago
+ 
+**** cmR:android_packages_services_Telecomm ****
+50e008d : Automatic translation import <Abhisek Devkota> 3 days ago
+ 
+**** cmR:android_packages_services_Telephony ****
+3839162 : revert: Wifi HOTSPOT receiver to handle RF cutback <ZION959> 19 hours ago
+9782a2c : Automatic translation import <Abhisek Devkota> 3 days ago
+ 
+**** github:CyanogenMod/android_vendor_cm ****
+69d7325 : Add overlay for fingerprint help URL <Luis Vidal> 31 hours ago
+ 
+**** cmR:android_vendor_CMRemix ****
+337a684 : remove advanceddisplay <ZION959> 3 hours ago
+ 
+**** cmR:cm_platform_sdk ****
+6866528 : CMSettings : Move force_show_navbar to global <Danesh M> 2 days ago
+6113701 : PerformanceManagerService: drop requests if system is not yet ready <Scott Mertz> 30 hours ago
+256a735 : CMSettings: don't trample user metrics setting on upgrade <Roman Birg> 8 days ago
+8c8601b : LLS: Fix NPE when backing service dies <d34d> 4 days ago
+5340c0e : Automatic translation import <Abhisek Devkota> 3 days ago
+ 
+**** github:CMRemix/zion959-proprietary_vendor_samsung ****
+e0cc71a : trlte-common: update Adreno-Nexus6-MOB30D proprietary (apr-2016) <ZION959> 3 days ago
+08ee25a : trlte varients: Fix bluetooth share fc after CM merge (6.0.1r30) <ZION959> 3 days ago
+091059d : trlte-common: update MM proprietary file listing libraries for Note 4 Varients <ZION959> 4 days ago
+ 

@@ -1,0 +1,20 @@
+
+**** github:CMRemix/android_device_samsung_trltetmo ****
+876e4b0 : revert : debug ftw for now <ZION959> 6 hours ago
+ 
+**** cmR:android_frameworks_base ****
+2801fe8 : [squash] revert dashboard features (1/2) <ZION959> 7 hours ago
+ 
+**** github:CyanogenMod/android_packages_apps_Bluetooth ****
+064aa65 : revert: Merge commit 'a71eb120c7390a82474bf8bdb94d08e723582f9f' into HEAD <ZION959> 7 hours ago
+ 
+**** cmR:android_packages_apps_Settings ****
+44fac61 : [squash] revert dashboard features (2/2) <ZION959> 7 hours ago
+ 
+**** github:CyanogenMod/android_system_bt ****
+fb9e015 : revert: Merge tag 'android-6.0.1_r30' into HEAD <ZION959> 7 hours ago
+ 
+**** cmR:android_vendor_CMRemix ****
+e10e519 : disable debug <ZION959> 6 hours ago
+07afa17 : update dependency for trltespr & trlteusc <ZION959> 6 hours ago
+ 
