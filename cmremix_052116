@@ -1,0 +1,189 @@
+
+**** cmR:CMRemix ****
+36e8840 : revert: update DragonTC repo <ZION959> 21 hours ago
+b18e96e : update DragonTC repo <ZION959> 21 hours ago
+ 
+**** cmR:android_build ****
+775402b : Make commits great again! <Joe Maples> 25 hours ago
+ 
+**** github:CyanogenMod/android_device_qcom_sepolicy ****
+9169d62 : sepolicy: update perfd socket path <Vince Leung> 3 months ago
+84249b6 : sepolicy: allow location daemons to create directory <Jiafei Wen> 6 months ago
+9e5cfd8 : SELINUX: Add BootUp Music Permission <c_yongga> 4 months ago
+ec8c991 : SELINUX: Add BootUp Music Permission <yongga> 4 months ago
+3655710 : sepolicy: Policy for FIDO Secure UI <Puneet Mishra> 6 months ago
+94e2cac : sepolicy: Define SE policy for alarm and boot animation property <Mao Jinlong> 8 months ago
+0a81760 : healthd : allow healthd have right to read rtc dev file <Mao Jinlong> 6 months ago
+8ad228d : "sepolicy:common: QFP daemon read permissions to qc_senseid" <Baji Patthan> 6 months ago
+87ccb2f : sepolicy: add kill permissions to perfd <Vince Leung> 5 months ago
+86c5854 : sepolicy:common: Adding socket connect policy for mm-qcamera-daemon. <Mridul Singh> 7 months ago
+a77f819 : mm-camera2: mct: Add permission for graphics fd <Ramesh V> 8 months ago
+504e759 : Seandroid: Adding policy for WLAN. <Neelansh Mittal> 7 months ago
+ae8be8e : Enable location_app find permission for user builds <Dante Russo> 7 months ago
+03d6f16 : Location: added network access permission for test app <Kevin Tang> 7 months ago
+ 
+**** cmR:android_external_sqlite ****
+e8cb95f : sqlite: upgrade to SQLite 3.13 <mydongistiny> 3 days ago
+ 
+**** cmR:android_frameworks_base ****
+33910bf : IMS: Add support of notifyPreciseCallState for multi sim <Suresh Koleti> 3 months ago
+8a6a66d : Handle mnc 00 while retrieving the Resources based on subid <Ruthwar Kumar Ambeer> 3 months ago
+7d26129 : Create emergency account with primary stack phone. <Ravindra> 4 months ago
+0195369 : Add P2 option in openLogicalChannel. <Wileen Chiu> 6 months ago
+8452913 : IMS-VT: Disable multi tasking by default <Suresh Koleti> 5 months ago
+63faa58 : Add 3 APIs for card application <Yujing Gu> 5 months ago
+2724140 : server: Whitelist non-INTERNET/non-CELLULAR Network for metering <Bryse Flowers> 3 months ago
+7ddcf9e : keyguard: Fix password doesnot sanitize after verification <Brahmaji K> 10 weeks ago
+90f5450 : Revert "SystemUI: recalculate clock position on removing empty shade views" <Roman Birg> 24 hours ago
+10d9610 : SystemUI: fix NPE when configuring blur layer <Scott Mertz> 30 hours ago
+41591ab : Revert "SystemUI: fix clock jumping when expanding QS from lockscreen" <Roman Birg> 2 days ago
+ 
+**** github:CyanogenMod/android_frameworks_opt_net_ims ****
+adbcc1d : IMS: Set the correct reason code for merged call <Benergy Meenan Ravuri> 9 weeks ago
+4f42880 : IMS: Enhanced 4G LTE mode is turning off IMS. <Benergy Meenan Ravuri> 2 months ago
+a973408 : Add UT interface to query call forward setting for service class. <Muhammed Siju> 1 year, 1 month ago
+65d1461 : IMS-VT: Update host call callProfile on conference success <Ravi Paluri> 6 months ago
+ 
+**** cmR:android_frameworks_opt_telephony ****
+13efc53 : WEA: Add an field define for cellbroadcasd table <Fang Yunong> 1 year ago
+cc9c7b6 : Update Instrumentation code <Mona Hossain> 7 months ago
+6f9f782 : Define EF MSPL/MLPL/PRL values and paths <zhu youhua> 6 months ago
+f2c78b1 : telephony: Fix RAT type extra key <Steve Kondik> 17 hours ago
+7ba6663 : Add iccid support for mvno data <Susheel Nyamala> 6 months ago
+5222189 : Fix useImsForUt check <Amit Mahajan> 8 months ago
+91b4ae8 : Call Forwarding Icon displayed for Deactivated SUB <Prasath Balakrishnan> 6 months ago
+d4c0b2e : Fix Ims pdn deactivate due to single pdn arbitration <Susheel Nyamala> 6 months ago
+83b3108 : Fix to prevent crash on conference failure. <Ravindra> 6 months ago
+bc93aeb : Initialize call state phone app starts <Sandeep Kunta> 11 months ago
+a996d2e : Add call reject cause code. <Andalam Parthasarathi> 8 months ago
+bd4e168 : Reset internet requests when SIM is removed <Sukanya Rajkhowa> 6 months ago
+c7fa659 : Update preferred network type based on active Sub ID <Ruthwar Kumar Ambeer> 6 months ago
+3db37b5 : Fix disabled merge button on conference failure. <Shriram Ganesh> 6 months ago
+99e4576 : IMS-VT: Update videoProvider in main thread <Ravi Paluri> 6 months ago
+10b5e03 : FDN: Telephony plugin for SIMRecords <Manjunatha Prabhu> 7 months ago
+f8a3a6c : Make changes to create QtiPhoneProxy class. <Rakesh Pallerla> 8 months ago
+b71bf21 : Add pdp data reject with cause code 29 and 33 <Andalam Parthasarathi> 8 months ago
+af238e5 : Add a flag to control SPN display <Shaoxu Liu> 5 months ago
+ce26ddd : Telephony plugin for GsmServiceStateTracker <Andalam Parthasarathi> 7 months ago
+8306c37 : Exclude the last two bytes for the non-type1 Email file. <Yujing Gu> 3 months ago
+e3b4570 : Specify the path when loading from EF_ADN <Yujing Gu> 9 weeks ago
+c0be62f : Phone App crash: process com.android.phone has stopped. <Sumod Mukkumkal Chandran> 3 months ago
+a16437d : Add p2 option in OpenLogicalChannel <Wileen Chiu> 6 months ago
+7ad0f8e : Define telephony resources as a coreApp <Wileen Chiu> 4 months ago
+d483262 : Telephony: Pass the subId when set data enabled <Qingsheng Li> 6 months ago
+5e3969d : IMS-VT: Update video state of the connection first. <Suchand Ghosh> 4 months ago
+26961a7 : Move main thread in IPBIM to other thread to fix deadlock. <Richard Liu> 4 months ago
+ff4a806 : IMS: Call forward options with service class support <Suresh Kumar Sugguna> 9 months ago
+4b927d1 : IMS: handle exception for an invalid service class <Suresh Kumar Sugguna> 6 months ago
+8d38569 : IMS: During SRVCC, mark dropped incoming call as missed call <Suresh Kumar Sugguna> 6 months ago
+15372b2 : Add ContentObserver when sms sent limit changed <Keith Mok> 2 days ago
+ 
+**** github:CyanogenMod/android_hardware_qcom_audio ****
+6dafe5c : hal: Compilation fixes <Steve Kondik> 5 hours ago
+ 
+**** github:CyanogenMod/android_packages_apps_CMFileManager ****
+b0829d6 : FileManager : Index all storage volumes <Danesh M> 33 hours ago
+ 
+**** github:CyanogenMod/android_packages_apps_CarrierConfig ****
+793e4b4 : IMS: Enhanced 4G LTE mode is turning off IMS. <Benergy Meenan Ravuri> 2 months ago
+763c36a : IMS-VT: Enable multi tasking based on MCC/MNC <Suresh Koleti> 5 months ago
+ 
+**** github:CyanogenMod/android_packages_apps_Contacts ****
+b897fa4 : Automatic translation import <Jessica Wagantall> 29 hours ago
+ 
+**** cmR:android_packages_apps_Dialer ****
+397e4de : Automatic translation import <Jessica Wagantall> 29 hours ago
+ac6a155 : Wire up import/export overflow options. <Stephen Bird> 32 hours ago
+e41bb9b : Refactor CallerInfo strings to simplify translations <Artem Shvadskiy> 34 hours ago
+de14363 : Add negative option to caller info disable dialog <Artem Shvadskiy> 3 days ago
+746e8d4 : Autosize hint text <Richard MacGregor> 4 days ago
+dd9bd6b : Only schedule metrics job if not already scheduled <Scott Mertz> 2 days ago
+199b7fe : Nudges: use unique id instead of packagename <Stephen Bird> 2 days ago
+342125e : Add spam information to encoded lookup uri <Rohit Yengisetty> 3 days ago
+0b65194 : Revert "Show SIP call method in spinner and force update on resume" <Artem Shvadskiy> 4 days ago
+faec370 : Protecting against null locales <Richard MacGregor> 8 days ago
+c9ec0e3 : Add location information from contact-info provider <Rohit Yengisetty> 4 days ago
+6a15637 : Add additional info from contact-info provider, if any, to Call Details <Rohit Yengisetty> 5 days ago
+6b09908 : Show SIP call method in spinner and force update on resume <Artem Shvadskiy> 4 days ago
+ 
+**** github:CyanogenMod/android_packages_apps_Gello ****
+1634fa8 : Automatic translation import <Jessica Wagantall> 29 hours ago
+ 
+**** cmR:android_packages_apps_InCallUI ****
+aa7ceb4 : Fix issue of held call disappearing during swap operation. <Muhammed Siju> 5 months ago
+65c7670 : IMS-VT: Animate dialpad on show when InCallActivity re-creates <Ravi Paluri> 5 months ago
+2b1737d : IMS-VT: Set preview surface only if camera is opened <Suresh Koleti> 6 months ago
+d7057ab : IMS-VT: Fix camera preview size. <Garik Badalyan> 6 months ago
+8d3421d : IMS: Remove the methods with dummy implementation <Benergy Meenan Ravuri> 6 months ago
+a85e38b : IMS-VT: Donot create new surface when setting surface dimensions <Ravi Paluri> 6 months ago
+5ef4641 : IMS-VT: Trigger internal onStateChanged notification <Garik Badalyan> 6 months ago
+983372e : IMS: Unbundle capability constant for add participant from frameworks <Nivedita Sarkar> 6 months ago
+cd99306 : IMS-VT: Unbundle capability consts for downgrade to voice from frameworks <Nivedita Sarkar> 6 months ago
+15d366c : IMS-VT: Use correct view size when device is rotated. <Muhammed Siju> 10 months ago
+8c4ffdc : IMS-VT: Move preview video view after photo view in landscape layout <Suresh Koleti> 6 months ago
+dd3ad8c : IMS-VT: Catch the exception when dismissing the zoom alert dialog <Nivedita Sarkar> 6 months ago
+99532f2 : IMS-VT: Update end button position onPreDraw of secondary call info <Nivedita Sarkar> 7 months ago
+0f02198 : IMS-VT: Route to speaker if current route is not BT, headset or speaker <Nivedita Sarkar> 7 months ago
+5b32f47 : IMS-VT: Optimize handling of orientation mode. <Garik Badalyan> 7 months ago
+061a704 : Automatic translation import <Jessica Wagantall> 29 hours ago
+ 
+**** cmR:android_packages_apps_Messaging ****
+7a3ca45 : Automatic translation import <Jessica Wagantall> 29 hours ago
+ 
+**** cmR:android_packages_apps_OmniSwitch ****
+8abc119 : OmniSwitch: we now need a layout-land for the drag handle config <maxwen> 5 weeks ago
+6a644c7 : revert: OmniSwitch: we now need a layout-land for the drag handle config <ZION959> 5 weeks ago
+ 
+**** cmR:android_packages_apps_Settings ****
+62f5a41 : Give user control over lock screen blur <d34d> 12 days ago
+461f577 : Automatic translation import <Jessica Wagantall> 29 hours ago
+fe43bf0 : Settings : Rebuild app list after reset <Danesh M> 2 days ago
+eb8c89d : Settings: Wrap invocation on search view. <Adnan Begovic> 2 days ago
+f41567a : Color picker: Rework, wip part 2: <XXMrHyde> 3 hours ago
+f97d315 : Color picker: Rework, wip part 1: <XXMrHyde> 8 weeks ago
+2a2cafc : Color picker: Use a circle shape for the color preview <XXMrHyde> 24 hours ago
+ 
+**** cmR:android_packages_apps_SetupWizard ****
+334c00f : SetupWizard: Use proper CMSetting for soft keys option <cretin45> 7 days ago
+df36625 : Automatic translation import <Abhisek Devkota> 8 days ago
+ 
+**** cmR:android_packages_apps_Snap ****
+49caa04 : Snap: Restore previous default denoise value <Ketut Putu Kumajaya> 4 weeks ago
+6f0c3b6 : Automatic translation import <Jessica Wagantall> 29 hours ago
+ 
+**** github:CyanogenMod/android_packages_apps_SoundRecorder ****
+c5faea1 : Automatic translation import <Jessica Wagantall> 29 hours ago
+ 
+**** github:CyanogenMod/android_packages_apps_Trebuchet ****
+336be8b : Automatic translation import <Jessica Wagantall> 29 hours ago
+dccaadb : Move icons to fit within Dynamic grid upon resize. <cretin45> 2 days ago
+ 
+**** cmR:android_packages_services_Telecomm ****
+2af3085 : IMS-VT: Enable emergency video calls based on mcc/mnc <Ravi Paluri> 5 months ago
+200efcb : IMS: Fix vice notifications <Dheeraj Shetty> 5 months ago
+4bc71aa : IMS: Fix ImsService crash due to default phones not created. <Muhammed Siju> 5 months ago
+26dfae8 : IMS: Changes for VICE <Anju Mathapati> 8 months ago
+4e997b5 : IMS: Abandon audio focus if no other call exist. <Suchand Ghosh> 6 months ago
+ 
+**** cmR:android_packages_services_Telephony ****
+79b9401 : IMS: Fix call forwarding issue in dual sim case <Benergy Meenan Ravuri> 6 months ago
+a4ad53b : IMS: Remove the methods with dummy implementation <Benergy Meenan Ravuri> 6 months ago
+ecb6766 : PhoneApp Crash: Multiple times due to permission issue <Prabhakara Rao Pediredla> 10 weeks ago
+9827225 : telephony: Fix crash when extended telephony isn't available <Steve Kondik> 2 days ago
+049f74c : Add last call fail cause string. <Andalam Parthasarathi> 6 months ago
+aee85fc : Create emergency account with primary stack phone. <Ravindra> 4 months ago
+eac1d5b : Wrong subid extra name passed to GsmUmtsCallForwardOptions activity <Prashant Singh> 4 months ago
+d07d5b4 : Add p2 option in OpenLogicalChannel <Wileen Chiu> 6 months ago
+3819282 : Fix merge after a conference call goes through SRVCC. <Shriram Ganesh> 5 months ago
+c2f200c : MSIM: Show Enhanced 4G LTE mode option for IMS subscription <Suresh Kumar Sugguna> 6 months ago
+a0a5e96 : IMS: Media tag support <Benergy Meenan Ravuri> 9 months ago
+880d5e7 : Automatic translation import <Jessica Wagantall> 29 hours ago
+ 
+**** github:CyanogenMod/android_vendor_cm ****
+d349ec6 : apns: Fix up AT&T APNs <Steve Kondik> 22 hours ago
+08ac10e : Include Gello. <Tom Powell> 4 weeks ago
+ 
+**** cmR:cm_platform_sdk ****
+5e56748 : Automatic translation import <Jessica Wagantall> 29 hours ago
+ef4a783 : cmsdk: Skip powersave during testing. <Adnan Begovic> 31 hours ago
+ 

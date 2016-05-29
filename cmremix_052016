@@ -1,0 +1,106 @@
+
+**** cmR:CMRemix ****
+7ba1638 : Remove SpeechRecorder <Michael Bestas> 13 days ago
+9077855 : Sort projects again <Michael Bestas> 13 days ago
+ 
+**** cmR:android_external_chromium-webview ****
+121d711 : update Android System WebView 51.0.2704.54 beta <ZION959> 2 hours ago
+ 
+**** github:CyanogenMod/android_external_ffmpeg ****
+c459d7c : android: x86: use AOSP's YASM <Chih-Wei Huang> 25 hours ago
+ 
+**** github:CyanogenMod/android_external_skia ****
+1866827 : skia: qc-perf: link against libqc-opt for msm8909 <Edward Wang> 27 hours ago
+ 
+**** github:CyanogenMod/android_external_cyanogen_UICommon ****
+d5b6fc5 : Add support to Snackbar for WindowInsets <Matt Garnes> 2 days ago
+ 
+**** github:CyanogenMod/android_external_wpa_supplicant_8 ****
+1e41319 : eap_peer: Fix bogus return type <Steve Kondik> 25 hours ago
+5d6fbf3 : Fix race condition with PNO stop followed immediately by PNO start <Hu Wang> 6 weeks ago
+ed07614 : Android: Allow wpa_supplicant to write files to osu-info dir <Kanchanapally, Vidyullatha> 3 months ago
+04f2317 : Generate hs20-osu-client as part of compilation <Kanchanapally, Vidyullatha> 4 months ago
+eb7452b : EST: Comment out X509_REQ_print calls on Android with BoringSSL <Jouni Malinen> 6 months ago
+2a0ed81 : EST: Add CSR generation support with BoringSSL <Jouni Malinen> 6 months ago
+2227d8d : EST: Implement pkcs7_to_cert() with BoringSSL <Jouni Malinen> 6 months ago
+7d00dec : hs20-osu-client: Disable EST with BoringSSL to fix build <Jouni Malinen> 7 months ago
+b7220dd : HTTP (curl): OCSP with BoringSSL <Jouni Malinen> 6 months ago
+8919e87 : HTTP (curl): Fix compilation with BoringSSL <Jouni Malinen> 7 months ago
+6cc4264 : BoringSSL: Move OCSP implementation into a separate file <Jouni Malinen> 6 months ago
+7175c64 : BoringSSL: Implement support for OCSP stapling <Jouni Malinen> 8 months ago
+4f6a45b : OpenSSL: Reject OCSP-required configuration if no OCSP support <Jouni Malinen> 9 months ago
+ 
+**** cmR:android_frameworks_av ****
+0eb2f24 : stagefright: Fix cts issue with divx test <Keith Mok> 34 hours ago
+ 
+**** cmR:android_frameworks_base ****
+54bc8b0 : Grant signature permission to setup and search <dhacker29> 5 months ago
+b1989c8 : Revert "SysUI: Fix coloring of battery drawables" <Clark Scheff> 7 hours ago
+72b9ce3 : Release alarm wakelock for blocked uid. <Susheel Yadagiri> 4 months ago
+43e1dfa : SyncManager: Adjust sync remaining time calculation. <yingying> 1 year, 3 months ago
+af81898 : SystemUI: update qs tile hint and header view on locale change <Roman Birg> 3 hours ago
+dfa6524 : Themes: Fix theming of cmsdk assets <d34d> 2 days ago
+6791474 : Fix isComponentProtected calls in package manager tests <Scott Mertz> 12 hours ago
+6e754db : MSIM: Fix to resolve SIM PIN unlock in APM. <Umashankar Godachi> 10 hours ago
+1b357a1 : SystemUI: Check current data subscription when updating signal cluster <Ethan Chen> 32 hours ago
+60c0cd9 : xSysUI: Fix coloring of battery drawables <0xD34D> 3 hours ago
+a521781 : SysUI: Adjust battery dimensions for better look <d34d> 8 days ago
+1484771 : am: Handle unchecked activity starts for protected components. <Adnan Begovic> 34 hours ago
+ 
+**** cmR:android_frameworks_opt_net_wifi ****
+3b8ecf9 : Wifi: Update the identities only if they are added or modified <Bala Krishna Bhamidipati> 4 months ago
+65ccde9 : wifi: Fix for re-association failure (auto join) <Ravi Joshi> 7 months ago
+e848c98 : wifi: Handle the NULL check for the STATUS command <c_rrajiv> 1 year, 2 months ago
+ 
+**** cmR:android_frameworks_opt_telephony ****
+4f27bf9 : SubscriptionInfoUpdater: improved sim swap <Roman Birg> 2 days ago
+ 
+**** github:CyanogenMod/android_hardware_qcom_wlan ****
+79ae125 : 8909w : Add LOCAL_ADDITIONAL_DEPENDENCIES to sanitized kernel headers. <Mohammed Thasleem> 4 months ago
+ 
+**** github:CyanogenMod/android_hardware_samsung ****
+a958e7e : liblights: Add BLN support <Arnab Chaudhuri> 13 days ago
+ 
+**** github:CyanogenMod/android_hardware_ti_wlan ****
+e1eedea : wl12xx: FW updates from ol_R5.SP8.01 (wl12[78]x-fw-4-[sm]r.bin) <D. Andrei Măceș> 8 days ago
+1386a9d : wl12xx: fix unsafe dereference of the wlvif <Victor Goldenshtein> 3 years, 4 months ago
+ 
+**** cmR:android_packages_apps_Bluetooth ****
+4e3379c : Bluetooth: handle opening incoming APK files <Roman Birg> 3 days ago
+ 
+**** github:CyanogenMod/android_packages_apps_CMFileManager ****
+9d2b05e : Remove "Properties" from action menu for secure directory <Artem Shvadskiy> 34 hours ago
+ 
+**** github:CyanogenMod/android_packages_apps_Contacts ****
+66374db : Use the explicit spam flag on Contact for identifying spammy contacts <Rohit Yengisetty> 33 hours ago
+ 
+**** github:CyanogenMod/android_packages_apps_ContactsCommon ****
+1d98744 : Update LookupRequest to use the new ORIGIN codes within AmbientSDK <Rohit Yengisetty> 12 hours ago
+ee5aafb : Extract spam information from encoded lookup-uri <Rohit Yengisetty> 33 hours ago
+ 
+**** cmR:android_packages_apps_InCallUI ****
+91213c7 : Fix the extra-info container's overlap with dialpad <Rohit Yengisetty> 14 hours ago
+64cdcef : Minor bug fixes <Rohit Yengisetty> 2 days ago
+ 
+**** cmR:android_packages_apps_Messaging ****
+5cf15db : Messaging: handle single sim MSIM device <Roman Birg> 2 days ago
+9165168 : Use new origin code in LookupRequest <Rohit Yengisetty> 12 hours ago
+ 
+**** cmR:android_packages_apps_PackageInstaller ****
+9627774 : Automatic translation import <Abhisek Devkota> 2 days ago
+ 
+**** cmR:android_packages_apps_Settings ****
+c8ad6a5 : Settings: Fix Storage Applications Manager dropdown <raroyer> 2 weeks ago
+c4abfb1 : Settings: persist "always ask" sms sim selection <Roman Birg> 2 days ago
+d03cac7 : Settings : Add title to xml preference screens <Danesh M> 13 hours ago
+3312c52 : Revert "wifi: forward port avoid poor connection setting" <nadlabak> 7 days ago
+ 
+**** github:CyanogenMod/android_packages_apps_Trebuchet ****
+21115ac : Trebuchet: Fix possible OOB <Michael W> 2 days ago
+ 
+**** cmR:llvm-Snapdragon_LLVM_for_Android ****
+f88da0c : update 3.8-DragonTC-20160519 <ZION959> 3 hours ago
+ 
+**** cmR:android_system_core ****
+516d691 : init: Allow devices to opt-out of fsck'ing on power off <Christopher R. Palmer> 4 days ago
+ 
