@@ -1,0 +1,61 @@
+
+**** github:CMRemix/android_kernel_samsung_trlte ****
+fe48a0e : set xz as default compression <ZION959> 8 days ago
+d06ce58 : PM: devfreq: Fix simple_ondemand crashing on startup <myfluxi> 1 year, 3 months ago
+3c96e57 : block, bfq: add Early Queue Merge (EQM) to BFQ-v7r8 for 3.10.8+ <Mauro Andreolini> 1 year, 3 months ago
+6a67a29 : block: introduce the BFQ-v7r8 I/O sched for 3.10.8+ <Paolo Valente> 3 years, 4 months ago
+c2eaea3 : block: cgroups, kconfig, build bits for BFQ-v7r8-3.10.8+ <Arianna Avanzini> 2 years, 7 months ago
+09f83f9 : drivers/motor: temporarily back to the old vibrator motor <ZION959> 3 days ago
+8dfba67 : Fix compilation warning for sabermod gcc 5&6 <ZION959> 5 months ago
+1793f02 : Selinux: add config for permissive <ZION959> 5 months ago
+1753d9a : defconfig: add mhi module for trlteeur <ZION959> 5 months ago
+e6672db : defconfig: use lz4 as default compression <ZION959> 5 months ago
+fd2ac6c : lib/decompress: set the compressor name to NULL on error <Tkkg1994> 1 year, 1 month ago
+d69a969 : lib/decompress.c: consistency of compress formats for kernel image <Haesung Kim> 1 year, 9 months ago
+b711ceb : zswap: use LZ4 if available <Paul Reioux> 2 years, 8 months ago
+81c6552 : use lz4c fast compression on zImage <arter97> 2 years, 6 months ago
+4c4ca4c : lib: lz4: Set ARM_EFFICIENT_UNALIGNED_ACCESS <Shashank Shekhar> 1 year, 9 months ago
+7730878 : initrd: fix lz4 decompress with initrd <Yinghai Lu> 2 years, 1 month ago
+4076d6d : lib/decompress_unlz4.c: always set an error return code on failures <Jan Beulich> 2 years, 7 months ago
+62b626c : LZ4 : fix the data abort issue <JeHyeon Yeon> 1 year, 5 months ago
+bf09854 : lz4: add overrun checks to lz4_uncompress_unknownoutputsize() <Greg Kroah-Hartman> 2 years, 2 months ago
+cca11bc : lz4: fix another possible overrun <Greg Kroah-Hartman> 2 years, 2 months ago
+5afc591 : lz4: ensure length does not wrap <Greg Kroah-Hartman> 2 years, 2 months ago
+9cc5697 : arm: add support for LZ4-compressed kernel <Kyungsik Lee> 3 years, 2 months ago
+3cc3ddb : lz4: fix compression/decompression signedness mismatch <Sergey Senozhatsky> 3 years ago
+31202e0 : lib/lz4: correct the LZ4 license <Richard Laager> 3 years ago
+0005406 : lib: add lz4 compressor module <Chanho Min> 3 years, 2 months ago
+f239002 : lib: add support for LZ4-compressed kernel <Kyungsik Lee> 3 years, 2 months ago
+9cc42d5 : decompressor: add LZ4 decompressor module <Kyungsik Lee> 3 years, 2 months ago
+f5bf6d5 : ARM: return_address:  Use the unwind tables from the compiler <Paul Beeler> 1 year, 10 months ago
+3f065fc : fixed interactive governor warning error <ZION959> 8 months ago
+56b6e5d : trlte: AdD trltevzw defconfig <ZION959> 7 months ago
+c1c25ee : kernel: add support for gcc 5 & 6 & 7 <Sasha Levin> 1 year, 11 months ago
+9994a93 : ARM: 8158/1: LLVMLinux: use static inline in ARM ftrace.h <Behan Webster> 1 year, 11 months ago
+24b7c9d : arm/ftrace: fix ftrace_return_addr() to ftrace_return_address() <Steven Rostedt> 2 years, 2 months ago
+1b4a85b : ftrace: Make CALLER_ADDRx macros more generic <AKASHI Takahiro> 2 years, 3 months ago
+2bcd460 : Add missing-syscalls wrapper: <Paul Beeler> 1 year, 7 months ago
+c62d4e3 : Revert "scripts: Use wrapper to check compiler warnings" <ZION959> 3 days ago
+1aa507e : update wacom drivers from Linux 3.14.58 <fat-tire> 7 months ago
+0be6ad9 : Remove unneeded obj files <fat-tire> 8 months ago
+ff085fe : proc: uid: Adds accounting for the cputimes per uid. <jinqian> 1 year, 6 months ago
+6753364 : cpuset: Make cpusets restore on hotplug <Riley Andrews> 1 year, 3 months ago
+a1b95a2 : cpuset: Add allow_attach hook for cpusets on android. <Riley Andrews> 1 year, 3 months ago
+b4a4bea : Enable CPUSETS/MSM_AVTIMER <fat-tire> 8 months ago
+5ce0071 : Fix MSM_AVTIMER breakage <fat-tire> 8 months ago
+028a17c : trlte:  remove unused jpn/chnduos dts files <fattire> 10 months ago
+2e1f162 : Add faux'es IntelliThermal <gekkehenkie11> 1 year, 2 months ago
+b8ac961 : add savoca's patch for color control MDSS 8084 to kernel <gekkehenkie11> 1 year, 3 months ago
+4033e53 : trlte: mhi: Fix building of mhi driver. <gekkehenkie11> 1 year, 6 months ago
+3b34aef : video: mdss: Color temperature interface using PCC <Steve Kondik> 1 year, 6 months ago
+3726f34 : trlte: HACK: work around for KK bootloaders not reporting the panel name <fattire> 1 year, 6 months ago
+fbac000 : tools/include: use stdint types for user-space byteshift headers <Yaakov Selkowitz> 1 year, 10 months ago
+ 
+**** cmR:android_vendor_CMRemix ****
+e6c570b : vendor: derp fixed <ZION959> 25 hours ago
+ 
+**** github:CMRemix/proprietary_vendor_samsung ****
+524256c : trlte-common: update TimeService.apk to fix error issue at boot <ZION959> 25 minutes ago
+0a63c86 : fixed call audio issue & location issues & update ril blobs <ZION959> 2 hours ago
+c926731 : trltetmo: update MM blobs MMB29M.N910TUVS2EPG2 <ZION959> 23 hours ago
+ 

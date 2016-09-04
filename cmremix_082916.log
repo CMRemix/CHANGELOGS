@@ -1,0 +1,349 @@
+
+**** cmR:android_build ****
+7e2d940 : Merge remote-tracking branch 'CM/cm-13.0' into cm-13.0 (reverted from commit 70754837541d9b416eb26e8d471596900977f864) <ZION959> 2 hours ago
+ 
+**** github:CyanogenMod/android_device_samsung_qcom-common ****
+b0b67ad : Automatic translation import <pinky@build01> 2 days ago
+f3e1fb9 : Automatic translation import <pinky@build01> 2 days ago
+ 
+**** github:CMRemix/android_device_samsung_trlte-common ****
+b6e9451 : selinux status: permissive for now <ZION959> 74 minutes ago
+9762757 : trelte: Make the vibration intensity configurable (raymanfx) <ZION959> 80 minutes ago
+9cb5e42 : trlte-common: bring back com.qualcomm.location to setup-makefiles <ZION959> 2 hours ago
+32b7340 : trlte-common: dpi testing <ZION959> 20 hours ago
+ 
+**** cmR:android_frameworks_base ****
+0d0c910 : Automatic translation import <pinky@build01> 2 days ago
+55867a4 : SystemUI: Don't pad when config_showScreenOnLockScreenHints is false <Matthias Yzusqui> 4 weeks ago
+c96ff21 : Themes: Give power dialogs own set of volume icons for themes <Bryan Owens> 11 days ago
+ 
+**** github:CyanogenMod/android_hardware_samsung ****
+48c7442 : Automatic translation import <pinky@build01> 2 days ago
+b79c2f3 : Automatic translation import <pinky@build01> 2 days ago
+ 
+**** github:CyanogenMod/android_packages_apps_AudioFX ****
+71e5da3 : AudioFX: finish rename; persist process <Roman Birg> 13 hours ago
+10fc110 : Automatic translation import <pinky@build01> 2 days ago
+70457e9 : AudioFXTests: rename module back to AudioFXTests <Jessica Wagantall> 3 days ago
+ 
+**** github:CyanogenMod/android_packages_apps_BasicSmsReceiver ****
+df317d5 : Automatic translation import <pinky@build01> 2 days ago
+e15a30d : Automatic translation import <pinky@build01> 2 days ago
+ 
+**** cmR:android_packages_apps_Bluetooth ****
+20411f6 : Automatic translation import <pinky@build01> 2 days ago
+fdc300e : Automatic translation import <pinky@build01> 2 days ago
+ 
+**** cmR:android_packages_apps_BluetoothExt ****
+c54b92b : Automatic translation import <pinky@build01> 2 days ago
+e702496 : Automatic translation import <pinky@build01> 2 days ago
+ 
+**** github:CyanogenMod/android_packages_apps_Browser ****
+21cc56b : Automatic translation import <pinky@build01> 2 days ago
+3d2bc39 : Automatic translation import <pinky@build01> 2 days ago
+ 
+**** github:CyanogenMod/android_packages_apps_CMFileManager ****
+2d6b1a8 : Automatic translation import <pinky@build01> 2 days ago
+ab27d7e : Automatic translation import <pinky@build01> 2 days ago
+ 
+**** github:CyanogenMod/android_packages_apps_CMWallpapers ****
+140370d : Automatic translation import <pinky@build01> 2 days ago
+17e9757 : Automatic translation import <pinky@build01> 2 days ago
+ 
+**** github:CyanogenMod/android_packages_apps_Calendar ****
+51c4964 : Automatic translation import <pinky@build01> 2 days ago
+44b3c2f : Automatic translation import <pinky@build01> 2 days ago
+ 
+**** github:CyanogenMod/android_packages_apps_Camera2 ****
+d3be19c : Automatic translation import <pinky@build01> 2 days ago
+7b8c75e : Automatic translation import <pinky@build01> 2 days ago
+ 
+**** github:CyanogenMod/android_packages_apps_CellBroadcastReceiver ****
+27ae3fd : Automatic translation import <pinky@build01> 2 days ago
+de51ce8 : Automatic translation import <pinky@build01> 2 days ago
+ 
+**** github:CyanogenMod/android_packages_apps_CertInstaller ****
+c8f7e9b : Automatic translation import <pinky@build01> 2 days ago
+50ee137 : Automatic translation import <pinky@build01> 2 days ago
+ 
+**** github:CyanogenMod/android_packages_apps_Contacts ****
+4185da3 : Automatic translation import <pinky@build01> 2 days ago
+d91309f : Automatic translation import <pinky@build01> 2 days ago
+ 
+**** github:CyanogenMod/android_packages_apps_ContactsCommon ****
+ee58643 : Automatic translation import <pinky@build01> 2 days ago
+1332358 : Automatic translation import <pinky@build01> 2 days ago
+ 
+**** cmR:android_packages_apps_DeskClock ****
+4574b50 : Automatic translation import <pinky@build01> 2 days ago
+925d7af : Automatic translation import <pinky@build01> 2 days ago
+ 
+**** cmR:android_packages_apps_Dialer ****
+af82bdc : Automatic translation import <pinky@build01> 2 days ago
+2ce1b1e : Automatic translation import <pinky@build01> 2 days ago
+ 
+**** github:CyanogenMod/android_packages_apps_Eleven ****
+b7124cb : Automatic translation import <pinky@build01> 2 days ago
+2b81d70 : Automatic translation import <pinky@build01> 2 days ago
+ 
+**** github:CyanogenMod/android_packages_apps_Email ****
+644cde9 : Automatic translation import <pinky@build01> 2 days ago
+5c4de0d : Automatic translation import <pinky@build01> 2 days ago
+ 
+**** github:CyanogenMod/android_packages_apps_ExactCalculator ****
+eb4a240 : Automatic translation import <pinky@build01> 2 days ago
+2b4bfc9 : Automatic translation import <pinky@build01> 2 days ago
+ 
+**** github:CyanogenMod/android_packages_apps_Exchange ****
+6c8130b : Automatic translation import <pinky@build01> 2 days ago
+4c8e66b : Automatic translation import <pinky@build01> 2 days ago
+ 
+**** github:CyanogenMod/android_packages_apps_FMRadio ****
+6cc3f18 : Automatic translation import <pinky@build01> 2 days ago
+51c4e05 : Automatic translation import <pinky@build01> 2 days ago
+ 
+**** github:CyanogenMod/android_packages_apps_Gallery2 ****
+b6d3a52 : Automatic translation import <pinky@build01> 2 days ago
+1a56a80 : Automatic translation import <pinky@build01> 2 days ago
+ 
+**** github:CyanogenMod/android_packages_apps_Gello ****
+4b50363 : Automatic translation import <pinky@build01> 2 days ago
+9329f34 : Automatic translation import <pinky@build01> 2 days ago
+ 
+**** github:CyanogenMod/android_packages_apps_HTMLViewer ****
+7f53cdd : Automatic translation import <pinky@build01> 2 days ago
+a7e20b7 : Automatic translation import <pinky@build01> 2 days ago
+ 
+**** cmR:android_packages_apps_InCallUI ****
+c443847 : Automatic translation import <pinky@build01> 2 days ago
+989beca : Automatic translation import <pinky@build01> 2 days ago
+ 
+**** github:CyanogenMod/android_packages_apps_KeyChain ****
+6852242 : Automatic translation import <pinky@build01> 2 days ago
+c953c76 : Automatic translation import <pinky@build01> 2 days ago
+ 
+**** github:CyanogenMod/android_packages_apps_ManagedProvisioning ****
+09adf0a : Automatic translation import <pinky@build01> 2 days ago
+f01d6b5 : Automatic translation import <pinky@build01> 2 days ago
+ 
+**** cmR:android_packages_apps_Messaging ****
+3279dd0 : Automatic translation import <pinky@build01> 2 days ago
+a790c45 : Automatic translation import <pinky@build01> 2 days ago
+ 
+**** cmR:android_packages_apps_Nfc ****
+375f151 : Automatic translation import <pinky@build01> 2 days ago
+2afaaca : Automatic translation import <pinky@build01> 2 days ago
+ 
+**** cmR:android_packages_apps_PackageInstaller ****
+e5abb1e : Automatic translation import <pinky@build01> 2 days ago
+e46db06 : Automatic translation import <pinky@build01> 2 days ago
+ 
+**** github:CyanogenMod/android_packages_apps_PhoneCommon ****
+2f2b01c : Automatic translation import <pinky@build01> 2 days ago
+a0e5c89 : Automatic translation import <pinky@build01> 2 days ago
+ 
+**** github:CyanogenMod/android_packages_apps_Profiles ****
+8feee5f : Automatic translation import <pinky@build01> 2 days ago
+48dbb61 : Automatic translation import <pinky@build01> 2 days ago
+ 
+**** github:CyanogenMod/android_packages_apps_Screencast ****
+ae7bee3 : Automatic translation import <pinky@build01> 2 days ago
+6ac3331 : Automatic translation import <pinky@build01> 2 days ago
+ 
+**** cmR:android_packages_apps_Settings ****
+ffbf9e1 : Automatic translation import <pinky@build01> 2 days ago
+ 
+**** cmR:android_packages_apps_SetupWizard ****
+bf4e553 : Automatic translation import <pinky@build01> 2 days ago
+8afa93d : Automatic translation import <pinky@build01> 2 days ago
+ 
+**** cmR:android_packages_apps_Snap ****
+530f842 : Automatic translation import <pinky@build01> 2 days ago
+2532dc8 : Automatic translation import <pinky@build01> 2 days ago
+ 
+**** github:CyanogenMod/android_packages_apps_SoundRecorder ****
+1e32a30 : Automatic translation import <pinky@build01> 2 days ago
+9ee4346 : Automatic translation import <pinky@build01> 2 days ago
+ 
+**** github:CyanogenMod/android_packages_apps_Stk ****
+9f2f446 : Automatic translation import <pinky@build01> 2 days ago
+ddc35b3 : Automatic translation import <pinky@build01> 2 days ago
+ 
+**** github:CyanogenMod/android_packages_apps_Tag ****
+12547f3 : Automatic translation import <pinky@build01> 2 days ago
+b60fc3f : Automatic translation import <pinky@build01> 2 days ago
+ 
+**** github:CyanogenMod/android_packages_apps_Terminal ****
+8f1ce09 : Automatic translation import <pinky@build01> 2 days ago
+0d73a9c : Automatic translation import <pinky@build01> 2 days ago
+ 
+**** github:CyanogenMod/android_packages_apps_ThemeChooser ****
+bcd90a3 : Theme chooser for the people <Clark Scheff> 35 hours ago
+de36713 : ThemeFragment: Changing theme component resets per app themes <Bharadwaj Narasimha> 5 weeks ago
+87b809e : Don't handle theme change config changes <d34d> 7 weeks ago
+2ab2c56 : Check for system alert window permission <d34d> 8 weeks ago
+746ea9f : Keep line numbers when obfuscating <d34d> 4 months ago
+24b1fdb : Don't show apply fab if applying from 3rd party app <d34d> 3 months ago
+a74e3fb : Avoid IAE when adding an already added client <d34d> 3 months ago
+75bae06 : Check if theme is applying in onResume <d34d> 4 months ago
+2e21c73 : Avoid using equals() on a possibly null action <d34d> 4 months ago
+da8c19f : Fix applying themes from third party apps (ThemeStore) <d34d> 4 months ago
+4563e39 : Avoid potential NPE in getThemeChangeRequestForComponents <d34d> 5 months ago
+29d8159 : ThemeChooser: rename package to ModThemeChooser <Scott Mertz> 5 months ago
+5a44ab8 : Use correct actions in broadcast receiver <d34d> 5 months ago
+e61c5f8 : Don't obfuscate cyanogenmod.themes.* classes <d34d> 5 months ago
+b0d064e : Add ModLock option in lock screen picker <d34d> 5 months ago
+a8da1f0 : Add pick lock screen wallpaper action <d34d> 5 months ago
+f69eb01 : ThemeChooser: Update for Theme api changes. <Adnan Begovic> 5 months ago
+c5f2a62 : ThemeChooser: update translations <Roman Birg> 5 months ago
+0e77fa6 : Themes: Refactor themes to CMSDK [1/3] <d34d> 6 months ago
+cdc0bbd : Show FAB when an external image or None is selected <Luis Vidal> 6 months ago
+9ba2bc9 : Reuse space view when available <d34d> 6 months ago
+696489d : Show the apply icon when a theme component is changed <Luis Vidal> 6 months ago
+c1a5a2d : Fix Lock Screen card scroll animation <Luis Vidal> 7 months ago
+6a2a6f5 : Allow FittedTextView to control whether text should be expanded <Luis Vidal> 7 months ago
+46c47f6 : Use Lato font on Animated Lock Screen thumbnail text <Luis Vidal> 7 months ago
+bb32275 : Clear out previous theme component when changing themes <d34d> 7 months ago
+b4d4e5b : Return SYSTEM_DEFAULT for applied theme when config is null <d34d> 7 months ago
+94ee92a : Enable Live Lock screen if Animated lock screen is applied <Luis Vidal> 7 months ago
+665db50 : Stop using ThemeUtils.getDefaultThemePackageName <d34d> 7 months ago
+8884b35 : Restore the selected components in the chooser <Luis Vidal> 7 months ago
+4028c36 : Rebadge 'Live' in theme chooser to 'Animated' <Luis Vidal> 7 months ago
+73b4624 : Add PICK_ANIMATED_LOCK_SCREEN action <Luis Vidal> 7 months ago
+7e000ea : Don't show add icon when user selects None <Luis Vidal> 7 months ago
+3ecb1a8 : Don't select a null component type <d34d> 7 months ago
+f893331 : Fix to display Live Lock Screen preview <Luis Vidal> 8 months ago
+e6bcddd : Disable live lock screen <Luis Vidal> 8 months ago
+d530b3c : Register/Unregister observer on window visibility change <d34d> 8 months ago
+094d1fb : Fix to highlight the title of currently applied LLS in the selector <Luis Vidal> 8 months ago
+bf494df : Request READ_EXTERNAL_STORAGE permission <d34d> 8 months ago
+ffd1eae : Show lock screen wallpapers & live lock screens in the same selector <Luis Vidal> 8 months ago
+98a98fc : Use correct CmLockPatternUtils package <Steve Kondik> 8 months ago
+eeba8cf : Live Lock screen selection <Luis Vidal> 9 months ago
+a4cd1b3 : Request permissions to live lock screen <Luis Vidal> 9 months ago
+80b8938 : Set live lock screen as keyguard when applied <d34d> 10 months ago
+ad1f28c : Add live lock screen support for dogefood <d34d> 11 months ago
+d23995b : Use CMSettings for DEV_FORCE_SHOW_NAVBAR <d34d> 10 months ago
+91ed462 : Build for cm-13.0 <d34d> 10 months ago
+4b847d1 : Revert "Add live lock screen support for dogefood" <d34d> 10 months ago
+22b8c53 : Automatic translation import <Michael Bestas> 11 months ago
+ffbf8bc : Automatic translation import <Michael Bestas> 11 months ago
+ 
+**** github:CyanogenMod/android_packages_apps_Trebuchet ****
+c10e2d2 : Automatic translation import <pinky@build01> 2 days ago
+3d3f141 : Automatic translation import <pinky@build01> 2 days ago
+ 
+**** github:CyanogenMod/android_packages_apps_TvSettings ****
+0d4776f : Automatic translation import <pinky@build01> 2 days ago
+cb3b668 : Automatic translation import <pinky@build01> 2 days ago
+ 
+**** github:CyanogenMod/android_packages_apps_UnifiedEmail ****
+11e56cb : Automatic translation import <pinky@build01> 2 days ago
+6fbded8 : Automatic translation import <pinky@build01> 2 days ago
+ 
+**** github:CyanogenMod/android_packages_apps_WallpaperPicker ****
+1b1b2a8 : Automatic translation import <pinky@build01> 2 days ago
+d6767cf : Automatic translation import <pinky@build01> 2 days ago
+ 
+**** cmR:android_packages_inputmethods_LatinIME ****
+abcf99b : Automatic translation import <pinky@build01> 2 days ago
+ce214ac : Automatic translation import <pinky@build01> 2 days ago
+ 
+**** github:CyanogenMod/android_packages_providers_BookmarkProvider ****
+9be5364 : Automatic translation import <pinky@build01> 2 days ago
+30eeaca : Automatic translation import <pinky@build01> 2 days ago
+ 
+**** github:CyanogenMod/android_packages_providers_CalendarProvider ****
+f8d89e3 : Automatic translation import <pinky@build01> 2 days ago
+bcba242 : Automatic translation import <pinky@build01> 2 days ago
+ 
+**** github:CyanogenMod/android_packages_providers_CallLogProvider ****
+1a4649f : Automatic translation import <pinky@build01> 2 days ago
+1c3bb9e : Automatic translation import <pinky@build01> 2 days ago
+ 
+**** github:CyanogenMod/android_packages_providers_ContactsProvider ****
+12cb7ea : Automatic translation import <pinky@build01> 2 days ago
+8e38676 : Automatic translation import <pinky@build01> 2 days ago
+ 
+**** github:CyanogenMod/android_packages_providers_DataUsageProvider ****
+031f131 : Automatic translation import <pinky@build01> 2 days ago
+d36aaeb : Automatic translation import <pinky@build01> 2 days ago
+ 
+**** github:CyanogenMod/android_packages_providers_DownloadProvider ****
+a19e57a : Automatic translation import <pinky@build01> 2 days ago
+b1b3fac : Automatic translation import <pinky@build01> 2 days ago
+ 
+**** cmR:android_packages_providers_MediaProvider ****
+26e94e7 : Automatic translation import <pinky@build01> 2 days ago
+cc8ca5c : Automatic translation import <pinky@build01> 2 days ago
+ 
+**** github:CyanogenMod/android_packages_providers_TelephonyProvider ****
+99bc91f : Automatic translation import <pinky@build01> 2 days ago
+d400921 : Automatic translation import <pinky@build01> 2 days ago
+ 
+**** github:CyanogenMod/android_packages_providers_ThemesProvider ****
+c8ca3e6 : Automatic translation import <pinky@build01> 2 days ago
+3ba3fba : Automatic translation import <pinky@build01> 2 days ago
+ 
+**** github:CyanogenMod/android_packages_providers_UserDictionaryProvider ****
+2d21c4f : Automatic translation import <pinky@build01> 2 days ago
+11e5717 : Automatic translation import <pinky@build01> 2 days ago
+ 
+**** github:CyanogenMod/android_packages_providers_WeatherProvider ****
+380e910 : Automatic translation import <pinky@build01> 2 days ago
+50bbf4c : Automatic translation import <pinky@build01> 2 days ago
+ 
+**** github:CyanogenMod/android_packages_screensavers_Basic ****
+1462f1c : Automatic translation import <pinky@build01> 2 days ago
+0265ab3 : Automatic translation import <pinky@build01> 2 days ago
+ 
+**** github:CyanogenMod/android_packages_screensavers_PhotoTable ****
+dd0908b : Automatic translation import <pinky@build01> 2 days ago
+82f60a4 : Automatic translation import <pinky@build01> 2 days ago
+ 
+**** github:CyanogenMod/android_packages_services_CMAudioService ****
+16b4c4d : Automatic translation import <pinky@build01> 2 days ago
+b8132c4 : Automatic translation import <pinky@build01> 2 days ago
+ 
+**** github:CyanogenMod/android_packages_services_LiveLockScreenService ****
+03e5e4d : Automatic translation import <pinky@build01> 2 days ago
+76747d2 : Automatic translation import <pinky@build01> 2 days ago
+ 
+**** cmR:android_packages_services_Telecomm ****
+cf3c14c : Automatic translation import <pinky@build01> 2 days ago
+8827bf7 : Automatic translation import <pinky@build01> 2 days ago
+ 
+**** cmR:android_packages_services_Telephony ****
+c70a50d : Automatic translation import <pinky@build01> 2 days ago
+41754fe : Automatic translation import <pinky@build01> 2 days ago
+ 
+**** github:CyanogenMod/android_packages_services_ThemeManagerService ****
+9279a70 : Automatic translation import <pinky@build01> 2 days ago
+0eefc9e : Automatic translation import <pinky@build01> 2 days ago
+ 
+**** github:CyanogenMod/android_packages_services_WeatherService ****
+70fb1ac : Automatic translation import <pinky@build01> 2 days ago
+f4b2055 : Automatic translation import <pinky@build01> 2 days ago
+ 
+**** github:CyanogenMod/android_packages_wallpapers_Basic ****
+0f4308b : Automatic translation import <pinky@build01> 2 days ago
+e71d031 : Automatic translation import <pinky@build01> 2 days ago
+ 
+**** github:CyanogenMod/android_packages_wallpapers_LivePicker ****
+c4e7ff7 : Automatic translation import <pinky@build01> 2 days ago
+3db4206 : Automatic translation import <pinky@build01> 2 days ago
+ 
+**** github:CyanogenMod/android_packages_wallpapers_MagicSmoke ****
+383a015 : Automatic translation import <pinky@build01> 2 days ago
+bc7002d : Automatic translation import <pinky@build01> 2 days ago
+ 
+**** github:CyanogenMod/android_packages_wallpapers_PhotoPhase ****
+d9f98d6 : Automatic translation import <pinky@build01> 2 days ago
+546a59f : Automatic translation import <pinky@build01> 2 days ago
+ 
+**** cmR:cm_platform_sdk ****
+f906c3e : Automatic translation import <pinky@build01> 2 days ago
+ 
+**** github:CMRemix/proprietary_vendor_samsung ****
+1b81acd : trlte-common: bring back LL bluetooth firmware <ZION959> 2 hours ago
+ 

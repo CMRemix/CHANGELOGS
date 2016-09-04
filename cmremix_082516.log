@@ -1,0 +1,186 @@
+
+**** omni:android_bootable_recovery ****
+c45b2d5 : minui: Fix gr_set_font() build issue on cm-13.0 tree. <nailyk> 7 days ago
+6c28ee8 : NTFS-3g: migrate to PLATFORM_SDK check instead <Jason Riordan> 4 months ago
+61c7c5c : Gui: replace pow() function <nailyk> 7 days ago
+3126a11 : wait for cryptfs device node to come up <Kjell Braden> 10 weeks ago
+0e2140e : Add git revision to startup message in recovery.log <that> 2 weeks ago
+ 
+**** github:CMRemix/android_device_samsung_trlte-common ****
+bb3b4e6 : revert-kang ril from t0lte <ZION959> 5 days ago
+ 
+**** github:CyanogenMod/android_external_ffmpeg ****
+0a27fb6 : Revert "ffmpeg: Additional APE extradata" <Steve Kondik> 6 days ago
+66bd740 : avcodec/h264: Put context_count check back <Michael Niedermayer> 3 months ago
+534dc63 : Update for 3.0.3 <Michael Niedermayer> 13 days ago
+09d1854 : cmdutils: remove the current working directory from the DLL search path on win32 <Hendrik Leppkes> 3 weeks ago
+ab96164 : avcodec/raw: Fix decoding of ilacetest.mov <Michael Niedermayer> 3 weeks ago
+e7c00a2 : avcodec/ffv1enc: Fix assertion failure with non zero bits per sample <Michael Niedermayer> 3 weeks ago
+2a8441e : avformat/oggdec: Fix integer overflow with invalid pts <Michael Niedermayer> 3 weeks ago
+7876fd6 : ffplay: Fix invalid array index <Michael Niedermayer> 3 weeks ago
+8b3d9c3 : avcodec/vp9_parser: Check the input frame sizes for being consistent <Michael Niedermayer> 4 weeks ago
+c575726 : libavformat/rtpdec_asf: zero initialize the AVIOContext struct <Kacper Michajłow> 5 weeks ago
+6e6609f : libavutil/opt: Small bugfix in example. <Kacper Michajłow> 5 weeks ago
+6e13aca : libx264: Increase x264 opts character limit to 4096 <Sasi Inguva> 5 weeks ago
+a5680d8 : avformat/mov: Check sample size <Michael Niedermayer> 8 weeks ago
+811d560 : avformat/format: Fix registering a format more than once and related races <Michael Niedermayer> 5 months ago
+c34f061 : avformat/flacdec: Fix seeking close to EOF <Michael Niedermayer> 9 weeks ago
+96ce6f6 : avcodec/flac_parser: Raise threshold for detecting invalid data <Michael Niedermayer> 9 weeks ago
+13b6852 : avformat/flvdec: Accept last size if its off by 1 <Michael Niedermayer> 9 weeks ago
+d13ba39 : tests/api/api-codec-param-test: Do not directly access caps_internal <Michael Niedermayer> 2 months ago
+19b86db : avcodec: Add avpriv_codec_get_cap_skip_frame_fill_param() <Michael Niedermayer> 4 months ago
+694d37e : avfilter/vf_telecine: Make frame writable before writing into it <Michael Niedermayer> 2 months ago
+4e5d1c4 : avformat/mpegts: adjust probe score for low check_count <Michael Niedermayer> 2 months ago
+2577cfd : avcodec/mpc8: Correct end truncation <Michael Niedermayer> 3 months ago
+280587b : avformat/mp3dec: Increase probe score slightly when the whole data from begin to end is mp3 <Michael Niedermayer> 3 months ago
+5bf1122 : avcodec/cfhd: Set dimensions unconditionally <Michael Niedermayer> 3 months ago
+679e869 : avcodec/mpegvideo: Do not clear the parse context during init <Michael Niedermayer> 3 months ago
+7216068 : MAINTAINERs cleanup (remove myself from things i de facto dont maintain) <Michael Niedermayer> 3 months ago
+e7a064e : avcodec/h264: Fix off by 1 context count <Michael Niedermayer> 3 months ago
+a004e2e : avcodec/alsdec: Check r to prevent out of array read <Michael Niedermayer> 3 months ago
+f50f7ad : avcodec/alsdec: fix max bits in ltp prefix code <Umair Khan> 6 months ago
+9cf8541 : avcodec/utils: check skip_samples signedness <Michael Niedermayer> 3 months ago
+b3fe93e : avformat/mpegts: Do not trust BSSD descriptor, it is sometimes not an S302M stream <Michael Niedermayer> 3 months ago
+603fd4f : avcodec/bmp_parser: Check fsize <Michael Niedermayer> 3 months ago
+76a2397 : avcodec/bmp_parser: reset state <Michael Niedermayer> 3 months ago
+fca62cc : avcodec/bmp_parser: Fix remaining size <Michael Niedermayer> 3 months ago
+9f1e8b4 : avcodec/bmp_parser: Fix frame_start_found in cross frame cases <Michael Niedermayer> 3 months ago
+b2a2b1a : avfilter/af_amix: dont fail if there are no samples in output_frame() <Michael Niedermayer> 4 months ago
+f3c1a76 : avformat/allformats: Making av_register_all() thread-safe. <Vivekanand> 5 months ago
+b62191f : librtmp: Avoid an infiniloop setting connection arguments <Luca Barbato> 9 weeks ago
+21c36d8 : avformat/oggparsevp8: fix pts calculation on pages ending with an invisible frame <James Almer> 6 weeks ago
+4774eb8 : Revert "configure: Enable GCC vectorization on ≥4.9 on x86" <James Almer> 7 weeks ago
+5934ab8 : ffmpeg: Additional APE extradata <Steve Kondik> 8 weeks ago
+96f5019 : avcodec/libopenjpegenc: Set numresolutions by default to a value that is not too large <Michael Niedermayer> 9 weeks ago
+bffe1c4 : ffplay: Fix usage of private lavfi API <Timo Rothenpieler> 8 weeks ago
+fbdf5ca : tests/checkasm/checkasm: Disable checkasm_check_pixblockdsp for ppc64be <Michael Niedermayer> 9 weeks ago
+c6470d8 : avcodec/mpegvideo: Deallocate last/next picture earlier <Michael Niedermayer> 3 months ago
+e5942c1 : avcodec/bmp_parser: Fix state <Michael Niedermayer> 3 months ago
+dab82a2 : avformat/oggparseopus: Fix Undefined behavior in oggparseopus.c and libavformat/utils.c <Thomas Guilbert> 3 months ago
+7f864ba : avformat/utils: avoid overflow in compute_chapters_end()  with huge durations <Michael Niedermayer> 3 months ago
+cc1e01d : avformat/utils: avoid overflow in update_stream_timings() with huge durations <Michael Niedermayer> 3 months ago
+69c3dfd : doc/developer.texi: Add a code of conduct <Michael Niedermayer> 3 months ago
+ 
+**** cmR:android_frameworks_av ****
+16d14e1 : stagefright: Disable thumbnail mode for 8996-class devices <Steve Kondik> 6 days ago
+e4575ae : audioflinger: Always process volume commands from a latest track <Haynes Mathew George> 4 months ago
+6fde774 : audioflinger: set flush pending on invalidating offload track <Haynes Mathew George> 4 months ago
+e72652f : Don't place large objects on the stack <Glenn Kasten> 9 months ago
+ 
+**** cmR:android_frameworks_base ****
+5b555d2 : Prevent invocation of startNavigating() when GPS is off <Harikrishnan Hariharan> 10 weeks ago
+ 
+**** cmR:android_frameworks_native ****
+60f8bdf : surfaceflinger: Add support for Exynos HWC services <Christopher N. Hesse> 4 months ago
+ 
+**** cmR:android_frameworks_opt_telephony ****
+26de237 : Skip unknown tags instead of aborting when parsing UICC TLV data <Thomas Wendt> 1 year, 6 months ago
+70a1429 : Implement UICC TLV Data decoding. <Shantur Rathore> 1 year, 9 months ago
+ 
+**** github:CyanogenMod/android_hardware_cyanogen ****
+74128e2 : livedisplay: Moving native API to OSS <Steve Kondik> 3 days ago
+ 
+**** github:CyanogenMod/android_hardware_libhardware ****
+a900556 : keymaster: Add SOTER tags and API definations <Mao Li> 9 months ago
+ 
+**** github:CyanogenMod/android_hardware_qcom_audio ****
+a6c9114 : hal: Add support for Hearing Aid Compatibility (HAC) mode <Eric Laurent> 2 weeks ago
+ 
+**** github:CMRemix/android_kernel_samsung_trlte ****
+7b5b5b2 : set xz as default compression <ZION959> 5 days ago
+ 
+**** github:CyanogenMod/android_packages_apps_AudioFX ****
+6d435a4 : Fix strings. <Danny Baumann> 12 hours ago
+ee3a578 : AudioFX: disable debug logging <Roman Birg> 12 hours ago
+0429bca : AudioFX: remove legacy metrics provider <Roman Birg> 12 hours ago
+e95b026 : Revert "Revert "AudioFX: rename module back to AudioFX"" <Roman Birg> 13 hours ago
+c7dc272 : Revert "AudioFX: rename module back to AudioFX" <Roman Birg> 2 days ago
+f520900 : AudioFX: rename module back to AudioFX <Roman Birg> 2 days ago
+415792d : AudioFX: rename package to org.cyanogenmod.audiofx <Roman Birg> 10 days ago
+b01d792 : ModioFX: split backend implementations <Roman Birg> 13 days ago
+c5812df : AudioFX: don't backup app data <Roman Birg> 2 weeks ago
+baaba84 : AudioFX: iniitalize services with current device <Roman Birg> 2 months ago
+27bf875 : AudioFX: fix first boot listener regression <Roman Birg> 3 months ago
+4e51612 : Revert "AudioFX: create audio output change listener after it's dependencies" <Roman Birg> 3 months ago
+35513df : modiofx: Reintroduce deferred release for MaxxAudio <Steve Kondik> 3 months ago
+7f5ef58 : Automatic translation import <Michael Bestas> 4 months ago
+5cec772 : Automatic translation import <Michael Bestas> 5 months ago
+0a305be : AudioFX: fix qs tile updating <Roman Birg> 3 months ago
+f5ebb43 : AudioFX: create audio output change listener after it's dependencies <Scott Mertz> 3 months ago
+7df1be0 : AudioFX: Disable Ok button if rename text is empty <Keith Mok> 3 months ago
+ffb1515 : AudioFX: finish swipe animation if hitting off during it <Roman Birg> 3 months ago
+2a5d138 : AudioFX: fix output listener regression <Roman Birg> 4 months ago
+cf9de81 : modiofx: Add a default preset for headphones on Android effects <Steve Kondik> 4 months ago
+e5570ef : audiofx: Fix the QS tile <Steve Kondik> 4 months ago
+a3a728c : audiofx: Update for CMAudioService changes <Steve Kondik> 4 months ago
+32b6b9b : modiofx: Stop being clever with Android effects <Steve Kondik> 4 months ago
+06520d1 : modiofx: Fix various issues with Android FX <Steve Kondik> 4 months ago
+f9384d7 : modiofx: Bump prefs version <Steve Kondik> 4 months ago
+58f99de : audiofx: Don't auto-attach if a recording is active <Steve Kondik> 4 months ago
+ad3dc3a : AudioFX: don't assume stream type <Roman Birg> 5 months ago
+7f127de : modiofx: Unmodifiable list is unmodifiable <Steve Kondik> 5 months ago
+beb8f88 : audiofx: Add support for line out devices <Steve Kondik> 5 months ago
+93f8890 : audiofx: Misc fixes <Steve Kondik> 5 months ago
+ef31a6d : audiofx: Update for new session callback mechanism <Steve Kondik> 5 months ago
+5f4e0f4 : audiofx: rename package to ModioFX <Scott Mertz> 5 months ago
+573a3a6 : audiofx: Refactor the service <Steve Kondik> 5 months ago
+1871d53 : audiofx: Remove deferred session release code <Steve Kondik> 5 months ago
+e03d61a : audiofx: Simplify threads usage <Steve Kondik> 5 months ago
+1a08125 : audiofx: Re-add product name to preference name <Steve Kondik> 5 months ago
+68517e3 : audiofx: Always update the UI for device switches <Steve Kondik> 5 months ago
+5999c3d : AudioFX: better maxx effect handling and creation <Roman Birg> 5 months ago
+672ccc8 : audiofx: A big pile of fixes. <Steve Kondik> 5 months ago
+70f9b01 : audiofx: Fix a lot of state management issues <Steve Kondik> 5 months ago
+6aa40a7 : Sync translations from AudioFX-resources <Roman Birg> 5 months ago
+6bffa1e : AudioFX: only query for BT A2DP devices <Roman Birg> 5 months ago
+69bbfc9 : AudioFX: catch effect crashes <Roman Birg> 6 months ago
+9321ea8 : AudioFX: lower eq hold thresh down to 100ms <Roman Birg> 6 months ago
+2417f2f : AudioFX: junit4 tests <Roman Birg> 6 months ago
+0f06e3e : AudioFX: make eq bars require a little long press time <Roman Birg> 6 months ago
+fc7cdbe : AudioFX: fix not setting up proper defaults on fresh boot <Roman Birg> 6 months ago
+a1f3bb1 : AudioFX: make effect handler MORE favorable <Roman Birg> 6 months ago
+85bb242 : audiofx: Only attach to STREAM_MUSIC in callback mode <Steve Kondik> 6 months ago
+ 
+**** github:CyanogenMod/android_packages_apps_CMFileManager ****
+dd4956d : CMFM: Recognise .opus file extension <Zhao Wei Liew> 2 weeks ago
+ 
+**** github:CyanogenMod/android_packages_apps_Eleven ****
+675ece9 : Handle headset hook multi click in playback service. <Danny Baumann> 2 weeks ago
+ 
+**** github:CyanogenMod/android_packages_apps_Gello ****
+01d73e8 : gello: increase res of shared images <Martin Brabham> 3 days ago
+ 
+**** cmR:android_packages_apps_Snap ****
+2cad43d : SnapdragonCamera: Adding PRIVILEGED true <Jack Yoo> 6 weeks ago
+92009be : SnapdragonCamera: Fix first-time crash and cleanup permissions <Jay Wang> 9 weeks ago
+7ed0766 : Snap: Fix bad merge of "Fixed M permission issue" <Michael Bestas> 4 days ago
+46a8831 : Snap: Make developer menu more accessible <Michael Bestas> 3 weeks ago
+6304f00 : SnapdragonCamera: Force removing preview cover for camcorder <Jay Wang> 4 weeks ago
+a780bd9 : SnapdragonCamera: Fix NPE caused by empty permission result <Jay Wang> 5 weeks ago
+f41b627 : snap: Change to target SDK 23 <Steve Kondik> 13 days ago
+7d7a688 : SnapdragonCamera: Remove custom location permission request window <Jay Wang> 5 weeks ago
+219fbf4 : Minimum viable Android M runtime permissions handling for H. <zafir> 1 year, 2 months ago
+db4f534 : SnapdragonCamera: Force removing preview cover <Jay Wang> 5 weeks ago
+1a18632 : SnapdragonCamera: Adjusting view initialization <Jack Yoo> 6 months ago
+2e94604 : SnapdragonCamera: Turn off LONGSHOT on ubifocus scene mode <Jack Yoo> 5 months ago
+ 
+**** cmR:android_packages_inputmethods_LatinIME ****
+ff8efcf : Revert "LatinIME: add shortcut functionality" Fix broken build from incomplete checkin for this change This reverts commit 877f8b481a6c6452a3894df14ec527c21d8e2d8c. <Janet Sun> 7 days ago
+ 
+**** github:CyanogenMod/android_system_keymaster ****
+dc06a0f : keymaster: Add SOTER support <Mao Li> 9 months ago
+ 
+**** github:CyanogenMod/android_system_security ****
+6b8a2a3 : keystore: Fix SoterTest issues <AnilKumar Chimata> 6 months ago
+b926925 : keystore: Add SOTER support in keystore <Mao Li> 9 months ago
+ 
+**** github:CyanogenMod/android_vendor_cm ****
+e900ddd : Fix Discovery permission blockage <Abhisek Devkota> 2 days ago
+5f562fd : charger: Fix 640dpi symlink <Brandon McAnsh> 7 days ago
+ 
+**** cmR:android_vendor_CMRemix ****
+1e193bd : update supersu v2.76 <ZION959> 5 days ago
+ 
+**** cmR:cm_platform_sdk ****
+317e8e1 : revert: [1/2] cmsdk: cm custom boot dexopt UI <ZION959> 6 days ago
+ 
