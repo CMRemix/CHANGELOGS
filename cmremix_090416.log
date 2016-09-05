@@ -1,4 +1,7 @@
 
+**** cmR:CHANGELOGS ****
+da81767 : update changelog <ZION959> 66 minutes ago
+ 
 **** cmR:CMRemix ****
 4c2c347 : track cmremix's CyanogenMod Hardware Abstraction Framework <ZION959> 4 days ago
 d4d17e0 : track CMRemix/android_hardware_broadcom_libbt <ZION959> 3 months ago
@@ -58,19 +61,19 @@ d5c5f4a : trlte-common: Use generic extract scripts <ZION959> 4 days ago
 cafa331 : trltetmo: Use generic extract scripts <ZION959> 4 days ago
  
 **** github:CMRemix/android_device_samsung_trltexx ****
-e72e2b2 : trltexx: Use generic extract scripts <ZION959> 5 hours ago
+e72e2b2 : trltexx: Use generic extract scripts <ZION959> 6 hours ago
  
 **** cmR:android_frameworks_av ****
 bdb54da : libstagefright: mtk: Use vendor extensions to check if we should fixup cropping <Diogo Ferreira> 5 days ago
  
 **** cmR:android_frameworks_base ****
-7deacf8 : revert: RF cutback feature for SAR <ZION959> 27 minutes ago
+7deacf8 : revert: RF cutback feature for SAR <ZION959> 2 hours ago
 7739a09 : [1/3] base: make overlay permission check configurable <mweninge> 5 weeks ago
 cadec20 : connectivity-service: fix/improve unique hostname <Alexander Wuerstlein> 3 days ago
 288a53e : Ensure DHCP requests have nonempty hostnames <Alexander Wuerstlein> 6 days ago
  
 **** cmR:android_frameworks_opt_telephony ****
-d659988 : revert:RF cutback feature for SAR to fixed signal issue on trlte varients <ZION959> 24 minutes ago
+d659988 : revert:RF cutback feature for SAR to fixed signal issue on trlte varients <ZION959> 2 hours ago
 4092816 : Telephony: fix SMS NPE <Roman Birg> 3 weeks ago
  
 **** github:CyanogenMod/android_hardware_qcom_display ****
@@ -81,7 +84,7 @@ d659988 : revert:RF cutback feature for SAR to fixed signal issue on trlte varie
 **** github:CMRemix/android_kernel_samsung_trlte ****
 c270bc1 : firmware_class: Fix firmware_loading_timeout usage of jiffies <AdrianDC> 4 months ago
 ee6cc75 : Fix CONFIG_HZ dependency in wifi driver. <andip71> 4 months ago
-5fb1be1 : setup: fix wifi for G variant <Pafcholini> 49 minutes ago
+5fb1be1 : setup: fix wifi for G variant <Pafcholini> 2 hours ago
 4cc389c : ARM: dts: apq8084: fix idle-timeout to 80ms from 8ms <Patrick Tjin> 6 months ago
 6eb9151 : msm: kgsl: Fix direct references to HZ <Ajay Dudani> 9 months ago
 c9e82fc : arm: configs: trlte: set CONFIG_HZ to 300 <Patrick Tjin> 7 months ago
@@ -96,9 +99,9 @@ fce7f48 : cpufreq: qcom-cpufreq: Check return of cpufreq_frequency_get_table <Ju
 e9bf800 : qseecom: Remove core affinity requirement when loading external elf files <Puneet Mishra> 1 year, 2 months ago
 7fee58f : sound_control: Lock Output Gain active by default <placiano> 5 months ago
 0df0ba4 : sound_control: clean up <Pafcholini> 5 months ago
-cdc43d8 : Makefile: update gcc compile optimizations <ZION959> 4 hours ago
-949908b : power: quickwakeup: initial driver <ZION959> 4 hours ago
-71e9bea : block: Update sio to sioplus iosched & zen <ZION959> 4 hours ago
+cdc43d8 : Makefile: update gcc compile optimizations <ZION959> 6 hours ago
+949908b : power: quickwakeup: initial driver <ZION959> 6 hours ago
+71e9bea : block: Update sio to sioplus iosched & zen <ZION959> 6 hours ago
 96d98af : cpufreq: impulse: tuning and burning values into governor <ZION959> 6 months ago
 8a468a2 : add missing earlysuspend.h <ZION959> 6 months ago
 f73dc28 : msm: mdss: Adding lcd notifier <ZION959> 7 months ago
@@ -115,9 +118,9 @@ cc396ca : msm: Add MSM Hotplug driver <ZION959> 6 months ago
 d637dda : MDNIE Lite Control <ZION959> 7 months ago
 6416bdf : Currently, ondemand calculates the target frequency proportional to load using the formula: <Stratos Karafotis> 2 years, 2 months ago
 0345c21 : msm: memutils: memcpy, memmove optimization <Hong-Mei Li> 3 years, 2 months ago
-3ea1958 : Force Fast Charge v1.2 <ZION959> 5 hours ago
+3ea1958 : Force Fast Charge v1.2 <ZION959> 6 hours ago
 5117096 : revert: Force Fast Charge [ktoonsez] <ZION959> 7 months ago
-757e069 : zram: LZ4 as default compressor <placiano> 1 year, 4 months ago
+757e069 : zram: LZ4 as default compressor <placiano> 1 year, 5 months ago
 6fb6a7b : zswap: runtime enable/disable <ffolkes> 1 year ago
 a10a50a : zram: default to 4 devices, with 4 compression streams <placiano> 12 months ago
 b03851c : mm/zswap: avoid unnecessary page scanning <Weijie Yang> 2 years, 10 months ago
@@ -131,7 +134,7 @@ eb90e6b : zram backporting: remove iterator <flar2> 1 year, 10 months ago
 61e6b30 : zram: remove unused SECTOR_SIZE define <Sergey Senozhatsky> 2 years, 1 month ago
  
 **** github:CyanogenMod/android_packages_apps_AudioFX ****
-cf02e9a : AudioFXTests: remove key sign warning <Roman Birg> 3 days ago
+cf02e9a : AudioFXTests: remove key sign warning <Roman Birg> 4 days ago
  
 **** github:CyanogenMod/android_packages_apps_Gallery2 ****
 0304394 : Gallery2: Fix no android.permission.INTERACT_ACROSS_USERS in guest mode. <yongga> 8 months ago
@@ -140,11 +143,11 @@ cf02e9a : AudioFXTests: remove key sign warning <Roman Birg> 3 days ago
 808efc8 : [3/3] PackageInstaller: make overlay permission check configurable <mweninge> 5 weeks ago
  
 **** cmR:android_packages_apps_Settings ****
-ddf7bc5 : [2/3] Settings: make overlay permission check configurable <mweninge> 78 minutes ago
-1ac45a4 : fixed build error "ColorPickerPreference cannot be resolved to a type" <ZION959> 2 hours ago
-0c6b5ef :  HALO: Add shortcut to Floating Windows preference <mydongistiny> 3 hours ago
-bc5a904 : Settings: Add option to Enable/Disable Halo Button in Header [2/2] <Varun Date> 3 hours ago
-ddd3e35 : Settings: Configurable Header Text Shadow [2/2] (Raienryu97) <ZION959> 3 hours ago
+ddf7bc5 : [2/3] Settings: make overlay permission check configurable <mweninge> 3 hours ago
+1ac45a4 : fixed build error "ColorPickerPreference cannot be resolved to a type" <ZION959> 3 hours ago
+0c6b5ef :  HALO: Add shortcut to Floating Windows preference <mydongistiny> 4 hours ago
+bc5a904 : Settings: Add option to Enable/Disable Halo Button in Header [2/2] <Varun Date> 4 hours ago
+ddd3e35 : Settings: Configurable Header Text Shadow [2/2] (Raienryu97) <ZION959> 5 hours ago
  
 **** github:CyanogenMod/android_packages_apps_ThemeChooser ****
 f40ac25 : Move actions in theme card to overflow menu <Bharadwaj Narasimha> 4 days ago
@@ -152,7 +155,7 @@ f40ac25 : Move actions in theme card to overflow menu <Bharadwaj Narasimha> 4 da
 550e88b : Fall cleaning <d34d> 5 days ago
  
 **** cmR:android_packages_services_Telephony ****
-617878e : revert: Wifi HOTSPOT receiver to handle RF cutback <ZION959> 26 minutes ago
+617878e : revert: Wifi HOTSPOT receiver to handle RF cutback <ZION959> 2 hours ago
  
 **** cmR:android_system_core ****
 c00328f : libutils: fix deadlock in elapsedRealtimeNano <Scott Mertz> 6 days ago
