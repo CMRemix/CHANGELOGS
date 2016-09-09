@@ -1,0 +1,8 @@
+
+**** cmR:android_frameworks_base ****
+0b0703a : FWB: VolumeDialog stroke dash (1/2) <LorDClockaN> 22 hours ago
+ 
+**** cmR:android_packages_apps_Settings ****
+17e8a33 : add SeekBarPreferenceCham and fixed build error <ZION959> 2 hours ago
+b4477bb : [squash] AE: VolumeDialog stroke dash (2/2) <ZION959> 22 hours ago
+ 

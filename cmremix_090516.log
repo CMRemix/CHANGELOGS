@@ -1,0 +1,17 @@
+
+**** cmR:CHANGELOGS ****
+44da6d9 : ready for cm-14.0 <ZION959> 27 hours ago
+22b3b56 : update changelog <ZION959> 28 hours ago
+ 
+**** github:CMRemix/android_kernel_samsung_trlte ****
+269b99d : trltexx: remove mhi. its already included with the kernel <ZION959> 8 hours ago
+e37f40e : update DPE1 kernel source code <ZION959> 24 hours ago
+ 
+**** cmR:android_vendor_CMRemix ****
+57a3661 : update supersu v2.78 <ZION959> 27 hours ago
+ 
+**** github:CMRemix/proprietary_vendor_samsung ****
+75d48b7 : revert: fixed build error for libbt-vendor.so <ZION959> 22 minutes ago
+6f91b29 : trltexx: update MMB29M.N910GDTS1DPG1 proprietary <ZION959> 23 minutes ago
+277a7ae : update blobs for trltexx N910GDTU1DPE3 <ZION959> 6 hours ago
+ 

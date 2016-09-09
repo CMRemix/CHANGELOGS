@@ -1,0 +1,30 @@
+
+**** github:CMRemix/android_device_samsung_trlte-common ****
+d542c91 : trlte-common: fixed dpi again <ZION959> 27 hours ago
+ 
+**** cmR:android_frameworks_base ****
+a7b1439 : FWB: QSStroke: Don't apply any effect when disabled (1/2) <LorDClockaN> 25 hours ago
+4a7462f : FWB: QS shade stroke dash (1/2) <LorDClockaN> 25 hours ago
+f5e7f93 : Stroke: Increase default corner value (1/2) <LorDClockaN> 3 months ago
+0e5de9b : FWB: VolumeDialog corner radius (1/2) <LorDClockaN> 3 months ago
+08a5533 : FWB: VolumeDialog stroke settings (1/2) <LorDClockaN> 3 months ago
+44177cf : FWB: QS shade stroke (1/2) <LorDClockaN> 26 hours ago
+c212f6d : FWB: Notifications transparency (1/2) <LorDClockaN> 7 weeks ago
+48a7ea0 : Fling: Trails width configuration [2/3] <bigrushdog> 2 days ago
+f24eb17 : Enable\Disable bluetooth battery status[1/2] <MrApocalypse> 2 days ago
+ 
+**** cmR:android_packages_apps_DUI ****
+08b8d0e : Fling: Trails width configuration [3/3] <Randall Rushing> 4 weeks ago
+ 
+**** cmR:android_packages_apps_Settings ****
+3bddb02 : [SQUASHED] Qs & Volume Strokes and Radius [2/2] <LorDClockaN> 2 minutes ago
+ff0774e : Settings: Notifications transparency (2/2) <LorDClockaN> 71 minutes ago
+8671d95 : Fling: Trails width configuration [1/3] <bigrushdog> 2 hours ago
+5d2dc50 : Enable\Disable bluetooth battery status[2/2] <MrApocalypse> 2 hours ago
+ 
+**** cmR:android_vendor_CMRemix ****
+61cde5f : cmremix vendor: add GelloMod <ZION959> 2 days ago
+ 
+**** github:CMRemix/proprietary_vendor_samsung ****
+f54f85d : revert: move libbt-vendor.so to fixed bluetooth issue <ZION959> 2 days ago
+ 
