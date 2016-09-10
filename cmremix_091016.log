@@ -1,0 +1,20 @@
+
+**** cmR:CHANGELOGS ****
+57de7bc : update changelog <ZION959> 26 hours ago
+ 
+**** cmR:android_frameworks_base ****
+90b73ad : update ImageHelper <ZION959> 11 minutes ago
+5484bb5 : Popup menu: Add support for item icons <XXMrHyde> 6 weeks ago
+75cd344 : SystemUI: BatteryBar: Gradient color [1/2] <Lokesh Chamane> 2 hours ago
+ 
+**** cmR:android_packages_apps_Settings ****
+87493d9 : derp fixed <ZION959> 2 hours ago
+1d4d9e8 : Setting: BatteryBar: Gradient Color [2/2] <Lokesh Chamane> 2 hours ago
+86116e4 : (2/2) Settings: instant reboot action trigger <Alexander Martinz> 2 hours ago
+b325c3c : Color picker: Update animations and small improvements: <XXMrHyde> 2 hours ago
+5b36870 : Color picker: Use a fragment instead of a dialog: <XXMrHyde> 3 hours ago
+d9bb5e9 : No comment <XXMrHyde> 3 months ago
+00994a9 : Color picker: Improve color previews and -buttons: <XXMrHyde> 3 hours ago
+46042a3 : Color picker: Update reset color values and titles handling <XXMrHyde> 3 months ago
+5c97af7 : Color picker: Rework <XXMrHyde> 3 hours ago
+ 
