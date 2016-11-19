@@ -1,0 +1,50 @@
+
+**** cmR:android_build ****
+2b13e75 : Mega squash of these commits : Uber Optimization build: cleanup SDCLANG logic * Flags which are already passed to cflags don't need to be added to   cppflags and conlyflags since at the end, cflags get stacked on top   anyways. <ZION959> 87 minutes ago
+ 
+**** github:CMRemix/android_device_lge_g5-common ****
+c841ea0 : Revert "g5: fix twrp error and use f2fs by default" <Aaron Doe> 6 hours ago
+6790e43 : Revert "g5: enable dexpreopt" <Aaron Doe> 7 hours ago
+07c711a : g5: update power profile <Aaron Doe> 11 hours ago
+41dbcc3 : g5: enable dexpreopt <Aaron Doe> 12 hours ago
+89cfe9b : g5: Set TARGET_USES_MEDIA_EXTENSIONS <Aaron Doe> 12 hours ago
+b07ba13 : g5: fix twrp error and use f2fs by default <Aaron Doe> 13 hours ago
+80f0f07 : g5: basic tree clean up and updates <Aaron Doe> 31 hours ago
+072ee66 : g5: remove ril version definition <Aaron Doe> 32 hours ago
+45e2778 : g5: stop rild from controlling wakelocks <Aaron Doe> 2 days ago
+0833d0c : Revert "g5: fix video recording" <Aaron Doe> 2 days ago
+508d2c1 : g5: persist usb charging <Aaron Doe> 3 days ago
+79726b4 : g5: disable selinux (temp) <Aaron Doe> 4 days ago
+ 
+**** github:CMRemix/android_device_lge_h850 ****
+2c63f7b : add cmremix.mk <ZION959> 2 hours ago
+ 
+**** cmR:android_frameworks_av ****
+c9f3ed9 : OMXNodeInstance: More legacy HAL1 fixes after merge of android-7.1.0_r7 <Dominggoes Isakh> 6 days ago
+ 
+**** cmR:android_frameworks_base ****
+7727635 : data: sounds: add Timer alarm sound <Alexander Martinz> 9 weeks ago
+09553fa : Fix unpinning on device with Navigation Bar <Dark Eyes> 3 days ago
+9ddd219 : Base: fix the default icon for lockscreen shortcuts customisation <ZION959> 12 hours ago
+7d73d6c : Fix end call by pressing power button <Hikari-no-Tenshi> 30 hours ago
+ 
+**** github:CyanogenMod/android_packages_apps_CellBroadcastReceiver ****
+c6e50b4 : cellbroadcastreceiver: Display channel 50 and 60 options by default <Adrian DC> 5 days ago
+ 
+**** cmR:android_packages_apps_Settings ****
+6e0d4d1 : Settings: use CMHW serial number <Pawit Pornkitprasan> 2 years, 10 months ago
+e64341f : Settings: update About screen device model fields <Roman Birg> 1 year, 7 months ago
+6f3faea : Fix device storage menu when using Adopted Storage <LuK1337> 3 days ago
+5b7779c : Settings: Make proximity wake string more accurate <Zhao Wei Liew> 18 hours ago
+bfd65df : Fix NPE when ejecting the portable storage <LuK1337> 3 days ago
+ 
+**** github:CyanogenMod/android_packages_inputmethods_LatinIME ****
+ed9724f : LainIME: add unicode 9.0 chars <Joey Rizzoli> 35 hours ago
+ 
+**** cmR:android_vendor_CMRemix ****
+553224a : release CMRemix v3.0 <ZION959> 2 hours ago
+52592a4 : cm: Update APNs <Sean hoyt> 3 weeks ago
+ba699ed : remove some cm stuff <ZION959> 22 hours ago
+aae6c62 : config: common: Remove obsolete RomManager props <Zhao Wei Liew> 3 days ago
+11af61a : apns: Remove loop and bpl mobile <Silesh K Nair> 4 days ago
+ 
