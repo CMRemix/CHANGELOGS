@@ -1,6 +1,9 @@
 
+**** cmR:CHANGELOGS ****
+218b4a3 : update  12-30-2016 <ZION959> 5 minutes ago
+ 
 **** cmR:android_frameworks_base ****
-f366d01 : revert: Change SQL to improve performance. <ZION959> 12 minutes ago
+f366d01 : revert: Change SQL to improve performance. <ZION959> 40 minutes ago
 b713882 : Fragment animations are not being saved across configuration changes <Alexander Mironov> 3 years, 6 months ago
 d8b0466 : [Squashed] Remove drawables and videos we don't need <Chet Kener> 1 year, 2 months ago
 5f82005 : Scroll: modified velocitytracker <PrimeDirective> 3 years, 3 months ago
@@ -52,13 +55,13 @@ bc74688 : Show icon of package associated with Toast <d34d> 1 year, 4 months ago
 b47de26 : Added a toast to screenshot delete, why not right? <Alex> 4 months ago
  
 **** github:CMRemix/android_kernel_lge_msm8996 ****
-1233e3c : Revert "scripts: Use wrapper to check compiler warnings" <ZION959> 20 hours ago
+1233e3c : Revert "scripts: Use wrapper to check compiler warnings" <ZION959> 21 hours ago
  
 **** cmR:android_packages_apps_Settings ****
 90ef14b : I like it fast -25 <ZION959> 1 year, 9 months ago
 92e4319 : Settings: apple can do...we can do as well <Lars Greiss> 2 years, 8 months ago
-b02a699 : cmremix config to settings <ZION959> 73 minutes ago
-3a12395 : fixed build & fc <ZION959> 83 minutes ago
+b02a699 : cmremix config to settings <ZION959> 2 hours ago
+3a12395 : fixed build & fc <ZION959> 2 hours ago
 9e25cf1 : Settings:Add MemBar to Recents [2/2] <ZION959> 21 hours ago
 cbc9de5 : Add Cpu & Mem Info <mnm9994u> 4 months ago
 ca460f7 : cmremix :Fix Settings Compile & FC <ZION959> 21 hours ago
@@ -73,9 +76,9 @@ eda7e44 : Allow toggling animations off [2/2] <shuhaowu> 4 months ago
 35e0f95 : Return: Listanimation Views and Interpolator [2/2] <jkl5616> 4 months ago
 55facb2 : SS - XuiMod: Toast Animations [2/2] <GwonHyeok> 4 months ago
 8b354e8 : AOKP custom system animations (2/2) <Stevespear426> 4 months ago
-d585475 : fixed about settings fc <ZION959> 21 hours ago
+d585475 : fixed about settings fc <ZION959> 22 hours ago
  
 **** cmR:android_vendor_CMRemix ****
-6bdc36a : revert: Merge remote-tracking branch 'LineageOS/cm-14.1' into cm-14.1 <ZION959> 23 minutes ago
-f097c29 : build cmremix 7.1.1_r6 and restart v1.0 <ZION959> 28 minutes ago
+6bdc36a : revert: Merge remote-tracking branch 'LineageOS/cm-14.1' into cm-14.1 <ZION959> 51 minutes ago
+f097c29 : build cmremix 7.1.1_r6 and restart v1.0 <ZION959> 56 minutes ago
  
