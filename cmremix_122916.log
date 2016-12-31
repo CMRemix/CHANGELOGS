@@ -1,0 +1,58 @@
+
+**** cmR:android_build ****
+cf643da : revert: disable optimization for now <ZION959> 41 minutes ago
+7dcc5e6 : core: we're now lineage * Change necessary bits to support our project move <Dan Pasanen> 10 days ago
+9d149f3 : disable optimization for now <ZION959> 3 hours ago
+ 
+**** github:CMRemix/android_device_lge_v20-common ****
+d9b3c35 : selinux=permissive for now <ZION959> 41 minutes ago
+ 
+**** cmR:android_device_qcom_sepolicy ****
+d9d06c2 : apq8084: Define qcal530_prop as property_type <Corinna Vinschen> 10 days ago
+6bc0853 : Escape '.' character <Michael Bestas> 4 weeks ago
+820fe5f : Add common rules for random MAC generation <Michael Bestas> 4 weeks ago
+32df817 : Allow hci_qcomm_init /persist/.bt_nv.bin access <Luca Stefani> 3 weeks ago
+c62c6dd : Allow qmuxd access diag <Michael Bestas> 4 weeks ago
+46c74da : Readd support for old perfd socket <Michael Bestas> 4 weeks ago
+78700b4 : Move bluetooth_loader sepolicy to common <Michael Bestas> 4 weeks ago
+cab08e5 : sepolicy: Added thermal engine access to audioserver <Divya Narayanan Poojary> 6 weeks ago
+032f61e : sepolicy: allow writing firmware files in recovery mode. <Sashidhar Ganiga> 3 months ago
+593565b : Add SELinux support for factory reset protection <Shaheda Begum> 3 months ago
+9e0da1f : msm8974: add common sepolicy needed for M blobs on N <Michael Bestas> 8 weeks ago
+0daf004 : sepolicy:Add oemfs ruler for carrier switch <jinfaw> 7 weeks ago
+99d36c7 : Merge DAX changes <Gao Jie> 3 months ago
+9de3e5c : sepolicy : Allow mm-pp-daemon access to diag <Nirmal Abraham> 3 months ago
+1159fae : Add GOTA sepolicy access for RIDL/RIDL 2.0 <Clarence Wong> 3 months ago
+ 
+**** cmR:android_frameworks_base ****
+c1d143b : Revert CM ADB notification icon <Dan Pasanen> 21 hours ago
+1ec0aad : SystemUI: Initialize state linked volume <Danesh M> 5 months ago
+ 
+**** github:LineageOS/android_packages_apps_CMFileManager ****
+774bd78 : CMFileManager: rebrand to LineageOS <Simon Shields> 3 days ago
+ 
+**** github:LineageOS/android_packages_apps_CMParts ****
+5b40a9b : CMStats: use sha256 for device IDs <Simon Shields> 24 hours ago
+4675ff3 : CMStats: Upload stats only if user has not opted out <Simon Shields> 23 hours ago
+fed965c : CMParts: stop tracking opt out events <Simon Shields> 2 days ago
+3e7c028 : CMParts: stop sending stats to cyngn servers <Simon Shields> 3 days ago
+ae1f124 : CMParts: rebrand to LineageOS <Simon Shields> 3 days ago
+ 
+**** cmR:android_packages_apps_Settings ****
+99d449a : Settings: rebrand to LineageOS <Simon Shields> 3 days ago
+93280a8 : Bluetooth/Wifi: center empty view and set textAppearance to medium <Alexander Martinz> 11 months ago
+ 
+**** cmR:android_vendor_CMRemix ****
+8151aa9 : Merge remote-tracking branch 'LineageOS/cm-14.1' into cm-14.1 <ZION959> 3 hours ago
+b747a9b : disable debug <ZION959> 3 hours ago
+e52ee2b : apns: Update hollandsnieuwe's (NL) APN <Marco Brohet> 5 months ago
+4c6c53e : vendor: disable custom bootanimation for now <Dan Pasanen> 19 hours ago
+24a1cc9 : Revert "cm: Revert the new boot animation generation process" <Dan Pasanen> 19 hours ago
+0344771 : vendor: we are now LineageOS <Dan Pasanen> 10 days ago
+0fdc085 : build: repopick: point to LineageOS gerrit <Dan Pasanen> 2 days ago
+ 
+**** cmR:cm_platform_sdk ****
+8f7ef5d : cmsdk: rebrand to LineageOS <Simon Shields> 3 days ago
+79cced0 : cmsdk: Deprecate STATS_COLLECTION_REPORTED CMSetting <Zhao Wei Liew> 34 hours ago
+d6f4389 : Automatic translation import <pinky@build01> 5 days ago
+ 

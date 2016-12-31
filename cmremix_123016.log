@@ -1,0 +1,81 @@
+
+**** cmR:android_frameworks_base ****
+f366d01 : revert: Change SQL to improve performance. <ZION959> 12 minutes ago
+b713882 : Fragment animations are not being saved across configuration changes <Alexander Mironov> 3 years, 6 months ago
+d8b0466 : [Squashed] Remove drawables and videos we don't need <Chet Kener> 1 year, 2 months ago
+5f82005 : Scroll: modified velocitytracker <PrimeDirective> 3 years, 3 months ago
+09669e6 : fix wrong algorithm in getMobilePowerPerPacket() <yuanhuihui> 3 months ago
+b3ba27f : Fix the NullPointerException <kaiyiz> 3 years, 5 months ago
+b9f58f6 : Handle IllegalArgumentException <kaiyiz> 2 years, 5 months ago
+5ea0bd2 : Fix NPE in updateEmptyShadeView() upon screen rotation <tobitege> 1 year, 7 months ago
+b9a5747 : Handle NPE due to threading race <Tom Marshall> 2 years, 7 months ago
+da9508a : Fix ListView is not scrolled properly with arrows <Jaewan Kim> 3 years, 11 months ago
+4468c3b : Handle IllegalStateException from Surface.lockCanvas <kenzyun_chen> 2 years, 2 months ago
+efb3d3e : Fix NPE in TextUtils <Ralph Bergmann> 1 year, 8 months ago
+9099f78 : Fix to avoid UI freeze issue <Praveena Pachipulusu> 2 years, 1 month ago
+58ceaf0 : Prevent IndexOutOfBoundsException <Evisceration> 2 years ago
+3593822 : Update cached buffers in async mode <Surajit Podder> 1 year, 10 months ago
+857a4e3 : Define priority for callerinfo selection <Jason Kung> 2 years, 8 months ago
+4f9b3d4 : Handle ActivityNotFoundException for contacts activity <kaiyiz> 1 year, 11 months ago
+5da8bbe : Remove freezing window to fix UI freezing issue <wyuan> 1 year, 7 months ago
+faf5323 : Sometimes property service is slow to respond <Gao,KunX> 3 years, 2 months ago
+66053e1 : Fix inconsistant display number format issue in Messaging application <Zhang Dongxing> 4 years, 2 months ago
+e347680 : SystemUI: disable statusbar time refresh when screen off <Jun Su> 2 years, 11 months ago
+d9b4a04 : Keyguard: don't refresh ui when screen off <Jun Su> 3 years ago
+1e733db : aapt: introduce SHOW_EXTENDED_WARNINGS <Evisceration> 2 years, 6 months ago
+004c420 : aapt: i hate if (true) statements <Evisceration> 2 years, 7 months ago
+0ad5eee : Unknown apps: enable by default <zephiK> 1 year, 3 months ago
+daf76f0 : aapt: Default to 0 compression ratio <arter97> 1 year, 9 months ago
+1995a81 : aapt: silence these warnings <Evisceration> 2 years, 7 months ago
+d25f562 : Change SQL to improve performance. <muzbit.kim> 2 years, 10 months ago
+d9120b8 : Forward Port: Smoother Upload and Download Animation <Muhammed Nazim> 1 year, 1 month ago
+515e57e : Reduce log verbosity: Don't spam logcat <fusionjack> 2 years, 7 months ago
+dc561ec : Allow faster app switching <Chet Kener> 1 year, 3 months ago
+92f1ab7 : Speed up StatusBar <Chet Kener> 1 year, 1 month ago
+289b4b4 : lowered animations duration <ZION959> 1 year, 1 month ago
+9b9700b : Speed things up!! <Mazda> 2 years, 2 months ago
+019a065 : Frameworks: I like it fast -25 <ZION959> 1 year, 10 months ago
+f3112fe : Frameworks: apple can do...we can do as well <Lars Greiss> 2 years, 2 months ago
+f1107ff : Add membar to recents options [1/2] <Dave Kessler> 1 year, 9 months ago
+e089d33 : [1/3] fwb: Add ability to permanently hide apps from recents <Christian Oder> 12 months ago
+964d417 : Disable Immersive Messages [1/2] <Jmz> 1 year, 2 months ago
+37eb0b1 : Force Expanded Notifications [1/2] <Jmz> 3 years ago
+cb931ed : Enable\Disable bluetooth battery status[1/2] <Corey Edwards> 5 months ago
+a17c3db : Toast icon switch [1/2] <LorDClockaN> 1 year, 4 months ago
+bc74688 : Show icon of package associated with Toast <d34d> 1 year, 4 months ago
+73b2992 : SlimSeekBarPreference refactor <Randall Rushing> 5 months ago
+49a6551 : Clean up a wee bit <dankoman> 1 year, 11 months ago
+8135dd2 : Set monitorbox text as string <dankoman> 1 year, 9 months ago
+667b5f7 : Forward port SlimSeekBarPreference <Daniel Koman> 4 months ago
+368c3e3 : Live Volume Steps [1/2] <Meticulus> 1 year, 9 months ago
+1a65cd22 : Add Screen Record to the Power Menu [1/2] <eyosen> 1 year, 1 month ago
+b47de26 : Added a toast to screenshot delete, why not right? <Alex> 4 months ago
+ 
+**** github:CMRemix/android_kernel_lge_msm8996 ****
+1233e3c : Revert "scripts: Use wrapper to check compiler warnings" <ZION959> 20 hours ago
+ 
+**** cmR:android_packages_apps_Settings ****
+90ef14b : I like it fast -25 <ZION959> 1 year, 9 months ago
+92e4319 : Settings: apple can do...we can do as well <Lars Greiss> 2 years, 8 months ago
+b02a699 : cmremix config to settings <ZION959> 73 minutes ago
+3a12395 : fixed build & fc <ZION959> 83 minutes ago
+9e25cf1 : Settings:Add MemBar to Recents [2/2] <ZION959> 21 hours ago
+cbc9de5 : Add Cpu & Mem Info <mnm9994u> 4 months ago
+ca460f7 : cmremix :Fix Settings Compile & FC <ZION959> 21 hours ago
+67f927e : [2/3] SS: Add ability to permanently hide apps from recents <Myself5> 1 year, 2 months ago
+4941612 : {SQUASHED} Foce Expand Notifications & Disable Immersive Mode Messages <Myself5> 1 year, 2 months ago
+87a0f7a : Enable\Disable bluetooth battery status[2/2][MrApocalypse] <MrApocalypse> 21 hours ago
+4326d6b : Toast Icon Switch [2/2] <LorDClockaN> 4 months ago
+1981b8d : Live Volume Steps [2/2] <Meticulus> 4 months ago
+ecb8e3a : AOKP animations: Add and entry for TRANSIT_TASK_OPEN_BEHIND <cristianomatos> 4 months ago
+c3ff8eb : Add option to disable scrolling cache [1/2] <pastime1971> 4 months ago
+eda7e44 : Allow toggling animations off [2/2] <shuhaowu> 4 months ago
+35e0f95 : Return: Listanimation Views and Interpolator [2/2] <jkl5616> 4 months ago
+55facb2 : SS - XuiMod: Toast Animations [2/2] <GwonHyeok> 4 months ago
+8b354e8 : AOKP custom system animations (2/2) <Stevespear426> 4 months ago
+d585475 : fixed about settings fc <ZION959> 21 hours ago
+ 
+**** cmR:android_vendor_CMRemix ****
+6bdc36a : revert: Merge remote-tracking branch 'LineageOS/cm-14.1' into cm-14.1 <ZION959> 23 minutes ago
+f097c29 : build cmremix 7.1.1_r6 and restart v1.0 <ZION959> 28 minutes ago
+ 
