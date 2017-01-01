@@ -1,32 +1,35 @@
 
+**** cmR:CHANGELOGS ****
+6fb14ec : update changelog 1-01-2017 <ZION959> 85 minutes ago
+ 
 **** github:CMRemix/android_device_lge_v20-common ****
 94873c9 : v20: Force snap to use camera API2 <Rashed Abdel-Tawab> 8 days ago
-73f57ea : v20: Set screen offset to 80px <Rashed Abdel-Tawab> 7 days ago
+73f57ea : v20: Set screen offset to 80px <Rashed Abdel-Tawab> 8 days ago
  
 **** cmR:android_frameworks_base ****
-8bbc9db : display: Allow devices to manually offset window center <Rashed Abdel-Tawab> 7 days ago
-b586c10 : display: Honor display offset when rotating screen <Matt Filetto> 7 days ago
+8bbc9db : display: Allow devices to manually offset window center <Rashed Abdel-Tawab> 8 days ago
+b586c10 : display: Honor display offset when rotating screen <Matt Filetto> 8 days ago
  
 **** github:CMRemix/android_kernel_lge_msm8996 ****
-ff9fee1 : mdss mdp: kcal for mdss_mdp_v1_7 <ZION959> 29 hours ago
-ea09b90 : Revert "msm_serial_hs: Change resource voting and system suspend logic" <Rashed Abdel-Tawab> 3 days ago
-4289722 : Revert "serial: msm_serial_hs: Move clk count voting out of runtime callbacks" <Rashed Abdel-Tawab> 3 days ago
-5853ff7 : Revert "serial: msm_serial_hs: Change the wakeup interrupt enable sequence" <Rashed Abdel-Tawab> 3 days ago
-df27e53 : Revert "USB: dwc3: msm: Kill tasklet before disabling irq in suspend" <Rashed Abdel-Tawab> 3 days ago
+ff9fee1 : mdss mdp: kcal for mdss_mdp_v1_7 <ZION959> 2 days ago
+ea09b90 : Revert "msm_serial_hs: Change resource voting and system suspend logic" <Rashed Abdel-Tawab> 4 days ago
+4289722 : Revert "serial: msm_serial_hs: Move clk count voting out of runtime callbacks" <Rashed Abdel-Tawab> 4 days ago
+5853ff7 : Revert "serial: msm_serial_hs: Change the wakeup interrupt enable sequence" <Rashed Abdel-Tawab> 4 days ago
+df27e53 : Revert "USB: dwc3: msm: Kill tasklet before disabling irq in suspend" <Rashed Abdel-Tawab> 4 days ago
 0146dfc : usb: dwc3-msm: Remove indefinite wakeup <Sultanxda> 3 months ago
 488c094 : usb: dwc3-msm: Don't issue power supply change for invalid charger <Sultanxda> 4 months ago
-0317c51 : msm: camera_v2: Only use IR drivers on non-LGE cameras <Rashed Abdel-Tawab> 3 days ago
+0317c51 : msm: camera_v2: Only use IR drivers on non-LGE cameras <Rashed Abdel-Tawab> 4 days ago
 121fea6 : defconfig: Enable config IP_NF_MATCH_RPFILTER <Ashwanth Goli> 5 weeks ago
 757a5fd : qcrypto: protect potential integer overflow. <Neeraj Soni> 5 weeks ago
-4794ca3 : msm: cpp: Fix for buffer overflow in cpp. <Krishnankutty Kolathappilly> 6 weeks ago
-0f9d339 : power: smb135x-charger: Add mutex locking in parallel enable path <Anirudh Ghayal> 5 weeks ago
+4794ca3 : msm: cpp: Fix for buffer overflow in cpp. <Krishnankutty Kolathappilly> 7 weeks ago
+0f9d339 : power: smb135x-charger: Add mutex locking in parallel enable path <Anirudh Ghayal> 6 weeks ago
 09761a9 : power: qpnp-smbcharger: Enable parallel charger if input is present <Anirudh Ghayal> 6 weeks ago
 bd9a8fc : qcrypto: protect potential integer overflow. <Neeraj Soni> 5 weeks ago
 7e713e8 : msm: camera: sensor: Validate eeprom_name string length. <Rajesh Bondugula> 7 weeks ago
 539399a : msm: camera: eeprom: Validate the power setting size. <Rajesh Bondugula> 7 weeks ago
 53cdb34 : msm: mdss: Clear compat structures before copying to user. <Benet Clark> 7 weeks ago
 1de713a : msm: kgsl: Reserve a context ID slot but don't populate immediately <Jordan Crouse> 7 months ago
-014c1f8 : msm: cpp: Fix for buffer overflow in cpp. <Krishnankutty Kolathappilly> 6 weeks ago
+014c1f8 : msm: cpp: Fix for buffer overflow in cpp. <Krishnankutty Kolathappilly> 7 weeks ago
 de89be6 : msm: mdss: Clear compat structures before copying to user <Benet Clark> 7 weeks ago
 5a706dc : fbdev: use unsigned integers to prevent overflow <Ingrid Gallardo> 3 months ago
 01efe08 : adreno_tz: Fix divide by zero problem in gpu_load_show() <Sudeep Yedalapure> 6 weeks ago
@@ -43,7 +46,7 @@ ab7e042 : sound: usb: Update USB audio QMI data structure <Hemant Kumar> 6 month
 2a46617 : defconfig: msmcortex: Enable USB audio QMI service driver <Hemant Kumar> 6 months ago
 0938eea : sound: usb: Add support to share iova with remote processor <Hemant Kumar> 10 months ago
 4c09cf3 : sound: usb: Add support for usb audio qmi service <Hemant Kumar> 11 months ago
-2565825 : usb: xhci: Add helper APIs to return xhci dma addresses <Hemant Kumar> 9 months ago
+2565825 : usb: xhci: Add helper APIs to return xhci dma addresses <Hemant Kumar> 10 months ago
 e1789a4 : usb: xhci: Add support for secondary interrupters <Hemant Kumar> 10 months ago
 a896bb8 : sound: usb: Add helper APIs to enable audio stream <Hemant Kumar> 10 months ago
 b315764 : USB: gadget: Enable BAM mode only for BAM2BAM transport <Chandana Kishori Chiluveru> 6 weeks ago
@@ -52,13 +55,23 @@ ab87959 : qcom: scm: remove printing input arguments <Swetha Chikkaboraiah> 9 we
 b507498 : msm: crypto: fix issues on digest buf and copy_from_user in qcedev.c <Zhen Kong> 9 weeks ago
 43346e8 : qseecom: remove entry from qseecom_registered_app_list <Zhen Kong> 8 weeks ago
 07fbf46 : input: synaptics: Add checks of user input data <chengengjia> 5 months ago
-51fb23a : msm: kgsl: add egl_surface/egl_image usage count in debugfs <Santhosh Punugu> 9 weeks ago
-5810759 : msm: kgsl: use seq_file for mem_entry debugfs <Santhosh Punugu> 9 weeks ago
+51fb23a : msm: kgsl: add egl_surface/egl_image usage count in debugfs <Santhosh Punugu> 10 weeks ago
+5810759 : msm: kgsl: use seq_file for mem_entry debugfs <Santhosh Punugu> 10 weeks ago
 a781418 : Input: synaptics: check input, prevent sysfs races <Andrew Chant> 4 months ago
 b075882 : input: synaptics_dsx: add checks of user input data <Min Chong> 4 months ago
 b2555b9 : qcom: scm: remove printing input arguments <Swetha Chikkaboraiah> 9 weeks ago
 5b2bf8b : msm: crypto: fix issues on digest buf and copy_from_user in qcedev.c <Zhen Kong> 9 weeks ago
  
 **** cmR:android_packages_apps_Settings ****
+ea4eec2 : Hide power Menu on Lockscreen RR Edits: Add Lockscreen Settings Fragment <Altaf-Mahdi> 47 minutes ago
+fe429bd : Gesture Anywhere : Bring it Back [2/2] <0xD34D> 2 hours ago
+813a3d0 : Remove dashboard tile summaries [1/2] <Alex> 4 months ago
+242cbdb : Disable dashboard suggestions [2/2] <Alex> 4 months ago
+a4ca5ba : Immersive Recents [2/2] <Alex> 4 months ago
+375e422 : {SQUASHED} Add Interpolators & Animations to Qs Tiles <Nico60> 2 hours ago
+1c4d744 : Settings: Add Qs Panel Fragment <ZION959> 2 hours ago
+79d3ceb : Settings : Add 7 more power menu animations [2/2] - Fly - Slide - Turn - Glow - 3D - Translucent (top) - Translucent (bottom) Signed-off-by: westcripp <korukaltan@gmail.com> <westcripp> 4 months ago
+24f6f45 : Rotation anim to Power and reboot menu [2/2] <LorDClockaN> 4 months ago
+0ae36e6 : Power Menu animations [2/2] <Alex Cruz> 2 hours ago
 413b53a : Fix Network Traffic Settings crash <Varun Date> 4 months ago
  
