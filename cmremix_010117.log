@@ -1,14 +1,51 @@
 
 **** cmR:CHANGELOGS ****
-6fb14ec : update changelog 1-01-2017 <ZION959> 85 minutes ago
+061cc41 : update changelog <ZION959> 3 hours ago
+6fb14ec : update changelog 1-01-2017 <ZION959> 5 hours ago
+ 
+**** cmR:android_build ****
+dea324a : core: finish using PRIVATE_RECOVERY_OUT rather than hard-coding "RECOVERY" <Dan Pasanen> 3 days ago
  
 **** github:CMRemix/android_device_lge_v20-common ****
 94873c9 : v20: Force snap to use camera API2 <Rashed Abdel-Tawab> 8 days ago
 73f57ea : v20: Set screen offset to 80px <Rashed Abdel-Tawab> 8 days ago
  
 **** cmR:android_frameworks_base ****
+541286d : base: lineage adb icon <Joey Rizzoli> 2 days ago
 8bbc9db : display: Allow devices to manually offset window center <Rashed Abdel-Tawab> 8 days ago
 b586c10 : display: Honor display offset when rotating screen <Matt Filetto> 8 days ago
+fabef15 : Telephony: Don't crash for too long baseband version <Michael W> 9 days ago
+0fffcee : SystemUI: Recents: Allow closing empty view via tapping <Michael W> 10 days ago
+ 
+**** github:LineageOS/android_frameworks_opt_telephony ****
+0663988 : SubscriptionController: Make sure cis are not null <Willi Ye> 25 hours ago
+cd4f31a : Convert multi_rat_capable property into an old RIL feature. <Danny Baumann> 9 months ago
+29969e4 : telephony: Improve compatibility for older DSDS stacks <Christopher R. Palmer> 9 months ago
+2423528 : telephony: Set multi-rat default to true. <Adnan Begovic> 1 year ago
+2006fd9 : SubscriptionController: Default to DDS flexmap triggering <Diogo Ferreira> 12 months ago
+f56c0bf : telephony: Override nw mode on creation and when trying to calculate nw type. <Adnan Begovic> 12 months ago
+ 
+**** github:LineageOS/android_hardware_qcom_audio ****
+2c9363d : hal: handle dolby set_license status <Divya Narayanan Poojary> 4 weeks ago
+9dce470 : hal: unload the modem image based on IS_ONLINE event <Surendar karka> 4 weeks ago
+5679fd9 : hal: handle CLANG errors for Dolby <Divya Narayanan Poojary> 5 weeks ago
+fa0df0a : audio: configs: Enable Dolby feature <Divya Narayanan Poojary> 5 weeks ago
+bf12d49 : audiopolicy: do not set FM volume during device connection/disconnection <Satya Krishna Pindiproli> 10 months ago
+110311a : Compilation fix: N-MR1 merge <Lalit Kansara> 4 weeks ago
+54438d3 : policy_hal: fix for volume burst during FM device switch <Mingming Yin> 12 months ago
+089ab4d : Add Dolby cflags to policy_hal/Android.mk <Gao Jie> 3 months ago
+ 
+**** github:LineageOS/android_hardware_qcom_camera ****
+702f237 : camera: remove is-vendor-board-platform,QCOM check for kernel deps <Dan Pasanen> 3 days ago
+ 
+**** github:LineageOS/android_hardware_qcom_display ****
+050f3df : qdutils: Add support to color metadata <Pullakavi Srinivas> 4 weeks ago
+5f59988 : display: Add color Metadata <Pullakavi Srinivas> 4 weeks ago
+ac8fadd : HWC: Fix typo error in prepareSwapRect function <Archana Sriram> 5 weeks ago
+ 
+**** github:LineageOS/android_hardware_qcom_media ****
+e9e992d : mm-video-v4l2: vdec : handle FBD before port-reconfig <Paras Nagda> 6 weeks ago
+21378e7 : mm-video-v4l2:Fix errors related to pointer dereferencing. <Vasantha Balla> 6 weeks ago
  
 **** github:CMRemix/android_kernel_lge_msm8996 ****
 ff9fee1 : mdss mdp: kcal for mdss_mdp_v1_7 <ZION959> 2 days ago
@@ -63,15 +100,82 @@ b2555b9 : qcom: scm: remove printing input arguments <Swetha Chikkaboraiah> 9 we
 5b2bf8b : msm: crypto: fix issues on digest buf and copy_from_user in qcedev.c <Zhen Kong> 9 weeks ago
  
 **** cmR:android_packages_apps_Settings ****
-ea4eec2 : Hide power Menu on Lockscreen RR Edits: Add Lockscreen Settings Fragment <Altaf-Mahdi> 47 minutes ago
-fe429bd : Gesture Anywhere : Bring it Back [2/2] <0xD34D> 2 hours ago
+75da5d9 : fixed build <ZION959> 3 hours ago
+ea4eec2 : Hide power Menu on Lockscreen RR Edits: Add Lockscreen Settings Fragment <Altaf-Mahdi> 4 hours ago
+fe429bd : Gesture Anywhere : Bring it Back [2/2] <0xD34D> 5 hours ago
 813a3d0 : Remove dashboard tile summaries [1/2] <Alex> 4 months ago
 242cbdb : Disable dashboard suggestions [2/2] <Alex> 4 months ago
 a4ca5ba : Immersive Recents [2/2] <Alex> 4 months ago
-375e422 : {SQUASHED} Add Interpolators & Animations to Qs Tiles <Nico60> 2 hours ago
-1c4d744 : Settings: Add Qs Panel Fragment <ZION959> 2 hours ago
+375e422 : {SQUASHED} Add Interpolators & Animations to Qs Tiles <Nico60> 6 hours ago
+1c4d744 : Settings: Add Qs Panel Fragment <ZION959> 6 hours ago
 79d3ceb : Settings : Add 7 more power menu animations [2/2] - Fly - Slide - Turn - Glow - 3D - Translucent (top) - Translucent (bottom) Signed-off-by: westcripp <korukaltan@gmail.com> <westcripp> 4 months ago
 24f6f45 : Rotation anim to Power and reboot menu [2/2] <LorDClockaN> 4 months ago
-0ae36e6 : Power Menu animations [2/2] <Alex Cruz> 2 hours ago
+0ae36e6 : Power Menu animations [2/2] <Alex Cruz> 6 hours ago
 413b53a : Fix Network Traffic Settings crash <Varun Date> 4 months ago
+ 
+**** github:CMRemix/android_packages_apps_Snap-dual-camera ****
+2064b85 : Snap: make openLegacy an option <codeworkx> 10 days ago
+1a7d451 : Snap: update caf icons <Joey Rizzoli> 3 weeks ago
+d58b217 : Snap: prevent NPE when checking if controls are visible <Joey Rizzoli> 3 weeks ago
+c2427aa : Always set JPEG quality. <Danny Baumann> 5 weeks ago
+95b4bc9 : Initialize focus manager in onResume(). <Danny Baumann> 5 weeks ago
+f29da12 : Modernize look of review controls. <Danny Baumann> 5 weeks ago
+e600930 : Clean up module switcher. <Danny Baumann> 5 weeks ago
+a62bda4 : Stop data loader on activity destroy. <Danny Baumann> 5 weeks ago
+7bcdf0a : Improve RTL layout behaviour. <Danny Baumann> 5 weeks ago
+2bf3a05 : Use transparent navigation bar. <Danny Baumann> 5 weeks ago
+3acc722 : Use material versions of share/delete/edit icons. <Danny Baumann> 5 weeks ago
+1e7ddd0 : Fix some photo UI layout issues. <Danny Baumann> 5 weeks ago
+5586581 : Snap: Fix blatant UI string issues <Zhao Wei Liew> 6 weeks ago
+e8e541a : snap: Panorama fixes <Steve Kondik> 6 weeks ago
+272f70b : snap: Fix bottom bar layout <Steve Kondik> 6 weeks ago
+83b2bea : Snap: Remove obsolete xxhdpi scene mode drawables <Zhao Wei Liew> 6 weeks ago
+697d765 : Fix mismatched scene mode arrays. <Danny Baumann> 6 weeks ago
+17ba73b : Snap: Make developer menu more accessible <Michael Bestas> 5 months ago
+51b7561 : Revert "snap: Provide a way to remove Snap from the build" <Zhao Wei Liew> 6 weeks ago
+5438ae1 : snap: Fix reset of camera controls <Steve Kondik> 6 weeks ago
+8b61208 : CameraNext: Update focus behavior for panoramas <Jim Wilson> 1 year, 1 month ago
+b7da154 : Make panorama able to go 270 degrees in landscape <Martin Brabham> 1 year, 2 months ago
+d175476 : Grant read URI permission for playback of video capture <Alan Newberger> 8 months ago
+06b5459 : CameraNext: stop updating the pano progress bar on pause <Scott Mertz> 8 months ago
+379e3bd : CropActivity: notify MediaScanner on save complete <Khalid Zubair> 8 months ago
+b3bff03 : Fix broken filenames for cropped images <Khalid Zubair> 8 months ago
+fe77d16 : Show UI when pano stitch starts and remove cancel condition <Artem Shvadskiy> 7 months ago
+99e47e6 : CameraNext: don't crash when pref is not boolean <Keith Mok> 7 months ago
+60d4b81 : CameraNext: Fallback to do copy exif if exif not exist <Keith Mok> 7 months ago
+00e8c21 : snap: Fix preview overlays <Steve Kondik> 6 weeks ago
+aac246e : snap: Fix build <Steve Kondik> 6 weeks ago
+76b587c : snap: Improve the histogram <Steve Kondik> 6 weeks ago
+1041bf6 : Remove unused menu indicators code. <Danny Baumann> 12 months ago
+40b496a : snap: Remove dividers from menu <Steve Kondik> 7 weeks ago
+80b47c2 : snap: Improve transitions <Steve Kondik> 7 weeks ago
+605a3aa : snap: Don't build tests unless requested <Steve Kondik> 7 weeks ago
+4977a83 : snap: Check for null when setting up the focus callback <Steve Kondik> 7 weeks ago
+e003727 : snap: Use new widgets for CaptureUI <Steve Kondik> 7 weeks ago
+ee62781 : snap: Clean up Makefile <Steve Kondik> 7 weeks ago
+915459d : SnapdragonCamera: Fix ANR during open camera <qimengp> 4 months ago
+a0394c5 : SnapdragonCamera: Screen goes black when saving panoramic pictures <weijiew> 4 months ago
+14dface : SnapdragonCamera: Pictures were rotated when the device is in flat position <weijiew> 4 months ago
+d5211e7 : SnapdragonCamera: resolve front camera preview freeze issue <Jay Wang> 4 months ago
+5e049a3 : SnapdragonCamera: ZSL for camera2 <Jack Yoo> 5 months ago
+302dfef : snap: UI checkpoint #2 <Steve Kondik> 7 weeks ago
+7f04007 : SnapdragonCamera: Fix launchMode to singleTask <mingwax> 3 months ago
+9916e1e : snap: Hide overlays early when going to filmstrip <Steve Kondik> 7 weeks ago
+b57349c : snap: Use reveal animation when switching modes <Steve Kondik> 7 weeks ago
+f886863 : snap: Better capture animation <Steve Kondik> 8 weeks ago
+4538ee8 : snap: UX improvements v1 <Steve Kondik> 8 weeks ago
+ 
+**** github:LineageOS/android_packages_apps_Stk ****
+426dd82 : Stk: New launcher icon <Michael Bestas> 1 year, 2 months ago
+ 
+**** github:LineageOS/android_packages_services_Telephony ****
+0e904e4 : Telephony: Further improve network selection <Michael W> 3 days ago
+be0e1a4 : Telephony: Improve NetworkSelection <Michael W> 3 days ago
+ 
+**** cmR:android_vendor_CMRemix ****
+f5c38cc : apns: Update hollandsnieuwe's (NL) APN <Marco Brohet> 5 months ago
+d35d696 : build cmremix v1.2 <ZION959> 40 minutes ago
+622ecf4 : vendor: Add a task for getting prebuilts via http <Dan Pasanen> 5 weeks ago
+a73e7ca : cm: Remove root access prop <Zhao Wei Liew> 3 days ago
+a8d9f48 : add Savoca-Kcal apk <ZION959> 65 minutes ago
  
