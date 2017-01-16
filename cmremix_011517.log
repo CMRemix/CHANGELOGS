@@ -1,0 +1,15 @@
+
+**** cmR:android_frameworks_base ****
+afcb417 : SystemUI: BatteryBar: Gradient color [1/2] <Lokesh Chamane> 8 months ago
+1910d90 : [1/2] Base: Hide power menu on secure lockscreen <Altaf-Mahdi> 1 year, 3 months ago
+b191d66 : derp <ZION959> 3 days ago
+de45748 : App sidebar: Fix Left/Right position. <BlackDragon> 1 year, 9 months ago
+b370c1e : App sidebar: notify if app is not installed better than force close <lion0738> 2 years, 9 months ago
+ 
+**** cmR:android_packages_apps_Settings ****
+7a000ee : ColorPicker Rework For Resurrection N <ZION959> 21 hours ago
+fec82e6 : Double Tap to Sleep Anywhere on LockScreen [2/2] <Altaf-Mahdi> 4 months ago
+e62fc6a : App sidebar (2/2) <ZION959> 3 days ago
+f8feb63 : Settings:3G Icon Instead Of H+ Switch [2/2] <ZION959> 3 days ago
+82a7de5 : add missing string for other sound settings Show 4G instead of LTE Switch [2/2] <ZION959> 3 days ago
+ 

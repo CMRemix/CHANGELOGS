@@ -1,0 +1,78 @@
+
+**** cmR:CHANGELOGS ****
+823700d : update changelog 1-9-2017 <ZION959> 5 hours ago
+ 
+**** cmR:android_frameworks_base ****
+8444ae7 : Fingerprint authentication vibration [1/2] <beanstown106> 3 months ago
+d00a967 : AudioService: launch default music player on headset connect [2/2] <Danesh M> 1 year ago
+36495b6 : Battery bar enhancements [1/2] <SpiritCroc> 3 months ago
+c9a44e4 : Have Battery bar controller obey Hide value <tobitege> 3 months ago
+452b256 : BatteryBar [1/2] <cphelps76> 4 hours ago
+a73bd1a : Materialized icon for Settings Provider <artas182x> 2 years, 2 months ago
+da1d4e9 : Fix build for ADB tile <LorDClockaN> 3 months ago
+93596cb : [QUICK SETTINGS] Add Caffeine QS Tile <Keith Mok> 11 months ago
+35bd775 : [QUICK SETTINGS] Add IME selector QS Tile <Alex Cruz> 11 months ago
+84f0021 : [QUICK SETTINGS] Switch to vector drawables for Play Tile <lichti1901> 1 year, 9 months ago
+a1ac57e : [QUICK SETTINGS] Add Music QS Tile <kufikugel> 1 year, 1 month ago
+7f6dcc5 : [QUICK SETTINGS] Add USB Tether QS Tile <BestPig> 4 months ago
+9b58aee : [QUICK SETTINGS] Add Reboot/Recovery QS Tile <ZION959> 4 hours ago
+ede05c3 : Revert "[QUICK SETTINGS] Add Expanded Desktop QS Tile" <fusionjack> 1 year, 1 month ago
+be80faa : [QUICK SETTINGS] Add Sync QS Tile <Alex Cruz> 3 months ago
+1cfcfe7 : [QUICK SETTINGS] Move ADB_ENABLED to "Global" <Michael W> 9 months ago
+f873e74 : [QUICK SETTINGS] Add adb over network QS Tile <Alex Cruz> 3 months ago
+8d99e36 : [QUICK SETTINGS] Add Screenshot QS Tile <Alex Cruz> 3 months ago
+1ae74ac : [QUICK SETTINGS] Allow for all tiles to be overlay if needed <Cristiano Matos> 3 months ago
+9422b73 : FWB: Option to disable auto brightness icon in brightness slider [1/2] <Varun> 3 months ago
+ 
+**** github:CMRemix/android_kernel_lge_msm8996 ****
+b1b7720 : tcp_cubic: do not set epoch_start in the future <Eric Dumazet> 1 year, 4 months ago
+bf619db : tcp_cubic: better follow cubic curve after idle period <Eric Dumazet> 1 year, 4 months ago
+f3610b3 : tcp: fix timing issue in CUBIC slope calculation <Neal Cardwell> 1 year, 11 months ago
+c2dc55b : revert: gpio_keys: call oem_check_force_dump_key() later <ZION959> 62 minutes ago
+eae0cb2 : derp fixed <ZION959> 64 minutes ago
+66b137b : msm8996pro: overclocking with cmdline option <flar2> 4 days ago
+35a8c05 : add cmremix LOCALVERSION v1.0 <ZION959> 2 hours ago
+623e0fc : lgv20: Enable IP_NF_MATCH_RPFILTER <dianlujitao> 4 weeks ago
+bd2153d : change lineageOs defconfig to cmremix <ZION959> 2 hours ago
+df1c4df : block: Make CFQ default to IOPS mode on SSDs <flar2> 4 months ago
+fa271ee : ASoC: wcd9335: add analog headphone gain <flar2> 5 months ago
+5da79a4 : ASoC: wcd9335: add mic gain and speaker gain for LG v20 <flar2> 5 months ago
+331dba2 : ASoC: wcd9335: Sound control <flar2> 5 months ago
+d7df738 : gpio_keys: call oem_check_force_dump_key() later <Park Ju Hyung> 3 months ago
+0d0e32b : cfq-iosched: fix the setting of IOPS mode on SSDs <Jens Axboe> 1 year, 7 months ago
+250b1e5 : kgsl: convert some workqueues to use kthreads <Tim Murray> 6 months ago
+cd59844 : mdss: move to a kthread for vsync_retire_work_handler <Tim Murray> 6 months ago
+82d9595 : net: sch_generic: Allow devices to opt-out net watchdog <fluxi> 7 months ago
+651465a : block: Make CFQ default to IOPS mode on SSDs <Tahsin Erdogan> 1 year, 8 months ago
+99efeff : msm: mdss: KCAL: disable igc update zen-iosched: change fifo_batch to 16 <ZION959> 3 hours ago
+db6b943 : msm: mdss: KCAL: disable igc update <flar2> 4 months ago
+99c9e2a : msm: mdss: KCAL: Send a pp display commit when changes are made <savoca> 1 year, 4 months ago
+04a4b69 : msm_performance: Make input boosting optional <flar2> 1 year, 1 month ago
+91814be : adrenoboost: disable by default <flar2> 4 months ago
+83eab23 : adrenoboost: finetuning algorithm - scale it a bit down <tbalden> 5 months ago
+ee4c63d : msm_adreno_tz: add adrenoboost parameter <flar2> 5 months ago
+54f67bd : cpufreq; add elementalx governor (flar2) <ZION959> 3 hours ago
+1056d13 : block: add zen scheduler <andip71> 4 months ago
+4825d7a : mdss_fb: add backlight dimmer option <ZION959> 3 hours ago
+eeb7520 : platform/msm: haptic: expose vibrate function <ZION959> 3 hours ago
+2e4eff6 : msm8996: Overclocking frequencies <ZION959> 3 hours ago
+ae5fee5 : msm8996: Overclocking with cmdline option <flar2> 8 months ago
+ad867be : PM: devfreq: Use high priority workqueue <ZION959> 3 hours ago
+9a87519 : AIO: Don't plug the I/O queue in do_io_submit() <flar2> 3 years, 2 months ago
+e4c9148 : SIO: update for linux 3.18 <flar2> 8 months ago
+4ef033f : FIOPS: update for linux 3.18 <ZION959> 3 hours ago
+772423a : Add SIO and FIOPS i/o schedulers <ZION959> 3 hours ago
+23cd415 : Added fsync on/off support. <franciscofranco> 4 years, 2 months ago
+b926233 : mm: slub: Default slub_max_order to 0 <Mel Gorman> 6 years ago
+2698c87 : fs: Workaround the compiler's bad optimization <Nikhilesh Reddy> 1 year, 5 months ago
+398edb6 : mmc: move to a SCHED_FIFO thread <Tim Murray> 12 months ago
+a8ed901 : binfmt_elf.c: use get_random_int() to fix entropy depleting <Jeff Liu> 4 years ago
+356b05a : disable crc check <flar2> 2 years, 10 months ago
+a7c51eb : Fix version name <ZION959> 3 hours ago
+1e68e82 : g5/v20_defconfig: Disable broadcom bluetooth drivers <Rashed Abdel-Tawab> 4 days ago
+e223918 : proc: Set androidboot.verifiedbootstate=green <James Christopher Adduono> 8 days ago
+0d27d79 : Revert "proc: Remove verifiedbootstate flag from /proc/cmdline" <Rashed Abdel-Tawab> 5 days ago
+7d96d24 : elsa: Fix DT derp <Rashed Abdel-Tawab> 6 days ago
+3fe67f3 : h850_defconfig: Enable new bluetooth options <Rashed Abdel-Tawab> 6 days ago
+e471adf : h918_defconfig: Enable new bluetooth options <Rashed Abdel-Tawab> 6 days ago
+ 
