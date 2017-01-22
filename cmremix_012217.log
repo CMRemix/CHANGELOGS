@@ -1,0 +1,78 @@
+
+**** cmR:CHANGELOGS ****
+b195508 : update 1-17-2017 <ZION959> 4 days ago
+ 
+**** cmR:CMRemix ****
+b2ae115 : Switch to our chromium-webview fork <Luca Stefani> 3 weeks ago
+b49c268 : Remove whitespace <Nikola Majkić> 2 weeks ago
+ 
+**** github:LineageOS/android_bootable_recovery ****
+e7597e9 : minui: Skip EV_REL input devices. <Vitalii Kulikov> 5 days ago
+41ed544 : recovery: Fix "Wipe data" wrong "System reset" naming <Adrian DC> 7 days ago
+ 
+**** cmR:android_frameworks_base ****
+c99684d : SystemUI: HotspotTile: Don't reset the number of connected clients <Zhao Wei Liew> 2 days ago
+8afbfab : [2/3] Re-introduce custom charging on/off sounds <Sam Mortimer> 3 months ago
+fe74696 : PlatLogo: Show lineage platlogo when tapping on LineageOS version <Michael Bestas> 2 years, 2 months ago
+371ffab : SystemUI: add Notification volume stream title <Arvin Quilao> 6 weeks ago
+f968758 : Readded Platinum Alarm sound as I miss it in newer builds. <Sebastian Haderecker> 6 days ago
+a43ef75 : AudioService: Launch default music player on headset connect <Danesh M> 4 years, 1 month ago
+ed8c5fb : NetworkManagement : Add ability to restrict app data/wifi usage <Danesh M> 11 months ago
+01036d9 : Add back slim date customizations <Allan Hedelain> 1 year, 2 months ago
+fc7330b : Enable advanced power menu by default <westcripp> 1 year, 2 months ago
+99cb165 : Base: allow to configure the long press back kill delay (1/2) <ZION959> 4 days ago
+ 
+**** github:LineageOS/android_frameworks_opt_telephony ****
+13267d3 : Telephony: Plmn name override <Penchala Prasad Mittadodla> 3 months ago
+ 
+**** github:LineageOS/android_hardware_qcom_audio ****
+e450f54 : msm8974: Remove deprecated FM stuff. <Nickolay Semendyaev> 6 days ago
+ 
+**** github:LineageOS/android_hardware_qcom_display ****
+d7f8861 : gralloc: allow forcing old pixel alignment <Sultan Qasim Khan> 1 year ago
+ee2bb0e : Fix duplicate copy file rules <Dan Willemsen> 11 months ago
+ 
+**** github:LineageOS/android_hardware_qcom_fm ****
+b516be3 : Use BOARD_HAVE_QCOM_FM flag <Ethan Chen> 5 days ago
+febb559 : Revert "fm: do not build for BCM FM devices" <Ethan Chen> 5 days ago
+ 
+**** github:CMRemix/android_kernel_lge_msm8996 ****
+11c1b7c : update cmremix kernel version <ZION959> 23 hours ago
+ 
+**** cmR:android_packages_apps_CMParts ****
+421d7d3 : Update contributors cloud db <Jorge Ruesga> 3 weeks ago
+0c4bd63 : Use valid network resources in getNetworkModeString() <LuK1337> 8 days ago
+ 
+**** github:LineageOS/android_packages_apps_CMUpdater ****
+08f68c0 : Updater: rebrand <Joey Rizzoli> 3 weeks ago
+ 
+**** cmR:android_packages_apps_Settings ****
+0e9ebf5 : revert lineageOS Blur commit <ZION959> 15 minutes ago
+2b744b7 : [3/3] Settings: Add CMParts charging sound settings preference <Sam Mortimer> 3 months ago
+8dd4334 : Revert "settings: Remove lock screen blur stuff breaking build" <Zhao Wei Liew> 4 days ago
+3bab620 : derp fixed <ZION959> 3 days ago
+12d5131 : Settings: point to lineageos updater <Joey Rizzoli> 4 days ago
+e282638 : Settings: Launch default music player on headset connect <Danesh M> 4 years, 1 month ago
+6430dbd : Settings: Add volume link notification switch <Danesh M> 1 year, 1 month ago
+88707f0 : Move notif volume pref on top of increasing ring pref <Zhao Wei Liew> 4 days ago
+a8854c5 : Settings: per-app cellular data and wifi restrictions <Bruce Wayne> 7 weeks ago
+01cfd8b : Settings: DeviceInfo: Clean up the PlatLogo checks <Zhao Wei Liew> 9 days ago
+f9987fb : Settings: Fix translations <Michael W> 7 days ago
+6fa5392 : Allow restricted profiles on phones <Luke Dashjr> 12 days ago
+fc9ae59 : Settings: Improve hotspot timeout strings <Michael Bestas> 12 months ago
+41ba97c : Settings: Let's get to choose keyboard again in Settings. <nijel8> 13 days ago
+06a8fb4 : Sim-Settings: Don't allow empty sim name <Michael W> 2 weeks ago
+ 
+**** github:LineageOS/android_packages_services_Telecomm ****
+c2ed09b : Telecomm: Set MSIM audio params using the proper ID <Gabriele M> 3 weeks ago
+ 
+**** github:LineageOS/android_system_netd ****
+38e79bc : NetD : Allow passing in interface names for wifi/data app restriction <Danesh M> 11 months ago
+ 
+**** github:LineageOS/android_system_sepolicy ****
+c119e6e : domain: Create a dummy domain for qc's rmt and let it access /dev/mem <Ricardo Cerqueira> 2 years, 3 months ago
+ 
+**** cmR:android_vendor_CMRemix ****
+c0068f0 : remove CMUpdater <ZION959> 2 minutes ago
+4fcfba1 : update cmremix version <ZION959> 25 hours ago
+ 
