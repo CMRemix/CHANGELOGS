@@ -1,0 +1,53 @@
+
+**** cmR:android_frameworks_base ****
+29240b1 : derp fixed <ZION959> 3 minutes ago
+0a50d72 : revert: SystemUI: add volume tones back [1/2] <ZION959> 12 minutes ago
+8028d5a : FW/B: Add back volume up/down effect <Josh Chasky> 11 months ago
+c88d09c : SystemUI: add volume tones back [1/2] <Roman Birg> 1 year, 3 months ago
+184a5d5 : SysUI:Fix Membar Updating on Task Clear <Varun Date> 8 months ago
+81421c2 : Quick settings: Add Haptic Feedback to tiles [1/2] <Evisceration> 2 years, 4 months ago
+f0fb894 : fwb: Bring in helpers <ZION959> 56 minutes ago
+8e9e364 : Add Restart SystemUI to reboot menu <LorDClockaN> 1 year, 11 months ago
+89f824b : Max Lockscreen Notification count [1/2] <beanstown106> 1 year, 4 months ago
+39d9b2c : Disable Lockscreen Media Art [1/2] * toggle to choose whether or not to show album art/media art on lockscreen <beanstown106> 1 year, 7 months ago
+046f4e9 : Data tile: make it customizable by the user [1/2] <ezio84> 8 months ago
+6e50753 : Base: allow to configure the long press back kill delay (1/2) <Evisceration> 2 years, 6 months ago
+cd25fe3 : Longpress back to kill app [1/2] <zephiK> 1 year, 7 months ago
+fad5130 : Added show volume panel tile to QS <stofstik> 8 months ago
+8a6025d : Reboot/Recovery QS Tile <fusionjack> 8 months ago
+2c8b413 : Add Sound tile to Quick Settings <Yoshinori Hirano> 8 months ago
+19a2a98 : FWB: Disable/Enable screenshot sound [1/2] <htchoi1995> 1 year, 4 months ago
+b27c88b : FWB: LS clock fonts: Add more fonts (1/2) <LorDClockaN> 1 year, 4 months ago
+28a8e87 : Lockscreen Clock Widget Fonts [1/2] <Alex Cruz> 1 year, 4 months ago
+a8913fb : Lockscreen shortcuts improvements 2/2 <rogersb11> 1 year, 5 months ago
+9e9b5ae : Base:Add new 73 hd lockscreen shortcus icons <westcripp> 2 years, 3 months ago
+47355d6 : Base : Update default material popup animations <westcripp> 1 year, 4 months ago
+2645d44 : Frameworks: rest of shortcut icons by Sven R. <Sven R> 2 years, 5 months ago
+121d50a : Frameworks: moar shortcut icons by Sven R. <Sven R> 2 years, 5 months ago
+1be68fc : Frameworks: icon materialization <dankoman> 2 years, 5 months ago
+2c39841 : SystemUI: vector support for action icons <Daniel Koman> 1 year, 11 months ago
+a87218f : squash Frameworks: Keyguard - Add user configurable shortcuts <Lars Greiss> 2 years, 6 months ago
+6939c0d : Frameworks: inital bringup of slim actions and helper classes <Lars Greiss> 2 years, 5 months ago
+2f6dc38 : Add several Slim helper classes and constants back <Lars Greiss> 2 years, 6 months ago
+9380562 : Fingerprint authentication vibration [1/2] <beanstown106> 1 year, 4 months ago
+bf1693a : Keyguard statusbar clock [1/2] <Alex Cruz> 1 year, 3 months ago
+2e6b626 : Hide Lockscreen clock & date [1/2] <Alex Cruz> 1 year, 3 months ago
+be43df1 : SystemUI: Fix Dark icon Mode for Network Traffic and RR logo <varund7726> 2 hours ago
+a778a3c : update CMRemix logo <ZION959> 4 hours ago
+466aee7 : App sidebar: Fix Left/Right position. <BlackDragon> 2 years ago
+7001805 : App sidebar: notify if app is not installed better than force close <lion0738> 3 years ago
+caaa2a2 : Custom ambient display settings (1/2) <beanstown106> 4 months ago
+4d200b3 : fixed build <ZION959> 4 hours ago
+ad81e15 : Ambient display: Battery status (1/2) <XXMrHyde> 1 year, 1 month ago
+9357702 : Frameworks: Statusbar BatteryBar (1/2) <cphelps76> 3 years, 5 months ago
+528ba53 : SystemUI: Double tap to sleep anywhere on the lock screen (1/2) <Altaf-Mahdi> 1 year ago
+1c7aeec : SystemUI: Lockscreen shortcut customization <0xD34D> 4 months ago
+5adbcef : SystemUI : 3G Icon Instead Of H+ Switch[1/2] <Alex Cruz> 4 months ago
+288d4ac : [1/2] Base: Hide power menu on secure lockscreen <Altaf-Mahdi> 1 year, 7 months ago
+2725e61 : GA = Fix size of close button drawables <westcripp> 1 year, 10 months ago
+663eb5b : GA: Materialize close button and improve layout (squashed) <westcripp> 2 years ago
+ba09ddb : FWB: Gesture Anywhere - bring it back [1/2] <0xD34D> 4 months ago
+5f6fcdc : FWB:Add Network Traffic Missing Import & Fix Arrow Hiding <Nico60> 8 months ago
+db50d8e : Show 4G intead of LTE switch[1/2] - Added to statusbar items under the AOSP tuner instead of 2 parts - Added a category to organize things a bit - Hide the switch on WiFi-Only devices (thanks AICP for the idea) - Removed config that was used in overlays <Alex> 8 months ago
+8e60e66 : Remove dashboard tile summaries [2/2] <Alex> 8 months ago
+ 

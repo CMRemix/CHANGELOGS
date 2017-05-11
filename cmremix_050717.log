@@ -1,0 +1,19 @@
+
+**** cmR:CMRemix ****
+db45182 : track xanaxdroid arm-eabi-7.0 <ZION959> 23 hours ago
+aa6d3a2 : track sm_arm-linux-androideabi-4.9 & sm_arm-eabi-7.0 <ZION959> 24 hours ago
+fc78b86 : manifest: android-7.1.2_r2 -> android-7.1.2_r8 <Dan Pasanen> 6 days ago
+9182986 : android: nuke browser, welcome jelly <Joey Rizzoli> 2 weeks ago
+8f9085b : Sync contributors cloud generator and random scripts <Michael Bestas> 7 days ago
+ 
+**** cmR:android_build ****
+f3a23b4 : Set metadata on bootzip <Andreas Blaesius> 1 year, 9 months ago
+67ab3a6 : Add back mka bootzip <RobbieL811> 2 years ago
+902618a : use -O3 flags to increase performance <ZION959> 2 hours ago
+ 
+**** github:CMRemix/android_device_samsung_trlte-common ****
+8446b7c : update camera <ZION959> 46 minutes ago
+ 
+**** cmR:android_vendor_CMRemix ****
+59e4522 : we use our own bootanimation, goodbye! <ZION959> 29 minutes ago
+ 

@@ -1,0 +1,182 @@
+
+**** github:LineageOS/android_art ****
+8b0b730 : runtime: arch: support kryo for 32 bit <Alex Naidis> 9 months ago
+ 
+**** github:LineageOS/android_bionic ****
+22d6b5b : libc: ARM: Add 32-bit Kryo memcpy <Jake Weinstein> 8 months ago
+45a3987 : libc: use Cortex-A7/A53 memset on Kryo <Jake Weinstein> 4 weeks ago
+ba97f82 : Add kryo support. <Christopher Ferris> 5 weeks ago
+ 
+**** github:LineageOS/android_bootable_recovery ****
+616bf9a : recovery: Fix event system <Tom Marshall> 2 days ago
+8011e66 : recovery: Fix UI freezing <Tom Marshall> 4 days ago
+ 
+**** cmR:android_build ****
+3998298 : lets use linaro 6.3 <ZION959> 23 hours ago
+66d212c : Build: Switch to Magisk as the built in root [2/2] <LorDClockaN> 3 months ago
+2514b61 : build: CMRemix Version & build prop info & add ACSII art & changelog <ZION959> 4 days ago
+dd1d7ca : Revert "We want Browser" <Michael Bestas> 7 days ago
+7a517a0 : Revert "build: releasetools: ota: Add support for 32-64 bit upgrades" <Michael Bestas> 8 days ago
+72c9cf9 : N2G47O <gitbuildkicker> 6 weeks ago
+5bc8683 : N2G47N <gitbuildkicker> 6 weeks ago
+5847a75 : N2G47M <The Android Automerger> 6 weeks ago
+374437d : N2G47L <gitbuildkicker> 6 weeks ago
+5021e99 : N2G47K <gitbuildkicker> 6 weeks ago
+b900094 : Update Security String to 2017-05-05 on nyc-dev <Adam Seaton> 8 weeks ago
+e3025b9 : Update Security String to 2017-05-01 on nyc-dev <Adam Seaton> 8 weeks ago
+c61a657 : N2G47J <gitbuildkicker> 7 weeks ago
+d137649 : N2G47I <gitbuildkicker> 8 weeks ago
+40d78b4 : N2G47H <gitbuildkicker> 9 weeks ago
+30d8a9e : N2G47G <gitbuildkicker> 9 weeks ago
+bd0eab8 : N2G47F <gitbuildkicker> 10 weeks ago
+ 
+**** github:CMRemix/android_device_samsung_trlte-common ****
+fadefeb : trlte-common: switch to cameraV2 <micky387> 8 weeks ago
+0ec8920 : trlte-common: Add caf overlay <micky387> 8 weeks ago
+c29bbaf : trlte-common: camera bringup for N <ItsOnlyBinary> 4 months ago
+0c31b0e : trlte-common: Use generic extract scripts <ZION959> 8 months ago
+ 
+**** github:LineageOS/android_external_boringssl ****
+13179a8 : Always use Fermat's Little Theorem in ecdsa_sign_setup. <David Benjamin> 11 months ago
+ 
+**** cmR:android_frameworks_av ****
+faa8b85 : seccomp: Fix policy for ffmpeg <Christopher R. Palmer> 5 days ago
+594bf93 : Add bounds check in SoftAACEncoder2::onQueueFilled() <Ray Essick> 8 weeks ago
+961e5ac : Fix NPDs in h263 decoder <Marco Nelissen> 9 weeks ago
+6f1d990 : Fix out of bounds access <Marco Nelissen> 8 weeks ago
+36b0493 : Fix integer overflow and divide-by-zero <Marco Nelissen> 8 weeks ago
+523f6b4 : Validate lengths in HEVC metadata parsing <Ray Essick> 2 months ago
+a9188f8 : AudioFlinger: Check framecount overflow when creating track <Andy Hung> 3 months ago
+ 
+**** cmR:android_frameworks_base ****
+c78285e : fixed -Werror=strict-aliasing error <ZION959> 54 minutes ago
+c3b68ee : Automatic translation import <Abhisek Devkota> 7 days ago
+ac8641d : base: don't show reboot options for safe mode <Jorge Ruesga> 1 year, 6 months ago
+d1fecb1 : SystemUI: Use already existing overlay to show QS auto brightness <Michael Bestas> 9 days ago
+f3faf1f : SystemUI: use vector drawables for brightness icons <Alexander Westphal> 10 days ago
+39738c7 : fix anr when concurrent request provider <yuanhuihui> 8 weeks ago
+94d8c27 : Ensure that the decor view is attached to window. <xiaomei.li> 3 months ago
+07ece0c : Bad token of activity when do the launch work at the app process side. <xiaomei.li> 7 months ago
+aac81bb : Query geo description in worker thread to prevent ANR <Ceci Wu> 8 months ago
+45bff37 : remove duplicated incorrectly code in ProcessRecord <yuanhuihui> 8 months ago
+bdb9183 : fix foreground process will be mistakenly killed when it uses content provider. <yuanhuihui> 8 months ago
+400822e : Fix PacketKeepalive.stop() crash <Peter Hsiang> 5 months ago
+217b8fc : FATAL EXCEPTION IN SYSTEM PROCESS: android.ui <yangbingqian> 6 weeks ago
+525f760 : Restart persistent process if start timeout. <riddle_hsu> 1 year, 5 months ago
+105067d : fix system_server crash issue caused by fd leak. <songjinshi> 7 weeks ago
+eefd167 : base: LocationTile detail <oreiche> 1 year, 11 months ago
+1a5fdcc : Remove bg_non_interactive cgroup [ DO NOT MERGE ] <Wei Wang> 7 weeks ago
+78efbc9 : [DO NOT MERGE] Don't allow permission change to runtime <Svetoslav Ganov> 4 months ago
+d42e120 : [DO NOT MERGE] Throw exception if slot has invalid offset <Fyodor Kupolov> 2 months ago
+4e110ab : [DO NOT MERGE] Check bounds in offsetToPtr <Fyodor Kupolov> 10 weeks ago
+542bba3 : Fix issue with saving admins before finishing loading. <Kenny Guy> 4 months ago
+f806d65 : resolve merge conflicts of ad4aa1ce7d3d to nyc-mr1-dev fix conflict in nyc-mr2-release Change-Id: I97ef31536cd06495a08a3f94f81df2d1376186e0 <Andrew Scull> 4 months ago
+667d2cb : Protect Bluetooth OPP ACCEPT and DECLINE broadcast <Marie Janssen> 8 weeks ago
+ 
+**** github:LineageOS/android_hardware_qcom_fm ****
+d17952e : Automatic translation import <Abhisek Devkota> 7 days ago
+ 
+**** github:LineageOS/android_hardware_samsung ****
+8920be7 : Automatic translation import <Abhisek Devkota> 7 days ago
+ 
+**** github:LineageOS/cm_crowdin ****
+e7d8cf6 : config: cm-14.1: add Jelly, remove Browser <Joey Rizzoli> 4 days ago
+ 
+**** github:LineageOS/cve_tracker ****
+f0932d0 : cve_tracker: Restore tsubasa in android_kernel_sony_msm8x60 <Adrian DC> 35 hours ago
+11ae5e9 : cve_tracker: Fix header and style <Michael W> 4 days ago
+44ffe83 : cve_tracker: Fix back-links <Michael W> 4 days ago
+490caa6 : cve_tracker: Add CVE-Status <Michael W> 5 days ago
+6ac1e8f : cve_tracker: Minor code fixes <Michael W> 6 days ago
+ 
+**** github:LineageOS/hudson ****
+2567151 : Disable mako builds <Michael Bestas> 7 days ago
+e8b98ef : Ship natrium <LuK1337> 4 days ago
+ 
+**** github:LineageOS/mirror ****
+fc60f8a : mirror: Updated to 01-May-17 16:52 UTC <Tim Schumacher> 5 days ago
+892f549 : mirror: Fix heading and script name <Tim Schumacher> 6 days ago
+a438997 : mirror: Add mirror-regen script <Tim Schumacher> 6 days ago
+ 
+**** github:LineageOS/lineageos_updater ****
+ca277fa : Add natrium to devices list <LuK1337> 4 days ago
+9b97267 : Add missing V20 devices and fix ha3g/lt02ltespr <Michael Bestas> 4 days ago
+7cfcd77 : Fix some LG devices out of order <Martin Bouchet> 4 days ago
+718b37b : Add Samsung Galaxy Tab 3 7.0 (Sprint) <Martin Bouchet> 4 days ago
+82f3f5c : Add exynos Samsung Galaxy Note 3 (ha3g) <Martin Bouchet> 4 days ago
+ 
+**** github:LineageOS/www ****
+786aa23 : www: Minor corrections <Bruno Martins> 2 days ago
+517c3ea : Changelog #8 - May ASB, Jelly, Donations and More Servers (W/C 18th April) <Harry Youd> 6 days ago
+08b1330 : www: add PayPal link to footer <Harry Youd> 6 days ago
+ 
+**** github:LineageOS/lineage_wiki ****
+6dd10da : devices: Set mako as discontinued <Bruno Martins> 20 hours ago
+47ffb8b : wiki: Build: Some corrections <Michael W> 2 weeks ago
+28704f5 : devices: Update Z00A/Z008 maintainers <sayeed99> 2 weeks ago
+e3dd26e : devices: asus: Add recovery install instructions <Noah Jacobson> 2 weeks ago
+d5a2665 : us996: typo fixed from us995 <Eric Meddaugh> 4 days ago
+d1a713f : devices: Add HTC One A9 (hiaeul and hiauhl variants) <Harry Youd> 5 days ago
+8149598 : Correct device kernels <Michael Bestas> 4 days ago
+d93cd8d : Add Mi 5s Plus device page <LuK1337> 4 days ago
+24b9b43 : w7: update maintainers <Moshe Barash> 13 days ago
+e9287a3 : wiki: add LG V20 pages <Matt Filetto> 5 days ago
+6edc3bd : Add install method to a few devices <Michael Bestas> 5 days ago
+ 
+**** cmR:android_packages_apps_CMParts ****
+1e3c0b4 : Automatic translation import <Abhisek Devkota> 7 days ago
+ 
+**** github:LineageOS/android_packages_apps_CMUpdater ****
+dc6bdeb : Automatic translation import <Abhisek Devkota> 7 days ago
+ 
+**** github:LineageOS/android_packages_apps_CellBroadcastReceiver ****
+b7d1a8b : Automatic translation import <Abhisek Devkota> 7 days ago
+ 
+**** github:LineageOS/android_packages_apps_Contacts ****
+ecc144c : Automatic translation import <Abhisek Devkota> 7 days ago
+ 
+**** github:LineageOS/android_packages_apps_CustomTiles ****
+7c2b32d : Automatic translation import <Abhisek Devkota> 7 days ago
+ 
+**** github:LineageOS/android_packages_apps_Dialer ****
+d5d1e69 : Automatic translation import <Abhisek Devkota> 7 days ago
+ 
+**** github:LineageOS/android_packages_apps_FlipFlap ****
+a2a3357 : Automatic translation import <Abhisek Devkota> 7 days ago
+ 
+**** github:LineageOS/android_packages_apps_Gallery2 ****
+ed6763f : Automatic translation import <Abhisek Devkota> 7 days ago
+ 
+**** github:LineageOS/android_packages_apps_PhoneCommon ****
+be5e9c9 : Automatic translation import <Abhisek Devkota> 7 days ago
+ 
+**** github:LineageOS/android_packages_apps_Recorder ****
+9b9c5c9 : Automatic translation import <Abhisek Devkota> 7 days ago
+ 
+**** cmR:android_packages_apps_Settings ****
+3ad29eb : Automatic translation import <Abhisek Devkota> 7 days ago
+ 
+**** github:LineageOS/android_packages_apps_SetupWizard ****
+8518aa3 : Automatic translation import <Abhisek Devkota> 7 days ago
+ 
+**** github:LineageOS/android_packages_resources_devicesettings ****
+55faa1d : Automatic translation import <Abhisek Devkota> 7 days ago
+ 
+**** github:LineageOS/android_system_bt ****
+0ebf465 : Do not include the trailing NULL from the C-String in the SDP service name <Timm Korte> 5 days ago
+a4875a4 : resolve merge conflicts of a3ee2e35 to nyc-dev <Pavlin Radoslavov> 7 weeks ago
+ 
+**** github:LineageOS/android_system_core ****
+e6e89f9 : libcutils: only change cgroup when fd is initialized [ DO NOT MERGE ] <Wei Wang> 7 weeks ago
+73c917f : init.rc: remove bg_non_interactive cgroup [ DO NOT MERGE ] <Wei Wang> 7 weeks ago
+ 
+**** github:LineageOS/android_system_extras_su ****
+7344440 : su: Don't start daemon for adb only mode <Gabriele M> 6 days ago
+ 
+**** cmR:android_vendor_CMRemix ****
+177ab03 : cm: nuke browser, welcome jelly <Joey Rizzoli> 2 weeks ago
+ca8cd53 : cm: Remove obsolete and unused overlays and configs <Arne Coucheron> 6 days ago
+ 
+**** cmR:cm_platform_sdk ****
+e2c64b8 : Automatic translation import <Abhisek Devkota> 7 days ago
+ 

@@ -1,0 +1,56 @@
+
+**** github:LineageOS/android_prebuilts_gcc_linux-x86_arm_arm-linux-androideabi-4.9 ****
+135a357 : arm-linux-androideabi-gcc (UBERTC-4.9.4) 4.9.4 <infectedmushi> 4 days ago
+ 
+**** github:CMRemix/zion959-proprietary_vendor_samsung ****
+f00ff27 : klte: update the blobs <crimsonthunder> 11 days ago
+523c39c : update klte files <crimsonthunder> 4 weeks ago
+f2d5376 : trlte: partially revert 5cc1a8978c1e5637a8d9162fc2b1a018471cc18d <Juha Inkinen> 5 weeks ago
+5cc1a89 : trlte: update from N910FXXS1DQC3 <crimsonthunder> 5 weeks ago
+25d415d : trltexx: libuiblur is now in trlte-common <Juha Inkinen> 5 weeks ago
+07390ff : trlte: add libuiblur <underscoremone> 8 weeks ago
+bb18885 : ims: Comment out IMS-related services, for now... <Juha Inkinen> 7 weeks ago
+33cd6c3 : ims: squashed commits for IMS/VoLTE and some others <Juha Inkinen> 2 months ago
+e19b453 : Updated/reverted to Adreno drivers from N910F DQA1. <Juha Inkinen> 9 weeks ago
+958ca0f : trltespr: update blobs <SaintZ13> 8 weeks ago
+8beef46 : trlte: update adreno drivers <underscoremone> 2 months ago
+0f3ea22 : trlte: add aptX codec support <underscoremone> 2 months ago
+46921a1 : trltespr: Revert "Updated DPL2 Bluetooth blobs" <SaintZ13> 2 months ago
+f1552e6 : trltespr: fix derp <Mike> 2 months ago
+03efd2d : trltespr: revert back to old blobs <SaintZ13> 2 months ago
+88b72a4 : trlte: Update widevine libraries kang from bullhead (N4F26I, Jan 2017) <underscoremone> 3 months ago
+8302e03 : back to TimeService.apk/time_genoff/time_daemon functionality because BOARD_USES_QC_TIME_SERVICES not works really well <mobspyguy> 4 months ago
+3d68609 : Restore original mdm_helper and mdm_helper_proxy <Juha Inkinen> 2 months ago
+c30b3a9 : Add libuiblur.so from shamu <Juha Inkinen> 2 months ago
+67a1da5 : Updated QMI stack blobs to shamu N6F26R <Juha Inkinen> 2 months ago
+2548b09 : fixed derp again <Mike> 2 months ago
+be28a1e : trltespr: fixed derp <Mike> 2 months ago
+2524c21 : Switch to source-built rmnetctl <SaintZ13> 2 months ago
+668a916 : Kangbang Shamu's qmi stack. libxml.so was removed from common <SaintZ13> 2 months ago
+860c7e2 : trltespr: Updated DPL2 Bluetooth blobs <SaintZ13> 3 months ago
+d8c4299 : Switch to source-built rmnetctl <Juha Inkinen> 3 months ago
+2aa9fb1 : Fix BT FW copied file name <Juha Inkinen> 4 months ago
+e964c8c : Kangbang Shamu's qmi stack. libxml.so was removed from common <Jacob McSwain> 8 months ago
+a9f1a53 : Updated DPL2 Bluetooth blobs <Juha Inkinen> 4 months ago
+e9f4c44 : add klte blobs <crimsonthunder> 4 months ago
+4c45a61 : trltespr: correctly updated PG1 blobs <SaintZ13> 8 months ago
+d9ccead : trltespr: temp delete spr <SaintZ13> 8 months ago
+2487d01 : trltespr: blob update to PG1 <SaintZ13> 8 months ago
+b33404a : trlte-common: back to stock GPU blobs <Pafcholini> 9 months ago
+ca2fc22 : trltespr: fixed gps derp <SaintZ13> 9 months ago
+f0eede1 : trltespr: gps updates <SaintZ13> 9 months ago
+5e34388 : Updated GPS Blobs To PE1 <SaintZ13> 9 months ago
+49e30de : trltespr: added back missing blobs <SaintZ13> 10 months ago
+9185517 : trltespr: fixed derp <Mike> 10 months ago
+5ed9c05 : trltespr: removed unused gps blobs <SaintZ13> 10 months ago
+5fb9cad : trlte-common: update GPU blobs <Pafcholini> 10 months ago
+25a50e2 : trltespr: fixed BT issue <Mike> 11 months ago
+5afa59e : vendor: fix BT issue <Pafcholini> 11 months ago
+99566a4 : trlte-common: don't overwrite libxml2.so <placiano> 11 months ago
+d7a47f5 : trltespr: uploaded missing blob <SaintZ> 11 months ago
+2c0b3a3 : trltespr: fixed gps and moved it to common <SaintZ> 11 months ago
+a2e1a4c : trltespr: fixed gps and moved it to common <SaintZ> 11 months ago
+13d7344 : trltespr: fixed gps and moved it to common <SaintZ> 11 months ago
+3c00e8d : trltespr: fixed gps and moved it to common <SaintZ> 11 months ago
+72a4f04 : trlte-common: add missing audio blob <Pafcholini> 11 months ago
+ 

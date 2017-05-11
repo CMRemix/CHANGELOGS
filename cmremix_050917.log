@@ -1,0 +1,96 @@
+
+**** github:CMRemix/android_device_samsung_trlte-common ****
+944f500 : bring back old camera <ZION959> 7 hours ago
+f9d9f3e : build SnapdragonCamera <ZION959> 7 hours ago
+ 
+**** cmR:android_frameworks_base ****
+d65dd41 : derp fixed <ZION959> 13 hours ago
+55bf710 : Fix Weather LS Text <Varun Date> 7 months ago
+a741117 : SysUI: Update NFC tile Icon & Fix KA and LTE tiles LongClick Actions <Varun Date> 7 months ago
+f2a8b59 : Qs:SCreen Record Tile <eyosen> 7 months ago
+b4efe6c : SysUI: Add KA tile <cuzz1369> 7 months ago
+69fa121 : SysUI: Add LTE Tile <Decad3nce> 7 months ago
+ecb3e63 : Re-arange Power Menu Constants <Varun Date> 7 months ago
+dc9dd29 : LockScreen Weather Settings & Improvements [1/2] <XXMrHyde> 7 months ago
+c9e3add : SystemUI: StatusBar Weather [SQUASHED] [1/2] <LorDClockaN> 7 months ago
+9dc9c2a : On-The-Go Mode (1/2) <Alexander Martinz> 1 year, 8 months ago
+24c1daa : Powermenu Torch option [1/2] <LorDClockaN> 1 year, 2 months ago
+f0237c1 : FWB: App picker tile (1/2) <LorDClockaN> 1 year, 3 months ago
+8cdf1fc : FBW: Add DancingScript / ComingSoon / NotoSerif to Statusbar Clock (1/2) <Janson Kang> 1 year, 3 months ago
+1aae134 : FWB: Option for date style/position, left-right of clock (1/2) <Jean-Pierre Rasquin> 1 year, 3 months ago
+1d94369 : core: CMRemix is upgrading! <ZION959> 25 hours ago
+368286d : SystemUI: Remove mclockview <Janson Kang> 1 year, 5 months ago
+8ac0cd1 : FWB: Statusbar clock font size (1/2) <Janson Kang> 1 year, 8 months ago
+da77cf2 : FWB: Make all 14 font variants available to Statusbar Clock (1/2) <Janson Kang> 1 year, 8 months ago
+9f86997 : Status bar clock: Add BOLD ITALIC to font style (1/2) <Janson Kang> 1 year, 8 months ago
+ea946c6 : Statusbar clock font style (1/2) PS1: Initial PS2: Int settings <Daniel MM> 3 years, 4 months ago
+a5fa453 : Add back slim date customizations <Allan Hedelain> 1 year, 6 months ago
+99e76e0 : Enable advanced power menu by default <westcripp> 1 year, 5 months ago
+6801f72 : [QUICK SETTINGS] Add Caffeine QS Tile <Keith Mok> 1 year, 3 months ago
+87438cf : [QUICK SETTINGS] Add CMRemix configurations Tile <ZION959> 25 hours ago
+c9a9610 : FWB: Add clock/date in recents while in fullscreen mode (1/2) <LorDClockaN> 1 year, 4 months ago
+eefc53c : Return: Smart Pulldown [1/2][Squashed] <Lars Greiss> 2 years, 5 months ago
+3055615 : QS: Add toggle for fancy QS animation [1/2] <BeansTown106> 8 months ago
+2e56ee4 : SysUI:Dont Build Expanded Desktop Tile for Now <Varun Date> 8 months ago
+482b7db : [QUICK SETTINGS] Add IME selector QS Tile <Alex Cruz> 1 year, 3 months ago
+2e6754b : [QUICK SETTINGS] Add Music QS Tile <kufikugel> 1 year, 5 months ago
+c8c9868 : [QUICK SETTINGS] Add USB Tether QS Tile <BestPig> 8 months ago
+390a9a1 : [QUICK SETTINGS] Add Expanded Desktop QS Tile <Altaf-Mahdi> 8 months ago
+eadd848 : [QUICK SETTINGS] Add Sync QS Tile <Altaf-Mahdi> 8 months ago
+c3b86bd : [QUICK SETTINGS] Move ADB_ENABLED to "Global" <Michael W> 1 year, 1 month ago
+b5ba9cb : [QUICK SETTINGS] Add adb over network QS Tile <Danesh M> 8 months ago
+49d8e65 : [QUICK SETTINGS] Make sure screenshot Qs and power menu icons match <Alex Cruz> 10 months ago
+d0c40df : [QUICK SETTINGS] Allow for all tiles to be overlay if needed <Alex Cruz> 8 months ago
+c309dc9 : [QUICK SETTINGS] Add Screenshot QS Tile <Altaf-Mahdi> 8 months ago
+d8d86f4 : [QUICK SETTINGS] Add metrics constant for Quick settings tiles <ZION959> 25 hours ago
+ 
+**** cmR:android_packages_apps_Settings ****
+09a5bcc : add battery bar fragment <ZION959> 23 minutes ago
+a25723d : derp fixed <ZION959> 3 hours ago
+11844d7 : Selinux Switch <Alex> 4 hours ago
+40b494b : LongPress Power Menu for Torch when Screen is OFF [2/2] <beanstown106> 4 hours ago
+33d90fe :  Ambient display: Battery status (2/2) <XXMrHyde> 4 hours ago
+76e19d0 : Settings : Statusbar BatteryBar (2/2) <ZION959> 4 hours ago
+a682c6a : Double Tap to Sleep Anywhere on LockScreen [2/2] <Altaf-Mahdi> 8 months ago
+4de675e : App sidebar (2/2) <0xD34D> 5 hours ago
+1b1ab69 : Lockscreen Shorcuts [2/2] <ZION959> 5 hours ago
+45acd2a : Hide power Menu on Lockscreen RR Edits: Add Lockscreen Settings Fragment <Altaf-Mahdi> 5 hours ago
+ac14b7e : derp fixed <ZION959> 5 hours ago
+68e5d83 : Gesture Anywhere : Bring it Back [2/2] <0xD34D> 4 months ago
+d7462b9 : Settings:3G Icon Instead Of H+ Switch [2/2] <varund7726> 5 hours ago
+ad80a2c : Show 4G instead of LTE Switch [2/2] <Alex> 5 hours ago
+a4903f4 : Disable dashboard suggestions [2/2] <Alex> 8 months ago
+afa8f31 : Disable dashboard suggestions [2/2] <Alex Cruz> 5 hours ago
+a8a58a2 : Immersive Recents [2/2] <varund7726> 5 hours ago
+8aa5aae : {SQUASHED} Add Interpolators & Animations to Qs Tiles <Nico60> 5 hours ago
+d126962 : Settings: Add Qs Panel Fragment <varund7726> 5 hours ago
+7fbb085 : Settings : Add 7 more power menu animations [2/2] - Fly - Slide - Turn - Glow - 3D - Translucent (top) - Translucent (bottom) Signed-off-by: westcripp <korukaltan@gmail.com> <westcripp> 8 months ago
+954f0cb : Rotation anim to Power and reboot menu [2/2] <LorDClockaN> 8 months ago
+9fa166b : Power Menu animations [2/2] <Alex Cruz> 5 hours ago
+c9ea408 : [squash] Color picker <XXMrHyde> 8 months ago
+5c670ed : settings: add general string <ZION959> 7 hours ago
+77f3877 : [SQUASHED]SeekBarPreferenceCham: Expand with buttons <LorDClockaN> 4 months ago
+0e629d9 : CMRemix logo in the statusbar [2/2] <LorDClockaN> 10 hours ago
+52e71f0 : Settings: add SeekBarPreference <0xD34D> 11 hours ago
+d0d92c3 : Settings: network traffic meter <Altaf-Mahdi> 11 hours ago
+c5a3297 : Settings:Add MemBar to Recents [2/2] <ZION959> 4 months ago
+1884d2d : Add Cpu & Mem Info <mnm9994u> 11 hours ago
+18f3adf : {SQUASHED} Foce Expand Notifications & Disable Immersive Mode Messages <Myself5> 11 hours ago
+b3acac9 : {SQUASHED} Foce Expand Notifications & Disable Immersive Mode Messages <MrApocalypse> 11 hours ago
+40c4004 : Enable\Disable bluetooth battery status[2/2][MrApocalypse] <MrApocalypse> 4 months ago
+81e9b05 : Toast Icon Switch [2/2] <LorDClockaN> 11 hours ago
+010a5af : Live Volume Steps [2/2] <Meticulus> 11 hours ago
+b2785e9 : AOKP animations: Add and entry for TRANSIT_TASK_OPEN_BEHIND <cristianomatos> 11 hours ago
+ed848bf : Add option to disable scrolling cache [1/2] <pastime1971> 8 months ago
+bb655bd : Allow toggling animations off [2/2] <shuhaowu> 8 months ago
+1f43239 : Return: Listanimation Views and Interpolator [2/2] <jkl5616> 8 months ago
+ebc86c6 : SS - XuiMod: Toast Animations [2/2] <GwonHyeok> 8 months ago
+5b5cc18 : AOKP custom system animations (2/2) <Stevespear426> 8 months ago
+c782d22 : settings: add CMRemix configuration Settings <ZION959> 5 months ago
+6993fb5 : add changelog to CMRemix Settings (crdroid) <ZION959> 6 months ago
+8e68195 : CMRemix updater OTA <ZION959> 1 year, 5 months ago
+debc1a2 : CMRemix Version <ZION959> 11 hours ago
+ 
+**** github:LineageOS/android_packages_services_Telephony ****
+2ec282a : Fix Lte Tile <Varun> 1 year, 4 months ago
+ 

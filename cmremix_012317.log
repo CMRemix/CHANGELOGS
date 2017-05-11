@@ -1,0 +1,24 @@
+
+**** cmR:CHANGELOGS ****
+42d9c59 : Update 1-22-2017 <ZION959> 2 days ago
+ 
+**** cmR:android_vendor_CMRemix ****
+9ec810f : apns: Add Freedompop foggmobile APN <Eloi Carracedo> 4 days ago
+46973d7 : bootanimation: get all the parts <Dan Pasanen> 4 days ago
+b48c27f : build: Append -dtb to kernel image name if TARGET_KERNEL_APPEND_DTB is set <Rashed Abdel-Tawab> 2 weeks ago
+070053c : cm: bootanimation: Improve boot animation <Asher Simonds> 7 days ago
+3c6bdac : extract_utils: Detect output existence before moving it for backup <Adrian DC> 9 days ago
+e796a28 : cm: bootanimation: Clear intermediaries <Zhao Wei Liew> 6 days ago
+e035b9a : vendor: lineage boot animation <Asher Simonds> 7 days ago
+ffdd0dc : Sepolicy: Add perm for find cmstatusbar <micky387> 12 days ago
+a18b057 : cm: config: Remove obsolete props <Zhao Wei Liew> 11 days ago
+6af9acb : Disable SU by default <Abhisek Devkota> 4 weeks ago
+f2d6fe2 : vendorsetup: match lineage naming for build roster <Abhisek Devkota> 9 days ago
+e407ec7 : cm: build: kernel: Remove obsolete checks <Zhao Wei Liew> 11 days ago
+7c3adf8 : vendor: Add maintainers of Moto G4/G4 Plus (athene) <rahulsnair> 5 weeks ago
+7f001b1 : overlay: Enable Visual Voicemail for Verizon devices <David Hays> 11 days ago
+54648c2 : build: kernel: build arm kernel modules with -fno-pic <Ziyan> 11 days ago
+20c06fd : http_prebuilt: Improve retrieval of artifacts from archive <David Marble> 12 days ago
+0e57974 : apns: Update H2O Wireless <Matt Mower> 13 days ago
+6679251 : http_prebuilt: Implement archive of artifacts <Brandon McAnsh> 3 weeks ago
+ 
