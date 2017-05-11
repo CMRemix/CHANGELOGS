@@ -1,6 +1,0 @@
-
-**** cmR:android_frameworks_base ****
-098d195 : fixed build <linus_lee> 1 year, 11 months ago
-a8c3522 : revert: SystemUI: Use Tuner API for CM settings Get rid of all the excess code by implementing TunerService.Tunable and observing any changes made to the settings through it. <ZION959> 41 minutes ago
-7d08276 : derp <ZION959> 42 minutes ago
- 
