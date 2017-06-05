@@ -1,0 +1,57 @@
+
+**** cmR:android_frameworks_base ****
+c18f061 : Disable Quick Settings on secure lockscreen (1/2) <Lars Greiss> 23 hours ago
+e4cf51f : onLongClick Settings button for cmr Configurations <beanstown106> 7 months ago
+ 
+**** cmR:android_packages_apps_CMParts ****
+58e24bd : CMParts: add brightness slider tunables <Joey Rizzoli> 2 weeks ago
+1e3c0b4 : Automatic translation import <Abhisek Devkota> 3 weeks ago
+6c08995 : Automatic translation import <Abhisek Devkota> 4 weeks ago
+f9c8771 : PerfProfileSettings: Update slider on powersave mode change <Gabriele M> 2 months ago
+9198d84 : CMParts: Update quick QS pull-down summary for translation <Elektroschmock> 8 weeks ago
+4f90b17 : Fix reorientation of volume buttons on portrait tablets <LuK1337> 7 weeks ago
+8812ebc : Automatic translation import <Abhisek Devkota> 7 weeks ago
+52da3c9 : Automatic translation import <Abhisek Devkota> 8 weeks ago
+cf97207 : Automatic translation import <Abhisek Devkota> 8 weeks ago
+ecf8514 : CMParts: update contributors db <Dan Pasanen> 9 weeks ago
+3eb44d4 : Automatic translation import <Abhisek Devkota> 9 weeks ago
+f23ab55 : Automatic translation import <Abhisek Devkota> 10 weeks ago
+f1970ae : Automatic translation import <Michael W> 3 months ago
+3d5ba1e : [2/3] CMParts: single hand for hardware keys <Joey Rizzoli> 3 months ago
+727f8a8 : Update style to match the one of Settings <Gabriele M> 3 months ago
+13d143f : Disable quick pulldown by default <Gabriele M> 3 months ago
+4677ce6 : CMParts: activate nfc trigger for system profiles <Maxim Becker> 3 months ago
+dea46f0 : Automatic translation import <Abhisek Devkota> 3 months ago
+e22fd0a : CMParts: Restructure status bar settings <Hendrik Hagendorn> 4 months ago
+4b7a7ea : CMParts: KeyHandler: Add User to broadcast <Michael W> 3 months ago
+9a98f20 : Automatic translation import <Abhisek Devkota> 3 months ago
+0fe94be : CMParts: Fix email and browser intents <Michael W> 3 months ago
+40372a5 : Automatic translation import <Abhisek Devkota> 3 months ago
+a1321a1 : CMParts: Replace variable for setup wizard complete <Paul Keith> 3 months ago
+42f88dc : Automatic translation import <Abhisek Devkota> 3 months ago
+280d420 : CMParts: Add strings for sRGB <dianlujitao> 3 months ago
+03fb141 : Move status bar settings back to personal category. <Danny Baumann> 4 months ago
+10fe26d : Automatic translation import <Abhisek Devkota> 3 months ago
+9e4fe06 : CMParts: strings: Fix indentation <dianlujitao> 3 months ago
+834a19f : CMParts: gestures: Specify a qualified user for update broadcast <Zhao Wei Liew> 3 months ago
+212d44b : Automatic translation import <Abhisek Devkota> 3 months ago
+705b11b : Automatic translation import <Abhisek Devkota> 3 months ago
+03d2f8e : Add "Letter V" string <LuK1337> 3 months ago
+5a1307b : Automatic translation import <Abhisek Devkota> 3 months ago
+58f50a1 : CMParts: Clean out imports <Michael W> 3 months ago
+910ff32 : CMParts: Simplify long press for torch strings <Bruno Martins> 3 months ago
+027357d : Automatic translation import <Abhisek Devkota> 3 months ago
+f1ccf80 : CMParts: Long-press power while display is off for torch <beanstown106> 1 year, 4 months ago
+b101045 : CMParts: Clean up status bar settings class <Zhao Wei Liew> 4 months ago
+23b59db : CMParts: power: Resolve 'automatic optimization' state issues <Zhao Wei Liew> 3 months ago
+d92491d : CMParts: Update quick QS pull-down entries for RTL layouts <Zhao Wei Liew> 4 months ago
+c42152e : CMParts: Don't update status bar clock summary on RTL <Zhao Wei Liew> 4 months ago
+6cde43d : CMParts: Update quick QS pull-down summary on pref change <Zhao Wei Liew> 4 months ago
+9f19e4a : Automatic translation import <Abhisek Devkota> 4 months ago
+661ea53 : CMParts: Move status bar tap to sleep pref to Settings <Zhao Wei Liew> 4 months ago
+2ccca73 : CMParts: Add touchscreen gesture settings and keyhandler <Zhao Wei Liew> 4 months ago
+c82eb89 : CMParts: buttons: Remove double tap power for camera setting <Zhao Wei Liew> 4 months ago
+8173995 : Automatic translation import <Abhisek Devkota> 4 months ago
+3111720 : CMParts: Improve stats collection summary <Zhao Wei Liew> 4 months ago
+7a47290 : CMParts: Add reading mode strings <Luca Stefani> 4 months ago
+ 

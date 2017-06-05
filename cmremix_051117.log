@@ -1,0 +1,66 @@
+
+**** cmR:CHANGELOGS ****
+42cecc3 : remove old <ZION959> 24 hours ago
+ 
+**** cmR:android_build ****
+0773cfe : format system partition before install rom <ZION959> 26 hours ago
+68f35c8 : Set metadata on bootzip <Andreas Blaesius> 1 year, 9 months ago
+ab54803 : Add back mka bootzip <RobbieL811> 2 years ago
+ 
+**** github:CMRemix/android_device_samsung_trlte-common ****
+1e1b83f : trlte: camera update <underscoremone> 3 months ago
+c4ce512 : update camera <Pafcholini> 5 months ago
+bc0ec1d : revert: cm-14.1 git rid of gps for now <ZION959> 6 hours ago
+774c573 : revert: cm-14.1 get rid of camera for now <ZION959> 6 hours ago
+88abfde : trlte-common: fixed fingerprint <ZION959> 6 hours ago
+0e6ba94 : trlte-common: prepared new camera for N <ZION959> 27 hours ago
+ 
+**** cmR:android_frameworks_base ****
+3f560a8 : Add Option to Choose CMRemix Configurations layout [1/2] <varund7726> 2 hours ago
+80bed5d : Settings:Add option to turn CMREMIX config FAB off [2/2] <varund7726> 3 hours ago
+ 
+**** github:CMRemix/android_kernel_samsung_trlte ****
+22a9c34 : Add faux'es IntelliThermal <gekkehenkie11> 1 year, 10 months ago
+ 
+**** cmR:android_packages_apps_Settings ****
+3ee70dd : Fix Kill app Back Button SwitchPreference <varund7726> 18 minutes ago
+67e1145 : Add Option to Choose CMRemix Configurations layout [2/2] <varund7726> 75 minutes ago
+49dc86e : Settings:Fix Some Fragments <ZION959> 3 hours ago
+84bb689 : Settings:Add Option to Disable FAB off [1/2] <Varun Date> 7 months ago
+24bcfe5 : Configurations: Bring in FAB on Tabs View --Add links to OTA APP --Link FAB to OTA APP <Varun Date> 7 months ago
+c6f23c7 : CMRemix Configurations:Massive Overhaul <varund7726> 4 hours ago
+ 
+**** cmR:android_vendor_CMRemix ****
+9769b84 : fixed 1600.zip bootanimation <ZION959> 7 hours ago
+c1f12f0 : revert : we use our own bootanimation, goodbye! <ZION959> 7 hours ago
+ae2cf94 : vendor: general update <ZION959> 24 hours ago
+ 
+**** github:CMRemix/zion959-proprietary_vendor_samsung ****
+f54f85d : revert: move libbt-vendor.so to fixed bluetooth issue <ZION959> 8 months ago
+75d48b7 : revert: fixed build error for libbt-vendor.so <ZION959> 8 months ago
+6f91b29 : trltexx: update MMB29M.N910GDTS1DPG1 proprietary <ZION959> 8 months ago
+277a7ae : update blobs for trltexx N910GDTU1DPE3 <ZION959> 8 months ago
+6ffc335 : derp fixed <ZION959> 8 months ago
+9a0040f : trlte: add back com.qualcomm.location.apk <ZION959> 8 months ago
+d5f4d05 : fixed build error for libbt-vendor.so <ZION959> 9 months ago
+00f7aaa : move libbt-vendor.so to fixed bluetooth issue <ZION959> 9 months ago
+1b81acd : trlte-common: bring back LL bluetooth firmware <ZION959> 9 months ago
+524256c : trlte-common: update TimeService.apk to fix error issue at boot <ZION959> 9 months ago
+0a63c86 : fixed call audio issue & location issues & update ril blobs <ZION959> 9 months ago
+c926731 : trltetmo: update MM blobs MMB29M.N910TUVS2EPG2 <ZION959> 9 months ago
+6d91a96 : trlte-common: commonize gps blobs <ZION959> 11 months ago
+40855c6 : trlte-common: bring back LL bluetooth proprietary firmware to fixed call bugs <ZION959> 12 months ago
+ccabd14 : update device specific MM Samsung Firmware for trltexx & trltetmo, trltespr, trlteusc. <ZION959> 12 months ago
+85dba6d : trlte-common: bring back LL bluetooth proprietary firmware to fixed call bugs <ZION959> 12 months ago
+6ecf158 : trlte-common: commonize bluetooth & nfc firmware <ZION959> 12 months ago
+d04b365 : update bluetooth proprietary for all trlte varients <ZION959> 12 months ago
+6787c2f : revert: trlte-common: update Adreno-Nexus6-MOB30D proprietary (apr-2016) <ZION959> 12 months ago
+616a32f : trlte-common: update Adreno-Nexus6-MOB30D proprietary (apr-2016) <ZION959> 1 year ago
+6cfbfd8 : trlte-common: update Samsung 6.0.1 MMB29M N910GDTU1DPB6 proprietary <ZION959> 1 year ago
+e4ddff2 : trlte varients: Fix bluetooth share fc after CM merge (6.0.1r30) <ZION959> 1 year ago
+3494212 : trlte-common: update Adreno-Nexus6-MMB29V proprietary <ZION959> 1 year, 1 month ago
+a0a90df : trlte-common: update Samsung 6.0.1 DRM propritetary <ZION959> 1 year, 1 month ago
+e7f7753 : trlte-common: update Samsung 6.0.1 adreno & drm proprietary <ZION959> 1 year, 2 months ago
+6129e71 : Fix date and time reset at every boot The issue of the reset of the date and time on every reboot was caused by mismanagement of the binary time daemon. When it is replaced by this new file the error is resolved. <placiano> 1 year, 3 months ago
+eb7ac07 : trlte-common: add sensorhubs <ZION959> 1 year, 2 months ago
+ 

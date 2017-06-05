@@ -1,0 +1,161 @@
+
+**** github:CMRemix/android_device_samsung_trlte-common ****
+114ed5d : cmremix's fy <ZION959> 77 minutes ago
+836b966 : trlte: cmhw update <underscoremone> 3 weeks ago
+5ab717f : trlte: BoardConfigCommon: Remove LOCAL_PATH := <underscoremone> 3 weeks ago
+f4b4b8c : trlteRIL: bring back handleNitzTimeReceived <bryan2894> 5 weeks ago
+c8cc0d2 : trlte-common: Quiet "KERNEL IS NOT SEANDROID ENFORCING" boot message <Kevin F. Haggerty> 3 months ago
+30d7ff1 : trlte: liblights: Remove device level HAL <underscoremone> 7 weeks ago
+b94212d : trlte: reorganize sepolicy <underscoremone> 7 weeks ago
+bc63873 : trlte: init.qcom.rc: Updates from DQB4 <underscoremone> 7 weeks ago
+e1f4d61 : trlte: Fix libshims mess <underscoremone> 8 weeks ago
+d2c5408 : trlte: reorganize trlte.mk <underscoremone> 8 weeks ago
+3f3baf2 : trlte: sepolicy: address vold denials <underscoremone> 8 weeks ago
+6227ccd : trlte: Enable blur <underscoremone> 9 weeks ago
+9e4b894 : trlte: Add support for 2160p media profile <underscoremone> 9 weeks ago
+182c28f : trlte-common: make swap working as it should <OzzysCmAcc> 3 months ago
+e149b4a : trlte-common: move ril prop to system_prop <OzzysCmAcc> 3 months ago
+c6f2dc3 : trlte: add f2fs support for data and cache <underscoremone> 9 weeks ago
+52a5f11 : Revert "trlte: Fix video autoscaling" <underscoremone> 9 weeks ago
+098b30b : trlte: Fix restart freezing by adding a shutdown timeout to system.prop <underscoremone> 9 weeks ago
+ccc89de : trlte: add back bluetooth overlay <underscoremone> 9 weeks ago
+1673f47 : Revert "trlte-common: restorecon /data/time during init" <underscoremone> 10 weeks ago
+1c39556 : trlte: clean up <underscoremone> 2 months ago
+6c1dd40 : trlte: sepolicy update <underscoremone> 3 months ago
+67b36be : trlte: Don't build Snap <underscoremone> 2 months ago
+6fa540a : trlte: Allow tethering without provisioning app <underscoremone> 2 months ago
+a6cf802 : trlte: Fix video autoscaling <underscoremone> 3 months ago
+e396ff3 : trlte: add aptX codec support <underscoremone> 3 months ago
+b9c050f : trlte: BoardConfigCommon: Update partitions size <underscoremone> 3 months ago
+ca101be : system_prop: remove mm.enable.smoothstreaming=true <Pafcholini> 3 months ago
+4b30deb : trlte: Use phone-xxhdpi-3072-hwui-memory config * Fixes out of memory crashes of G+ and other apps <elektroschmock> 3 months ago
+5b3a54c : trlte: camera update <underscoremone> 3 months ago
+efa4131 : trlte: configs: updates from DQA1 <underscoremone> 3 months ago
+99812c2 : trlte: power: switch back to qcom powerhal <underscoremone> 3 months ago
+05a4ddc : trlte: switch to TimeKeep <underscoremone> 3 months ago
+ae591ca : trlte: Add PCC calibration interface <Steve Kondik> 2 years, 2 months ago
+51c73bb : trlte: Enable FlipFlap <fattire> 4 months ago
+2dec076 : trlte: fstab update <underscoremone> 4 months ago
+350085a : trlte: sepolicy update <underscoremone> 4 months ago
+7283e21 : trlte-common: Fix rotation sensor <micky387> 4 months ago
+07fa3a8 : trlte-common: Fix Sim and telephony database <micky387> 4 months ago
+bc10359 : trlte-common: restorecon /data/time during init <micky387> 5 months ago
+fb7c44b : trlte: BoardConfigCommon and system.prop update <fattire> 4 months ago
+39672d9 : trlte: rootdir update <underscoremone> 4 months ago
+a841c72 : trlte: sepolicy update <underscoremone> 4 months ago
+317116f : Revert "trlte-common: re-add cpusets (and everyone rejoiced)" <underscoremone> 4 months ago
+a19ea1b : trlte: Enable Gello <underscoremone> 4 months ago
+428fa9a : trlte-common: Rebrand to LineageOS <underscoremone> 4 months ago
+f6dda6d : trlte: add kernel toolchain <underscoremone> 4 months ago
+3b8d9c1 : trlte: overlay: update <underscoremone> 4 months ago
+483d42d : Enable Snap <underscoremone> 4 months ago
+b3a0950 : trlte: proprietary-files update <underscoremone> 4 months ago
+ 
+**** github:CMRemix/android_kernel_samsung_trlte ****
+a235e3b : trlte: use xz as default compression <ZION959> 2 weeks ago
+7ba94ce : msm8x84: update kernel header for msm video <fattire> 9 weeks ago
+813858c : msm: vidc: Send resolution along with output buffer <Maheshwar Ajja> 2 years, 9 months ago
+6797344 : setup: fix wifi for G variant <Pafcholini> 10 months ago
+77ea0e7 : set default comppression XZ for trltexx <ZION959> 12 months ago
+a1708b4 : msm: mdss: kcal: Only apply updates on index 0 <savoca> 1 year, 7 months ago
+342e3788 : msm: mdss: kcal: Use PCC for negative display mode <savoca> 1 year, 7 months ago
+adbfc29 : msm: mdss: KCAL: Send a pp display commit when changes are made <savoca> 1 year, 8 months ago
+1d7671c : msm: mdss: KCAL: Do not read from picture adjustment registers <savoca> 2 years ago
+03b72b6 : msm: mdss: KCAL: Read values from MDP registers wherever possible <savoca> 2 years, 1 month ago
+81292b6 : msm: vidc: Remove compat ioctl definition from vidc driver <Praneeth Paladugu> 1 year, 8 months ago
+db8308c : trlte: enable squashfs <ZION959> 12 months ago
+251873f : fixed compilation <ZION959> 12 months ago
+b34173e : Squashfs: Add LZ4 compression configuration option <Phillip Lougher> 2 years, 5 months ago
+36037a8 : Squashfs: add LZ4 compression support <Phillip Lougher> 2 years, 6 months ago
+c140ebc : fs/squashfs/super.c: logging cleanup <Fabian Frederick> 2 years, 9 months ago
+4cc6044 : fs/squashfs/file_direct.c: replace count*size kmalloc by kmalloc_array <Fabian Frederick> 2 years, 9 months ago
+7e93f48 : fs/squashfs/squashfs.h: replace pr_warning by pr_warn <Fabian Frederick> 2 years, 11 months ago
+9ddc59a : fs: push sync_filesystem() down to the file system's remount_fs() <Theodore Ts'o> 3 years, 2 months ago
+174423e : Squashfs: fix failure to unlock pages on decompress error <Phillip Lougher> 3 years, 6 months ago
+87031b3 : Squashfs: Check stream is not NULL in decompressor_multi.c <Phillip Lougher> 3 years, 6 months ago
+4d82d31 : Squashfs: Directly decompress into the page cache for file data <Phillip Lougher> 3 years, 6 months ago
+99d058f : Squashfs: Restructure squashfs_readpage() <Phillip Lougher> 3 years, 6 months ago
+113842c : Squashfs: Generalise paging handling in the decompressors <Phillip Lougher> 3 years, 6 months ago
+4e96f82 : Squashfs: add multi-threaded decompression using percpu variable <Phillip Lougher> 3 years, 6 months ago
+cedd6eb : squashfs: Enhance parallel I/O <Minchan Kim> 3 years, 7 months ago
+6b5b1ec : Squashfs: Refactor decompressor interface and code <Phillip Lougher> 3 years, 6 months ago
+5d4275b : Squashfs: add corruption check for type in squashfs_readdir() <Phillip Lougher> 3 years, 8 months ago
+d021ca7 : Squashfs: add corruption check in get_dir_index_using_offset() <Phillip Lougher> 3 years, 8 months ago
+91e313f : Squashfs: fix corruption checks in squashfs_readdir() <Phillip Lougher> 3 years, 8 months ago
+64b9d43 : Squashfs: fix corruption checks in squashfs_lookup() <Phillip Lougher> 3 years, 8 months ago
+2156b36 : Squashfs: fix corruption check in get_dir_index_using_name() <Phillip Lougher> 3 years, 8 months ago
+4e37483 : Squashfs: Optimized uncompressed buffer loop <Manish Sharma> 3 years, 8 months ago
+37a0686 : Squashfs: sanity check information from disk <Dan Carpenter> 3 years, 10 months ago
+487ec70 : [readdir] convert squashfs <Al Viro> 4 years ago
+1241bb9 : usb: gadget: mass_storage: added sysfs entry for cdrom to LUNs <FrozenCow> 3 years, 10 months ago
+32d0468 : UPSTREAM: block: disable entropy contributions for nonrot devices <Mike Snitzer> 2 years, 7 months ago
+85812b2 : UPSTREAM: lz4: fix wrong compress buffer size for 64-bits <Bongkyu Kim> 1 year, 4 months ago
+781801b : UPSTREAM: zram/zcomp: do not zero out zcomp private pages <Sergey Senozhatsky> 1 year, 4 months ago
+0a75172 : UPSTREAM: zram: pass gfp from zcomp frontend to backend <Minchan Kim> 1 year, 4 months ago
+83e9ae7 : UPSTREAM: zram: try vmalloc() after kmalloc() <Kyeongdon Kim> 1 year, 4 months ago
+c7f2f9e : UPSTREAM: zram/zcomp: use GFP_NOIO to allocate streams <Sergey Senozhatsky> 1 year, 4 months ago
+bc4fa1c : UPSTREAM: zram: avoid kunmap_atomic() of a NULL pointer <Weijie Yang> 2 years, 6 months ago
+9ef38e0 : UPSTREAM: math64: New separate div64_u64_rem helper <Mike Snitzer> 3 years, 9 months ago
+c5170d6 : UPSTREAM: lib/string.c: introduce strreplace() <Rasmus Villemoes> 1 year, 11 months ago
+4231dbb : UPSTREAM: KEYS: Separate the kernel signature checking keyring from module signing <David Howells> 3 years, 8 months ago
+7841156 : UPSTREAM: KEYS: Have make canonicalise the paths of the X.509 certs better to deduplicate <David Howells> 3 years, 8 months ago
+204e050 : UPSTREAM: KEYS: Load*.x509 files into kernel keyring <David Howells> 3 years, 8 months ago
+4b14ed2 : ASoC: wcd9320: Change headphone CnP settings <Sudheer Papothi> 2 years, 7 months ago
+ad67889 : kgsl: add page pool allocator <franciscofranco> 12 months ago
+ 
+**** cmR:android_vendor_CMRemix ****
+83137bd : update inline kernel build script <ZION959> 10 minutes ago
+4dfaeaf : remove old cm bootanimation and use cmremix <ZION959> 3 hours ago
+ 
+**** github:CMRemix/zion959-proprietary_vendor_samsung ****
+e5be2aa : trlte: Update adreno drivers <underscoremone> 8 weeks ago
+7a4f3e1 : trlte: add libuiblur <underscoremone> 9 weeks ago
+c2f7bba : trlte: add aptX codec support <underscoremone> 3 months ago
+b848587 : trlte: switch to TimeKeep <underscoremone> 3 months ago
+c7f60a3 : trltetmo: update <underscoremone> 3 months ago
+a2eb240 : trlte: Update widevine libraries kang from bullhead (N4F26I, Jan 2017) <underscoremone> 3 months ago
+0b9f2b7 : trlte-common/trltexx: Update bluetooth from N910FXXS1DQA1 <underscoremone> 3 months ago
+5dd2572 : trltetmo: updates from N910TUVS2EPK2 <underscoremone> 4 months ago
+1436720 : trltexx and trltetmo only <underscoremone> 4 months ago
+e9f4c44 : add klte blobs <crimsonthunder> 4 months ago
+4c45a61 : trltespr: correctly updated PG1 blobs <SaintZ13> 8 months ago
+d9ccead : trltespr: temp delete spr <SaintZ13> 8 months ago
+2487d01 : trltespr: blob update to PG1 <SaintZ13> 8 months ago
+b33404a : trlte-common: back to stock GPU blobs <Pafcholini> 9 months ago
+ca2fc22 : trltespr: fixed gps derp <SaintZ13> 9 months ago
+f0eede1 : trltespr: gps updates <SaintZ13> 9 months ago
+5e34388 : Updated GPS Blobs To PE1 <SaintZ13> 9 months ago
+49e30de : trltespr: added back missing blobs <SaintZ13> 10 months ago
+9185517 : trltespr: fixed derp <Mike> 10 months ago
+5ed9c05 : trltespr: removed unused gps blobs <SaintZ13> 10 months ago
+5fb9cad : trlte-common: update GPU blobs <Pafcholini> 10 months ago
+25a50e2 : trltespr: fixed BT issue <Mike> 11 months ago
+5afa59e : vendor: fix BT issue <Pafcholini> 11 months ago
+99566a4 : trlte-common: don't overwrite libxml2.so <placiano> 11 months ago
+d7a47f5 : trltespr: uploaded missing blob <SaintZ> 11 months ago
+2c0b3a3 : trltespr: fixed gps and moved it to common <SaintZ> 11 months ago
+a2e1a4c : trltespr: fixed gps and moved it to common <SaintZ> 11 months ago
+13d7344 : trltespr: fixed gps and moved it to common <SaintZ> 11 months ago
+3c00e8d : trltespr: fixed gps and moved it to common <SaintZ> 11 months ago
+72a4f04 : trlte-common: add missing audio blob <Pafcholini> 11 months ago
+b357f7a : trltespr: added proper gps libs <SaintZ> 12 months ago
+8964017 : trltespr: imported proper gps files <SaintZ> 12 months ago
+928e612 : trltespr: update MM blobs <Pafcholini> 12 months ago
+593b91d : trlte-common: Fix camera <placiano> 12 months ago
+2a39c4b : trlte-common: update Wifi firmware <placiano> 12 months ago
+a767fa8 : trltespr: removed bluetooth lines cashing crashes <SaintZ> 12 months ago
+863d459 : trltespr: removed bluetooth lib causing crashes <SaintZ> 12 months ago
+c5b636f : trltespr: removed bluetooth lib causing crashes <SaintZ> 12 months ago
+6e2c94e : trlte: Update blobs from N910FXXU1DPE1 <placiano> 12 months ago
+7eec799 : trlte: add old libs <placiano> 12 months ago
+3417fba : trlte: move the files to the correct path <placiano> 12 months ago
+75609aa : trlte: move libqcci_legacy.so to trltexx <placiano> 12 months ago
+331d587 : trlte-common: Add missing drm library <placiano> 12 months ago
+d6c6629 : trltexx: Update vendor-blobs.mk <placiano> 12 months ago
+7e85023 : trlte-common: Update vendor-blobs.mk <placiano> 12 months ago
+7d4bf50 : trlte-common: commonize bluetooth & nfc firmware <ZION959> 12 months ago
+4054ebd : trlte-common: update Adreno-Nexus6-MOB30I proprietary <placiano> 12 months ago
+109171d : trltexx: Update bluetooth firmware <placiano> 12 months ago
+4b1f04c : trltexx: add new BT blobs <Pafcholini> 12 months ago
+88c3d9a : update blobs trlte-common <placiano> 12 months ago
+ 

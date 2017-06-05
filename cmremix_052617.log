@@ -1,0 +1,84 @@
+
+**** cmR:android_build ****
+4075b06 : build: add option to disable opti <ZION959> 2 hours ago
+ 
+**** github:CMRemix/android_device_samsung_trlte-common ****
+01cec64 : build with Snap <ZION959> 3 days ago
+ 
+**** cmR:android_frameworks_base ****
+fa952ff : DUI: set bar IME hints when we add/change bar <bigrushdog> 7 months ago
+4b9a239 : DUI: Initialize package monitor class <bigrushdog> 7 months ago
+2b24f97 : Navigation Bar Tile <Nico60> 7 months ago
+5315a40 : Add QSDetailItems <Danesh M> 2 years, 4 months ago
+92ffb5d : Re-enable Expanded Desktop Tile <Varun Date> 7 months ago
+b13b1a2 : Fix up disabling HW buttons when navbar is enabled <LorDClockaN> 7 months ago
+1a4ec81 : DUI: Initial DUI checkin for N <bigrushdog> 24 hours ago
+71dc48d : Change screen pinning back to old gesture This makes the code a bit more complicated, but allows apps to receive long-press back again and also makes the mode harder to exit for toddlers. <ZION959> 26 hours ago
+4500c94 : statusbar: add screenPinningStateChanged(boolean enabled) api and pipe to navigation bar <Randall Rushing> 1 year, 5 months ago
+e659867 : Bring back some removed statusbar API <bigrushdog> 9 months ago
+f2a7727 : DUI: core building support <Randall Rushing> 8 months ago
+86634a1a : Pulse: forward port visualizer lock api <Randall Rushing> 8 months ago
+d74bc6f : Runtime toggle of navbar <Timo Wendt> 8 months ago
+6854f8e : Runtime toggle of navbar <LorDClockaN> 8 months ago
+f8af9b1 : [4/6] Breathing missedcall/sms/voicemail <garwedgess> 3 years, 4 months ago
+10288a1 : Support for Configurable Trigger Region <Zeeshan> 1 year, 6 months ago
+87f11f5 : Implement App circle sidebar [1/2] <Yanuar Harry> 3 years, 2 months ago
+c460df5 : Custom small QS tiles [1/2] <xyyx> 8 months ago
+5824bde : Remove Uneeded Call <LorDClockaN> 8 months ago
+9f1051b : Add longpress action for caffeine tile <Alex Cruz> 8 months ago
+9df1464 : Remove unnecessary videos <Janson Kang> 2 years, 6 months ago
+e9a0128 : Delete media tests <Evan Anderson> 3 years, 7 months ago
+baba2dd : CMR logo Positions [1/2] <LorDClockaN> 3 days ago
+7bb043a : Disable Quick Settings on secure lockscreen (1/2) <Lars Greiss> 11 days ago
+4668f56 : onLongClick Settings button for cmr Configurations <beanstown106> 8 months ago
+240bcdb : SystemUI: Add tunable for auto brightness icon <Michael Bestas> 4 weeks ago
+eaffde2 : Validate handler of wakelock option for flashlight. <Dominggoes Isakh> 4 weeks ago
+215022d : telecom: Fix order of arguments when creating Details object <Gabriele M> 3 weeks ago
+ 
+**** github:LineageOS/ansible ****
+0732ead : Fix changeid and commit hooks <Paul Keith> 5 days ago
+1bf9b93 : Link jira reports if a ticket is detected <Paul Keith> 6 days ago
+a4c2b22 : Don't warn on `curl` usage, we're using it as a test not a task <Tom Powell> 5 days ago
+ 
+**** github:LineageOS/cve_tracker ****
+e9dbab1 : Regenerate kernel->device mappings <Harry's Buildbot> 4 days ago
+ab7bd72 : Fix some mistakes from the last change <Harry Youd> 4 days ago
+9bf4c2a : Clarify the README information <Tim Schumacher> 5 days ago
+d0248ee : cve_tracker: Allow own CVEs <Michael W> 6 days ago
+17747c8 : app: dump CVE list + links to JSON <Simon Shields> 2 weeks ago
+ 
+**** github:LineageOS/mirror ****
+c59c372 : Updated to 23-May-2017 07:13:54 UTC <Harry's Buildbot> 4 days ago
+ 
+**** github:LineageOS/lineage_wiki ****
+133ab4b : Update r5/r7plus recovery install instructions <Michael Bestas> 7 days ago
+5497803 : We don't have migration builds anymore <Tim Schumacher> 5 days ago
+ 
+**** github:LineageOS/android_packages_apps_CMUpdater ****
+0b306f6 : Remove toolbar menu background <Gabriele M> 7 days ago
+1343f5e : Replace generic logo with back button <Gabriele M> 7 days ago
+ 
+**** github:LineageOS/android_packages_apps_FlipFlap ****
+04fc471 : CircleView: always show clock <jrior001> 6 days ago
+ 
+**** cmR:android_packages_apps_Settings ****
+f98b053 : SmartBar: add Flip button animation [2/2] <bigrushdog> 7 months ago
+7771d63 : Fix Fc in Fling Settings <bigrushdog> 7 months ago
+3700c18 : Settings: Intial DUI Checkin for N <bigrushdog> 24 hours ago
+1d15876 : fixed build <ZION959> 24 hours ago
+025449e : Rework PageeSliding Strip <jpardogo> 2 days ago
+ba93e10 : Implement App circle sidebar [2/2] <Squadzone> 2 days ago
+2091157 : Custom small QS tiles [2/2] <xyyx> 8 months ago
+ff1b2ca : CMRemix Logo Position [2/2] <Davor Bertovic> 2 days ago
+72dcd0b : Disable Quick Settings on secure lockscreen [2/2] <Lars Greiss> 2 days ago
+bfeab29 : Keyguard: Forward port lockscreen quick unlock (2/2) <ZION959> 2 days ago
+bf299b2 :  QS: Bluetooth easy toggle [1/2] <xyyx> 2 days ago
+841bee0 :  QS: WiFi easy toggle [1/2] <mydongistiny> 2 days ago
+ 
+**** cmR:android_vendor_CMRemix ****
+2cd0b37 : Build utils library and add as boot jar <Randall Rushing> 5 months ago
+bf097dd : clean up <ZION959> 4 days ago
+ 
+**** github:CMRemix/zion959-proprietary_vendor_samsung ****
+e12e649 : revert for now : update Samsung EQC1 Blobs <ZION959> 3 days ago
+ 

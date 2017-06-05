@@ -1,0 +1,60 @@
+
+**** cmR:android_build ****
+b7a9d07 : build: add Benzo and DragonTC optimization (frap129 &  mydongistiny) <ZION959> 9 hours ago
+57de9de : fixed cmremix changelog extension <ZION959> 11 hours ago
+ 
+**** github:CMRemix/android_device_samsung_trlte-common ****
+1ebaf30 : build cmremix with clang 5.0 <ZION959> 11 hours ago
+ 
+**** cmR:android_frameworks_av ****
+b8efa2d : Allow fstatfs64 syscall for mediacodec/extractor <Dimitry Ivanov> 3 weeks ago
+6af5e45 : fix warning: dereference of a null pointer <Yunlian Jiang> 4 months ago
+b5d8d34 : Fix potential overflows <Marco Nelissen> 3 months ago
+add3555 : Fix static analyzer warnings <Caroline Tice> 3 months ago
+d8babda : Fix uninitialized pointer dereference when loading default radio module. <Tomasz Wasilczyk> 3 months ago
+ee46611 : Fix issues crashing with Fatal signal when calling getFormat <qinzhichao> 5 months ago
+792b36f : If the offset is less than 0, it will cause some surprising exceptions. <zhangshuxiao> 1 year ago
+04fbc7a : Fix potential NULL dereference <Marco Nelissen> 5 months ago
+1ef261f : Fix AAC and AMR format recording hangs <ChenSam> 5 months ago
+9a9367c : Fix clang static analyzer warnings. <Manoj Gupta> 5 months ago
+4b017f8 : Bypass warnings when taking addr of packed memeber <MinSeong Kim> 6 months ago
+6e50283 : Fix a video recording issue when sw encoder is used. <Dan Liang> 1 year, 3 months ago
+9f29bd2 : nuplayer: Fix de-referencing NULL mSource <Amit Shekhar> 1 year, 8 months ago
+84bdf05 : fix Potential leak of memory pointed to by 'sourcesLiteral' <Yunlian Jiang> 6 months ago
+6d19cd9 : framework/av: fixbug for mistake clear mainbuffer data <Jinguang Dong> 6 months ago
+1cb3014 : httplive: fix overflow in BandwidthEstimator <Robert Shih> 6 months ago
+03b3353 : Check the initial width/height value when setting up video decoder <Dan Liang> 10 months ago
+cefd692 : Fix issues with metadata handling when format change happens <Roger1 Jonsson> 8 months ago
+b646033 : Override effect output as stereo <Yuuki Yokoyama> 9 months ago
+58a2e73 : Fix memory leak from MediaHTTP.cpp <jungjoo.nahm> 1 year, 6 months ago
+6d3ba61 : libstagefright: Adds some parsing capability <Suresh Choudhary> 3 years, 2 months ago
+6c45e7a : stagefright: Fix playback for mkv files with lacing <Pawit Pornkitprasan> 5 years ago
+38dd26b : stagefright: Pass AAC profile from MatroskaExtractor <Steve Kondik> 2 years, 6 months ago
+4eaa111 : Support MPEG4 codec in Matroska files <Patrik2 Carlsson> 4 years, 9 months ago
+75b5722 : Use -fno-strict-aliasing in the AVC encoder so we don't need it globally <Bernhard Rosenkränzer> 1 year, 6 months ago
+39bbae0 : Remove some unused includes for <utils/Trace.h> <Dave Kessler> 1 year, 1 month ago
+7e235f9 : audioflinger: Disable fake write for legacy ALSA <Arne Coucheron> 1 year, 6 months ago
+3d7b410 : AudioMixer: disable chatty logcat spill <maxwen> 1 year, 2 months ago
+f1debe4 : Enable Wifi Display to support 1920*1080 60fps <wangwei_b> 1 year, 4 months ago
+b1e1236 : screenrecord: allow force landscape mode <Pawit Pornkitprasan> 3 years, 5 months ago
+2621b93 : Increase max screen recording time to 1 hour <Florent Guichard> 3 years, 6 months ago
+1a6a903 : Use -fno-strict-aliasing in the AVC encoder so we don't need it globally <Bernhard Rosenkränzer> 1 year, 6 months ago
+8d51eb6 : Use -fno-strict-aliasing where needed <Bernhard Rosenkränzer> 1 year, 6 months ago
+5a21f34 : fix warning: struct argument contains uninitialized data <Yunlian Jiang> 3 months ago
+1b0447e : Fix potential memory leaks (compiler warnings) <Caroline Tice> 3 months ago
+2476060 : Fix "Dereference of null pointer" compiler warning. <Caroline Tice> 5 months ago
+4969ea4 : Fix dereference null pointer warning. <Yunlian Jiang> 7 months ago
+b6bf556 : libeffects: fix enum conversion warnings. <George Burgess IV> 8 months ago
+04c533c : Fix warning: Called C++ object pointer is null <Yunlian Jiang> 5 months ago
+c5aaee1 : Remove null-ptr deref compiler warning. <Caroline Tice> 6 months ago
+f1cf32a : fixed leak memory by some extractor using <yuedl1> 9 weeks ago
+b0fe092 : audioflinger: increase max tracks per uid <syphyr> 8 weeks ago
+a0ab22c : Do not seek when switching to background playback <Krystian Turczyn> 1 year, 4 months ago
+42201ce : Guard against sample time overflow <Bartosz Bialek> 3 months ago
+507cd92 : cameraserver: disable background scheduling of cameraserver <Jay Wang> 3 months ago
+e9e88ae : Camera service: Speed up camera service startup on boot <Eino-Ville Talvala> 5 months ago
+24c92a9 : Camera: Added null check for memory reference <Suman Mukherjee> 2 years, 4 months ago
+66f14b5 : Camera3: Add missing mTriggerMutex lock <Jinguang Dong> 6 months ago
+b6d9835 : Fix null-pointer derefernce warning. <Caroline Tice> 6 months ago
+af73835 : Rely on the platform -std default. <Elliott Hughes> 7 months ago
+ 

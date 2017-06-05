@@ -1,0 +1,196 @@
+
+**** cmR:CMRemix ****
+05266ce : track dragontc 5.0 <ZION959> 2 days ago
+ 
+**** cmR:android_build ****
+a7d3b8e : test opti (reverted from commit 2be4d0ad4cd216a08b653dd557afff7b2f893b73) <ZION959> 89 minutes ago
+2be4d0a : test opti <ZION959> 2 hours ago
+fe6a929 : build: update cmremix optimization <ZION959> 25 hours ago
+7766e74 : Makefile: Fix Squisher Logic <Chet Kener> 7 months ago
+b1d86f9 : Bringup system-squisher for Nougat <Chet Kener> 2 years, 6 months ago
+adcce4b : build: update gcc version info <ZION959> 2 days ago
+25c3415 : update bootflash image <ZION959> 3 days ago
+83c2776 : update opti <ZION959> 3 days ago
+ 
+**** github:CMRemix/android_device_samsung_trlte-common ****
+970390a : build cmremix with DTC <ZION959> 2 days ago
+1b2929c : trlte-common: Remove Gello <underscoremone> 6 days ago
+ 
+**** github:CMRemix/android_device_samsung_trltetmo ****
+a836b2a : update trltetmo and trltecan fingerprint <ZION959> 3 days ago
+ 
+**** github:LineageOS/android_hardware_qcom_fm ****
+68e8f7d : Automatic translation import <Abhisek Devkota> 5 days ago
+ 
+**** github:LineageOS/android_hardware_samsung ****
+b1d4bcb : Automatic translation import <Abhisek Devkota> 5 days ago
+ 
+**** github:LineageOS/ansible ****
+5a17835 : update cve tracker config <Tom Powell> 7 days ago
+81c0559 : cve_tracker init <Tom Powell> 7 days ago
+ 
+**** github:LineageOS/contributors-cloud-generator ****
+477f0ba : Bump DEFAULT_SIZE to 1880 <Harry Youd> 5 days ago
+37a4798 : Drop the prebuilt jar <Harry Youd> 5 days ago
+7d0f352 : Don't break on Null Pointer <LuK1337> 6 days ago
+ 
+**** github:LineageOS/cve_tracker ****
+6098aac : Regenerate kernel->device mappings <Harry's Buildbot> 5 days ago
+bda2138 : kernel: use a jquery context menu for selecting status <Dan Pasanen> 6 days ago
+59f4946 : Fix up a couple of kernel->device mappings <Harry Youd> 7 days ago
+8e938e5 : cve_tracker: Don't display deprecated kernels <Michael W> 6 days ago
+12afec2 : cve: add enpoint for querying kernel/cve pair status <Dan Pasanen> 7 days ago
+f91e0fe : cve_tracker: Status: Remove non-required stuff <Michael W> 7 days ago
+f540eec : fix rendering in kernel template <Tom Powell> 6 days ago
+e3f01fb : Revert "Cache public functions for public requests" <Tom Powell> 7 days ago
+f2c8690 : utils: fix kernel progress calculation <Dan Pasanen> 7 days ago
+207d710 : include flask-caching <Tom Powell> 7 days ago
+355cf82 : Reduce number of monogo queries made during device/cve patch page rendering <Tom Powell> 7 days ago
+d64173b : Use progress everywhere, only recalc on changes <Tom Powell> 7 days ago
+2b91ce7 : Enable flask_debugtoolbar <Tom Powell> 7 days ago
+d6d7d2d : Cache public functions for public requests <Tom Powell> 7 days ago
+7ef3d85 : Migrate from flask_oauth to GitHub-Flask <Tom Powell> 7 days ago
+addc701 : PEP8 cleanup: use 4 spaces, do not mix spacing <Tom Powell> 7 days ago
+7e746ef : include python3 virtualenv files in .gitignore <Tom Powell> 7 days ago
+e51e66f : cve_tracker: Calculate progress on update <Michael W> 7 days ago
+2afe6da : cve_tracker: Determine patch status before rendering <Michael W> 7 days ago
+459050f : Revert "cve_tracker: use len() instead of .count()" <Dan Pasanen> 7 days ago
+ 
+**** github:LineageOS/hudson ****
+4de78a6 : Enable mako builds <Randy McCaskill> 3 days ago
+ddf33de : Move xt897 (Photon Q) to 14.1 <nadlabak> 5 days ago
+2b62a33 : Bump Le Max 2 to 14.1 <Scott Warner> 2 weeks ago
+ 
+**** github:LineageOS/mirror ****
+1d0c1e7 : Add headings to README for readability <Harry Youd> 3 days ago
+a2adc03 : Updated to 17-May-2017 06:38:41 UTC <Harry Youd> 6 days ago
+ 
+**** github:LineageOS/scripts ****
+c23843d : Add lineage-push <Luca Stefani> 3 weeks ago
+398cf10 : Change to dashes to keep inline with maintainers folder <Harry Youd> 3 days ago
+f0ab2a9 : Move maintainers script to python <Paul Keith> 3 days ago
+c71ce73 : Move device_deps scripts to LineageOS/scripts [2/2] <Harry Youd> 3 days ago
+ 
+**** github:LineageOS/lineageos_updater ****
+8cafe87 : Move device_deps scripts to LineageOS/scripts [1/2] <Harry Youd> 3 days ago
+b114a0f : Remove common repos with no dependencies from JSON <Harry Youd> 7 days ago
+b431dcb : Add exceptions to the rule for kernel->device mappings <Harry Youd> 7 days ago
+81f8c68 : updater: HTTP-ise and correct links <Harry Youd> 8 days ago
+ 
+**** github:LineageOS/lineage_wiki ****
+9af2719 : devices: Set mako as maintained <Randy McCaskill> 2 days ago
+b5368e4 : wiki: w7: add recovery install method <MobiusM> 4 days ago
+38264cd : wiki: w5: add recovery install method <MobiusM> 4 days ago
+23b91f6 : wiki: jagnm: add recovery install method <MobiusM> 4 days ago
+b977804 : wiki: jag3gds: add recovery install method <MobiusM> 4 days ago
+1270138 : wiki: g2m: add recovery install method <MobiusM> 4 days ago
+c928eae : Update LeEco devices, add custom unlock command support <Scott Warner> 5 days ago
+67944ad : v410: add recovery and download boot methods <Dan Pasanen> 5 days ago
+e4daa6b : devices: update several maintainer/contributor lists <Dan Pasanen> 4 days ago
+fca11b5 : jfltevzw: add installation method <Dan Pasanen> 6 days ago
+87bb558 : wiki: update CVE url <Dan Pasanen> 4 days ago
+38e31bc : vs985: add recovery install method <Dan Pasanen> 5 days ago
+b2641a0 : templates: Add note about the bootloader version requirement <Stricted> 3 weeks ago
+c0934c3 : devices: Fix typo on CPU type <Bruno Martins> 4 days ago
+6e1b40d : wiki: Move xt897 (Photon Q) to 14.1 <nadlabak> 5 days ago
+40b0f8e : v480: add recovery install method <João Paulo Just Peixoto> 5 days ago
+171ea52 : v410: add recovery install method <Dan Pasanen> 6 days ago
+d490d27 : templates: Add rooting instructions for 'dd' method <Bruno Martins> 5 days ago
+ebf5ea5 : templates: Add a simple template for dd'ing a recovery image <Dan Pasanen> 5 days ago
+b037d2e : templates: install: Include basic requirements on top <Bruno Martins> 5 days ago
+dac485b : templates: Refine heimdall instructions <Bruno Martins> 5 days ago
+ec5b147 : wiki: A6020 update install method <Shreps> 5 days ago
+7635aa6 : seed: Add installation method <Arvin Quilao> 5 days ago
+36ee5af : wiki: BQ: Add install instructions <Brinly Taylor> 5 days ago
+bde4164 : wiki: Add BQ Aquaris U/X5 Plus <Brinly T> 5 days ago
+ 
+**** github:LineageOS/android_packages_apps_AudioFX ****
+e696bf0 : AudioFX: Fix choppy preset transitions <Gabriele M> 8 days ago
+ 
+**** github:LineageOS/android_packages_apps_CMBugreport ****
+c5d0492 : Automatic translation import <Abhisek Devkota> 5 days ago
+ 
+**** github:LineageOS/android_packages_apps_CMUpdater ****
+0db0957 : Automatic translation import <Abhisek Devkota> 5 days ago
+ 
+**** github:LineageOS/android_packages_apps_Calendar ****
+57b015e : Automatic translation import <Abhisek Devkota> 5 days ago
+ 
+**** github:LineageOS/android_packages_apps_Camera2 ****
+206a9cd : Automatic translation import <Abhisek Devkota> 5 days ago
+ 
+**** github:LineageOS/android_packages_apps_CellBroadcastReceiver ****
+45cead5 : Automatic translation import <Abhisek Devkota> 5 days ago
+ 
+**** github:LineageOS/android_packages_apps_Contacts ****
+00c1cbe : Automatic translation import <Abhisek Devkota> 5 days ago
+ 
+**** github:LineageOS/android_packages_apps_ContactsCommon ****
+34fd53c : Automatic translation import <Abhisek Devkota> 5 days ago
+ 
+**** github:LineageOS/android_packages_apps_CustomTiles ****
+39b0e6d : Automatic translation import <Abhisek Devkota> 5 days ago
+ 
+**** github:LineageOS/android_packages_apps_Dialer ****
+77b4147 : Dialer: lock screen appear before incoming call screen <Li Wei> 4 months ago
+11b9297 : Automatic translation import <Abhisek Devkota> 5 days ago
+ 
+**** github:LineageOS/android_packages_apps_Eleven ****
+7c62b1d : Automatic translation import <Abhisek Devkota> 5 days ago
+ 
+**** github:LineageOS/android_packages_apps_FMRadio ****
+5704c07 : Automatic translation import <Abhisek Devkota> 5 days ago
+ 
+**** github:LineageOS/android_packages_apps_FlipFlap ****
+f37f3e5 : Automatic translation import <Abhisek Devkota> 5 days ago
+ 
+**** github:LineageOS/android_packages_apps_Gallery2 ****
+68f782b : Automatic translation import <Abhisek Devkota> 5 days ago
+ 
+**** github:LineageOS/android_packages_apps_Jelly ****
+96e4243 : Automatic translation import <Abhisek Devkota> 5 days ago
+7c65684 : Jelly: EditTextExt: Remove shader before drawing <Gabriele M> 7 days ago
+0a0fcbd : Jelly: Don't reload webview on screen rotation <Gabriele M> 7 days ago
+ 
+**** github:LineageOS/android_packages_apps_LockClock ****
+98a6964 : Automatic translation import <Abhisek Devkota> 5 days ago
+ 
+**** github:LineageOS/android_packages_apps_PackageInstaller ****
+1b36092 : Automatic translation import <Abhisek Devkota> 5 days ago
+ 
+**** github:LineageOS/android_packages_apps_PhoneCommon ****
+116dd81 : Automatic translation import <Abhisek Devkota> 5 days ago
+ 
+**** github:LineageOS/android_packages_apps_Recorder ****
+85a167b : Automatic translation import <Abhisek Devkota> 5 days ago
+ 
+**** github:LineageOS/android_packages_apps_SetupWizard ****
+4972a32 : Automatic translation import <Abhisek Devkota> 5 days ago
+ 
+**** github:LineageOS/android_packages_apps_ThemeChooser ****
+500c253 : Automatic translation import <Abhisek Devkota> 5 days ago
+ 
+**** github:LineageOS/android_packages_apps_Trebuchet ****
+8b5e27a : Automatic translation import <Abhisek Devkota> 5 days ago
+ 
+**** github:LineageOS/android_packages_apps_TvSettings ****
+dcc5072 : Automatic translation import <Abhisek Devkota> 5 days ago
+ 
+**** github:LineageOS/android_packages_apps_UnifiedEmail ****
+226fafc : Automatic translation import <Abhisek Devkota> 5 days ago
+ 
+**** github:LineageOS/android_packages_resources_devicesettings ****
+bd3c549 : Automatic translation import <Abhisek Devkota> 4 days ago
+ 
+**** github:LineageOS/android_system_keymaster ****
+a1bbfc0 : Fix bugs regarding KeyStore::isHardwareBacked always returning true. <seulhui.lee> 9 months ago
+ 
+**** github:LineageOS/android_system_sepolicy ****
+ec269cc : Allow recovery to alter / on userdebug/eng builds <Gabriele M> 4 months ago
+ 
+**** cmR:android_vendor_CMRemix ****
+1820458 : add squisher and sm.mk <ZION959> 9 hours ago
+ 
+**** github:CMRemix/zion959-proprietary_vendor_samsung ****
+1eb46e3 : update Samsung EQC1 Blobs <ZION959> 2 days ago
+ 

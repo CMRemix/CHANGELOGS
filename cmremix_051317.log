@@ -1,0 +1,53 @@
+
+**** github:CMRemix/android_kernel_samsung_trlte ****
+21945bb : Add faux'es IntelliThermal <gekkehenkie11> 1 year, 10 months ago
+7d1bfb3 : msm8x84: update kernel header for msm video <fattire> 9 weeks ago
+774330b : msm: vidc: Send resolution along with output buffer <Maheshwar Ajja> 2 years, 9 months ago
+c17af18 : set xz as default compression <ZION959> 9 months ago
+0b0230a : PM: devfreq: Fix simple_ondemand crashing on startup <myfluxi> 1 year, 11 months ago
+19e6b7b : block, bfq: add Early Queue Merge (EQM) to BFQ-v7r8 for 3.10.8+ <Mauro Andreolini> 1 year, 11 months ago
+79fe7b6 : block: introduce the BFQ-v7r8 I/O sched for 3.10.8+ <Paolo Valente> 4 years ago
+b3c6a75 : block: cgroups, kconfig, build bits for BFQ-v7r8-3.10.8+ <Arianna Avanzini> 3 years, 3 months ago
+a9d6648 : drivers/motor: temporarily back to the old vibrator motor <ZION959> 9 months ago
+120d4d7 : Fix compilation warning for sabermod gcc 5&6 <ZION959> 1 year, 1 month ago
+4de0b6c : Selinux: add config for permissive <ZION959> 1 year, 1 month ago
+c40767f : defconfig: add mhi module for trlteeur <ZION959> 1 year, 1 month ago
+7ffbc32 : defconfig: use lz4 as default compression <ZION959> 1 year, 1 month ago
+3df8c7e : lib/decompress: set the compressor name to NULL on error <Tkkg1994> 1 year, 9 months ago
+16d6db9 : lib/decompress.c: consistency of compress formats for kernel image <Haesung Kim> 2 years, 5 months ago
+3a56f83 : zswap: use LZ4 if available <Paul Reioux> 3 years, 4 months ago
+bf6bd69 : use lz4c fast compression on zImage <arter97> 3 years, 2 months ago
+5d13a1e : lib: lz4: Set ARM_EFFICIENT_UNALIGNED_ACCESS <Shashank Shekhar> 2 years, 5 months ago
+b096343 : initrd: fix lz4 decompress with initrd <Yinghai Lu> 2 years, 9 months ago
+b14f2ec : lib/decompress_unlz4.c: always set an error return code on failures <Jan Beulich> 3 years, 4 months ago
+4f5bc2c : LZ4 : fix the data abort issue <JeHyeon Yeon> 2 years, 2 months ago
+861e5db : lz4: add overrun checks to lz4_uncompress_unknownoutputsize() <Greg Kroah-Hartman> 2 years, 10 months ago
+8f2566f : lz4: fix another possible overrun <Greg Kroah-Hartman> 2 years, 11 months ago
+5f0a9fb : lz4: ensure length does not wrap <Greg Kroah-Hartman> 2 years, 11 months ago
+4e08ee6 : arm: add support for LZ4-compressed kernel <Kyungsik Lee> 3 years, 10 months ago
+a022995 : lz4: fix compression/decompression signedness mismatch <Sergey Senozhatsky> 3 years, 8 months ago
+430f100 : lib/lz4: correct the LZ4 license <Richard Laager> 3 years, 9 months ago
+716b3a2 : lib: add lz4 compressor module <Chanho Min> 3 years, 10 months ago
+bbaff1a : lib: add support for LZ4-compressed kernel <Kyungsik Lee> 3 years, 10 months ago
+6413844 : decompressor: add LZ4 decompressor module <Kyungsik Lee> 3 years, 10 months ago
+28d8ed3 : ARM: return_address:  Use the unwind tables from the compiler <Paul Beeler> 2 years, 7 months ago
+71d3086 : fixed interactive governor warning error <ZION959> 1 year, 4 months ago
+923af85 : trlte: AdD trltevzw defconfig <ZION959> 1 year, 3 months ago
+97236da : kernel: add support for gcc 5 & 6 & 7 <Sasha Levin> 2 years, 7 months ago
+94b6a40 : ARM: 8158/1: LLVMLinux: use static inline in ARM ftrace.h <Behan Webster> 2 years, 8 months ago
+56ebbaa : arm/ftrace: fix ftrace_return_addr() to ftrace_return_address() <Steven Rostedt> 2 years, 11 months ago
+bcb2e5f : ftrace: Make CALLER_ADDRx macros more generic <AKASHI Takahiro> 3 years ago
+b05c9b7 : Add missing-syscalls wrapper: <Paul Beeler> 2 years, 3 months ago
+7eb3b9f : Revert "scripts: Use wrapper to check compiler warnings" <ZION959> 9 months ago
+f94cb05 : update wacom drivers from Linux 3.14.58 <fat-tire> 1 year, 4 months ago
+a8b1063 : Remove unneeded obj files <fat-tire> 1 year, 4 months ago
+f060d5b : proc: uid: Adds accounting for the cputimes per uid. <jinqian> 2 years, 2 months ago
+e15dfa2 : cpuset: Make cpusets restore on hotplug <Riley Andrews> 1 year, 11 months ago
+c246372 : cpuset: Add allow_attach hook for cpusets on android. <Riley Andrews> 1 year, 11 months ago
+fd86f71 : Enable CPUSETS/MSM_AVTIMER <fat-tire> 1 year, 4 months ago
+585baf4 : Fix MSM_AVTIMER breakage <fat-tire> 1 year, 4 months ago
+88b1f71 : trlte:  remove unused jpn/chnduos dts files <fattire> 1 year, 7 months ago
+a0678ee : trlte: mhi: Fix building of mhi driver. <gekkehenkie11> 2 years, 2 months ago
+344aedf : mdss: LiveDisplay to kcal interface <flar2> 5 months ago
+32c2cdd : msm: mdss: Add KCAL support for post processing control [v2] [SQUASH] Change-Id: Ic0790d2cbb2578714a0fb950d0094c2ed27ba1f5 <savoca> 2 years, 3 months ago
+ 

@@ -1,0 +1,309 @@
+
+**** cmR:CMRemix ****
+25625ed : more name fixed <ZION959> 8 hours ago
+954771d : name fixed <ZION959> 8 hours ago
+5beaa0c : derp <ZION959> 10 hours ago
+0041062 : track various cmremix repos <ZION959> 10 hours ago
+2aa06b5 : specify gcc version <ZION959> 26 hours ago
+fb27855 : add revision to uber toolchains <ZION959> 27 hours ago
+51b5548 : add uber repo <ZION959> 2 days ago
+05e2525 : derp <ZION959> 2 days ago
+4bb0850 : derp <ZION959> 2 days ago
+4ce1226 : derp <ZION959> 2 days ago
+8b02aac : add uber optimization repo <ZION959> 2 days ago
+ 
+**** cmR:android_build ****
+cf0fa65 : Build: Switch to Magisk as the built in root [2/2] <LorDClockaN> 3 months ago
+8b80aee : core: use 0 compression when creating the target_files package <Park Ju Hyung> 7 weeks ago
+2c9a181 : Fix a nullness warning. <Yunlian Jiang> 7 months ago
+d1241c9 : use sytem ccache <ZION959> 10 hours ago
+178b620 : remove forced -Werror=null-dereference <Chad Cormier Roussel> 5 months ago
+f935ae1 : specify gcc build version <ZION959> 25 hours ago
+1fd547a : build: arm: remove deprecated -msoft-float flag <Park Ju Hyung> 3 months ago
+32f6d5d : Less debugging on arm and arm64 build <Chad Cormier Roussel> 3 months ago
+b4f214b : Target GCC 6 <Chad Cormier Roussel> 3 months ago
+bf5529e : Remove dedundant flags (These are enabled with O3) Also change the guard for Strict aliasing flag Force gold linker <Chad Cormier Roussel> 3 weeks ago
+bcbd15a : Disable graphite opts on host modules <Nathan Chancellor> 3 weeks ago
+929b9cc : More optimizations <Chad Cormier Roussel> 4 weeks ago
+d25453a : Test more optimization <Chad Cormier Roussel> 5 weeks ago
+344c98d : Clang 5.0 !!!!1!!!!!!111! also optimize by less debug <Chad Cormier Roussel> 3 months ago
+1f3e79d : Multiple optimizations I've been adding and removing polly optimizations for a while and i've not noticed any gains or loss through synthetics benchmarks or simply by judging how "smooth" android is in a whole (not a scientific test). I don't see the point of keeping it if it's not a win situation. I believe we would need LTO to release the whole power of polly, which we simply can't do on a lot of binaries. Also remove LTO. Move around rs clang version into clang version definiton file because it makes sense? Use cortex-a57 optimization on cortexa53.a57 target. <Chad Cormier Roussel> 3 months ago
+ef8d122 : clang: Update unknown cflags list <Chet Kener> 9 months ago
+aed7c45 : Fix uber.mk inclusion, cause i'm bad and that's what i do when they come for me <Chad Cormier Roussel> 3 months ago
+c87cc2c : Bring uber.mk in, let's get the party started (again) <Chad Cormier Roussel> 3 months ago
+edcc573 : format system partition before install rom <ZION959> 5 days ago
+2a4f981 : Set metadata on bootzip <Andreas Blaesius> 1 year, 9 months ago
+1eb02bd : Add back mka bootzip <RobbieL811> 2 years ago
+2f69bab : build: CMRemix Version & build prop info & add ACSII art & changelog <ZION959> 2 weeks ago
+ 
+**** github:CMRemix/android_device_samsung_trlte-common ****
+0df4a98 : add some cmremix optimization flags <ZION959> 22 hours ago
+ 
+**** github:LineageOS/android_external_chromium-webview ****
+b544e48 : Update README <Luca Stefani> 3 days ago
+ 
+**** github:LineageOS/android_external_gello_build ****
+d62ccd4 : gello-build: update for m58 <Joey Rizzoli> 9 weeks ago
+ 
+**** aosp:platform/external/giflib ****
+dc07290 : Update GIFLIB to 5.1.4 DO NOT MERGE <Leon Scroggins III> 9 weeks ago
+ 
+**** aosp:platform/external/libavc ****
+5c3fd5d : Decoder: Fixed error handling for dangling fields <Harish Mahendrakar> 5 months ago
+ 
+**** aosp:platform/external/libhevc ****
+bcfc712 : Return error from cabac init if offset is greater than range <Naveen Kumar Ponnusamy> 2 months ago
+a142472 : Handle error return from ref list in slice hdr parsing <Naveen Kumar Ponnusamy> 3 months ago
+45c97f8 : Return error if SPS parsing reads more bytes than the nal length <Harish Mahendrakar> 4 months ago
+ 
+**** aosp:platform/external/libmpeg2 ****
+a86eb79 : Fix in handling header decode errors <Harish Mahendrakar> 12 months ago
+ 
+**** github:LineageOS/android_external_openssh ****
+f42513e : Revert SSHDIR to /data/ssh <Alexander Koenig> 4 weeks ago
+ 
+**** cmR:android_frameworks_base ****
+79878f5 : Fw_base - Battery light: 100% charged level (1/2) <UtkarshGupta> 7 months ago
+51c5288 : fixed build error <ZION959> 49 minutes ago
+38c1dcb : QS: BT easy toggle [2/2] <xyyx> 7 months ago
+2eecaaf : QS: WiFi easy toggle [2/2] <mydongistiny> 8 months ago
+92b3def : Add back Logo & Weather Color Customizations [1/2] <LorDClockaN> 8 hours ago
+c75de24 : Default Qs potrait Columns = 3 [1/2] <Varun Date> 7 months ago
+3890502 : QS: Custom rows/columns, (1/2): If needed, the integers: "config_qs_num_rows_landscape_default" "config_qs_num_columns_landscape_default" should be overlayed in the device tree <XXMrHyde> 2 hours ago
+125d72f : SysUI: Show CMRemix logo Only when keyguard is absent <Varun Date> 8 months ago
+5ba7fcd : Frameworks: add ability to disable bar color in battery saver mode (1/2) Adapted for marshmallow by @KreAch3R <Lars Greiss> 8 months ago
+25a2ec6 : FWB: Add back transparency porn parts (1/2): <LorDClockaN> 3 hours ago
+69dcdc25 : revert: Add option to disable auto brightness icon in brightness slider [1/2] <ZION959> 3 hours ago
+f03c4cf : Fix Derp <Varun Date> 7 months ago
+daebd31 : Remove Dead Code <Varun Date> 7 months ago
+e0edead : fb: less notifications sound (1/2) <Lars Greiss> 8 months ago
+3eda038 : ADB always notify (1/2) <SpiritCroc> 8 months ago
+fc08174 : Add OmniSwitch as option for default recents [1/2] <maxwen> 2 years, 3 months ago
+e44c564 : Fix Recents View FAB with N Dismiss all Button <Varun Date> 8 months ago
+b33c83e : Recents Clear All Button Tweaks and Add FAB to Recents Panel <cristianomatos> 8 months ago
+a2aa4a6 : Proximity speaker [1/2] <Daniel Koman> 8 months ago
+3ca3609 : Add option to disable auto brightness icon in brightness slider [1/2] <Varun> 1 year, 4 months ago
+95e53a3 : Port: Wake on plug (1/2) <Jon Evans> 2 years, 5 months ago
+8f9b83c : revert: Alarm: Add one more RTC alarm type for poweroff alarm. <ZION959> 10 hours ago
+687d0c1 : revert: Add support for QC's time_daemon <ZION959> 22 hours ago
+4f90de2 : revert: Alarm: Support devices using timerfd without <ZION959> 22 hours ago
+ 
+**** aosp:platform/frameworks/rs ****
+7c7164b : Increment sys ref count of input/ouput Allocations <Yang Ni> 4 weeks ago
+bc29821 : Fix typo in include guard <Greg Kaiser> 1 year ago
+962e2a6 : Fix google-build-using-namespace warnings in cpu_ref. <Chih-Hung Hsieh> 6 months ago
+734745b : Fix google-build-using-namespace warnings in rs. <Chih-Hung Hsieh> 6 months ago
+0450741 : Fix google-build-using-namespace warnings in driver. <Chih-Hung Hsieh> 6 months ago
+a809a27 :  Fix google-explicit-constructor warnings in frameworks/rs. <Chih-Hung Hsieh> 11 months ago
+f6ce823 : Fix clang-tidy warnings in frameworks/rs. <Chih-Hung Hsieh> 11 months ago
+aeba563 : Fix misc-macro-parentheses warnings. <Chih-Hung Hsieh> 1 year ago
+0328902 : Potential leak of memory pointed to by 'reduceDescriptions' <Yunlian Jiang> 6 months ago
+ebe812f : Do not link libRS and libRSDriver with libLLVM.so <Pirama Arumuga Nainar> 10 months ago
+ce434ed : FileA3D: Don't leak memory in error case. <Greg Kaiser> 9 months ago
+a924ee9 : Fix clang-tidy performance warnings. <Chih-Hung Hsieh> 9 months ago
+477e7d3 : frameworks/rs: fix clang-analyzer-unix.MallocSizeof warnings. <Rahul Chaudhry> 3 months ago
+84ff76e : Fix error handling problems <Ting-Yuan Huang> 6 months ago
+f15dcd0 : Implement multi-thread CPU GEMM for BLAS Intrinsics <Miao Wang> 8 months ago
+26e6e64 : Support x86+arm mode <Victor Khimenko> 7 months ago
+148459f : Fix x86+arm multilib branch <Victor Khimenko> 7 months ago
+c896d76 : Fix script that updates RS prebuilts <Pirama Arumuga Nainar> 7 months ago
+8000538 : Use LLVM's RenderScript triples <Pirama Arumuga Nainar> 10 months ago
+cb0f9ab : driver: runtime: Fix upstream compatibility <Joe Maples> 9 months ago
+444b48a : Fix @links in rs. <Elliot Waite> 4 months ago
+ 
+**** github:LineageOS/android_hardware_qcom_audio ****
+99617f9 : Configs: remove audio sink buffer size property <Aalique Grahame> 7 months ago
+a9f2c00 : hal: fix kw issue in hal <Sidipotu Ashok> 3 months ago
+6191804 : hal: remove redundant logs from utils.c <Sharad Sangle> 3 months ago
+905d1d8 : audiod: Skip enumerating non-ADSP sound cards <Satya Krishna Pindiproli> 6 months ago
+dd4c2f0 : policy: avoid fallback to deep-buffer for fast requests <Sidipotu Ashok> 5 months ago
+862c303 : hal : Changes for 24 bit recording support <Arun Tom Abraham> 5 months ago
+ 
+**** github:LineageOS/android_hardware_qcom_audio ****
+23be04d : msm8996: ultrasound: Initial open source hal for Elliptic Ultrasound <Balázs Triszka> 5 days ago
+4ad46f5 : audio policy: reduce audio routing commands trafic <Zhou Song> 5 months ago
+ 
+**** github:LineageOS/android_hardware_qcom_display ****
+03afd10 : hwc2: Only set display_width and display_height when equal to zero <Rashed Abdel-Tawab> 4 months ago
+ 
+**** github:LineageOS/android_hardware_qcom_display ****
+b7a3010 : display: Add color metadata definition <Rajesh Yadav> 6 months ago
+26cd504 : display: Add color metadata definition <Rajesh Yadav> 6 months ago
+eb49512 : sdm: Use ColorMetadata in SDM <Rajesh Yadav> 6 months ago
+37d5aff : display: Add support for Rec.2020 <Rajesh Yadav> 6 months ago
+b6a2bfb : sdm: Use safe mode on External display on low end device <Sushil Chauhan> 6 months ago
+9c64210 : HWC: Set skip to layers with Non Integral Source Crop <Pullakavi Srinivas> 8 months ago
+93afadf : sdm: skip null commit on command mode panels <Anjaneya Prasad Musunuri> 5 months ago
+2428bc4 : libmemtrack: Fix integer overflow in kgsl function <Archana Sriram> 4 months ago
+ 
+**** github:LineageOS/android_hardware_qcom_display ****
+7bc05cd : sdm: Increase SurfaceFlinger fd limits <Naseer Ahmed> 3 months ago
+2e13c27 : sdm: Increase SurfaceFlinger fd limits <Naseer Ahmed> 3 months ago
+ 
+**** github:LineageOS/android_hardware_qcom_media ****
+b49f2c0 : Fix duplicated OMX.qcom.audio.decoder.aac entry <Keith Mok> 1 year, 5 months ago
+ 
+**** github:LineageOS/android_hardware_qcom_media ****
+de0c52e : media: libOmxSw encoders require prop headers :( <Ricardo Cerqueira> 10 months ago
+fcd1cfd : mm-video-v4l2: serialize FTB's for dropped frames <Srinu Gorle> 4 months ago
+057d1c7 : mm-video-v4l2: vidc: venc: Free buffer FDs and handles <Saurabh Kothawade> 9 months ago
+a5da2d3 : mm-video-v4l2: vdec: Support for HEVCMain10HDR10 profile <Umesh Pandey> 6 months ago
+76dd49f : mm-video-v4l2: Update max level for h264 decoder to 5.1 <Uma Mehta> 5 months ago
+46aa731 : mm-video-v4l2: venc: Disable Pframes incase of resolution 5k/6k <Srinu Gorle> 5 months ago
+5dc8e7e : mm-video-v4l2: Reset drv_ctx o/p buffer requirements in loaded state <Deepak Kushwah> 7 months ago
+0a4ad7e : mm-video-v4l2: vdec: Convert maximum display luminance in cd/m2 <Umesh Pandey> 6 months ago
+9e702ea : mm-video-v4l2: vdec:Metadata for HDR and ColorAspects <Umesh Pandey> 7 months ago
+6076eb6 : mm-video-v4l2: vdec: Support for HDR Info extension <Manikanta Sivapala> 7 months ago
+ 
+**** github:LineageOS/android_hardware_qcom_media ****
+142c9d7 : mm-video-v4l2: venc: Initialize allocate native handle variable <Deepak Kushwah> 3 months ago
+44fdeb4 : mm-video-v4l2: Initialize extradata fd to -1 <Surajit Podder> 8 weeks ago
+af79808 : mm-video-v4l2: venc: Fix double close on fd <Abdulla Anam> 7 weeks ago
+3539367 : mm-video-v4l2: Close output buffer dup fd only if valid <Surajit Podder> 6 weeks ago
+3b26a89 : mm-video-v4l2: create pthread with valid file descriptors <Karthikeyan Periasamy> 4 months ago
+ead8fae : mm-video-v4l2: vidc: correct the crop update <Manikanta Kanamarlapudi> 3 months ago
+ 
+**** github:LineageOS/android_hardware_samsung ****
+5eca5aa : power: Allow POWER_HINT_LOW_POWER hint to disable power save mode <Christopher N. Hesse> 3 weeks ago
+ 
+**** github:LineageOS/ansible ****
+20bbda8 : re-enable stats UI <Tom Powell> 27 hours ago
+0c21a53 : update inventory/site.yml for new boxes <Tom Powell> 7 days ago
+01dc2fe : stats setup <Tom Powell> 7 days ago
+47f1804 : JIRA setup <Tom Powell> 7 days ago
+05ceb99 : become root for build slaves <Tom Powell> 7 days ago
+431529f : rsync whitelist: ad super.net.sg new IP <Tom Powell> 7 days ago
+ 
+**** github:LineageOS/cve_tracker ****
+7a503a3 : cve_tracker: use len() instead of .count() <Michael W> 2 days ago
+038f9a2 : cve_tracker: Display vendors on each row <Michael W> 2 days ago
+19adb90 : cve_tracker: Display numerical progress <Michael W> 2 days ago
+cc32996 : cve_tracker: Also redeploy templates when they were changed <Michael W> 2 days ago
+92fcb58 : cve_tracker: Also count "does not apply" as progress <Michael W> 2 days ago
+b9f3a98 : Update kernel to device mappings <Harry Youd> 2 days ago
+1e3f1bc : cve_tracker: Add the rest of Xiaomi msm8996 devices <Bruno Martins> 4 days ago
+88d6626 : cve_tracker: Fix progress-bar value when patching <Michael W> 4 days ago
+d1207a0 : app: support for disabling auth <Simon Shields> 6 days ago
+cf9dd13 : cve_tracker: Add vs985 to G3 devices <Kasual> 11 days ago
+4f7a9ef : run script: pass all args to flask <Dan Pasanen> 6 days ago
+c2d546a : index: fix alignment of footer links <Simon Shields> 11 days ago
+d0062ed : app: compute version on startup <Simon Shields> 11 days ago
+af355a5 : cve: hook up authentication to front-end <Simon Shields> 11 days ago
+fce8368 : app: add support for unauthenticated viewing <Simon Shields> 11 days ago
+642e2a0 : cve_tracker: seed: prevent double entries <Michael W> 9 days ago
+9d54129 : cve_tracker: Add new Xiaomi msm8996 devices <Bruno Martins> 11 days ago
+ 
+**** github:LineageOS/hudson ****
+e2b5abf : Revert "Disable v521" <Rashed Abdel-Tawab> 6 days ago
+ceb3679 : Disable v521 <Michael Bestas> 9 days ago
+109948c : Readd ether <Michael Bestas> 3 weeks ago
+ 
+**** github:LineageOS/mirror ****
+c7a6b1c : Updated to 14-May-2017 18:51:13 UTC <Harry's BuildBot> 35 hours ago
+3b07946 : mirror: Sort repos <Luca Stefani> 35 hours ago
+fe0ca78 : Updated to 14-May-2017 18:11:04 UTC <Harry Youd via Jenkins> 35 hours ago
+609748d : New Python mirror-regen script <Paul Keith> 2 days ago
+0e2aa06 : Updated to 14-May-17 14:24:00 UTC <Tim Schumacher> 2 days ago
+ 
+**** github:LineageOS/tribble-tracker ****
+1c89d61 : migration: no_cache is required due to memory overhead <Tom Powell> 2 days ago
+7cbabe1 : New agggregate table. <Tom Powell> 2 days ago
+1df69f4 : Add COLLECT_ONLY config option, as there are far too many items to actually display right now <Tom Powell> 7 days ago
+ 
+**** github:LineageOS/lineageos_updater ****
+57e3e4a : Sort repos in kernels.json <Harry Youd> 2 days ago
+aa571cf : Sort kernels.json alphabetically <Harry Youd> 2 days ago
+37f2557 : Add final step to device deps generator <Harry Youd> 2 days ago
+ebbc791 : Add device_deps.json regeneration scripts <Michael Bestas> 2 weeks ago
+23033e5 : Missing quotes in check_builds <Tom Powell> 7 days ago
+ 
+**** github:LineageOS/www ****
+1c566de : CVE tracker isn't ready for spotlight <Tom Powell> 10 hours ago
+ef30b29 : Fix links to "kernel su-hide" reference changes <Bruno Martins> 15 hours ago
+197f8fc : Changelog #9 - Gello, Jelly and a security advisory (W/C 2nd May) <Harry Youd> 2 days ago
+8f8a440 : www/community: Small fixes <Harry Youd> 10 days ago
+ 
+**** github:LineageOS/lineage_wiki ****
+0a13aa5 : wiki: correct v521 info <Simon Shields> 6 days ago
+10e03c2 : wiki: Add V521 <Rashed Abdel-Tawab> 6 days ago
+2f0f9e5 : costs: stats needed a larger instance <Tom Powell> 7 days ago
+d97ee6b : Add sendgrid to costs <Tom Powell> 7 days ago
+0b70c76 : wiki: Fix link visibility on 'alert' sections <Harry Youd> 8 days ago
+dba1c23 : wiki: Tweak GitHub link <Harry Youd> 8 days ago
+7b181fd : wiki: Build: Update build instructions for Ubuntu <Haoqing Deng> 10 days ago
+79eb2df : wiki: HTTPS-ise some links <Harry Youd> 10 days ago
+ 
+**** cmR:android_packages_apps_CMParts ****
+4e7219f : PerfProfileSettings: Update slider on powersave mode change <Gabriele M> 2 months ago
+5f7bb78 : CMParts: Update quick QS pull-down summary for translation <Elektroschmock> 8 weeks ago
+2bad1e9 : Fix reorientation of volume buttons on portrait tablets <LuK1337> 7 weeks ago
+46e207f : Automatic translation import <Abhisek Devkota> 7 weeks ago
+bce1aed : Automatic translation import <Abhisek Devkota> 8 weeks ago
+1f68861 : Automatic translation import <Abhisek Devkota> 8 weeks ago
+7d8197d : CMParts: update contributors db <Dan Pasanen> 9 weeks ago
+7e68b15 : Automatic translation import <Abhisek Devkota> 9 weeks ago
+296e4ae : Automatic translation import <Abhisek Devkota> 10 weeks ago
+780f4ad : CMParts:Make Button Settings and Hardware Key Settings Non Searchable <Varun Date> 6 weeks ago
+cf7aea8 : Automatic translation import <Michael W> 3 months ago
+ac7b974 : [2/3] CMParts: single hand for hardware keys <Joey Rizzoli> 3 months ago
+8716c49 : Update style to match the one of Settings <Gabriele M> 3 months ago
+42ab728 : Disable quick pulldown by default <Gabriele M> 3 months ago
+bb0b68b : CMParts: activate nfc trigger for system profiles <Maxim Becker> 3 months ago
+b4ab507 : Automatic translation import <Abhisek Devkota> 3 months ago
+2b2d92f : CMParts: KeyHandler: Add User to broadcast <Michael W> 3 months ago
+4817402 : Automatic translation import <Abhisek Devkota> 3 months ago
+cc00362 : CMParts: Restructure status bar settings <Hendrik Hagendorn> 4 months ago
+b6c7f0b : CMParts: Fix email and browser intents <Michael W> 3 months ago
+670c2ec : Automatic translation import <Abhisek Devkota> 3 months ago
+2fbcf82 : CMParts: Replace variable for setup wizard complete <Paul Keith> 3 months ago
+d02f378 : Automatic translation import <Abhisek Devkota> 3 months ago
+e0ed192 : CMParts: Add strings for sRGB <dianlujitao> 3 months ago
+5bb856b : Revert "Touchscreen gestures: remove CM Setup Wizard dependency" <Andres> 3 months ago
+be502fd : Automatic translation import <Abhisek Devkota> 3 months ago
+5745690 : CMParts: strings: Fix indentation <dianlujitao> 3 months ago
+d0cb33a : CMParts: gestures: Specify a qualified user for update broadcast <Zhao Wei Liew> 3 months ago
+570b5e5 : Automatic translation import <Abhisek Devkota> 3 months ago
+d4ebc3c : Automatic translation import <Abhisek Devkota> 3 months ago
+dd5649c : Add "Letter V" string <LuK1337> 3 months ago
+18e8f3c : Automatic translation import <Abhisek Devkota> 3 months ago
+c3b79a3 : CMParts: Clean out imports <Michael W> 3 months ago
+602e9da : CMParts: Simplify long press for torch strings <Bruno Martins> 3 months ago
+ae24efd : Automatic translation import <Abhisek Devkota> 3 months ago
+040a398 : CMParts: Long-press power while display is off for torch <beanstown106> 1 year, 4 months ago
+dac39d7 : CMParts: Clean up status bar settings class <Zhao Wei Liew> 3 months ago
+5195eed : CMParts: power: Resolve 'automatic optimization' state issues <Zhao Wei Liew> 3 months ago
+e4ab72a : CMParts: Update quick QS pull-down entries for RTL layouts <Zhao Wei Liew> 3 months ago
+47abb9a : CMParts: Don't update status bar clock summary on RTL <Zhao Wei Liew> 3 months ago
+9730b04 : CMParts: Update quick QS pull-down summary on pref change <Zhao Wei Liew> 3 months ago
+b306390 : Automatic translation import <Abhisek Devkota> 3 months ago
+f4a35de : Touchscreen gestures: remove CM Setup Wizard dependency <Andres> 3 months ago
+6694859 : CMParts: Move status bar tap to sleep pref to Settings <Zhao Wei Liew> 4 months ago
+9665e1d : CMParts: Add touchscreen gesture settings and keyhandler <Zhao Wei Liew> 4 months ago
+e8261dd : CMParts: buttons: Remove double tap power for camera setting <Zhao Wei Liew> 4 months ago
+fe53ebe : Automatic translation import <Abhisek Devkota> 4 months ago
+6eeccc9 : Fix icon tint <westcripp> 4 months ago
+f1dfd8c : Update colors.xml <Altan KRK> 4 months ago
+fc15436 : CMParts: Improve stats collection summary <Zhao Wei Liew> 4 months ago
+ 
+**** cmR:android_packages_apps_Settings ****
+ff39c0a : fixed build error <ZION959> 51 minutes ago
+59c00c7 : ColorPicker Rework For Resurrection N <XXMrHyde> 33 minutes ago
+ef61490 : Fix up Panel Settings Derp <ZION959> 9 hours ago
+d63bbe5 : Settings:Add Back Logo, Weather & Qs stroke color Customizations [2/2]{SQASHED} <Davor Bertovic> 9 hours ago
+d5aa23b : Settings: add ability to disable bar color in battery saver mode (2/2) <Lars Greiss> 10 hours ago
+d19c1bc : QS: Custom rows/columns, (2/2) <XXMrHyde> 10 hours ago
+4c6c22f : Settings:Transparency Options [2/2] <Davor Bertovic> 10 hours ago
+b1a01b9 : ADB always notify (2/2) <SpiritCroc> 8 months ago
+5c1ce92 : settings: less notifications sound (2/2) <Lars Greiss> 8 months ago
+0e23858 : Add OmniSwitch as option for default recents [2/2] <maxwen> 10 hours ago
+581ed3f : Recents Clear All Button Tweaks and Add FAB to Recents Panel[2/2] <dankoman> 10 hours ago
+4ba1126 : Add option to disable auto brightness icon in brightness slider [2/2] <varund7726> 10 hours ago
+366786e : Port: Wake on plug (2/2) <ZION959> 10 hours ago
+b5ae2b9 : Add Option to Choose CMRemix Configurations layout [2/2] <ZION959> 3 days ago
+ 
+**** github:LineageOS/android_packages_apps_Trebuchet ****
+c69c736 : Trebuchet: Add Jelly to hotseat <Arne Coucheron> 2 weeks ago
+ 
+**** github:LineageOS/android_packages_services_Telephony ****
+19bd6db : Fix Lte Tile <Varun> 1 year, 4 months ago
+ 
