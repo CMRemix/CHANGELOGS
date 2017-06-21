@@ -1,0 +1,169 @@
+
+**** cmR:CHANGELOGS ****
+724509d : update 06-04-2017 <ZION959> 4 days ago
+ 
+**** cmR:android_external_DUtils ****
+52668d8 : Killapp action: restore home screen before killing the app <ezio84> 5 weeks ago
+e4af8c6 : Smartbar media arrows: more code improvements [2/2] <ezio84> 10 weeks ago
+93cc06a : DUI: validate image size before attempting to set as icon [1/2] <bigrushdog> 2 months ago
+52f7f6d : Kill App action: remove the killed app from Recents list <Ezio Lacandia Bijelkic> 3 months ago
+a0ccca8 : Separate one handed mode icons [2/2] <Nathan Chancellor> 4 months ago
+1ad724b : Add one handed mode action [1/2] <Nathan Chancellor> 5 months ago
+5f2d876 : WiFi Hotspot: use new on/off logic <xyyx> 7 months ago
+b5d8ece : Update Default Hw Button Actions -Home Longpress From Menu ->opens Voice Assistant -Menu Longpress No actions -> Recents -Home Doubletap Overview -> No actions Signed-off-by: Varun Date <date.varun123@gmail.com> <Varun Date> 6 months ago
+45c4032 : DUI screenshot: add "partial" action and respect custom delay [1/3] <Ezio Lacandia Bijelkic> 7 months ago
+ 
+**** cmR:android_frameworks_base ****
+e6f0b8f : Clean up Leftovers <Varun Date> 6 months ago
+3bb2dbf : Blur: Color Filters implementation (1/2) <Calin> 9 months ago
+7ea0378 : RecentsBlur: Fix SystemUI crash <Calin> 7 months ago
+c5e284a : RecentsBlur: More imports <Calin> 7 months ago
+9b14cf5 : RecentsBlur: Fixes <Calin> 7 months ago
+5b48870 : Blur: Implement Recents Blur (1/2) - Added basic implementation of serajr Recents blur - Adapted the code in order to allow the user to change radius and scale - Added required flags in order to avoid Arithmetic exceptions <Calin> 7 months ago
+7f9ec6c : [SQUASHED] Implement XOSP Blur personalization options (1/2) <Calin> 25 hours ago
+60d9315 : Bring back portrait/landscape QS mod [1/2] <XXMrHyde> 2 days ago
+71949eb : SystemUI: Bring Back Recents Styles[1/2] <varund7726> 2 days ago
+a58c321 : [1/3] base: custom header extensions <maxwen> 5 months ago
+a316d92 : [1/2] base: SystemUI: custom QS header images <maxwen> 5 months ago
+59a2eac : Fix battery bug on Header DateTime Positions <Joe Maples> 6 months ago
+8d997d9 : Header Date+Time positions [1/2] <Joe Maples> 6 months ago
+8f4be02 : QS Header Icon settings [1/2] Adds toggles for the settings shortcut, quick tiles edit, multiuser switch, and expand indicator <Joe Maples> 6 months ago
+284b3ba : Make QS columns count configurable <maxwen> 2 days ago
+d8d2d5e : Cleanup QS Tile rows/columns So we matchup with AOSIP & DU <Corey Edwards> 7 months ago
+0174cb4 : TaskManager Customizations [1/2] <Varun Date> 5 months ago
+06882cb : TaskManager: Update UI and adapt For Nougat <Varun Date> 5 months ago
+28685e8 : Improve TM animation & use stock detail background <westcripp> 1 year, 2 months ago
+c7e36af : Use CircularReveal animation to show/hide task manager panel <Randall Rushing> 1 year, 2 months ago
+ddd2104 : QS/TM : Update task manager UI & add fab button - Update and vectorize task close button + tint as accent color <westcripp> 1 year, 3 months ago
+772df26 : TaskManager: Clean up calls in PSB <Altaf-Mahdi> 5 months ago
+5eda48f : Reset the QS panel if task manager was visible last <Altaf-Mahdi> 1 year, 9 months ago
+6130a45 : Add more icons for the task manager switch <Alex Cruz> 1 year, 10 months ago
+f9ceb51 : Update some Task Manager functions <Lokesh Chamane> 2 years ago
+01b4683 : Fix TM string <Alex Cruz> 5 months ago
+40ccbd3 : Improve Task manager UI <westcripp> 2 years ago
+ca4b3fe : Task manager improvements <Altaf-Mahdi> 2 years ago
+5c7deca : Expose the task manager values for themers <Alex Cruz> 2 years, 1 month ago
+d667565 : Fixed the Task Manager bug described in the post below https://plus.google.com/101691799763674764197/posts/Z7XFJSfsCYz Change-Id: If4f3f3c67c80cd8be3111ea3dbc3ac1f3b6d7618 <Alex Cruz> 5 months ago
+7ff4f2b : CAF Task Manager switch [1/2] <Alex Cruz> 2 years, 1 month ago
+b8776ec : Add task manager back in! <haiyangl> 2 years, 9 months ago
+d9bac02 : revert: DUI screenshot: add "partial" action and respect custom delay [2/3] <ZION959> 2 days ago
+bdf04ad : Fix DUI slippery flag logic and IllegalArgumentException [2/2] <ezio84> 7 weeks ago
+77c0afa : Fix Another Illegal Argument Exception when Changing DPI <Varun Date> 8 weeks ago
+9f3e387 : FWB: SmartBar Color: Custom app color filter switch (1/3) <LorDClockaN> 3 months ago
+dc57558 : Smartbar pixel animation: Ability to customize the dots [1/3] <Varun Date> 9 weeks ago
+4414077 : FWB:Pulse: allow setting fading blocks opacity [1/3] <Varun Date> 10 weeks ago
+ab4ce71 : SmartBar: allow set custom buttons opacity when Pulse is active [3/3] <ezio84> 2 months ago
+d322a64 : Smarbar Pixel Navbar Animation Duration Settings [1/3] <Varun Date> 10 weeks ago
+4451263 : Pulse: allow custom opacity for solid line renderer [2/3] <Ezio Lacandia Bijelkic> 4 months ago
+9ed6cc1 : Pulse: Moar bars for solid line renderer [2/3] <Ezio Lacandia Bijelkic> 4 months ago
+c945570 : Add Pulse Lava Lamp start and end colours (1/3) <Ritayan Chakraborty> 5 months ago
+46b2bc5 : One handed mode toggle [1/3] <beanstown106> 5 months ago
+641a780 : DUI: Smartbar: double tap to sleep [1/3] <ezio84> 5 months ago
+db08083 : DUI: Fix navbar edit logspam <ezio84> 5 months ago
+455b82f : FWB:Add a Switch to Enable Disable Dyanamic Navbar[1/2] <Varun Date> 6 months ago
+ec2bd48 : base: dynamic navbar colors <Miccia94> 6 months ago
+72fcae7 : DUI: fix SmartBar edit mode Google have set the nav always slippery on 7.1.1 but when switching from fling to smartbar and starting the edit mode we need to take the touch on the navbar buttons <ezio84> 6 months ago
+555318d : SmartBar: Battery Bar support [1/2] <Randall Rushing> 1 year, 3 months ago
+ 
+**** cmR:android_packages_apps_DUI ****
+778239a : Automatic translation import <Akhil Narang> 3 days ago
+b131535 : Automatic translation import <Akhil Narang> 4 days ago
+b20fdd5 : Automatic translation import <Akhil Narang> 5 days ago
+c342921 : Automatic translation import <Akhil Narang> 6 days ago
+9b28ae6 : Automatic translation import <Akhil Narang> 8 days ago
+e0c0a80 : Automatic translation import <Akhil Narang> 9 days ago
+deff77e : Automatic translation import <Akhil Narang> 12 days ago
+d55c041 : Automatic translation import <Akhil Narang> 13 days ago
+67552c4 : Automatic translation import <Akhil Narang> 2 weeks ago
+7bbec75 : Automatic translation import <Akhil Narang> 2 weeks ago
+59a68e6 : SmartBar editor: block quick popup when dragging the button <ezio84> 3 weeks ago
+9b7512d : Automatic translation import <Akhil Narang> 3 weeks ago
+bd50c31 : Automatic translation import <Akhil Narang> 3 weeks ago
+9a5c505 : Automatic translation import <Akhil Narang> 3 weeks ago
+485508a : Automatic translation import <Akhil Narang> 3 weeks ago
+cbdbce3 : Automatic translation import <Akhil Narang> 4 weeks ago
+14d25ee : Automatic translation import <Akhil Narang> 4 weeks ago
+4647a55 : Automatic translation import <Akhil Narang> 4 weeks ago
+5d95ee1 : Improve MediaMonitor readability <ezio84> 4 weeks ago
+d450ac0 : DUI: Fix Smartbar back button hiding on lockscreen intents <Varun Date> 4 weeks ago
+7476295 : Automatic translation import <Akhil Narang> 4 weeks ago
+aba99d5 : Fix Fling swipe up gesture being hard to trigger <ezio84> 6 weeks ago
+8f840c5 : Fix DUI slippery flag logic and IllegalArgumentException [1/2] <ezio84> 7 weeks ago
+eaf848b : DUI: Basenavigationbar: Catch Slippery Exception <Varun Date> 7 weeks ago
+da18051 : Add Chrome to MediaMonitor Blacklist Change-Id: Iabb2ef209ed4ca8b98da5260df107433eb540308 Signed-off-by: Varun Date <date.varun123@gmail.com> <ezio84> 10 weeks ago
+29d8861 : Smartbar pixel animation: Ability to customize the dots [2/3] <Varun Date> 9 weeks ago
+645caf2 : Pulse: allow setting fading blocks opacity [2/3] <Varun Date> 10 weeks ago
+0ac9a97 : Improve Pulse and MediaMonitor reliability <ezio84> 10 weeks ago
+11115e9 : Smartbar media arrows: fix it hiding sometimes <ezio84> 2 months ago
+107d69c : SmartBar Media Arrows: add streaming music support <ezio84> 10 weeks ago
+a687b71 : Smartbar media arrows: more code improvements [1/2] <ezio84> 10 weeks ago
+e6ddfe6 : Smartbar media arrows: more code improvements <ezio84> 2 months ago
+4b13131 : Smartbar track arrows: code cleanup and don't show them on video playing <ezio84> 2 months ago
+3c7daeb : SmartBar: allow set custom buttons opacity when Pulse is active [1/3] <ezio84> 2 months ago
+13279b3 : Make Smartbar Pixel Animation Durations Customizable [2/3] <Varun Date> 10 weeks ago
+6f4e145 : Unlock Home and Back Buttons from Smartbar <Varun Date> 10 weeks ago
+84da14e : SmartBar: show arrows for next/previous track when playing audio [1/2] <ezio84> 2 months ago
+b9c7e39 : SmartBar editor: Let's use the blue! <Nathan Chancellor> 2 months ago
+67522d0 : Smartbar: expose SmartButton ripple color <bigrushdog> 3 months ago
+d2872b6 : DUI: SmartBar Color: Custom app color filter switch (2/3) <LorDClockaN> 3 months ago
+b39961b : Pulse: allow custom opacity for solid line renderer [1/3] <Ezio Lacandia Bijelkic> 4 months ago
+ba72265 : Pulse: Moar bars for solid line renderer [1/3] <bigrushdog> 4 months ago
+2da9889 : Allow to set Ripple on other buttons for Home button only pixel animation [1/2] <Ezio Lacandia Bijelkic> 4 months ago
+3a2191f : Smartbar: allow to set pixel ani for the home button only [1/2] <Ezio Lacandia Bijelkic> 4 months ago
+8cf78de : SmartBar: Pixel button animation support [2/3] <bigrushdog> 6 months ago
+2a42d94 : Bring in initial Pixel Navbar animation resources [1/?] <Jacob McSwain> 6 months ago
+81b1b28 : Update edit mode button & fix action list pressed color <westcripp> 4 months ago
+2f9217f : Update navigation button sizes and some drawables <westcripp> 4 months ago
+5390e06 : Separate one handed mode icons [1/2] <Alex Cruz> 4 months ago
+c98f311 : Slidetouch listener only on navbar view <ezio84> 5 months ago
+ 
+**** cmR:android_packages_apps_Settings ****
+63c0b6e : derp fixed <ZION959> 26 hours ago
+18d7900 : Configurable QS Columns [2/2] <XXMrHyde> 26 hours ago
+9308aeb : Bring Back Recents Style [2/2] <varund7726> 2 days ago
+e439065 : build fixed <ZION959> 2 days ago
+c242d7d : Settings:Task Manager Customizations [2/2] <varund7726> 2 days ago
+48aa358 : [2/3] settings: custom header extensions <maxwen> 5 months ago
+39151b8 : CAF Task Manager Switch [2/2] <Alex Cruz> 2 days ago
+df60e5c : Header Image Packs and Shadows {SQUASHED}[2/2] <maxwen> 2 days ago
+b33b36d : Header items + Date time Positions [2/2] <Joe Maples> 2 days ago
+8745687 : fixed build error <ZION959> 2 days ago
+17e796a : Settings:Pulse: allow setting fading blocks opacity [3/3] <varund7726> 3 days ago
+9aa2cca : Settings: Make Smartbar Pixel Animation Durations Customizable [3/3] <Varun Date> 10 weeks ago
+1b75f27 : SmartBar: allow set custom buttons opacity when Pulse is active [2/3] <ezio84> 3 days ago
+7512bfd : Settings: Make Smartbar Pixel Animation Durations Customizable [3/3] <varund7726> 3 days ago
+fdafd20 : SmartBar: show arrows for next/previous track when playing audio [2/2] <ezio84> 10 weeks ago
+9e2ed9c : DUI: validate image size before attempting to set as icon [2/2] <bigrushdog> 7 months ago
+d55ffa2 : Settings: SmartBar Color: Custom app color filter switch (3/3) <Bryan Owens> 3 months ago
+9f84965 : Settings: SmartBar Color: Custom app color filter switch (3/3) <LorDClockaN> 3 days ago
+4a67d11 : Pulse: allow custom opacity for solid line renderer [3/3] <ezio84> 3 days ago
+cf8e6ce : Pulse: Moar bars for solid line renderer [3/3] <ezio84> 3 days ago
+5bce76d :  Allow to set Ripple on other buttons for Home button only pixel animation [2/2] <ezio84> 4 months ago
+d58c390 : Smartbar: allow to set pixel ani for the home button only [2/2] <ezio84> 4 months ago
+099099f : SmartBar: Add Pixel to button animation settings [3/3] <bigrushdog> 4 months ago
+e1f20d2 : Settings: Fix pulse activity typo <ZION959> 3 days ago
+e6322f8 : Add Pulse Lava Lamp start and end colors (3/3) <Ritayan Chakraborty> 5 months ago
+6d7e5e0 : Smartbar:Turn off One Handed UI by default [2/2] <Varun Date> 5 months ago
+6623c5d : One handed mode toggle [3/3] <beanstown106> 3 days ago
+2146ca5 : DUI: Smartbar: double tap to sleep [3/3] <ezio84> 3 days ago
+714e0e3 : Settings:Add a Switch to Enable Disable Dyanamic Navbar[2/2] <varund7726> 3 days ago
+e6621a4 : DUI: Fix iconpicker for icon packs on smartbar <ZION959> 3 days ago
+7f23a75 : Smartbar Button Tint [3/3] <varund7726> 3 days ago
+1e1d910 : Smarbar: Fix Wrong seekbar attr <Varun Date> 7 months ago
+2327acc : Expose Text Color for Configurations Title <ZION959> 3 days ago
+b4d32bb : [2/2] settings: add CPU info overlay <maxwen> 3 years, 7 months ago
+3f6a0b3 : SlimRecents Membar Colors: Obey Themes when disabled [2/2] <SpiritCroc> 10 weeks ago
+7f2c4a5 : Slim Recents Membar Color [2/2] <varund7726> 3 days ago
+1c43586 : Refactor Slim Recents [2/2] <SpiritCroc> 3 days ago
+eb83a9f : Suspend Actions [3/3] <maxwen> 3 days ago
+a3bd4f0 : derp fixed <ZION959> 3 days ago
+51d4321 : Slim Recents iconpack support [2/2] <Danesh Mondegarian> 3 months ago
+96e1634 : Slim Recents: Longpress Membar to Clear Recents [2/2] <SpiritCroc> 3 days ago
+f898027 : Settings: Add MemBar to Slim Recents [2/2] <varund7726> 3 days ago
+f5bf099 : Add Slim Dslv Classes and Fix Slim Recent Sidebar <SpiritCroc> 3 days ago
+6e30cff : Slim recents app sidebar [2/2] <SpiritCroc> 3 days ago
+2c931ff : Slim Recents squash [2/2] <Lars Greiss> 3 days ago
+ 
+**** cmR:android_packages_services_Telephony ****
+35c3559 : Suspend Actions [2/3] <maxwen> 5 months ago
+ 

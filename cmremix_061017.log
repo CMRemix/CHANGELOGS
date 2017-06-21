@@ -1,0 +1,45 @@
+
+**** github:CMRemix/android_device_samsung_trlte-common ****
+4c64d27 : HW keys tweaks <ZION959> 25 hours ago
+ 
+**** cmR:android_frameworks_base ****
+533aa84 : Base: Fix global action configs <westcripp> 7 months ago
+afa5cf7 : Make Heads Up snooze toast more informative *tell the user which app is snoozing *also center the toast to account for big app names Example: SystemUI - Peeking notifications are snoozing for 1 minute. <beanstown106> 7 months ago
+6f0fd37 : Base: HeadsUp snooze function [1/2] 5.1 introduced a snooze feature which activates when swiping up. Default snooze time is 1 minute. Let's make it configurable! <Lokesh Chamane> 1 year, 2 months ago
+8d570c0 : HeadsUp: add timeout option (1/2) <Lars Greiss> 1 year, 2 months ago
+e2e9345 : [2/2] frameworks: show charging current & voltage on lockscreen <Jean-Pierre Rasquin> 7 months ago
+a747ce7 : SystemUI: grant PACKAGE_USAGE_STATS permission for DUI [1/2] <dwitherell> 7 months ago
+b9f612d : Add ability to disable ripple when entering lockscreen pin [1/2] <beanstown106> 8 months ago
+1230cdc : SystemUI: Add heads up tile <Michael Bestas> 2 years, 2 months ago
+95b6e6a : SysUI:add Ambient Display Tile <Decad3nce> 8 months ago
+cde45db : Fix automatic brightness QS toggle icon <SpiritCroc> 7 months ago
+fe5c32e : [Base] HW keys tweaks (1/2) <cristianomatos> 7 months ago
+4889f68 : Clean up Leftovers <Varun Date> 6 months ago
+ 
+**** github:CMRemix/android_kernel_samsung_trlte ****
+ce8e268 : enabled ntfs <ZION959> 26 hours ago
+ 
+**** cmR:android_packages_apps_CMRemixUpdater ****
+c9b623a : lets use CMRemix ota on Basketbuild <ZION959> 2 hours ago
+ 
+**** github:LineageOS/android_packages_apps_Messaging ****
+6639abb : [5/6] Breathing missedcall/sms/voicemail <Bajee11> 3 years, 5 months ago
+ 
+**** cmR:android_packages_apps_Settings ****
+53fe07b : build fixed <ZION959> 2 hours ago
+b6e8091 : [SQUASHED] Implement XOSP Blur personalization options (1/2) <Lars Greiss> 7 months ago
+2dda784 :  [1/2] Settings: show charging current & voltage on lockscreen <ezio84> 24 hours ago
+b94ffee : HW keys tweaks (2/2) <cristianomatos> 25 hours ago
+4ded80e : [SQUASHED] Implement XOSP Blur personalization options (1/2) <Calin> 27 hours ago
+4ad8f95 : derp fixed <ZION959> 3 days ago
+ 
+**** github:LineageOS/android_packages_services_Telecomm ****
+5d4aef1 : [2/6] Breathing missedcall/sms/voicemail <garwedgess> 2 years, 4 months ago
+ 
+**** cmR:android_packages_services_Telephony ****
+e4c27aa : [3/6] Breathing missedcall/sms/voicemail <garwedgess> 3 years, 5 months ago
+ 
+**** github:LineageOS/cm_platform_sdk ****
+4f006e2 : Double tap to sleep anywhere on lock screen [3/3] <Matssa56> 11 days ago
+965ea2c : cmsdk: Disable Lockscreen Media Art [3/3] <Matssa56> 13 days ago
+ 

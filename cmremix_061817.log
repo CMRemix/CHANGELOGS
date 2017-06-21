@@ -1,0 +1,53 @@
+
+**** github:CMRemix/android_device_samsung_trlte-common ****
+29e47b2 : use strict and graphite to optimize cmremix <ZION959> 33 minutes ago
+3fff5de : trlte-common: fix rmt_storage denial <OzzysCmAcc> 4 months ago
+4c64d27 : HW keys tweaks <ZION959> 9 days ago
+50e44a4 : fixed recovery build error <ZION959> 2 weeks ago
+e28967d : Add gestures control config <ZION959> 2 weeks ago
+1445628 : remove cmremix opti <ZION959> 3 weeks ago
+1b2929c : trlte-common: Remove Gello <underscoremone> 5 weeks ago
+1ebaf30 : build cmremix with clang 5.0 <ZION959> 5 weeks ago
+0df4a98 : add some cmremix optimization flags <ZION959> 5 weeks ago
+114ed5d : cmremix's fy <ZION959> 5 weeks ago
+836b966 : trlte: cmhw update <underscoremone> 8 weeks ago
+5ab717f : trlte: BoardConfigCommon: Remove LOCAL_PATH := <underscoremone> 8 weeks ago
+f4b4b8c : trlteRIL: bring back handleNitzTimeReceived <bryan2894> 2 months ago
+c8cc0d2 : trlte-common: Quiet "KERNEL IS NOT SEANDROID ENFORCING" boot message <Kevin F. Haggerty> 5 months ago
+30d7ff1 : trlte: liblights: Remove device level HAL <underscoremone> 3 months ago
+b94212d : trlte: reorganize sepolicy <underscoremone> 3 months ago
+bc63873 : trlte: init.qcom.rc: Updates from DQB4 <underscoremone> 3 months ago
+e1f4d61 : trlte: Fix libshims mess <underscoremone> 3 months ago
+d2c5408 : trlte: reorganize trlte.mk <underscoremone> 3 months ago
+3f3baf2 : trlte: sepolicy: address vold denials <underscoremone> 3 months ago
+6227ccd : trlte: Enable blur <underscoremone> 3 months ago
+9e4b894 : trlte: Add support for 2160p media profile <underscoremone> 3 months ago
+182c28f : trlte-common: make swap working as it should <OzzysCmAcc> 4 months ago
+e149b4a : trlte-common: move ril prop to system_prop <OzzysCmAcc> 5 months ago
+c6f2dc3 : trlte: add f2fs support for data and cache <underscoremone> 3 months ago
+52a5f11 : Revert "trlte: Fix video autoscaling" <underscoremone> 3 months ago
+098b30b : trlte: Fix restart freezing by adding a shutdown timeout to system.prop <underscoremone> 3 months ago
+ccc89de : trlte: add back bluetooth overlay <underscoremone> 3 months ago
+1673f47 : Revert "trlte-common: restorecon /data/time during init" <underscoremone> 4 months ago
+1c39556 : trlte: clean up <underscoremone> 4 months ago
+6c1dd40 : trlte: sepolicy update <underscoremone> 4 months ago
+67b36be : trlte: Don't build Snap <underscoremone> 4 months ago
+6fa540a : trlte: Allow tethering without provisioning app <underscoremone> 4 months ago
+a6cf802 : trlte: Fix video autoscaling <underscoremone> 4 months ago
+e396ff3 : trlte: add aptX codec support <underscoremone> 4 months ago
+b9c050f : trlte: BoardConfigCommon: Update partitions size <underscoremone> 4 months ago
+ca101be : system_prop: remove mm.enable.smoothstreaming=true <Pafcholini> 4 months ago
+4b30deb : trlte: Use phone-xxhdpi-3072-hwui-memory config * Fixes out of memory crashes of G+ and other apps <elektroschmock> 4 months ago
+5b3a54c : trlte: camera update <underscoremone> 4 months ago
+efa4131 : trlte: configs: updates from DQA1 <underscoremone> 4 months ago
+99812c2 : trlte: power: switch back to qcom powerhal <underscoremone> 4 months ago
+05a4ddc : trlte: switch to TimeKeep <underscoremone> 5 months ago
+ae591ca : trlte: Add PCC calibration interface <Steve Kondik> 2 years, 3 months ago
+51c73bb : trlte: Enable FlipFlap <fattire> 5 months ago
+2dec076 : trlte: fstab update <underscoremone> 5 months ago
+350085a : trlte: sepolicy update <underscoremone> 5 months ago
+7283e21 : trlte-common: Fix rotation sensor <micky387> 5 months ago
+07fa3a8 : trlte-common: Fix Sim and telephony database <micky387> 5 months ago
+bc10359 : trlte-common: restorecon /data/time during init <micky387> 6 months ago
+fb7c44b : trlte: BoardConfigCommon and system.prop update <fattire> 5 months ago
+ 

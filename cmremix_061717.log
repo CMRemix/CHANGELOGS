@@ -1,0 +1,66 @@
+
+**** cmR:android_build ****
+414ca05 : clang: Update unknown cflags list <Chet Kener> 10 months ago
+ 
+**** github:CMRemix/android_device_samsung_trlte-common ****
+7279c4d : trlte-common: fix rmt_storage denial <OzzysCmAcc> 4 months ago
+4c6e514 : tlte-common: Add FlipFlap <ZION959> 12 minutes ago
+59607b8 : trlte-common: Import camera wrapper <ZION959> 14 minutes ago
+25d1143 : trlte-common: kang brightness overlays from bacon <ZION959> 26 minutes ago
+b3b24eb : trlte : Use new Fingerprint Hal without ValidityService (ljzyal) <ZION959> 2 hours ago
+20169c3 : cmremix's fy <ZION959> 8 days ago
+8cecd26 : cm-14.1 More BoardConfig.mk changes for cm-14.1 <fattire> 7 months ago
+27c4bdb : cm-14.1 A couple boardconfig audio and other changes <fattire> 7 months ago
+d5c4dc7 : cm-14.1 spell validityservice right (no caps) <fattire> 7 months ago
+63af9ca : Fixes for audio/* and configs/* that help crashing AudioFX <fattire> 7 months ago
+76a19f5 : cm-14.1 comment stuff out in config.xml to stop build breaking <fattire> 7 months ago
+3763af1 : cm-14.1 selinux to permissive and other sepolicy changes for build <fattire> 7 months ago
+341fecc : cm-14.1 fixes for build to cmhw <fattire> 7 months ago
+b6c5481 : cm-14.1 git rid of gps for now <fattire> 7 months ago
+74ec21d : cm-14.1 get rid of camera for now <fattire> 7 months ago
+e0575ba : trlte-common: Remove deprecated crda init script <Michael Wawrzyniak> 1 year, 1 month ago
+4cf5b91 : trlte-common: update dalvik/hwui for 3GB <Michael Wawrzyniak> 1 year, 1 month ago
+a8d90d4 : trlte-common: remove deprecated egl.cfg <Michael Wawrzyniak> 1 year, 3 months ago
+2aef233 : trlte: fix charging of mode Now works properly <Pafcholini> 1 year, 3 months ago
+15be39c : Remove duplicates <agsola> 1 year, 3 months ago
+403eb9a : trlte-common: re-add missing blobs (should fix camera FC) <Michael Wawrzyniak> 1 year, 3 months ago
+3cfaff8 : trlte-common: dial down that GPS debugging, chief! <Michael Wawrzyniak> 1 year, 3 months ago
+5e5dc64 : trlte-common: fixup shims <Michael Wawrzyniak> 1 year, 3 months ago
+7f074af : rootdir: Updates *Change scheduler to cfq *Increase max readahead to 1024 KB *Set max/min values GPU * Update permissions <placiano> 1 year, 3 months ago
+cd14c58 : trlte-common: update adreno & drm proprietary <ZION959> 1 year, 3 months ago
+01615b1 : trlte_common: update system.prop: gps configs, sap.conf, izat.conf, radio, wifi, qcom-common, nitz, init.qcom.rc <ZION959> 1 year, 3 months ago
+00b1da7 : trlte-common: shim libqc-opt.so <Michael Wawrzyniak> 1 year, 3 months ago
+84a5f91 : trlte-common: remove qcmediaplayer and tcmiface <Michael Wawrzyniak> 1 year, 3 months ago
+f572a58 : trlte-common: add sensorhub service (credit: @raymanfx and @fat-tire) <Michael Wawrzyniak> 1 year, 4 months ago
+77ef541 : Revert "trlte-common: re-add vibrator intensity settings" <Michael Wawrzyniak> 1 year, 3 months ago
+8af17b3 : trlte-common: re-add cpusets (and everyone rejoiced) <Michael Wawrzyniak> 1 year, 3 months ago
+64af1f4 : trlte-common: re-add vibrator intensity settings <Michael Wawrzyniak> 1 year, 3 months ago
+22e09e3 : trlte-common: update the slow/fast charging thresholds <Michael Wawrzyniak> 1 year, 3 months ago
+d99d196 : trlte-common: update slow charge threshold <Michael Wawrzyniak> 1 year, 3 months ago
+604c168 : trlte-common: allow qseecomd EFS access; fix fingerprint <Michael Wawrzyniak> 1 year, 3 months ago
+112fe77 : trlte-common: remove lazy dexopt <Michael Wawrzyniak> 1 year, 4 months ago
+b09a18e : Revert "enable cpusets + other init changes" <Michael Wawrzyniak> 1 year, 4 months ago
+c047c99 : update fingerprint support to (ljzyal's) patch set 6 From ljzyal's klte support: http://review.cyanogenmod.org/#/c/133238/ <fat-tire> 1 year, 4 months ago
+d53d1df : remove unneeded overlay <fat-tire> 1 year, 4 months ago
+15e5e6f : update fingerprint support to (ljzyal's) patch set 5 <fat-tire> 1 year, 4 months ago
+c621a78 : quiet mpdecision spam re: core 1 status to offline <fat-tire> 1 year, 4 months ago
+9b0e338 : Adjust fingerprint sensor size (same as shamus was) <fat-tire> 1 year, 4 months ago
+336f227 : add vcs sepolicy- thanks to ljzyal <fat-tire> 1 year, 4 months ago
+6261216 : recents should use hardware layers for its taskviews. <fat-tire> 1 year, 4 months ago
+fcca776 : lazy dextop + some prop settings for cores <fat-tire> 1 year, 4 months ago
+9acb49f : remove unused powerhal files <fat-tire> 1 year, 4 months ago
+b7c4f3f : update audio configs files <ZION959> 1 year, 4 months ago
+9a6570a : trlte-common: use cm powerhal <ZION959> 1 year, 4 months ago
+e312c35 : fix fingerprint sepolicy (per ljzyal's version) <fat-tire> 1 year, 4 months ago
+8f4347f : hush up now, gps (thanks niv71) <fat-tire> 1 year, 4 months ago
+ 
+**** cmR:android_frameworks_base ****
+81b51ed : {SQUASHED} Lockscreen Weather colors [1/2] <Varun Date> 7 months ago
+05b5501 : Keyguard: Fix Coloring of Weather Drawable <Varun Date> 7 months ago
+a994543 : More Lockscreen Colors [1/2] <Alex Cruz> 1 year, 4 months ago
+c2ff660 : Expose lockscreen shortcuts phone background color <westcripp> 7 months ago
+b56939e : Add tabs transitions effects in CMRemix Config [1/2] <Nico60> 25 hours ago
+ 
+**** github:CMRemix/zion959-proprietary_vendor_samsung ****
+e206a59 : revert: trlte-common: Add fingerprint libraries <ZION959> 2 hours ago
+ 

@@ -1,0 +1,445 @@
+
+**** cmR:CMRemix ****
+56161c6 : derp <ZION959> 48 minutes ago
+a92d70f : track various repos <ZION959> 77 minutes ago
+90d2205 : manifest: android-7.1.2_r8 -> android-7.1.2_r17 <Dan Pasanen> 6 days ago
+a7fc9f8 : Sync slackbot repo <Michael Bestas> 3 weeks ago
+f9ffaa1 : cm: Remove Gello <Dan Pasanen> 4 weeks ago
+ 
+**** cmR:android_build ****
+c3e7f17 : Makefile: Add the missing dependency on FUTILITY. <Tao Bao> 4 months ago
+f36f76a : Build FUTILITY tool from futility-host. <Tao Bao> 4 months ago
+a34a38b : Version bump to NJH47B <android-build-team Robot> 4 weeks ago
+53ddb2a : Version bump to NJH34C <android-build-team Robot> 4 weeks ago
+798a617 : [DO NOT MERGE] Update Security String to 2017-06-05 for nyc-dev <Adam Seaton> 9 weeks ago
+64eb925 : [DO NOT MERGE] Update Security String to 2017-06-05 for nyc-dev <Adam Seaton> 9 weeks ago
+91a67a1 : N2G47W <The Android Automerger> 7 weeks ago
+cf99a68 : Version bump to NJH21D <android-build-team Robot> 7 weeks ago
+56ac9db : [DO NOT MERGE] Update Security String to 2017-06-05 for nyc-dev <Adam Seaton> 9 weeks ago
+98eb156 : [DO NOT MERGE] Update Security String to 2017-06-01 for nyc-dev <Adam Seaton> 9 weeks ago
+43e4406 : [DO NOT MERGE] Update Security String to 2017-06-01 for nyc-dev <Adam Seaton> 9 weeks ago
+d2daf11 : N2G47V <gitbuildkicker> 8 weeks ago
+63b920f : [DO NOT MERGE] Update Security String to 2017-06-05 for nyc-dev <Adam Seaton> 9 weeks ago
+3dad5c6 : [DO NOT MERGE] Update Security String to 2017-06-01 for nyc-dev <Adam Seaton> 9 weeks ago
+c68500f : N2G47U <gitbuildkicker> 9 weeks ago
+828d4f8 : N2G47T <gitbuildkicker> 9 weeks ago
+c1cc1db : NHG47L <gitbuildkicker> 9 weeks ago
+b382cfe : Update Security String to 2017-05-05 on nyc-dev <Adam Seaton> 3 months ago
+e5dd8a4 : Update Security String to 2017-05-01 on nyc-dev <Adam Seaton> 3 months ago
+cee5f07 : N2G47S <gitbuildkicker> 10 weeks ago
+189e63d : N2G47R <gitbuildkicker> 2 months ago
+765dc24 : N2G47Q <gitbuildkicker> 2 months ago
+5bcb8ef : NHG47K <android-merger> 2 months ago
+47991df : N2G47P <gitbuildkicker> 2 months ago
+4f4cd2e : NHG47J <kuantung> 3 months ago
+ 
+**** github:LineageOS/android_external_chromium-webview ****
+2909904 : Update webviews <Luca Stefani> 5 days ago
+ 
+**** aosp:platform/external/libgdx ****
+1135533 : Fix heap overflow when loading a PSD. bug 36368305 <Lucas Dupin> 9 weeks ago
+a3b3f74 : Fix heap overflow when loading a PSD. bug 36368305 <Lucas Dupin> 9 weeks ago
+ 
+**** aosp:platform/external/libhevc ****
+9d0b579 : Correct Tiles rows and cols check <Naveen Kumar P> 2 months ago
+5e35abd : Check only allocated mv bufs for releasing from reference <Naveen Kumar Ponnusamy> 3 months ago
+8851805 : Set current slice ctb x and y to fill prev incomplete slice <Naveen Kumar P> 2 months ago
+3d8d296 : Correct Tiles rows and cols check <Naveen Kumar P> 2 months ago
+a100ab9 : Check only allocated mv bufs for releasing from reference <Naveen Kumar Ponnusamy> 3 months ago
+cd22e2c : Set current slice ctb x and y to fill prev incomplete slice <Naveen Kumar P> 2 months ago
+ab14d63 : Return error from cabac init if offset is greater than range <Naveen Kumar Ponnusamy> 3 months ago
+e7cd9a6 : Handle error return from ref list in slice hdr parsing <Naveen Kumar Ponnusamy> 4 months ago
+ac4084f : Return error if SPS parsing reads more bytes than the nal length <Harish Mahendrakar> 5 months ago
+ 
+**** aosp:platform/external/libvpx ****
+c2f8373 : Limit vpx decoder to 4K frames <Marco Nelissen> 10 weeks ago
+66892a9 : Limit vpx decoder to 4K frames <Marco Nelissen> 10 weeks ago
+ 
+**** aosp:platform/external/libxml2 ****
+6a2e63d : DO NOT MERGE: Disallow namespace nodes in XPointer ranges <Brian C. Young> 10 weeks ago
+39ef221 : DO NOT MERGE: Add validation for eternal enities <Brian C. Young> 10 weeks ago
+c48bd30 : DO NOT MERGE: Fix XPointer paths beginning with range-to <Brian C. Young> 10 weeks ago
+4f0685a : DO NOT MERGE: Use correct limit for port values <Brian C. Young> 10 weeks ago
+a0b742c : DO NOT MERGE: Heap buffer overflow in xmlAddID <Brian C. Young> 9 weeks ago
+87b8586 : DO NOT MERGE: fix for the XPath nodeTab use-after-free bug from nmehta@ <Brian C. Young> 10 weeks ago
+508faa0 : DO NOT MERGE: Apply upstream Chromium patch for encoding changes <Brian C. Young> 10 weeks ago
+db3d77a : DO NOT MERGE: Heap buffer overflow in xmlAddID <Brian C. Young> 9 weeks ago
+d0e0d76 : DO NOT MERGE: fix for the XPath nodeTab use-after-free bug from nmehta@ <Brian C. Young> 10 weeks ago
+0d47c4c : DO NOT MERGE: Apply upstream Chromium patch for encoding changes <Brian C. Young> 10 weeks ago
+c93a895 : DO NOT MERGE: Disallow namespace nodes in XPointer ranges <Brian C. Young> 10 weeks ago
+233cf5c : DO NOT MERGE: Use correct limit for port values <Brian C. Young> 10 weeks ago
+58e494f : DO NOT MERGE: Add validation for eternal enities <Brian C. Young> 10 weeks ago
+66212ee : DO NOT MERGE: Fix XPointer paths beginning with range-to <Brian C. Young> 10 weeks ago
+ 
+**** github:LineageOS/android_external_stagefright-plugins ****
+05bf4e7 : ffmpeg-extractor: StageFright supports Opus files <Christopher R. Palmer> 9 days ago
+11bc5a2 : Revert "FFmpegExtractor: Don't use our extractor when we agree with StageFright" <Christopher R. Palmer> 7 days ago
+ 
+**** cmR:android_frameworks_base ****
+2c636ae : Fix Default Lock Date Fonts [2/2] <Varun Date> 7 months ago
+6c93208 : Keyguard:Fix Clock Size on First boot [1/2] <Varun Date> 7 months ago
+a98c1fe : Make sure Clock app grant all permissions <westcripp> 7 months ago
+ea59cc9 : Grant LockClock default permissions <Corey Edwards> 7 months ago
+ff537cd : Fix Google Calendar FC <Josh Chasky> 7 months ago
+33b3a30 : Allow chromium to sign in <spaceman860> 8 months ago
+1e30d65 : Fix Android 7.0 GApps permisions which were causing F/C <Alex Naidis> 10 months ago
+bd98ad2 : Keyguard: Fix Date Font Size for good --Use a Different implementation --Bring back brightness slider switch <Varun Date> 7 months ago
+11c5da9 : move PackageUtils to cmremix <ZION959> 17 hours ago
+269e23c : Keyguard: Fix Weather Text Dissapearing Sometimes <Varun Date> 8 months ago
+14c1aee : StatusBar Weather: Fix Weather On Statusbar with New LockClock Changes <Varun Date> 8 months ago
+eb7c215 : Extend Weather Provider to Keyguard <0xD34D> 8 months ago
+3e97f72 : Keyguard:Fix LockClock Date Size on First boot <Varun Date> 7 months ago
+99bf8fc : SystemUI: allow user to dismiss a locked task by swiping it away manually <Joey Rizzoli> 8 days ago
+5ebba8f : SystemUI: animate icon when locking a task <Joey Rizzoli> 8 days ago
+6c158c6 : SystemUI: Support recents task locking <Anas Karbila> 6 weeks ago
+8032f0b : derp fixed <ZION959> 18 hours ago
+4b3a0fd : fingerprint: handle PerformanceStats NULL pointers <Ícaro Hoff> 7 days ago
+6ab406c : Optimised hwui rounded corners shader <Arun> 5 months ago
+2dbfdfd : Remove FastJNI optimization on AssetManager to avoid dead lock. <Tim Zhang> 4 months ago
+750fefc : Fixed NPE in canAddMoreManagedProfiles <yuanhao> 5 months ago
+2a9db95 : QS: Remove listeners only if added <Gabriele M> 6 days ago
+4f07a6b : SystemUI: Remove trailing whitespace on high_accuracy_description <Adrian DC> 7 days ago
+c9e4d80 : StorageManager: Improve exception handling <Alex Naidis> 5 months ago
+2b7fd52 : Add support for page theme color to WebView and WebChromeClient. <Danny Baumann> 4 weeks ago
+8a13912 : Automatic translation import <Abhisek Devkota> 11 days ago
+3a315ac : Double tap to sleep anywhere on the lock screen [1/3] <Altaf-Mahdi> 1 year, 7 months ago
+ef847f7 : base: Disable Lockscreen Media Art [1/3] <beanstown106> 1 year, 8 months ago
+a1b706d : fw: Don't consume home key press when KEY_ACTION_SLEEP is used <Sultanxda> 8 weeks ago
+6d48756 : SystemUI: Specify user while changing brightness mode <Alberto97> 13 days ago
+0b32c29 : SystemUI: Misc fixes for right (custom) lockscreen shortcuts <Matthias Yzusqui> 4 weeks ago
+f778642 : Automatic translation import <Abhisek Devkota> 4 weeks ago
+b716a25 : Remove bg_non_interactive cgroup [ DO NOT MERGE ] <Wei Wang> 3 months ago
+12f0903 : SystemUI: Add tunable for auto brightness icon <Michael Bestas> 6 weeks ago
+4bb74af : Validate handler of wakelock option for flashlight. <Dominggoes Isakh> 6 weeks ago
+3f98df2 : telecom: Fix order of arguments when creating Details object <Gabriele M> 5 weeks ago
+cd248ac : Remove bg_non_interactive cgroup [ DO NOT MERGE ] <Wei Wang> 3 months ago
+a09cb5d : Remove bg_non_interactive cgroup [ DO NOT MERGE ] <Wei Wang> 3 months ago
+9fa33e7 : [DO NOT MERGE] Don't allow permission change to runtime <Svetoslav Ganov> 5 months ago
+413ebd1 : [DO NOT MERGE] Throw exception if slot has invalid offset <Fyodor Kupolov> 4 months ago
+f76189e : [DO NOT MERGE] Check bounds in offsetToPtr <Fyodor Kupolov> 3 months ago
+6aa2723 : Fix issue with saving admins before finishing loading. <Kenny Guy> 5 months ago
+eea3ed2 : resolve merge conflicts of ad4aa1ce7d3d to nyc-mr1-dev fix conflict in nyc-mr2-release Change-Id: I97ef31536cd06495a08a3f94f81df2d1376186e0 (cherry picked from commit f806d65e615b942c268a5f68d44bde9d55634972) <Andrew Scull> 5 months ago
+4fc5d98 : Protect Bluetooth OPP ACCEPT and DECLINE broadcast <Marie Janssen> 3 months ago
+ 
+**** cmR:android_frameworks_native ****
+d01fe0a : binder: remove cgroup interactions [ DO NOT MERGE ] <Tim Murray> 3 months ago
+4fb3386 : binder: remove cgroup interactions [ DO NOT MERGE ] <Tim Murray> 3 months ago
+a7dbb27 : binder: remove cgroup interactions [ DO NOT MERGE ] <Tim Murray> 3 months ago
+ 
+**** github:LineageOS/android_hardware_qcom_audio ****
+40d378a : Revert "audio HAL: fix thread starvation" <Michael Bestas> 10 days ago
+e86d1f2 : audiod: Call notifyAudioSystem from audiod even for the first bootup <Divya Narayanan Poojary> 6 months ago
+5b60686 : hal: fix thread starvation <Shiv Maliyappanahalli> 1 year, 8 months ago
+cf6f3c1 :  hal: add support for tx app type config <Divya Narayanan Poojary> 7 weeks ago
+ 
+**** github:LineageOS/android_hardware_qcom_display ****
+d222af7 : hwc: return correct color format string while layer dump <Rahul Sharma> 7 weeks ago
+ 
+**** github:LineageOS/android_hardware_qcom_display ****
+5bf41f1 : sdm: Set layer frame rate if not specified. <Dileep Marchya> 6 months ago
+ 
+**** github:LineageOS/android_hardware_qcom_fm ****
+10a0e49 : Automatic translation import <Abhisek Devkota> 11 days ago
+ 
+**** github:LineageOS/android_hardware_qcom_media ****
+688bfd1 : mm-video-v4l2: vdec:Return error if resolution setting fails. <Vasantha Balla> 8 weeks ago
+ 
+**** github:LineageOS/android_hardware_samsung ****
+ab9abf6 : liblights: Fix variable button brightness code <Paul Keith> 9 days ago
+ec8569b : Automatic translation import <Abhisek Devkota> 11 days ago
+ 
+**** github:LineageOS/android_hardware_ti_omap4 ****
+1738329 : omap4: Correct disabling of dirty regions invalidation <D. Andrei Măceș> 4 weeks ago
+ 
+**** github:LineageOS/android_libcore ****
+92a7b90 : Reject ftp URLConnection containing /r/n in user info. <Przemyslaw Szczepaniak> 3 months ago
+7ef1f06 : Test for rejection of ftp URL with /r/n in userinfo <Przemyslaw Szczepaniak> 3 months ago
+ 
+**** github:LineageOS/contributors-cloud-generator ****
+db271de : Bump DEFAULT_SIZE to 1896 <Harry Youd> 8 days ago
+ 
+**** github:LineageOS/cve_tracker ****
+b537d10 : Fix seeding of kernels <Tim Schumacher> 4 days ago
+9ed8aa4 : cve_tracker: Make initial seeding possible <Michael W> 9 days ago
+ee1e333 : app: do not show deprecated kernels in status view <Demon000> 7 days ago
+4455dc7 : Update device->kernel mapping <Paul Keith> 6 days ago
+b0df1d5 : cve_tracker: Fix back-link on kernel page <Michael W> 10 days ago
+ 
+**** github:LineageOS/hudson ****
+da39b16 : hudson: Move maserati, spyder, targa and umts_spyder to 14.1 <Michael Gernoth> 30 hours ago
+82e4a4f : hudson: Ship Nexus 9 LTE (flounder_lte) <Bruno Martins> 3 days ago
+c597689 : hudson: temporary disablement of BQ tenshi <Brinly Taylor> 3 days ago
+c1fa060 : Add Xiaomi Mi MIX (lithium) to the weekly builds <Balázs Triszka> 4 weeks ago
+792a245 : hudson: add Xiaomi Mi 4c (libra) <Demon000> 10 days ago
+22c516a : Disable devices with incomplete wiki instructions <Michael Bestas> 9 days ago
+fd041ce : hudson: add flounder to weeklies <Hashbang173> 3 months ago
+9fa02e6 : Ship capricorn <LuK1337> 2 weeks ago
+9078c14 : Revert "hudson: Ship weeklies for ham" <Brinly Taylor> 9 days ago
+fca0179 : Revert "Hero: pulling due to insecure adb" <Jesse Chan> 10 days ago
+008c1df : Revert "hero2: pulling due to insecure adb" <Jesse Chan> 10 days ago
+4d3c7c3 : hero2: pulling due to insecure adb <Tom Powell> 10 days ago
+8926f20 : Hero: pulling due to insecure adb <Tom Powell> 10 days ago
+ 
+**** github:LineageOS/mirror ****
+954e432 : Updated to 02-Jun-2017 20:31:10 UTC <Harry's Buildbot> 9 days ago
+ 
+**** github:LineageOS/scripts ****
+5c432dc : maintainers: Warn if device uses unofficial TWRP <Michael Bestas> 9 days ago
+eb5a973 : Add another device->kernel mapping exception <Paul Keith> 6 days ago
+d658b66 : maintainers: Add fastboot_generic as a bad point <Harry Youd> 7 days ago
+2468921 : maintainers-checks: Use elif to check 'dd' install method <Paul Keith> 7 days ago
+a9c6df2 : Print out maintainer info with -m or --maintainers <Harry Youd> 8 days ago
+a8794d6 : maintainers: Check requirements for dd install method <Michael Bestas> 9 days ago
+ 
+**** github:LineageOS/lineageos_updater ****
+8343855 : changelog: show changes for device's active branch, not always cm-14.1 <Simon Shields> 4 days ago
+12b8eb6 : updater: version bump <Tom Powell> 5 days ago
+d47c3bf : updater: include changelog in build <Tom Powell> 5 days ago
+0fa80de : updater: require absolute imports <Tom Powell> 5 days ago
+0b2fece : Regenerate device dependency mappings <Harry's Buildbot> 5 days ago
+0143857 : Add Xiaomi Mi 4c (libra) <Demon000> 10 days ago
+2ddd5e3 : Move lithium device image to new location <razorloves> 7 days ago
+59e4989 : Add Xiaomi Mi MIX (lithium) <Balázs Triszka> 4 weeks ago
+2d8864a : Add capricorn to devices list <LuK1337> 2 weeks ago
+73997b2 : Fix .side-nav height <LuK1337> 11 days ago
+ 
+**** github:LineageOS/www ****
+da966d8 : Remove # from post titles <Harry Youd> 8 days ago
+ae19221 : SafetyNet <Paul Keith> 12 days ago
+ 
+**** github:LineageOS/lineage_wiki ****
+ce9cbb7 : devices: Move maserati, spyder, targa and umts_spyder to 14.1 <Michael Gernoth> 28 hours ago
+eed10dc : devices: Differentiate Nexus 9 (Wi-Fi) from Nexus 9 (LTE) <Bruno Martins> 3 days ago
+b2aa9ea : devices: Add Nexus 9 LTE (flounder_lte) <Bruno Martins> 3 days ago
+c1af267 : wiki: update ham maintainer <Brinly Taylor> 3 days ago
+f688041 : wiki: add peach install instruction <Ilya Lebedev> 7 days ago
+f8f6d78 : devices: Set G2 as discontinued <Felipe Torres> 5 days ago
+a4ed61f : Update Mi 5s page <LuK1337> 5 days ago
+25563b4 : devices: Update LG devices info <Bruno Martins> 6 days ago
+4c2ad24 : wiki: v500: add recovery install method and update info <fefifofum> 7 days ago
+74e0748 : wiki: update install method for g2 variants and device info <Felipe Torres> 6 days ago
+03a0354 : devices: kingdom: Update recovery install method and device info <Michal Chvila> 3 weeks ago
+3105994 : devices: Switch A6020 to fastboot_unlocked template <Bruno Martins> 6 days ago
+a63ea6f : Add fastboot_unlocked template <Paul Keith> 6 days ago
+077811e : wiki: add axon 7 install instruction <Erwan Leboucher> 7 days ago
+13cdfaf : templates: Create custom fastboot recovery install method <Michal Chvila> 2 weeks ago
+3ecb913 : devices: Add Mi 4c (libra) <Demon000> 3 weeks ago
+c2e37a7 : Add Xiaomi Mi MIX (lithium) <Balázs Triszka> 4 weeks ago
+16626ce : devices: Add Nexus 9 (flounder) <Hashbang173> 3 months ago
+e1a5f17 : devices: huawei: add recovery install method <dianlujitao> 3 weeks ago
+c2405bd : ./extract-files.sh directly takes the path, without the -d flag <juadde> 8 days ago
+0f494a2 : Remove horizontal tab from folder name <Harry Youd> 7 days ago
+6e660e5 : templates: Add Huawei bootloader unlocking instructions <dianlujitao> 3 weeks ago
+c013764 : devices: Update H815/H811 install methods <Erwan Leboucher> 8 days ago
+2f63527 : templates: Add LG bootloader unlocking instructions <Erwan Leboucher> 8 days ago
+eb31ba1 : Add Mi 5s device page <LuK1337> 2 weeks ago
+5eb47c0 : wiki: update install method for g3 variants <bryan2894> 8 days ago
+3f5f2ea : wiki: Fix maintainers in various LG devices <Harry Youd> 8 days ago
+7917f91 : wiki: Grammar fixes for the installation instructions template <Sean McCreary> 9 days ago
+a93501d : wiki: Add instructions for version upgrades <Sean McCreary> 10 days ago
+d84263d : Update install method for the Nvidia devices <Aaron Kling> 2 weeks ago
+a92a342 : Revert "wiki: Update recovery install methods for LG devices" <Michael Bestas> 9 days ago
+71c6aec : wiki: Update recovery install methods for LG devices <Rashed Abdel-Tawab> 10 days ago
+ 
+**** github:LineageOS/android_packages_apps_AudioFX ****
+6850778 : AudioFX: Sign with platform key <Arne Coucheron> 11 days ago
+a9e6e96 : Automatic translation import <Abhisek Devkota> 11 days ago
+ 
+**** github:LineageOS/android_packages_apps_Bluetooth ****
+9d274ac : BluetoothOppTransferActivity: fix after ad46f6a52d7240ed1e2127c4263a5cbcf454df09 <Dan Pasanen> 6 days ago
+a1d4b44 : Automatic translation import <Abhisek Devkota> 11 days ago
+877e9be : Prevent OPP from opening files that aren't sent over Bluetooth <Ajay Panicker> 9 weeks ago
+ad46f6a : OPP: Restrict file based URI access to external storage <Jack He> 3 months ago
+8175764 : Prevent OPP from opening files that aren't sent over Bluetooth <Ajay Panicker> 9 weeks ago
+0ed24c4 : OPP: Restrict file based URI access to external storage <Jack He> 3 months ago
+ 
+**** github:LineageOS/android_packages_apps_CMUpdater ****
+36cc1fb : Automatic translation import <Abhisek Devkota> 11 days ago
+ 
+**** github:LineageOS/android_packages_apps_Calendar ****
+1716e53 : Automatic translation import <Abhisek Devkota> 11 days ago
+ 
+**** github:LineageOS/android_packages_apps_Camera2 ****
+1bd0645 : Automatic translation import <Abhisek Devkota> 11 days ago
+ 
+**** github:LineageOS/android_packages_apps_CellBroadcastReceiver ****
+f8d149a : Automatic translation import <Abhisek Devkota> 11 days ago
+ 
+**** github:LineageOS/android_packages_apps_CustomTiles ****
+bcc7ac9 : Automatic translation import <Abhisek Devkota> 11 days ago
+ 
+**** cmR:android_packages_apps_DeskClock ****
+245a33d : Automatic translation import <Abhisek Devkota> 11 days ago
+ 
+**** cmR:android_packages_apps_Dialer ****
+871e09b : Automatic translation import <Abhisek Devkota> 11 days ago
+ec686b9 : Dialer: update fab color to match aosp primary color <Joey Rizzoli> 2 weeks ago
+ 
+**** github:LineageOS/android_packages_apps_Email ****
+ea4eb75 : Adjust Email UnitTests to e353ae2ea19c9ea800d10b37e05de7b0ea1aeeb4 <Zennoe> 4 days ago
+ 
+**** github:LineageOS/android_packages_apps_EmergencyInfo ****
+3ea2db7 : Automatic translation import <Abhisek Devkota> 11 days ago
+ 
+**** cmR:android_packages_apps_ExactCalculator ****
+16e9688 : Automatic translation import <Abhisek Devkota> 11 days ago
+ 
+**** github:LineageOS/android_packages_apps_FMRadio ****
+22979c0 : Automatic translation import <Abhisek Devkota> 11 days ago
+ 
+**** github:LineageOS/android_packages_apps_FlipFlap ****
+99c45c1 : FlipFlap: Circle/Rectangle View: Force layout to the follow BatteryViews <jrior001> 3 weeks ago
+ 
+**** github:LineageOS/android_packages_apps_Gallery2 ****
+93bcb4c : Gallery2: support GIF animation <Likai Ding> 3 years, 10 months ago
+95cb32b : Increase the size of the tiles when decoding images <Gabriele M> 4 weeks ago
+97a397b : Automatic translation import <Abhisek Devkota> 11 days ago
+ 
+**** github:LineageOS/android_packages_apps_Jelly ****
+22cb565 : Implement history management through a ContentProvider. <Danny Baumann> 12 days ago
+e28fd6c : Jelly: Add HTTP auth login support <Luca Stefani> 13 days ago
+7ac5399 : Add support for WebViews that provide the site's theme color. <Danny Baumann> 13 days ago
+153b7b7 : Automatic translation import <Abhisek Devkota> 11 days ago
+ 
+**** github:LineageOS/android_packages_apps_ManagedProvisioning ****
+4b787a2 : Automatic translation import <Abhisek Devkota> 11 days ago
+ 
+**** cmR:android_packages_apps_PhoneCommon ****
+bedcf82 : Automatic translation import <Abhisek Devkota> 11 days ago
+ 
+**** github:LineageOS/android_packages_apps_Recorder ****
+8c0b44d : Automatic translation import <Abhisek Devkota> 11 days ago
+ 
+**** cmR:android_packages_apps_Settings ****
+73606b5 : general fixed and update <ZION959> 18 hours ago
+9d0198f : Automatic translation import <Abhisek Devkota> 11 days ago
+dd4f773 : Double tap to sleep anywhere on the lock screen [2/3] <Matssa56> 12 days ago
+6a704ce : Settings: Disable Lockscreen Media Art [2/3] <beanstown106> 1 year, 8 months ago
+b9f7eff : Settings: Make string untranslatable <Elektroschmock> 10 days ago
+820126f : Squash commit of SAR and IC Code. <Adnan Begovic> 2 years, 5 months ago
+c663430 : Fix crash when calling remove() with a null variable <LuK1337> 3 weeks ago
+18fd53a : Automatic translation import <Abhisek Devkota> 4 weeks ago
+ 
+**** github:LineageOS/android_packages_apps_SetupWizard ****
+0f16837 : Automatic translation import <Abhisek Devkota> 11 days ago
+ 
+**** github:LineageOS/android_packages_apps_Stk ****
+f9f50a5 : Do not display toast if alpha text is null. <Rakesh Pallerla> 1 year, 4 months ago
+ 
+**** github:LineageOS/android_packages_apps_Tag ****
+1dc7751 : Automatic translation import <Abhisek Devkota> 11 days ago
+ 
+**** github:LineageOS/android_packages_apps_Terminal ****
+5856a60 : Terminal: Fix keyboard Ctrl- and ALT-key input. <Patrik Stromdahl> 2 weeks ago
+18225bd : Terminal: all menu items should have their proper icon <Joey Rizzoli> 12 days ago
+ca41ebc : Terminal: update main theme color for improved readability <Joey Rizzoli> 12 days ago
+0ec9d32 : Terminal: fix preference defaults <Joey Rizzoli> 12 days ago
+5d69fc4 : Terminal: volume keys as up/down <Joey Rizzoli> 12 days ago
+ 
+**** github:LineageOS/android_packages_apps_Trebuchet ****
+e4411d6 : Automatic translation import <Abhisek Devkota> 11 days ago
+ 
+**** github:LineageOS/android_packages_apps_TvSettings ****
+3ddceec : Settings: Implement ADB over network <Dave Carey> 3 years, 7 months ago
+bf8bc80 : Settings: Add intent to launch LineageOS platlogo upon multiple taps <Zhao Wei Liew> 5 months ago
+0165eb8 : settings: Add advanced reboot switch <Steve Kondik> 9 months ago
+e1c67c5 : Settings: Set root access options appropriately <Tom Marshall> 12 months ago
+253b262 : settings: Add developer setting for root access <Steve Kondik> 1 year, 8 months ago
+f4e82a3 : Use more descriptive strings for add accessory page <dhacker29> 2 years, 2 months ago
+3733c2b : About: Add LineageOS Updates <dhacker29> 2 years, 2 months ago
+0fe2e3b : Add build date (ro.build.date from build.prop) to About screen. <dhacker29> 2 years, 2 months ago
+18c18a9 : One does not simply become a Developer <dhacker29> 2 years, 2 months ago
+34001b8 : Add LineageOS version to the About screen <dhacker29> 2 years, 2 months ago
+8314f85 : Automatic translation import <Abhisek Devkota> 11 days ago
+ 
+**** github:LineageOS/android_packages_inputmethods_LatinIME ****
+30c53af : Automatic translation import <Abhisek Devkota> 11 days ago
+ 
+**** github:LineageOS/android_packages_providers_WeatherProvider ****
+7f81c53 : Automatic translation import <Abhisek Devkota> 11 days ago
+ 
+**** github:LineageOS/android_packages_resources_devicesettings ****
+fe6b096 : Automatic translation import <Abhisek Devkota> 10 days ago
+ 
+**** github:LineageOS/android_packages_services_LiveLockScreenService ****
+15d4966 : Automatic translation import <Abhisek Devkota> 11 days ago
+ 
+**** cmR:android_packages_services_Telephony ****
+6ba71dd : VoicemailSettingsActivity: Fix some NPEs <Gabriele M> 2 weeks ago
+5c6ea38 : Automatic translation import <Abhisek Devkota> 11 days ago
+9d67fca : Fix minor inconsistency in the CDMA call settings <Tim Schumacher> 3 weeks ago
+96a9e3c : telephony: Fix and move CAF strings <Elektroschmock> 3 weeks ago
+13c66d4 : Automatic translation import <Abhisek Devkota> 4 weeks ago
+ 
+**** github:LineageOS/android_system_bt ****
+0bbd5c6 : Check LE advertising data length before caching advertising records <Jack He> 10 weeks ago
+9421015 : Check LE advertising data length before caching advertising records <Jack He> 10 weeks ago
+74a7a01 : resolve merge conflicts of a3ee2e35 to nyc-dev <Pavlin Radoslavov> 3 months ago
+ 
+**** cmR:android_system_core ****
+5e54c5f : libcutils: fix schedboost after 31f78ddf4ea2ab7963d873cb16db98e976346468 <Dan Pasanen> 6 days ago
+31f78dd : libcutils: remove schedgroup fds [DO NOT MERGE] <Wei Wang> 2 months ago
+f388bab : init.rc: remove bg_non_interactive cgroup [ DO NOT MERGE ] <Wei Wang> 3 months ago
+783a787 : libcutils: only change cgroup when fd is initialized [ DO NOT MERGE ] <Wei Wang> 3 months ago
+278ee6b : libcutils: remove schedgroup fds [DO NOT MERGE] <Wei Wang> 2 months ago
+2997bad : libcutils: remove schedgroup fds [DO NOT MERGE] <Wei Wang> 2 months ago
+d3f10b9 : libcutils: remove schedgroup fds [DO NOT MERGE] <Wei Wang> 2 months ago
+2dec628 : Fix out of bound read in libziparchive <Tianjie Xu> 10 weeks ago
+6617398 : libcutils: only change cgroup when fd is initialized [ DO NOT MERGE ] <Wei Wang> 3 months ago
+1dbaa17 : init.rc: remove bg_non_interactive cgroup [ DO NOT MERGE ] <Wei Wang> 3 months ago
+fd1574b : Fix out of bound read in libziparchive <Tianjie Xu> 10 weeks ago
+ba75641 : init.rc: remove bg_non_interactive cgroup [ DO NOT MERGE ] <Wei Wang> 3 months ago
+e0b4ead : libcutils: only change cgroup when fd is initialized [ DO NOT MERGE ] <Wei Wang> 3 months ago
+3d6a431 : Fix out of bound read in libziparchive <Tianjie Xu> 10 weeks ago
+9418157 : libcutils: remove schedgroup fds [DO NOT MERGE] <Wei Wang> 2 months ago
+ 
+**** cmR:android_vendor_CMRemix ****
+51e0917 : android-7.1.2_r8 -> android-7.1.2_r17 <ZION959> 35 minutes ago
+a175f86 : remove qcom_common <ZION959> 18 hours ago
+f5049a6 : Add sensitive numbers for Israel. <Noam Tamim> 5 days ago
+5436ebc : sensitive_pn: Add sensitive phone numbers for Czech Republic <drastic-krutor> 7 days ago
+8c8b137 : sensitive_pn: Add Canadian sensitive numbers <Tim Lewis> 8 days ago
+fa5fdd6 : sensitive_pn: Add more numbers from the Netherlands <Brinly Taylor> 6 days ago
+4fe3509 : fix check_blacklist function to work on wiped /system partition <Gabriele M> 8 days ago
+140d378 : sensitive_pn: Add sensitive numbers for Serbia <Brinly Taylor> 8 days ago
+62741ba : sensitive_pn: Add sensitive phone numbers for India <Brinly Taylor> 11 days ago
+8c3ee9c : sensitive_pn: Add more numbers for Germany <Matthias Urlichs> 11 days ago
+4b1013f : sensitive_pn: Add sensitive phone numbers for Norway <Arne Coucheron> 12 days ago
+7201def : sensitive_pn: Add additional US numbers <Kasual> 13 days ago
+05eb2b3 : sensitive_pn: add sensitive number for Indonesia <qjohn> 13 days ago
+5d29990 : sensitive_pn: Add sensitive phone number for Romania <Calin> 13 days ago
+24658d6 : sensitive_pn: Added sensitive number for the Netherlands <Valerio Pilo> 13 days ago
+8bb7481 : sensitive_pn: add sensitive numbers for Turkey <Ali B> 2 weeks ago
+471a9be : sensitive_pn: Add sensitive phone number for Bangladesh <Anik1199> 2 weeks ago
+976b17e : sensitive_pn: Add US number <Brinly Taylor> 2 weeks ago
+d409afe : Add sensitive phone numbers for Brazil <João Paulo Just Peixoto> 2 weeks ago
+7b9fa16 : sensitive_pn: reorder by MCC code <Brinly Taylor> 2 weeks ago
+2ca43d1 : sensitive_pn: Add Australian sensitive phone number. <Brinly Taylor> 2 weeks ago
+3a02137 : sensitive_pn: Add New Zealand sensitive numbers. <Brinly Taylor> 2 weeks ago
+ 
+**** github:LineageOS/cm_platform_sdk ****
+f53bcaa : Automatic translation import <Abhisek Devkota> 11 days ago
+6a47344 : Double tap to sleep anywhere on lock screen [3/3] <Matssa56> 12 days ago
+062bfa9 : cmsdk: Disable Lockscreen Media Art [3/3] <Matssa56> 13 days ago
+ 
+**** github:LineageOS/android_packages_apps_OpenWeatherMapProvider ****
+3fe4133 : Add back key to actionbar <Joey Rizzoli> 6 days ago
+b9b9cce : Add openweathermap copyright <Joey Rizzoli> 6 days ago
+d0d73c5 : Add icon <Joey Rizzoli> 6 days ago
+dccb527 : Refactor cyanogenmod -> lineageos <Joey Rizzoli> 6 days ago
+9d01897 : Update gradle <Joey Rizzoli> 6 days ago
+ 
+**** github:LineageOS/android_packages_apps_WundergroundWeatherProvider ****
+3e9b1c1 : Don't fail when a translation is missing <Joey Rizzoli> 4 days ago
+3a8340c : Update icon <Joey Rizzoli> 6 days ago
+a195bb4 : Refactor cyanogenmod -> lineageos <Joey Rizzoli> 6 days ago
+a1ff743 : Update gradle <Joey Rizzoli> 6 days ago
+ 
+**** github:LineageOS/android_packages_apps_YahooWeatherProvider ****
+bf4c5a3 : Don't fail when a translation is missing <Joey Rizzoli> 4 days ago
+6110585 : Update app name to match other providers <Joey Rizzoli> 6 days ago
+a0d2c7c : Update icon <Joey Rizzoli> 6 days ago
+fd3221f : Refactor cyanogemod -> lineageos <Joey Rizzoli> 6 days ago
+5cb7ddf : Update gradle <Joey Rizzoli> 6 days ago
+0b94297 : Automatic translation import <Abhisek Devkota> 10 days ago
+ 

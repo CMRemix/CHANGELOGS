@@ -1,0 +1,62 @@
+
+**** github:CMRemix/android_device_samsung_trlte-common ****
+a03e015 : add default support flags in vold for exfat and ntfs also reorganized fstab <ZION959> 50 minutes ago
+ 
+**** cmR:android_frameworks_base ****
+68bde8d : fixed build error <ZION959> 16 hours ago
+712c258 : Base: Improve OmniSwitch implementation <Nathan Chancellor> 2 weeks ago
+6f41f37 : CMRUtils:Add missing Omniswitch contants <maxwen> 8 days ago
+8bb3992 : [1/2] base: OmniSwitch: add preload task broadcast <maxwen> 18 hours ago
+3e63519 : Add navigation disabled notification [1/2] <Ivan Iskandar> 5 weeks ago
+c8686dc : Update OmniSwitch string <Varun Date> 6 weeks ago
+81d0358 : Dialer: show headsup on incoming call even if headsup are off [1/2] <Ezio Lacandia Bijelkic> 2 months ago
+fab0c6c : base: OmniSwitch: add hook to handle multi window dock events better we dont want to show recents like on AOSP but always try to restore the home stack so add a new broadcast that is active if OmniSwitch as default recents is activated <ZION959> 18 hours ago
+976d633 : Unlock keystore with fingerprint after reboot (1/2) <xyyx> 5 months ago
+152d985 : [2/2] frameworks_base: show battery info on lockscreen when charging <Jean-Pierre Rasquin> 6 months ago
+1aaf730 : Fix lockscreen clock font reset issue - Do not refresh ui when device sleeping <westcripp> 6 months ago
+0280c51 : Fix Keyguard Alarm Status Text Color <Varun Date> 7 months ago
+bc3da70 : fixed doze build error <ZION959> 19 hours ago
+ 
+**** github:CMRemix/android_kernel_samsung_trlte ****
+05e74a7 : ss_vibrator: Make sysfs compatible with CMHW <Paul Keith> 9 months ago
+742341c : revert: drivers/motor: temporarily back to the old vibrator motor <ZION959> 7 hours ago
+ce8e268 : enabled ntfs <ZION959> 10 days ago
+ 
+**** cmR:android_packages_apps_OmniSwitch ****
+4589f1d : Automatic translation import <Akhil Narang> 21 hours ago
+a81f49c : Automatic translation import <Akhil Narang> 2 days ago
+b96f0d5 : Automatic translation import <Akhil Narang> 3 days ago
+53163a7 : Update Enable switch consistency <Varun Date> 3 days ago
+da3cb30 : Automatic translation import <Akhil Narang> 4 days ago
+ae3fc6c : Automatic translation import <Akhil Narang> 5 days ago
+3601c06 : Automatic translation import <Akhil Narang> 6 days ago
+6e90ddf : [2/2] OmniSwitch: add preload task broadcast <maxwen> 3 weeks ago
+830770d : Automatic translation import <Akhil Narang> 8 days ago
+ed35119 : Automatic translation import <Akhil Narang> 9 days ago
+31ded84 : Automatic translation import <Akhil Narang> 10 days ago
+9c4772c : Automatic translation import <Akhil Narang> 12 days ago
+dae9b67 : Automatic translation import <Akhil Narang> 13 days ago
+db4f2a1 : Automatic translation import <Akhil Narang> 2 weeks ago
+bc1cf58 : Automatic translation import <Akhil Narang> 2 weeks ago
+55023ac : Automatic translation import <Akhil Narang> 2 weeks ago
+d620d6f : Automatic translation import <Akhil Narang> 2 weeks ago
+dd6fde0 : Automatic translation import <Akhil Narang> 3 weeks ago
+789bd99 : Automatic translation import <Akhil Narang> 3 weeks ago
+fab5e78 : OmniSwitch: cleanup BitmapUtils <maxwen> 4 weeks ago
+0ad4cd0 : OmniSwitch: fix crash on special app icon formats <maxwen> 4 weeks ago
+e6e21ad : OmniSwitch: shadow wars <maxwen> 8 weeks ago
+3de4c24 : OmniSwitch: Launcher: refine assist activity check <maxwen> 10 weeks ago
+4ec4e60 : OmnSwitch: enable update thumbs during swipe <maxwen> 10 weeks ago
+74acfe7 : OmniSwitch: Launcher: check for existing assist activities <maxwen> 2 months ago
+ 
+**** cmR:android_packages_apps_Settings ****
+36d3491 : Settings:Rewrite Restart SystemUI <Surge Raval> 3 weeks ago
+92f4662 : Add SystemUI restart prompt dialog to Helpers class <LorDClockaN> 5 months ago
+64c52d8 : RecentsSettings:Make OmniSwitch fragment directly accessible no need for an extra fragment <ZION959> 83 minutes ago
+f70902b : Refactor Recents Category <varund7726> 4 hours ago
+a3f9f7d : DisplaySettings: font size in 5% steps from 80% to 130% (yank555) <ZION959> 18 hours ago
+560f19f : Custom ambient display settings (2/2) [neo: This is revival of old code.] <beanstown106> 19 hours ago
+ 
+**** github:CMRemix/zion959-proprietary_vendor_samsung ****
+208cd65 : revert: trlte: switch to TimeKeep <ZION959> 7 hours ago
+ 

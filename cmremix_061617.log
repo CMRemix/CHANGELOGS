@@ -1,0 +1,50 @@
+
+**** cmR:android_frameworks_base ****
+a5c2917 : revert: Turned ENABLE_CPUSETS into runtime decision. <ZION959> 32 minutes ago
+13fa9b6 : revert: Set the decay timer for all forked apps. <ZION959> 38 minutes ago
+4cbb404 : SystemUI: force a clock update if the screen is turned back on <Park Ju Hyung> 5 days ago
+4e763d5 : SettingsLib: Add two more animation speed steps <Alex Naidis> 13 days ago
+330b2b2 : fingerprint: Speed up wake-and-unlock scenario <Sultanxda> 9 weeks ago
+ae7bc7c : KernelCpuSpeedReader: Account for missing sysfs nodes <Alex Naidis> 3 weeks ago
+86586cd : Remove the unnecessary window animation request <zhenjun.zhang> 1 year ago
+489e9b5 : Fix TaskRecord wrong dump element firstActiveTime <daqi> 3 weeks ago
+bf16455 : Wifi: Send DHCP DISCOVER with rapid commit <Vidyullatha Kanchanapally> 6 weeks ago
+4861de9 : Set the decay timer for all forked apps. <Christopher Ferris> 5 weeks ago
+45741347 : PhoneWindowManager: Check if keyhandler is null before using <Anas Karbila> 3 weeks ago
+3a0d5ec : [PackageManagerService]: Fix the IndexOutOfBoundsException issue. <tianxiaodong> 5 weeks ago
+7ee4393 : use FgThread.class instead of UiThread.class for lock object <yangbingqian> 5 weeks ago
+5985ebb : AudioService: Don't honour SCO ON request if SCO is not connected <Sharad Sangle> 6 weeks ago
+abdc3cc : [PackageManagerService]: Fixes can not boot issue. <songjinshi> 5 months ago
+579a88e : Destroy Allocation with ScriptIntrinsicLut <Yang Ni> 7 weeks ago
+20955cf : Destroy Allocation right away on exception <Yang Ni> 7 weeks ago
+8a32a72 : PowerProfile: allow reading from a file instead of resource <Park Ju Hyung> 4 weeks ago
+ffef8fa : SystemUI: Fix Notification Background Color Issue <mqi> 4 weeks ago
+c9908ee : Add null check to address monkey test crash <Yingjie Wang> 5 weeks ago
+cc7d0ce : SettingsLib: Add material color picker dialog <Chris Lahaye> 4 months ago
+3e77c6e : SoundPool: decrease binder call when calling SoundPool.play <yidongh> 5 weeks ago
+7c5d9b0 : Schedule  agentDisconnected() in handler thread <Gopal Krishna Shukla> 12 months ago
+be9783a : frameworks/base: reduce the setTransactions <Sanjeev Jakkilinki> 8 weeks ago
+cf4da4e : Reduce hwui CPU time by using glDrawRangeElements <Arun> 5 months ago
+009d155 : modify the parameter in cleanupLocked <Lei Peng> 4 months ago
+fe5e32d : Skip send broadcast to the receiver whoes user has not started. <xiaomei.li> 4 months ago
+a17682a : fix KeyEvent can't correctly finish when inputmethod time out happend <gaoshang> 8 weeks ago
+b566cd6 : Fix DateTimeView fc issue <longhai> 8 weeks ago
+963892b : ActivityStack index OOB cause device restart <Chen Wei> 9 weeks ago
+e902262 : [notification]: fix IndexOutOfBoundsException. <songjinshi> 3 months ago
+ba5330f : [AppErrors]: Remove duplicate code for binder ID clear and restore. <songjinshi> 4 months ago
+caa6d18 : Fix NPE when call stack.setLauncheTime. <xiaomei.li> 5 months ago
+6564ec5 : NullPointerException: Attempt to invoke virtual method 'int android.os.Parcel.dataSize()' on a null object reference <liangweikang@xiaomi.com> 3 months ago
+3bbb2fb : Fix a null pointer exception in FragmentManager <Lei Peng> 3 months ago
+2490bc1 : When monkey test, the object of mHost throws NullPointerException. Fail log: java.lang.NullPointerException: Attempt to invoke virtual method 'android.app.LoaderManagerImpl android.app.FragmentHostCallback.getLoaderManager(java.lang.String, boolean, boolean)' on a null object reference  	at android.app.Fragment.onDestroy(Fragment.java:1603)  	at android.app.Fragment.performDestroy(Fragment.java:2433)  	at android.app.FragmentManagerImpl.moveToState(FragmentManager.java:1098)  	at android.app.FragmentManagerImpl.moveToState(FragmentManager.java:1148)  	at android.app.FragmentManagerImpl.moveToState(FragmentManager.java:1130)  	at android.app.FragmentManagerImpl.dispatchDestroy <fei.liu> 1 year, 3 months ago
+d4591cc : Fix the notification issue shown on startForeground <luozhanwei> 2 months ago
+90f0864 : Fix crash issue on Storage Manager app <Su, Weihua> 5 months ago
+0c42a23 : StatusBar: Catch OOM caused by third-party icons <Adrian Roos> 5 months ago
+86b1f2d : framework: add config property for shutdown time <zljing> 3 months ago
+1bfd17c : SystemUI : Fix monkey exception for SystemUI <jianzhou> 8 weeks ago
+166dfe7 : Use SystemClock.elapsedRealtime() to calc TTFF <Yingjie Wang> 3 months ago
+a4b4fea : BT: Fix for BT enable after User Switch <Gurpreet Ghai> 8 weeks ago
+da938ff : Fix keyguard is black background while screen turning off/on quickly <zhoulei> 8 weeks ago
+5c98515 : Turned ENABLE_CPUSETS into runtime decision. <Isaac Chen> 4 months ago
+5f5744c : Dumps total size of primary storage. <Felipe Leme> 8 months ago
+e464db9 : Lockscreen colors [1/2] <Alex Cruz> 24 hours ago
+ 

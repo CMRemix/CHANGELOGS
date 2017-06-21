@@ -1,0 +1,42 @@
+
+**** github:CMRemix/android_device_samsung_trlte-common ****
+1b37391 : update sepolicy <ZION959> 22 hours ago
+ 
+**** cmR:android_frameworks_base ****
+904d436 : SystemUI: BatteryBar: Gradient color [1/2] <Lokesh Chamane> 1 year, 1 month ago
+053a687 : derp <ZION959> 22 hours ago
+15ae544 : base: SystemUI: use content observer for recent grid config <maxwen> 8 weeks ago
+06d60c8 : base:refactor recents code to switch between recents <Varun Date> 7 weeks ago
+fda15d9 : [1/2] base: featureize ro.recents.grid <maxwen> 2 months ago
+ 
+**** cmR:android_packages_apps_Settings ****
+ca6213c : SystemUI: BatteryBar: Gradient color [2/2] <Nick0703> 7 months ago
+57b4338 : Add Icon for System App Remover <varund7726> 72 minutes ago
+49274d8 : Fix system app remover to work in Lollipop Also Credits to: ILWT  for system priv-app Remover Signed-off-by: Varun <date.varun123@gmail.com> <Alex Cruz> 1 year, 6 months ago
+89b8b97 : Maybe fix this? <Akhil Narang> 1 year, 6 months ago
+4fdcd77 : System App Remover <fronti90> 75 minutes ago
+78c27aa : Dialer: show headsup on incoming call even if headsup are off [2/2] <ezio84> 85 minutes ago
+ac347b3 : Unlock keystore with fingerprint after reboot (2/2) <xyyx> 4 months ago
+e9edb3b : show battery info on lockscreen when charging [2/2] <yank555-lu> 6 months ago
+2e435b7 : Lockscreen & Lockscreen Weather Colors [2/2] {SQUASHED} --also add Preferences for Lockscreen Icon Colors so credits to Alex Cruz for that --Add back all customizations from M <varund7726> 2 hours ago
+bfdd3f9 : Add Three Finger Swipe for Screenshot settings <maxwen> 2 hours ago
+28788d4 : Add tabs transitions effects in CMRemix Config [2/2] Animations library : https://github.com/ToxicBakery/ViewPagerTransforms <Nico60> 2 hours ago
+fa18d86 : Fix: don't use runSuCommand when it ain't needed, for selinux changes <anders3408> 1 year, 3 months ago
+ab2888a : Avoid running setenforce if it ain't needed <anders3408> 1 year, 3 months ago
+ff08990 : Settings: Fix selinux OnBoot <placiano> 1 year, 3 months ago
+e64e63c : Selinux Switch: Show toast only for permissive on boot <LorDClockaN> 1 year, 5 months ago
+5c5d248 : derp fixed <ZION959> 22 hours ago
+ 
+**** cmR:android_vendor_CMRemix ****
+ff70e8a : sepolicy: fix gestures anywhere denials <Pafcholini> 4 months ago
+adf347d : sepolicy:  Allow system/platform apps and system server to run su <Pafcholini> 5 months ago
+dfe056e : vendor: selinux: Allow init to setenforce to set SELinux permissive <Ethan Yonker> 2 years, 1 month ago
+003ead2 : vendor: selinux: Add domain.te mostly for TWRP purposes <José Adolfo Galdámez> 2 years, 1 month ago
+a12e2a9 : Make recovery domain permissive so we can set SELinux permissive <Ethan Yonker> 2 years, 6 months ago
+b61ad48 : sepolicy: allow ueventd to write to kcal device <Alexander Martinz> 2 years, 1 month ago
+d84e4ad : sepolicy: new kcal label <Alexander Martinz> 1 year, 4 months ago
+514885a : sepolicy: kernel: allow sudaemon to use file descriptors <ZION959> 23 hours ago
+d3a31ba : sepolicy: setup rules for isolated_app and kernel   * setup kernel rules to allow zRam to write to sysfs   * setup isolated_app rules to fix chrome and chromium based apps <Alexander Martinz> 1 year, 6 months ago
+414e51a : sepolicy: allow platform apps to use su <Alexander Martinz> 1 year, 5 months ago
+933b054 : sepolicy: qcom: allow platform / system app to access thermal sysfs <Alexander Martinz> 1 year, 9 months ago
+ 
