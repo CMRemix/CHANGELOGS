@@ -1,0 +1,102 @@
+
+**** cmR:android_frameworks_base ****
+e3b2c3e : Fix SystemUI FC on Dynamic Density Change <Varun Date> 5 months ago
+8126bde : Fix SystemUI FC due to Google Assistant <ezio84> 4 weeks ago
+0d391e2 : BatteryService: add dash charging support <thecrazyskull> 12 months ago
+31937f6 : Lockscreen charging: Formatting improvements <nathanchance> 5 months ago
+2e2a616 : Lockscreen charging: mAh to mA <xyyx> 5 months ago
+5f0eb34 : Lockscreen charging info: real time values [1/4] <xyyx> 6 months ago
+9419329 : OmniJawsClient : Move to framework <maxwen> 24 hours ago
+86b59a7 : base: SystemUI: add dedicated TextView for OmniJaws error marker <maxwen> 8 weeks ago
+9f097d9 : base: SystemUI: dont show OmniJaws error that prominent <maxwen> 8 weeks ago
+5d0bee2 : Base:Dont do anything on weather errors for header & keyguard <Varun Date> 8 weeks ago
+69a4f5c : KeyguardStatusBar: Add missing TouchAnimation for hiding statusbar <maxwen> 8 weeks ago
+76c0490 : Base: Make sure keyguard and header handle weather errors as well <maxwen> 8 weeks ago
+95abf55 : base: SystemUI: dont hide weather forcast data on errors <maxwen> 9 weeks ago
+8d258ce : base: SystemUI: use new OmniJaws error broadcasts <maxwen> 9 weeks ago
+3dbfb47 : base:Optional weather info in expanded header [1/2] *Use Omnijaws API for this *Thanks to Cyanogenmod for its initial layout implementation <varund7726> 2 days ago
+59165d6 : Keyguard Weather : Refactor for new API[1/2] <varund7726> 25 hours ago
+e85b7cd : Statusbar Weather Image: Make it update when iconpacks are changed <Varun Date> 3 months ago
+02907c6 : Weather tile longclick: alternative weather apps when google weather not installed <SpiritCroc> 4 months ago
+fea70e2 : Expose temperature text in DetailedWeatherView <Nathan Chancellor> 3 months ago
+732a0ea : SB Weather: Dont Show Image always on Left when animate = true <Varun Date> 3 months ago
+75a1eaa : Clean Up Statusbar Weather Attirbutes. <Varun Date> 3 months ago
+57f6113 : Statusbar weather: fix text hidden settings <SpiritCroc> 3 months ago
+cc97c04 : Statusbar Weather : Refactor [1/2] <Varun Date> 4 months ago
+c9da472 : Correctly Fix SB weather always showing on left To reproduce, change weather position to left, hide weather in statusbar, lock and unlock screen, weather appears on the left again. This happens due to new animate apis for keyguard Fix this by using an observer and an even more strict condition on animateshow and animatehide <Varun Date> 4 months ago
+d5511a4 : SysUI: Fix Dark Coloring of Custom logo <varund7726> 26 hours ago
+9163d47 : StatusBar Custom Logo Positions [1/2] <varund7726> 27 hours ago
+98bcc50 : StatusBar Custom Logos: Bring Them Back [1/2] <varund7726> 27 hours ago
+4d175c6 : FWB: Statusbar weather Update[1/2] OmniJaws rules! <LorDClockaN> 4 months ago
+7199ce1 : base: qs weather: Start Google Weather on LongClick <LorDClockaN> 4 months ago
+9e3bf5a : revert: Keyguard: Get your weather on... the lock screen [1/3] <ZION959> 29 hours ago
+ 
+**** cmR:android_packages_apps_CMParts ****
+403ac8d : Automatic translation import <Abhisek Devkota> 3 days ago
+eab1c5d : [3/3] Torch long press power: add auto-off function <Sam Mortimer> 6 months ago
+e8a2f89 : CMParts: Rename button action list handlers <Sam Mortimer> 3 months ago
+1dbebd0 : Automatic translation import <Abhisek Devkota> 4 weeks ago
+dcc8dbc : Regenerate contributors cloud <Harry Youd> 3 weeks ago
+ceadf25 : Set android:configChanges for .PartsActivity <LuK1337> 4 weeks ago
+0d84c6e : CMParts: remove extra padding from app light preference <Joey Rizzoli> 5 weeks ago
+ba40900 : Automatic translation import <Abhisek Devkota> 6 weeks ago
+e3457ee : Update contributors cloud <Harry Youd> 6 weeks ago
+58e24bd : CMParts: add brightness slider tunables <Joey Rizzoli> 8 weeks ago
+1e3c0b4 : Automatic translation import <Abhisek Devkota> 8 weeks ago
+6c08995 : Automatic translation import <Abhisek Devkota> 10 weeks ago
+f9c8771 : PerfProfileSettings: Update slider on powersave mode change <Gabriele M> 4 months ago
+9198d84 : CMParts: Update quick QS pull-down summary for translation <Elektroschmock> 3 months ago
+4f90b17 : Fix reorientation of volume buttons on portrait tablets <LuK1337> 3 months ago
+8812ebc : Automatic translation import <Abhisek Devkota> 3 months ago
+52da3c9 : Automatic translation import <Abhisek Devkota> 3 months ago
+cf97207 : Automatic translation import <Abhisek Devkota> 3 months ago
+ecf8514 : CMParts: update contributors db <Dan Pasanen> 3 months ago
+3eb44d4 : Automatic translation import <Abhisek Devkota> 3 months ago
+f23ab55 : Automatic translation import <Abhisek Devkota> 4 months ago
+f1970ae : Automatic translation import <Michael W> 4 months ago
+3d5ba1e : [2/3] CMParts: single hand for hardware keys <Joey Rizzoli> 4 months ago
+727f8a8 : Update style to match the one of Settings <Gabriele M> 4 months ago
+13d143f : Disable quick pulldown by default <Gabriele M> 4 months ago
+4677ce6 : CMParts: activate nfc trigger for system profiles <Maxim Becker> 5 months ago
+dea46f0 : Automatic translation import <Abhisek Devkota> 4 months ago
+e22fd0a : CMParts: Restructure status bar settings <Hendrik Hagendorn> 5 months ago
+4b7a7ea : CMParts: KeyHandler: Add User to broadcast <Michael W> 4 months ago
+9a98f20 : Automatic translation import <Abhisek Devkota> 4 months ago
+0fe94be : CMParts: Fix email and browser intents <Michael W> 4 months ago
+40372a5 : Automatic translation import <Abhisek Devkota> 4 months ago
+a1321a1 : CMParts: Replace variable for setup wizard complete <Paul Keith> 4 months ago
+42f88dc : Automatic translation import <Abhisek Devkota> 4 months ago
+280d420 : CMParts: Add strings for sRGB <dianlujitao> 4 months ago
+03fb141 : Move status bar settings back to personal category. <Danny Baumann> 5 months ago
+10fe26d : Automatic translation import <Abhisek Devkota> 4 months ago
+9e4fe06 : CMParts: strings: Fix indentation <dianlujitao> 4 months ago
+834a19f : CMParts: gestures: Specify a qualified user for update broadcast <Zhao Wei Liew> 5 months ago
+212d44b : Automatic translation import <Abhisek Devkota> 4 months ago
+705b11b : Automatic translation import <Abhisek Devkota> 5 months ago
+03d2f8e : Add "Letter V" string <LuK1337> 5 months ago
+5a1307b : Automatic translation import <Abhisek Devkota> 5 months ago
+58f50a1 : CMParts: Clean out imports <Michael W> 5 months ago
+910ff32 : CMParts: Simplify long press for torch strings <Bruno Martins> 5 months ago
+027357d : Automatic translation import <Abhisek Devkota> 5 months ago
+f1ccf80 : CMParts: Long-press power while display is off for torch <beanstown106> 1 year, 5 months ago
+b101045 : CMParts: Clean up status bar settings class <Zhao Wei Liew> 5 months ago
+23b59db : CMParts: power: Resolve 'automatic optimization' state issues <Zhao Wei Liew> 5 months ago
+d92491d : CMParts: Update quick QS pull-down entries for RTL layouts <Zhao Wei Liew> 5 months ago
+ 
+**** cmR:android_packages_apps_Settings ****
+37cb959 : Custom logos ,Bring it Back[2/2] <Varun Date> 8 months ago
+a0910ae : Optional Expanded statusbar Weather info [2/2] <varund7726> 79 minutes ago
+447a5cc : Settings: Refactor Keyguard Weather [2/2] <varund7726> 81 minutes ago
+bbb2b66 : Statusbar Weather: Refactor [2/2] <varund7726> 89 minutes ago
+62423b7 : Add back Left/right Weather for status bar <LorDClockaN> 7 months ago
+1fa84b2 : StatusBar Weather :update [2/2] <LorDClockaN> 2 hours ago
+e16ed82 : Settings:Switch Back to Old Weather API [2/2] <varund7726> 2 hours ago
+c4424ee : Settings: add OmniJaws config <maxwen> 2 hours ago
+4881761 : [2/2]Settings: config to hide status bar on lock screen <maxwen> 5 hours ago
+ 
+**** cmR:android_system_core ****
+df25b7f : Lockscreen charging info: real time values [2/4] <xyyx> 5 months ago
+ 
+**** cmR:android_vendor_CMRemix ****
+333ce8c : vendor: build OmniJAWS <ZION959> 24 hours ago
+ 

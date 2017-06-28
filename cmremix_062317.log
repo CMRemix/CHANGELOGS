@@ -1,0 +1,80 @@
+
+**** cmR:CHANGELOGS ****
+6fae492 : update changelog 6-21-2017 <ZION959> 2 days ago
+ 
+**** cmR:android_build ****
+7c8b688 : clang: Update unknown cflags list <Chet Kener> 10 months ago
+762ca4d : Disable recovery resource warning <Sean hoyt> 10 weeks ago
+528b46e : Revert "Preventing default locale from being overridden because of buildinfo.sh" <Michael Bestas> 8 days ago
+a4075bf : Revert "build: skip 'ro.product.device' using  new macro "TARGET_SKIP_PRODUCT_DEVICE"" <Michael Bestas> 8 days ago
+ 
+**** cmR:android_frameworks_base ****
+bd79624 : Base: KeyguardStatusView: Fix weather items NPE <beanstown106> 4 months ago
+d6dd234 : Keyguard : Update default clock font - fix refreshLockFont <westcripp> 5 months ago
+044e948 : SystemUI: Switch Back to Old Weather API [1/2] <varund7726> 2 hours ago
+a1f7c48 : Extend OmniJaws Client to Keyguard Signed-off-by: Varun Date <date.varun123@gmail.com> <maxwen> 2 months ago
+6c34a66 : base: qs weather: be nice to people without OmniJaws <maxwen> 4 months ago
+298923e : OmniJaws: Fix More Settings Intent <Varun Date> 4 months ago
+2ab1020 : [1/2] base: SystemUI: OmniJaws qs tile integration <ZION959> 27 hours ago
+7c69321 : Language toggle QS <SpiritCroc> 6 months ago
+953e929 : [1/2] base: SystemUI: config to hide status bar on lock screen <maxwen> 4 months ago
+7ae6785 : SystemUI: Fix task lock & freeform buttons placement <LuK1337> 4 days ago
+84e6fa9 : [1/3] Torch long press power: add auto-off function <Sam Mortimer> 6 months ago
+4570384 : Aapt2: Fix png leak <Andreas Gampe> 8 weeks ago
+f35e01c : Destroy Allocation right away on exception <Yang Ni> 8 weeks ago
+85090f4 : SymbolComparator operator() is missing const <Yi Kong> 8 weeks ago
+bab2a83 : StatusBar: Catch OOM caused by third-party icons <Adrian Roos> 5 months ago
+f3c8597 : Adopt lockscreen shortcut hint from AOSP <Sebastian Haderecker> 2 months ago
+f077227 : CaptivePortalLoginActivity correctly gets UserAgent <Hugo Benichi> 4 months ago
+58800f6 : Prettify the captive portal sign-in activity <Hugo Benichi> 5 weeks ago
+a6a5763 : LocationTile: Behave like other tiles <Michael W> 12 days ago
+f61b778 : Fix a use-of-uninitialized-value warning. <George Burgess IV> 5 months ago
+f3c417c : Fix a use-of-uninitialized-value warning. <George Burgess IV> 5 months ago
+05bdf55 : Check for spurious wake ups <Tom Cherry> 4 months ago
+336f3b3 : Reduce hwui CPU time by using glDrawRangeElements <Arun> 5 months ago
+6334326 : Stop holding mProxyLock while downloading PAC script data. <Daichi Hirono> 3 months ago
+b715a08 : Format Japanese numbers using national format when in Japan. <Tyler Gunn> 4 months ago
+fd4fa4f : NullPointerException: Attempt to invoke virtual method 'int android.os.Parcel.dataSize()' on a null object reference <liangweikang@xiaomi.com> 3 months ago
+ 
+**** cmR:android_packages_apps_CMParts ****
+a63fe63 : Automatic translation import <Abhisek Devkota> 26 hours ago
+ee271ee : [3/3] Torch long press power: add auto-off function <Sam Mortimer> 6 months ago
+9378a77 : CMParts: Rename button action list handlers <Sam Mortimer> 3 months ago
+f55ed0d : Automatic translation import <Abhisek Devkota> 3 weeks ago
+14eb539 : Set android:configChanges for .PartsActivity <LuK1337> 3 weeks ago
+da8b70f : CMParts: remove extra padding from app light preference <Joey Rizzoli> 5 weeks ago
+ 
+**** cmR:android_packages_apps_Contacts ****
+9e7d66e : Automatic translation import <Abhisek Devkota> 3 weeks ago
+ 
+**** cmR:android_packages_apps_ContactsCommon ****
+23fb9c9 : Automatic translation import <Abhisek Devkota> 3 weeks ago
+ 
+**** cmR:android_packages_apps_PackageInstaller ****
+4fc743c : PackageInstaller: Show current & new version Forward ported to Marshmallow By: @dwitherell Forward ported to Nougat By: @BeansTown106 <Dirk Rettschlag> 10 months ago
+e98f35a : Fix PackageInstaller FC when tapping on a downloaded apk notification 2 <setiawanjimmy> 7 months ago
+ 
+**** cmR:android_packages_apps_Settings ****
+8eb4cca : derp fixed <ZION959> 3 days ago
+e226952 : Settings: handle decrypting larger pattern sizes for sw600dp <Michael Bestas> 4 days ago
+c2dc422 : Revert "Settings: Fix internal storage summary for non-emulated storage" <Dominggoes Isakh> 5 weeks ago
+f154e13 : Settings: Fix automatic hotspot turn off summary <Elektroschmock> 3 weeks ago
+ 
+**** cmR:android_system_core ****
+fdea661 : init: Run restorecon_recursive asynchronously <Tom Marshall> 2 weeks ago
+e745075 : healthd: fix include paths <Ayke van Laethem> 13 days ago
+ 
+**** cmR:android_vendor_CMRemix ****
+f008618 : Add sensitive numbers for Ukraine. <Olexandr Nesterenko> 2 days ago
+b9b2e57 : Add Virgin Media Ireland to APN's <Liam Mendes> 8 weeks ago
+42ded06 : sensitive_pn: Add additional FR number <Julien Humbert> 3 days ago
+f3972a9 : sensitive_pn: Add additional GB numbers <Tim Graham> 4 days ago
+f2e9a83 : sensitive_pn: Add additional PT numbers <Bruno Martins> 3 days ago
+9e1a579 : sensitive_pn: add missing phone number for Brazil <Alexandre Oliveira> 6 days ago
+e5969e2 : roomservice: Search for repos in lineage snippet too <Michael Bestas> 7 days ago
+21b9d39 : roomservice: Remove support for devices in main manifest <Michael Bestas> 7 days ago
+ 
+**** github:LineageOS/cm_platform_sdk ****
+df15137 : Automatic translation import <Abhisek Devkota> 26 hours ago
+bdea7f5 : [2/3] Torch long press power: add auto-off function <Sam Mortimer> 6 months ago
+ 
