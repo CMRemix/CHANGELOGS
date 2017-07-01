@@ -1,0 +1,61 @@
+
+**** cmR:CHANGELOGS ****
+514b65c : update 6-27-2017 <ZION959> 27 hours ago
+ 
+**** github:CMRemix/android_device_samsung_trlte-common ****
+1f6ce6f : Lockscreen charging info: real time values [3/4] <ZION959> 33 hours ago
+ 
+**** cmR:android_frameworks_base ****
+0374e11 : Ability to disable Do not Disturb mode when calling [1/3] <xyyx> 4 months ago
+2cd9c71 : derp fixed <ZION959> 35 minutes ago
+75f839f : incall vibration options [1/3] *allow setting vibration when call is connected *allow setting vibration when call is disconnected *allow setting vibration for call waiting *this works with google and aosp dialer :) <beanstown106> 7 weeks ago
+e378cab : Update SystemUI Primary & Accent Colors <ZION959> 24 hours ago
+9bb3007 : Update Drawer header <westcripp> 6 weeks ago
+286a639 : Dont use CMSettings for Headset intents[1/2] <ezio84> 6 weeks ago
+a16c288 : Settings left drawer: make the view more compact and show more entries per page <maxwen> 6 weeks ago
+3b69eb7 : Fix lag when opening an entry from the Settings left drawer <ezio84> 6 weeks ago
+2ab41f9 : Option to Show Custom header in settings drawer [1/2] <Varun Date> 6 weeks ago
+73fe0af : Ability to enable/disable settings drawer [1/2] <Varun Date> 6 months ago
+92e7ab5 : Settings: Disable Drawer <George G> 9 months ago
+6b1672e : Add SettingsDrawerActivity header <Alex Cruz> 25 hours ago
+3468f37 : Launch music player on headset connect: add BT compatibility [1/2] <ezio84> 7 weeks ago
+e0a3ca3 : Clean up "Optional screenshot type" code in PhoneWindowManager <tsubus> 8 months ago
+a31e574 : Screenshot delay [1/2] <Andrew Boren> 8 months ago
+106669a : Add back screenshot delay <Alex Cruz> 8 months ago
+c0d45c4 : Optional screenshot type [1/2] <Alex Cruz> 8 months ago
+d5a989f : revert: GlobalActions: Long press screenshot action to take a partial screenshot <ZION959> 26 hours ago
+e219052 : revert: GlobalActions: Inform user of screenshot long-press action <ZION959> 26 hours ago
+fa45abb : Update SystemUI Primary & Accent Colors <Varun Date> 8 months ago
+a436e67 : base: notifications: DEFAULT_LIGHTS and FLAG_SHOW_LIGHTS must count as noisy <maxwen> 4 months ago
+8517afd : Frameworks AppOps: Enable MODE_IGNORED for OP_WAKE_LOCK <Sam Mortimer> 3 years, 7 months ago
+9a09ce2 : CaptivePortal: login activity UI improvements <Hugo Benichi> 7 weeks ago
+e51f622 : Fix an apk icon animation corruption issue <Tao Zhang> 2 years, 3 months ago
+9999e0c : Fix crash by IllegalStateException in sendAccessibilityEvent <Jun Tahara> 1 year, 3 months ago
+973b60a : Clean up pending broadcast receivers when force stopping package <yuanhuihui> 8 months ago
+932a94f : base: enable power save config of system apps [1/2] <maxwen> 5 weeks ago
+56c463b : Fix memory leak in WifP2pManager <Ge Ao> 4 months ago
+4c7aa64 : base: SystemUI: CPU Info: show CPU temp if supported <Ali B> 2 weeks ago
+7d70732 : Frameworks: Fix Null Pointer Issue <mqi> 4 weeks ago
+a5ee6bb : Fix System Navigation fp switch <ezio84> 6 days ago
+ac47055e : Fingerprint swipe gesture to answer/silence incoming call [1/2] <ezio84> 12 days ago
+04d13f9 : Add QS pulldown with one swipe on fp sensor [1/2] <AirOne70> 5 weeks ago
+e24517b : base: Allow to disable qs footer warnings [1/2] <ezio84> 7 weeks ago
+78f4e37 : Notification panel fingerprint gesture: fix axis on landscape [1/2] <ezio84> 5 weeks ago
+3300ebd : Statusbar ticker: apply statusbar tint when set to white <SpiritCroc> 3 months ago
+ 
+**** cmR:android_packages_apps_Settings ****
+272ec12 : Fingerprint swipe gesture to answer/silence incoming call [2/2] <ezio84> 2 hours ago
+189065d : Settings:Incall Vibration options [3/3] <beanstown106> 2 hours ago
+e0e834c : Settings: Fix selinux switch <Meninblack007> 2 hours ago
+61ea32b : Settings: Remove Doze & Fingerprint options if not available on device <Varun Date> 7 months ago
+1e64dc1 :  Reduce default screenshot delay to 100ms [2/2] <tsubus> 8 months ago
+58c4fae : {SQUASHED} ScreenShot Delay and Type [2/2] <Alex Cruz> 2 hours ago
+a6f9664 : Settings: enable fast scroll for all app list views <maxwen> 5 weeks ago
+e3d7e30 : ButtonBacklight: Preview timeout once user stops dragging <Zhao Wei Liew> 5 months ago
+d134d22 : Configurations: Update button backlight brightness in real time <nijel8> 6 months ago
+9cf6d90 : QSPulldown: Remove FP gesture if device FP doesnt support it <Alex Cruz> 5 weeks ago
+81822b0 : Settings: enable power save config of system apps [2/2] <maxwen> 26 hours ago
+522eda8 : Add QS pulldown with one swipe on fp sensor [2/2] <AirOne70> 5 weeks ago
+2f4301d : Lockscreen charging info: real time values [4/4] <ZION959> 33 hours ago
+b2d0344 : Settings: Fix weather FC <ZION959> 34 hours ago
+ 

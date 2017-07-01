@@ -1,0 +1,69 @@
+
+**** cmR:android_frameworks_base ****
+6cff3d7 : FW_BASE: Rewrite restart SystemUI method <Surge1223> 20 minutes ago
+476eaff : Update memory state on emtpyView click <Ali B> 4 weeks ago
+bd0e78d : Slim Recents: allow to disable round corners for cards [1/2] <ezio84> 4 weeks ago
+b6c393a : FWB:Smartbar touch sounds:make it optional[1/3] <Varun Date> 3 weeks ago
+50162f9 : New app-pinning icon <ezio84> 9 weeks ago
+3fd0070 : Net monitor: fix arrows not showing when data saver is enabled <Ezio Lacandia Bijelkic> 2 weeks ago
+6841cf5 : Fingerprints: Increase MAX_FAILED_ATTEMPTS to 10 <xyyx> 4 months ago
+b1437a6 : Allow disabling of FC dialogs [1/2] <Jmz> 4 months ago
+dc2f17c : Add kill button to notification guts [1/2] <Daniel Koman> 4 months ago
+023f491 : Fix RTL layout with membar 'free ram' text <Alex Cruz> 4 months ago
+c354b77 : Wired headset: make ringtone audio focus customizable [1/3] <ezio84> 4 months ago
+dbc0a09 : Ability to disable Do not Disturb mode when calling [1/3] <xyyx> 4 months ago
+b73eeef : derp fixed <ZION959> 24 hours ago
+726a3f6 : incall vibration options [1/3] *allow setting vibration when call is connected *allow setting vibration when call is disconnected *allow setting vibration for call waiting *this works with google and aosp dialer :) <beanstown106> 7 weeks ago
+df59a2e : revert: Update SystemUI Primary & Accent Colors <ZION959> 2 days ago
+ 
+**** cmR:android_packages_apps_DUI ****
+08efc6c : Fix button size not refreshing after a dpi change <ezio84> 3 days ago
+f758ef8 : Media arrows: hide them on keyguard bouncer <ezio84> 8 days ago
+eccc4e1 : Automatic translation import <Akhil Narang> 2 days ago
+a294b32 : Automatic translation import <Akhil Narang> 5 days ago
+75985cf : Automatic translation import <Akhil Narang> 2 weeks ago
+c94593b : Automatic translation import <Akhil Narang> 2 weeks ago
+eab3999 : Automatic translation import <Akhil Narang> 2 weeks ago
+adf6bee : DUI:Uncomment Navbar Left in Landscape [1/2] <qjohn> 3 weeks ago
+2562dc1 : Fix spammed hindi strings <Varun Date> 3 weeks ago
+0e3dedc : Update strings.xml <Altan KRK> 3 weeks ago
+9175a54 : Fix bad strings <Altan KRK> 3 weeks ago
+8ab23f1 : Smartbar touch sounds:make it optional [2/3] <Varun Date> 3 weeks ago
+885fa36 : Pulse: Navbar left in landscape support <Ezio Lacandia Bijelkic> 3 weeks ago
+e9daee7 : SmartBar: Touch sound support <bigrushdog> 4 weeks ago
+6607429 : DUI: Fix NPE in MediaMonitor <ezio84> 3 months ago
+4bec8d1 : Automatic translation import <Akhil Narang> 3 weeks ago
+8903fe1 : Automatic translation import <Akhil Narang> 3 weeks ago
+526c3a2 : Automatic translation import <Akhil Narang> 3 weeks ago
+ 
+**** cmR:android_packages_apps_Settings ****
+130af7e : statusbar icons: Enable notification icon count by default <Zhao Wei Liew> 6 months ago
+8348265 : Add back System ui tuner and clean up statusbar icon settings - fixed statusbar icon settings fc <westcripp> 50 minutes ago
+cc24a4a : Slim Recents: allow to disable round corners for cards [2/2] <ezio84> 59 minutes ago
+c02e2ca : Settings:Add back Left navigation bar in landscape [2/2] <LorDClockaN> 3 weeks ago
+ff229d9 : Settings:Smartbar touch sounds:make it optional [3/3] <Varun Date> 3 weeks ago
+d7c1129 : AllowBindAppWidgetActivity: Fix crash when the activity is closing <Mikhail Malakhov> 8 months ago
+96c4d62 : Volume can not be updated in Sound&notification <Sheng Wang> 11 months ago
+b94315de : Allow sorting applications by size <Roman Royer> 1 year, 2 months ago
+11f3a6e : do not include saved network in scan list <Om Prakash Singh> 1 year, 6 months ago
+11ca40c : SeekBarPreference: fix progressbar glitch with custom min-max values <ezio84> 2 weeks ago
+b22f52f : Configurations:Add Some more Settings to Reset <Varun Date> 5 weeks ago
+a052277 : Avoid a NullPointerException in security <Park Ju Hyung> 5 months ago
+168f0e9 : Optimized Code: call direct method to get integer extra <liurong> 4 months ago
+5d7454b : RejectedExecutionException  in DataUsageLIst <tiansiming> 4 months ago
+06c8e39 : Optimize code on get UidDetail in AppDataUsage <tiansiming> 4 months ago
+48a94b4 : Settings: Fix wrong wifi drawable in screen zooming preview <Anas Karbila> 3 months ago
+72b2610 : Avoid FC when entering Accessibility Settings with a font size of 100% <Adam Young> 7 weeks ago
+6ec75f4 : Correct fingerprint position during setup <Jertlok> 8 weeks ago
+a627e93 : sound settings derp fixed <ZION959> 71 minutes ago
+dfbbd31 : PowerUsageFeatureProviderImpl: little cleanup <Anas Karbila> 8 weeks ago
+4a17a9c : Port "Battery Usage Alerts" feature from factory images to aosp <Ezio Lacandia Bijelkic> 3 months ago
+ebec67c : Fix synchronization of Wi-Fi hotspot switch <Om Prakash Singh> 1 year, 9 months ago
+7a016d4 : Option to show Settings header in settings drawer[2/2] <varund7726> 2 hours ago
+ce38599 : Move Headset Settings out of CMSettings <ezio84> 6 weeks ago
+940efa6 : Launch music player on headset connect: add BT compatibility [2/2] <ezio84> 2 hours ago
+94a483e : Allow disabling of FC dialogs [2/2] <Jmz> 4 months ago
+b8316d1 : Kill button for notification guts - setting [2/2] <SpiritCroc> 22 hours ago
+0aa27de : Wired headset: make ringtone audio focus customizable [3/3] <ezio84> 4 months ago
+cc38b37 : Fingerprint swipe gesture to answer/silence incoming call [2/2] <ezio84> 25 hours ago
+ 
