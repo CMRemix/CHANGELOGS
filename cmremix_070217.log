@@ -1,0 +1,501 @@
+
+**** cmR:CMRemix ****
+2aeea3c : track external/google (reverted from commit 72f5632aff405f7434da1a7c27c993ccaba2d4b1) <ZION959> 3 hours ago
+c9079fb : Revert "cm: add custom tiles project" <Dan Pasanen> 3 days ago
+ 
+**** cmR:android_device_qcom_common ****
+5985a61 : power: Use the correct opcode for STOR_CLK_SCALE_DIS <Diogo Ferreira> 8 weeks ago
+ 
+**** github:LineageOS/android_external_ffmpeg ****
+b33d01d : Update for 3.0.8 <Michael Niedermayer> 7 weeks ago
+dac9ef7 : avcodec/mlpdec: Fix: runtime error: left shift of negative value -8 <Michael Niedermayer> 7 weeks ago
+f2afdab : avcodec/dfa: Fix: runtime error: signed integer overflow: -14202 * 196877 cannot be represented in type 'int' <Michael Niedermayer> 7 weeks ago
+abe2d4d : avcodec/hevc_sei: fix amount of bits skipped when reading picture timing SEI message <James Almer> 8 weeks ago
+3041566 : avformat/concatdec: fix the h264 annexb extradata check <James Almer> 10 weeks ago
+c54a76b : avformat/utils: free AVStream.codec properly in free_stream() <Aaron Levinson> 2 months ago
+676ba8e : avcodec/options: do a more thorough clean up in avcodec_copy_context() <James Almer> 10 weeks ago
+cf44f0a : avcodec/options: factorize avcodec_copy_context() cleanup code <James Almer> 2 months ago
+a1627fe : avcodec/aacdec: Fix runtime error: signed integer overflow: 2147483520 + 255 cannot be represented in type 'int' <Michael Niedermayer> 7 weeks ago
+a1babbd : avcodec/aacdec_template: Fix fixed point scale in decode_cce() <Michael Niedermayer> 7 weeks ago
+c32237e : avcodec/flicvideo: Check frame_size before decrementing <Michael Niedermayer> 7 weeks ago
+28f2341 : avcodec/mlpdec: Fix runtime error: left shift of negative value -1 <Michael Niedermayer> 7 weeks ago
+e79851f : avcodec/takdec: Fix  runtime error: left shift of negative value -42 <Michael Niedermayer> 7 weeks ago
+dcbebc9 : avcodec/hq_hqa: Fix: runtime error: signed integer overflow: -255 * 10180917 cannot be represented in type 'int' <Michael Niedermayer> 7 weeks ago
+e05148d : avcodec/truemotion1: Fix multiple runtime error: signed integer overflow: 1246906962 * 2 cannot be represented in type 'int' <Michael Niedermayer> 7 weeks ago
+cd4674f : avcodec/svq3: Fix runtime error: left shift of negative value -6 <Michael Niedermayer> 7 weeks ago
+55d320d : avcodec/tiff: reset sampling[] if its invalid <Michael Niedermayer> 7 weeks ago
+ec7206f : avcodec/aacps: Fix undefined behavior <Michael Niedermayer> 8 weeks ago
+9cd39ab : avcodec/opus_silk: Fix integer overflow and out of array read <Michael Niedermayer> 8 weeks ago
+c82ea25 : avcodec/flacdec: Return error code instead of 0 for failures <Michael Niedermayer> 8 weeks ago
+2790054 : avcodec/snowdec: Check width <Michael Niedermayer> 8 weeks ago
+8198258 : avcodec/webp: Update canvas size in vp8_lossy_decode_frame() as in vp8_lossless_decode_frame() <Michael Niedermayer> 8 weeks ago
+edf7bd1 : avcodec/webp: Factor update_canvas_size() out <Michael Niedermayer> 8 weeks ago
+98dff82 : avcodec/cllc: Check prefix <Michael Niedermayer> 8 weeks ago
+0246760 : avcodec/rscc: Check pixel_size for overflow <Michael Niedermayer> 7 weeks ago
+a359138 : avcodec/dds: Fix runtime error: left shift of 210 by 24 places cannot be represented in type 'int' <Michael Niedermayer> 7 weeks ago
+eeece50 : avcodec/mpeg4videodec: Clear sprite wraping on unsupported cases in VOP decode <Michael Niedermayer> 7 weeks ago
+e2fd01c : avcodec/ac3dec: Fix: runtime error: index -1 out of bounds for type 'INTFLOAT [2]' <Michael Niedermayer> 7 weeks ago
+99cbee2 : avcodec/hqxdsp: Fix runtime error: signed integer overflow: -196264 * 11585 cannot be represented in type 'int' <Michael Niedermayer> 7 weeks ago
+49109b0 : avcodec/g723_1dec: Fix LCG type <Michael Niedermayer> 7 weeks ago
+4ffab67 : libswscale/tests/swscale: Fix uninitialized variables <Michael Niedermayer> 9 weeks ago
+52f4c9c : avcodec/ffv1dec: Fix runtime error: signed integer overflow: 1550964438 + 1550964438 cannot be represented in type 'int' <Michael Niedermayer> 7 weeks ago
+e1fcdf1 : avcodec/webp: Fix signedness in prefix_code check <Michael Niedermayer> 7 weeks ago
+f857975 : avcodec/svq3: Fix runtime error: signed integer overflow: 169 * 12717677 cannot be represented in type 'int' <Michael Niedermayer> 7 weeks ago
+09ac75c : avcodec/mlpdec: Check that there is enough data for headers <Michael Niedermayer> 7 weeks ago
+c24bff1 : avcodec/ac3dec: Keep track of band structure <Michael Niedermayer> 7 weeks ago
+f8502c2 : avcodec/webp: Add missing input padding <Michael Niedermayer> 7 weeks ago
+113bba3 : avcodec/aacdec_fixed: Fix runtime error: left shift of negative value -1 <Michael Niedermayer> 7 weeks ago
+03b8d28 : avcodec/aacsbr_template: Do not change bs_num_env before its checked <Michael Niedermayer> 7 weeks ago
+4bc3ae5 : avcodec/mlp: Fix multiple runtime error: left shift of negative value -1 <Michael Niedermayer> 7 weeks ago
+d302803 : avcodec/vp8dsp: vp7_luma_dc_wht_c: Fix multiple runtime error: signed integer overflow: -1366381240 + -1262413604 cannot be represented in type 'int' <Michael Niedermayer> 8 weeks ago
+86a7a93 : avcodec/avcodec: Limit the number of side data elements per packet <Michael Niedermayer> 8 weeks ago
+b2d2e59 : avcodec/texturedsp: Fix runtime error: left shift of 255 by 24 places cannot be represented in type 'int' <Michael Niedermayer> 7 weeks ago
+43965fe : avcodec/g723_1dec: Fix runtime error: left shift of negative value -1 <Michael Niedermayer> 7 weeks ago
+188e015 : avcodec/wmv2dsp: Fix runtime error: signed integer overflow: 181 * -17047030 cannot be represented in type 'int' <Michael Niedermayer> 7 weeks ago
+a53182a : avcodec/diracdec: Fix Assertion frame->buf[0] failed at libavcodec/decode.c:610 <Michael Niedermayer> 7 weeks ago
+b8c80b9 : avcodec/msmpeg4dec: Check for cbpy VLC errors <Michael Niedermayer> 7 weeks ago
+d75f932 : avcodec/cllc: Check num_bits <Michael Niedermayer> 7 weeks ago
+07e8da3 : avcodec/cllc: Factor VLC_BITS/DEPTH out, do not use repeated literal numbers <Michael Niedermayer> 7 weeks ago
+47c6f1b : avcodec/dvbsubdec: Check entry_id <Michael Niedermayer> 8 weeks ago
+ 
+**** cmR:android_frameworks_base ****
+8e13236 : Automatic translation import <Abhisek Devkota> 2 days ago
+dce0ddd : ActivityStarter: Fix protected app intents <Gabriele M> 9 days ago
+33d84c6 : SystemUI: Make play queue toggle more visible <Sebastian Haderecker> 2 weeks ago
+409c26f : Volume Panel: Fix Bluetooth music stream icon when muted <Sebastian Haderecker> 2 weeks ago
+ab40ceb : Add support for the .opus file format <Ayke van Laethem> 9 days ago
+4671b48 : Binder: Be forceful about a forceful exit <Narayan Kamath> 3 months ago
+049b007 : Automatic translation import <Abhisek Devkota> 10 days ago
+ 
+**** github:LineageOS/android_hardware_qcom_audio ****
+1ebcae6 : aenc-aac: bounds checking <Aalique Grahame> 3 months ago
+ 
+**** github:LineageOS/android_hardware_qcom_audio ****
+3881c4c : aenc-aac: bounds checking <Aalique Grahame> 3 months ago
+ 
+**** github:LineageOS/android_hardware_qcom_audio ****
+bcd773f : aenc-aac: bounds checking <Aalique Grahame> 3 months ago
+ 
+**** github:LineageOS/android_hardware_qcom_bt ****
+896a499 : Apply the Cherokee's mechanism of stopping hci_filter to ROME <Luke Zhang> 5 months ago
+2f5fa30 : BT: Modify implementation for command timeout crashdump collection <Manu Viswanadhan> 8 months ago
+ 
+**** github:LineageOS/android_hardware_qcom_display ****
+f3072db : hwcomposer: Fix regression in hwc_sync <Alex Naidis> 6 months ago
+ 
+**** github:LineageOS/android_hardware_qcom_display ****
+38e457c : hwcomposer: Fix regression in hwc_sync <Alex Naidis> 6 months ago
+ 
+**** github:LineageOS/android_hardware_qcom_display ****
+6700612 : hwcomposer: Fix regression in hwc_sync <Alex Naidis> 6 months ago
+ 
+**** github:LineageOS/android_hardware_qcom_display ****
+24176c9 : hwcomposer: Fix regression in hwc_sync <Alex Naidis> 6 months ago
+ 
+**** github:LineageOS/android_hardware_qcom_display ****
+023758b : hwcomposer: Fix regression in hwc_sync <Alex Naidis> 6 months ago
+ 
+**** github:LineageOS/android_hardware_qcom_fm ****
+7a29d93 : FM: Fix helium hal build <Luca Stefani> 4 days ago
+0df98d3 : Change rename_dialog background color to default <Mingbo Zhang> 6 months ago
+f62c66a : FMStats: fix GetFMStatsForFreq error for non-cherokee <mingboz> 10 months ago
+9477a03 : Automatic translation import <Abhisek Devkota> 2 days ago
+4c2e39e : Automatic translation import <Abhisek Devkota> 10 days ago
+ 
+**** github:LineageOS/android_hardware_ril ****
+5758b0e : ril: fix a memory leak. <Yunlian Jiang> 8 months ago
+ 
+**** github:LineageOS/android_hardware_ril ****
+588e49d : ril: fix a memory leak. <Yunlian Jiang> 8 months ago
+ 
+**** github:LineageOS/android_hardware_samsung ****
+f6e983c : AdvancedDisplay: Refactor <Luca Stefani> 5 months ago
+5b0f143 : Automatic translation import <Abhisek Devkota> 10 days ago
+601bcef : exynos: multimedia: add support for OMX_IndexParamVideoIntraRefresh parameter <Dheeraj CVR> 2 years, 4 months ago
+e95e9c3 : liblights: Fix fast blinking notification LEDs. <Jason Vidal> 3 weeks ago
+df15802 : liblights: Add BLN support <Dominggoes Isakh> 5 weeks ago
+ 
+**** github:LineageOS/android_hardware_ti_omap4 ****
+030bec5 : BUGBASH-733 Memory leak in system_server caused by suspend / color fade <Andreas K> 2 days ago
+ 
+**** github:LineageOS/ansible ****
+687e415 : [2/2] Migrate updater to python package <Tom Powell> 5 weeks ago
+ 
+**** github:LineageOS/cve_tracker ****
+9871467 : Regenerate kernel->device mappings <Harry's Buildbot> 2 days ago
+4fd8cd0 : cve_tracker: Fix progress-bar not scaling properly <Michael W> 8 days ago
+bb2afe6 : cve_tracker: Fix CVE info dialog <Michael W> 8 days ago
+1797d97 : cve_tracker: do not count unaffected as patched <Tim Schumacher> 11 days ago
+382d8e2 : cve_tracker: use links for buttons that change the location <Demon000> 10 days ago
+3762fa0 : cve_tracker: make status descriptions smaller to alleviate space issues <Dan Pasanen> 11 days ago
+90b0552 : classes: fix spacing on hashbang <Dan Pasanen> 11 days ago
+1f2cb4f : cve_tracker: close Dialogs on [Esc] <Demon000> 11 days ago
+a30997e : cve_tracker: Check adding/editing CVEs for sane formatting <Michael W> 11 days ago
+b2d8402 : Revert "cve_tracker: Check adding/editing CVEs for sane formatting" <Michael W> 11 days ago
+9462e22 : cve_tracker: Check adding/editing CVEs for sane formatting <Michael W> 12 days ago
+9ff7672 : cve_tracker: Various fixes & improvements <Michael W> 11 days ago
+58d547d : cve_tracker: Fix device repo links <Michael W> 13 days ago
+438fc6c : cve_tracker: add a devices page <Demon000> 2 weeks ago
+467a3f4 : cve_tracker: materialize <Demon000> 2 weeks ago
+ 
+**** github:LineageOS/hudson ****
+a5c1264 : hudson: Disable w7 <Paul Keith> 3 days ago
+aececda : Promote shieldtablet to 14.1 <Aaron Kling> 6 days ago
+2a62a4c : Add foster <Aaron Kling> 6 days ago
+a8e0b24 : hudson: Ship weeklies for ham again <Brinly Taylor> 3 weeks ago
+765b1a6 : jenkins: Re-enable h830, h850, h918, us996, v521 <Rashed Abdel-Tawab> 12 days ago
+756756e : hudson: disable athene for now <Vachounet> 3 weeks ago
+ 
+**** github:LineageOS/mirror ****
+6ccc3bc : Updated to 22-Jun-2017 21:18:33 UTC <Harry's Buildbot> 10 days ago
+ 
+**** github:LineageOS/slackbot ****
+21fd123 : poll: get a default value if there's nothing in the db yet <Tom Powell> 3 days ago
+4279177 : db: return a sane default <Tom Powell> 3 days ago
+0db3499 : include reddit plugin <Tom Powell> 3 days ago
+63bb359 : cve: fix missing formatting in urls <Tom Powell> 3 days ago
+ 
+**** github:LineageOS/lineageos_updater ****
+2845639 : Regenerate device dependency mappings <Harry's Buildbot> 2 days ago
+73bf9a0 : Add foster <Aaron Kling> 6 days ago
+903f6ef : updater: changelog: Allow to show builds with no changes <Gabriele M> 9 days ago
+28d5100 : updater: changelog: Use the "update date" of the last change <Gabriele M> 12 days ago
+f7a5d3d : updater: changelog: Hide build changelog links <Gabriele M> 2 weeks ago
+85f7e71 : updater: changelog: Always add the first build label <Gabriele M> 2 weeks ago
+62cd86a : updater: changelog: Correctly place build labels <Gabriele M> 2 weeks ago
+37a1d1c : Regenerate device dependency mappings <Harry's Buildbot> 9 days ago
+b4caf24 : Fix typo from afd0835 <Harry Youd> 11 days ago
+9c2c043 : updater: remove extraneous brs <Tom Powell> 11 days ago
+9cfb053 : updater: update su zips <Tom Powell> 11 days ago
+afd0835 : updater: stop showing md5s, link to sha1/sha256 in mirrorbits <Tom Powell> 11 days ago
+52c60a7 : Regenerate device dependency mappings <Harry's Buildbot> 12 days ago
+8a4f8d3 : Add WeatherProviders <Tom Powell> 2 weeks ago
+ 
+**** github:LineageOS/www ****
+f1df413 : footer: add reddit link <Dan Pasanen> 3 weeks ago
+7d8912a : Changelog 11 <Tim Schumacher> 3 weeks ago
+ 
+**** github:LineageOS/lineage_wiki ****
+454b61b : wiki: Mark w7 as discontinued <Paul Keith> 3 days ago
+58a2b68 : xt897: Add warning about ext4 vs. f2fs <Sean McCreary> 4 days ago
+c14a091 : Bump shieldtablet to 14.1 <Aaron Kling> 6 days ago
+31f4a10 : wiki: Generalize TWRP version <Kasual> 4 weeks ago
+35138c4 : Add gmrt to Committers <Harry Youd> 10 days ago
+53ea4c7 : wiki: Fix v521 install method <Rashed Abdel-Tawab> 12 days ago
+3535799 : wiki: add h918/h830 install instruction <Moritz Fey> 3 weeks ago
+fe1ae14 : devices: maguro: Fix boot key press instructions <Georg Sauthoff> 3 weeks ago
+ae85e65 : wiki: Update Xiaomi's bootloader unlocking instructions <Lu> 2 weeks ago
+f0b36a8 : wiki: add us996 install instruction <Moritz Fey> 3 weeks ago
+e755533 : wiki: add h850 install instruction <Moritz Fey> 3 weeks ago
+ 
+**** github:LineageOS/android_packages_apps_AudioFX ****
+efb0b87 : Automatic translation import <Abhisek Devkota> 2 days ago
+ 
+**** github:LineageOS/android_packages_apps_Bluetooth ****
+7f2b5c8 : Automatic translation import <Abhisek Devkota> 10 days ago
+ 
+**** github:LineageOS/android_packages_apps_CMBugreport ****
+2a50a65 : Automatic translation import <Abhisek Devkota> 10 days ago
+ 
+**** cmR:android_packages_apps_CMParts ****
+300a0cf : CMParts: Use vector drawables for most system icons <qjohn> 6 weeks ago
+5e1932c : [3/3] Torch long press power: add auto-off function <Sam Mortimer> 6 months ago
+07f68d0 : CMParts: Rename button action list handlers <Sam Mortimer> 4 months ago
+a49bb17 : Set android:configChanges for .PartsActivity <LuK1337> 5 weeks ago
+0f5383a : CMParts: remove extra padding from app light preference <Joey Rizzoli> 6 weeks ago
+ 
+**** github:LineageOS/android_packages_apps_CMUpdater ****
+2b8261c : Automatic translation import <Abhisek Devkota> 2 days ago
+f9fb746 : CMUpdater: Strip 'signed' from UI Name <Sean McCreary> 2 weeks ago
+0465cb6 : CMUpdater: support A/B style OTA updates <Dan Pasanen> 6 months ago
+5c5d3c7 : Automatic translation import <Abhisek Devkota> 10 days ago
+fac09f6 : CMUpdater: Remove extra call to String.format() <Sean McCreary> 2 weeks ago
+e879d20 : CMUpdater: Separate info URL from translatable dialog message <Sean McCreary> 3 weeks ago
+757734c : CMUpdater: Block incompatible updates <Sean McCreary> 6 weeks ago
+de43cac : CMUpdater: Fix build type in displayed list of updates <Sean McCreary> 4 weeks ago
+d0afb9f : CMUpdater: Build type abstraction cleanup <Sean McCreary> 4 weeks ago
+5b7f484 : CMUpdater: Report version info from API <Sean McCreary> 6 weeks ago
+ 
+**** github:LineageOS/android_packages_apps_Calendar ****
+ca094f3 : Automatic translation import <Abhisek Devkota> 10 days ago
+ 
+**** github:LineageOS/android_packages_apps_Camera2 ****
+2ca70c9 : Automatic translation import <Abhisek Devkota> 2 days ago
+ 
+**** github:LineageOS/android_packages_apps_CarrierConfig ****
+1249ef5 : Remove TIM from non-roaming networks list of H3G IT <Gabriele M> 2 weeks ago
+6aa9fb6 : CarrierConfig: allow 3 ITA roaming <Joey Rizzoli> 4 weeks ago
+ 
+**** github:LineageOS/android_packages_apps_CellBroadcastReceiver ****
+49ba52e : Automatic translation import <Abhisek Devkota> 2 days ago
+ebf9e97 : Automatic translation import <Abhisek Devkota> 10 days ago
+ 
+**** cmR:android_packages_apps_Contacts ****
+0311d54 : Automatic translation import <Abhisek Devkota> 2 days ago
+e4db886 : Automatic translation import <Abhisek Devkota> 10 days ago
+ 
+**** cmR:android_packages_apps_ContactsCommon ****
+c141c1f : Automatic translation import <Abhisek Devkota> 2 days ago
+136471a : Automatic translation import <Abhisek Devkota> 10 days ago
+ 
+**** cmR:android_packages_apps_Dialer ****
+1e9846e : Automatic translation import <Abhisek Devkota> 2 days ago
+49d45fd : Automatic translation import <Abhisek Devkota> 10 days ago
+ 
+**** github:LineageOS/android_packages_apps_Eleven ****
+778a70f : Automatic translation import <Abhisek Devkota> 2 days ago
+38c5aea : Eleven: request record audio permission for visualizer <Demon000> 9 days ago
+6665277 : Eleven: Remove unused permission REAL_GET_TASKS <Arne Coucheron> 3 weeks ago
+ 
+**** github:LineageOS/android_packages_apps_FMRadio ****
+900759c : Automatic translation import <Abhisek Devkota> 10 days ago
+ 
+**** github:LineageOS/android_packages_apps_FlipFlap ****
+1b0fc81 : Automatic translation import <Abhisek Devkota> 2 days ago
+f45c2bf : Automatic translation import <Abhisek Devkota> 10 days ago
+ 
+**** github:LineageOS/android_packages_apps_Gallery2 ****
+c45b89b : Gallery2: Fix crash after returning from albums in wallpaper picker <Arne Coucheron> 3 days ago
+a66d49f : Automatic translation import <Abhisek Devkota> 2 days ago
+e988d6a : Gallery2: Fix views overlap <Cagdas Caglak> 2 months ago
+06d5e55 : Automatic translation import <Abhisek Devkota> 10 days ago
+ 
+**** github:LineageOS/android_packages_apps_Jelly ****
+b8109ec : Jelly: Update suggestions provider API URLs <Luca Stefani> 16 hours ago
+a7659df : Jelly: Make UrlResolvedReceiver final <Luca Stefani> 2 days ago
+b15286f : Jelly: Move bing suggestions provider to https <Luca Stefani> 2 days ago
+f50b7e9 : Jelly: Fix Suggestions Provider strings (suggestion / uggestion) <Adrian DC> 2 days ago
+697e32d : Jelly: Remove unused parameter <Luca Stefani> 2 days ago
+afee4a3 : Automatic translation import <Abhisek Devkota> 2 days ago
+66d1b83 : Jelly: Allow launching external apps <Danny Baumann> 4 days ago
+9d693cc : Jelly: Remove unneeded getApplicationContext call <Luca Stefani> 2 days ago
+d6b3b84 : Jelly: Add non encrypted google search engine <Luca Stefani> 3 days ago
+897fa20 : Jelly: Propagate custom request headers to WebClient <Luca Stefani> 4 days ago
+58c2aed : Jelly: Add suggestions <Luca Stefani> 8 days ago
+69173dd : Jelly: Add show/hide keyboard utilities <Luca Stefani> 5 days ago
+9a5fcdd : Jelly: Search on Enter key <Luca Stefani> 5 days ago
+74c7e51 : Jelly: Don't reload on keyboard changes <Luca Stefani> 6 days ago
+cc66a61 : Jelly: Add WebChromeClientCompat <Luca Stefani> 7 days ago
+e3b22ba : Jelly: Fix some lint warnings <Luca Stefani> 7 days ago
+2d1bdcd : Jelly: Add save form data setting <Luca Stefani> 8 days ago
+d2926c7 : Jelly: add Do Not Track setting <Alexandre Oliveira> 3 weeks ago
+42d6446 : Jelly: Add incognito mode shortcut <Luca Stefani> 9 days ago
+69c2401 : Jelly: Update android tools build <Luca Stefani> 8 days ago
+eff2fd2 : Open link in Incognito tab automatically when in Incognito mode <Tim Schumacher> 9 days ago
+f7338cf : Jelly: Enable safe browsing <Luca Stefani> 9 days ago
+dd23317 : Automatic translation import <Abhisek Devkota> 10 days ago
+818e92d : Jelly: Guess filename from URL <Luca Stefani> 10 days ago
+1a4f237 : Jelly: Allow media scan on download <Luca Stefani> 10 days ago
+a8fe6fa : Jelly: Show download notification on completed <Luca Stefani> 10 days ago
+ 
+**** cmR:android_packages_apps_LockClock ****
+98a6964 : Automatic translation import <Abhisek Devkota> 7 weeks ago
+552041b : Automatic translation import <Abhisek Devkota> 2 months ago
+4afc8af : Automatic translation import <Abhisek Devkota> 3 months ago
+6f2b2cc : Update weather data only when the screen is on <Gabriele M> 4 months ago
+e039264 : Register network status change listener explicity <Gabriele M> 4 months ago
+54e41b5 : Save timestamp of last update <Gabriele M> 4 months ago
+069c3d1 : Fix typo in method name <Gabriele M> 4 months ago
+09482ca : Automatic translation import <Abhisek Devkota> 3 months ago
+c34eae7 : res: use selectableItemBackgroundBorderless for refresh button background <Dan Pasanen> 4 months ago
+a0f028d : Automatic translation import <Abhisek Devkota> 4 months ago
+536dda9 : Automatic translation import <Abhisek Devkota> 4 months ago
+7e84bff : Automatic translation import <Michael W> 4 months ago
+92d5403 : Automatic translation import <Abhisek Devkota> 4 months ago
+26ae64d : Build the internal CM SDK as a static library <Zhao Wei Liew> 4 months ago
+563bb54 : Automatic translation import <Abhisek Devkota> 4 months ago
+dd24750 : Automatic translation import <Abhisek Devkota> 5 months ago
+3092f9d : Automatic translation import <Abhisek Devkota> 5 months ago
+2ccf116 : Automatic translation import <Abhisek Devkota> 5 months ago
+cafbdea : Automatic translation import <Abhisek Devkota> 5 months ago
+f9d9201 : LockClock: change forecast text color to white <razorloves> 5 months ago
+1cfcb29 : Automatic translation import <Abhisek Devkota> 5 months ago
+b642154 : Remove Google Play Services dependency <Marvin W> 5 months ago
+c52268f : Automatic translation import <Abhisek Devkota> 5 months ago
+c3d1475 : Automatic translation import <pinky@build01> 6 months ago
+090a73b : Automatic translation import <clyde@build01> 6 months ago
+577bda2 : Automatic translation import <pinky@build01> 7 months ago
+2edc867 : Automatic translation import <inky@build01> 7 months ago
+b6674c2 : lockclock: Use protected broadcasts when talking to SystemUI <Steve Kondik> 9 months ago
+9599f79 : Automatic translation import <pinky@build01> 9 months ago
+cb8ef07 : Automatic translation import <pinky@build01> 10 months ago
+7cef611 : Automatic translation import <pinky@build01> 10 months ago
+fa73ab0 : LockClock: Clean up proguard, fix build without jack <Ketut Putu Kumajaya> 1 year, 2 months ago
+968e746 : LockClock: Don't forcefully enable widget calendar on resume <Zhao Wei Liew> 11 months ago
+f03e72b : Automatic translation import <blinky@build01> 11 months ago
+65407c7 : AM/PM: Fix incorrect am/pm text <Stephen Bird> 1 year, 1 month ago
+fdc1069 : Automatic translation import <inky@build01> 12 months ago
+23e004d : Automatic translation import <inky@build01> 1 year ago
+932b0cc : Actually verifies if CM weather feature is available <Luis Vidal> 1 year ago
+3e0e7fc : Verifies if weather service is available <Luis Vidal> 1 year ago
+875f16e : Automatic translation import <inky@build01> 1 year ago
+c712548 : Don't include all resource densities <Ricardo Cerqueira> 1 year, 1 month ago
+325513b : Unregister from WeatherManager ONLY if service was actually registered <Luis Vidal> 1 year, 1 month ago
+d9c5b0a : Report correct status if failed to process weather update request <Luis Vidal> 1 year, 1 month ago
+e28037a : Handle >5 forecast items in cLock Forecast view <DvTonder> 1 year, 1 month ago
+fc8ea24 : Automatic translation import <inky@build01> 1 year, 1 month ago
+38c62bb : Automatic translation import <Abhisek Devkota> 1 year, 2 months ago
+0ca9798 : Automatic translation import <Michael Bestas> 1 year, 2 months ago
+c8e4f26 : Automatic translation import <Michael Bestas> 1 year, 2 months ago
+9493fe7 : Fix weather source string translatability <Michael Bestas> 1 year, 2 months ago
+c56159a : Refactor cLock to use the new Weather API <Luis Vidal> 1 year, 3 months ago
+ 
+**** cmR:android_packages_apps_Messaging ****
+d1e7aec : Messaging: Don't crash on unsupported shared content type <Luca Stefani> 6 days ago
+53b0ba3 : Messaging: Request external storage permission before handling shared files <dianlujitao> 6 days ago
+c8e61e5 : Automatic translation import <Abhisek Devkota> 10 days ago
+ 
+**** github:LineageOS/android_packages_apps_Nfc ****
+182c26e : NfcNci: make T3T/Nfc-F HCE optional <Simon Shields> 5 months ago
+ 
+**** cmR:android_packages_apps_PhoneCommon ****
+bf018f4 : Automatic translation import <Abhisek Devkota> 2 days ago
+433f6c8 : Automatic translation import <Abhisek Devkota> 10 days ago
+ 
+**** github:LineageOS/android_packages_apps_Recorder ****
+07f7017 : Automatic translation import <Abhisek Devkota> 2 days ago
+67d5b07 : Automatic translation import <Abhisek Devkota> 10 days ago
+ 
+**** cmR:android_packages_apps_Settings ****
+4d7e296 : Automatic translation import <Abhisek Devkota> 2 days ago
+6a2848a : Settings: Hide disabled lockscreen blur from search index <Adrian DC> 10 days ago
+3939cc6 : Automatic translation import <Abhisek Devkota> 10 days ago
+405d1e4 : add cmremix ota <ZION959> 46 minutes ago
+4e8621c : Settings: Make Power Menu Emergency Panel Optional [2/2] <ZION959> 26 hours ago
+ 
+**** github:LineageOS/android_packages_apps_SetupWizard ****
+3ff607b : Automatic translation import <Abhisek Devkota> 2 days ago
+092d0fa : Disable SetupWraith, the ATV SUW. <Aaron Kling> 11 days ago
+33b4491 : Automatic translation import <Abhisek Devkota> 10 days ago
+d82d392 : The bluetooth pairing page cannot be exited, disable it for now. <Aaron Kling> 2 weeks ago
+ 
+**** github:LineageOS/android_packages_apps_Terminal ****
+23d836b : Automatic translation import <Abhisek Devkota> 2 days ago
+a2a05d2 : Automatic translation import <Abhisek Devkota> 10 days ago
+ 
+**** github:LineageOS/android_packages_apps_Trebuchet ****
+8b8de5f : Trebuchet: Rename settings provider <Arne Coucheron> 9 days ago
+ 
+**** github:LineageOS/android_packages_apps_TvSettings ****
+6f07406 : Automatic translation import <Abhisek Devkota> 10 days ago
+ 
+**** github:LineageOS/android_packages_apps_WallpaperPicker ****
+2b021c4 : WallpaperPicker: Update for wallpaper API changes <Arne Coucheron> 3 days ago
+5b27292 : Fix bad wallpaper preview image format <Michael Bestas> 2 weeks ago
+ 
+**** github:LineageOS/android_packages_inputmethods_LatinIME ****
+3e047b8 : Automatic translation import <Abhisek Devkota> 10 days ago
+ 
+**** github:LineageOS/android_packages_providers_DataUsageProvider ****
+081bb6a : Automatic translation import <Abhisek Devkota> 2 days ago
+ 
+**** github:LineageOS/android_packages_providers_DownloadProvider ****
+30cc23d : Automatic translation import <Abhisek Devkota> 10 days ago
+ 
+**** github:LineageOS/android_packages_providers_MediaProvider ****
+0f47b6e : MediaProvider: Fix failure in android.provider.cts.MediaStore_FilesTest <huiyan> 1 year, 1 month ago
+815436d : Gallery2: Fix thumbnails of new edit photos display wrongly in Documents. <huiyan> 1 year, 3 months ago
+f3bd6a0 : Music: Fix force closed when plug out the SD card while music is playing. <xiaoch> 1 year, 3 months ago
+eb0378b : MediaProvider: Fix SQLiteDiskIOException. <huiyan> 1 year, 5 months ago
+b619475 : Revert "Fix check for existence of parent" <Arne Coucheron> 8 days ago
+21ce3cd : Revert "MediaProvider: Fix where condition of delete queries" <Gabriele M> 9 days ago
+fadf365 : MediaProvider: Fix where condition of delete queries <Gabriele M> 13 days ago
+ 
+**** github:LineageOS/android_packages_providers_WeatherProvider ****
+0e3e2af : Automatic translation import <Abhisek Devkota> 2 days ago
+ 
+**** github:LineageOS/android_packages_resources_devicesettings ****
+1b90917 : Automatic translation import <Abhisek Devkota> 2 days ago
+75498f7 : Automatic translation import <Abhisek Devkota> 10 days ago
+ 
+**** cmR:android_packages_services_Telephony ****
+37292e6 : Automatic translation import <Abhisek Devkota> 2 days ago
+23b6f58 : Automatic translation import <Abhisek Devkota> 10 days ago
+a40c8ca : Fix Phone Service crash on MSIM devices as Guest user <Alberto97> 4 weeks ago
+ 
+**** bb:uberroms/clang_linux-x86_5.x ****
+647897a : clang 5.0 13-JUNE-2017 build (binutils 2.27) Super Sexy Scizor Edition <Chad Cormier Roussel> 3 months ago
+ 
+**** bb:uberroms/aarch64-linux-android-6.x ****
+448564b : 13-JUNE-2017 (with binutils 2.27) Freaking Flashing Fax Edition <Chad Cormier Roussel> 3 months ago
+ 
+**** bb:uberroms/arm-linux-androideabi-6.x ****
+d5e3236 : 13-JUNE-2017 (with binutils 2.27) Raging Red Rocket Edition <Chad Cormier Roussel> 3 months ago
+ 
+**** github:LineageOS/android_system_bt ****
+331fc1e : bt: Disable AVRCP 1.6 <Gabriele M> 3 weeks ago
+ 
+**** cmR:android_vendor_CMRemix ****
+e27e11b : Revert "cm: build custom tiles app" <Dan Pasanen> 3 days ago
+afd592c : build CMRemixOTA <ZION959> 26 hours ago
+736c6fe : qcom_utils: Cleanup supported QCOM_BOARD_PLATFORMS <Michael Bestas> 5 days ago
+e65a250 : build: qcom_target: Define MASTER_SIDE_CP_TARGET_LIST <Michael Bestas> 5 days ago
+ee7a90e : apns-conf: Add Japan Umobile APNs <Julien Humbert> 9 days ago
+bb634aa : sensitive_pn: Add sensitive numbers for Greece <Michael Bestas> 4 weeks ago
+244370e : sensitive_pn: fix Czech Republic MCC <jumoog> 8 days ago
+9a4fe2b : sensitive_pn: Add Taiwanese sensitive numbers <Sean hoyt> 8 days ago
+ 
+**** github:LineageOS/cm_platform_sdk ****
+58c23ed : Automatic translation import <Abhisek Devkota> 2 days ago
+df15137 : Automatic translation import <Abhisek Devkota> 10 days ago
+bdea7f5 : [2/3] Torch long press power: add auto-off function <Sam Mortimer> 6 months ago
+f53bcaa : Automatic translation import <Abhisek Devkota> 5 weeks ago
+6a47344 : Double tap to sleep anywhere on lock screen [3/3] <Matssa56> 5 weeks ago
+062bfa9 : cmsdk: Disable Lockscreen Media Art [3/3] <Matssa56> 5 weeks ago
+b5e2ea3 : cmsdk: fix twilight state not updating in live display auto mode <Matthias Yzusqui> 6 weeks ago
+a4df9e2 : Automatic translation import <Abhisek Devkota> 7 weeks ago
+2b1cf2b : cmsdk: Add CMSettings option for QS auto brightness <Michael Bestas> 9 weeks ago
+e2c64b8 : Automatic translation import <Abhisek Devkota> 9 weeks ago
+117d242 : Protect system profiles related broadcasts <Gabriele M> 3 months ago
+1908152 : Automatic translation import <Abhisek Devkota> 2 months ago
+4b14ba4 : PerformanceManager: Don't override the user preference <Gabriele M> 4 months ago
+b19fe20 : PerformanceManager: Don't force powersave mode with powersave profile <Gabriele M> 4 months ago
+54996d4 : Automatic translation import <Abhisek Devkota> 3 months ago
+f0a3ce9 : Automatic translation import <Abhisek Devkota> 3 months ago
+c0378c8 : Automatic translation import <Abhisek Devkota> 3 months ago
+b580686 : Automatic translation import <Abhisek Devkota> 4 months ago
+9fcf3eb : Automatic translation import <Abhisek Devkota> 4 months ago
+a7e8c17 : CMSDK: Tests: AIRPLANE_MODE_ON has moved <Michael W> 4 months ago
+2298aad : Automatic translation import <Michael W> 4 months ago
+a72790f : [3/3] cmsdk: single hand for hw keys <Joey Rizzoli> 4 months ago
+3e2e540 : CMPartsPreference: Update PreferenceScreen theme <Gabriele M> 4 months ago
+d9c544a : Automatic translation import <Abhisek Devkota> 4 months ago
+24b3566 : Automatic translation import <Abhisek Devkota> 4 months ago
+1dc89fe : CMSettingsProvider: remove per-user cursor observation <Danny Baumann> 4 months ago
+8f33604 : cmsdk: Remove launch boost support <Zhao Wei Liew> 5 months ago
+1429c49 : Automatic translation import <Abhisek Devkota> 4 months ago
+cb1bb04 : Add a proper description for CM_SETUP_WIZARD_COMPLETED deprecation <Zhao Wei Liew> 4 months ago
+797a45a : cmsdk: Deprecate CM_SETUP_WIZARD_COMPLETED <Paul Keith> 5 months ago
+8f0eb55 : Automatic translation import <Abhisek Devkota> 5 months ago
+6669674 : RemotePreferenceManager: Fix receiver registration issues. <Danny Baumann> 5 months ago
+77b94bc : Automatic translation import <Abhisek Devkota> 5 months ago
+f3587d3 : Automatic translation import <Abhisek Devkota> 5 months ago
+7f3548d : Automatic translation import <Abhisek Devkota> 5 months ago
+9526453 : CMSDK: Add long-press power for torch CMSetting <Zhao Wei Liew> 8 months ago
+ebf0e84 : cmsdk: PerformanceManager: Update POWER_HINT_SET_PROFILE value <Zhao Wei Liew> 5 months ago
+a789a99 : Automatic translation import <Abhisek Devkota> 5 months ago
+cfaf39e : cmsdk: Add touchscreen gestures support <Zhao Wei Liew> 8 months ago
+f142715 : cmsdk: Add DeviceKeyHandler overlays <Zhao Wei Liew> 7 months ago
+fd5664d : Automatic translation import <Abhisek Devkota> 5 months ago
+d73a932 : cmsdk: cmhw: Deprecate TAP_TO_WAKE feature <Zhao Wei Liew> 8 months ago
+b99c20a : Add generic support for Lid Cover Apps <jrior001> 7 months ago
+cf51b67 : cmsdk: Fix @deprecated annotation mismatch warnings <Zhao Wei Liew> 6 months ago
+05f0c40 : cmsdk: Update README references for LineageOS <Zhao Wei Liew> 6 months ago
+c025463 : cmsdk: fix update path for version 7 <Christian Morlok> 6 months ago
+5bb06dc : cmsdk: remove 'hide clock' option from clock position tunable <Hendrik Hagendorn> 7 months ago
+8f7ef5d : cmsdk: rebrand to LineageOS <Simon Shields> 6 months ago
+79cced0 : cmsdk: Deprecate STATS_COLLECTION_REPORTED CMSetting <Zhao Wei Liew> 6 months ago
+d6f4389 : Automatic translation import <pinky@build01> 6 months ago
+ 
+**** github:LineageOS/android_packages_apps_WundergroundWeatherProvider ****
+db419bd : Automatic translation import <Abhisek Devkota> 2 days ago
+37e893a : Fix missing s/cyanogenmod/lineageos <Joey Rizzoli> 2 weeks ago
+ 
+**** github:LineageOS/android_packages_apps_YahooWeatherProvider ****
+a731788 : Automatic translation import <Abhisek Devkota> 2 days ago
+dd1766a : Automatic translation import <Abhisek Devkota> 10 days ago
+ 
+**** github:LineageOS/android_vendor_qcom_opensource_dataservices ****
+ca40d29 : datatop: Remove unused variables from datatop_ip_table_poll.c <Adrian DC> 3 weeks ago
+76076b1 : datatop: Fix out_dir array empty content verification <Adrian DC> 3 weeks ago
+ 
