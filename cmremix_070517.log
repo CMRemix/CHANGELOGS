@@ -1,0 +1,280 @@
+
+**** github:CMRemix/android_device_samsung_trlte-common ****
+581e035 : revert: revert: trlte: switch to TimeKeep <ZION959> 2 hours ago
+ 
+**** cmR:android_frameworks_base ****
+a45e232 : fb: add back all keyboard IME features back (1/2) <Lars Greiss> 7 months ago
+a0843b2 : Clock Seconds Options [1/2] <beanstown106> 7 months ago
+ 
+**** github:CMRemix/android_kernel_samsung_trlte ****
+c3fb182 : trlte CPU Overclocking, add steps to 3.09GHz, use boot parameter cpu_max_freq to raise max_freq over 2.64GHz <ZION959> 3 hours ago
+5622c10 : revert : trlte: CPU overclocking to 3.03ghz <ZION959> 4 hours ago
+ 
+**** cmR:android_packages_apps_Settings ****
+597f6b2 : Settings: add back all keyboard IME features back (2/2) <Lars Greiss> 63 minutes ago
+bb2d39b : Batterybar Settings: Fix Color Previews <Varun Date> 4 months ago
+49e21cc : Clock Seconds Options [2/2] <beanstown106> 7 months ago
+3c3943d : Bring in PA Battery Style <Willi Ye> 6 months ago
+4235a49 : Battery percentage large text switch [2/2] <Shaun Eaton> 2 hours ago
+1903363 :  Allow to set a different battery style for tile and statusbar [2/2] <ezio84> 3 hours ago
+c594a61 : Battery: allow set a custom symbol near text pct on charging [2/2] <ezio84> 7 months ago
+e005def : Battery tile: allow to disable custom battery style [2/2] <ezio84> 3 hours ago
+32a37f6 : Battery icon: let disable force text outside icon when charging [2/2] <ezio84> 3 hours ago
+5f65405 : Battery icon: allow to set a custom charging color [2/2] <ezio84> 7 months ago
+ 
+**** cmR:android_vendor_CMRemix ****
+ae8a8e2 : add back sony_timekeep to dependencies <ZION959> 81 minutes ago
+
+
+**** cmR:CMRemix ****
+9a9e861 : revert: track external/google <ZION959> 17 hours ago
+632a88e : track external/google <ZION959> 23 hours ago
+ 
+**** cmR:android_build ****
+d4dd657 : build: Update make installclean <Lokesh Chamane> 1 year, 4 months ago
+ed74215 : build: add "changelog" installclean logic <ZION959> 1 year, 3 months ago
+ 
+**** github:CMRemix/android_device_samsung_trlte-common ****
+c82247c : switch to cmremix defcofig <ZION959> 6 hours ago
+775678a : switch to lineageos_trlte_defconfig <ZION959> 8 hours ago
+ 
+**** cmR:android_frameworks_base ****
+a8c4975 : SystemUI: Improve superuser status bar icon switch - Works little better than before <westcripp> 8 months ago
+e3c2fff : Battery: allow set a custom symbol near text pct on charging [1/2] <Ezio Lacandia Bijelkic> 7 months ago
+a9db487 : derp fixed <ZION959> 2 hours ago
+e8b2a6a : Battery icon: Improve theme compatibility <Pranav Vashi> 2 weeks ago
+e367213 : BatteryMeterDrawable:Make it more theme friendly <ezio84> 2 weeks ago
+ed97691 : BatteryMeterDrawable:Sync with upstream <Varun Date> 3 weeks ago
+d2a5ea8 : SystemUI: Reroute Battery QS Tile tint back to original color <Abdulwahab Isam> 10 months ago
+76a94a9 : BatteryTile: make the icon apply <ezio84> 3 months ago
+df81d5c : Allow to set a different battery style for tile and statusbar [1/2] <ezio84> 4 months ago
+267c0f5 : Change some Defaults <ezio84> 4 months ago
+824f83b : BatteryMeterDrawable: Add Missing Pulgged In Intialization <Varun Date> 5 months ago
+cfb9abc : Solid battery: Bring back pulsing animation <Willi Ye> 1 year, 1 month ago
+fa61386 : Statusbar: correctly align status bar icons <Simao Gomes Viana> 8 months ago
+92ede1e : Battery icon: fix getDrawable for new Android API <ezio84> 6 months ago
+757c688 : Base: Fix battery styles <westcripp> 6 months ago
+4d80a4c : Change some Defaults <Varun Date> 6 months ago
+cc3f12c : Fwb: Port PA battery circle style <Willi Ye> 7 months ago
+b80a418 : Add large battery percentage and also the switch for it. (#159) <Shaun Eaton> 7 months ago
+c8130a9 : Battery icon: allow to set a custom charging color [1/2] <Ezio Lacandia Bijelkic> 7 months ago
+d317b94 : Add back sync battery tile icon with statusbar <tsubus> 8 months ago
+6ca0137 : SystemUI : Update cm battery styles and clean ups <westcripp> 1 year, 2 months ago
+bc0f886 : Battery tile: allow to disable custom battery style [1/2] <Ezio Lacandia Bijelkic> 7 months ago
+47f08fd : Fix Battery Meter Style Resetting on Boot <ZION959> 3 hours ago
+b71ebb1 : Battery icon: let disable force text outside icon when charging [1/2] <Ezio Lacandia Bijelkic> 7 months ago
+3a6fe05 : Battery icon: allow to set a custom charging color [1/2] <Ezio Lacandia Bijelkic> 7 months ago
+53a42e0 : revert: revert: StatusBarIconController: Fix battery text scaling <ZION959> 3 hours ago
+6a3d05f : Few improvements to battery styles <tsubus> 3 hours ago
+105ab1d : Always show battery percentage when charging <tsubus> 8 months ago
+530b7c8 : Battery tile bolt/text should not be clear <tsubus> 8 months ago
+a391a79 : Sync battery tile icon with statusbar <tsubus> 8 months ago
+14d0db3 : SysUI: Use VectorDrawable's for rendering battery <d34d> 1 year, 2 months ago
+d5f3e1b : SystemUI: Implement hidden and text battery styles <Zhao Wei Liew> 9 months ago
+d00667a : revert: SystemUI: Implement battery level text customisations <Zhao Wei Liew> 9 months ago
+4947f90 : revert: StatusBarIconController: Fix battery text scaling <ZION959> 20 hours ago
+5259b78 : revert: SystemUI: Implement battery level text customisations <ZION959> 20 hours ago
+b944b85 : revert KeyguardStatusBarView: Fix battery text visibility issues <ZION959> 22 hours ago
+b0642cc : revert: SystemUI: Implement hidden and text battery styles <ZION959> 22 hours ago
+e1898881 : revert: SystemUI: Add VectorDrawable battery styles <ZION959> 22 hours ago
+66b0003 : revert: SystemUI: Use mContext.getDrawable for battery icon <ZION959> 22 hours ago
+e7301c3 : revert: Fix SystemUI FC due to Google Assistant <ZION959> 18 hours ago
+e0e530e : revert: Fix SystemUI FC on Dynamic Density Change <ZION959> 18 hours ago
+86bb285 : Fix potential KeyguardMonitor FC on unlock <Ezio Lacandia Bijelkic> 10 days ago
+51c7129 : Fix TaskManager Running services [1/2] (#177) <Ashok Soni> 4 months ago
+b6e4d91 : fixed fastcharge issue <ZION959> 23 hours ago
+7cf4ef8 : SQUASHED Revert" Header Date+Time positions " <ZION959> 23 hours ago
+ 
+**** github:CMRemix/android_kernel_samsung_trlte ****
+aa0fcaef : Add faux'es IntelliThermal <gekkehenkie11> 2 years ago
+1890a63 : binfmt_elf.c: use get_random_int() to fix entropy depleting <Jeff Liu> 4 years, 6 months ago
+92f4d0e : proc: Remove additional SafetyNet flags from /proc/cmdline <Sultanxda> 6 weeks ago
+0cc0471 : cpuidle: don't disable cpuidle when entering suspend <Tim Murray> 10 months ago
+dd5f48d : proc: Remove verifiedbootstate flag from /proc/cmdline <Sultanxda> 9 months ago
+f2d0f3b : AIO: Don't plug the I/O queue in do_io_submit() <flar2> 3 years, 8 months ago
+3879904 : revert: trlte kernel: fix stuck CPU frequencies <ZION959> 5 hours ago
+85f2769 : wake gestures: make it easy for Kernel Adiutor <Pafcholini> 1 year, 9 months ago
+e26c4ea : Wake gesutures: Sweep2wake, Sweep2sleep, DoubleTap2Wake and DoubleTap2Sleep <placiano> 1 year, 3 months ago
+301aa66 : block: Update sio to sioplus iosched & zen <ZION959> 1 year, 3 months ago
+9b45af4 : Optimize copy_page for modern ARM platforms <Harm Hanemaaijer> 4 years ago
+319134a : Added LED Control & Fading Control <placiano> 2 years, 2 months ago
+1fc5b3a : Add Led control [Twistedumbrella & Ktoonsez] <placiano> 2 years, 5 months ago
+dbbf849 : include: linux: add Sysfs_helpers: Allow negative values <Pavel> 2 years, 6 months ago
+35a9ee0 : wcd9xxx: Fix NCP fclk level enable/disable sequence <Vidyakumar Athota> 2 years ago
+772db13 : asoc: wcd9xxx: Improve headset detection Change the plug detection timeout to 2sec. <Pafcholini> 2 years, 3 months ago
+0fe4391 : sound/fauxsound: Updates <placiano> 1 year, 10 months ago
+0ebe08d : sound/soc/codecs: add TOMTOM_A_CDC_RX8 <Pavel> 2 years, 5 months ago
+d109b1a : Sound Control: 3.6 <Pavel> 2 years, 5 months ago
+53b32e8 : sound/soc/codecs: add sound_control_locked <Pavel> 2 years, 5 months ago
+47655d4 : sound/soc/codecs: fix speaker gain and mic gain for the Note 4 <Pavel> 2 years, 5 months ago
+ad82efa : sound/soc/codecs: Faux Sound control for WCD9330 TomTom codec driver <Pavel> 2 years, 5 months ago
+4bd954b : ASoC: wcd9xxx: Avoid micbias glitches during audio playback During audio playback over headset, micbias output is switched to vddio and it's parameters are programmed so that it will do button polling with a voltage equal to vddio (1.8v). It is observed that during this polling interval there is a drop in micbias voltage which would cause issues with button press. Avoid this voltage drop by disabling mbhc micbias when vddio switch is enabled. <Pavel> 2 years, 6 months ago
+fa6a59f : ASoC: wcd9xxx: Changes for High performance mode <Sudheer Papothi> 2 years, 11 months ago
+ade05e9 : msm: kgsl: Bump the GPU frequency for long blocks of processing <Lucille Sylvester> 2 years, 8 months ago
+5f9f1d9 : msm: kgsl: set the correct max_state <Suman Tatiraju> 3 years, 1 month ago
+bdcf2fc : PM: devfreq: Use high priority workqueue <myfluxi> 3 years, 6 months ago
+2aa9402 : msm: kgsl: Report correct GPU frequency in sysfs <myfluxi> 3 years, 6 months ago
+ce59bd9 : Add SIO i/o schedulers <ZION959> 1 year, 5 months ago
+fcfd1bd : block: fiops ioscheduler - squashed commit (all credits for forward port to faux123) <ZION959> 1 year, 6 months ago
+0d33563 : mm: slub: Default slub_max_order to 0 <Mel Gorman> 6 years ago
+cb4a2e0 : Add /dev/frandom support <flar2> 3 years, 8 months ago
+d6a1fe0 : GPU: start at 240MHz <flar2> 2 years, 7 months ago
+5201589 : msm: memutils: memcpy, memmove optimization <Hong-Mei Li> 4 years ago
+75c3abe : msm: memutils: 8084: Enable optimized mem utilities <Hong-Mei Li> 3 years, 1 month ago
+81a86d2 : msm: memutils: memcpy, memmove, copy_page optimization <ZION959> 1 year, 5 months ago
+7080a16 : intelli_plug: add perf_boost sysfs entry and clean up permissions <Paul Reioux> 2 years, 4 months ago
+a8bd6d7 : intelli_plug: add performance boost option <Paul Reioux> 2 years, 7 months ago
+56b2b3e : intelli_plug: intelligent hotplug cpu driver with eco mode - squashed committ to v3.8 (faux123) <ZION959> 1 year, 6 months ago
+2543676 : swith lineageos_trlte_defconfig & included version for cmremix <ZION959> 7 hours ago
+0ccefc7 : trlte kernel: fix stuck CPU frequencies <gekkehenkie11> 2 years ago
+f1bcea9 : trlte: CPU overclocking to 3.03ghz <ZION959> 2 years ago
+1301d88 : ARM: 8158/1: LLVMLinux: use static inline in ARM ftrace.h <Behan Webster> 2 years, 9 months ago
+eeec8ec : arm/ftrace: fix ftrace_return_addr() to ftrace_return_address() <Steven Rostedt> 3 years, 1 month ago
+483aa5f : ftrace: Make CALLER_ADDRx macros more generic <AKASHI Takahiro> 3 years, 2 months ago
+3496e16 : Add missing-syscalls wrapper: <Paul Beeler> 2 years, 5 months ago
+642d751 : Revert "scripts: Use wrapper to check compiler warnings" <ZION959> 10 months ago
+8ca8144 : optimize <ZION959> 4 weeks ago
+28ff990 : Introduce Adreno idler for devfreq-based Adreno devices v1.1 by Park Ju Hyung (arter97) <ZION959> 1 year, 3 months ago
+e897f4c : msm: kgsl: show current power level since 8974 uses duplicate frequencies in its table, it's not possible to tell which of the duplicates is actually in use <Paul Reioux> 2 years, 1 month ago
+ 
+**** cmR:android_packages_apps_LockClock ****
+9f73e91 : Automatic translation import <Abhisek Devkota> 4 days ago
+b41c0d7 : Automatic translation import <Abhisek Devkota> 12 days ago
+98a6964 : Automatic translation import <Abhisek Devkota> 7 weeks ago
+552041b : Automatic translation import <Abhisek Devkota> 3 months ago
+4afc8af : Automatic translation import <Abhisek Devkota> 3 months ago
+6f2b2cc : Update weather data only when the screen is on <Gabriele M> 4 months ago
+e039264 : Register network status change listener explicity <Gabriele M> 4 months ago
+54e41b5 : Save timestamp of last update <Gabriele M> 4 months ago
+069c3d1 : Fix typo in method name <Gabriele M> 4 months ago
+09482ca : Automatic translation import <Abhisek Devkota> 4 months ago
+c34eae7 : res: use selectableItemBackgroundBorderless for refresh button background <Dan Pasanen> 4 months ago
+a0f028d : Automatic translation import <Abhisek Devkota> 4 months ago
+536dda9 : Automatic translation import <Abhisek Devkota> 4 months ago
+7e84bff : Automatic translation import <Michael W> 4 months ago
+92d5403 : Automatic translation import <Abhisek Devkota> 4 months ago
+26ae64d : Build the internal CM SDK as a static library <Zhao Wei Liew> 4 months ago
+563bb54 : Automatic translation import <Abhisek Devkota> 5 months ago
+dd24750 : Automatic translation import <Abhisek Devkota> 5 months ago
+3092f9d : Automatic translation import <Abhisek Devkota> 5 months ago
+2ccf116 : Automatic translation import <Abhisek Devkota> 5 months ago
+cafbdea : Automatic translation import <Abhisek Devkota> 5 months ago
+f9d9201 : LockClock: change forecast text color to white <razorloves> 5 months ago
+1cfcb29 : Automatic translation import <Abhisek Devkota> 5 months ago
+b642154 : Remove Google Play Services dependency <Marvin W> 5 months ago
+c52268f : Automatic translation import <Abhisek Devkota> 5 months ago
+c3d1475 : Automatic translation import <pinky@build01> 6 months ago
+090a73b : Automatic translation import <clyde@build01> 7 months ago
+577bda2 : Automatic translation import <pinky@build01> 7 months ago
+2edc867 : Automatic translation import <inky@build01> 7 months ago
+b6674c2 : lockclock: Use protected broadcasts when talking to SystemUI <Steve Kondik> 9 months ago
+9599f79 : Automatic translation import <pinky@build01> 9 months ago
+cb8ef07 : Automatic translation import <pinky@build01> 10 months ago
+7cef611 : Automatic translation import <pinky@build01> 10 months ago
+fa73ab0 : LockClock: Clean up proguard, fix build without jack <Ketut Putu Kumajaya> 1 year, 2 months ago
+968e746 : LockClock: Don't forcefully enable widget calendar on resume <Zhao Wei Liew> 11 months ago
+f03e72b : Automatic translation import <blinky@build01> 11 months ago
+65407c7 : AM/PM: Fix incorrect am/pm text <Stephen Bird> 1 year, 1 month ago
+fdc1069 : Automatic translation import <inky@build01> 12 months ago
+23e004d : Automatic translation import <inky@build01> 1 year ago
+932b0cc : Actually verifies if CM weather feature is available <Luis Vidal> 1 year ago
+3e0e7fc : Verifies if weather service is available <Luis Vidal> 1 year, 1 month ago
+875f16e : Automatic translation import <inky@build01> 1 year, 1 month ago
+c712548 : Don't include all resource densities <Ricardo Cerqueira> 1 year, 1 month ago
+325513b : Unregister from WeatherManager ONLY if service was actually registered <Luis Vidal> 1 year, 1 month ago
+d9c5b0a : Report correct status if failed to process weather update request <Luis Vidal> 1 year, 1 month ago
+e28037a : Handle >5 forecast items in cLock Forecast view <DvTonder> 1 year, 1 month ago
+fc8ea24 : Automatic translation import <inky@build01> 1 year, 1 month ago
+38c62bb : Automatic translation import <Abhisek Devkota> 1 year, 2 months ago
+0ca9798 : Automatic translation import <Michael Bestas> 1 year, 2 months ago
+c8e4f26 : Automatic translation import <Michael Bestas> 1 year, 2 months ago
+
+
+**** cmR:CHANGELOGS ****
+1aa8ae1 : update 7-2-2017 <ZION959> 52 minutes ago
+ 
+**** cmR:android_packages_apps_LockClock ****
+83089b8 : Improve theme for upcoming CMTE compatibility <westcripp> 7 months ago
+b667606 : Fix widget text colors <westcripp> 7 months ago
+895f880 : lockclock: Use protected broadcasts when talking to SystemUI  * Bump the API level too <Steve Kondik> 9 months ago
+9c5b976 : Force Weather Updates on Boot <Varun Date> 7 months ago
+884e604 : Fix weather icons and themed dialog background <westcripp> 7 months ago
+0f164b0 : Update to pixel theme <westcripp> 8 months ago
+579dfca : Update timeout for force update <xyyx> 9 months ago
+91442cb : Fix black color on dark forecast background <xyyx> 9 months ago
+066b698 : Temp: add 10 sec to wait network <xyyx> 9 months ago
+3efd319 : LockClock : Simple Weather Widget modifies image <풀그린(Fullgreen)> 1 year, 4 months ago
+34e9f28 : LockClock: Don't forcefully enable widget calendar on resume <Zhao Wei Liew> 11 months ago
+4d3c598 : Display humidity and wind data in forecast dialog <Martin Herndl> 1 year, 3 months ago
+08fafdb : YahooWeatherProvider: Fix API URL <Zdrowy Gosciu> 1 year, 2 months ago
+2a4318d : Don't warn about webkit <niks255> 1 year, 5 months ago
+2912c8e : Use Open Weather by default <Corey Edwards> 1 year, 3 months ago
+921c95a : LockClock : Add external facing permission grant activity <Danesh M> 1 year, 4 months ago
+3b73de0 : LockClock: Enable all calendars during first time setup <Khalid Zubair> 1 year, 5 months ago
+9f3952d : LockClock: Disable event calendars dialog if no calendars <Khalid Zubair> 1 year, 5 months ago
+d46a1ad : LockClock: fix crash in calendar selection <Khalid Zubair> 1 year, 5 months ago
+ea836fb : Revert "Force OpenWeatherMap to be the weather provider" <Corey Edwards> 1 year, 4 months ago
+25a327c : LockClock : Switch over to new yahoo location api <Danesh M> 1 year, 5 months ago
+03bdc69 : Force OpenWeatherMap to be the weather provider <Sultanxda> 1 year, 5 months ago
+87af132 : Automatic translation import <Michael Bestas> 1 year, 5 months ago
+2666bc8 : Automatic translation import <Michael Bestas> 1 year, 5 months ago
+ 
+**** cmR:android_packages_apps_Settings ****
+dace02f : Revert Header Date+Time positions [2/2] <ZION959> 23 hours ago
+ 
+**** cmR:android_vendor_CMRemix ****
+d16da21 : add couple of main apps for cmremix <ZION959> 5 hours ago
+ 
+**** github:LineageOS/cm_platform_sdk ****
+b9d71dc : revert: Keyguard: Get your weather on... the lock screen [2/3] <ZION959> 7 days ago
+0b15dad : [2/3] Torch long press power: add auto-off function <Sam Mortimer> 6 months ago
+5c781da : Double tap to sleep anywhere on lock screen [3/3] <Matssa56> 5 weeks ago
+4fb9332 : cmsdk: Disable Lockscreen Media Art [3/3] <Matssa56> 5 weeks ago
+2f25936 : cmsdk: fix twilight state not updating in live display auto mode <Matthias Yzusqui> 6 weeks ago
+be5430f : Automatic translation import <Abhisek Devkota> 7 weeks ago
+af33af3 : cmsdk: Add CMSettings option for QS auto brightness <Michael Bestas> 9 weeks ago
+bc244cf : Automatic translation import <Abhisek Devkota> 10 weeks ago
+6bd7762 : Protect system profiles related broadcasts <Gabriele M> 3 months ago
+5f9a738 : Automatic translation import <Abhisek Devkota> 3 months ago
+62576c7 : PerformanceManager: Don't override the user preference <Gabriele M> 4 months ago
+ef95847 : PerformanceManager: Don't force powersave mode with powersave profile <Gabriele M> 4 months ago
+4df71fb : Automatic translation import <Abhisek Devkota> 3 months ago
+e416c6e : Automatic translation import <Abhisek Devkota> 3 months ago
+1f1f69b : Automatic translation import <Abhisek Devkota> 4 months ago
+f70e2d0 : Automatic translation import <Abhisek Devkota> 4 months ago
+9939f9a : Automatic translation import <Abhisek Devkota> 4 months ago
+487c23e : CMSDK: Tests: AIRPLANE_MODE_ON has moved <Michael W> 4 months ago
+6faef17 : Automatic translation import <Michael W> 4 months ago
+4f9da16 : [3/3] cmsdk: single hand for hw keys <Joey Rizzoli> 5 months ago
+11c5a24 : CMPartsPreference: Update PreferenceScreen theme <Gabriele M> 4 months ago
+6a5693a : Automatic translation import <Abhisek Devkota> 4 months ago
+8155c99 : Automatic translation import <Abhisek Devkota> 4 months ago
+0c75bfe : CMSettingsProvider: remove per-user cursor observation <Danny Baumann> 4 months ago
+0859764 : cmsdk: Remove launch boost support <Zhao Wei Liew> 5 months ago
+311515b : Automatic translation import <Abhisek Devkota> 5 months ago
+dba81b3 : Add a proper description for CM_SETUP_WIZARD_COMPLETED deprecation <Zhao Wei Liew> 5 months ago
+6171436 : cmsdk: Deprecate CM_SETUP_WIZARD_COMPLETED <Paul Keith> 5 months ago
+8baffef : Automatic translation import <Abhisek Devkota> 5 months ago
+e28fc9d : RemotePreferenceManager: Fix receiver registration issues. <Danny Baumann> 5 months ago
+e0fde0e : Automatic translation import <Abhisek Devkota> 5 months ago
+3a3dd65 : Automatic translation import <Abhisek Devkota> 5 months ago
+ac95f68 : Automatic translation import <Abhisek Devkota> 5 months ago
+b55d5ca : CMSDK: Add long-press power for torch CMSetting <Zhao Wei Liew> 8 months ago
+3a2c4be : cmsdk: PerformanceManager: Update POWER_HINT_SET_PROFILE value <Zhao Wei Liew> 5 months ago
+0f02f65 : Automatic translation import <Abhisek Devkota> 5 months ago
+b26d017 : cmsdk: Add touchscreen gestures support <Zhao Wei Liew> 8 months ago
+51dc7e3 : cmsdk: Add DeviceKeyHandler overlays <Zhao Wei Liew> 7 months ago
+8a30161 : Automatic translation import <Abhisek Devkota> 5 months ago
+3b1686c : Automatic translation import <pinky@build01> 6 months ago
+69113e6 : cmsdk: cmhw: Deprecate TAP_TO_WAKE feature <Zhao Wei Liew> 8 months ago
+5eb2779 : Add generic support for Lid Cover Apps <jrior001> 7 months ago
+df0b255 : cmsdk: Fix @deprecated annotation mismatch warnings <Zhao Wei Liew> 6 months ago
+c66a504 : cmsdk: Update README references for LineageOS <Zhao Wei Liew> 6 months ago
+0876797 : cmsdk: fix update path for version 7 <Christian Morlok> 6 months ago
+366bca7 : cmsdk: remove 'hide clock' option from clock position tunable <Hendrik Hagendorn> 7 months ago
+13bd2b7 : cmsdk: Cyanogen >> Lineage <Simon Shields> 6 months ago
+f66111d : cmsdk: Deprecate STATS_COLLECTION_REPORTED CMSetting <Zhao Wei Liew> 6 months ago
+c6e0dff : CMSDK: Fix battery styles <westcripp> 6 months ago
+f6c3054 : Fix Settings FC for Battery Styles <Varun Date> 6 months ago
+ 
+ 
