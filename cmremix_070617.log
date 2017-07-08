@@ -1,0 +1,49 @@
+
+**** cmR:CHANGELOGS ****
+24e3f50 : update 7-5-2017 <ZION959> 24 hours ago
+ 
+**** cmR:android_build ****
+0054143 : format system partition before install rom (reverted from commit aaef08b40ccb27a3a8934d762ed96fa2e1fa3bee) <ZION959> 20 minutes ago
+ 
+**** github:CMRemix/android_device_samsung_trlte-common ****
+9ad26c9 : revert: revert: trlte: switch to TimeKeep <ZION959> 2 hours ago
+ 
+**** github:CMRemix/android_kernel_samsung_trlte ****
+e258f77 : trlte kernel: fix stuck CPU frequencies <gekkehenkie11> 2 years ago
+c07639b : Add SIO i/o schedulers <ZION959> 1 year, 5 months ago
+0fb5210 : Add faux'es IntelliThermal <gekkehenkie11> 2 years ago
+6e3af19 : binfmt_elf.c: use get_random_int() to fix entropy depleting <Jeff Liu> 4 years, 6 months ago
+bb44da6 : wake gestures: make it easy for Kernel Adiutor <Pafcholini> 1 year, 9 months ago
+64be906 : Wake gesutures: Sweep2wake, Sweep2sleep, DoubleTap2Wake and DoubleTap2Sleep <placiano> 1 year, 3 months ago
+6996b69 : block: Update sio to sioplus iosched & zen <ZION959> 1 year, 3 months ago
+be47368 : Optimize copy_page for modern ARM platforms <Harm Hanemaaijer> 4 years ago
+369aa2f : Added LED Control & Fading Control <placiano> 2 years, 2 months ago
+36fe5e3 : Add Led control [Twistedumbrella & Ktoonsez] <placiano> 2 years, 5 months ago
+19afbcc : include: linux: add Sysfs_helpers: Allow negative values <Pavel> 2 years, 6 months ago
+2ac3052 : wcd9xxx: Fix NCP fclk level enable/disable sequence <Vidyakumar Athota> 2 years ago
+d65cb92 : asoc: wcd9xxx: Improve headset detection Change the plug detection timeout to 2sec. <Pafcholini> 2 years, 3 months ago
+4ce8b94 : sound/fauxsound: Updates <placiano> 1 year, 10 months ago
+eca83b8 : sound/soc/codecs: add TOMTOM_A_CDC_RX8 <Pavel> 2 years, 5 months ago
+9be1036 : Sound Control: 3.6 <Pavel> 2 years, 5 months ago
+045c264 : sound/soc/codecs: add sound_control_locked <Pavel> 2 years, 5 months ago
+042157f : sound/soc/codecs: fix speaker gain and mic gain for the Note 4 <Pavel> 2 years, 5 months ago
+ac8d5d7 : sound/soc/codecs: Faux Sound control for WCD9330 TomTom codec driver <Pavel> 2 years, 5 months ago
+b52a60d : ASoC: wcd9xxx: Avoid micbias glitches during audio playback During audio playback over headset, micbias output is switched to vddio and it's parameters are programmed so that it will do button polling with a voltage equal to vddio (1.8v). It is observed that during this polling interval there is a drop in micbias voltage which would cause issues with button press. Avoid this voltage drop by disabling mbhc micbias when vddio switch is enabled. <Pavel> 2 years, 6 months ago
+e3e4c4e : ASoC: wcd9xxx: Changes for High performance mode <Sudheer Papothi> 2 years, 11 months ago
+5c8b147 : msm: kgsl: Bump the GPU frequency for long blocks of processing <Lucille Sylvester> 2 years, 8 months ago
+6b2f410 : msm: kgsl: set the correct max_state <Suman Tatiraju> 3 years, 1 month ago
+3c60906 : PM: devfreq: Use high priority workqueue <myfluxi> 3 years, 6 months ago
+07fa7bb : msm: kgsl: Report correct GPU frequency in sysfs <myfluxi> 3 years, 6 months ago
+424ceef : Add SIO i/o schedulers <ZION959> 1 year, 5 months ago
+0f59c8b : block: fiops ioscheduler - squashed commit (all credits for forward port to faux123) <ZION959> 1 year, 6 months ago
+710c794 : mm: slub: Default slub_max_order to 0 <Mel Gorman> 6 years ago
+37d6577 : Add /dev/frandom support <flar2> 3 years, 8 months ago
+d64bb498 : GPU: start at 240MHz <flar2> 2 years, 7 months ago
+883c05d : intelli_plug: add perf_boost sysfs entry and clean up permissions <Paul Reioux> 2 years, 4 months ago
+570e746 : intelli_plug: add performance boost option <Paul Reioux> 2 years, 7 months ago
+ac18efe : intelli_plug: intelligent hotplug cpu driver with eco mode - squashed committ to v3.8 (faux123) <ZION959> 1 year, 6 months ago
+3e64c86 : swith lineageos_trlte_defconfig & included version for cmremix <ZION959> 2 days ago
+ 
+**** cmR:android_vendor_CMRemix ****
+e645df8 : add back sony_timekeep to dependencies <ZION959> 35 minutes ago
+ 

@@ -1,0 +1,172 @@
+
+**** cmR:CMRemix ****
+a9442a5 : revert: revert: track external/google <ZION959> 2 hours ago
+ 
+**** cmR:android_build ****
+2dd5b56 : Version bump to NJH47D <android-build-team Robot> 6 weeks ago
+df00a9a : [DO NOT MERGE]Updating security string to 2017-07-05 on nyc-dev bug:38342695 (cherry picked from commit 96d958c34509a65e5f7787945f9923fb44c42f05) <Adam Seaton> 7 weeks ago
+f1af383 : [DO NOT MERGE]Updating security string to 2017-07-01 on nyc-dev bug:38342695 (cherry picked from commit 77dad3dfcd677136f6657e1b95dd84ed1be1d728) <Adam Seaton> 7 weeks ago
+ 
+**** github:LineageOS/android_external_boringssl ****
+b1aad23 : CVE 2016-2109 fix <Adam Vartanian> 3 months ago
+ 
+**** github:LineageOS/android_external_skia ****
+e60ff4c : Set a limit on the size for BMP images DO NOT MERGE <Leon Scroggins III> 4 months ago
+ 
+**** github:LineageOS/android_external_stagefright-plugins ****
+931ae6b : FFmpegExtractor: Fix "supported" typo in logs <Michael Bestas> 11 days ago
+ 
+**** cmR:android_frameworks_base ****
+6f18f90 : PowerManagerService: add a config to light up buttons only when pressed <Anas Karbila> 5 weeks ago
+37c9f2b : Merge tag 'android-7.1.2_r24' into cm-14.1 <Dan Pasanen> 2 days ago
+07db13e : Automatic translation import <Abhisek Devkota> 4 days ago
+ 
+**** cmR:android_frameworks_native ****
+2210c72 : libgui: check for invalid slot in attachBuffer <Chia-I Wu> 8 weeks ago
+d3fa90b : libgui: Check slot received from IGBP in Surface <Dan Stoza> 10 weeks ago
+9ab1252 : ui: Fix bad size check in Fence::unflatten <Chris Forbes> 8 weeks ago
+ 
+**** github:LineageOS/android_hardware_qcom_audio ****
+d52eb11 : hal: add missing incall recording usecases and check <Dan Pasanen> 2 weeks ago
+ 
+**** github:LineageOS/android_hardware_qcom_fm ****
+2e20c17 : Automatic translation import <Abhisek Devkota> 4 days ago
+ 
+**** github:CMRemix/android_kernel_samsung_trlte ****
+68ea6db : update defconfig <ZION959> 4 hours ago
+9fd20ca : msm: kgsl: Add missing checks for alloc size and sglen <Rajesh Kemisetti> 1 year, 3 months ago
+59af9a1 : msm: crypto: Reduce HW PRNG read when in FIPS mode <William Clark> 1 year, 11 months ago
+7130946 : msm: kgsl: Fix direct references to HZ <Ajay Dudani> 1 year, 7 months ago
+ac23bca : arm: configs: shamu: set CONFIG_HZ to 300 <Patrick Tjin> 1 year, 5 months ago
+626f55d : mmc: move to a SCHED_FIFO thread <Tim Murray> 1 year, 6 months ago
+01966a8 : dm-verity: run in a WQ_HIGHPRI workqueue <Patrick Tjin> 1 year, 5 months ago
+8314b05 : dm-crypt: run in a WQ_HIGHPRI workqueue <Tim Murray> 1 year, 6 months ago
+c76dd68 : BACKPORT: pagemap: do not leak physical addresses to non-privileged userspace <Kirill A. Shutemov> 1 year, 6 months ago
+0b72d50 : msm: null pointer dereferencing <Wish Wu> 1 year, 7 months ago
+567bfb2 : msm: mdss: properly handle panel on and off <Xiaoming Zhou> 3 years, 5 months ago
+62c5ac2 : block: row: Fix crash when adding a new field in bio struct <Tanya Brokhman> 3 years, 1 month ago
+c9ba36b : Display hooks for Power Suspend <placiano> 1 year, 11 months ago
+a41f843 : mdss: silence annoying kmsg <ffolkes> 2 years, 3 months ago
+d22a0011 : system_rev: fix type mismatch derps by Samsung <Paul Reioux> 2 years, 8 months ago
+c7127d0 : ARM: dts: apq8084: fix idle-timeout to 80ms from 8ms <Patrick Tjin> 1 year, 4 months ago
+c034845 : apq8084-gpu: Reduce frequency on boot 300 MHz => 266 MHz <placiano> 2 years, 2 months ago
+2068e6f : apq8084-gpu: Added GPU overclocking to 800MHz, underclocking to 166MHz <placiano> 2 years, 2 months ago
+8204b0f : apq8084-gpu: Added GPU overclocking to 700MHz, underclocking to 200MHz and fix Bus Scale Settings <placiano> 2 years, 2 months ago
+63f0dd5 : PM: devfreq: Fix show available freqs <myfluxi> 2 years, 1 month ago
+e4de494 : input: touchboost: conservative samples every 10ms, no point in limiting input_time to update its value in 50ms intervals <franciscofranco> 2 years, 5 months ago
+9581dde : input: add generic touch event listener <ZION959> 4 hours ago
+9df340f : cpufreq: cpu-boost: don't boost migrations with load below the threshold Even if we don't use load_based_syncs (there seems to be a bug that make min_freq stuck at random frequencies) we can prevent this feature to boost the target cpu if the task load is below the migration threshold. We might save some mA down the road with this. <ZION959> 4 hours ago
+16670e7 : trlte kernel: fix stuck CPU frequencies <gekkehenkie11> 2 years ago
+ 
+**** github:LineageOS/android_libcore ****
+b85da16 : Proper fix for rejecting ftp URL with /r/n. <Przemyslaw Szczepaniak> 3 months ago
+d1b3b26 : Test for rejection of ftp URL with /r/n in userinfo <Przemyslaw Szczepaniak> 3 months ago
+ 
+**** github:LineageOS/cve_tracker ****
+ee8d2a3 : ContextMenu: let the selector be a DOM element <Demon000> 3 days ago
+c56417b : cve_tracker: Remove circular dependency in utils.py <Michael W> 13 days ago
+ccb2dec : cve_tracker: add new landing page <Michael W> 4 days ago
+02e74c2 : cve_tracker: fix navbar double row <Demon000> 3 days ago
+c514c3d : cve_tracker: fix footer force positioning <Demon000> 3 days ago
+9ae66ee : cve_tracker: add dark theme <Demon000> 6 days ago
+ 
+**** github:LineageOS/mirror ****
+44698ce : Updated to 07-Jul-2017 20:30:59 UTC <Harry's Buildbot> 9 hours ago
+ 
+**** github:LineageOS/lineageos_updater ****
+1ace8df : Regenerate device dependency mappings <Harry's Buildbot> 9 hours ago
+ 
+**** github:LineageOS/www ****
+9a7e92a : Changelog 12 <Paul Keith> 13 days ago
+ 
+**** github:LineageOS/lineage_wiki ****
+fa988bc : devices: Add Shield Android TV (foster) <Aaron Kling> 11 days ago
+d4a5049 : wiki: Hide cameras and screen if device has none <Harry Youd> 4 days ago
+ 
+**** github:LineageOS/android_packages_apps_CMUpdater ****
+a72cc45 : Automatic translation import <Abhisek Devkota> 4 days ago
+ 
+**** cmR:android_packages_apps_DeskClock ****
+5fef2c6 : Automatic translation import <Abhisek Devkota> 4 days ago
+44b2580 : Alarm: fix database indices <Dan Pasanen> 9 days ago
+b2b2454 : DeskClock: add switch to profile feature from Lollipop <Wilhelm Fitzpatrick> 16 years ago
+ 
+**** cmR:android_packages_apps_Dialer ****
+ebaed92 : Automatic translation import <Abhisek Devkota> 4 days ago
+ 
+**** github:LineageOS/android_packages_apps_Gallery2 ****
+0b08d5d : Automatic translation import <Abhisek Devkota> 4 days ago
+ 
+**** github:LineageOS/android_packages_apps_Jelly ****
+fa0b42a : Jelly: Don't save form data in incognito mode <Luca Stefani> 6 days ago
+1fd384c : Automatic translation import <Abhisek Devkota> 4 days ago
+ 
+**** cmR:android_packages_apps_LockClock ****
+83089b8 : Improve theme for upcoming CMTE compatibility <westcripp> 7 months ago
+b667606 : Fix widget text colors <westcripp> 7 months ago
+895f880 : lockclock: Use protected broadcasts when talking to SystemUI  * Bump the API level too <Steve Kondik> 9 months ago
+9c5b976 : Force Weather Updates on Boot <Varun Date> 8 months ago
+884e604 : Fix weather icons and themed dialog background <westcripp> 7 months ago
+0f164b0 : Update to pixel theme <westcripp> 8 months ago
+579dfca : Update timeout for force update <xyyx> 9 months ago
+91442cb : Fix black color on dark forecast background <xyyx> 9 months ago
+066b698 : Temp: add 10 sec to wait network <xyyx> 9 months ago
+3efd319 : LockClock : Simple Weather Widget modifies image <풀그린(Fullgreen)> 1 year, 5 months ago
+34e9f28 : LockClock: Don't forcefully enable widget calendar on resume <Zhao Wei Liew> 11 months ago
+4d3c598 : Display humidity and wind data in forecast dialog <Martin Herndl> 1 year, 3 months ago
+08fafdb : YahooWeatherProvider: Fix API URL <Zdrowy Gosciu> 1 year, 3 months ago
+2a4318d : Don't warn about webkit <niks255> 1 year, 5 months ago
+2912c8e : Use Open Weather by default <Corey Edwards> 1 year, 3 months ago
+921c95a : LockClock : Add external facing permission grant activity <Danesh M> 1 year, 4 months ago
+3b73de0 : LockClock: Enable all calendars during first time setup <Khalid Zubair> 1 year, 5 months ago
+9f3952d : LockClock: Disable event calendars dialog if no calendars <Khalid Zubair> 1 year, 5 months ago
+d46a1ad : LockClock: fix crash in calendar selection <Khalid Zubair> 1 year, 5 months ago
+ea836fb : Revert "Force OpenWeatherMap to be the weather provider" <Corey Edwards> 1 year, 5 months ago
+25a327c : LockClock : Switch over to new yahoo location api <Danesh M> 1 year, 5 months ago
+03bdc69 : Force OpenWeatherMap to be the weather provider <Sultanxda> 1 year, 5 months ago
+87af132 : Automatic translation import <Michael Bestas> 1 year, 5 months ago
+2666bc8 : Automatic translation import <Michael Bestas> 1 year, 5 months ago
+ 
+**** cmR:android_packages_apps_PhoneCommon ****
+d7bb21c : Automatic translation import <Abhisek Devkota> 4 days ago
+ 
+**** github:LineageOS/android_packages_apps_Profiles ****
+9d14b09 : Automatic translation import <Abhisek Devkota> 4 days ago
+ 
+**** cmR:android_packages_apps_Settings ****
+ca38863 : Merge tag 'android-7.1.2_r24' into cm-14.1 <Dan Pasanen> 2 days ago
+f3f1631 : Automatic translation import <Abhisek Devkota> 4 days ago
+ 
+**** github:LineageOS/android_packages_apps_Terminal ****
+7c34511 : Automatic translation import <Abhisek Devkota> 4 days ago
+ 
+**** github:LineageOS/android_packages_providers_DataUsageProvider ****
+6637927 : Automatic translation import <Abhisek Devkota> 4 days ago
+ 
+**** github:LineageOS/android_packages_providers_DownloadProvider ****
+a66dd88 : DO NOT MERGE Deleting downloads for removed uids on downloadprovider start <Suprabh Shukla> 4 months ago
+ 
+**** github:LineageOS/android_packages_providers_MediaProvider ****
+67ef565 : [DO NOT MERGE] Enforce user separation on external storage <Fyodor Kupolov> 5 months ago
+ 
+**** github:LineageOS/android_packages_providers_WeatherProvider ****
+d5ebc76 : Automatic translation import <Abhisek Devkota> 4 days ago
+ 
+**** github:LineageOS/android_packages_resources_devicesettings ****
+bc9d3c1 : Automatic translation import <Abhisek Devkota> 4 days ago
+ 
+**** cmR:android_packages_services_Telecomm ****
+cae05ab : SensitivePhoneNumbers: Handle lists of MCC codes <Paul Keith> 2 weeks ago
+ 
+**** cmR:android_packages_services_Telephony ****
+282384c : Automatic translation import <Abhisek Devkota> 4 days ago
+ 
+**** cmR:android_system_sepolicy ****
+4cfc1b9 : system_server: replace sys_resource with sys_ptrace <Nick Kralevich> 5 months ago
+ 
+**** cmR:android_vendor_CMRemix ****
+59888e7 : release cmremix android 7.1.2_r24 <ZION959> 2 hours ago
+ 
+**** github:LineageOS/android_packages_apps_YahooWeatherProvider ****
+fb40ce0 : Automatic translation import <Abhisek Devkota> 4 days ago
+ 
