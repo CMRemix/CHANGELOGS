@@ -1,0 +1,177 @@
+
+**** cmR:CHANGELOGS ****
+edba5b6 : update 7-17-2017 <ZION959> 22 minutes ago
+ 
+**** cmR:android_bionic ****
+b928447 : linker: remove link from external library on unload <Dimitry Ivanov> 3 months ago
+ 
+**** cmR:android_build ****
+5bed08f : included vendor cmremix sepolicy <ZION959> 3 hours ago
+ 
+**** cmR:android_frameworks_base ****
+ac878eb : SystemUI: Fix task lock & freeform buttons placement <LuK1337> 4 weeks ago
+435bc53 : TaskViewHeader:Don't allow lock button icon to show on grid view <Varun Date> 4 weeks ago
+83d45a5 : SystemUI: animate icon when locking a task <Joey Rizzoli> 6 weeks ago
+ddd0450 : Recents:improve task locking code & mechanism <thecrazyskull> 6 weeks ago
+273912f : Recents: Ensure Lock icon animates only when Dismiss icon is visible <Varun Date> 7 weeks ago
+5534f2e : Recents:Optional lock to task icon in recents task view header [1/2] <Varun Date> 7 weeks ago
+1d924c3 : Base:Add Lock task action to recents <ghbhaha> 7 weeks ago
+3280ce9 : revert: SystemUI: Support recents task locking <ZION959> 73 minutes ago
+8d0eba0 : revert: SystemUI: Fix task lock & freeform buttons placement <ZION959> 73 minutes ago
+e57b2db : revert: SystemUI: animate icon when locking a task <ZION959> 77 minutes ago
+a869967 : Fix FAB not disappearing in multiwindow <Pranav Vashi> 6 months ago
+bb1d769 : Fix Stack Action Button Not Dissapearing on Empty View <Varun Date> 6 months ago
+3390307 : RecentsView: Add an Extra Condition for Making FAB And Clear Recents Invisible <Varun Date> 6 months ago
+0ea6d80 : FAB Recents Clear All improvements <ezio84> 7 months ago
+869020f : RecentsView: Clean up FAB calls <xyyx> 6 months ago
+39e4ccd : Make Recents "Free Ram" text translatable <jhenrique09> 7 months ago
+092def3 : Make Native Clear All Switch More Consistant <Varun Date> 8 months ago
+0d1b035 : Fix An Observer in RecentsView <Varun Date> 8 months ago
+7d380af : Fix IME switcher not being shown in notifications when enabled <Lars Greiss> 5 months ago
+e3caf4d : ScreenCap : Add jpeg support <Danesh M> 2 years, 3 months ago
+dcc9886 : Configurable Keyguard alpha and Keyguard Bouncer alpha [1/2] inspired by the BrightLockscreen xposed module: https://github.com/Generalbrus/BrightLockscreen <beanstown106> 1 year, 5 months ago
+e8e3603 : RecentsView: Hiding membar, memtext and fab on drag start. <qjohn> 8 days ago
+1bb73b4 : Connectivity: Fix format arguments <Andreas Gampe> 6 days ago
+4b8b1e8 : Fix keyguard prompt reason showing with fingerprint reboot enabled <Nathan Chancellor> 11 days ago
+975b189 : Automatic translation import <Abhisek Devkota> 10 days ago
+ 
+**** github:LineageOS/android_hardware_qcom_audio ****
+a53df14 : policy_hal: Fixed stream volume on Bluetooth Headset <Pavan Chikkala> 6 weeks ago
+ 
+**** github:LineageOS/android_hardware_qcom_display ****
+96fd3e4 : cec: Calculate buffer length to protect from overflow <Ramakant Singh> 9 weeks ago
+d42b9af : libmemtrack: Fix fd leak in kgsl function <Archana Sriram> 3 months ago
+ 
+**** github:LineageOS/android_hardware_qcom_media ****
+048c6bc : mm-video-v4l2: vdec:Fix delay in thumbnail generation for 4k video <Vasantha Balla> 3 months ago
+ 
+**** github:LineageOS/android_hardware_samsung ****
+338942b : secril-client: return exact error code from blockingWrite() <Basil Gello> 4 days ago
+1146f1a : Revert "power: Temporary logging fix" <Christopher N. Hesse> 4 days ago
+7ad73bc : power: Allow for a dynamic cluster configuration <Christopher N. Hesse> 3 weeks ago
+ff86846 : power: Temporary logging fix <Christopher N. Hesse> 8 days ago
+775bce8 : power: Print information on boot <Christopher N. Hesse> 10 days ago
+0da5fbf : power: sysfs_read: Do not store newlines <Christopher N. Hesse> 9 days ago
+ 
+**** github:LineageOS/cm_crowdin ****
+63d845b : crowdin: Move huashan to cm-14.1 branch for devicesettings <Adrian DC> 10 days ago
+ 
+**** github:LineageOS/cve_tracker ****
+3070a6c : Regenerate kernel->device mappings <Harry's Buildbot> 6 days ago
+d508b8d : app: use continue instead of next in for loops <Simon Shields> 6 days ago
+ 
+**** github:LineageOS/hudson ****
+cfb84b4 : Re-enable LG G2 builds <KhabarlakKonstantin> 2 weeks ago
+c02a01b : hudson: disable devices with unpatched dirty cow <Demon000> 2 weeks ago
+1bff39d : Revert "hudson: disable athene for now" <rahulsnair> 2 days ago
+ 
+**** github:LineageOS/mirror ****
+266f50b : Updated to 14-Jul-2017 20:31:01 UTC <Harry's Buildbot> 3 days ago
+547ffb0 : Updated to 11-Jul-2017 20:31:00 UTC <Harry's Buildbot> 6 days ago
+ 
+**** github:LineageOS/lineageos_updater ****
+64610d8 : Regenerate device dependency mappings <Harry's Buildbot> 6 days ago
+ 
+**** github:LineageOS/lineage_wiki ****
+a269375 : wiki: Set G2 maintainer <KhabarlakKonstantin> 3 weeks ago
+cbb0af9 : Corrected small typos. <Yvan Masson> 5 days ago
+1ca2b57 : wiki: Don't show devices with no maintainers on contributors page <Harry Youd> 9 days ago
+f5833e0 : wiki: update oneplus2 maintainers <OzzysCmAcc> 10 days ago
+ 
+**** github:LineageOS/android_packages_apps_AudioFX ****
+4273aee : Automatic translation import <Abhisek Devkota> 10 days ago
+ 
+**** github:LineageOS/android_packages_apps_CMUpdater ****
+4551ad8 : Automatic translation import <Abhisek Devkota> 10 days ago
+ 
+**** github:LineageOS/android_packages_apps_Gallery2 ****
+d9f1451 : Gallery: Fix potential crash <Michael W> 5 days ago
+8af515d : Gallery2: Switch to navigationbar from support libs <Luca Stefani> 10 days ago
+bd7c0d6 : Automatic translation import <Abhisek Devkota> 10 days ago
+ 
+**** github:LineageOS/android_packages_apps_Jelly ****
+4d40bf7 : Jelly: Remove unneeded parameter type in addResult <Luca Stefani> 9 days ago
+69f2dad : Jelly: Remove redundant character escape <Luca Stefani> 9 days ago
+55f3a05 : Jelly: Make suggestion provider "None" translatable <Michael W> 4 days ago
+c3794c5 : Hide Sheet Menu after clicking on an entry <Tim Schumacher> 9 days ago
+4e7e82e : Jelly: Query an already ordered favorite list <Luca Stefani> 9 days ago
+6934a68 : Jelly: use Google as default all the things <Dan Pasanen> 5 days ago
+99c0a8b : Automatic translation import <Abhisek Devkota> 10 days ago
+ 
+**** cmR:android_packages_apps_Settings ****
+927f314 : Settings:Configurable Keyguard & bouncer alpha [2/2] <Varun Date> 14 hours ago
+c6788a9 : Settings:Configurable Keyguard & bouncer alpha [2/2] <beanstown106> 4 hours ago
+227ddfc : Bring back some physical keyboard settings <Gabriele M> 12 days ago
+ 
+**** github:LineageOS/android_packages_apps_SetupWizard ****
+50da943 : Automatic translation import <Abhisek Devkota> 10 days ago
+ 
+**** github:LineageOS/android_packages_apps_Terminal ****
+2e009e8 : Automatic translation import <Abhisek Devkota> 10 days ago
+ 
+**** github:LineageOS/android_packages_providers_WeatherProvider ****
+37f067f : Automatic translation import <Abhisek Devkota> 10 days ago
+ 
+**** cmR:android_vendor_CMRemix ****
+c835d38 : qcom: Enable TARGET_USES_QCOM_MM_AUDIO <Luca Stefani> 6 days ago
+63f767e : repopick: don't bail on drafts <Dan Pasanen> 8 days ago
+ff7a5e4 : sensitive_pn: Enter full list of Indian MCC codes <Paul Keith> 3 weeks ago
+168bca4 : sensitive_pn: Enter full list of GB MCC codes <Harry Youd> 4 weeks ago
+112ffc1 : sensitive_pn: Enter full list of US MCC codes <Paul Keith> 4 weeks ago
+302c065 : Add LTE support for China Telecom Macau. <AI Lion> 4 weeks ago
+ 
+**** github:LineageOS/cm_platform_sdk ****
+464979d : Automatic translation import <Abhisek Devkota> 10 days ago
+497a8e8 : Automatic translation import <Abhisek Devkota> 2 weeks ago
+58c23ed : Automatic translation import <Abhisek Devkota> 2 weeks ago
+df15137 : Automatic translation import <Abhisek Devkota> 4 weeks ago
+bdea7f5 : [2/3] Torch long press power: add auto-off function <Sam Mortimer> 7 months ago
+f53bcaa : Automatic translation import <Abhisek Devkota> 7 weeks ago
+6a47344 : Double tap to sleep anywhere on lock screen [3/3] <Matssa56> 7 weeks ago
+062bfa9 : cmsdk: Disable Lockscreen Media Art [3/3] <Matssa56> 7 weeks ago
+b5e2ea3 : cmsdk: fix twilight state not updating in live display auto mode <Matthias Yzusqui> 8 weeks ago
+a4df9e2 : Automatic translation import <Abhisek Devkota> 9 weeks ago
+2b1cf2b : cmsdk: Add CMSettings option for QS auto brightness <Michael Bestas> 3 months ago
+e2c64b8 : Automatic translation import <Abhisek Devkota> 3 months ago
+117d242 : Protect system profiles related broadcasts <Gabriele M> 3 months ago
+1908152 : Automatic translation import <Abhisek Devkota> 3 months ago
+4b14ba4 : PerformanceManager: Don't override the user preference <Gabriele M> 4 months ago
+b19fe20 : PerformanceManager: Don't force powersave mode with powersave profile <Gabriele M> 4 months ago
+54996d4 : Automatic translation import <Abhisek Devkota> 4 months ago
+f0a3ce9 : Automatic translation import <Abhisek Devkota> 4 months ago
+c0378c8 : Automatic translation import <Abhisek Devkota> 4 months ago
+b580686 : Automatic translation import <Abhisek Devkota> 4 months ago
+9fcf3eb : Automatic translation import <Abhisek Devkota> 4 months ago
+a7e8c17 : CMSDK: Tests: AIRPLANE_MODE_ON has moved <Michael W> 5 months ago
+2298aad : Automatic translation import <Michael W> 5 months ago
+a72790f : [3/3] cmsdk: single hand for hw keys <Joey Rizzoli> 5 months ago
+3e2e540 : CMPartsPreference: Update PreferenceScreen theme <Gabriele M> 5 months ago
+d9c544a : Automatic translation import <Abhisek Devkota> 5 months ago
+24b3566 : Automatic translation import <Abhisek Devkota> 5 months ago
+1dc89fe : CMSettingsProvider: remove per-user cursor observation <Danny Baumann> 5 months ago
+8f33604 : cmsdk: Remove launch boost support <Zhao Wei Liew> 6 months ago
+1429c49 : Automatic translation import <Abhisek Devkota> 5 months ago
+cb1bb04 : Add a proper description for CM_SETUP_WIZARD_COMPLETED deprecation <Zhao Wei Liew> 5 months ago
+797a45a : cmsdk: Deprecate CM_SETUP_WIZARD_COMPLETED <Paul Keith> 5 months ago
+8f0eb55 : Automatic translation import <Abhisek Devkota> 5 months ago
+6669674 : RemotePreferenceManager: Fix receiver registration issues. <Danny Baumann> 5 months ago
+77b94bc : Automatic translation import <Abhisek Devkota> 5 months ago
+f3587d3 : Automatic translation import <Abhisek Devkota> 5 months ago
+7f3548d : Automatic translation import <Abhisek Devkota> 5 months ago
+9526453 : CMSDK: Add long-press power for torch CMSetting <Zhao Wei Liew> 8 months ago
+ebf0e84 : cmsdk: PerformanceManager: Update POWER_HINT_SET_PROFILE value <Zhao Wei Liew> 6 months ago
+a789a99 : Automatic translation import <Abhisek Devkota> 6 months ago
+cfaf39e : cmsdk: Add touchscreen gestures support <Zhao Wei Liew> 8 months ago
+f142715 : cmsdk: Add DeviceKeyHandler overlays <Zhao Wei Liew> 7 months ago
+fd5664d : Automatic translation import <Abhisek Devkota> 6 months ago
+d73a932 : cmsdk: cmhw: Deprecate TAP_TO_WAKE feature <Zhao Wei Liew> 8 months ago
+b99c20a : Add generic support for Lid Cover Apps <jrior001> 8 months ago
+cf51b67 : cmsdk: Fix @deprecated annotation mismatch warnings <Zhao Wei Liew> 6 months ago
+05f0c40 : cmsdk: Update README references for LineageOS <Zhao Wei Liew> 6 months ago
+c025463 : cmsdk: fix update path for version 7 <Christian Morlok> 6 months ago
+5bb06dc : cmsdk: remove 'hide clock' option from clock position tunable <Hendrik Hagendorn> 7 months ago
+8f7ef5d : cmsdk: rebrand to LineageOS <Simon Shields> 7 months ago
+ 
+**** github:LineageOS/android_packages_apps_YahooWeatherProvider ****
+8a9c801 : Automatic translation import <Abhisek Devkota> 10 days ago
+ 

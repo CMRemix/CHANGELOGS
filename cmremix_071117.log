@@ -1,0 +1,38 @@
+
+**** cmR:CHANGELOGS ****
+4a520c2 : update 7-11-2017 <ZION959> 36 minutes ago
+ 
+**** cmR:android_frameworks_base ****
+c66fea4 : revert: Add gestures control [3/4] <ZION959> 24 hours ago
+862852d : Buttons: Hardware key disable support with M adaptations [1/2] <bigrushdog> 16 hours ago
+4dcaffc : frameworks/base: Don't report existing menu key if it was remapped. [2/3] <Kyrylo Mikos> 2 years, 7 months ago
+3d0b493 : Buttons: Bring up hardware key action binding framework [1/2] <Randall Rushing> 1 year, 5 months ago
+38aac02 : revert: [Base] HW keys tweaks (1/2) <ZION959> 24 hours ago
+
+
+**** github:CMRemix/android_device_samsung_trlte-common ****
+aa525c3 : remove hardware key on/off option <ZION959> 23 hours ago
+ 
+**** cmR:android_frameworks_base ****
+6bfa58f : Base: Update colors for CMR OMS (1/2) <westcripp> 4 hours ago
+700a5c4 : base: New google pixel colors <Mike Xdnax> 23 hours ago
+
+**** github:CMRemix/android_device_samsung_trlte-common ****
+3ac0be4 : revert: trlte: Use new Fingerprint Hal without ValidityService ( need more testing) <ZION959> 24 hours ago
+0d96192 : add new ril <ZION959> 24 hours ago
+d57ad3c : trlte: Use new Fingerprint Hal without ValidityService <ZION959> 25 hours ago
+7649428 : back to 560 dpi <ZION959> 26 hours ago
+fc0537d : trlte-common: add hardware/samsung/cmhw <ZION959> 27 hours ago
+4d20aa1 : trlte-common: Move to commonized, overlay-based GPS config & remove old gps hal <ZION959> 27 hours ago
+
+**** github:CMRemix/android_kernel_samsung_trlte ****
+bea0705 : update Optimization flags <ZION959> 75 minutes ago
+4293383 : msm: thermal: add a module param to change the thermal throttle temperature point to userspace <franciscofranco> 2 years, 7 months ago
+8812cbb : enable vibrate for wake gesture <ZION959> 28 hours ago
+731fcec : drivers/motor: temporarily back to the old vibrator motor <ZION959> 4 days ago
+03ca086 : update defconfig <ZION959> 7 days ago
+
+**** cmR:android_vendor_CMRemix ****
+8ec7b19 : update sepolicy <ZION959> 17 hours ago
+ 
+ 
