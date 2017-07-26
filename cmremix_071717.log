@@ -1,14 +1,65 @@
 
 **** cmR:CHANGELOGS ****
-edba5b6 : update 7-17-2017 <ZION959> 22 minutes ago
+b68def3 : update 7-17-2017 <ZION959> 7 hours ago
  
-**** cmR:android_bionic ****
-b928447 : linker: remove link from external library on unload <Dimitry Ivanov> 3 months ago
+**** cmR:CMRemix ****
+dd7de2a : remove various cm themes <ZION959> 2 hours ago
+d93fe3e : remove android_device_qcom_sepolicy <ZION959> 6 hours ago
+7e460b7 : Remove ahbottomnavigation <Luca Stefani> 34 hours ago
+f68ed96 : Various fixes to README <Harry Youd> 9 days ago
+6c8d659 : manifest: android-7.1.2_r17 -> android-7.1.2_r24 <Dan Pasanen> 12 days ago
  
-**** cmR:android_build ****
-5bed08f : included vendor cmremix sepolicy <ZION959> 3 hours ago
+**** aosp:platform/external/dng_sdk ****
+35aa468 : Throw exception on integer overflow in dng_ifd.cpp. <Yujie Qin> 2 months ago
+ 
+**** aosp:platform/external/libavc ****
+9490be3 : Decoder: Fix end of bitstream error. <Hamsalekha S> 5 months ago
+77af827 : Decoder: Fix allocation for Mbaff weight matrix <Hamsalekha S> 2 months ago
+776ddbc : Decoder: Initialize MB info buffer to zero. <Hamsalekha S> 3 months ago
+4081cc4 : Decoder: Fixed flag u1_top_bottom_decoded. <Hamsalekha S> 2 months ago
+abb5cfb : Decoder: Added an error check while parsing PPS. <Hamsalekha S> 10 weeks ago
+c2d3ce5 : Fix stack buffer overflow in ih264d_process_intra_mb <Harish Mahendrakar> 1 year, 3 months ago
+76f6a3e : Decoder: Fix in reference list initialization. <Hamsalekha S> 4 months ago
+d4b34e3 : Decoder: Fixes in accessing mbaff flag in error cases <Harish Mahendrakar> 7 months ago
+9759612 : Fix in the case of MMCO 3 (long term reference idx). <Hamsalekha S> 5 months ago
+ 
+**** aosp:platform/external/libgdx ****
+c97a2c1 : Fix 36385715 heap overflow when loading HDR files <Lucas Dupin> 3 months ago
+4702c50 : Fix Pixmap overflow. Bug 36621442 <Lucas Dupin> 3 months ago
+e3b5da5 : Fix series of JPEG vulnerabilities <Lucas Dupin> 3 months ago
+e0ddaf0 : Fix 36385715 heap overflow when loading HDR files <Lucas Dupin> 3 months ago
+ 
+**** aosp:platform/external/libhevc ****
+6523680 : Fix heap buffer overflow while searching for valid PPS <Harish Mahendrakar> 9 weeks ago
+cf376a7 : Check for buffer overflow in pps/slice header parsing <Naveen Kumar P> 4 months ago
+62e944d : memset SPS to zero <Harish Mahendrakar> 3 months ago
+d6fd3d7 : Fix reallocation for new sps <Naveen Kumar P> 3 months ago
+011b658 : DO NOT MERGE Handle streams with change in max_dec_buffering/num_reorder_frames without resolution change <Harish Mahendrakar> 1 year, 3 months ago
+4667b9e : Check for cpb cnt in hrd parsing <Naveen Kumar P> 3 months ago
+ 
+**** aosp:platform/external/libmpeg2 ****
+b427732 : Check Number of Skip MBs <Venkatarama Avadhani> 3 months ago
+5da05c0 : Error Resilience - Check on as_recent_fld[0][1] <Venkatarama Avadhani> 3 months ago
+45df45d : Fix Bytes Consumed Issue <Venkatarama Avadhani> 3 months ago
+ 
+**** aosp:platform/external/sonivox ****
+63ff572 : Fix infinite recursion <Marco Nelissen> 10 weeks ago
+1f2842c : Check chunk size <Marco Nelissen> 10 weeks ago
+ 
+**** aosp:platform/external/tremolo ****
+7d1beba : Always use unsigned char <Marco Nelissen> 10 weeks ago
+ 
+**** cmR:android_frameworks_av ****
+948aa6b : Forward Port: Add Camera sound toggle [3/3] <Muhammed Nazim> 2 years, 8 months ago
+eb9cc20 : CameraService: Fix cameraId type of onDeviceStatusChanged <Bin Chen> 1 year, 5 months ago
+e0123f5 : Modifying MetaData invalidates previous char* <Marco Nelissen> 9 weeks ago
+309c4fb : Fix memory leak in error case <Marco Nelissen> 10 weeks ago
+77089b2 : Limit ogg packet size <Marco Nelissen> 9 weeks ago
+aaeca86 : Prevent OOB write in soft_avc encoder <Ray Essick> 10 weeks ago
+edc1286 : Don't allow using or allocating a buffer after the first state transition <Marco Nelissen> 4 months ago
  
 **** cmR:android_frameworks_base ****
+617f396 : derp <ZION959> 6 hours ago
 ac878eb : SystemUI: Fix task lock & freeform buttons placement <LuK1337> 4 weeks ago
 435bc53 : TaskViewHeader:Don't allow lock button icon to show on grid view <Varun Date> 4 weeks ago
 83d45a5 : SystemUI: animate icon when locking a task <Joey Rizzoli> 6 weeks ago
@@ -16,9 +67,9 @@ ddd0450 : Recents:improve task locking code & mechanism <thecrazyskull> 6 weeks 
 273912f : Recents: Ensure Lock icon animates only when Dismiss icon is visible <Varun Date> 7 weeks ago
 5534f2e : Recents:Optional lock to task icon in recents task view header [1/2] <Varun Date> 7 weeks ago
 1d924c3 : Base:Add Lock task action to recents <ghbhaha> 7 weeks ago
-3280ce9 : revert: SystemUI: Support recents task locking <ZION959> 73 minutes ago
-8d0eba0 : revert: SystemUI: Fix task lock & freeform buttons placement <ZION959> 73 minutes ago
-e57b2db : revert: SystemUI: animate icon when locking a task <ZION959> 77 minutes ago
+3280ce9 : revert: SystemUI: Support recents task locking <ZION959> 8 hours ago
+8d0eba0 : revert: SystemUI: Fix task lock & freeform buttons placement <ZION959> 8 hours ago
+e57b2db : revert: SystemUI: animate icon when locking a task <ZION959> 8 hours ago
 a869967 : Fix FAB not disappearing in multiwindow <Pranav Vashi> 6 months ago
 bb1d769 : Fix Stack Action Button Not Dissapearing on Empty View <Varun Date> 6 months ago
 3390307 : RecentsView: Add an Extra Condition for Making FAB And Clear Recents Invisible <Varun Date> 6 months ago
@@ -46,19 +97,20 @@ d42b9af : libmemtrack: Fix fd leak in kgsl function <Archana Sriram> 3 months ag
 048c6bc : mm-video-v4l2: vdec:Fix delay in thumbnail generation for 4k video <Vasantha Balla> 3 months ago
  
 **** github:LineageOS/android_hardware_samsung ****
-338942b : secril-client: return exact error code from blockingWrite() <Basil Gello> 4 days ago
+72aac79 : secril-client: Fix RIL client token management in SendOemRequestHookRaw() <Basil Gello> 5 days ago
+338942b : secril-client: return exact error code from blockingWrite() <Basil Gello> 5 days ago
 1146f1a : Revert "power: Temporary logging fix" <Christopher N. Hesse> 4 days ago
 7ad73bc : power: Allow for a dynamic cluster configuration <Christopher N. Hesse> 3 weeks ago
 ff86846 : power: Temporary logging fix <Christopher N. Hesse> 8 days ago
 775bce8 : power: Print information on boot <Christopher N. Hesse> 10 days ago
-0da5fbf : power: sysfs_read: Do not store newlines <Christopher N. Hesse> 9 days ago
+0da5fbf : power: sysfs_read: Do not store newlines <Christopher N. Hesse> 10 days ago
  
 **** github:LineageOS/cm_crowdin ****
 63d845b : crowdin: Move huashan to cm-14.1 branch for devicesettings <Adrian DC> 10 days ago
  
 **** github:LineageOS/cve_tracker ****
 3070a6c : Regenerate kernel->device mappings <Harry's Buildbot> 6 days ago
-d508b8d : app: use continue instead of next in for loops <Simon Shields> 6 days ago
+d508b8d : app: use continue instead of next in for loops <Simon Shields> 7 days ago
  
 **** github:LineageOS/hudson ****
 cfb84b4 : Re-enable LG G2 builds <KhabarlakKonstantin> 2 weeks ago
@@ -85,7 +137,7 @@ f5833e0 : wiki: update oneplus2 maintainers <OzzysCmAcc> 10 days ago
 4551ad8 : Automatic translation import <Abhisek Devkota> 10 days ago
  
 **** github:LineageOS/android_packages_apps_Gallery2 ****
-d9f1451 : Gallery: Fix potential crash <Michael W> 5 days ago
+d9f1451 : Gallery: Fix potential crash <Michael W> 6 days ago
 8af515d : Gallery2: Switch to navigationbar from support libs <Luca Stefani> 10 days ago
 bd7c0d6 : Automatic translation import <Abhisek Devkota> 10 days ago
  
@@ -99,8 +151,8 @@ c3794c5 : Hide Sheet Menu after clicking on an entry <Tim Schumacher> 9 days ago
 99c0a8b : Automatic translation import <Abhisek Devkota> 10 days ago
  
 **** cmR:android_packages_apps_Settings ****
-927f314 : Settings:Configurable Keyguard & bouncer alpha [2/2] <Varun Date> 14 hours ago
-c6788a9 : Settings:Configurable Keyguard & bouncer alpha [2/2] <beanstown106> 4 hours ago
+927f314 : Settings:Configurable Keyguard & bouncer alpha [2/2] <Varun Date> 20 hours ago
+c6788a9 : Settings:Configurable Keyguard & bouncer alpha [2/2] <beanstown106> 11 hours ago
 227ddfc : Bring back some physical keyboard settings <Gabriele M> 12 days ago
  
 **** github:LineageOS/android_packages_apps_SetupWizard ****
@@ -112,15 +164,22 @@ c6788a9 : Settings:Configurable Keyguard & bouncer alpha [2/2] <beanstown106> 4 
 **** github:LineageOS/android_packages_providers_WeatherProvider ****
 37f067f : Automatic translation import <Abhisek Devkota> 10 days ago
  
+**** cmR:android_system_core ****
+09daba9 : logcat: Add missing newline to read failure <Luca Stefani> 10 days ago
+8f5449d : init.rc: setup console-ramoops-0 <Mark Salyzyn> 3 weeks ago
+f6b1285 : healthd: check console-ramoops-0 <Mark Salyzyn> 3 weeks ago
+9e5657d : fs_mgr: check console-ramoops-0 <Mark Salyzyn> 3 weeks ago
+ 
 **** cmR:android_vendor_CMRemix ****
+acc6434 : update magisk to v13.2 <ZION959> 2 hours ago
 c835d38 : qcom: Enable TARGET_USES_QCOM_MM_AUDIO <Luca Stefani> 6 days ago
-63f767e : repopick: don't bail on drafts <Dan Pasanen> 8 days ago
-ff7a5e4 : sensitive_pn: Enter full list of Indian MCC codes <Paul Keith> 3 weeks ago
+63f767e : repopick: don't bail on drafts <Dan Pasanen> 9 days ago
+ff7a5e4 : sensitive_pn: Enter full list of Indian MCC codes <Paul Keith> 4 weeks ago
 168bca4 : sensitive_pn: Enter full list of GB MCC codes <Harry Youd> 4 weeks ago
 112ffc1 : sensitive_pn: Enter full list of US MCC codes <Paul Keith> 4 weeks ago
 302c065 : Add LTE support for China Telecom Macau. <AI Lion> 4 weeks ago
  
-**** github:LineageOS/cm_platform_sdk ****
+**** cmR:cm_platform_sdk ****
 464979d : Automatic translation import <Abhisek Devkota> 10 days ago
 497a8e8 : Automatic translation import <Abhisek Devkota> 2 weeks ago
 58c23ed : Automatic translation import <Abhisek Devkota> 2 weeks ago
